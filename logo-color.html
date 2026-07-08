@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>1acrefarms — Logo D color options</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --green:#45573a; --bg:#f7f4ec; --ink:#1f2419; --line:#e7e3d6; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:"Inter",sans-serif; background:var(--bg); color:var(--ink); padding:40px 30px 80px; }
+  h1 { font-size:1.5rem; font-weight:600; letter-spacing:-.02em; margin-bottom:6px; }
+  .sub { color:#6c7060; margin-bottom:34px; font-size:.92rem; max-width:64ch; }
+  h2 { font-size:.78rem; text-transform:uppercase; letter-spacing:.12em; color:var(--green); margin:26px 0 14px; }
+  table { border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+  th, td { border:1px solid var(--line); padding:18px 20px; text-align:center; }
+  th { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:#6c7060; font-weight:600; background:#fbfaf6; }
+  th.rowh { text-align:left; }
+  .m { width:62px; height:62px; margin:0 auto; }
+  .swatch { display:inline-block; width:13px; height:13px; border-radius:3px; vertical-align:-2px; margin-right:4px; }
+  .locks { display:flex; flex-wrap:wrap; gap:30px; align-items:center; margin-top:8px; }
+  .lk { display:flex; align-items:center; gap:11px; background:#fff; border:1px solid var(--line); border-radius:12px; padding:16px 22px; }
+  .lk .mk { width:34px; height:34px; }
+  .lk .wm { font-size:1.4rem; font-weight:600; letter-spacing:-.03em; color:var(--ink); }
+  .lk .cap { font-size:.66rem; text-transform:uppercase; letter-spacing:.1em; color:#9a9c8d; margin-left:6px; }
+  svg { display:block; width:100%; height:100%; }
+</style>
+</head>
+<body>
+  <h1>Direction D — where does the orange go?</h1>
+  <p class="sub">Same sprout-as-“1” mark, now 2-color. Rows = which part is orange. Columns = which orange shade. Tell me a row + a column (e.g. “orange 1, terracotta”).</p>
+
+  <h2>The matrix</h2>
+  <table id="matrix"></table>
+
+  <h2>How the lockup reads (orange “1” + matching wordmark)</h2>
+  <div class="locks" id="locks"></div>
+
+<script>
+const G='#45573a';
+const SHADES = { terracotta:'#b26a45', orange:'#d9772f', gold:'#c7922f' };
+const leafD = "M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z";
+
+const D = (c)=>`<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="24" r="20.4" fill="none" stroke="${c.ring}" stroke-width="1.7"/>
+  <path d="M19 34 H29" stroke="${c.stem}" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M24 34 V19" stroke="${c.stem}" stroke-width="1.7" stroke-linecap="round"/>
+  <g fill="${c.leaf}">
+    <path transform="translate(24 20) rotate(-40)" d="${leafD}"/>
+    <path transform="translate(24 18.5) rotate(40)" d="${leafD}"/>
+  </g></svg>`;
+
+const SPLITS = {
+  "Orange ring":   (o)=>({ring:o, stem:G, leaf:G}),
+  "Orange “1”":    (o)=>({ring:G, stem:o, leaf:G}),
+  "Orange leaves": (o)=>({ring:G, stem:G, leaf:o}),
+};
+
+// matrix
+let html = `<tr><th class="rowh">part \\ shade</th>`;
+for (const s in SHADES) html += `<th><span class="swatch" style="background:${SHADES[s]}"></span>${s}</th>`;
+html += `</tr>`;
+for (const split in SPLITS) {
+  html += `<tr><th class="rowh">${split}</th>`;
+  for (const s in SHADES) html += `<td><div class="m">${D(SPLITS[split](SHADES[s]))}</div></td>`;
+  html += `</tr>`;
+}
+document.getElementById('matrix').innerHTML = html;
+
+// lockups: orange "1" split across shades, wordmark "1" matches
+document.getElementById('locks').innerHTML = Object.entries(SHADES).map(([name,o])=>`
+  <div class="lk">
+    <span class="mk">${D(SPLITS["Orange “1”"](o))}</span>
+    <span class="wm"><span style="color:${o}">1</span>acrefarms</span>
+    <span class="cap">${name}</span>
+  </div>`).join('');
+</script>
+</body>
+</html>

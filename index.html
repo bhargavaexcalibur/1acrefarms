@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1acrefarms — Fresh from our farm to your home</title>
+  <meta name="description" content="Farm-fresh produce, dairy, eggs, meat and homemade goods from 1acrefarms. Grown with care, delivered fresh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
+</head>
+<body>
+  <!-- Announcement bar -->
+  <div class="announce">
+    🚚 Free delivery on orders over ₹999 · Harvested fresh every morning
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="brand">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="20.4" stroke="#45573a" stroke-width="1.7"/>
+          <path d="M19 34 H29" stroke="#45573a" stroke-width="1.7" stroke-linecap="round"/>
+          <path d="M24 34 V19" stroke="#45573a" stroke-width="1.7" stroke-linecap="round"/>
+          <path transform="translate(24 20) rotate(-40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#45573a"/>
+          <path transform="translate(24 18.5) rotate(40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#45573a"/>
+        </svg>
+        <span class="brand-name"><span class="one">1</span>acrefarms</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#produce">Produce</a></li>
+        <li><a href="#dairy">Dairy &amp; Eggs</a></li>
+        <li><a href="#pantry">Pantry</a></li>
+        <li><a href="#soil">Soil &amp; Inputs</a></li>
+        <li><a href="#story">Our Story</a></li>
+      </ul>
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart">
+        🛒 <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Regenerative · Single-origin</p>
+        <h1>Let the soil <em>breathe</em> again.</h1>
+        <p class="hero-sub">
+          Everything here grows in living soil we build by hand — with our own vermicompost,
+          no chemical sprays. Seasonal produce, farm dairy and honest pantry goods,
+          picked and packed the morning they reach you.
+        </p>
+        <div class="hero-actions">
+          <a href="#produce" class="btn btn-primary">Shop the harvest</a>
+          <a href="#story" class="btn btn-ghost">Our story</a>
+        </div>
+        <div class="hero-badges">
+          <span>🌱 No chemical sprays</span>
+          <span>🐄 Free-range dairy</span>
+          <span>📦 Same-day packing</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-tile t1">🥬</div>
+        <div class="hero-tile t2">🥚</div>
+        <div class="hero-tile t3">🍯</div>
+        <div class="hero-tile t4">🍅</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value props -->
+  <section class="values container">
+    <div class="value">
+      <span class="value-icon">🌾</span>
+      <h3>Single-origin</h3>
+      <p>Everything here is grown or made on our one acre. You always know exactly where it came from.</p>
+    </div>
+    <div class="value">
+      <span class="value-icon">⏱️</span>
+      <h3>Picked today</h3>
+      <p>Orders are harvested and packed the same morning — nothing sits on a shelf for days.</p>
+    </div>
+    <div class="value">
+      <span class="value-icon">💬</span>
+      <h3>Order on WhatsApp</h3>
+      <p>Build your basket, tap once, and your order lands in our chat. We confirm and deliver.</p>
+    </div>
+  </section>
+
+  <!-- Product sections render here -->
+  <main id="catalog"></main>
+
+  <!-- Story -->
+  <section class="story" id="story">
+    <div class="container story-inner">
+      <div class="story-art" aria-hidden="true">🚜</div>
+      <div class="story-copy">
+        <p class="eyebrow">Our story</p>
+        <h2>One acre, tended by hand.</h2>
+        <p>
+          1acrefarms started as a small patch of family land and a simple idea: food tastes
+          better — and does more good — when it travels a short distance and is grown without
+          shortcuts. We rotate our beds by season, keep a handful of happy cows and hens, and
+          turn the surplus into honey, ghee and pickles in our own kitchen.
+        </p>
+        <p>
+          When you order, you're not buying from a warehouse. You're buying from the people
+          who planted it. Thank you for letting us feed your family.
+        </p>
+        <a href="#produce" class="btn btn-primary">Browse what's fresh</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter / CTA -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Get the weekly harvest list</h2>
+      <p>We message what's ripe every Friday. No spam — just vegetables.</p>
+      <form class="cta-form" onsubmit="return false;">
+        <input type="tel" placeholder="Your WhatsApp number" aria-label="WhatsApp number" />
+        <button class="btn btn-primary" type="submit">Notify me</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="footer-brand-row">
+          <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="20.4" stroke="#eef0e6" stroke-width="1.7"/>
+            <path d="M19 34 H29" stroke="#eef0e6" stroke-width="1.7" stroke-linecap="round"/>
+            <path d="M24 34 V19" stroke="#eef0e6" stroke-width="1.7" stroke-linecap="round"/>
+            <path transform="translate(24 20) rotate(-40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#eef0e6"/>
+            <path transform="translate(24 18.5) rotate(40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#eef0e6"/>
+          </svg>
+          <span class="brand-name"><span class="one">1</span>acrefarms</span>
+        </div>
+        <p>Let the soil breathe again. Grown on one acre, fed by our own compost.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <a href="#produce">Fresh Produce</a>
+        <a href="#dairy">Dairy &amp; Eggs</a>
+        <a href="#pantry">Pantry &amp; Goods</a>
+        <a href="#soil">Soil &amp; Inputs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a id="footerWhatsapp" href="#">WhatsApp us</a>
+        <a href="#story">Our story</a>
+      </div>
+    </div>
+    <p class="footer-base">© <span id="year"></span> 1acrefarms · Made with 🌱</p>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h3>Your basket</h3>
+      <button class="cart-close" id="cartClose" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Order on WhatsApp</button>
+      <p class="cart-note">You'll confirm details in chat. Pay on delivery.</p>
+    </div>
+  </aside>
+
+  <script src="app.js"></script>
+</body>
+</html>

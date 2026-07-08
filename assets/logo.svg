@@ -1,0 +1,7 @@
+<svg width="96" height="96" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="1acrefarms">
+  <circle cx="24" cy="24" r="20.4" stroke="#45573a" stroke-width="1.7"/>
+  <path d="M19 34 H29" stroke="#45573a" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M24 34 V19" stroke="#45573a" stroke-width="1.7" stroke-linecap="round"/>
+  <path transform="translate(24 20) rotate(-40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#45573a"/>
+  <path transform="translate(24 18.5) rotate(40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#45573a"/>
+</svg>

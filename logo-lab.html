@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>1acrefarms — Logo Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { --green:#45573a; --accent:#b26a45; --bg:#f7f4ec; --ink:#1f2419; --line:#e7e3d6; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:"Inter",sans-serif; background:var(--bg); color:var(--ink); padding:44px 30px 90px; }
+  h1 { font-size:1.55rem; font-weight:600; letter-spacing:-.02em; margin-bottom:6px; }
+  .sub { color:#6c7060; margin-bottom:36px; font-size:.92rem; max-width:60ch; }
+  .card { border:1px solid var(--line); border-radius:16px; background:#fff; margin-bottom:26px; overflow:hidden; }
+  .hd { padding:16px 22px; border-bottom:1px solid var(--line); font-size:.95rem; }
+  .hd b { font-weight:700; margin-right:8px; color:var(--green); }
+  .hd .desc { color:#6c7060; }
+  .row { display:grid; gap:0; }
+  .strip { grid-template-columns:repeat(3,1fr); }
+  .locks { grid-template-columns:1.2fr 1fr; border-top:1px solid var(--line); }
+  .cell { padding:26px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; border-left:1px solid var(--line); min-height:150px; }
+  .cell:first-child { border-left:none; }
+  .cap { font-size:.66rem; color:#9a9c8d; text-transform:uppercase; letter-spacing:.12em; }
+  .dark { background:var(--green); }
+  .dark .cap { color:#9aa589; }
+  .lg { width:76px; height:76px; }
+  .light .lg, .light .mk, .light .mkv, .light .fa { color:var(--green); }
+  .dark .lg { color:#eef0e6; }
+  .wm { font-size:1.42rem; font-weight:600; letter-spacing:-.03em; color:var(--ink); }
+  .wm .one { color:var(--accent); }
+  .lk-h { display:flex; align-items:center; gap:11px; }
+  .lk-h .mk { width:34px; height:34px; }
+  .lk-v { display:flex; flex-direction:column; align-items:center; gap:9px; }
+  .lk-v .mkv { width:46px; height:46px; }
+  .lk-v .wm { font-size:1.15rem; }
+  .fav { flex-direction:row; gap:18px; border-top:1px solid var(--line); }
+  .fav .f16 { width:16px; height:16px; } .fav .f20 { width:20px; height:20px; } .fav .f32 { width:32px; height:32px; }
+  .fav span.fa { display:inline-flex; }
+  svg { display:block; width:100%; height:100%; }
+</style>
+</head>
+<body>
+  <h1>1acrefarms — logo directions (full)</h1>
+  <p class="sub">Each direction shown: mono · 2-color (green + terracotta earth accent) · reversed on dark · horizontal lockup · stacked lockup · favicon sizes. Pick a letter — A, B, C or D — and any colour preference.</p>
+  <div id="grid"></div>
+
+<script>
+const G='#45573a', A='#b26a45';
+const MONO = {ring:'currentColor', earth:'currentColor', sprout:'currentColor'};
+const DUO  = {ring:G, earth:A, sprout:G};
+
+/* almond leaf: base (0,0) -> tip (0,-h) */
+const leaf = (h,w) => `M0 0 C -${w} -${(h*0.29).toFixed(2)} -${w} -${(h*0.72).toFixed(2)} 0 -${h} C ${w} -${(h*0.72).toFixed(2)} ${w} -${(h*0.29).toFixed(2)} 0 0 Z`;
+
+const SV = {
+  A: (sw,P)=>`
+    <circle cx="24" cy="24" r="20.4" fill="none" stroke="${P.ring}" stroke-width="${sw}"/>
+    <path d="M14 31.5 Q24 35 34 31.5" fill="none" stroke="${P.earth}" stroke-width="${sw}" stroke-linecap="round"/>
+    <path d="M24 32 V21.5" stroke="${P.sprout}" stroke-width="${sw}" stroke-linecap="round"/>
+    <g fill="${P.sprout}">
+      <path transform="translate(24 21.5) rotate(-37)" d="${leaf(11.5,3.3)}"/>
+      <path transform="translate(24 20) rotate(37)" d="${leaf(11.5,3.3)}"/>
+    </g>`,
+  B: (sw,P)=>`
+    <circle cx="24" cy="24" r="20.4" fill="none" stroke="${P.ring}" stroke-width="${sw}"/>
+    <path d="M14 31.5 Q24 35 34 31.5" fill="none" stroke="${P.earth}" stroke-width="${sw}" stroke-linecap="round"/>
+    <g fill="none" stroke="${P.sprout}" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M24 32 V20.5"/>
+      <path transform="translate(24 21) rotate(-37)" d="${leaf(11.5,3.4)}"/>
+      <path transform="translate(24 19.5) rotate(37)" d="${leaf(11.5,3.4)}"/>
+      <path transform="translate(24 21) rotate(-37)" d="M0 -1.5 V-9.5"/>
+      <path transform="translate(24 19.5) rotate(37)" d="M0 -1.5 V-9.5"/>
+    </g>`,
+  C: (sw,P)=>`
+    <g fill="none" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="24" cy="24" r="20.4" stroke="${P.ring}"/>
+      <ellipse cx="24" cy="24" rx="8.2" ry="20.4" stroke="${P.ring}"/>
+      <path d="M4 24 H44" stroke="${P.earth}"/>
+    </g>
+    <path d="M24 30 V23" stroke="${P.sprout}" stroke-width="${sw}" stroke-linecap="round"/>
+    <g fill="${P.sprout}">
+      <path transform="translate(24 23) rotate(-36)" d="${leaf(9.5,2.7)}"/>
+      <path transform="translate(24 21.8) rotate(36)" d="${leaf(9.5,2.7)}"/>
+    </g>`,
+  D: (sw,P)=>`
+    <circle cx="24" cy="24" r="20.4" fill="none" stroke="${P.ring}" stroke-width="${sw}"/>
+    <path d="M19 34 H29" stroke="${P.sprout}" stroke-width="${sw}" stroke-linecap="round"/>
+    <path d="M24 34 V19" stroke="${P.sprout}" stroke-width="${sw}" stroke-linecap="round"/>
+    <g fill="${P.sprout}">
+      <path transform="translate(24 20) rotate(-40)" d="${leaf(10.5,3)}"/>
+      <path transform="translate(24 18.5) rotate(40)" d="${leaf(10.5,3)}"/>
+    </g>`,
+};
+const DESC = {
+  A:"Seedling · filled leaves + soil arc — warmest, most legible small",
+  B:"Seedling · outlined leaves with veins — botanical / editorial",
+  C:"Globe sprout · meridian + equator — global trade, import/export",
+  D:"Sprout as the “1” in 1acre — name tie-in, distinctive",
+};
+const wrap = (inner)=>`<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">${inner}</svg>`;
+const wmDuo = `<span class="wm"><span class="one">1</span>acrefarms</span>`;
+const wmMono = `<span class="wm">1acrefarms</span>`;
+
+document.getElementById('grid').innerHTML = Object.keys(SV).map(k=>{
+  const f = SV[k];
+  return `
+  <div class="card">
+    <div class="hd"><b>${k}</b><span class="desc">${DESC[k]}</span></div>
+    <div class="row strip">
+      <div class="cell light"><div class="lg">${wrap(f(1.7,MONO))}</div><span class="cap">mono</span></div>
+      <div class="cell light"><div class="lg">${wrap(f(1.7,DUO))}</div><span class="cap">2-color</span></div>
+      <div class="cell dark"><div class="lg">${wrap(f(1.7,MONO))}</div><span class="cap">reversed</span></div>
+    </div>
+    <div class="row locks">
+      <div class="cell light"><div class="lk-h"><span class="mk">${wrap(f(1.7,DUO))}</span>${wmDuo}</div><span class="cap">horizontal lockup</span></div>
+      <div class="cell light"><div class="lk-v"><span class="mkv">${wrap(f(1.7,DUO))}</span>${wmDuo}</div><span class="cap">stacked lockup</span></div>
+    </div>
+    <div class="cell light fav">
+      <span class="fa f16">${wrap(f(2.6,MONO))}</span>
+      <span class="fa f20">${wrap(f(2.2,MONO))}</span>
+      <span class="fa f32">${wrap(f(1.9,MONO))}</span>
+      <span class="cap">favicon · 16 / 20 / 32 px</span>
+    </div>
+  </div>`;
+}).join('');
+</script>
+</body>
+</html>
