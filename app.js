@@ -5,7 +5,7 @@
 
 // ---- 1. Your WhatsApp number (international format, no + or spaces) ----
 // Example for India: country code 91 + 10-digit number => "919876543210"
-const WHATSAPP_NUMBER = "918688605310"; // 91 (India) + 8688605310
+const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
 
 // ---- 2. Your products ----
 // price/was are in rupees. Set "stock": false to mark sold out.
