@@ -143,6 +143,8 @@ img { max-width: 100%; display: block; }
 }
 .add-btn:hover { background: var(--green); color: #fff; border-color: var(--green); }
 .add-btn:disabled { background: none; color: var(--ink-faint); border-color: var(--hairline); cursor: not-allowed; }
+.add-btn.block { width: 100%; text-align: center; padding: 10px 14px; }
+.card-foot { padding-top: 8px; }
 
 /* Story */
 .story { background: var(--green-soft); margin-top: 96px; padding: 96px 0; }
