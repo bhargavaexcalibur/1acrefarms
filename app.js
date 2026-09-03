@@ -175,13 +175,32 @@ const SECTIONS = [
 // ---------------------------------------------------------
 
 const slug = (s) => s.toLowerCase().replace(/&amp;/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+
+// Category photos (cycled across the products in each section). Add more anytime.
+const CATEGORY_IMAGES = {
+  grains: ["assets/products/grains-1.jpg","assets/products/grains-2.jpg","assets/products/grains-3.jpg"],
+  pulses: ["assets/products/pulses-1.jpg","assets/products/pulses-2.jpg"],
+  spices: ["assets/products/spices-1.jpg","assets/products/spices-2.jpg","assets/products/spices-3.jpg"],
+  oils: ["assets/products/oils-1.jpg","assets/products/oils-2.jpg"],
+  sweeteners: ["assets/products/sweeteners-1.jpg","assets/products/sweeteners-2.jpg","assets/products/sweeteners-3.jpg"],
+  dried: ["assets/products/dried-1.jpg","assets/products/dried-2.jpg","assets/products/dried-3.jpg"],
+  teas: ["assets/products/teas-1.jpg","assets/products/teas-2.jpg"],
+  pickles: ["assets/products/pickles-1.jpg","assets/products/pickles-2.jpg"],
+  care: ["assets/products/care-1.jpg","assets/products/care-2.jpg"],
+  soil: ["assets/products/soil-1.jpg","assets/products/soil-2.jpg"],
+};
+
 const PRODUCTS = {};
 let _mi = 0;
-SECTIONS.forEach((s) => s.products.forEach((p) => {
-  p.id = p.id || (s.id + "-" + slug(p.name));
-  p.media = p.media || MEDIA[_mi++ % MEDIA.length];
-  PRODUCTS[p.id] = p;
-}));
+SECTIONS.forEach((s) => {
+  const imgs = CATEGORY_IMAGES[s.id] || [];
+  s.products.forEach((p, i) => {
+    p.id = p.id || (s.id + "-" + slug(p.name));
+    p.media = p.media || MEDIA[_mi++ % MEDIA.length];
+    if (!p.img && imgs.length) p.img = imgs[i % imgs.length];
+    PRODUCTS[p.id] = p;
+  });
+});
 
 // ---- Order state (persisted) ----
 let cart = {};
@@ -207,11 +226,12 @@ function renderCatalog() {
 
 function card(p) {
   const tag = p.tag ? `<span class="card-tag">${p.tag}</span>` : "";
+  const media = p.img
+    ? `<div class="card-media has-photo" style="background:${p.media};background-image:url('${p.img}')"></div>`
+    : `<div class="card-media" style="background:${p.media}"><span class="card-emoji">${p.emoji}</span></div>`;
   return `
     <article class="card">
-      <div class="card-media-wrap" style="position:relative">
-        <div class="card-media" style="background:${p.media}"><span class="card-emoji">${p.emoji}</span></div>${tag}
-      </div>
+      <div class="card-media-wrap" style="position:relative">${media}${tag}</div>
       <div class="card-body">
         <h3 class="card-name">${p.name}</h3>
         <p class="card-unit">${p.unit || ""}</p>
@@ -234,9 +254,12 @@ function renderCart() {
     items.innerHTML = ids.map((id) => {
       const p = PRODUCTS[id]; if (!p) return "";
       const q = cart[id];
+      const media = p.img
+        ? `<div class="cart-line-media" style="background:${p.media};background-image:url('${p.img}')"></div>`
+        : `<div class="cart-line-media" style="background:${p.media}">${p.emoji}</div>`;
       return `
         <div class="cart-line">
-          <div class="cart-line-media" style="background:${p.media}">${p.emoji}</div>
+          ${media}
           <div class="cart-line-info">
             <div class="cart-line-name">${p.name}</div>
             <div class="cart-line-unit">${p.unit || ""}</div>
