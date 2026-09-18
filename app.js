@@ -207,9 +207,29 @@ let cart = {};
 try { cart = JSON.parse(localStorage.getItem("oneacre_cart") || "{}"); } catch (e) { cart = {}; }
 const saveCart = () => localStorage.setItem("oneacre_cart", JSON.stringify(cart));
 
+const VISIBLE_PER_SECTION = 6; // cards shown before "Show all"
+
+const CHIP_LABELS = {
+  grains: "Grains & Millets", pulses: "Pulses", spices: "Spices & Podis", oils: "Oils",
+  sweeteners: "Honey & Ghee", dried: "Dried & Nuts", teas: "Herbal Teas",
+  pickles: "Pickles", care: "Home & Care", soil: "For Your Soil",
+};
+
+function renderChipNav() {
+  const nav = document.getElementById("chipNav");
+  if (!nav) return;
+  nav.innerHTML = SECTIONS.map((s) =>
+    `<a class="chip" href="#${s.id}" data-chip="${s.id}">${CHIP_LABELS[s.id] || s.eyebrow}</a>`).join("");
+}
+
 function renderCatalog() {
   const root = document.getElementById("catalog");
-  root.innerHTML = SECTIONS.map((s) => `
+  root.innerHTML = SECTIONS.map((s) => {
+    const extra = s.products.length - VISIBLE_PER_SECTION;
+    const showAll = extra > 0
+      ? `<div class="show-all-row"><button class="show-all" data-showall="${s.id}">Show all ${s.products.length} →</button></div>`
+      : "";
+    return `
     <section class="section" id="${s.id}">
       <div class="container">
         <div class="section-head">
@@ -219,18 +239,20 @@ function renderCatalog() {
           </div>
           <p>${s.blurb}</p>
         </div>
-        <div class="grid">${s.products.map(card).join("")}</div>
+        <div class="grid" data-grid="${s.id}">${s.products.map((p, i) => card(p, i >= VISIBLE_PER_SECTION)).join("")}</div>
+        ${showAll}
       </div>
-    </section>`).join("");
+    </section>`;
+  }).join("");
 }
 
-function card(p) {
+function card(p, hidden) {
   const tag = p.tag ? `<span class="card-tag">${p.tag}</span>` : "";
   const media = p.img
     ? `<div class="card-media has-photo" style="background:${p.media};background-image:url('${p.img}')"></div>`
     : `<div class="card-media" style="background:${p.media}"><span class="card-emoji">${p.emoji}</span></div>`;
   return `
-    <article class="card">
+    <article class="card${hidden ? " hidden-extra" : ""}">
       <div class="card-media-wrap" style="position:relative">${media}${tag}</div>
       <div class="card-body">
         <h3 class="card-name">${p.name}</h3>
@@ -246,10 +268,16 @@ function cartCount() { return Object.values(cart).reduce((a, b) => a + b, 0); }
 
 function renderCart() {
   document.getElementById("cartCount").textContent = cartCount();
+  const bar = document.getElementById("orderBar");
+  if (bar) {
+    const n = cartCount();
+    bar.classList.toggle("visible", n > 0);
+    document.getElementById("obCount").textContent = n + (n === 1 ? " item" : " items");
+  }
   const items = document.getElementById("cartItems");
   const ids = Object.keys(cart);
   if (!ids.length) {
-    items.innerHTML = `<div class="cart-empty">Your order is empty.<br>Add something natural 🌿</div>`;
+    items.innerHTML = `<div class="cart-empty">Your order is empty.<br>Add something natural.</div>`;
   } else {
     items.innerHTML = ids.map((id) => {
       const p = PRODUCTS[id]; if (!p) return "";
@@ -297,21 +325,41 @@ document.addEventListener("click", (e) => {
   const add = e.target.closest("[data-add]");
   const inc = e.target.closest("[data-inc]");
   const dec = e.target.closest("[data-dec]");
+  const showall = e.target.closest("[data-showall]");
   if (add) addToCart(add.dataset.add);
   if (inc) setQty(inc.dataset.inc, +1);
   if (dec) setQty(dec.dataset.dec, -1);
+  if (showall) {
+    const id = showall.dataset.showall;
+    document.querySelectorAll(`[data-grid="${id}"] .hidden-extra`).forEach((el) => el.classList.remove("hidden-extra"));
+    showall.closest(".show-all-row").remove();
+  }
 });
 document.getElementById("cartBtn").addEventListener("click", openCart);
 document.getElementById("cartClose").addEventListener("click", closeCart);
 document.getElementById("checkoutBtn").addEventListener("click", checkout);
+document.getElementById("orderBar").addEventListener("click", openCart);
 overlay.addEventListener("click", closeCart);
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeCart(); });
 
 document.getElementById("footerWhatsapp").href = `https://wa.me/${WHATSAPP_NUMBER}`;
+const ctaWa = document.getElementById("ctaWhatsapp");
+if (ctaWa) ctaWa.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi 1acrefarms! Please add me to your harvest updates.")}`;
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// highlight active category chip while scrolling
+const chipObserver = new IntersectionObserver((entries) => {
+  entries.forEach((en) => {
+    if (en.isIntersecting) {
+      document.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c.dataset.chip === en.target.id));
+    }
+  });
+}, { rootMargin: "-20% 0px -70% 0px" });
+
+renderChipNav();
 renderCatalog();
 renderCart();
+document.querySelectorAll(".section[id]").forEach((s) => chipObserver.observe(s));
 
 /* ---------------------------------------------------------
    REAL PHOTOS: add an "img" field to any product, e.g.

@@ -13,20 +13,14 @@
 </head>
 <body>
   <div class="announce">
-    🌿 Chemical-free · from the hills of Andhra Pradesh · gathered by hill farmers &amp; tribal families
+    Chemical-free &middot; from the hills of Andhra Pradesh &middot; farmer &amp; tribal-direct
   </div>
 
   <header class="header" id="top">
     <nav class="nav container">
       <a href="#top" class="brand">
-        <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="24" cy="24" r="20.4" stroke="#45573a" stroke-width="1.7"/>
-          <path d="M19 34 H29" stroke="#45573a" stroke-width="1.7" stroke-linecap="round"/>
-          <path d="M24 34 V19" stroke="#45573a" stroke-width="1.7" stroke-linecap="round"/>
-          <path transform="translate(24 20) rotate(-40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#45573a"/>
-          <path transform="translate(24 18.5) rotate(40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#45573a"/>
-        </svg>
         <span class="brand-name"><span class="one">1</span>acrefarms</span>
+        <span class="brand-est">Andhra Pradesh</span>
       </a>
       <ul class="nav-links">
         <li><a href="#grains">Pantry</a></li>
@@ -36,10 +30,15 @@
         <li><a href="#story">Our Story</a></li>
       </ul>
       <button class="cart-btn" id="cartBtn" aria-label="Open order">
-        🛒 <span class="cart-count" id="cartCount">0</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 7h12l-1.2 12.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8L6 7Z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
       </button>
     </nav>
   </header>
+
+  <nav class="chipnav" aria-label="Categories">
+    <div class="chipnav-inner" id="chipNav"></div>
+  </nav>
 
   <section class="hero">
     <div class="container hero-inner">
@@ -47,46 +46,32 @@
         <p class="eyebrow">From the hills of Andhra Pradesh</p>
         <h1>Let the soil <em>breathe</em> again.</h1>
         <p class="hero-sub">
-          A clean pantry, honest wellness and natural home care — unpolished rice &amp; millets,
-          cold-pressed oils, hand-pounded spices, wild forest honey and more. Grown without chemicals on
-          living soil, and gathered by small hill farmers and tribal forest families across Andhra Pradesh.
+          Unpolished rice &amp; millets, cold-pressed oils, hand-pounded spices and wild forest honey —
+          grown without chemicals and gathered by small hill farmers and tribal families.
         </p>
         <div class="hero-actions">
-          <a href="#grains" class="btn btn-primary">Browse the pantry</a>
+          <a href="#grains" class="btn btn-primary">Shop the pantry</a>
           <a href="#story" class="btn btn-ghost">Our story</a>
         </div>
         <div class="hero-badges">
-          <span>🌱 No chemicals</span>
-          <span>🤝 Farmer &amp; tribal-direct</span>
-          <span>🏡 Pantry · wellness · home</span>
+          <span>FSSAI Registered</span>
+          <span>No Chemicals</span>
+          <span>Made in India</span>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="hero-tile t1">🌾</div>
-        <div class="hero-tile t2">🍯</div>
-        <div class="hero-tile t3">🫗</div>
-        <div class="hero-tile t4">🌶️</div>
+      <div class="hero-photo">
+        <div class="hero-photo-main">
+          <img src="assets/products/spices-1.jpg" alt="Hand-pounded spices from the hills of Andhra Pradesh" width="800" height="880" loading="eager" />
+        </div>
+        <div class="hero-photo-badge">
+          <strong>Farmer &amp; tribal-direct</strong>
+          Short, honest journeys from the hillside to your home.
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="values container">
-    <div class="value">
-      <span class="value-icon">🌿</span>
-      <h3>Chemical-free, always</h3>
-      <p>Nothing sprayed, nothing refined into oblivion. Whole grains, cold-pressed oils and hand-pounded spices — the way food was before the shortcuts.</p>
-    </div>
-    <div class="value">
-      <span class="value-icon">🤝</span>
-      <h3>Straight from the hills</h3>
-      <p>We buy direct from small hill farmers and tribal forest-gatherers in the Andhra highlands — real people, fair prices, and a story you can trace right back to the soil.</p>
-    </div>
-    <div class="value">
-      <span class="value-icon">🏡</span>
-      <h3>Beyond the plate</h3>
-      <p>Natural home care and wellness too — soap nuts, herbal teas, bath powders — because chemical-free shouldn't stop at your kitchen.</p>
-    </div>
-  </section>
+  <main id="catalog"></main>
 
   <section class="sourcing">
     <div class="container sourcing-inner">
@@ -98,17 +83,17 @@
       </p>
       <div class="sourcing-points">
         <div class="src-pt">
-          <span class="src-ic">⛰️</span>
+          <span class="src-ic"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 26 L13 10 L19 19 L23 13 L31 26 Z"/></svg></span>
           <h3>Small hill farmers</h3>
           <p>Growers in the highlands, farming without chemicals the way their families always have.</p>
         </div>
         <div class="src-pt">
-          <span class="src-ic">🌳</span>
+          <span class="src-ic"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 29 V15"/><path d="M17 15 C 9 15 7 8 8 5 C 14 5 17 9 17 15 Z"/><path d="M17 19 C 24 19 26 13 25 10 C 20 10 17 13 17 19 Z"/></svg></span>
           <h3>Tribal forest families</h3>
           <p>Wild forest honey and botanicals, gathered by hand from the forest — never over-harvested.</p>
         </div>
         <div class="src-pt">
-          <span class="src-ic">🌱</span>
+          <span class="src-ic"><svg viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 28 H26"/><path d="M17 28 V14"/><path d="M17 14 C 12 14 10 9 10.5 6.5 C 14.5 6.5 17 9.5 17 14 Z"/><path d="M17 14 C 22 14 24 9 23.5 6.5 C 19.5 6.5 17 9.5 17 14 Z"/></svg></span>
           <h3>Our own acre</h3>
           <p>What we grow ourselves, on living soil we rebuild by hand with our own compost.</p>
         </div>
@@ -116,11 +101,20 @@
     </div>
   </section>
 
-  <main id="catalog"></main>
+  <div class="trust">
+    <div class="trust-inner">
+      <span>FSSAI Reg. 20126161000590</span>
+      <span>GSTIN 37BHKPR3386Q1Z8</span>
+      <span>Made in India</span>
+      <span>Pay on Delivery</span>
+    </div>
+  </div>
 
   <section class="story" id="story">
     <div class="container story-inner">
-      <div class="story-art" aria-hidden="true">🌾</div>
+      <div class="story-art">
+        <img src="assets/products/grains-1.jpg" alt="Unpolished grains from living soil" width="800" height="600" loading="lazy" />
+      </div>
       <div class="story-copy">
         <p class="eyebrow">Our story</p>
         <h2>One acre, and an honest promise.</h2>
@@ -137,7 +131,7 @@
           No chemical sprays. No hidden adulteration. Just real food, natural wellness and honest home care —
           from the soil, to us, to you.
         </p>
-        <a href="#grains" class="btn btn-primary">Start your order</a>
+        <a href="#grains" class="btn btn-green">Start your order</a>
       </div>
     </div>
   </section>
@@ -146,26 +140,14 @@
     <div class="container cta-inner">
       <h2>Get what's fresh &amp; new</h2>
       <p>We message the new harvests and small batches on WhatsApp. No spam — just good, honest food.</p>
-      <form class="cta-form" onsubmit="return false;">
-        <input type="tel" placeholder="Your WhatsApp number" aria-label="WhatsApp number" />
-        <button class="btn btn-primary" type="submit">Notify me</button>
-      </form>
+      <a id="ctaWhatsapp" class="btn btn-green" href="#" target="_blank" rel="noopener">Join us on WhatsApp</a>
     </div>
   </section>
 
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <div class="footer-brand-row">
-          <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="24" cy="24" r="20.4" stroke="#eef0e6" stroke-width="1.7"/>
-            <path d="M19 34 H29" stroke="#e08a47" stroke-width="1.7" stroke-linecap="round"/>
-            <path d="M24 34 V19" stroke="#e08a47" stroke-width="1.7" stroke-linecap="round"/>
-            <path transform="translate(24 20) rotate(-40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#eef0e6"/>
-            <path transform="translate(24 18.5) rotate(40)" d="M0 0 C -3 -3.05 -3 -7.56 0 -10.5 C 3 -7.56 3 -3.05 0 0 Z" fill="#eef0e6"/>
-          </svg>
-          <span class="brand-name"><span class="one">1</span>acrefarms</span>
-        </div>
+        <span class="brand-name"><span class="one">1</span>acrefarms</span>
         <p>Let the soil breathe again. Chemical-free food, wellness &amp; home care — from the hills of Andhra Pradesh.</p>
         <div class="footer-social">
           <a href="https://www.instagram.com/1acrefarms/" aria-label="1acrefarms on Instagram" target="_blank" rel="noopener">
@@ -191,8 +173,15 @@
         <a href="#story">Our story</a>
       </div>
     </div>
-    <p class="footer-base">© <span id="year"></span> 1acrefarms · GSTIN 37BHKPR3386Q1Z8 · FSSAI Reg. 20126161000590 · Made with 🌱</p>
+    <p class="footer-base">© <span id="year"></span> 1acrefarms &middot; GSTIN 37BHKPR3386Q1Z8 &middot; FSSAI Reg. 20126161000590 &middot; Made in India</p>
   </footer>
+
+  <button class="orderbar" id="orderBar" aria-label="Review your order">
+    <span><span class="ob-count" id="obCount">0 items</span> in your order</span>
+    <span class="ob-go">Send on WhatsApp
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+    </span>
+  </button>
 
   <div class="cart-overlay" id="cartOverlay"></div>
   <aside class="cart-drawer" id="cartDrawer" aria-label="Your order">
