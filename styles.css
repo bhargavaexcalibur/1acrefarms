@@ -125,6 +125,17 @@ img { max-width: 100%; display: block; }
 }
 .hero-photo-badge strong { display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: .12em; color: var(--orange); }
 
+/* Hero — fan of our printed packs */
+.hero-packs { position: relative; aspect-ratio: 1 / 0.86; max-width: 520px; width: 100%; justify-self: center; }
+.hero-packs .hp {
+  position: absolute; width: 46%; height: auto; aspect-ratio: 800/1122; object-fit: cover; border-radius: 8px;
+  border: 1px solid rgba(223,174,85,.45); box-shadow: 0 28px 60px rgba(0,0,0,.45);
+}
+.hero-packs .hp-c { left: 27%; top: 0; z-index: 3; }
+.hero-packs .hp-l { left: 3%; top: 6%; transform: rotate(-7deg); z-index: 1; filter: brightness(.82); }
+.hero-packs .hp-r { right: 3%; top: 6%; transform: rotate(7deg); z-index: 2; filter: brightness(.82); }
+.hero-packs .hero-photo-badge { z-index: 4; left: 50%; bottom: 0; transform: translateX(-50%); white-space: nowrap; text-align: center; }
+
 /* Catalog sections */
 .section { padding: 54px 0 0; }
 .section-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 26px; padding-bottom: 16px; border-bottom: 1px solid var(--hairline); }
@@ -150,6 +161,51 @@ img { max-width: 100%; display: block; }
 .card-name { font-size: 1.02rem; font-weight: 500; line-height: 1.25; }
 .card-unit { font-size: 0.7rem; color: var(--ink-faint); margin: 3px 0 10px; text-transform: uppercase; letter-spacing: .08em; }
 .card-foot { margin-top: auto; }
+
+/* Pack cards (our printed range) */
+.grid-packs { align-items: start; }
+.pack-media { aspect-ratio: 800/1122; border-radius: 8px; overflow: hidden; background: var(--green-deep); box-shadow: 0 14px 34px rgba(30,40,22,.16); transition: transform .3s ease; }
+.pack-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pack-card:hover .pack-media { transform: translateY(-3px); }
+.pack-caption b { color: var(--orange); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
+.pack-caption { font-size: 0.66rem; color: var(--ink-faint); text-align: center; margin-top: 7px; letter-spacing: .04em; }
+.pack-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; padding: 18px 14px; text-align: center; color: var(--cream); background: var(--green-deep) radial-gradient(120% 70% at 50% 0%, rgba(223,174,85,.12), transparent 60%); }
+.pt-brand { font-weight: 600; font-size: 0.82rem; letter-spacing: -.01em; opacity: .9; }
+.pt-brand .one { color: var(--orange); }
+.pt-name { font-size: clamp(1.05rem, 2.2vw, 1.35rem); font-weight: 600; line-height: 1.15; border-top: 1.5px solid var(--gold-light); padding-top: 12px; }
+.pt-te { font-family: "Noto Sans Telugu", sans-serif; color: var(--gold-light); font-size: 0.95rem; }
+.pt-origin { font-size: 0.58rem; letter-spacing: .2em; text-transform: uppercase; color: var(--cream-muted); }
+.card-te { font-size: 0.8rem; color: var(--gold); margin-top: 2px; }
+.card-te span { font-family: "Noto Sans Telugu", sans-serif; }
+.card-note { font-size: 0.8rem; color: var(--ink-soft); margin-top: 6px; line-height: 1.4; }
+.card-origin { font-size: 0.62rem; letter-spacing: .14em; text-transform: uppercase; color: var(--green); margin-top: 6px; font-weight: 600; }
+.sizes { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0 10px; }
+.size { font: inherit; font-size: 0.74rem; font-weight: 600; padding: 6px 10px; min-height: 32px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.size:hover { border-color: var(--green); }
+.size.on { background: var(--green-deep); border-color: var(--green-deep); color: var(--cream); }
+.size.solo { cursor: default; }
+.price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.mrp { font-size: 1.2rem; font-weight: 700; color: var(--ink); letter-spacing: -.01em; }
+.mrp small { font-size: 0.62rem; font-weight: 600; color: var(--ink-faint); letter-spacing: .1em; margin-right: 2px; }
+.upp { font-size: 0.72rem; color: var(--ink-soft); }
+.tax { font-size: 0.68rem; color: var(--ink-faint); margin: 3px 0 12px; }
+.avail { font-weight: 600; }
+.avail.live { color: var(--green); }
+.avail.pre { color: var(--orange); }
+.facts { margin-top: 10px; font-size: 0.74rem; color: var(--ink-soft); }
+.facts summary { cursor: pointer; font-weight: 600; color: var(--green); padding: 6px 0; list-style: none; }
+.facts summary::-webkit-details-marker { display: none; }
+.facts summary::after { content: " +"; }
+.facts[open] summary::after { content: " –"; }
+.facts dl { display: grid; gap: 2px; padding: 4px 0 2px; }
+.facts dt { font-size: 0.6rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); margin-top: 6px; font-weight: 600; }
+.facts dd { line-height: 1.45; }
+
+/* Made-to-order divider */
+.more-intro { margin-top: 72px; padding: 48px 0 6px; border-top: 1px solid var(--line); text-align: center; }
+.more-intro h2 { font-size: clamp(1.7rem, 3.6vw, 2.4rem); margin-bottom: 10px; }
+.more-intro p:not(.eyebrow) { color: var(--ink-soft); max-width: 34em; margin: 0 auto; font-size: 0.95rem; }
+.chip-sep { flex: 0 0 1px; background: var(--line); margin: 4px 4px; }
 .add-btn {
   background: none; color: var(--ink); border: 1px solid var(--line); border-radius: 999px;
   padding: 9px 14px; font-weight: 500; font-size: 0.76rem; letter-spacing: .05em; text-transform: uppercase;
@@ -241,6 +297,11 @@ img { max-width: 100%; display: block; }
 .cart-foot { padding: 22px 26px calc(22px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); background: var(--surface); }
 .cart-foot .btn-primary { background: var(--green-deep); }
 .cart-foot .btn-primary:hover { background: var(--green-dark); }
+.cart-total { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; font-size: 0.9rem; color: var(--ink-soft); }
+.cart-total strong { font-size: 1.2rem; color: var(--ink); }
+.cart-line-price { font-weight: 600; font-size: 0.92rem; white-space: nowrap; align-self: flex-start; padding-top: 2px; }
+.cart-line-media.pack { background-color: var(--green-deep); background-position: center 30%; }
+.cart-line-media.pack-mini { background: var(--green-deep); color: var(--gold-light); font-family: "Noto Sans Telugu", sans-serif; font-size: 0.55rem; text-align: center; line-height: 1.2; padding: 4px; }
 .cart-note { text-align: center; font-size: 0.76rem; color: var(--ink-faint); margin-top: 12px; }
 
 /* Sticky mobile order bar */
@@ -256,7 +317,11 @@ img { max-width: 100%; display: block; }
 .orderbar.visible { display: flex; }
 
 /* Responsive */
+.add-btn.ghost { background: transparent; color: var(--green-deep); border-color: var(--line); }
+.add-btn.ghost:hover { background: var(--green-deep); color: #fff; border-color: var(--green-deep); }
+
 @media (max-width: 900px) {
+  .hero-packs { max-width: 400px; }
   .hero { padding: 40px 0 46px; }
   .hero-inner { grid-template-columns: 1fr; gap: 34px; }
   .hero-photo { max-width: 420px; }
@@ -281,6 +346,11 @@ img { max-width: 100%; display: block; }
   .section-head { flex-direction: column; align-items: flex-start; gap: 8px; margin-bottom: 20px; }
   .grid { grid-template-columns: repeat(2, 1fr); gap: 18px 14px; }
   .card-emoji { font-size: 2.6rem; }
+  .hero-packs { max-width: 330px; }
+  .size { padding: 6px 8px; font-size: 0.7rem; }
+  .mrp { font-size: 1.05rem; }
+  .price-row { flex-direction: column; gap: 0; }
+  .more-intro { margin-top: 52px; padding-top: 36px; }
   .sourcing { margin-top: 48px; padding: 48px 0 54px; }
   .story { padding: 52px 0; }
   .cta { padding: 56px 0 96px; }
@@ -288,3 +358,6 @@ img { max-width: 100%; display: block; }
   .footer-inner { grid-template-columns: 1fr; gap: 26px; }
   .trust-inner { gap: 14px 22px; }
 }
+
+.pack-card .add-btn { background: var(--green-deep); color: #fff; border-color: var(--green-deep); }
+.pack-card .add-btn:hover { background: var(--orange); border-color: var(--orange); }

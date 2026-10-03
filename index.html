@@ -7,7 +7,7 @@
   <meta name="description" content="A clean pantry, honest wellness and natural home care — rice &amp; millets, cold-pressed oils, hand-pounded spices, forest honey and more. Chemical-free, sourced direct from small farmers and tribal gatherers in Andhra Pradesh." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Telugu:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
 </head>
@@ -23,9 +23,9 @@
         <span class="brand-est">Andhra Pradesh</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#grains">Pantry</a></li>
-        <li><a href="#spices">Spices</a></li>
-        <li><a href="#oils">Oils</a></li>
+        <li><a href="#spices">Our Packs</a></li>
+        <li><a href="#nuts">Nuts &amp; Seeds</a></li>
+        <li><a href="#pantry">Pantry</a></li>
         <li><a href="#care">Home &amp; Care</a></li>
         <li><a href="#story">Our Story</a></li>
       </ul>
@@ -51,7 +51,7 @@
           and tribal families.
         </p>
         <div class="hero-actions">
-          <a href="#grains" class="btn btn-primary">Shop the pantry</a>
+          <a href="#spices" class="btn btn-primary">Shop our packs</a>
           <a href="#story" class="btn btn-ghost">Our story</a>
         </div>
         <div class="hero-badges">
@@ -60,13 +60,13 @@
           <span>Made in India</span>
         </div>
       </div>
-      <div class="hero-photo">
-        <div class="hero-photo-main">
-          <img src="assets/products/spices-1.jpg" alt="Hand-pounded spices from the hills of Andhra Pradesh" width="800" height="880" loading="eager" />
-        </div>
+      <div class="hero-packs" aria-label="Our new packs">
+        <img class="hp hp-l" src="assets/packs/sannam-540g.jpg" alt="Sannam Chilli Powder 540 g pack" width="800" height="1122" />
+        <img class="hp hp-r" src="assets/packs/palm-jaggery-540g.jpg" alt="Palm Jaggery Powder 540 g pack" width="800" height="1122" />
+        <img class="hp hp-c" src="assets/packs/turmeric-540g.jpg" alt="Turmeric Powder 540 g pack" width="800" height="1122" loading="eager" />
         <div class="hero-photo-badge">
-          <strong>Farmer &amp; tribal-direct</strong>
-          Short, honest journeys from the hillside to your home.
+          <strong>Our new packs</strong>
+          Seven single-origin packs, first batch packing now.
         </div>
       </div>
     </div>
@@ -132,7 +132,7 @@
           No chemical sprays. No hidden adulteration. Just real food, natural wellness and honest home care —
           from the soil, to us, to you.
         </p>
-        <a href="#grains" class="btn btn-green">Start your order</a>
+        <a href="#spices" class="btn btn-green">Start your order</a>
       </div>
     </div>
   </section>
@@ -161,9 +161,10 @@
       </div>
       <div class="footer-col">
         <h4>Shop</h4>
-        <a href="#grains">Grains &amp; Millets</a>
-        <a href="#spices">Spices &amp; Podis</a>
-        <a href="#oils">Cold-Pressed Oils</a>
+        <a href="#spices">Turmeric &amp; Chilli</a>
+        <a href="#jaggery">Jaggery</a>
+        <a href="#nuts">Nuts &amp; Seeds</a>
+        <a href="#pantry">More from the Pantry</a>
         <a href="#care">Natural Home &amp; Care</a>
         <a href="#soil">For Your Soil</a>
       </div>
@@ -192,8 +193,9 @@
     </div>
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-foot">
+      <div class="cart-total" id="cartTotal" hidden></div>
       <button class="btn btn-primary btn-block" id="checkoutBtn">Send order on WhatsApp</button>
-      <p class="cart-note">We'll confirm price, pack sizes &amp; availability in chat. Pay on delivery.</p>
+      <p class="cart-note" id="cartNote">We'll confirm your order and any delivery charge on WhatsApp. Pay on delivery.</p>
     </div>
   </aside>
 
