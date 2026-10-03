@@ -75,6 +75,7 @@ img { max-width: 100%; display: block; }
 .brand-text { display: flex; align-items: baseline; gap: 2px; }
 .brand-name { font-size: 1.34rem; font-weight: 700; letter-spacing: -.035em; }
 .brand-name .one { color: var(--orange); }
+.brand-name .tm { font-size: .44em; font-weight: 600; letter-spacing: 0; vertical-align: super; line-height: 0; margin-left: 1px; opacity: .7; }
 .brand-est { font-size: 0.6rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-faint); margin-left: 10px; }
 .nav-links { display: flex; gap: 30px; list-style: none; }
 .nav-links a { font-size: 0.82rem; font-weight: 500; letter-spacing: .02em; color: var(--ink-soft); transition: color .2s; }
