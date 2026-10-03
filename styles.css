@@ -70,7 +70,9 @@ img { max-width: 100%; display: block; }
 /* Header */
 .header { position: sticky; top: 0; z-index: 50; background: rgba(247,244,236,.88); backdrop-filter: blur(12px); border-bottom: 1px solid var(--hairline); }
 .nav { display: flex; align-items: center; justify-content: space-between; height: 64px; gap: 24px; }
-.brand { display: flex; align-items: baseline; gap: 2px; }
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo-mark { width: 38px; height: 38px; flex: none; color: var(--green); }
+.brand-text { display: flex; align-items: baseline; gap: 2px; }
 .brand-name { font-size: 1.34rem; font-weight: 700; letter-spacing: -.035em; }
 .brand-name .one { color: var(--orange); }
 .brand-est { font-size: 0.6rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-faint); margin-left: 10px; }
@@ -338,6 +340,8 @@ img { max-width: 100%; display: block; }
   .chipnav-inner { padding: 9px 18px; }
   .chipnav { top: 58px; }
   .nav { height: 58px; }
+  .logo-mark { width: 33px; height: 33px; }
+  .brand { gap: 8px; }
   .hero h1 { font-size: 2rem; }
   .hero-sub { font-size: 0.95rem; margin-bottom: 22px; }
   .hero { padding: 34px 0 40px; }
