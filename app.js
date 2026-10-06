@@ -51,9 +51,9 @@ const PACK_SECTIONS = [
   {
     id: "jaggery", eyebrow: "Jaggery", chip: "Jaggery",
     title: "Unrefined jaggery, instead of white sugar",
-    blurb: "Cane jaggery from the Chittoor and Anakapalli cane belts, and palm jaggery from the Godavari delta.",
+    blurb: "Naturally dark cane jaggery, made without hydros or sulphur, and palm jaggery from the Godavari delta.",
     products: [
-      { code: "CBEL", name: "Cane Jaggery Powder", te: "చెరుకు బెల్లం", tr: "Cheruku Bellam", note: "Unrefined · slow-boiled · nothing added",
+      { code: "CBEL", name: "Cane Jaggery Powder", te: "చెరుకు బెల్లం", tr: "Cheruku Bellam", note: "Naturally dark · no hydros · slow-boiled",
         origin: "Chittoor &amp; Anakapalli cane belts", pack: "assets/packs/cane-jaggery-540g.jpg", by: "packed", shelf: 9,
         ingredients: "100% Sugarcane Jaggery. No added sulphur, colour or preservative.",
         skus: [[270, 108], [540, 198, true], [1080, 369]] },
