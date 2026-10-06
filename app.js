@@ -148,7 +148,7 @@ const MORE_SECTIONS = [
     id: "pulses",
     eyebrow: "Pulses & legumes",
     title: "Everyday dals, grown clean",
-    blurb: "The dals and traditional legumes your kitchen runs on — no polish, no chemicals.",
+    blurb: "The dals and traditional legumes your kitchen runs on — unpolished, nothing added.",
     products: [
       { name: "Toor Dal (Kandi Pappu)",   unit: "500 g / 1 kg", emoji: "🟡" },
       { name: "Moong Dal (Pesara Pappu)", unit: "500 g / 1 kg", emoji: "🟢" },
@@ -244,7 +244,7 @@ const MORE_SECTIONS = [
   {
     id: "care",
     eyebrow: "Natural home &amp; care",
-    title: "Chemical-free, beyond the kitchen",
+    title: "Natural care, beyond the kitchen",
     blurb: "The traditional way to wash and bathe — no synthetic foaming agents, just plants.",
     products: [
       { name: "Soap Nuts (Kunkudukayalu)",  unit: "250 g", emoji: "🟤", tag: "Natural detergent" },
