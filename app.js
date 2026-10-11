@@ -29,7 +29,9 @@ const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 // delivered / returned data; then Bhargav's RTO model replaces these lists.
 const PAYMENT = {
   codCap: { home: 999, rest: 599 },        // highest order value (₹) that can be paid on delivery
-  homePrefixes: ["50", "51", "52", "53"],   // Telangana + Andhra Pradesh: our home market, short transit
+  // South India (Bhargav 11-10: more prosperous, lower risk): Telangana + AP (50–53), Karnataka (56–59),
+  // Tamil Nadu + Puducherry (60–64), Kerala (67–69; Lakshadweep 68255x stays UPI-only, checked first).
+  homePrefixes: ["50", "51", "52", "53", "56", "57", "58", "59", "60", "61", "62", "63", "64", "67", "68", "69"],
   // Long-transit areas: J&K + Ladakh (18, 19), Sikkim (737), Andaman & Nicobar (744),
   // North-East (78, 79), Lakshadweep (68255x).
   upiOnlyPrefixes: ["18", "19", "737", "744", "78", "79", "68255"],
