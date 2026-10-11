@@ -4,7 +4,7 @@
             "1acrefarms catalogue 2026-09-23", 49 SKUs). Fixed MRPs.
    MORE_SECTIONS = the wider pantry, made to order: price &
             sizes confirmed on WhatsApp.
-   Checkout = WhatsApp order. Free delivery; pay on delivery or UPI by pincode + order value (PAYMENT below).
+   Checkout = WhatsApp order. Delivery free on 2+ packs, ₹79 on one (DELIVERY); pay on delivery or UPI by pincode + order value (PAYMENT).
    ========================================================= */
 
 const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
@@ -23,7 +23,10 @@ const offerOn = () => /[?&]offerpreview=1/.test(location.search) || (Date.now() 
 const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
 const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 
-// Delivery is free on every order (Bhargav 11-10-2026: the MRP already carries ~₹75 of delivery).
+// Delivery (Bhargav 11-10-2026, after real Shiprocket rates: ~₹147 for one 540 g pouch to Hyderabad,
+// ₹174–213 for two): FREE on 2 or more packs, ₹79 on a single pack. Made-to-order items: on WhatsApp.
+const DELIVERY = { freeFromPacks: 2, singlePackFee: 79 };
+const deliveryFee = (packCount) => (packCount === 0 || packCount >= DELIVERY.freeFromPacks) ? 0 : DELIVERY.singlePackFee;
 // Payment rule (Bhargav 11-10-2026): pay on delivery for small orders, UPI in advance for big ones,
 // by delivery pincode. First version, built on distance + courier cover until we have our own
 // delivered / returned data; then Bhargav's RTO model replaces these lists.
@@ -590,15 +593,17 @@ function renderCart() {
   const tot = document.getElementById("cartTotal");
   if (tot) {
     tot.hidden = !priced;
+    const fee = deliveryFee(priced);
     tot.innerHTML = `<div class="ct-row"><span>Packs (${offerOn() ? "offer prices" : "MRP"}, incl. of all taxes)</span><span>${inr(total)}</span></div>
-      <div class="ct-row"><span>Delivery</span><span class="ct-free">Free</span></div>
-      <div class="ct-row ct-grand"><span>Total to pay${enquiry ? " for packs" : ""}</span><strong>${inr(total)}</strong></div>`;
+      <div class="ct-row"><span>Delivery</span>${fee ? `<span>${inr(fee)}</span>` : `<span class="ct-free">Free</span>`}</div>
+      ${fee ? `<div class="ct-hint">Add one more pack for free delivery</div>` : ""}
+      <div class="ct-row ct-grand"><span>Total to pay${enquiry ? " for packs" : ""}</span><strong>${inr(total + fee)}</strong></div>`;
   }
-  renderPay(total, priced, keys.length);
+  renderPay(total + deliveryFee(priced), priced, keys.length);
   const note = document.getElementById("cartNote");
   if (note) note.textContent = enquiry
-    ? "Free delivery across India. We'll confirm prices for made-to-order items on WhatsApp before you pay."
-    : "Free delivery across India. We confirm every order on WhatsApp before dispatch.";
+    ? "Free delivery on 2 or more packs. We'll confirm prices for made-to-order items on WhatsApp before you pay."
+    : "Free delivery on 2 or more packs (₹79 for a single pack). We confirm every order on WhatsApp before dispatch.";
 }
 
 function renderPay(total, priced, lines) {
@@ -619,19 +624,20 @@ function renderPay(total, priced, lines) {
     return;
   }
   btn.disabled = !lines;
+  const dl = deliveryFee(priced) ? `Delivery to ${pin}: ${inr(deliveryFee(priced))}.` : `Free delivery to ${pin}.`;
   if (!priced) {                        // only made-to-order items: price comes later
-    res.textContent = `Free delivery to ${pin}. We'll confirm the price and payment on WhatsApp.`;
+    res.textContent = `We deliver to ${pin}. We'll confirm the price, delivery and payment on WhatsApp.`;
     res.className = "pin-result ok"; choose.hidden = true; return;
   }
   if (pay.cod) {
-    res.textContent = `Free delivery to ${pin}. Pay on delivery or by UPI.`;
+    res.textContent = `${dl} Pay on delivery or by UPI.`;
     res.className = "pin-result ok";
     choose.hidden = false;
     choose.querySelectorAll("input").forEach((r) => { r.checked = r.value === payChoice; });
   } else {
     res.textContent = pay.why === "area"
-      ? `Free delivery to ${pin}. For this pincode we take payment by UPI before dispatch.`
-      : `Free delivery to ${pin}. Pay on delivery is for orders up to ${inr(pay.cap)} in your area, so this order is paid by UPI before dispatch.`;
+      ? `${dl} For this pincode we take payment by UPI before dispatch.`
+      : `${dl} Pay on delivery is for orders up to ${inr(pay.cap)} in your area, so this order is paid by UPI before dispatch.`;
     res.className = "pin-result upi";
     choose.hidden = true;
   }
@@ -664,8 +670,10 @@ function checkout() {
       lines.push(`• ${q} × ${p.name}${p.unit ? " (" + p.unit + ")" : ""} — price on request`);
     }
   });
-  if (total) lines.push("", `Packs total (${offerOn() ? OFFER.label : "MRP"}): ${inr(total)}`, "Delivery: Free", `Total to pay: ${inr(total)}`);
-  const pay = paymentFor(pin, total);
+  const packs = keys.reduce((n, k) => n + (lineOf(k).sku ? cart[k] : 0), 0);
+  const fee = deliveryFee(packs);
+  if (total) lines.push("", `Packs total (${offerOn() ? OFFER.label : "MRP"}): ${inr(total)}`, `Delivery: ${fee ? inr(fee) : "Free"}`, `Total to pay: ${inr(total + fee)}`);
+  const pay = paymentFor(pin, total + fee);
   lines.push("", `Delivery pincode: ${pin}`);
   if (total && pay) lines.push(`Payment: ${pay.cod ? (payChoice === "cod" ? "Pay on delivery" : "UPI (please send your UPI details)") : "UPI before dispatch (please send your UPI details)"}`);
   lines.push("", enquiry ? "Please confirm prices for the made-to-order items, and availability." : "Please confirm availability.",
