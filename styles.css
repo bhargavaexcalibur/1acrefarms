@@ -381,3 +381,20 @@ img { max-width: 100%; display: block; }
 .nutri tr.sub th[scope="row"] { font-weight: 400; padding-left: 12px; }
 .nutri-note { margin: 4px 0 0; font-size: 0.66rem; line-height: 1.4; color: var(--ink-faint); }
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Cart: totals with free delivery, pincode + payment choice */
+.cart-total { display: block; }
+.cart-total .ct-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 2px 0; }
+.cart-total .ct-free { color: var(--green); font-weight: 600; }
+.cart-total .ct-grand { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 8px; color: var(--ink); }
+.cart-pin { margin: 0 0 14px; font-size: 0.82rem; }
+.cart-pin label[for="pinInput"] { display: block; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+.cart-pin input[type="text"] { width: 100%; font: inherit; font-size: 1rem; letter-spacing: .12em; padding: 10px 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); color: var(--ink); }
+.cart-pin input[type="text"]:focus { outline: 2px solid var(--green); outline-offset: 1px; }
+.pin-result { margin: 8px 0 0; color: var(--ink-soft); line-height: 1.45; }
+.pin-result.ok { color: var(--green); }
+.pin-result.upi { color: var(--ink); }
+.pay-choice { border: 0; padding: 0; margin: 10px 0 0; display: flex; flex-wrap: wrap; gap: 8px 18px; }
+.pay-choice legend { width: 100%; font-weight: 600; color: var(--ink); margin-bottom: 4px; padding: 0; }
+.pay-choice label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--ink); }
+.pin-help { display: inline-block; margin-top: 8px; color: var(--green); font-size: 0.76rem; }

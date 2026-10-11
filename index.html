@@ -113,6 +113,7 @@
           <span>FSSAI Registered</span>
           <span>Village Desi</span>
           <span>Made in India</span>
+          <span>Free delivery</span>
         </div>
       </div>
       <div class="hero-packs" aria-label="Our new packs">
@@ -162,7 +163,8 @@
       <span>FSSAI Reg. 20126161000590</span>
       <span>GSTIN 37BHKPR3386Q1Z8</span>
       <span>Made in India</span>
-      <span>Pay on Delivery</span>
+      <span>Free delivery</span>
+      <span>UPI or pay on delivery</span>
     </div>
   </div>
 
@@ -257,8 +259,19 @@
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-foot">
       <div class="cart-total" id="cartTotal" hidden></div>
+      <div class="cart-pin" id="cartPin" hidden>
+        <label for="pinInput">Delivery pincode</label>
+        <input id="pinInput" type="text" inputmode="numeric" maxlength="6" autocomplete="postal-code" placeholder="6-digit pincode" />
+        <p class="pin-result" id="pinResult" aria-live="polite"></p>
+        <fieldset class="pay-choice" id="payChoice" hidden>
+          <legend>How would you like to pay?</legend>
+          <label><input type="radio" name="pay" value="upi" checked /> UPI</label>
+          <label><input type="radio" name="pay" value="cod" /> Pay on delivery</label>
+        </fieldset>
+        <a class="pin-help" href="policies.html#payment">How payment and delivery work</a>
+      </div>
       <button class="btn btn-primary btn-block" id="checkoutBtn">Send order on WhatsApp</button>
-      <p class="cart-note" id="cartNote">We'll confirm your order and any delivery charge on WhatsApp. Pay on delivery.</p>
+      <p class="cart-note" id="cartNote">Free delivery across India. We confirm every order on WhatsApp before dispatch.</p>
     </div>
   </aside>
 

@@ -4,7 +4,7 @@
             "1acrefarms catalogue 2026-09-23", 49 SKUs). Fixed MRPs.
    MORE_SECTIONS = the wider pantry, made to order: price &
             sizes confirmed on WhatsApp.
-   Checkout = WhatsApp order, pay on delivery.
+   Checkout = WhatsApp order. Free delivery; pay on delivery or UPI by pincode + order value (PAYMENT below).
    ========================================================= */
 
 const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
@@ -21,6 +21,29 @@ const OFFER = {
 const offerOn = () => /[?&]offerpreview=1/.test(location.search) || (Date.now() >= OFFER.start && Date.now() < OFFER.end);
 const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
 const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
+
+// Delivery is free on every order (Bhargav 11-10-2026: the MRP already carries ~₹75 of delivery).
+// Payment rule (Bhargav 11-10-2026): pay on delivery for small orders, UPI in advance for big ones,
+// by delivery pincode. First version, built on distance + courier cover until we have our own
+// delivered / returned data; then Bhargav's RTO model replaces these lists.
+const PAYMENT = {
+  codCap: { home: 999, rest: 599 },        // highest order value (₹) that can be paid on delivery
+  homePrefixes: ["50", "51", "52", "53"],   // Telangana + Andhra Pradesh: our home market, short transit
+  // Long-transit areas: J&K + Ladakh (18, 19), Sikkim (737), Andaman & Nicobar (744),
+  // North-East (78, 79), Lakshadweep (68255x).
+  upiOnlyPrefixes: ["18", "19", "737", "744", "78", "79", "68255"],
+  upiOnlyPincodes: [],                       // pincodes with no pay-on-delivery courier (fill from Shiprocket)
+};
+function paymentFor(pin, total) {
+  if (!/^[1-9][0-9]{5}$/.test(pin)) return null;
+  const starts = (list) => list.some((x) => pin.startsWith(x));
+  if (PAYMENT.upiOnlyPincodes.includes(pin) || starts(PAYMENT.upiOnlyPrefixes)) return { cod: false, why: "area" };
+  const cap = starts(PAYMENT.homePrefixes) ? PAYMENT.codCap.home : PAYMENT.codCap.rest;
+  return total <= cap ? { cod: true, cap } : { cod: false, why: "value", cap };
+}
+let pin = "";
+try { pin = localStorage.getItem("oneacre_pin") || ""; } catch (e) {}
+let payChoice = "upi";
 
 // soft "kraft" tile colours, cycled across products
 const MEDIA = ["#e9e2d2","#e7efd9","#f6e3cf","#fdf3da","#f3ddd6","#eef2e6","#f1e8d6","#f6e7cf"];
@@ -564,13 +587,51 @@ function renderCart() {
   const tot = document.getElementById("cartTotal");
   if (tot) {
     tot.hidden = !priced;
-    tot.innerHTML = `<span>Packs total (${offerOn() ? "offer prices, incl. of all taxes" : "MRP"})</span><strong>${inr(total)}</strong>`;
+    tot.innerHTML = `<div class="ct-row"><span>Packs (${offerOn() ? "offer prices" : "MRP"}, incl. of all taxes)</span><span>${inr(total)}</span></div>
+      <div class="ct-row"><span>Delivery</span><span class="ct-free">Free</span></div>
+      <div class="ct-row ct-grand"><span>Total to pay${enquiry ? " for packs" : ""}</span><strong>${inr(total)}</strong></div>`;
   }
+  renderPay(total, priced, keys.length);
   const note = document.getElementById("cartNote");
   if (note) note.textContent = enquiry
-    ? "We'll confirm prices for made-to-order items, and any delivery charge, on WhatsApp. Pay on delivery."
-    : "We'll confirm your order and any delivery charge on WhatsApp. Pay on delivery.";
-  document.getElementById("checkoutBtn").disabled = !keys.length;
+    ? "Free delivery across India. We'll confirm prices for made-to-order items on WhatsApp before you pay."
+    : "Free delivery across India. We confirm every order on WhatsApp before dispatch.";
+}
+
+function renderPay(total, priced, lines) {
+  const box = document.getElementById("cartPin");
+  const res = document.getElementById("pinResult");
+  const btn = document.getElementById("checkoutBtn");
+  if (!box) { btn.disabled = !lines; return; }
+  box.hidden = !lines;
+  const input = document.getElementById("pinInput");
+  if (input && input.value !== pin) input.value = pin;
+  const pay = paymentFor(pin, total);
+  const choose = document.getElementById("payChoice");
+  if (!pay) {
+    res.textContent = pin.length ? "Please enter a valid 6-digit pincode." : "Enter your pincode to see payment options.";
+    res.className = "pin-result";
+    choose.hidden = true;
+    btn.disabled = true;
+    return;
+  }
+  btn.disabled = !lines;
+  if (!priced) {                        // only made-to-order items: price comes later
+    res.textContent = `Free delivery to ${pin}. We'll confirm the price and payment on WhatsApp.`;
+    res.className = "pin-result ok"; choose.hidden = true; return;
+  }
+  if (pay.cod) {
+    res.textContent = `Free delivery to ${pin}. Pay on delivery or by UPI.`;
+    res.className = "pin-result ok";
+    choose.hidden = false;
+    choose.querySelectorAll("input").forEach((r) => { r.checked = r.value === payChoice; });
+  } else {
+    res.textContent = pay.why === "area"
+      ? `Free delivery to ${pin}. For this pincode we take payment by UPI before dispatch.`
+      : `Free delivery to ${pin}. Pay on delivery is for orders up to ${inr(pay.cap)} in your area, so this order is paid by UPI before dispatch.`;
+    res.className = "pin-result upi";
+    choose.hidden = true;
+  }
 }
 
 function bump() {
@@ -600,8 +661,11 @@ function checkout() {
       lines.push(`• ${q} × ${p.name}${p.unit ? " (" + p.unit + ")" : ""} — price on request`);
     }
   });
-  if (total) lines.push("", `Packs total (${offerOn() ? OFFER.label : "MRP"}): ${inr(total)}`);
-  lines.push("", enquiry ? "Please confirm prices for the made-to-order items, availability and delivery." : "Please confirm availability and delivery.",
+  if (total) lines.push("", `Packs total (${offerOn() ? OFFER.label : "MRP"}): ${inr(total)}`, "Delivery: Free", `Total to pay: ${inr(total)}`);
+  const pay = paymentFor(pin, total);
+  lines.push("", `Delivery pincode: ${pin}`);
+  if (total && pay) lines.push(`Payment: ${pay.cod ? (payChoice === "cod" ? "Pay on delivery" : "UPI (please send your UPI details)") : "UPI before dispatch (please send your UPI details)"}`);
+  lines.push("", enquiry ? "Please confirm prices for the made-to-order items, and availability." : "Please confirm availability.",
              "", "Name:", "Address:", "Notes:");
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
 }
@@ -626,6 +690,15 @@ document.addEventListener("click", (e) => {
     showall.closest(".show-all-row").remove();
   }
 });
+const pinInput = document.getElementById("pinInput");
+if (pinInput) pinInput.addEventListener("input", () => {
+  pin = pinInput.value.replace(/[^0-9]/g, "").slice(0, 6);
+  if (pinInput.value !== pin) pinInput.value = pin;
+  try { localStorage.setItem("oneacre_pin", pin); } catch (e) {}
+  renderCart();
+});
+const payBox = document.getElementById("payChoice");
+if (payBox) payBox.addEventListener("change", (e) => { if (e.target.name === "pay") payChoice = e.target.value; });
 document.getElementById("cartBtn").addEventListener("click", openCart);
 document.getElementById("cartClose").addEventListener("click", closeCart);
 document.getElementById("checkoutBtn").addEventListener("click", checkout);
