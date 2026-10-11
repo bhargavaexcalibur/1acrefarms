@@ -16,7 +16,8 @@ const OFFER = {
   start: Date.parse("2026-10-20T00:00:00+05:30"),
   end: Date.parse("2026-10-27T00:00:00+05:30"),
   label: "Vijayadashami offer · 20–26 Oct",
-  prices: { "TURM@540": 324, "KPAS@540": 405, "CBEL@540": 189, "TBEL@540": 405 },
+  // Cheruku is NOT in the offer: Bhargav's 09-10 rule, ₹234 is its floor (discount only inside bundles).
+  prices: { "TURM@540": 324, "KPAS@540": 405, "TBEL@540": 405 },
 };
 const offerOn = () => /[?&]offerpreview=1/.test(location.search) || (Date.now() >= OFFER.start && Date.now() < OFFER.end);
 const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
