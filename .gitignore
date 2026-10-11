@@ -2,3 +2,4 @@ print/
 docs/
 .claude/
 assets/1acrefarms-logo-*.png
+.venv/
