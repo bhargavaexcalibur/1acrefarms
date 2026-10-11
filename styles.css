@@ -264,7 +264,7 @@ img { max-width: 100%; display: block; }
 
 /* Footer */
 .footer { background: var(--green-deep); color: #c9cfba; padding: 60px 0 28px; }
-.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
+.footer-inner { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; }
 .footer-brand .brand-name { color: #fff; font-size: 1.3rem; font-weight: 700; letter-spacing: -.035em; }
 .footer-brand .brand-name .one { color: var(--orange); }
 .footer-brand p { margin-top: 14px; font-size: 0.9rem; color: #9aa589; max-width: 26em; line-height: 1.7; }
