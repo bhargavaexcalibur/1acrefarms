@@ -4,7 +4,7 @@
             "1acrefarms catalogue 2026-09-23", 49 SKUs). Fixed MRPs.
    MORE_SECTIONS = the wider pantry, made to order: price &
             sizes confirmed on WhatsApp.
-   Checkout = WhatsApp order. Delivery free on 2+ packs, ₹79 on one (DELIVERY); pay on delivery or UPI by pincode + order value (PAYMENT).
+   Checkout = WhatsApp order. Delivery free on 2+ packs, ₹81 on one (DELIVERY); pay on delivery or UPI by pincode + order value (PAYMENT).
    ========================================================= */
 
 const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
@@ -24,7 +24,7 @@ const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`])
 const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 
 // Delivery (Bhargav 11-10-2026, after real Shiprocket rates: ~₹147 for one 540 g pouch to Hyderabad,
-// ₹174–213 for two): FREE on 2 or more packs, ₹79 on a single pack. Made-to-order items: on WhatsApp.
+// ₹174–213 for two): FREE on 2 or more packs, ₹81 on a single pack (rule of 9). Made-to-order items: on WhatsApp.
 const DELIVERY = { freeFromPacks: 2, singlePackFee: 81 };  // ₹81 keeps every single-pack total on the rule of 9 (234→315, 396→477, 495→576, 324→405, 405→486)
 const deliveryFee = (packCount) => (packCount === 0 || packCount >= DELIVERY.freeFromPacks) ? 0 : DELIVERY.singlePackFee;
 // Payment rule (Bhargav 11-10-2026): pay on delivery for small orders, UPI in advance for big ones,
