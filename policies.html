@@ -3,9 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Policies — 1acrefarms: seller details, grievance officer, shipping, returns, privacy, terms</title>
+  <title>Policies — 1acrefarms</title>
   <meta name="description" content="1acrefarms seller details and grievance officer, shipping and delivery, cancellation, returns and refunds, privacy and terms of sale." />
   <link rel="canonical" href="https://1acrefarms.co.in/policies.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="1acrefarms" />
+  <meta property="og:title" content="Policies — 1acrefarms" />
+  <meta property="og:description" content="Seller details, grievance officer, shipping, returns, payment, privacy and terms of sale." />
+  <meta property="og:url" content="https://1acrefarms.co.in/policies.html" />
+  <meta property="og:image" content="https://1acrefarms.co.in/assets/og-image.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -23,19 +29,22 @@
     .policy ul { padding-left: 20px; }
     .policy table { width: 100%; border-collapse: collapse; margin: 8px 0 4px; font-size: .95rem; }
     .policy td { border: 1px solid #dcdfd2; padding: 8px 10px; vertical-align: top; }
-    .policy td:first-child { width: 34%; font-weight: 600; background: #f3f5ee; }
+    .policy th { width: 34%; text-align: left; font-weight: 600; background: #f3f5ee; border: 1px solid #dcdfd2; padding: 8px 10px; vertical-align: top; }
     .policy .back { display: inline-block; margin-bottom: 18px; color: var(--green, #45573a); font-weight: 600; text-decoration: none; }
     .policy .brandline { margin: 0 0 22px; line-height: 1.2; }
     .policy .brandline .brand-name { display: block; color: var(--green-deep); }
     .policy .brandline .motto { display: block; margin-top: 4px; font-size: .95rem; font-weight: 600; color: var(--green); }
     .policy td { overflow-wrap: anywhere; }
     @media (max-width: 600px) {
-      .policy table, .policy tbody, .policy tr, .policy td { display: block; width: 100%; }
+      .policy table, .policy tbody, .policy tr, .policy th, .policy td { display: block; width: 100%; }
       .policy tr { border: 1px solid #dcdfd2; border-bottom: 0; }
       .policy tr:last-child { border-bottom: 1px solid #dcdfd2; }
-      .policy td { border: 0; }
-      .policy td:first-child { width: 100%; padding-bottom: 4px; }
+      .policy th, .policy td { border: 0; }
+      .policy th { padding-bottom: 4px; }
     }
+    .policy h3 { font-size: 1.02rem; margin: 18px 0 6px; color: var(--green-deep); }
+    .policy-foot { border-top: 1px solid #dcdfd2; margin-top: 40px; padding-top: 18px; font-size: .88rem; color: var(--ink-soft); }
+    .policy-foot a { color: var(--green); }
   </style>
 </head>
 <body>
@@ -58,14 +67,15 @@
     <section id="seller">
       <h2>Seller details and grievance officer</h2>
       <table>
-        <tr><td>Legal name</td><td>Bhargava Reddy Medikonda, sole proprietor, trading as <b>1acrefarms</b></td></tr>
-        <tr><td>Address</td><td>Flat No. 202, Prudhvi Exotica, D.No. 13-1-375/7/A, Srinivasa Nagar 1st Line, Narasaraopet, Palnadu District, Andhra Pradesh 522601, India</td></tr>
-        <tr><td>Customer care</td><td>WhatsApp / phone: <a href="https://wa.me/917899929779">+91 78999 29779</a><br>Email: <a href="mailto:1acrefarmsindia@gmail.com">1acrefarmsindia@gmail.com</a><br>Every day, 9 am – 8 pm</td></tr>
-        <tr><td>GSTIN</td><td>37BHKPR3386Q1Z8</td></tr>
-        <tr><td>FSSAI</td><td>Registration No. 20126161000590</td></tr>
-        <tr><td>Grievance officer</td><td>Bhargava Reddy Medikonda, Proprietor<br>Email: <a href="mailto:1acrefarmsindia@gmail.com">1acrefarmsindia@gmail.com</a> · Phone: +91 78999 29779<br>Address as above</td></tr>
+        <tr><th scope="row">Legal name</th><td>Bhargava Reddy Medikonda, sole proprietor, trading as <b>1acrefarms</b></td></tr>
+        <tr><th scope="row">Address</th><td>Flat No. 202, Prudhvi Exotica, D.No. 13-1-375/7/A, Srinivasa Nagar 1st Line, Narasaraopet, Palnadu District, Andhra Pradesh 522601, India</td></tr>
+        <tr><th scope="row">Customer care</th><td>WhatsApp / phone: <a href="https://wa.me/917899929779">+91 78999 29779</a><br>Email: <a href="mailto:1acrefarmsindia@gmail.com">1acrefarmsindia@gmail.com</a></td></tr>
+        <tr><th scope="row">GSTIN</th><td>37BHKPR3386Q1Z8</td></tr>
+        <tr><th scope="row">FSSAI</th><td>Registration No. 20126161000590</td></tr>
+        <tr><th scope="row">Grievance officer</th><td>Bhargava Reddy Medikonda, Proprietor (also our nodal contact person, resident in India)<br>Email: <a href="mailto:1acrefarmsindia@gmail.com">1acrefarmsindia@gmail.com</a> · Phone: +91 78999 29779<br>Address as above</td></tr>
       </table>
       <p>If you have a complaint about an order, a product or this website, write to the grievance officer. We acknowledge every complaint within <b>48 hours</b> and resolve it within <b>one month</b> of receiving it, as required by the Consumer Protection (E-Commerce) Rules, 2020. Please include your name, phone number, order details and photos where relevant.</p>
+      <p>When we acknowledge your complaint we give it a <b>complaint number</b> (for example 1AF-C-0001). Quote it on WhatsApp or email at any time to check its status.</p>
     </section>
 
     <section id="shipping">
@@ -75,7 +85,8 @@
         <li>Orders are packed and dispatched within <b>2 working days</b> of confirmation. Delivery usually takes 2–7 days after dispatch, depending on your location.</li>
         <li>Any delivery charge is shown or confirmed on WhatsApp <b>before</b> you pay. There are no hidden charges.</li>
         <li>We share the courier name and tracking details on WhatsApp once your order is dispatched.</li>
-        <li>If a delivery is delayed beyond the estimate, message us and we will follow up with the courier.</li>
+        <li>Made-to-order items (the wider pantry, home care and soil care) are dispatched on the date we give you on WhatsApp when you order.</li>
+        <li>If your order is delayed, message us and we will follow up with the courier. If it arrives later than the delivery date we gave you, you can refuse it or ask for a full refund (unless the delay was caused by events beyond anyone's control, such as floods or strikes).</li>
         <li>Orders placed through Amazon, Meesho or other marketplaces follow that marketplace's delivery terms.</li>
       </ul>
     </section>
@@ -83,21 +94,23 @@
     <section id="cancellation">
       <h2>Cancellation</h2>
       <ul>
-        <li>You can cancel any time <b>before dispatch</b> by messaging us on WhatsApp. If you have already paid, we refund the full amount.</li>
+        <li>You can cancel any time <b>before dispatch</b> by messaging us on WhatsApp. If you have already paid, we refund the full amount. We never charge a cancellation fee.</li>
         <li>After dispatch, an order cannot be cancelled. If something is wrong when it arrives, see Returns and refunds below.</li>
       </ul>
     </section>
 
     <section id="returns">
       <h2>Returns and refunds</h2>
-      <p>Our products are food, so for hygiene and safety we cannot take back a pack that has been delivered in good condition and opened. We will make it right when:</p>
-      <ul>
-        <li>the pack arrives <b>damaged, torn or leaking</b>;</li>
-        <li>you receive the <b>wrong product</b> or quantity, or an item is <b>missing</b>;</li>
-        <li>the pack is <b>past its best-before date</b> on delivery.</li>
-      </ul>
-      <p><b>How to claim:</b> message us on WhatsApp (+91 78999 29779) within <b>48 hours of delivery</b>, with your order details and clear photos of the pack and the outer packaging. An unboxing video helps us settle claims faster. We will offer a free replacement or a full refund, as you prefer.</p>
-      <p><b>Refunds</b> are made to the original payment method, or by bank transfer or UPI for cash-on-delivery orders, within <b>7 working days</b> of approval.</p>
+      <p>Our products are food, so for hygiene and safety we cannot take back a pack that was delivered in good condition and has been opened, just because you changed your mind. In every case below, we offer a <b>free replacement or a full refund</b>, as you prefer.</p>
+      <h3>Problems on arrival</h3>
+      <p>The pack is <b>damaged, torn or leaking</b>, you received the <b>wrong product</b> or quantity, or an item is <b>missing</b>. Message us on WhatsApp (+91 78999 29779) within <b>48 hours of delivery</b>, with your order details and photos of the pack and the outer packaging. An unboxing video helps us settle it faster.</p>
+      <h3>Quality problems</h3>
+      <p>The product is <b>not as described</b> or has a quality problem you find on opening (for example insects, mould, foreign matter or an off smell), or it is <b>past its best-before date</b> on delivery. Tell us any time <b>before the best-before date</b>, with photos of the product and of the batch number printed on the pack.</p>
+      <h3>Late delivery</h3>
+      <p>If your order arrives later than the delivery date we gave you, you can refuse it or ask for a full refund, as explained under Shipping and delivery.</p>
+      <h3>Return shipping and refunds</h3>
+      <p><b>You never pay for return shipping.</b> Usually we do not need the pack back. If we do, we arrange the pickup at our cost.</p>
+      <p><b>Refunds</b> are made to the original payment method, or by bank transfer or UPI for pay-on-delivery orders, within <b>7 working days</b> of approval.</p>
       <p>Orders placed through Amazon, Meesho or other marketplaces follow that marketplace's return and refund policy.</p>
     </section>
 
@@ -105,33 +118,43 @@
       <h2>Payment</h2>
       <ul>
         <li>All prices are in Indian Rupees and <b>include GST</b>. The MRP is printed on every pack. We never charge above MRP.</li>
-        <li>We accept payment by UPI or bank transfer to our business account, and cash on delivery where our courier offers it. The options available for your order are confirmed on WhatsApp before dispatch.</li>
+        <li><b>How you can pay:</b> pay on delivery, or pay in advance by UPI or bank transfer to our business account. We confirm the options for your pincode on WhatsApp before dispatch.</li>
+        <li><b>Fees:</b> there is no extra fee for UPI or bank transfer. Any charge for your order, such as delivery, is told to you before you confirm it.</li>
+        <li><b>Security:</b> UPI and bank payments are made inside your own bank or UPI app, so we never see your PIN, password or card details. We will never ask for a card number, PIN or OTP over WhatsApp or phone.</li>
+        <li><b>No automatic payments:</b> we do not take subscriptions or repeat payments, so there is nothing to cancel.</li>
+        <li><b>If a payment goes wrong:</b> contact us first and we will sort it out. You can also raise a dispute in your UPI app or with your bank. For pay-on-delivery orders, the courier delivering your order collects the payment on our behalf.</li>
         <li>We send a GST tax invoice with every order.</li>
-        <li>We never ask for card numbers, PINs or OTPs over WhatsApp or phone.</li>
       </ul>
     </section>
 
     <section id="privacy">
       <h2>Privacy</h2>
-      <p><b>What we collect:</b> when you order, we collect your name, phone number, delivery address, order details and the messages you send us. We need these to deliver your order and issue your invoice.</p>
-      <p><b>How we use it:</b> only to process, deliver and support your order, to send the invoice, and to share order updates. We may send occasional updates about new products on WhatsApp; reply STOP any time and we will stop.</p>
-      <p><b>Who we share it with:</b> only with the courier delivering your order, payment providers handling your payment, and government authorities when the law requires (for example, for GST records). We do not sell or rent your data.</p>
+      <p><b>What we collect:</b> when you order or message us, we collect your name, phone number, delivery address, order details and the messages you send. If we refund you by bank transfer or UPI, we also ask for those details.</p>
+      <p><b>Why:</b> only to confirm, pack, deliver and support your order, to issue your GST invoice, and to process refunds. With your consent, we may also send occasional WhatsApp updates about new products; reply STOP at any time and we will stop.</p>
+      <p><b>Who we share it with:</b> the courier delivering your order; the banks and payment providers handling your payment; the service providers we use to run our business, such as WhatsApp (Meta) for order chats and Google for email and our order records; and government authorities when the law requires it, for example for GST. We do not sell or rent your data.</p>
+      <p><b>Marketplace orders:</b> for orders on Amazon, Meesho and other marketplaces, the marketplace collects your data under its own privacy policy and shares with us only what is needed to deliver your order.</p>
       <p><b>On this website:</b> we do not use advertising or tracking cookies. Your shopping cart is saved only in your own browser.</p>
-      <p><b>How long we keep it:</b> order and invoice records are kept for as long as tax law requires; other personal data is deleted when no longer needed.</p>
-      <p><b>Your rights:</b> under the Digital Personal Data Protection Act, 2023, you can ask to see, correct or delete your personal data, or withdraw consent for updates, by writing to the grievance officer above.</p>
+      <p><b>How we protect it:</b> your data is kept only in our own password-protected business accounts, and only the proprietor handles it.</p>
+      <p><b>How long we keep it:</b> order and invoice records are kept for as long as GST law requires (currently 72 months after the due date of the annual return). Other personal data is deleted once it is no longer needed.</p>
+      <p><b>Your rights:</b> under the Digital Personal Data Protection Act, 2023, you can ask what data we hold about you, and ask us to correct or delete it, or withdraw your consent to updates, by writing to the grievance officer above. We reply within one month. If you are not satisfied with our reply, you can complain to the Data Protection Board of India.</p>
     </section>
 
     <section id="terms">
       <h2>Terms of sale</h2>
       <ul>
-        <li>1acrefarms sells packed food products: turmeric powder, hill turmeric powder, cane jaggery powder, palm jaggery and others as listed. Product names, net quantity, ingredients, best-before date and FSSAI details are printed on each pack.</li>
-        <li>Product photos show the actual pack. Colour and texture can vary naturally from batch to batch.</li>
+        <li>1acrefarms sells its own packed foods (spices, jaggery, nuts, seeds, millets and pulses) and made-to-order village products (pantry, home care and soil care), as listed on this website. Our own packs carry the product name, net quantity, ingredients, MRP, best-before date and FSSAI details; the same details are shown under "Product details" on each product. For made-to-order items, the price, size and pack details are confirmed on WhatsApp before you pay.</li>
+        <li>Pictures are for illustration. Colour and texture can vary from batch to batch. The details printed on the pack you receive apply.</li>
         <li>Offers are valid only for the dates and channels stated with the offer, while stock lasts.</li>
         <li>An order is confirmed only after we confirm it on WhatsApp. We may decline or cancel an order if a product is out of stock or a price was shown in error; any payment made is refunded in full.</li>
-        <li>Store packs in a cool, dry place away from sunlight, and close the zip after use.</li>
+        <li>Bulk and trade orders follow the terms in our written quotation.</li>
+        <li>You must be 18 or older to place an order.</li>
+        <li>Store packs cool and dry, and reseal after use.</li>
         <li>These terms are governed by the laws of India. Courts at Narasaraopet, Andhra Pradesh, have jurisdiction, without affecting your rights under the Consumer Protection Act, 2019.</li>
       </ul>
     </section>
+    <footer class="policy-foot">
+      <p>1acrefarms · GSTIN 37BHKPR3386Q1Z8 · FSSAI Reg. 20126161000590 · <a href="/">1acrefarms.co.in</a> · <a href="#seller">Grievance officer</a></p>
+    </footer>
   </main>
 </body>
 </html>

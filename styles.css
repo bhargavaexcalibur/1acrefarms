@@ -369,3 +369,15 @@ img { max-width: 100%; display: block; }
 
 .pack-card .add-btn { background: var(--green-deep); color: #fff; border-color: var(--green-deep); }
 .pack-card .add-btn:hover { background: var(--orange); border-color: var(--orange); }
+
+/* Nutrition table in Product details: mirrors the pack's back panel */
+.nutri { margin-top: 10px; }
+.nutri-title { font-size: 0.6rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); font-weight: 600; margin: 6px 0 2px; }
+.nutri-serve { margin: 0 0 4px; line-height: 1.4; }
+.nutri table { width: 100%; border-collapse: collapse; font-size: 0.72rem; font-variant-numeric: tabular-nums; }
+.nutri th, .nutri td { border-bottom: 1px solid var(--hairline); padding: 3px 4px; text-align: right; white-space: nowrap; }
+.nutri th[scope="row"] { text-align: left; font-weight: 600; color: var(--ink); white-space: normal; }
+.nutri thead th { font-weight: 600; color: var(--ink-soft); border-bottom: 1px solid var(--line); }
+.nutri tr.sub th[scope="row"] { font-weight: 400; padding-left: 12px; }
+.nutri-note { margin: 4px 0 0; font-size: 0.66rem; line-height: 1.4; color: var(--ink-faint); }
+.vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
