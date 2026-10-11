@@ -25,13 +25,23 @@
     .policy td { border: 1px solid #dcdfd2; padding: 8px 10px; vertical-align: top; }
     .policy td:first-child { width: 34%; font-weight: 600; background: #f3f5ee; }
     .policy .back { display: inline-block; margin-bottom: 18px; color: var(--green, #45573a); font-weight: 600; text-decoration: none; }
-    .policy .brandline { font-weight: 700; color: var(--green-deep, #2b3d25); }
+    .policy .brandline { margin: 0 0 22px; line-height: 1.2; }
+    .policy .brandline .brand-name { display: block; color: var(--green-deep); }
+    .policy .brandline .motto { display: block; margin-top: 4px; font-size: .95rem; font-weight: 600; color: var(--green); }
+    .policy td { overflow-wrap: anywhere; }
+    @media (max-width: 600px) {
+      .policy table, .policy tbody, .policy tr, .policy td { display: block; width: 100%; }
+      .policy tr { border: 1px solid #dcdfd2; border-bottom: 0; }
+      .policy tr:last-child { border-bottom: 1px solid #dcdfd2; }
+      .policy td { border: 0; }
+      .policy td:first-child { width: 100%; padding-bottom: 4px; }
+    }
   </style>
 </head>
 <body>
   <main class="policy">
     <a class="back" href="/">← Back to the shop</a>
-    <p class="brandline"><span class="brand-name"><span class="one">1</span>acrefarms<span class="tm">™</span></span> · Let the soil breathe again.</p>
+    <p class="brandline"><span class="brand-name"><span class="one">1</span>acrefarms<span class="tm">™</span></span><span class="motto">Let the soil breathe again.</span></p>
     <h1>Policies</h1>
     <p class="updated">Last updated: 11 October 2026</p>
 
