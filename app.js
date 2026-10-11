@@ -25,7 +25,7 @@ const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 
 // Delivery (Bhargav 11-10-2026, after real Shiprocket rates: ~₹147 for one 540 g pouch to Hyderabad,
 // ₹174–213 for two): FREE on 2 or more packs, ₹79 on a single pack. Made-to-order items: on WhatsApp.
-const DELIVERY = { freeFromPacks: 2, singlePackFee: 79 };
+const DELIVERY = { freeFromPacks: 2, singlePackFee: 81 };  // ₹81 keeps every single-pack total on the rule of 9 (234→315, 396→477, 495→576, 324→405, 405→486)
 const deliveryFee = (packCount) => (packCount === 0 || packCount >= DELIVERY.freeFromPacks) ? 0 : DELIVERY.singlePackFee;
 // Payment rule (Bhargav 11-10-2026): pay on delivery for small orders, UPI in advance for big ones,
 // by delivery pincode. First version, built on distance + courier cover until we have our own
@@ -603,7 +603,7 @@ function renderCart() {
   const note = document.getElementById("cartNote");
   if (note) note.textContent = enquiry
     ? "Free delivery on 2 or more packs. We'll confirm prices for made-to-order items on WhatsApp before you pay."
-    : "Free delivery on 2 or more packs (₹79 for a single pack). We confirm every order on WhatsApp before dispatch.";
+    : "Free delivery on 2 or more packs (₹81 for a single pack). We confirm every order on WhatsApp before dispatch.";
 }
 
 function renderPay(total, priced, lines) {
