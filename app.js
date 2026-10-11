@@ -9,6 +9,19 @@
 
 const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
 
+// Vijayadashami offer (approved by Bhargav 11-10-2026): WhatsApp + website only, 20–26 Oct 2026 (IST).
+// Prices follow the Rule of Nine and keep ≥18 % profit (see memory: discount guardrails). MRP never changes.
+// It switches itself on and off by date; ?offerpreview=1 shows it early for checking.
+const OFFER = {
+  start: Date.parse("2026-10-20T00:00:00+05:30"),
+  end: Date.parse("2026-10-27T00:00:00+05:30"),
+  label: "Vijayadashami offer · 20–26 Oct",
+  prices: { "TURM@540": 324, "KPAS@540": 405, "CBEL@540": 189, "TBEL@540": 405 },
+};
+const offerOn = () => /[?&]offerpreview=1/.test(location.search) || (Date.now() >= OFFER.start && Date.now() < OFFER.end);
+const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
+const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
+
 // soft "kraft" tile colours, cycled across products
 const MEDIA = ["#e9e2d2","#e7efd9","#f6e3cf","#fdf3da","#f3ddd6","#eef2e6","#f1e8d6","#f6e7cf"];
 
@@ -423,9 +436,13 @@ function packCard(p) {
         <p class="card-origin">${p.origin}</p>
         ${sizes}
         <div class="price-row">
-          <span class="mrp"><small>MRP</small> ${inr(sku.mrp)}</span>
+          ${offerPrice(p, sku)
+            ? `<span class="mrp offer"><small>MRP</small> <s>${inr(sku.mrp)}</s> ${inr(offerPrice(p, sku))}</span>
+               <span class="save">Save ${inr(sku.mrp - offerPrice(p, sku))}</span>`
+            : `<span class="mrp"><small>MRP</small> ${inr(sku.mrp)}</span>`}
           <span class="upp">${unitPrice(sku.g, sku.mrp)}</span>
         </div>
+        ${offerPrice(p, sku) ? `<p class="offer-tag">${OFFER.label} · on WhatsApp &amp; this website</p>` : ""}
         <p class="tax">Incl. of all taxes · ${status}</p>
         <div class="card-foot"><button class="add-btn block" data-add="${p.id}@${sku.g}">Add ${qtyLabel(sku.g)} +</button></div>
         <details class="facts">
@@ -491,12 +508,12 @@ function renderCart() {
       const q = cart[key];
       let media, unit, price = "";
       if (sku) {
-        total += sku.mrp * q; priced += q;
+        total += sellPrice(p, sku) * q; priced += q;
         media = p.pack
           ? `<div class="cart-line-media pack" style="background-image:url('${p.pack}')"></div>`
           : `<div class="cart-line-media pack-mini">${p.te}</div>`;
         unit = `${qtyLabel(sku.g)} · ${sku.live ? "first batch" : "pre-order"}`;
-        price = `<div class="cart-line-price">${inr(sku.mrp * q)}</div>`;
+        price = `<div class="cart-line-price">${inr(sellPrice(p, sku) * q)}</div>`;
       } else {
         enquiry += q;
         media = p.img
@@ -521,7 +538,7 @@ function renderCart() {
   const tot = document.getElementById("cartTotal");
   if (tot) {
     tot.hidden = !priced;
-    tot.innerHTML = `<span>Packs total (MRP)</span><strong>${inr(total)}</strong>`;
+    tot.innerHTML = `<span>Packs total (${offerOn() ? "offer prices, incl. of all taxes" : "MRP"})</span><strong>${inr(total)}</strong>`;
   }
   const note = document.getElementById("cartNote");
   if (note) note.textContent = enquiry
@@ -549,14 +566,15 @@ function checkout() {
   keys.forEach((key) => {
     const { p, sku } = lineOf(key); const q = cart[key];
     if (sku) {
-      total += sku.mrp * q;
-      lines.push(`• ${q} × ${p.name} ${qtyLabel(sku.g)} @ ${inr(sku.mrp)} = ${inr(sku.mrp * q)}${sku.live ? "" : " (pre-order)"} [${skuCode(p, sku.g)}]`);
+      const each = sellPrice(p, sku);
+      total += each * q;
+      lines.push(`• ${q} × ${p.name} ${qtyLabel(sku.g)} @ ${inr(each)}${offerPrice(p, sku) ? ` (offer; MRP ${inr(sku.mrp)})` : ""} = ${inr(each * q)}${sku.live ? "" : " (pre-order)"} [${skuCode(p, sku.g)}]`);
     } else {
       enquiry = true;
       lines.push(`• ${q} × ${p.name}${p.unit ? " (" + p.unit + ")" : ""} — price on request`);
     }
   });
-  if (total) lines.push("", `Packs total (MRP): ${inr(total)}`);
+  if (total) lines.push("", `Packs total (${offerOn() ? OFFER.label : "MRP"}): ${inr(total)}`);
   lines.push("", enquiry ? "Please confirm prices for the made-to-order items, availability and delivery." : "Please confirm availability and delivery.",
              "", "Name:", "Address:", "Notes:");
   window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");

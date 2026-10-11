@@ -190,6 +190,9 @@ img { max-width: 100%; display: block; }
 .price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
 .mrp { font-size: 1.2rem; font-weight: 700; color: var(--ink); letter-spacing: -.01em; }
 .mrp small { font-size: 0.62rem; font-weight: 600; color: var(--ink-faint); letter-spacing: .1em; margin-right: 2px; }
+.mrp.offer s { font-weight: 500; color: var(--ink-faint); margin-right: 4px; }
+.save { font-size: .8rem; font-weight: 700; color: var(--orange); }
+.offer-tag { margin: 4px 0 0; font-size: .74rem; font-weight: 600; color: var(--orange); }
 .upp { font-size: 0.72rem; color: var(--ink-soft); }
 .tax { font-size: 0.68rem; color: var(--ink-faint); margin: 3px 0 12px; }
 .avail { font-weight: 600; }
