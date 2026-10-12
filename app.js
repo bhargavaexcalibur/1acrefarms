@@ -23,6 +23,24 @@ const offerOn = () => /[?&]offerpreview=1/.test(location.search) || (Date.now() 
 const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
 const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 
+// Deepavali combos (approved by Bhargav 12-10-2026): WhatsApp + website only, 27 Oct – 8 Nov 2026 (IST),
+// i.e. after the Vijayadashami offer ends (they must never overlap it). Bundle prices from the 09-10 Pricing tab.
+// Each combo = our printed 540 g packs shipped together; every pack keeps its own label and MRP, and the combo
+// price stays below the sum of MRPs, so no new label is needed. Cheruku is only ever discounted inside a combo.
+// Profit checked 12-10 with real Shiprocket rates (memory: discount guardrails). ?combopreview=1 shows them early.
+const COMBOS = {
+  start: Date.parse("2026-10-27T00:00:00+05:30"),
+  end: Date.parse("2026-11-09T00:00:00+05:30"),
+  label: "Deepavali combos · 27 Oct – 8 Nov",
+  dates: "27 Oct – 8 Nov", until: "8 Nov",   // shown on the page; keep in step with start/end
+  list: [
+    { id: "buy2-pasupu", name: "Buy 2 Pasupu", te: "పసుపు × 2", items: [["TURM", 540, 2]], price: 747 },
+    { id: "pasupu-duo", name: "Pasupu Duo", te: "పసుపు + కొండ పసుపు", items: [["TURM", 540, 1], ["KPAS", 540, 1]], price: 846 },
+    { id: "festive-trio", name: "Festive Trio", te: "పసుపు + కొండ పసుపు + చెరుకు బెల్లం", items: [["TURM", 540, 1], ["KPAS", 540, 1], ["CBEL", 540, 1]], price: 990 },
+  ],
+};
+const combosOn = () => /[?&]combopreview=1/.test(location.search) || (Date.now() >= COMBOS.start && Date.now() < COMBOS.end);
+
 // Delivery (Bhargav 11-10-2026, after real Shiprocket rates: ~₹147 for one 540 g pouch to Hyderabad,
 // ₹174–213 for two): FREE on 2 or more packs, ₹81 on a single pack (rule of 9). Made-to-order items: on WhatsApp.
 const DELIVERY = { freeFromPacks: 2, singlePackFee: 81 };  // ₹81 keeps every single-pack total on the rule of 9 (234→315, 396→477, 495→576, 324→405, 405→486)
@@ -352,6 +370,23 @@ PACK_SECTIONS.forEach((s) => s.products.forEach((p) => {
   p.sel = (p.skus.find((k) => k.live) || p.skus[0]).g;   // default size = the printed one
   PRODUCTS[p.id] = p;
 }));
+// Combos: resolve each item to its pack, and drop any combo that breaks the price rules
+// (rule of 9, below the sum of MRPs, only printed packs) so a typo can never go live.
+const COMBO_BY_ID = {};
+COMBOS.list.forEach((c) => {
+  c.id = "cb-" + c.id;
+  c.lines = c.items.map(([code, g, q]) => {
+    const p = PRODUCTS["pk-" + code.toLowerCase()];
+    return { p, sku: p && p.skus.find((k) => k.g === g), q };
+  });
+  c.packs = c.lines.reduce((n, l) => n + l.q, 0);
+  c.mrp = c.lines.reduce((n, l) => n + (l.sku ? l.sku.mrp * l.q : 0), 0);
+  const ok = c.lines.every((l) => l.sku && l.sku.live) && c.packs >= 2 && c.price < c.mrp && c.price % 9 === 0;
+  if (ok) COMBO_BY_ID[c.id] = c; else console.error("Combo hidden, it breaks the price rules:", c.name);
+});
+const activeCombos = () => (combosOn() ? Object.values(COMBO_BY_ID) : []);
+const comboContents = (c) => c.lines.map((l) => `${l.p.name} ${qtyLabel(l.sku.g)}${l.q > 1 ? " × " + l.q : ""}`).join(" + ");
+
 let _mi = 0;
 MORE_SECTIONS.forEach((s) => {
   const imgs = CATEGORY_IMAGES[s.id] || [];
@@ -368,6 +403,10 @@ let cart = {};
 try { cart = JSON.parse(localStorage.getItem("oneacre_cart_v2") || "{}"); } catch (e) { cart = {}; }
 const saveCart = () => { try { localStorage.setItem("oneacre_cart_v2", JSON.stringify(cart)); } catch (e) {} };
 function lineOf(key) {
+  if (key.startsWith("cb-")) {           // a combo; gone from the cart once its dates end
+    const c = COMBO_BY_ID[key];
+    return c && combosOn() ? { p: c, sku: null, combo: c } : null;
+  }
   const [id, g] = key.split("@");
   const p = PRODUCTS[id]; if (!p) return null;
   const sku = g ? p.skus.find((k) => k.g === +g) : null;
@@ -387,6 +426,7 @@ function renderChipNav() {
   const nav = document.getElementById("chipNav");
   if (!nav) return;
   nav.innerHTML =
+    (activeCombos().length ? `<a class="chip" href="#combos" data-chip="combos">Deepavali combos</a>` : "") +
     PACK_SECTIONS.map((s) => `<a class="chip" href="#${s.id}" data-chip="${s.id}">${s.chip}</a>`).join("") +
     `<span class="chip-sep" aria-hidden="true"></span>` +
     MORE_SECTIONS.map((s) => `<a class="chip chip-more" href="#${s.id}" data-chip="${s.id}">${CHIP_LABELS[s.id] || s.eyebrow}</a>`).join("");
@@ -405,7 +445,18 @@ function sectionHead(s) {
 
 function renderCatalog() {
   const root = document.getElementById("catalog");
-  const packs = PACK_SECTIONS.map((s) => `
+  const combos = activeCombos();
+  const comboSection = combos.length ? `
+    <section class="section" id="combos">
+      <div class="container">${sectionHead({
+        eyebrow: COMBOS.dates,
+        title: "Deepavali combos",
+        blurb: "Our printed 540 g packs, shipped together at one combo price. Free delivery. On WhatsApp &amp; this website only.",
+      })}
+        <div class="grid grid-packs">${combos.map(comboCard).join("")}</div>
+      </div>
+    </section>` : "";
+  const packs = comboSection + PACK_SECTIONS.map((s) => `
     <section class="section" id="${s.id}">
       <div class="container">${sectionHead(s)}
         <div class="grid grid-packs">${s.products.map(packCard).join("")}</div>
@@ -516,6 +567,30 @@ function packCard(p) {
     </article>`;
 }
 
+function comboCard(c) {
+  const imgs = c.lines.flatMap((l) => Array(l.q).fill(l.p));
+  return `
+    <article class="card pack-card combo-card" id="${c.id}">
+      <div class="card-media-wrap">
+        <div class="combo-media n${imgs.length}">${imgs.map((p, i) =>
+          `<img src="${p.pack}" alt="${p.name} 540 g pack" loading="lazy" width="800" height="1122" style="--i:${i}" />`).join("")}</div>
+        <p class="pack-caption"><b>${c.packs} packs</b> · one parcel</p>
+      </div>
+      <div class="card-body">
+        <h3 class="card-name">${c.name}</h3>
+        <p class="card-te"><span lang="te">${c.te}</span></p>
+        <p class="card-note">${comboContents(c)}</p>
+        <div class="price-row">
+          <span class="mrp offer"><small>MRP total</small> <s>${inr(c.mrp)}</s> ${inr(c.price)}</span>
+          <span class="save">Save ${inr(c.mrp - c.price)}</span>
+        </div>
+        <p class="offer-tag">Till ${COMBOS.until} · on WhatsApp &amp; this website</p>
+        <p class="tax">Incl. of all taxes · free delivery · each pack carries its own label</p>
+        <div class="card-foot"><button class="add-btn block" data-add="${c.id}">Add combo +</button></div>
+      </div>
+    </article>`;
+}
+
 function moreCard(p, hidden) {
   const tag = p.tag ? `<span class="card-tag">${p.tag}</span>` : "";
   const media = p.img
@@ -542,6 +617,13 @@ function rerenderPack(id) {
 function addToCart(key) { if (!lineOf(key)) return; cart[key] = (cart[key] || 0) + 1; saveCart(); renderCart(); bump(); }
 function setQty(key, d) { cart[key] = (cart[key] || 0) + d; if (cart[key] <= 0) delete cart[key]; saveCart(); renderCart(); }
 function cartCount() { return Object.values(cart).reduce((a, b) => a + b, 0); }
+// What the pack prices in the cart are: offer, combo, MRP, or a mix of combo + MRP.
+function priceBasis(keys, short) {
+  if (offerOn()) return short ? "offer prices" : OFFER.label;
+  const hasCombo = keys.some((k) => lineOf(k)?.combo), hasSingle = keys.some((k) => lineOf(k)?.sku);
+  if (!hasCombo) return "MRP";
+  return (hasSingle ? "MRP + " : "") + (short ? "combo prices" : COMBOS.label);
+}
 
 function renderCart() {
   Object.keys(cart).forEach((k) => { if (!lineOf(k)) delete cart[k]; });
@@ -559,10 +641,15 @@ function renderCart() {
     items.innerHTML = `<div class="cart-empty">Your order is empty.<br>Add something from the village.</div>`;
   } else {
     items.innerHTML = keys.map((key) => {
-      const { p, sku } = lineOf(key);
+      const { p, sku, combo } = lineOf(key);
       const q = cart[key];
       let media, unit, price = "";
-      if (sku) {
+      if (combo) {
+        total += combo.price * q; priced += combo.packs * q;
+        media = `<div class="cart-line-media pack" style="background-image:url('${combo.lines[0].p.pack}')"></div>`;
+        unit = `${comboContents(combo)} · combo`;
+        price = `<div class="cart-line-price">${inr(combo.price * q)}</div>`;
+      } else if (sku) {
         total += sellPrice(p, sku) * q; priced += q;
         media = p.pack
           ? `<div class="cart-line-media pack" style="background-image:url('${p.pack}')"></div>`
@@ -594,7 +681,7 @@ function renderCart() {
   if (tot) {
     tot.hidden = !priced;
     const fee = deliveryFee(priced);
-    tot.innerHTML = `<div class="ct-row"><span>Packs (${offerOn() ? "offer prices" : "MRP"}, incl. of all taxes)</span><span>${inr(total)}</span></div>
+    tot.innerHTML = `<div class="ct-row"><span>Packs (${priceBasis(keys, true)}, incl. of all taxes)</span><span>${inr(total)}</span></div>
       <div class="ct-row"><span>Delivery</span>${fee ? `<span>${inr(fee)}</span>` : `<span class="ct-free">Free</span>`}</div>
       ${fee ? `<div class="ct-hint">Add one more pack for free delivery</div>` : ""}
       <div class="ct-row ct-grand"><span>Total to pay${enquiry ? " for packs" : ""}</span><strong>${inr(total + fee)}</strong></div>`;
@@ -655,13 +742,16 @@ function openCart() { drawer.classList.add("open"); overlay.classList.add("open"
 function closeCart() { drawer.classList.remove("open"); overlay.classList.remove("open"); }
 
 function checkout() {
-  const keys = Object.keys(cart);
+  const keys = Object.keys(cart).filter((k) => lineOf(k));   // a combo can end while the page is open
   if (!keys.length) return;
   const lines = ["Hi 1acrefarms! 🌿 I'd like to order:", ""];
   let total = 0, enquiry = false;
   keys.forEach((key) => {
-    const { p, sku } = lineOf(key); const q = cart[key];
-    if (sku) {
+    const { p, sku, combo } = lineOf(key); const q = cart[key];
+    if (combo) {
+      total += combo.price * q;
+      lines.push(`• ${q} × ${combo.name} combo (${comboContents(combo)}) @ ${inr(combo.price)} (MRP total ${inr(combo.mrp)}) = ${inr(combo.price * q)} [${combo.lines.map((l) => skuCode(l.p, l.sku.g) + (l.q > 1 ? " ×" + l.q : "")).join(" + ")}]`);
+    } else if (sku) {
       const each = sellPrice(p, sku);
       total += each * q;
       lines.push(`• ${q} × ${p.name} ${qtyLabel(sku.g)} @ ${inr(each)}${offerPrice(p, sku) ? ` (offer; MRP ${inr(sku.mrp)})` : ""} = ${inr(each * q)}${sku.live ? "" : " (pre-order)"} [${skuCode(p, sku.g)}]`);
@@ -670,9 +760,9 @@ function checkout() {
       lines.push(`• ${q} × ${p.name}${p.unit ? " (" + p.unit + ")" : ""} — price on request`);
     }
   });
-  const packs = keys.reduce((n, k) => n + (lineOf(k).sku ? cart[k] : 0), 0);
+  const packs = keys.reduce((n, k) => { const l = lineOf(k); return n + (l.combo ? l.combo.packs * cart[k] : l.sku ? cart[k] : 0); }, 0);
   const fee = deliveryFee(packs);
-  if (total) lines.push("", `Packs total (${offerOn() ? OFFER.label : "MRP"}): ${inr(total)}`, `Delivery: ${fee ? inr(fee) : "Free"}`, `Total to pay: ${inr(total + fee)}`);
+  if (total) lines.push("", `Packs total (${priceBasis(keys)}): ${inr(total)}`, `Delivery: ${fee ? inr(fee) : "Free"}`, `Total to pay: ${inr(total + fee)}`);
   const pay = paymentFor(pin, total + fee);
   lines.push("", `Delivery pincode: ${pin}`);
   if (total && pay) lines.push(`Payment: ${pay.cod ? (payChoice === "cod" ? "Pay on delivery" : "UPI (please send your UPI details)") : "UPI before dispatch (please send your UPI details)"}`);

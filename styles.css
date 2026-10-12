@@ -367,6 +367,18 @@ img { max-width: 100%; display: block; }
   .trust-inner { gap: 14px 22px; }
 }
 
+/* Combo cards: the real packs fanned on deep green, same frame as a single pack */
+.combo-media { position: relative; aspect-ratio: 800/1122; border-radius: 8px; overflow: hidden; background: var(--green-deep) radial-gradient(120% 70% at 50% 0%, rgba(223,174,85,.16), transparent 60%); box-shadow: 0 14px 34px rgba(30,40,22,.16); transition: transform .3s ease; }
+.combo-card:hover .combo-media { transform: translateY(-3px); }
+.combo-media img { position: absolute; top: 50%; left: 50%; width: 60%; height: auto; border-radius: 4px; box-shadow: 0 10px 22px rgba(0,0,0,.35); }
+.combo-media.n2 img { width: 54%; }
+.combo-media.n2 img:nth-child(1) { transform: translate(-88%, -53%) rotate(-6deg); }
+.combo-media.n2 img:nth-child(2) { transform: translate(-12%, -47%) rotate(6deg); }
+.combo-media.n3 img { width: 42%; }
+.combo-media.n3 img:nth-child(1) { transform: translate(-110%, -56%) rotate(-7deg); }
+.combo-media.n3 img:nth-child(3) { transform: translate(10%, -56%) rotate(7deg); }
+.combo-media.n3 img:nth-child(2) { transform: translate(-50%, -44%); width: 48%; z-index: 2; }
+
 .pack-card .add-btn { background: var(--green-deep); color: #fff; border-color: var(--green-deep); }
 .pack-card .add-btn:hover { background: var(--orange); border-color: var(--orange); }
 
