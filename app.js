@@ -76,6 +76,7 @@ const MEDIA = ["#e9e2d2","#e7efd9","#f6e3cf","#fdf3da","#f3ddd6","#eef2e6","#f1e
 // Our packs — one row per product, one entry per SKU (net g, MRP ₹).
 // MRPs follow the Rule of Nine (every MRP's digits sum to 9).
 // live:true = printed and in the first batch; everything else is pre-order.
+// soon:"<date>" = printed but stock not in yet: shown with "Coming <date>", cannot be added or ordered (Bhargav 19-10-2026).
 // ---------------------------------------------------------
 const MAKER = {
   mfd: "Manufactured &amp; Marketed By",
@@ -104,11 +105,11 @@ const PACK_SECTIONS = [
         origin: "Araku &amp; Maredumilli hills", pack: "assets/packs/hill-turmeric-540g.jpg", by: "mfd", shelf: 12,
         ingredients: "Turmeric (Curcuma longa).",
         skus: [[270, 252], [540, 495, true], [1080, 900]] },
-      { code: "SANN", name: "Sannam Chilli Powder", te: "సన్నం కారం", tr: "Sannam Kaaram", note: "Whole sun-dried chillies, packed as fine powder",
+      { code: "SANN", soon: "31 Oct", name: "Sannam Chilli Powder", te: "సన్నం కారం", tr: "Sannam Kaaram", note: "Whole sun-dried chillies, packed as fine powder",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/sannam-540g.jpg", by: "mfd", shelf: 12,
         ingredients: "Sannam red chillies (Capsicum annuum).",
         skus: [[180, 135], [270, 180], [540, 306, true]] },
-      { code: "TEJA", name: "Teja Chilli Powder", te: "తేజ కారం", tr: "Teja Kaaram", note: "Extra hot · sun-dried · stone-ground",
+      { code: "TEJA", soon: "31 Oct", name: "Teja Chilli Powder", te: "తేజ కారం", tr: "Teja Kaaram", note: "Extra hot · sun-dried · stone-ground",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/teja-540g.jpg", by: "mfd", shelf: 12,
         ingredients: "Teja red chillies (Capsicum annuum).",
         skus: [[180, 144], [270, 198], [540, 342, true]] },
@@ -134,7 +135,7 @@ const PACK_SECTIONS = [
     title: "Whole kernels, plain and unsalted",
     blurb: "Cashews from the Andhra coast, plus walnuts, almonds and pistachios from select orchards.",
     products: [
-      { code: "CASH", name: "Cashew Kernels", te: "జీడిపప్పు", tr: "Jeedipappu", note: "Whole kernels · plain · unsalted",
+      { code: "CASH", soon: "31 Oct", name: "Cashew Kernels", te: "జీడిపప్పు", tr: "Jeedipappu", note: "Whole kernels · plain · unsalted",
         origin: "Chirala · Bapatla · Vizag coast", pack: "assets/packs/cashew-540g.jpg", by: "packed", shelf: 6,
         ingredients: "Cashew kernels (Anacardium occidentale).", allergen: "Contains cashew (tree nut).",
         skus: [[90, 180], [180, 324], [270, 477], [540, 891, true]] },
@@ -408,7 +409,7 @@ function lineOf(key) {
     return c && combosOn() ? { p: c, sku: null, combo: c } : null;
   }
   const [id, g] = key.split("@");
-  const p = PRODUCTS[id]; if (!p) return null;
+  const p = PRODUCTS[id]; if (!p || p.soon) return null;   // "soon" packs can't be ordered yet
   const sku = g ? p.skus.find((k) => k.g === +g) : null;
   if (g && !sku) return null;
   return { p, sku };
@@ -526,7 +527,9 @@ function packCard(p) {
     ? `<div class="sizes" role="radiogroup" aria-label="Pack size">${p.skus.map((k) =>
         `<button class="size${k.g === p.sel ? " on" : ""}" role="radio" aria-checked="${k.g === p.sel}" data-size="${p.id}@${k.g}">${qtyLabel(k.g)}</button>`).join("")}</div>`
     : `<div class="sizes"><span class="size on solo">${qtyLabel(sku.g)}</span></div>`;
-  const status = sku.live
+  const status = p.soon
+    ? `<span class="avail pre">Coming ${p.soon}</span>`
+    : sku.live
     ? `<span class="avail live">First batch · packing now</span>`
     : `<span class="avail pre">Pre-order · pack in print</span>`;
   const by = MAKER[p.by];
@@ -548,7 +551,9 @@ function packCard(p) {
         </div>
         ${offerPrice(p, sku) ? `<p class="offer-tag">${OFFER.label} · on WhatsApp &amp; this website</p>` : ""}
         <p class="tax">Incl. of all taxes · ${status}</p>
-        <div class="card-foot"><button class="add-btn block" data-add="${p.id}@${sku.g}">Add ${qtyLabel(sku.g)} +</button></div>
+        <div class="card-foot">${p.soon
+          ? `<button class="add-btn block" disabled aria-disabled="true">Coming ${p.soon}</button>`
+          : `<button class="add-btn block" data-add="${p.id}@${sku.g}">Add ${qtyLabel(sku.g)} +</button>`}</div>
         <details class="facts">
           <summary>Product details</summary>
           <dl>

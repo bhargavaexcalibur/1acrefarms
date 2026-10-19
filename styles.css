@@ -198,6 +198,7 @@ img { max-width: 100%; display: block; }
 .avail { font-weight: 600; }
 .avail.live { color: var(--green); }
 .avail.pre { color: var(--orange); }
+.add-btn[disabled] { opacity: .55; cursor: not-allowed; }
 .facts { margin-top: 10px; font-size: 0.74rem; color: var(--ink-soft); }
 .facts summary { cursor: pointer; font-weight: 600; color: var(--green); padding: 6px 0; list-style: none; }
 .facts summary::-webkit-details-marker { display: none; }
