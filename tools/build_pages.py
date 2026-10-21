@@ -12,6 +12,10 @@ Run from the repo root:  python3 tools/build_pages.py
 Packs with live_from in the future are skipped until that date (IST), so re-running on or after
 31 Oct 2026 adds the chilli and cashew pages by itself. Also rewrites the PACK-LINKS block in
 index.html so the homepage links to every live page in plain HTML.
+
+The same run also rebuilds the recipe pages (/recipes/ and /recipes/<slug>/) through
+tools/build_recipes.py, which reuses this file's header, footer and head links, and lists them in
+sitemap.xml. So one command regenerates the whole crawlable layer:  python3 tools/build_pages.py
 """
 import datetime as dt
 import html
@@ -267,8 +271,11 @@ HEADER = """  <header class="header" id="top">
   </header>"""
 
 
+RECIPES_LINK = '        <a href="/recipes/">Recipes</a>'
+
+
 def footer(live):
-    links = "\n".join(f'        <a href="/{q["slug"]}/">{q["name"]}</a>' for q in live)
+    links = "\n".join([f'        <a href="/{q["slug"]}/">{q["name"]}</a>' for q in live] + [RECIPES_LINK])
     return f"""  <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
@@ -295,6 +302,13 @@ def footer(live):
     </div>
     <p class="footer-base">© {TODAY.year} 1acrefarms &middot; GSTIN 37BHKPR3386Q1Z8 &middot; FSSAI Reg. 20126161000590 &middot; Made in India</p>
   </footer>"""
+
+
+HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Telugu:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />"""
 
 
 def page(p, live, facts):
@@ -331,11 +345,7 @@ def page(p, live, facts):
   <script type="application/ld+json">
 {product_ld(p, facts)}
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Telugu:wght@500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css" />
-  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+{HEAD_ASSETS}
 </head>
 <body class="pdp-page">
 {HEADER}
@@ -422,9 +432,11 @@ def page(p, live, facts):
     return body
 
 
-def sitemap(live):
+def sitemap(live, extra=()):
+    """extra: (url, changefreq, priority) rows from other generators (the recipe pages)."""
     urls = [(f"{SITE}/", "weekly", "1.0")]
     urls += [(f"{SITE}/{p['slug']}/", "weekly", "0.9") for p in live]
+    urls += list(extra)
     urls += [(f"{SITE}/policies.html", "monthly", "0.3")]
     rows = "\n".join(f"""  <url>
     <loc>{u}</loc>
@@ -440,11 +452,16 @@ def sitemap(live):
 
 
 def pack_links_block(live):
-    links = "\n".join(f'        <a href="/{p["slug"]}/">{p["name"]}</a>' for p in live)
+    links = "\n".join([f'        <a href="/{p["slug"]}/">{p["name"]}</a>' for p in live] + [RECIPES_LINK])
     return f"<!-- PACK-LINKS:START (tools/build_pages.py) -->\n{links}\n        <!-- PACK-LINKS:END -->"
 
 
 def main():
+    # build_recipes imports this module for HEADER/footer(); register the running script under its
+    # module name first so that import reuses it instead of loading a second copy.
+    sys.modules.setdefault("build_pages", sys.modules[__name__])
+    sys.dont_write_bytecode = True  # no tools/__pycache__ left in the repo
+    import build_recipes
     facts = pack_facts()
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
@@ -453,8 +470,9 @@ def main():
         out.parent.mkdir(exist_ok=True)
         out.write_text(page(p, live, facts), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
-    (ROOT / "sitemap.xml").write_text(sitemap(live), encoding="utf-8")
-    print("wrote sitemap.xml with", len(live) + 2, "urls")
+    extra = build_recipes.sitemap_rows()
+    (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
+    print("wrote sitemap.xml with", len(live) + 2 + len(extra), "urls")
     idx = ROOT / "index.html"
     src = idx.read_text(encoding="utf-8")
     new, n = re.subn(r"<!-- PACK-LINKS:START.*?PACK-LINKS:END -->", pack_links_block(live), src, flags=re.S)
@@ -462,6 +480,7 @@ def main():
         sys.exit("PACK-LINKS block not found exactly once in index.html")
     idx.write_text(new, encoding="utf-8")
     print("refreshed PACK-LINKS in index.html:", ", ".join(p["slug"] for p in live))
+    build_recipes.build(live)
 
 
 if __name__ == "__main__":
