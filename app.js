@@ -371,6 +371,20 @@ PACK_SECTIONS.forEach((s) => s.products.forEach((p) => {
   p.sel = (p.skus.find((k) => k.live) || p.skus[0]).g;   // default size = the printed one
   PRODUCTS[p.id] = p;
 }));
+// Bhargav 21-10-2026: "have only what we are selling". With SELLING_ONLY the site shows and accepts only
+// printed packs that are in stock (the live size, not marked "soon"): pre-order sizes and products and the
+// made-to-order enquiry sections are hidden and can't be ordered. Set to false to show everything again.
+const SELLING_ONLY = true;
+const sellable = (p) => p.live && !p.soon;
+if (SELLING_ONLY) {
+  PACK_SECTIONS.forEach((s) => s.products.forEach((p) => { p.skus = p.skus.filter((k) => k.live); }));
+  const spices = PACK_SECTIONS.find((s) => s.id === "spices");
+  if (spices) Object.assign(spices, { chip: "Turmeric", title: "Turmeric, sun-dried and stone-ground",
+    blurb: "Turmeric powders from Palnadu, Guntur and the Araku hills." });
+}
+const shownPackSections = () => (SELLING_ONLY
+  ? PACK_SECTIONS.map((s) => ({ ...s, products: s.products.filter(sellable) })).filter((s) => s.products.length)
+  : PACK_SECTIONS);
 // Combos: resolve each item to its pack, and drop any combo that breaks the price rules
 // (rule of 9, below the sum of MRPs, only printed packs) so a typo can never go live.
 const COMBO_BY_ID = {};
@@ -410,6 +424,7 @@ function lineOf(key) {
   }
   const [id, g] = key.split("@");
   const p = PRODUCTS[id]; if (!p || p.soon) return null;   // "soon" packs can't be ordered yet
+  if (SELLING_ONLY && !(p.skus && sellable(p))) return null;   // only packs we sell right now
   const sku = g ? p.skus.find((k) => k.g === +g) : null;
   if (g && !sku) return null;
   return { p, sku };
@@ -428,9 +443,9 @@ function renderChipNav() {
   if (!nav) return;
   nav.innerHTML =
     (activeCombos().length ? `<a class="chip" href="#combos" data-chip="combos">Deepavali combos</a>` : "") +
-    PACK_SECTIONS.map((s) => `<a class="chip" href="#${s.id}" data-chip="${s.id}">${s.chip}</a>`).join("") +
-    `<span class="chip-sep" aria-hidden="true"></span>` +
-    MORE_SECTIONS.map((s) => `<a class="chip chip-more" href="#${s.id}" data-chip="${s.id}">${CHIP_LABELS[s.id] || s.eyebrow}</a>`).join("");
+    shownPackSections().map((s) => `<a class="chip" href="#${s.id}" data-chip="${s.id}">${s.chip}</a>`).join("") +
+    (SELLING_ONLY ? "" : `<span class="chip-sep" aria-hidden="true"></span>` +
+    MORE_SECTIONS.map((s) => `<a class="chip chip-more" href="#${s.id}" data-chip="${s.id}">${CHIP_LABELS[s.id] || s.eyebrow}</a>`).join(""));
 }
 
 function sectionHead(s) {
@@ -457,7 +472,7 @@ function renderCatalog() {
         <div class="grid grid-packs">${combos.map(comboCard).join("")}</div>
       </div>
     </section>` : "";
-  const packs = comboSection + PACK_SECTIONS.map((s) => `
+  const packs = comboSection + shownPackSections().map((s) => `
     <section class="section" id="${s.id}">
       <div class="container">${sectionHead(s)}
         <div class="grid grid-packs">${s.products.map(packCard).join("")}</div>
@@ -484,7 +499,7 @@ function renderCatalog() {
       </div>
     </section>`;
   }).join("");
-  root.innerHTML = packs + divider + more;
+  root.innerHTML = packs + (SELLING_ONLY ? "" : divider + more);
 }
 
 function packMedia(p) {
