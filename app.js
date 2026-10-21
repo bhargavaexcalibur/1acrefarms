@@ -375,12 +375,23 @@ PACK_SECTIONS.forEach((s) => s.products.forEach((p) => {
 // printed packs that are in stock (the live size, not marked "soon"): pre-order sizes and products and the
 // made-to-order enquiry sections are hidden and can't be ordered. Set to false to show everything again.
 const SELLING_ONLY = true;
+// Bhargav 21-10-2026: chilli + cashew stock confirmed for 31 Oct, so the "soon" packs go live by themselves
+// from 31 Oct 00:00 IST. ?soonpreview=1 shows them early for checking.
+const SOON_LIVE = Date.parse("2026-10-31T00:00:00+05:30");
+const soonLive = /[?&]soonpreview=1/.test(location.search) || Date.now() >= SOON_LIVE;
+if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") delete p.soon; });
 const sellable = (p) => p.live && !p.soon;
 if (SELLING_ONLY) {
   PACK_SECTIONS.forEach((s) => s.products.forEach((p) => { p.skus = p.skus.filter((k) => k.live); }));
   const spices = PACK_SECTIONS.find((s) => s.id === "spices");
-  if (spices) Object.assign(spices, { chip: "Turmeric", title: "Turmeric, sun-dried and stone-ground",
-    blurb: "Turmeric powders from Palnadu, Guntur and the Araku hills." });
+  if (spices && !spices.products.some((p) => sellable(p) && /^(SANN|TEJA)$/.test(p.code)))
+    Object.assign(spices, { chip: "Turmeric", title: "Turmeric, sun-dried and stone-ground",
+      blurb: "Turmeric powders from Palnadu, Guntur and the Araku hills." });
+}
+if (soonLive) {
+  const badge = document.querySelector(".hero-photo-badge");
+  if (badge) badge.innerHTML = "<strong>Our new packs</strong> Turmeric, jaggery, chilli powders &amp; cashew: all ready now.";
+  document.querySelectorAll('a[href="#spices"]').forEach((a) => { if (a.textContent.trim() === "Turmeric") a.textContent = "Turmeric & Chilli"; });
 }
 const shownPackSections = () => (SELLING_ONLY
   ? PACK_SECTIONS.map((s) => ({ ...s, products: s.products.filter(sellable) })).filter((s) => s.products.length)
