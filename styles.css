@@ -412,3 +412,60 @@ img { max-width: 100%; display: block; }
 .pay-choice label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--ink); }
 .pin-help { display: inline-block; margin-top: 8px; color: var(--green); font-size: 0.76rem; }
 .cart-total .ct-hint { font-size: 0.74rem; color: var(--orange); text-align: right; margin-top: -2px; }
+
+/* ---- Pack pages (/turmeric-powder/ etc., built by tools/build_pages.py) ---- */
+.card-name a:hover { color: var(--green); }
+.sourcing-points.sp4 { grid-template-columns: repeat(4, 1fr); max-width: 1040px; }
+a.src-pt { display: block; border-radius: var(--radius-lg); padding: 10px 8px; transition: background .2s; }
+a.src-pt:hover { background: rgba(255,255,255,.06); }
+.nav-shop { padding: 9px 18px; font-size: 0.82rem; }
+.crumbs { font-size: 0.78rem; color: var(--ink-faint); padding-top: 20px; }
+.crumbs a { color: var(--ink-soft); }
+.crumbs a:hover { color: var(--green); }
+.pdp { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; padding: 28px 0 56px; }
+.pdp-media .pack-media { max-width: 420px; margin: 0 auto; }
+.pdp h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 10px; }
+.pdp h1 .pdp-local { color: var(--ink-soft); font-weight: 500; }
+.pdp-names { color: var(--gold); font-size: 0.95rem; margin-bottom: 18px; }
+.pdp-names [lang="te"], .pdp-lang[lang="te"], .po-te [lang="te"] { font-family: "Noto Sans Telugu", sans-serif; }
+.pdp-lede { font-size: 1.06rem; max-width: 34em; margin-bottom: 22px; }
+.pdp .price-row { display: flex; align-items: baseline; gap: 12px; }
+.pdp .mrp { font-size: 1.7rem; }
+.pdp .tax { font-size: 0.78rem; margin-top: 4px; }
+.pdp-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 20px 0 26px; }
+.btn-wa { background: var(--surface); border-color: var(--line); color: var(--green-deep); }
+.btn-wa:hover { border-color: var(--green); }
+.pdp-facts { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; border-top: 1px solid var(--hairline); padding-top: 20px; font-size: 0.9rem; }
+.pdp-facts span { display: block; font-size: 0.6rem; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); font-weight: 600; margin-bottom: 2px; }
+.pdp-lang { margin-top: 14px; font-size: 0.92rem; color: var(--ink-soft); max-width: 36em; }
+.pdp-more { display: grid; grid-template-columns: 1fr 1.2fr 1.2fr; gap: 40px; padding: 44px 0; border-top: 1px solid var(--hairline); }
+.pdp-more h2, .pdp-ship h2, .pdp-others h2 { font-size: 1.15rem; margin-bottom: 14px; }
+.pdp-more ul { padding-left: 18px; color: var(--ink-soft); font-size: 0.92rem; }
+.pdp-more li { margin-bottom: 8px; }
+.pdp-dl { display: grid; gap: 2px; font-size: 0.85rem; color: var(--ink-soft); }
+.pdp-dl dt { font-size: 0.6rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); margin-top: 8px; font-weight: 600; }
+.pdp-dl dd { line-height: 1.5; }
+.pdp-more .nutri table { font-size: 0.78rem; }
+.pdp-ship { padding: 36px 0; border-top: 1px solid var(--hairline); }
+.pdp-ship p { color: var(--ink-soft); font-size: 0.94rem; max-width: 48em; }
+.pdp-ship a { color: var(--green); text-decoration: underline; }
+.pdp-others { padding: 36px 0 80px; border-top: 1px solid var(--hairline); }
+.pdp-other-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 24px; }
+.pdp-other { display: flex; flex-direction: column; gap: 4px; }
+.pdp-other img { aspect-ratio: 800/1122; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 26px rgba(30,40,22,.14); margin-bottom: 8px; transition: transform .25s ease; }
+.pdp-other:hover img { transform: translateY(-3px); }
+.po-name { font-weight: 600; font-size: 0.95rem; }
+.po-te { font-size: 0.8rem; color: var(--gold); }
+.po-price { font-size: 0.82rem; color: var(--ink-soft); }
+@media (max-width: 900px) {
+  .sourcing-points.sp4 { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+  .pdp { grid-template-columns: 1fr; gap: 26px; padding-top: 18px; }
+  .pdp-media .pack-media { max-width: 300px; }
+  .pdp-more { grid-template-columns: 1fr; gap: 30px; }
+}
+@media (max-width: 560px) {
+  .nav-shop { display: none; }
+  .pdp-facts { grid-template-columns: 1fr; }
+  .pdp-actions .btn { flex: 1 1 100%; }
+  .pdp-other-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}

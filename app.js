@@ -381,6 +381,8 @@ const SOON_LIVE = Date.parse("2026-10-31T00:00:00+05:30");
 const soonLive = /[?&]soonpreview=1/.test(location.search) || Date.now() >= SOON_LIVE;
 if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") delete p.soon; });
 const sellable = (p) => p.live && !p.soon;
+// One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
+const PACK_PAGE = { TURM: "/turmeric-powder/", KPAS: "/hill-turmeric-powder/", CBEL: "/cane-jaggery/", TBEL: "/palm-jaggery/" };
 if (SELLING_ONLY) {
   PACK_SECTIONS.forEach((s) => s.products.forEach((p) => { p.skus = p.skus.filter((k) => k.live); }));
   const spices = PACK_SECTIONS.find((s) => s.id === "spices");
@@ -391,6 +393,8 @@ if (SELLING_ONLY) {
 if (soonLive) {
   const badge = document.querySelector(".hero-photo-badge");
   if (badge) badge.innerHTML = "<strong>Our new packs</strong> Turmeric, jaggery, chilli powders &amp; cashew: all ready now.";
+  const subSoon = document.querySelector(".hero-sub-soon");
+  if (subSoon) subSoon.textContent = "Sannam and Teja chilli powders and cashew are ready now too.";
   document.querySelectorAll('a[href="#spices"]').forEach((a) => { if (a.textContent.trim() === "Turmeric") a.textContent = "Turmeric & Chilli"; });
 }
 const shownPackSections = () => (SELLING_ONLY
@@ -556,14 +560,14 @@ function packCard(p) {
   const status = p.soon
     ? `<span class="avail pre">Coming ${p.soon}</span>`
     : sku.live
-    ? `<span class="avail live">First batch · packing now</span>`
+    ? `<span class="avail live">In stock</span>`
     : `<span class="avail pre">Pre-order · pack in print</span>`;
   const by = MAKER[p.by];
   return `
     <article class="card pack-card" id="${p.id}">
       <div class="card-media-wrap">${packMedia(p)}</div>
       <div class="card-body">
-        <h3 class="card-name">${p.name}</h3>
+        <h3 class="card-name">${PACK_PAGE[p.code] ? `<a href="${PACK_PAGE[p.code]}">${p.name}</a>` : p.name}</h3>
         <p class="card-te"><span lang="te">${p.te}</span> · ${p.tr}</p>
         <p class="card-note">${p.note}</p>
         <p class="card-origin">${p.origin}</p>
@@ -856,6 +860,10 @@ renderChipNav();
 renderCatalog();
 renderCart();
 document.querySelectorAll(".section[id]").forEach((s) => chipObserver.observe(s));
+// Pack pages link here with ?add=pk-turm@540: put that pack in the order and open it, once.
+const addParam = new URLSearchParams(location.search).get("add");
+if (addParam && lineOf(addParam)) { addToCart(addParam); openCart(); }
+if (addParam) history.replaceState(null, "", location.pathname + location.hash);
 
 /* ---------------------------------------------------------
    NEW PACK PRINTED? Add its front to assets/packs/, set "pack"
