@@ -471,21 +471,43 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 }
 
 /* ---- Recipe pages (/recipes/, built by tools/build_recipes.py) ---- */
-.rcp { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 56px; align-items: start; padding: 28px 0 56px; }
-.rcp h1, .rcp-hub h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 10px; }
-.rcp h1 .pdp-local { display: block; margin-top: 8px; font-size: 0.5em; color: var(--ink-soft); font-weight: 500; letter-spacing: -0.01em; }
-.rcp-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 24px; }
-.rcp-facts a, .rcp-also a, .rcp-pack-links a, .rcp-all a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+.rcp-hero { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: 56px; align-items: start; padding: 28px 0 40px; }
+.rcp-hero h1, .rcp-hub h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin-bottom: 10px; }
+.rcp-hero h1 .pdp-local { display: block; margin-top: 8px; font-size: 0.5em; color: var(--ink-soft); font-weight: 500; letter-spacing: -0.01em; }
+.rcp-intro p { font-size: 1.04rem; max-width: 36em; margin-bottom: 12px; }
+.rcp-facts { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 22px; }
+.rcp-time-note { margin-top: 10px; font-size: 0.8rem; color: var(--ink-faint); }
+.rcp-card { background: var(--card-bg); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 14px 14px 12px; }
+.rcp-card img { width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 26px rgba(30,40,22,.12); }
+.rcp-card figcaption { margin-top: 12px; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.5; }
+.rcp-card figcaption span { display: block; font-size: 0.6rem; text-transform: uppercase; letter-spacing: .14em; font-weight: 600; color: var(--gold); margin-bottom: 2px; }
+.rcp-card figcaption a, .rcp-also a, .rcp-pack-links a, .rcp-all a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+.rcp-quick { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 22px 26px; margin-bottom: 8px; }
+.rcp-quick .eyebrow { margin-bottom: 8px; }
+.rcp-quick p { max-width: 52em; }
+.rcp-quick .pdp-lang { margin-top: 8px; }
+.rcp-body { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); column-gap: 56px; align-items: start; padding-bottom: 40px; }
+.rcp-ingredients { grid-column: 1; grid-row: 1; }
+.rcp-aside { grid-column: 2; grid-row: 1 / span 2; position: sticky; top: 88px; margin-top: 36px; }
+.rcp-rest { grid-column: 1; grid-row: 2; }
 .rcp-section { margin-top: 36px; }
-.rcp-section h2, .rcp-more h2 { font-size: 1.15rem; margin-bottom: 14px; }
+.rcp-section h2, .rcp-more h2 { font-size: 1.2rem; margin-bottom: 14px; }
+.rcp-yield { font-size: 0.8rem; font-weight: 500; color: var(--ink-faint); letter-spacing: 0; margin-left: 6px; }
+.rcp-group { font-size: 0.66rem; text-transform: uppercase; letter-spacing: .14em; font-weight: 600; color: var(--gold); margin: 18px 0 4px; }
 .rcp-ing { list-style: none; border-top: 1px solid var(--hairline); max-width: 38em; }
 .rcp-ing li { padding: 10px 0; border-bottom: 1px solid var(--hairline); }
+.rcp-note { display: block; font-size: 0.8rem; color: var(--ink-faint); }
 .rcp-steps { list-style: none; counter-reset: step; max-width: 38em; }
 .rcp-steps li { counter-increment: step; position: relative; padding: 3px 0 18px 46px; }
 .rcp-steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%; background: var(--green-deep); color: var(--cream); font-size: 0.85rem; font-weight: 600; display: flex; align-items: center; justify-content: center; }
-.rcp-tip { max-width: 38em; padding: 14px 18px; background: var(--card-bg); border-radius: var(--radius); font-size: 0.92rem; color: var(--ink-soft); }
-.rcp-tip b { color: var(--ink); font-weight: 600; margin-right: 8px; }
-.rcp-aside { display: flex; flex-direction: column; gap: 28px; }
+.rcp-bullets { padding-left: 20px; max-width: 38em; }
+.rcp-bullets li { margin-bottom: 8px; }
+.rcp-bullets li::marker { color: var(--gold); }
+.rcp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 46em; }
+.rcp-two p, .rcp-qa p { color: var(--ink-soft); font-size: 0.95rem; }
+.rcp-faq { max-width: 42em; }
+.rcp-qa { padding: 14px 0; border-top: 1px solid var(--hairline); }
+.rcp-qa h3 { font-size: 1rem; margin-bottom: 4px; letter-spacing: -0.01em; }
 .rcp-made { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 20px 22px; box-shadow: var(--shadow); }
 .rcp-made .eyebrow { margin-bottom: 6px; }
 .rcp-pack { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 16px; align-items: center; padding: 12px 0; }
@@ -494,7 +516,6 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .rcp-pack > div { display: flex; flex-direction: column; gap: 2px; }
 .rcp-pack-links { display: flex; flex-wrap: wrap; gap: 4px 16px; margin-top: 4px; font-size: 0.82rem; }
 .rcp-also { margin-top: 6px; padding-top: 12px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--ink-soft); }
-.rcp-card img { width: 100%; height: auto; border-radius: var(--radius-lg); box-shadow: 0 14px 34px rgba(30,40,22,.12); }
 .rcp-more { padding: 36px 0 80px; border-top: 1px solid var(--hairline); }
 .rcp-hub { padding: 28px 0 80px; }
 .rcp-hub .pdp-lede { margin-bottom: 30px; }
@@ -504,14 +525,18 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .rcp-tile:hover img { transform: translateY(-3px); }
 .rt-name { font-weight: 600; font-size: 1rem; line-height: 1.3; }
 .rt-names { font-size: 0.82rem; color: var(--gold); }
-.rt-names [lang="te"] { font-family: "Noto Sans Telugu", sans-serif; }
+.rt-names [lang="te"], .rcp-quick [lang="te"] { font-family: "Noto Sans Telugu", sans-serif; }
 .rt-line { font-size: 0.82rem; color: var(--ink-soft); }
 .rcp-all { margin-top: 24px; font-size: 0.92rem; }
 @media (max-width: 900px) {
-  .rcp { grid-template-columns: 1fr; gap: 36px; padding-top: 18px; }
-  .rcp-aside { max-width: 460px; }
+  .rcp-hero { grid-template-columns: 1fr; gap: 30px; padding-top: 18px; }
+  .rcp-card { max-width: 380px; }
+  .rcp-body { display: block; }
+  .rcp-aside { position: static; max-width: 460px; }
 }
 @media (max-width: 560px) {
   .rcp-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rcp-quick { padding: 18px; }
+  .rcp-two { grid-template-columns: 1fr; gap: 22px; }
   .rcp-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 14px; }
 }
