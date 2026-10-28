@@ -14,8 +14,9 @@ Packs with live_from in the future are skipped until that date (IST), so re-runn
 index.html so the homepage links to every live page in plain HTML.
 
 The same run also rebuilds the recipe pages (/recipes/ and /recipes/<slug>/) through
-tools/build_recipes.py, which reuses this file's header, footer and head links, and lists them in
-sitemap.xml. So one command regenerates the whole crawlable layer:  python3 tools/build_pages.py
+tools/build_recipes.py, and the buyer guides (/learn/ and /learn/<slug>/) through tools/build_guides.py.
+Both reuse this file's header, footer and head links, and list their pages in sitemap.xml. So one
+command regenerates the whole crawlable layer:  python3 tools/build_pages.py
 """
 import datetime as dt
 import html
@@ -272,10 +273,11 @@ HEADER = """  <header class="header" id="top">
 
 
 RECIPES_LINK = '        <a href="/recipes/">Recipes</a>'
+GUIDES_LINK = '        <a href="/learn/">Guides</a>'
 
 
 def footer(live):
-    links = "\n".join([f'        <a href="/{q["slug"]}/">{q["name"]}</a>' for q in live] + [RECIPES_LINK])
+    links = "\n".join([f'        <a href="/{q["slug"]}/">{q["name"]}</a>' for q in live] + [RECIPES_LINK, GUIDES_LINK])
     return f"""  <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
@@ -311,7 +313,8 @@ HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />"""
 
 
-def page(p, live, facts):
+def page(p, live, facts, guides=()):
+    """guides: [(url, name)] of buyer guides about this pack (build_guides.links_by_pack())."""
     url = f"{SITE}/{p['slug']}/"
     img = f"/assets/packs/{p['pack']}"
     others = [q for q in live if q is not p]
@@ -322,6 +325,7 @@ def page(p, live, facts):
           <span class="po-price">₹{q['mrp']} · {q['g']} g</span>
         </a>""" for q in others)
     uses = "\n".join(f"          <li>{u}</li>" for u in p["uses"])
+    guide_links = "".join(f'\n        <p class="pdp-guide"><span>Guide</span><a href="{u}">{n}</a></p>' for u, n in guides)
     allergen = f"<dt>Allergen</dt><dd>{p['allergen']}</dd>" if p.get("allergen") else ""
     facts_row = facts.get(p["code"], {})
     storage = f"<dt>Storage</dt><dd>{facts_row['storage']}</dd>" if facts_row.get("storage") else ""
@@ -387,7 +391,7 @@ def page(p, live, facts):
         <h2>How to use</h2>
         <ul>
 {uses}
-        </ul>
+        </ul>{guide_links}
       </div>
       <div>
         <h2>Pack details</h2>
@@ -433,7 +437,7 @@ def page(p, live, facts):
 
 
 def sitemap(live, extra=()):
-    """extra: (url, changefreq, priority) rows from other generators (the recipe pages)."""
+    """extra: (url, changefreq, priority) rows from other generators (the recipe and guide pages)."""
     urls = [(f"{SITE}/", "weekly", "1.0")]
     urls += [(f"{SITE}/{p['slug']}/", "weekly", "0.9") for p in live]
     urls += list(extra)
@@ -452,7 +456,7 @@ def sitemap(live, extra=()):
 
 
 def pack_links_block(live):
-    links = "\n".join([f'        <a href="/{p["slug"]}/">{p["name"]}</a>' for p in live] + [RECIPES_LINK])
+    links = "\n".join([f'        <a href="/{p["slug"]}/">{p["name"]}</a>' for p in live] + [RECIPES_LINK, GUIDES_LINK])
     return f"<!-- PACK-LINKS:START (tools/build_pages.py) -->\n{links}\n        <!-- PACK-LINKS:END -->"
 
 
@@ -462,15 +466,16 @@ def main():
     sys.modules.setdefault("build_pages", sys.modules[__name__])
     sys.dont_write_bytecode = True  # no tools/__pycache__ left in the repo
     import build_recipes
+    import build_guides
     facts = pack_facts()
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
     for p in live:
         out = ROOT / p["slug"] / "index.html"
         out.parent.mkdir(exist_ok=True)
-        out.write_text(page(p, live, facts), encoding="utf-8")
+        out.write_text(page(p, live, facts, build_guides.links_by_pack().get(p["slug"], ())), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
-    extra = build_recipes.sitemap_rows()
+    extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows()
     (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
     print("wrote sitemap.xml with", len(live) + 2 + len(extra), "urls")
     idx = ROOT / "index.html"
@@ -481,6 +486,7 @@ def main():
     idx.write_text(new, encoding="utf-8")
     print("refreshed PACK-LINKS in index.html:", ", ".join(p["slug"] for p in live))
     build_recipes.build(live)
+    build_guides.build(live)
 
 
 if __name__ == "__main__":

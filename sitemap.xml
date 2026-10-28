@@ -2,67 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://1acrefarms.co.in/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/turmeric-powder/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/hill-turmeric-powder/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/cane-jaggery/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/palm-jaggery/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/recipes/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/recipes/palm-jaggery-coffee/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/recipes/paramannam/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/recipes/chimmili/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/recipes/pasupu-paalu/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://1acrefarms.co.in/learn/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://1acrefarms.co.in/learn/turmeric-adulteration-test/</loc>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://1acrefarms.co.in/policies.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>
