@@ -276,6 +276,9 @@ img { max-width: 100%; display: block; }
 .footer-col h4 { color: #fff; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 16px; }
 .footer-col a { display: block; font-size: 0.9rem; color: #b6bea7; margin-bottom: 10px; transition: color .2s; }
 .footer-col a:hover { color: #fff; }
+.footer-addr { text-align: center; max-width: 62em; margin: 40px auto 0; padding: 0 16px; font-size: 0.8rem; line-height: 1.7; color: #9aa589; }
+.footer-addr b { color: #c9cfba; font-weight: 600; }
+.footer-addr + .footer-base { margin-top: 20px; }
 .footer-base { text-align: center; margin-top: 44px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); font-size: 0.76rem; letter-spacing: .04em; color: #8a9479; }
 
 /* Cart drawer */
