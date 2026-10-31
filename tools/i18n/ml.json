@@ -1,0 +1,480 @@
+{
+ "_lang": "ml",
+ "strings": {
+  "ui.nav_packs": {
+   "src": "Our Packs",
+   "t": "ഞങ്ങളുടെ പാക്കറ്റുകൾ",
+   "back": "Our packets"
+  },
+  "ui.shop_all": {
+   "src": "Shop all packs",
+   "t": "എല്ലാ പാക്കറ്റുകളും കാണുക",
+   "back": "See all packets"
+  },
+  "ui.home": {
+   "src": "Home",
+   "t": "ഹോം",
+   "back": "Home"
+  },
+  "ui.lang": {
+   "src": "Language",
+   "t": "ഭാഷ",
+   "back": "Language"
+  },
+  "ui.read_in": {
+   "src": "Read this page in <this language>",
+   "t": "ഈ പേജ് മലയാളത്തിൽ വായിക്കൂ",
+   "back": "Read this page in Malayalam"
+  },
+  "ui.not_now": {
+   "src": "Not now",
+   "t": "ഇപ്പോൾ വേണ്ട",
+   "back": "Not now"
+  },
+  "ui.per_g": {
+   "src": "per g",
+   "t": "ഒരു g-ക്ക്",
+   "back": "For one g"
+  },
+  "ui.tax": {
+   "src": "Incl. of all taxes · In stock · Dispatched within 2 working days",
+   "t": "എല്ലാ നികുതികളും ഉൾപ്പെടെ · സ്റ്റോക്കുണ്ട് · 2 പ്രവൃത്തി ദിവസത്തിനകം അയയ്ക്കും",
+   "back": "Including all taxes · In stock · Will send within 2 working days"
+  },
+  "ui.add": {
+   "src": "Add to order",
+   "t": "ഓർഡറിൽ ചേർക്കൂ",
+   "back": "Add to order"
+  },
+  "ui.wa": {
+   "src": "Order on WhatsApp",
+   "t": "WhatsApp-ൽ ഓർഡർ ചെയ്യൂ",
+   "back": "Order on WhatsApp"
+  },
+  "ui.f_from": {
+   "src": "From",
+   "t": "എവിടെ നിന്ന്",
+   "back": "From where"
+  },
+  "ui.f_pack": {
+   "src": "Pack",
+   "t": "പാക്കറ്റ്",
+   "back": "Packet"
+  },
+  "ui.f_delivery": {
+   "src": "Delivery",
+   "t": "ഡെലിവറി",
+   "back": "Delivery"
+  },
+  "ui.f_delivery_v": {
+   "src": "Free on 2 or more packs · ₹81 for one pack",
+   "t": "2-ഓ അതിലധികമോ പാക്കറ്റുകൾക്ക് സൗജന്യം · ഒരു പാക്കറ്റിന് ₹81",
+   "back": "Free for 2 or more packets · ₹81 for one packet"
+  },
+  "ui.f_pay": {
+   "src": "Pay",
+   "t": "പണമടയ്ക്കൽ",
+   "back": "Payment"
+  },
+  "ui.f_pay_v": {
+   "src": "UPI, or pay on delivery where available",
+   "t": "UPI, അല്ലെങ്കിൽ സൗകര്യമുള്ള സ്ഥലങ്ങളിൽ ഡെലിവറി സമയത്ത് പണം നൽകാം",
+   "back": "UPI, or in places where there is the facility, (you) can give money at the time of delivery"
+  },
+  "ui.how_to_use": {
+   "src": "How to use",
+   "t": "എങ്ങനെ ഉപയോഗിക്കാം",
+   "back": "How to use"
+  },
+  "ui.pack_details": {
+   "src": "Pack details",
+   "t": "പാക്കറ്റ് വിവരങ്ങൾ",
+   "back": "Packet details"
+  },
+  "ui.as_printed": {
+   "src": "As printed on the pack, in English.",
+   "t": "പാക്കറ്റിൽ ഇംഗ്ലീഷിൽ അച്ചടിച്ചിരിക്കുന്നതുപോലെ.",
+   "back": "As printed in English on the packet."
+  },
+  "ui.ship_h": {
+   "src": "Delivery, payment and returns",
+   "t": "ഡെലിവറി, പണമടയ്ക്കൽ, തിരിച്ചുനൽകൽ",
+   "back": "Delivery, payment, giving back"
+  },
+  "ui.ship_p": {
+   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
+   "t": "ഓർഡർ സ്ഥിരീകരിച്ച് 2 പ്രവൃത്തി ദിവസത്തിനകം പാക്ക് ചെയ്ത് അയയ്ക്കും; അയച്ച ശേഷം സാധാരണയായി 2 മുതൽ 7 ദിവസത്തിനകം എത്തും. ഇന്ത്യയിൽ ഞങ്ങൾ ഡെലിവറി ചെയ്യുന്ന ഏതു സ്ഥലത്തേക്കും 2-ഓ അതിലധികമോ പാക്കറ്റുകൾക്ക് ഡെലിവറി സൗജന്യമാണ്; ഒരു പാക്കറ്റിന് ₹81. UPI വഴി പണമടയ്ക്കാം; അല്ലെങ്കിൽ ദക്ഷിണേന്ത്യയിൽ ₹999 വരെയും മറ്റിടങ്ങളിൽ ₹599 വരെയുമുള്ള ഓർഡറുകൾക്ക് ഡെലിവറി സമയത്ത് പണം നൽകാം. പാക്കറ്റ് കേടുപാടുകളോടെ എത്തിയാലോ ഗുണനിലവാരത്തിൽ എന്തെങ്കിലും പ്രശ്നമുണ്ടെങ്കിലോ, ഞങ്ങൾ അത് മാറ്റിത്തരും, അല്ലെങ്കിൽ മുഴുവൻ പണവും തിരികെ നൽകും.",
+   "back": "Orders are packed and sent within 2 working days of confirming the order; after sending they usually arrive within 2 to 7 days. after sending it usually arrives within 2 to 7 days. To any place in India that we deliver to, delivery is free for 2 or more packets; ₹81 for one packet. (You) can pay via UPI; or (you) can give money at the time of delivery for orders up to ₹999 in South India and up to ₹599 in other places. If the packet arrives with damage or if there is any problem in the quality, we will replace it for you, or will give back the whole money."
+  },
+  "ui.read_policies": {
+   "src": "Read our policies (in English)",
+   "t": "ഞങ്ങളുടെ നയങ്ങൾ വായിക്കൂ (ഇംഗ്ലീഷിൽ)",
+   "back": "Read our policies (in English)"
+  },
+  "ui.other_packs": {
+   "src": "Our other packs",
+   "t": "ഞങ്ങളുടെ മറ്റ് പാക്കറ്റുകൾ",
+   "back": "Our other packets"
+  },
+  "ui.translated": {
+   "src": "Translated from English. Spotted a mistake?",
+   "t": "ഇംഗ്ലീഷിൽ നിന്ന് വിവർത്തനം ചെയ്തത്. എന്തെങ്കിലും തെറ്റ് കണ്ടോ?",
+   "back": "Translated from English. Did (you) see any mistake?"
+  },
+  "ui.wa_us": {
+   "src": "WhatsApp us",
+   "t": "ഞങ്ങൾക്ക് WhatsApp ചെയ്യൂ",
+   "back": "WhatsApp us"
+  },
+  "ui.order_note": {
+   "src": "Orders are placed in our shop, which is in English.",
+   "t": "ഓർഡറുകൾ ഞങ്ങളുടെ ഷോപ്പിലാണ് നൽകുന്നത്; ഷോപ്പ് ഇംഗ്ലീഷിലാണ്.",
+   "back": "Orders are placed in our shop; the shop is in English."
+  },
+  "ui.l_title": {
+   "src": "Turmeric, chilli powder, jaggery and cashew from Bharat",
+   "t": "ഭാരതത്തിൽ നിന്ന് മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി",
+   "back": "Turmeric powder, chilli powder, jaggery, cashew from Bharat"
+  },
+  "ui.l_desc": {
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
+   "t": "ഗ്രാമീണ നാടൻ മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി 540 g പാക്കറ്റുകളിൽ, ആന്ധ്രാപ്രദേശിലെ നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്. ഓൺലൈനായോ WhatsApp-ലോ ഓർഡർ ചെയ്യൂ. 2-ഓ അതിലധികമോ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Rural native (naadan) turmeric powder, chilli powder, jaggery, cashew in 540 g packets, packed in Narasaraopet in Andhra Pradesh. Order online or on WhatsApp. Free delivery for 2 or more packets."
+  },
+  "ui.l_eyebrow": {
+   "src": "Village desi foods from Bharat",
+   "t": "ഭാരതത്തിൽ നിന്നുള്ള ഗ്രാമീണ നാടൻ ഭക്ഷ്യവസ്തുക്കൾ",
+   "back": "Rural native (naadan) food items from Bharat"
+  },
+  "ui.l_lede": {
+   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
+   "t": "മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി 540 g പാക്കറ്റുകളിൽ, ആന്ധ്രാപ്രദേശിലെ നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്. ഓൺലൈനായോ WhatsApp-ലോ ഓർഡർ ചെയ്യൂ. 2-ഓ അതിലധികമോ പാക്കറ്റുകൾക്ക് ഡെലിവറി സൗജന്യം.",
+   "back": "Turmeric powder, chilli powder, jaggery, cashew in 540 g packets, packed in Narasaraopet in Andhra Pradesh. Order online or on WhatsApp. Delivery free for 2 or more packets."
+  },
+  "ui.l_packs": {
+   "src": "Our packs",
+   "t": "ഞങ്ങളുടെ പാക്കറ്റുകൾ",
+   "back": "Our packets"
+  },
+  "ui.see_pack": {
+   "src": "See the pack",
+   "t": "പാക്കറ്റ് കാണൂ",
+   "back": "See the packet"
+  },
+  "pack.TURM.name": {
+   "src": "Turmeric Powder (Pasupu)",
+   "t": "മഞ്ഞൾപ്പൊടി (പസുപു)",
+   "back": "Turmeric powder (Pasupu)"
+  },
+  "pack.TURM.title": {
+   "src": "Turmeric Powder (Pasupu) 540 g from Palnadu & Guntur | 1acrefarms",
+   "t": "മഞ്ഞൾപ്പൊടി (പസുപു) 540 g, പൽനാട് & ഗുണ്ടൂരിൽ നിന്ന് | 1acrefarms",
+   "back": "Turmeric powder (Pasupu) 540 g, from Palnadu & Guntur | 1acrefarms"
+  },
+  "pack.TURM.desc": {
+   "src": "Pasupu (haldi) from Palnadu and Guntur, sun-dried and stone-ground, in a 540 g pack. MRP ₹396 incl. of all taxes. Order online or on WhatsApp. Free delivery on 2+ packs.",
+   "t": "പസുപു (മഞ്ഞൾ): പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ നിന്ന്, വെയിലത്ത് ഉണക്കി കല്ലിൽ പൊടിച്ചത്, 540 g പാക്കറ്റിൽ. MRP ₹396, എല്ലാ നികുതികളും ഉൾപ്പെടെ. ഓൺലൈനായോ WhatsApp-ലോ ഓർഡർ ചെയ്യൂ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Pasupu (turmeric): from Palnadu and Guntur, dried in the sun and ground on stone, in a 540 g packet. MRP ₹396, including all taxes. Order online or on WhatsApp. Free delivery for 2+ packets."
+  },
+  "pack.TURM.lede": {
+   "src": "Turmeric powder from Palnadu and Guntur. Sun-dried, stone-ground and packed in Narasaraopet.",
+   "t": "പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ നിന്നുള്ള മഞ്ഞൾപ്പൊടി. വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ച്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Turmeric powder from Palnadu and Guntur. Dried in the sun, ground on stone, packed in Narasaraopet."
+  },
+  "pack.TURM.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "പൽനാട് & ഗുണ്ടൂരിൽ വിളഞ്ഞത്",
+   "back": "Grown in Palnadu & Guntur"
+  },
+  "pack.TURM.note": {
+   "src": "Farm-sourced · sun-dried · stone-ground",
+   "t": "കൃഷിയിടങ്ങളിൽ നിന്ന് എടുത്തത് · വെയിലത്ത് ഉണക്കിയത് · കല്ലിൽ പൊടിച്ചത്",
+   "back": "Taken from farmlands · Dried in the sun · Ground on stone"
+  },
+  "pack.TURM.use0": {
+   "src": "A pinch in dal, sambar, rasam, curries and pulihora.",
+   "t": "പരിപ്പ്, സാമ്പാർ, രസം, കറികൾ, പുളിഹോര എന്നിവയിൽ ഒരു നുള്ള് ചേർക്കൂ.",
+   "back": "Add a pinch to dal (parippu), sambar, rasam, curries, pulihora."
+  },
+  "pack.TURM.use1": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "കരിഞ്ഞുപോകാതിരിക്കാൻ ചെറിയ തീയിൽ ചേർക്കൂ.",
+   "back": "Add on a small flame so that it does not get burnt."
+  },
+  "pack.TURM.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ; ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ.",
+   "back": "Use a dry spoon; after use, keep the zip closed."
+  },
+  "pack.KPAS.name": {
+   "src": "Hill Turmeric Powder (Konda Pasupu)",
+   "t": "മലയോര മഞ്ഞൾപ്പൊടി (കൊണ്ട പസുപു)",
+   "back": "Hill-region turmeric powder (Konda Pasupu)"
+  },
+  "pack.KPAS.title": {
+   "src": "Hill Turmeric Powder (Konda Pasupu) 540 g from Araku | 1acrefarms",
+   "t": "മലയോര മഞ്ഞൾപ്പൊടി (കൊണ്ട പസുപു) 540 g, അരക്കുവിൽ നിന്ന് | 1acrefarms",
+   "back": "Hill-region turmeric powder (Konda Pasupu) 540 g, from Araku | 1acrefarms"
+  },
+  "pack.KPAS.desc": {
+   "src": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills, packed as fine powder in a 540 g pack. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "കൊണ്ട പസുപു: അരക്കു, മാരേഡുമില്ലി മലകളിൽ നിന്നുള്ള മലയോര മഞ്ഞൾ, നേർത്ത പൊടിയായി 540 g പാക്കറ്റിൽ. MRP ₹495, എല്ലാ നികുതികളും ഉൾപ്പെടെ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Konda Pasupu: hill-region turmeric from the Araku, Maredumilli hills, as fine powder in a 540 g packet. MRP ₹495, including all taxes. Free delivery for 2+ packets."
+  },
+  "pack.KPAS.lede": {
+   "src": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder in Narasaraopet.",
+   "t": "കൊണ്ട പസുപു: അരക്കു, മാരേഡുമില്ലി മലകളിൽ നിന്നുള്ള മലയോര മഞ്ഞൾ. മുഴുവൻ മലയോര മഞ്ഞൾ കിഴങ്ങുകൾ, നരസറാവുപേട്ടയിൽ നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്.",
+   "back": "Konda Pasupu: hill-region turmeric from the Araku, Maredumilli hills. Whole hill-region turmeric rhizomes, packed as fine powder in Narasaraopet."
+  },
+  "pack.KPAS.origin": {
+   "src": "Araku & Maredumilli hills",
+   "t": "അരക്കു & മാരേഡുമില്ലി മലകൾ",
+   "back": "Araku & Maredumilli hills"
+  },
+  "pack.KPAS.note": {
+   "src": "Whole hill turmeric fingers, packed as fine powder",
+   "t": "മുഴുവൻ മലയോര മഞ്ഞൾ കിഴങ്ങുകൾ, നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്",
+   "back": "Whole hill-region turmeric rhizomes, packed as fine powder"
+  },
+  "pack.KPAS.use0": {
+   "src": "Use it wherever you use turmeric: dal, sambar, curries and pulihora.",
+   "t": "മഞ്ഞൾ ചേർക്കുന്ന എല്ലാ വിഭവങ്ങളിലും ഉപയോഗിക്കാം: പരിപ്പ്, സാമ്പാർ, കറികൾ, പുളിഹോര.",
+   "back": "Can be used in all dishes in which turmeric is added: dal (parippu), sambar, curries, pulihora."
+  },
+  "pack.KPAS.use1": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "കരിഞ്ഞുപോകാതിരിക്കാൻ ചെറിയ തീയിൽ ചേർക്കൂ.",
+   "back": "Add on a small flame so that it does not get burnt."
+  },
+  "pack.KPAS.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ; ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ.",
+   "back": "Use a dry spoon; after use, keep the zip closed."
+  },
+  "pack.SANN.name": {
+   "src": "Sannam Chilli Powder (Sannam Kaaram)",
+   "t": "സന്നം മുളകുപൊടി (സന്നം കാരം)",
+   "back": "Sannam chilli powder (Sannam Karam)"
+  },
+  "pack.SANN.title": {
+   "src": "Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
+   "t": "സന്നം മുളകുപൊടി (സന്നം കാരം) 540 g | 1acrefarms",
+   "back": "Sannam chilli powder (Sannam Karam) 540 g | 1acrefarms"
+  },
+  "pack.SANN.desc": {
+   "src": "Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. MRP ₹306 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "സന്നം കാരം: പൽനാട്ടിൽ വിളഞ്ഞ, വെയിലത്ത് ഉണക്കിയ മുഴുവൻ സന്നം മുളകിൽ നിന്നുള്ള ചുവന്ന മുളകുപൊടി, 540 g. MRP ₹306, എല്ലാ നികുതികളും ഉൾപ്പെടെ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Sannam Karam: red chilli powder from whole Sannam chillies grown in Palnadu, dried in the sun, 540 g. MRP ₹306, including all taxes. Free delivery for 2+ packets."
+  },
+  "pack.SANN.lede": {
+   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+   "t": "സന്നം കാരം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ വിളഞ്ഞ, വെയിലത്ത് ഉണക്കിയ മുഴുവൻ സന്നം മുളക്, നരസറാവുപേട്ടയിൽ നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്.",
+   "back": "Sannam Karam: whole Sannam chillies grown in Palnadu and Guntur, dried in the sun, packed as fine powder in Narasaraopet."
+  },
+  "pack.SANN.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "പൽനാട് & ഗുണ്ടൂരിൽ വിളഞ്ഞത്",
+   "back": "Grown in Palnadu & Guntur"
+  },
+  "pack.SANN.note": {
+   "src": "Whole sun-dried chillies, packed as fine powder",
+   "t": "വെയിലത്ത് ഉണക്കിയ മുഴുവൻ മുളക്, നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്",
+   "back": "Whole chillies dried in the sun, packed as fine powder"
+  },
+  "pack.SANN.use0": {
+   "src": "Use in curries, chutneys, podis and pickles.",
+   "t": "കറികൾ, ചമ്മന്തി, പൊടികൾ, അച്ചാറുകൾ എന്നിവയിൽ ഉപയോഗിക്കൂ.",
+   "back": "Use in curries, chammanthi (chutney), podis (powders), pickles."
+  },
+  "pack.SANN.use1": {
+   "src": "Add it to hot oil on a low flame.",
+   "t": "ചെറിയ തീയിൽ ചൂടെണ്ണയിൽ ചേർക്കൂ.",
+   "back": "Add to hot oil on a small flame."
+  },
+  "pack.SANN.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ; ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ.",
+   "back": "Use a dry spoon; after use, keep the zip closed."
+  },
+  "pack.TEJA.name": {
+   "src": "Teja Chilli Powder (Teja Kaaram)",
+   "t": "തേജ മുളകുപൊടി (തേജ കാരം)",
+   "back": "Teja chilli powder (Teja Karam)"
+  },
+  "pack.TEJA.title": {
+   "src": "Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
+   "t": "തേജ മുളകുപൊടി (തേജ കാരം) 540 g, കടുത്ത എരിവ് | 1acrefarms",
+   "back": "Teja chilli powder (Teja Karam) 540 g, intense pungency | 1acrefarms"
+  },
+  "pack.TEJA.desc": {
+   "src": "Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "തേജ കാരം: കടുത്ത എരിവുള്ള ചുവന്ന മുളകുപൊടി, വെയിലത്ത് ഉണക്കി കല്ലിൽ പൊടിച്ചത്, 540 g. MRP ₹342, എല്ലാ നികുതികളും ഉൾപ്പെടെ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Teja Karam: intensely pungent red chilli powder, dried in the sun and ground on stone, 540 g. MRP ₹342, including all taxes. Free delivery for 2+ packets."
+  },
+  "pack.TEJA.lede": {
+   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+   "t": "തേജ കാരം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ വിളഞ്ഞ കടുത്ത എരിവുള്ള തേജ മുളക്, വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ച്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Teja Karam: intensely pungent Teja chillies grown in Palnadu and Guntur, dried in the sun, ground on stone, packed in Narasaraopet."
+  },
+  "pack.TEJA.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "പൽനാട് & ഗുണ്ടൂരിൽ വിളഞ്ഞത്",
+   "back": "Grown in Palnadu & Guntur"
+  },
+  "pack.TEJA.note": {
+   "src": "Extra hot · sun-dried · stone-ground",
+   "t": "കടുത്ത എരിവ് · വെയിലത്ത് ഉണക്കിയത് · കല്ലിൽ പൊടിച്ചത്",
+   "back": "Intense pungency · Dried in the sun · Ground on stone"
+  },
+  "pack.TEJA.use0": {
+   "src": "A little goes a long way: start with less than you would of milder chilli powder.",
+   "t": "അല്പം മതി: എരിവ് കുറഞ്ഞ മുളകുപൊടി ഇടുന്നതിലും കുറച്ച് ഇട്ട് തുടങ്ങൂ.",
+   "back": "A little is enough: start by putting less than (you put of) a less-pungent chilli powder."
+  },
+  "pack.TEJA.use1": {
+   "src": "Use in curries, chutneys, podis and pickles.",
+   "t": "കറികൾ, ചമ്മന്തി, പൊടികൾ, അച്ചാറുകൾ എന്നിവയിൽ ഉപയോഗിക്കൂ.",
+   "back": "Use in curries, chammanthi (chutney), podis (powders), pickles."
+  },
+  "pack.TEJA.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ; ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ.",
+   "back": "Use a dry spoon; after use, keep the zip closed."
+  },
+  "pack.CBEL.name": {
+   "src": "Cane Jaggery (Cheruku Bellam)",
+   "t": "കരിമ്പ് ശർക്കര (ചെറുകു ബെല്ലം)",
+   "back": "Sugarcane jaggery (Cheruku Bellam)"
+  },
+  "pack.CBEL.title": {
+   "src": "Cane Jaggery (Cheruku Bellam) 540 g from Anakapalli & Chittoor | 1acrefarms",
+   "t": "കരിമ്പ് ശർക്കര (ചെറുകു ബെല്ലം) 540 g, അനകാപ്പള്ളി & ചിറ്റൂരിൽ നിന്ന് | 1acrefarms",
+   "back": "Sugarcane jaggery (Cheruku Bellam) 540 g, from Anakapalli & Chittoor | 1acrefarms"
+  },
+  "pack.CBEL.desc": {
+   "src": "Cheruku bellam (gud): dark, slow-boiled cane jaggery from the Chittoor and Anakapalli cane belts, 540 g. MRP ₹234 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ചെറുകു ബെല്ലം (ശർക്കര): ചിറ്റൂർ, അനകാപ്പള്ളി കരിമ്പ് മേഖലകളിൽ നിന്നുള്ള, പതുക്കെ കാച്ചിയെടുത്ത ഇരുണ്ട നിറമുള്ള കരിമ്പ് ശർക്കര, 540 g. MRP ₹234, എല്ലാ നികുതികളും ഉൾപ്പെടെ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Cheruku Bellam (jaggery): from the Chittoor, Anakapalli sugarcane regions, slowly boiled-down, dark-coloured sugarcane jaggery, 540 g. MRP ₹234, including all taxes. Free delivery for 2+ packets."
+  },
+  "pack.CBEL.lede": {
+   "src": "Cheruku bellam: dark, slow-boiled village desi cane jaggery from the Chittoor and Anakapalli cane belts, packed in Narasaraopet.",
+   "t": "ചെറുകു ബെല്ലം: ചിറ്റൂർ, അനകാപ്പള്ളി കരിമ്പ് മേഖലകളിൽ നിന്നുള്ള, പതുക്കെ കാച്ചിയെടുത്ത ഇരുണ്ട നിറമുള്ള ഗ്രാമീണ നാടൻ കരിമ്പ് ശർക്കര, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Cheruku Bellam: from the Chittoor, Anakapalli sugarcane regions, slowly boiled-down, dark-coloured, rural native (naadan) sugarcane jaggery, packed in Narasaraopet."
+  },
+  "pack.CBEL.origin": {
+   "src": "Chittoor & Anakapalli cane belts",
+   "t": "ചിറ്റൂർ & അനകാപ്പള്ളി കരിമ്പ് മേഖലകൾ",
+   "back": "Chittoor & Anakapalli sugarcane regions"
+  },
+  "pack.CBEL.note": {
+   "src": "Village desi · dark · slow-boiled",
+   "t": "ഗ്രാമീണ നാടൻ · ഇരുണ്ട നിറം · പതുക്കെ കാച്ചിയത്",
+   "back": "Rural native (naadan) · Dark colour · Slowly boiled"
+  },
+  "pack.CBEL.use0": {
+   "src": "Sweeten payasam, pongal, chikki and laddu.",
+   "t": "പായസം, പൊങ്കൽ, കടലമിഠായി, ലഡു എന്നിവയ്ക്ക് മധുരം ചേർക്കാൻ.",
+   "back": "To add sweetness to payasam, pongal, peanut candy (kadalamittayi), laddu."
+  },
+  "pack.CBEL.use1": {
+   "src": "Stir a little into tea, coffee or panakam.",
+   "t": "ചായ, കാപ്പി, പാനകം എന്നിവയിൽ അല്പം ഇളക്കിച്ചേർക്കൂ.",
+   "back": "Stir a little into tea, coffee, panakam."
+  },
+  "pack.CBEL.use2": {
+   "src": "If it sets hard, grate it.",
+   "t": "കട്ടിയായാൽ, ചുരണ്ടിയെടുക്കൂ.",
+   "back": "If it becomes hard, scrape (grate) it."
+  },
+  "pack.TBEL.name": {
+   "src": "Palm Jaggery (Thati Bellam)",
+   "t": "പനംചക്കര (താട്ടി ബെല്ലം)",
+   "back": "Palm jaggery (Thati Bellam)"
+  },
+  "pack.TBEL.title": {
+   "src": "Palm Jaggery (Thati Bellam) 540 g from the Godavari delta | 1acrefarms",
+   "t": "പനംചക്കര (താട്ടി ബെല്ലം) 540 g, ഗോദാവരി ഡെൽറ്റയിൽ നിന്ന് | 1acrefarms",
+   "back": "Palm jaggery (Thati Bellam) 540 g, from the Godavari delta | 1acrefarms"
+  },
+  "pack.TBEL.desc": {
+   "src": "Thati bellam (taad gud): palm jaggery from the Godavari delta, made from palmyra sap, 540 g. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "താട്ടി ബെല്ലം (കരിപ്പെട്ടി): ഗോദാവരി ഡെൽറ്റയിൽ നിന്ന്, കരിമ്പനയുടെ നീരിൽ നിന്ന് ഉണ്ടാക്കിയ പനംചക്കര, 540 g. MRP ₹495, എല്ലാ നികുതികളും ഉൾപ്പെടെ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Thati Bellam (karippetti): from the Godavari delta, palm jaggery made from the sap of the palmyra palm, 540 g. MRP ₹495, including all taxes. Free delivery for 2+ packets."
+  },
+  "pack.TBEL.lede": {
+   "src": "Thati bellam: palm jaggery from the Godavari delta, made from palmyra sap. Packed in Narasaraopet.",
+   "t": "താട്ടി ബെല്ലം: ഗോദാവരി ഡെൽറ്റയിൽ നിന്ന്, കരിമ്പനയുടെ നീരിൽ നിന്ന് ഉണ്ടാക്കിയ പനംചക്കര. നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Thati Bellam: from the Godavari delta, palm jaggery made from the sap of the palmyra palm. Packed in Narasaraopet."
+  },
+  "pack.TBEL.origin": {
+   "src": "From the Godavari delta",
+   "t": "ഗോദാവരി ഡെൽറ്റയിൽ നിന്ന്",
+   "back": "From the Godavari delta"
+  },
+  "pack.TBEL.note": {
+   "src": "Village desi · palmyra sap",
+   "t": "ഗ്രാമീണ നാടൻ · കരിമ്പന നീര്",
+   "back": "Rural native (naadan) · Palmyra palm sap"
+  },
+  "pack.TBEL.use0": {
+   "src": "Make palm jaggery coffee or tea.",
+   "t": "പനംചക്കര കാപ്പിയോ ചായയോ ഉണ്ടാക്കൂ.",
+   "back": "Make palm jaggery coffee or tea."
+  },
+  "pack.TBEL.use1": {
+   "src": "Sweeten payasam, paramannam and sunnundalu.",
+   "t": "പായസം, പരമാന്നം, സുന്നുണ്ടലു എന്നിവയ്ക്ക് മധുരം ചേർക്കാൻ.",
+   "back": "To add sweetness to payasam, paramannam, sunnundalu."
+  },
+  "pack.TBEL.use2": {
+   "src": "If it sets hard, grate it.",
+   "t": "കട്ടിയായാൽ, ചുരണ്ടിയെടുക്കൂ.",
+   "back": "If it becomes hard, scrape (grate) it."
+  },
+  "pack.CASH.name": {
+   "src": "Cashew Kernels (Jeedipappu)",
+   "t": "കശുവണ്ടിപ്പരിപ്പ് (ജീഡിപപ്പു)",
+   "back": "Cashew nuts (Jeedipappu)"
+  },
+  "pack.CASH.title": {
+   "src": "Cashew Kernels (Jeedipappu) 540 g, whole and unsalted | 1acrefarms",
+   "t": "കശുവണ്ടിപ്പരിപ്പ് (ജീഡിപപ്പു) 540 g, മുഴുവനും ഉപ്പില്ലാത്തതും | 1acrefarms",
+   "back": "Cashew nuts (Jeedipappu) 540 g, whole and unsalted | 1acrefarms"
+  },
+  "pack.CASH.desc": {
+   "src": "Jeedipappu (kaju): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, 540 g. MRP ₹891 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ജീഡിപപ്പു (കശുവണ്ടി): ചീരാല, ബാപട്ല, വിശാഖപട്ടണം തീരങ്ങളിൽ നിന്നുള്ള മുഴുവൻ, പ്ലെയിൻ, ഉപ്പില്ലാത്ത കശുവണ്ടിപ്പരിപ്പ്, 540 g. MRP ₹891, എല്ലാ നികുതികളും ഉൾപ്പെടെ. 2+ പാക്കറ്റുകൾക്ക് സൗജന്യ ഡെലിവറി.",
+   "back": "Jeedipappu (cashew): whole, plain, unsalted cashew nuts from the Chirala, Bapatla, Visakhapatnam coasts, 540 g. MRP ₹891, including all taxes. Free delivery for 2+ packets."
+  },
+  "pack.CASH.lede": {
+   "src": "Jeedipappu: whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+   "t": "ജീഡിപപ്പു: ചീരാല, ബാപട്ല, വിശാഖപട്ടണം തീരങ്ങളിൽ നിന്നുള്ള മുഴുവൻ, പ്ലെയിൻ, ഉപ്പില്ലാത്ത കശുവണ്ടിപ്പരിപ്പ്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Jeedipappu: whole, plain, unsalted cashew nuts from the Chirala, Bapatla, Visakhapatnam coasts, packed in Narasaraopet."
+  },
+  "pack.CASH.origin": {
+   "src": "Chirala · Bapatla · Vizag coast",
+   "t": "ചീരാല · ബാപട്ല · വിശാഖപട്ടണം തീരം",
+   "back": "Chirala · Bapatla · Visakhapatnam coast"
+  },
+  "pack.CASH.note": {
+   "src": "Whole kernels · plain · unsalted",
+   "t": "മുഴുവൻ പരിപ്പ് · പ്ലെയിൻ · ഉപ്പില്ലാത്തത്",
+   "back": "Whole nuts · Plain · Unsalted"
+  },
+  "pack.CASH.use0": {
+   "src": "Eat as they are, or toast lightly in a dry pan.",
+   "t": "അങ്ങനെ തന്നെ കഴിക്കാം, അല്ലെങ്കിൽ എണ്ണയൊഴിക്കാത്ത പാനിൽ ചെറുതായി വറുത്തെടുക്കാം.",
+   "back": "Can eat as it is, or can lightly roast in a pan without pouring oil."
+  },
+  "pack.CASH.use1": {
+   "src": "Add to payasam, pulao, upma and sweets.",
+   "t": "പായസം, പുലാവ്, ഉപ്പുമാവ്, മധുരപലഹാരങ്ങൾ എന്നിവയിൽ ചേർക്കൂ.",
+   "back": "Add to payasam, pulao, upma, sweet snacks."
+  },
+  "pack.CASH.use2": {
+   "src": "Keep the zip shut after use.",
+   "t": "ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ.",
+   "back": "After use, keep the zip closed."
+  }
+ }
+}

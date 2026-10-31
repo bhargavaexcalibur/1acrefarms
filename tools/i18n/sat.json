@@ -1,0 +1,480 @@
+{
+ "_lang": "sat",
+ "strings": {
+  "ui.nav_packs": {
+   "src": "Our Packs",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱯᱮᱠ ᱠᱚ",
+   "back": "Our packs"
+  },
+  "ui.shop_all": {
+   "src": "Shop all packs",
+   "t": "ᱡᱚᱛᱚ ᱯᱮᱠ ᱧᱮᱞ ᱢᱮ",
+   "back": "See all packs"
+  },
+  "ui.home": {
+   "src": "Home",
+   "t": "ᱚᱲᱟᱜ",
+   "back": "House (home)"
+  },
+  "ui.lang": {
+   "src": "Language",
+   "t": "ᱯᱟᱹᱨᱥᱤ",
+   "back": "Language"
+  },
+  "ui.read_in": {
+   "src": "Read this page in <this language>",
+   "t": "ᱱᱚᱶᱟ ᱥᱟᱦᱴᱟ ᱥᱟᱱᱛᱟᱲᱤ ᱯᱟᱹᱨᱥᱤ ᱛᱮ ᱯᱟᱲᱦᱟᱣ ᱢᱮ",
+   "back": "Read this page in the Santali language"
+  },
+  "ui.not_now": {
+   "src": "Not now",
+   "t": "ᱱᱤᱛᱚᱜ ᱫᱚ ᱵᱟᱝ",
+   "back": "Not now"
+  },
+  "ui.per_g": {
+   "src": "per g",
+   "t": "ᱯᱨᱚᱛᱤ g",
+   "back": "per g"
+  },
+  "ui.tax": {
+   "src": "Incl. of all taxes · In stock · Dispatched within 2 working days",
+   "t": "ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ · ᱥᱴᱚᱠ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ · 2 ᱠᱟᱹᱢᱤ ᱢᱟᱦᱟᱸ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱠᱩᱞ ᱦᱩᱭᱩᱜᱼᱟ",
+   "back": "All tax included · Is in stock · Is sent within 2 working days"
+  },
+  "ui.add": {
+   "src": "Add to order",
+   "t": "ᱚᱨᱰᱟᱨ ᱨᱮ ᱥᱮᱞᱮᱫ ᱢᱮ",
+   "back": "Add to order"
+  },
+  "ui.wa": {
+   "src": "Order on WhatsApp",
+   "t": "WhatsApp ᱛᱮ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ",
+   "back": "Give order by WhatsApp"
+  },
+  "ui.f_from": {
+   "src": "From",
+   "t": "ᱚᱠᱟ ᱠᱷᱚᱱ",
+   "back": "From where"
+  },
+  "ui.f_pack": {
+   "src": "Pack",
+   "t": "ᱯᱮᱠ",
+   "back": "Pack"
+  },
+  "ui.f_delivery": {
+   "src": "Delivery",
+   "t": "ᱰᱮᱞᱤᱵᱷᱟᱨᱤ",
+   "back": "Delivery"
+  },
+  "ui.f_delivery_v": {
+   "src": "Free on 2 or more packs · ₹81 for one pack",
+   "t": "2 ᱥᱮ ᱵᱟᱹᱲᱛᱤ ᱯᱮᱠ ᱨᱮ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ · ᱢᱤᱫᱴᱟᱝ ᱯᱮᱠ ᱞᱟᱹᱜᱤᱫ ₹81",
+   "back": "On 2 or more packs there is no cost · ₹81 for one pack"
+  },
+  "ui.f_pay": {
+   "src": "Pay",
+   "t": "ᱴᱟᱠᱟ ᱮᱢ",
+   "back": "Give money"
+  },
+  "ui.f_pay_v": {
+   "src": "UPI, or pay on delivery where available",
+   "t": "UPI, ᱥᱮ ᱡᱟᱦᱟᱸ ᱨᱮ ᱢᱮᱱᱟᱜᱼᱟ ᱚᱸᱰᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱚᱠᱛᱚ ᱨᱮ ᱴᱟᱠᱟ ᱮᱢ",
+   "back": "UPI, or where it exists, there give money at delivery time"
+  },
+  "ui.how_to_use": {
+   "src": "How to use",
+   "t": "ᱪᱮᱫ ᱞᱮᱠᱟ ᱵᱮᱵᱷᱟᱨ ᱦᱩᱭᱩᱜᱼᱟ",
+   "back": "How it is used"
+  },
+  "ui.pack_details": {
+   "src": "Pack details",
+   "t": "ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱵᱤᱵᱨᱚᱬ",
+   "back": "Description of the pack"
+  },
+  "ui.as_printed": {
+   "src": "As printed on the pack, in English.",
+   "t": "ᱯᱮᱠ ᱨᱮ ᱤᱝᱞᱤᱥ ᱛᱮ ᱪᱷᱟᱯᱟ ᱟᱠᱟᱱ ᱞᱮᱠᱟᱛᱮ᱾",
+   "back": "As printed in English on the pack."
+  },
+  "ui.ship_h": {
+   "src": "Delivery, payment and returns",
+   "t": "ᱰᱮᱞᱤᱵᱷᱟᱨᱤ, ᱴᱟᱠᱟ ᱮᱢ ᱟᱨ ᱨᱩᱣᱟᱹᱲ",
+   "back": "Delivery, giving money and return"
+  },
+  "ui.ship_p": {
+   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
+   "t": "ᱚᱨᱰᱟᱨ ᱯᱟᱠᱟ ᱦᱩᱭ ᱛᱟᱭᱚᱢ 2 ᱠᱟᱹᱢᱤ ᱢᱟᱦᱟᱸ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱯᱮᱠ ᱠᱟᱛᱮ ᱠᱩᱞ ᱦᱩᱭᱩᱜᱼᱟ, ᱟᱨ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱞᱮᱠᱟᱛᱮ ᱠᱩᱞ ᱛᱟᱭᱚᱢ 2 ᱠᱷᱚᱱ 7 ᱢᱟᱦᱟᱸ ᱨᱮ ᱥᱮᱴᱮᱨᱚᱜᱼᱟ᱾ ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱡᱟᱦᱟᱸ ᱨᱮ ᱜᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱦᱩᱭᱩᱜᱼᱟ, ᱚᱸᱰᱮ 2 ᱥᱮ ᱵᱟᱹᱲᱛᱤ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ ᱟᱨ ᱢᱤᱫᱴᱟᱝ ᱯᱮᱠ ᱞᱟᱹᱜᱤᱫ ₹81᱾ UPI ᱛᱮ ᱴᱟᱠᱟ ᱮᱢ ᱢᱮ, ᱥᱮ ᱮᱛᱚᱢ ᱵᱷᱟᱨᱚᱛ ᱨᱮ ₹999 ᱦᱟᱹᱵᱤᱡ ᱟᱨ ᱮᱴᱟᱜ ᱴᱷᱟᱶ ᱨᱮ ₹599 ᱦᱟᱹᱵᱤᱡ ᱚᱨᱰᱟᱨ ᱞᱟᱹᱜᱤᱫ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱚᱠᱛᱚ ᱨᱮ ᱴᱟᱠᱟ ᱮᱢ ᱢᱮ᱾ ᱡᱩᱫᱤ ᱯᱮᱠ ᱠᱷᱟᱨᱟᱯ ᱦᱩᱭ ᱠᱟᱛᱮ ᱥᱮᱴᱮᱨᱚᱜ ᱠᱷᱟᱱ ᱥᱮ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱜᱩᱱ ᱨᱮ ᱮᱴᱠᱮᱴᱚᱬᱮ ᱢᱮᱱᱟᱜ ᱠᱷᱟᱱ, ᱚᱱᱟ ᱵᱚᱫᱚᱞ ᱦᱩᱭᱩᱜᱼᱟ ᱥᱮ ᱯᱩᱨᱟᱹ ᱴᱟᱠᱟ ᱨᱩᱣᱟᱹᱲ ᱦᱩᱭᱩᱜᱼᱟ᱾",
+   "back": "After the order becomes confirmed, it is packed and sent within 2 working days, and usually after sending it arrives in 2 to 7 days. Wherever in India (Siñot) delivery happens, there on 2 or more packs delivery has no cost and ₹81 for one pack. Give money by UPI, or for orders up to ₹999 in South India (Siñot) and up to ₹599 in other places, give money at delivery time. If the pack arrives damaged, or if there is a difficulty in its quality, it will be exchanged or the full money will be returned."
+  },
+  "ui.read_policies": {
+   "src": "Read our policies (in English)",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱱᱤᱛᱤ ᱠᱚ ᱯᱟᱲᱦᱟᱣ ᱢᱮ (ᱤᱝᱞᱤᱥ ᱛᱮ)",
+   "back": "Read our policies (in English)"
+  },
+  "ui.other_packs": {
+   "src": "Our other packs",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱮᱴᱟᱜ ᱯᱮᱠ ᱠᱚ",
+   "back": "Our other packs"
+  },
+  "ui.translated": {
+   "src": "Translated from English. Spotted a mistake?",
+   "t": "ᱤᱝᱞᱤᱥ ᱠᱷᱚᱱ ᱛᱚᱨᱡᱚᱢᱟ ᱦᱩᱭ ᱟᱠᱟᱱᱟ᱾ ᱡᱟᱦᱟᱱ ᱵᱷᱩᱞ ᱧᱮᱞᱚᱜ ᱠᱟᱱᱟ?",
+   "back": "It has been translated from English. Is any mistake seen?"
+  },
+  "ui.wa_us": {
+   "src": "WhatsApp us",
+   "t": "ᱟᱞᱮ ᱴᱷᱮᱱ WhatsApp ᱠᱩᱞ ᱢᱮ",
+   "back": "Send WhatsApp to us"
+  },
+  "ui.order_note": {
+   "src": "Orders are placed in our shop, which is in English.",
+   "t": "ᱚᱨᱰᱟᱨ ᱫᱚ ᱟᱞᱮᱭᱟᱜ ᱫᱚᱠᱟᱱ ᱨᱮ ᱦᱩᱭᱩᱜᱼᱟ, ᱚᱱᱟ ᱫᱚ ᱤᱝᱞᱤᱥ ᱛᱮ ᱢᱮᱱᱟᱜᱼᱟ᱾",
+   "back": "The order happens in our shop; that is in English."
+  },
+  "ui.l_title": {
+   "src": "Turmeric, chilli powder, jaggery and cashew from Bharat",
+   "t": "ᱵᱷᱟᱨᱚᱛ ᱠᱷᱚᱱ ᱥᱟᱥᱟᱝ, ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ, ᱜᱩᱲ ᱟᱨ ᱠᱟᱡᱩ",
+   "back": "Turmeric, chilli powder, jaggery and cashew from India"
+  },
+  "ui.l_desc": {
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
+   "t": "ᱟᱛᱳ ᱨᱮᱭᱟᱜ ᱫᱮᱥᱤ ᱥᱟᱥᱟᱝ, ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ, ᱜᱩᱲ ᱟᱨ ᱠᱟᱡᱩ, 540 g ᱯᱮᱠ ᱨᱮ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ, ᱟᱱᱫᱷᱨᱚ ᱯᱨᱚᱫᱮᱥ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾ ᱚᱱᱞᱟᱭᱤᱱ ᱥᱮ WhatsApp ᱛᱮ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ᱾ 2 ᱥᱮ ᱵᱟᱹᱲᱛᱤ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "The village's desi (native) turmeric, chilli powder, jaggery and cashew, in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Give order online or by WhatsApp. On 2 or more packs delivery has no cost."
+  },
+  "ui.l_eyebrow": {
+   "src": "Village desi foods from Bharat",
+   "t": "ᱵᱷᱟᱨᱚᱛ ᱠᱷᱚᱱ ᱟᱛᱳ ᱨᱮᱭᱟᱜ ᱫᱮᱥᱤ ᱡᱚᱢᱟᱜ",
+   "back": "The village's desi (native) food from India"
+  },
+  "ui.l_lede": {
+   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
+   "t": "ᱥᱟᱥᱟᱝ, ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ, ᱜᱩᱲ ᱟᱨ ᱠᱟᱡᱩ, 540 g ᱯᱮᱠ ᱨᱮ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ, ᱟᱱᱫᱷᱨᱚ ᱯᱨᱚᱫᱮᱥ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾ ᱚᱱᱞᱟᱭᱤᱱ ᱥᱮ WhatsApp ᱛᱮ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ᱾ 2 ᱥᱮ ᱵᱟᱹᱲᱛᱤ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Turmeric, chilli powder, jaggery and cashew, in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Give order online or by WhatsApp. On 2 or more packs delivery has no cost."
+  },
+  "ui.l_packs": {
+   "src": "Our packs",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱯᱮᱠ ᱠᱚ",
+   "back": "Our packs"
+  },
+  "ui.see_pack": {
+   "src": "See the pack",
+   "t": "ᱯᱮᱠ ᱧᱮᱞ ᱢᱮ",
+   "back": "See the pack"
+  },
+  "pack.TURM.name": {
+   "src": "Turmeric Powder (Pasupu)",
+   "t": "ᱥᱟᱥᱟᱝ ᱦᱚᱞᱚᱝ (ᱯᱟᱥᱩᱯᱩ)",
+   "back": "Turmeric powder (pasupu)"
+  },
+  "pack.TURM.title": {
+   "src": "Turmeric Powder (Pasupu) 540 g from Palnadu & Guntur | 1acrefarms",
+   "t": "ᱥᱟᱥᱟᱝ ᱦᱚᱞᱚᱝ (ᱯᱟᱥᱩᱯᱩ) 540 g, ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱠᱷᱚᱱ | 1acrefarms",
+   "back": "Turmeric powder (pasupu) 540 g, from Palnadu and Guntur | 1acrefarms"
+  },
+  "pack.TURM.desc": {
+   "src": "Pasupu (haldi) from Palnadu and Guntur, sun-dried and stone-ground, in a 540 g pack. MRP ₹396 incl. of all taxes. Order online or on WhatsApp. Free delivery on 2+ packs.",
+   "t": "ᱯᱟᱥᱩᱯᱩ (ᱥᱟᱥᱟᱝ) ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱠᱷᱚᱱ, ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱨ ᱫᱷᱤᱨᱤ ᱛᱮ ᱯᱤᱥᱟᱣ ᱟᱠᱟᱱ, 540 g ᱯᱮᱠ ᱨᱮ᱾ MRP ₹396 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ ᱚᱱᱞᱟᱭᱤᱱ ᱥᱮ WhatsApp ᱛᱮ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Pasupu (turmeric) from Palnadu and Guntur, dried in sunshine and ground with stone, in a 540 g pack. MRP ₹396 all tax included. Give order online or by WhatsApp. Delivery has no cost on 2+ packs."
+  },
+  "pack.TURM.lede": {
+   "src": "Turmeric powder from Palnadu and Guntur. Sun-dried, stone-ground and packed in Narasaraopet.",
+   "t": "ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱠᱷᱚᱱ ᱥᱟᱥᱟᱝ ᱦᱚᱞᱚᱝ᱾ ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ, ᱫᱷᱤᱨᱤ ᱛᱮ ᱯᱤᱥᱟᱣ ᱟᱨ ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Turmeric powder from Palnadu and Guntur. Dried in sunshine, ground with stone and packed in Narasaraopet."
+  },
+  "pack.TURM.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱨᱮ ᱪᱟᱥ ᱟᱠᱟᱱ",
+   "back": "Cultivated in Palnadu and Guntur"
+  },
+  "pack.TURM.note": {
+   "src": "Farm-sourced · sun-dried · stone-ground",
+   "t": "ᱠᱷᱮᱛ ᱠᱷᱚᱱ ᱟᱹᱜᱩ ᱟᱠᱟᱱ · ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱠᱟᱱ · ᱫᱷᱤᱨᱤ ᱛᱮ ᱯᱤᱥᱟᱣ ᱟᱠᱟᱱ",
+   "back": "Brought from the field · dried in sunshine · ground with stone"
+  },
+  "pack.TURM.use0": {
+   "src": "A pinch in dal, sambar, rasam, curries and pulihora.",
+   "t": "ᱫᱟᱹᱞ, ᱥᱟᱢᱵᱟᱨ, ᱨᱟᱥᱚᱢ, ᱛᱚᱨᱠᱟᱨᱤ ᱟᱨ ᱯᱩᱞᱤᱦᱳᱨᱟ ᱨᱮ ᱢᱤᱫ ᱪᱤᱢᱴᱤ᱾",
+   "back": "A pinch in dal, sambar, rasam, curry (torkari) and pulihora."
+  },
+  "pack.TURM.use1": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱨᱮ ᱮᱢ ᱢᱮ, ᱡᱮᱢᱚᱱ ᱟᱞᱚ ᱞᱚᱜᱼᱟ᱾",
+   "back": "Put it on a small (low) fire, so that it does not burn."
+  },
+  "pack.TURM.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ᱨᱚᱦᱚᱲ ᱪᱟᱢᱚᱪ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱛᱟᱭᱚᱢ ᱡᱤᱯ ᱵᱚᱸᱫ ᱫᱚᱦᱚ ᱢᱮ᱾",
+   "back": "Use a dry spoon and after using keep the zip closed."
+  },
+  "pack.KPAS.name": {
+   "src": "Hill Turmeric Powder (Konda Pasupu)",
+   "t": "ᱵᱩᱨᱩ ᱥᱟᱥᱟᱝ ᱦᱚᱞᱚᱝ (ᱠᱚᱱᱰᱟ ᱯᱟᱥᱩᱯᱩ)",
+   "back": "Mountain turmeric powder (konda pasupu)"
+  },
+  "pack.KPAS.title": {
+   "src": "Hill Turmeric Powder (Konda Pasupu) 540 g from Araku | 1acrefarms",
+   "t": "ᱵᱩᱨᱩ ᱥᱟᱥᱟᱝ ᱦᱚᱞᱚᱝ (ᱠᱚᱱᱰᱟ ᱯᱟᱥᱩᱯᱩ) 540 g, ᱟᱨᱟᱠᱩ ᱠᱷᱚᱱ | 1acrefarms",
+   "back": "Mountain turmeric powder (konda pasupu) 540 g, from Araku | 1acrefarms"
+  },
+  "pack.KPAS.desc": {
+   "src": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills, packed as fine powder in a 540 g pack. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ᱠᱚᱱᱰᱟ ᱯᱟᱥᱩᱯᱩ: ᱟᱨᱟᱠᱩ ᱟᱨ ᱢᱟᱨᱮᱰᱩᱢᱤᱞᱞᱤ ᱵᱩᱨᱩ ᱠᱚ ᱠᱷᱚᱱ ᱵᱩᱨᱩ ᱥᱟᱥᱟᱝ, ᱵᱟᱨᱤᱠ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱠᱟᱛᱮ 540 g ᱯᱮᱠ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾ MRP ₹495 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Konda pasupu: mountain turmeric from the Araku and Maredumilli mountains, made into fine powder and packed in a 540 g pack. MRP ₹495 all tax included. Delivery has no cost on 2+ packs."
+  },
+  "pack.KPAS.lede": {
+   "src": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder in Narasaraopet.",
+   "t": "ᱠᱚᱱᱰᱟ ᱯᱟᱥᱩᱯᱩ: ᱟᱨᱟᱠᱩ ᱟᱨ ᱢᱟᱨᱮᱰᱩᱢᱤᱞᱞᱤ ᱵᱩᱨᱩ ᱠᱚ ᱠᱷᱚᱱ ᱵᱩᱨᱩ ᱥᱟᱥᱟᱝ᱾ ᱥᱟᱵᱩᱛ ᱵᱩᱨᱩ ᱥᱟᱥᱟᱝ ᱨᱮᱦᱮᱫ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱵᱟᱨᱤᱠ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱠᱟᱛᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Konda pasupu: mountain turmeric from the Araku and Maredumilli mountains. Whole mountain turmeric root, made into fine powder in Narasaraopet and packed."
+  },
+  "pack.KPAS.origin": {
+   "src": "Araku & Maredumilli hills",
+   "t": "ᱟᱨᱟᱠᱩ ᱟᱨ ᱢᱟᱨᱮᱰᱩᱢᱤᱞᱞᱤ ᱵᱩᱨᱩ ᱠᱚ",
+   "back": "Araku and Maredumilli mountains"
+  },
+  "pack.KPAS.note": {
+   "src": "Whole hill turmeric fingers, packed as fine powder",
+   "t": "ᱥᱟᱵᱩᱛ ᱵᱩᱨᱩ ᱥᱟᱥᱟᱝ ᱨᱮᱦᱮᱫ, ᱵᱟᱨᱤᱠ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱠᱟᱛᱮ ᱯᱮᱠ ᱟᱠᱟᱱ",
+   "back": "Whole mountain turmeric root, made into fine powder and packed"
+  },
+  "pack.KPAS.use0": {
+   "src": "Use it wherever you use turmeric: dal, sambar, curries and pulihora.",
+   "t": "ᱡᱟᱦᱟᱸ ᱨᱮ ᱜᱮ ᱥᱟᱥᱟᱝ ᱵᱮᱵᱷᱟᱨ ᱦᱩᱭᱩᱜᱼᱟ, ᱚᱸᱰᱮ ᱱᱚᱶᱟ ᱵᱮᱵᱷᱟᱨ ᱢᱮ: ᱫᱟᱹᱞ, ᱥᱟᱢᱵᱟᱨ, ᱛᱚᱨᱠᱟᱨᱤ ᱟᱨ ᱯᱩᱞᱤᱦᱳᱨᱟ᱾",
+   "back": "Wherever turmeric is used, there use this: dal, sambar, curry (torkari) and pulihora."
+  },
+  "pack.KPAS.use1": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱨᱮ ᱮᱢ ᱢᱮ, ᱡᱮᱢᱚᱱ ᱟᱞᱚ ᱞᱚᱜᱼᱟ᱾",
+   "back": "Put it on a small (low) fire, so that it does not burn."
+  },
+  "pack.KPAS.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ᱨᱚᱦᱚᱲ ᱪᱟᱢᱚᱪ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱛᱟᱭᱚᱢ ᱡᱤᱯ ᱵᱚᱸᱫ ᱫᱚᱦᱚ ᱢᱮ᱾",
+   "back": "Use a dry spoon and after using keep the zip closed."
+  },
+  "pack.SANN.name": {
+   "src": "Sannam Chilli Powder (Sannam Kaaram)",
+   "t": "ᱥᱟᱱᱱᱟᱢ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ (ᱥᱟᱱᱱᱟᱢ ᱠᱟᱨᱟᱢ)",
+   "back": "Sannam chilli powder (sannam karam)"
+  },
+  "pack.SANN.title": {
+   "src": "Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
+   "t": "ᱥᱟᱱᱱᱟᱢ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ (ᱥᱟᱱᱱᱟᱢ ᱠᱟᱨᱟᱢ) 540 g | 1acrefarms",
+   "back": "Sannam chilli powder (sannam karam) 540 g | 1acrefarms"
+  },
+  "pack.SANN.desc": {
+   "src": "Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. MRP ₹306 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ᱥᱟᱱᱱᱟᱢ ᱠᱟᱨᱟᱢ: ᱯᱟᱞᱱᱟᱰᱩ ᱨᱮ ᱪᱟᱥ ᱟᱠᱟᱱ ᱥᱟᱵᱩᱛ, ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱠᱟᱱ ᱥᱟᱱᱱᱟᱢ ᱢᱟᱨᱤᱪ ᱠᱷᱚᱱ ᱟᱨᱟᱜ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ, 540 g᱾ MRP ₹306 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Sannam karam: red chilli powder from whole, sun-dried sannam chillies cultivated in Palnadu, 540 g. MRP ₹306 all tax included. Delivery has no cost on 2+ packs."
+  },
+  "pack.SANN.lede": {
+   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+   "t": "ᱥᱟᱱᱱᱟᱢ ᱠᱟᱨᱟᱢ: ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱨᱮ ᱪᱟᱥ ᱟᱠᱟᱱ ᱥᱟᱵᱩᱛ, ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱠᱟᱱ ᱥᱟᱱᱱᱟᱢ ᱢᱟᱨᱤᱪ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱵᱟᱨᱤᱠ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱠᱟᱛᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Sannam karam: whole, sun-dried sannam chillies cultivated in Palnadu and Guntur, made into fine powder in Narasaraopet and packed."
+  },
+  "pack.SANN.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱨᱮ ᱪᱟᱥ ᱟᱠᱟᱱ",
+   "back": "Cultivated in Palnadu and Guntur"
+  },
+  "pack.SANN.note": {
+   "src": "Whole sun-dried chillies, packed as fine powder",
+   "t": "ᱥᱟᱵᱩᱛ, ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱠᱟᱱ ᱢᱟᱨᱤᱪ, ᱵᱟᱨᱤᱠ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱠᱟᱛᱮ ᱯᱮᱠ ᱟᱠᱟᱱ",
+   "back": "Whole, sun-dried chillies, made into fine powder and packed"
+  },
+  "pack.SANN.use0": {
+   "src": "Use in curries, chutneys, podis and pickles.",
+   "t": "ᱛᱚᱨᱠᱟᱨᱤ, ᱪᱟᱴᱱᱤ, ᱯᱚᱰᱤ ᱟᱨ ᱟᱪᱟᱨ ᱨᱮ ᱵᱮᱵᱷᱟᱨ ᱢᱮ᱾",
+   "back": "Use in curry (torkari), chutney, podi and pickle."
+  },
+  "pack.SANN.use1": {
+   "src": "Add it to hot oil on a low flame.",
+   "t": "ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱨᱮ ᱞᱚᱞᱚ ᱥᱩᱱᱩᱢ ᱨᱮ ᱮᱢ ᱢᱮ᱾",
+   "back": "Put it in hot oil on a small (low) fire."
+  },
+  "pack.SANN.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ᱨᱚᱦᱚᱲ ᱪᱟᱢᱚᱪ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱛᱟᱭᱚᱢ ᱡᱤᱯ ᱵᱚᱸᱫ ᱫᱚᱦᱚ ᱢᱮ᱾",
+   "back": "Use a dry spoon and after using keep the zip closed."
+  },
+  "pack.TEJA.name": {
+   "src": "Teja Chilli Powder (Teja Kaaram)",
+   "t": "ᱛᱮᱡᱟ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ (ᱛᱮᱡᱟ ᱠᱟᱨᱟᱢ)",
+   "back": "Teja chilli powder (teja karam)"
+  },
+  "pack.TEJA.title": {
+   "src": "Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
+   "t": "ᱛᱮᱡᱟ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ (ᱛᱮᱡᱟ ᱠᱟᱨᱟᱢ) 540 g, ᱟᱹᱰᱤ ᱡᱷᱟᱞ | 1acrefarms",
+   "back": "Teja chilli powder (teja karam) 540 g, very pungent (hot) | 1acrefarms"
+  },
+  "pack.TEJA.desc": {
+   "src": "Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ᱛᱮᱡᱟ ᱠᱟᱨᱟᱢ: ᱟᱹᱰᱤ ᱡᱷᱟᱞ ᱟᱨᱟᱜ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ, ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱨ ᱫᱷᱤᱨᱤ ᱛᱮ ᱯᱤᱥᱟᱣ ᱟᱠᱟᱱ, 540 g᱾ MRP ₹342 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Teja karam: very pungent (hot) red chilli powder, dried in sunshine and ground with stone, 540 g. MRP ₹342 all tax included. Delivery has no cost on 2+ packs."
+  },
+  "pack.TEJA.lede": {
+   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+   "t": "ᱛᱮᱡᱟ ᱠᱟᱨᱟᱢ: ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱨᱮ ᱪᱟᱥ ᱟᱠᱟᱱ ᱟᱹᱰᱤ ᱡᱷᱟᱞ ᱛᱮᱡᱟ ᱢᱟᱨᱤᱪ, ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱨ ᱫᱷᱤᱨᱤ ᱛᱮ ᱯᱤᱥᱟᱣ ᱟᱠᱟᱱ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Teja karam: very pungent (hot) teja chillies cultivated in Palnadu and Guntur, dried in sunshine and ground with stone, packed in Narasaraopet."
+  },
+  "pack.TEJA.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱨᱮ ᱪᱟᱥ ᱟᱠᱟᱱ",
+   "back": "Cultivated in Palnadu and Guntur"
+  },
+  "pack.TEJA.note": {
+   "src": "Extra hot · sun-dried · stone-ground",
+   "t": "ᱟᱹᱰᱤ ᱡᱷᱟᱞ · ᱥᱤᱛᱩᱝ ᱨᱮ ᱨᱚᱦᱚᱲ ᱟᱠᱟᱱ · ᱫᱷᱤᱨᱤ ᱛᱮ ᱯᱤᱥᱟᱣ ᱟᱠᱟᱱ",
+   "back": "Very pungent (hot) · dried in sunshine · ground with stone"
+  },
+  "pack.TEJA.use0": {
+   "src": "A little goes a long way: start with less than you would of milder chilli powder.",
+   "t": "ᱦᱩᱰᱤᱧ ᱜᱮ ᱟᱹᱰᱤ ᱡᱟᱹᱥᱛᱤ ᱦᱩᱭᱩᱜᱼᱟ: ᱠᱚᱢ ᱡᱷᱟᱞ ᱢᱟᱨᱤᱪ ᱦᱚᱞᱚᱝ ᱠᱷᱚᱱ ᱠᱚᱢ ᱮᱢ ᱠᱟᱛᱮ ᱮᱦᱚᱵ ᱢᱮ᱾",
+   "back": "Even a little becomes very much: start by putting in less than (of) less-pungent chilli powder."
+  },
+  "pack.TEJA.use1": {
+   "src": "Use in curries, chutneys, podis and pickles.",
+   "t": "ᱛᱚᱨᱠᱟᱨᱤ, ᱪᱟᱴᱱᱤ, ᱯᱚᱰᱤ ᱟᱨ ᱟᱪᱟᱨ ᱨᱮ ᱵᱮᱵᱷᱟᱨ ᱢᱮ᱾",
+   "back": "Use in curry (torkari), chutney, podi and pickle."
+  },
+  "pack.TEJA.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "ᱨᱚᱦᱚᱲ ᱪᱟᱢᱚᱪ ᱵᱮᱵᱷᱟᱨ ᱢᱮ ᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱛᱟᱭᱚᱢ ᱡᱤᱯ ᱵᱚᱸᱫ ᱫᱚᱦᱚ ᱢᱮ᱾",
+   "back": "Use a dry spoon and after using keep the zip closed."
+  },
+  "pack.CBEL.name": {
+   "src": "Cane Jaggery (Cheruku Bellam)",
+   "t": "ᱟᱸᱠ ᱜᱩᱲ (ᱪᱮᱨᱩᱠᱩ ᱵᱮᱞᱞᱟᱢ)",
+   "back": "Sugarcane jaggery (cheruku bellam)"
+  },
+  "pack.CBEL.title": {
+   "src": "Cane Jaggery (Cheruku Bellam) 540 g from Anakapalli & Chittoor | 1acrefarms",
+   "t": "ᱟᱸᱠ ᱜᱩᱲ (ᱪᱮᱨᱩᱠᱩ ᱵᱮᱞᱞᱟᱢ) 540 g, ᱟᱱᱟᱠᱟᱯᱟᱞᱞᱤ ᱟᱨ ᱪᱤᱛᱛᱩᱨ ᱠᱷᱚᱱ | 1acrefarms",
+   "back": "Sugarcane jaggery (cheruku bellam) 540 g, from Anakapalli and Chittoor | 1acrefarms"
+  },
+  "pack.CBEL.desc": {
+   "src": "Cheruku bellam (gud): dark, slow-boiled cane jaggery from the Chittoor and Anakapalli cane belts, 540 g. MRP ₹234 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ᱪᱮᱨᱩᱠᱩ ᱵᱮᱞᱞᱟᱢ (ᱜᱩᱲ): ᱪᱤᱛᱛᱩᱨ ᱟᱨ ᱟᱱᱟᱠᱟᱯᱟᱞᱞᱤ ᱨᱮᱭᱟᱜ ᱟᱸᱠ ᱪᱟᱥ ᱚᱱᱪᱚᱞ ᱠᱷᱚᱱ ᱦᱮᱸᱫᱮ ᱨᱚᱝ, ᱵᱟᱹᱭ ᱵᱟᱹᱭ ᱛᱮ ᱡᱩᱞ ᱟᱠᱟᱱ ᱟᱸᱠ ᱜᱩᱲ, 540 g᱾ MRP ₹234 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Cheruku bellam (jaggery): black-coloured, slowly boiled sugarcane jaggery from the sugarcane-cultivation region of Chittoor and Anakapalli, 540 g. MRP ₹234 all tax included. Delivery has no cost on 2+ packs."
+  },
+  "pack.CBEL.lede": {
+   "src": "Cheruku bellam: dark, slow-boiled village desi cane jaggery from the Chittoor and Anakapalli cane belts, packed in Narasaraopet.",
+   "t": "ᱪᱮᱨᱩᱠᱩ ᱵᱮᱞᱞᱟᱢ: ᱪᱤᱛᱛᱩᱨ ᱟᱨ ᱟᱱᱟᱠᱟᱯᱟᱞᱞᱤ ᱨᱮᱭᱟᱜ ᱟᱸᱠ ᱪᱟᱥ ᱚᱱᱪᱚᱞ ᱠᱷᱚᱱ ᱦᱮᱸᱫᱮ ᱨᱚᱝ, ᱵᱟᱹᱭ ᱵᱟᱹᱭ ᱛᱮ ᱡᱩᱞ ᱟᱠᱟᱱ ᱟᱛᱳ ᱨᱮᱭᱟᱜ ᱫᱮᱥᱤ ᱟᱸᱠ ᱜᱩᱲ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Cheruku bellam: black-coloured, slowly boiled, the village's desi (native) sugarcane jaggery from the sugarcane-cultivation region of Chittoor and Anakapalli, packed in Narasaraopet."
+  },
+  "pack.CBEL.origin": {
+   "src": "Chittoor & Anakapalli cane belts",
+   "t": "ᱪᱤᱛᱛᱩᱨ ᱟᱨ ᱟᱱᱟᱠᱟᱯᱟᱞᱞᱤ ᱨᱮᱭᱟᱜ ᱟᱸᱠ ᱪᱟᱥ ᱚᱱᱪᱚᱞ",
+   "back": "Sugarcane-cultivation region of Chittoor and Anakapalli"
+  },
+  "pack.CBEL.note": {
+   "src": "Village desi · dark · slow-boiled",
+   "t": "ᱟᱛᱳ ᱨᱮᱭᱟᱜ ᱫᱮᱥᱤ · ᱦᱮᱸᱫᱮ ᱨᱚᱝ · ᱵᱟᱹᱭ ᱵᱟᱹᱭ ᱛᱮ ᱡᱩᱞ ᱟᱠᱟᱱ",
+   "back": "The village's desi (native) · black-coloured · slowly boiled"
+  },
+  "pack.CBEL.use0": {
+   "src": "Sweeten payasam, pongal, chikki and laddu.",
+   "t": "ᱯᱟᱭᱚᱥᱚᱢ, ᱯᱳᱝᱜᱟᱞ, ᱪᱤᱠᱠᱤ ᱟᱨ ᱞᱟᱰᱰᱩ ᱦᱮᱲᱮᱢ ᱵᱮᱱᱟᱣ ᱢᱮ᱾",
+   "back": "Make payasam, pongal, chikki and laddu sweet."
+  },
+  "pack.CBEL.use1": {
+   "src": "Stir a little into tea, coffee or panakam.",
+   "t": "ᱪᱟ, ᱠᱚᱯᱷᱤ ᱥᱮ ᱯᱟᱱᱟᱠᱟᱢ ᱨᱮ ᱦᱩᱰᱤᱧ ᱮᱢ ᱠᱟᱛᱮ ᱜᱷᱟᱱᱴᱟ ᱢᱮ᱾",
+   "back": "Put a little in tea, coffee or panakam and stir."
+  },
+  "pack.CBEL.use2": {
+   "src": "If it sets hard, grate it.",
+   "t": "ᱡᱩᱫᱤ ᱠᱮᱴᱮᱡ ᱦᱩᱭᱩᱜ ᱠᱷᱟᱱ ᱜᱽᱨᱮᱴᱟᱨ ᱛᱮ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱢᱮ᱾",
+   "back": "If it becomes hard, then make powder with a grater."
+  },
+  "pack.TBEL.name": {
+   "src": "Palm Jaggery (Thati Bellam)",
+   "t": "ᱛᱟᱞᱮ ᱜᱩᱲ (ᱛᱟᱴᱤ ᱵᱮᱞᱞᱟᱢ)",
+   "back": "Palm jaggery (taati bellam)"
+  },
+  "pack.TBEL.title": {
+   "src": "Palm Jaggery (Thati Bellam) 540 g from the Godavari delta | 1acrefarms",
+   "t": "ᱛᱟᱞᱮ ᱜᱩᱲ (ᱛᱟᱴᱤ ᱵᱮᱞᱞᱟᱢ) 540 g, ᱜᱳᱫᱟᱵᱚᱨᱤ ᱰᱮᱞᱴᱟ ᱠᱷᱚᱱ | 1acrefarms",
+   "back": "Palm jaggery (taati bellam) 540 g, from the Godavari delta | 1acrefarms"
+  },
+  "pack.TBEL.desc": {
+   "src": "Thati bellam (taad gud): palm jaggery from the Godavari delta, made from palmyra sap, 540 g. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ᱛᱟᱴᱤ ᱵᱮᱞᱞᱟᱢ (ᱛᱟᱞᱮ ᱜᱩᱲ): ᱜᱳᱫᱟᱵᱚᱨᱤ ᱰᱮᱞᱴᱟ ᱠᱷᱚᱱ ᱛᱟᱞᱮ ᱜᱩᱲ, ᱛᱟᱞᱮ ᱨᱟᱥᱟ ᱛᱮ ᱵᱮᱱᱟᱣ ᱟᱠᱟᱱ, 540 g᱾ MRP ₹495 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Taati bellam (palm jaggery): palm jaggery from the Godavari delta, made with palm juice, 540 g. MRP ₹495 all tax included. Delivery has no cost on 2+ packs."
+  },
+  "pack.TBEL.lede": {
+   "src": "Thati bellam: palm jaggery from the Godavari delta, made from palmyra sap. Packed in Narasaraopet.",
+   "t": "ᱛᱟᱴᱤ ᱵᱮᱞᱞᱟᱢ: ᱜᱳᱫᱟᱵᱚᱨᱤ ᱰᱮᱞᱴᱟ ᱠᱷᱚᱱ ᱛᱟᱞᱮ ᱜᱩᱲ, ᱛᱟᱞᱮ ᱨᱟᱥᱟ ᱛᱮ ᱵᱮᱱᱟᱣ ᱟᱠᱟᱱ᱾ ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Taati bellam: palm jaggery from the Godavari delta, made with palm juice. Packed in Narasaraopet."
+  },
+  "pack.TBEL.origin": {
+   "src": "From the Godavari delta",
+   "t": "ᱜᱳᱫᱟᱵᱚᱨᱤ ᱰᱮᱞᱴᱟ ᱠᱷᱚᱱ",
+   "back": "From the Godavari delta"
+  },
+  "pack.TBEL.note": {
+   "src": "Village desi · palmyra sap",
+   "t": "ᱟᱛᱳ ᱨᱮᱭᱟᱜ ᱫᱮᱥᱤ · ᱛᱟᱞᱮ ᱨᱟᱥᱟ",
+   "back": "The village's desi (native) · palm juice"
+  },
+  "pack.TBEL.use0": {
+   "src": "Make palm jaggery coffee or tea.",
+   "t": "ᱛᱟᱞᱮ ᱜᱩᱲ ᱛᱮ ᱠᱚᱯᱷᱤ ᱥᱮ ᱪᱟ ᱵᱮᱱᱟᱣ ᱢᱮ᱾",
+   "back": "Make coffee or tea with palm jaggery."
+  },
+  "pack.TBEL.use1": {
+   "src": "Sweeten payasam, paramannam and sunnundalu.",
+   "t": "ᱯᱟᱭᱚᱥᱚᱢ, ᱯᱟᱨᱟᱢᱟᱱᱱᱟᱢ ᱟᱨ ᱥᱩᱱᱱᱩᱱᱰᱟᱞᱩ ᱦᱮᱲᱮᱢ ᱵᱮᱱᱟᱣ ᱢᱮ᱾",
+   "back": "Make payasam, paramannam and sunnundalu sweet."
+  },
+  "pack.TBEL.use2": {
+   "src": "If it sets hard, grate it.",
+   "t": "ᱡᱩᱫᱤ ᱠᱮᱴᱮᱡ ᱦᱩᱭᱩᱜ ᱠᱷᱟᱱ ᱜᱽᱨᱮᱴᱟᱨ ᱛᱮ ᱦᱚᱞᱚᱝ ᱵᱮᱱᱟᱣ ᱢᱮ᱾",
+   "back": "If it becomes hard, then make powder with a grater."
+  },
+  "pack.CASH.name": {
+   "src": "Cashew Kernels (Jeedipappu)",
+   "t": "ᱠᱟᱡᱩ ᱵᱟᱫᱟᱢ (ᱡᱤᱰᱤᱯᱟᱯᱯᱩ)",
+   "back": "Cashew nut (kaju badam) (jeedipappu)"
+  },
+  "pack.CASH.title": {
+   "src": "Cashew Kernels (Jeedipappu) 540 g, whole and unsalted | 1acrefarms",
+   "t": "ᱠᱟᱡᱩ ᱵᱟᱫᱟᱢ (ᱡᱤᱰᱤᱯᱟᱯᱯᱩ) 540 g, ᱥᱟᱵᱩᱛ ᱟᱨ ᱵᱩᱞᱩᱝ ᱵᱟᱹᱱᱩᱜ | 1acrefarms",
+   "back": "Cashew nut (jeedipappu) 540 g, whole and there is no salt | 1acrefarms"
+  },
+  "pack.CASH.desc": {
+   "src": "Jeedipappu (kaju): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, 540 g. MRP ₹891 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ᱡᱤᱰᱤᱯᱟᱯᱯᱩ (ᱠᱟᱡᱩ): ᱪᱤᱨᱟᱞᱟ, ᱵᱟᱯᱟᱴᱞᱟ ᱟᱨ ᱵᱤᱥᱟᱠᱷᱟᱯᱟᱴᱱᱟᱢ ᱨᱮᱭᱟᱜ ᱥᱟᱢᱩᱫ ᱫᱷᱟᱨᱮ ᱠᱷᱚᱱ ᱥᱟᱵᱩᱛ, ᱵᱩᱞᱩᱝ ᱵᱟᱹᱱᱩᱜ ᱠᱟᱡᱩ ᱵᱟᱫᱟᱢ, 540 g᱾ MRP ₹891 ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ᱾ 2+ ᱯᱮᱠ ᱨᱮ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾",
+   "back": "Jeedipappu (cashew): whole, ordinary (common), no-salt cashew nuts from the sea shore of Chirala, Bapatla and Visakhapatnam, 540 g. MRP ₹891 all tax included. Delivery has no cost on 2+ packs."
+  },
+  "pack.CASH.lede": {
+   "src": "Jeedipappu: whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+   "t": "ᱡᱤᱰᱤᱯᱟᱯᱯᱩ: ᱪᱤᱨᱟᱞᱟ, ᱵᱟᱯᱟᱴᱞᱟ ᱟᱨ ᱵᱤᱥᱟᱠᱷᱟᱯᱟᱴᱱᱟᱢ ᱨᱮᱭᱟᱜ ᱥᱟᱢᱩᱫ ᱫᱷᱟᱨᱮ ᱠᱷᱚᱱ ᱥᱟᱵᱩᱛ, ᱵᱩᱞᱩᱝ ᱵᱟᱹᱱᱩᱜ ᱠᱟᱡᱩ ᱵᱟᱫᱟᱢ, ᱱᱟᱨᱟᱥᱟᱨᱟᱣᱯᱮᱴ ᱨᱮ ᱯᱮᱠ ᱟᱠᱟᱱ᱾",
+   "back": "Jeedipappu: whole, ordinary (common), no-salt cashew nuts from the sea shore of Chirala, Bapatla and Visakhapatnam, packed in Narasaraopet."
+  },
+  "pack.CASH.origin": {
+   "src": "Chirala · Bapatla · Vizag coast",
+   "t": "ᱪᱤᱨᱟᱞᱟ · ᱵᱟᱯᱟᱴᱞᱟ · ᱵᱤᱥᱟᱠᱷᱟᱯᱟᱴᱱᱟᱢ ᱥᱟᱢᱩᱫ ᱫᱷᱟᱨᱮ",
+   "back": "Chirala · Bapatla · Visakhapatnam sea shore"
+  },
+  "pack.CASH.note": {
+   "src": "Whole kernels · plain · unsalted",
+   "t": "ᱥᱟᱵᱩᱛ ᱠᱟᱡᱩ ᱵᱟᱫᱟᱢ · ᱵᱩᱞᱩᱝ ᱵᱟᱹᱱᱩᱜ",
+   "back": "Whole cashew nuts · no salt"
+  },
+  "pack.CASH.use0": {
+   "src": "Eat as they are, or toast lightly in a dry pan.",
+   "t": "ᱡᱮᱞᱮᱠᱟ ᱢᱮᱱᱟᱜᱼᱟ ᱚᱱᱟ ᱞᱮᱠᱟ ᱜᱮ ᱡᱚᱢ ᱢᱮ, ᱥᱮ ᱨᱚᱦᱚᱲ ᱠᱟᱲᱟᱦᱤ ᱨᱮ ᱦᱩᱰᱤᱧ ᱵᱷᱟᱹᱡᱤ ᱢᱮ᱾",
+   "back": "Eat it just as it is, or roast a little in a dry kadai."
+  },
+  "pack.CASH.use1": {
+   "src": "Add to payasam, pulao, upma and sweets.",
+   "t": "ᱯᱟᱭᱚᱥᱚᱢ, ᱯᱩᱞᱟᱣ, ᱩᱯᱢᱟ ᱟᱨ ᱦᱮᱲᱮᱢ ᱡᱚᱢᱟᱜ ᱨᱮ ᱮᱢ ᱢᱮ᱾",
+   "back": "Put in payasam, pulao, upma and sweet food."
+  },
+  "pack.CASH.use2": {
+   "src": "Keep the zip shut after use.",
+   "t": "ᱵᱮᱵᱷᱟᱨ ᱛᱟᱭᱚᱢ ᱡᱤᱯ ᱵᱚᱸᱫ ᱫᱚᱦᱚ ᱢᱮ᱾",
+   "back": "After using keep the zip closed."
+  }
+ }
+}

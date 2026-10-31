@@ -284,6 +284,7 @@ HEADER = """  <header class="header" id="top">
         <li><a href="/#spices">Our Packs</a></li>
         <li><a href="/#story">Our Story</a></li>
       </ul>
+      <!--LANG-->
       <a class="btn btn-green nav-shop" href="/#spices">Shop all packs</a>
     </nav>
   </header>"""
@@ -485,6 +486,7 @@ def main():
     sys.dont_write_bytecode = True  # no tools/__pycache__ left in the repo
     import build_recipes
     import build_guides
+    import build_i18n
     facts = pack_facts()
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
@@ -493,7 +495,7 @@ def main():
         out.parent.mkdir(exist_ok=True)
         out.write_text(page(p, live, facts, build_guides.links_by_pack().get(p["slug"], ())), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
-    extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows()
+    extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows() + build_i18n.sitemap_rows(live)
     (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
     print("wrote sitemap.xml with", len(live) + 2 + len(extra), "urls")
     idx = ROOT / "index.html"
@@ -505,6 +507,7 @@ def main():
     print("refreshed PACK-LINKS in index.html:", ", ".join(p["slug"] for p in live))
     build_recipes.build(live)
     build_guides.build(live)
+    build_i18n.build(live)  # last: adds the language menu + hreflang to every page above
 
 
 if __name__ == "__main__":

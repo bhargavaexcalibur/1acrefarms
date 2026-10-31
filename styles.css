@@ -599,3 +599,39 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 @media (max-width: 560px) {
   .gd-table th, .gd-table td { padding: 9px 9px; font-size: 0.84rem; }
 }
+
+/* ---- Languages (tools/build_i18n.py): menu, suggestion banner, language pages ---- */
+.lang-menu { position: relative; margin-left: auto; }
+.lang-menu summary { list-style: none; display: flex; align-items: center; gap: 6px; cursor: pointer; font-size: 0.82rem; font-weight: 500; color: var(--ink-soft); padding: 7px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); white-space: nowrap; }
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary:hover, .lang-menu[open] summary { color: var(--green); border-color: var(--cream-muted); }
+.lang-menu svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.6; flex: none; }
+.lang-menu ul { position: absolute; right: 0; top: calc(100% + 8px); z-index: 60; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 2px; width: min(440px, calc(100vw - 32px)); max-height: 70vh; overflow: auto; padding: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: 0 18px 50px rgba(40, 50, 30, 0.16); }
+.lang-menu:not([open]) ul { display: none; }
+[dir="rtl"] .lang-menu { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .lang-menu ul { right: auto; left: 0; }
+.lang-menu a { display: block; padding: 7px 10px; border-radius: 8px; font-size: 0.95rem; line-height: 1.35; }
+.lang-menu a:hover { background: var(--green-soft); }
+.lang-menu a[aria-current] { background: var(--green-soft); font-weight: 600; }
+.lm-en { display: block; font-family: "Inter", system-ui, sans-serif; font-size: 0.68rem; color: var(--ink-faint); font-weight: 500; }
+.lang-banner { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 70; max-width: 520px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 12px 12px 18px; background: var(--green-deep); color: var(--cream); border-radius: 12px; box-shadow: 0 18px 50px rgba(20, 30, 15, 0.3); }
+.lang-banner a { color: var(--cream); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.lang-banner button { background: transparent; border: 0; color: var(--cream); font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 2px 6px; }
+.i18n-home { padding: 36px 0 6px; }
+.i18n-home h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); font-family: "Inter", system-ui, sans-serif; }
+.i18n-home h1 .one { color: var(--orange); }
+.i18n-home h1 .tm { font-size: 0.4em; vertical-align: super; color: var(--ink-faint); }
+.i18n-motto { font-style: italic; color: var(--green); margin: 2px 0 18px; }
+.i18n-order-note { margin-top: 10px; font-size: 0.8rem; color: var(--ink-faint); }
+.i18n-legal-note { margin: -6px 0 10px; font-size: 0.78rem; color: var(--ink-faint); }
+.i18n-note { margin: 26px 0 64px; font-size: 0.82rem; color: var(--ink-faint); }
+.i18n-note a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
+[dir="rtl"] .pdp-more ul { padding-left: 0; padding-right: 18px; }
+[dir="rtl"] .pdp-dl, [dir="rtl"] .nutri { text-align: left; }
+@media (max-width: 560px) {
+  .nav:has(.lang-menu) { gap: 12px; }
+  .nav:has(.cart-btn) .lang-menu summary span { display: none; }
+  .lang-menu summary { padding: 6px 10px; }
+  .lang-menu ul { position: fixed; left: 16px; right: 16px; top: 66px; width: auto; }
+}

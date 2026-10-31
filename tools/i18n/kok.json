@@ -1,0 +1,480 @@
+{
+ "_lang": "kok",
+ "strings": {
+  "ui.nav_packs": {
+   "src": "Our Packs",
+   "t": "आमचे पॅक",
+   "back": "Our packs"
+  },
+  "ui.shop_all": {
+   "src": "Shop all packs",
+   "t": "सगळे पॅक पळयात",
+   "back": "See all packs"
+  },
+  "ui.home": {
+   "src": "Home",
+   "t": "मुखेल पान",
+   "back": "Main page"
+  },
+  "ui.lang": {
+   "src": "Language",
+   "t": "भास",
+   "back": "Language"
+  },
+  "ui.read_in": {
+   "src": "Read this page in <this language>",
+   "t": "हें पान कोंकणींत वाचात",
+   "back": "Read this page in Konkani"
+  },
+  "ui.not_now": {
+   "src": "Not now",
+   "t": "आतां न्हय",
+   "back": "Not now"
+  },
+  "ui.per_g": {
+   "src": "per g",
+   "t": "दर g",
+   "back": "per g"
+  },
+  "ui.tax": {
+   "src": "Incl. of all taxes · In stock · Dispatched within 2 working days",
+   "t": "सगळे कर धरून · स्टॉकांत आसा · 2 कामाच्या दिसां भितर धाडटात",
+   "back": "Including all taxes · Is in stock · (We) send within 2 working days"
+  },
+  "ui.add": {
+   "src": "Add to order",
+   "t": "ऑर्डरींत घालात",
+   "back": "Put in the order"
+  },
+  "ui.wa": {
+   "src": "Order on WhatsApp",
+   "t": "WhatsApp वयर ऑर्डर करात",
+   "back": "Order on WhatsApp"
+  },
+  "ui.f_from": {
+   "src": "From",
+   "t": "मूळ",
+   "back": "Origin"
+  },
+  "ui.f_pack": {
+   "src": "Pack",
+   "t": "पॅक",
+   "back": "Pack"
+  },
+  "ui.f_delivery": {
+   "src": "Delivery",
+   "t": "डिलिव्हरी",
+   "back": "Delivery"
+  },
+  "ui.f_delivery_v": {
+   "src": "Free on 2 or more packs · ₹81 for one pack",
+   "t": "2 वा चड पॅकांचेर फुकट · एका पॅकाक ₹81",
+   "back": "Free on 2 or more packs · ₹81 for one pack"
+  },
+  "ui.f_pay": {
+   "src": "Pay",
+   "t": "पयशे दिवप",
+   "back": "Paying money"
+  },
+  "ui.f_pay_v": {
+   "src": "UPI, or pay on delivery where available",
+   "t": "UPI, वा जंय सोय आसा थंय डिलिव्हरी वेळार पयशे दिवात",
+   "back": "UPI, or where the facility is, there pay money at delivery time"
+  },
+  "ui.how_to_use": {
+   "src": "How to use",
+   "t": "कशें वापरचें",
+   "back": "How to use"
+  },
+  "ui.pack_details": {
+   "src": "Pack details",
+   "t": "पॅकाचो तपशील",
+   "back": "Details of the pack"
+  },
+  "ui.as_printed": {
+   "src": "As printed on the pack, in English.",
+   "t": "पॅकाचेर इंग्लीशींत छापला तशें.",
+   "back": "As printed in English on the pack."
+  },
+  "ui.ship_h": {
+   "src": "Delivery, payment and returns",
+   "t": "डिलिव्हरी, पयशे दिवप आनी परत करप",
+   "back": "Delivery, paying money and returning"
+  },
+  "ui.ship_p": {
+   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
+   "t": "ऑर्डर निश्चीत जाल्या उपरांत 2 कामाच्या दिसां भितर आमी ती पॅक करून धाडटात, आनी धाडल्या उपरांत ती सादारणपणान 2 ते 7 दिसांनी पावता. भारतांत आमी जंय जंय डिलिव्हरी करतात थंय, 2 वा चड पॅकांचेर डिलिव्हरी फुकट आनी एकूच पॅक आसल्यार ₹81. UPI वरवीं पयशे दिवात, वा दक्षिण भारतांत ₹999 मेरेनच्या आनी हेर कडेन ₹599 मेरेनच्या ऑर्डरांक डिलिव्हरी वेळार पयशे दिवात. पॅक मोडून पावलो वा ताच्या गुणवत्तेंत अडचण आसल्यार, आमी तो बदलून दितात वा तुमचे पुराय पयशे परत दितात.",
+   "back": "After the order is confirmed, within 2 working days we pack it and send it, and after sending it usually arrives in 2 to 7 days. In India, wherever we deliver, there delivery is free on 2 or more packs and ₹81 if it is only one pack. Pay money through UPI, or for orders up to ₹999 in South India and up to ₹599 in other places, pay money at delivery time. If the pack arrives broken or there is a problem in its quality, we replace it or give your full money back."
+  },
+  "ui.read_policies": {
+   "src": "Read our policies (in English)",
+   "t": "आमचीं धोरणां वाचात (इंग्लीशींत)",
+   "back": "Read our policies (in English)"
+  },
+  "ui.other_packs": {
+   "src": "Our other packs",
+   "t": "आमचे हेर पॅक",
+   "back": "Our other packs"
+  },
+  "ui.translated": {
+   "src": "Translated from English. Spotted a mistake?",
+   "t": "इंग्लीशींतल्यान अणकार केला. कसलीय चूक दिसली?",
+   "back": "Translated from English. Saw any mistake?"
+  },
+  "ui.wa_us": {
+   "src": "WhatsApp us",
+   "t": "आमकां WhatsApp करात",
+   "back": "WhatsApp us"
+  },
+  "ui.order_note": {
+   "src": "Orders are placed in our shop, which is in English.",
+   "t": "ऑर्डर आमच्या दुकानांत जाता; हें दुकान इंग्लीशींत आसा.",
+   "back": "The order happens in our shop; this shop is in English."
+  },
+  "ui.l_title": {
+   "src": "Turmeric, chilli powder, jaggery and cashew from Bharat",
+   "t": "हळद, मिरसांगेचो पिठो, गोड आनी काजू, भारतांतल्यान",
+   "back": "Turmeric, chilli powder, jaggery and cashew, from India"
+  },
+  "ui.l_desc": {
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
+   "t": "गांवांतली देशी हळद, मिरसांगेचो पिठो, गोड आनी काजू 540 g च्या पॅकांनी, नरसरावपेट, आंध्र प्रदेशांत पॅक केल्ले. ऑनलायन वा WhatsApp वयर ऑर्डर करात. 2 वा चड पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Village desi (native) turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery free on 2 or more packs."
+  },
+  "ui.l_eyebrow": {
+   "src": "Village desi foods from Bharat",
+   "t": "भारतांतल्या गांवांतलें देशी खाण",
+   "back": "Desi (native) food from the villages of India"
+  },
+  "ui.l_lede": {
+   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
+   "t": "हळद, मिरसांगेचो पिठो, गोड आनी काजू 540 g च्या पॅकांनी, नरसरावपेट, आंध्र प्रदेशांत पॅक केल्ले. ऑनलायन वा WhatsApp वयर ऑर्डर करात. 2 वा चड पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery free on 2 or more packs."
+  },
+  "ui.l_packs": {
+   "src": "Our packs",
+   "t": "आमचे पॅक",
+   "back": "Our packs"
+  },
+  "ui.see_pack": {
+   "src": "See the pack",
+   "t": "पॅक पळयात",
+   "back": "See the pack"
+  },
+  "pack.TURM.name": {
+   "src": "Turmeric Powder (Pasupu)",
+   "t": "हळदीचो पिठो (पसुपु)",
+   "back": "Turmeric powder (pasupu)"
+  },
+  "pack.TURM.title": {
+   "src": "Turmeric Powder (Pasupu) 540 g from Palnadu & Guntur | 1acrefarms",
+   "t": "हळदीचो पिठो (पसुपु) 540 g, पल्नाडु आनी गुंटूर थावन | 1acrefarms",
+   "back": "Turmeric powder (pasupu) 540 g, from Palnadu and Guntur | 1acrefarms"
+  },
+  "pack.TURM.desc": {
+   "src": "Pasupu (haldi) from Palnadu and Guntur, sun-dried and stone-ground, in a 540 g pack. MRP ₹396 incl. of all taxes. Order online or on WhatsApp. Free delivery on 2+ packs.",
+   "t": "पसुपु (हळद) पल्नाडु आनी गुंटूरांतली, उन्हांत सुकयल्ली आनी फातराचेर दळिल्ली, 540 g पॅकांत. MRP ₹396 सगळे कर धरून. ऑनलायन वा WhatsApp वयर ऑर्डर करात. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Pasupu (turmeric) from Palnadu and Guntur, dried in the sun and ground on stone, in a 540 g pack. MRP ₹396 including all taxes. Order online or on WhatsApp. Delivery free on 2+ packs."
+  },
+  "pack.TURM.lede": {
+   "src": "Turmeric powder from Palnadu and Guntur. Sun-dried, stone-ground and packed in Narasaraopet.",
+   "t": "पल्नाडु आनी गुंटूरांतलो हळदीचो पिठो. उन्हांत सुकयल्लो, फातराचेर दळिल्लो आनी नरसरावपेटांत पॅक केल्लो.",
+   "back": "Turmeric powder from Palnadu and Guntur. Dried in the sun, ground on stone and packed in Narasaraopet."
+  },
+  "pack.TURM.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "पल्नाडु आनी गुंटूरांत पिकयल्ली",
+   "back": "Grown in Palnadu and Guntur"
+  },
+  "pack.TURM.note": {
+   "src": "Farm-sourced · sun-dried · stone-ground",
+   "t": "शेतांतल्यान हाडिल्ली · उन्हांत सुकयल्ली · फातराचेर दळिल्ली",
+   "back": "Brought from the fields · dried in the sun · ground on stone"
+  },
+  "pack.TURM.use0": {
+   "src": "A pinch in dal, sambar, rasam, curries and pulihora.",
+   "t": "दाळ, सांबार, रसम, हुमण आनी पुलिहोरांत एक चिमूट.",
+   "back": "A pinch in dal, sambar, rasam, curry (humann) and pulihora."
+  },
+  "pack.TURM.use1": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "मंद उज्याचेर घालात, म्हणजे तो करपचो ना.",
+   "back": "Put it on a low flame, so that it will not scorch."
+  },
+  "pack.TURM.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "सुको चमचो वापरात आनी वापरल्या उपरांत झीप बंद दवरात.",
+   "back": "Use a dry spoon and keep the zip closed after using."
+  },
+  "pack.KPAS.name": {
+   "src": "Hill Turmeric Powder (Konda Pasupu)",
+   "t": "दोंगरी हळदीचो पिठो (कोंडा पसुपु)",
+   "back": "Hill turmeric powder (konda pasupu)"
+  },
+  "pack.KPAS.title": {
+   "src": "Hill Turmeric Powder (Konda Pasupu) 540 g from Araku | 1acrefarms",
+   "t": "दोंगरी हळदीचो पिठो (कोंडा पसुपु) 540 g, अरकु थावन | 1acrefarms",
+   "back": "Hill turmeric powder (konda pasupu) 540 g, from Araku | 1acrefarms"
+  },
+  "pack.KPAS.desc": {
+   "src": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills, packed as fine powder in a 540 g pack. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "कोंडा पसुपु: अरकु आनी मारेडुमिल्लि दोंगरांतली दोंगरी हळद, बारीक पिठो करून 540 g पॅकांत पॅक केल्ली. MRP ₹495 सगळे कर धरून. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills, made into fine powder and packed in a 540 g pack. MRP ₹495 including all taxes. Delivery free on 2+ packs."
+  },
+  "pack.KPAS.lede": {
+   "src": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder in Narasaraopet.",
+   "t": "कोंडा पसुपु: अरकु आनी मारेडुमिल्लि दोंगरांतली दोंगरी हळद. आख्खीं दोंगरी हळदीचे कुडके, नरसरावपेटांत बारीक पिठ्याच्या रुपान पॅक केल्लीं.",
+   "back": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills. Whole hill-turmeric kudda [pieces? / rooms], made into fine powder and packed in Narasaraopet."
+  },
+  "pack.KPAS.origin": {
+   "src": "Araku & Maredumilli hills",
+   "t": "अरकु आनी मारेडुमिल्लि दोंगर",
+   "back": "Araku and Maredumilli hills"
+  },
+  "pack.KPAS.note": {
+   "src": "Whole hill turmeric fingers, packed as fine powder",
+   "t": "आख्खीं दोंगरी हळदीचे कुडके, बारीक पिठ्याच्या रुपान पॅक केल्लीं",
+   "back": "Whole hill-turmeric kudda [pieces? / rooms], made into fine powder and packed"
+  },
+  "pack.KPAS.use0": {
+   "src": "Use it wherever you use turmeric: dal, sambar, curries and pulihora.",
+   "t": "हळद वापरतात थंय खंयूय हाचो वापर करात: दाळ, सांबार, हुमण आनी पुलिहोरा.",
+   "back": "Where (you) use turmeric, there anywhere use this: dal, sambar, curry (humann) and pulihora."
+  },
+  "pack.KPAS.use1": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "मंद उज्याचेर घालात, म्हणजे तो करपचो ना.",
+   "back": "Put it on a low flame, so that it will not scorch."
+  },
+  "pack.KPAS.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "सुको चमचो वापरात आनी वापरल्या उपरांत झीप बंद दवरात.",
+   "back": "Use a dry spoon and keep the zip closed after using."
+  },
+  "pack.SANN.name": {
+   "src": "Sannam Chilli Powder (Sannam Kaaram)",
+   "t": "सन्नम मिरसांगेचो पिठो (सन्नम कारम)",
+   "back": "Sannam chilli powder (sannam karam)"
+  },
+  "pack.SANN.title": {
+   "src": "Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
+   "t": "सन्नम मिरसांगेचो पिठो (सन्नम कारम) 540 g | 1acrefarms",
+   "back": "Sannam chilli powder (sannam karam) 540 g | 1acrefarms"
+  },
+  "pack.SANN.desc": {
+   "src": "Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. MRP ₹306 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "सन्नम कारम: पल्नाडुंत पिकयल्ल्या आख्ख्या, उन्हांत सुकयल्ल्या सन्नम मिरसांगांचो तांबडो पिठो, 540 g. MRP ₹306 सगळे कर धरून. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Sannam karam: red powder of whole, sun-dried sannam chillies grown in Palnadu, 540 g. MRP ₹306 including all taxes. Delivery free on 2+ packs."
+  },
+  "pack.SANN.lede": {
+   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+   "t": "सन्नम कारम: पल्नाडु आनी गुंटूरांत पिकयल्ल्यो आख्ख्यो, उन्हांत सुकयल्ल्यो सन्नम मिरसांगो, नरसरावपेटांत बारीक पिठ्याच्या रुपान पॅक केल्ल्यो.",
+   "back": "Sannam karam: whole, sun-dried sannam chillies grown in Palnadu and Guntur, made into fine powder and packed in Narasaraopet."
+  },
+  "pack.SANN.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "पल्नाडु आनी गुंटूरांत पिकयल्ली",
+   "back": "Grown in Palnadu and Guntur"
+  },
+  "pack.SANN.note": {
+   "src": "Whole sun-dried chillies, packed as fine powder",
+   "t": "आख्ख्यो उन्हांत सुकयल्ल्यो मिरसांगो, बारीक पिठ्याच्या रुपान पॅक केल्ल्यो",
+   "back": "Whole sun-dried chillies, made into fine powder and packed"
+  },
+  "pack.SANN.use0": {
+   "src": "Use in curries, chutneys, podis and pickles.",
+   "t": "हुमण, चटण्यो, पोडी आनी लोणच्यांनी वापरात.",
+   "back": "Use in curries (humann), chutneys, podi and pickles."
+  },
+  "pack.SANN.use1": {
+   "src": "Add it to hot oil on a low flame.",
+   "t": "मंद उज्याचेर तापिल्ल्या तेलांत घालात.",
+   "back": "Put it in heated oil on a low flame."
+  },
+  "pack.SANN.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "सुको चमचो वापरात आनी वापरल्या उपरांत झीप बंद दवरात.",
+   "back": "Use a dry spoon and keep the zip closed after using."
+  },
+  "pack.TEJA.name": {
+   "src": "Teja Chilli Powder (Teja Kaaram)",
+   "t": "तेजा मिरसांगेचो पिठो (तेजा कारम)",
+   "back": "Teja chilli powder (teja karam)"
+  },
+  "pack.TEJA.title": {
+   "src": "Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
+   "t": "तेजा मिरसांगेचो पिठो (तेजा कारम) 540 g, भोव तिखट | 1acrefarms",
+   "back": "Teja chilli powder (teja karam) 540 g, very hot (spicy) | 1acrefarms"
+  },
+  "pack.TEJA.desc": {
+   "src": "Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "तेजा कारम: भोव तिखट तांबडो मिरसांगेचो पिठो, उन्हांत सुकयल्लो आनी फातराचेर दळिल्लो, 540 g. MRP ₹342 सगळे कर धरून. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Teja karam: very hot (spicy) red chilli powder, dried in the sun and ground on stone, 540 g. MRP ₹342 including all taxes. Delivery free on 2+ packs."
+  },
+  "pack.TEJA.lede": {
+   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+   "t": "तेजा कारम: पल्नाडु आनी गुंटूरांत पिकयल्ल्यो भोव तिखट तेजा मिरसांगो, उन्हांत सुकयल्ल्यो आनी फातराचेर दळिल्ल्यो, नरसरावपेटांत पॅक केल्ल्यो.",
+   "back": "Teja karam: very hot (spicy) teja chillies grown in Palnadu and Guntur, dried in the sun and ground on stone, packed in Narasaraopet."
+  },
+  "pack.TEJA.origin": {
+   "src": "Grown in Palnadu & Guntur",
+   "t": "पल्नाडु आनी गुंटूरांत पिकयल्ली",
+   "back": "Grown in Palnadu and Guntur"
+  },
+  "pack.TEJA.note": {
+   "src": "Extra hot · sun-dried · stone-ground",
+   "t": "भोव तिखट · उन्हांत सुकयल्लो · फातराचेर दळिल्लो",
+   "back": "Very hot (spicy) · dried in the sun · ground on stone"
+  },
+  "pack.TEJA.use0": {
+   "src": "A little goes a long way: start with less than you would of milder chilli powder.",
+   "t": "थोडोच पुरता: उणे तिखट मिरसांगेच्या पिठ्यापरस उणो घालून सुरवात करात.",
+   "back": "Just a little is enough: start by adding less than (you would of) less-hot chilli powder."
+  },
+  "pack.TEJA.use1": {
+   "src": "Use in curries, chutneys, podis and pickles.",
+   "t": "हुमण, चटण्यो, पोडी आनी लोणच्यांनी वापरात.",
+   "back": "Use in curries (humann), chutneys, podi and pickles."
+  },
+  "pack.TEJA.use2": {
+   "src": "Use a dry spoon and keep the zip shut after use.",
+   "t": "सुको चमचो वापरात आनी वापरल्या उपरांत झीप बंद दवरात.",
+   "back": "Use a dry spoon and keep the zip closed after using."
+  },
+  "pack.CBEL.name": {
+   "src": "Cane Jaggery (Cheruku Bellam)",
+   "t": "उसाचो गोड (चेरुकु बेल्लम)",
+   "back": "Sugarcane jaggery (cheruku bellam)"
+  },
+  "pack.CBEL.title": {
+   "src": "Cane Jaggery (Cheruku Bellam) 540 g from Anakapalli & Chittoor | 1acrefarms",
+   "t": "उसाचो गोड (चेरुकु बेल्लम) 540 g, अनकापल्लि आनी चित्तूर थावन | 1acrefarms",
+   "back": "Sugarcane jaggery (cheruku bellam) 540 g, from Anakapalli and Chittoor | 1acrefarms"
+  },
+  "pack.CBEL.desc": {
+   "src": "Cheruku bellam (gud): dark, slow-boiled cane jaggery from the Chittoor and Anakapalli cane belts, 540 g. MRP ₹234 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "चेरुकु बेल्लम (गोड): चित्तूर आनी अनकापल्लिच्या उसाच्या पट्ट्यांतलो, काळसो, हळूहळू उकडिल्लो उसाचो गोड, 540 g. MRP ₹234 सगळे कर धरून. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Cheruku bellam (jaggery): blackish, slowly boiled sugarcane jaggery from the sugarcane belts of Chittoor and Anakapalli, 540 g. MRP ₹234 including all taxes. Delivery free on 2+ packs."
+  },
+  "pack.CBEL.lede": {
+   "src": "Cheruku bellam: dark, slow-boiled village desi cane jaggery from the Chittoor and Anakapalli cane belts, packed in Narasaraopet.",
+   "t": "चेरुकु बेल्लम: चित्तूर आनी अनकापल्लिच्या उसाच्या पट्ट्यांतलो, काळसो, हळूहळू उकडिल्लो गांवांतलो देशी उसाचो गोड, नरसरावपेटांत पॅक केल्लो.",
+   "back": "Cheruku bellam: blackish, slowly boiled, village desi (native) sugarcane jaggery from the sugarcane belts of Chittoor and Anakapalli, packed in Narasaraopet."
+  },
+  "pack.CBEL.origin": {
+   "src": "Chittoor & Anakapalli cane belts",
+   "t": "चित्तूर आनी अनकापल्लिचे उसाचे पट्टे",
+   "back": "Sugarcane belts of Chittoor and Anakapalli"
+  },
+  "pack.CBEL.note": {
+   "src": "Village desi · dark · slow-boiled",
+   "t": "गांवांतलो देशी · काळसो · हळूहळू उकडिल्लो",
+   "back": "Village desi (native) · blackish · slowly boiled"
+  },
+  "pack.CBEL.use0": {
+   "src": "Sweeten payasam, pongal, chikki and laddu.",
+   "t": "पायसम, पोंगल, चिक्की आनी लाडू गोड करात.",
+   "back": "Make payasam, pongal, chikki and laddu sweet."
+  },
+  "pack.CBEL.use1": {
+   "src": "Stir a little into tea, coffee or panakam.",
+   "t": "चा, कॉफी वा पानकमांत थोडो घालून ढवळात.",
+   "back": "Add a little to tea, coffee or panakam and stir."
+  },
+  "pack.CBEL.use2": {
+   "src": "If it sets hard, grate it.",
+   "t": "तो घट्ट जालो जाल्यार किसून घेयात.",
+   "back": "If it has become hard, grate it."
+  },
+  "pack.TBEL.name": {
+   "src": "Palm Jaggery (Thati Bellam)",
+   "t": "ताडाचो गोड (ताटि बेल्लम)",
+   "back": "Palm jaggery (taati bellam)"
+  },
+  "pack.TBEL.title": {
+   "src": "Palm Jaggery (Thati Bellam) 540 g from the Godavari delta | 1acrefarms",
+   "t": "ताडाचो गोड (ताटि बेल्लम) 540 g, गोदावरी डेल्टा थावन | 1acrefarms",
+   "back": "Palm jaggery (taati bellam) 540 g, from the Godavari delta | 1acrefarms"
+  },
+  "pack.TBEL.desc": {
+   "src": "Thati bellam (taad gud): palm jaggery from the Godavari delta, made from palmyra sap, 540 g. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "ताटि बेल्लम (ताडाचो गोड): गोदावरी डेल्टांतलो ताडाचो गोड, ताडाच्या रसा थावन केल्लो, 540 g. MRP ₹495 सगळे कर धरून. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Taati bellam (palm jaggery): palm jaggery from the Godavari delta, made from palm sap, 540 g. MRP ₹495 including all taxes. Delivery free on 2+ packs."
+  },
+  "pack.TBEL.lede": {
+   "src": "Thati bellam: palm jaggery from the Godavari delta, made from palmyra sap. Packed in Narasaraopet.",
+   "t": "ताटि बेल्लम: गोदावरी डेल्टांतलो ताडाचो गोड, ताडाच्या रसा थावन केल्लो. नरसरावपेटांत पॅक केल्लो.",
+   "back": "Taati bellam: palm jaggery from the Godavari delta, made from palm sap. Packed in Narasaraopet."
+  },
+  "pack.TBEL.origin": {
+   "src": "From the Godavari delta",
+   "t": "गोदावरी डेल्टा थावन",
+   "back": "From the Godavari delta"
+  },
+  "pack.TBEL.note": {
+   "src": "Village desi · palmyra sap",
+   "t": "गांवांतलो देशी · ताडाचो रस",
+   "back": "Village desi (native) · palm sap"
+  },
+  "pack.TBEL.use0": {
+   "src": "Make palm jaggery coffee or tea.",
+   "t": "ताडाच्या गोडाची कॉफी वा चा करात.",
+   "back": "Make palm-jaggery coffee or tea."
+  },
+  "pack.TBEL.use1": {
+   "src": "Sweeten payasam, paramannam and sunnundalu.",
+   "t": "पायसम, परमान्नम आनी सुन्नुंडलु गोड करात.",
+   "back": "Make payasam, paramannam and sunnundalu sweet."
+  },
+  "pack.TBEL.use2": {
+   "src": "If it sets hard, grate it.",
+   "t": "तो घट्ट जालो जाल्यार किसून घेयात.",
+   "back": "If it has become hard, grate it."
+  },
+  "pack.CASH.name": {
+   "src": "Cashew Kernels (Jeedipappu)",
+   "t": "काजूगर (जीडिपप्पु)",
+   "back": "Cashew kernels (jeedipappu)"
+  },
+  "pack.CASH.title": {
+   "src": "Cashew Kernels (Jeedipappu) 540 g, whole and unsalted | 1acrefarms",
+   "t": "काजूगर (जीडिपप्पु) 540 g, आख्खे आनी मीठ नाशिल्ले | 1acrefarms",
+   "back": "Cashew kernels (jeedipappu) 540 g, whole and without salt | 1acrefarms"
+  },
+  "pack.CASH.desc": {
+   "src": "Jeedipappu (kaju): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, 540 g. MRP ₹891 incl. of all taxes. Free delivery on 2+ packs.",
+   "t": "जीडिपप्पु (काजू): चीराला, बापटला आनी विशाखपट्टणम दर्यादेगेवयले आख्खे, सादे, मीठ नाशिल्ले काजूगर, 540 g. MRP ₹891 सगळे कर धरून. 2+ पॅकांचेर डिलिव्हरी फुकट.",
+   "back": "Jeedipappu (cashew): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Visakhapatnam seashore, 540 g. MRP ₹891 including all taxes. Delivery free on 2+ packs."
+  },
+  "pack.CASH.lede": {
+   "src": "Jeedipappu: whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+   "t": "जीडिपप्पु: चीराला, बापटला आनी विशाखपट्टणम दर्यादेगेवयले आख्खे, सादे, मीठ नाशिल्ले काजूगर, नरसरावपेटांत पॅक केल्ले.",
+   "back": "Jeedipappu: whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Visakhapatnam seashore, packed in Narasaraopet."
+  },
+  "pack.CASH.origin": {
+   "src": "Chirala · Bapatla · Vizag coast",
+   "t": "चीराला · बापटला · विशाखपट्टणम दर्यादेग",
+   "back": "Chirala · Bapatla · Visakhapatnam seashore"
+  },
+  "pack.CASH.note": {
+   "src": "Whole kernels · plain · unsalted",
+   "t": "आख्खे काजूगर · सादे · मीठ नाशिल्ले",
+   "back": "Whole cashew kernels · plain · without salt"
+  },
+  "pack.CASH.use0": {
+   "src": "Eat as they are, or toast lightly in a dry pan.",
+   "t": "तशेच खायात, वा सुक्या कढयेंत हळूच भाजात.",
+   "back": "Eat as it is, or roast gently in a dry kadai."
+  },
+  "pack.CASH.use1": {
+   "src": "Add to payasam, pulao, upma and sweets.",
+   "t": "पायसम, पुलाव, उप्पीट आनी गोड पदार्थांत घालात.",
+   "back": "Put in payasam, pulao, upma (uppit) and sweet dishes."
+  },
+  "pack.CASH.use2": {
+   "src": "Keep the zip shut after use.",
+   "t": "वापरल्या उपरांत झीप बंद दवरात.",
+   "back": "Keep the zip closed after using."
+  }
+ }
+}

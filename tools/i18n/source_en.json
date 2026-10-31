@@ -1,0 +1,382 @@
+{
+ "ui.nav_packs": {
+  "en": "Our Packs",
+  "note": "header menu link"
+ },
+ "ui.shop_all": {
+  "en": "Shop all packs",
+  "note": "header button"
+ },
+ "ui.home": {
+  "en": "Home",
+  "note": "breadcrumb"
+ },
+ "ui.lang": {
+  "en": "Language",
+  "note": "label of the language menu"
+ },
+ "ui.read_in": {
+  "en": "Read this page in <this language>",
+  "note": "banner offering this language; write the language's own name"
+ },
+ "ui.not_now": {
+  "en": "Not now",
+  "note": "closes that banner"
+ },
+ "ui.per_g": {
+  "en": "per g",
+  "note": "after a price, e.g. '₹0.73 per g'"
+ },
+ "ui.tax": {
+  "en": "Incl. of all taxes · In stock · Dispatched within 2 working days",
+  "note": "under the MRP"
+ },
+ "ui.add": {
+  "en": "Add to order",
+  "note": "button"
+ },
+ "ui.wa": {
+  "en": "Order on WhatsApp",
+  "note": "button"
+ },
+ "ui.f_from": {
+  "en": "From",
+  "note": "label: where the product comes from"
+ },
+ "ui.f_pack": {
+  "en": "Pack",
+  "note": "label"
+ },
+ "ui.f_delivery": {
+  "en": "Delivery",
+  "note": "label"
+ },
+ "ui.f_delivery_v": {
+  "en": "Free on 2 or more packs · ₹81 for one pack",
+  "note": "delivery charges"
+ },
+ "ui.f_pay": {
+  "en": "Pay",
+  "note": "label"
+ },
+ "ui.f_pay_v": {
+  "en": "UPI, or pay on delivery where available",
+  "note": "payment options"
+ },
+ "ui.how_to_use": {
+  "en": "How to use",
+  "note": "heading"
+ },
+ "ui.pack_details": {
+  "en": "Pack details",
+  "note": "heading"
+ },
+ "ui.as_printed": {
+  "en": "As printed on the pack, in English.",
+  "note": "note above the legal pack details, which stay in English"
+ },
+ "ui.ship_h": {
+  "en": "Delivery, payment and returns",
+  "note": "heading"
+ },
+ "ui.ship_p": {
+  "en": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
+  "note": "policy summary; keep every number exactly"
+ },
+ "ui.read_policies": {
+  "en": "Read our policies (in English)",
+  "note": "link to the policies page"
+ },
+ "ui.other_packs": {
+  "en": "Our other packs",
+  "note": "heading"
+ },
+ "ui.translated": {
+  "en": "Translated from English. Spotted a mistake?",
+  "note": "small note at the end of the page"
+ },
+ "ui.wa_us": {
+  "en": "WhatsApp us",
+  "note": "link after that note"
+ },
+ "ui.order_note": {
+  "en": "Orders are placed in our shop, which is in English.",
+  "note": "note next to the order buttons"
+ },
+ "ui.l_title": {
+  "en": "Turmeric, chilli powder, jaggery and cashew from Bharat",
+  "note": "browser tab title of the language home page; '| 1acrefarms' is added"
+ },
+ "ui.l_desc": {
+  "en": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
+  "note": "search result description of the language home page"
+ },
+ "ui.l_eyebrow": {
+  "en": "Village desi foods from Bharat",
+  "note": "small line above the main heading"
+ },
+ "ui.l_lede": {
+  "en": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
+  "note": "intro paragraph"
+ },
+ "ui.l_packs": {
+  "en": "Our packs",
+  "note": "heading above the packs"
+ },
+ "ui.see_pack": {
+  "en": "See the pack",
+  "note": "link on each pack card"
+ },
+ "pack.TURM.name": {
+  "en": "Turmeric Powder (Pasupu)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.TURM.title": {
+  "en": "Turmeric Powder (Pasupu) 540 g from Palnadu & Guntur | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.TURM.desc": {
+  "en": "Pasupu (haldi) from Palnadu and Guntur, sun-dried and stone-ground, in a 540 g pack. MRP ₹396 incl. of all taxes. Order online or on WhatsApp. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.TURM.lede": {
+  "en": "Turmeric powder from Palnadu and Guntur. Sun-dried, stone-ground and packed in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.TURM.origin": {
+  "en": "Grown in Palnadu & Guntur",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.TURM.note": {
+  "en": "Farm-sourced · sun-dried · stone-ground",
+  "note": "short facts line about the pack"
+ },
+ "pack.TURM.use0": {
+  "en": "A pinch in dal, sambar, rasam, curries and pulihora.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TURM.use1": {
+  "en": "Add it on a low flame so it does not burn.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TURM.use2": {
+  "en": "Use a dry spoon and keep the zip shut after use.",
+  "note": "one 'how to use' line"
+ },
+ "pack.KPAS.name": {
+  "en": "Hill Turmeric Powder (Konda Pasupu)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.KPAS.title": {
+  "en": "Hill Turmeric Powder (Konda Pasupu) 540 g from Araku | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.KPAS.desc": {
+  "en": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills, packed as fine powder in a 540 g pack. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.KPAS.lede": {
+  "en": "Konda pasupu: hill turmeric from the Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.KPAS.origin": {
+  "en": "Araku & Maredumilli hills",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.KPAS.note": {
+  "en": "Whole hill turmeric fingers, packed as fine powder",
+  "note": "short facts line about the pack"
+ },
+ "pack.KPAS.use0": {
+  "en": "Use it wherever you use turmeric: dal, sambar, curries and pulihora.",
+  "note": "one 'how to use' line"
+ },
+ "pack.KPAS.use1": {
+  "en": "Add it on a low flame so it does not burn.",
+  "note": "one 'how to use' line"
+ },
+ "pack.KPAS.use2": {
+  "en": "Use a dry spoon and keep the zip shut after use.",
+  "note": "one 'how to use' line"
+ },
+ "pack.SANN.name": {
+  "en": "Sannam Chilli Powder (Sannam Kaaram)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.SANN.title": {
+  "en": "Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.SANN.desc": {
+  "en": "Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. MRP ₹306 incl. of all taxes. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.SANN.lede": {
+  "en": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.SANN.origin": {
+  "en": "Grown in Palnadu & Guntur",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.SANN.note": {
+  "en": "Whole sun-dried chillies, packed as fine powder",
+  "note": "short facts line about the pack"
+ },
+ "pack.SANN.use0": {
+  "en": "Use in curries, chutneys, podis and pickles.",
+  "note": "one 'how to use' line"
+ },
+ "pack.SANN.use1": {
+  "en": "Add it to hot oil on a low flame.",
+  "note": "one 'how to use' line"
+ },
+ "pack.SANN.use2": {
+  "en": "Use a dry spoon and keep the zip shut after use.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TEJA.name": {
+  "en": "Teja Chilli Powder (Teja Kaaram)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.TEJA.title": {
+  "en": "Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.TEJA.desc": {
+  "en": "Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of all taxes. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.TEJA.lede": {
+  "en": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.TEJA.origin": {
+  "en": "Grown in Palnadu & Guntur",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.TEJA.note": {
+  "en": "Extra hot · sun-dried · stone-ground",
+  "note": "short facts line about the pack"
+ },
+ "pack.TEJA.use0": {
+  "en": "A little goes a long way: start with less than you would of milder chilli powder.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TEJA.use1": {
+  "en": "Use in curries, chutneys, podis and pickles.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TEJA.use2": {
+  "en": "Use a dry spoon and keep the zip shut after use.",
+  "note": "one 'how to use' line"
+ },
+ "pack.CBEL.name": {
+  "en": "Cane Jaggery (Cheruku Bellam)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.CBEL.title": {
+  "en": "Cane Jaggery (Cheruku Bellam) 540 g from Anakapalli & Chittoor | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.CBEL.desc": {
+  "en": "Cheruku bellam (gud): dark, slow-boiled cane jaggery from the Chittoor and Anakapalli cane belts, 540 g. MRP ₹234 incl. of all taxes. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.CBEL.lede": {
+  "en": "Cheruku bellam: dark, slow-boiled village desi cane jaggery from the Chittoor and Anakapalli cane belts, packed in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.CBEL.origin": {
+  "en": "Chittoor & Anakapalli cane belts",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.CBEL.note": {
+  "en": "Village desi · dark · slow-boiled",
+  "note": "short facts line about the pack"
+ },
+ "pack.CBEL.use0": {
+  "en": "Sweeten payasam, pongal, chikki and laddu.",
+  "note": "one 'how to use' line"
+ },
+ "pack.CBEL.use1": {
+  "en": "Stir a little into tea, coffee or panakam.",
+  "note": "one 'how to use' line"
+ },
+ "pack.CBEL.use2": {
+  "en": "If it sets hard, grate it.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TBEL.name": {
+  "en": "Palm Jaggery (Thati Bellam)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.TBEL.title": {
+  "en": "Palm Jaggery (Thati Bellam) 540 g from the Godavari delta | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.TBEL.desc": {
+  "en": "Thati bellam (taad gud): palm jaggery from the Godavari delta, made from palmyra sap, 540 g. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.TBEL.lede": {
+  "en": "Thati bellam: palm jaggery from the Godavari delta, made from palmyra sap. Packed in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.TBEL.origin": {
+  "en": "From the Godavari delta",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.TBEL.note": {
+  "en": "Village desi · palmyra sap",
+  "note": "short facts line about the pack"
+ },
+ "pack.TBEL.use0": {
+  "en": "Make palm jaggery coffee or tea.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TBEL.use1": {
+  "en": "Sweeten payasam, paramannam and sunnundalu.",
+  "note": "one 'how to use' line"
+ },
+ "pack.TBEL.use2": {
+  "en": "If it sets hard, grate it.",
+  "note": "one 'how to use' line"
+ },
+ "pack.CASH.name": {
+  "en": "Cashew Kernels (Jeedipappu)",
+  "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
+ },
+ "pack.CASH.title": {
+  "en": "Cashew Kernels (Jeedipappu) 540 g, whole and unsalted | 1acrefarms",
+  "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
+ },
+ "pack.CASH.desc": {
+  "en": "Jeedipappu (kaju): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, 540 g. MRP ₹891 incl. of all taxes. Free delivery on 2+ packs.",
+  "note": "Google description; keep the MRP and every number"
+ },
+ "pack.CASH.lede": {
+  "en": "Jeedipappu: whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+  "note": "intro sentence under the heading"
+ },
+ "pack.CASH.origin": {
+  "en": "Chirala · Bapatla · Vizag coast",
+  "note": "where it comes from (place names stay as names)"
+ },
+ "pack.CASH.note": {
+  "en": "Whole kernels · plain · unsalted",
+  "note": "short facts line about the pack"
+ },
+ "pack.CASH.use0": {
+  "en": "Eat as they are, or toast lightly in a dry pan.",
+  "note": "one 'how to use' line"
+ },
+ "pack.CASH.use1": {
+  "en": "Add to payasam, pulao, upma and sweets.",
+  "note": "one 'how to use' line"
+ },
+ "pack.CASH.use2": {
+  "en": "Keep the zip shut after use.",
+  "note": "one 'how to use' line"
+ }
+}
