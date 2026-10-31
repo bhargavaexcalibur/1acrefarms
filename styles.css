@@ -455,7 +455,7 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .pdp-others { padding: 36px 0 80px; border-top: 1px solid var(--hairline); }
 .pdp-other-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 24px; }
 .pdp-other { display: flex; flex-direction: column; gap: 4px; }
-.pdp-other img { aspect-ratio: 800/1122; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 26px rgba(30,40,22,.14); margin-bottom: 8px; transition: transform .25s ease; }
+.pdp-other img { width: 100%; height: auto; aspect-ratio: 800/1122; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 26px rgba(30,40,22,.14); margin-bottom: 8px; transition: transform .25s ease; }
 .pdp-other:hover img { transform: translateY(-3px); }
 .po-name { font-weight: 600; font-size: 0.95rem; }
 .po-te { font-size: 0.8rem; color: var(--gold); }
