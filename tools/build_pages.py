@@ -350,7 +350,7 @@ HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />"""
 
 
-def page(p, live, facts, guides=()):
+def page(p, live, facts, guides=(), recipes=()):
     """guides: [(url, name)] of buyer guides about this pack (build_guides.links_by_pack())."""
     url = f"{SITE}/{p['slug']}/"
     img = f"/assets/packs/{p['pack']}"
@@ -363,6 +363,10 @@ def page(p, live, facts, guides=()):
         </a>""" for q in others)
     uses = "\n".join(f"          <li>{u}</li>" for u in p["uses"])
     guide_links = "".join(f'\n        <p class="pdp-guide"><span>Guide</span><a href="{u}">{n}</a></p>' for u, n in guides)
+    if recipes:
+        label = "Recipe" if len(recipes) == 1 else "Recipes"
+        guide_links += (f'\n        <p class="pdp-guide"><span>{label}</span>' +
+                        " · ".join(f'<a href="{u}">{n}</a>' for u, n in recipes) + "</p>")
     allergen = f"<dt>Allergen</dt><dd>{p['allergen']}</dd>" if p.get("allergen") else ""
     facts_row = facts.get(p["code"], {})
     storage = f"<dt>Storage</dt><dd>{facts_row['storage']}</dd>" if facts_row.get("storage") else ""
@@ -512,7 +516,8 @@ def main():
     for p in live:
         out = ROOT / p["slug"] / "index.html"
         out.parent.mkdir(exist_ok=True)
-        out.write_text(page(p, live, facts, build_guides.links_by_pack().get(p["slug"], ())), encoding="utf-8")
+        out.write_text(page(p, live, facts, build_guides.links_by_pack().get(p["slug"], ()),
+                            build_recipes.links_by_pack().get(p["slug"], ())), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
     extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows() + build_i18n.sitemap_rows(live)
     (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")

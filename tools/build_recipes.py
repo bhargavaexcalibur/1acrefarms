@@ -37,6 +37,8 @@ SITE = bp.SITE
 SOCIAL = ROOT / "docs" / "marketing" / "social"
 SPECS = SOCIAL / "month_2026-11" / "month_specs.json"
 CALENDAR = SOCIAL / "month_2026-11" / "calendar_2026-10-22_to_11-24.json"
+RECIPE_SPECS = SOCIAL / "recipes" / "specs.json"  # recipe cards for tools/recipes/*.json (make_recipe_cards.py)
+MORE = ROOT / "tools" / "recipes"  # one JSON file per recipe, same fields as below (lists for tuples)
 IMG_LIMIT = 400_000  # bytes, per recipe image
 
 # Stricter than build_pages.BANNED: claim words in English, Telugu and Hindi, plus any health,
@@ -477,6 +479,7 @@ RECIPES = [
         keywords="pasupu paalu, turmeric milk, haldi doodh, Karthika Somavaram",
     ),
 ]
+RECIPES += [json.loads(f.read_text(encoding="utf-8")) for f in sorted(MORE.glob("*.json"))]
 
 PACK_BY_SLUG = {p["slug"]: p for p in bp.PACKS}
 
@@ -546,7 +549,7 @@ def check_against_social():
     """Warn (don't stop) if the approved copy in docs/ changed since this file was written."""
     if not SPECS.exists():
         return
-    specs = {s["id"]: s for s in json.loads(SPECS.read_text(encoding="utf-8"))}
+    specs = {s["id"]: s for f in (SPECS, RECIPE_SPECS) if f.exists() for s in json.loads(f.read_text(encoding="utf-8"))}
     cal = {c["id"]: c for c in json.loads(CALENDAR.read_text(encoding="utf-8"))} if CALENDAR.exists() else {}
     emoji = re.compile(r"[☀-➿\U0001F000-\U0001FAFF]\s*")
     for r in RECIPES:
@@ -677,7 +680,8 @@ def made_with(r):
     also = ""
     if r.get("also"):
         links = " or ".join(f'<a href="/{s}/">{PACK_BY_SLUG[s]["name"]}</a>' for s in r["also"])
-        also = f'\n          <p class="rcp-also">Sweeten it with {links}.</p>'
+        lead = "Sweeten it with" if all(PACK_BY_SLUG[s]["section"] == "jaggery" for s in r["also"]) else "Also good with"
+        also = f'\n          <p class="rcp-also">{lead} {links}.</p>'
     return f"""        <div class="rcp-made">
           <p class="eyebrow">Made with</p>
 {chr(10).join(cards)}{also}
@@ -841,10 +845,18 @@ def hub_page(live):
              for i, r in enumerate(RECIPES, 1)]}},
         crumbs_ld(("Home", f"{SITE}/"), ("Recipes", url)),
     ]}, ensure_ascii=False, indent=2)
-    tiles = "\n".join(tile(r) for r in RECIPES)
-    desc = ("బెల్లం, పసుపు వంటకాలు. Home recipes made with 1acrefarms turmeric and jaggery: palm jaggery coffee, bellam paramannam, "
-            "chimmili for Nagula Chavithi and pasupu paalu.")
-    return head("బెల్లం, పసుపు వంటకాలు · Jaggery & Turmeric Recipes | 1acrefarms", desc, url, "website",
+    groups = []
+    for p in bp.PACKS:  # one shelf per pack, in shop order; a recipe sits under its main (first) pack
+        rs = [r for r in RECIPES if r["packs"][0] == p["slug"]]
+        if rs:
+            tiles = "\n".join(tile(r) for r in rs)
+            groups.append(f"""      <h2 class="rcp-shelf" id="with-{p['slug']}">With {e(p['name'])} <span lang="te">{p['te']}</span></h2>
+      <div class="rcp-grid">
+{tiles}
+      </div>""")
+    desc = ("ఆంధ్ర వంటకాలు. Andhra home recipes with 1acrefarms chilli powder, turmeric, jaggery and cashew: kodi kura, "
+            "gongura mamsam, chepala pulusu, pulihora, pappu, paramannam and more.")
+    return head("ఆంధ్ర వంటకాలు · Andhra Recipes | 1acrefarms", desc, url, "website",
                 "Recipes · 1acrefarms", f"{SITE}/assets/og-image.jpg", ld) + f"""
 <body class="pdp-page rcp-page">
 {bp.HEADER}
@@ -854,11 +866,9 @@ def hub_page(live):
 
     <section class="rcp-hub">
       <p class="eyebrow">From an Andhra kitchen</p>
-      <h1>Recipes with turmeric and jaggery</h1>
-      <p class="pdp-lede">Home recipes made with our pasupu and bellam. Each one links to the pack it uses.</p>
-      <div class="rcp-grid">
-{tiles}
-      </div>
+      <h1>Andhra recipes with our packs</h1>
+      <p class="pdp-lede">Andhra home cooking with our kaaram, pasupu, bellam and jeedipappu, from Sunday kodi kura to festival paramannam. Each recipe links to the pack it uses.</p>
+{chr(10).join(groups)}
     </section>
   </main>
 
@@ -866,6 +876,15 @@ def hub_page(live):
 </body>
 </html>
 """
+
+
+def links_by_pack():
+    """{pack slug: [(url, name)]} of every recipe that uses the pack (for the pack pages)."""
+    out = {}
+    for r in RECIPES:
+        for s in r["packs"]:
+            out.setdefault(s, []).append((f"/recipes/{r['slug']}/", r["name"]))
+    return out
 
 
 def sitemap_rows():

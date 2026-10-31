@@ -638,3 +638,5 @@ html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
 }
 .i18n-more { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 28px; }
 .i18n-more .btn { flex: 1 1 220px; }
+.rcp-shelf { font-size: 1.15rem; margin: 34px 0 16px; }
+.rcp-shelf span { color: var(--ink-soft); font-weight: 500; margin-left: 6px; }

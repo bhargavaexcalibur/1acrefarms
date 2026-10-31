@@ -600,7 +600,7 @@ def content_page(code, t, base, english):
 def more_links(code, t, pages):
     """Recipes and guides links for a language home, labelled with their hub headings."""
     links = []
-    for base, en in (("/recipes/", "Recipes with turmeric and jaggery"), ("/learn/", "Guides")):
+    for base, en in (("/recipes/", "Andhra recipes with our packs"), ("/learn/", "Guides")):
         if base in pages and ip.key_of(en) in t:
             links.append(f'<a class="btn btn-wa" href="/{code}{base}">{x(code, t[ip.key_of(en)])}</a>')
     return f'\n    <section class="i18n-more">{"".join(links)}</section>' if links else ""
