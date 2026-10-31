@@ -382,7 +382,7 @@ const soonLive = /[?&]soonpreview=1/.test(location.search) || Date.now() >= SOON
 if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") delete p.soon; });
 const sellable = (p) => p.live && !p.soon;
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
-const PACK_PAGE = { TURM: "/turmeric-powder/", KPAS: "/hill-turmeric-powder/", CBEL: "/cane-jaggery/", TBEL: "/palm-jaggery/" };
+const PACK_PAGE = { TURM: "/turmeric-powder/", KPAS: "/hill-turmeric-powder/", CBEL: "/cane-jaggery/", TBEL: "/palm-jaggery/", SANN: "/sannam-chilli-powder/", TEJA: "/teja-chilli-powder/", CASH: "/cashew-kernels/" };
 if (SELLING_ONLY) {
   PACK_SECTIONS.forEach((s) => s.products.forEach((p) => { p.skus = p.skus.filter((k) => k.live); }));
   const spices = PACK_SECTIONS.find((s) => s.id === "spices");
