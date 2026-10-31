@@ -86,6 +86,7 @@ UI = {
     "ui.tax": ("Incl. of all taxes · In stock · Dispatched within 2 working days", "under the MRP"),
     "ui.add": ("Add to order", "button"),
     "ui.wa": ("Order on WhatsApp", "button"),
+    "ui.amazon": ("Buy on Amazon", "button to our Amazon.in listing; write 'Amazon' in Latin letters exactly"),
     "ui.f_from": ("From", "label: where the product comes from"),
     "ui.f_pack": ("Pack", "label"),
     "ui.f_delivery": ("Delivery", "label"),
@@ -205,8 +206,9 @@ def pack_keys(p):
            [f"{k}.use{i}" for i in range(len(p["uses"]))]
 
 
-PAGE_UI = [k for k in UI if not k.startswith("ui.l_")] + ["ui.see_pack"]
-HOME_UI = list(UI)
+OPTIONAL = {"ui.amazon"}  # newer strings: English is shown until translated
+PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
+HOME_UI = [k for k in UI if k not in OPTIONAL]
 
 
 def plan(live):
@@ -377,6 +379,13 @@ def pack_card(code, t, p):
         </a>"""
 
 
+def amazon_btn(code, t, p):
+    # A newer string than the rest: until it is translated, the button stays in English.
+    if "ui.amazon" in t:
+        return bp.amazon_btn(p, x(code, t["ui.amazon"]))
+    return bp.amazon_btn(p, "Buy on Amazon", ' lang="en" dir="ltr"')
+
+
 def pack_page(code, t, p, packs, facts):
     k = f"pack.{p['code']}"
     url = f"/{code}/{p['slug']}/"
@@ -415,8 +424,8 @@ def pack_page(code, t, p, packs, facts):
           <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
         </div>
         <p class="tax">{x(code, t['ui.tax'])}</p>
-        <div class="pdp-actions">
-          <a class="btn btn-primary" href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">{x(code, t['ui.add'])}</a>
+        <div class="pdp-actions">{amazon_btn(code, t, p)}
+          <a class="btn {'btn-wa' if bp.amazon_link(p) else 'btn-primary'}" href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">{x(code, t['ui.add'])}</a>
           <a class="btn btn-wa" href="{bp.wa_link(p)}" target="_blank" rel="noopener">{x(code, t['ui.wa'])}</a>
         </div>
         <p class="i18n-order-note">{x(code, t['ui.order_note'])}</p>

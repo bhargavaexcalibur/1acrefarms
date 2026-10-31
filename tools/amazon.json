@@ -1,0 +1,40 @@
+{
+ "seller": "A7XV2D991SSNH",
+ "packs": {
+  "TURM": {
+   "asin": "B0HPX556NS",
+   "buyable": false,
+   "checked": "2026-10-31"
+  },
+  "KPAS": {
+   "asin": "B0HPWYG3KW",
+   "buyable": false,
+   "checked": "2026-10-31"
+  },
+  "SANN": {
+   "asin": "B0HPY66QPX",
+   "buyable": false,
+   "checked": "2026-10-31"
+  },
+  "TEJA": {
+   "asin": "B0HPXYLWDC",
+   "buyable": false,
+   "checked": "2026-10-31"
+  },
+  "CBEL": {
+   "asin": "B0HPXK9M5X",
+   "buyable": true,
+   "checked": "2026-10-31"
+  },
+  "TBEL": {
+   "asin": "B0HPX8DXT8",
+   "buyable": false,
+   "checked": "2026-10-31"
+  },
+  "CASH": {
+   "asin": "B0HPY39Q6V",
+   "buyable": false,
+   "checked": "2026-10-31"
+  }
+ }
+}

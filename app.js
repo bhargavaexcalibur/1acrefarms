@@ -382,6 +382,7 @@ const soonLive = /[?&]soonpreview=1/.test(location.search) || Date.now() >= SOON
 if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") delete p.soon; });
 const sellable = (p) => p.live && !p.soon;
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
+const AMAZON = {"CBEL": "B0HPXK9M5X"};  // buyable on Amazon.in; written by tools/build_pages.py
 const PACK_PAGE = { TURM: "/turmeric-powder/", KPAS: "/hill-turmeric-powder/", CBEL: "/cane-jaggery/", TBEL: "/palm-jaggery/", SANN: "/sannam-chilli-powder/", TEJA: "/teja-chilli-powder/", CASH: "/cashew-kernels/" };
 if (SELLING_ONLY) {
   PACK_SECTIONS.forEach((s) => s.products.forEach((p) => { p.skus = p.skus.filter((k) => k.live); }));
@@ -583,7 +584,8 @@ function packCard(p) {
         <p class="tax">Incl. of all taxes · ${status}</p>
         <div class="card-foot">${p.soon
           ? `<button class="add-btn block" disabled aria-disabled="true">Coming ${p.soon}</button>`
-          : `<button class="add-btn block" data-add="${p.id}@${sku.g}">Add ${qtyLabel(sku.g)} +</button>`}</div>
+          : `<button class="add-btn block" data-add="${p.id}@${sku.g}">Add ${qtyLabel(sku.g)} +</button>`}${AMAZON[p.code]
+          ? `<a class="amz-link" href="https://www.amazon.in/dp/${AMAZON[p.code]}" target="_blank" rel="noopener">or buy on Amazon</a>` : ""}</div>
         <details class="facts">
           <summary>Product details</summary>
           <dl>

@@ -148,6 +148,23 @@ PACKS = [
 ]
 
 
+# Our Amazon.in listings (tools/amazon.json, refreshed by tools/amazon_check.py). A pack gets a
+# "Buy on Amazon" button only while a shopper can actually buy it there.
+AMAZON = json.loads((ROOT / "tools" / "amazon.json").read_text(encoding="utf-8"))
+AMAZON_STORE = f"https://www.amazon.in/s?me={AMAZON['seller']}"
+
+
+def amazon_link(p):
+    row = AMAZON["packs"].get(p["code"], {})
+    return f"https://www.amazon.in/dp/{row['asin']}" if row.get("buyable") else None
+
+
+def amazon_btn(p, label, lang=""):
+    """The first button on a pack page while the pack is buyable on Amazon; label is already escaped."""
+    a = amazon_link(p)
+    return f'\n          <a class="btn btn-primary" href="{a}" target="_blank" rel="noopener"{lang}>{label}</a>' if a else ""
+
+
 def is_live(p):
     return not p.get("live_from") or TODAY >= p["live_from"]
 
@@ -292,10 +309,11 @@ HEADER = """  <header class="header" id="top">
 
 RECIPES_LINK = '        <a href="/recipes/">Recipes</a>'
 GUIDES_LINK = '        <a href="/learn/">Guides</a>'
+STORE_LINK = f'        <a href="{AMAZON_STORE}" target="_blank" rel="noopener">Our Amazon store</a>'
 
 
 def footer(live):
-    links = "\n".join([f'        <a href="/{q["slug"]}/">{q["name"]}</a>' for q in live] + [RECIPES_LINK, GUIDES_LINK])
+    links = "\n".join([f'        <a href="/{q["slug"]}/">{q["name"]}</a>' for q in live] + [STORE_LINK, RECIPES_LINK, GUIDES_LINK])
     return f"""  <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
@@ -390,8 +408,8 @@ def page(p, live, facts, guides=()):
           <span class="upp">{p['g']} g · {per_g}</span>
         </div>
         <p class="tax">Incl. of all taxes · In stock · Dispatched within 2 working days</p>
-        <div class="pdp-actions">
-          <a class="btn btn-primary" href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a>
+        <div class="pdp-actions">{amazon_btn(p, "Buy on Amazon")}
+          <a class="btn {'btn-wa' if amazon_link(p) else 'btn-primary'}" href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a>
           <a class="btn btn-wa" href="{wa_link(p)}" target="_blank" rel="noopener">Order on WhatsApp</a>
         </div>
         <ul class="pdp-facts">
@@ -476,7 +494,7 @@ def sitemap(live, extra=()):
 
 
 def pack_links_block(live):
-    links = "\n".join([f'        <a href="/{p["slug"]}/">{p["name"]}</a>' for p in live] + [RECIPES_LINK, GUIDES_LINK])
+    links = "\n".join([f'        <a href="/{p["slug"]}/">{p["name"]}</a>' for p in live] + [STORE_LINK, RECIPES_LINK, GUIDES_LINK])
     return f"<!-- PACK-LINKS:START (tools/build_pages.py) -->\n{links}\n        <!-- PACK-LINKS:END -->"
 
 
@@ -505,6 +523,14 @@ def main():
     if n != 1:
         sys.exit("PACK-LINKS block not found exactly once in index.html")
     idx.write_text(new, encoding="utf-8")
+    js = ROOT / "app.js"
+    amz = {p["code"]: AMAZON["packs"][p["code"]]["asin"] for p in live if amazon_link(p)}
+    src, n = re.subn(r"^const AMAZON = .*$", lambda _: f"const AMAZON = {json.dumps(amz)};  // buyable on Amazon.in; written by tools/build_pages.py",
+                     js.read_text(encoding="utf-8"), count=1, flags=re.M)
+    if n != 1:
+        sys.exit("const AMAZON line not found in app.js")
+    js.write_text(src, encoding="utf-8")
+    print("app.js AMAZON:", ", ".join(amz) or "none")
     print("refreshed PACK-LINKS in index.html:", ", ".join(p["slug"] for p in live))
     build_recipes.build(live)
     build_guides.build(live)

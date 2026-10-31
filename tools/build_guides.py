@@ -296,6 +296,11 @@ GUIDES = [
 PACK_BY_SLUG = {p["slug"]: p for p in bp.PACKS}
 
 
+def amazon(p):
+    a = bp.amazon_link(p)
+    return f'<a class="rcp-amazon" href="{a}" target="_blank" rel="noopener">Buy on Amazon</a>' if a else ""
+
+
 def links_by_pack():
     """{pack slug: [(url, short name)]} for the pack pages' guide links."""
     out = {}
@@ -344,7 +349,7 @@ def our_packs(g):
               <a class="po-name" href="/{p['slug']}/">{p['name']}</a>
               <span class="po-te"><span lang="te">{p['te']}</span> · {p['local']}</span>
               <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
-              <span class="rcp-pack-links"><a href="/{p['slug']}/">See the pack</a><a href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a></span>
+              <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a><a href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a></span>
             </div>
           </div>""")
     return f"""        <div class="rcp-made">

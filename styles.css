@@ -438,6 +438,7 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .pdp-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 20px 0 26px; }
 .btn-wa { background: var(--surface); border-color: var(--line); color: var(--green-deep); }
 .btn-wa:hover { border-color: var(--green); }
+.amz-link { display: block; margin-top: 8px; text-align: center; font-size: 0.86rem; color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
 .pdp-facts { list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 28px; border-top: 1px solid var(--hairline); padding-top: 20px; font-size: 0.9rem; }
 .pdp-facts span { display: block; font-size: 0.6rem; text-transform: uppercase; letter-spacing: .12em; color: var(--ink-faint); font-weight: 600; margin-bottom: 2px; }
 .pdp-lang { margin-top: 14px; font-size: 0.92rem; color: var(--ink-soft); max-width: 36em; }
