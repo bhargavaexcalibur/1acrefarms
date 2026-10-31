@@ -2415,6 +2415,296 @@
    "src": "How to check turmeric powder at home · 1acrefarms",
    "t": "வீட்டிலேயே மஞ்சள் தூளைச் சோதிப்பது எப்படி · 1acrefarms",
    "back": "How to test turmeric powder at home itself · 1acrefarms"
+  },
+  "seg.8b78769cf4c2": {
+   "src": "With Teja Chilli Powder ⟦#1⟧",
+   "t": "தேஜா மிளகாய் தூளுடன் ⟦#1⟧",
+   "back": "With Teja chilli powder ⟦#1⟧"
+  },
+  "seg.b6e3af0aa0a4": {
+   "src": "Gongura Pachadi recipe card",
+   "t": "கோங்குரா பச்சடி சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Gongura Pachadi"
+  },
+  "seg.abf934285521": {
+   "src": "ఆంధ్ర వంటకాలు. Andhra home recipes with 1acrefarms chilli powder, turmeric, jaggery and cashew: kodi kura, gongura mamsam, chepala pulusu, pulihora, pappu, paramannam and more.",
+   "t": "ఆంధ్ర వంటకాలు. 1acrefarms மிளகாய் தூள், மஞ்சள், வெல்லம், முந்திரி கொண்டு வீட்டில் செய்யும் ஆந்திர சமையல் குறிப்புகள்: கோடி கூரா, கோங்குரா மாம்சம், சேபல புலுசு, புளிஹோரா, பப்பு, பரமான்னம் மற்றும் பல.",
+   "back": "Andhra Vantakalu (Andhra dishes). Andhra recipes made at home with 1acrefarms chilli powder, turmeric, jaggery, cashew: Kodi Kura, Gongura Mamsam, Chepala Pulusu, Pulihora, Pappu, Paramannam and many more."
+  },
+  "seg.c936951c4e44": {
+   "src": "Andhra Chepala Pulusu",
+   "t": "ஆந்திர சேபல புலுசு (மீன் குழம்பு)",
+   "back": "Andhra Chepala Pulusu (fish curry)"
+  },
+  "seg.c9862c72e81b": {
+   "src": "With Hill Turmeric Powder ⟦#1⟧",
+   "t": "மலை மஞ்சள் தூளுடன் ⟦#1⟧",
+   "back": "With hill turmeric powder ⟦#1⟧"
+  },
+  "seg.6d061d2a1070": {
+   "src": "Nimmakaya Pulihora recipe card",
+   "t": "நிம்மகாய புளிஹோரா (எலுமிச்சை சாதம்) சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Nimmakaya Pulihora (lemon rice)"
+  },
+  "seg.8f5ac7fa88b5": {
+   "src": "With Palm Jaggery · serves 2",
+   "t": "பனை வெல்லத்துடன் · 2 பேருக்கு",
+   "back": "With palm jaggery · for 2 people"
+  },
+  "seg.cef31bddbdfc": {
+   "src": "Ragi Java",
+   "t": "ராகி ஜாவா (ராகி கூழ்)",
+   "back": "Ragi Java (ragi porridge)"
+  },
+  "seg.95f180edddb9": {
+   "src": "Andhra recipes with our packs",
+   "t": "எங்கள் பாக்கெட்டுகளைக் கொண்டு ஆந்திர சமையல் குறிப்புகள்",
+   "back": "Andhra recipes with our packets"
+  },
+  "seg.f8d64a6b1540": {
+   "src": "Royyala Iguru recipe card",
+   "t": "ரொய்யல இகுரு சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Royyala Iguru"
+  },
+  "seg.30f365757f7b": {
+   "src": "Andhra Kodi Kura recipe card",
+   "t": "ஆந்திர கோடி கூரா (கோழிக் குழம்பு) சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Andhra Kodi Kura (chicken curry)"
+  },
+  "seg.7007521f7777": {
+   "src": "Bellam Pongali recipe card",
+   "t": "பெல்லம் பொங்கலி சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Bellam Pongali"
+  },
+  "seg.13daab31c50c": {
+   "src": "Jeedipappu Pakodi recipe card",
+   "t": "ஜீடிபப்பு பக்கோடி சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Jeedipappu Pakodi"
+  },
+  "seg.a80d99fe2e7e": {
+   "src": "With Palm Jaggery · 40 minutes",
+   "t": "பனை வெல்லத்துடன் · 40 நிமிடம்",
+   "back": "With palm jaggery · 40 minutes"
+  },
+  "seg.f8b32aa2c9c3": {
+   "src": "Pasupu Annam recipe card",
+   "t": "பசுபு அன்னம் சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Pasupu Annam"
+  },
+  "seg.45f526df6b26": {
+   "src": "With Teja Chilli Powder · serves 4",
+   "t": "தேஜா மிளகாய் தூளுடன் · 4 பேருக்கு",
+   "back": "With Teja chilli powder · for 4 people"
+  },
+  "seg.bdf92d4c1e7d": {
+   "src": "Jeedipappu Upma recipe card",
+   "t": "ஜீடிபப்பு உப்மா சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Jeedipappu Upma"
+  },
+  "seg.2ead8e51ea84": {
+   "src": "Tomato Pachadi recipe card",
+   "t": "டமாட்டா பச்சடி சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Tomato Pachadi"
+  },
+  "seg.944d3662e7f4": {
+   "src": "Vellulli Kaaram recipe card",
+   "t": "வெல்லுல்லி காரம் சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Vellulli Karam"
+  },
+  "seg.fc733acf6fc9": {
+   "src": "With Sannam Chilli Powder ⟦#1⟧",
+   "t": "சன்னம் மிளகாய் தூளுடன் ⟦#1⟧",
+   "back": "With Sannam chilli powder ⟦#1⟧"
+  },
+  "seg.95eb5844411b": {
+   "src": "Pasupu Annam",
+   "t": "பசுபு அன்னம்",
+   "back": "Pasupu Annam"
+  },
+  "seg.ff32f3ea55fa": {
+   "src": "With Turmeric Powder ⟦#1⟧",
+   "t": "மஞ்சள் தூளுடன் ⟦#1⟧",
+   "back": "With turmeric powder ⟦#1⟧"
+  },
+  "seg.3146be911968": {
+   "src": "With Cashew Kernels ⟦#1⟧",
+   "t": "முந்திரிப் பருப்புடன் ⟦#1⟧",
+   "back": "With cashew nuts ⟦#1⟧"
+  },
+  "seg.52bfb256902b": {
+   "src": "Royyala Iguru",
+   "t": "ரொய்யல இகுரு",
+   "back": "Royyala Iguru"
+  },
+  "seg.4aea49ab18ed": {
+   "src": "With Turmeric Powder · serves 4",
+   "t": "மஞ்சள் தூளுடன் · 4 பேருக்கு",
+   "back": "With turmeric powder · for 4 people"
+  },
+  "seg.cac9cd8f66c3": {
+   "src": "Tomato Pappu recipe card",
+   "t": "டமாட்டா பப்பு சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Tomato Pappu"
+  },
+  "seg.14cef8ee4309": {
+   "src": "Gutti Vankaya Kura",
+   "t": "குத்தி வங்காய கூரா (எண்ணெய் கத்தரிக்காய்)",
+   "back": "Gutti Vankaya Kura (oil brinjal)"
+  },
+  "seg.52f59e112801": {
+   "src": "With Cane Jaggery ⟦#1⟧",
+   "t": "கரும்பு வெல்லத்துடன் ⟦#1⟧",
+   "back": "With sugarcane jaggery ⟦#1⟧"
+  },
+  "seg.e5b1ac72606b": {
+   "src": "With Palm Jaggery ⟦#1⟧",
+   "t": "பனை வெல்லத்துடன் ⟦#1⟧",
+   "back": "With palm jaggery ⟦#1⟧"
+  },
+  "seg.5d7c1a05fefa": {
+   "src": "Kodi Guddu Pulusu recipe card",
+   "t": "கோடி குட்டு புலுசு (முட்டைக் குழம்பு) சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Kodi Guddu Pulusu (egg curry)"
+  },
+  "seg.608762e277dd": {
+   "src": "Kodi Vepudu",
+   "t": "கோடி வேபுடு",
+   "back": "Kodi Vepudu"
+  },
+  "seg.cc5b02ddf172": {
+   "src": "With Hill Turmeric Powder · serves 4",
+   "t": "மலை மஞ்சள் தூளுடன் · 4 பேருக்கு",
+   "back": "With hill turmeric powder · for 4 people"
+  },
+  "seg.614acb6b2408": {
+   "src": "Andhra Chepala Pulusu recipe card",
+   "t": "ஆந்திர சேபல புலுசு (மீன் குழம்பு) சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Andhra Chepala Pulusu (fish curry)"
+  },
+  "seg.3ba7b84a582a": {
+   "src": "With Teja Chilli Powder · makes about ¾ cup",
+   "t": "தேஜா மிளகாய் தூளுடன் · சுமார் ¾ கப் கிடைக்கும்",
+   "back": "With Teja chilli powder · yields about ¾ cup"
+  },
+  "seg.7a8fd878927c": {
+   "src": "Bellam Pongali",
+   "t": "பெல்லம் பொங்கலி",
+   "back": "Bellam Pongali"
+  },
+  "seg.492499417d20": {
+   "src": "Gutti Vankaya Kura recipe card",
+   "t": "குத்தி வங்காய கூரா (எண்ணெய் கத்தரிக்காய்) சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Gutti Vankaya Kura (oil brinjal)"
+  },
+  "seg.f2ac274f61bb": {
+   "src": "Gongura Mamsam",
+   "t": "கோங்குரா மாம்சம்",
+   "back": "Gongura Mamsam"
+  },
+  "seg.ffbe1980cacd": {
+   "src": "Kodi Guddu Pulusu",
+   "t": "கோடி குட்டு புலுசு (முட்டைக் குழம்பு)",
+   "back": "Kodi Guddu Pulusu (egg curry)"
+  },
+  "seg.51c2e5c6e0f3": {
+   "src": "With Cashew Kernels · serves 3",
+   "t": "முந்திரிப் பருப்புடன் · 3 பேருக்கு",
+   "back": "With cashew nuts · for 3 people"
+  },
+  "seg.f8e6388a2ddd": {
+   "src": "Jeedipappu Upma",
+   "t": "ஜீடிபப்பு உப்மா",
+   "back": "Jeedipappu Upma"
+  },
+  "seg.4a52cbe098a6": {
+   "src": "Sunnundalu",
+   "t": "சுன்னுண்டலு",
+   "back": "Sunnundalu"
+  },
+  "seg.862ddee2e9dd": {
+   "src": "Gongura Pachadi",
+   "t": "கோங்குரா பச்சடி",
+   "back": "Gongura Pachadi"
+  },
+  "seg.2237e6a617ab": {
+   "src": "Tomato Pachadi",
+   "t": "டமாட்டா பச்சடி",
+   "back": "Tomato Pachadi"
+  },
+  "seg.0377cd5aca4c": {
+   "src": "Andhra Kodi Kura",
+   "t": "ஆந்திர கோடி கூரா (கோழிக் குழம்பு)",
+   "back": "Andhra Kodi Kura (chicken curry)"
+  },
+  "seg.a8de1ad0af66": {
+   "src": "ఆంధ్ర వంటకాలు · Andhra Recipes | 1acrefarms",
+   "t": "ఆంధ్ర వంటకాలు · ஆந்திர சமையல் குறிப்புகள் | 1acrefarms",
+   "back": "Andhra Vantakalu · Andhra recipes | 1acrefarms"
+  },
+  "seg.5207eec4ec45": {
+   "src": "Tomato Pappu",
+   "t": "டமாட்டா பப்பு",
+   "back": "Tomato Pappu"
+  },
+  "seg.a9d9ae629b3c": {
+   "src": "With Sannam Chilli Powder · serves 4",
+   "t": "சன்னம் மிளகாய் தூளுடன் · 4 பேருக்கு",
+   "back": "With Sannam chilli powder · for 4 people"
+  },
+  "seg.f706a47f3037": {
+   "src": "Kodi Vepudu recipe card",
+   "t": "கோடி வேபுடு சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Kodi Vepudu"
+  },
+  "seg.7e09e8b1b1f2": {
+   "src": "Gongura Mamsam recipe card",
+   "t": "கோங்குரா மாம்சம் சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Gongura Mamsam"
+  },
+  "seg.f05b163fc8d1": {
+   "src": "Nimmakaya Pulihora",
+   "t": "நிம்மகாய புளிஹோரா (எலுமிச்சை சாதம்)",
+   "back": "Nimmakaya Pulihora (lemon rice)"
+  },
+  "seg.e461318fbaad": {
+   "src": "With Teja Chilli Powder · serves 6",
+   "t": "தேஜா மிளகாய் தூளுடன் · 6 பேருக்கு",
+   "back": "With Teja chilli powder · for 6 people"
+  },
+  "seg.6d80d40e5ff1": {
+   "src": "Vellulli Kaaram",
+   "t": "வெல்லுல்லி காரம்",
+   "back": "Vellulli Karam"
+  },
+  "seg.d79331776a3e": {
+   "src": "With Cashew Kernels · serves 4",
+   "t": "முந்திரிப் பருப்புடன் · 4 பேருக்கு",
+   "back": "With cashew nuts · for 4 people"
+  },
+  "seg.d09ee5349b4f": {
+   "src": "Ragi Java recipe card",
+   "t": "ராகி ஜாவா (ராகி கூழ்) சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Ragi Java (ragi porridge)"
+  },
+  "seg.f151f27465de": {
+   "src": "With Sannam Chilli Powder · makes about 1½ cups",
+   "t": "சன்னம் மிளகாய் தூளுடன் · சுமார் 1½ கப் கிடைக்கும்",
+   "back": "With Sannam chilli powder · yields about 1½ cups"
+  },
+  "seg.2aa376ceaeac": {
+   "src": "Andhra home cooking with our kaaram, pasupu, bellam and jeedipappu, from Sunday kodi kura to festival paramannam. Each recipe links to the pack it uses.",
+   "t": "எங்கள் காரம் (மிளகாய் தூள்), பசுபு (மஞ்சள்), பெல்லம் (வெல்லம்), ஜீடிபப்பு (முந்திரி) கொண்டு ஆந்திர வீட்டுச் சமையல், ஞாயிற்றுக்கிழமை கோடி கூரா முதல் பண்டிகை பரமான்னம் வரை. ஒவ்வொரு குறிப்பிலும் அதற்குப் பயன்படும் பாக்கெட்டுக்கான இணைப்பு உள்ளது.",
+   "back": "Andhra home cooking with our Karam (chilli powder), Pasupu (turmeric), Bellam (jaggery), Jeedipappu (cashew), from Sunday Kodi Kura to festival Paramannam. Every recipe has a link to the packet used for it."
+  },
+  "seg.395769a31aba": {
+   "src": "Jeedipappu Pakodi",
+   "t": "ஜீடிபப்பு பக்கோடி",
+   "back": "Jeedipappu Pakodi"
+  },
+  "seg.662218830215": {
+   "src": "Sunnundalu recipe card",
+   "t": "சுன்னுண்டலு சமையல் குறிப்பு அட்டை",
+   "back": "Recipe card for Sunnundalu"
   }
  }
 }
