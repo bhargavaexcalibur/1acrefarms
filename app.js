@@ -98,19 +98,19 @@ const PACK_SECTIONS = [
     blurb: "Spice powders from Palnadu, Guntur and the Araku hills.",
     products: [
       { code: "TURM", name: "Turmeric Powder", te: "పసుపు", tr: "Pasupu", note: "Farm-sourced · sun-dried · stone-ground",
-        origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/turmeric-540g.jpg", by: "mfd", shelf: 12,
+        origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/turmeric-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Turmeric (Curcuma longa).",
         skus: [[270, 198], [540, 396, true], [1080, 702]] },
       { code: "KPAS", name: "Hill Turmeric Powder", te: "కొండ పసుపు", tr: "Konda Pasupu", note: "Whole hill turmeric fingers, packed as fine powder",
-        origin: "Araku &amp; Maredumilli hills", pack: "assets/packs/hill-turmeric-540g.jpg", by: "mfd", shelf: 12,
+        origin: "Araku &amp; Maredumilli hills", pack: "assets/packs/hill-turmeric-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Turmeric (Curcuma longa).",
         skus: [[270, 252], [540, 495, true], [1080, 900]] },
       { code: "SANN", soon: "31 Oct", name: "Sannam Chilli Powder", te: "సన్నం కారం", tr: "Sannam Kaaram", note: "Whole sun-dried chillies, packed as fine powder",
-        origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/sannam-540g.jpg", by: "mfd", shelf: 12,
+        origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/sannam-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Sannam red chillies (Capsicum annuum).",
         skus: [[180, 135], [270, 180], [540, 306, true]] },
       { code: "TEJA", soon: "31 Oct", name: "Teja Chilli Powder", te: "తేజ కారం", tr: "Teja Kaaram", note: "Extra hot · sun-dried · stone-ground",
-        origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/teja-540g.jpg", by: "mfd", shelf: 12,
+        origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/teja-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Teja red chillies (Capsicum annuum).",
         skus: [[180, 144], [270, 198], [540, 342, true]] },
     ],
@@ -121,11 +121,11 @@ const PACK_SECTIONS = [
     blurb: "Dark desi cane jaggery and palm jaggery from village makers in Andhra Pradesh.",
     products: [
       { code: "CBEL", name: "Cane Jaggery", te: "చెరుకు బెల్లం", tr: "Cheruku Bellam", note: "Village desi · dark · slow-boiled",
-        origin: "Chittoor &amp; Anakapalli cane belts", pack: "assets/packs/cane-jaggery-540g.jpg", by: "packed", shelf: 9,
+        origin: "Chittoor &amp; Anakapalli cane belts", pack: "assets/packs/cane-jaggery-540g.jpg", by: "packed", shelf: 9, useBy: 12,
         ingredients: "Sugarcane jaggery.",
         skus: [[270, 108], [540, 234, true], [1080, 369]] },
       { code: "TBEL", name: "Palm Jaggery", te: "తాటి బెల్లం", tr: "Thati Bellam", note: "Village desi · palmyra sap",
-        origin: "From the Godavari delta", pack: "assets/packs/palm-jaggery-540g.jpg", by: "packed", shelf: 9,
+        origin: "From the Godavari delta", pack: "assets/packs/palm-jaggery-540g.jpg", by: "packed", shelf: 9, useBy: 12,
         ingredients: "Palmyra palm jaggery.",
         skus: [[270, 225], [540, 495, true], [1080, 711]] },
     ],
@@ -136,7 +136,7 @@ const PACK_SECTIONS = [
     blurb: "Cashews from the Andhra coast, plus walnuts, almonds and pistachios from select orchards.",
     products: [
       { code: "CASH", soon: "31 Oct", name: "Cashew Kernels", te: "జీడిపప్పు", tr: "Jeedipappu", note: "Whole kernels · plain · unsalted",
-        origin: "Chirala · Bapatla · Vizag coast", pack: "assets/packs/cashew-540g.jpg", by: "packed", shelf: 6,
+        origin: "Chirala · Bapatla · Vizag coast", pack: "assets/packs/cashew-540g.jpg", by: "packed", shelf: 9, useBy: 12,
         ingredients: "Cashew kernels (Anacardium occidentale).", allergen: "Contains cashew (tree nut).",
         skus: [[90, 180], [180, 324], [270, 477], [540, 891, true]] },
       { code: "WALN", name: "Walnut Kernels", te: "అక్రోటు", tr: "Akrotu", note: "Kernels · plain",
@@ -591,6 +591,7 @@ function packCard(p) {
             ${p.allergen ? `<dt>Allergen</dt><dd>${p.allergen}</dd>` : ""}
             <dt>Net quantity</dt><dd>${qtyLabel(sku.g)} · SKU ${skuCode(p, sku.g)}</dd>
             <dt>Best before</dt><dd>${p.shelf} months from packing</dd>
+            ${p.useBy ? `<dt>Use by</dt><dd>${p.useBy} months from packing</dd>` : ""}
             ${PACK_FACTS[p.code] ? `<dt>Storage</dt><dd>${PACK_FACTS[p.code].storage}</dd>` : ""}
             <dt>${by}</dt><dd>${MAKER.address}</dd>
             <dt>Country of origin</dt><dd>${p.country || "India"}</dd>

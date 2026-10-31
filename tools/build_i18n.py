@@ -444,6 +444,7 @@ def pack_page(code, t, p, packs, facts):
           {allergen}
           <dt>Net quantity</dt><dd>{p['g']} g · SKU 1AF-{p['code']}-{p['g']:04d}</dd>
           <dt>Best before</dt><dd>{p['shelf']} months from packing</dd>
+          {f"<dt>Use by</dt><dd>{p['use_by']} months from packing</dd>" if p.get('use_by') else ""}
           {storage}
           <dt>{bp.MAKER[p['by']]}</dt><dd>{bp.ADDRESS}</dd>
           <dt>FSSAI</dt><dd>Reg. 20126161000590</dd>

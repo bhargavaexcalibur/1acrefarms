@@ -52,7 +52,7 @@ PACKS = [
     dict(code="TURM", slug="turmeric-powder", section="spices", crumb="Turmeric",
          name="Turmeric Powder", local="Pasupu", te="పసుపు", hi="हल्दी", hi_tr="Haldi",
          note="Farm-sourced · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
-         pack="turmeric-540g.jpg", by="mfd", shelf=12, ingredients="Turmeric (Curcuma longa).",
+         pack="turmeric-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Turmeric (Curcuma longa).",
          g=540, mrp=396, category="Spices > Turmeric powder",
          title="Turmeric Powder (Pasupu) 540 g from Palnadu &amp; Guntur | 1acrefarms",
          desc="Pasupu (haldi) from Palnadu and Guntur, sun-dried and stone-ground, in a 540 g pack. "
@@ -64,7 +64,7 @@ PACKS = [
     dict(code="KPAS", slug="hill-turmeric-powder", section="spices", crumb="Turmeric",
          name="Hill Turmeric Powder", local="Konda Pasupu", te="కొండ పసుపు", hi="पहाड़ी हल्दी", hi_tr="Pahadi Haldi",
          note="Whole hill turmeric fingers, packed as fine powder", origin="Araku &amp; Maredumilli hills",
-         pack="hill-turmeric-540g.jpg", by="mfd", shelf=12, ingredients="Turmeric (Curcuma longa).",
+         pack="hill-turmeric-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Turmeric (Curcuma longa).",
          g=540, mrp=495, category="Spices > Turmeric powder",
          title="Hill Turmeric Powder (Konda Pasupu) 540 g from Araku | 1acrefarms",
          desc="Konda pasupu: hill turmeric from the Araku and Maredumilli hills, packed as fine powder in a "
@@ -78,7 +78,7 @@ PACKS = [
          live_from=dt.date(2026, 10, 31),
          name="Sannam Chilli Powder", local="Sannam Kaaram", te="సన్నం కారం", hi="सन्नम मिर्च पाउडर", hi_tr="Lal Mirch",
          note="Whole sun-dried chillies, packed as fine powder", origin="Grown in Palnadu &amp; Guntur",
-         pack="sannam-540g.jpg", by="mfd", shelf=12, ingredients="Sannam red chillies (Capsicum annuum).",
+         pack="sannam-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Sannam red chillies (Capsicum annuum).",
          g=540, mrp=306, category="Spices > Chilli powder",
          title="Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
          desc="Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. "
@@ -93,7 +93,7 @@ PACKS = [
          live_from=dt.date(2026, 10, 31),
          name="Teja Chilli Powder", local="Teja Kaaram", te="తేజ కారం", hi="तेजा मिर्च पाउडर", hi_tr="Lal Mirch",
          note="Extra hot · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
-         pack="teja-540g.jpg", by="mfd", shelf=12, ingredients="Teja red chillies (Capsicum annuum).",
+         pack="teja-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Teja red chillies (Capsicum annuum).",
          g=540, mrp=342, category="Spices > Chilli powder",
          title="Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
          desc="Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of "
@@ -107,7 +107,7 @@ PACKS = [
     dict(code="CBEL", slug="cane-jaggery", section="jaggery", crumb="Jaggery",
          name="Cane Jaggery", local="Cheruku Bellam", te="చెరుకు బెల్లం", hi="गन्ने का गुड़", hi_tr="Gud",
          note="Village desi · dark · slow-boiled", origin="Chittoor &amp; Anakapalli cane belts",
-         pack="cane-jaggery-540g.jpg", by="packed", shelf=9, ingredients="Sugarcane jaggery.",
+         pack="cane-jaggery-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Sugarcane jaggery.",
          g=540, mrp=234, category="Sweeteners > Jaggery",
          title="Cane Jaggery (Cheruku Bellam) 540 g from Anakapalli &amp; Chittoor | 1acrefarms",
          desc="Cheruku bellam (gud): dark, slow-boiled cane jaggery from the Chittoor and Anakapalli cane belts, "
@@ -121,7 +121,7 @@ PACKS = [
     dict(code="TBEL", slug="palm-jaggery", section="jaggery", crumb="Jaggery",
          name="Palm Jaggery", local="Thati Bellam", te="తాటి బెల్లం", hi="ताड़ का गुड़", hi_tr="Taad Gud",
          note="Village desi · palmyra sap", origin="From the Godavari delta",
-         pack="palm-jaggery-540g.jpg", by="packed", shelf=9, ingredients="Palmyra palm jaggery.",
+         pack="palm-jaggery-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Palmyra palm jaggery.",
          g=540, mrp=495, category="Sweeteners > Jaggery",
          title="Palm Jaggery (Thati Bellam) 540 g from the Godavari delta | 1acrefarms",
          desc="Thati bellam (taad gud): palm jaggery from the Godavari delta, made from palmyra sap, 540 g. "
@@ -134,7 +134,7 @@ PACKS = [
          live_from=dt.date(2026, 10, 31),
          name="Cashew Kernels", local="Jeedipappu", te="జీడిపప్పు", hi="काजू", hi_tr="Kaju",
          note="Whole kernels · plain · unsalted", origin="Chirala · Bapatla · Vizag coast",
-         pack="cashew-540g.jpg", by="packed", shelf=6, ingredients="Cashew kernels (Anacardium occidentale).",
+         pack="cashew-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Cashew kernels (Anacardium occidentale).",
          allergen="Contains cashew (tree nut).", g=540, mrp=891, category="Nuts > Cashew",
          title="Cashew Kernels (Jeedipappu) 540 g, whole and unsalted | 1acrefarms",
          desc="Jeedipappu (kaju): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag "
@@ -419,6 +419,7 @@ def page(p, live, facts, guides=()):
           {allergen}
           <dt>Net quantity</dt><dd>{p['g']} g · SKU 1AF-{p['code']}-{p['g']:04d}</dd>
           <dt>Best before</dt><dd>{p['shelf']} months from packing</dd>
+          {f"<dt>Use by</dt><dd>{p['use_by']} months from packing</dd>" if p.get('use_by') else ""}
           {storage}
           <dt>{MAKER[p['by']]}</dt><dd>{ADDRESS}</dd>
           <dt>FSSAI</dt><dd>Reg. 20126161000590</dd>
