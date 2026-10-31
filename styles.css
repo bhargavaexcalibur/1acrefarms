@@ -578,3 +578,24 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
   .gd-body .rcp-aside { margin-top: 28px; }
   .gd-results { grid-template-columns: 1fr; }
 }
+
+/* ---- Guides: pack photos figure, comparison table, Telugu section ---- */
+.gd-packfig { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; background: var(--surface); border-radius: 8px; padding: 14px; }
+.gd-packfig a { display: flex; flex-direction: column; gap: 8px; text-align: center; font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
+.gd-packfig img { width: 100%; height: auto; border-radius: 5px; box-shadow: 0 8px 20px rgba(30,40,22,.14); }
+.gd-packfig [lang="te"], .gd-table [lang="te"], .gd-te, .gd-section [lang="te"], .gd-tile [lang="te"] { font-family: "Noto Sans Telugu", sans-serif; }
+.gd-packfig span [lang="te"] { font-weight: 500; color: var(--ink-soft); }
+.gd-table-wrap { overflow-x: auto; max-width: 44em; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.gd-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.gd-table th, .gd-table td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--hairline); }
+.gd-table tbody tr:last-child th, .gd-table tbody tr:last-child td { border-bottom: 0; }
+.gd-table thead th { font-size: 0.85rem; background: var(--card-bg); }
+.gd-table thead th span { display: block; font-weight: 500; color: var(--ink-soft); }
+.gd-table tbody th { font-weight: 600; color: var(--ink); width: 26%; }
+.gd-table td { color: var(--ink-soft); }
+.gd-te { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); padding: 18px 20px; max-width: 42em; }
+.gd-te p + p, .gd-te ul + p, .gd-te p + ul { margin-top: 10px; }
+.gd-section a:not(.btn) { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+@media (max-width: 560px) {
+  .gd-table th, .gd-table td { padding: 9px 9px; font-size: 0.84rem; }
+}

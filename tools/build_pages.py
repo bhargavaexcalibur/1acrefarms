@@ -198,6 +198,22 @@ def nutrition(p, facts):
         </div>"""
 
 
+# As policies.html#returns: free replacement or full refund for a pack that arrives damaged, wrong
+# or short (tell us within 48 hours of delivery); no return shipping cost, ever; opened packs are
+# not taken back for a change of mind. Quality problems are covered until best-before (page only).
+RETURN_POLICY = {
+    "@type": "MerchantReturnPolicy",
+    "applicableCountry": "IN",
+    "returnPolicyCountry": "IN",
+    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+    "merchantReturnDays": 2,
+    "returnMethod": "https://schema.org/ReturnByMail",
+    "returnFees": "https://schema.org/FreeReturn",
+    "refundType": "https://schema.org/FullRefund",
+    "merchantReturnLink": f"{SITE}/policies.html#returns",
+}
+
+
 def product_ld(p, facts):
     url = f"{SITE}/{p['slug']}/"
     ld = {
@@ -223,6 +239,7 @@ def product_ld(p, facts):
                     "availability": "https://schema.org/InStock",
                     "itemCondition": "https://schema.org/NewCondition",
                     "seller": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms"},
+                    "hasMerchantReturnPolicy": RETURN_POLICY,
                     "shippingDetails": {
                         "@type": "OfferShippingDetails",
                         "shippingRate": {"@type": "MonetaryAmount", "value": "81", "currency": "INR"},

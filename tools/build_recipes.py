@@ -73,8 +73,8 @@ RECIPES = [
         hi_tr="Taad Ke Gud Wali Coffee",   # ADDED: transliteration of the approved Hindi name
         alt=[],
         eyebrow="Recipe · filter coffee",
-        title="Palm Jaggery Coffee (Thati Bellam Coffee) Recipe | 1acrefarms",
-        desc="Palm jaggery coffee (thati bellam coffee), the Andhra way: filter decoction, hot milk and "
+        title="తాటి బెల్లం కాఫీ · Palm Jaggery Coffee Recipe | 1acrefarms",
+        desc="తాటి బెల్లం కాఫీ. Palm jaggery coffee (thati bellam coffee), the Andhra way: filter decoction, hot milk and "
              "grated palm jaggery stirred in off the heat. Step-by-step method, tips and FAQs.",
         approved=dict(
             ingredients=["1 cup milk", "2 tbsp filter coffee decoction", "1–2 tsp grated palm jaggery"],
@@ -176,8 +176,8 @@ RECIPES = [
         hi_tr="Gud Wali Kheer",            # ADDED: transliteration of the approved Hindi name
         alt=["Paramannam"],
         eyebrow="Diwali recipe · serves 4",
-        title="Bellam Paramannam (Jaggery Rice Kheer) Recipe | 1acrefarms",
-        desc="Bellam paramannam for Diwali: rice slow-cooked in milk and sweetened with cane jaggery off "
+        title="బెల్లం పరమాన్నం · Bellam Paramannam Recipe | 1acrefarms",
+        desc="బెల్లం పరమాన్నం. Bellam paramannam for Diwali: rice slow-cooked in milk and sweetened with cane jaggery off "
              "the heat, finished with ghee-fried cashews. Step-by-step method, tips and FAQs. Serves 4.",
         approved=dict(
             ingredients=["½ cup rice", "4 cups milk", "¾ cup grated cane jaggery", "2 tbsp ghee · 10 cashews",
@@ -287,8 +287,8 @@ RECIPES = [
         hi_tr="Til-Gud Ke Laddoo",         # ADDED: transliteration of the approved Hindi name
         alt=["Chimmili", "చిమ్మిలి", "तिल-गुड़ के लड्डू"],
         eyebrow="Nagula Chavithi recipe · makes about 12",
-        title="Chimmili (Sesame Jaggery Balls) for Nagula Chavithi | 1acrefarms",
-        desc="Chimmili for Nagula Chavithi: roasted sesame and cane jaggery shaped into small balls. "
+        title="నువ్వుల చిమ్మిలి · Chimmili for Nagula Chavithi | 1acrefarms",
+        desc="నాగుల చవితికి నువ్వుల చిమ్మిలి. Chimmili for Nagula Chavithi: roasted sesame and cane jaggery shaped into small balls. "
              "Step-by-step method, tips and FAQs. Makes about 12 and keeps a week.",
         approved=dict(
             ingredients=["1 cup white sesame seeds", "¾ cup grated cane jaggery", "¼ tsp cardamom powder"],
@@ -391,8 +391,8 @@ RECIPES = [
         hi_tr="Haldi Wala Doodh",          # ADDED: transliteration of the approved Hindi name
         alt=["Haldi Doodh"],               # from the approved hashtag #HaldiDoodh
         eyebrow="Karthika Somavaram · 5 minutes",
-        title="Pasupu Paalu (Turmeric Milk) Recipe | 1acrefarms",
-        desc="Pasupu paalu (haldi doodh): warm milk simmered with turmeric and a pinch of pepper, "
+        title="పసుపు పాలు · Pasupu Paalu (Turmeric Milk) Recipe | 1acrefarms",
+        desc="పసుపు పాలు. Pasupu paalu (haldi doodh): warm milk simmered with turmeric and a pinch of pepper, "
              "sweetened with jaggery off the heat. Step-by-step method, tips and FAQs.",
         approved=dict(
             ingredients=["1 cup milk", "¼ tsp turmeric powder", "A pinch of black pepper",
@@ -837,9 +837,9 @@ def hub_page(live):
         crumbs_ld(("Home", f"{SITE}/"), ("Recipes", url)),
     ]}, ensure_ascii=False, indent=2)
     tiles = "\n".join(tile(r) for r in RECIPES)
-    desc = ("Home recipes made with 1acrefarms turmeric and jaggery: palm jaggery coffee, bellam paramannam, "
+    desc = ("బెల్లం, పసుపు వంటకాలు. Home recipes made with 1acrefarms turmeric and jaggery: palm jaggery coffee, bellam paramannam, "
             "chimmili for Nagula Chavithi and pasupu paalu.")
-    return head("Turmeric & Jaggery Recipes (Pasupu, Bellam) | 1acrefarms", desc, url, "website",
+    return head("బెల్లం, పసుపు వంటకాలు · Jaggery & Turmeric Recipes | 1acrefarms", desc, url, "website",
                 "Recipes · 1acrefarms", f"{SITE}/assets/og-image.jpg", ld) + f"""
 <body class="pdp-page rcp-page">
 {bp.HEADER}

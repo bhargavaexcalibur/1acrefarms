@@ -60,7 +60,8 @@ WATER_GLASS_SVG = """<svg class="gd-glasses" viewBox="0 0 340 236" role="img" ar
           </svg>"""
 
 # Fields
-#   packs     the "Our turmeric" box and the pack pages that link back to this guide
+#   packs     the pack box (packs_label, packs_note) and the pack pages that link back to this guide
+#   figure    svg (inline drawing) or packs (the pack photos, side by side), with label + caption
 #   sections  [(id, heading, html)] in order; html is written here (trusted), text inside is checked
 #   faq       [(question, answer)] plain text · sources [(label, url)]
 GUIDES = [
@@ -102,6 +103,9 @@ GUIDES = [
                     "trails ran from the powder as it sank, and the water turned deep yellow. That one "
                     "is worth a lab test."),
         packs=["turmeric-powder", "hill-turmeric-powder"],
+        packs_label="Our turmeric",
+        packs_note='Try these checks on ours too. If anything looks off, <a href="{wa}" target="_blank" '
+                   'rel="noopener">WhatsApp us</a> a photo with the batch number from the pack.',
         sections=[
             ("what", "What FSSAI checks turmeric for", """            <dl class="gd-dl">
               <dt>Added dyes</dt>
@@ -181,6 +185,112 @@ GUIDES = [
              "https://doi.org/10.1016/j.scitotenv.2024.175003"),
         ],
     ),
+    dict(
+        slug="cane-vs-palm-jaggery",
+        name="Cane jaggery or palm jaggery: which to use",
+        short="Cane jaggery or palm jaggery",
+        names='<span lang="te">చెరుకు బెల్లం</span> · <span lang="te">తాటి బెల్లం</span> · '
+              '<span lang="hi">गन्ने का गुड़</span> · <span lang="hi">ताड़ का गुड़</span>',
+        eyebrow="Guide · jaggery",
+        title="చెరుకు బెల్లం vs తాటి బెల్లం · Cane vs Palm Jaggery | 1acrefarms",
+        desc="చెరుకు బెల్లం, తాటి బెల్లం తేడా. Cane jaggery (cheruku bellam) vs palm jaggery (thati bellam): "
+             "what each is made from, how they differ, which to use, and how to store them.",
+        published="2026-10-31",
+        tile_line="What each is made from, how they taste, and which to use where. With a Telugu section.",
+        intro=[
+            "Bellam in a Telugu kitchen usually means one of two things: cheruku bellam, made from sugarcane "
+            "juice, or thati bellam, made from the sap of the palmyra palm. FSSAI treats them as two "
+            "separate products, each with its own standard.",
+            "They can look alike in a lump, but they taste different and suit different dishes. Here is how "
+            "to tell them apart, which to use where, and how to keep them. There is a full Telugu section "
+            "further down.",
+        ],
+        quick="Cane jaggery (cheruku bellam) is boiled-down sugarcane juice with a mellow, caramel "
+              "sweetness: the one for payasam, pongal and chimmili. Palm jaggery (thati bellam) is "
+              "boiled-down palmyra sap, darker and deeper in taste: a favourite in filter coffee and tea. "
+              "You can swap one for the other gram for gram; start with a little less palm jaggery. Keep "
+              "both in an airtight jar.",
+        te_line="చెరుకు బెల్లాన్ని చెరుకు రసంతో, తాటి బెల్లాన్ని తాటి నీరాతో చేస్తారు. పరమాన్నం, పొంగలి, "
+                "చిమ్మిలికి చెరుకు బెల్లం; కాఫీ, టీకి తాటి బెల్లం బాగుంటుంది. రెండింటినీ గాలి చొరబడని "
+                "డబ్బాలో ఉంచండి.",
+        hi_line="गन्ने का गुड़ गन्ने के रस से और ताड़ का गुड़ ताड़ के रस से बनता है। खीर, पोंगल और तिल के "
+                "लड्डू के लिए गन्ने का गुड़, कॉफ़ी और चाय के लिए ताड़ का गुड़ अच्छा रहता है। दोनों को हवाबंद "
+                "डिब्बे में रखें।",
+        figure=dict(
+            packs=["cane-jaggery", "palm-jaggery"],
+            label="Our two jaggeries",
+            caption="Left: cane jaggery from the Chittoor and Anakapalli cane belts. Right: palm jaggery "
+                    "from the Godavari delta. Both packed in Narasaraopet."),
+        packs=["cane-jaggery", "palm-jaggery"],
+        packs_label="Our jaggery",
+        packs_note="Two or more packs ship free, so you can try both.",
+        sections=[
+            ("glance", "At a glance", """            <div class="gd-table-wrap">
+              <table class="gd-table">
+                <thead>
+                  <tr><th></th><th>Cane jaggery<span lang="te">చెరుకు బెల్లం</span></th><th>Palm jaggery<span lang="te">తాటి బెల్లం</span></th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Made from</th><td>Juice pressed out of sugarcane</td><td>Sap of the palmyra palm (thati neera)</td></tr>
+                  <tr><th>Made by</th><td>Boiling the juice down until it sets</td><td>Boiling the sap down until it sets</td></tr>
+                  <tr><th>FSSAI standard</th><td>"Cane jaggery or cane gur": moisture up to 7%</td><td>"Gur or jaggery" from palmyra, date or coconut palm: moisture up to 10%</td></tr>
+                  <tr><th>Colour</th><td>Golden to dark brown</td><td>Dark brown</td></tr>
+                  <tr><th>Taste</th><td>Mellow, caramel sweetness</td><td>Deeper, slightly smoky sweetness</td></tr>
+                  <tr><th>Good for</th><td>Payasam, pongal, paramannam, chimmili, chikki, laddu</td><td>Filter coffee, tea, payasam, sunnundalu</td></tr>
+                </tbody>
+              </table>
+            </div>"""),
+            ("where", "Where they come from", """            <p>Cane jaggery is made wherever sugarcane grows: the juice is pressed out of the cane and boiled down in open pans. In Andhra Pradesh, Anakapalli has the second largest jaggery market in India.</p>
+            <p>Palm jaggery is made from the sap of the palmyra palm, thati chettu in Telugu. The sap is called neera, or thati neera, and it is boiled down until it sets.</p>"""),
+            ("which", "Which one to use", """            <ul class="rcp-bullets">
+              <li>Payasam, sweet pongal and <a href="/recipes/paramannam/">bellam paramannam</a>: cane jaggery.</li>
+              <li><a href="/recipes/chimmili/">Chimmili</a>, chikki and laddu: cane jaggery.</li>
+              <li>Filter coffee and tea: palm jaggery. Its deeper taste stands up to the decoction; try our <a href="/recipes/palm-jaggery-coffee/">palm jaggery coffee</a>.</li>
+              <li><a href="/recipes/pasupu-paalu/">Pasupu paalu</a>: either one, as you like it.</li>
+            </ul>"""),
+            ("swap", "Swapping one for the other", """            <p>Use the same weight. Palm jaggery tastes stronger, so start with a little less and add more to taste.</p>
+            <p>In milk, coffee or tea, add either jaggery after the milk is off the boil, so the milk does not split.</p>"""),
+            ("store", "Keeping it well", """            <ul class="rcp-bullets">
+              <li>Keep jaggery in an airtight jar in a cool, dry place.</li>
+              <li>Use a dry spoon or knife. Jaggery takes in moisture from the air and turns sticky.</li>
+              <li>If it sets hard, grate it.</li>
+              <li>Use it within the best-before date on the pack.</li>
+            </ul>"""),
+            ("telugu", "తెలుగులో: చెరుకు బెల్లం, తాటి బెల్లం", """            <div class="gd-te" lang="te">
+              <p>చెరుకు బెల్లాన్ని చెరుకు రసాన్ని మరిగించి చేస్తారు. తాటి బెల్లాన్ని తాటి నీరాను మరిగించి చేస్తారు. FSSAI ఈ రెండింటికీ వేర్వేరు ప్రమాణాలు పెట్టింది: చెరుకు బెల్లంలో తేమ 7% వరకు, తాటి బెల్లంలో 10% వరకు ఉండొచ్చు.</p>
+              <p>రుచిలో కూడా తేడా ఉంటుంది. చెరుకు బెల్లం తీపి తేలికగా, పాకం రుచితో ఉంటుంది. తాటి బెల్లం రంగు ముదురుగా, రుచి లోతుగా, కొంచెం పొగ రుచితో ఉంటుంది.</p>
+              <ul class="rcp-bullets">
+                <li>పరమాన్నం, పొంగలి, చిమ్మిలి, చిక్కీ, లడ్డూలకు: చెరుకు బెల్లం.</li>
+                <li>ఫిల్టర్ కాఫీ, టీకి: తాటి బెల్లం.</li>
+                <li>ఒకదానికి బదులు మరొకటి అదే బరువుతో వాడొచ్చు. తాటి బెల్లం రుచి ఎక్కువ కాబట్టి కొంచెం తక్కువతో మొదలుపెట్టండి.</li>
+                <li>పాలు, కాఫీ, టీలో బెల్లం వేసేటప్పుడు పాలు మరగడం ఆగాక వేయండి; లేకపోతే పాలు విరిగిపోవచ్చు.</li>
+                <li>గాలి చొరబడని డబ్బాలో ఉంచి, పొడి చెంచాతో వాడండి. గట్టిపడితే తురుముకోండి.</li>
+              </ul>
+              <p>అనకాపల్లిలో దేశంలోనే రెండో అతిపెద్ద బెల్లం మార్కెట్ ఉంది.</p>
+            </div>"""),
+        ],
+        faq=[
+            ("Is palm jaggery the same as karupatti?",
+             "Yes. Karupatti is the Tamil name for jaggery made from palmyra sap. In Telugu it is thati "
+             "bellam, and in Hindi taad ka gud."),
+            ("Is gud the same as jaggery?",
+             "Yes. Gud, or gur, is the Hindi word for jaggery, and bellam is the Telugu one. On its own it "
+             "usually means cane jaggery."),
+            ("Why has my jaggery gone sticky?",
+             "It has taken in moisture from the air, which happens faster in humid weather. Move it to an "
+             "airtight jar and use a dry spoon."),
+            ("Can I use palm jaggery in payasam?",
+             "Yes. It gives a darker colour and a deeper taste. Add it off the heat, as you would cane "
+             "jaggery."),
+        ],
+        sources=[
+            ("FSSAI: Food Products Standards regulations, chapter 2.8 (sweetening agents), 2.8.4 Gur or "
+             "jaggery and Cane jaggery or cane gur",
+             "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_8%20(Sweetening%20agents%20including%20Honey).pdf"),
+            ("Anakapalli district, Government of Andhra Pradesh: district profile",
+             "https://anakapalli.ap.gov.in/"),
+        ],
+    ),
 ]
 
 PACK_BY_SLUG = {p["slug"]: p for p in bp.PACKS}
@@ -212,6 +322,17 @@ def article_ld(g, url):
     }
 
 
+def pack_figure(slugs):
+    """The pack photos side by side, each with its name under it."""
+    cells = "\n".join(f"""            <a href="/{PACK_BY_SLUG[s]['slug']}/">
+              <img src="/assets/packs/{PACK_BY_SLUG[s]['pack']}" alt="{PACK_BY_SLUG[s]['name']} {PACK_BY_SLUG[s]['g']} g pack" width="800" height="1122" />
+              <span>{PACK_BY_SLUG[s]['name']}<br /><span lang="te">{PACK_BY_SLUG[s]['te']}</span></span>
+            </a>""" for s in slugs)
+    return f"""<div class="gd-packfig">
+{cells}
+          </div>"""
+
+
 def our_packs(g):
     wa = f"https://wa.me/{bp.WA}"
     cards = []
@@ -227,9 +348,9 @@ def our_packs(g):
             </div>
           </div>""")
     return f"""        <div class="rcp-made">
-          <p class="eyebrow">Our turmeric</p>
+          <p class="eyebrow">{e(g['packs_label'])}</p>
 {chr(10).join(cards)}
-          <p class="rcp-also">Try these checks on ours too. If anything looks off, <a href="{wa}" target="_blank" rel="noopener">WhatsApp us</a> a photo with the batch number from the pack.</p>
+          <p class="rcp-also">{g['packs_note'].format(wa=wa)}</p>
         </div>"""
 
 
@@ -280,7 +401,7 @@ def guide_page(g, live):
           </div>
         </div>
         <figure class="rcp-card gd-figure">
-          {fig['svg']}
+          {fig.get('svg') or pack_figure(fig['packs'])}
           <figcaption><span>{e(fig['label'])}</span>{e(fig['caption'])}</figcaption>
         </figure>
       </header>
