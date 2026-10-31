@@ -475,6 +475,1946 @@
    "src": "Keep the zip shut after use.",
    "t": "వాడిన తర్వాత జిప్ మూసి ఉంచండి.",
    "back": "Keep the zip closed after use."
+  },
+  "ui.amazon": {
+   "src": "Buy on Amazon",
+   "t": "Amazon లో కొనండి",
+   "back": "Buy on Amazon"
+  },
+  "seg.70f8bb9a8a53": {
+   "src": "Home",
+   "t": "హోమ్",
+   "back": "Home"
+  },
+  "seg.9fb1092f32d4": {
+   "src": "Recipes",
+   "t": "వంటకాలు",
+   "back": "Recipes"
+  },
+  "seg.41725cbdbc4e": {
+   "src": "Chimmili for Nagula Chavithi",
+   "t": "నాగుల చవితికి చిమ్మిలి",
+   "back": "Chimmili for Nagula Chavithi"
+  },
+  "seg.0713d9ec51cd": {
+   "src": "Nagula Chavithi recipe · makes about 12",
+   "t": "నాగుల చవితి వంటకం · సుమారు 12 ఉండలు",
+   "back": "Nagula Chavithi recipe · about 12 balls"
+  },
+  "seg.6a61d0d1cb9e": {
+   "src": "Chimmili for Nagula Chavithi ⟦1⟧(Sesame Jaggery Balls)⟦/1⟧",
+   "t": "నాగుల చవితికి చిమ్మిలి ⟦1⟧(నువ్వులు, బెల్లం ఉండలు)⟦/1⟧",
+   "back": "Chimmili for Nagula Chavithi ⟦1⟧(sesame, jaggery balls)⟦/1⟧"
+  },
+  "seg.4d125771ff54": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · Til-Gud Ke Laddoo",
+   "t": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · Til-Gud Ke Laddoo",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · Til-Gud Ke Laddoo"
+  },
+  "seg.4fea7db714b7": {
+   "src": "Chimmili is a small Telugu sweet of roasted sesame and jaggery, ground coarsely and rolled into balls. It is one of the offerings made on Nagula Chavithi in Karthika masam, along with chalimidi and the milk poured at the snake anthill (putta). Sesame and jaggery sweets like it are made again at Sankranti.",
+   "t": "చిమ్మిలి అంటే వేయించిన నువ్వులు, బెల్లం కలిపి బరకగా పట్టి ఉండలుగా చుట్టే చిన్న తెలుగు తీపి. కార్తీక మాసంలో నాగుల చవితి నాడు చలిమిడి, పుట్టలో పోసే పాలతో పాటు పెట్టే నైవేద్యాల్లో ఇది ఒకటి. ఇలాంటి నువ్వులు-బెల్లం తీపిని సంక్రాంతికి మళ్లీ చేస్తారు.",
+   "back": "Chimmili is a small Telugu sweet made by mixing roasted sesame and jaggery, grinding it coarsely and rolling it into balls. In Kartika month, on the day of Nagula Chavithi, it is one of the naivedyam offerings placed along with chalimidi and the milk poured into the anthill. A similar sesame-jaggery sweet is made again for Sankranti."
+  },
+  "seg.6e104d560e56": {
+   "src": "Roasted sesame gives it a nutty, toasty taste, and cane jaggery a caramel sweetness. The texture is soft and a little crumbly, and each ball is gone in two bites. This recipe makes about 12.",
+   "t": "వేయించిన నువ్వులతో కమ్మని, వేగిన రుచి వస్తుంది; చెరుకు బెల్లంతో పాకం లాంటి తీపి. ఉండ మెత్తగా, కొంచెం పొడిపొడిగా ఉంటుంది; ఒక్కో ఉండ రెండు కొరుకుల్లో అయిపోతుంది. ఈ వంటకంతో సుమారు 12 ఉండలు వస్తాయి.",
+   "back": "Roasted sesame gives a rich, roasted taste; cane jaggery gives a syrup-like sweetness. The ball is soft and slightly crumbly; each ball is finished in two bites. This recipe gives about 12 balls."
+  },
+  "seg.3243a5b994ae": {
+   "src": "⟦1⟧Prep⟦/1⟧15 min",
+   "t": "⟦1⟧తయారీ⟦/1⟧15 నిమిషాలు",
+   "back": "⟦1⟧Preparation⟦/1⟧15 minutes"
+  },
+  "seg.a0707ef3d64c": {
+   "src": "⟦1⟧Cook⟦/1⟧10 min",
+   "t": "⟦1⟧వంట⟦/1⟧10 నిమిషాలు",
+   "back": "⟦1⟧Cooking⟦/1⟧10 minutes"
+  },
+  "seg.b62f27d282c5": {
+   "src": "⟦1⟧Total⟦/1⟧30 min",
+   "t": "⟦1⟧మొత్తం⟦/1⟧30 నిమిషాలు",
+   "back": "⟦1⟧Total⟦/1⟧30 minutes"
+  },
+  "seg.4e8f24be7265": {
+   "src": "⟦1⟧Makes⟦/1⟧About 12",
+   "t": "⟦1⟧వచ్చేవి⟦/1⟧సుమారు 12",
+   "back": "⟦1⟧Makes⟦/1⟧about 12"
+  },
+  "seg.9e72f273d4f2": {
+   "src": "Total includes 5 minutes for the roasted sesame to cool.",
+   "t": "వేయించిన నువ్వులు చల్లారడానికి పట్టే 5 నిమిషాలు కూడా మొత్తం సమయంలో కలిపాం.",
+   "back": "We have also included in the total time the 5 minutes it takes for the roasted sesame to cool."
+  },
+  "seg.df9373d040ca": {
+   "src": "⟦1⟧The recipe card⟦/1⟧Save it or send it to family. ⟦2⟧Open full size⟦/2⟧",
+   "t": "⟦1⟧రెసిపీ కార్డు⟦/1⟧సేవ్ చేసుకోండి, లేదా ఇంట్లో వాళ్లకు పంపండి. ⟦2⟧పూర్తి సైజులో తెరవండి⟦/2⟧",
+   "back": "⟦1⟧Recipe card⟦/1⟧Save it, or send it to the people at home. ⟦2⟧Open in full size⟦/2⟧"
+  },
+  "seg.7b0a223418a3": {
+   "src": "In short",
+   "t": "క్లుప్తంగా",
+   "back": "In brief"
+  },
+  "seg.2097a0e593c6": {
+   "src": "Make chimmili at home: roast sesame till it crackles, grind coarsely, pulse with grated cane jaggery and cardamom, shape into balls.",
+   "t": "ఇంట్లో చిమ్మిలి చేయండి: నువ్వులను చిటపటలాడే వరకు వేయించి, బరకగా పట్టి, తురిమిన చెరుకు బెల్లం, యాలకుల పొడి వేసి మిక్సీలో ఆపి ఆపి తిప్పి, ఉండలు చుట్టండి.",
+   "back": "Make chimmili at home: roast sesame until it crackles, grind coarsely, add grated cane jaggery and cardamom powder, pulse in the mixie with stops, and roll into balls."
+  },
+  "seg.6947f1f0816d": {
+   "src": "Ingredients ⟦1⟧makes about 12⟦/1⟧",
+   "t": "కావలసినవి ⟦1⟧సుమారు 12 ఉండలకు⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for about 12 balls⟦/1⟧"
+  },
+  "seg.80b66a3db542": {
+   "src": "1 cup white sesame seeds ⟦1⟧about 150 g⟦/1⟧",
+   "t": "1 కప్పు తెల్ల నువ్వులు ⟦1⟧సుమారు 150 g⟦/1⟧",
+   "back": "1 cup white sesame ⟦1⟧about 150 g⟦/1⟧"
+  },
+  "seg.ac56800c5ad4": {
+   "src": "¾ cup grated cane jaggery ⟦1⟧lightly packed; soft jaggery binds best⟦/1⟧",
+   "t": "¾ కప్పు తురిమిన చెరుకు బెల్లం ⟦1⟧కొంచెం అదిమి కొలవాలి; మెత్తని బెల్లం బాగా అతుకుతుంది⟦/1⟧",
+   "back": "¾ cup grated cane jaggery ⟦1⟧measure pressed down a little; soft jaggery binds well⟦/1⟧"
+  },
+  "seg.4c5b602f21f3": {
+   "src": "¼ tsp cardamom powder",
+   "t": "¼ టీస్పూన్ యాలకుల పొడి",
+   "back": "¼ teaspoon cardamom powder"
+  },
+  "seg.39c46fb56757": {
+   "src": "1 tsp ghee, for greasing your palms",
+   "t": "1 టీస్పూన్ నెయ్యి, అరచేతులకు రాసుకోవడానికి",
+   "back": "1 teaspoon ghee, for applying to the palms"
+  },
+  "seg.132ce498b42c": {
+   "src": "Made with",
+   "t": "ఇందులో వాడినది",
+   "back": "Used in this"
+  },
+  "seg.be6d7e2d558e": {
+   "src": "Cane Jaggery",
+   "t": "చెరుకు బెల్లం",
+   "back": "Cane jaggery"
+  },
+  "seg.059427bf3bd5": {
+   "src": "⟦#1⟧ · Cheruku Bellam",
+   "t": "⟦#1⟧ · Cheruku Bellam",
+   "back": "⟦#1⟧ · Cheruku Bellam"
+  },
+  "seg.b468afe021cf": {
+   "src": "MRP ₹234 · 540 g",
+   "t": "MRP ₹234 · 540 g",
+   "back": "MRP ₹234 · 540 g"
+  },
+  "seg.5ff7431ccbb1": {
+   "src": "Buy on Amazon",
+   "t": "Amazon లో కొనండి",
+   "back": "Buy on Amazon"
+  },
+  "seg.cc83dde48fe2": {
+   "src": "See the pack",
+   "t": "ప్యాక్ చూడండి",
+   "back": "See the pack"
+  },
+  "seg.649ff9af556d": {
+   "src": "Add to order",
+   "t": "ఆర్డర్‌లో చేర్చండి",
+   "back": "Add to order"
+  },
+  "seg.88306943fea7": {
+   "src": "Method",
+   "t": "చేసే విధానం",
+   "back": "Method"
+  },
+  "seg.ed775cba4fcf": {
+   "src": "Grate the jaggery and measure out the sesame before you start; once the sesame is roasted, the rest moves quickly.",
+   "t": "మొదలుపెట్టే ముందే బెల్లం తురిమి, నువ్వులు కొలిచి పెట్టుకోండి; నువ్వులు వేగాక మిగతా పని త్వరగా అయిపోతుంది.",
+   "back": "Before starting, grate the jaggery and measure the sesame and keep them ready; once the sesame is roasted the rest of the work finishes quickly."
+  },
+  "seg.cfb9d281b47f": {
+   "src": "Heat a heavy kadai or pan on low heat for a minute. Add the sesame; no oil or ghee is needed.",
+   "t": "మందపాటి కళాయి లేదా పాన్‌ను తక్కువ మంట మీద ఒక నిమిషం వేడి చేయండి. నువ్వులు వేయండి; నూనె గానీ నెయ్యి గానీ అక్కర్లేదు.",
+   "back": "Heat a thick-bottomed kadai or pan on low flame for one minute. Add the sesame; no oil or ghee is needed."
+  },
+  "seg.89a51ce5355c": {
+   "src": "Dry-roast the sesame on a low flame till it crackles and turns light golden. Stir all the time; the seeds start to pop and smell nutty after 4–6 minutes. Do not let them turn brown.",
+   "t": "నువ్వులను తక్కువ మంట మీద, నూనె లేకుండా, చిటపటలాడి లేత బంగారు రంగు వచ్చే వరకు వేయించండి. ఆపకుండా కలుపుతూ ఉండండి; 4–6 నిమిషాలకు గింజలు చిటపటలాడుతూ కమ్మని వాసన వస్తుంది. గోధుమ రంగుకు మారనివ్వకండి.",
+   "back": "Roast the sesame on low flame, without oil, until it crackles and turns light golden. Keep stirring without stopping; in 4–6 minutes the seeds crackle and a rich aroma comes. Do not let it turn brown."
+  },
+  "seg.999792547560": {
+   "src": "Tip the sesame onto a wide plate straight away so it stops browning. Cool it for about 5 minutes, until it is just warm to the touch.",
+   "t": "నువ్వులు ఇంకా వేగకుండా వెంటనే వెడల్పాటి పళ్లెంలోకి వేయండి. చేతికి గోరువెచ్చగా తగిలే వరకు, సుమారు 5 నిమిషాలు చల్లారనివ్వండి.",
+   "back": "Immediately, before the sesame roasts further, put it onto a wide plate. Let it cool for about 5 minutes, until it feels lukewarm to the hand."
+  },
+  "seg.77b614ea2f92": {
+   "src": "Grind the sesame coarsely in short pulses. Use the small jar of the mixer and pulse 3–4 times, a second or two at a time; stop while you can still see broken seeds.",
+   "t": "నువ్వులను మిక్సీలో ఆపి ఆపి తిప్పుతూ బరకగా పట్టండి. మిక్సీ చిన్న జార్ వాడండి, ఒక్కోసారి ఒకటి రెండు సెకన్లు చొప్పున 3–4 సార్లు తిప్పండి; విరిగిన గింజలు ఇంకా కనిపిస్తుండగానే ఆపండి.",
+   "back": "Grind the sesame coarsely in the mixie, pulsing with stops. Use the small jar of the mixie, pulse 3–4 times for one or two seconds each time; stop while broken seeds are still visible."
+  },
+  "seg.175aeced5810": {
+   "src": "Add the jaggery and cardamom; pulse till it comes together. This takes 4–6 more short pulses; scrape down the sides once. A pinch pressed between your fingers should hold its shape.",
+   "t": "బెల్లం, యాలకుల పొడి వేసి, మిశ్రమం ముద్దయ్యే వరకు తిప్పండి. దీనికి ఇంకో 4–6 సార్లు చిన్నగా తిప్పాలి; మధ్యలో ఒకసారి జార్ పక్కలకు అంటినది గీకి కిందకు వేయండి. చిటికెడు మిశ్రమాన్ని వేళ్ల మధ్య నొక్కితే ఆకారం నిలవాలి.",
+   "back": "Add the jaggery and cardamom powder and pulse until the mixture becomes a lump. This needs another 4–6 short pulses; once in between, scrape down what has stuck to the sides of the jar. If you press a pinch of the mixture between the fingers, it should hold its shape."
+  },
+  "seg.6f94cb46b9ab": {
+   "src": "If the mixture is too dry to hold, add 1–2 tsp more grated jaggery and pulse once or twice again.",
+   "t": "మిశ్రమం మరీ పొడిగా ఉండి అతుక్కోకపోతే, ఇంకో 1–2 టీస్పూన్ల తురిమిన బెల్లం వేసి మళ్లీ ఒకటి రెండు సార్లు తిప్పండి.",
+   "back": "If the mixture is too dry and does not stick, add another 1–2 teaspoons of grated jaggery and pulse again once or twice."
+  },
+  "seg.226f137c9449": {
+   "src": "Tip the mixture into a bowl and grease your palms lightly with ghee.",
+   "t": "మిశ్రమాన్ని ఒక గిన్నెలోకి తీసి, అరచేతులకు కొంచెం నెయ్యి రాసుకోండి.",
+   "back": "Take the mixture into a bowl, and apply a little ghee to your palms."
+  },
+  "seg.ff3eb71729c2": {
+   "src": "Shape into small balls. Take a heaped tablespoon at a time, press it firmly in your fist, then roll it smooth. Work quickly while the mixture is still warm, as it turns crumbly when it cools.",
+   "t": "చిన్న ఉండలుగా చుట్టండి. ఒక్కోసారి ఒక నిండు టేబుల్ స్పూన్ మిశ్రమం తీసుకుని, పిడికిట్లో గట్టిగా నొక్కి, తర్వాత నున్నగా చుట్టండి. మిశ్రమం వెచ్చగా ఉండగానే త్వరగా చేయండి; చల్లారితే పొడిపొడిగా విడిపోతుంది.",
+   "back": "Roll into small balls. Take one heaped tablespoon of the mixture at a time, press firmly in your fist, then roll smooth. Do it quickly while the mixture is still warm; if it cools it crumbles apart."
+  },
+  "seg.ee9e027268aa": {
+   "src": "Leave the balls on a plate until they cool completely, about 15 minutes, then store them in an airtight jar.",
+   "t": "ఉండలు పూర్తిగా చల్లారే వరకు, సుమారు 15 నిమిషాలు, పళ్లెంలోనే ఉంచండి; తర్వాత గాలి చొరని డబ్బాలో పెట్టండి.",
+   "back": "Keep the balls on the plate itself until they cool completely, about 15 minutes; then put them in an airtight box."
+  },
+  "seg.4cf1b54b003a": {
+   "src": "Tips",
+   "t": "చిట్కాలు",
+   "back": "Tips"
+  },
+  "seg.7fe633314020": {
+   "src": "Roast on a low flame and keep stirring; sesame goes from golden to burnt quickly, and burnt sesame tastes bitter.",
+   "t": "తక్కువ మంట మీద కలుపుతూనే వేయించండి; నువ్వులు బంగారు రంగు నుంచి మాడిపోవడానికి ఎక్కువ సమయం పట్టదు, మాడిన నువ్వులు చేదుగా ఉంటాయి.",
+   "back": "Roast on low flame while stirring; it does not take long for sesame to go from golden to burnt, and burnt sesame is bitter."
+  },
+  "seg.d50b37351252": {
+   "src": "Grind in short pulses only; long runs turn sesame into an oily paste.",
+   "t": "ఆపి ఆపి మాత్రమే తిప్పండి; ఎక్కువసేపు తిప్పితే నువ్వులు నూనె ముద్దలా అయిపోతాయి.",
+   "back": "Only pulse with stops; if you run it for long the sesame turns into an oily paste."
+  },
+  "seg.75f5428655c4": {
+   "src": "Shape while the mixture is warm. If it turns crumbly, pulse it once more with a teaspoon of grated jaggery.",
+   "t": "మిశ్రమం వెచ్చగా ఉండగానే ఉండలు చుట్టండి. పొడిపొడిగా అయితే, ఒక టీస్పూన్ తురిమిన బెల్లం వేసి ఇంకోసారి తిప్పండి.",
+   "back": "Roll the balls while the mixture is still warm. If it gets crumbly, add one teaspoon of grated jaggery and pulse once more."
+  },
+  "seg.1d42a24453d2": {
+   "src": "Soft jaggery binds best. If yours is hard, grate it finely so it blends in evenly.",
+   "t": "మెత్తని బెల్లం బాగా అతుకుతుంది. మీ బెల్లం గట్టిగా ఉంటే సన్నగా తురమండి; అప్పుడు అంతటా సమానంగా కలుస్తుంది.",
+   "back": "Soft jaggery binds well. If your jaggery is hard, grate it finely; then it mixes evenly throughout."
+  },
+  "seg.4fba657a2566": {
+   "src": "Variations",
+   "t": "ఇలా కూడా చేయొచ్చు",
+   "back": "It can also be made like this"
+  },
+  "seg.5a7ed16f4810": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker chimmili with a smoky sweetness.",
+   "t": "తాటి బెల్లం: అంతే కొలత తురిమిన తాటి బెల్లం వాడితే చిమ్మిలి ముదురు రంగులో, కొంచెం పొగ రుచి ఉన్న తీపితో వస్తుంది.",
+   "back": "Palm jaggery: if you use the same measure of grated palm jaggery, the chimmili comes out dark in colour, with a sweetness that has a slightly smoky taste."
+  },
+  "seg.569a63f3cd17": {
+   "src": "Black sesame (nalla nuvvulu): roast and grind it the same way for darker, stronger-tasting balls.",
+   "t": "నల్ల నువ్వులు: ఇలాగే వేయించి పట్టండి; ఉండలు ముదురు రంగులో, గాఢమైన రుచితో వస్తాయి.",
+   "back": "Black sesame: roast and grind the same way; the balls come out dark in colour, with an intense taste."
+  },
+  "seg.da0d1a9b6378": {
+   "src": "Peanut or coconut: pulse in 2 tbsp roasted peanuts or grated dry coconut with the jaggery.",
+   "t": "వేరుశనగ లేదా కొబ్బరి: బెల్లంతో పాటు 2 టేబుల్ స్పూన్ల వేయించిన వేరుశనగ పప్పు లేదా తురిమిన ఎండు కొబ్బరి వేసి తిప్పండి.",
+   "back": "Peanut or coconut: along with the jaggery, add 2 tablespoons of roasted peanuts or grated dry coconut and pulse."
+  },
+  "seg.32d41fc0994e": {
+   "src": "Without a mixer: pound the warm sesame and jaggery together in a stone mortar (rolu) until the mixture holds, then shape.",
+   "t": "మిక్సీ లేకపోతే: వెచ్చని నువ్వులు, బెల్లం కలిపి రాతి రోలులో మిశ్రమం ముద్దయ్యే వరకు దంచి, తర్వాత ఉండలు చుట్టండి.",
+   "back": "If there is no mixie: pound the warm sesame and jaggery together in a stone mortar until the mixture becomes a lump, then roll into balls."
+  },
+  "seg.2270cfaf8d00": {
+   "src": "Serving",
+   "t": "వడ్డించడం",
+   "back": "Serving"
+  },
+  "seg.2fa9aaef4425": {
+   "src": "On Nagula Chavithi morning, offer chimmili with milk at the snake anthill (putta) or in your puja, then share them as prasadam. They also go well with evening tea.",
+   "t": "నాగుల చవితి ఉదయం, పుట్ట దగ్గర గానీ మీ పూజలో గానీ పాలతో పాటు చిమ్మిలి నైవేద్యం పెట్టి, తర్వాత ప్రసాదంగా పంచండి. సాయంత్రం టీతో కూడా బాగుంటాయి.",
+   "back": "On the morning of Nagula Chavithi, offer chimmili as naivedyam along with milk, either at the anthill or in your puja, then distribute it as prasadam. They are also good with evening tea."
+  },
+  "seg.9e092dda4f0e": {
+   "src": "Storage",
+   "t": "నిల్వ",
+   "back": "Storage"
+  },
+  "seg.bd50831bbb3f": {
+   "src": "Keeps a week in an airtight jar. Store the jar at room temperature, in a dry place.",
+   "t": "గాలి చొరని డబ్బాలో ఒక వారం ఉంటాయి. డబ్బాను గది ఉష్ణోగ్రతలో, తడి లేని చోట ఉంచండి.",
+   "back": "They keep for one week in an airtight box. Keep the box at room temperature, in a place without moisture."
+  },
+  "seg.9a1fc1731f62": {
+   "src": "Questions",
+   "t": "ప్రశ్నలు",
+   "back": "Questions"
+  },
+  "seg.4023b0de08bd": {
+   "src": "Why is my chimmili not holding together?",
+   "t": "నా చిమ్మిలి ఎందుకు ఉండ కట్టడం లేదు?",
+   "back": "Why is my chimmili not forming balls?"
+  },
+  "seg.7fed90d1ebe0": {
+   "src": "The sesame may be under-ground, or the mixture may have cooled. Pulse it once more with 1–2 tsp extra grated jaggery and shape it while it is still warm.",
+   "t": "నువ్వులు సరిగా పట్టకపోయి ఉండొచ్చు, లేదా మిశ్రమం చల్లారిపోయి ఉండొచ్చు. ఇంకో 1–2 టీస్పూన్ల తురిమిన బెల్లం వేసి ఇంకోసారి తిప్పి, వెచ్చగా ఉండగానే ఉండలు చుట్టండి.",
+   "back": "The sesame may not have been ground properly, or the mixture may have cooled down. Add another 1–2 teaspoons of grated jaggery, pulse once more, and roll the balls while it is still warm."
+  },
+  "seg.694d2b416f39": {
+   "src": "Why does my chimmili taste bitter?",
+   "t": "నా చిమ్మిలి ఎందుకు చేదుగా ఉంది?",
+   "back": "Why is my chimmili bitter?"
+  },
+  "seg.d0ee77d0957e": {
+   "src": "The sesame was roasted too dark. Roast it on a low flame only until it crackles and turns light golden, then tip it onto a plate at once so it stops browning.",
+   "t": "నువ్వులు మరీ ఎక్కువగా వేగాయి. తక్కువ మంట మీద చిటపటలాడి లేత బంగారు రంగు వచ్చే వరకే వేయించి, ఇంకా వేగకుండా వెంటనే పళ్లెంలోకి వేయండి.",
+   "back": "The sesame got roasted too much. Roast on low flame only until it crackles and turns light golden, and put it onto a plate immediately before it roasts further."
+  },
+  "seg.30d31a37acfa": {
+   "src": "Can I use palm jaggery instead of cane jaggery?",
+   "t": "చెరుకు బెల్లానికి బదులు తాటి బెల్లం వాడొచ్చా?",
+   "back": "Can palm jaggery be used instead of cane jaggery?"
+  },
+  "seg.77afe99f558c": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The chimmili will be darker, with a deeper, slightly smoky sweetness.",
+   "t": "వాడొచ్చు. అంతే కొలత తురిమిన తాటి బెల్లం వాడండి. చిమ్మిలి ముదురు రంగులో, గాఢమైన, కొంచెం పొగ రుచి ఉన్న తీపితో వస్తుంది.",
+   "back": "It can be used. Use the same measure of grated palm jaggery. The chimmili comes out dark in colour, with an intense, slightly smoky-tasting sweetness."
+  },
+  "seg.88f8629f6043": {
+   "src": "When is Nagula Chavithi in 2026?",
+   "t": "2026 లో నాగుల చవితి ఎప్పుడు?",
+   "back": "When is Nagula Chavithi in 2026?"
+  },
+  "seg.bae4fc214e74": {
+   "src": "Nagula Chavithi falls on Friday, 13 November 2026, in Karthika masam, a few days after Deepavali. Chimmili, chalimidi and milk are among the offerings made at the snake anthill (putta) that morning.",
+   "t": "2026 లో నాగుల చవితి నవంబర్ 13, శుక్రవారం, కార్తీక మాసంలో, దీపావళి తర్వాత కొన్ని రోజులకు వస్తుంది. ఆ రోజు ఉదయం పుట్ట దగ్గర పెట్టే నైవేద్యాల్లో చిమ్మిలి, చలిమిడి, పాలు ఉంటాయి.",
+   "back": "In 2026 Nagula Chavithi falls on Friday, November 13, in Kartika month, a few days after Deepavali. The naivedyam offerings placed at the anthill that morning include chimmili, chalimidi and milk."
+  },
+  "seg.fd075189cdf7": {
+   "src": "More recipes",
+   "t": "మరిన్ని వంటకాలు",
+   "back": "More recipes"
+  },
+  "seg.83ffe3c3550f": {
+   "src": "Palm Jaggery Coffee",
+   "t": "తాటి బెల్లం కాఫీ",
+   "back": "Palm jaggery coffee"
+  },
+  "seg.02c2c8d3100e": {
+   "src": "With Palm Jaggery · 20 minutes",
+   "t": "తాటి బెల్లంతో · 20 నిమిషాలు",
+   "back": "With palm jaggery · 20 minutes"
+  },
+  "seg.42df0348ff9d": {
+   "src": "Bellam Paramannam",
+   "t": "బెల్లం పరమాన్నం",
+   "back": "Jaggery paramannam"
+  },
+  "seg.900c7db66546": {
+   "src": "With Cane Jaggery · serves 4",
+   "t": "చెరుకు బెల్లంతో · 4 మందికి",
+   "back": "With cane jaggery · for 4 people"
+  },
+  "seg.07191606cd75": {
+   "src": "Warm Pasupu Paalu",
+   "t": "గోరువెచ్చని పసుపు పాలు",
+   "back": "Lukewarm turmeric milk"
+  },
+  "seg.9b5f05abcc1f": {
+   "src": "With Turmeric Powder · 5 minutes",
+   "t": "పసుపుతో · 5 నిమిషాలు",
+   "back": "With turmeric · 5 minutes"
+  },
+  "seg.39e2ef7a56ee": {
+   "src": "All recipes",
+   "t": "అన్ని వంటకాలు",
+   "back": "All recipes"
+  },
+  "seg.882635d4896e": {
+   "src": "నువ్వుల చిమ్మిలి · Chimmili for Nagula Chavithi | 1acrefarms",
+   "t": "నాగుల చవితికి నువ్వుల చిమ్మిలి | 1acrefarms",
+   "back": "Sesame chimmili for Nagula Chavithi | 1acrefarms"
+  },
+  "seg.a2d7a97cf16a": {
+   "src": "నాగుల చవితికి నువ్వుల చిమ్మిలి. Chimmili for Nagula Chavithi: roasted sesame and cane jaggery shaped into small balls. Step-by-step method, tips and FAQs. Makes about 12 and keeps a week.",
+   "t": "నాగుల చవితికి నువ్వుల చిమ్మిలి: వేయించిన నువ్వులు, చెరుకు బెల్లంతో చేసే చిన్న ఉండలు. ఒక్కో దశగా చేసే విధానం, చిట్కాలు, ప్రశ్నలు-జవాబులు. సుమారు 12 ఉండలు వస్తాయి, ఒక వారం ఉంటాయి.",
+   "back": "Sesame chimmili for Nagula Chavithi: small balls made with roasted sesame and cane jaggery. Step-by-step method, tips, questions and answers. Makes about 12 balls, they keep for one week."
+  },
+  "seg.3575fc10db16": {
+   "src": "Chimmili for Nagula Chavithi (Sesame Jaggery Balls) · 1acrefarms",
+   "t": "నాగుల చవితికి చిమ్మిలి (నువ్వులు, బెల్లం ఉండలు) · 1acrefarms",
+   "back": "Chimmili for Nagula Chavithi (sesame, jaggery balls) · 1acrefarms"
+  },
+  "seg.c766e665183d": {
+   "src": "Breadcrumb",
+   "t": "పేజీ దారి",
+   "back": "Page path"
+  },
+  "seg.3753ebc4b29f": {
+   "src": "Chimmili for Nagula Chavithi: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "నాగుల చవితికి చిమ్మిలి: 1acrefarms రెసిపీ కార్డు, కావలసినవి, చేసే విధానంతో",
+   "back": "Chimmili for Nagula Chavithi: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.37a4d7618df9": {
+   "src": "Cane Jaggery 540 g pack",
+   "t": "చెరుకు బెల్లం 540 g ప్యాక్",
+   "back": "Cane jaggery 540 g pack"
+  },
+  "seg.89c376daa720": {
+   "src": "Palm Jaggery Coffee recipe card",
+   "t": "తాటి బెల్లం కాఫీ రెసిపీ కార్డు",
+   "back": "Palm jaggery coffee recipe card"
+  },
+  "seg.152f87349f83": {
+   "src": "Bellam Paramannam recipe card",
+   "t": "బెల్లం పరమాన్నం రెసిపీ కార్డు",
+   "back": "Jaggery paramannam recipe card"
+  },
+  "seg.c46e50533990": {
+   "src": "Warm Pasupu Paalu recipe card",
+   "t": "గోరువెచ్చని పసుపు పాలు రెసిపీ కార్డు",
+   "back": "Lukewarm turmeric milk recipe card"
+  },
+  "seg.372e93dfdf4d": {
+   "src": "1 cup white sesame seeds",
+   "t": "1 కప్పు తెల్ల నువ్వులు",
+   "back": "1 cup white sesame"
+  },
+  "seg.0c3e2c74cbab": {
+   "src": "¾ cup grated cane jaggery",
+   "t": "¾ కప్పు తురిమిన చెరుకు బెల్లం",
+   "back": "¾ cup grated cane jaggery"
+  },
+  "seg.1f843d0906e3": {
+   "src": "From an Andhra kitchen",
+   "t": "ఆంధ్ర వంటింటి నుంచి",
+   "back": "From the Andhra kitchen"
+  },
+  "seg.56b9d2a01472": {
+   "src": "Recipes with turmeric and jaggery",
+   "t": "పసుపు, బెల్లంతో వంటకాలు",
+   "back": "Recipes with turmeric and jaggery"
+  },
+  "seg.c4b9e076a2c3": {
+   "src": "Home recipes made with our pasupu and bellam. Each one links to the pack it uses.",
+   "t": "మా పసుపు, బెల్లంతో ఇంట్లో చేసుకునే వంటకాలు. ప్రతి వంటకంలో అది వాడే ప్యాక్‌కు లింక్ ఉంటుంది.",
+   "back": "Recipes to make at home with our turmeric and jaggery. Every recipe has a link to the pack it uses."
+  },
+  "seg.daa76710a9e7": {
+   "src": "With Cane Jaggery · makes about 12",
+   "t": "చెరుకు బెల్లంతో · సుమారు 12 ఉండలు",
+   "back": "With cane jaggery · about 12 balls"
+  },
+  "seg.a0dc3eb55868": {
+   "src": "బెల్లం, పసుపు వంటకాలు · Jaggery & Turmeric Recipes | 1acrefarms",
+   "t": "బెల్లం, పసుపు వంటకాలు | 1acrefarms",
+   "back": "Jaggery, turmeric recipes | 1acrefarms"
+  },
+  "seg.0db78d27aebc": {
+   "src": "బెల్లం, పసుపు వంటకాలు. Home recipes made with 1acrefarms turmeric and jaggery: palm jaggery coffee, bellam paramannam, chimmili for Nagula Chavithi and pasupu paalu.",
+   "t": "బెల్లం, పసుపు వంటకాలు. 1acrefarms పసుపు, బెల్లంతో ఇంట్లో చేసుకునే వంటకాలు: తాటి బెల్లం కాఫీ, బెల్లం పరమాన్నం, నాగుల చవితికి చిమ్మిలి, పసుపు పాలు.",
+   "back": "Jaggery, turmeric recipes. Recipes to make at home with 1acrefarms turmeric and jaggery: palm jaggery coffee, jaggery paramannam, chimmili for Nagula Chavithi, turmeric milk."
+  },
+  "seg.580be3c9d6b6": {
+   "src": "Recipes · 1acrefarms",
+   "t": "వంటకాలు · 1acrefarms",
+   "back": "Recipes · 1acrefarms"
+  },
+  "seg.b03e4d3b1c23": {
+   "src": "Chimmili for Nagula Chavithi recipe card",
+   "t": "నాగుల చవితికి చిమ్మిలి రెసిపీ కార్డు",
+   "back": "Chimmili for Nagula Chavithi recipe card"
+  },
+  "seg.113fd3b90b70": {
+   "src": "Recipe · filter coffee",
+   "t": "వంటకం · ఫిల్టర్ కాఫీ",
+   "back": "Recipe · Filter coffee"
+  },
+  "seg.b4d95640cfbc": {
+   "src": "Palm Jaggery Coffee ⟦1⟧(Thati Bellam Coffee)⟦/1⟧",
+   "t": "తాటి బెల్లం కాఫీ ⟦1⟧(Thati Bellam Coffee)⟦/1⟧",
+   "back": "Palm jaggery coffee ⟦1⟧(Thati Bellam Coffee)⟦/1⟧"
+  },
+  "seg.eb6e42bdf428": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Thati Bellam Coffee · Taad Ke Gud Wali Coffee",
+   "t": "⟦#1⟧ · ⟦#2⟧ · Thati Bellam Coffee · Taad Ke Gud Wali Coffee",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Thati Bellam Coffee · Taad Ke Gud Wali Coffee"
+  },
+  "seg.4b090c2ce3d3": {
+   "src": "Filter coffee is how many Telugu homes start the day: a strong decoction dripped through a steel filter, topped up with hot milk and frothed between a tumbler and davara. This version is sweetened with grated palm jaggery (thati bellam) in place of sugar.",
+   "t": "చాలా తెలుగు ఇళ్లలో రోజు ఫిల్టర్ కాఫీతోనే మొదలవుతుంది: స్టీల్ ఫిల్టర్‌లోంచి దిగిన చిక్కటి డికాక్షన్‌కు వేడి పాలు కలిపి, టంబ్లర్, దవరా మధ్య పోస్తూ నురగ తెప్పిస్తారు. ఈ కాఫీలో చక్కెరకు బదులు తురిమిన తాటి బెల్లం వేస్తాం.",
+   "back": "In many Telugu homes the day begins with filter coffee itself: hot milk is added to the thick decoction that has dripped down from the steel filter, and it is poured between the tumbler and the davara to bring froth. In this coffee we add grated palm jaggery instead of sugar."
+  },
+  "seg.cff6d2079da1": {
+   "src": "Palm jaggery gives the cup a deep, slightly smoky caramel sweetness that sits well with the bitterness of the decoction. Once the decoction is ready it takes about 5 minutes, and it suits a slow morning as much as an evening break.",
+   "t": "తాటి బెల్లంతో కాఫీకి గాఢమైన, కొంచెం పొగ రుచి ఉన్న పాకం లాంటి తీపి వస్తుంది; అది డికాక్షన్ చేదుతో బాగా కలుస్తుంది. డికాక్షన్ సిద్ధంగా ఉంటే సుమారు 5 నిమిషాలు పడుతుంది; తీరిగ్గా గడిపే ఉదయానికీ, సాయంత్రం విరామానికీ బాగుంటుంది.",
+   "back": "With palm jaggery, the coffee gets an intense, syrup-like sweetness with a slightly smoky taste; it blends well with the bitterness of the decoction. If the decoction is ready it takes about 5 minutes; it is good for a leisurely morning and for an evening break."
+  },
+  "seg.99a861303471": {
+   "src": "⟦1⟧Cook⟦/1⟧5 min",
+   "t": "⟦1⟧వంట⟦/1⟧5 నిమిషాలు",
+   "back": "⟦1⟧Cooking⟦/1⟧5 minutes"
+  },
+  "seg.56a826d3b073": {
+   "src": "⟦1⟧Total⟦/1⟧20 min",
+   "t": "⟦1⟧మొత్తం⟦/1⟧20 నిమిషాలు",
+   "back": "⟦1⟧Total⟦/1⟧20 minutes"
+  },
+  "seg.a92a4aeb28cd": {
+   "src": "⟦1⟧Makes⟦/1⟧1 tumbler",
+   "t": "⟦1⟧వచ్చేది⟦/1⟧1 టంబ్లర్",
+   "back": "⟦1⟧Makes⟦/1⟧1 tumbler"
+  },
+  "seg.814efc526088": {
+   "src": "5 minutes if your decoction is already made.",
+   "t": "డికాక్షన్ ముందే చేసి ఉంటే 5 నిమిషాలు.",
+   "back": "5 minutes if the decoction is already made."
+  },
+  "seg.9ad0a1e24d76": {
+   "src": "Boil the milk, add it to the decoction, then stir in grated palm jaggery off the heat. Froth it between tumbler and davara.",
+   "t": "పాలు కాచి డికాక్షన్‌లో కలపండి, స్టవ్ మీంచి దించాక తురిమిన తాటి బెల్లం వేసి కలపండి. టంబ్లర్, దవరా మధ్య పోస్తూ నురగ తెప్పించండి.",
+   "back": "Boil the milk and mix it into the decoction; after taking it off the stove, add grated palm jaggery and stir. Pour between the tumbler and davara to bring froth."
+  },
+  "seg.c726c3e9bee8": {
+   "src": "Ingredients ⟦1⟧makes 1 tumbler⟦/1⟧",
+   "t": "కావలసినవి ⟦1⟧1 టంబ్లర్‌కు⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 1 tumbler⟦/1⟧"
+  },
+  "seg.10dfb70b2516": {
+   "src": "For the decoction",
+   "t": "డికాక్షన్ కోసం",
+   "back": "For the decoction"
+  },
+  "seg.927b924ff51d": {
+   "src": "2 tbsp filter coffee powder ⟦1⟧enough decoction for 2–3 cups⟦/1⟧",
+   "t": "2 టేబుల్ స్పూన్ల ఫిల్టర్ కాఫీ పొడి ⟦1⟧2–3 కప్పులకు సరిపడా డికాక్షన్⟦/1⟧",
+   "back": "2 tablespoons filter coffee powder ⟦1⟧decoction enough for 2–3 cups⟦/1⟧"
+  },
+  "seg.8aa60818ccf8": {
+   "src": "½ cup water, just off the boil",
+   "t": "½ కప్పు నీళ్లు, అప్పుడే మరిగి దించినవి",
+   "back": "½ cup water, just boiled and taken off"
+  },
+  "seg.79a69deb6460": {
+   "src": "For the coffee",
+   "t": "కాఫీ కోసం",
+   "back": "For the coffee"
+  },
+  "seg.235f43bdefc5": {
+   "src": "1 cup milk ⟦1⟧about 240 ml⟦/1⟧",
+   "t": "1 కప్పు పాలు ⟦1⟧సుమారు 240 ml⟦/1⟧",
+   "back": "1 cup milk ⟦1⟧about 240 ml⟦/1⟧"
+  },
+  "seg.95409b9d346e": {
+   "src": "2 tbsp filter coffee decoction ⟦1⟧from above; 3 tbsp for a stronger cup⟦/1⟧",
+   "t": "2 టేబుల్ స్పూన్ల ఫిల్టర్ కాఫీ డికాక్షన్ ⟦1⟧పైన చేసినది; స్ట్రాంగ్ కాఫీకి 3 టేబుల్ స్పూన్లు⟦/1⟧",
+   "back": "2 tablespoons filter coffee decoction ⟦1⟧made above; 3 tablespoons for strong coffee⟦/1⟧"
+  },
+  "seg.7b8c0f7e922a": {
+   "src": "1–2 tsp grated palm jaggery ⟦1⟧to taste⟦/1⟧",
+   "t": "1–2 టీస్పూన్ల తురిమిన తాటి బెల్లం ⟦1⟧రుచికి తగినంత⟦/1⟧",
+   "back": "1–2 teaspoons grated palm jaggery ⟦1⟧as per taste⟦/1⟧"
+  },
+  "seg.557b912961c2": {
+   "src": "Palm Jaggery",
+   "t": "తాటి బెల్లం",
+   "back": "Palm jaggery"
+  },
+  "seg.488632412643": {
+   "src": "⟦#1⟧ · Thati Bellam",
+   "t": "⟦#1⟧ · Thati Bellam",
+   "back": "⟦#1⟧ · Thati Bellam"
+  },
+  "seg.f14decb68b96": {
+   "src": "MRP ₹495 · 540 g",
+   "t": "MRP ₹495 · 540 g",
+   "back": "MRP ₹495 · 540 g"
+  },
+  "seg.95d91fecafcb": {
+   "src": "Make the decoction: put 2 tbsp filter coffee powder in the top chamber of a South Indian coffee filter, set the perforated press on it and pour in ½ cup water just off the boil. Cover and leave it to drip for 10–15 minutes.",
+   "t": "డికాక్షన్ చేయండి: దక్షిణ భారత కాఫీ ఫిల్టర్ పై గిన్నెలో 2 టేబుల్ స్పూన్ల ఫిల్టర్ కాఫీ పొడి వేసి, దాని మీద రంధ్రాల ప్రెస్ పెట్టి, అప్పుడే మరిగి దించిన ½ కప్పు నీళ్లు పోయండి. మూత పెట్టి 10–15 నిమిషాలు డికాక్షన్ దిగనివ్వండి.",
+   "back": "Make the decoction: put 2 tablespoons of filter coffee powder in the upper vessel of a South Indian coffee filter, place the perforated press on it, and pour ½ cup of water that has just boiled and been taken off. Cover and let the decoction drip down for 10–15 minutes."
+  },
+  "seg.9024c8716b54": {
+   "src": "While it drips, grate the palm jaggery finely so it dissolves in seconds.",
+   "t": "డికాక్షన్ దిగుతుండగా తాటి బెల్లాన్ని సన్నగా తురమండి; అప్పుడు సెకన్లలో కరిగిపోతుంది.",
+   "back": "While the decoction is dripping, grate the palm jaggery finely; then it dissolves in seconds."
+  },
+  "seg.24689e3dd311": {
+   "src": "Pour the milk into a small saucepan and set it on medium heat.",
+   "t": "పాలను చిన్న గిన్నెలో పోసి మధ్యస్థ మంట మీద పెట్టండి.",
+   "back": "Pour the milk into a small vessel and put it on medium flame."
+  },
+  "seg.4d8e3042dc81": {
+   "src": "Bring the milk to a boil. As soon as it froths up the sides of the pan, switch off the heat.",
+   "t": "పాలు మరిగించండి. గిన్నె అంచుల వరకు పొంగి రాగానే స్టవ్ ఆపేయండి.",
+   "back": "Boil the milk. As soon as it rises up to the edges of the vessel, turn off the stove."
+  },
+  "seg.a124a0d34983": {
+   "src": "Pour the decoction into a tumbler and add the hot milk. Use 2 tbsp decoction for a mild cup and 3 tbsp for a strong one.",
+   "t": "డికాక్షన్‌ను టంబ్లర్‌లో పోసి వేడి పాలు కలపండి. తేలిక కాఫీకి 2 టేబుల్ స్పూన్లు, స్ట్రాంగ్ కాఫీకి 3 టేబుల్ స్పూన్ల డికాక్షన్ వాడండి.",
+   "back": "Pour the decoction into the tumbler and add the hot milk. Use 2 tablespoons of decoction for light coffee, 3 tablespoons for strong coffee."
+  },
+  "seg.85570720618b": {
+   "src": "Let it stand for about a minute, so the milk is just off the boil.",
+   "t": "పాలు మరిగే వేడి కొంచెం తగ్గేలా సుమారు ఒక నిమిషం అలాగే ఉంచండి.",
+   "back": "Leave it as it is for about one minute so the boiling heat of the milk reduces a little."
+  },
+  "seg.eacea0d7cf43": {
+   "src": "Stir in the palm jaggery off the heat. Keep stirring for 20–30 seconds, until no grains are left at the bottom of the tumbler.",
+   "t": "స్టవ్ మీంచి దించాక తాటి బెల్లం వేసి కలపండి. టంబ్లర్ అడుగున రేణువులు మిగలకుండా 20–30 సెకన్లు కలుపుతూ ఉండండి.",
+   "back": "After taking it off the stove, add the palm jaggery and stir. Keep stirring for 20–30 seconds so no granules are left at the bottom of the tumbler."
+  },
+  "seg.08b600da2ef8": {
+   "src": "Taste, and add a little more jaggery if you like it sweeter.",
+   "t": "రుచి చూసి, ఇంకా తీపి కావాలంటే కొంచెం బెల్లం వేయండి.",
+   "back": "Taste, and if you want it sweeter, add a little jaggery."
+  },
+  "seg.878b0d8d7eeb": {
+   "src": "Pour between tumbler and davara to froth. Hold the tumbler high and pour into the davara, then back again, 3–4 times, until a light foam sits on top.",
+   "t": "నురగ కోసం టంబ్లర్, దవరా మధ్య పోయండి. టంబ్లర్‌ను ఎత్తుగా పట్టి దవరాలోకి పోసి, మళ్లీ టంబ్లర్‌లోకి, ఇలా 3–4 సార్లు, పైన తేలికపాటి నురగ వచ్చే వరకు పోయండి.",
+   "back": "Pour between the tumbler and davara for froth. Hold the tumbler high and pour into the davara, then back into the tumbler, like this 3–4 times, until a light froth comes on top."
+  },
+  "seg.653390b95f57": {
+   "src": "Serve straight away, in the tumbler set inside the davara.",
+   "t": "వెంటనే, దవరాలో పెట్టిన టంబ్లర్‌తో అందించండి.",
+   "back": "Serve immediately, with the tumbler placed in the davara."
+  },
+  "seg.33aca43ebf99": {
+   "src": "Add jaggery after the milk is off the boil so it does not split.",
+   "t": "పాలు మరగడం ఆగాకే బెల్లం వేయండి; అప్పుడు పాలు విరగవు.",
+   "back": "Add the jaggery only after the milk stops boiling; then the milk does not curdle."
+  },
+  "seg.60404da43771": {
+   "src": "Grate the jaggery finely: fine shreds dissolve in seconds, while lumps sink and stay at the bottom of the tumbler.",
+   "t": "బెల్లాన్ని సన్నగా తురమండి: సన్నని తురుము సెకన్లలో కరుగుతుంది, ముద్దలు మాత్రం మునిగి టంబ్లర్ అడుగునే మిగిలిపోతాయి.",
+   "back": "Grate the jaggery finely: a fine grating dissolves in seconds, but lumps sink and remain at the bottom of the tumbler."
+  },
+  "seg.ca883342300e": {
+   "src": "Palm jaggery has a deep, slightly smoky sweetness, so start with 1 tsp and add more to taste.",
+   "t": "తాటి బెల్లానికి గాఢమైన, కొంచెం పొగ రుచి ఉన్న తీపి ఉంటుంది; అందుకే 1 టీస్పూన్‌తో మొదలుపెట్టి, రుచికి తగ్గట్టు పెంచండి.",
+   "back": "Palm jaggery has an intense sweetness with a slightly smoky taste; so start with 1 teaspoon and increase according to taste."
+  },
+  "seg.d7c0084f5cc6": {
+   "src": "A steel tumbler and davara keep the coffee hot and make frothing easy; a mug and a jug work too.",
+   "t": "స్టీల్ టంబ్లర్, దవరా కాఫీని వేడిగా ఉంచుతాయి, నురగ తెప్పించడం సులువు చేస్తాయి; మగ్గు, జగ్గు ఉన్నా సరిపోతుంది.",
+   "back": "A steel tumbler and davara keep the coffee hot and make it easy to bring froth; a mug and jug will also do."
+  },
+  "seg.1b917ac5fc8c": {
+   "src": "Cane jaggery: use the same amount of grated cane jaggery for a lighter, caramel-like sweetness.",
+   "t": "చెరుకు బెల్లం: అంతే కొలత తురిమిన చెరుకు బెల్లం వాడితే తీపి తేలికగా, పాకం లాగా ఉంటుంది.",
+   "back": "Cane jaggery: if you use the same measure of grated cane jaggery, the sweetness is light, like syrup."
+  },
+  "seg.0ada954bebfe": {
+   "src": "Palm jaggery tea: make your usual milk tea, switch off the heat, wait a minute, then stir in the palm jaggery the same way.",
+   "t": "తాటి బెల్లం టీ: మామూలుగా పాల టీ చేసి, స్టవ్ ఆపి, ఒక నిమిషం ఆగి, ఇలాగే తాటి బెల్లం వేసి కలపండి.",
+   "back": "Palm jaggery tea: make milk tea as usual, turn off the stove, wait a minute, and add palm jaggery and stir in the same way."
+  },
+  "seg.6512d133d4c0": {
+   "src": "No coffee filter: dissolve 1 tsp instant coffee in 2 tbsp hot water and use it in place of the decoction.",
+   "t": "కాఫీ ఫిల్టర్ లేకపోతే: 1 టీస్పూన్ ఇన్‌స్టంట్ కాఫీని 2 టేబుల్ స్పూన్ల వేడి నీళ్లలో కలిపి, డికాక్షన్‌కు బదులు వాడండి.",
+   "back": "If there is no coffee filter: mix 1 teaspoon of instant coffee in 2 tablespoons of hot water and use it instead of the decoction."
+  },
+  "seg.e9e80ce83cf6": {
+   "src": "Serve hot after a breakfast of idli, dosa or upma, or in the evening with biscuits or murukulu.",
+   "t": "ఇడ్లీ, దోశ, ఉప్మా టిఫిన్ తర్వాత గానీ, సాయంత్రం బిస్కెట్లు లేదా మురుకులతో గానీ వేడిగా అందించండి.",
+   "back": "Serve hot after an idli, dosa or upma tiffin, or with biscuits or murukulu in the evening."
+  },
+  "seg.97817ad1f29f": {
+   "src": "Make each cup as you need it; coffee reheated after the jaggery goes in can split. Keep extra decoction covered at room temperature and use it within the day.",
+   "t": "ఏ కప్పుకు ఆ కప్పు అవసరమైనప్పుడే చేసుకోండి; బెల్లం వేశాక కాఫీని మళ్లీ వేడి చేస్తే విరిగిపోవచ్చు. మిగిలిన డికాక్షన్‌ను మూత పెట్టి గది ఉష్ణోగ్రతలో ఉంచి, అదే రోజు వాడేయండి.",
+   "back": "Make each cup only when needed; if the coffee is reheated after adding jaggery it may curdle. Cover the leftover decoction, keep it at room temperature, and use it up the same day."
+  },
+  "seg.ea4f4072538a": {
+   "src": "Why did my coffee curdle when I added palm jaggery?",
+   "t": "తాటి బెల్లం వేయగానే నా కాఫీ ఎందుకు విరిగింది?",
+   "back": "Why did my coffee curdle as soon as I added palm jaggery?"
+  },
+  "seg.180a2670ead3": {
+   "src": "Jaggery stirred into milk that is still boiling can make it split. Take the milk off the heat, let it stand for about a minute, then stir in the grated jaggery.",
+   "t": "ఇంకా మరుగుతున్న పాలలో బెల్లం వేస్తే పాలు విరిగిపోవచ్చు. పాలను స్టవ్ మీంచి దించి, సుమారు ఒక నిమిషం ఆగి, తర్వాత తురిమిన బెల్లం వేసి కలపండి.",
+   "back": "If jaggery is added to milk that is still boiling, the milk may curdle. Take the milk off the stove, wait about one minute, then add the grated jaggery and stir."
+  },
+  "seg.2b9449407096": {
+   "src": "Can I use cane jaggery instead of palm jaggery?",
+   "t": "తాటి బెల్లానికి బదులు చెరుకు బెల్లం వాడొచ్చా?",
+   "back": "Can cane jaggery be used instead of palm jaggery?"
+  },
+  "seg.890ae3e15593": {
+   "src": "Yes. Use the same amount of grated cane jaggery. The coffee tastes lighter and more like caramel, while palm jaggery gives a deeper, slightly smoky cup.",
+   "t": "వాడొచ్చు. అంతే కొలత తురిమిన చెరుకు బెల్లం వాడండి. కాఫీ రుచి తేలికగా, పాకం లాగా ఉంటుంది; తాటి బెల్లంతో అయితే గాఢమైన, కొంచెం పొగ రుచి ఉన్న కాఫీ వస్తుంది.",
+   "back": "It can be used. Use the same measure of grated cane jaggery. The coffee taste will be light, like syrup; with palm jaggery you get an intense coffee with a slightly smoky taste."
+  },
+  "seg.e4c92d1c8a42": {
+   "src": "How much palm jaggery should I add to one cup of coffee?",
+   "t": "ఒక కప్పు కాఫీకి ఎంత తాటి బెల్లం వేయాలి?",
+   "back": "How much palm jaggery should be added for one cup of coffee?"
+  },
+  "seg.43a5dfb10340": {
+   "src": "1 to 2 tsp of grated palm jaggery for 1 cup of milk and 2 tbsp of decoction. Start with 1 tsp, taste, and add more if you like.",
+   "t": "1 కప్పు పాలు, 2 టేబుల్ స్పూన్ల డికాక్షన్‌కు 1 నుంచి 2 టీస్పూన్ల తురిమిన తాటి బెల్లం. 1 టీస్పూన్‌తో మొదలుపెట్టి, రుచి చూసి, కావాలంటే పెంచండి.",
+   "back": "For 1 cup of milk and 2 tablespoons of decoction, 1 to 2 teaspoons of grated palm jaggery. Start with 1 teaspoon, taste, and increase if wanted."
+  },
+  "seg.2ba4fb9452bb": {
+   "src": "Can I make palm jaggery coffee without a coffee filter?",
+   "t": "కాఫీ ఫిల్టర్ లేకుండా తాటి బెల్లం కాఫీ చేయొచ్చా?",
+   "back": "Can palm jaggery coffee be made without a coffee filter?"
+  },
+  "seg.23f63da2d908": {
+   "src": "Yes. Dissolve 1 tsp instant coffee in 2 tbsp hot water, use it in place of the decoction and follow the same steps.",
+   "t": "చేయొచ్చు. 1 టీస్పూన్ ఇన్‌స్టంట్ కాఫీని 2 టేబుల్ స్పూన్ల వేడి నీళ్లలో కలిపి, డికాక్షన్‌కు బదులు వాడి, ఇవే దశలు పాటించండి.",
+   "back": "It can be made. Mix 1 teaspoon of instant coffee in 2 tablespoons of hot water, use it instead of the decoction, and follow these same steps."
+  },
+  "seg.4fce579abe5f": {
+   "src": "తాటి బెల్లం కాఫీ · Palm Jaggery Coffee Recipe | 1acrefarms",
+   "t": "తాటి బెల్లం కాఫీ తయారీ విధానం | 1acrefarms",
+   "back": "Palm jaggery coffee method of preparation | 1acrefarms"
+  },
+  "seg.08ada9e6791e": {
+   "src": "తాటి బెల్లం కాఫీ. Palm jaggery coffee (thati bellam coffee), the Andhra way: filter decoction, hot milk and grated palm jaggery stirred in off the heat. Step-by-step method, tips and FAQs.",
+   "t": "తాటి బెల్లం కాఫీ, ఆంధ్ర పద్ధతిలో: ఫిల్టర్ డికాక్షన్, వేడి పాలు, స్టవ్ మీంచి దించాక కలిపే తురిమిన తాటి బెల్లం. ఒక్కో దశగా చేసే విధానం, చిట్కాలు, ప్రశ్నలు-జవాబులు.",
+   "back": "Palm jaggery coffee, the Andhra way: filter decoction, hot milk, grated palm jaggery stirred in after taking off the stove. Step-by-step method, tips, questions and answers."
+  },
+  "seg.8a9f25c7f197": {
+   "src": "Palm Jaggery Coffee (Thati Bellam Coffee) · 1acrefarms",
+   "t": "తాటి బెల్లం కాఫీ (Thati Bellam Coffee) · 1acrefarms",
+   "back": "Palm jaggery coffee (Thati Bellam Coffee) · 1acrefarms"
+  },
+  "seg.0fc7db27d3fc": {
+   "src": "Palm Jaggery Coffee: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "తాటి బెల్లం కాఫీ: 1acrefarms రెసిపీ కార్డు, కావలసినవి, చేసే విధానంతో",
+   "back": "Palm jaggery coffee: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.6569bdd75e36": {
+   "src": "Palm Jaggery 540 g pack",
+   "t": "తాటి బెల్లం 540 g ప్యాక్",
+   "back": "Palm jaggery 540 g pack"
+  },
+  "seg.877684ea5e82": {
+   "src": "2 tbsp filter coffee powder",
+   "t": "2 టేబుల్ స్పూన్ల ఫిల్టర్ కాఫీ పొడి",
+   "back": "2 tablespoons filter coffee powder"
+  },
+  "seg.6d10ef7ccccf": {
+   "src": "1 cup milk",
+   "t": "1 కప్పు పాలు",
+   "back": "1 cup milk"
+  },
+  "seg.059e1e3e5036": {
+   "src": "2 tbsp filter coffee decoction",
+   "t": "2 టేబుల్ స్పూన్ల ఫిల్టర్ కాఫీ డికాక్షన్",
+   "back": "2 tablespoons filter coffee decoction"
+  },
+  "seg.6f7677a99e8c": {
+   "src": "1–2 tsp grated palm jaggery",
+   "t": "1–2 టీస్పూన్ల తురిమిన తాటి బెల్లం",
+   "back": "1–2 teaspoons grated palm jaggery"
+  },
+  "seg.d3ad7f57d8c8": {
+   "src": "Diwali recipe · serves 4",
+   "t": "దీపావళి వంటకం · 4 మందికి",
+   "back": "Deepavali recipe · for 4 people"
+  },
+  "seg.947e0ef7a273": {
+   "src": "Bellam Paramannam ⟦1⟧(Jaggery Rice Kheer)⟦/1⟧",
+   "t": "బెల్లం పరమాన్నం ⟦1⟧(బెల్లంతో బియ్యం పాయసం)⟦/1⟧",
+   "back": "Jaggery paramannam ⟦1⟧(rice payasam with jaggery)⟦/1⟧"
+  },
+  "seg.03ffde37c28f": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · Gud Wali Kheer",
+   "t": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · Gud Wali Kheer",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · Gud Wali Kheer"
+  },
+  "seg.1143d51ba236": {
+   "src": "Paramannam is the rice-and-milk sweet that Telugu homes cook for festivals and pujas: rice simmered slowly in milk until soft and creamy, then sweetened. Bellam paramannam, made with jaggery, is a common naivedyam at Diwali, Sankranti and Varalakshmi Vratham, offered at the puja and then shared at the festive meal.",
+   "t": "పరమాన్నం అంటే తెలుగు ఇళ్లలో పండుగలకు, పూజలకు చేసే బియ్యం-పాల తీపి: బియ్యాన్ని పాలలో నెమ్మదిగా మెత్తగా, చిక్కగా అయ్యే వరకు ఉడికించి, తర్వాత తీపి కలుపుతారు. బెల్లంతో చేసే బెల్లం పరమాన్నం దీపావళి, సంక్రాంతి, వరలక్ష్మీ వ్రతాలకు మామూలుగా పెట్టే నైవేద్యం; పూజలో పెట్టి, తర్వాత పండుగ భోజనంలో అందరూ పంచుకుంటారు.",
+   "back": "Paramannam is the rice-and-milk sweet made in Telugu homes for festivals and pujas: rice is cooked slowly in milk until soft and thick, then the sweetener is mixed in. Bellam paramannam made with jaggery is the usual naivedyam offered for Deepavali, Sankranti and Varalakshmi vratam; it is placed in the puja, and afterwards everyone shares it in the festival meal."
+  },
+  "seg.360051f42785": {
+   "src": "Cane jaggery turns it a light caramel colour and gives a rounder, toffee-like sweetness. Ghee-fried cashews and a little cardamom finish it. This recipe serves 4.",
+   "t": "చెరుకు బెల్లంతో పరమాన్నం లేత పాకం రంగుకు వస్తుంది, తీపి నిండుగా, టోఫీ లాగా ఉంటుంది. నెయ్యిలో వేయించిన జీడిపప్పు, కొంచెం యాలకుల పొడితో ముగిస్తాం. ఈ వంటకం 4 మందికి సరిపోతుంది.",
+   "back": "With cane jaggery the paramannam comes to a light syrup colour, and the sweetness is full, like toffee. We finish with cashews fried in ghee and a little cardamom powder. This recipe is enough for 4 people."
+  },
+  "seg.304ae550b339": {
+   "src": "⟦1⟧Prep⟦/1⟧10 min",
+   "t": "⟦1⟧తయారీ⟦/1⟧10 నిమిషాలు",
+   "back": "⟦1⟧Preparation⟦/1⟧10 minutes"
+  },
+  "seg.9305f70ed293": {
+   "src": "⟦1⟧Cook⟦/1⟧40 min",
+   "t": "⟦1⟧వంట⟦/1⟧40 నిమిషాలు",
+   "back": "⟦1⟧Cooking⟦/1⟧40 minutes"
+  },
+  "seg.d90f652dd740": {
+   "src": "⟦1⟧Total⟦/1⟧55 min",
+   "t": "⟦1⟧మొత్తం⟦/1⟧55 నిమిషాలు",
+   "back": "⟦1⟧Total⟦/1⟧55 minutes"
+  },
+  "seg.b1897e5c1022": {
+   "src": "⟦1⟧Serves⟦/1⟧4",
+   "t": "⟦1⟧ఎంతమందికి⟦/1⟧4",
+   "back": "⟦1⟧For how many⟦/1⟧4"
+  },
+  "seg.04a51f6c83e4": {
+   "src": "Total includes the 5-minute rest before the jaggery goes in.",
+   "t": "బెల్లం వేసే ముందు ఆగే 5 నిమిషాలు కూడా మొత్తం సమయంలో కలిపాం.",
+   "back": "We have also included in the total time the 5 minutes of waiting before adding jaggery."
+  },
+  "seg.fd8f49fce13b": {
+   "src": "Cook rice in milk till creamy, rest it 5 minutes, then stir in grated cane jaggery. Finish with ghee-fried cashews and cardamom.",
+   "t": "బియ్యాన్ని పాలలో చిక్కగా అయ్యే వరకు ఉడికించి, 5 నిమిషాలు ఆగి, తురిమిన చెరుకు బెల్లం వేసి కలపండి. నెయ్యిలో వేయించిన జీడిపప్పు, యాలకుల పొడితో ముగించండి.",
+   "back": "Cook the rice in milk until thick, wait 5 minutes, add grated cane jaggery and stir. Finish with cashews fried in ghee and cardamom powder."
+  },
+  "seg.58ce2ea9afba": {
+   "src": "Ingredients ⟦1⟧serves 4⟦/1⟧",
+   "t": "కావలసినవి ⟦1⟧4 మందికి⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 4 people⟦/1⟧"
+  },
+  "seg.1f3010b2476c": {
+   "src": "For the paramannam",
+   "t": "పరమాన్నం కోసం",
+   "back": "For the paramannam"
+  },
+  "seg.1c0f194a4451": {
+   "src": "½ cup rice ⟦1⟧sona masoori or another short-grain rice, about 100 g⟦/1⟧",
+   "t": "½ కప్పు బియ్యం ⟦1⟧సోనా మసూరి లేదా ఇంకేదైనా పొట్టి గింజ బియ్యం, సుమారు 100 g⟦/1⟧",
+   "back": "½ cup rice ⟦1⟧Sona Masoori or any other short-grain rice, about 100 g⟦/1⟧"
+  },
+  "seg.8f34922ee281": {
+   "src": "4 cups milk ⟦1⟧about 1 litre; whole milk gives the creamiest result⟦/1⟧",
+   "t": "4 కప్పుల పాలు ⟦1⟧సుమారు 1 లీటరు; వెన్న తీయని పాలతో బాగా చిక్కగా వస్తుంది⟦/1⟧",
+   "back": "4 cups milk ⟦1⟧about 1 litre; with milk whose cream is not removed it comes out very thick⟦/1⟧"
+  },
+  "seg.ee0c3b96837f": {
+   "src": "¾ cup grated cane jaggery ⟦1⟧lightly packed; up to 2 tbsp more if you like it sweeter⟦/1⟧",
+   "t": "¾ కప్పు తురిమిన చెరుకు బెల్లం ⟦1⟧కొంచెం అదిమి కొలవాలి; ఇంకా తీపి కావాలంటే 2 టేబుల్ స్పూన్ల వరకు ఎక్కువ⟦/1⟧",
+   "back": "¾ cup grated cane jaggery ⟦1⟧measure pressed down a little; if you want it sweeter, up to 2 tablespoons more⟦/1⟧"
+  },
+  "seg.77b811a6e0f1": {
+   "src": "To finish",
+   "t": "చివర్లో వేయడానికి",
+   "back": "For adding at the end"
+  },
+  "seg.988401bed7a6": {
+   "src": "2 tbsp ghee",
+   "t": "2 టేబుల్ స్పూన్ల నెయ్యి",
+   "back": "2 tablespoons ghee"
+  },
+  "seg.42022f439951": {
+   "src": "10 cashews ⟦1⟧halved⟦/1⟧",
+   "t": "10 జీడిపప్పులు ⟦1⟧సగానికి చీల్చినవి⟦/1⟧",
+   "back": "10 cashews ⟦1⟧split in half⟦/1⟧"
+  },
+  "seg.65c3b64a0c69": {
+   "src": "1 tbsp raisins (optional)",
+   "t": "1 టేబుల్ స్పూన్ కిస్మిస్ (కావాలంటే)",
+   "back": "1 tablespoon raisins (if wanted)"
+  },
+  "seg.fa014766d2bf": {
+   "src": "½ tsp cardamom powder ⟦1⟧or the crushed seeds of 4–5 pods⟦/1⟧",
+   "t": "½ టీస్పూన్ యాలకుల పొడి ⟦1⟧లేదా 4–5 యాలకుల గింజలు దంచి⟦/1⟧",
+   "back": "½ teaspoon cardamom powder ⟦1⟧or 4–5 cardamom seeds, pounded⟦/1⟧"
+  },
+  "seg.480e0a7d227f": {
+   "src": "Wash the rice in 2–3 changes of water until the water runs almost clear, then drain it well.",
+   "t": "బియ్యాన్ని 2–3 సార్లు నీళ్లు మారుస్తూ, నీళ్లు దాదాపు తేటగా వచ్చే వరకు కడిగి, బాగా వడకట్టండి.",
+   "back": "Wash the rice 2–3 times, changing the water, until the water comes out almost clear, and drain well."
+  },
+  "seg.d5b0fc46818a": {
+   "src": "Pour the milk into a heavy-bottomed pan and bring it to a boil on medium heat, about 8–10 minutes. Stir now and then so it does not catch at the bottom.",
+   "t": "మందపాటి అడుగున్న గిన్నెలో పాలు పోసి మధ్యస్థ మంట మీద సుమారు 8–10 నిమిషాలు మరిగించండి. అడుగంటకుండా మధ్య మధ్యలో కలుపుతూ ఉండండి.",
+   "back": "Pour the milk into a thick-bottomed vessel and boil on medium flame for about 8–10 minutes. Keep stirring now and then so it does not stick to the bottom."
+  },
+  "seg.b8f9c8c6758b": {
+   "src": "Add the drained rice to the boiling milk and turn the heat to low.",
+   "t": "మరుగుతున్న పాలలో వడకట్టిన బియ్యం వేసి, మంట తగ్గించండి.",
+   "back": "Add the drained rice to the boiling milk, and reduce the flame."
+  },
+  "seg.9ae9baab76d7": {
+   "src": "Cook the washed rice in the milk on a low flame till soft and creamy, about 30 minutes. Stir often, scraping the bottom and sides of the pan each time.",
+   "t": "కడిగిన బియ్యాన్ని పాలలో తక్కువ మంట మీద మెత్తగా, చిక్కగా అయ్యే వరకు సుమారు 30 నిమిషాలు ఉడికించండి. తరచూ కలుపుతూ, ప్రతిసారీ గిన్నె అడుగు, పక్కలు గీకండి.",
+   "back": "Cook the washed rice in the milk on low flame until soft and thick, about 30 minutes. Stir often, scraping the bottom and sides of the vessel each time."
+  },
+  "seg.ec1509a08b4c": {
+   "src": "Check the rice: a grain should mash easily between your fingers, and the milk should have thickened slightly. For a creamier paramannam, lightly mash a few grains against the side of the pan.",
+   "t": "బియ్యం ఉడికిందో చూడండి: ఒక మెతుకు వేళ్ల మధ్య సులువుగా నలగాలి, పాలు కొంచెం చిక్కబడాలి. పరమాన్నం ఇంకా చిక్కగా కావాలంటే, కొన్ని మెతుకులను గిన్నె పక్కకు నొక్కి కొద్దిగా మెదపండి.",
+   "back": "Check whether the rice is cooked: a grain should mash easily between the fingers, and the milk should thicken a little. If you want the paramannam thicker, press some grains against the side of the vessel and mash them slightly."
+  },
+  "seg.d8ba0a82f4ec": {
+   "src": "Switch off and let it rest 5 minutes. This brings the milk below the boil, so the jaggery will not split it.",
+   "t": "స్టవ్ ఆపి 5 నిమిషాలు అలాగే ఉంచండి. దీంతో పాలు మరిగే వేడి కంటే తగ్గుతాయి, బెల్లం వేసినా విరగవు.",
+   "back": "Turn off the stove and leave it as it is for 5 minutes. With this the milk drops below boiling heat, and does not curdle even when jaggery is added."
+  },
+  "seg.ca16c98d9b18": {
+   "src": "Stir in the jaggery till it melts, about 1–2 minutes, keeping the pan off the heat.",
+   "t": "గిన్నెను స్టవ్ మీంచి దూరంగా ఉంచి, బెల్లం కరిగే వరకు సుమారు 1–2 నిమిషాలు కలపండి.",
+   "back": "Keep the vessel away from the stove and stir until the jaggery dissolves, about 1–2 minutes."
+  },
+  "seg.74412a8cc141": {
+   "src": "Taste, and stir in a little more grated jaggery if you want it sweeter.",
+   "t": "రుచి చూసి, ఇంకా తీపి కావాలంటే కొంచెం తురిమిన బెల్లం వేసి కలపండి.",
+   "back": "Taste, and if you want it sweeter, add a little grated jaggery and stir."
+  },
+  "seg.92b56df40ea6": {
+   "src": "Heat the ghee in a small pan on medium-low heat.",
+   "t": "చిన్న బాణలిలో నెయ్యిని మధ్యస్థం కంటే కొంచెం తక్కువ మంట మీద వేడి చేయండి.",
+   "back": "Heat the ghee in a small pan on a flame a little lower than medium."
+  },
+  "seg.1bb1f411e4d0": {
+   "src": "Fry the cashews in ghee; add with the cardamom. Stir the cashews until golden, about 1 minute, adding the raisins for the last few seconds until they puff up. Pour the nuts and ghee into the paramannam, sprinkle in the cardamom powder and stir.",
+   "t": "జీడిపప్పును నెయ్యిలో వేయించి, యాలకుల పొడితో పాటు కలపండి. జీడిపప్పు బంగారు రంగు వచ్చే వరకు సుమారు 1 నిమిషం కలుపుతూ వేయించండి; చివరి కొన్ని సెకన్లలో కిస్మిస్ వేసి, అవి ఉబ్బే వరకు వేయించండి. పప్పులు, నెయ్యి పరమాన్నంలో పోసి, యాలకుల పొడి చల్లి కలపండి.",
+   "back": "Fry the cashews in the ghee, and mix in along with the cardamom powder. Fry the cashews while stirring for about 1 minute until they turn golden; in the last few seconds add the raisins and fry until they swell. Pour the nuts and ghee into the paramannam, sprinkle cardamom powder and stir."
+  },
+  "seg.e10b7192c157": {
+   "src": "Serve warm. Paramannam thickens as it stands; loosen it with a few spoons of warm milk, off the heat, if needed.",
+   "t": "గోరువెచ్చగా అందించండి. పరమాన్నం ఉంచిన కొద్దీ చిక్కబడుతుంది; అవసరమైతే స్టవ్ మీంచి దూరంగా, కొన్ని చెంచాల వెచ్చని పాలు కలిపి పలచన చేయండి.",
+   "back": "Serve lukewarm. Paramannam thickens the longer it is kept; if needed, away from the stove, mix in a few spoons of warm milk to thin it."
+  },
+  "seg.d30196cf6b28": {
+   "src": "Jaggery goes in off the heat so the milk does not split.",
+   "t": "పాలు విరగకుండా ఉండాలంటే, స్టవ్ మీంచి దించాకే బెల్లం వేయాలి.",
+   "back": "To keep the milk from curdling, jaggery must be added only after taking it off the stove."
+  },
+  "seg.d4a9c2ee09bf": {
+   "src": "Use a heavy-bottomed pan and scrape the bottom each time you stir; milk catches easily during the long simmer.",
+   "t": "మందపాటి అడుగున్న గిన్నె వాడండి, కలిపిన ప్రతిసారీ అడుగు గీకండి; ఎక్కువసేపు ఉడికేటప్పుడు పాలు సులువుగా అడుగంటుతాయి.",
+   "back": "Use a thick-bottomed vessel, and scrape the bottom every time you stir; when cooking for a long time milk easily sticks to the bottom."
+  },
+  "seg.a01441abc0b6": {
+   "src": "Cook the rice until fully soft before the jaggery goes in; the grains do not soften further once it is sweetened.",
+   "t": "బెల్లం వేసే ముందే బియ్యం పూర్తిగా మెత్తగా ఉడకాలి; తీపి కలిపాక మెతుకులు ఇంక మెత్తబడవు.",
+   "back": "The rice must be fully cooked soft before adding jaggery; after the sweetener is mixed in, the grains do not soften any more."
+  },
+  "seg.688b80a32383": {
+   "src": "Grate the jaggery finely so it melts in the hot milk without going back on the stove.",
+   "t": "బెల్లాన్ని సన్నగా తురమండి; అప్పుడు మళ్లీ స్టవ్ మీద పెట్టకుండానే వేడి పాలలో కరిగిపోతుంది.",
+   "back": "Grate the jaggery finely; then it dissolves in the hot milk without putting it back on the stove."
+  },
+  "seg.7bf8faca62b8": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for a darker colour and a deeper, smoky sweetness.",
+   "t": "తాటి బెల్లం: అంతే కొలత తురిమిన తాటి బెల్లం వాడితే రంగు ముదురుగా, తీపి గాఢంగా, కొంచెం పొగ రుచితో వస్తుంది.",
+   "back": "Palm jaggery: if you use the same measure of grated palm jaggery, the colour comes out dark, the sweetness intense, with a slightly smoky taste."
+  },
+  "seg.6672d2210281": {
+   "src": "Pesarapappu paramannam: dry-roast 2 tbsp split moong dal until light golden, wash it and cook it with the rice.",
+   "t": "పెసరపప్పు పరమాన్నం: 2 టేబుల్ స్పూన్ల పెసరపప్పును లేత బంగారు రంగు వచ్చే వరకు నూనె లేకుండా వేయించి, కడిగి, బియ్యంతో పాటు ఉడికించండి.",
+   "back": "Moong dal paramannam: roast 2 tablespoons of moong dal without oil until light golden, wash, and cook along with the rice."
+  },
+  "seg.cd25d9fb2a56": {
+   "src": "Coconut: fry 2 tbsp thin slivers of dry coconut in the ghee along with the cashews.",
+   "t": "కొబ్బరి: 2 టేబుల్ స్పూన్ల సన్నని ఎండు కొబ్బరి ముక్కలను జీడిపప్పుతో పాటు నెయ్యిలో వేయించండి.",
+   "back": "Coconut: fry 2 tablespoons of thin dry coconut pieces in ghee along with the cashews."
+  },
+  "seg.988ab75b5ccb": {
+   "src": "Serve warm as naivedyam at the Diwali or Lakshmi puja, then as the sweet at the festive meal. Some like it chilled the next day.",
+   "t": "దీపావళి లేదా లక్ష్మీ పూజలో నైవేద్యంగా గోరువెచ్చగా పెట్టి, తర్వాత పండుగ భోజనంలో తీపిగా వడ్డించండి. కొందరికి మర్నాడు చల్లగా తినడం ఇష్టం.",
+   "back": "Offer it lukewarm as naivedyam in Deepavali or Lakshmi puja, then serve it as the sweet in the festival meal. Some people like to eat it cold the next day."
+  },
+  "seg.4a60d211f14d": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. It sets thick when chilled; stir in a little warm milk, off the heat, before serving.",
+   "t": "మిగిలినది మూత పెట్టి ఫ్రిజ్‌లో ఉంచి, 2 రోజుల్లో తినేయండి. చల్లబడితే బాగా చిక్కబడుతుంది; వడ్డించే ముందు, స్టవ్ మీంచి దూరంగా, కొంచెం వెచ్చని పాలు కలపండి.",
+   "back": "Cover the leftover, keep it in the fridge, and eat it within 2 days. When it gets cold it thickens a lot; before serving, away from the stove, mix in a little warm milk."
+  },
+  "seg.2949774c7efb": {
+   "src": "Why did my paramannam curdle after adding jaggery?",
+   "t": "బెల్లం వేశాక నా పరమాన్నం ఎందుకు విరిగింది?",
+   "back": "Why did my paramannam curdle after adding jaggery?"
+  },
+  "seg.283626ae50fc": {
+   "src": "Jaggery stirred into milk that is still on the heat or boiling can make it split. Switch off, let the paramannam rest for about 5 minutes, then stir in the grated jaggery.",
+   "t": "ఇంకా స్టవ్ మీద ఉన్న లేదా మరుగుతున్న పాలలో బెల్లం వేస్తే పాలు విరిగిపోవచ్చు. స్టవ్ ఆపి, పరమాన్నాన్ని సుమారు 5 నిమిషాలు అలాగే ఉంచి, తర్వాత తురిమిన బెల్లం వేసి కలపండి.",
+   "back": "If jaggery is added to milk that is still on the stove or boiling, the milk may curdle. Turn off the stove, leave the paramannam as it is for about 5 minutes, then add the grated jaggery and stir."
+  },
+  "seg.7df6976d1e83": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The paramannam turns darker and tastes deeper and slightly smoky.",
+   "t": "వాడొచ్చు. అంతే కొలత తురిమిన తాటి బెల్లం వాడండి. పరమాన్నం ముదురు రంగుకు వస్తుంది, రుచి గాఢంగా, కొంచెం పొగ రుచితో ఉంటుంది.",
+   "back": "It can be used. Use the same measure of grated palm jaggery. The paramannam comes to a dark colour, and the taste is intense, with a slightly smoky taste."
+  },
+  "seg.6ac2cfc26fb7": {
+   "src": "Which rice is best for paramannam?",
+   "t": "పరమాన్నానికి ఏ బియ్యం బాగుంటుంది?",
+   "back": "Which rice is good for paramannam?"
+  },
+  "seg.ead18bc39c32": {
+   "src": "A short-grain rice such as sona masoori cooks soft and creamy in milk. Long-grain basmati keeps its grains separate and gives a thinner paramannam.",
+   "t": "సోనా మసూరి లాంటి పొట్టి గింజ బియ్యం పాలలో మెత్తగా, చిక్కగా ఉడుకుతుంది. పొడవు గింజ బాస్మతి అయితే మెతుకులు విడివిడిగా ఉండి, పరమాన్నం పలచగా వస్తుంది.",
+   "back": "Short-grain rice like Sona Masoori cooks soft and thick in milk. With long-grain basmati, the grains stay separate and the paramannam comes out thin."
+  },
+  "seg.2baf5cc4ec36": {
+   "src": "How do I fix paramannam that has become too thick?",
+   "t": "మరీ చిక్కబడిన పరమాన్నాన్ని ఎలా సరిచేయాలి?",
+   "back": "How to fix paramannam that has become too thick?"
+  },
+  "seg.9ffeabf346fa": {
+   "src": "Stir in a few spoons of warm milk, off the heat, until it loosens. It thickens as it cools, so stop when it is a little thinner than you want.",
+   "t": "స్టవ్ మీంచి దూరంగా, కొన్ని చెంచాల వెచ్చని పాలు కలుపుతూ పలచన చేయండి. చల్లారే కొద్దీ చిక్కబడుతుంది, కాబట్టి మీకు కావాల్సిన దానికంటే కొంచెం పలచగా ఉన్నప్పుడే ఆపండి.",
+   "back": "Away from the stove, thin it by mixing in a few spoons of warm milk. It thickens as it cools, so stop while it is a little thinner than you want."
+  },
+  "seg.43e6183ba82c": {
+   "src": "బెల్లం పరమాన్నం · Bellam Paramannam Recipe | 1acrefarms",
+   "t": "బెల్లం పరమాన్నం తయారీ విధానం | 1acrefarms",
+   "back": "Jaggery paramannam method of preparation | 1acrefarms"
+  },
+  "seg.8b09026bfd65": {
+   "src": "బెల్లం పరమాన్నం. Bellam paramannam for Diwali: rice slow-cooked in milk and sweetened with cane jaggery off the heat, finished with ghee-fried cashews. Step-by-step method, tips and FAQs. Serves 4.",
+   "t": "దీపావళికి బెల్లం పరమాన్నం: పాలలో నెమ్మదిగా ఉడికించిన బియ్యం, స్టవ్ మీంచి దించాక చెరుకు బెల్లంతో తీపి, చివర్లో నెయ్యిలో వేయించిన జీడిపప్పు. ఒక్కో దశగా చేసే విధానం, చిట్కాలు, ప్రశ్నలు-జవాబులు. 4 మందికి.",
+   "back": "Jaggery paramannam for Deepavali: rice slowly cooked in milk, sweetened with cane jaggery after taking off the stove, cashews fried in ghee at the end. Step-by-step method, tips, questions and answers. For 4 people."
+  },
+  "seg.07511b65bfa7": {
+   "src": "Bellam Paramannam (Jaggery Rice Kheer) · 1acrefarms",
+   "t": "బెల్లం పరమాన్నం (బెల్లంతో బియ్యం పాయసం) · 1acrefarms",
+   "back": "Jaggery paramannam (rice payasam with jaggery) · 1acrefarms"
+  },
+  "seg.cf8cab3618d9": {
+   "src": "Bellam Paramannam: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "బెల్లం పరమాన్నం: 1acrefarms రెసిపీ కార్డు, కావలసినవి, చేసే విధానంతో",
+   "back": "Jaggery paramannam: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.36fc986c4713": {
+   "src": "½ cup rice",
+   "t": "½ కప్పు బియ్యం",
+   "back": "½ cup rice"
+  },
+  "seg.d414ee4821fa": {
+   "src": "4 cups milk",
+   "t": "4 కప్పుల పాలు",
+   "back": "4 cups milk"
+  },
+  "seg.5c2ad54d4584": {
+   "src": "10 cashews",
+   "t": "10 జీడిపప్పులు",
+   "back": "10 cashews"
+  },
+  "seg.b925e45a5f93": {
+   "src": "½ tsp cardamom powder",
+   "t": "½ టీస్పూన్ యాలకుల పొడి",
+   "back": "½ teaspoon cardamom powder"
+  },
+  "seg.c20ca0bb138c": {
+   "src": "Karthika Somavaram · 5 minutes",
+   "t": "కార్తీక సోమవారం · 5 నిమిషాలు",
+   "back": "Kartika Monday · 5 minutes"
+  },
+  "seg.7221ac3c40b7": {
+   "src": "Warm Pasupu Paalu ⟦1⟧(Turmeric Milk)⟦/1⟧",
+   "t": "గోరువెచ్చని పసుపు పాలు ⟦1⟧(పసుపు కలిపిన పాలు)⟦/1⟧",
+   "back": "Lukewarm turmeric milk ⟦1⟧(milk mixed with turmeric)⟦/1⟧"
+  },
+  "seg.44699ae5fc7d": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Pasupu Paalu · Haldi Wala Doodh",
+   "t": "⟦#1⟧ · ⟦#2⟧ · Pasupu Paalu · Haldi Wala Doodh",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Pasupu Paalu · Haldi Wala Doodh"
+  },
+  "seg.5fbc274b0656": {
+   "src": "Pasupu paalu is warm milk simmered with a little turmeric and a pinch of black pepper, then sweetened with jaggery. It is an everyday cup in many Telugu homes, made on cool evenings and often through Karthika masam, the month of Somavaram (Monday) pujas and evening lamps.",
+   "t": "పసుపు పాలు అంటే కొంచెం పసుపు, చిటికెడు మిరియాల పొడి వేసి సన్నని మంట మీద కాచి, బెల్లంతో తీపి చేసిన గోరువెచ్చని పాలు. చాలా తెలుగు ఇళ్లలో ఇది రోజూ తాగే కప్పు; చల్లని సాయంత్రాల్లో చేస్తారు, సోమవారం పూజలు, సాయంత్రం దీపాల మాసమైన కార్తీక మాసమంతా తరచూ చేస్తారు.",
+   "back": "Turmeric milk is lukewarm milk with a little turmeric and a pinch of pepper powder added, heated on a low flame, and sweetened with jaggery. In many Telugu homes it is a cup drunk daily; it is made on cold evenings, and often made throughout Kartika month, the month of Monday pujas and evening lamps."
+  },
+  "seg.7d5fe2bc79e0": {
+   "src": "The turmeric turns the milk golden and gives it an earthy, slightly bitter edge, the pepper adds a little heat, and the jaggery rounds it off with a caramel sweetness. This recipe makes one cup in about 5 minutes.",
+   "t": "పసుపుతో పాలు బంగారు రంగుకు మారి, మట్టి రుచి లాంటి, కొంచెం చేదు రుచి వస్తుంది; మిరియాలు కొంచెం కారం ఇస్తాయి, బెల్లం పాకం లాంటి తీపితో రుచిని నిండుగా చేస్తుంది. ఈ వంటకంతో సుమారు 5 నిమిషాల్లో ఒక కప్పు వస్తుంది.",
+   "back": "With turmeric the milk turns golden in colour and gets an earthy, slightly bitter taste; pepper gives a little heat, and jaggery makes the taste full with a syrup-like sweetness. This recipe makes one cup in about 5 minutes."
+  },
+  "seg.8d84c28f29ee": {
+   "src": "⟦1⟧Prep⟦/1⟧1 min",
+   "t": "⟦1⟧తయారీ⟦/1⟧1 నిమిషం",
+   "back": "⟦1⟧Preparation⟦/1⟧1 minute"
+  },
+  "seg.166ac82bce1a": {
+   "src": "⟦1⟧Cook⟦/1⟧4 min",
+   "t": "⟦1⟧వంట⟦/1⟧4 నిమిషాలు",
+   "back": "⟦1⟧Cooking⟦/1⟧4 minutes"
+  },
+  "seg.d16246ee0866": {
+   "src": "⟦1⟧Total⟦/1⟧5 min",
+   "t": "⟦1⟧మొత్తం⟦/1⟧5 నిమిషాలు",
+   "back": "⟦1⟧Total⟦/1⟧5 minutes"
+  },
+  "seg.e6c332afda75": {
+   "src": "⟦1⟧Makes⟦/1⟧1 cup",
+   "t": "⟦1⟧వచ్చేది⟦/1⟧1 కప్పు",
+   "back": "⟦1⟧Makes⟦/1⟧1 cup"
+  },
+  "seg.8e4df121a859": {
+   "src": "Simmer milk with turmeric and a pinch of pepper, switch off, then stir in a spoon of jaggery.",
+   "t": "పాలలో పసుపు, చిటికెడు మిరియాల పొడి వేసి సన్నని మంట మీద కాచి, స్టవ్ ఆపి, తర్వాత ఒక చెంచా బెల్లం వేసి కలపండి.",
+   "back": "Add turmeric and a pinch of pepper powder to milk, heat on a low flame, turn off the stove, then add one spoon of jaggery and stir."
+  },
+  "seg.616c584b1f2d": {
+   "src": "Ingredients ⟦1⟧makes 1 cup⟦/1⟧",
+   "t": "కావలసినవి ⟦1⟧1 కప్పుకు⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 1 cup⟦/1⟧"
+  },
+  "seg.33cd5776caaf": {
+   "src": "¼ tsp turmeric powder ⟦1⟧Turmeric Powder or Hill Turmeric Powder⟦/1⟧",
+   "t": "¼ టీస్పూన్ పసుపు ⟦1⟧పసుపు లేదా కొండ పసుపు⟦/1⟧",
+   "back": "¼ teaspoon turmeric ⟦1⟧turmeric or konda (hill) turmeric⟦/1⟧"
+  },
+  "seg.f1056c625241": {
+   "src": "A pinch of black pepper ⟦1⟧powdered or crushed⟦/1⟧",
+   "t": "చిటికెడు మిరియాలు ⟦1⟧పొడి చేసినవి లేదా దంచినవి⟦/1⟧",
+   "back": "A pinch of pepper ⟦1⟧powdered or pounded⟦/1⟧"
+  },
+  "seg.bc417c4b3691": {
+   "src": "1 tsp grated palm or cane jaggery ⟦1⟧or to taste⟦/1⟧",
+   "t": "1 టీస్పూన్ తురిమిన తాటి బెల్లం లేదా చెరుకు బెల్లం ⟦1⟧లేదా రుచికి తగినంత⟦/1⟧",
+   "back": "1 teaspoon grated palm jaggery or cane jaggery ⟦1⟧or as per taste⟦/1⟧"
+  },
+  "seg.12c1bae1db56": {
+   "src": "A pinch of cardamom powder (optional)",
+   "t": "చిటికెడు యాలకుల పొడి (కావాలంటే)",
+   "back": "A pinch of cardamom powder (if wanted)"
+  },
+  "seg.df14f9098720": {
+   "src": "Turmeric Powder",
+   "t": "పసుపు",
+   "back": "Turmeric"
+  },
+  "seg.c6d79d093fe3": {
+   "src": "⟦#1⟧ · Pasupu",
+   "t": "⟦#1⟧ · Pasupu",
+   "back": "⟦#1⟧ · Pasupu"
+  },
+  "seg.a44f282ce639": {
+   "src": "MRP ₹396 · 540 g",
+   "t": "MRP ₹396 · 540 g",
+   "back": "MRP ₹396 · 540 g"
+  },
+  "seg.c1f7f3a42c29": {
+   "src": "Hill Turmeric Powder",
+   "t": "కొండ పసుపు",
+   "back": "Konda (hill) turmeric"
+  },
+  "seg.19ef1ef93a26": {
+   "src": "⟦#1⟧ · Konda Pasupu",
+   "t": "⟦#1⟧ · Konda Pasupu",
+   "back": "⟦#1⟧ · Konda Pasupu"
+  },
+  "seg.1a51e1f06af0": {
+   "src": "Sweeten it with ⟦1⟧Palm Jaggery⟦/1⟧ or ⟦2⟧Cane Jaggery⟦/2⟧.",
+   "t": "తీపి కోసం ⟦1⟧తాటి బెల్లం⟦/1⟧ లేదా ⟦2⟧చెరుకు బెల్లం⟦/2⟧ వాడండి.",
+   "back": "For sweetness use ⟦1⟧palm jaggery⟦/1⟧ or ⟦2⟧cane jaggery⟦/2⟧."
+  },
+  "seg.b0b3cf3b3c0d": {
+   "src": "Pour the milk into a small steel saucepan.",
+   "t": "పాలను చిన్న స్టీల్ గిన్నెలో పోయండి.",
+   "back": "Pour the milk into a small steel vessel."
+  },
+  "seg.94d57531a741": {
+   "src": "Add the turmeric and pepper (and the cardamom, if using) and stir until no specks of turmeric float on top. They mix in more evenly before the milk is heated.",
+   "t": "పసుపు, మిరియాల పొడి (యాలకుల పొడి వాడితే అది కూడా) వేసి, పైన పసుపు రేణువులు తేలకుండా అయ్యే వరకు కలపండి. పాలు వేడి చేయక ముందే వేస్తే అంతటా సమానంగా కలుస్తాయి.",
+   "back": "Add the turmeric and pepper powder (and cardamom powder too if using it), and stir until no turmeric granules float on top. If added before heating the milk, they mix evenly throughout."
+  },
+  "seg.9da3932c6508": {
+   "src": "Set the pan on medium-low heat. Warm the milk with the turmeric and pepper; simmer 2 minutes. Once small bubbles appear around the edge, turn the heat to low and let it bubble gently.",
+   "t": "గిన్నెను మధ్యస్థం కంటే కొంచెం తక్కువ మంట మీద పెట్టండి. పసుపు, మిరియాలతో పాటు పాలను వేడి చేసి, 2 నిమిషాలు సన్నగా మరగనివ్వండి. అంచుల చుట్టూ చిన్న బుడగలు రాగానే మంట తగ్గించి, నెమ్మదిగా బుడగలు వస్తూ ఉండనివ్వండి.",
+   "back": "Put the vessel on a flame a little lower than medium. Heat the milk along with the turmeric and pepper, and let it simmer gently for 2 minutes. As soon as small bubbles come around the edges, reduce the flame and let bubbles keep coming slowly."
+  },
+  "seg.c66cb9336ef5": {
+   "src": "Stir now and then and keep an eye on the pan, as milk rises fast once it boils. If it starts to climb, lift the pan off the heat for a few seconds.",
+   "t": "మధ్య మధ్యలో కలుపుతూ, గిన్నెను గమనిస్తూ ఉండండి; మరగడం మొదలయ్యాక పాలు వేగంగా పొంగుతాయి. పైకి లేస్తుంటే, కొన్ని సెకన్లు గిన్నెను స్టవ్ మీంచి ఎత్తి పట్టండి.",
+   "back": "Keep stirring now and then, and keep watching the vessel; once boiling starts, milk rises up fast. If it is rising, lift the vessel off the stove and hold it for a few seconds."
+  },
+  "seg.b567bc0c93c9": {
+   "src": "It is ready when the milk is an even golden yellow and the raw smell of turmeric has gone.",
+   "t": "పాలు అంతటా ఒకే బంగారు పసుపు రంగులోకి వచ్చి, పసుపు పచ్చి వాసన పోతే సిద్ధమైనట్టే.",
+   "back": "When the milk comes to one golden-yellow colour throughout and the raw smell of turmeric goes, it is ready."
+  },
+  "seg.6e16c50d7c2a": {
+   "src": "Switch off and wait a minute. The milk drops just below the boil, so the jaggery will not split it.",
+   "t": "స్టవ్ ఆపి ఒక నిమిషం ఆగండి. పాలు మరిగే వేడి కంటే కొంచెం తగ్గుతాయి, అప్పుడు బెల్లం వేసినా విరగవు.",
+   "back": "Turn off the stove and wait one minute. The milk drops a little below boiling heat, then it does not curdle even when jaggery is added."
+  },
+  "seg.aa0d1bcf6802": {
+   "src": "For a smooth cup, pour the milk through a fine sieve into a tumbler or mug.",
+   "t": "నున్నని కప్పు కావాలంటే, సన్నని జల్లెడతో పాలను టంబ్లర్ లేదా మగ్గులోకి వడకట్టండి.",
+   "back": "If you want a smooth cup, strain the milk through a fine sieve into a tumbler or mug."
+  },
+  "seg.862cac523844": {
+   "src": "Stir in the jaggery and serve warm. Stir for 20–30 seconds, until it dissolves, and taste for sweetness.",
+   "t": "బెల్లం వేసి కలిపి గోరువెచ్చగా అందించండి. బెల్లం కరిగే వరకు 20–30 సెకన్లు కలిపి, తీపి సరిపోయిందో రుచి చూడండి.",
+   "back": "Add the jaggery, stir, and serve lukewarm. Stir for 20–30 seconds until the jaggery dissolves, and taste whether the sweetness is enough."
+  },
+  "seg.1d9b9ec736a8": {
+   "src": "Strain through a fine sieve if you like it smooth.",
+   "t": "నున్నగా కావాలంటే సన్నని జల్లెడతో వడకట్టండి.",
+   "back": "If you want it smooth, strain through a fine sieve."
+  },
+  "seg.018366193ef3": {
+   "src": "Add the jaggery only after switching off; jaggery stirred into boiling milk can split it.",
+   "t": "స్టవ్ ఆపాకే బెల్లం వేయండి; మరుగుతున్న పాలలో బెల్లం వేస్తే పాలు విరిగిపోవచ్చు.",
+   "back": "Add the jaggery only after turning off the stove; if jaggery is added to boiling milk, the milk may curdle."
+  },
+  "seg.0e783ba83473": {
+   "src": "Use a steel pan and spoon; turmeric stains plastic and wood.",
+   "t": "స్టీల్ గిన్నె, స్టీల్ చెంచా వాడండి; పసుపు ప్లాస్టిక్‌కు, చెక్కకు మరకలు చేస్తుంది.",
+   "back": "Use a steel vessel and a steel spoon; turmeric stains plastic and wood."
+  },
+  "seg.dc2a0c79ccd5": {
+   "src": "Making more? Use the same amounts for each cup of milk.",
+   "t": "ఎక్కువ చేస్తున్నారా? ప్రతి కప్పు పాలకు ఇవే కొలతలు వాడండి.",
+   "back": "Making more? Use these same measures for each cup of milk."
+  },
+  "seg.485f68415013": {
+   "src": "Hill turmeric: use Hill Turmeric Powder (konda pasupu) in place of turmeric powder, in the same amount.",
+   "t": "కొండ పసుపు: పసుపుకు బదులు అంతే కొలత కొండ పసుపు వాడండి.",
+   "back": "Konda (hill) turmeric: use the same measure of konda turmeric instead of turmeric."
+  },
+  "seg.01ec7a142032": {
+   "src": "Palm or cane jaggery: palm jaggery gives a deeper, slightly smoky sweetness; cane jaggery a lighter, caramel one.",
+   "t": "తాటి బెల్లం లేదా చెరుకు బెల్లం: తాటి బెల్లంతో గాఢమైన, కొంచెం పొగ రుచి ఉన్న తీపి; చెరుకు బెల్లంతో తేలికైన, పాకం లాంటి తీపి.",
+   "back": "Palm jaggery or cane jaggery: with palm jaggery an intense sweetness with a slightly smoky taste; with cane jaggery a light, syrup-like sweetness."
+  },
+  "seg.15b67235d087": {
+   "src": "Milder cup: leave out the pepper and add a pinch of cardamom powder instead.",
+   "t": "తేలికపాటి కప్పు: మిరియాలు వేయకుండా, బదులుగా చిటికెడు యాలకుల పొడి వేయండి.",
+   "back": "A mild cup: leave out the pepper, and add a pinch of cardamom powder instead."
+  },
+  "seg.d80219c8a51f": {
+   "src": "Serve warm in a tumbler or mug, on a cool evening or after the Karthika Somavaram puja.",
+   "t": "చల్లని సాయంత్రం గానీ, కార్తీక సోమవారం పూజ తర్వాత గానీ టంబ్లర్ లేదా మగ్గులో గోరువెచ్చగా అందించండి.",
+   "back": "Serve lukewarm in a tumbler or mug on a cold evening, or after the Kartika Monday puja."
+  },
+  "seg.ac04ffd1d51a": {
+   "src": "Make it as you need it and drink it warm. Reheating after the jaggery is in can split the milk.",
+   "t": "అవసరమైనప్పుడే చేసుకుని గోరువెచ్చగా తాగండి. బెల్లం వేశాక మళ్లీ వేడి చేస్తే పాలు విరిగిపోవచ్చు.",
+   "back": "Make it only when needed and drink it lukewarm. If reheated after adding jaggery the milk may curdle."
+  },
+  "seg.c758e61dd102": {
+   "src": "Why did my pasupu paalu curdle?",
+   "t": "నా పసుపు పాలు ఎందుకు విరిగాయి?",
+   "back": "Why did my turmeric milk curdle?"
+  },
+  "seg.d5f9c6fb2e27": {
+   "src": "Jaggery stirred into milk that is still boiling can make it split. Switch off the heat, wait about a minute, then stir in the grated jaggery.",
+   "t": "ఇంకా మరుగుతున్న పాలలో బెల్లం వేస్తే పాలు విరిగిపోవచ్చు. స్టవ్ ఆపి, సుమారు ఒక నిమిషం ఆగి, తర్వాత తురిమిన బెల్లం వేసి కలపండి.",
+   "back": "If jaggery is added to milk that is still boiling, the milk may curdle. Turn off the stove, wait about one minute, then add the grated jaggery and stir."
+  },
+  "seg.df4dbdd3102b": {
+   "src": "How much turmeric should I use for one cup of milk?",
+   "t": "ఒక కప్పు పాలకు ఎంత పసుపు వేయాలి?",
+   "back": "How much turmeric should be added for one cup of milk?"
+  },
+  "seg.3ec50124bdd7": {
+   "src": "¼ tsp turmeric powder for 1 cup (about 240 ml) of milk. More than that makes the taste sharp and earthy.",
+   "t": "1 కప్పు (సుమారు 240 ml) పాలకు ¼ టీస్పూన్ పసుపు. అంతకంటే ఎక్కువ వేస్తే రుచి ఘాటుగా, మట్టి రుచిగా అవుతుంది.",
+   "back": "¼ teaspoon turmeric for 1 cup (about 240 ml) of milk. If more than that is added, the taste becomes pungent and earthy."
+  },
+  "seg.3dc4d1edd4f9": {
+   "src": "Can I skip the black pepper?",
+   "t": "మిరియాలు వేయకుండా ఉండొచ్చా?",
+   "back": "Can the pepper be left out?"
+  },
+  "seg.166b3a44e11d": {
+   "src": "Yes. The pepper adds a little heat to the taste; leave it out, or use a pinch of cardamom instead, for a milder cup.",
+   "t": "ఉండొచ్చు. మిరియాలు రుచికి కొంచెం కారం ఇస్తాయి; తేలికపాటి కప్పు కావాలంటే వాటిని వదిలేయండి, లేదా బదులుగా చిటికెడు యాలకుల పొడి వేయండి.",
+   "back": "It can. Pepper gives the taste a little heat; if you want a mild cup leave it out, or add a pinch of cardamom powder instead."
+  },
+  "seg.2184adfd31b0": {
+   "src": "Should I use palm jaggery or cane jaggery?",
+   "t": "తాటి బెల్లం వాడాలా, చెరుకు బెల్లం వాడాలా?",
+   "back": "Should I use palm jaggery or cane jaggery?"
+  },
+  "seg.ef65c3a9d015": {
+   "src": "Either works, 1 tsp grated per cup. Palm jaggery tastes deeper and slightly smoky; cane jaggery is lighter and more like caramel.",
+   "t": "ఏదైనా సరే, కప్పుకు 1 టీస్పూన్ తురిమినది. తాటి బెల్లం రుచి గాఢంగా, కొంచెం పొగ రుచితో ఉంటుంది; చెరుకు బెల్లం తేలికగా, పాకం లాగా ఉంటుంది.",
+   "back": "Either is fine, 1 teaspoon grated per cup. Palm jaggery's taste is intense, with a slightly smoky taste; cane jaggery is light, like syrup."
+  },
+  "seg.0f694f995bf8": {
+   "src": "పసుపు పాలు · Pasupu Paalu (Turmeric Milk) Recipe | 1acrefarms",
+   "t": "పసుపు పాలు తయారీ విధానం | 1acrefarms",
+   "back": "Turmeric milk method of preparation | 1acrefarms"
+  },
+  "seg.bf09ae159f00": {
+   "src": "పసుపు పాలు. Pasupu paalu (haldi doodh): warm milk simmered with turmeric and a pinch of pepper, sweetened with jaggery off the heat. Step-by-step method, tips and FAQs.",
+   "t": "పసుపు పాలు (హల్దీ దూధ్): పసుపు, చిటికెడు మిరియాలతో సన్నని మంట మీద కాచిన గోరువెచ్చని పాలు, స్టవ్ మీంచి దించాక బెల్లంతో తీపి. ఒక్కో దశగా చేసే విధానం, చిట్కాలు, ప్రశ్నలు-జవాబులు.",
+   "back": "Turmeric milk (haldi doodh): lukewarm milk heated on a low flame with turmeric and a pinch of pepper, sweetened with jaggery after taking off the stove. Step-by-step method, tips, questions and answers."
+  },
+  "seg.d61c2bf097f8": {
+   "src": "Warm Pasupu Paalu (Turmeric Milk) · 1acrefarms",
+   "t": "గోరువెచ్చని పసుపు పాలు (పసుపు కలిపిన పాలు) · 1acrefarms",
+   "back": "Lukewarm turmeric milk (milk mixed with turmeric) · 1acrefarms"
+  },
+  "seg.4291e73409f8": {
+   "src": "Warm Pasupu Paalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "గోరువెచ్చని పసుపు పాలు: 1acrefarms రెసిపీ కార్డు, కావలసినవి, చేసే విధానంతో",
+   "back": "Lukewarm turmeric milk: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.bb2ab610d782": {
+   "src": "Turmeric Powder 540 g pack",
+   "t": "పసుపు 540 g ప్యాక్",
+   "back": "Turmeric 540 g pack"
+  },
+  "seg.e5c4e88b0420": {
+   "src": "Hill Turmeric Powder 540 g pack",
+   "t": "కొండ పసుపు 540 g ప్యాక్",
+   "back": "Konda (hill) turmeric 540 g pack"
+  },
+  "seg.20b188783d7d": {
+   "src": "¼ tsp turmeric powder",
+   "t": "¼ టీస్పూన్ పసుపు",
+   "back": "¼ teaspoon turmeric"
+  },
+  "seg.b62b5a559893": {
+   "src": "A pinch of black pepper",
+   "t": "చిటికెడు మిరియాలు",
+   "back": "A pinch of pepper"
+  },
+  "seg.b0c2f2f3f9c9": {
+   "src": "1 tsp grated palm or cane jaggery",
+   "t": "1 టీస్పూన్ తురిమిన తాటి బెల్లం లేదా చెరుకు బెల్లం",
+   "back": "1 teaspoon grated palm jaggery or cane jaggery"
+  },
+  "seg.929a28d26142": {
+   "src": "Guides",
+   "t": "గైడ్‌లు",
+   "back": "Guides"
+  },
+  "seg.c388948b1966": {
+   "src": "Cane jaggery or palm jaggery",
+   "t": "చెరుకు బెల్లమా, తాటి బెల్లమా",
+   "back": "Cane jaggery or palm jaggery"
+  },
+  "seg.d1cc45d4f641": {
+   "src": "Guide · jaggery",
+   "t": "గైడ్ · బెల్లం",
+   "back": "Guide · Jaggery"
+  },
+  "seg.d8082aa0cdf1": {
+   "src": "Cane jaggery or palm jaggery: which to use",
+   "t": "చెరుకు బెల్లమా, తాటి బెల్లమా: ఏది వాడాలి",
+   "back": "Cane jaggery or palm jaggery: which to use"
+  },
+  "seg.5094f960d9a4": {
+   "src": "Bellam in a Telugu kitchen usually means one of two things: cheruku bellam, made from sugarcane juice, or thati bellam, made from the sap of the palmyra palm. FSSAI treats them as two separate products, each with its own standard.",
+   "t": "తెలుగు వంటింట్లో బెల్లం అంటే సాధారణంగా రెండిట్లో ఒకటి: చెరుకు రసంతో చేసే చెరుకు బెల్లం, లేదా తాటి చెట్టు నీరాతో చేసే తాటి బెల్లం. FSSAI వీటిని రెండు వేర్వేరు ఉత్పత్తులుగా చూస్తుంది, ఒక్కోదానికి దాని ప్రమాణం దానికి ఉంది.",
+   "back": "In the Telugu kitchen, jaggery usually means one of two: cane jaggery made from sugarcane juice, or palm jaggery made from the neera of the palm tree. FSSAI treats these as two separate products, and each one has its own standard."
+  },
+  "seg.13fd9611c493": {
+   "src": "They can look alike in a lump, but they taste different and suit different dishes. Here is how to tell them apart, which to use where, and how to keep them. There is a full Telugu section further down.",
+   "t": "ముద్దగా చూస్తే రెండూ ఒకేలా కనిపించొచ్చు, కానీ రుచి వేరు, సరిపడే వంటలు వేరు. రెండిటినీ ఎలా గుర్తించాలి, ఏది ఎక్కడ వాడాలి, ఎలా నిల్వ చేయాలి అన్నది ఇక్కడ ఉంది. కింద వీటన్నిటి సారాంశం కూడా ఉంది.",
+   "back": "Seen as a lump both may look the same, but the taste is different, and the dishes they suit are different. How to identify the two, which to use where, and how to store them is here. There is also a summary of all this below."
+  },
+  "seg.be457b1334f5": {
+   "src": "Cane Jaggery⟦#1⟧⟦#2⟧",
+   "t": "చెరుకు బెల్లం⟦#1⟧⟦#2⟧",
+   "back": "Cane jaggery⟦#1⟧⟦#2⟧"
+  },
+  "seg.18208d939ae8": {
+   "src": "Palm Jaggery⟦#1⟧⟦#2⟧",
+   "t": "తాటి బెల్లం⟦#1⟧⟦#2⟧",
+   "back": "Palm jaggery⟦#1⟧⟦#2⟧"
+  },
+  "seg.124d6789cba2": {
+   "src": "⟦1⟧Our two jaggeries⟦/1⟧Left: cane jaggery from the Chittoor and Anakapalli cane belts. Right: palm jaggery from the Godavari delta. Both packed in Narasaraopet.",
+   "t": "⟦1⟧మా రెండు బెల్లాలు⟦/1⟧ఎడమ: చిత్తూరు, అనకాపల్లి చెరుకు ప్రాంతాల నుంచి చెరుకు బెల్లం. కుడి: గోదావరి డెల్టా నుంచి తాటి బెల్లం. రెండూ నరసరావుపేటలో ప్యాక్ చేసినవి.",
+   "back": "⟦1⟧Our two jaggeries⟦/1⟧Left: cane jaggery from the Chittoor and Anakapalli sugarcane regions. Right: palm jaggery from the Godavari delta. Both packed in Narasaraopet."
+  },
+  "seg.70c115199d4c": {
+   "src": "Cane jaggery (cheruku bellam) is boiled-down sugarcane juice with a mellow, caramel sweetness: the one for payasam, pongal and chimmili. Palm jaggery (thati bellam) is boiled-down palmyra sap, darker and deeper in taste: a favourite in filter coffee and tea. You can swap one for the other gram for gram; start with a little less palm jaggery. Keep both in an airtight jar.",
+   "t": "చెరుకు బెల్లం అంటే చెరుకు రసాన్ని మరిగించి గట్టిపరిచినది, తీపి మృదువుగా, పాకం లాగా ఉంటుంది: పాయసం, పొంగలి, చిమ్మిలికి ఇదే. తాటి బెల్లం అంటే తాటి నీరాను మరిగించి గట్టిపరిచినది, రంగు ముదురు, రుచి గాఢం: ఫిల్టర్ కాఫీ, టీలో చాలామందికి ఇష్టం. ఒకదానికి బదులు మరొకటి గ్రాముకు గ్రాము వాడొచ్చు; తాటి బెల్లం కొంచెం తక్కువతో మొదలుపెట్టండి. రెండిటినీ గాలి చొరని డబ్బాలో ఉంచండి.",
+   "back": "Cane jaggery is sugarcane juice boiled and solidified, with a soft sweetness like syrup: this is the one for payasam, pongali, chimmili. Palm jaggery is palm neera boiled and solidified, dark in colour, intense in taste: many people like it in filter coffee and tea. One can be used instead of the other gram for gram; start with a little less palm jaggery. Keep both in an airtight box."
+  },
+  "seg.fca77b7e3a12": {
+   "src": "At a glance",
+   "t": "ఒక్క చూపులో",
+   "back": "At a glance"
+  },
+  "seg.75ef8f6ae8b2": {
+   "src": "Cane jaggery⟦#1⟧",
+   "t": "చెరుకు బెల్లం⟦#1⟧",
+   "back": "Cane jaggery⟦#1⟧"
+  },
+  "seg.7ab7eaedfd83": {
+   "src": "Palm jaggery⟦#1⟧",
+   "t": "తాటి బెల్లం⟦#1⟧",
+   "back": "Palm jaggery⟦#1⟧"
+  },
+  "seg.b2602a6c00ce": {
+   "src": "Made from",
+   "t": "దేనితో చేస్తారు",
+   "back": "What it is made from"
+  },
+  "seg.884cfe9bda03": {
+   "src": "Juice pressed out of sugarcane",
+   "t": "చెరుకు నుంచి పిండిన రసం",
+   "back": "Juice pressed from sugarcane"
+  },
+  "seg.b8fab46efd97": {
+   "src": "Sap of the palmyra palm (thati neera)",
+   "t": "తాటి చెట్టు నుంచి వచ్చే నీరా (తాటి నీరా)",
+   "back": "Neera that comes from the palm tree (palm neera)"
+  },
+  "seg.eae192773b7b": {
+   "src": "Made by",
+   "t": "ఎలా చేస్తారు",
+   "back": "How it is made"
+  },
+  "seg.31c1fb788209": {
+   "src": "Boiling the juice down until it sets",
+   "t": "రసాన్ని గట్టిపడే వరకు మరిగించి",
+   "back": "By boiling the juice until it solidifies"
+  },
+  "seg.4903e7667bf9": {
+   "src": "Boiling the sap down until it sets",
+   "t": "నీరాను గట్టిపడే వరకు మరిగించి",
+   "back": "By boiling the neera until it solidifies"
+  },
+  "seg.3192ec79bae5": {
+   "src": "FSSAI standard",
+   "t": "FSSAI ప్రమాణం",
+   "back": "FSSAI standard"
+  },
+  "seg.4dcd7b425d23": {
+   "src": "\"Cane jaggery or cane gur\": moisture up to 7%",
+   "t": "\"చెరుకు బెల్లం లేదా చెరుకు గుడ్\": తేమ 7% వరకు",
+   "back": "\"Cane jaggery or cane gur\": moisture up to 7%"
+  },
+  "seg.6d7569f44445": {
+   "src": "\"Gur or jaggery\" from palmyra, date or coconut palm: moisture up to 10%",
+   "t": "తాటి, ఖర్జూరం లేదా కొబ్బరి చెట్ల నుంచి చేసే \"గుడ్ లేదా బెల్లం\": తేమ 10% వరకు",
+   "back": "\"Gur or jaggery\" made from palm, date or coconut trees: moisture up to 10%"
+  },
+  "seg.f28563a477a9": {
+   "src": "Colour",
+   "t": "రంగు",
+   "back": "Colour"
+  },
+  "seg.994ac0b572f0": {
+   "src": "Golden to dark brown",
+   "t": "బంగారు రంగు నుంచి ముదురు గోధుమ రంగు వరకు",
+   "back": "From golden colour to dark brown colour"
+  },
+  "seg.522796dcb722": {
+   "src": "Dark brown",
+   "t": "ముదురు గోధుమ రంగు",
+   "back": "Dark brown colour"
+  },
+  "seg.6f0369f65412": {
+   "src": "Taste",
+   "t": "రుచి",
+   "back": "Taste"
+  },
+  "seg.7c6a1cfc0e92": {
+   "src": "Mellow, caramel sweetness",
+   "t": "మృదువైన, పాకం లాంటి తీపి",
+   "back": "Soft, syrup-like sweetness"
+  },
+  "seg.4bbda4137991": {
+   "src": "Deeper, slightly smoky sweetness",
+   "t": "గాఢమైన, కొంచెం పొగ రుచి ఉన్న తీపి",
+   "back": "Intense sweetness with a slightly smoky taste"
+  },
+  "seg.cc14b8c8d5b9": {
+   "src": "Good for",
+   "t": "వీటికి బాగుంటుంది",
+   "back": "Good for these"
+  },
+  "seg.82f772f29b90": {
+   "src": "Payasam, pongal, paramannam, chimmili, chikki, laddu",
+   "t": "పాయసం, పొంగలి, పరమాన్నం, చిమ్మిలి, చిక్కీ, లడ్డూ",
+   "back": "Payasam, pongali, paramannam, chimmili, chikki, laddu"
+  },
+  "seg.ab4fec6abc76": {
+   "src": "Filter coffee, tea, payasam, sunnundalu",
+   "t": "ఫిల్టర్ కాఫీ, టీ, పాయసం, సున్నుండలు",
+   "back": "Filter coffee, tea, payasam, sunnundalu"
+  },
+  "seg.5ea5fa3f36cc": {
+   "src": "Where they come from",
+   "t": "ఎక్కడి నుంచి వస్తాయి",
+   "back": "Where they come from"
+  },
+  "seg.db3bddd4a4fc": {
+   "src": "Cane jaggery is made wherever sugarcane grows: the juice is pressed out of the cane and boiled down in open pans. In Andhra Pradesh, Anakapalli has the second largest jaggery market in India.",
+   "t": "చెరుకు పండే ప్రతి చోటా చెరుకు బెల్లం చేస్తారు: చెరుకు నుంచి రసం పిండి, మూత లేని పెద్ద పెనాల్లో మరిగించి గట్టిపరుస్తారు. ఆంధ్రప్రదేశ్‌లోని అనకాపల్లిలో భారతదేశంలోనే రెండో అతిపెద్ద బెల్లం మార్కెట్ ఉంది.",
+   "back": "Cane jaggery is made in every place where sugarcane grows: juice is pressed from the sugarcane and boiled in big open pans without lids to solidify it. Anakapalli in Andhra Pradesh has the second-largest jaggery market in India."
+  },
+  "seg.31988f9e86fc": {
+   "src": "Palm jaggery is made from the sap of the palmyra palm, thati chettu in Telugu. The sap is called neera, or thati neera, and it is boiled down until it sets.",
+   "t": "తాటి బెల్లాన్ని తాటి చెట్టు నుంచి వచ్చే రసంతో చేస్తారు. ఈ రసాన్ని నీరా లేదా తాటి నీరా అంటారు; దాన్ని గట్టిపడే వరకు మరిగిస్తారు.",
+   "back": "Palm jaggery is made with the sap that comes from the palm tree. This sap is called neera or palm neera; it is boiled until it solidifies."
+  },
+  "seg.5a6c8ea97fdf": {
+   "src": "Which one to use",
+   "t": "ఏది వాడాలి",
+   "back": "Which to use"
+  },
+  "seg.7231a4f0bd69": {
+   "src": "Payasam, sweet pongal and ⟦1⟧bellam paramannam⟦/1⟧: cane jaggery.",
+   "t": "పాయసం, చక్కెర పొంగలి, ⟦1⟧బెల్లం పరమాన్నం⟦/1⟧: చెరుకు బెల్లం.",
+   "back": "Payasam, sweet pongali, ⟦1⟧jaggery paramannam⟦/1⟧: cane jaggery."
+  },
+  "seg.13039d2b8d91": {
+   "src": "⟦1⟧Chimmili⟦/1⟧, chikki and laddu: cane jaggery.",
+   "t": "⟦1⟧చిమ్మిలి⟦/1⟧, చిక్కీ, లడ్డూ: చెరుకు బెల్లం.",
+   "back": "⟦1⟧Chimmili⟦/1⟧, chikki, laddu: cane jaggery."
+  },
+  "seg.2b10b5036017": {
+   "src": "Filter coffee and tea: palm jaggery. Its deeper taste stands up to the decoction; try our ⟦1⟧palm jaggery coffee⟦/1⟧.",
+   "t": "ఫిల్టర్ కాఫీ, టీ: తాటి బెల్లం. దాని గాఢమైన రుచి డికాక్షన్‌కు తగ్గకుండా నిలుస్తుంది; మా ⟦1⟧తాటి బెల్లం కాఫీ⟦/1⟧ చేసి చూడండి.",
+   "back": "Filter coffee, tea: palm jaggery. Its intense taste holds up without being overpowered by the decoction; try making our ⟦1⟧palm jaggery coffee⟦/1⟧."
+  },
+  "seg.39f0609ee4de": {
+   "src": "⟦1⟧Pasupu paalu⟦/1⟧: either one, as you like it.",
+   "t": "⟦1⟧పసుపు పాలు⟦/1⟧: మీకు నచ్చినట్టు, ఏదైనా సరే.",
+   "back": "⟦1⟧Turmeric milk⟦/1⟧: as you like, either is fine."
+  },
+  "seg.35b1f8b220a2": {
+   "src": "Swapping one for the other",
+   "t": "ఒకదానికి బదులు మరొకటి",
+   "back": "One instead of the other"
+  },
+  "seg.46fffb385af6": {
+   "src": "Use the same weight. Palm jaggery tastes stronger, so start with a little less and add more to taste.",
+   "t": "అంతే బరువు వాడండి. తాటి బెల్లం రుచి ఎక్కువ, కాబట్టి కొంచెం తక్కువతో మొదలుపెట్టి, రుచికి తగ్గట్టు పెంచండి.",
+   "back": "Use the same weight. Palm jaggery's taste is stronger, so start with a little less and increase according to taste."
+  },
+  "seg.8a98e07b6f1e": {
+   "src": "In milk, coffee or tea, add either jaggery after the milk is off the boil, so the milk does not split.",
+   "t": "పాలు, కాఫీ, టీలో ఏ బెల్లమైనా పాలు మరగడం ఆగాకే వేయండి; అప్పుడు పాలు విరగవు.",
+   "back": "In milk, coffee and tea, add any jaggery only after the milk stops boiling; then the milk does not curdle."
+  },
+  "seg.42b698b8ebd7": {
+   "src": "Keeping it well",
+   "t": "బాగా నిల్వ ఉంచడం",
+   "back": "Storing well"
+  },
+  "seg.6788faade30c": {
+   "src": "Keep jaggery in an airtight jar in a cool, dry place.",
+   "t": "బెల్లాన్ని గాలి చొరని డబ్బాలో, చల్లని, తడి లేని చోట ఉంచండి.",
+   "back": "Keep jaggery in an airtight box, in a cool place without moisture."
+  },
+  "seg.5ea00ae441ac": {
+   "src": "Use a dry spoon or knife. Jaggery takes in moisture from the air and turns sticky.",
+   "t": "తడి లేని చెంచా లేదా కత్తి వాడండి. బెల్లం గాలిలోని తేమను పీల్చుకుని జిగటగా మారుతుంది.",
+   "back": "Use a dry spoon or knife. Jaggery absorbs moisture from the air and becomes sticky."
+  },
+  "seg.1d7ae0c59b87": {
+   "src": "If it sets hard, grate it.",
+   "t": "గట్టిపడితే తురుముకోండి.",
+   "back": "If it hardens, grate it."
+  },
+  "seg.8be6c65e90d5": {
+   "src": "Use it within the best-before date on the pack.",
+   "t": "ప్యాక్ మీద ఉన్న బెస్ట్-బిఫోర్ తేదీ లోపు వాడండి.",
+   "back": "Use within the best-before date on the pack."
+  },
+  "seg.cc5783126657": {
+   "src": "Is palm jaggery the same as karupatti?",
+   "t": "తాటి బెల్లం, కరుపట్టి ఒకటేనా?",
+   "back": "Are palm jaggery and karupatti the same?"
+  },
+  "seg.f7071649dddd": {
+   "src": "Yes. Karupatti is the Tamil name for jaggery made from palmyra sap. In Telugu it is thati bellam, and in Hindi taad ka gud.",
+   "t": "అవును. తాటి నీరాతో చేసే బెల్లానికి తమిళ పేరు కరుపట్టి. తెలుగులో తాటి బెల్లం, హిందీలో తాడ్ కా గుడ్.",
+   "back": "Yes. Karupatti is the Tamil name for jaggery made with palm neera. In Telugu thati bellam, in Hindi taad ka gud."
+  },
+  "seg.a591ce90fac8": {
+   "src": "Is gud the same as jaggery?",
+   "t": "గుడ్, బెల్లం ఒకటేనా?",
+   "back": "Are gud and jaggery (bellam) the same?"
+  },
+  "seg.9e04d6270c92": {
+   "src": "Yes. Gud, or gur, is the Hindi word for jaggery, and bellam is the Telugu one. On its own it usually means cane jaggery.",
+   "t": "అవును. గుడ్ లేదా గుర్ అనేది బెల్లానికి హిందీ పదం; తెలుగులో బెల్లం. విడిగా అంటే సాధారణంగా చెరుకు బెల్లమే.",
+   "back": "Yes. Gud or gur is the Hindi word for jaggery; in Telugu bellam. When said on its own it usually means cane jaggery."
+  },
+  "seg.e531a25812a8": {
+   "src": "Why has my jaggery gone sticky?",
+   "t": "నా బెల్లం ఎందుకు జిగటగా మారింది?",
+   "back": "Why did my jaggery become sticky?"
+  },
+  "seg.cc79285bfadd": {
+   "src": "It has taken in moisture from the air, which happens faster in humid weather. Move it to an airtight jar and use a dry spoon.",
+   "t": "గాలిలోని తేమను పీల్చుకుంది; తేమ ఎక్కువ ఉండే వాతావరణంలో ఇది ఇంకా త్వరగా జరుగుతుంది. గాలి చొరని డబ్బాలోకి మార్చి, తడి లేని చెంచా వాడండి.",
+   "back": "It absorbed moisture from the air; in a humid climate this happens even faster. Move it into an airtight box and use a dry spoon."
+  },
+  "seg.1bdcd09c5ca0": {
+   "src": "Can I use palm jaggery in payasam?",
+   "t": "పాయసంలో తాటి బెల్లం వాడొచ్చా?",
+   "back": "Can palm jaggery be used in payasam?"
+  },
+  "seg.8ba95d799ac9": {
+   "src": "Yes. It gives a darker colour and a deeper taste. Add it off the heat, as you would cane jaggery.",
+   "t": "వాడొచ్చు. రంగు ముదురుగా, రుచి గాఢంగా వస్తుంది. చెరుకు బెల్లం లాగానే, స్టవ్ మీంచి దించాక వేయండి.",
+   "back": "It can be used. The colour comes out dark and the taste intense. Just like cane jaggery, add it after taking off the stove."
+  },
+  "seg.a2f5a2b37771": {
+   "src": "Our jaggery",
+   "t": "మా బెల్లం",
+   "back": "Our jaggery"
+  },
+  "seg.0a3e09b58f4e": {
+   "src": "Two or more packs ship free, so you can try both.",
+   "t": "రెండు లేదా అంతకంటే ఎక్కువ ప్యాక్‌లకు డెలివరీ ఉచితం, కాబట్టి రెండూ ప్రయత్నించొచ్చు.",
+   "back": "Delivery is free for two or more packs, so you can try both."
+  },
+  "seg.43cbc6f0cd63": {
+   "src": "చెరుకు బెల్లం vs తాటి బెల్లం · Cane vs Palm Jaggery | 1acrefarms",
+   "t": "చెరుకు బెల్లం vs తాటి బెల్లం | 1acrefarms",
+   "back": "Cane jaggery vs palm jaggery | 1acrefarms"
+  },
+  "seg.cc8e1c430f7e": {
+   "src": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. Cane jaggery (cheruku bellam) vs palm jaggery (thati bellam): what each is made from, how they differ, which to use, and how to store them.",
+   "t": "చెరుకు బెల్లం, తాటి బెల్లం తేడా: ఒక్కోటి దేనితో చేస్తారు, రెండిటి మధ్య తేడా ఏమిటి, ఏది వాడాలి, ఎలా నిల్వ చేయాలి.",
+   "back": "Difference between cane jaggery and palm jaggery: what each one is made from, what the difference between the two is, which to use, how to store."
+  },
+  "seg.dcb8aea65da2": {
+   "src": "Cane jaggery or palm jaggery: which to use · 1acrefarms",
+   "t": "చెరుకు బెల్లమా, తాటి బెల్లమా: ఏది వాడాలి · 1acrefarms",
+   "back": "Cane jaggery or palm jaggery: which to use · 1acrefarms"
+  },
+  "seg.76d52912e55b": {
+   "src": "Know what you buy",
+   "t": "కొనే సరుకు గురించి తెలుసుకోండి",
+   "back": "Learn about the goods you buy"
+  },
+  "seg.0fba3c8b175a": {
+   "src": "Plain answers to what buyers ask us, with the sources behind them.",
+   "t": "కొనేవాళ్లు మమ్మల్ని అడిగే ప్రశ్నలకు సూటి జవాబులు, వాటి వెనుక ఉన్న ఆధారాలతో.",
+   "back": "Straight answers to the questions buyers ask us, with the evidence behind them."
+  },
+  "seg.6b4f74dc7f36": {
+   "src": "Guide · turmeric",
+   "t": "గైడ్ · పసుపు",
+   "back": "Guide · Turmeric"
+  },
+  "seg.d3855c7cad24": {
+   "src": "How to check turmeric powder at home",
+   "t": "ఇంట్లో పసుపు పొడిని ఎలా పరీక్షించాలి",
+   "back": "How to test turmeric powder at home"
+  },
+  "seg.b54cac8c5de3": {
+   "src": "The water check, two tests to skip, and when you need a lab.",
+   "t": "నీళ్ల పరీక్ష, వదిలేయాల్సిన రెండు పరీక్షలు, ల్యాబ్ ఎప్పుడు అవసరం.",
+   "back": "The water test, two tests to skip, when a lab is needed."
+  },
+  "seg.b0fb2e2755f6": {
+   "src": "Read the guide",
+   "t": "గైడ్ చదవండి",
+   "back": "Read the guide"
+  },
+  "seg.1401601b2e2c": {
+   "src": "What each is made from, how they taste, and which to use where. With a Telugu section.",
+   "t": "ఒక్కోటి దేనితో చేస్తారు, రుచి ఎలా ఉంటుంది, ఏది ఎక్కడ వాడాలి.",
+   "back": "What each one is made from, how it tastes, which to use where."
+  },
+  "seg.336c642e2ba5": {
+   "src": "Buyer Guides for Turmeric & Jaggery | 1acrefarms",
+   "t": "పసుపు, బెల్లం కొనేవాళ్ల కోసం గైడ్‌లు | 1acrefarms",
+   "back": "Guides for buyers of turmeric and jaggery | 1acrefarms"
+  },
+  "seg.abda31761e23": {
+   "src": "Plain answers to what buyers ask us, starting with how to check turmeric powder at home.",
+   "t": "కొనేవాళ్లు మమ్మల్ని అడిగే ప్రశ్నలకు సూటి జవాబులు, మొదటగా ఇంట్లో పసుపు పొడిని ఎలా పరీక్షించాలో.",
+   "back": "Straight answers to the questions buyers ask us, first, how to test turmeric powder at home."
+  },
+  "seg.a593b0b6671e": {
+   "src": "Guides · 1acrefarms",
+   "t": "గైడ్‌లు · 1acrefarms",
+   "back": "Guides · 1acrefarms"
+  },
+  "seg.4bddab09b9f2": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi",
+   "t": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi"
+  },
+  "seg.2b6b229e651e": {
+   "src": "FSSAI's standard says turmeric powder must be free from added colouring matter, including lead chromate, and from foreign starch. Its testing manual lists what inspectors check turmeric for: added dyes such as metanil yellow, lead salts, and chalk powder.",
+   "t": "FSSAI ప్రమాణం ప్రకారం పసుపు పొడిలో లెడ్ క్రోమేట్‌తో సహా ఎలాంటి కలిపిన రంగు పదార్థాలూ, వేరే పిండి పదార్థమూ ఉండకూడదు. దాని పరీక్షల మాన్యువల్‌లో ఇన్‌స్పెక్టర్లు పసుపులో వేటి కోసం చూస్తారో ఉంది: మెటానిల్ యెల్లో లాంటి కలిపిన రంగులు, సీసం లవణాలు, సుద్ద పొడి.",
+   "back": "According to the FSSAI standard, turmeric powder must not contain any added colouring substances including lead chromate, or any other starch. Its manual of tests has what inspectors look for in turmeric: added colours like metanil yellow, lead salts, chalk powder."
+  },
+  "seg.b27088069a9d": {
+   "src": "Some of this you can check in your kitchen, and some only a lab can find. This guide covers both, plus two popular tests that do not work for turmeric. Try them on any turmeric you buy, ours included.",
+   "t": "వీటిలో కొన్నిటిని మీ వంటింట్లోనే చూడొచ్చు, కొన్నిటిని ల్యాబ్ మాత్రమే కనిపెట్టగలదు. ఈ గైడ్ రెండిటి గురించీ చెబుతుంది, పసుపుకు పనిచేయని రెండు బాగా ప్రచారంలో ఉన్న పరీక్షల గురించి కూడా. మీరు కొనే ఏ పసుపు మీదైనా, మా పసుపుతో సహా, వీటిని ప్రయత్నించండి.",
+   "back": "Some of these you can check in your own kitchen, some only a lab can detect. This guide tells about both, and also about two widely publicised tests that do not work for turmeric. Try these on any turmeric you buy, including our turmeric."
+  },
+  "seg.b74ab3f9bb3e": {
+   "src": "Two glasses of water after the turmeric check. Left: pale yellow water with the powder settled at the bottom. Right: strong yellow water with yellow trails running down from the powder.",
+   "t": "పసుపు పరీక్ష తర్వాత రెండు నీళ్ల గ్లాసులు. ఎడమ: లేత పసుపు రంగు నీళ్లు, పొడి అడుగున చేరింది. కుడి: గాఢ పసుపు రంగు నీళ్లు, పొడి నుంచి పసుపు రంగు గీతలు కిందకు దిగుతున్నాయి.",
+   "back": "Two glasses of water after the turmeric test. Left: light yellow water, the powder has settled at the bottom. Right: deep yellow water, yellow-coloured streaks are coming down from the powder."
+  },
+  "seg.3405f90e5ba1": {
+   "src": "Pale yellow",
+   "t": "లేత పసుపు రంగు",
+   "back": "Light yellow colour"
+  },
+  "seg.dd331cdc7f23": {
+   "src": "Strong yellow",
+   "t": "గాఢ పసుపు రంగు",
+   "back": "Deep yellow colour"
+  },
+  "seg.c8b6eb5f9530": {
+   "src": "⟦1⟧The water check⟦/1⟧Left: the powder has settled and the water is pale yellow. Right: strong yellow trails ran from the powder as it sank, and the water turned deep yellow. That one is worth a lab test.",
+   "t": "⟦1⟧నీళ్ల పరీక్ష⟦/1⟧ఎడమ: పొడి అడుగున చేరింది, నీళ్లు లేత పసుపు రంగులో ఉన్నాయి. కుడి: పొడి మునిగేటప్పుడు దాని నుంచి గాఢ పసుపు రంగు గీతలు దిగాయి, నీళ్లు ముదురు పసుపు రంగుకు మారాయి. దానికి ల్యాబ్ పరీక్ష చేయించడం మంచిది.",
+   "back": "⟦1⟧Water test⟦/1⟧Left: the powder settled at the bottom, the water is light yellow. Right: as the powder sank, deep yellow streaks came down from it, and the water turned dark yellow. It is better to get a lab test done for that."
+  },
+  "seg.a7363cc3fa37": {
+   "src": "Sprinkle a teaspoon of turmeric on a glass of water and let it settle without stirring. Turmeric sinks and leaves the water pale yellow; water that turns strong yellow straight away points to added colour. This check cannot find lead chromate or chalk, so for a sure answer, use a food testing lab. Skip the iodine test: turmeric is starchy to begin with.",
+   "t": "ఒక గ్లాసు నీళ్ల మీద ఒక టీస్పూన్ పసుపు చల్లి, కలపకుండా అడుగుకు చేరనివ్వండి. పసుపు మునిగిపోయి నీళ్లు లేత పసుపు రంగులో ఉంటాయి; నీళ్లు వెంటనే గాఢ పసుపు రంగుకు మారితే, రంగు కలిపారని సూచన. ఈ పరీక్షతో లెడ్ క్రోమేట్, సుద్ద కనిపెట్టలేం, కాబట్టి ఖచ్చితమైన జవాబు కోసం ఆహార పరీక్షల ల్యాబ్‌ను సంప్రదించండి. అయోడిన్ పరీక్ష వదిలేయండి: పసుపులో మొదటి నుంచే పిండి పదార్థం ఉంటుంది.",
+   "back": "Sprinkle one teaspoon of turmeric on a glass of water, and let it settle to the bottom without stirring. The turmeric sinks and the water stays light yellow; if the water turns deep yellow immediately, it is a sign that colour was added. Lead chromate and chalk cannot be detected with this test, so for a definite answer contact a food testing lab. Skip the iodine test: turmeric has starch in it from the start."
+  },
+  "seg.9b20e15186d4": {
+   "src": "What FSSAI checks turmeric for",
+   "t": "పసుపులో FSSAI వేటి కోసం పరీక్షిస్తుంది",
+   "back": "What FSSAI tests for in turmeric"
+  },
+  "seg.dc193d26c683": {
+   "src": "Added dyes",
+   "t": "కలిపిన రంగులు",
+   "back": "Added colours"
+  },
+  "seg.34d6f989bfaf": {
+   "src": "Such as metanil yellow, which can make dull turmeric look brighter. FSSAI does not allow added colour in turmeric.",
+   "t": "మెటానిల్ యెల్లో లాంటివి; ఇవి వెలిసినట్టున్న పసుపును ఎక్కువ మెరిసేలా చూపిస్తాయి. పసుపులో రంగు కలపడానికి FSSAI అనుమతించదు.",
+   "back": "Like metanil yellow; these make faded-looking turmeric appear more bright. FSSAI does not allow adding colour to turmeric."
+  },
+  "seg.042cabe54b01": {
+   "src": "Lead chromate and other lead salts",
+   "t": "లెడ్ క్రోమేట్, ఇతర సీసం లవణాలు",
+   "back": "Lead chromate, other lead salts"
+  },
+  "seg.8310b11eab8b": {
+   "src": "Lead chromate is a yellow pigment used in paint. Stanford-led studies published in 2019 and 2024 found it in turmeric from parts of South Asia. FSSAI does not allow it in turmeric at all.",
+   "t": "లెడ్ క్రోమేట్ అనేది పెయింట్‌లో వాడే పసుపు రంగు పిగ్మెంట్. 2019, 2024 లో ప్రచురించిన స్టాన్‌ఫర్డ్ నేతృత్వంలోని అధ్యయనాలు దక్షిణాసియాలోని కొన్ని ప్రాంతాల పసుపులో దీన్ని కనుగొన్నాయి. పసుపులో దీన్ని FSSAI ఏమాత్రం అనుమతించదు.",
+   "back": "Lead chromate is a yellow pigment used in paint. Stanford-led studies published in 2019 and 2024 found it in turmeric from some regions of South Asia. FSSAI does not allow it in turmeric at all."
+  },
+  "seg.40d3e387ba41": {
+   "src": "Chalk powder",
+   "t": "సుద్ద పొడి",
+   "back": "Chalk powder"
+  },
+  "seg.4278e7c5416c": {
+   "src": "A cheap white powder that adds weight.",
+   "t": "బరువు పెంచే చౌకైన తెల్లని పొడి.",
+   "back": "A cheap white powder that increases weight."
+  },
+  "seg.733184d9c53a": {
+   "src": "Foreign starch",
+   "t": "వేరే పిండి పదార్థం",
+   "back": "Other starch"
+  },
+  "seg.5a8b446bbce0": {
+   "src": "Flour or starch from other crops. FSSAI's standard rules it out too.",
+   "t": "ఇతర పంటల పిండి లేదా స్టార్చ్. FSSAI ప్రమాణం దీన్ని కూడా అనుమతించదు.",
+   "back": "Flour or starch from other crops. The FSSAI standard does not allow this either."
+  },
+  "seg.8604a8e3ea49": {
+   "src": "Check 1: the water glass",
+   "t": "పరీక్ష 1: నీళ్ల గ్లాసు",
+   "back": "Test 1: glass of water"
+  },
+  "seg.1b1af7f63ffd": {
+   "src": "Fill a clear glass with water at room temperature.",
+   "t": "లోపల కనిపించే గాజు గ్లాసులో గది ఉష్ణోగ్రత నీళ్లు నింపండి.",
+   "back": "Fill a glass tumbler you can see inside with room-temperature water."
+  },
+  "seg.653731f2ed6f": {
+   "src": "Sprinkle one level teaspoon of turmeric powder on top. Do not stir.",
+   "t": "పైన ఒక టీస్పూన్ పసుపు పొడి, అంచుకు సమానంగా తీసి, చల్లండి. కలపకండి.",
+   "back": "Sprinkle one teaspoon of turmeric powder, levelled to the rim, on top. Do not stir."
+  },
+  "seg.ea5b43cf8436": {
+   "src": "Watch the first minute as the powder sinks. Look for coloured trails running down from it.",
+   "t": "పొడి మునిగేటప్పుడు మొదటి నిమిషం గమనించండి. దాని నుంచి కిందకు దిగే రంగు గీతలు ఉన్నాయేమో చూడండి.",
+   "back": "Watch for the first minute as the powder sinks. See whether there are colour streaks coming down from it."
+  },
+  "seg.e37698aaa3fb": {
+   "src": "Leave it for 15 to 20 minutes. Then hold the glass against a white wall or a sheet of paper and look at the water above the settled powder.",
+   "t": "15 నుంచి 20 నిమిషాలు అలాగే వదిలేయండి. తర్వాత గ్లాసును తెల్లని గోడ లేదా ఒక కాగితం ముందు పట్టి, అడుగున చేరిన పొడి పైన ఉన్న నీళ్లను చూడండి.",
+   "back": "Leave it as it is for 15 to 20 minutes. Then hold the glass in front of a white wall or a sheet of paper, and look at the water above the powder settled at the bottom."
+  },
+  "seg.e8937cebf136": {
+   "src": "Pale yellow water, powder at the bottom",
+   "t": "లేత పసుపు రంగు నీళ్లు, పొడి అడుగున",
+   "back": "Light yellow water, powder at the bottom"
+  },
+  "seg.7253b4d90896": {
+   "src": "No sign of added dye.",
+   "t": "రంగు కలిపిన జాడ లేదు.",
+   "back": "No trace of added colour."
+  },
+  "seg.256ce5cf303d": {
+   "src": "Strong yellow trails, or deep yellow water within minutes",
+   "t": "గాఢ పసుపు రంగు గీతలు, లేదా నిమిషాల్లోనే ముదురు పసుపు రంగు నీళ్లు",
+   "back": "Deep yellow streaks, or dark yellow water within minutes"
+  },
+  "seg.ce06c8148072": {
+   "src": "Possible added colour. Stop using that batch and get it tested.",
+   "t": "రంగు కలిపి ఉండొచ్చు. ఆ బ్యాచ్ వాడటం ఆపి, పరీక్ష చేయించండి.",
+   "back": "Colour may have been added. Stop using that batch, and get it tested."
+  },
+  "seg.53d9c5db264d": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Turmeric's own yellow, curcumin, hardly dissolves in water, so the powder sinks and only tints the water. Dyes such as metanil yellow dissolve easily and colour the water fast.",
+   "t": "⟦1⟧ఇది ఎందుకు పనిచేస్తుంది.⟦/1⟧ పసుపుకు సొంతమైన పసుపు రంగు, కర్క్యుమిన్, నీళ్లలో దాదాపు కరగదు; అందుకే పొడి మునిగిపోయి నీళ్లకు కొంచెం రంగు మాత్రమే ఇస్తుంది. మెటానిల్ యెల్లో లాంటి రంగులు సులువుగా కరిగి, నీళ్లకు వేగంగా రంగు ఇస్తాయి.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Turmeric's own yellow colour, curcumin, barely dissolves in water; that is why the powder sinks and gives only a little colour to the water. Colours like metanil yellow dissolve easily and colour the water quickly."
+  },
+  "seg.af4442c6e910": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Lead chromate and chalk do not dissolve in water either, so turmeric mixed with them can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧ఇది ఏం కనిపెట్టలేదు.⟦/1⟧ లెడ్ క్రోమేట్, సుద్ద కూడా నీళ్లలో కరగవు; కాబట్టి అవి కలిపిన పసుపు ఈ పరీక్షలో సరిగ్గానే కనిపించొచ్చు. అవి లేవని ల్యాబ్ పరీక్ష మాత్రమే చెప్పగలదు.",
+   "back": "⟦1⟧What this does not detect.⟦/1⟧ Lead chromate and chalk also do not dissolve in water; so turmeric mixed with them may look fine in this test. Only a lab test can tell that they are absent."
+  },
+  "seg.a8b61850b87d": {
+   "src": "Very fine powder can keep the water cloudy for a while. Cloudy is fine; a clear, strong yellow is what to look for.",
+   "t": "చాలా మెత్తని పొడి వల్ల నీళ్లు కొంతసేపు మబ్బుగా ఉండొచ్చు. మబ్బుగా ఉంటే పర్వాలేదు; చూడాల్సింది తేటగా, గాఢ పసుపు రంగులో ఉన్న నీళ్లు.",
+   "back": "Because of very fine powder the water may be cloudy for some time. Cloudy is fine; what to look for is clear, deep yellow water."
+  },
+  "seg.c3455d1f4c96": {
+   "src": "Check 2: if you buy whole turmeric",
+   "t": "పరీక్ష 2: మీరు పసుపు కొమ్ములు కొంటే",
+   "back": "Test 2: if you buy turmeric fingers"
+  },
+  "seg.3d4e366bb488": {
+   "src": "Snap a finger of dried turmeric in half. Turmeric is yellow-orange right through, so the inside should look much like the outside. A bright yellow skin over a pale or dull core can mean colour was added to the surface. Ask the seller about it, or get it tested.",
+   "t": "ఎండిన పసుపు కొమ్మును రెండుగా విరవండి. పసుపు లోపలి వరకూ పసుపు-నారింజ రంగులోనే ఉంటుంది, కాబట్టి లోపలి భాగం బయటి భాగం లాగానే కనిపించాలి. బయటి తొక్క బాగా మెరిసే పసుపు రంగులో ఉండి, లోపల లేతగా లేదా వెలిసినట్టు ఉంటే, పైన రంగు పూశారని అర్థం కావచ్చు. దాని గురించి అమ్మినవాళ్లను అడగండి, లేదా పరీక్ష చేయించండి.",
+   "back": "Break a dried turmeric finger in two. Turmeric is yellow-orange all the way to the inside, so the inside part should look like the outside part. If the outer skin is a very bright yellow and the inside is pale or faded, it may mean colour was coated on top. Ask the seller about it, or get it tested."
+  },
+  "seg.c62fa16e1d5f": {
+   "src": "Two tests to skip",
+   "t": "వదిలేయాల్సిన రెండు పరీక్షలు",
+   "back": "Two tests to skip"
+  },
+  "seg.895069c9d53f": {
+   "src": "The iodine test",
+   "t": "అయోడిన్ పరీక్ష",
+   "back": "Iodine test"
+  },
+  "seg.4c4dc95561d2": {
+   "src": "Iodine turns blue-black when it meets starch, and it is often suggested for spotting flour in turmeric. But turmeric is starchy itself, so it turns blue-black either way. That is why FSSAI's own manual uses the iodine test for powdered spices other than turmeric.",
+   "t": "అయోడిన్ పిండి పదార్థాన్ని తాకితే నీలం-నలుపు రంగుకు మారుతుంది; పసుపులో పిండి కలిపారేమో చూడటానికి దీన్ని తరచూ సూచిస్తారు. కానీ పసుపులోనే పిండి పదార్థం ఉంటుంది, కాబట్టి ఎలాగైనా నీలం-నలుపుకే మారుతుంది. అందుకే FSSAI సొంత మాన్యువల్ అయోడిన్ పరీక్షను పసుపుకు కాకుండా ఇతర మసాలా పొడులకు వాడుతుంది.",
+   "back": "Iodine turns blue-black when it touches starch; this is often suggested to check whether starch has been mixed into turmeric. But turmeric itself contains starch, so it turns blue-black anyway. That is why FSSAI's own manual uses the iodine test for other spice powders, not for turmeric."
+  },
+  "seg.5cf8718764fb": {
+   "src": "Acid tests at home",
+   "t": "ఇంట్లో ఆమ్ల పరీక్షలు",
+   "back": "Acid tests at home"
+  },
+  "seg.fc16ff8016e3": {
+   "src": "FSSAI's tests for lead, metanil yellow and chalk in turmeric use concentrated hydrochloric or sulphuric acid. These acids burn skin and eyes. They belong in a lab, not a kitchen.",
+   "t": "పసుపులో సీసం, మెటానిల్ యెల్లో, సుద్ద కోసం FSSAI చేసే పరీక్షల్లో గాఢమైన హైడ్రోక్లోరిక్ లేదా సల్ఫ్యూరిక్ ఆమ్లం వాడతారు. ఈ ఆమ్లాలు చర్మాన్ని, కళ్లను కాల్చేస్తాయి. ఇవి ల్యాబ్‌లో ఉండాల్సినవి, వంటింట్లో కాదు.",
+   "back": "In the tests FSSAI does for lead, metanil yellow and chalk in turmeric, concentrated hydrochloric or sulphuric acid is used. These acids burn skin and eyes. These belong in a lab, not in the kitchen."
+  },
+  "seg.1dd87aa7bdc7": {
+   "src": "For a sure answer: a food testing lab",
+   "t": "ఖచ్చితమైన జవాబు కోసం: ఆహార పరీక్షల ల్యాబ్",
+   "back": "For a definite answer: food testing lab"
+  },
+  "seg.1883beca4d73": {
+   "src": "A NABL-accredited food testing lab can test turmeric for lead and for added colours. Ask the lab how much sample it needs, keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack. FSSAI publishes a list of notified food testing labs on its website.",
+   "t": "NABL గుర్తింపు ఉన్న ఆహార పరీక్షల ల్యాబ్ పసుపులో సీసం, కలిపిన రంగుల కోసం పరీక్షించగలదు. ఎంత శాంపిల్ కావాలో ల్యాబ్‌ను అడగండి, పొడిని సీలు ఉన్న ప్యాక్‌లోనే గానీ శుభ్రమైన, సీలు చేసిన సంచిలో గానీ ఉంచండి, ప్యాక్ మీద ముద్రించిన బ్యాచ్ నంబర్ రాసుకోండి. FSSAI తన వెబ్‌సైట్‌లో నోటిఫై చేసిన ఆహార పరీక్షల ల్యాబ్‌ల జాబితా ప్రచురిస్తుంది.",
+   "back": "A food testing lab with NABL accreditation can test turmeric for lead and added colours. Ask the lab how much sample is needed, keep the powder in its sealed pack or in a clean, sealed bag, and note down the batch number printed on the pack. FSSAI publishes a list of notified food testing labs on its website."
+  },
+  "seg.456379c75c24": {
+   "src": "Read the pack before you buy",
+   "t": "కొనే ముందు ప్యాక్ చదవండి",
+   "back": "Read the pack before you buy"
+  },
+  "seg.ff7951e2f36b": {
+   "src": "An FSSAI licence or registration number. You can look it up on FSSAI's FoSCoS website.",
+   "t": "FSSAI లైసెన్స్ లేదా రిజిస్ట్రేషన్ నంబర్. దాన్ని FSSAI FoSCoS వెబ్‌సైట్‌లో చూసుకోవచ్చు.",
+   "back": "FSSAI licence or registration number. You can check it on the FSSAI FoSCoS website."
+  },
+  "seg.476e4849c1d8": {
+   "src": "The name and address of whoever made or packed it.",
+   "t": "తయారు చేసినవాళ్ల లేదా ప్యాక్ చేసినవాళ్ల పేరు, చిరునామా.",
+   "back": "Name and address of the maker or packer."
+  },
+  "seg.beee8eda6466": {
+   "src": "Net quantity, MRP, a batch or lot number, and a best-before date.",
+   "t": "నికర పరిమాణం, MRP, బ్యాచ్ లేదా లాట్ నంబర్, బెస్ట్-బిఫోర్ తేదీ.",
+   "back": "Net quantity, MRP, batch or lot number, best-before date."
+  },
+  "seg.f9270fd96202": {
+   "src": "Where it was grown. Turmeric from different regions differs in colour, so a named region helps you compare like with like.",
+   "t": "ఎక్కడ పండించారు. వేర్వేరు ప్రాంతాల పసుపు రంగులో తేడా ఉంటుంది, కాబట్టి ప్రాంతం పేరు ఉంటే ఒకేలాంటి వాటిని పోల్చుకోవడానికి సాయపడుతుంది.",
+   "back": "Where it was grown. Turmeric from different regions differs in colour, so having the region name helps compare like with like."
+  },
+  "seg.f11314eef092": {
+   "src": "Keep it well",
+   "t": "బాగా నిల్వ ఉంచడం",
+   "back": "Storing well"
+  },
+  "seg.7cdc58c0c7e8": {
+   "src": "Keep the pack zipped shut, or move the powder to a dry, airtight jar.",
+   "t": "ప్యాక్ జిప్ మూసి ఉంచండి, లేదా పొడిని తడి లేని, గాలి చొరని డబ్బాలోకి మార్చండి.",
+   "back": "Keep the pack zipped shut, or move the powder into a dry, airtight box."
+  },
+  "seg.bb4d61f86b55": {
+   "src": "Use a dry spoon. A damp spoon is what makes turmeric lumpy.",
+   "t": "తడి లేని చెంచా వాడండి. తడి చెంచా వల్లే పసుపు ముద్దలు కడుతుంది.",
+   "back": "Use a dry spoon. It is because of a wet spoon that turmeric forms lumps."
+  },
+  "seg.a92c022ff52e": {
+   "src": "Keep it out of direct sunlight, which fades the colour.",
+   "t": "నేరుగా ఎండ తగలకుండా ఉంచండి; ఎండకు రంగు వెలిసిపోతుంది.",
+   "back": "Keep it out of direct sunlight; in sunlight the colour fades."
+  },
+  "seg.6911ce63edde": {
+   "src": "Is very bright yellow turmeric a bad sign?",
+   "t": "బాగా మెరిసే పసుపు రంగులో ఉన్న పసుపు చెడ్డ సంకేతమా?",
+   "back": "Is very bright yellow turmeric a bad sign?"
+  },
+  "seg.a0ce62cee740": {
+   "src": "Not by itself. Colour changes with the variety, where it was grown and how it was dried and ground, so turmerics differ a lot. What matters is colour that leaves the powder too easily, as in the water check.",
+   "t": "దానంతట అది కాదు. రకం, పండిన ప్రాంతం, ఎండబెట్టి పొడి చేసిన విధానం బట్టి రంగు మారుతుంది, కాబట్టి పసుపుల మధ్య చాలా తేడా ఉంటుంది. చూడాల్సింది, నీళ్ల పరీక్షలో లాగా, రంగు పొడి నుంచి మరీ సులువుగా వదులుతుందా అని.",
+   "back": "Not by itself. Colour changes depending on the variety, the region where it grew, and the way it was dried and powdered, so there is a lot of difference between turmerics. What to look at is whether, as in the water test, the colour leaves the powder too easily."
+  },
+  "seg.e8cc5edbb092": {
+   "src": "Can the water check show that turmeric has no lead?",
+   "t": "పసుపులో సీసం లేదని నీళ్ల పరీక్ష చూపించగలదా?",
+   "back": "Can the water test show that turmeric has no lead?"
+  },
+  "seg.37eb38df9ce8": {
+   "src": "No. Lead chromate does not dissolve in water, so the water check cannot see it. Only a lab test can.",
+   "t": "లేదు. లెడ్ క్రోమేట్ నీళ్లలో కరగదు, కాబట్టి నీళ్ల పరీక్షలో అది కనిపించదు. ల్యాబ్ పరీక్ష మాత్రమే చూపించగలదు.",
+   "back": "No. Lead chromate does not dissolve in water, so it does not show up in the water test. Only a lab test can show it."
+  },
+  "seg.4c0bb3e9657c": {
+   "src": "Why does turmeric go lumpy?",
+   "t": "పసుపు ఎందుకు ముద్దలు కడుతుంది?",
+   "back": "Why does turmeric form lumps?"
+  },
+  "seg.2b76cd3e665b": {
+   "src": "Moisture. A wet spoon or an open pack lets the powder take in water. Break the lumps with a dry spoon and keep the pack sealed.",
+   "t": "తేమ వల్ల. తడి చెంచా గానీ తెరిచి ఉంచిన ప్యాక్ గానీ పొడి తేమను పీల్చుకునేలా చేస్తుంది. తడి లేని చెంచాతో ముద్దలు చిదిమి, ప్యాక్ మూసి ఉంచండి.",
+   "back": "Because of moisture. A wet spoon or a pack left open makes the powder absorb moisture. Crush the lumps with a dry spoon, and keep the pack closed."
+  },
+  "seg.87fe2929801d": {
+   "src": "What should I do if a check looks wrong?",
+   "t": "పరీక్షలో ఏదైనా తేడాగా కనిపిస్తే ఏం చేయాలి?",
+   "back": "What to do if something looks different in the test?"
+  },
+  "seg.e83aba6cc6df": {
+   "src": "Stop using that batch, keep the pack, and contact the seller with the batch number. You can also report it to FSSAI through its Food Safety Connect app. If it is ours, WhatsApp us a photo of the pack and the glass.",
+   "t": "ఆ బ్యాచ్ వాడటం ఆపి, ప్యాక్ దాచి ఉంచి, బ్యాచ్ నంబర్‌తో అమ్మినవాళ్లను సంప్రదించండి. FSSAI కి Food Safety Connect యాప్ ద్వారా కూడా ఫిర్యాదు చేయొచ్చు. అది మా పసుపు అయితే, ప్యాక్, గ్లాసు ఫొటో మాకు WhatsApp చేయండి.",
+   "back": "Stop using that batch, keep the pack aside, and contact the seller with the batch number. You can also complain to FSSAI through the Food Safety Connect app. If it is our turmeric, WhatsApp us a photo of the pack and the glass."
+  },
+  "seg.ba0682e12278": {
+   "src": "Our turmeric",
+   "t": "మా పసుపు",
+   "back": "Our turmeric"
+  },
+  "seg.1dd4194330b1": {
+   "src": "Try these checks on ours too. If anything looks off, ⟦1⟧WhatsApp us⟦/1⟧ a photo with the batch number from the pack.",
+   "t": "ఈ పరీక్షలు మా పసుపు మీద కూడా చేసి చూడండి. ఏదైనా తేడాగా అనిపిస్తే, ప్యాక్ మీద ఉన్న బ్యాచ్ నంబర్‌తో ఒక ఫొటో ⟦1⟧మాకు WhatsApp చేయండి⟦/1⟧.",
+   "back": "Try these tests on our turmeric too. If anything seems different, ⟦1⟧WhatsApp us⟦/1⟧ a photo with the batch number on the pack."
+  },
+  "seg.f803aad7e26d": {
+   "src": "Turmeric Adulteration Test at Home (Haldi, Pasupu) | 1acrefarms",
+   "t": "ఇంట్లో పసుపు కల్తీ పరీక్ష (హల్దీ, పసుపు) | 1acrefarms",
+   "back": "Turmeric adulteration test at home (haldi, pasupu) | 1acrefarms"
+  },
+  "seg.7d95509f17be": {
+   "src": "How to check turmeric powder (haldi, pasupu) at home: the water check, what it misses, why the iodine test does not work on turmeric, and when you need a lab.",
+   "t": "ఇంట్లో పసుపు పొడిని (హల్దీ) ఎలా పరీక్షించాలి: నీళ్ల పరీక్ష, అది ఏం కనిపెట్టలేదు, అయోడిన్ పరీక్ష పసుపుకు ఎందుకు పనిచేయదు, ల్యాబ్ ఎప్పుడు అవసరం.",
+   "back": "How to test turmeric powder (haldi) at home: the water test, what it does not detect, why the iodine test does not work for turmeric, when a lab is needed."
+  },
+  "seg.d0950d598f8d": {
+   "src": "How to check turmeric powder at home · 1acrefarms",
+   "t": "ఇంట్లో పసుపు పొడిని ఎలా పరీక్షించాలి · 1acrefarms",
+   "back": "How to test turmeric powder at home · 1acrefarms"
   }
  }
 }

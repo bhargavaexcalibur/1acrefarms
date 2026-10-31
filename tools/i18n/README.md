@@ -34,3 +34,22 @@
 
 Check your file with `python3 tools/build_i18n.py status` from the repo root: it lists any line whose
 numbers, brand name or words break the rules ("no back-translation" is expected until the back step).
+
+## Recipes and guides (`seg.*` keys)
+
+These pieces come from the recipe and guide pages (see `tools/i18n_pages.py`). Same rules as above, plus:
+
+8. **Markers.** `⟦1⟧…⟦/1⟧` wrap words that keep a link or bold style: keep both markers, around the
+   words that mean the same in your sentence (word order may change). `⟦#1⟧` stands for something
+   kept as it is (a Telugu or Hindi name, a picture): keep it, once. Every marker in the English must
+   appear exactly once in the translation, and add none.
+9. **Recipes.** Keep every quantity's digits and fractions as written (½, ¾, 1–2, 10–15). Cooking
+   words (cup, tbsp, tsp, ghee, decoction, tumbler, davara) may use the everyday word in your
+   language. Dish names: write them in your script and add your language's own name in brackets
+   only if one is in common use.
+10. **Guides.** Translate exactly, without making anything sound more alarming or more reassuring
+    than the English: never add words meaning safe, unsafe, harmful, dangerous, toxic, poison, fake,
+    genuine, real, guaranteed, certified or lab-tested. Keep FSSAI, NABL, FoSCoS, DART and "Food
+    Safety Connect" in Latin letters.
+11. Names in the text such as "Sona Masoori", "Nagula Chavithi" and "Anakapalli" are names: write
+    them in your script.

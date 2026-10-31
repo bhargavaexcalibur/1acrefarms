@@ -26,6 +26,12 @@ Run from the repo root:
   python3 tools/build_pages.py            # whole site, these pages included
   python3 tools/build_i18n.py export      # refresh tools/i18n/source_en.json for translators
   python3 tools/build_i18n.py status      # what is translated, stale or pending, per language
+  python3 tools/build_i18n.py todo <code> <out.json>     # what a language still needs, for a translator
+  python3 tools/build_i18n.py merge <code> <in.json>     # {key: translation} into tools/i18n/<code>.json
+  python3 tools/build_i18n.py blind <code> <out.json> [--new]   # translations without English, for the back-check
+  python3 tools/build_i18n.py merge-back <code> <in.json>
+
+Recipes and guides (and their hubs) are translated whole, piece by piece: see tools/i18n_pages.py.
 """
 import html
 import json
@@ -37,6 +43,7 @@ sys.dont_write_bytecode = True  # no tools/__pycache__ left in the repo
 import build_pages as bp  # noqa: E402
 import build_recipes as br  # noqa: E402
 import build_guides as bg  # noqa: E402
+import i18n_pages as ip  # noqa: E402
 
 ROOT = bp.ROOT
 SITE = bp.SITE
@@ -141,7 +148,23 @@ def source():
             out[f"{k}.{f}"] = (plain(p[f]), PACK_FIELDS[f])
         for i, u in enumerate(p["uses"]):
             out[f"{k}.use{i}"] = (plain(u), "one 'how to use' line")
+    for base, f in content_files():
+        for key, row in ip.sources(f.read_text(encoding="utf-8"), base).items():
+            out.setdefault(key, row)
     return out
+
+
+def content_files():
+    """[(English path, file)] of the recipe and guide pages, hubs first."""
+    out = []
+    for d in ("recipes", "learn"):
+        for f in sorted((ROOT / d).rglob("index.html")):
+            out.append((url_of(f), f))
+    return out
+
+
+def content_keys(f):
+    return list(ip.sources(f.read_text(encoding="utf-8"), "").keys())
 
 
 def export():
@@ -168,6 +191,8 @@ def problem(key, src, row):
         return "brand name changed"
     if "<" in t or ">" in t:
         return "markup in translation"
+    if sorted(ip.MARK.findall(src)) != sorted(ip.MARK.findall(t)) or t.count("⟦") != len(ip.MARK.findall(t)):
+        return "markers changed"
     for rx in (br.CLAIMS, bg.RISKY):
         hit = rx.search(t)
         if hit:
@@ -175,8 +200,9 @@ def problem(key, src, row):
     if not back.strip():
         return "no back-translation"
     for rx in (br.CLAIMS, bg.RISKY):
-        hit = rx.search(back)
-        if hit:
+        for hit in rx.finditer(back):
+            if hit.group(0).lower() == "cold" and re.search(r"\b(cool|chill|cold|temperature)", src, re.I):
+                continue  # "cool evening", "chilled": temperature, not the illness
             return f"claim word in back-translation {hit.group(0)!r}"
     return None
 
@@ -214,6 +240,7 @@ HOME_UI = [k for k in UI if k not in OPTIONAL]
 def plan(live):
     """{code: {"ui": {...}, "packs": [p, ...]}} for every language with a usable home page."""
     src = source()
+    content = [(base, content_keys(f)) for base, f in content_files()]
     out, pending = {}, {}
     for code in LANG:
         ok, bad = usable(code, src)
@@ -222,9 +249,16 @@ def plan(live):
             continue
         packs = [p for p in live if all(k in ok for k in pack_keys(p))]
         miss = [p["code"] for p in live if p not in packs]
+        pages = [base for base, keys in content if all(k in ok for k in keys)]
+        miss_pages = [base for base, _ in content if base not in pages]
+        why = []
         if miss:
-            pending[code] = [f"packs not translated: {', '.join(miss)}"]
-        out[code] = {"t": ok, "packs": packs}
+            why.append(f"packs not translated: {', '.join(miss)}")
+        if miss_pages:
+            why.append(f"{len(miss_pages)} recipe/guide pages not translated")
+        if why:
+            pending[code] = why
+        out[code] = {"t": ok, "packs": packs, "pages": pages}
     return out, pending
 
 
@@ -487,7 +521,7 @@ def pack_page(code, t, p, packs, facts):
 """
 
 
-def home_page(code, t, packs):
+def home_page(code, t, packs, pages=()):
     url = f"/{code}/"
     ld = json.dumps({"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": SITE + url + "#page", "name": t["ui.l_title"], "url": SITE + url,
@@ -515,7 +549,7 @@ def home_page(code, t, packs):
       <div class="pdp-other-grid">
 {cards}
       </div>
-    </section>
+    </section>{more_links(code, t, pages)}
     {translated_note(t, code)}
   </main>
 
@@ -523,6 +557,53 @@ def home_page(code, t, packs):
 </body>
 </html>
 """
+
+
+def clean(page):
+    """An English page as its builder wrote it: no language menu, hreflang links or banner."""
+    page = re.sub(r"\n  <!-- I18N:HEAD -->.*?<!-- /I18N:HEAD -->", "", page, flags=re.S)
+    page = re.sub(r"<!-- I18N:BANNER -->.*?<!-- /I18N:BANNER -->\n", "", page, flags=re.S)
+    return re.sub(r"<!--LANG-->.*?<!--/LANG-->", "<!--LANG-->", page, flags=re.S)
+
+
+SITE_PATH = re.compile(r'(?<=")(%s)?(/(?:[a-z0-9-]+/)*)(?=["#])' % re.escape(SITE))
+
+
+def localize(page, code, local):
+    """Point links at this language's version of a page wherever one exists (local: English paths)."""
+    def fix(m):
+        site, path = m.group(1) or "", m.group(2)
+        if path == "/" and page[m.end():m.end() + 1] == "#":
+            return m.group(0)  # /#story etc. are sections of the English home
+        return f"{site}/{code}{path}" if path in local else m.group(0)
+    return SITE_PATH.sub(fix, page)
+
+
+def content_page(code, t, base, english):
+    """A recipe or guide page (or their hub) in this language, from the English page."""
+    L = LANG[code]
+    page = ip.translate(clean(english), lambda s: t[ip.key_of(s)], lambda s: x(code, s))
+    page = page.replace('<html lang="en-IN">', f'<html lang="{code}" dir="{L["dir"]}">', 1)
+    page = page.replace('\n  <meta property="og:locale" content="en_IN" />', "", 1)
+    page = page.replace('"inLanguage": "en-IN"', f'"inLanguage": "{code}"')
+    page = page.replace('<link rel="stylesheet" href="/styles.css" />',
+                        f'<link href="https://fonts.googleapis.com/css2?family={L["font"][1]}&display=swap" rel="stylesheet" />\n'
+                        f'  <link rel="stylesheet" href="/styles.css" />\n'
+                        f'  <style>html[lang="{code}"] body {{ font-family: "Inter", "{L["font"][0]}", system-ui, sans-serif; }}</style>', 1)
+    if page.count(bp.HEADER) != 1:
+        sys.exit(f"header not found in {base}")
+    page = page.replace(bp.HEADER, header(t, code))
+    page = page.replace('<body class="pdp-page rcp-page', '<body class="pdp-page i18n-page rcp-page', 1)
+    return page.replace("  </main>", f"    {translated_note(t, code)}\n  </main>", 1)
+
+
+def more_links(code, t, pages):
+    """Recipes and guides links for a language home, labelled with their hub headings."""
+    links = []
+    for base, en in (("/recipes/", "Recipes with turmeric and jaggery"), ("/learn/", "Guides")):
+        if base in pages and ip.key_of(en) in t:
+            links.append(f'<a class="btn btn-wa" href="/{code}{base}">{x(code, t[ip.key_of(en)])}</a>')
+    return f'\n    <section class="i18n-more">{"".join(links)}</section>' if links else ""
 
 
 # ---------- build ----------
@@ -550,6 +631,7 @@ def sitemap_rows(live):
     for code, d in langs.items():
         rows.append((f"{SITE}/{code}/", "weekly", "0.6"))
         rows += [(f"{SITE}/{code}/{p['slug']}/", "weekly", "0.7") for p in d["packs"]]
+        rows += [(f"{SITE}/{code}{base}", "monthly", "0.6") for base in d["pages"]]
     return rows
 
 
@@ -561,17 +643,23 @@ def build(live):
     versions = {"/": {c: f"/{c}/" for c in langs}}
     for p in live:
         versions[f"/{p['slug']}/"] = {c: f"/{c}/{p['slug']}/" for c, d in langs.items() if p in d["packs"]}
+    english = {base: f.read_text(encoding="utf-8") for base, f in content_files()}
+    for base in english:
+        versions[base] = {c: f"/{c}{base}" for c, d in langs.items() if base in d["pages"]}
     # write the language pages
     written = 0
     for code, d in langs.items():
         t, packs = d["t"], d["packs"]
-        pages = {f"/{code}/": home_page(code, t, packs)}
+        local = {"/"} | {f"/{p['slug']}/" for p in packs} | set(d["pages"])
+        pages = {f"/{code}/": home_page(code, t, packs, d["pages"])}
         for p in packs:
             pages[f"/{code}/{p['slug']}/"] = pack_page(code, t, p, packs, facts)
+        for base in d["pages"]:
+            pages[f"/{code}{base}"] = content_page(code, t, base, english[base])
         for url, body in pages.items():
             base = "/" if url == f"/{code}/" else url[len(code) + 1:]
             alts = alternates(base, versions.get(base, {}))
-            body = inject(body, code, alts, cta)
+            body = inject(localize(body, code, local), code, alts, cta)
             out = ROOT / url.strip("/") / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(body, encoding="utf-8")
@@ -581,7 +669,8 @@ def build(live):
         d = ROOT / code
         if not d.is_dir():
             continue
-        keep = {f"/{code}/"} | {f"/{code}/{p['slug']}/" for p in langs.get(code, {}).get("packs", [])}
+        keep = {f"/{code}/"} | {f"/{code}/{p['slug']}/" for p in langs.get(code, {}).get("packs", [])} | \
+            {f"/{code}{base}" for base in langs.get(code, {}).get("pages", [])}
         for f in d.rglob("index.html"):
             if url_of(f) not in keep:
                 f.unlink()
@@ -613,10 +702,37 @@ def status():
     _ = live
 
 
-def blind(code, out):
+def todo(code, out):
+    """Write {key: {en, note}} of everything this language still needs (missing or stale)."""
+    src = source()
+    _, bad = usable(code, src)
+    data = {k: {"en": src[k][0], "note": src[k][1]} for k, why in bad.items() if why in ("missing", "stale")}
+    Path(out).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{code}: {len(data)} strings to translate -> {out}")
+
+
+def merge(code, path):
+    """Merge {key: translation} into tools/i18n/<code>.json, with src from today's English."""
+    src = source()
+    f = I18N / f"{code}.json"
+    doc = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {"_lang": code, "strings": {}}
+    n = 0
+    for k, t in json.loads(Path(path).read_text(encoding="utf-8")).items():
+        if k in src and isinstance(t, str) and t.strip():
+            old = doc["strings"].get(k, {})
+            row = {"src": src[k][0], "t": t.strip()}
+            if old.get("t") == row["t"] and old.get("src") == row["src"] and old.get("back"):
+                row["back"] = old["back"]
+            doc["strings"][k] = row
+            n += 1
+    f.write_text(json.dumps(doc, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"{code}: merged {n} translations")
+
+
+def blind(code, out, only_new=False):
     """Write only the translations (no English) for a blind back-translation."""
     rows = load(code)
-    data = {k: r["t"] for k, r in rows.items() if r.get("t")}
+    data = {k: r["t"] for k, r in rows.items() if r.get("t") and not (only_new and r.get("back"))}
     Path(out).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"wrote {len(data)} lines to {out}")
 
@@ -640,7 +756,11 @@ def main():
     if cmd == "export":
         export()
     elif cmd == "blind":
-        blind(sys.argv[2], sys.argv[3])
+        blind(sys.argv[2], sys.argv[3], "--new" in sys.argv)
+    elif cmd == "todo":
+        todo(sys.argv[2], sys.argv[3])
+    elif cmd == "merge":
+        merge(sys.argv[2], sys.argv[3])
     elif cmd == "merge-back":
         merge_back(sys.argv[2], sys.argv[3])
     elif cmd == "status":

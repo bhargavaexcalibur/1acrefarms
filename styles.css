@@ -636,3 +636,5 @@ html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
   .lang-menu summary { padding: 6px 10px; }
   .lang-menu ul { position: fixed; left: 16px; right: 16px; top: 66px; width: auto; }
 }
+.i18n-more { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 28px; }
+.i18n-more .btn { flex: 1 1 220px; }

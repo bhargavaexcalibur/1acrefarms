@@ -475,6 +475,1946 @@
    "src": "Keep the zip shut after use.",
    "t": "ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ.",
    "back": "After use, keep the zip closed."
+  },
+  "ui.amazon": {
+   "src": "Buy on Amazon",
+   "t": "Amazon-ൽ വാങ്ങൂ",
+   "back": "Buy on Amazon"
+  },
+  "seg.70f8bb9a8a53": {
+   "src": "Home",
+   "t": "ഹോം",
+   "back": "Home"
+  },
+  "seg.9fb1092f32d4": {
+   "src": "Recipes",
+   "t": "പാചകക്കുറിപ്പുകൾ",
+   "back": "Recipes"
+  },
+  "seg.41725cbdbc4e": {
+   "src": "Chimmili for Nagula Chavithi",
+   "t": "നാഗുല ചവിതിക്ക് ചിമ്മിലി",
+   "back": "Chimmili for Nagula Chavithi"
+  },
+  "seg.0713d9ec51cd": {
+   "src": "Nagula Chavithi recipe · makes about 12",
+   "t": "നാഗുല ചവിതി പാചകക്കുറിപ്പ് · ഏകദേശം 12 എണ്ണം",
+   "back": "Nagula Chavithi recipe · about 12 pieces"
+  },
+  "seg.6a61d0d1cb9e": {
+   "src": "Chimmili for Nagula Chavithi ⟦1⟧(Sesame Jaggery Balls)⟦/1⟧",
+   "t": "നാഗുല ചവിതിക്ക് ചിമ്മിലി ⟦1⟧(എള്ള് ശർക്കര ഉണ്ട)⟦/1⟧",
+   "back": "Chimmili for Nagula Chavithi ⟦1⟧(sesame jaggery ball)⟦/1⟧"
+  },
+  "seg.4d125771ff54": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · Til-Gud Ke Laddoo",
+   "t": "⟦#1⟧ · ⟦#2⟧ · നുവ്വുല ചിമ്മിലി · തിൽ-ഗുഡ് കേ ലഡ്ഡു",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · Til-gud ke laddu"
+  },
+  "seg.4fea7db714b7": {
+   "src": "Chimmili is a small Telugu sweet of roasted sesame and jaggery, ground coarsely and rolled into balls. It is one of the offerings made on Nagula Chavithi in Karthika masam, along with chalimidi and the milk poured at the snake anthill (putta). Sesame and jaggery sweets like it are made again at Sankranti.",
+   "t": "ചിമ്മിലി ഒരു ചെറിയ തെലുങ്ക് മധുരപലഹാരമാണ്: വറുത്ത എള്ളും ശർക്കരയും തരുതരുപ്പായി പൊടിച്ച് ഉരുളകളാക്കുന്നത്. കാർത്തിക മാസത്തിലെ നാഗുല ചവിതിക്ക് സമർപ്പിക്കുന്നവയിൽ ഒന്നാണിത്; ഒപ്പം ചലിമിടിയും, പാമ്പിൻ പുറ്റിൽ (പുട്ട) ഒഴിക്കുന്ന പാലും. ഇതുപോലുള്ള എള്ള്-ശർക്കര മധുരങ്ങൾ സംക്രാന്തിക്കും വീണ്ടും ഉണ്ടാക്കാറുണ്ട്.",
+   "back": "Chimmili is a small Telugu sweet: roasted sesame and jaggery ground coarsely and made into balls. It is one of the things offered for Nagula Chavithi in the month of Karthika; along with chalimidi, and the milk poured into the snake mound (putta). Sesame-jaggery sweets like this are also made again for Sankranti."
+  },
+  "seg.6e104d560e56": {
+   "src": "Roasted sesame gives it a nutty, toasty taste, and cane jaggery a caramel sweetness. The texture is soft and a little crumbly, and each ball is gone in two bites. This recipe makes about 12.",
+   "t": "വറുത്ത എള്ള് ഇതിന് നട്ട് പോലുള്ള, വറുത്തെടുത്ത രുചി നൽകുന്നു; കരിമ്പ് ശർക്കര കാരമൽ പോലുള്ള മധുരവും. മൃദുവും അല്പം പൊടിയുന്നതുമാണ്; ഓരോ ഉരുളയും രണ്ട് കടിയിൽ തീരും. ഈ പാചകക്കുറിപ്പിൽ ഏകദേശം 12 എണ്ണം കിട്ടും.",
+   "back": "Roasted sesame gives this a taste like roasted cashew nuts; sugarcane jaggery a caramel-like sweetness. It is soft and a little crumbly; each ball is finished in two bites. This recipe gives about 12 pieces."
+  },
+  "seg.3243a5b994ae": {
+   "src": "⟦1⟧Prep⟦/1⟧15 min",
+   "t": "⟦1⟧തയ്യാറാക്കൽ⟦/1⟧15 മിനിറ്റ്",
+   "back": "⟦1⟧Preparation⟦/1⟧15 minutes"
+  },
+  "seg.a0707ef3d64c": {
+   "src": "⟦1⟧Cook⟦/1⟧10 min",
+   "t": "⟦1⟧പാചകം⟦/1⟧10 മിനിറ്റ്",
+   "back": "⟦1⟧Cooking⟦/1⟧10 minutes"
+  },
+  "seg.b62f27d282c5": {
+   "src": "⟦1⟧Total⟦/1⟧30 min",
+   "t": "⟦1⟧ആകെ⟦/1⟧30 മിനിറ്റ്",
+   "back": "⟦1⟧Total⟦/1⟧30 minutes"
+  },
+  "seg.4e8f24be7265": {
+   "src": "⟦1⟧Makes⟦/1⟧About 12",
+   "t": "⟦1⟧അളവ്⟦/1⟧ഏകദേശം 12",
+   "back": "⟦1⟧Quantity⟦/1⟧about 12"
+  },
+  "seg.9e72f273d4f2": {
+   "src": "Total includes 5 minutes for the roasted sesame to cool.",
+   "t": "വറുത്ത എള്ള് തണുക്കാനുള്ള 5 മിനിറ്റും ആകെ സമയത്തിൽ ഉൾപ്പെടുന്നു.",
+   "back": "The 5 minutes for the roasted sesame to cool is also included in the total time."
+  },
+  "seg.df9373d040ca": {
+   "src": "⟦1⟧The recipe card⟦/1⟧Save it or send it to family. ⟦2⟧Open full size⟦/2⟧",
+   "t": "⟦1⟧പാചകക്കുറിപ്പ് കാർഡ്⟦/1⟧സേവ് ചെയ്യൂ, അല്ലെങ്കിൽ വീട്ടുകാർക്ക് അയയ്ക്കൂ. ⟦2⟧പൂർണ്ണ വലുപ്പത്തിൽ തുറക്കൂ⟦/2⟧",
+   "back": "⟦1⟧Recipe card⟦/1⟧Save it, or send it to the family. ⟦2⟧Open in full size⟦/2⟧"
+  },
+  "seg.7b0a223418a3": {
+   "src": "In short",
+   "t": "ചുരുക്കത്തിൽ",
+   "back": "In brief"
+  },
+  "seg.2097a0e593c6": {
+   "src": "Make chimmili at home: roast sesame till it crackles, grind coarsely, pulse with grated cane jaggery and cardamom, shape into balls.",
+   "t": "വീട്ടിൽ ചിമ്മിലി ഉണ്ടാക്കാം: എള്ള് പൊട്ടുന്നതുവരെ വറുക്കുക, തരുതരുപ്പായി പൊടിക്കുക, ചുരണ്ടിയ കരിമ്പ് ശർക്കരയും ഏലക്കയും ചേർത്ത് മിക്സിയിൽ ഒന്ന് കറക്കുക, ഉരുളകളാക്കുക.",
+   "back": "You can make chimmili at home: roast the sesame until it pops, grind coarsely, add grated sugarcane jaggery and cardamom and give one spin in the mixie, make into balls."
+  },
+  "seg.6947f1f0816d": {
+   "src": "Ingredients ⟦1⟧makes about 12⟦/1⟧",
+   "t": "ചേരുവകൾ ⟦1⟧ഏകദേശം 12 എണ്ണത്തിന്⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for about 12 pieces⟦/1⟧"
+  },
+  "seg.80b66a3db542": {
+   "src": "1 cup white sesame seeds ⟦1⟧about 150 g⟦/1⟧",
+   "t": "1 കപ്പ് വെള്ള എള്ള് ⟦1⟧ഏകദേശം 150 g⟦/1⟧",
+   "back": "1 cup white sesame ⟦1⟧about 150 g⟦/1⟧"
+  },
+  "seg.ac56800c5ad4": {
+   "src": "¾ cup grated cane jaggery ⟦1⟧lightly packed; soft jaggery binds best⟦/1⟧",
+   "t": "¾ കപ്പ് ചുരണ്ടിയ കരിമ്പ് ശർക്കര ⟦1⟧ചെറുതായി അമർത്തി അളന്നത്; മൃദുവായ ശർക്കരയാണ് നന്നായി ഒട്ടിപ്പിടിക്കുക⟦/1⟧",
+   "back": "¾ cup grated sugarcane jaggery ⟦1⟧measured lightly pressed; it is soft jaggery that sticks together well⟦/1⟧"
+  },
+  "seg.4c5b602f21f3": {
+   "src": "¼ tsp cardamom powder",
+   "t": "¼ ടീസ്പൂൺ ഏലക്കപ്പൊടി",
+   "back": "¼ teaspoon cardamom powder"
+  },
+  "seg.39c46fb56757": {
+   "src": "1 tsp ghee, for greasing your palms",
+   "t": "1 ടീസ്പൂൺ നെയ്യ്, ഉള്ളംകൈയിൽ പുരട്ടാൻ",
+   "back": "1 teaspoon ghee, to smear on the palms"
+  },
+  "seg.132ce498b42c": {
+   "src": "Made with",
+   "t": "ഇതുകൊണ്ട് ഉണ്ടാക്കിയത്",
+   "back": "Made with this"
+  },
+  "seg.be6d7e2d558e": {
+   "src": "Cane Jaggery",
+   "t": "കരിമ്പ് ശർക്കര",
+   "back": "Sugarcane jaggery"
+  },
+  "seg.059427bf3bd5": {
+   "src": "⟦#1⟧ · Cheruku Bellam",
+   "t": "⟦#1⟧ · ചെറുകു ബെല്ലം",
+   "back": "⟦#1⟧ · Cheruku bellam"
+  },
+  "seg.b468afe021cf": {
+   "src": "MRP ₹234 · 540 g",
+   "t": "MRP ₹234 · 540 g",
+   "back": "MRP ₹234 · 540 g"
+  },
+  "seg.5ff7431ccbb1": {
+   "src": "Buy on Amazon",
+   "t": "Amazon-ൽ വാങ്ങൂ",
+   "back": "Buy on Amazon"
+  },
+  "seg.cc83dde48fe2": {
+   "src": "See the pack",
+   "t": "പാക്കറ്റ് കാണൂ",
+   "back": "See the packet"
+  },
+  "seg.649ff9af556d": {
+   "src": "Add to order",
+   "t": "ഓർഡറിൽ ചേർക്കൂ",
+   "back": "Add to order"
+  },
+  "seg.88306943fea7": {
+   "src": "Method",
+   "t": "ഉണ്ടാക്കുന്ന വിധം",
+   "back": "Method of making"
+  },
+  "seg.ed775cba4fcf": {
+   "src": "Grate the jaggery and measure out the sesame before you start; once the sesame is roasted, the rest moves quickly.",
+   "t": "തുടങ്ങുന്നതിനുമുമ്പ് ശർക്കര ചുരണ്ടി, എള്ള് അളന്ന് വയ്ക്കൂ; എള്ള് വറുത്തുകഴിഞ്ഞാൽ ബാക്കി പണി വേഗം തീരും.",
+   "back": "Before starting, grate the jaggery and keep the sesame measured; once the sesame is roasted the remaining work finishes fast."
+  },
+  "seg.cfb9d281b47f": {
+   "src": "Heat a heavy kadai or pan on low heat for a minute. Add the sesame; no oil or ghee is needed.",
+   "t": "കട്ടിയുള്ള ചീനച്ചട്ടിയോ പാനോ ചെറുതീയിൽ ഒരു മിനിറ്റ് ചൂടാക്കൂ. എള്ള് ഇടൂ; എണ്ണയോ നെയ്യോ വേണ്ട.",
+   "back": "Heat a thick cheenachatti (kadai) or pan on low flame for one minute. Put in the sesame; no oil or ghee needed."
+  },
+  "seg.89a51ce5355c": {
+   "src": "Dry-roast the sesame on a low flame till it crackles and turns light golden. Stir all the time; the seeds start to pop and smell nutty after 4–6 minutes. Do not let them turn brown.",
+   "t": "എള്ള് ചെറുതീയിൽ, പൊട്ടി ഇളം സ്വർണ്ണനിറമാകുന്നതുവരെ എണ്ണയില്ലാതെ വറുക്കൂ. ഇടവിടാതെ ഇളക്കണം; 4–6 മിനിറ്റിൽ എള്ള് പൊട്ടാൻ തുടങ്ങും, വറുത്ത അണ്ടിപ്പരിപ്പിന്റെ മണം വരും. ബ്രൗൺ നിറമാകാൻ വിടരുത്.",
+   "back": "Roast the sesame on low flame, without oil, until it pops and turns light golden. Must stir without break; in 4–6 minutes the sesame will start to pop, and the smell of roasted cashew nuts will come. Do not let it turn brown."
+  },
+  "seg.999792547560": {
+   "src": "Tip the sesame onto a wide plate straight away so it stops browning. Cool it for about 5 minutes, until it is just warm to the touch.",
+   "t": "കൂടുതൽ നിറം മാറാതിരിക്കാൻ എള്ള് ഉടനെ ഒരു വീതിയുള്ള പ്ലേറ്റിലേക്ക് മാറ്റൂ. തൊട്ടാൽ ചെറുചൂട് മാത്രം തോന്നുന്നതുവരെ, ഏകദേശം 5 മിനിറ്റ് തണുക്കാൻ വയ്ക്കൂ.",
+   "back": "So that the colour does not change more, move the sesame immediately to a wide plate. Leave it to cool about 5 minutes, until only slight warmth is felt when touched."
+  },
+  "seg.77b614ea2f92": {
+   "src": "Grind the sesame coarsely in short pulses. Use the small jar of the mixer and pulse 3–4 times, a second or two at a time; stop while you can still see broken seeds.",
+   "t": "എള്ള് ചെറിയ കറക്കലുകളായി തരുതരുപ്പായി പൊടിക്കൂ. മിക്സിയുടെ ചെറിയ ജാറിൽ, ഓരോ തവണയും ഒന്നോ രണ്ടോ സെക്കൻഡ് വീതം 3–4 തവണ കറക്കൂ; പൊട്ടിയ എള്ള് കാണാവുന്ന സമയത്തുതന്നെ നിർത്തൂ.",
+   "back": "Grind the sesame coarsely in small spins. In the mixie's small jar, spin 3–4 times at one or two seconds each time; stop right when broken sesame can be seen."
+  },
+  "seg.175aeced5810": {
+   "src": "Add the jaggery and cardamom; pulse till it comes together. This takes 4–6 more short pulses; scrape down the sides once. A pinch pressed between your fingers should hold its shape.",
+   "t": "ശർക്കരയും ഏലക്കയും ചേർത്ത്, മിശ്രിതം ഒന്നിച്ചുചേരുന്നതുവരെ കറക്കൂ. ഇതിന് 4–6 ചെറിയ കറക്കലുകൾ കൂടി വേണം; ഒരിക്കൽ വശങ്ങൾ വടിച്ചിറക്കൂ. ഒരു നുള്ള് വിരലുകൾക്കിടയിൽ അമർത്തിയാൽ ആകൃതി നിൽക്കണം.",
+   "back": "Add jaggery and cardamom and spin until the mixture comes together. This needs 4–6 more small spins; scrape down the sides once. If a pinch is pressed between the fingers, the shape should hold."
+  },
+  "seg.6f94cb46b9ab": {
+   "src": "If the mixture is too dry to hold, add 1–2 tsp more grated jaggery and pulse once or twice again.",
+   "t": "മിശ്രിതം ഉരുളയാകാത്തവിധം ഉണങ്ങിയതാണെങ്കിൽ, 1–2 ടീസ്പൂൺ ചുരണ്ടിയ ശർക്കര കൂടി ചേർത്ത് ഒന്നുരണ്ട് തവണ വീണ്ടും കറക്കൂ.",
+   "back": "If the mixture is so dry that it does not form balls, add 1–2 more teaspoons grated jaggery and spin once or twice again."
+  },
+  "seg.226f137c9449": {
+   "src": "Tip the mixture into a bowl and grease your palms lightly with ghee.",
+   "t": "മിശ്രിതം ഒരു പാത്രത്തിലേക്ക് മാറ്റി, ഉള്ളംകൈയിൽ അല്പം നെയ്യ് പുരട്ടൂ.",
+   "back": "Move the mixture into a bowl, and smear a little ghee on the palms."
+  },
+  "seg.ff3eb71729c2": {
+   "src": "Shape into small balls. Take a heaped tablespoon at a time, press it firmly in your fist, then roll it smooth. Work quickly while the mixture is still warm, as it turns crumbly when it cools.",
+   "t": "ചെറിയ ഉരുളകളാക്കൂ. ഓരോ തവണയും ഒരു കൂമ്പാര ടേബിൾസ്പൂൺ എടുത്ത്, മുഷ്ടിയിൽ മുറുക്കി അമർത്തി, പിന്നെ മിനുസമായി ഉരുട്ടൂ. തണുത്താൽ മിശ്രിതം പൊടിഞ്ഞുപോകും; അതിനാൽ ചൂടുള്ളപ്പോൾ തന്നെ വേഗം ചെയ്യൂ.",
+   "back": "Make small balls. Each time take a heaped tablespoon, press tightly in the fist, then roll smooth. When cooled the mixture will crumble; so do it fast while still warm."
+  },
+  "seg.ee9e027268aa": {
+   "src": "Leave the balls on a plate until they cool completely, about 15 minutes, then store them in an airtight jar.",
+   "t": "ഉരുളകൾ ഒരു പ്ലേറ്റിൽ വച്ച്, പൂർണ്ണമായി തണുക്കുന്നതുവരെ, ഏകദേശം 15 മിനിറ്റ് വിടൂ; പിന്നെ വായു കടക്കാത്ത ഭരണിയിൽ സൂക്ഷിക്കൂ.",
+   "back": "Place the balls on a plate and leave about 15 minutes, until fully cooled; then store in an airtight jar (bharani)."
+  },
+  "seg.4cf1b54b003a": {
+   "src": "Tips",
+   "t": "ടിപ്പുകൾ",
+   "back": "Tips"
+  },
+  "seg.7fe633314020": {
+   "src": "Roast on a low flame and keep stirring; sesame goes from golden to burnt quickly, and burnt sesame tastes bitter.",
+   "t": "ചെറുതീയിൽ വറുത്ത്, ഇളക്കിക്കൊണ്ടേയിരിക്കൂ; എള്ള് സ്വർണ്ണനിറത്തിൽ നിന്ന് പെട്ടെന്ന് കരിയും, കരിഞ്ഞ എള്ളിന് കയ്പ്പാണ്.",
+   "back": "Roast on low flame and keep stirring; sesame burns quickly from golden, and burnt sesame is bitter."
+  },
+  "seg.d50b37351252": {
+   "src": "Grind in short pulses only; long runs turn sesame into an oily paste.",
+   "t": "ചെറിയ കറക്കലുകളായി മാത്രം പൊടിക്കൂ; കൂടുതൽ നേരം കറക്കിയാൽ എള്ള് എണ്ണമയമുള്ള കുഴമ്പാകും.",
+   "back": "Grind only in small spins; if spun for longer the sesame becomes an oily paste."
+  },
+  "seg.75f5428655c4": {
+   "src": "Shape while the mixture is warm. If it turns crumbly, pulse it once more with a teaspoon of grated jaggery.",
+   "t": "മിശ്രിതം ചൂടുള്ളപ്പോൾ തന്നെ ഉരുളകളാക്കൂ. പൊടിഞ്ഞുപോകുന്നുണ്ടെങ്കിൽ, ഒരു ടീസ്പൂൺ ചുരണ്ടിയ ശർക്കര ചേർത്ത് ഒരിക്കൽ കൂടി കറക്കൂ.",
+   "back": "Make the balls while the mixture is still warm. If it is crumbling, add a teaspoon of grated jaggery and spin once more."
+  },
+  "seg.1d42a24453d2": {
+   "src": "Soft jaggery binds best. If yours is hard, grate it finely so it blends in evenly.",
+   "t": "മൃദുവായ ശർക്കരയാണ് നന്നായി ഒട്ടിപ്പിടിക്കുക. നിങ്ങളുടേത് കട്ടിയാണെങ്കിൽ, ഒരുപോലെ ചേരാൻ നേർമ്മയായി ചുരണ്ടൂ.",
+   "back": "It is soft jaggery that sticks together well. If yours is hard, grate it finely so it mixes evenly."
+  },
+  "seg.4fba657a2566": {
+   "src": "Variations",
+   "t": "വകഭേദങ്ങൾ",
+   "back": "Variations"
+  },
+  "seg.5a7ed16f4810": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker chimmili with a smoky sweetness.",
+   "t": "പനംചക്കര: അതേ അളവിൽ ചുരണ്ടിയ പനംചക്കര ചേർത്താൽ, ഇരുണ്ട നിറവും പുകമണമുള്ള മധുരവുമുള്ള ചിമ്മിലി കിട്ടും.",
+   "back": "Palm jaggery (panamchakkara): if the same amount of grated palm jaggery is added, you get chimmili with a dark colour and smoky-aroma sweetness."
+  },
+  "seg.569a63f3cd17": {
+   "src": "Black sesame (nalla nuvvulu): roast and grind it the same way for darker, stronger-tasting balls.",
+   "t": "കറുത്ത എള്ള് (നല്ല നുവ്വുലു): ഇതും അതേ രീതിയിൽ വറുത്ത് പൊടിച്ചാൽ, ഇരുണ്ട നിറവും കടുപ്പമുള്ള രുചിയുമുള്ള ഉരുളകൾ കിട്ടും.",
+   "back": "Black sesame (nalla nuvvulu): if this too is roasted and ground the same way, you get balls with dark colour and strong taste."
+  },
+  "seg.da0d1a9b6378": {
+   "src": "Peanut or coconut: pulse in 2 tbsp roasted peanuts or grated dry coconut with the jaggery.",
+   "t": "നിലക്കടലയോ തേങ്ങയോ: ശർക്കരയ്ക്കൊപ്പം 2 ടേബിൾസ്പൂൺ വറുത്ത നിലക്കടലയോ ചുരണ്ടിയ കൊപ്രയോ ചേർത്ത് കറക്കൂ.",
+   "back": "Groundnut or coconut: spin 2 tablespoons of roasted groundnut or grated copra along with the jaggery."
+  },
+  "seg.32d41fc0994e": {
+   "src": "Without a mixer: pound the warm sesame and jaggery together in a stone mortar (rolu) until the mixture holds, then shape.",
+   "t": "മിക്സി ഇല്ലെങ്കിൽ: ചൂടുള്ള എള്ളും ശർക്കരയും കല്ലുരലിൽ (രോലു) മിശ്രിതം ഒട്ടിപ്പിടിക്കുന്നതുവരെ ഇടിച്ച്, പിന്നെ ഉരുളകളാക്കൂ.",
+   "back": "If there is no mixie: pound the warm sesame and jaggery in a stone mortar (rolu) until the mixture sticks together, then make into balls."
+  },
+  "seg.2270cfaf8d00": {
+   "src": "Serving",
+   "t": "വിളമ്പുന്ന വിധം",
+   "back": "How to serve"
+  },
+  "seg.2fa9aaef4425": {
+   "src": "On Nagula Chavithi morning, offer chimmili with milk at the snake anthill (putta) or in your puja, then share them as prasadam. They also go well with evening tea.",
+   "t": "നാഗുല ചവിതി രാവിലെ, ചിമ്മിലി പാലിനൊപ്പം പാമ്പിൻ പുറ്റിലോ (പുട്ട) നിങ്ങളുടെ പൂജയിലോ സമർപ്പിച്ച്, പിന്നെ പ്രസാദമായി പങ്കിടൂ. വൈകുന്നേരത്തെ ചായയ്ക്കൊപ്പവും നന്നായിരിക്കും.",
+   "back": "On Nagula Chavithi morning, offer the chimmili with milk at the snake mound (putta) or in your puja, then share as prasadam. Also good with evening tea."
+  },
+  "seg.9e092dda4f0e": {
+   "src": "Storage",
+   "t": "സൂക്ഷിക്കുന്ന വിധം",
+   "back": "How to store"
+  },
+  "seg.bd50831bbb3f": {
+   "src": "Keeps a week in an airtight jar. Store the jar at room temperature, in a dry place.",
+   "t": "വായു കടക്കാത്ത ഭരണിയിൽ ഒരാഴ്ച ഇരിക്കും. ഭരണി സാധാരണ മുറിയിലെ ചൂടിൽ, ഈർപ്പമില്ലാത്ത സ്ഥലത്ത് വയ്ക്കൂ.",
+   "back": "Keeps one week in an airtight jar. Keep the jar at normal room temperature, in a place without moisture."
+  },
+  "seg.9a1fc1731f62": {
+   "src": "Questions",
+   "t": "ചോദ്യങ്ങൾ",
+   "back": "Questions"
+  },
+  "seg.4023b0de08bd": {
+   "src": "Why is my chimmili not holding together?",
+   "t": "എന്റെ ചിമ്മിലി എന്തുകൊണ്ടാണ് ഉരുളയാകാത്തത്?",
+   "back": "Why does my chimmili not form into balls?"
+  },
+  "seg.7fed90d1ebe0": {
+   "src": "The sesame may be under-ground, or the mixture may have cooled. Pulse it once more with 1–2 tsp extra grated jaggery and shape it while it is still warm.",
+   "t": "എള്ള് വേണ്ടത്ര പൊടിഞ്ഞിട്ടുണ്ടാവില്ല, അല്ലെങ്കിൽ മിശ്രിതം തണുത്തുപോയിട്ടുണ്ടാകും. 1–2 ടീസ്പൂൺ ചുരണ്ടിയ ശർക്കര കൂടി ചേർത്ത് ഒരിക്കൽ കൂടി കറക്കി, ചൂടുള്ളപ്പോൾ തന്നെ ഉരുളകളാക്കൂ.",
+   "back": "The sesame may not have been ground enough, or the mixture may have cooled. Add 1–2 more teaspoons grated jaggery, spin once more, and make balls while still warm."
+  },
+  "seg.694d2b416f39": {
+   "src": "Why does my chimmili taste bitter?",
+   "t": "എന്റെ ചിമ്മിലിക്ക് എന്തുകൊണ്ടാണ് കയ്പ്പ്?",
+   "back": "Why is my chimmili bitter?"
+  },
+  "seg.d0ee77d0957e": {
+   "src": "The sesame was roasted too dark. Roast it on a low flame only until it crackles and turns light golden, then tip it onto a plate at once so it stops browning.",
+   "t": "എള്ള് അധികം വറുത്തുപോയി. ചെറുതീയിൽ, പൊട്ടി ഇളം സ്വർണ്ണനിറമാകുന്നതുവരെ മാത്രം വറുത്ത്, കൂടുതൽ നിറം മാറാതിരിക്കാൻ ഉടനെ പ്ലേറ്റിലേക്ക് മാറ്റൂ.",
+   "back": "The sesame got over-roasted. On low flame, roast only until it pops and turns light golden, and immediately move to a plate so the colour does not change more."
+  },
+  "seg.30d31a37acfa": {
+   "src": "Can I use palm jaggery instead of cane jaggery?",
+   "t": "കരിമ്പ് ശർക്കരയ്ക്ക് പകരം പനംചക്കര ഉപയോഗിക്കാമോ?",
+   "back": "Can palm jaggery be used instead of sugarcane jaggery?"
+  },
+  "seg.77afe99f558c": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The chimmili will be darker, with a deeper, slightly smoky sweetness.",
+   "t": "അതെ. അതേ അളവിൽ ചുരണ്ടിയ പനംചക്കര (താട്ടി ബെല്ലം) ഉപയോഗിക്കൂ. ചിമ്മിലിക്ക് ഇരുണ്ട നിറവും, ആഴമുള്ള, ചെറിയ പുകമണമുള്ള മധുരവും ഉണ്ടാകും.",
+   "back": "Yes. Use the same amount of grated palm jaggery (thati bellam). The chimmili will have a dark colour and a deep, slightly smoky-aroma sweetness."
+  },
+  "seg.88f8629f6043": {
+   "src": "When is Nagula Chavithi in 2026?",
+   "t": "2026-ൽ നാഗുല ചവിതി എന്നാണ്?",
+   "back": "When is Nagula Chavithi in 2026?"
+  },
+  "seg.bae4fc214e74": {
+   "src": "Nagula Chavithi falls on Friday, 13 November 2026, in Karthika masam, a few days after Deepavali. Chimmili, chalimidi and milk are among the offerings made at the snake anthill (putta) that morning.",
+   "t": "നാഗുല ചവിതി 13 നവംബർ 2026, വെള്ളിയാഴ്ചയാണ്; കാർത്തിക മാസത്തിൽ, ദീപാവലി കഴിഞ്ഞ് ഏതാനും ദിവസങ്ങൾക്കു ശേഷം. അന്ന് രാവിലെ പാമ്പിൻ പുറ്റിൽ (പുട്ട) സമർപ്പിക്കുന്നവയിൽ ചിമ്മിലിയും ചലിമിടിയും പാലും ഉൾപ്പെടുന്നു.",
+   "back": "Nagula Chavithi is on 13 November 2026, Friday; in the month of Karthika, a few days after Deepavali. Among those offered at the snake mound (putta) that morning are chimmili, chalimidi and milk."
+  },
+  "seg.fd075189cdf7": {
+   "src": "More recipes",
+   "t": "കൂടുതൽ പാചകക്കുറിപ്പുകൾ",
+   "back": "More recipes"
+  },
+  "seg.83ffe3c3550f": {
+   "src": "Palm Jaggery Coffee",
+   "t": "പനംചക്കര കാപ്പി",
+   "back": "Palm jaggery coffee"
+  },
+  "seg.02c2c8d3100e": {
+   "src": "With Palm Jaggery · 20 minutes",
+   "t": "പനംചക്കര കൊണ്ട് · 20 മിനിറ്റ്",
+   "back": "With palm jaggery · 20 minutes"
+  },
+  "seg.42df0348ff9d": {
+   "src": "Bellam Paramannam",
+   "t": "ബെല്ലം പരമാന്നം",
+   "back": "Bellam Paramannam"
+  },
+  "seg.900c7db66546": {
+   "src": "With Cane Jaggery · serves 4",
+   "t": "കരിമ്പ് ശർക്കര കൊണ്ട് · 4 പേർക്ക്",
+   "back": "With sugarcane jaggery · for 4 people"
+  },
+  "seg.07191606cd75": {
+   "src": "Warm Pasupu Paalu",
+   "t": "ചൂടുള്ള പസുപു പാലു",
+   "back": "Hot Pasupu Palu"
+  },
+  "seg.9b5f05abcc1f": {
+   "src": "With Turmeric Powder · 5 minutes",
+   "t": "മഞ്ഞൾപ്പൊടി കൊണ്ട് · 5 മിനിറ്റ്",
+   "back": "With turmeric powder · 5 minutes"
+  },
+  "seg.39e2ef7a56ee": {
+   "src": "All recipes",
+   "t": "എല്ലാ പാചകക്കുറിപ്പുകളും",
+   "back": "All recipes"
+  },
+  "seg.882635d4896e": {
+   "src": "నువ్వుల చిమ్మిలి · Chimmili for Nagula Chavithi | 1acrefarms",
+   "t": "నువ్వుల చిమ్మిలి · നാഗുല ചവിതിക്ക് ചിമ്മിലി | 1acrefarms",
+   "back": "నువ్వుల చిమ్మిలి · Chimmili for Nagula Chavithi | 1acrefarms"
+  },
+  "seg.a2d7a97cf16a": {
+   "src": "నాగుల చవితికి నువ్వుల చిమ్మిలి. Chimmili for Nagula Chavithi: roasted sesame and cane jaggery shaped into small balls. Step-by-step method, tips and FAQs. Makes about 12 and keeps a week.",
+   "t": "నాగుల చవితికి నువ్వుల చిమ్మిలి. നാഗുല ചവിതിക്ക് ചിമ്മിലി: വറുത്ത എള്ളും കരിമ്പ് ശർക്കരയും ചേർത്ത് ഉരുട്ടിയ ചെറിയ ഉരുളകൾ. ഘട്ടം ഘട്ടമായുള്ള രീതി, ടിപ്പുകൾ, ചോദ്യോത്തരങ്ങൾ. ഏകദേശം 12 എണ്ണം കിട്ടും; ഒരാഴ്ച ഇരിക്കും.",
+   "back": "నాగుల చవితికి నువ్వుల చిమ్మిలి. Chimmili for Nagula Chavithi: small balls rolled with roasted sesame and sugarcane jaggery. Step-by-step method, tips, questions and answers. Gives about 12 pieces; keeps one week."
+  },
+  "seg.3575fc10db16": {
+   "src": "Chimmili for Nagula Chavithi (Sesame Jaggery Balls) · 1acrefarms",
+   "t": "നാഗുല ചവിതിക്ക് ചിമ്മിലി (എള്ള് ശർക്കര ഉണ്ട) · 1acrefarms",
+   "back": "Chimmili for Nagula Chavithi (sesame jaggery ball) · 1acrefarms"
+  },
+  "seg.c766e665183d": {
+   "src": "Breadcrumb",
+   "t": "വഴിത്താര",
+   "back": "Pathway"
+  },
+  "seg.3753ebc4b29f": {
+   "src": "Chimmili for Nagula Chavithi: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "നാഗുല ചവിതിക്ക് ചിമ്മിലി: 1acrefarms-ന്റെ പാചകക്കുറിപ്പ് കാർഡ്, ചേരുവകളും ഉണ്ടാക്കുന്ന വിധവും",
+   "back": "Chimmili for Nagula Chavithi: 1acrefarms' recipe card, ingredients and method of making"
+  },
+  "seg.37a4d7618df9": {
+   "src": "Cane Jaggery 540 g pack",
+   "t": "കരിമ്പ് ശർക്കര 540 g പാക്കറ്റ്",
+   "back": "Sugarcane jaggery 540 g packet"
+  },
+  "seg.89c376daa720": {
+   "src": "Palm Jaggery Coffee recipe card",
+   "t": "പനംചക്കര കാപ്പി പാചകക്കുറിപ്പ് കാർഡ്",
+   "back": "Palm jaggery coffee recipe card"
+  },
+  "seg.152f87349f83": {
+   "src": "Bellam Paramannam recipe card",
+   "t": "ബെല്ലം പരമാന്നം പാചകക്കുറിപ്പ് കാർഡ്",
+   "back": "Bellam Paramannam recipe card"
+  },
+  "seg.c46e50533990": {
+   "src": "Warm Pasupu Paalu recipe card",
+   "t": "ചൂടുള്ള പസുപു പാലു പാചകക്കുറിപ്പ് കാർഡ്",
+   "back": "Hot Pasupu Palu recipe card"
+  },
+  "seg.372e93dfdf4d": {
+   "src": "1 cup white sesame seeds",
+   "t": "1 കപ്പ് വെള്ള എള്ള്",
+   "back": "1 cup white sesame"
+  },
+  "seg.0c3e2c74cbab": {
+   "src": "¾ cup grated cane jaggery",
+   "t": "¾ കപ്പ് ചുരണ്ടിയ കരിമ്പ് ശർക്കര",
+   "back": "¾ cup grated sugarcane jaggery"
+  },
+  "seg.1f843d0906e3": {
+   "src": "From an Andhra kitchen",
+   "t": "ഒരു ആന്ധ്ര അടുക്കളയിൽ നിന്ന്",
+   "back": "From an Andhra kitchen"
+  },
+  "seg.56b9d2a01472": {
+   "src": "Recipes with turmeric and jaggery",
+   "t": "മഞ്ഞളും ശർക്കരയും കൊണ്ടുള്ള പാചകക്കുറിപ്പുകൾ",
+   "back": "Recipes with turmeric and jaggery"
+  },
+  "seg.c4b9e076a2c3": {
+   "src": "Home recipes made with our pasupu and bellam. Each one links to the pack it uses.",
+   "t": "ഞങ്ങളുടെ പസുപുവും (മഞ്ഞൾ) ബെല്ലവും (ശർക്കര) കൊണ്ട് വീട്ടിൽ ഉണ്ടാക്കാവുന്ന പാചകക്കുറിപ്പുകൾ. ഓരോന്നിലും അതിന് ഉപയോഗിക്കുന്ന പാക്കറ്റിലേക്കുള്ള ലിങ്ക് ഉണ്ട്.",
+   "back": "Recipes that can be made at home with our pasupu (turmeric) and bellam (jaggery). Each one has a link to the packet used for it."
+  },
+  "seg.daa76710a9e7": {
+   "src": "With Cane Jaggery · makes about 12",
+   "t": "കരിമ്പ് ശർക്കര കൊണ്ട് · ഏകദേശം 12 എണ്ണം",
+   "back": "With sugarcane jaggery · about 12 pieces"
+  },
+  "seg.a0dc3eb55868": {
+   "src": "బెల్లం, పసుపు వంటకాలు · Jaggery & Turmeric Recipes | 1acrefarms",
+   "t": "బెల్లం, పసుపు వంటకాలు · ശർക്കര & മഞ്ഞൾ പാചകക്കുറിപ്പുകൾ | 1acrefarms",
+   "back": "బెల్లం, పసుపు వంటకాలు · Jaggery & turmeric recipes | 1acrefarms"
+  },
+  "seg.0db78d27aebc": {
+   "src": "బెల్లం, పసుపు వంటకాలు. Home recipes made with 1acrefarms turmeric and jaggery: palm jaggery coffee, bellam paramannam, chimmili for Nagula Chavithi and pasupu paalu.",
+   "t": "బెల్లం, పసుపు వంటకాలు. 1acrefarms മഞ്ഞളും ശർക്കരയും കൊണ്ട് വീട്ടിൽ ഉണ്ടാക്കാവുന്ന പാചകക്കുറിപ്പുകൾ: പനംചക്കര കാപ്പി, ബെല്ലം പരമാന്നം, നാഗുല ചവിതിക്ക് ചിമ്മിലി, പസുപു പാലു.",
+   "back": "బెల్లం, పసుపు వంటకాలు. Recipes that can be made at home with 1acrefarms turmeric and jaggery: palm jaggery coffee, Bellam Paramannam, Chimmili for Nagula Chavithi, Pasupu Palu."
+  },
+  "seg.580be3c9d6b6": {
+   "src": "Recipes · 1acrefarms",
+   "t": "പാചകക്കുറിപ്പുകൾ · 1acrefarms",
+   "back": "Recipes · 1acrefarms"
+  },
+  "seg.b03e4d3b1c23": {
+   "src": "Chimmili for Nagula Chavithi recipe card",
+   "t": "നാഗുല ചവിതിക്ക് ചിമ്മിലി പാചകക്കുറിപ്പ് കാർഡ്",
+   "back": "Chimmili for Nagula Chavithi recipe card"
+  },
+  "seg.113fd3b90b70": {
+   "src": "Recipe · filter coffee",
+   "t": "പാചകക്കുറിപ്പ് · ഫിൽട്ടർ കാപ്പി",
+   "back": "Recipe · Filter coffee"
+  },
+  "seg.b4d95640cfbc": {
+   "src": "Palm Jaggery Coffee ⟦1⟧(Thati Bellam Coffee)⟦/1⟧",
+   "t": "പനംചക്കര കാപ്പി ⟦1⟧(താട്ടി ബെല്ലം കാപ്പി)⟦/1⟧",
+   "back": "Palm jaggery coffee ⟦1⟧(Thati bellam coffee)⟦/1⟧"
+  },
+  "seg.eb6e42bdf428": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Thati Bellam Coffee · Taad Ke Gud Wali Coffee",
+   "t": "⟦#1⟧ · ⟦#2⟧ · താട്ടി ബെല്ലം കാപ്പി · താഡ് കേ ഗുഡ് വാലി കോഫി",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Thati bellam coffee · Taad ke gud wali coffee"
+  },
+  "seg.4b090c2ce3d3": {
+   "src": "Filter coffee is how many Telugu homes start the day: a strong decoction dripped through a steel filter, topped up with hot milk and frothed between a tumbler and davara. This version is sweetened with grated palm jaggery (thati bellam) in place of sugar.",
+   "t": "പല തെലുങ്ക് വീടുകളിലും ദിവസം തുടങ്ങുന്നത് ഫിൽട്ടർ കാപ്പിയോടെയാണ്: സ്റ്റീൽ ഫിൽട്ടറിലൂടെ ഇറങ്ങുന്ന കടുപ്പമുള്ള ഡിക്കോക്ഷൻ, അതിൽ ചൂടുപാൽ, പിന്നെ ടംബ്ലറിനും ദവറയ്ക്കും ഇടയിൽ ആറ്റി പതപ്പിക്കുന്നത്. ഈ രീതിയിൽ പഞ്ചസാരയ്ക്ക് പകരം ചുരണ്ടിയ പനംചക്കര (താട്ടി ബെല്ലം) ചേർത്താണ് മധുരം നൽകുന്നത്.",
+   "back": "In many Telugu homes the day starts with filter coffee: strong decoction coming down through a steel filter, hot milk in it, then cooling (aatti) between tumbler and davara to froth it. In this method sweetness is given by adding grated palm jaggery (thati bellam) instead of sugar."
+  },
+  "seg.cff6d2079da1": {
+   "src": "Palm jaggery gives the cup a deep, slightly smoky caramel sweetness that sits well with the bitterness of the decoction. Once the decoction is ready it takes about 5 minutes, and it suits a slow morning as much as an evening break.",
+   "t": "പനംചക്കര കാപ്പിക്ക് ആഴമുള്ള, ചെറിയ പുകമണമുള്ള കാരമൽ മധുരം നൽകുന്നു; അത് ഡിക്കോക്ഷന്റെ കയ്പ്പുമായി നന്നായി ചേരുന്നു. ഡിക്കോക്ഷൻ തയ്യാറായാൽ ഏകദേശം 5 മിനിറ്റേ വേണ്ടൂ; സാവകാശമുള്ള രാവിലെയ്ക്കും വൈകുന്നേരത്തെ ഇടവേളയ്ക്കും ഒരുപോലെ ചേരും.",
+   "back": "Palm jaggery gives the coffee a deep, slightly smoky-aroma caramel sweetness; it goes well with the decoction's bitterness. Once the decoction is ready only about 5 minutes is needed; suits both a leisurely morning and an evening break."
+  },
+  "seg.99a861303471": {
+   "src": "⟦1⟧Cook⟦/1⟧5 min",
+   "t": "⟦1⟧പാചകം⟦/1⟧5 മിനിറ്റ്",
+   "back": "⟦1⟧Cooking⟦/1⟧5 minutes"
+  },
+  "seg.56a826d3b073": {
+   "src": "⟦1⟧Total⟦/1⟧20 min",
+   "t": "⟦1⟧ആകെ⟦/1⟧20 മിനിറ്റ്",
+   "back": "⟦1⟧Total⟦/1⟧20 minutes"
+  },
+  "seg.a92a4aeb28cd": {
+   "src": "⟦1⟧Makes⟦/1⟧1 tumbler",
+   "t": "⟦1⟧അളവ്⟦/1⟧1 ടംബ്ലർ",
+   "back": "⟦1⟧Quantity⟦/1⟧1 tumbler"
+  },
+  "seg.814efc526088": {
+   "src": "5 minutes if your decoction is already made.",
+   "t": "ഡിക്കോക്ഷൻ നേരത്തേ തയ്യാറാണെങ്കിൽ 5 മിനിറ്റ്.",
+   "back": "5 minutes if the decoction is ready beforehand."
+  },
+  "seg.9ad0a1e24d76": {
+   "src": "Boil the milk, add it to the decoction, then stir in grated palm jaggery off the heat. Froth it between tumbler and davara.",
+   "t": "പാൽ തിളപ്പിച്ച് ഡിക്കോക്ഷനിൽ ചേർക്കൂ, പിന്നെ അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷം ചുരണ്ടിയ പനംചക്കര ഇളക്കിച്ചേർക്കൂ. ടംബ്ലറിനും ദവറയ്ക്കും ഇടയിൽ ആറ്റി പതപ്പിക്കൂ.",
+   "back": "Boil the milk and add to the decoction, then after removing from the stove stir in grated palm jaggery. Cool between tumbler and davara to froth."
+  },
+  "seg.c726c3e9bee8": {
+   "src": "Ingredients ⟦1⟧makes 1 tumbler⟦/1⟧",
+   "t": "ചേരുവകൾ ⟦1⟧1 ടംബ്ലറിന്⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 1 tumbler⟦/1⟧"
+  },
+  "seg.10dfb70b2516": {
+   "src": "For the decoction",
+   "t": "ഡിക്കോക്ഷന്",
+   "back": "For the decoction"
+  },
+  "seg.927b924ff51d": {
+   "src": "2 tbsp filter coffee powder ⟦1⟧enough decoction for 2–3 cups⟦/1⟧",
+   "t": "2 ടേബിൾസ്പൂൺ ഫിൽട്ടർ കാപ്പിപ്പൊടി ⟦1⟧2–3 കപ്പിനുള്ള ഡിക്കോക്ഷൻ⟦/1⟧",
+   "back": "2 tablespoons filter coffee powder ⟦1⟧decoction for 2–3 cups⟦/1⟧"
+  },
+  "seg.8aa60818ccf8": {
+   "src": "½ cup water, just off the boil",
+   "t": "½ കപ്പ് വെള്ളം, തിളച്ചതും അടുപ്പിൽ നിന്ന് മാറ്റിയതും",
+   "back": "½ cup water, boiled and removed from the stove"
+  },
+  "seg.79a69deb6460": {
+   "src": "For the coffee",
+   "t": "കാപ്പിക്ക്",
+   "back": "For the coffee"
+  },
+  "seg.235f43bdefc5": {
+   "src": "1 cup milk ⟦1⟧about 240 ml⟦/1⟧",
+   "t": "1 കപ്പ് പാൽ ⟦1⟧ഏകദേശം 240 ml⟦/1⟧",
+   "back": "1 cup milk ⟦1⟧about 240 ml⟦/1⟧"
+  },
+  "seg.95409b9d346e": {
+   "src": "2 tbsp filter coffee decoction ⟦1⟧from above; 3 tbsp for a stronger cup⟦/1⟧",
+   "t": "2 ടേബിൾസ്പൂൺ ഫിൽട്ടർ കാപ്പി ഡിക്കോക്ഷൻ ⟦1⟧മുകളിൽ തയ്യാറാക്കിയത്; കടുപ്പമുള്ള കാപ്പിക്ക് 3 ടേബിൾസ്പൂൺ⟦/1⟧",
+   "back": "2 tablespoons filter coffee decoction ⟦1⟧prepared above; 3 tablespoons for strong coffee⟦/1⟧"
+  },
+  "seg.7b8c0f7e922a": {
+   "src": "1–2 tsp grated palm jaggery ⟦1⟧to taste⟦/1⟧",
+   "t": "1–2 ടീസ്പൂൺ ചുരണ്ടിയ പനംചക്കര ⟦1⟧രുചിക്കനുസരിച്ച്⟦/1⟧",
+   "back": "1–2 teaspoons grated palm jaggery ⟦1⟧according to taste⟦/1⟧"
+  },
+  "seg.557b912961c2": {
+   "src": "Palm Jaggery",
+   "t": "പനംചക്കര",
+   "back": "Palm jaggery"
+  },
+  "seg.488632412643": {
+   "src": "⟦#1⟧ · Thati Bellam",
+   "t": "⟦#1⟧ · താട്ടി ബെല്ലം",
+   "back": "⟦#1⟧ · Thati bellam"
+  },
+  "seg.f14decb68b96": {
+   "src": "MRP ₹495 · 540 g",
+   "t": "MRP ₹495 · 540 g",
+   "back": "MRP ₹495 · 540 g"
+  },
+  "seg.95d91fecafcb": {
+   "src": "Make the decoction: put 2 tbsp filter coffee powder in the top chamber of a South Indian coffee filter, set the perforated press on it and pour in ½ cup water just off the boil. Cover and leave it to drip for 10–15 minutes.",
+   "t": "ഡിക്കോക്ഷൻ ഉണ്ടാക്കാൻ: ദക്ഷിണേന്ത്യൻ കാപ്പി ഫിൽട്ടറിന്റെ മുകളിലെ അറയിൽ 2 ടേബിൾസ്പൂൺ ഫിൽട്ടർ കാപ്പിപ്പൊടി ഇട്ട്, ദ്വാരങ്ങളുള്ള അമർത്തുപലക മുകളിൽ വച്ച്, തിളച്ച ഉടനെയുള്ള ½ കപ്പ് വെള്ളം ഒഴിക്കൂ. അടച്ചുവച്ച് 10–15 മിനിറ്റ് ഇറങ്ങാൻ വിടൂ.",
+   "back": "To make the decoction: put 2 tablespoons filter coffee powder in the upper chamber of the South Indian coffee filter, place the perforated pressing plate on top, and pour ½ cup of just-boiled water. Close and let it drip down for 10–15 minutes."
+  },
+  "seg.9024c8716b54": {
+   "src": "While it drips, grate the palm jaggery finely so it dissolves in seconds.",
+   "t": "അത് ഇറങ്ങുന്നതിനിടയിൽ, പനംചക്കര നേർമ്മയായി ചുരണ്ടൂ; അപ്പോൾ നിമിഷങ്ങൾക്കകം അലിയും.",
+   "back": "While it drips down, grate the palm jaggery finely; then it will dissolve within moments."
+  },
+  "seg.24689e3dd311": {
+   "src": "Pour the milk into a small saucepan and set it on medium heat.",
+   "t": "പാൽ ഒരു ചെറിയ പാത്രത്തിലൊഴിച്ച് ഇടത്തരം തീയിൽ വയ്ക്കൂ.",
+   "back": "Pour the milk into a small vessel and place on medium flame."
+  },
+  "seg.4d8e3042dc81": {
+   "src": "Bring the milk to a boil. As soon as it froths up the sides of the pan, switch off the heat.",
+   "t": "പാൽ തിളപ്പിക്കൂ. പാത്രത്തിന്റെ വശങ്ങളിലേക്ക് പത പൊങ്ങി വന്നാലുടൻ തീ അണയ്ക്കൂ.",
+   "back": "Boil the milk. As soon as froth rises up to the sides of the vessel, put out the flame."
+  },
+  "seg.a124a0d34983": {
+   "src": "Pour the decoction into a tumbler and add the hot milk. Use 2 tbsp decoction for a mild cup and 3 tbsp for a strong one.",
+   "t": "ഡിക്കോക്ഷൻ ഒരു ടംബ്ലറിലൊഴിച്ച് ചൂടുപാൽ ചേർക്കൂ. മിതമായ കാപ്പിക്ക് 2 ടേബിൾസ്പൂൺ ഡിക്കോക്ഷൻ, കടുപ്പമുള്ളതിന് 3 ടേബിൾസ്പൂൺ.",
+   "back": "Pour the decoction into a tumbler and add the hot milk. 2 tablespoons decoction for mild coffee, 3 tablespoons for strong."
+  },
+  "seg.85570720618b": {
+   "src": "Let it stand for about a minute, so the milk is just off the boil.",
+   "t": "പാൽ തിളനിലയിൽ നിന്ന് അല്പം താഴാൻ, ഏകദേശം ഒരു മിനിറ്റ് അങ്ങനെ വയ്ക്കൂ.",
+   "back": "Leave it like that about one minute, for the milk to come down a little from boiling point."
+  },
+  "seg.eacea0d7cf43": {
+   "src": "Stir in the palm jaggery off the heat. Keep stirring for 20–30 seconds, until no grains are left at the bottom of the tumbler.",
+   "t": "അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷം പനംചക്കര ഇളക്കിച്ചേർക്കൂ. ടംബ്ലറിന്റെ അടിയിൽ തരികൾ ബാക്കിയില്ലാതാകുന്നതുവരെ 20–30 സെക്കൻഡ് ഇളക്കിക്കൊണ്ടിരിക്കൂ.",
+   "back": "After removing from the stove, stir in the palm jaggery. Keep stirring 20–30 seconds until no granules remain at the bottom of the tumbler."
+  },
+  "seg.08b600da2ef8": {
+   "src": "Taste, and add a little more jaggery if you like it sweeter.",
+   "t": "രുചി നോക്കൂ; കൂടുതൽ മധുരം വേണമെങ്കിൽ അല്പം ശർക്കര കൂടി ചേർക്കൂ.",
+   "back": "Taste; if more sweetness is wanted add a little more jaggery."
+  },
+  "seg.878b0d8d7eeb": {
+   "src": "Pour between tumbler and davara to froth. Hold the tumbler high and pour into the davara, then back again, 3–4 times, until a light foam sits on top.",
+   "t": "ടംബ്ലറിനും ദവറയ്ക്കും ഇടയിൽ ആറ്റി പതപ്പിക്കൂ. ടംബ്ലർ ഉയർത്തിപ്പിടിച്ച് ദവറയിലേക്ക് ഒഴിച്ച്, വീണ്ടും തിരിച്ച് ഒഴിക്കൂ; മുകളിൽ നേരിയ പത വരുന്നതുവരെ 3–4 തവണ.",
+   "back": "Cool (aatti) between tumbler and davara to froth. Hold the tumbler raised, pour into the davara, and pour back again; 3–4 times until light froth comes on top."
+  },
+  "seg.653390b95f57": {
+   "src": "Serve straight away, in the tumbler set inside the davara.",
+   "t": "ഉടനെ, ദവറയ്ക്കുള്ളിൽ വച്ച ടംബ്ലറിൽ വിളമ്പൂ.",
+   "back": "Immediately, serve in the tumbler placed inside the davara."
+  },
+  "seg.33aca43ebf99": {
+   "src": "Add jaggery after the milk is off the boil so it does not split.",
+   "t": "പാൽ തിളനിലയിൽ നിന്ന് താഴ്ന്ന ശേഷം മാത്രം ശർക്കര ചേർക്കൂ; അപ്പോൾ പാൽ പിരിയില്ല.",
+   "back": "Add jaggery only after the milk has come down from boiling point; then the milk will not split."
+  },
+  "seg.60404da43771": {
+   "src": "Grate the jaggery finely: fine shreds dissolve in seconds, while lumps sink and stay at the bottom of the tumbler.",
+   "t": "ശർക്കര നേർമ്മയായി ചുരണ്ടൂ: നേർത്ത ചുരണ്ടൽ നിമിഷങ്ങൾക്കകം അലിയും; കട്ടകൾ ടംബ്ലറിന്റെ അടിയിൽ താണുകിടക്കും.",
+   "back": "Grate the jaggery finely: fine gratings dissolve within moments; lumps will sink and lie at the bottom of the tumbler."
+  },
+  "seg.ca883342300e": {
+   "src": "Palm jaggery has a deep, slightly smoky sweetness, so start with 1 tsp and add more to taste.",
+   "t": "പനംചക്കരയ്ക്ക് ആഴമുള്ള, ചെറിയ പുകമണമുള്ള മധുരമുണ്ട്; അതിനാൽ 1 ടീസ്പൂണിൽ തുടങ്ങി, രുചിക്കനുസരിച്ച് കൂട്ടൂ.",
+   "back": "Palm jaggery has a deep, slightly smoky-aroma sweetness; so start at 1 teaspoon and increase according to taste."
+  },
+  "seg.d7c0084f5cc6": {
+   "src": "A steel tumbler and davara keep the coffee hot and make frothing easy; a mug and a jug work too.",
+   "t": "സ്റ്റീൽ ടംബ്ലറും ദവറയും കാപ്പി ചൂടോടെ വയ്ക്കും, പതപ്പിക്കാനും എളുപ്പമാണ്; മഗ്ഗും ജഗ്ഗും ആയാലും മതി.",
+   "back": "A steel tumbler and davara keep the coffee hot, and frothing is also easy; a mug and jug will also do."
+  },
+  "seg.1b917ac5fc8c": {
+   "src": "Cane jaggery: use the same amount of grated cane jaggery for a lighter, caramel-like sweetness.",
+   "t": "കരിമ്പ് ശർക്കര: അതേ അളവിൽ ചുരണ്ടിയ കരിമ്പ് ശർക്കര ചേർത്താൽ, ലഘുവായ, കാരമൽ പോലുള്ള മധുരം കിട്ടും.",
+   "back": "Sugarcane jaggery: if the same amount of grated sugarcane jaggery is added, you get a light, caramel-like sweetness."
+  },
+  "seg.0ada954bebfe": {
+   "src": "Palm jaggery tea: make your usual milk tea, switch off the heat, wait a minute, then stir in the palm jaggery the same way.",
+   "t": "പനംചക്കര ചായ: പതിവുപോലെ പാൽച്ചായ ഉണ്ടാക്കി, തീ അണച്ച്, ഒരു മിനിറ്റ് കാത്തിരുന്ന്, അതേ രീതിയിൽ പനംചക്കര ഇളക്കിച്ചേർക്കൂ.",
+   "back": "Palm jaggery tea: make milk tea as usual, put out the flame, wait one minute, and stir in palm jaggery the same way."
+  },
+  "seg.6512d133d4c0": {
+   "src": "No coffee filter: dissolve 1 tsp instant coffee in 2 tbsp hot water and use it in place of the decoction.",
+   "t": "കാപ്പി ഫിൽട്ടർ ഇല്ലെങ്കിൽ: 1 ടീസ്പൂൺ ഇൻസ്റ്റന്റ് കാപ്പി 2 ടേബിൾസ്പൂൺ ചൂടുവെള്ളത്തിൽ അലിയിച്ച്, ഡിക്കോക്ഷന് പകരം ഉപയോഗിക്കൂ.",
+   "back": "If there is no coffee filter: dissolve 1 teaspoon instant coffee in 2 tablespoons hot water and use instead of the decoction."
+  },
+  "seg.e9e80ce83cf6": {
+   "src": "Serve hot after a breakfast of idli, dosa or upma, or in the evening with biscuits or murukulu.",
+   "t": "ഇഡ്ഡലി, ദോശ അല്ലെങ്കിൽ ഉപ്പുമാവ് പ്രാതലിനു ശേഷം, അല്ലെങ്കിൽ വൈകുന്നേരം ബിസ്കറ്റിനോ മുറുക്കിനോ ഒപ്പം ചൂടോടെ വിളമ്പൂ.",
+   "back": "Serve hot after an idli, dosa or upma breakfast, or in the evening with biscuit or murukku."
+  },
+  "seg.97817ad1f29f": {
+   "src": "Make each cup as you need it; coffee reheated after the jaggery goes in can split. Keep extra decoction covered at room temperature and use it within the day.",
+   "t": "ആവശ്യമുള്ളപ്പോൾ ഓരോ കപ്പായി ഉണ്ടാക്കൂ; ശർക്കര ചേർത്ത ശേഷം വീണ്ടും ചൂടാക്കിയാൽ കാപ്പി പിരിയാം. ബാക്കി ഡിക്കോക്ഷൻ അടച്ച് മുറിയിലെ ചൂടിൽ വച്ച്, അന്നുതന്നെ ഉപയോഗിക്കൂ.",
+   "back": "Make one cup at a time when needed; if reheated after adding jaggery the coffee may split. Close the remaining decoction, keep at room temperature, and use it that same day."
+  },
+  "seg.ea4f4072538a": {
+   "src": "Why did my coffee curdle when I added palm jaggery?",
+   "t": "പനംചക്കര ചേർത്തപ്പോൾ എന്റെ കാപ്പി എന്തുകൊണ്ടാണ് പിരിഞ്ഞത്?",
+   "back": "Why did my coffee split when I added palm jaggery?"
+  },
+  "seg.180a2670ead3": {
+   "src": "Jaggery stirred into milk that is still boiling can make it split. Take the milk off the heat, let it stand for about a minute, then stir in the grated jaggery.",
+   "t": "ഇപ്പോഴും തിളയ്ക്കുന്ന പാലിൽ ശർക്കര ഇളക്കിച്ചേർത്താൽ പാൽ പിരിയാം. പാൽ അടുപ്പിൽ നിന്ന് മാറ്റി, ഏകദേശം ഒരു മിനിറ്റ് വച്ച്, പിന്നെ ചുരണ്ടിയ ശർക്കര ഇളക്കിച്ചേർക്കൂ.",
+   "back": "If jaggery is stirred into milk that is still boiling, the milk may split. Remove the milk from the stove, keep about one minute, then stir in the grated jaggery."
+  },
+  "seg.2b9449407096": {
+   "src": "Can I use cane jaggery instead of palm jaggery?",
+   "t": "പനംചക്കരയ്ക്ക് പകരം കരിമ്പ് ശർക്കര ഉപയോഗിക്കാമോ?",
+   "back": "Can sugarcane jaggery be used instead of palm jaggery?"
+  },
+  "seg.890ae3e15593": {
+   "src": "Yes. Use the same amount of grated cane jaggery. The coffee tastes lighter and more like caramel, while palm jaggery gives a deeper, slightly smoky cup.",
+   "t": "അതെ. അതേ അളവിൽ ചുരണ്ടിയ കരിമ്പ് ശർക്കര ഉപയോഗിക്കൂ. കാപ്പിക്ക് ലഘുവായ, കാരമൽ പോലുള്ള രുചിയായിരിക്കും; പനംചക്കര ആഴമുള്ള, ചെറിയ പുകമണമുള്ള കാപ്പി നൽകും.",
+   "back": "Yes. Use the same amount of grated sugarcane jaggery. The coffee will have a light, caramel-like taste; palm jaggery will give a deep, slightly smoky-aroma coffee."
+  },
+  "seg.e4c92d1c8a42": {
+   "src": "How much palm jaggery should I add to one cup of coffee?",
+   "t": "ഒരു കപ്പ് കാപ്പിയിൽ എത്ര പനംചക്കര ചേർക്കണം?",
+   "back": "How much palm jaggery should be added to one cup of coffee?"
+  },
+  "seg.43a5dfb10340": {
+   "src": "1 to 2 tsp of grated palm jaggery for 1 cup of milk and 2 tbsp of decoction. Start with 1 tsp, taste, and add more if you like.",
+   "t": "1 കപ്പ് പാലിനും 2 ടേബിൾസ്പൂൺ ഡിക്കോക്ഷനും 1 മുതൽ 2 ടീസ്പൂൺ വരെ ചുരണ്ടിയ പനംചക്കര. 1 ടീസ്പൂണിൽ തുടങ്ങി, രുചി നോക്കി, വേണമെങ്കിൽ കൂട്ടൂ.",
+   "back": "1 to 2 teaspoons grated palm jaggery for 1 cup of milk and 2 tablespoons decoction. Start at 1 teaspoon, taste, and increase if wanted."
+  },
+  "seg.2ba4fb9452bb": {
+   "src": "Can I make palm jaggery coffee without a coffee filter?",
+   "t": "കാപ്പി ഫിൽട്ടർ ഇല്ലാതെ പനംചക്കര കാപ്പി ഉണ്ടാക്കാമോ?",
+   "back": "Can palm jaggery coffee be made without a coffee filter?"
+  },
+  "seg.23f63da2d908": {
+   "src": "Yes. Dissolve 1 tsp instant coffee in 2 tbsp hot water, use it in place of the decoction and follow the same steps.",
+   "t": "അതെ. 1 ടീസ്പൂൺ ഇൻസ്റ്റന്റ് കാപ്പി 2 ടേബിൾസ്പൂൺ ചൂടുവെള്ളത്തിൽ അലിയിച്ച്, ഡിക്കോക്ഷന് പകരം ഉപയോഗിച്ച്, ഇതേ ഘട്ടങ്ങൾ പിന്തുടരൂ.",
+   "back": "Yes. Dissolve 1 teaspoon instant coffee in 2 tablespoons hot water, use instead of the decoction, and follow these same steps."
+  },
+  "seg.4fce579abe5f": {
+   "src": "తాటి బెల్లం కాఫీ · Palm Jaggery Coffee Recipe | 1acrefarms",
+   "t": "తాటి బెల్లం కాఫీ · പനംചക്കര കാപ്പി പാചകക്കുറിപ്പ് | 1acrefarms",
+   "back": "తాటి బెల్లం కాఫీ · Palm jaggery coffee recipe | 1acrefarms"
+  },
+  "seg.08ada9e6791e": {
+   "src": "తాటి బెల్లం కాఫీ. Palm jaggery coffee (thati bellam coffee), the Andhra way: filter decoction, hot milk and grated palm jaggery stirred in off the heat. Step-by-step method, tips and FAQs.",
+   "t": "తాటి బెల్లం కాఫీ. പനംചക്കര കാപ്പി (താട്ടി ബെല്ലം കാപ്പി), ആന്ധ്ര രീതിയിൽ: ഫിൽട്ടർ ഡിക്കോക്ഷൻ, ചൂടുപാൽ, അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷം ഇളക്കിച്ചേർക്കുന്ന ചുരണ്ടിയ പനംചക്കര. ഘട്ടം ഘട്ടമായുള്ള രീതി, ടിപ്പുകൾ, ചോദ്യോത്തരങ്ങൾ.",
+   "back": "తాటి బెల్లం కాఫీ. Palm jaggery coffee (thati bellam coffee), in the Andhra way: filter decoction, hot milk, grated palm jaggery stirred in after removing from the stove. Step-by-step method, tips, questions and answers."
+  },
+  "seg.8a9f25c7f197": {
+   "src": "Palm Jaggery Coffee (Thati Bellam Coffee) · 1acrefarms",
+   "t": "പനംചക്കര കാപ്പി (താട്ടി ബെല്ലം കാപ്പി) · 1acrefarms",
+   "back": "Palm jaggery coffee (thati bellam coffee) · 1acrefarms"
+  },
+  "seg.0fc7db27d3fc": {
+   "src": "Palm Jaggery Coffee: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "പനംചക്കര കാപ്പി: 1acrefarms-ന്റെ പാചകക്കുറിപ്പ് കാർഡ്, ചേരുവകളും ഉണ്ടാക്കുന്ന വിധവും",
+   "back": "Palm jaggery coffee: 1acrefarms' recipe card, ingredients and method of making"
+  },
+  "seg.6569bdd75e36": {
+   "src": "Palm Jaggery 540 g pack",
+   "t": "പനംചക്കര 540 g പാക്കറ്റ്",
+   "back": "Palm jaggery 540 g packet"
+  },
+  "seg.877684ea5e82": {
+   "src": "2 tbsp filter coffee powder",
+   "t": "2 ടേബിൾസ്പൂൺ ഫിൽട്ടർ കാപ്പിപ്പൊടി",
+   "back": "2 tablespoons filter coffee powder"
+  },
+  "seg.6d10ef7ccccf": {
+   "src": "1 cup milk",
+   "t": "1 കപ്പ് പാൽ",
+   "back": "1 cup milk"
+  },
+  "seg.059e1e3e5036": {
+   "src": "2 tbsp filter coffee decoction",
+   "t": "2 ടേബിൾസ്പൂൺ ഫിൽട്ടർ കാപ്പി ഡിക്കോക്ഷൻ",
+   "back": "2 tablespoons filter coffee decoction"
+  },
+  "seg.6f7677a99e8c": {
+   "src": "1–2 tsp grated palm jaggery",
+   "t": "1–2 ടീസ്പൂൺ ചുരണ്ടിയ പനംചക്കര",
+   "back": "1–2 teaspoons grated palm jaggery"
+  },
+  "seg.d3ad7f57d8c8": {
+   "src": "Diwali recipe · serves 4",
+   "t": "ദീപാവലി പാചകക്കുറിപ്പ് · 4 പേർക്ക്",
+   "back": "Deepavali recipe · for 4 people"
+  },
+  "seg.947e0ef7a273": {
+   "src": "Bellam Paramannam ⟦1⟧(Jaggery Rice Kheer)⟦/1⟧",
+   "t": "ബെല്ലം പരമാന്നം ⟦1⟧(ശർക്കര അരിപ്പായസം)⟦/1⟧",
+   "back": "Bellam Paramannam ⟦1⟧(jaggery rice payasam)⟦/1⟧"
+  },
+  "seg.03ffde37c28f": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · Gud Wali Kheer",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ബെല്ലം പരമാന്നം · ഗുഡ് വാലി ഖീർ",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · Gud wali kheer"
+  },
+  "seg.1143d51ba236": {
+   "src": "Paramannam is the rice-and-milk sweet that Telugu homes cook for festivals and pujas: rice simmered slowly in milk until soft and creamy, then sweetened. Bellam paramannam, made with jaggery, is a common naivedyam at Diwali, Sankranti and Varalakshmi Vratham, offered at the puja and then shared at the festive meal.",
+   "t": "പരമാന്നം തെലുങ്ക് വീടുകളിൽ ഉത്സവങ്ങൾക്കും പൂജകൾക്കും ഉണ്ടാക്കുന്ന അരിയും പാലും ചേർന്ന മധുരമാണ്: അരി പാലിൽ പതുക്കെ, മൃദുവും ക്രീം പോലെയുമാകുന്നതുവരെ വേവിച്ച്, പിന്നെ മധുരം ചേർക്കുന്നു. ശർക്കര കൊണ്ടുള്ള ബെല്ലം പരമാന്നം ദീപാവലി, സംക്രാന്തി, വരലക്ഷ്മി വ്രതം എന്നീ ദിവസങ്ങളിൽ പതിവുള്ള നിവേദ്യമാണ്; പൂജയിൽ സമർപ്പിച്ച്, പിന്നെ ഉത്സവ സദ്യയിൽ പങ്കിടുന്നു.",
+   "back": "Paramannam is a sweet of rice and milk made in Telugu homes for festivals and pujas: rice is cooked slowly in milk until soft and cream-like, then sweetness is added. Bellam Paramannam made with jaggery is the customary nivedyam on Deepavali, Sankranti and Varalakshmi Vratham days; it is offered in the puja, then shared in the festival feast (sadya)."
+  },
+  "seg.360051f42785": {
+   "src": "Cane jaggery turns it a light caramel colour and gives a rounder, toffee-like sweetness. Ghee-fried cashews and a little cardamom finish it. This recipe serves 4.",
+   "t": "കരിമ്പ് ശർക്കര ഇതിന് ഇളം കാരമൽ നിറവും, ടോഫി പോലുള്ള നിറഞ്ഞ മധുരവും നൽകുന്നു. നെയ്യിൽ വറുത്ത കശുവണ്ടിയും അല്പം ഏലക്കയും ചേർത്ത് പൂർത്തിയാക്കാം. ഈ പാചകക്കുറിപ്പ് 4 പേർക്കാണ്.",
+   "back": "Sugarcane jaggery gives this a light caramel colour and a full toffee-like sweetness. It can be finished by adding cashews roasted in ghee and a little cardamom. This recipe is for 4 people."
+  },
+  "seg.304ae550b339": {
+   "src": "⟦1⟧Prep⟦/1⟧10 min",
+   "t": "⟦1⟧തയ്യാറാക്കൽ⟦/1⟧10 മിനിറ്റ്",
+   "back": "⟦1⟧Preparation⟦/1⟧10 minutes"
+  },
+  "seg.9305f70ed293": {
+   "src": "⟦1⟧Cook⟦/1⟧40 min",
+   "t": "⟦1⟧പാചകം⟦/1⟧40 മിനിറ്റ്",
+   "back": "⟦1⟧Cooking⟦/1⟧40 minutes"
+  },
+  "seg.d90f652dd740": {
+   "src": "⟦1⟧Total⟦/1⟧55 min",
+   "t": "⟦1⟧ആകെ⟦/1⟧55 മിനിറ്റ്",
+   "back": "⟦1⟧Total⟦/1⟧55 minutes"
+  },
+  "seg.b1897e5c1022": {
+   "src": "⟦1⟧Serves⟦/1⟧4",
+   "t": "⟦1⟧എത്ര പേർക്ക്⟦/1⟧4",
+   "back": "⟦1⟧For how many people⟦/1⟧4"
+  },
+  "seg.04a51f6c83e4": {
+   "src": "Total includes the 5-minute rest before the jaggery goes in.",
+   "t": "ശർക്കര ചേർക്കുന്നതിനുമുമ്പുള്ള 5 മിനിറ്റ് വിശ്രമവും ആകെ സമയത്തിൽ ഉൾപ്പെടുന്നു.",
+   "back": "The 5 minutes of rest before adding jaggery is also included in the total time."
+  },
+  "seg.fd8f49fce13b": {
+   "src": "Cook rice in milk till creamy, rest it 5 minutes, then stir in grated cane jaggery. Finish with ghee-fried cashews and cardamom.",
+   "t": "അരി പാലിൽ ക്രീം പോലെയാകുന്നതുവരെ വേവിച്ച്, 5 മിനിറ്റ് വച്ച്, പിന്നെ ചുരണ്ടിയ കരിമ്പ് ശർക്കര ഇളക്കിച്ചേർക്കൂ. നെയ്യിൽ വറുത്ത കശുവണ്ടിയും ഏലക്കയും ചേർത്ത് പൂർത്തിയാക്കൂ.",
+   "back": "Cook the rice in milk until cream-like, keep 5 minutes, then stir in grated sugarcane jaggery. Finish by adding cashews roasted in ghee and cardamom."
+  },
+  "seg.58ce2ea9afba": {
+   "src": "Ingredients ⟦1⟧serves 4⟦/1⟧",
+   "t": "ചേരുവകൾ ⟦1⟧4 പേർക്ക്⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 4 people⟦/1⟧"
+  },
+  "seg.1f3010b2476c": {
+   "src": "For the paramannam",
+   "t": "പരമാന്നത്തിന്",
+   "back": "For the paramannam"
+  },
+  "seg.1c0f194a4451": {
+   "src": "½ cup rice ⟦1⟧sona masoori or another short-grain rice, about 100 g⟦/1⟧",
+   "t": "½ കപ്പ് അരി ⟦1⟧സോന മസൂരിയോ മറ്റൊരു ചെറുമണി അരിയോ, ഏകദേശം 100 g⟦/1⟧",
+   "back": "½ cup rice ⟦1⟧Sona Masoori or another short-grain rice, about 100 g⟦/1⟧"
+  },
+  "seg.8f34922ee281": {
+   "src": "4 cups milk ⟦1⟧about 1 litre; whole milk gives the creamiest result⟦/1⟧",
+   "t": "4 കപ്പ് പാൽ ⟦1⟧ഏകദേശം 1 ലിറ്റർ; കൊഴുപ്പ് മാറ്റാത്ത പാലിലാണ് ഏറ്റവും ക്രീമിയായി വരിക⟦/1⟧",
+   "back": "4 cups milk ⟦1⟧about 1 litre; it is in milk with fat not removed that it comes out most creamy⟦/1⟧"
+  },
+  "seg.ee0c3b96837f": {
+   "src": "¾ cup grated cane jaggery ⟦1⟧lightly packed; up to 2 tbsp more if you like it sweeter⟦/1⟧",
+   "t": "¾ കപ്പ് ചുരണ്ടിയ കരിമ്പ് ശർക്കര ⟦1⟧ചെറുതായി അമർത്തി അളന്നത്; കൂടുതൽ മധുരം വേണമെങ്കിൽ 2 ടേബിൾസ്പൂൺ വരെ കൂടുതൽ⟦/1⟧",
+   "back": "¾ cup grated sugarcane jaggery ⟦1⟧measured lightly pressed; if more sweetness is wanted, up to 2 tablespoons more⟦/1⟧"
+  },
+  "seg.77b811a6e0f1": {
+   "src": "To finish",
+   "t": "പൂർത്തിയാക്കാൻ",
+   "back": "To finish"
+  },
+  "seg.988401bed7a6": {
+   "src": "2 tbsp ghee",
+   "t": "2 ടേബിൾസ്പൂൺ നെയ്യ്",
+   "back": "2 tablespoons ghee"
+  },
+  "seg.42022f439951": {
+   "src": "10 cashews ⟦1⟧halved⟦/1⟧",
+   "t": "10 കശുവണ്ടി ⟦1⟧രണ്ടായി പിളർന്നത്⟦/1⟧",
+   "back": "10 cashews ⟦1⟧split in two⟦/1⟧"
+  },
+  "seg.65c3b64a0c69": {
+   "src": "1 tbsp raisins (optional)",
+   "t": "1 ടേബിൾസ്പൂൺ ഉണക്കമുന്തിരി (വേണമെങ്കിൽ)",
+   "back": "1 tablespoon raisins (if wanted)"
+  },
+  "seg.fa014766d2bf": {
+   "src": "½ tsp cardamom powder ⟦1⟧or the crushed seeds of 4–5 pods⟦/1⟧",
+   "t": "½ ടീസ്പൂൺ ഏലക്കപ്പൊടി ⟦1⟧അല്ലെങ്കിൽ 4–5 ഏലക്കയുടെ ചതച്ച കുരു⟦/1⟧",
+   "back": "½ teaspoon cardamom powder ⟦1⟧or crushed seeds of 4–5 cardamoms⟦/1⟧"
+  },
+  "seg.480e0a7d227f": {
+   "src": "Wash the rice in 2–3 changes of water until the water runs almost clear, then drain it well.",
+   "t": "അരി 2–3 തവണ വെള്ളം മാറ്റി, വെള്ളം ഏകദേശം തെളിയുന്നതുവരെ കഴുകി, നന്നായി വാർത്തെടുക്കൂ.",
+   "back": "Wash the rice changing the water 2–3 times, until the water is almost clear, and drain well."
+  },
+  "seg.d5b0fc46818a": {
+   "src": "Pour the milk into a heavy-bottomed pan and bring it to a boil on medium heat, about 8–10 minutes. Stir now and then so it does not catch at the bottom.",
+   "t": "പാൽ അടി കട്ടിയുള്ള പാത്രത്തിലൊഴിച്ച് ഇടത്തരം തീയിൽ തിളപ്പിക്കൂ; ഏകദേശം 8–10 മിനിറ്റ് എടുക്കും. അടിയിൽ പിടിക്കാതിരിക്കാൻ ഇടയ്ക്കിടെ ഇളക്കൂ.",
+   "back": "Pour the milk into a thick-bottomed vessel and boil on medium flame; it will take about 8–10 minutes. Stir from time to time so it does not catch at the bottom."
+  },
+  "seg.b8f9c8c6758b": {
+   "src": "Add the drained rice to the boiling milk and turn the heat to low.",
+   "t": "വാർത്ത അരി തിളയ്ക്കുന്ന പാലിൽ ചേർത്ത് തീ കുറയ്ക്കൂ.",
+   "back": "Add the drained rice to the boiling milk and reduce the flame."
+  },
+  "seg.9ae9baab76d7": {
+   "src": "Cook the washed rice in the milk on a low flame till soft and creamy, about 30 minutes. Stir often, scraping the bottom and sides of the pan each time.",
+   "t": "കഴുകിയ അരി പാലിൽ ചെറുതീയിൽ, മൃദുവും ക്രീം പോലെയുമാകുന്നതുവരെ, ഏകദേശം 30 മിനിറ്റ് വേവിക്കൂ. ഇടയ്ക്കിടെ ഇളക്കൂ; ഓരോ തവണയും പാത്രത്തിന്റെ അടിയും വശങ്ങളും വടിച്ചെടുക്കൂ.",
+   "back": "Cook the washed rice in the milk on low flame, until soft and cream-like, about 30 minutes. Stir from time to time; each time scrape the bottom and sides of the vessel."
+  },
+  "seg.ec1509a08b4c": {
+   "src": "Check the rice: a grain should mash easily between your fingers, and the milk should have thickened slightly. For a creamier paramannam, lightly mash a few grains against the side of the pan.",
+   "t": "അരി നോക്കൂ: ഒരു മണി വിരലുകൾക്കിടയിൽ എളുപ്പം ഉടയണം, പാൽ അല്പം കുറുകിയിരിക്കണം. കൂടുതൽ ക്രീമിയായ പരമാന്നത്തിന്, കുറച്ച് മണികൾ പാത്രത്തിന്റെ വശത്ത് ചെറുതായി ഉടച്ചുകൊടുക്കൂ.",
+   "back": "Check the rice: a grain should mash easily between the fingers, and the milk should have thickened a little. For a more creamy paramannam, lightly mash a few grains on the side of the vessel."
+  },
+  "seg.d8ba0a82f4ec": {
+   "src": "Switch off and let it rest 5 minutes. This brings the milk below the boil, so the jaggery will not split it.",
+   "t": "തീ അണച്ച് 5 മിനിറ്റ് വയ്ക്കൂ. അപ്പോൾ പാൽ തിളനിലയ്ക്ക് താഴെയെത്തും; ശർക്കര ചേർത്താലും പിരിയില്ല.",
+   "back": "Put out the flame and keep 5 minutes. Then the milk gets below boiling point; even if jaggery is added it will not split."
+  },
+  "seg.ca16c98d9b18": {
+   "src": "Stir in the jaggery till it melts, about 1–2 minutes, keeping the pan off the heat.",
+   "t": "പാത്രം അടുപ്പിൽ നിന്ന് മാറ്റിവച്ചുതന്നെ, ശർക്കര അലിയുന്നതുവരെ, ഏകദേശം 1–2 മിനിറ്റ് ഇളക്കൂ.",
+   "back": "With the vessel kept removed from the stove, stir until the jaggery dissolves, about 1–2 minutes."
+  },
+  "seg.74412a8cc141": {
+   "src": "Taste, and stir in a little more grated jaggery if you want it sweeter.",
+   "t": "രുചി നോക്കൂ; കൂടുതൽ മധുരം വേണമെങ്കിൽ അല്പം ചുരണ്ടിയ ശർക്കര കൂടി ഇളക്കിച്ചേർക്കൂ.",
+   "back": "Taste; if more sweetness is wanted stir in a little more grated jaggery."
+  },
+  "seg.92b56df40ea6": {
+   "src": "Heat the ghee in a small pan on medium-low heat.",
+   "t": "ഒരു ചെറിയ പാനിൽ നെയ്യ് ഇടത്തരം-ചെറുതീയിൽ ചൂടാക്കൂ.",
+   "back": "Heat the ghee in a small pan on medium-low flame."
+  },
+  "seg.1bb1f411e4d0": {
+   "src": "Fry the cashews in ghee; add with the cardamom. Stir the cashews until golden, about 1 minute, adding the raisins for the last few seconds until they puff up. Pour the nuts and ghee into the paramannam, sprinkle in the cardamom powder and stir.",
+   "t": "കശുവണ്ടി നെയ്യിൽ വറുത്ത്, ഏലക്കയോടൊപ്പം ചേർക്കൂ. കശുവണ്ടി സ്വർണ്ണനിറമാകുന്നതുവരെ, ഏകദേശം 1 മിനിറ്റ് ഇളക്കൂ; അവസാന ഏതാനും സെക്കൻഡിൽ ഉണക്കമുന്തിരി ചേർത്ത് അവ വീർക്കുന്നതുവരെ വറുക്കൂ. കശുവണ്ടിയും നെയ്യും പരമാന്നത്തിലേക്ക് ഒഴിച്ച്, ഏലക്കപ്പൊടി വിതറി ഇളക്കൂ.",
+   "back": "Roast the cashews in ghee, and add along with the cardamom. Stir the cashews until golden, about 1 minute; in the last few seconds add the raisins and roast until they swell. Pour the cashews and ghee into the paramannam, sprinkle the cardamom powder and stir."
+  },
+  "seg.e10b7192c157": {
+   "src": "Serve warm. Paramannam thickens as it stands; loosen it with a few spoons of warm milk, off the heat, if needed.",
+   "t": "ചൂടോടെ വിളമ്പൂ. പരമാന്നം വച്ചിരുന്നാൽ കുറുകും; ആവശ്യമെങ്കിൽ, അടുപ്പിൽ നിന്ന് മാറ്റിയ നിലയിൽ, കുറച്ച് സ്പൂൺ ഇളംചൂടുള്ള പാൽ ചേർത്ത് അയവാക്കൂ.",
+   "back": "Serve hot. Paramannam thickens if kept; if needed, in the removed-from-stove state, add a few spoons of lukewarm milk and loosen it."
+  },
+  "seg.d30196cf6b28": {
+   "src": "Jaggery goes in off the heat so the milk does not split.",
+   "t": "പാൽ പിരിയാതിരിക്കാൻ, അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷമാണ് ശർക്കര ചേർക്കേണ്ടത്.",
+   "back": "So that the milk does not split, jaggery should be added after removing from the stove."
+  },
+  "seg.d4a9c2ee09bf": {
+   "src": "Use a heavy-bottomed pan and scrape the bottom each time you stir; milk catches easily during the long simmer.",
+   "t": "അടി കട്ടിയുള്ള പാത്രം ഉപയോഗിച്ച്, ഓരോ തവണ ഇളക്കുമ്പോഴും അടി വടിച്ചെടുക്കൂ; ഏറെ നേരം വേവുമ്പോൾ പാൽ എളുപ്പം അടിയിൽ പിടിക്കും.",
+   "back": "Use a thick-bottomed vessel and scrape the bottom each time you stir; when cooking a long time milk easily catches at the bottom."
+  },
+  "seg.a01441abc0b6": {
+   "src": "Cook the rice until fully soft before the jaggery goes in; the grains do not soften further once it is sweetened.",
+   "t": "ശർക്കര ചേർക്കുന്നതിനുമുമ്പ് അരി പൂർണ്ണമായി മൃദുവാകുന്നതുവരെ വേവിക്കൂ; മധുരം ചേർത്ത ശേഷം മണികൾ കൂടുതൽ മൃദുവാകില്ല.",
+   "back": "Cook the rice until fully soft before adding jaggery; after sweetness is added the grains will not become softer."
+  },
+  "seg.688b80a32383": {
+   "src": "Grate the jaggery finely so it melts in the hot milk without going back on the stove.",
+   "t": "ശർക്കര നേർമ്മയായി ചുരണ്ടൂ; അപ്പോൾ വീണ്ടും അടുപ്പിൽ വയ്ക്കാതെതന്നെ ചൂടുപാലിൽ അലിയും.",
+   "back": "Grate the jaggery finely; then it dissolves in the hot milk without putting it on the stove again."
+  },
+  "seg.7bf8faca62b8": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for a darker colour and a deeper, smoky sweetness.",
+   "t": "പനംചക്കര: അതേ അളവിൽ ചുരണ്ടിയ പനംചക്കര ചേർത്താൽ, ഇരുണ്ട നിറവും ആഴമുള്ള, പുകമണമുള്ള മധുരവും കിട്ടും.",
+   "back": "Palm jaggery: if the same amount of grated palm jaggery is added, you get a dark colour and a deep, smoky-aroma sweetness."
+  },
+  "seg.6672d2210281": {
+   "src": "Pesarapappu paramannam: dry-roast 2 tbsp split moong dal until light golden, wash it and cook it with the rice.",
+   "t": "പെസരപ്പപ്പു പരമാന്നം: 2 ടേബിൾസ്പൂൺ ചെറുപയർ പരിപ്പ് ഇളം സ്വർണ്ണനിറമാകുന്നതുവരെ എണ്ണയില്ലാതെ വറുത്ത്, കഴുകി, അരിയോടൊപ്പം വേവിക്കൂ.",
+   "back": "Pesarapappu paramannam: roast 2 tablespoons of split green gram (moong) dal without oil until light golden, wash, and cook along with the rice."
+  },
+  "seg.cd25d9fb2a56": {
+   "src": "Coconut: fry 2 tbsp thin slivers of dry coconut in the ghee along with the cashews.",
+   "t": "തേങ്ങ: 2 ടേബിൾസ്പൂൺ നേർത്തതായി അരിഞ്ഞ കൊപ്രക്കഷണങ്ങൾ കശുവണ്ടിയോടൊപ്പം നെയ്യിൽ വറുക്കൂ.",
+   "back": "Coconut: roast 2 tablespoons of thinly cut copra pieces in ghee along with the cashews."
+  },
+  "seg.988ab75b5ccb": {
+   "src": "Serve warm as naivedyam at the Diwali or Lakshmi puja, then as the sweet at the festive meal. Some like it chilled the next day.",
+   "t": "ദീപാവലിക്കോ ലക്ഷ്മി പൂജയ്ക്കോ നിവേദ്യമായി ചൂടോടെ സമർപ്പിച്ച്, പിന്നെ ഉത്സവ സദ്യയിൽ മധുരമായി വിളമ്പൂ. ചിലർക്ക് പിറ്റേന്ന് തണുപ്പിച്ച് കഴിക്കാനാണ് ഇഷ്ടം.",
+   "back": "Offer hot as nivedyam for Deepavali or Lakshmi puja, then serve as a sweet in the festival feast. Some like to eat it chilled the next day."
+  },
+  "seg.4a60d211f14d": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. It sets thick when chilled; stir in a little warm milk, off the heat, before serving.",
+   "t": "ബാക്കിയുള്ളത് അടച്ച് ഫ്രിഡ്ജിൽ വച്ച്, 2 ദിവസത്തിനകം കഴിക്കൂ. തണുക്കുമ്പോൾ കട്ടിയാകും; വിളമ്പുന്നതിനുമുമ്പ്, അടുപ്പിൽ നിന്ന് മാറ്റിയ നിലയിൽ, അല്പം ഇളംചൂടുള്ള പാൽ ഇളക്കിച്ചേർക്കൂ.",
+   "back": "Close the leftover, keep in the fridge, and eat within 2 days. It becomes thick when it cools; before serving, in the removed-from-stove state, stir in a little lukewarm milk."
+  },
+  "seg.2949774c7efb": {
+   "src": "Why did my paramannam curdle after adding jaggery?",
+   "t": "ശർക്കര ചേർത്തപ്പോൾ എന്റെ പരമാന്നം എന്തുകൊണ്ടാണ് പിരിഞ്ഞത്?",
+   "back": "Why did my paramannam split when I added jaggery?"
+  },
+  "seg.283626ae50fc": {
+   "src": "Jaggery stirred into milk that is still on the heat or boiling can make it split. Switch off, let the paramannam rest for about 5 minutes, then stir in the grated jaggery.",
+   "t": "ഇപ്പോഴും അടുപ്പിലുള്ളതോ തിളയ്ക്കുന്നതോ ആയ പാലിൽ ശർക്കര ഇളക്കിച്ചേർത്താൽ പാൽ പിരിയാം. തീ അണച്ച്, പരമാന്നം ഏകദേശം 5 മിനിറ്റ് വച്ച്, പിന്നെ ചുരണ്ടിയ ശർക്കര ഇളക്കിച്ചേർക്കൂ.",
+   "back": "If jaggery is stirred into milk that is still on the stove or boiling, the milk may split. Put out the flame, keep the paramannam about 5 minutes, then stir in the grated jaggery."
+  },
+  "seg.7df6976d1e83": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The paramannam turns darker and tastes deeper and slightly smoky.",
+   "t": "അതെ. അതേ അളവിൽ ചുരണ്ടിയ പനംചക്കര (താട്ടി ബെല്ലം) ഉപയോഗിക്കൂ. പരമാന്നം ഇരുണ്ട നിറമാകും, രുചി ആഴമുള്ളതും ചെറിയ പുകമണമുള്ളതുമാകും.",
+   "back": "Yes. Use the same amount of grated palm jaggery (thati bellam). The paramannam will become dark in colour, and the taste will be deep and slightly smoky-aroma."
+  },
+  "seg.6ac2cfc26fb7": {
+   "src": "Which rice is best for paramannam?",
+   "t": "പരമാന്നത്തിന് ഏത് അരിയാണ് നല്ലത്?",
+   "back": "Which rice is good for paramannam?"
+  },
+  "seg.ead18bc39c32": {
+   "src": "A short-grain rice such as sona masoori cooks soft and creamy in milk. Long-grain basmati keeps its grains separate and gives a thinner paramannam.",
+   "t": "സോന മസൂരി പോലുള്ള ചെറുമണി അരി പാലിൽ മൃദുവും ക്രീം പോലെയും വേവും. നീളൻ ബസ്മതി അരിയുടെ മണികൾ വേറിട്ടുനിൽക്കും; പരമാന്നം നേർത്തതാകും.",
+   "back": "Short-grain rice like Sona Masoori cooks soft and cream-like in milk. The grains of long basmati rice stay separate; the paramannam will be thin."
+  },
+  "seg.2baf5cc4ec36": {
+   "src": "How do I fix paramannam that has become too thick?",
+   "t": "വളരെ കുറുകിപ്പോയ പരമാന്നം എങ്ങനെ ശരിയാക്കാം?",
+   "back": "How to fix a paramannam that has become very thick?"
+  },
+  "seg.9ffeabf346fa": {
+   "src": "Stir in a few spoons of warm milk, off the heat, until it loosens. It thickens as it cools, so stop when it is a little thinner than you want.",
+   "t": "അടുപ്പിൽ നിന്ന് മാറ്റിയ നിലയിൽ, അയയുന്നതുവരെ കുറച്ച് സ്പൂൺ ഇളംചൂടുള്ള പാൽ ഇളക്കിച്ചേർക്കൂ. തണുക്കുമ്പോൾ കുറുകും; അതിനാൽ നിങ്ങൾക്ക് വേണ്ടതിലും അല്പം അയവുള്ളപ്പോൾ തന്നെ നിർത്തൂ.",
+   "back": "In the removed-from-stove state, stir in a few spoons of lukewarm milk until it loosens. It thickens when it cools; so stop while it is still a little looser than you want."
+  },
+  "seg.43e6183ba82c": {
+   "src": "బెల్లం పరమాన్నం · Bellam Paramannam Recipe | 1acrefarms",
+   "t": "బెల్లం పరమాన్నం · ബെല്ലം പരമാന്നം പാചകക്കുറിപ്പ് | 1acrefarms",
+   "back": "బెల్లం పరమాన్నం · Bellam Paramannam recipe | 1acrefarms"
+  },
+  "seg.8b09026bfd65": {
+   "src": "బెల్లం పరమాన్నం. Bellam paramannam for Diwali: rice slow-cooked in milk and sweetened with cane jaggery off the heat, finished with ghee-fried cashews. Step-by-step method, tips and FAQs. Serves 4.",
+   "t": "బెల్లం పరమాన్నం. ദീപാവലിക്ക് ബെല്ലം പരമാന്നം: അരി പാലിൽ പതുക്കെ വേവിച്ച്, അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷം കരിമ്പ് ശർക്കര ചേർത്ത് മധുരമാക്കി, നെയ്യിൽ വറുത്ത കശുവണ്ടി ചേർത്ത് പൂർത്തിയാക്കുന്നത്. ഘട്ടം ഘട്ടമായുള്ള രീതി, ടിപ്പുകൾ, ചോദ്യോത്തരങ്ങൾ. 4 പേർക്ക്.",
+   "back": "బెల్లం పరమాన్నం. Bellam Paramannam for Deepavali: rice cooked slowly in milk, sweetened by adding sugarcane jaggery after removing from the stove, and finished by adding cashews roasted in ghee. Step-by-step method, tips, questions and answers. For 4 people."
+  },
+  "seg.07511b65bfa7": {
+   "src": "Bellam Paramannam (Jaggery Rice Kheer) · 1acrefarms",
+   "t": "ബെല്ലം പരമാന്നം (ശർക്കര അരിപ്പായസം) · 1acrefarms",
+   "back": "Bellam Paramannam (jaggery rice payasam) · 1acrefarms"
+  },
+  "seg.cf8cab3618d9": {
+   "src": "Bellam Paramannam: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "ബെല്ലം പരമാന്നം: 1acrefarms-ന്റെ പാചകക്കുറിപ്പ് കാർഡ്, ചേരുവകളും ഉണ്ടാക്കുന്ന വിധവും",
+   "back": "Bellam Paramannam: 1acrefarms' recipe card, ingredients and method of making"
+  },
+  "seg.36fc986c4713": {
+   "src": "½ cup rice",
+   "t": "½ കപ്പ് അരി",
+   "back": "½ cup rice"
+  },
+  "seg.d414ee4821fa": {
+   "src": "4 cups milk",
+   "t": "4 കപ്പ് പാൽ",
+   "back": "4 cups milk"
+  },
+  "seg.5c2ad54d4584": {
+   "src": "10 cashews",
+   "t": "10 കശുവണ്ടി",
+   "back": "10 cashews"
+  },
+  "seg.b925e45a5f93": {
+   "src": "½ tsp cardamom powder",
+   "t": "½ ടീസ്പൂൺ ഏലക്കപ്പൊടി",
+   "back": "½ teaspoon cardamom powder"
+  },
+  "seg.c20ca0bb138c": {
+   "src": "Karthika Somavaram · 5 minutes",
+   "t": "കാർത്തിക സോമവാരം · 5 മിനിറ്റ്",
+   "back": "Karthika Somavaram · 5 minutes"
+  },
+  "seg.7221ac3c40b7": {
+   "src": "Warm Pasupu Paalu ⟦1⟧(Turmeric Milk)⟦/1⟧",
+   "t": "ചൂടുള്ള പസുപു പാലു ⟦1⟧(മഞ്ഞൾപ്പാൽ)⟦/1⟧",
+   "back": "Hot Pasupu Palu ⟦1⟧(turmeric milk)⟦/1⟧"
+  },
+  "seg.44699ae5fc7d": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Pasupu Paalu · Haldi Wala Doodh",
+   "t": "⟦#1⟧ · ⟦#2⟧ · പസുപു പാലു · ഹൽദി വാലാ ദൂധ്",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Pasupu Palu · Haldi wala doodh"
+  },
+  "seg.5fbc274b0656": {
+   "src": "Pasupu paalu is warm milk simmered with a little turmeric and a pinch of black pepper, then sweetened with jaggery. It is an everyday cup in many Telugu homes, made on cool evenings and often through Karthika masam, the month of Somavaram (Monday) pujas and evening lamps.",
+   "t": "പസുപു പാലു എന്നത് അല്പം മഞ്ഞളും ഒരു നുള്ള് കുരുമുളകും ചേർത്ത് തിളപ്പിച്ച്, പിന്നെ ശർക്കര ചേർത്ത് മധുരമാക്കിയ ചൂടുപാലാണ്. പല തെലുങ്ക് വീടുകളിലും ഇത് ദിവസവും കുടിക്കുന്ന ഒരു കപ്പാണ്; തണുപ്പുള്ള വൈകുന്നേരങ്ങളിൽ ഉണ്ടാക്കും, പലപ്പോഴും കാർത്തിക മാസം മുഴുവനും; സോമവാര (തിങ്കൾ) പൂജകളുടെയും സന്ധ്യാദീപങ്ങളുടെയും മാസമാണത്.",
+   "back": "Pasupu palu is hot milk boiled with a little turmeric and a pinch of pepper added, then sweetened by adding jaggery. In many Telugu homes it is a cup drunk daily; it is made on cold evenings, often throughout the month of Karthika; that is the month of Somavara (Monday) pujas and evening lamps."
+  },
+  "seg.7d5fe2bc79e0": {
+   "src": "The turmeric turns the milk golden and gives it an earthy, slightly bitter edge, the pepper adds a little heat, and the jaggery rounds it off with a caramel sweetness. This recipe makes one cup in about 5 minutes.",
+   "t": "മഞ്ഞൾ പാലിന് സ്വർണ്ണനിറവും, മണ്ണിന്റെ മണമുള്ള ചെറിയ കയ്പ്പും നൽകുന്നു; കുരുമുളക് അല്പം എരിവ് ചേർക്കുന്നു; ശർക്കര കാരമൽ പോലുള്ള മധുരത്തോടെ രുചി പൂർത്തിയാക്കുന്നു. ഈ പാചകക്കുറിപ്പിൽ ഏകദേശം 5 മിനിറ്റിൽ ഒരു കപ്പ് കിട്ടും.",
+   "back": "Turmeric gives the milk a golden colour and a slight bitterness with the smell of earth; pepper adds a little heat; jaggery completes the taste with a caramel-like sweetness. This recipe gives one cup in about 5 minutes."
+  },
+  "seg.8d84c28f29ee": {
+   "src": "⟦1⟧Prep⟦/1⟧1 min",
+   "t": "⟦1⟧തയ്യാറാക്കൽ⟦/1⟧1 മിനിറ്റ്",
+   "back": "⟦1⟧Preparation⟦/1⟧1 minute"
+  },
+  "seg.166ac82bce1a": {
+   "src": "⟦1⟧Cook⟦/1⟧4 min",
+   "t": "⟦1⟧പാചകം⟦/1⟧4 മിനിറ്റ്",
+   "back": "⟦1⟧Cooking⟦/1⟧4 minutes"
+  },
+  "seg.d16246ee0866": {
+   "src": "⟦1⟧Total⟦/1⟧5 min",
+   "t": "⟦1⟧ആകെ⟦/1⟧5 മിനിറ്റ്",
+   "back": "⟦1⟧Total⟦/1⟧5 minutes"
+  },
+  "seg.e6c332afda75": {
+   "src": "⟦1⟧Makes⟦/1⟧1 cup",
+   "t": "⟦1⟧അളവ്⟦/1⟧1 കപ്പ്",
+   "back": "⟦1⟧Quantity⟦/1⟧1 cup"
+  },
+  "seg.8e4df121a859": {
+   "src": "Simmer milk with turmeric and a pinch of pepper, switch off, then stir in a spoon of jaggery.",
+   "t": "പാലിൽ മഞ്ഞളും ഒരു നുള്ള് കുരുമുളകും ചേർത്ത് തിളപ്പിച്ച്, തീ അണച്ച്, പിന്നെ ഒരു സ്പൂൺ ശർക്കര ഇളക്കിച്ചേർക്കൂ.",
+   "back": "Boil the milk with turmeric and a pinch of pepper added, put out the flame, then stir in a spoon of jaggery."
+  },
+  "seg.616c584b1f2d": {
+   "src": "Ingredients ⟦1⟧makes 1 cup⟦/1⟧",
+   "t": "ചേരുവകൾ ⟦1⟧1 കപ്പിന്⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 1 cup⟦/1⟧"
+  },
+  "seg.33cd5776caaf": {
+   "src": "¼ tsp turmeric powder ⟦1⟧Turmeric Powder or Hill Turmeric Powder⟦/1⟧",
+   "t": "¼ ടീസ്പൂൺ മഞ്ഞൾപ്പൊടി ⟦1⟧മഞ്ഞൾപ്പൊടി അല്ലെങ്കിൽ മലയോര മഞ്ഞൾപ്പൊടി⟦/1⟧",
+   "back": "¼ teaspoon turmeric powder ⟦1⟧turmeric powder or hill-region turmeric powder⟦/1⟧"
+  },
+  "seg.f1056c625241": {
+   "src": "A pinch of black pepper ⟦1⟧powdered or crushed⟦/1⟧",
+   "t": "ഒരു നുള്ള് കുരുമുളക് ⟦1⟧പൊടിച്ചതോ ചതച്ചതോ⟦/1⟧",
+   "back": "A pinch of black pepper ⟦1⟧powdered or crushed⟦/1⟧"
+  },
+  "seg.bc417c4b3691": {
+   "src": "1 tsp grated palm or cane jaggery ⟦1⟧or to taste⟦/1⟧",
+   "t": "1 ടീസ്പൂൺ ചുരണ്ടിയ പനംചക്കര അല്ലെങ്കിൽ കരിമ്പ് ശർക്കര ⟦1⟧അല്ലെങ്കിൽ രുചിക്കനുസരിച്ച്⟦/1⟧",
+   "back": "1 teaspoon grated palm jaggery or sugarcane jaggery ⟦1⟧or according to taste⟦/1⟧"
+  },
+  "seg.12c1bae1db56": {
+   "src": "A pinch of cardamom powder (optional)",
+   "t": "ഒരു നുള്ള് ഏലക്കപ്പൊടി (വേണമെങ്കിൽ)",
+   "back": "A pinch of cardamom powder (if wanted)"
+  },
+  "seg.df14f9098720": {
+   "src": "Turmeric Powder",
+   "t": "മഞ്ഞൾപ്പൊടി",
+   "back": "Turmeric powder"
+  },
+  "seg.c6d79d093fe3": {
+   "src": "⟦#1⟧ · Pasupu",
+   "t": "⟦#1⟧ · പസുപു",
+   "back": "⟦#1⟧ · Pasupu"
+  },
+  "seg.a44f282ce639": {
+   "src": "MRP ₹396 · 540 g",
+   "t": "MRP ₹396 · 540 g",
+   "back": "MRP ₹396 · 540 g"
+  },
+  "seg.c1f7f3a42c29": {
+   "src": "Hill Turmeric Powder",
+   "t": "മലയോര മഞ്ഞൾപ്പൊടി",
+   "back": "Hill-region turmeric powder"
+  },
+  "seg.19ef1ef93a26": {
+   "src": "⟦#1⟧ · Konda Pasupu",
+   "t": "⟦#1⟧ · കൊണ്ട പസുപു",
+   "back": "⟦#1⟧ · Konda pasupu"
+  },
+  "seg.1a51e1f06af0": {
+   "src": "Sweeten it with ⟦1⟧Palm Jaggery⟦/1⟧ or ⟦2⟧Cane Jaggery⟦/2⟧.",
+   "t": "⟦1⟧പനംചക്കര⟦/1⟧ അല്ലെങ്കിൽ ⟦2⟧കരിമ്പ് ശർക്കര⟦/2⟧ ചേർത്ത് മധുരമാക്കൂ.",
+   "back": "Sweeten by adding ⟦1⟧palm jaggery⟦/1⟧ or ⟦2⟧sugarcane jaggery⟦/2⟧."
+  },
+  "seg.b0b3cf3b3c0d": {
+   "src": "Pour the milk into a small steel saucepan.",
+   "t": "പാൽ ഒരു ചെറിയ സ്റ്റീൽ പാത്രത്തിലൊഴിക്കൂ.",
+   "back": "Pour the milk into a small steel vessel."
+  },
+  "seg.94d57531a741": {
+   "src": "Add the turmeric and pepper (and the cardamom, if using) and stir until no specks of turmeric float on top. They mix in more evenly before the milk is heated.",
+   "t": "മഞ്ഞളും കുരുമുളകും ചേർക്കൂ (ഏലക്ക ഉപയോഗിക്കുന്നുണ്ടെങ്കിൽ അതും); മുകളിൽ മഞ്ഞൾത്തരികൾ പൊങ്ങിക്കിടക്കാത്തതുവരെ ഇളക്കൂ. പാൽ ചൂടാക്കുന്നതിനുമുമ്പ് ചേർത്താൽ ഇവ കൂടുതൽ ഒരുപോലെ കലരും.",
+   "back": "Add turmeric and pepper (and cardamom too if using it); stir until no turmeric granules float on top. If added before heating the milk these mix more evenly."
+  },
+  "seg.9da3932c6508": {
+   "src": "Set the pan on medium-low heat. Warm the milk with the turmeric and pepper; simmer 2 minutes. Once small bubbles appear around the edge, turn the heat to low and let it bubble gently.",
+   "t": "പാത്രം ഇടത്തരം-ചെറുതീയിൽ വയ്ക്കൂ. മഞ്ഞളും കുരുമുളകും ചേർത്ത പാൽ ചൂടാക്കി, 2 മിനിറ്റ് തിളപ്പിക്കൂ. അരികിൽ ചെറിയ കുമിളകൾ വന്നാൽ, തീ കുറച്ച്, പതുക്കെ തിളയ്ക്കാൻ വിടൂ.",
+   "back": "Place the vessel on medium-low flame. Heat the milk with turmeric and pepper added, and boil for 2 minutes. When small bubbles come at the edge, reduce the flame and let it simmer slowly."
+  },
+  "seg.c66cb9336ef5": {
+   "src": "Stir now and then and keep an eye on the pan, as milk rises fast once it boils. If it starts to climb, lift the pan off the heat for a few seconds.",
+   "t": "ഇടയ്ക്കിടെ ഇളക്കി, പാത്രം ശ്രദ്ധിച്ചുകൊണ്ടിരിക്കൂ; തിളച്ചുതുടങ്ങിയാൽ പാൽ വേഗം പൊങ്ങും. മുകളിലേക്ക് കയറാൻ തുടങ്ങിയാൽ, ഏതാനും സെക്കൻഡ് പാത്രം അടുപ്പിൽ നിന്ന് ഉയർത്തിപ്പിടിക്കൂ.",
+   "back": "Stir from time to time and keep watching the vessel; once it starts to boil milk rises up fast. If it starts to climb up, lift the vessel up off the stove for a few seconds."
+  },
+  "seg.b567bc0c93c9": {
+   "src": "It is ready when the milk is an even golden yellow and the raw smell of turmeric has gone.",
+   "t": "പാൽ മുഴുവൻ ഒരുപോലെ സ്വർണ്ണ മഞ്ഞനിറമാകുകയും മഞ്ഞളിന്റെ പച്ചമണം പോവുകയും ചെയ്താൽ തയ്യാർ.",
+   "back": "Ready when all the milk becomes evenly golden yellow and the raw smell of turmeric goes."
+  },
+  "seg.6e16c50d7c2a": {
+   "src": "Switch off and wait a minute. The milk drops just below the boil, so the jaggery will not split it.",
+   "t": "തീ അണച്ച് ഒരു മിനിറ്റ് കാത്തിരിക്കൂ. പാൽ തിളനിലയ്ക്ക് അല്പം താഴെയെത്തും; ശർക്കര ചേർത്താലും പിരിയില്ല.",
+   "back": "Put out the flame and wait one minute. The milk gets a little below boiling point; even if jaggery is added it will not split."
+  },
+  "seg.aa0d1bcf6802": {
+   "src": "For a smooth cup, pour the milk through a fine sieve into a tumbler or mug.",
+   "t": "മിനുസമുള്ള പാലിന്, നേർത്ത അരിപ്പയിലൂടെ ടംബ്ലറിലേക്കോ മഗ്ഗിലേക്കോ അരിച്ചൊഴിക്കൂ.",
+   "back": "For smooth milk, strain through a fine sieve into a tumbler or mug."
+  },
+  "seg.862cac523844": {
+   "src": "Stir in the jaggery and serve warm. Stir for 20–30 seconds, until it dissolves, and taste for sweetness.",
+   "t": "ശർക്കര ഇളക്കിച്ചേർത്ത് ചൂടോടെ വിളമ്പൂ. അലിയുന്നതുവരെ 20–30 സെക്കൻഡ് ഇളക്കി, മധുരം രുചിച്ചുനോക്കൂ.",
+   "back": "Stir in the jaggery and serve hot. Stir 20–30 seconds until it dissolves, and taste the sweetness."
+  },
+  "seg.1d9b9ec736a8": {
+   "src": "Strain through a fine sieve if you like it smooth.",
+   "t": "മിനുസമായി വേണമെങ്കിൽ നേർത്ത അരിപ്പയിലൂടെ അരിച്ചെടുക്കൂ.",
+   "back": "If wanted smooth, strain through a fine sieve."
+  },
+  "seg.018366193ef3": {
+   "src": "Add the jaggery only after switching off; jaggery stirred into boiling milk can split it.",
+   "t": "തീ അണച്ച ശേഷം മാത്രം ശർക്കര ചേർക്കൂ; തിളയ്ക്കുന്ന പാലിൽ ശർക്കര ഇളക്കിച്ചേർത്താൽ പാൽ പിരിയാം.",
+   "back": "Add jaggery only after putting out the flame; if jaggery is stirred into boiling milk the milk may split."
+  },
+  "seg.0e783ba83473": {
+   "src": "Use a steel pan and spoon; turmeric stains plastic and wood.",
+   "t": "സ്റ്റീൽ പാത്രവും സ്പൂണും ഉപയോഗിക്കൂ; മഞ്ഞൾ പ്ലാസ്റ്റിക്കിലും മരത്തിലും കറ പിടിപ്പിക്കും.",
+   "back": "Use a steel vessel and spoon; turmeric stains plastic and wood."
+  },
+  "seg.dc2a0c79ccd5": {
+   "src": "Making more? Use the same amounts for each cup of milk.",
+   "t": "കൂടുതൽ ഉണ്ടാക്കുകയാണോ? ഓരോ കപ്പ് പാലിനും ഇതേ അളവുകൾ ഉപയോഗിക്കൂ.",
+   "back": "Making more? Use these same amounts for each cup of milk."
+  },
+  "seg.485f68415013": {
+   "src": "Hill turmeric: use Hill Turmeric Powder (konda pasupu) in place of turmeric powder, in the same amount.",
+   "t": "മലയോര മഞ്ഞൾ: മഞ്ഞൾപ്പൊടിക്ക് പകരം അതേ അളവിൽ മലയോര മഞ്ഞൾപ്പൊടി (കൊണ്ട പസുപു) ഉപയോഗിക്കൂ.",
+   "back": "Hill-region turmeric: instead of turmeric powder use the same amount of hill-region turmeric powder (konda pasupu)."
+  },
+  "seg.01ec7a142032": {
+   "src": "Palm or cane jaggery: palm jaggery gives a deeper, slightly smoky sweetness; cane jaggery a lighter, caramel one.",
+   "t": "പനംചക്കരയോ കരിമ്പ് ശർക്കരയോ: പനംചക്കര ആഴമുള്ള, ചെറിയ പുകമണമുള്ള മധുരം നൽകും; കരിമ്പ് ശർക്കര ലഘുവായ, കാരമൽ പോലുള്ള മധുരവും.",
+   "back": "Palm jaggery or sugarcane jaggery: palm jaggery will give a deep, slightly smoky-aroma sweetness; sugarcane jaggery a light, caramel-like sweetness."
+  },
+  "seg.15b67235d087": {
+   "src": "Milder cup: leave out the pepper and add a pinch of cardamom powder instead.",
+   "t": "എരിവ് കുറഞ്ഞ കപ്പ്: കുരുമുളക് ഒഴിവാക്കി, പകരം ഒരു നുള്ള് ഏലക്കപ്പൊടി ചേർക്കൂ.",
+   "back": "Less-spicy cup: leave out the pepper, and add a pinch of cardamom powder instead."
+  },
+  "seg.d80219c8a51f": {
+   "src": "Serve warm in a tumbler or mug, on a cool evening or after the Karthika Somavaram puja.",
+   "t": "തണുപ്പുള്ള വൈകുന്നേരം, അല്ലെങ്കിൽ കാർത്തിക സോമവാര പൂജയ്ക്കു ശേഷം, ടംബ്ലറിലോ മഗ്ഗിലോ ചൂടോടെ വിളമ്പൂ.",
+   "back": "On a cold evening, or after the Karthika Somavara puja, serve hot in a tumbler or mug."
+  },
+  "seg.ac04ffd1d51a": {
+   "src": "Make it as you need it and drink it warm. Reheating after the jaggery is in can split the milk.",
+   "t": "ആവശ്യമുള്ളപ്പോൾ ഉണ്ടാക്കി ചൂടോടെ കുടിക്കൂ. ശർക്കര ചേർത്ത ശേഷം വീണ്ടും ചൂടാക്കിയാൽ പാൽ പിരിയാം.",
+   "back": "Make when needed and drink hot. If reheated after adding jaggery the milk may split."
+  },
+  "seg.c758e61dd102": {
+   "src": "Why did my pasupu paalu curdle?",
+   "t": "എന്റെ പസുപു പാലു എന്തുകൊണ്ടാണ് പിരിഞ്ഞത്?",
+   "back": "Why did my pasupu palu split?"
+  },
+  "seg.d5f9c6fb2e27": {
+   "src": "Jaggery stirred into milk that is still boiling can make it split. Switch off the heat, wait about a minute, then stir in the grated jaggery.",
+   "t": "ഇപ്പോഴും തിളയ്ക്കുന്ന പാലിൽ ശർക്കര ഇളക്കിച്ചേർത്താൽ പാൽ പിരിയാം. തീ അണച്ച്, ഏകദേശം ഒരു മിനിറ്റ് കാത്തിരുന്ന്, പിന്നെ ചുരണ്ടിയ ശർക്കര ഇളക്കിച്ചേർക്കൂ.",
+   "back": "If jaggery is stirred into milk that is still boiling, the milk may split. Put out the flame, wait about one minute, then stir in the grated jaggery."
+  },
+  "seg.df4dbdd3102b": {
+   "src": "How much turmeric should I use for one cup of milk?",
+   "t": "ഒരു കപ്പ് പാലിന് എത്ര മഞ്ഞൾ ഉപയോഗിക്കണം?",
+   "back": "How much turmeric should be used for one cup of milk?"
+  },
+  "seg.3ec50124bdd7": {
+   "src": "¼ tsp turmeric powder for 1 cup (about 240 ml) of milk. More than that makes the taste sharp and earthy.",
+   "t": "1 കപ്പ് (ഏകദേശം 240 ml) പാലിന് ¼ ടീസ്പൂൺ മഞ്ഞൾപ്പൊടി. അതിൽ കൂടിയാൽ രുചി കടുത്തതും മണ്ണിന്റെ മണമുള്ളതുമാകും.",
+   "back": "¼ teaspoon turmeric powder for 1 cup (about 240 ml) of milk. If more than that the taste becomes harsh and earthy-smelling."
+  },
+  "seg.3dc4d1edd4f9": {
+   "src": "Can I skip the black pepper?",
+   "t": "കുരുമുളക് ഒഴിവാക്കാമോ?",
+   "back": "Can black pepper be left out?"
+  },
+  "seg.166b3a44e11d": {
+   "src": "Yes. The pepper adds a little heat to the taste; leave it out, or use a pinch of cardamom instead, for a milder cup.",
+   "t": "അതെ. കുരുമുളക് രുചിക്ക് അല്പം എരിവ് ചേർക്കുന്നു; എരിവ് കുറഞ്ഞ കപ്പിന് അത് ഒഴിവാക്കാം, അല്ലെങ്കിൽ പകരം ഒരു നുള്ള് ഏലക്ക ചേർക്കാം.",
+   "back": "Yes. Pepper adds a little heat to the taste; for a less-spicy cup it can be left out, or a pinch of cardamom can be added instead."
+  },
+  "seg.2184adfd31b0": {
+   "src": "Should I use palm jaggery or cane jaggery?",
+   "t": "പനംചക്കരയാണോ കരിമ്പ് ശർക്കരയാണോ ഉപയോഗിക്കേണ്ടത്?",
+   "back": "Is it palm jaggery or sugarcane jaggery that should be used?"
+  },
+  "seg.ef65c3a9d015": {
+   "src": "Either works, 1 tsp grated per cup. Palm jaggery tastes deeper and slightly smoky; cane jaggery is lighter and more like caramel.",
+   "t": "രണ്ടും മതി, ഒരു കപ്പിന് 1 ടീസ്പൂൺ ചുരണ്ടിയത്. പനംചക്കരയ്ക്ക് ആഴമുള്ള, ചെറിയ പുകമണമുള്ള രുചി; കരിമ്പ് ശർക്കര ലഘുവും കാരമൽ പോലുള്ളതുമാണ്.",
+   "back": "Either will do, 1 teaspoon grated per cup. Palm jaggery has a deep, slightly smoky-aroma taste; sugarcane jaggery is light and caramel-like."
+  },
+  "seg.0f694f995bf8": {
+   "src": "పసుపు పాలు · Pasupu Paalu (Turmeric Milk) Recipe | 1acrefarms",
+   "t": "పసుపు పాలు · പസുപു പാലു (മഞ്ഞൾപ്പാൽ) പാചകക്കുറിപ്പ് | 1acrefarms",
+   "back": "పసుపు పాలు · Pasupu Palu (turmeric milk) recipe | 1acrefarms"
+  },
+  "seg.bf09ae159f00": {
+   "src": "పసుపు పాలు. Pasupu paalu (haldi doodh): warm milk simmered with turmeric and a pinch of pepper, sweetened with jaggery off the heat. Step-by-step method, tips and FAQs.",
+   "t": "పసుపు పాలు. പസുപു പാലു (ഹൽദി ദൂധ്): മഞ്ഞളും ഒരു നുള്ള് കുരുമുളകും ചേർത്ത് തിളപ്പിച്ച്, അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷം ശർക്കര ചേർത്ത് മധുരമാക്കിയ ചൂടുപാൽ. ഘട്ടം ഘട്ടമായുള്ള രീതി, ടിപ്പുകൾ, ചോദ്യോത്തരങ്ങൾ.",
+   "back": "పసుపు పాలు. Pasupu Palu (haldi doodh): hot milk boiled with turmeric and a pinch of pepper added, sweetened by adding jaggery after removing from the stove. Step-by-step method, tips, questions and answers."
+  },
+  "seg.d61c2bf097f8": {
+   "src": "Warm Pasupu Paalu (Turmeric Milk) · 1acrefarms",
+   "t": "ചൂടുള്ള പസുപു പാലു (മഞ്ഞൾപ്പാൽ) · 1acrefarms",
+   "back": "Hot Pasupu Palu (turmeric milk) · 1acrefarms"
+  },
+  "seg.4291e73409f8": {
+   "src": "Warm Pasupu Paalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "ചൂടുള്ള പസുപു പാലു: 1acrefarms-ന്റെ പാചകക്കുറിപ്പ് കാർഡ്, ചേരുവകളും ഉണ്ടാക്കുന്ന വിധവും",
+   "back": "Hot Pasupu Palu: 1acrefarms' recipe card, ingredients and method of making"
+  },
+  "seg.bb2ab610d782": {
+   "src": "Turmeric Powder 540 g pack",
+   "t": "മഞ്ഞൾപ്പൊടി 540 g പാക്കറ്റ്",
+   "back": "Turmeric powder 540 g packet"
+  },
+  "seg.e5c4e88b0420": {
+   "src": "Hill Turmeric Powder 540 g pack",
+   "t": "മലയോര മഞ്ഞൾപ്പൊടി 540 g പാക്കറ്റ്",
+   "back": "Hill-region turmeric powder 540 g packet"
+  },
+  "seg.20b188783d7d": {
+   "src": "¼ tsp turmeric powder",
+   "t": "¼ ടീസ്പൂൺ മഞ്ഞൾപ്പൊടി",
+   "back": "¼ teaspoon turmeric powder"
+  },
+  "seg.b62b5a559893": {
+   "src": "A pinch of black pepper",
+   "t": "ഒരു നുള്ള് കുരുമുളക്",
+   "back": "A pinch of black pepper"
+  },
+  "seg.b0c2f2f3f9c9": {
+   "src": "1 tsp grated palm or cane jaggery",
+   "t": "1 ടീസ്പൂൺ ചുരണ്ടിയ പനംചക്കര അല്ലെങ്കിൽ കരിമ്പ് ശർക്കര",
+   "back": "1 teaspoon grated palm jaggery or sugarcane jaggery"
+  },
+  "seg.929a28d26142": {
+   "src": "Guides",
+   "t": "ഗൈഡുകൾ",
+   "back": "Guides"
+  },
+  "seg.c388948b1966": {
+   "src": "Cane jaggery or palm jaggery",
+   "t": "കരിമ്പ് ശർക്കരയോ പനംചക്കരയോ",
+   "back": "Sugarcane jaggery or palm jaggery"
+  },
+  "seg.d1cc45d4f641": {
+   "src": "Guide · jaggery",
+   "t": "ഗൈഡ് · ശർക്കര",
+   "back": "Guide · Jaggery"
+  },
+  "seg.d8082aa0cdf1": {
+   "src": "Cane jaggery or palm jaggery: which to use",
+   "t": "കരിമ്പ് ശർക്കരയോ പനംചക്കരയോ: ഏത് ഉപയോഗിക്കണം",
+   "back": "Sugarcane jaggery or palm jaggery: which to use"
+  },
+  "seg.5094f960d9a4": {
+   "src": "Bellam in a Telugu kitchen usually means one of two things: cheruku bellam, made from sugarcane juice, or thati bellam, made from the sap of the palmyra palm. FSSAI treats them as two separate products, each with its own standard.",
+   "t": "തെലുങ്ക് അടുക്കളയിൽ ബെല്ലം എന്നാൽ സാധാരണ രണ്ടിലൊന്നാണ്: കരിമ്പിൻ നീരിൽ നിന്നുണ്ടാക്കുന്ന ചെറുകു ബെല്ലം, അല്ലെങ്കിൽ കരിമ്പനയുടെ നീരിൽ നിന്നുണ്ടാക്കുന്ന താട്ടി ബെല്ലം. FSSAI ഇവയെ രണ്ട് വേറിട്ട ഉൽപ്പന്നങ്ങളായാണ് കണക്കാക്കുന്നത്; ഓരോന്നിനും അതിന്റേതായ നിലവാരമാനദണ്ഡമുണ്ട്.",
+   "back": "In a Telugu kitchen bellam usually means one of two: cheruku bellam made from sugarcane juice, or thati bellam made from the sap of the palmyra palm. FSSAI counts these as two separate products; each has its own quality standard."
+  },
+  "seg.13fd9611c493": {
+   "src": "They can look alike in a lump, but they taste different and suit different dishes. Here is how to tell them apart, which to use where, and how to keep them. There is a full Telugu section further down.",
+   "t": "കട്ടയായി കാണുമ്പോൾ രണ്ടും ഒരുപോലെ തോന്നാം, പക്ഷേ രുചി വേറെയാണ്, ചേരുന്ന വിഭവങ്ങളും വേറെ. ഇവ എങ്ങനെ തിരിച്ചറിയാം, ഏത് എവിടെ ഉപയോഗിക്കാം, എങ്ങനെ സൂക്ഷിക്കാം എന്നിവ ഇവിടെ. താഴെ ഒരു മുഴുവൻ തെലുങ്ക് ഭാഗവും ഉണ്ട്.",
+   "back": "Seen as a block both may seem the same, but the taste is different, and the dishes they go with are different too. How to identify these, which to use where, and how to store them are here. Below there is also a full Telugu section."
+  },
+  "seg.be457b1334f5": {
+   "src": "Cane Jaggery⟦#1⟧⟦#2⟧",
+   "t": "കരിമ്പ് ശർക്കര⟦#1⟧⟦#2⟧",
+   "back": "Sugarcane jaggery⟦#1⟧⟦#2⟧"
+  },
+  "seg.18208d939ae8": {
+   "src": "Palm Jaggery⟦#1⟧⟦#2⟧",
+   "t": "പനംചക്കര⟦#1⟧⟦#2⟧",
+   "back": "Palm jaggery⟦#1⟧⟦#2⟧"
+  },
+  "seg.124d6789cba2": {
+   "src": "⟦1⟧Our two jaggeries⟦/1⟧Left: cane jaggery from the Chittoor and Anakapalli cane belts. Right: palm jaggery from the Godavari delta. Both packed in Narasaraopet.",
+   "t": "⟦1⟧ഞങ്ങളുടെ രണ്ട് ശർക്കരകൾ⟦/1⟧ഇടത്ത്: ചിറ്റൂർ, അനകാപ്പള്ളി കരിമ്പ് മേഖലകളിൽ നിന്നുള്ള കരിമ്പ് ശർക്കര. വലത്ത്: ഗോദാവരി ഡെൽറ്റയിൽ നിന്നുള്ള പനംചക്കര. രണ്ടും നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "⟦1⟧Our two jaggeries⟦/1⟧Left: sugarcane jaggery from the Chittoor and Anakapalli sugarcane regions. Right: palm jaggery from the Godavari delta. Both packed in Narasaraopet."
+  },
+  "seg.70c115199d4c": {
+   "src": "Cane jaggery (cheruku bellam) is boiled-down sugarcane juice with a mellow, caramel sweetness: the one for payasam, pongal and chimmili. Palm jaggery (thati bellam) is boiled-down palmyra sap, darker and deeper in taste: a favourite in filter coffee and tea. You can swap one for the other gram for gram; start with a little less palm jaggery. Keep both in an airtight jar.",
+   "t": "കരിമ്പ് ശർക്കര (ചെറുകു ബെല്ലം) കരിമ്പിൻ നീര് വറ്റിച്ചെടുത്തതാണ്; മിതമായ, കാരമൽ പോലുള്ള മധുരം: പായസം, പൊങ്കൽ, ചിമ്മിലി എന്നിവയ്ക്ക് ഇതാണ്. പനംചക്കര (താട്ടി ബെല്ലം) കരിമ്പനനീര് വറ്റിച്ചെടുത്തതാണ്; ഇരുണ്ട നിറവും ആഴമുള്ള രുചിയും: ഫിൽട്ടർ കാപ്പിയിലും ചായയിലും പലരുടെയും ഇഷ്ടം. ഒന്നിന് പകരം മറ്റൊന്ന് ഗ്രാമിന് ഗ്രാം എന്ന കണക്കിൽ ഉപയോഗിക്കാം; പനംചക്കര അല്പം കുറച്ച് തുടങ്ങൂ. രണ്ടും വായു കടക്കാത്ത ഭരണിയിൽ സൂക്ഷിക്കൂ.",
+   "back": "Sugarcane jaggery (cheruku bellam) is sugarcane juice boiled down; a mild, caramel-like sweetness: this is the one for payasam, pongal, chimmili. Palm jaggery (thati bellam) is palmyra sap boiled down; dark colour and deep taste: the favourite of many in filter coffee and tea. One can be used in place of the other on a gram-for-gram basis; start palm jaggery a little less. Store both in an airtight jar."
+  },
+  "seg.fca77b7e3a12": {
+   "src": "At a glance",
+   "t": "ഒറ്റനോട്ടത്തിൽ",
+   "back": "At a glance"
+  },
+  "seg.75ef8f6ae8b2": {
+   "src": "Cane jaggery⟦#1⟧",
+   "t": "കരിമ്പ് ശർക്കര⟦#1⟧",
+   "back": "Sugarcane jaggery⟦#1⟧"
+  },
+  "seg.7ab7eaedfd83": {
+   "src": "Palm jaggery⟦#1⟧",
+   "t": "പനംചക്കര⟦#1⟧",
+   "back": "Palm jaggery⟦#1⟧"
+  },
+  "seg.b2602a6c00ce": {
+   "src": "Made from",
+   "t": "എന്തിൽ നിന്ന്",
+   "back": "From what"
+  },
+  "seg.884cfe9bda03": {
+   "src": "Juice pressed out of sugarcane",
+   "t": "കരിമ്പിൽ നിന്ന് പിഴിഞ്ഞെടുത്ത നീര്",
+   "back": "Juice squeezed from sugarcane"
+  },
+  "seg.b8fab46efd97": {
+   "src": "Sap of the palmyra palm (thati neera)",
+   "t": "കരിമ്പനയുടെ നീര് (താട്ടി നീര)",
+   "back": "Sap of the palmyra palm (thati neera)"
+  },
+  "seg.eae192773b7b": {
+   "src": "Made by",
+   "t": "എങ്ങനെ ഉണ്ടാക്കുന്നു",
+   "back": "How it is made"
+  },
+  "seg.31c1fb788209": {
+   "src": "Boiling the juice down until it sets",
+   "t": "നീര് കട്ടിയാകുന്നതുവരെ വറ്റിച്ച്",
+   "back": "By boiling down the juice until it thickens"
+  },
+  "seg.4903e7667bf9": {
+   "src": "Boiling the sap down until it sets",
+   "t": "പനനീര് കട്ടിയാകുന്നതുവരെ വറ്റിച്ച്",
+   "back": "By boiling down the palm sap until it thickens"
+  },
+  "seg.3192ec79bae5": {
+   "src": "FSSAI standard",
+   "t": "FSSAI നിലവാരമാനദണ്ഡം",
+   "back": "FSSAI quality standard"
+  },
+  "seg.4dcd7b425d23": {
+   "src": "\"Cane jaggery or cane gur\": moisture up to 7%",
+   "t": "\"കരിമ്പ് ശർക്കര അല്ലെങ്കിൽ കരിമ്പ് ഗുർ\": ഈർപ്പം 7% വരെ",
+   "back": "\"Sugarcane jaggery or cane gur\": moisture up to 7%"
+  },
+  "seg.6d7569f44445": {
+   "src": "\"Gur or jaggery\" from palmyra, date or coconut palm: moisture up to 10%",
+   "t": "കരിമ്പന, ഈന്തപ്പന അല്ലെങ്കിൽ തെങ്ങിൽ നിന്നുള്ള \"ഗുർ അല്ലെങ്കിൽ ശർക്കര\": ഈർപ്പം 10% വരെ",
+   "back": "\"Gur or jaggery\" from palmyra, date palm or coconut tree: moisture up to 10%"
+  },
+  "seg.f28563a477a9": {
+   "src": "Colour",
+   "t": "നിറം",
+   "back": "Colour"
+  },
+  "seg.994ac0b572f0": {
+   "src": "Golden to dark brown",
+   "t": "സ്വർണ്ണനിറം മുതൽ കടും തവിട്ട് വരെ",
+   "back": "Golden to dark brown"
+  },
+  "seg.522796dcb722": {
+   "src": "Dark brown",
+   "t": "കടും തവിട്ട്",
+   "back": "Dark brown"
+  },
+  "seg.6f0369f65412": {
+   "src": "Taste",
+   "t": "രുചി",
+   "back": "Taste"
+  },
+  "seg.7c6a1cfc0e92": {
+   "src": "Mellow, caramel sweetness",
+   "t": "മിതമായ, കാരമൽ പോലുള്ള മധുരം",
+   "back": "Mild, caramel-like sweetness"
+  },
+  "seg.4bbda4137991": {
+   "src": "Deeper, slightly smoky sweetness",
+   "t": "ആഴമുള്ള, ചെറിയ പുകമണമുള്ള മധുരം",
+   "back": "Deep, slightly smoky-aroma sweetness"
+  },
+  "seg.cc14b8c8d5b9": {
+   "src": "Good for",
+   "t": "ഏതിനൊക്കെ നല്ലത്",
+   "back": "What all it is good for"
+  },
+  "seg.82f772f29b90": {
+   "src": "Payasam, pongal, paramannam, chimmili, chikki, laddu",
+   "t": "പായസം, പൊങ്കൽ, പരമാന്നം, ചിമ്മിലി, കടലമിഠായി, ലഡു",
+   "back": "Payasam, pongal, paramannam, chimmili, peanut candy (kadala mittai), laddu"
+  },
+  "seg.ab4fec6abc76": {
+   "src": "Filter coffee, tea, payasam, sunnundalu",
+   "t": "ഫിൽട്ടർ കാപ്പി, ചായ, പായസം, സുന്നുണ്ടലു",
+   "back": "Filter coffee, tea, payasam, sunnundalu"
+  },
+  "seg.5ea5fa3f36cc": {
+   "src": "Where they come from",
+   "t": "ഇവ എവിടെ നിന്ന് വരുന്നു",
+   "back": "Where these come from"
+  },
+  "seg.db3bddd4a4fc": {
+   "src": "Cane jaggery is made wherever sugarcane grows: the juice is pressed out of the cane and boiled down in open pans. In Andhra Pradesh, Anakapalli has the second largest jaggery market in India.",
+   "t": "കരിമ്പ് വിളയുന്നിടത്തെല്ലാം കരിമ്പ് ശർക്കര ഉണ്ടാക്കുന്നു: കരിമ്പിൽ നിന്ന് നീര് പിഴിഞ്ഞെടുത്ത് തുറന്ന വലിയ ചട്ടികളിൽ വറ്റിക്കുന്നു. ആന്ധ്രാപ്രദേശിലെ അനകാപ്പള്ളിയിലാണ് ഇന്ത്യയിലെ രണ്ടാമത്തെ വലിയ ശർക്കര വിപണി.",
+   "back": "Sugarcane jaggery is made wherever sugarcane grows: the juice is squeezed from the sugarcane and boiled down in big open pans. India's second biggest jaggery market is in Anakapalli in Andhra Pradesh."
+  },
+  "seg.31988f9e86fc": {
+   "src": "Palm jaggery is made from the sap of the palmyra palm, thati chettu in Telugu. The sap is called neera, or thati neera, and it is boiled down until it sets.",
+   "t": "പനംചക്കര ഉണ്ടാക്കുന്നത് കരിമ്പനയുടെ നീരിൽ നിന്നാണ്; തെലുങ്കിൽ കരിമ്പനയെ താട്ടി ചെട്ടു എന്ന് പറയും. ആ നീരിന് നീര, അല്ലെങ്കിൽ താട്ടി നീര എന്നാണ് പേര്; അത് കട്ടിയാകുന്നതുവരെ വറ്റിച്ചെടുക്കുന്നു.",
+   "back": "Palm jaggery is made from the sap of the palmyra palm; in Telugu the palmyra is called thati chettu. That sap is named neera, or thati neera; it is boiled down until it thickens."
+  },
+  "seg.5a6c8ea97fdf": {
+   "src": "Which one to use",
+   "t": "ഏത് ഉപയോഗിക്കണം",
+   "back": "Which to use"
+  },
+  "seg.7231a4f0bd69": {
+   "src": "Payasam, sweet pongal and ⟦1⟧bellam paramannam⟦/1⟧: cane jaggery.",
+   "t": "പായസം, മധുരപ്പൊങ്കൽ, ⟦1⟧ബെല്ലം പരമാന്നം⟦/1⟧: കരിമ്പ് ശർക്കര.",
+   "back": "Payasam, sweet pongal, ⟦1⟧Bellam Paramannam⟦/1⟧: sugarcane jaggery."
+  },
+  "seg.13039d2b8d91": {
+   "src": "⟦1⟧Chimmili⟦/1⟧, chikki and laddu: cane jaggery.",
+   "t": "⟦1⟧ചിമ്മിലി⟦/1⟧, കടലമിഠായി, ലഡു: കരിമ്പ് ശർക്കര.",
+   "back": "⟦1⟧Chimmili⟦/1⟧, peanut candy (kadala mittai), laddu: sugarcane jaggery."
+  },
+  "seg.2b10b5036017": {
+   "src": "Filter coffee and tea: palm jaggery. Its deeper taste stands up to the decoction; try our ⟦1⟧palm jaggery coffee⟦/1⟧.",
+   "t": "ഫിൽട്ടർ കാപ്പിയും ചായയും: പനംചക്കര. അതിന്റെ ആഴമുള്ള രുചി ഡിക്കോക്ഷനൊപ്പം പിടിച്ചുനിൽക്കും; ഞങ്ങളുടെ ⟦1⟧പനംചക്കര കാപ്പി⟦/1⟧ ഉണ്ടാക്കിനോക്കൂ.",
+   "back": "Filter coffee and tea: palm jaggery. Its deep taste will hold its own with the decoction; try making our ⟦1⟧palm jaggery coffee⟦/1⟧."
+  },
+  "seg.39f0609ee4de": {
+   "src": "⟦1⟧Pasupu paalu⟦/1⟧: either one, as you like it.",
+   "t": "⟦1⟧പസുപു പാലു⟦/1⟧: നിങ്ങളുടെ ഇഷ്ടം പോലെ, ഏതും.",
+   "back": "⟦1⟧Pasupu Palu⟦/1⟧: as you like, either."
+  },
+  "seg.35b1f8b220a2": {
+   "src": "Swapping one for the other",
+   "t": "ഒന്നിന് പകരം മറ്റൊന്ന്",
+   "back": "One in place of the other"
+  },
+  "seg.46fffb385af6": {
+   "src": "Use the same weight. Palm jaggery tastes stronger, so start with a little less and add more to taste.",
+   "t": "അതേ തൂക്കം ഉപയോഗിക്കൂ. പനംചക്കരയുടെ രുചി കടുപ്പമുള്ളതാണ്; അതിനാൽ അല്പം കുറച്ച് തുടങ്ങി, രുചിക്കനുസരിച്ച് കൂട്ടൂ.",
+   "back": "Use the same weight. Palm jaggery's taste is strong; so start a little less and increase according to taste."
+  },
+  "seg.8a98e07b6f1e": {
+   "src": "In milk, coffee or tea, add either jaggery after the milk is off the boil, so the milk does not split.",
+   "t": "പാലിലോ കാപ്പിയിലോ ചായയിലോ, പാൽ തിളനിലയിൽ നിന്ന് താഴ്ന്ന ശേഷം മാത്രം ഏത് ശർക്കരയും ചേർക്കൂ; അപ്പോൾ പാൽ പിരിയില്ല.",
+   "back": "In milk, coffee or tea, add any jaggery only after the milk has come down from boiling point; then the milk will not split."
+  },
+  "seg.42b698b8ebd7": {
+   "src": "Keeping it well",
+   "t": "നന്നായി സൂക്ഷിക്കാൻ",
+   "back": "To store well"
+  },
+  "seg.6788faade30c": {
+   "src": "Keep jaggery in an airtight jar in a cool, dry place.",
+   "t": "ശർക്കര വായു കടക്കാത്ത ഭരണിയിൽ, തണുപ്പുള്ള, ഈർപ്പമില്ലാത്ത സ്ഥലത്ത് സൂക്ഷിക്കൂ.",
+   "back": "Store jaggery in an airtight jar, in a cool place without moisture."
+  },
+  "seg.5ea00ae441ac": {
+   "src": "Use a dry spoon or knife. Jaggery takes in moisture from the air and turns sticky.",
+   "t": "ഉണങ്ങിയ സ്പൂണോ കത്തിയോ ഉപയോഗിക്കൂ. ശർക്കര വായുവിൽ നിന്ന് ഈർപ്പം വലിച്ചെടുത്ത് ഒട്ടലാകും.",
+   "back": "Use a dry spoon or knife. Jaggery draws moisture from the air and becomes sticky."
+  },
+  "seg.1d7ae0c59b87": {
+   "src": "If it sets hard, grate it.",
+   "t": "കട്ടിയായാൽ, ചുരണ്ടിയെടുക്കൂ.",
+   "back": "If it has become hard, grate it."
+  },
+  "seg.8be6c65e90d5": {
+   "src": "Use it within the best-before date on the pack.",
+   "t": "പാക്കറ്റിലെ 'ബെസ്റ്റ് ബിഫോർ' തീയതിക്കുള്ളിൽ ഉപയോഗിക്കൂ.",
+   "back": "Use within the 'best before' date on the packet."
+  },
+  "seg.cc5783126657": {
+   "src": "Is palm jaggery the same as karupatti?",
+   "t": "പനംചക്കരയും കരുപ്പട്ടിയും ഒന്നാണോ?",
+   "back": "Are palm jaggery and karupatti the same?"
+  },
+  "seg.f7071649dddd": {
+   "src": "Yes. Karupatti is the Tamil name for jaggery made from palmyra sap. In Telugu it is thati bellam, and in Hindi taad ka gud.",
+   "t": "അതെ. കരിമ്പനനീരിൽ നിന്നുണ്ടാക്കുന്ന ശർക്കരയുടെ തമിഴ് പേരാണ് കരുപ്പട്ടി. തെലുങ്കിൽ അത് താട്ടി ബെല്ലം, ഹിന്ദിയിൽ താഡ് കാ ഗുഡ്.",
+   "back": "Yes. Karupatti is the Tamil name of the jaggery made from palmyra sap. In Telugu it is thati bellam, in Hindi taad ka gud."
+  },
+  "seg.a591ce90fac8": {
+   "src": "Is gud the same as jaggery?",
+   "t": "ഗുഡും ശർക്കരയും ഒന്നാണോ?",
+   "back": "Are gud and jaggery the same?"
+  },
+  "seg.9e04d6270c92": {
+   "src": "Yes. Gud, or gur, is the Hindi word for jaggery, and bellam is the Telugu one. On its own it usually means cane jaggery.",
+   "t": "അതെ. ഗുഡ്, അല്ലെങ്കിൽ ഗുർ, ശർക്കരയുടെ ഹിന്ദി വാക്കാണ്; ബെല്ലം തെലുങ്ക് വാക്കും. തനിയെ പറയുമ്പോൾ സാധാരണ കരിമ്പ് ശർക്കരയെയാണ് ഉദ്ദേശിക്കുന്നത്.",
+   "back": "Yes. Gud, or gur, is the Hindi word for jaggery; bellam is the Telugu word. When said alone it usually means sugarcane jaggery."
+  },
+  "seg.e531a25812a8": {
+   "src": "Why has my jaggery gone sticky?",
+   "t": "എന്റെ ശർക്കര എന്തുകൊണ്ടാണ് ഒട്ടലായത്?",
+   "back": "Why did my jaggery become sticky?"
+  },
+  "seg.cc79285bfadd": {
+   "src": "It has taken in moisture from the air, which happens faster in humid weather. Move it to an airtight jar and use a dry spoon.",
+   "t": "അത് വായുവിൽ നിന്ന് ഈർപ്പം വലിച്ചെടുത്തിരിക്കുന്നു; ഈർപ്പമുള്ള കാലാവസ്ഥയിൽ ഇത് വേഗം സംഭവിക്കും. വായു കടക്കാത്ത ഭരണിയിലേക്ക് മാറ്റി, ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ.",
+   "back": "It has drawn moisture from the air; in humid weather this happens fast. Move it to an airtight jar and use a dry spoon."
+  },
+  "seg.1bdcd09c5ca0": {
+   "src": "Can I use palm jaggery in payasam?",
+   "t": "പായസത്തിൽ പനംചക്കര ഉപയോഗിക്കാമോ?",
+   "back": "Can palm jaggery be used in payasam?"
+  },
+  "seg.8ba95d799ac9": {
+   "src": "Yes. It gives a darker colour and a deeper taste. Add it off the heat, as you would cane jaggery.",
+   "t": "അതെ. ഇരുണ്ട നിറവും ആഴമുള്ള രുചിയും കിട്ടും. കരിമ്പ് ശർക്കര പോലെതന്നെ, അടുപ്പിൽ നിന്ന് മാറ്റിയ ശേഷം ചേർക്കൂ.",
+   "back": "Yes. You get a dark colour and deep taste. Just like sugarcane jaggery, add it after removing from the stove."
+  },
+  "seg.a2f5a2b37771": {
+   "src": "Our jaggery",
+   "t": "ഞങ്ങളുടെ ശർക്കര",
+   "back": "Our jaggery"
+  },
+  "seg.0a3e09b58f4e": {
+   "src": "Two or more packs ship free, so you can try both.",
+   "t": "രണ്ടോ അതിലധികമോ പാക്കറ്റുകൾക്ക് ഡെലിവറി സൗജന്യമാണ്; അതിനാൽ രണ്ടും വാങ്ങിനോക്കാം.",
+   "back": "Delivery is free for two or more packets; so you can buy both and try."
+  },
+  "seg.43cbc6f0cd63": {
+   "src": "చెరుకు బెల్లం vs తాటి బెల్లం · Cane vs Palm Jaggery | 1acrefarms",
+   "t": "చెరుకు బెల్లం vs తాటి బెల్లం · കരിമ്പ് ശർക്കരയോ പനംചക്കരയോ | 1acrefarms",
+   "back": "చెరుకు బెల్లం vs తాటి బెల్లం · Sugarcane jaggery or palm jaggery | 1acrefarms"
+  },
+  "seg.cc8e1c430f7e": {
+   "src": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. Cane jaggery (cheruku bellam) vs palm jaggery (thati bellam): what each is made from, how they differ, which to use, and how to store them.",
+   "t": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. കരിമ്പ് ശർക്കര (ചെറുകു ബെല്ലം), പനംചക്കര (താട്ടി ബെല്ലം): ഓരോന്നും എന്തിൽ നിന്ന് ഉണ്ടാക്കുന്നു, എങ്ങനെ വ്യത്യസ്തമാണ്, ഏത് ഉപയോഗിക്കണം, എങ്ങനെ സൂക്ഷിക്കണം.",
+   "back": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. Sugarcane jaggery (cheruku bellam), palm jaggery (thati bellam): what each is made from, how they are different, which to use, how to store."
+  },
+  "seg.dcb8aea65da2": {
+   "src": "Cane jaggery or palm jaggery: which to use · 1acrefarms",
+   "t": "കരിമ്പ് ശർക്കരയോ പനംചക്കരയോ: ഏത് ഉപയോഗിക്കണം · 1acrefarms",
+   "back": "Sugarcane jaggery or palm jaggery: which to use · 1acrefarms"
+  },
+  "seg.76d52912e55b": {
+   "src": "Know what you buy",
+   "t": "വാങ്ങുന്നതെന്തെന്ന് അറിയൂ",
+   "back": "Know what you are buying"
+  },
+  "seg.0fba3c8b175a": {
+   "src": "Plain answers to what buyers ask us, with the sources behind them.",
+   "t": "വാങ്ങുന്നവർ ഞങ്ങളോട് ചോദിക്കുന്ന കാര്യങ്ങൾക്ക് ലളിതമായ ഉത്തരങ്ങൾ, അവയുടെ ഉറവിടങ്ങൾ സഹിതം.",
+   "back": "Simple answers to the things buyers ask us, along with their sources."
+  },
+  "seg.6b4f74dc7f36": {
+   "src": "Guide · turmeric",
+   "t": "ഗൈഡ് · മഞ്ഞൾ",
+   "back": "Guide · Turmeric"
+  },
+  "seg.d3855c7cad24": {
+   "src": "How to check turmeric powder at home",
+   "t": "വീട്ടിൽ മഞ്ഞൾപ്പൊടി എങ്ങനെ പരിശോധിക്കാം",
+   "back": "How to test turmeric powder at home"
+  },
+  "seg.b54cac8c5de3": {
+   "src": "The water check, two tests to skip, and when you need a lab.",
+   "t": "വെള്ളം കൊണ്ടുള്ള പരിശോധന, ഒഴിവാക്കേണ്ട രണ്ട് ടെസ്റ്റുകൾ, എപ്പോൾ ലാബ് വേണം എന്നിവ.",
+   "back": "The test with water, two tests to avoid, and when a lab is needed."
+  },
+  "seg.b0fb2e2755f6": {
+   "src": "Read the guide",
+   "t": "ഗൈഡ് വായിക്കൂ",
+   "back": "Read the guide"
+  },
+  "seg.1401601b2e2c": {
+   "src": "What each is made from, how they taste, and which to use where. With a Telugu section.",
+   "t": "ഓരോന്നും എന്തിൽ നിന്ന് ഉണ്ടാക്കുന്നു, രുചി എങ്ങനെ, ഏത് എവിടെ ഉപയോഗിക്കാം. ഒരു തെലുങ്ക് ഭാഗം സഹിതം.",
+   "back": "What each is made from, how the taste is, which to use where. With a Telugu section."
+  },
+  "seg.336c642e2ba5": {
+   "src": "Buyer Guides for Turmeric & Jaggery | 1acrefarms",
+   "t": "മഞ്ഞളും ശർക്കരയും വാങ്ങുന്നവർക്കുള്ള ഗൈഡുകൾ | 1acrefarms",
+   "back": "Guides for turmeric and jaggery buyers | 1acrefarms"
+  },
+  "seg.abda31761e23": {
+   "src": "Plain answers to what buyers ask us, starting with how to check turmeric powder at home.",
+   "t": "വാങ്ങുന്നവർ ഞങ്ങളോട് ചോദിക്കുന്ന കാര്യങ്ങൾക്ക് ലളിതമായ ഉത്തരങ്ങൾ; ആദ്യം, വീട്ടിൽ മഞ്ഞൾപ്പൊടി എങ്ങനെ പരിശോധിക്കാം.",
+   "back": "Simple answers to the things buyers ask us; first, how to test turmeric powder at home."
+  },
+  "seg.a593b0b6671e": {
+   "src": "Guides · 1acrefarms",
+   "t": "ഗൈഡുകൾ · 1acrefarms",
+   "back": "Guides · 1acrefarms"
+  },
+  "seg.4bddab09b9f2": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi",
+   "t": "⟦#1⟧ · ⟦#2⟧ · പസുപു · ഹൽദി",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi"
+  },
+  "seg.2b6b229e651e": {
+   "src": "FSSAI's standard says turmeric powder must be free from added colouring matter, including lead chromate, and from foreign starch. Its testing manual lists what inspectors check turmeric for: added dyes such as metanil yellow, lead salts, and chalk powder.",
+   "t": "FSSAI നിലവാരമാനദണ്ഡം അനുസരിച്ച്, മഞ്ഞൾപ്പൊടിയിൽ ലെഡ് ക്രോമേറ്റ് ഉൾപ്പെടെ ഒരു നിറവസ്തുവും ചേർത്തിരിക്കരുത്; മറ്റു വിളകളിൽ നിന്നുള്ള സ്റ്റാർച്ചും പാടില്ല. അതിന്റെ പരിശോധനാ മാനുവൽ, ഇൻസ്പെക്ടർമാർ മഞ്ഞളിൽ എന്തൊക്കെ പരിശോധിക്കുന്നു എന്ന് പട്ടികപ്പെടുത്തുന്നു: മെറ്റാനിൽ യെല്ലോ പോലുള്ള ചേർത്ത ചായങ്ങൾ, ഈയ ലവണങ്ങൾ, ചോക്ക് പൊടി.",
+   "back": "According to the FSSAI standard, no colouring substance including lead chromate should be added to turmeric powder; starch from other crops is not allowed either. Its testing manual lists what inspectors test for in turmeric: added dyes like metanil yellow, lead salts, chalk powder."
+  },
+  "seg.b27088069a9d": {
+   "src": "Some of this you can check in your kitchen, and some only a lab can find. This guide covers both, plus two popular tests that do not work for turmeric. Try them on any turmeric you buy, ours included.",
+   "t": "ഇവയിൽ ചിലത് നിങ്ങളുടെ അടുക്കളയിൽ തന്നെ പരിശോധിക്കാം; ചിലത് ലാബിന് മാത്രമേ കണ്ടെത്താനാകൂ. ഈ ഗൈഡ് രണ്ടും പറയുന്നു; ഒപ്പം, മഞ്ഞളിന് ഫലിക്കാത്ത രണ്ട് പ്രചാരമുള്ള ടെസ്റ്റുകളും. നിങ്ങൾ വാങ്ങുന്ന ഏത് മഞ്ഞളിലും, ഞങ്ങളുടേത് ഉൾപ്പെടെ, ഇവ ചെയ്തുനോക്കൂ.",
+   "back": "Some of these can be tested in your kitchen itself; some only a lab can find. This guide tells both; along with two popular tests that do not work for turmeric. Try these on any turmeric you buy, including ours."
+  },
+  "seg.b74ab3f9bb3e": {
+   "src": "Two glasses of water after the turmeric check. Left: pale yellow water with the powder settled at the bottom. Right: strong yellow water with yellow trails running down from the powder.",
+   "t": "മഞ്ഞൾ പരിശോധനയ്ക്കു ശേഷം രണ്ട് ഗ്ലാസ് വെള്ളം. ഇടത്ത്: ഇളം മഞ്ഞ വെള്ളം, പൊടി അടിയിൽ അടിഞ്ഞിരിക്കുന്നു. വലത്ത്: കടും മഞ്ഞ വെള്ളം, പൊടിയിൽ നിന്ന് മഞ്ഞ വരകൾ താഴേക്ക് ഇറങ്ങുന്നു.",
+   "back": "Two glasses of water after the turmeric test. Left: pale yellow water, powder settled at the bottom. Right: deep yellow water, yellow streaks coming down from the powder."
+  },
+  "seg.3405f90e5ba1": {
+   "src": "Pale yellow",
+   "t": "ഇളം മഞ്ഞ",
+   "back": "Pale yellow"
+  },
+  "seg.dd331cdc7f23": {
+   "src": "Strong yellow",
+   "t": "കടും മഞ്ഞ",
+   "back": "Deep yellow"
+  },
+  "seg.c8b6eb5f9530": {
+   "src": "⟦1⟧The water check⟦/1⟧Left: the powder has settled and the water is pale yellow. Right: strong yellow trails ran from the powder as it sank, and the water turned deep yellow. That one is worth a lab test.",
+   "t": "⟦1⟧വെള്ളം കൊണ്ടുള്ള പരിശോധന⟦/1⟧ഇടത്ത്: പൊടി അടിയിൽ അടിഞ്ഞു, വെള്ളം ഇളം മഞ്ഞയാണ്. വലത്ത്: പൊടി താഴുമ്പോൾ അതിൽ നിന്ന് കടും മഞ്ഞ വരകൾ ഇറങ്ങി, വെള്ളം കടും മഞ്ഞയായി. അത് ലാബിൽ പരിശോധിപ്പിക്കുന്നത് നല്ലതാണ്.",
+   "back": "⟦1⟧The test with water⟦/1⟧Left: the powder settled at the bottom, the water is pale yellow. Right: as the powder sank deep yellow streaks came down from it, the water became deep yellow. It is good to have that tested in a lab."
+  },
+  "seg.a7363cc3fa37": {
+   "src": "Sprinkle a teaspoon of turmeric on a glass of water and let it settle without stirring. Turmeric sinks and leaves the water pale yellow; water that turns strong yellow straight away points to added colour. This check cannot find lead chromate or chalk, so for a sure answer, use a food testing lab. Skip the iodine test: turmeric is starchy to begin with.",
+   "t": "ഒരു ഗ്ലാസ് വെള്ളത്തിനു മുകളിൽ ഒരു ടീസ്പൂൺ മഞ്ഞൾ വിതറി, ഇളക്കാതെ അടിയാൻ വിടൂ. മഞ്ഞൾ താഴ്ന്ന് വെള്ളം ഇളം മഞ്ഞയായി നിൽക്കും; ഉടനെ കടും മഞ്ഞയാകുന്ന വെള്ളം ചേർത്ത നിറത്തിലേക്ക് വിരൽ ചൂണ്ടുന്നു. ഈ പരിശോധനയ്ക്ക് ലെഡ് ക്രോമേറ്റോ ചോക്കോ കണ്ടെത്താനാകില്ല; ഉറപ്പുള്ള ഉത്തരത്തിന് ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിനെ സമീപിക്കൂ. അയഡിൻ ടെസ്റ്റ് ഒഴിവാക്കൂ: മഞ്ഞളിൽ തന്നെ സ്റ്റാർച്ച് ഉണ്ട്.",
+   "back": "Sprinkle a teaspoon of turmeric on top of a glass of water and let it settle without stirring. Turmeric sinks and the water stays pale yellow; water that becomes deep yellow immediately points to added colour. This test cannot find lead chromate or chalk; for a sure answer approach a food testing lab. Avoid the iodine test: turmeric itself has starch."
+  },
+  "seg.9b20e15186d4": {
+   "src": "What FSSAI checks turmeric for",
+   "t": "FSSAI മഞ്ഞളിൽ എന്തൊക്കെ പരിശോധിക്കുന്നു",
+   "back": "What FSSAI tests for in turmeric"
+  },
+  "seg.dc193d26c683": {
+   "src": "Added dyes",
+   "t": "ചേർത്ത ചായങ്ങൾ",
+   "back": "Added dyes"
+  },
+  "seg.34d6f989bfaf": {
+   "src": "Such as metanil yellow, which can make dull turmeric look brighter. FSSAI does not allow added colour in turmeric.",
+   "t": "മെറ്റാനിൽ യെല്ലോ പോലുള്ളവ; ഇവ മങ്ങിയ മഞ്ഞളിനെ കൂടുതൽ തിളക്കമുള്ളതായി കാണിക്കും. മഞ്ഞളിൽ നിറം ചേർക്കാൻ FSSAI അനുവദിക്കുന്നില്ല.",
+   "back": "Such as metanil yellow; these make dull turmeric look brighter. FSSAI does not allow adding colour to turmeric."
+  },
+  "seg.042cabe54b01": {
+   "src": "Lead chromate and other lead salts",
+   "t": "ലെഡ് ക്രോമേറ്റും മറ്റ് ഈയ ലവണങ്ങളും",
+   "back": "Lead chromate and other lead salts"
+  },
+  "seg.8310b11eab8b": {
+   "src": "Lead chromate is a yellow pigment used in paint. Stanford-led studies published in 2019 and 2024 found it in turmeric from parts of South Asia. FSSAI does not allow it in turmeric at all.",
+   "t": "ലെഡ് ക്രോമേറ്റ് പെയിന്റിൽ ഉപയോഗിക്കുന്ന ഒരു മഞ്ഞ നിറവസ്തുവാണ്. 2019-ലും 2024-ലും പ്രസിദ്ധീകരിച്ച, സ്റ്റാൻഫോർഡ് നേതൃത്വം നൽകിയ പഠനങ്ങൾ ദക്ഷിണേഷ്യയുടെ ചില ഭാഗങ്ങളിൽ നിന്നുള്ള മഞ്ഞളിൽ അത് കണ്ടെത്തി. മഞ്ഞളിൽ അത് FSSAI ഒട്ടും അനുവദിക്കുന്നില്ല.",
+   "back": "Lead chromate is a yellow colouring substance used in paint. Studies led by Stanford, published in 2019 and 2024, found it in turmeric from some parts of South Asia. FSSAI does not allow it in turmeric at all."
+  },
+  "seg.40d3e387ba41": {
+   "src": "Chalk powder",
+   "t": "ചോക്ക് പൊടി",
+   "back": "Chalk powder"
+  },
+  "seg.4278e7c5416c": {
+   "src": "A cheap white powder that adds weight.",
+   "t": "തൂക്കം കൂട്ടാൻ ചേർക്കുന്ന വില കുറഞ്ഞ ഒരു വെള്ളപ്പൊടി.",
+   "back": "A cheap white powder added to increase weight."
+  },
+  "seg.733184d9c53a": {
+   "src": "Foreign starch",
+   "t": "മറ്റു സ്റ്റാർച്ച്",
+   "back": "Other starch"
+  },
+  "seg.5a8b446bbce0": {
+   "src": "Flour or starch from other crops. FSSAI's standard rules it out too.",
+   "t": "മറ്റു വിളകളിൽ നിന്നുള്ള മാവോ സ്റ്റാർച്ചോ. FSSAI നിലവാരമാനദണ്ഡം ഇതും അനുവദിക്കുന്നില്ല.",
+   "back": "Flour or starch from other crops. The FSSAI standard does not allow this either."
+  },
+  "seg.8604a8e3ea49": {
+   "src": "Check 1: the water glass",
+   "t": "പരിശോധന 1: വെള്ളം നിറച്ച ഗ്ലാസ്",
+   "back": "Test 1: a glass filled with water"
+  },
+  "seg.1b1af7f63ffd": {
+   "src": "Fill a clear glass with water at room temperature.",
+   "t": "ഒരു തെളിഞ്ഞ ഗ്ലാസിൽ മുറിയിലെ താപനിലയിലുള്ള വെള്ളം നിറയ്ക്കൂ.",
+   "back": "Fill a clear glass with water at room temperature."
+  },
+  "seg.653731f2ed6f": {
+   "src": "Sprinkle one level teaspoon of turmeric powder on top. Do not stir.",
+   "t": "മുകളിൽ ഒരു നിരപ്പായ ടീസ്പൂൺ മഞ്ഞൾപ്പൊടി വിതറൂ. ഇളക്കരുത്.",
+   "back": "Sprinkle a level teaspoon of turmeric powder on top. Do not stir."
+  },
+  "seg.ea5b43cf8436": {
+   "src": "Watch the first minute as the powder sinks. Look for coloured trails running down from it.",
+   "t": "പൊടി താഴുന്ന ആദ്യത്തെ ഒരു മിനിറ്റ് ശ്രദ്ധിക്കൂ. അതിൽ നിന്ന് നിറമുള്ള വരകൾ താഴേക്ക് ഇറങ്ങുന്നുണ്ടോ എന്ന് നോക്കൂ.",
+   "back": "Watch the first one minute as the powder sinks. See whether coloured streaks are coming down from it."
+  },
+  "seg.e37698aaa3fb": {
+   "src": "Leave it for 15 to 20 minutes. Then hold the glass against a white wall or a sheet of paper and look at the water above the settled powder.",
+   "t": "15 മുതൽ 20 മിനിറ്റ് വരെ അങ്ങനെ വിടൂ. പിന്നെ ഗ്ലാസ് ഒരു വെള്ള ഭിത്തിക്കോ കടലാസിനോ മുന്നിൽ പിടിച്ച്, അടിഞ്ഞ പൊടിക്ക് മുകളിലുള്ള വെള്ളം നോക്കൂ.",
+   "back": "Leave like that for 15 to 20 minutes. Then hold the glass in front of a white wall or paper and look at the water above the settled powder."
+  },
+  "seg.e8937cebf136": {
+   "src": "Pale yellow water, powder at the bottom",
+   "t": "ഇളം മഞ്ഞ വെള്ളം, പൊടി അടിയിൽ",
+   "back": "Pale yellow water, powder at the bottom"
+  },
+  "seg.7253b4d90896": {
+   "src": "No sign of added dye.",
+   "t": "ചായം ചേർത്തതിന്റെ ലക്ഷണമില്ല.",
+   "back": "No sign of dye having been added."
+  },
+  "seg.256ce5cf303d": {
+   "src": "Strong yellow trails, or deep yellow water within minutes",
+   "t": "കടും മഞ്ഞ വരകൾ, അല്ലെങ്കിൽ മിനിറ്റുകൾക്കകം കടും മഞ്ഞ വെള്ളം",
+   "back": "Deep yellow streaks, or deep yellow water within minutes"
+  },
+  "seg.ce06c8148072": {
+   "src": "Possible added colour. Stop using that batch and get it tested.",
+   "t": "നിറം ചേർത്തിരിക്കാം. ആ ബാച്ച് ഉപയോഗിക്കുന്നത് നിർത്തി, പരിശോധിപ്പിക്കൂ.",
+   "back": "Colour may have been added. Stop using that batch and have it tested."
+  },
+  "seg.53d9c5db264d": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Turmeric's own yellow, curcumin, hardly dissolves in water, so the powder sinks and only tints the water. Dyes such as metanil yellow dissolve easily and colour the water fast.",
+   "t": "⟦1⟧ഇത് എന്തുകൊണ്ട് ഫലിക്കുന്നു.⟦/1⟧ മഞ്ഞളിന്റെ സ്വന്തം മഞ്ഞനിറമായ കുർക്കുമിൻ വെള്ളത്തിൽ കഷ്ടിച്ചേ അലിയൂ; അതിനാൽ പൊടി താഴ്ന്ന് വെള്ളത്തിന് നേരിയ നിറം മാത്രം നൽകും. മെറ്റാനിൽ യെല്ലോ പോലുള്ള ചായങ്ങൾ എളുപ്പം അലിഞ്ഞ് വെള്ളത്തിന് വേഗം നിറം നൽകും.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Curcumin, turmeric's own yellow colour, barely dissolves in water; so the powder sinks and gives the water only a light colour. Dyes like metanil yellow dissolve easily and colour the water fast."
+  },
+  "seg.af4442c6e910": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Lead chromate and chalk do not dissolve in water either, so turmeric mixed with them can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧ഇത് എന്ത് കണ്ടെത്തില്ല.⟦/1⟧ ലെഡ് ക്രോമേറ്റും ചോക്കും വെള്ളത്തിൽ അലിയില്ല; അതിനാൽ അവ കലർന്ന മഞ്ഞൾ ഈ പരിശോധനയിൽ കടന്നുപോയേക്കാം. ലാബ് ടെസ്റ്റിന് മാത്രമേ അവ ഇല്ലെന്ന് ഉറപ്പിക്കാനാകൂ.",
+   "back": "⟦1⟧What this will not find.⟦/1⟧ Lead chromate and chalk do not dissolve in water; so turmeric mixed with them may pass through this test. Only a lab test can confirm they are not there."
+  },
+  "seg.a8b61850b87d": {
+   "src": "Very fine powder can keep the water cloudy for a while. Cloudy is fine; a clear, strong yellow is what to look for.",
+   "t": "വളരെ നേർത്ത പൊടി കുറച്ചുനേരം വെള്ളം കലങ്ങിയതായി നിർത്താം. കലങ്ങിയിരിക്കുന്നത് കുഴപ്പമില്ല; തെളിഞ്ഞ, കടും മഞ്ഞനിറമാണ് ശ്രദ്ധിക്കേണ്ടത്.",
+   "back": "Very fine powder may keep the water cloudy for a while. Being cloudy is no problem; it is a clear, deep yellow colour that must be watched for."
+  },
+  "seg.c3455d1f4c96": {
+   "src": "Check 2: if you buy whole turmeric",
+   "t": "പരിശോധന 2: മുഴുവൻ മഞ്ഞൾ വാങ്ങുന്നുണ്ടെങ്കിൽ",
+   "back": "Test 2: if you are buying whole turmeric"
+  },
+  "seg.3d4e366bb488": {
+   "src": "Snap a finger of dried turmeric in half. Turmeric is yellow-orange right through, so the inside should look much like the outside. A bright yellow skin over a pale or dull core can mean colour was added to the surface. Ask the seller about it, or get it tested.",
+   "t": "ഉണക്കിയ ഒരു മഞ്ഞൾ വിരൽ രണ്ടായി ഒടിക്കൂ. മഞ്ഞൾ ഉള്ളുവരെ മഞ്ഞ-ഓറഞ്ച് നിറമാണ്; അതിനാൽ ഉൾഭാഗം പുറംഭാഗം പോലെതന്നെ കാണണം. പുറത്ത് തിളങ്ങുന്ന മഞ്ഞ തൊലിയും ഉള്ളിൽ വിളറിയതോ മങ്ങിയതോ ആയ കാമ്പുമാണെങ്കിൽ, പുറമേ നിറം ചേർത്തിട്ടുണ്ടാകാം. അതേക്കുറിച്ച് വിൽപ്പനക്കാരനോട് ചോദിക്കൂ, അല്ലെങ്കിൽ പരിശോധിപ്പിക്കൂ.",
+   "back": "Break a dried turmeric finger in two. Turmeric is yellow-orange coloured right to the inside; so the inner part should look the same as the outer part. If it is a bright yellow skin outside and a pale or dull core inside, colour may have been added on the outside. Ask the seller about it, or have it tested."
+  },
+  "seg.c62fa16e1d5f": {
+   "src": "Two tests to skip",
+   "t": "ഒഴിവാക്കേണ്ട രണ്ട് ടെസ്റ്റുകൾ",
+   "back": "Two tests to avoid"
+  },
+  "seg.895069c9d53f": {
+   "src": "The iodine test",
+   "t": "അയഡിൻ ടെസ്റ്റ്",
+   "back": "Iodine test"
+  },
+  "seg.4c4dc95561d2": {
+   "src": "Iodine turns blue-black when it meets starch, and it is often suggested for spotting flour in turmeric. But turmeric is starchy itself, so it turns blue-black either way. That is why FSSAI's own manual uses the iodine test for powdered spices other than turmeric.",
+   "t": "അയഡിൻ സ്റ്റാർച്ചുമായി ചേരുമ്പോൾ നീല കലർന്ന കറുപ്പാകും; മഞ്ഞളിലെ മാവ് കണ്ടെത്താൻ ഇത് പലപ്പോഴും പറയാറുണ്ട്. പക്ഷേ മഞ്ഞളിൽ തന്നെ സ്റ്റാർച്ച് ഉണ്ട്; അതിനാൽ എങ്ങനെയായാലും നീല കലർന്ന കറുപ്പാകും. അതുകൊണ്ടാണ് FSSAI-യുടെ സ്വന്തം മാനുവൽ മഞ്ഞൾ ഒഴികെയുള്ള മസാലപ്പൊടികൾക്ക് മാത്രം അയഡിൻ ടെസ്റ്റ് ഉപയോഗിക്കുന്നത്.",
+   "back": "Iodine becomes bluish-black when it meets starch; this is often mentioned for finding flour in turmeric. But turmeric itself has starch; so it will become bluish-black anyway. That is why FSSAI's own manual uses the iodine test only for spice powders other than turmeric."
+  },
+  "seg.5cf8718764fb": {
+   "src": "Acid tests at home",
+   "t": "വീട്ടിൽ ആസിഡ് ടെസ്റ്റുകൾ",
+   "back": "Acid tests at home"
+  },
+  "seg.fc16ff8016e3": {
+   "src": "FSSAI's tests for lead, metanil yellow and chalk in turmeric use concentrated hydrochloric or sulphuric acid. These acids burn skin and eyes. They belong in a lab, not a kitchen.",
+   "t": "മഞ്ഞളിലെ ഈയം, മെറ്റാനിൽ യെല്ലോ, ചോക്ക് എന്നിവയ്ക്കുള്ള FSSAI ടെസ്റ്റുകൾ ഗാഢ ഹൈഡ്രോക്ലോറിക് അല്ലെങ്കിൽ സൾഫ്യൂറിക് ആസിഡ് ഉപയോഗിക്കുന്നു. ഈ ആസിഡുകൾ തൊലിയും കണ്ണും പൊള്ളിക്കും. അവയുടെ സ്ഥാനം ലാബിലാണ്, അടുക്കളയിലല്ല.",
+   "back": "FSSAI tests for lead, metanil yellow and chalk in turmeric use concentrated hydrochloric or sulphuric acid. These acids burn skin and eyes. Their place is in the lab, not in the kitchen."
+  },
+  "seg.1dd87aa7bdc7": {
+   "src": "For a sure answer: a food testing lab",
+   "t": "ഉറപ്പുള്ള ഉത്തരത്തിന്: ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബ്",
+   "back": "For a sure answer: a food testing lab"
+  },
+  "seg.1883beca4d73": {
+   "src": "A NABL-accredited food testing lab can test turmeric for lead and for added colours. Ask the lab how much sample it needs, keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack. FSSAI publishes a list of notified food testing labs on its website.",
+   "t": "NABL അക്രെഡിറ്റേഷനുള്ള ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിന് മഞ്ഞളിൽ ഈയവും ചേർത്ത നിറങ്ങളും പരിശോധിക്കാനാകും. എത്ര സാമ്പിൾ വേണമെന്ന് ലാബിനോട് ചോദിക്കൂ; പൊടി അതിന്റെ സീൽ ചെയ്ത പാക്കറ്റിലോ വൃത്തിയുള്ള, സീൽ ചെയ്ത ബാഗിലോ സൂക്ഷിക്കൂ; പാക്കറ്റിൽ അച്ചടിച്ച ബാച്ച് നമ്പർ കുറിച്ചുവയ്ക്കൂ. വിജ്ഞാപനം ചെയ്ത ഭക്ഷ്യ പരിശോധനാ ലാബുകളുടെ പട്ടിക FSSAI അതിന്റെ വെബ്സൈറ്റിൽ പ്രസിദ്ധീകരിക്കുന്നുണ്ട്.",
+   "back": "A food testing lab with NABL accreditation can test for lead and added colours in turmeric. Ask the lab how much sample is needed; keep the powder in its sealed packet or in a clean, sealed bag; note down the batch number printed on the packet. FSSAI publishes the list of notified food testing labs on its website."
+  },
+  "seg.456379c75c24": {
+   "src": "Read the pack before you buy",
+   "t": "വാങ്ങുന്നതിനുമുമ്പ് പാക്കറ്റ് വായിക്കൂ",
+   "back": "Read the packet before buying"
+  },
+  "seg.ff7951e2f36b": {
+   "src": "An FSSAI licence or registration number. You can look it up on FSSAI's FoSCoS website.",
+   "t": "ഒരു FSSAI ലൈസൻസ് അല്ലെങ്കിൽ രജിസ്ട്രേഷൻ നമ്പർ. അത് FSSAI-യുടെ FoSCoS വെബ്സൈറ്റിൽ നോക്കി ഉറപ്പാക്കാം.",
+   "back": "An FSSAI licence or registration number. It can be checked and confirmed on FSSAI's FoSCoS website."
+  },
+  "seg.476e4849c1d8": {
+   "src": "The name and address of whoever made or packed it.",
+   "t": "അത് ഉണ്ടാക്കിയവരുടെയോ പാക്ക് ചെയ്തവരുടെയോ പേരും വിലാസവും.",
+   "back": "The name and address of those who made it or packed it."
+  },
+  "seg.beee8eda6466": {
+   "src": "Net quantity, MRP, a batch or lot number, and a best-before date.",
+   "t": "അറ്റ അളവ്, MRP, ബാച്ച് അല്ലെങ്കിൽ ലോട്ട് നമ്പർ, 'ബെസ്റ്റ് ബിഫോർ' തീയതി.",
+   "back": "Net quantity, MRP, batch or lot number, 'best before' date."
+  },
+  "seg.f9270fd96202": {
+   "src": "Where it was grown. Turmeric from different regions differs in colour, so a named region helps you compare like with like.",
+   "t": "എവിടെ വിളഞ്ഞത്. വിവിധ പ്രദേശങ്ങളിലെ മഞ്ഞളിന് നിറത്തിൽ വ്യത്യാസമുണ്ട്; അതിനാൽ പ്രദേശത്തിന്റെ പേരുണ്ടെങ്കിൽ ഒരേ തരത്തിലുള്ളവയെ തമ്മിൽ താരതമ്യം ചെയ്യാൻ സഹായിക്കും.",
+   "back": "Where it was grown. Turmeric from different regions differs in colour; so if the region's name is there, it helps to compare ones of the same kind with each other."
+  },
+  "seg.f11314eef092": {
+   "src": "Keep it well",
+   "t": "നന്നായി സൂക്ഷിക്കാൻ",
+   "back": "To store well"
+  },
+  "seg.7cdc58c0c7e8": {
+   "src": "Keep the pack zipped shut, or move the powder to a dry, airtight jar.",
+   "t": "പാക്കറ്റിന്റെ സിപ്പ് അടച്ചുവയ്ക്കൂ, അല്ലെങ്കിൽ പൊടി ഈർപ്പമില്ലാത്ത, വായു കടക്കാത്ത ഭരണിയിലേക്ക് മാറ്റൂ.",
+   "back": "Keep the packet's zip closed, or move the powder to a moisture-free, airtight jar."
+  },
+  "seg.bb4d61f86b55": {
+   "src": "Use a dry spoon. A damp spoon is what makes turmeric lumpy.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ. നനഞ്ഞ സ്പൂണാണ് മഞ്ഞളിനെ കട്ടപിടിപ്പിക്കുന്നത്.",
+   "back": "Use a dry spoon. It is a wet spoon that makes turmeric form lumps."
+  },
+  "seg.a92c022ff52e": {
+   "src": "Keep it out of direct sunlight, which fades the colour.",
+   "t": "നേരിട്ട് വെയിൽ കൊള്ളാതെ വയ്ക്കൂ; വെയിൽ നിറം മങ്ങിക്കും.",
+   "back": "Keep it out of direct sunlight; sunlight will fade the colour."
+  },
+  "seg.6911ce63edde": {
+   "src": "Is very bright yellow turmeric a bad sign?",
+   "t": "വളരെ തിളങ്ങുന്ന മഞ്ഞനിറമുള്ള മഞ്ഞൾ മോശം ലക്ഷണമാണോ?",
+   "back": "Is very bright yellow coloured turmeric a bad sign?"
+  },
+  "seg.a0ce62cee740": {
+   "src": "Not by itself. Colour changes with the variety, where it was grown and how it was dried and ground, so turmerics differ a lot. What matters is colour that leaves the powder too easily, as in the water check.",
+   "t": "അതുകൊണ്ടു മാത്രം അല്ല. ഇനം, വിളഞ്ഞ സ്ഥലം, ഉണക്കിയതും പൊടിച്ചതുമായ രീതി എന്നിവ അനുസരിച്ച് നിറം മാറും; അതിനാൽ മഞ്ഞളുകൾ തമ്മിൽ വലിയ വ്യത്യാസമുണ്ട്. ശ്രദ്ധിക്കേണ്ടത്, വെള്ളം കൊണ്ടുള്ള പരിശോധനയിൽ കാണുന്നതുപോലെ, പൊടിയിൽ നിന്ന് വളരെ എളുപ്പം ഇളകിപ്പോകുന്ന നിറമാണ്.",
+   "back": "Not because of that alone. Colour changes according to the variety, the place grown, and the way it was dried and ground; so turmerics differ a lot from each other. What must be watched for is colour that comes off the powder very easily, as seen in the test with water."
+  },
+  "seg.e8cc5edbb092": {
+   "src": "Can the water check show that turmeric has no lead?",
+   "t": "മഞ്ഞളിൽ ഈയം ഇല്ലെന്ന് വെള്ളം കൊണ്ടുള്ള പരിശോധന കാണിക്കുമോ?",
+   "back": "Will the test with water show that there is no lead in turmeric?"
+  },
+  "seg.37eb38df9ce8": {
+   "src": "No. Lead chromate does not dissolve in water, so the water check cannot see it. Only a lab test can.",
+   "t": "ഇല്ല. ലെഡ് ക്രോമേറ്റ് വെള്ളത്തിൽ അലിയില്ല; അതിനാൽ വെള്ളം കൊണ്ടുള്ള പരിശോധനയ്ക്ക് അത് കാണാനാകില്ല. ലാബ് ടെസ്റ്റിന് മാത്രമേ കഴിയൂ.",
+   "back": "No. Lead chromate does not dissolve in water; so the test with water cannot see it. Only a lab test can."
+  },
+  "seg.4c0bb3e9657c": {
+   "src": "Why does turmeric go lumpy?",
+   "t": "മഞ്ഞൾ എന്തുകൊണ്ടാണ് കട്ടപിടിക്കുന്നത്?",
+   "back": "Why does turmeric form lumps?"
+  },
+  "seg.2b76cd3e665b": {
+   "src": "Moisture. A wet spoon or an open pack lets the powder take in water. Break the lumps with a dry spoon and keep the pack sealed.",
+   "t": "ഈർപ്പം. നനഞ്ഞ സ്പൂണോ തുറന്ന പാക്കറ്റോ പൊടിയെ ഈർപ്പം വലിച്ചെടുക്കാൻ ഇടയാക്കും. ഉണങ്ങിയ സ്പൂൺ കൊണ്ട് കട്ടകൾ ഉടച്ച്, പാക്കറ്റ് അടച്ചുവയ്ക്കൂ.",
+   "back": "Moisture. A wet spoon or an open packet makes the powder draw in moisture. Break the lumps with a dry spoon and keep the packet closed."
+  },
+  "seg.87fe2929801d": {
+   "src": "What should I do if a check looks wrong?",
+   "t": "ഏതെങ്കിലും പരിശോധനയിൽ പ്രശ്നം തോന്നിയാൽ എന്തു ചെയ്യണം?",
+   "back": "What to do if a problem seems to show in any test?"
+  },
+  "seg.e83aba6cc6df": {
+   "src": "Stop using that batch, keep the pack, and contact the seller with the batch number. You can also report it to FSSAI through its Food Safety Connect app. If it is ours, WhatsApp us a photo of the pack and the glass.",
+   "t": "ആ ബാച്ച് ഉപയോഗിക്കുന്നത് നിർത്തൂ, പാക്കറ്റ് സൂക്ഷിച്ചുവയ്ക്കൂ, ബാച്ച് നമ്പർ സഹിതം വിൽപ്പനക്കാരനെ ബന്ധപ്പെടൂ. FSSAI-യുടെ Food Safety Connect ആപ്പ് വഴിയും പരാതിപ്പെടാം. അത് ഞങ്ങളുടേതാണെങ്കിൽ, പാക്കറ്റിന്റെയും ഗ്ലാസിന്റെയും ഫോട്ടോ ഞങ്ങൾക്ക് WhatsApp ചെയ്യൂ.",
+   "back": "Stop using that batch, keep the packet, contact the seller with the batch number. You can also complain through FSSAI's Food Safety Connect app. If it is ours, WhatsApp us a photo of the packet and the glass."
+  },
+  "seg.ba0682e12278": {
+   "src": "Our turmeric",
+   "t": "ഞങ്ങളുടെ മഞ്ഞൾ",
+   "back": "Our turmeric"
+  },
+  "seg.1dd4194330b1": {
+   "src": "Try these checks on ours too. If anything looks off, ⟦1⟧WhatsApp us⟦/1⟧ a photo with the batch number from the pack.",
+   "t": "ഞങ്ങളുടേതിലും ഈ പരിശോധനകൾ ചെയ്തുനോക്കൂ. എന്തെങ്കിലും ശരിയല്ലെന്ന് തോന്നിയാൽ, പാക്കറ്റിലെ ബാച്ച് നമ്പർ സഹിതം ഒരു ഫോട്ടോ ⟦1⟧ഞങ്ങൾക്ക് WhatsApp ചെയ്യൂ⟦/1⟧.",
+   "back": "Try these tests on ours too. If anything seems not right, ⟦1⟧WhatsApp us⟦/1⟧ a photo with the batch number on the packet."
+  },
+  "seg.f803aad7e26d": {
+   "src": "Turmeric Adulteration Test at Home (Haldi, Pasupu) | 1acrefarms",
+   "t": "വീട്ടിൽ ചെയ്യാവുന്ന മഞ്ഞൾ മായം പരിശോധന (ഹൽദി, പസുപു) | 1acrefarms",
+   "back": "Turmeric adulteration test you can do at home (haldi, pasupu) | 1acrefarms"
+  },
+  "seg.7d95509f17be": {
+   "src": "How to check turmeric powder (haldi, pasupu) at home: the water check, what it misses, why the iodine test does not work on turmeric, and when you need a lab.",
+   "t": "വീട്ടിൽ മഞ്ഞൾപ്പൊടി (ഹൽദി, പസുപു) എങ്ങനെ പരിശോധിക്കാം: വെള്ളം കൊണ്ടുള്ള പരിശോധന, അത് എന്ത് കണ്ടെത്തില്ല, അയഡിൻ ടെസ്റ്റ് മഞ്ഞളിൽ എന്തുകൊണ്ട് ഫലിക്കില്ല, എപ്പോൾ ലാബ് വേണം.",
+   "back": "How to test turmeric powder (haldi, pasupu) at home: the test with water, what it will not find, why the iodine test does not work on turmeric, when a lab is needed."
+  },
+  "seg.d0950d598f8d": {
+   "src": "How to check turmeric powder at home · 1acrefarms",
+   "t": "വീട്ടിൽ മഞ്ഞൾപ്പൊടി എങ്ങനെ പരിശോധിക്കാം · 1acrefarms",
+   "back": "How to test turmeric powder at home · 1acrefarms"
   }
  }
 }

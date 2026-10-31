@@ -475,6 +475,1946 @@
    "src": "Keep the zip shut after use.",
    "t": "ব্যবহারের পর জিপ বন্ধ রাখুন।",
    "back": "Keep the zip closed after use."
+  },
+  "ui.amazon": {
+   "src": "Buy on Amazon",
+   "t": "Amazon-এ কিনুন",
+   "back": "Buy on Amazon"
+  },
+  "seg.70f8bb9a8a53": {
+   "src": "Home",
+   "t": "হোম",
+   "back": "Home"
+  },
+  "seg.9fb1092f32d4": {
+   "src": "Recipes",
+   "t": "রেসিপি",
+   "back": "Recipes"
+  },
+  "seg.41725cbdbc4e": {
+   "src": "Chimmili for Nagula Chavithi",
+   "t": "নাগুলা চবিতির চিম্মিলি",
+   "back": "Nagula Chavithi's Chimmili"
+  },
+  "seg.0713d9ec51cd": {
+   "src": "Nagula Chavithi recipe · makes about 12",
+   "t": "নাগুলা চবিতির রেসিপি · প্রায় 12টি হয়",
+   "back": "Nagula Chavithi recipe · makes about 12"
+  },
+  "seg.6a61d0d1cb9e": {
+   "src": "Chimmili for Nagula Chavithi ⟦1⟧(Sesame Jaggery Balls)⟦/1⟧",
+   "t": "নাগুলা চবিতির চিম্মিলি ⟦1⟧(তিল-গুড়ের লাড্ডু)⟦/1⟧",
+   "back": "Nagula Chavithi's Chimmili ⟦1⟧(sesame-jaggery laddu)⟦/1⟧"
+  },
+  "seg.4d125771ff54": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · Til-Gud Ke Laddoo",
+   "t": "⟦#1⟧ · ⟦#2⟧ · নুভ্ভুলা চিম্মিলি · তিল-গুড় কে লাড্ডু",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Nuvvula Chimmili · til-gud ke laddu"
+  },
+  "seg.4fea7db714b7": {
+   "src": "Chimmili is a small Telugu sweet of roasted sesame and jaggery, ground coarsely and rolled into balls. It is one of the offerings made on Nagula Chavithi in Karthika masam, along with chalimidi and the milk poured at the snake anthill (putta). Sesame and jaggery sweets like it are made again at Sankranti.",
+   "t": "চিম্মিলি তেলুগুদের একটি ছোট মিষ্টি: ভাজা তিল আর গুড় মোটা করে গুঁড়িয়ে বল পাকানো হয়। কার্তিক মাসে নাগুলা চবিতির দিন যা যা নিবেদন করা হয়, এটি তার একটি, সঙ্গে থাকে চালিমিডি আর সাপের উইঢিবিতে (পুট্টা) ঢালা দুধ। সংক্রান্তিতেও এমন তিল-গুড়ের মিষ্টি আবার তৈরি হয়।",
+   "back": "Chimmili is a small sweet of the Telugus: roasted sesame and jaggery are ground coarsely and rolled into balls. It is one of the things offered on the day of Nagula Chavithi in the month of Kartika, along with chalimidi and milk poured into the snake's anthill (putta). At Sankranti too, such sesame-jaggery sweets are made again."
+  },
+  "seg.6e104d560e56": {
+   "src": "Roasted sesame gives it a nutty, toasty taste, and cane jaggery a caramel sweetness. The texture is soft and a little crumbly, and each ball is gone in two bites. This recipe makes about 12.",
+   "t": "ভাজা তিলে আসে বাদামের মতো, সেঁকা সেঁকা স্বাদ, আর আখের গুড়ে ক্যারামেলের মতো মিষ্টি। খেতে নরম আর একটু ঝুরঝুরে, প্রতিটি বল দু’কামড়েই শেষ। এই রেসিপিতে প্রায় 12টি হয়।",
+   "back": "Roasted sesame brings a nutty, toasty taste, and sugarcane jaggery a caramel-like sweetness. Soft and a little crumbly to eat, each ball is finished in two bites. This recipe makes about 12."
+  },
+  "seg.3243a5b994ae": {
+   "src": "⟦1⟧Prep⟦/1⟧15 min",
+   "t": "⟦1⟧প্রস্তুতি⟦/1⟧15 মিনিট",
+   "back": "⟦1⟧Preparation⟦/1⟧15 minutes"
+  },
+  "seg.a0707ef3d64c": {
+   "src": "⟦1⟧Cook⟦/1⟧10 min",
+   "t": "⟦1⟧রান্না⟦/1⟧10 মিনিট",
+   "back": "⟦1⟧Cooking⟦/1⟧10 minutes"
+  },
+  "seg.b62f27d282c5": {
+   "src": "⟦1⟧Total⟦/1⟧30 min",
+   "t": "⟦1⟧মোট⟦/1⟧30 মিনিট",
+   "back": "⟦1⟧Total⟦/1⟧30 minutes"
+  },
+  "seg.4e8f24be7265": {
+   "src": "⟦1⟧Makes⟦/1⟧About 12",
+   "t": "⟦1⟧পরিমাণ⟦/1⟧প্রায় 12টি",
+   "back": "⟦1⟧Quantity⟦/1⟧about 12"
+  },
+  "seg.9e72f273d4f2": {
+   "src": "Total includes 5 minutes for the roasted sesame to cool.",
+   "t": "মোট সময়ের মধ্যে ভাজা তিল ঠান্ডা হওয়ার 5 মিনিটও ধরা আছে।",
+   "back": "The total time also includes 5 minutes for the roasted sesame to cool."
+  },
+  "seg.df9373d040ca": {
+   "src": "⟦1⟧The recipe card⟦/1⟧Save it or send it to family. ⟦2⟧Open full size⟦/2⟧",
+   "t": "⟦1⟧রেসিপি কার্ড⟦/1⟧সেভ করে রাখুন বা পরিবারের লোকদের পাঠান। ⟦2⟧পুরো মাপে খুলুন⟦/2⟧",
+   "back": "⟦1⟧Recipe card⟦/1⟧Save it or send it to your family members. ⟦2⟧Open at full size⟦/2⟧"
+  },
+  "seg.7b0a223418a3": {
+   "src": "In short",
+   "t": "সংক্ষেপে",
+   "back": "In short"
+  },
+  "seg.2097a0e593c6": {
+   "src": "Make chimmili at home: roast sesame till it crackles, grind coarsely, pulse with grated cane jaggery and cardamom, shape into balls.",
+   "t": "বাড়িতে চিম্মিলি বানান: তিল চিড়চিড় না করা পর্যন্ত ভাজুন, মোটা করে গুঁড়ো করুন, কোরানো আখের গুড় আর এলাচ দিয়ে অল্প অল্প করে মিক্সিতে ঘুরিয়ে নিন, তারপর বল পাকান।",
+   "back": "Make chimmili at home: roast sesame until it crackles, grind it coarsely, pulse it little by little in the mixie with grated sugarcane jaggery and cardamom, then roll into balls."
+  },
+  "seg.6947f1f0816d": {
+   "src": "Ingredients ⟦1⟧makes about 12⟦/1⟧",
+   "t": "উপকরণ ⟦1⟧প্রায় 12টি হয়⟦/1⟧",
+   "back": "Ingredients ⟦1⟧makes about 12⟦/1⟧"
+  },
+  "seg.80b66a3db542": {
+   "src": "1 cup white sesame seeds ⟦1⟧about 150 g⟦/1⟧",
+   "t": "1 কাপ সাদা তিল ⟦1⟧প্রায় 150 g⟦/1⟧",
+   "back": "1 cup white sesame ⟦1⟧about 150 g⟦/1⟧"
+  },
+  "seg.ac56800c5ad4": {
+   "src": "¾ cup grated cane jaggery ⟦1⟧lightly packed; soft jaggery binds best⟦/1⟧",
+   "t": "¾ কাপ কোরানো আখের গুড় ⟦1⟧হালকা চেপে মাপা; নরম গুড় সবচেয়ে ভালো জোড়া লাগায়⟦/1⟧",
+   "back": "¾ cup grated sugarcane jaggery ⟦1⟧measured lightly pressed; soft jaggery binds best⟦/1⟧"
+  },
+  "seg.4c5b602f21f3": {
+   "src": "¼ tsp cardamom powder",
+   "t": "¼ চা-চামচ এলাচ গুঁড়ো",
+   "back": "¼ teaspoon cardamom powder"
+  },
+  "seg.39c46fb56757": {
+   "src": "1 tsp ghee, for greasing your palms",
+   "t": "1 চা-চামচ ঘি, হাতের তালুতে মাখার জন্য",
+   "back": "1 teaspoon ghee, for rubbing on the palms"
+  },
+  "seg.132ce498b42c": {
+   "src": "Made with",
+   "t": "যা দিয়ে তৈরি",
+   "back": "What it is made with"
+  },
+  "seg.be6d7e2d558e": {
+   "src": "Cane Jaggery",
+   "t": "আখের গুড়",
+   "back": "Sugarcane jaggery"
+  },
+  "seg.059427bf3bd5": {
+   "src": "⟦#1⟧ · Cheruku Bellam",
+   "t": "⟦#1⟧ · চেরুকু বেল্লাম",
+   "back": "⟦#1⟧ · Cheruku Bellam"
+  },
+  "seg.b468afe021cf": {
+   "src": "MRP ₹234 · 540 g",
+   "t": "MRP ₹234 · 540 g",
+   "back": "MRP ₹234 · 540 g"
+  },
+  "seg.5ff7431ccbb1": {
+   "src": "Buy on Amazon",
+   "t": "Amazon-এ কিনুন",
+   "back": "Buy on Amazon"
+  },
+  "seg.cc83dde48fe2": {
+   "src": "See the pack",
+   "t": "প্যাকটি দেখুন",
+   "back": "See the pack"
+  },
+  "seg.649ff9af556d": {
+   "src": "Add to order",
+   "t": "অর্ডারে যোগ করুন",
+   "back": "Add to order"
+  },
+  "seg.88306943fea7": {
+   "src": "Method",
+   "t": "পদ্ধতি",
+   "back": "Method"
+  },
+  "seg.ed775cba4fcf": {
+   "src": "Grate the jaggery and measure out the sesame before you start; once the sesame is roasted, the rest moves quickly.",
+   "t": "শুরু করার আগে গুড় কুরে নিন আর তিল মেপে রাখুন; তিল ভাজা হয়ে গেলে বাকি কাজ তাড়াতাড়ি এগোয়।",
+   "back": "Before starting, grate the jaggery and keep the sesame measured; once the sesame is roasted, the rest of the work moves quickly."
+  },
+  "seg.cfb9d281b47f": {
+   "src": "Heat a heavy kadai or pan on low heat for a minute. Add the sesame; no oil or ghee is needed.",
+   "t": "একটা ভারী কড়াই বা প্যান কম আঁচে এক মিনিট গরম করুন। তিল দিন; তেল বা ঘি লাগবে না।",
+   "back": "Heat a heavy kadai or pan on low heat for one minute. Add the sesame; no oil or ghee is needed."
+  },
+  "seg.89a51ce5355c": {
+   "src": "Dry-roast the sesame on a low flame till it crackles and turns light golden. Stir all the time; the seeds start to pop and smell nutty after 4–6 minutes. Do not let them turn brown.",
+   "t": "কম আঁচে তিল শুকনো খোলায় ভাজুন, যতক্ষণ না চিড়চিড় করে আর হালকা সোনালি রং ধরে। সারাক্ষণ নাড়তে থাকুন; 4–6 মিনিট পরে দানা ফুটতে শুরু করবে আর বাদামের মতো গন্ধ বেরোবে। বাদামি হতে দেবেন না।",
+   "back": "Dry-roast the sesame on low heat until it crackles and takes on a light golden colour. Keep stirring all the time; after 4–6 minutes the seeds will start to pop and a nutty smell will come out. Do not let it turn brown."
+  },
+  "seg.999792547560": {
+   "src": "Tip the sesame onto a wide plate straight away so it stops browning. Cool it for about 5 minutes, until it is just warm to the touch.",
+   "t": "সঙ্গে সঙ্গে তিল একটা চওড়া থালায় ঢেলে দিন, যাতে রং আর গাঢ় না হয়। প্রায় 5 মিনিট ঠান্ডা হতে দিন, যতক্ষণ না ছুঁলে শুধু একটু গরম লাগে।",
+   "back": "Immediately pour the sesame out onto a wide plate, so the colour does not get darker. Let it cool for about 5 minutes, until it feels only a little warm to the touch."
+  },
+  "seg.77b614ea2f92": {
+   "src": "Grind the sesame coarsely in short pulses. Use the small jar of the mixer and pulse 3–4 times, a second or two at a time; stop while you can still see broken seeds.",
+   "t": "অল্প অল্প করে ঘুরিয়ে তিল মোটা করে গুঁড়ো করুন। মিক্সির ছোট জার নিন আর 3–4 বার ঘোরান, প্রতিবার এক-দু’সেকেন্ড করে; ভাঙা দানা দেখা যেতে থাকতেই থামুন।",
+   "back": "Grind the sesame coarsely by pulsing little by little. Take the small jar of the mixie and pulse 3–4 times, one or two seconds each time; stop as soon as broken seeds start to appear."
+  },
+  "seg.175aeced5810": {
+   "src": "Add the jaggery and cardamom; pulse till it comes together. This takes 4–6 more short pulses; scrape down the sides once. A pinch pressed between your fingers should hold its shape.",
+   "t": "গুড় আর এলাচ দিন; মিশে একসঙ্গে জমাট না হওয়া পর্যন্ত ঘোরান। এতে আরও 4–6 বার অল্প করে ঘোরাতে হয়; মাঝে একবার জারের গা থেকে চেঁছে নামিয়ে দিন। আঙুলে এক চিমটে চাপলে আকার ধরে থাকা উচিত।",
+   "back": "Add the jaggery and cardamom; pulse until it mixes and clumps together. This needs another 4–6 short pulses; once in between, scrape it down from the sides of the jar. When a pinch is pressed with the fingers, it should hold its shape."
+  },
+  "seg.6f94cb46b9ab": {
+   "src": "If the mixture is too dry to hold, add 1–2 tsp more grated jaggery and pulse once or twice again.",
+   "t": "মিশ্রণ খুব শুকনো হয়ে জমাট না বাঁধলে আরও 1–2 চা-চামচ কোরানো গুড় দিয়ে আবার এক-দু’বার ঘোরান।",
+   "back": "If the mixture is very dry and does not clump, add 1–2 more teaspoons of grated jaggery and pulse again once or twice."
+  },
+  "seg.226f137c9449": {
+   "src": "Tip the mixture into a bowl and grease your palms lightly with ghee.",
+   "t": "মিশ্রণটা একটা বাটিতে ঢেলে নিন আর হাতের তালুতে হালকা করে ঘি মাখুন।",
+   "back": "Pour the mixture into a bowl and lightly rub ghee on your palms."
+  },
+  "seg.ff3eb71729c2": {
+   "src": "Shape into small balls. Take a heaped tablespoon at a time, press it firmly in your fist, then roll it smooth. Work quickly while the mixture is still warm, as it turns crumbly when it cools.",
+   "t": "ছোট ছোট বল পাকান। একবারে এক টেবিল চামচ উঁচু করে নিন, মুঠোয় শক্ত করে চাপুন, তারপর গড়িয়ে মসৃণ করুন। মিশ্রণ গরম থাকতেই তাড়াতাড়ি কাজ সারুন, কারণ ঠান্ডা হলে ঝুরঝুরে হয়ে যায়।",
+   "back": "Roll small balls. Take one heaped tablespoon at a time, press it firmly in your fist, then roll it smooth. Work quickly while the mixture is still warm, because when it cools it becomes crumbly."
+  },
+  "seg.ee9e027268aa": {
+   "src": "Leave the balls on a plate until they cool completely, about 15 minutes, then store them in an airtight jar.",
+   "t": "বলগুলো একটা থালায় রেখে দিন যতক্ষণ না পুরো ঠান্ডা হয়, প্রায় 15 মিনিট, তারপর এয়ারটাইট বয়ামে তুলে রাখুন।",
+   "back": "Keep the balls on a plate until they are completely cool, about 15 minutes, then put them away in an airtight jar."
+  },
+  "seg.4cf1b54b003a": {
+   "src": "Tips",
+   "t": "টিপস",
+   "back": "Tips"
+  },
+  "seg.7fe633314020": {
+   "src": "Roast on a low flame and keep stirring; sesame goes from golden to burnt quickly, and burnt sesame tastes bitter.",
+   "t": "কম আঁচে ভাজুন আর নাড়তে থাকুন; তিল খুব তাড়াতাড়ি সোনালি থেকে পুড়ে যায়, আর পোড়া তিল তেতো লাগে।",
+   "back": "Roast on low heat and keep stirring; sesame goes from golden to burnt very quickly, and burnt sesame tastes bitter."
+  },
+  "seg.d50b37351252": {
+   "src": "Grind in short pulses only; long runs turn sesame into an oily paste.",
+   "t": "শুধু অল্প অল্প করে ঘোরান; একটানা ঘোরালে তিল তেলতেলে পেস্ট হয়ে যায়।",
+   "back": "Only pulse little by little; if you grind continuously, the sesame turns into an oily paste."
+  },
+  "seg.75f5428655c4": {
+   "src": "Shape while the mixture is warm. If it turns crumbly, pulse it once more with a teaspoon of grated jaggery.",
+   "t": "মিশ্রণ গরম থাকতেই আকার দিন। ঝুরঝুরে হয়ে গেলে এক চা-চামচ কোরানো গুড় দিয়ে আর একবার ঘোরান।",
+   "back": "Shape while the mixture is still warm. If it has become crumbly, add one teaspoon of grated jaggery and pulse once more."
+  },
+  "seg.1d42a24453d2": {
+   "src": "Soft jaggery binds best. If yours is hard, grate it finely so it blends in evenly.",
+   "t": "নরম গুড় সবচেয়ে ভালো জোড়া লাগায়। আপনার গুড় শক্ত হলে মিহি করে কুরে নিন, যাতে সমানভাবে মিশে যায়।",
+   "back": "Soft jaggery binds best. If your jaggery is hard, grate it finely, so that it mixes evenly."
+  },
+  "seg.4fba657a2566": {
+   "src": "Variations",
+   "t": "অন্যভাবে বানাতে",
+   "back": "To make it another way"
+  },
+  "seg.5a7ed16f4810": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker chimmili with a smoky sweetness.",
+   "t": "তালের গুড়: একই পরিমাণ কোরানো তালের গুড় দিন, চিম্মিলি হবে আরও গাঢ় রঙের, মিষ্টিতে একটু ধোঁয়াটে স্বাদ।",
+   "back": "Palm jaggery: add the same amount of grated palm jaggery; the chimmili will be darker in colour, with a slightly smoky taste in the sweetness."
+  },
+  "seg.569a63f3cd17": {
+   "src": "Black sesame (nalla nuvvulu): roast and grind it the same way for darker, stronger-tasting balls.",
+   "t": "কালো তিল (নাল্লা নুভ্ভুলু): একইভাবে ভেজে গুঁড়ো করুন, বল হবে আরও গাঢ় রঙের আর স্বাদ হবে কড়া।",
+   "back": "Black sesame (nalla nuvvulu): roast and grind the same way; the balls will be darker in colour and the taste will be strong."
+  },
+  "seg.da0d1a9b6378": {
+   "src": "Peanut or coconut: pulse in 2 tbsp roasted peanuts or grated dry coconut with the jaggery.",
+   "t": "চিনাবাদাম বা নারকেল: গুড়ের সঙ্গে 2 টেবিল চামচ ভাজা চিনাবাদাম বা কোরানো শুকনো নারকেল দিয়ে ঘুরিয়ে নিন।",
+   "back": "Peanuts or coconut: add 2 tablespoons of roasted peanuts or grated dry coconut with the jaggery and pulse."
+  },
+  "seg.32d41fc0994e": {
+   "src": "Without a mixer: pound the warm sesame and jaggery together in a stone mortar (rolu) until the mixture holds, then shape.",
+   "t": "মিক্সি না থাকলে: গরম তিল আর গুড় একসঙ্গে পাথরের খলে (রোলু) থেঁতো করুন যতক্ষণ না মিশ্রণ জমাট বাঁধে, তারপর আকার দিন।",
+   "back": "If you have no mixie: pound the warm sesame and jaggery together in a stone mortar (rolu) until the mixture clumps, then shape."
+  },
+  "seg.2270cfaf8d00": {
+   "src": "Serving",
+   "t": "পরিবেশন",
+   "back": "Serving"
+  },
+  "seg.2fa9aaef4425": {
+   "src": "On Nagula Chavithi morning, offer chimmili with milk at the snake anthill (putta) or in your puja, then share them as prasadam. They also go well with evening tea.",
+   "t": "নাগুলা চবিতির সকালে সাপের উইঢিবিতে (পুট্টা) বা আপনার পুজোয় দুধের সঙ্গে চিম্মিলি নিবেদন করুন, তারপর প্রসাদ হিসেবে সবাইকে দিন। বিকেলের চায়ের সঙ্গেও ভালো লাগে।",
+   "back": "On the morning of Nagula Chavithi, offer the chimmili with milk at the snake's anthill (putta) or at your puja, then give it to everyone as prasad. It is also nice with afternoon tea."
+  },
+  "seg.9e092dda4f0e": {
+   "src": "Storage",
+   "t": "সংরক্ষণ",
+   "back": "Storage"
+  },
+  "seg.bd50831bbb3f": {
+   "src": "Keeps a week in an airtight jar. Store the jar at room temperature, in a dry place.",
+   "t": "এয়ারটাইট বয়ামে এক সপ্তাহ ভালো থাকে। বয়ামটা ঘরের তাপমাত্রায়, শুকনো জায়গায় রাখুন।",
+   "back": "Keeps well for one week in an airtight jar. Keep the jar at room temperature, in a dry place."
+  },
+  "seg.9a1fc1731f62": {
+   "src": "Questions",
+   "t": "প্রশ্ন",
+   "back": "Questions"
+  },
+  "seg.4023b0de08bd": {
+   "src": "Why is my chimmili not holding together?",
+   "t": "আমার চিম্মিলি জমাট বাঁধছে না কেন?",
+   "back": "Why is my chimmili not clumping?"
+  },
+  "seg.7fed90d1ebe0": {
+   "src": "The sesame may be under-ground, or the mixture may have cooled. Pulse it once more with 1–2 tsp extra grated jaggery and shape it while it is still warm.",
+   "t": "হয়তো তিল ঠিকমতো গুঁড়ো হয়নি, বা মিশ্রণ ঠান্ডা হয়ে গেছে। আরও 1–2 চা-চামচ কোরানো গুড় দিয়ে আর একবার ঘোরান আর গরম থাকতেই আকার দিন।",
+   "back": "Perhaps the sesame was not ground properly, or the mixture has gone cold. Add 1–2 more teaspoons of grated jaggery, pulse once more and shape while it is still warm."
+  },
+  "seg.694d2b416f39": {
+   "src": "Why does my chimmili taste bitter?",
+   "t": "আমার চিম্মিলি তেতো লাগছে কেন?",
+   "back": "Why is my chimmili tasting bitter?"
+  },
+  "seg.d0ee77d0957e": {
+   "src": "The sesame was roasted too dark. Roast it on a low flame only until it crackles and turns light golden, then tip it onto a plate at once so it stops browning.",
+   "t": "তিল বেশি গাঢ় করে ভাজা হয়েছে। কম আঁচে শুধু চিড়চিড় করা আর হালকা সোনালি হওয়া পর্যন্ত ভাজুন, তারপর সঙ্গে সঙ্গে থালায় ঢেলে দিন যাতে রং আর গাঢ় না হয়।",
+   "back": "The sesame was roasted too dark. On low heat, roast only until it crackles and turns light golden, then immediately pour it onto a plate so the colour does not get darker."
+  },
+  "seg.30d31a37acfa": {
+   "src": "Can I use palm jaggery instead of cane jaggery?",
+   "t": "আখের গুড়ের বদলে কি তালের গুড় দিতে পারি?",
+   "back": "Can I use palm jaggery instead of sugarcane jaggery?"
+  },
+  "seg.77afe99f558c": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The chimmili will be darker, with a deeper, slightly smoky sweetness.",
+   "t": "হ্যাঁ। একই পরিমাণ কোরানো তালের গুড় (তাটি বেল্লাম) দিন। চিম্মিলি হবে আরও গাঢ় রঙের, মিষ্টিটা আরও গভীর, একটু ধোঁয়াটে।",
+   "back": "Yes. Add the same amount of grated palm jaggery (tati bellam). The chimmili will be darker in colour, the sweetness deeper, a little smoky."
+  },
+  "seg.88f8629f6043": {
+   "src": "When is Nagula Chavithi in 2026?",
+   "t": "2026 সালে নাগুলা চবিতি কবে?",
+   "back": "When is Nagula Chavithi in 2026?"
+  },
+  "seg.bae4fc214e74": {
+   "src": "Nagula Chavithi falls on Friday, 13 November 2026, in Karthika masam, a few days after Deepavali. Chimmili, chalimidi and milk are among the offerings made at the snake anthill (putta) that morning.",
+   "t": "নাগুলা চবিতি পড়ছে শুক্রবার, 13 নভেম্বর 2026, কার্তিক মাসে, দীপাবলির কয়েক দিন পরে। সেদিন সকালে সাপের উইঢিবিতে (পুট্টা) যা নিবেদন করা হয়, তার মধ্যে আছে চিম্মিলি, চালিমিডি আর দুধ।",
+   "back": "Nagula Chavithi falls on Friday, 13 November 2026, in the month of Kartika, a few days after Deepavali. Among the things offered at the snake's anthill (putta) that morning are chimmili, chalimidi and milk."
+  },
+  "seg.fd075189cdf7": {
+   "src": "More recipes",
+   "t": "আরও রেসিপি",
+   "back": "More recipes"
+  },
+  "seg.83ffe3c3550f": {
+   "src": "Palm Jaggery Coffee",
+   "t": "তালের গুড়ের কফি",
+   "back": "Palm jaggery coffee"
+  },
+  "seg.02c2c8d3100e": {
+   "src": "With Palm Jaggery · 20 minutes",
+   "t": "তালের গুড় দিয়ে · 20 মিনিট",
+   "back": "With palm jaggery · 20 minutes"
+  },
+  "seg.42df0348ff9d": {
+   "src": "Bellam Paramannam",
+   "t": "বেল্লাম পরমান্নম",
+   "back": "Bellam Paramannam"
+  },
+  "seg.900c7db66546": {
+   "src": "With Cane Jaggery · serves 4",
+   "t": "আখের গুড় দিয়ে · 4 জনের জন্য",
+   "back": "With sugarcane jaggery · for 4 people"
+  },
+  "seg.07191606cd75": {
+   "src": "Warm Pasupu Paalu",
+   "t": "গরম পাসুপু পালু",
+   "back": "Hot Pasupu Palu"
+  },
+  "seg.9b5f05abcc1f": {
+   "src": "With Turmeric Powder · 5 minutes",
+   "t": "হলুদ গুঁড়ো দিয়ে · 5 মিনিট",
+   "back": "With turmeric powder · 5 minutes"
+  },
+  "seg.39e2ef7a56ee": {
+   "src": "All recipes",
+   "t": "সব রেসিপি",
+   "back": "All recipes"
+  },
+  "seg.882635d4896e": {
+   "src": "నువ్వుల చిమ్మిలి · Chimmili for Nagula Chavithi | 1acrefarms",
+   "t": "నువ్వుల చిమ్మిలి · নাগুলা চবিতির চিম্মিলি | 1acrefarms",
+   "back": "నువ్వుల చిమ్మిలి · Nagula Chavithi's Chimmili | 1acrefarms"
+  },
+  "seg.a2d7a97cf16a": {
+   "src": "నాగుల చవితికి నువ్వుల చిమ్మిలి. Chimmili for Nagula Chavithi: roasted sesame and cane jaggery shaped into small balls. Step-by-step method, tips and FAQs. Makes about 12 and keeps a week.",
+   "t": "నాగుల చవితికి నువ్వుల చిమ్మిలి. নাগুলা চবিতির চিম্মিলি: ভাজা তিল আর আখের গুড় দিয়ে বানানো ছোট ছোট বল। ধাপে ধাপে পদ্ধতি, টিপস আর প্রশ্নোত্তর। প্রায় 12টি হয়, এক সপ্তাহ ভালো থাকে।",
+   "back": "నాగుల చవితికి నువ్వుల చిమ్మిలి. Nagula Chavithi's Chimmili: small balls made with roasted sesame and sugarcane jaggery. Step-by-step method, tips and questions and answers. Makes about 12, keeps well for one week."
+  },
+  "seg.3575fc10db16": {
+   "src": "Chimmili for Nagula Chavithi (Sesame Jaggery Balls) · 1acrefarms",
+   "t": "নাগুলা চবিতির চিম্মিলি (তিল-গুড়ের লাড্ডু) · 1acrefarms",
+   "back": "Nagula Chavithi's Chimmili (sesame-jaggery laddu) · 1acrefarms"
+  },
+  "seg.c766e665183d": {
+   "src": "Breadcrumb",
+   "t": "পেজের পথ",
+   "back": "Page path"
+  },
+  "seg.3753ebc4b29f": {
+   "src": "Chimmili for Nagula Chavithi: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "নাগুলা চবিতির চিম্মিলি: 1acrefarms-এর রেসিপি কার্ড, উপকরণ আর পদ্ধতি সহ",
+   "back": "Nagula Chavithi's Chimmili: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.37a4d7618df9": {
+   "src": "Cane Jaggery 540 g pack",
+   "t": "আখের গুড়ের 540 g প্যাক",
+   "back": "540 g pack of sugarcane jaggery"
+  },
+  "seg.89c376daa720": {
+   "src": "Palm Jaggery Coffee recipe card",
+   "t": "তালের গুড়ের কফির রেসিপি কার্ড",
+   "back": "Recipe card for palm jaggery coffee"
+  },
+  "seg.152f87349f83": {
+   "src": "Bellam Paramannam recipe card",
+   "t": "বেল্লাম পরমান্নমের রেসিপি কার্ড",
+   "back": "Recipe card for Bellam Paramannam"
+  },
+  "seg.c46e50533990": {
+   "src": "Warm Pasupu Paalu recipe card",
+   "t": "গরম পাসুপু পালুর রেসিপি কার্ড",
+   "back": "Recipe card for hot Pasupu Palu"
+  },
+  "seg.372e93dfdf4d": {
+   "src": "1 cup white sesame seeds",
+   "t": "1 কাপ সাদা তিল",
+   "back": "1 cup white sesame"
+  },
+  "seg.0c3e2c74cbab": {
+   "src": "¾ cup grated cane jaggery",
+   "t": "¾ কাপ কোরানো আখের গুড়",
+   "back": "¾ cup grated sugarcane jaggery"
+  },
+  "seg.1f843d0906e3": {
+   "src": "From an Andhra kitchen",
+   "t": "অন্ধ্রের রান্নাঘর থেকে",
+   "back": "From the Andhra kitchen"
+  },
+  "seg.56b9d2a01472": {
+   "src": "Recipes with turmeric and jaggery",
+   "t": "হলুদ আর গুড়ের রেসিপি",
+   "back": "Turmeric and jaggery recipes"
+  },
+  "seg.c4b9e076a2c3": {
+   "src": "Home recipes made with our pasupu and bellam. Each one links to the pack it uses.",
+   "t": "আমাদের পাসুপু (হলুদ) আর বেল্লাম (গুড়) দিয়ে ঘরোয়া রেসিপি। প্রতিটিতে যে প্যাক লাগে, তার লিঙ্ক দেওয়া আছে।",
+   "back": "Home recipes with our pasupu (turmeric) and bellam (jaggery). The link to the pack each one needs is given."
+  },
+  "seg.daa76710a9e7": {
+   "src": "With Cane Jaggery · makes about 12",
+   "t": "আখের গুড় দিয়ে · প্রায় 12টি হয়",
+   "back": "With sugarcane jaggery · makes about 12"
+  },
+  "seg.a0dc3eb55868": {
+   "src": "బెల్లం, పసుపు వంటకాలు · Jaggery & Turmeric Recipes | 1acrefarms",
+   "t": "బెల్లం, పసుపు వంటకాలు · গুড় ও হলুদের রেসিপি | 1acrefarms",
+   "back": "బెల్లం, పసుపు వంటకాలు · Jaggery and turmeric recipes | 1acrefarms"
+  },
+  "seg.0db78d27aebc": {
+   "src": "బెల్లం, పసుపు వంటకాలు. Home recipes made with 1acrefarms turmeric and jaggery: palm jaggery coffee, bellam paramannam, chimmili for Nagula Chavithi and pasupu paalu.",
+   "t": "బెల్లం, పసుపు వంటకాలు. 1acrefarms-এর হলুদ আর গুড় দিয়ে ঘরোয়া রেসিপি: তালের গুড়ের কফি, বেল্লাম পরমান্নম, নাগুলা চবিতির চিম্মিলি আর পাসুপু পালু।",
+   "back": "బెల్లం, పసుపు వంటకాలు. Home recipes with 1acrefarms turmeric and jaggery: palm jaggery coffee, Bellam Paramannam, Nagula Chavithi's Chimmili and Pasupu Palu."
+  },
+  "seg.580be3c9d6b6": {
+   "src": "Recipes · 1acrefarms",
+   "t": "রেসিপি · 1acrefarms",
+   "back": "Recipes · 1acrefarms"
+  },
+  "seg.b03e4d3b1c23": {
+   "src": "Chimmili for Nagula Chavithi recipe card",
+   "t": "নাগুলা চবিতির চিম্মিলির রেসিপি কার্ড",
+   "back": "Recipe card for Nagula Chavithi's Chimmili"
+  },
+  "seg.113fd3b90b70": {
+   "src": "Recipe · filter coffee",
+   "t": "রেসিপি · ফিল্টার কফি",
+   "back": "Recipe · Filter coffee"
+  },
+  "seg.b4d95640cfbc": {
+   "src": "Palm Jaggery Coffee ⟦1⟧(Thati Bellam Coffee)⟦/1⟧",
+   "t": "তালের গুড়ের কফি ⟦1⟧(তাটি বেল্লাম কফি)⟦/1⟧",
+   "back": "Palm jaggery coffee ⟦1⟧(tati bellam coffee)⟦/1⟧"
+  },
+  "seg.eb6e42bdf428": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Thati Bellam Coffee · Taad Ke Gud Wali Coffee",
+   "t": "⟦#1⟧ · ⟦#2⟧ · তাটি বেল্লাম কফি · তাড় কে গুড় ওয়ালি কফি",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Tati Bellam Coffee · taad ke gud wali coffee"
+  },
+  "seg.4b090c2ce3d3": {
+   "src": "Filter coffee is how many Telugu homes start the day: a strong decoction dripped through a steel filter, topped up with hot milk and frothed between a tumbler and davara. This version is sweetened with grated palm jaggery (thati bellam) in place of sugar.",
+   "t": "অনেক তেলুগু বাড়িতে দিন শুরু হয় ফিল্টার কফি দিয়ে: স্টিলের ফিল্টারে চুইয়ে পড়া কড়া ডিকক্শন, তাতে গরম দুধ মিশিয়ে টাম্বলার আর দাবরার মধ্যে ঢেলে ঢেলে ফেনা তোলা হয়। এখানে চিনির বদলে কোরানো তালের গুড় (তাটি বেল্লাম) দিয়ে মিষ্টি করা হয়েছে।",
+   "back": "In many Telugu homes the day starts with filter coffee: a strong decoction dripped through a steel filter, mixed with hot milk and frothed by pouring back and forth between a tumbler and a dabara. Here it has been sweetened with grated palm jaggery (tati bellam) instead of sugar."
+  },
+  "seg.cff6d2079da1": {
+   "src": "Palm jaggery gives the cup a deep, slightly smoky caramel sweetness that sits well with the bitterness of the decoction. Once the decoction is ready it takes about 5 minutes, and it suits a slow morning as much as an evening break.",
+   "t": "তালের গুড় কাপে আনে গভীর, একটু ধোঁয়াটে ক্যারামেলের মতো মিষ্টি, যা ডিকক্শনের তেতো ভাবের সঙ্গে ভালো মানায়। ডিকক্শন তৈরি থাকলে প্রায় 5 মিনিট লাগে, আর ধীরেসুস্থে কাটানো সকালেও যেমন, বিকেলের বিরতিতেও তেমনই জমে।",
+   "back": "Palm jaggery brings to the cup a deep, slightly smoky caramel-like sweetness, which goes well with the bitter note of the decoction. If the decoction is ready it takes about 5 minutes, and it works as well on a leisurely morning as on an afternoon break."
+  },
+  "seg.99a861303471": {
+   "src": "⟦1⟧Cook⟦/1⟧5 min",
+   "t": "⟦1⟧রান্না⟦/1⟧5 মিনিট",
+   "back": "⟦1⟧Cooking⟦/1⟧5 minutes"
+  },
+  "seg.56a826d3b073": {
+   "src": "⟦1⟧Total⟦/1⟧20 min",
+   "t": "⟦1⟧মোট⟦/1⟧20 মিনিট",
+   "back": "⟦1⟧Total⟦/1⟧20 minutes"
+  },
+  "seg.a92a4aeb28cd": {
+   "src": "⟦1⟧Makes⟦/1⟧1 tumbler",
+   "t": "⟦1⟧পরিমাণ⟦/1⟧1 টাম্বলার",
+   "back": "⟦1⟧Quantity⟦/1⟧1 tumbler"
+  },
+  "seg.814efc526088": {
+   "src": "5 minutes if your decoction is already made.",
+   "t": "ডিকক্শন আগে থেকে তৈরি থাকলে 5 মিনিট।",
+   "back": "5 minutes if the decoction is already made in advance."
+  },
+  "seg.9ad0a1e24d76": {
+   "src": "Boil the milk, add it to the decoction, then stir in grated palm jaggery off the heat. Froth it between tumbler and davara.",
+   "t": "দুধ ফুটিয়ে ডিকক্শনে মেশান, তারপর আঁচ থেকে নামিয়ে কোরানো তালের গুড় নেড়ে মিশিয়ে দিন। টাম্বলার আর দাবরার মধ্যে ঢেলে ফেনা তুলুন।",
+   "back": "Boil the milk and mix it into the decoction, then take it off the heat and stir in the grated palm jaggery. Pour between the tumbler and dabara to froth it."
+  },
+  "seg.c726c3e9bee8": {
+   "src": "Ingredients ⟦1⟧makes 1 tumbler⟦/1⟧",
+   "t": "উপকরণ ⟦1⟧1 টাম্বলারের জন্য⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 1 tumbler⟦/1⟧"
+  },
+  "seg.10dfb70b2516": {
+   "src": "For the decoction",
+   "t": "ডিকক্শনের জন্য",
+   "back": "For the decoction"
+  },
+  "seg.927b924ff51d": {
+   "src": "2 tbsp filter coffee powder ⟦1⟧enough decoction for 2–3 cups⟦/1⟧",
+   "t": "2 টেবিল চামচ ফিল্টার কফি পাউডার ⟦1⟧2–3 কাপের মতো ডিকক্শন হয়⟦/1⟧",
+   "back": "2 tablespoons filter coffee powder ⟦1⟧makes about 2–3 cups of decoction⟦/1⟧"
+  },
+  "seg.8aa60818ccf8": {
+   "src": "½ cup water, just off the boil",
+   "t": "½ কাপ জল, সবে ফোটা থামা",
+   "back": "½ cup water, just off the boil"
+  },
+  "seg.79a69deb6460": {
+   "src": "For the coffee",
+   "t": "কফির জন্য",
+   "back": "For the coffee"
+  },
+  "seg.235f43bdefc5": {
+   "src": "1 cup milk ⟦1⟧about 240 ml⟦/1⟧",
+   "t": "1 কাপ দুধ ⟦1⟧প্রায় 240 ml⟦/1⟧",
+   "back": "1 cup milk ⟦1⟧about 240 ml⟦/1⟧"
+  },
+  "seg.95409b9d346e": {
+   "src": "2 tbsp filter coffee decoction ⟦1⟧from above; 3 tbsp for a stronger cup⟦/1⟧",
+   "t": "2 টেবিল চামচ ফিল্টার কফির ডিকক্শন ⟦1⟧ওপরে বানানো; কড়া কাপের জন্য 3 টেবিল চামচ⟦/1⟧",
+   "back": "2 tablespoons filter coffee decoction ⟦1⟧made above; 3 tablespoons for a strong cup⟦/1⟧"
+  },
+  "seg.7b8c0f7e922a": {
+   "src": "1–2 tsp grated palm jaggery ⟦1⟧to taste⟦/1⟧",
+   "t": "1–2 চা-চামচ কোরানো তালের গুড় ⟦1⟧স্বাদমতো⟦/1⟧",
+   "back": "1–2 teaspoons grated palm jaggery ⟦1⟧to taste⟦/1⟧"
+  },
+  "seg.557b912961c2": {
+   "src": "Palm Jaggery",
+   "t": "তালের গুড়",
+   "back": "Palm jaggery"
+  },
+  "seg.488632412643": {
+   "src": "⟦#1⟧ · Thati Bellam",
+   "t": "⟦#1⟧ · তাটি বেল্লাম",
+   "back": "⟦#1⟧ · Tati Bellam"
+  },
+  "seg.f14decb68b96": {
+   "src": "MRP ₹495 · 540 g",
+   "t": "MRP ₹495 · 540 g",
+   "back": "MRP ₹495 · 540 g"
+  },
+  "seg.95d91fecafcb": {
+   "src": "Make the decoction: put 2 tbsp filter coffee powder in the top chamber of a South Indian coffee filter, set the perforated press on it and pour in ½ cup water just off the boil. Cover and leave it to drip for 10–15 minutes.",
+   "t": "ডিকক্শন বানান: দক্ষিণ ভারতীয় কফি ফিল্টারের ওপরের খোপে 2 টেবিল চামচ ফিল্টার কফি পাউডার দিন, তার ওপর ফুটো-করা প্রেসটা বসিয়ে সবে ফোটা থামা ½ কাপ জল ঢালুন। ঢেকে দিয়ে 10–15 মিনিট চুইয়ে পড়তে দিন।",
+   "back": "Make the decoction: put 2 tablespoons of filter coffee powder in the upper compartment of a South Indian coffee filter, set the perforated press on top of it and pour in ½ cup of water just off the boil. Cover and let it drip for 10–15 minutes."
+  },
+  "seg.9024c8716b54": {
+   "src": "While it drips, grate the palm jaggery finely so it dissolves in seconds.",
+   "t": "ডিকক্শন চুইয়ে পড়ার মধ্যে তালের গুড় মিহি করে কুরে নিন, যাতে কয়েক সেকেন্ডে গলে যায়।",
+   "back": "While the decoction is dripping, grate the palm jaggery finely, so that it melts in a few seconds."
+  },
+  "seg.24689e3dd311": {
+   "src": "Pour the milk into a small saucepan and set it on medium heat.",
+   "t": "একটা ছোট সসপ্যানে দুধ ঢেলে মাঝারি আঁচে বসান।",
+   "back": "Pour the milk into a small saucepan and put it on medium heat."
+  },
+  "seg.4d8e3042dc81": {
+   "src": "Bring the milk to a boil. As soon as it froths up the sides of the pan, switch off the heat.",
+   "t": "দুধ ফুটিয়ে নিন। ফেনা উঠে প্যানের গা বেয়ে উঠতে শুরু করলেই আঁচ বন্ধ করুন।",
+   "back": "Bring the milk to a boil. As soon as the froth rises and starts climbing up the sides of the pan, turn off the heat."
+  },
+  "seg.a124a0d34983": {
+   "src": "Pour the decoction into a tumbler and add the hot milk. Use 2 tbsp decoction for a mild cup and 3 tbsp for a strong one.",
+   "t": "টাম্বলারে ডিকক্শন ঢালুন আর গরম দুধ মেশান। হালকা কাপের জন্য 2 টেবিল চামচ ডিকক্শন, কড়া কাপের জন্য 3 টেবিল চামচ।",
+   "back": "Pour the decoction into the tumbler and mix in the hot milk. 2 tablespoons of decoction for a light cup, 3 tablespoons for a strong cup."
+  },
+  "seg.85570720618b": {
+   "src": "Let it stand for about a minute, so the milk is just off the boil.",
+   "t": "প্রায় এক মিনিট রেখে দিন, যাতে দুধের ফোটা সবে থেমে যায়।",
+   "back": "Leave it for about a minute, so that the boiling of the milk just stops."
+  },
+  "seg.eacea0d7cf43": {
+   "src": "Stir in the palm jaggery off the heat. Keep stirring for 20–30 seconds, until no grains are left at the bottom of the tumbler.",
+   "t": "আঁচ থেকে দূরে রেখে তালের গুড় নেড়ে মেশান। 20–30 সেকেন্ড নাড়তে থাকুন, যতক্ষণ না টাম্বলারের তলায় আর একটাও দানা না থাকে।",
+   "back": "Stir in the palm jaggery away from the heat. Keep stirring for 20–30 seconds, until not a single grain is left at the bottom of the tumbler."
+  },
+  "seg.08b600da2ef8": {
+   "src": "Taste, and add a little more jaggery if you like it sweeter.",
+   "t": "চেখে দেখুন, আরও মিষ্টি চাইলে আর একটু গুড় দিন।",
+   "back": "Taste it, and if you want it sweeter add a little more jaggery."
+  },
+  "seg.878b0d8d7eeb": {
+   "src": "Pour between tumbler and davara to froth. Hold the tumbler high and pour into the davara, then back again, 3–4 times, until a light foam sits on top.",
+   "t": "ফেনা তুলতে টাম্বলার আর দাবরার মধ্যে ঢালাঢালি করুন। টাম্বলার উঁচু করে ধরে দাবরায় ঢালুন, তারপর আবার ফিরিয়ে ঢালুন, 3–4 বার, যতক্ষণ না ওপরে হালকা ফেনা জমে।",
+   "back": "To froth it, pour back and forth between the tumbler and the dabara. Hold the tumbler high and pour into the dabara, then pour it back again, 3–4 times, until a light froth forms on top."
+  },
+  "seg.653390b95f57": {
+   "src": "Serve straight away, in the tumbler set inside the davara.",
+   "t": "সঙ্গে সঙ্গে পরিবেশন করুন, দাবরার ভেতরে টাম্বলার বসিয়ে।",
+   "back": "Serve immediately, with the tumbler set inside the dabara."
+  },
+  "seg.33aca43ebf99": {
+   "src": "Add jaggery after the milk is off the boil so it does not split.",
+   "t": "দুধের ফোটা থামার পরে গুড় দিন, যাতে দুধ কেটে না যায়।",
+   "back": "Add the jaggery after the milk stops boiling, so that the milk does not curdle."
+  },
+  "seg.60404da43771": {
+   "src": "Grate the jaggery finely: fine shreds dissolve in seconds, while lumps sink and stay at the bottom of the tumbler.",
+   "t": "গুড় মিহি করে কুরে নিন: মিহি কুচি কয়েক সেকেন্ডে গলে যায়, কিন্তু ডেলা থাকলে তলায় বসে থেকে যায়।",
+   "back": "Grate the jaggery finely: fine gratings melt in a few seconds, but if there are lumps they stay sitting at the bottom."
+  },
+  "seg.ca883342300e": {
+   "src": "Palm jaggery has a deep, slightly smoky sweetness, so start with 1 tsp and add more to taste.",
+   "t": "তালের গুড়ের মিষ্টি গভীর, একটু ধোঁয়াটে, তাই 1 চা-চামচ দিয়ে শুরু করুন আর স্বাদমতো বাড়ান।",
+   "back": "The sweetness of palm jaggery is deep, a little smoky, so start with 1 teaspoon and increase to taste."
+  },
+  "seg.d7c0084f5cc6": {
+   "src": "A steel tumbler and davara keep the coffee hot and make frothing easy; a mug and a jug work too.",
+   "t": "স্টিলের টাম্বলার আর দাবরায় কফি গরম থাকে আর ফেনা তোলা সহজ হয়; মগ আর জগেও কাজ চলে।",
+   "back": "In a steel tumbler and dabara the coffee stays hot and frothing is easier; a mug and jug also work."
+  },
+  "seg.1b917ac5fc8c": {
+   "src": "Cane jaggery: use the same amount of grated cane jaggery for a lighter, caramel-like sweetness.",
+   "t": "আখের গুড়: একই পরিমাণ কোরানো আখের গুড় দিন, মিষ্টি হবে হালকা, ক্যারামেলের মতো।",
+   "back": "Sugarcane jaggery: add the same amount of grated sugarcane jaggery; the sweetness will be light, caramel-like."
+  },
+  "seg.0ada954bebfe": {
+   "src": "Palm jaggery tea: make your usual milk tea, switch off the heat, wait a minute, then stir in the palm jaggery the same way.",
+   "t": "তালের গুড়ের চা: রোজকার মতো দুধ-চা বানান, আঁচ বন্ধ করে এক মিনিট অপেক্ষা করুন, তারপর একইভাবে তালের গুড় নেড়ে মেশান।",
+   "back": "Palm jaggery tea: make milk tea as usual, turn off the heat and wait one minute, then stir in the palm jaggery the same way."
+  },
+  "seg.6512d133d4c0": {
+   "src": "No coffee filter: dissolve 1 tsp instant coffee in 2 tbsp hot water and use it in place of the decoction.",
+   "t": "কফি ফিল্টার না থাকলে: 2 টেবিল চামচ গরম জলে 1 চা-চামচ ইনস্ট্যান্ট কফি গুলে ডিকক্শনের বদলে দিন।",
+   "back": "If you have no coffee filter: dissolve 1 teaspoon of instant coffee in 2 tablespoons of hot water and use it instead of the decoction."
+  },
+  "seg.e9e80ce83cf6": {
+   "src": "Serve hot after a breakfast of idli, dosa or upma, or in the evening with biscuits or murukulu.",
+   "t": "ইডলি, দোসা বা উপমার জলখাবারের পরে গরম গরম দিন, বা বিকেলে বিস্কুট বা মুরুকুলুর সঙ্গে।",
+   "back": "Serve piping hot after a breakfast of idli, dosa or upma, or in the afternoon with biscuits or murukulu."
+  },
+  "seg.97817ad1f29f": {
+   "src": "Make each cup as you need it; coffee reheated after the jaggery goes in can split. Keep extra decoction covered at room temperature and use it within the day.",
+   "t": "যখন যে কাপ লাগবে তখনই বানান; গুড় দেওয়ার পরে কফি আবার গরম করলে কেটে যেতে পারে। বাড়তি ডিকক্শন ঢেকে ঘরের তাপমাত্রায় রাখুন আর সেদিনের মধ্যেই শেষ করুন।",
+   "back": "Make each cup just when it is needed; if the coffee is reheated after adding jaggery it may curdle. Keep the leftover decoction covered at room temperature and finish it the same day."
+  },
+  "seg.ea4f4072538a": {
+   "src": "Why did my coffee curdle when I added palm jaggery?",
+   "t": "তালের গুড় দেওয়ার পর আমার কফি কেটে গেল কেন?",
+   "back": "Why did my coffee curdle after adding palm jaggery?"
+  },
+  "seg.180a2670ead3": {
+   "src": "Jaggery stirred into milk that is still boiling can make it split. Take the milk off the heat, let it stand for about a minute, then stir in the grated jaggery.",
+   "t": "দুধ ফুটন্ত অবস্থায় গুড় মেশালে দুধ কেটে যেতে পারে। দুধ আঁচ থেকে নামিয়ে প্রায় এক মিনিট রেখে দিন, তারপর কোরানো গুড় নেড়ে মেশান।",
+   "back": "If jaggery is mixed in while the milk is boiling, the milk can curdle. Take the milk off the heat and leave it for about a minute, then stir in the grated jaggery."
+  },
+  "seg.2b9449407096": {
+   "src": "Can I use cane jaggery instead of palm jaggery?",
+   "t": "তালের গুড়ের বদলে কি আখের গুড় দিতে পারি?",
+   "back": "Can I use sugarcane jaggery instead of palm jaggery?"
+  },
+  "seg.890ae3e15593": {
+   "src": "Yes. Use the same amount of grated cane jaggery. The coffee tastes lighter and more like caramel, while palm jaggery gives a deeper, slightly smoky cup.",
+   "t": "হ্যাঁ। একই পরিমাণ কোরানো আখের গুড় দিন। কফির স্বাদ হবে হালকা, অনেকটা ক্যারামেলের মতো, আর তালের গুড়ে কাপটা হয় আরও গভীর, একটু ধোঁয়াটে।",
+   "back": "Yes. Add the same amount of grated sugarcane jaggery. The coffee's taste will be lighter, quite caramel-like, whereas palm jaggery makes the cup deeper, a little smoky."
+  },
+  "seg.e4c92d1c8a42": {
+   "src": "How much palm jaggery should I add to one cup of coffee?",
+   "t": "এক কাপ কফিতে কতটা তালের গুড় দেব?",
+   "back": "How much palm jaggery should I add to one cup of coffee?"
+  },
+  "seg.43a5dfb10340": {
+   "src": "1 to 2 tsp of grated palm jaggery for 1 cup of milk and 2 tbsp of decoction. Start with 1 tsp, taste, and add more if you like.",
+   "t": "1 কাপ দুধ আর 2 টেবিল চামচ ডিকক্শনে 1 থেকে 2 চা-চামচ কোরানো তালের গুড়। 1 চা-চামচ দিয়ে শুরু করুন, চেখে দেখুন, চাইলে আরও দিন।",
+   "back": "1 to 2 teaspoons of grated palm jaggery to 1 cup of milk and 2 tablespoons of decoction. Start with 1 teaspoon, taste it, add more if you want."
+  },
+  "seg.2ba4fb9452bb": {
+   "src": "Can I make palm jaggery coffee without a coffee filter?",
+   "t": "কফি ফিল্টার ছাড়া কি তালের গুড়ের কফি বানানো যায়?",
+   "back": "Can palm jaggery coffee be made without a coffee filter?"
+  },
+  "seg.23f63da2d908": {
+   "src": "Yes. Dissolve 1 tsp instant coffee in 2 tbsp hot water, use it in place of the decoction and follow the same steps.",
+   "t": "হ্যাঁ। 2 টেবিল চামচ গরম জলে 1 চা-চামচ ইনস্ট্যান্ট কফি গুলে ডিকক্শনের বদলে দিন, আর বাকি ধাপ একই রকম।",
+   "back": "Yes. Dissolve 1 teaspoon of instant coffee in 2 tablespoons of hot water and use it instead of the decoction, and the remaining steps are the same."
+  },
+  "seg.4fce579abe5f": {
+   "src": "తాటి బెల్లం కాఫీ · Palm Jaggery Coffee Recipe | 1acrefarms",
+   "t": "తాటి బెల్లం కాఫీ · তালের গুড়ের কফির রেসিপি | 1acrefarms",
+   "back": "తాటి బెల్లం కాఫీ · Palm jaggery coffee recipe | 1acrefarms"
+  },
+  "seg.08ada9e6791e": {
+   "src": "తాటి బెల్లం కాఫీ. Palm jaggery coffee (thati bellam coffee), the Andhra way: filter decoction, hot milk and grated palm jaggery stirred in off the heat. Step-by-step method, tips and FAQs.",
+   "t": "తాటి బెల్లం కాఫీ. তালের গুড়ের কফি (তাটি বেল্লাম কফি), অন্ধ্রের ধরনে: ফিল্টারের ডিকক্শন, গরম দুধ, আর আঁচ থেকে নামিয়ে মেশানো কোরানো তালের গুড়। ধাপে ধাপে পদ্ধতি, টিপস আর প্রশ্নোত্তর।",
+   "back": "తాటి బెల్లం కాఫీ. Palm jaggery coffee (tati bellam coffee), in the Andhra style: filter decoction, hot milk, and grated palm jaggery mixed in after taking it off the heat. Step-by-step method, tips and questions and answers."
+  },
+  "seg.8a9f25c7f197": {
+   "src": "Palm Jaggery Coffee (Thati Bellam Coffee) · 1acrefarms",
+   "t": "তালের গুড়ের কফি (তাটি বেল্লাম কফি) · 1acrefarms",
+   "back": "Palm jaggery coffee (tati bellam coffee) · 1acrefarms"
+  },
+  "seg.0fc7db27d3fc": {
+   "src": "Palm Jaggery Coffee: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "তালের গুড়ের কফি: 1acrefarms-এর রেসিপি কার্ড, উপকরণ আর পদ্ধতি সহ",
+   "back": "Palm jaggery coffee: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.6569bdd75e36": {
+   "src": "Palm Jaggery 540 g pack",
+   "t": "তালের গুড়ের 540 g প্যাক",
+   "back": "540 g pack of palm jaggery"
+  },
+  "seg.877684ea5e82": {
+   "src": "2 tbsp filter coffee powder",
+   "t": "2 টেবিল চামচ ফিল্টার কফি পাউডার",
+   "back": "2 tablespoons filter coffee powder"
+  },
+  "seg.6d10ef7ccccf": {
+   "src": "1 cup milk",
+   "t": "1 কাপ দুধ",
+   "back": "1 cup milk"
+  },
+  "seg.059e1e3e5036": {
+   "src": "2 tbsp filter coffee decoction",
+   "t": "2 টেবিল চামচ ফিল্টার কফির ডিকক্শন",
+   "back": "2 tablespoons filter coffee decoction"
+  },
+  "seg.6f7677a99e8c": {
+   "src": "1–2 tsp grated palm jaggery",
+   "t": "1–2 চা-চামচ কোরানো তালের গুড়",
+   "back": "1–2 teaspoons grated palm jaggery"
+  },
+  "seg.d3ad7f57d8c8": {
+   "src": "Diwali recipe · serves 4",
+   "t": "দীপাবলির রেসিপি · 4 জনের জন্য",
+   "back": "Deepavali recipe · for 4 people"
+  },
+  "seg.947e0ef7a273": {
+   "src": "Bellam Paramannam ⟦1⟧(Jaggery Rice Kheer)⟦/1⟧",
+   "t": "বেল্লাম পরমান্নম ⟦1⟧(গুড়ের পায়েস)⟦/1⟧",
+   "back": "Bellam Paramannam ⟦1⟧(jaggery payesh)⟦/1⟧"
+  },
+  "seg.03ffde37c28f": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · Gud Wali Kheer",
+   "t": "⟦#1⟧ · ⟦#2⟧ · বেল্লাম পরমান্নম · গুড় ওয়ালি খীর",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam Paramannam · gud wali kheer"
+  },
+  "seg.1143d51ba236": {
+   "src": "Paramannam is the rice-and-milk sweet that Telugu homes cook for festivals and pujas: rice simmered slowly in milk until soft and creamy, then sweetened. Bellam paramannam, made with jaggery, is a common naivedyam at Diwali, Sankranti and Varalakshmi Vratham, offered at the puja and then shared at the festive meal.",
+   "t": "পরমান্নম হল চাল আর দুধের মিষ্টি, যা তেলুগু বাড়িতে উৎসব আর পুজোয় রান্না হয়: চাল দুধে ধীরে ধীরে ফুটিয়ে নরম আর ঘন করে, তারপর মিষ্টি দেওয়া হয়। গুড় দিয়ে বানানো বেল্লাম পরমান্নম দীপাবলি, সংক্রান্তি আর বরলক্ষ্মী ব্রতমে একটি চেনা নৈবেদ্য: পুজোয় নিবেদন করে তারপর উৎসবের খাওয়াদাওয়ায় সবাই মিলে খাওয়া হয়।",
+   "back": "Paramannam is a rice and milk sweet that is cooked in Telugu homes at festivals and pujas: the rice is slowly boiled in milk until soft and thick, and then sweetened. Bellam Paramannam made with jaggery is a familiar naivedyam at Deepavali, Sankranti and Varalakshmi Vratam: it is offered at the puja and then eaten by everyone together at the festive meal."
+  },
+  "seg.360051f42785": {
+   "src": "Cane jaggery turns it a light caramel colour and gives a rounder, toffee-like sweetness. Ghee-fried cashews and a little cardamom finish it. This recipe serves 4.",
+   "t": "আখের গুড়ে এর রং হয় হালকা ক্যারামেলের মতো, আর মিষ্টিটা হয় ভরাট, টফির মতো। শেষে ঘিয়ে ভাজা কাজু আর একটু এলাচ। এই রেসিপি 4 জনের জন্য।",
+   "back": "Sugarcane jaggery gives it a light caramel-like colour, and the sweetness is full, toffee-like. To finish, cashews fried in ghee and a little cardamom. This recipe is for 4 people."
+  },
+  "seg.304ae550b339": {
+   "src": "⟦1⟧Prep⟦/1⟧10 min",
+   "t": "⟦1⟧প্রস্তুতি⟦/1⟧10 মিনিট",
+   "back": "⟦1⟧Preparation⟦/1⟧10 minutes"
+  },
+  "seg.9305f70ed293": {
+   "src": "⟦1⟧Cook⟦/1⟧40 min",
+   "t": "⟦1⟧রান্না⟦/1⟧40 মিনিট",
+   "back": "⟦1⟧Cooking⟦/1⟧40 minutes"
+  },
+  "seg.d90f652dd740": {
+   "src": "⟦1⟧Total⟦/1⟧55 min",
+   "t": "⟦1⟧মোট⟦/1⟧55 মিনিট",
+   "back": "⟦1⟧Total⟦/1⟧55 minutes"
+  },
+  "seg.b1897e5c1022": {
+   "src": "⟦1⟧Serves⟦/1⟧4",
+   "t": "⟦1⟧কতজনের⟦/1⟧4 জন",
+   "back": "⟦1⟧For how many⟦/1⟧4 people"
+  },
+  "seg.04a51f6c83e4": {
+   "src": "Total includes the 5-minute rest before the jaggery goes in.",
+   "t": "মোট সময়ের মধ্যে গুড় দেওয়ার আগের 5 মিনিট বিশ্রামও ধরা আছে।",
+   "back": "The total time also includes the 5-minute rest before adding the jaggery."
+  },
+  "seg.fd8f49fce13b": {
+   "src": "Cook rice in milk till creamy, rest it 5 minutes, then stir in grated cane jaggery. Finish with ghee-fried cashews and cardamom.",
+   "t": "দুধে চাল রান্না করুন যতক্ষণ না ঘন হয়, 5 মিনিট রেখে দিন, তারপর কোরানো আখের গুড় নেড়ে মেশান। শেষে ঘিয়ে ভাজা কাজু আর এলাচ দিন।",
+   "back": "Cook the rice in milk until it is thick, leave it for 5 minutes, then stir in grated sugarcane jaggery. Finish with cashews fried in ghee and cardamom."
+  },
+  "seg.58ce2ea9afba": {
+   "src": "Ingredients ⟦1⟧serves 4⟦/1⟧",
+   "t": "উপকরণ ⟦1⟧4 জনের জন্য⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 4 people⟦/1⟧"
+  },
+  "seg.1f3010b2476c": {
+   "src": "For the paramannam",
+   "t": "পরমান্নমের জন্য",
+   "back": "For the paramannam"
+  },
+  "seg.1c0f194a4451": {
+   "src": "½ cup rice ⟦1⟧sona masoori or another short-grain rice, about 100 g⟦/1⟧",
+   "t": "½ কাপ চাল ⟦1⟧সোনা মাসুরি বা অন্য কোনো ছোট দানার চাল, প্রায় 100 g⟦/1⟧",
+   "back": "½ cup rice ⟦1⟧Sona Masuri or any other short-grain rice, about 100 g⟦/1⟧"
+  },
+  "seg.8f34922ee281": {
+   "src": "4 cups milk ⟦1⟧about 1 litre; whole milk gives the creamiest result⟦/1⟧",
+   "t": "4 কাপ দুধ ⟦1⟧প্রায় 1 লিটার; ফুল ক্রিম দুধে সবচেয়ে ঘন হয়⟦/1⟧",
+   "back": "4 cups milk ⟦1⟧about 1 litre; full-cream milk gets the thickest⟦/1⟧"
+  },
+  "seg.ee0c3b96837f": {
+   "src": "¾ cup grated cane jaggery ⟦1⟧lightly packed; up to 2 tbsp more if you like it sweeter⟦/1⟧",
+   "t": "¾ কাপ কোরানো আখের গুড় ⟦1⟧হালকা চেপে মাপা; আরও মিষ্টি চাইলে 2 টেবিল চামচ পর্যন্ত বেশি⟦/1⟧",
+   "back": "¾ cup grated sugarcane jaggery ⟦1⟧measured lightly pressed; up to 2 tablespoons more if you want it sweeter⟦/1⟧"
+  },
+  "seg.77b811a6e0f1": {
+   "src": "To finish",
+   "t": "শেষে দেওয়ার জন্য",
+   "back": "For finishing"
+  },
+  "seg.988401bed7a6": {
+   "src": "2 tbsp ghee",
+   "t": "2 টেবিল চামচ ঘি",
+   "back": "2 tablespoons ghee"
+  },
+  "seg.42022f439951": {
+   "src": "10 cashews ⟦1⟧halved⟦/1⟧",
+   "t": "10টি কাজু ⟦1⟧আধখানা করা⟦/1⟧",
+   "back": "10 cashews ⟦1⟧halved⟦/1⟧"
+  },
+  "seg.65c3b64a0c69": {
+   "src": "1 tbsp raisins (optional)",
+   "t": "1 টেবিল চামচ কিশমিশ (ইচ্ছেমতো)",
+   "back": "1 tablespoon raisins (optional)"
+  },
+  "seg.fa014766d2bf": {
+   "src": "½ tsp cardamom powder ⟦1⟧or the crushed seeds of 4–5 pods⟦/1⟧",
+   "t": "½ চা-চামচ এলাচ গুঁড়ো ⟦1⟧বা 4–5টি এলাচের থেঁতো দানা⟦/1⟧",
+   "back": "½ teaspoon cardamom powder ⟦1⟧or crushed seeds of 4–5 cardamoms⟦/1⟧"
+  },
+  "seg.480e0a7d227f": {
+   "src": "Wash the rice in 2–3 changes of water until the water runs almost clear, then drain it well.",
+   "t": "চাল 2–3 বার জল বদলে ধুয়ে নিন, যতক্ষণ না জল প্রায় পরিষ্কার হয়, তারপর ভালো করে জল ঝরিয়ে নিন।",
+   "back": "Wash the rice 2–3 times, changing the water, until the water is almost clear, then drain the water well."
+  },
+  "seg.d5b0fc46818a": {
+   "src": "Pour the milk into a heavy-bottomed pan and bring it to a boil on medium heat, about 8–10 minutes. Stir now and then so it does not catch at the bottom.",
+   "t": "ভারী তলার পাত্রে দুধ ঢেলে মাঝারি আঁচে ফুটিয়ে নিন, প্রায় 8–10 মিনিট। মাঝে মাঝে নাড়ুন, যাতে তলায় না লাগে।",
+   "back": "Pour the milk into a heavy-bottomed pot and bring it to a boil on medium heat, about 8–10 minutes. Stir now and then, so it does not stick to the bottom."
+  },
+  "seg.b8f9c8c6758b": {
+   "src": "Add the drained rice to the boiling milk and turn the heat to low.",
+   "t": "ফুটন্ত দুধে জল ঝরানো চাল দিন আর আঁচ কমিয়ে দিন।",
+   "back": "Add the drained rice to the boiling milk and lower the heat."
+  },
+  "seg.9ae9baab76d7": {
+   "src": "Cook the washed rice in the milk on a low flame till soft and creamy, about 30 minutes. Stir often, scraping the bottom and sides of the pan each time.",
+   "t": "ধোয়া চাল দুধে কম আঁচে রান্না করুন যতক্ষণ না নরম আর ঘন হয়, প্রায় 30 মিনিট। ঘন ঘন নাড়ুন, প্রতিবার পাত্রের তলা আর গা চেঁছে নিন।",
+   "back": "Cook the washed rice in the milk on low heat until it is soft and thick, about 30 minutes. Stir often, each time scraping the bottom and sides of the pot."
+  },
+  "seg.ec1509a08b4c": {
+   "src": "Check the rice: a grain should mash easily between your fingers, and the milk should have thickened slightly. For a creamier paramannam, lightly mash a few grains against the side of the pan.",
+   "t": "চাল দেখে নিন: একটা দানা আঙুলে টিপলে সহজে গলে যাওয়া উচিত, আর দুধ একটু ঘন হওয়া উচিত। পরমান্নম আরও ঘন চাইলে কয়েকটা দানা পাত্রের গায়ে হালকা করে চটকে দিন।",
+   "back": "Check the rice: a grain pressed between the fingers should squash easily, and the milk should be a little thick. If you want the paramannam thicker, lightly mash a few grains against the side of the pot."
+  },
+  "seg.d8ba0a82f4ec": {
+   "src": "Switch off and let it rest 5 minutes. This brings the milk below the boil, so the jaggery will not split it.",
+   "t": "আঁচ বন্ধ করে 5 মিনিট রেখে দিন। এতে দুধের ফোটা থেমে যায়, তাই গুড় দিলে দুধ কাটবে না।",
+   "back": "Turn off the heat and leave it for 5 minutes. With this the boiling of the milk stops, so when the jaggery is added the milk will not curdle."
+  },
+  "seg.ca16c98d9b18": {
+   "src": "Stir in the jaggery till it melts, about 1–2 minutes, keeping the pan off the heat.",
+   "t": "পাত্র আঁচ থেকে দূরে রেখে গুড় নেড়ে মেশান যতক্ষণ না গলে যায়, প্রায় 1–2 মিনিট।",
+   "back": "Keeping the pot away from the heat, stir in the jaggery until it melts, about 1–2 minutes."
+  },
+  "seg.74412a8cc141": {
+   "src": "Taste, and stir in a little more grated jaggery if you want it sweeter.",
+   "t": "চেখে দেখুন, আরও মিষ্টি চাইলে আর একটু কোরানো গুড় নেড়ে মেশান।",
+   "back": "Taste it, and if you want it sweeter stir in a little more grated jaggery."
+  },
+  "seg.92b56df40ea6": {
+   "src": "Heat the ghee in a small pan on medium-low heat.",
+   "t": "একটা ছোট প্যানে মাঝারি-কম আঁচে ঘি গরম করুন।",
+   "back": "Heat the ghee in a small pan on medium-low heat."
+  },
+  "seg.1bb1f411e4d0": {
+   "src": "Fry the cashews in ghee; add with the cardamom. Stir the cashews until golden, about 1 minute, adding the raisins for the last few seconds until they puff up. Pour the nuts and ghee into the paramannam, sprinkle in the cardamom powder and stir.",
+   "t": "কাজু ঘিয়ে ভেজে এলাচের সঙ্গে দিন। কাজু নাড়তে থাকুন যতক্ষণ না সোনালি হয়, প্রায় 1 মিনিট, শেষ কয়েক সেকেন্ডে কিশমিশ দিন যতক্ষণ না ফুলে ওঠে। কাজু-কিশমিশ ঘি সমেত পরমান্নমে ঢেলে দিন, এলাচ গুঁড়ো ছড়িয়ে নেড়ে দিন।",
+   "back": "Fry the cashews in ghee and add them with the cardamom. Keep stirring the cashews until they are golden, about 1 minute; in the last few seconds add the raisins until they puff up. Pour the cashews and raisins, together with the ghee, into the paramannam, sprinkle the cardamom powder and stir."
+  },
+  "seg.e10b7192c157": {
+   "src": "Serve warm. Paramannam thickens as it stands; loosen it with a few spoons of warm milk, off the heat, if needed.",
+   "t": "গরম গরম পরিবেশন করুন। রাখলে পরমান্নম ঘন হয়ে যায়; দরকার হলে আঁচ থেকে দূরে রেখে কয়েক চামচ গরম দুধ মিশিয়ে পাতলা করে নিন।",
+   "back": "Serve piping hot. When kept, paramannam becomes thick; if needed, keeping it away from the heat, mix in a few spoons of hot milk to thin it."
+  },
+  "seg.d30196cf6b28": {
+   "src": "Jaggery goes in off the heat so the milk does not split.",
+   "t": "গুড় আঁচ থেকে নামিয়ে দেওয়া হয়, যাতে দুধ কেটে না যায়।",
+   "back": "The jaggery is added after taking it off the heat, so that the milk does not curdle."
+  },
+  "seg.d4a9c2ee09bf": {
+   "src": "Use a heavy-bottomed pan and scrape the bottom each time you stir; milk catches easily during the long simmer.",
+   "t": "ভারী তলার পাত্র নিন আর প্রতিবার নাড়ার সময় তলা চেঁছে নিন; অনেকক্ষণ ধরে ফোটানোর সময় দুধ সহজেই তলায় লেগে যায়।",
+   "back": "Use a heavy-bottomed pot and scrape the bottom every time you stir; during long boiling, milk easily sticks to the bottom."
+  },
+  "seg.a01441abc0b6": {
+   "src": "Cook the rice until fully soft before the jaggery goes in; the grains do not soften further once it is sweetened.",
+   "t": "গুড় দেওয়ার আগে চাল পুরো নরম করে রান্না করুন; মিষ্টি দেওয়ার পরে দানা আর নরম হয় না।",
+   "back": "Cook the rice fully soft before adding the jaggery; after the sweetener is added, the grains do not get any softer."
+  },
+  "seg.688b80a32383": {
+   "src": "Grate the jaggery finely so it melts in the hot milk without going back on the stove.",
+   "t": "গুড় মিহি করে কুরে নিন, যাতে আবার উনুনে না বসিয়েই গরম দুধে গলে যায়।",
+   "back": "Grate the jaggery finely, so that it melts in the hot milk without putting it back on the stove."
+  },
+  "seg.7bf8faca62b8": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for a darker colour and a deeper, smoky sweetness.",
+   "t": "তালের গুড়: একই পরিমাণ কোরানো তালের গুড় দিন, রং হবে আরও গাঢ় আর মিষ্টি হবে আরও গভীর, ধোঁয়াটে।",
+   "back": "Palm jaggery: add the same amount of grated palm jaggery; the colour will be darker and the sweetness deeper, smoky."
+  },
+  "seg.6672d2210281": {
+   "src": "Pesarapappu paramannam: dry-roast 2 tbsp split moong dal until light golden, wash it and cook it with the rice.",
+   "t": "পেসারাপাপ্পু পরমান্নম: 2 টেবিল চামচ মুগ ডাল হালকা সোনালি হওয়া পর্যন্ত শুকনো খোলায় ভেজে ধুয়ে নিন, তারপর চালের সঙ্গে রান্না করুন।",
+   "back": "Pesarapappu paramannam: dry-roast 2 tablespoons of moong dal until light golden and wash it, then cook it with the rice."
+  },
+  "seg.cd25d9fb2a56": {
+   "src": "Coconut: fry 2 tbsp thin slivers of dry coconut in the ghee along with the cashews.",
+   "t": "নারকেল: কাজুর সঙ্গে ঘিয়ে 2 টেবিল চামচ শুকনো নারকেলের পাতলা ফালি ভেজে নিন।",
+   "back": "Coconut: fry 2 tablespoons of thin slices of dry coconut in ghee along with the cashews."
+  },
+  "seg.988ab75b5ccb": {
+   "src": "Serve warm as naivedyam at the Diwali or Lakshmi puja, then as the sweet at the festive meal. Some like it chilled the next day.",
+   "t": "দীপাবলি বা লক্ষ্মী পুজোয় গরম গরম নৈবেদ্য হিসেবে দিন, তারপর উৎসবের খাওয়ায় মিষ্টি হিসেবে। কেউ কেউ পরের দিন ঠান্ডা করে খেতে ভালোবাসেন।",
+   "back": "At Deepavali or Lakshmi puja, offer it piping hot as naivedyam, then as a sweet at the festive meal. Some people like to eat it cold the next day."
+  },
+  "seg.4a60d211f14d": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. It sets thick when chilled; stir in a little warm milk, off the heat, before serving.",
+   "t": "বেঁচে যাওয়া পরমান্নম ঢেকে ফ্রিজে রাখুন আর 2 দিনের মধ্যে খেয়ে নিন। ঠান্ডায় ঘন হয়ে জমে যায়; খাওয়ার আগে আঁচ থেকে দূরে রেখে একটু গরম দুধ নেড়ে মিশিয়ে নিন।",
+   "back": "Cover the leftover paramannam and keep it in the fridge, and eat it within 2 days. In the cold it thickens and sets; before eating, keeping it away from the heat, stir in a little hot milk."
+  },
+  "seg.2949774c7efb": {
+   "src": "Why did my paramannam curdle after adding jaggery?",
+   "t": "গুড় দেওয়ার পর আমার পরমান্নম কেটে গেল কেন?",
+   "back": "Why did my paramannam curdle after adding jaggery?"
+  },
+  "seg.283626ae50fc": {
+   "src": "Jaggery stirred into milk that is still on the heat or boiling can make it split. Switch off, let the paramannam rest for about 5 minutes, then stir in the grated jaggery.",
+   "t": "দুধ আঁচে থাকা অবস্থায় বা ফুটন্ত অবস্থায় গুড় মেশালে দুধ কেটে যেতে পারে। আঁচ বন্ধ করে পরমান্নম প্রায় 5 মিনিট রেখে দিন, তারপর কোরানো গুড় নেড়ে মেশান।",
+   "back": "If jaggery is mixed in while the milk is on the heat or boiling, the milk can curdle. Turn off the heat and leave the paramannam for about 5 minutes, then stir in the grated jaggery."
+  },
+  "seg.7df6976d1e83": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The paramannam turns darker and tastes deeper and slightly smoky.",
+   "t": "হ্যাঁ। একই পরিমাণ কোরানো তালের গুড় (তাটি বেল্লাম) দিন। পরমান্নমের রং হবে আরও গাঢ়, স্বাদ আরও গভীর আর একটু ধোঁয়াটে।",
+   "back": "Yes. Add the same amount of grated palm jaggery (tati bellam). The paramannam's colour will be darker, the taste deeper and a little smoky."
+  },
+  "seg.6ac2cfc26fb7": {
+   "src": "Which rice is best for paramannam?",
+   "t": "পরমান্নমের জন্য কোন চাল সবচেয়ে ভালো?",
+   "back": "Which rice is best for paramannam?"
+  },
+  "seg.ead18bc39c32": {
+   "src": "A short-grain rice such as sona masoori cooks soft and creamy in milk. Long-grain basmati keeps its grains separate and gives a thinner paramannam.",
+   "t": "সোনা মাসুরির মতো ছোট দানার চাল দুধে নরম আর ঘন হয়ে রান্না হয়। লম্বা দানার বাসমতীর দানা আলাদা আলাদা থাকে, তাই পরমান্নম হয় পাতলা।",
+   "back": "Short-grain rice like Sona Masuri cooks soft and thick in milk. The grains of long-grain basmati stay separate, so the paramannam turns out thin."
+  },
+  "seg.2baf5cc4ec36": {
+   "src": "How do I fix paramannam that has become too thick?",
+   "t": "পরমান্নম খুব ঘন হয়ে গেলে কী করব?",
+   "back": "What should I do if the paramannam becomes very thick?"
+  },
+  "seg.9ffeabf346fa": {
+   "src": "Stir in a few spoons of warm milk, off the heat, until it loosens. It thickens as it cools, so stop when it is a little thinner than you want.",
+   "t": "আঁচ থেকে দূরে রেখে কয়েক চামচ গরম দুধ নেড়ে মেশান, যতক্ষণ না একটু পাতলা হয়। ঠান্ডা হলে আবার ঘন হয়, তাই যতটা চান তার চেয়ে একটু পাতলা থাকতেই থামুন।",
+   "back": "Keeping it away from the heat, stir in a few spoons of hot milk until it becomes a little thinner. When it cools it thickens again, so stop while it is still a little thinner than you want."
+  },
+  "seg.43e6183ba82c": {
+   "src": "బెల్లం పరమాన్నం · Bellam Paramannam Recipe | 1acrefarms",
+   "t": "బెల్లం పరమాన్నం · বেল্লাম পরমান্নমের রেসিপি | 1acrefarms",
+   "back": "బెల్లం పరమాన్నం · Bellam Paramannam recipe | 1acrefarms"
+  },
+  "seg.8b09026bfd65": {
+   "src": "బెల్లం పరమాన్నం. Bellam paramannam for Diwali: rice slow-cooked in milk and sweetened with cane jaggery off the heat, finished with ghee-fried cashews. Step-by-step method, tips and FAQs. Serves 4.",
+   "t": "బెల్లం పరమాన్నం. দীপাবলির জন্য বেল্লাম পরমান্নম: দুধে ধীরে ধীরে রান্না করা চাল, আঁচ থেকে নামিয়ে আখের গুড়ে মিষ্টি করা, শেষে ঘিয়ে ভাজা কাজু। ধাপে ধাপে পদ্ধতি, টিপস আর প্রশ্নোত্তর। 4 জনের জন্য।",
+   "back": "బెల్లం పరమాన్నం. Bellam Paramannam for Deepavali: rice cooked slowly in milk, sweetened with sugarcane jaggery off the heat, finished with cashews fried in ghee. Step-by-step method, tips and questions and answers. For 4 people."
+  },
+  "seg.07511b65bfa7": {
+   "src": "Bellam Paramannam (Jaggery Rice Kheer) · 1acrefarms",
+   "t": "বেল্লাম পরমান্নম (গুড়ের পায়েস) · 1acrefarms",
+   "back": "Bellam Paramannam (jaggery payesh) · 1acrefarms"
+  },
+  "seg.cf8cab3618d9": {
+   "src": "Bellam Paramannam: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "বেল্লাম পরমান্নম: 1acrefarms-এর রেসিপি কার্ড, উপকরণ আর পদ্ধতি সহ",
+   "back": "Bellam Paramannam: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.36fc986c4713": {
+   "src": "½ cup rice",
+   "t": "½ কাপ চাল",
+   "back": "½ cup rice"
+  },
+  "seg.d414ee4821fa": {
+   "src": "4 cups milk",
+   "t": "4 কাপ দুধ",
+   "back": "4 cups milk"
+  },
+  "seg.5c2ad54d4584": {
+   "src": "10 cashews",
+   "t": "10টি কাজু",
+   "back": "10 cashews"
+  },
+  "seg.b925e45a5f93": {
+   "src": "½ tsp cardamom powder",
+   "t": "½ চা-চামচ এলাচ গুঁড়ো",
+   "back": "½ teaspoon cardamom powder"
+  },
+  "seg.c20ca0bb138c": {
+   "src": "Karthika Somavaram · 5 minutes",
+   "t": "কার্তিক সোমবার · 5 মিনিট",
+   "back": "Kartika Monday · 5 minutes"
+  },
+  "seg.7221ac3c40b7": {
+   "src": "Warm Pasupu Paalu ⟦1⟧(Turmeric Milk)⟦/1⟧",
+   "t": "গরম পাসুপু পালু ⟦1⟧(হলুদ দুধ)⟦/1⟧",
+   "back": "Hot Pasupu Palu ⟦1⟧(turmeric milk)⟦/1⟧"
+  },
+  "seg.44699ae5fc7d": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Pasupu Paalu · Haldi Wala Doodh",
+   "t": "⟦#1⟧ · ⟦#2⟧ · পাসুপু পালু · হলদি ওয়ালা দুধ",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Pasupu Palu · haldi wala doodh"
+  },
+  "seg.5fbc274b0656": {
+   "src": "Pasupu paalu is warm milk simmered with a little turmeric and a pinch of black pepper, then sweetened with jaggery. It is an everyday cup in many Telugu homes, made on cool evenings and often through Karthika masam, the month of Somavaram (Monday) pujas and evening lamps.",
+   "t": "পাসুপু পালু হল গরম দুধ, তাতে একটু হলুদ আর এক চিমটে গোলমরিচ দিয়ে ফুটিয়ে গুড়ে মিষ্টি করা। অনেক তেলুগু বাড়িতে এটা রোজকার এক কাপ, ঠান্ডা সন্ধ্যায় বানানো হয়, আর প্রায়ই সারা কার্তিক মাস জুড়ে, যে মাসে সোমবারের পুজো আর সন্ধ্যায় প্রদীপ জ্বালানো হয়।",
+   "back": "Pasupu palu is hot milk, boiled with a little turmeric and a pinch of black pepper and sweetened with jaggery. In many Telugu homes it is an everyday cup, made on cold evenings, and often throughout the whole month of Kartika, the month in which Monday pujas are done and lamps are lit in the evening."
+  },
+  "seg.7d5fe2bc79e0": {
+   "src": "The turmeric turns the milk golden and gives it an earthy, slightly bitter edge, the pepper adds a little heat, and the jaggery rounds it off with a caramel sweetness. This recipe makes one cup in about 5 minutes.",
+   "t": "হলুদে দুধের রং হয় সোনালি, আর স্বাদে আসে মাটির মতো, একটু তেতো ভাব; গোলমরিচে একটু ঝাল, আর গুড় ক্যারামেলের মতো মিষ্টিতে সব মিলিয়ে দেয়। এই রেসিপিতে প্রায় 5 মিনিটে এক কাপ হয়।",
+   "back": "Turmeric makes the milk golden in colour, and brings an earthy, slightly bitter note to the taste; black pepper a little heat, and jaggery ties it all together with a caramel-like sweetness. This recipe makes one cup in about 5 minutes."
+  },
+  "seg.8d84c28f29ee": {
+   "src": "⟦1⟧Prep⟦/1⟧1 min",
+   "t": "⟦1⟧প্রস্তুতি⟦/1⟧1 মিনিট",
+   "back": "⟦1⟧Preparation⟦/1⟧1 minute"
+  },
+  "seg.166ac82bce1a": {
+   "src": "⟦1⟧Cook⟦/1⟧4 min",
+   "t": "⟦1⟧রান্না⟦/1⟧4 মিনিট",
+   "back": "⟦1⟧Cooking⟦/1⟧4 minutes"
+  },
+  "seg.d16246ee0866": {
+   "src": "⟦1⟧Total⟦/1⟧5 min",
+   "t": "⟦1⟧মোট⟦/1⟧5 মিনিট",
+   "back": "⟦1⟧Total⟦/1⟧5 minutes"
+  },
+  "seg.e6c332afda75": {
+   "src": "⟦1⟧Makes⟦/1⟧1 cup",
+   "t": "⟦1⟧পরিমাণ⟦/1⟧1 কাপ",
+   "back": "⟦1⟧Quantity⟦/1⟧1 cup"
+  },
+  "seg.8e4df121a859": {
+   "src": "Simmer milk with turmeric and a pinch of pepper, switch off, then stir in a spoon of jaggery.",
+   "t": "দুধে হলুদ আর এক চিমটে গোলমরিচ দিয়ে হালকা আঁচে ফোটান, আঁচ বন্ধ করুন, তারপর এক চামচ গুড় নেড়ে মেশান।",
+   "back": "Simmer the milk on gentle heat with turmeric and a pinch of black pepper, turn off the heat, then stir in a spoon of jaggery."
+  },
+  "seg.616c584b1f2d": {
+   "src": "Ingredients ⟦1⟧makes 1 cup⟦/1⟧",
+   "t": "উপকরণ ⟦1⟧1 কাপের জন্য⟦/1⟧",
+   "back": "Ingredients ⟦1⟧for 1 cup⟦/1⟧"
+  },
+  "seg.33cd5776caaf": {
+   "src": "¼ tsp turmeric powder ⟦1⟧Turmeric Powder or Hill Turmeric Powder⟦/1⟧",
+   "t": "¼ চা-চামচ হলুদ গুঁড়ো ⟦1⟧হলুদ গুঁড়ো বা পাহাড়ি হলুদ গুঁড়ো⟦/1⟧",
+   "back": "¼ teaspoon turmeric powder ⟦1⟧turmeric powder or hill turmeric powder⟦/1⟧"
+  },
+  "seg.f1056c625241": {
+   "src": "A pinch of black pepper ⟦1⟧powdered or crushed⟦/1⟧",
+   "t": "এক চিমটে গোলমরিচ ⟦1⟧গুঁড়ো বা থেঁতো করা⟦/1⟧",
+   "back": "A pinch of black pepper ⟦1⟧powdered or crushed⟦/1⟧"
+  },
+  "seg.bc417c4b3691": {
+   "src": "1 tsp grated palm or cane jaggery ⟦1⟧or to taste⟦/1⟧",
+   "t": "1 চা-চামচ কোরানো তালের বা আখের গুড় ⟦1⟧বা স্বাদমতো⟦/1⟧",
+   "back": "1 teaspoon grated palm or sugarcane jaggery ⟦1⟧or to taste⟦/1⟧"
+  },
+  "seg.12c1bae1db56": {
+   "src": "A pinch of cardamom powder (optional)",
+   "t": "এক চিমটে এলাচ গুঁড়ো (ইচ্ছেমতো)",
+   "back": "A pinch of cardamom powder (optional)"
+  },
+  "seg.df14f9098720": {
+   "src": "Turmeric Powder",
+   "t": "হলুদ গুঁড়ো",
+   "back": "Turmeric powder"
+  },
+  "seg.c6d79d093fe3": {
+   "src": "⟦#1⟧ · Pasupu",
+   "t": "⟦#1⟧ · পাসুপু",
+   "back": "⟦#1⟧ · Pasupu"
+  },
+  "seg.a44f282ce639": {
+   "src": "MRP ₹396 · 540 g",
+   "t": "MRP ₹396 · 540 g",
+   "back": "MRP ₹396 · 540 g"
+  },
+  "seg.c1f7f3a42c29": {
+   "src": "Hill Turmeric Powder",
+   "t": "পাহাড়ি হলুদ গুঁড়ো",
+   "back": "Hill turmeric powder"
+  },
+  "seg.19ef1ef93a26": {
+   "src": "⟦#1⟧ · Konda Pasupu",
+   "t": "⟦#1⟧ · কোন্ডা পাসুপু",
+   "back": "⟦#1⟧ · Konda Pasupu"
+  },
+  "seg.1a51e1f06af0": {
+   "src": "Sweeten it with ⟦1⟧Palm Jaggery⟦/1⟧ or ⟦2⟧Cane Jaggery⟦/2⟧.",
+   "t": "⟦1⟧তালের গুড়⟦/1⟧ বা ⟦2⟧আখের গুড়⟦/2⟧ দিয়ে মিষ্টি করুন।",
+   "back": "Sweeten with ⟦1⟧palm jaggery⟦/1⟧ or ⟦2⟧sugarcane jaggery⟦/2⟧."
+  },
+  "seg.b0b3cf3b3c0d": {
+   "src": "Pour the milk into a small steel saucepan.",
+   "t": "একটা ছোট স্টিলের সসপ্যানে দুধ ঢালুন।",
+   "back": "Pour the milk into a small steel saucepan."
+  },
+  "seg.94d57531a741": {
+   "src": "Add the turmeric and pepper (and the cardamom, if using) and stir until no specks of turmeric float on top. They mix in more evenly before the milk is heated.",
+   "t": "হলুদ আর গোলমরিচ দিন (এলাচ দিলে সেটাও) আর নাড়ুন, যতক্ষণ না ওপরে হলুদের একটাও কণা ভেসে না থাকে। দুধ গরম করার আগে দিলে এগুলো বেশি সমানভাবে মেশে।",
+   "back": "Add turmeric and black pepper (and cardamom if using) and stir, until not a single speck of turmeric floats on top. Added before the milk is heated, these mix more evenly."
+  },
+  "seg.9da3932c6508": {
+   "src": "Set the pan on medium-low heat. Warm the milk with the turmeric and pepper; simmer 2 minutes. Once small bubbles appear around the edge, turn the heat to low and let it bubble gently.",
+   "t": "প্যানটা মাঝারি-কম আঁচে বসান। হলুদ আর গোলমরিচ সমেত দুধ গরম করুন; 2 মিনিট হালকা আঁচে ফোটান। কিনারায় ছোট ছোট বুদবুদ দেখা দিলে আঁচ কমিয়ে দিন আর আস্তে আস্তে ফুটতে দিন।",
+   "back": "Put the pan on medium-low heat. Heat the milk with the turmeric and black pepper; simmer for 2 minutes on gentle heat. When small bubbles appear at the edge, lower the heat and let it simmer slowly."
+  },
+  "seg.c66cb9336ef5": {
+   "src": "Stir now and then and keep an eye on the pan, as milk rises fast once it boils. If it starts to climb, lift the pan off the heat for a few seconds.",
+   "t": "মাঝে মাঝে নাড়ুন আর প্যানের দিকে নজর রাখুন, কারণ ফুটতে শুরু করলে দুধ খুব তাড়াতাড়ি উথলে ওঠে। উঠতে শুরু করলে কয়েক সেকেন্ডের জন্য প্যানটা আঁচ থেকে তুলে নিন।",
+   "back": "Stir now and then and keep an eye on the pan, because once it starts boiling milk boils over very quickly. If it starts to rise, lift the pan off the heat for a few seconds."
+  },
+  "seg.b567bc0c93c9": {
+   "src": "It is ready when the milk is an even golden yellow and the raw smell of turmeric has gone.",
+   "t": "দুধের রং সমানভাবে সোনালি হলুদ হলে আর হলুদের কাঁচা গন্ধ চলে গেলে তৈরি।",
+   "back": "It is ready when the milk's colour is evenly golden yellow and the raw smell of the turmeric has gone."
+  },
+  "seg.6e16c50d7c2a": {
+   "src": "Switch off and wait a minute. The milk drops just below the boil, so the jaggery will not split it.",
+   "t": "আঁচ বন্ধ করে এক মিনিট অপেক্ষা করুন। দুধের ফোটা সবে থেমে যায়, তাই গুড় দিলে দুধ কাটবে না।",
+   "back": "Turn off the heat and wait one minute. The boiling of the milk just stops, so when the jaggery is added the milk will not curdle."
+  },
+  "seg.aa0d1bcf6802": {
+   "src": "For a smooth cup, pour the milk through a fine sieve into a tumbler or mug.",
+   "t": "মসৃণ কাপের জন্য মিহি ছাঁকনি দিয়ে দুধ টাম্বলার বা মগে ছেঁকে নিন।",
+   "back": "For a smooth cup, strain the milk through a fine strainer into a tumbler or mug."
+  },
+  "seg.862cac523844": {
+   "src": "Stir in the jaggery and serve warm. Stir for 20–30 seconds, until it dissolves, and taste for sweetness.",
+   "t": "গুড় নেড়ে মিশিয়ে গরম গরম দিন। 20–30 সেকেন্ড নাড়ুন, যতক্ষণ না গলে যায়, আর মিষ্টি চেখে দেখুন।",
+   "back": "Stir in the jaggery and serve piping hot. Stir for 20–30 seconds, until it melts, and taste the sweetness."
+  },
+  "seg.1d9b9ec736a8": {
+   "src": "Strain through a fine sieve if you like it smooth.",
+   "t": "মসৃণ চাইলে মিহি ছাঁকনিতে ছেঁকে নিন।",
+   "back": "If you want it smooth, strain it through a fine strainer."
+  },
+  "seg.018366193ef3": {
+   "src": "Add the jaggery only after switching off; jaggery stirred into boiling milk can split it.",
+   "t": "গুড় দিন শুধু আঁচ বন্ধ করার পরে; ফুটন্ত দুধে গুড় মেশালে দুধ কেটে যেতে পারে।",
+   "back": "Add the jaggery only after turning off the heat; if jaggery is mixed into boiling milk, the milk can curdle."
+  },
+  "seg.0e783ba83473": {
+   "src": "Use a steel pan and spoon; turmeric stains plastic and wood.",
+   "t": "স্টিলের প্যান আর চামচ নিন; হলুদে প্লাস্টিক আর কাঠে দাগ লেগে যায়।",
+   "back": "Use a steel pan and spoon; turmeric stains plastic and wood."
+  },
+  "seg.dc2a0c79ccd5": {
+   "src": "Making more? Use the same amounts for each cup of milk.",
+   "t": "বেশি বানাবেন? প্রতি কাপ দুধে একই পরিমাণ দিন।",
+   "back": "Making more? Add the same amount per cup of milk."
+  },
+  "seg.485f68415013": {
+   "src": "Hill turmeric: use Hill Turmeric Powder (konda pasupu) in place of turmeric powder, in the same amount.",
+   "t": "পাহাড়ি হলুদ: হলুদ গুঁড়োর বদলে একই পরিমাণ পাহাড়ি হলুদ গুঁড়ো (কোন্ডা পাসুপু) দিন।",
+   "back": "Hill turmeric: instead of turmeric powder, add the same amount of hill turmeric powder (konda pasupu)."
+  },
+  "seg.01ec7a142032": {
+   "src": "Palm or cane jaggery: palm jaggery gives a deeper, slightly smoky sweetness; cane jaggery a lighter, caramel one.",
+   "t": "তালের বা আখের গুড়: তালের গুড়ে মিষ্টি হয় গভীর, একটু ধোঁয়াটে; আখের গুড়ে হালকা, ক্যারামেলের মতো।",
+   "back": "Palm or sugarcane jaggery: with palm jaggery the sweetness is deep, a little smoky; with sugarcane jaggery, light, caramel-like."
+  },
+  "seg.15b67235d087": {
+   "src": "Milder cup: leave out the pepper and add a pinch of cardamom powder instead.",
+   "t": "হালকা কাপের জন্য: গোলমরিচ বাদ দিন আর তার বদলে এক চিমটে এলাচ গুঁড়ো দিন।",
+   "back": "For a lighter cup: leave out the black pepper and add a pinch of cardamom powder instead."
+  },
+  "seg.d80219c8a51f": {
+   "src": "Serve warm in a tumbler or mug, on a cool evening or after the Karthika Somavaram puja.",
+   "t": "টাম্বলার বা মগে গরম গরম দিন, ঠান্ডা সন্ধ্যায় বা কার্তিক সোমবারের পুজোর পরে।",
+   "back": "Serve piping hot in a tumbler or mug, on a cold evening or after the Kartika Monday puja."
+  },
+  "seg.ac04ffd1d51a": {
+   "src": "Make it as you need it and drink it warm. Reheating after the jaggery is in can split the milk.",
+   "t": "যখন লাগবে তখনই বানান আর গরম থাকতেই খান। গুড় দেওয়ার পরে আবার গরম করলে দুধ কেটে যেতে পারে।",
+   "back": "Make it just when you need it and drink it while it is still hot. If reheated after adding jaggery, the milk can curdle."
+  },
+  "seg.c758e61dd102": {
+   "src": "Why did my pasupu paalu curdle?",
+   "t": "আমার পাসুপু পালু কেটে গেল কেন?",
+   "back": "Why did my pasupu palu curdle?"
+  },
+  "seg.d5f9c6fb2e27": {
+   "src": "Jaggery stirred into milk that is still boiling can make it split. Switch off the heat, wait about a minute, then stir in the grated jaggery.",
+   "t": "দুধ ফুটন্ত অবস্থায় গুড় মেশালে দুধ কেটে যেতে পারে। আঁচ বন্ধ করুন, প্রায় এক মিনিট অপেক্ষা করুন, তারপর কোরানো গুড় নেড়ে মেশান।",
+   "back": "If jaggery is mixed in while the milk is boiling, the milk can curdle. Turn off the heat, wait about one minute, then stir in the grated jaggery."
+  },
+  "seg.df4dbdd3102b": {
+   "src": "How much turmeric should I use for one cup of milk?",
+   "t": "এক কাপ দুধে কতটা হলুদ দেব?",
+   "back": "How much turmeric should I add to one cup of milk?"
+  },
+  "seg.3ec50124bdd7": {
+   "src": "¼ tsp turmeric powder for 1 cup (about 240 ml) of milk. More than that makes the taste sharp and earthy.",
+   "t": "1 কাপ (প্রায় 240 ml) দুধে ¼ চা-চামচ হলুদ গুঁড়ো। এর বেশি দিলে স্বাদ কড়া আর মাটির মতো হয়ে যায়।",
+   "back": "¼ teaspoon of turmeric powder to 1 cup (about 240 ml) of milk. If you add more than this, the taste becomes strong and earthy."
+  },
+  "seg.3dc4d1edd4f9": {
+   "src": "Can I skip the black pepper?",
+   "t": "গোলমরিচ কি বাদ দিতে পারি?",
+   "back": "Can I leave out the black pepper?"
+  },
+  "seg.166b3a44e11d": {
+   "src": "Yes. The pepper adds a little heat to the taste; leave it out, or use a pinch of cardamom instead, for a milder cup.",
+   "t": "হ্যাঁ। গোলমরিচে স্বাদে একটু ঝাল আসে; হালকা কাপের জন্য বাদ দিন, বা তার বদলে এক চিমটে এলাচ দিন।",
+   "back": "Yes. Black pepper brings a little heat to the taste; for a lighter cup leave it out, or add a pinch of cardamom instead."
+  },
+  "seg.2184adfd31b0": {
+   "src": "Should I use palm jaggery or cane jaggery?",
+   "t": "তালের গুড় দেব না আখের গুড়?",
+   "back": "Should I add palm jaggery or sugarcane jaggery?"
+  },
+  "seg.ef65c3a9d015": {
+   "src": "Either works, 1 tsp grated per cup. Palm jaggery tastes deeper and slightly smoky; cane jaggery is lighter and more like caramel.",
+   "t": "দুটোই চলে, প্রতি কাপে 1 চা-চামচ কোরানো। তালের গুড়ের স্বাদ গভীর, একটু ধোঁয়াটে; আখের গুড় হালকা, অনেকটা ক্যারামেলের মতো।",
+   "back": "Both work, 1 teaspoon grated per cup. Palm jaggery's taste is deep, a little smoky; sugarcane jaggery is light, quite caramel-like."
+  },
+  "seg.0f694f995bf8": {
+   "src": "పసుపు పాలు · Pasupu Paalu (Turmeric Milk) Recipe | 1acrefarms",
+   "t": "పసుపు పాలు · পাসুপু পালু (হলুদ দুধ) রেসিপি | 1acrefarms",
+   "back": "పసుపు పాలు · Pasupu Palu (turmeric milk) recipe | 1acrefarms"
+  },
+  "seg.bf09ae159f00": {
+   "src": "పసుపు పాలు. Pasupu paalu (haldi doodh): warm milk simmered with turmeric and a pinch of pepper, sweetened with jaggery off the heat. Step-by-step method, tips and FAQs.",
+   "t": "పసుపు పాలు. পাসুপু পালু (হলদি দুধ): হলুদ আর এক চিমটে গোলমরিচ দিয়ে ফোটানো গরম দুধ, আঁচ থেকে নামিয়ে গুড়ে মিষ্টি করা। ধাপে ধাপে পদ্ধতি, টিপস আর প্রশ্নোত্তর।",
+   "back": "పసుపు పాలు. Pasupu Palu (haldi milk): hot milk boiled with turmeric and a pinch of black pepper, sweetened with jaggery off the heat. Step-by-step method, tips and questions and answers."
+  },
+  "seg.d61c2bf097f8": {
+   "src": "Warm Pasupu Paalu (Turmeric Milk) · 1acrefarms",
+   "t": "গরম পাসুপু পালু (হলুদ দুধ) · 1acrefarms",
+   "back": "Hot Pasupu Palu (turmeric milk) · 1acrefarms"
+  },
+  "seg.4291e73409f8": {
+   "src": "Warm Pasupu Paalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "গরম পাসুপু পালু: 1acrefarms-এর রেসিপি কার্ড, উপকরণ আর পদ্ধতি সহ",
+   "back": "Hot Pasupu Palu: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.bb2ab610d782": {
+   "src": "Turmeric Powder 540 g pack",
+   "t": "হলুদ গুঁড়োর 540 g প্যাক",
+   "back": "540 g pack of turmeric powder"
+  },
+  "seg.e5c4e88b0420": {
+   "src": "Hill Turmeric Powder 540 g pack",
+   "t": "পাহাড়ি হলুদ গুঁড়োর 540 g প্যাক",
+   "back": "540 g pack of hill turmeric powder"
+  },
+  "seg.20b188783d7d": {
+   "src": "¼ tsp turmeric powder",
+   "t": "¼ চা-চামচ হলুদ গুঁড়ো",
+   "back": "¼ teaspoon turmeric powder"
+  },
+  "seg.b62b5a559893": {
+   "src": "A pinch of black pepper",
+   "t": "এক চিমটে গোলমরিচ",
+   "back": "A pinch of black pepper"
+  },
+  "seg.b0c2f2f3f9c9": {
+   "src": "1 tsp grated palm or cane jaggery",
+   "t": "1 চা-চামচ কোরানো তালের বা আখের গুড়",
+   "back": "1 teaspoon grated palm or sugarcane jaggery"
+  },
+  "seg.929a28d26142": {
+   "src": "Guides",
+   "t": "গাইড",
+   "back": "Guide"
+  },
+  "seg.c388948b1966": {
+   "src": "Cane jaggery or palm jaggery",
+   "t": "আখের গুড় না তালের গুড়",
+   "back": "Sugarcane jaggery or palm jaggery"
+  },
+  "seg.d1cc45d4f641": {
+   "src": "Guide · jaggery",
+   "t": "গাইড · গুড়",
+   "back": "Guide · Jaggery"
+  },
+  "seg.d8082aa0cdf1": {
+   "src": "Cane jaggery or palm jaggery: which to use",
+   "t": "আখের গুড় না তালের গুড়: কোনটা কোথায় দেবেন",
+   "back": "Sugarcane jaggery or palm jaggery: which one to put where"
+  },
+  "seg.5094f960d9a4": {
+   "src": "Bellam in a Telugu kitchen usually means one of two things: cheruku bellam, made from sugarcane juice, or thati bellam, made from the sap of the palmyra palm. FSSAI treats them as two separate products, each with its own standard.",
+   "t": "তেলুগু রান্নাঘরে বেল্লাম বলতে সাধারণত দুটোর একটা বোঝায়: আখের রস থেকে তৈরি চেরুকু বেল্লাম, অথবা তাল গাছের রস থেকে তৈরি তাটি বেল্লাম। FSSAI এ দুটিকে আলাদা দুটি পণ্য হিসেবে দেখে, প্রত্যেকটির নিজের মান আছে।",
+   "back": "In the Telugu kitchen, bellam usually means one of two: cheruku bellam made from sugarcane juice, or tati bellam made from the sap of the palm tree. FSSAI sees these two as two separate products, each has its own standard."
+  },
+  "seg.13fd9611c493": {
+   "src": "They can look alike in a lump, but they taste different and suit different dishes. Here is how to tell them apart, which to use where, and how to keep them. There is a full Telugu section further down.",
+   "t": "ডেলা অবস্থায় দেখতে একরকম লাগতে পারে, কিন্তু স্বাদ আলাদা আর আলাদা আলাদা রান্নায় মানায়। এখানে দেখুন কীভাবে চিনবেন, কোনটা কোথায় দেবেন, আর কীভাবে রাখবেন। নিচে তেলুগুতে পুরো একটা অংশ আছে।",
+   "back": "In lump form they may look alike, but the taste is different and they suit different dishes. See here how to recognise them, which one to put where, and how to store them. Below there is a whole section in Telugu."
+  },
+  "seg.be457b1334f5": {
+   "src": "Cane Jaggery⟦#1⟧⟦#2⟧",
+   "t": "আখের গুড়⟦#1⟧⟦#2⟧",
+   "back": "Sugarcane jaggery⟦#1⟧⟦#2⟧"
+  },
+  "seg.18208d939ae8": {
+   "src": "Palm Jaggery⟦#1⟧⟦#2⟧",
+   "t": "তালের গুড়⟦#1⟧⟦#2⟧",
+   "back": "Palm jaggery⟦#1⟧⟦#2⟧"
+  },
+  "seg.124d6789cba2": {
+   "src": "⟦1⟧Our two jaggeries⟦/1⟧Left: cane jaggery from the Chittoor and Anakapalli cane belts. Right: palm jaggery from the Godavari delta. Both packed in Narasaraopet.",
+   "t": "⟦1⟧আমাদের দুই গুড়⟦/1⟧বাঁদিকে: চিত্তুর ও আনাকাপল্লির আখ চাষের এলাকার আখের গুড়। ডানদিকে: গোদাবরী ব-দ্বীপের তালের গুড়। দুটোই নরসারাওপেটে প্যাক করা।",
+   "back": "⟦1⟧Our two jaggeries⟦/1⟧Left: sugarcane jaggery from the sugarcane-growing areas of Chittoor and Anakapalli. Right: palm jaggery from the Godavari delta. Both packed in Narasaraopet."
+  },
+  "seg.70c115199d4c": {
+   "src": "Cane jaggery (cheruku bellam) is boiled-down sugarcane juice with a mellow, caramel sweetness: the one for payasam, pongal and chimmili. Palm jaggery (thati bellam) is boiled-down palmyra sap, darker and deeper in taste: a favourite in filter coffee and tea. You can swap one for the other gram for gram; start with a little less palm jaggery. Keep both in an airtight jar.",
+   "t": "আখের গুড় (চেরুকু বেল্লাম) হল আখের রস জ্বাল দিয়ে ঘন করা, মিষ্টিটা নরম, ক্যারামেলের মতো: পায়েস, পোঙ্গল আর চিম্মিলির জন্য এটাই। তালের গুড় (তাটি বেল্লাম) হল তালের রস জ্বাল দিয়ে ঘন করা, রং আরও গাঢ়, স্বাদ আরও গভীর: ফিল্টার কফি আর চায়ে অনেকের প্রিয়। একটার বদলে অন্যটা গ্রাম মেপে সমান সমান দিতে পারেন; তালের গুড় একটু কম দিয়ে শুরু করুন। দুটোই এয়ারটাইট বয়ামে রাখুন।",
+   "back": "Sugarcane jaggery (cheruku bellam) is sugarcane juice boiled down and thickened, the sweetness is soft, caramel-like: this is the one for payesh, pongal and chimmili. Palm jaggery (tati bellam) is palm sap boiled down and thickened, the colour darker, the taste deeper: many people's favourite in filter coffee and tea. You can use one instead of the other in equal amounts measured in grams; start with a little less palm jaggery. Keep both in an airtight jar."
+  },
+  "seg.fca77b7e3a12": {
+   "src": "At a glance",
+   "t": "এক নজরে",
+   "back": "At a glance"
+  },
+  "seg.75ef8f6ae8b2": {
+   "src": "Cane jaggery⟦#1⟧",
+   "t": "আখের গুড়⟦#1⟧",
+   "back": "Sugarcane jaggery⟦#1⟧"
+  },
+  "seg.7ab7eaedfd83": {
+   "src": "Palm jaggery⟦#1⟧",
+   "t": "তালের গুড়⟦#1⟧",
+   "back": "Palm jaggery⟦#1⟧"
+  },
+  "seg.b2602a6c00ce": {
+   "src": "Made from",
+   "t": "কী থেকে তৈরি",
+   "back": "What it is made from"
+  },
+  "seg.884cfe9bda03": {
+   "src": "Juice pressed out of sugarcane",
+   "t": "আখ পিষে বের করা রস",
+   "back": "Juice pressed out of sugarcane"
+  },
+  "seg.b8fab46efd97": {
+   "src": "Sap of the palmyra palm (thati neera)",
+   "t": "তাল গাছের রস (তাটি নীরা)",
+   "back": "Sap of the palm tree (tati neera)"
+  },
+  "seg.eae192773b7b": {
+   "src": "Made by",
+   "t": "কীভাবে তৈরি",
+   "back": "How it is made"
+  },
+  "seg.31c1fb788209": {
+   "src": "Boiling the juice down until it sets",
+   "t": "রস জ্বাল দিয়ে ঘন করে, যতক্ষণ না জমে যায়",
+   "back": "The juice is boiled down and thickened, until it sets"
+  },
+  "seg.4903e7667bf9": {
+   "src": "Boiling the sap down until it sets",
+   "t": "তালের রস জ্বাল দিয়ে ঘন করে, যতক্ষণ না জমে যায়",
+   "back": "The palm sap is boiled down and thickened, until it sets"
+  },
+  "seg.3192ec79bae5": {
+   "src": "FSSAI standard",
+   "t": "FSSAI-এর মান",
+   "back": "FSSAI standard"
+  },
+  "seg.4dcd7b425d23": {
+   "src": "\"Cane jaggery or cane gur\": moisture up to 7%",
+   "t": "‘আখের গুড়’: আর্দ্রতা 7% পর্যন্ত",
+   "back": "'Sugarcane jaggery': moisture up to 7%"
+  },
+  "seg.6d7569f44445": {
+   "src": "\"Gur or jaggery\" from palmyra, date or coconut palm: moisture up to 10%",
+   "t": "তাল, খেজুর বা নারকেল গাছের ‘গুড় বা জ্যাগারি’: আর্দ্রতা 10% পর্যন্ত",
+   "back": "‘Gur or jaggery’ of palm, date or coconut trees: moisture up to 10%"
+  },
+  "seg.f28563a477a9": {
+   "src": "Colour",
+   "t": "রং",
+   "back": "Colour"
+  },
+  "seg.994ac0b572f0": {
+   "src": "Golden to dark brown",
+   "t": "সোনালি থেকে গাঢ় বাদামি",
+   "back": "Golden to dark brown"
+  },
+  "seg.522796dcb722": {
+   "src": "Dark brown",
+   "t": "গাঢ় বাদামি",
+   "back": "Dark brown"
+  },
+  "seg.6f0369f65412": {
+   "src": "Taste",
+   "t": "স্বাদ",
+   "back": "Taste"
+  },
+  "seg.7c6a1cfc0e92": {
+   "src": "Mellow, caramel sweetness",
+   "t": "নরম, ক্যারামেলের মতো মিষ্টি",
+   "back": "Soft, caramel-like sweetness"
+  },
+  "seg.4bbda4137991": {
+   "src": "Deeper, slightly smoky sweetness",
+   "t": "আরও গভীর, একটু ধোঁয়াটে মিষ্টি",
+   "back": "Deeper, slightly smoky sweetness"
+  },
+  "seg.cc14b8c8d5b9": {
+   "src": "Good for",
+   "t": "কীসে ভালো মানায়",
+   "back": "What it suits best"
+  },
+  "seg.82f772f29b90": {
+   "src": "Payasam, pongal, paramannam, chimmili, chikki, laddu",
+   "t": "পায়েস, পোঙ্গল, পরমান্নম, চিম্মিলি, চিক্কি, লাড্ডু",
+   "back": "Payesh, pongal, paramannam, chimmili, chikki, laddu"
+  },
+  "seg.ab4fec6abc76": {
+   "src": "Filter coffee, tea, payasam, sunnundalu",
+   "t": "ফিল্টার কফি, চা, পায়েস, সুন্নুন্ডালু",
+   "back": "Filter coffee, tea, payesh, sunnundalu"
+  },
+  "seg.5ea5fa3f36cc": {
+   "src": "Where they come from",
+   "t": "কোথা থেকে আসে",
+   "back": "Where it comes from"
+  },
+  "seg.db3bddd4a4fc": {
+   "src": "Cane jaggery is made wherever sugarcane grows: the juice is pressed out of the cane and boiled down in open pans. In Andhra Pradesh, Anakapalli has the second largest jaggery market in India.",
+   "t": "যেখানে আখের চাষ হয়, সেখানেই আখের গুড় তৈরি হয়: আখ পিষে রস বের করে খোলা কড়াইয়ে জ্বাল দিয়ে ঘন করা হয়। অন্ধ্রপ্রদেশের আনাকাপল্লিতে আছে ভারতের দ্বিতীয় বৃহত্তম গুড়ের বাজার।",
+   "back": "Where sugarcane is grown, that is where sugarcane jaggery is made: sugarcane is pressed, the juice extracted and boiled down and thickened in an open kadai. Anakapalli in Andhra Pradesh has India's second-largest jaggery market."
+  },
+  "seg.31988f9e86fc": {
+   "src": "Palm jaggery is made from the sap of the palmyra palm, thati chettu in Telugu. The sap is called neera, or thati neera, and it is boiled down until it sets.",
+   "t": "তালের গুড় তৈরি হয় তাল গাছের রস থেকে, তেলুগুতে যে গাছকে বলে তাটি চেট্টু। এই রসকে বলে নীরা, বা তাটি নীরা, আর জমে না যাওয়া পর্যন্ত জ্বাল দিয়ে ঘন করা হয়।",
+   "back": "Palm jaggery is made from the sap of the palm tree, the tree that in Telugu is called tati chettu. This sap is called neera, or tati neera, and it is boiled down and thickened until it sets."
+  },
+  "seg.5a6c8ea97fdf": {
+   "src": "Which one to use",
+   "t": "কোনটা কোথায় দেবেন",
+   "back": "Which one to put where"
+  },
+  "seg.7231a4f0bd69": {
+   "src": "Payasam, sweet pongal and ⟦1⟧bellam paramannam⟦/1⟧: cane jaggery.",
+   "t": "পায়েস, মিষ্টি পোঙ্গল আর ⟦1⟧বেল্লাম পরমান্নম⟦/1⟧: আখের গুড়।",
+   "back": "Payesh, sweet pongal and ⟦1⟧Bellam Paramannam⟦/1⟧: sugarcane jaggery."
+  },
+  "seg.13039d2b8d91": {
+   "src": "⟦1⟧Chimmili⟦/1⟧, chikki and laddu: cane jaggery.",
+   "t": "⟦1⟧চিম্মিলি⟦/1⟧, চিক্কি আর লাড্ডু: আখের গুড়।",
+   "back": "⟦1⟧Chimmili⟦/1⟧, chikki and laddu: sugarcane jaggery."
+  },
+  "seg.2b10b5036017": {
+   "src": "Filter coffee and tea: palm jaggery. Its deeper taste stands up to the decoction; try our ⟦1⟧palm jaggery coffee⟦/1⟧.",
+   "t": "ফিল্টার কফি আর চা: তালের গুড়। এর গভীর স্বাদ ডিকক্শনের সঙ্গে টক্কর দিতে পারে; আমাদের ⟦1⟧তালের গুড়ের কফি⟦/1⟧ বানিয়ে দেখুন।",
+   "back": "Filter coffee and tea: palm jaggery. Its deep taste can stand up to the decoction; try making our ⟦1⟧palm jaggery coffee⟦/1⟧."
+  },
+  "seg.39f0609ee4de": {
+   "src": "⟦1⟧Pasupu paalu⟦/1⟧: either one, as you like it.",
+   "t": "⟦1⟧পাসুপু পালু⟦/1⟧: যেটা আপনার ভালো লাগে।",
+   "back": "⟦1⟧Pasupu palu⟦/1⟧: whichever you like."
+  },
+  "seg.35b1f8b220a2": {
+   "src": "Swapping one for the other",
+   "t": "একটার বদলে অন্যটা",
+   "back": "One instead of the other"
+  },
+  "seg.46fffb385af6": {
+   "src": "Use the same weight. Palm jaggery tastes stronger, so start with a little less and add more to taste.",
+   "t": "ওজন একই রাখুন। তালের গুড়ের স্বাদ বেশি কড়া, তাই একটু কম দিয়ে শুরু করুন আর স্বাদমতো বাড়ান।",
+   "back": "Keep the weight the same. Palm jaggery's taste is stronger, so start with a little less and increase to taste."
+  },
+  "seg.8a98e07b6f1e": {
+   "src": "In milk, coffee or tea, add either jaggery after the milk is off the boil, so the milk does not split.",
+   "t": "দুধ, কফি বা চায়ে যে গুড়ই দিন, দুধের ফোটা থামার পরে দিন, যাতে দুধ কেটে না যায়।",
+   "back": "Whichever jaggery you add to milk, coffee or tea, add it after the milk stops boiling, so that the milk does not curdle."
+  },
+  "seg.42b698b8ebd7": {
+   "src": "Keeping it well",
+   "t": "ভালো রাখার উপায়",
+   "back": "Ways to keep it well"
+  },
+  "seg.6788faade30c": {
+   "src": "Keep jaggery in an airtight jar in a cool, dry place.",
+   "t": "গুড় এয়ারটাইট বয়ামে ঠান্ডা, শুকনো জায়গায় রাখুন।",
+   "back": "Keep jaggery in an airtight jar in a cool, dry place."
+  },
+  "seg.5ea00ae441ac": {
+   "src": "Use a dry spoon or knife. Jaggery takes in moisture from the air and turns sticky.",
+   "t": "শুকনো চামচ বা ছুরি ব্যবহার করুন। গুড় বাতাস থেকে আর্দ্রতা টেনে নিয়ে চটচটে হয়ে যায়।",
+   "back": "Use a dry spoon or knife. Jaggery pulls moisture from the air and becomes sticky."
+  },
+  "seg.1d7ae0c59b87": {
+   "src": "If it sets hard, grate it.",
+   "t": "শক্ত হয়ে গেলে কুরে নিন।",
+   "back": "If it becomes hard, grate it."
+  },
+  "seg.8be6c65e90d5": {
+   "src": "Use it within the best-before date on the pack.",
+   "t": "প্যাকে লেখা বেস্ট-বিফোর তারিখের মধ্যে ব্যবহার করুন।",
+   "back": "Use it within the best-before date written on the pack."
+  },
+  "seg.cc5783126657": {
+   "src": "Is palm jaggery the same as karupatti?",
+   "t": "তালের গুড় আর করুপট্টি কি একই?",
+   "back": "Are palm jaggery and karupatti the same?"
+  },
+  "seg.f7071649dddd": {
+   "src": "Yes. Karupatti is the Tamil name for jaggery made from palmyra sap. In Telugu it is thati bellam, and in Hindi taad ka gud.",
+   "t": "হ্যাঁ। তালের রস থেকে তৈরি গুড়ের তামিল নাম করুপট্টি। তেলুগুতে একে বলে তাটি বেল্লাম, আর হিন্দিতে তাড় কা গুড়।",
+   "back": "Yes. Karupatti is the Tamil name of jaggery made from palm sap. In Telugu it is called tati bellam, and in Hindi taad ka gud."
+  },
+  "seg.a591ce90fac8": {
+   "src": "Is gud the same as jaggery?",
+   "t": "গুড় আর জ্যাগারি কি একই?",
+   "back": "Are gud and jaggery the same?"
+  },
+  "seg.9e04d6270c92": {
+   "src": "Yes. Gud, or gur, is the Hindi word for jaggery, and bellam is the Telugu one. On its own it usually means cane jaggery.",
+   "t": "হ্যাঁ। জ্যাগারির হিন্দি শব্দ গুড়, আর তেলুগু শব্দ বেল্লাম। শুধু ‘গুড়’ বললে সাধারণত আখের গুড়ই বোঝায়।",
+   "back": "Yes. The Hindi word for jaggery is gud, and the Telugu word is bellam. Saying just ‘gud’ usually means sugarcane jaggery."
+  },
+  "seg.e531a25812a8": {
+   "src": "Why has my jaggery gone sticky?",
+   "t": "আমার গুড় চটচটে হয়ে গেল কেন?",
+   "back": "Why did my jaggery become sticky?"
+  },
+  "seg.cc79285bfadd": {
+   "src": "It has taken in moisture from the air, which happens faster in humid weather. Move it to an airtight jar and use a dry spoon.",
+   "t": "এটা বাতাস থেকে আর্দ্রতা টেনে নিয়েছে, আর্দ্র আবহাওয়ায় এটা আরও তাড়াতাড়ি হয়। এয়ারটাইট বয়ামে সরিয়ে রাখুন আর শুকনো চামচ ব্যবহার করুন।",
+   "back": "It has pulled moisture from the air; in humid weather this happens even faster. Move it into an airtight jar and use a dry spoon."
+  },
+  "seg.1bdcd09c5ca0": {
+   "src": "Can I use palm jaggery in payasam?",
+   "t": "পায়েসে কি তালের গুড় দিতে পারি?",
+   "back": "Can I use palm jaggery in payesh?"
+  },
+  "seg.8ba95d799ac9": {
+   "src": "Yes. It gives a darker colour and a deeper taste. Add it off the heat, as you would cane jaggery.",
+   "t": "হ্যাঁ। এতে রং আরও গাঢ় হয় আর স্বাদ আরও গভীর। আখের গুড়ের মতোই আঁচ থেকে নামিয়ে দিন।",
+   "back": "Yes. With it the colour is darker and the taste deeper. Add it off the heat, just like sugarcane jaggery."
+  },
+  "seg.a2f5a2b37771": {
+   "src": "Our jaggery",
+   "t": "আমাদের গুড়",
+   "back": "Our jaggery"
+  },
+  "seg.0a3e09b58f4e": {
+   "src": "Two or more packs ship free, so you can try both.",
+   "t": "দুই বা তার বেশি প্যাকে ডেলিভারি ফ্রি, তাই দুটোই চেখে দেখতে পারেন।",
+   "back": "Delivery is free on two or more packs, so you can taste both."
+  },
+  "seg.43cbc6f0cd63": {
+   "src": "చెరుకు బెల్లం vs తాటి బెల్లం · Cane vs Palm Jaggery | 1acrefarms",
+   "t": "చెరుకు బెల్లం vs తాటి బెల్లం · আখের গুড় না তালের গুড় | 1acrefarms",
+   "back": "చెరుకు బెల్లం vs తాటి బెల్లం · Sugarcane jaggery or palm jaggery | 1acrefarms"
+  },
+  "seg.cc8e1c430f7e": {
+   "src": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. Cane jaggery (cheruku bellam) vs palm jaggery (thati bellam): what each is made from, how they differ, which to use, and how to store them.",
+   "t": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. আখের গুড় (চেরুকু বেল্লাম) আর তালের গুড় (তাটি বেল্লাম): কোনটা কী থেকে তৈরি, তফাত কোথায়, কোনটা কোথায় দেবেন, আর কীভাবে রাখবেন।",
+   "back": "చెరుకు బెల్లం, తాటి బెల్లం తేడా. Sugarcane jaggery (cheruku bellam) and palm jaggery (tati bellam): which one is made from what, where the difference is, which one to put where, and how to store them."
+  },
+  "seg.dcb8aea65da2": {
+   "src": "Cane jaggery or palm jaggery: which to use · 1acrefarms",
+   "t": "আখের গুড় না তালের গুড়: কোনটা কোথায় দেবেন · 1acrefarms",
+   "back": "Sugarcane jaggery or palm jaggery: which one to put where · 1acrefarms"
+  },
+  "seg.76d52912e55b": {
+   "src": "Know what you buy",
+   "t": "যা কিনছেন, তা জানুন",
+   "back": "Know what you are buying"
+  },
+  "seg.0fba3c8b175a": {
+   "src": "Plain answers to what buyers ask us, with the sources behind them.",
+   "t": "ক্রেতারা আমাদের যা জিজ্ঞেস করেন, তার সোজাসুজি উত্তর, সঙ্গে কোথা থেকে জানা তার সূত্র।",
+   "back": "Straight answers to what buyers ask us, along with the source of where it is known from."
+  },
+  "seg.6b4f74dc7f36": {
+   "src": "Guide · turmeric",
+   "t": "গাইড · হলুদ",
+   "back": "Guide · Turmeric"
+  },
+  "seg.d3855c7cad24": {
+   "src": "How to check turmeric powder at home",
+   "t": "বাড়িতে হলুদ গুঁড়ো কীভাবে পরীক্ষা করবেন",
+   "back": "How to test turmeric powder at home"
+  },
+  "seg.b54cac8c5de3": {
+   "src": "The water check, two tests to skip, and when you need a lab.",
+   "t": "জলের পরীক্ষা, যে দুটো পরীক্ষা করবেন না, আর কখন ল্যাবে যেতে হবে।",
+   "back": "The water test, the two tests you should not do, and when you need to go to a lab."
+  },
+  "seg.b0fb2e2755f6": {
+   "src": "Read the guide",
+   "t": "গাইডটি পড়ুন",
+   "back": "Read the guide"
+  },
+  "seg.1401601b2e2c": {
+   "src": "What each is made from, how they taste, and which to use where. With a Telugu section.",
+   "t": "কোনটা কী থেকে তৈরি, স্বাদ কেমন, আর কোনটা কোথায় দেবেন। সঙ্গে তেলুগুতে একটা অংশ।",
+   "back": "Which one is made from what, what the taste is like, and which one to put where. Along with a section in Telugu."
+  },
+  "seg.336c642e2ba5": {
+   "src": "Buyer Guides for Turmeric & Jaggery | 1acrefarms",
+   "t": "হলুদ ও গুড় কেনার গাইড | 1acrefarms",
+   "back": "Turmeric and jaggery buying guide | 1acrefarms"
+  },
+  "seg.abda31761e23": {
+   "src": "Plain answers to what buyers ask us, starting with how to check turmeric powder at home.",
+   "t": "ক্রেতারা আমাদের যা জিজ্ঞেস করেন, তার সোজাসুজি উত্তর, শুরুতে বাড়িতে হলুদ গুঁড়ো কীভাবে পরীক্ষা করবেন।",
+   "back": "Straight answers to what buyers ask us, starting with how to test turmeric powder at home."
+  },
+  "seg.a593b0b6671e": {
+   "src": "Guides · 1acrefarms",
+   "t": "গাইড · 1acrefarms",
+   "back": "Guide · 1acrefarms"
+  },
+  "seg.4bddab09b9f2": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi",
+   "t": "⟦#1⟧ · ⟦#2⟧ · পাসুপু · হলদি",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi"
+  },
+  "seg.2b6b229e651e": {
+   "src": "FSSAI's standard says turmeric powder must be free from added colouring matter, including lead chromate, and from foreign starch. Its testing manual lists what inspectors check turmeric for: added dyes such as metanil yellow, lead salts, and chalk powder.",
+   "t": "FSSAI-এর মান অনুযায়ী হলুদ গুঁড়োয় বাইরে থেকে মেশানো কোনো রং থাকা চলবে না, লেড ক্রোমেটও নয়, আর অন্য কোনো স্টার্চও থাকা চলবে না। এর পরীক্ষার ম্যানুয়ালে লেখা আছে পরিদর্শকেরা হলুদে কী কী খোঁজেন: মেটানিল ইয়েলোর মতো মেশানো রং, সিসার লবণ, আর চকের গুঁড়ো।",
+   "back": "According to the FSSAI standard, turmeric powder must not contain any colour mixed in from outside, not lead chromate either, and must not contain any other starch either. Its testing manual says what inspectors look for in turmeric: mixed-in colours like metanil yellow, lead salts, and chalk powder."
+  },
+  "seg.b27088069a9d": {
+   "src": "Some of this you can check in your kitchen, and some only a lab can find. This guide covers both, plus two popular tests that do not work for turmeric. Try them on any turmeric you buy, ours included.",
+   "t": "এর কিছু আপনি নিজের রান্নাঘরেই দেখে নিতে পারেন, আর কিছু শুধু ল্যাবেই ধরা পড়ে। এই গাইডে দুটোই আছে, সঙ্গে এমন দুটো চালু পরীক্ষার কথা যেগুলো হলুদের বেলায় কাজ করে না। যে হলুদই কিনুন, আমাদেরটা সমেত, এগুলো করে দেখুন।",
+   "back": "Some of this you can check in your own kitchen, and some is caught only in a lab. This guide has both, along with two popular tests that do not work in the case of turmeric. Whatever turmeric you buy, including ours, try these."
+  },
+  "seg.b74ab3f9bb3e": {
+   "src": "Two glasses of water after the turmeric check. Left: pale yellow water with the powder settled at the bottom. Right: strong yellow water with yellow trails running down from the powder.",
+   "t": "হলুদের পরীক্ষার পরে দুই গ্লাস জল। বাঁদিকে: ফিকে হলুদ জল, গুঁড়ো তলায় থিতিয়ে আছে। ডানদিকে: গাঢ় হলুদ জল, গুঁড়ো থেকে হলুদ রেখা নিচে নেমে যাচ্ছে।",
+   "back": "Two glasses of water after the turmeric test. Left: pale yellow water, the powder settled at the bottom. Right: deep yellow water, yellow streaks going down from the powder."
+  },
+  "seg.3405f90e5ba1": {
+   "src": "Pale yellow",
+   "t": "ফিকে হলুদ",
+   "back": "Pale yellow"
+  },
+  "seg.dd331cdc7f23": {
+   "src": "Strong yellow",
+   "t": "গাঢ় হলুদ",
+   "back": "Deep yellow"
+  },
+  "seg.c8b6eb5f9530": {
+   "src": "⟦1⟧The water check⟦/1⟧Left: the powder has settled and the water is pale yellow. Right: strong yellow trails ran from the powder as it sank, and the water turned deep yellow. That one is worth a lab test.",
+   "t": "⟦1⟧জলের পরীক্ষা⟦/1⟧বাঁদিকে: গুঁড়ো থিতিয়ে গেছে আর জল ফিকে হলুদ। ডানদিকে: গুঁড়ো ডোবার সময় তা থেকে গাঢ় হলুদ রেখা নেমেছে, আর জল গাঢ় হলুদ হয়ে গেছে। ওটা ল্যাবে পরীক্ষা করানো উচিত।",
+   "back": "⟦1⟧The water test⟦/1⟧Left: the powder has settled and the water is pale yellow. Right: while the powder sank, deep yellow streaks came down from it, and the water has turned deep yellow. That one should be tested in a lab."
+  },
+  "seg.a7363cc3fa37": {
+   "src": "Sprinkle a teaspoon of turmeric on a glass of water and let it settle without stirring. Turmeric sinks and leaves the water pale yellow; water that turns strong yellow straight away points to added colour. This check cannot find lead chromate or chalk, so for a sure answer, use a food testing lab. Skip the iodine test: turmeric is starchy to begin with.",
+   "t": "এক গ্লাস জলের ওপর এক চা-চামচ হলুদ ছড়িয়ে দিন আর না নেড়ে থিতোতে দিন। হলুদ ডুবে যায় আর জল থাকে ফিকে হলুদ; জল সঙ্গে সঙ্গে গাঢ় হলুদ হয়ে গেলে বুঝবেন বাইরে থেকে রং মেশানো থাকতে পারে। এই পরীক্ষায় লেড ক্রোমেট বা চক ধরা পড়ে না, তাই নিশ্চিত উত্তরের জন্য খাদ্য পরীক্ষার ল্যাবে যান। আয়োডিন পরীক্ষা করবেন না: হলুদে নিজেই স্টার্চ থাকে।",
+   "back": "Sprinkle one teaspoon of turmeric on top of a glass of water and let it settle without stirring. Turmeric sinks and the water stays pale yellow; if the water turns deep yellow immediately, understand that colour may have been mixed in from outside. This test does not catch lead chromate or chalk, so for a sure answer go to a food testing lab. Do not do the iodine test: turmeric itself contains starch."
+  },
+  "seg.9b20e15186d4": {
+   "src": "What FSSAI checks turmeric for",
+   "t": "FSSAI হলুদে কী কী পরীক্ষা করে",
+   "back": "What FSSAI tests for in turmeric"
+  },
+  "seg.dc193d26c683": {
+   "src": "Added dyes",
+   "t": "মেশানো রং",
+   "back": "Mixed-in colour"
+  },
+  "seg.34d6f989bfaf": {
+   "src": "Such as metanil yellow, which can make dull turmeric look brighter. FSSAI does not allow added colour in turmeric.",
+   "t": "যেমন মেটানিল ইয়েলো, যা ম্যাড়মেড়ে হলুদকে বেশি উজ্জ্বল দেখায়। FSSAI হলুদে বাইরে থেকে রং মেশানোর অনুমতি দেয় না।",
+   "back": "Such as metanil yellow, which makes dull turmeric look brighter. FSSAI does not allow colour to be mixed into turmeric from outside."
+  },
+  "seg.042cabe54b01": {
+   "src": "Lead chromate and other lead salts",
+   "t": "লেড ক্রোমেট আর অন্যান্য সিসার লবণ",
+   "back": "Lead chromate and other lead salts"
+  },
+  "seg.8310b11eab8b": {
+   "src": "Lead chromate is a yellow pigment used in paint. Stanford-led studies published in 2019 and 2024 found it in turmeric from parts of South Asia. FSSAI does not allow it in turmeric at all.",
+   "t": "লেড ক্রোমেট রঙে ব্যবহৃত একটি হলুদ রঞ্জক। স্ট্যানফোর্ডের নেতৃত্বে 2019 আর 2024 সালে প্রকাশিত গবেষণায় দক্ষিণ এশিয়ার কিছু অঞ্চলের হলুদে এটি পাওয়া গেছে। FSSAI হলুদে এর কোনো অনুমতিই দেয় না।",
+   "back": "Lead chromate is a yellow pigment used in paints. Research led by Stanford, published in 2019 and 2024, found it in turmeric from some regions of South Asia. FSSAI does not allow it in turmeric at all."
+  },
+  "seg.40d3e387ba41": {
+   "src": "Chalk powder",
+   "t": "চকের গুঁড়ো",
+   "back": "Chalk powder"
+  },
+  "seg.4278e7c5416c": {
+   "src": "A cheap white powder that adds weight.",
+   "t": "একটি সস্তা সাদা গুঁড়ো, যা ওজন বাড়ায়।",
+   "back": "A cheap white powder, which increases the weight."
+  },
+  "seg.733184d9c53a": {
+   "src": "Foreign starch",
+   "t": "অন্য স্টার্চ",
+   "back": "Other starch"
+  },
+  "seg.5a8b446bbce0": {
+   "src": "Flour or starch from other crops. FSSAI's standard rules it out too.",
+   "t": "অন্য ফসলের আটা বা স্টার্চ। FSSAI-এর মানে এটাও বাদ।",
+   "back": "Flour or starch of other crops. This too is excluded in the FSSAI standard."
+  },
+  "seg.8604a8e3ea49": {
+   "src": "Check 1: the water glass",
+   "t": "পরীক্ষা 1: জলের গ্লাস",
+   "back": "Test 1: the water glass"
+  },
+  "seg.1b1af7f63ffd": {
+   "src": "Fill a clear glass with water at room temperature.",
+   "t": "একটা স্বচ্ছ গ্লাসে ঘরের তাপমাত্রার জল ভরুন।",
+   "back": "Fill a clear glass with room-temperature water."
+  },
+  "seg.653731f2ed6f": {
+   "src": "Sprinkle one level teaspoon of turmeric powder on top. Do not stir.",
+   "t": "ওপরে এক সমান চা-চামচ হলুদ গুঁড়ো ছড়িয়ে দিন। নাড়বেন না।",
+   "back": "Sprinkle one level teaspoon of turmeric powder on top. Do not stir."
+  },
+  "seg.ea5b43cf8436": {
+   "src": "Watch the first minute as the powder sinks. Look for coloured trails running down from it.",
+   "t": "প্রথম এক মিনিট গুঁড়ো ডোবার সময় দেখুন। গুঁড়ো থেকে রঙিন রেখা নিচে নামছে কি না খেয়াল করুন।",
+   "back": "Watch for the first minute while the powder sinks. Notice whether coloured streaks are coming down from the powder or not."
+  },
+  "seg.e37698aaa3fb": {
+   "src": "Leave it for 15 to 20 minutes. Then hold the glass against a white wall or a sheet of paper and look at the water above the settled powder.",
+   "t": "15 থেকে 20 মিনিট রেখে দিন। তারপর গ্লাসটা সাদা দেওয়াল বা এক টুকরো কাগজের সামনে ধরে, থিতিয়ে যাওয়া গুঁড়োর ওপরের জলটা দেখুন।",
+   "back": "Leave it for 15 to 20 minutes. Then hold the glass in front of a white wall or a piece of paper and look at the water above the settled powder."
+  },
+  "seg.e8937cebf136": {
+   "src": "Pale yellow water, powder at the bottom",
+   "t": "ফিকে হলুদ জল, গুঁড়ো তলায়",
+   "back": "Pale yellow water, powder at the bottom"
+  },
+  "seg.7253b4d90896": {
+   "src": "No sign of added dye.",
+   "t": "রং মেশানোর কোনো লক্ষণ নেই।",
+   "back": "No sign of mixed-in colour."
+  },
+  "seg.256ce5cf303d": {
+   "src": "Strong yellow trails, or deep yellow water within minutes",
+   "t": "গাঢ় হলুদ রেখা, বা কয়েক মিনিটের মধ্যে গাঢ় হলুদ জল",
+   "back": "Deep yellow streaks, or deep yellow water within a few minutes"
+  },
+  "seg.ce06c8148072": {
+   "src": "Possible added colour. Stop using that batch and get it tested.",
+   "t": "রং মেশানো থাকতে পারে। ওই ব্যাচ ব্যবহার বন্ধ করুন আর পরীক্ষা করান।",
+   "back": "Colour may be mixed in. Stop using that batch and get it tested."
+  },
+  "seg.53d9c5db264d": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Turmeric's own yellow, curcumin, hardly dissolves in water, so the powder sinks and only tints the water. Dyes such as metanil yellow dissolve easily and colour the water fast.",
+   "t": "⟦1⟧কেন কাজ করে।⟦/1⟧ হলুদের নিজের হলুদ রং, কারকিউমিন, জলে প্রায় গলে না, তাই গুঁড়ো ডুবে যায় আর জলে শুধু হালকা রং ধরে। মেটানিল ইয়েলোর মতো রং সহজে গলে যায় আর তাড়াতাড়ি জল রাঙিয়ে দেয়।",
+   "back": "⟦1⟧Why it works.⟦/1⟧ Turmeric's own yellow colour, curcumin, hardly dissolves in water, so the powder sinks and the water takes only a light colour. Colours like metanil yellow dissolve easily and quickly colour the water."
+  },
+  "seg.af4442c6e910": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Lead chromate and chalk do not dissolve in water either, so turmeric mixed with them can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧কী ধরা পড়ে না।⟦/1⟧ লেড ক্রোমেট আর চকও জলে গলে না, তাই এগুলো মেশানো হলুদও এই পরীক্ষায় পার পেয়ে যেতে পারে। শুধু ল্যাবের পরীক্ষাই এগুলো আছে কি না বলতে পারে।",
+   "back": "⟦1⟧What it does not catch.⟦/1⟧ Lead chromate and chalk also do not dissolve in water, so turmeric mixed with these can also pass this test. Only a lab test can tell whether these are present or not."
+  },
+  "seg.a8b61850b87d": {
+   "src": "Very fine powder can keep the water cloudy for a while. Cloudy is fine; a clear, strong yellow is what to look for.",
+   "t": "খুব মিহি গুঁড়োয় জল কিছুক্ষণ ঘোলা থাকতে পারে। ঘোলা হলে অসুবিধা নেই; দেখার বিষয় হল স্বচ্ছ, গাঢ় হলুদ জল।",
+   "back": "With very fine powder the water may stay cloudy for a while. Cloudiness is no problem; the thing to look for is clear, deep yellow water."
+  },
+  "seg.c3455d1f4c96": {
+   "src": "Check 2: if you buy whole turmeric",
+   "t": "পরীক্ষা 2: গোটা হলুদ কিনলে",
+   "back": "Test 2: if you buy whole turmeric"
+  },
+  "seg.3d4e366bb488": {
+   "src": "Snap a finger of dried turmeric in half. Turmeric is yellow-orange right through, so the inside should look much like the outside. A bright yellow skin over a pale or dull core can mean colour was added to the surface. Ask the seller about it, or get it tested.",
+   "t": "একটা শুকনো হলুদের টুকরো মাঝখান থেকে ভাঙুন। হলুদ ভেতর পর্যন্ত হলদে-কমলা, তাই ভেতরটা বাইরের মতোই দেখতে হওয়া উচিত। ফিকে বা ম্যাড়মেড়ে ভেতরের ওপর উজ্জ্বল হলুদ খোসা মানে ওপরে রং লাগানো হয়ে থাকতে পারে। বিক্রেতাকে জিজ্ঞেস করুন, বা পরীক্ষা করান।",
+   "back": "Break a dry piece of turmeric in the middle. Turmeric is yellow-orange right through to the inside, so the inside should look the same as the outside. A bright yellow skin over a pale or dull inside means colour may have been applied on top. Ask the seller, or get it tested."
+  },
+  "seg.c62fa16e1d5f": {
+   "src": "Two tests to skip",
+   "t": "যে দুটো পরীক্ষা করবেন না",
+   "back": "The two tests you should not do"
+  },
+  "seg.895069c9d53f": {
+   "src": "The iodine test",
+   "t": "আয়োডিন পরীক্ষা",
+   "back": "The iodine test"
+  },
+  "seg.4c4dc95561d2": {
+   "src": "Iodine turns blue-black when it meets starch, and it is often suggested for spotting flour in turmeric. But turmeric is starchy itself, so it turns blue-black either way. That is why FSSAI's own manual uses the iodine test for powdered spices other than turmeric.",
+   "t": "আয়োডিন স্টার্চের সংস্পর্শে এলে নীলচে-কালো হয়ে যায়, আর হলুদে আটা আছে কি না ধরতে অনেকে এটা করতে বলেন। কিন্তু হলুদে নিজেই স্টার্চ থাকে, তাই যে অবস্থাতেই হোক নীলচে-কালো হয়ে যায়। সেই কারণেই FSSAI-এর নিজের ম্যানুয়ালে আয়োডিন পরীক্ষা হলুদ ছাড়া অন্য মশলার গুঁড়োর জন্য রাখা হয়েছে।",
+   "back": "Iodine turns bluish-black when it comes into contact with starch, and many people say to do this to catch whether there is flour in turmeric. But turmeric itself contains starch, so it turns bluish-black in any case. That is why in FSSAI's own manual the iodine test is kept for spice powders other than turmeric."
+  },
+  "seg.5cf8718764fb": {
+   "src": "Acid tests at home",
+   "t": "বাড়িতে অ্যাসিডের পরীক্ষা",
+   "back": "The acid test at home"
+  },
+  "seg.fc16ff8016e3": {
+   "src": "FSSAI's tests for lead, metanil yellow and chalk in turmeric use concentrated hydrochloric or sulphuric acid. These acids burn skin and eyes. They belong in a lab, not a kitchen.",
+   "t": "হলুদে সিসা, মেটানিল ইয়েলো আর চক ধরার জন্য FSSAI-এর পরীক্ষায় কড়া হাইড্রোক্লোরিক বা সালফিউরিক অ্যাসিড লাগে। এই অ্যাসিড চামড়া আর চোখ পুড়িয়ে দেয়। এগুলোর জায়গা ল্যাবে, রান্নাঘরে নয়।",
+   "back": "FSSAI's tests to catch lead, metanil yellow and chalk in turmeric need strong hydrochloric or sulphuric acid. This acid burns skin and eyes. Their place is in a lab, not in the kitchen."
+  },
+  "seg.1dd87aa7bdc7": {
+   "src": "For a sure answer: a food testing lab",
+   "t": "নিশ্চিত উত্তরের জন্য: খাদ্য পরীক্ষার ল্যাব",
+   "back": "For a sure answer: a food testing lab"
+  },
+  "seg.1883beca4d73": {
+   "src": "A NABL-accredited food testing lab can test turmeric for lead and for added colours. Ask the lab how much sample it needs, keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack. FSSAI publishes a list of notified food testing labs on its website.",
+   "t": "NABL-স্বীকৃত খাদ্য পরীক্ষার ল্যাব হলুদে সিসা আর মেশানো রং পরীক্ষা করতে পারে। ল্যাবকে জিজ্ঞেস করুন কতটা নমুনা লাগবে, গুঁড়োটা তার সিল-করা প্যাকে বা একটা পরিষ্কার সিল-করা ব্যাগে রাখুন, আর প্যাকে ছাপা ব্যাচ নম্বর লিখে রাখুন। FSSAI তার ওয়েবসাইটে নোটিফায়েড খাদ্য পরীক্ষার ল্যাবের তালিকা প্রকাশ করে।",
+   "back": "An NABL-accredited food testing lab can test turmeric for lead and mixed-in colours. Ask the lab how much sample is needed, keep the powder in its sealed pack or a clean sealed bag, and note down the batch number printed on the pack. FSSAI publishes a list of notified food testing labs on its website."
+  },
+  "seg.456379c75c24": {
+   "src": "Read the pack before you buy",
+   "t": "কেনার আগে প্যাকটা পড়ুন",
+   "back": "Read the pack before buying"
+  },
+  "seg.ff7951e2f36b": {
+   "src": "An FSSAI licence or registration number. You can look it up on FSSAI's FoSCoS website.",
+   "t": "একটি FSSAI লাইসেন্স বা রেজিস্ট্রেশন নম্বর। FSSAI-এর FoSCoS ওয়েবসাইটে এটি খুঁজে দেখতে পারেন।",
+   "back": "An FSSAI licence or registration number. You can look it up on FSSAI's FoSCoS website."
+  },
+  "seg.476e4849c1d8": {
+   "src": "The name and address of whoever made or packed it.",
+   "t": "যিনি তৈরি বা প্যাক করেছেন, তাঁর নাম আর ঠিকানা।",
+   "back": "The name and address of the one who made or packed it."
+  },
+  "seg.beee8eda6466": {
+   "src": "Net quantity, MRP, a batch or lot number, and a best-before date.",
+   "t": "নেট পরিমাণ, MRP, ব্যাচ বা লট নম্বর, আর বেস্ট-বিফোর তারিখ।",
+   "back": "Net quantity, MRP, batch or lot number, and best-before date."
+  },
+  "seg.f9270fd96202": {
+   "src": "Where it was grown. Turmeric from different regions differs in colour, so a named region helps you compare like with like.",
+   "t": "কোথায় চাষ হয়েছে। আলাদা আলাদা অঞ্চলের হলুদের রং আলাদা হয়, তাই অঞ্চলের নাম লেখা থাকলে একই রকম জিনিসের মধ্যে তুলনা করতে সুবিধা হয়।",
+   "back": "Where it was grown. Turmeric from different regions differs in colour, so if the region's name is written, it helps to compare between similar things."
+  },
+  "seg.f11314eef092": {
+   "src": "Keep it well",
+   "t": "ভালো রাখার উপায়",
+   "back": "Ways to keep it well"
+  },
+  "seg.7cdc58c0c7e8": {
+   "src": "Keep the pack zipped shut, or move the powder to a dry, airtight jar.",
+   "t": "প্যাকের জিপ বন্ধ রাখুন, বা গুঁড়োটা একটা শুকনো, এয়ারটাইট বয়ামে সরিয়ে রাখুন।",
+   "back": "Keep the pack's zip closed, or move the powder into a dry, airtight jar."
+  },
+  "seg.bb4d61f86b55": {
+   "src": "Use a dry spoon. A damp spoon is what makes turmeric lumpy.",
+   "t": "শুকনো চামচ ব্যবহার করুন। ভেজা চামচ থেকেই হলুদে ডেলা পাকে।",
+   "back": "Use a dry spoon. It is from a wet spoon that turmeric forms lumps."
+  },
+  "seg.a92c022ff52e": {
+   "src": "Keep it out of direct sunlight, which fades the colour.",
+   "t": "সরাসরি রোদ থেকে দূরে রাখুন, রোদে রং ফিকে হয়ে যায়।",
+   "back": "Keep it away from direct sunlight; sunlight fades the colour."
+  },
+  "seg.6911ce63edde": {
+   "src": "Is very bright yellow turmeric a bad sign?",
+   "t": "খুব উজ্জ্বল হলুদ রঙের হলুদ কি খারাপ লক্ষণ?",
+   "back": "Is very bright yellow-coloured turmeric a bad sign?"
+  },
+  "seg.a0ce62cee740": {
+   "src": "Not by itself. Colour changes with the variety, where it was grown and how it was dried and ground, so turmerics differ a lot. What matters is colour that leaves the powder too easily, as in the water check.",
+   "t": "শুধু সেটুকু দিয়ে নয়। রং বদলায় জাত অনুযায়ী, কোথায় চাষ হয়েছে আর কীভাবে শুকিয়ে গুঁড়ো করা হয়েছে তার ওপর, তাই হলুদে হলুদে অনেক তফাত হয়। দেখার বিষয় হল গুঁড়ো থেকে খুব সহজে রং বেরিয়ে যাচ্ছে কি না, যেমন জলের পরীক্ষায় দেখা যায়।",
+   "back": "Not by that alone. Colour changes according to the variety, where it was grown and how it was dried and ground, so there is a lot of difference from turmeric to turmeric. The thing to look for is whether colour comes out of the powder very easily, as seen in the water test."
+  },
+  "seg.e8cc5edbb092": {
+   "src": "Can the water check show that turmeric has no lead?",
+   "t": "জলের পরীক্ষায় কি বোঝা যায় হলুদে সিসা নেই?",
+   "back": "Does the water test show that there is no lead in turmeric?"
+  },
+  "seg.37eb38df9ce8": {
+   "src": "No. Lead chromate does not dissolve in water, so the water check cannot see it. Only a lab test can.",
+   "t": "না। লেড ক্রোমেট জলে গলে না, তাই জলের পরীক্ষায় এটা ধরা পড়ে না। শুধু ল্যাবের পরীক্ষায় পড়ে।",
+   "back": "No. Lead chromate does not dissolve in water, so the water test does not catch it. Only a lab test does."
+  },
+  "seg.4c0bb3e9657c": {
+   "src": "Why does turmeric go lumpy?",
+   "t": "হলুদে ডেলা পাকে কেন?",
+   "back": "Why does turmeric form lumps?"
+  },
+  "seg.2b76cd3e665b": {
+   "src": "Moisture. A wet spoon or an open pack lets the powder take in water. Break the lumps with a dry spoon and keep the pack sealed.",
+   "t": "আর্দ্রতা। ভেজা চামচ বা খোলা প্যাক থেকে গুঁড়ো জল টেনে নেয়। শুকনো চামচ দিয়ে ডেলা ভেঙে দিন আর প্যাক বন্ধ রাখুন।",
+   "back": "Moisture. The powder pulls in water from a wet spoon or an open pack. Break up the lumps with a dry spoon and keep the pack closed."
+  },
+  "seg.87fe2929801d": {
+   "src": "What should I do if a check looks wrong?",
+   "t": "কোনো পরীক্ষায় গোলমাল মনে হলে কী করব?",
+   "back": "What should I do if something seems wrong in any test?"
+  },
+  "seg.e83aba6cc6df": {
+   "src": "Stop using that batch, keep the pack, and contact the seller with the batch number. You can also report it to FSSAI through its Food Safety Connect app. If it is ours, WhatsApp us a photo of the pack and the glass.",
+   "t": "ওই ব্যাচ ব্যবহার বন্ধ করুন, প্যাকটা রেখে দিন, আর ব্যাচ নম্বর সহ বিক্রেতার সঙ্গে যোগাযোগ করুন। FSSAI-এর Food Safety Connect অ্যাপেও জানাতে পারেন। আমাদের হলে প্যাক আর গ্লাসের একটা ছবি আমাদের WhatsApp করুন।",
+   "back": "Stop using that batch, keep the pack, and contact the seller with the batch number. You can also report it on FSSAI's Food Safety Connect app. If it is ours, WhatsApp us a photo of the pack and the glass."
+  },
+  "seg.ba0682e12278": {
+   "src": "Our turmeric",
+   "t": "আমাদের হলুদ",
+   "back": "Our turmeric"
+  },
+  "seg.1dd4194330b1": {
+   "src": "Try these checks on ours too. If anything looks off, ⟦1⟧WhatsApp us⟦/1⟧ a photo with the batch number from the pack.",
+   "t": "আমাদের হলুদেও এই পরীক্ষাগুলো করে দেখুন। কিছু গোলমাল মনে হলে প্যাকের ব্যাচ নম্বর সহ একটা ছবি ⟦1⟧আমাদের WhatsApp করুন⟦/1⟧।",
+   "back": "Try these tests on our turmeric too. If something seems wrong, ⟦1⟧WhatsApp us⟦/1⟧ a photo with the pack's batch number."
+  },
+  "seg.f803aad7e26d": {
+   "src": "Turmeric Adulteration Test at Home (Haldi, Pasupu) | 1acrefarms",
+   "t": "বাড়িতে হলুদে ভেজাল পরীক্ষা (হলদি, পাসুপু) | 1acrefarms",
+   "back": "Turmeric adulteration test at home (haldi, pasupu) | 1acrefarms"
+  },
+  "seg.7d95509f17be": {
+   "src": "How to check turmeric powder (haldi, pasupu) at home: the water check, what it misses, why the iodine test does not work on turmeric, and when you need a lab.",
+   "t": "বাড়িতে হলুদ গুঁড়ো (হলদি, পাসুপু) কীভাবে পরীক্ষা করবেন: জলের পরীক্ষা, তাতে কী ধরা পড়ে না, হলুদে আয়োডিন পরীক্ষা কেন কাজ করে না, আর কখন ল্যাবে যেতে হবে।",
+   "back": "How to test turmeric powder (haldi, pasupu) at home: the water test, what it does not catch, why the iodine test does not work on turmeric, and when you need to go to a lab."
+  },
+  "seg.d0950d598f8d": {
+   "src": "How to check turmeric powder at home · 1acrefarms",
+   "t": "বাড়িতে হলুদ গুঁড়ো কীভাবে পরীক্ষা করবেন · 1acrefarms",
+   "back": "How to test turmeric powder at home · 1acrefarms"
   }
  }
 }
