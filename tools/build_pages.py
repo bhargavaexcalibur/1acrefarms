@@ -231,6 +231,26 @@ RETURN_POLICY = {
 }
 
 
+VIDEOS_JSON = ROOT / "assets" / "video" / "videos.json"  # {name: {"secs", "date"}}, from docs/marketing/video/make_videos.py --web
+VIDEOS = json.loads(VIDEOS_JSON.read_text(encoding="utf-8")) if VIDEOS_JSON.exists() else {}
+
+
+def video_html(name, cls):
+    """A muted, click-to-play video with its poster frame; no text, so language pages need no new strings."""
+    if name not in VIDEOS:
+        return ""
+    return (f'<video class="{cls}" src="/assets/video/{name}.mp4" poster="/assets/video/{name}.jpg" '
+            f'width="960" height="540" controls muted playsinline preload="none"></video>')
+
+
+def video_ld(name, title, desc):
+    """schema.org VideoObject (title and description reuse strings the page already has)."""
+    v = VIDEOS[name]
+    return {"@type": "VideoObject", "name": title, "description": desc,
+            "thumbnailUrl": [f"{SITE}/assets/video/{name}.jpg"], "contentUrl": f"{SITE}/assets/video/{name}.mp4",
+            "uploadDate": v["date"], "duration": f"PT{round(v['secs'])}S"}
+
+
 def product_ld(p, facts):
     url = f"{SITE}/{p['slug']}/"
     ld = {
@@ -243,6 +263,8 @@ def product_ld(p, facts):
                 "alternateName": [p["local"], p["te"], p["hi"], p["hi_tr"]],
                 "description": text_of(p["lede"]),
                 "image": [f"{SITE}/assets/packs/{p['pack']}"],
+                **({"subjectOf": video_ld(f"pack-{p['slug']}", f"{p['name']} ({p['local']}) {p['g']} g", text_of(p["lede"]))}
+                   if f"pack-{p['slug']}" in VIDEOS else {}),
                 "sku": f"1AF-{p['code']}-{p['g']:04d}",
                 "brand": {"@type": "Brand", "name": "1acrefarms"},
                 "category": p["category"],
@@ -401,6 +423,7 @@ def page(p, live, facts, guides=(), recipes=()):
     <section class="pdp">
       <div class="pdp-media">
         <div class="pack-media"><img src="{img}" alt="{p['name']} ({p['local']}) {p['g']} g pack, front" width="800" height="1122" /></div>
+        {video_html(f"pack-{p['slug']}", "pack-video")}
       </div>
       <div class="pdp-info">
         <p class="eyebrow">{p['origin']}</p>

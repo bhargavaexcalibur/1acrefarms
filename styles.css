@@ -640,3 +640,9 @@ html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
 .i18n-more .btn { flex: 1 1 220px; }
 .rcp-shelf { font-size: 1.15rem; margin: 34px 0 16px; }
 .rcp-shelf span { color: var(--ink-soft); font-weight: 500; margin-left: 6px; }
+
+/* Recipe and pack videos (assets/video/, made by docs/marketing/video/make_videos.py) */
+.pack-video, .rcp-video { display: block; width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 10px; background: var(--green-deep); box-shadow: 0 10px 26px rgba(30,40,22,.12); }
+.pack-video { max-width: 420px; margin: 18px auto 0; }
+.rcp-video { margin: 22px 0 6px; }
+@media (max-width: 720px) { .pack-video { max-width: 100%; } }

@@ -652,6 +652,8 @@ def recipe_ld(r, url):
         "recipeIngredient": items(r),
         "recipeInstructions": [{"@type": "HowToStep", "position": i, "text": s, "url": f"{url}#step-{i}"}
                                for i, s in enumerate(r["steps"], 1)],
+        **({"video": bp.video_ld(f"recipe-{r['slug']}", r["name"], r["intro"][0])}
+           if f"recipe-{r['slug']}" in bp.VIDEOS else {}),
     }
 
 
@@ -716,6 +718,11 @@ def bullets(lines):
     return "\n".join(f"            <li>{e(x)}</li>" for x in lines)
 
 
+def video(r):
+    tag = bp.video_html(f"recipe-{r['slug']}", "rcp-video")
+    return f"\n      {tag}\n" if tag else ""
+
+
 def recipe_page(r, live):
     url = f"{SITE}/recipes/{r['slug']}/"
     img = f"/assets/recipes/{r['slug']}.png"
@@ -761,7 +768,7 @@ def recipe_page(r, live):
           <figcaption><span>The recipe card</span>Save it or send it to family. <a href="{img}">Open full size</a></figcaption>
         </figure>
       </header>
-
+{video(r)}
       <section class="rcp-quick" aria-label="In short">
         <p class="eyebrow">In short</p>
         <p>{e(r['quick'])}</p>
