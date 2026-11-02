@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "घी वा तेल",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "चिकनमे दही, तेजा मरचाइ बुकनी, हरदि बुकनी आ नोन मलि दिअ। 30 मिनट राखि दिअ। बर्तन झाँपि दिअ आ जा धरि राखल रहय, ता धरि फ्रिजमे राखू।",
+   "back": "Rub curd, Teja chilli powder, turmeric powder and salt into the chicken. Keep it for 30 minutes. Cover the vessel and for as long as it is kept, keep it in the fridge."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g माछक टुकड़ा ⟦1⟧कड़ा माछ, मोट टुकड़ामे काटल: रोहु, भाकुर (बोच्चा), कोरमीनु (सौरा) वा सुरमई (वंजरम)⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm fish, cut into thick pieces: rohu, bhakur (bochcha), korameenu (saura) or surmai (vanjaram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g इमली ⟦1⟧नेबो जतेक पैघ करीब दूटा गोला, 2 कप गुनगुन पानिमे 15 मिनट भिजाओल⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two balls as big as a lemon, soaked 15 minutes in 2 cups of lukewarm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "बचल माछ झाँपि कऽ फ्रिजमे राखू आ 2 दिनक भीतर खा लिअ। पैनमे धीरे-धीरे, बिनु चलौने, गरम करू, जा धरि भीतर धरि पूरा भाप उठय एहन गरम नहि भऽ जाय।",
+   "back": "Cover the leftover fish, keep it in the fridge and eat it within 2 days. Heat it in a pan slowly, without stirring, until it becomes so hot that steam rises fully right to the inside."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "मोट टुकड़ामे काटल कड़ा नदी वा समुद्रक माछ: रोहु, भाकुर (बोच्चा), सौरा (कोरमीनु) वा सुरमई। काँटबला छोट माछ सेहो चलैत अछि मुदा हल्लुक हाथ सँ सम्हारऽ पड़ैत अछि।",
+   "back": "Firm river or sea fish cut into thick pieces: rohu, bhakur (bochcha), saura (korameenu) or surmai. Small bony fish also work but have to be handled with a light hand."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "बचल पुलुसु झाँपि कऽ फ्रिजमे राखू आ 2 दिनक भीतर खा लिअ। पैनमे कनेक पानि डालि गरम करू, जा धरि भीतर धरि पूरा भाप उठय एहन गरम नहि भऽ जाय।",
+   "back": "Cover the leftover pulusu, keep it in the fridge and eat it within 2 days. Heat it in a pan adding a little water, until it becomes so hot that steam rises fully right to the inside."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "मटन वेपुडु: 500 g बिनु हड्डीक मटनकेँ मसाला आ ½ कप पानिक संग प्रेशर कुकरमे 5–6 सीटी धरि, नरम होबा धरि पकाउ, फेर ओहिना भूजू।",
+   "back": "Mutton vepudu: cook 500 g boneless mutton with the masala and ½ cup water in a pressure cooker for 5–6 whistles, until soft, then fry it the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "दुनू चलैत अछि। बिनु हड्डीक जल्दी पकैत अछि आ बेसी कुरकुर होइत अछि; हड्डीबला छोट टुकड़ामे बेसी स्वाद होइत अछि मुदा अपने रसमे 6–8 मिनट बेसी लगैत अछि।",
+   "back": "Both work. Boneless cooks quickly and becomes crispier; small bone-in pieces have more flavour but take 6–8 minutes more in their own juices."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "टिफिन बक्सा वा छोट यात्रा लेल पैक करू आ करीब 4 घंटाक भीतर खा लिअ। बचल भात झाँपि कऽ फ्रिजमे राखू आ एक दिनक भीतर खा लिअ।",
+   "back": "Pack it for a tiffin box or a short journey and eat within about 4 hours. Cover the leftover rice, keep it in the fridge and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "या तँ नेबोक रस पकि गेल, वा हरदि तेलमे जरि गेल। हरदि सभसँ अंतमे डालू, तुरंत चूल्हि बन्द करू आ मात्र 5–10 सेकेंड चलाउ; नेबोक रस आँच सँ उतारि कऽ भातमे डालू।",
+   "back": "Either the lemon juice got cooked, or the turmeric burnt in the oil. Add the turmeric at the very end, immediately turn off the stove and stir only 5–10 seconds; add the lemon juice to the rice after taking it off the heat."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "बाँकी एक कप पानि भारी तलीबला बर्तनमे ढारू; पातर बर्तनमे रागी तलीमे लागि जाइत अछि।",
+   "back": "Pour the remaining one cup of water into a heavy-bottomed vessel; in a thin vessel the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "की रागी जावामे कुसियारक गुड़ प्रयोग कऽ सकैत छी?",
+   "back": "Can sugarcane jaggery be used in ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "हँ। ओतबे कद्दूकस कयल कुसियारक गुड़ (चेरुकु बेल्लम) लिअ आ चूल्हि बन्द कयलाक बाद मिलाउ, जाहि सँ दूध नहि फाटय। एहि सँ रंग हल्लुक आ मिठास हल्लुक, कैरामेल सन होइत अछि।",
+   "back": "Yes. Take the same amount of grated sugarcane jaggery (cheruku bellam) and mix it in after turning off the stove, so that the milk does not split. With this the colour is light and the sweetness light, caramel-like."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "बचल झींगा झाँपि कऽ फ्रिजमे राखू आ 1 दिनक भीतर खा लिअ। पैनमे बस ता धरि गरम करू जा धरि भीतर धरि पूरा भाप उठय एहन गरम नहि भऽ जाय; बेसी काल गरम केने झींगा कड़ा भऽ जाइत अछि।",
+   "back": "Cover the leftover prawns, keep in the fridge and eat within 1 day. Heat in a pan only until it becomes so hot that steam rises fully right to the inside; heating for long makes the prawns hard."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "की कुसियारक गुड़ सँ सुन्नुंडलु बना सकैत छी?",
+   "back": "Can sunnundalu be made with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "हँ। कुसियारक गुड़ (चेरुकु बेल्लम) महीन कद्दूकस करू आ ताड़क गुड़ जतबे लिअ। लड्डूक रंग हल्लुक होइत अछि, आ मिठास हल्लुक, कैरामेल सन।",
+   "back": "Yes. Grate the sugarcane jaggery (cheruku bellam) finely and take as much as the palm jaggery. The laddus' colour is light, and the sweetness light, caramel-like."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "काँच लहसुन: बेसी तेज स्वाद लेल लहसुन गरम नहि करू; एकरा फ्रिजमे राखू आ 3 दिनक भीतर खा लिअ।",
+   "back": "Raw garlic: for a sharper taste do not heat the garlic; keep it in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "साफ, सुखल, हवाबन्द बोइयाममे फ्रिजमे राखू आ 2 सप्ताहक भीतर खा लिअ। सदिखन सुखल चम्मच लगाउ।",
+   "back": "Keep in a clean, dry, airtight jar in the fridge and eat within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "सुखल, हवाबन्द बोइयाममे फ्रिजमे 2 सप्ताह धरि। लहसुन नीक जकाँ सुखाउ आ पहिने तेलमे गरम करू, आ सदिखन सुखल चम्मच लगाउ।",
+   "back": "Up to 2 weeks in the fridge in a dry, airtight jar. Dry the garlic well and first heat it in oil, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "हँ। करीब 20 टा सुखल लाल मरचाइ किछु बुन्न तेलमे कुरकुर होबा धरि भूजू, ठंढ़ा करू आ लहसुन डालबा सँ पहिने पीसि लिअ।",
+   "back": "Yes. Fry about 20 dry red chillies in a few drops of oil until crisp, cool them and grind before adding the garlic."
   }
  }
 }

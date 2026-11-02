@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "ঘি বা তেল",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "মুরগিতে দই, তেজা লঙ্কা গুঁড়ো, হলুদ গুঁড়ো আর নুন মাখান। 30 মিনিট রেখে দিন। বাটি ঢেকে দিন, আর রেখে দেওয়ার পুরো সময়টা ফ্রিজে রাখুন।",
+   "back": "Rub curd, Teja chilli powder, turmeric powder and salt onto the chicken. Let it rest 30 minutes. Cover the bowl and keep it in the fridge for the whole resting time."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g মাছের টুকরো ⟦1⟧শক্ত মাছ, মোটা টুকরো করে কাটা: রুই, কাতলা (বোচ্চা), কোরামিনু (শোল) বা সুরমাই (ভাঞ্জারাম)⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm fish, cut into thick pieces: rohu, catla (boccha), koramenu (murrel) or surmai (vanjaram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g তেঁতুল ⟦1⟧লেবুর মাপের মোটামুটি দুটো গোলা, 2 কাপ গরম জলে 15 মিনিট ভেজানো⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked 15 minutes in 2 cups warm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "বেঁচে যাওয়াটা ঢেকে ফ্রিজে রাখুন আর 2 দিনের মধ্যে খেয়ে নিন। প্যানে আস্তে আস্তে, না নেড়ে, গরম করুন, যতক্ষণ না ভেতর পর্যন্ত পুরোটা ভাপ-ওঠা গরম হয়।",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Reheat gently in a pan, without stirring, until it is steaming hot all the way through."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "মোটা টুকরো করে কাটা শক্ত নদীর বা সমুদ্রের মাছ: রুই, কাতলা (বোচ্চা), শোল (কোরামিনু) বা সুরমাই। কাঁটাওয়ালা ছোট মাছও চলে, তবে আলতো হাতে সামলাতে হয়।",
+   "back": "Firm river or sea fish cut into thick pieces: rohu, catla (boccha), murrel (koramenu) or surmai. Small bony fish also work, but must be handled gently."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "বেঁচে যাওয়াটা ঢেকে ফ্রিজে রাখুন আর 2 দিনের মধ্যে খেয়ে নিন। প্যানে একটু জল দিয়ে পুলুসু গরম করুন, যতক্ষণ না ভেতর পর্যন্ত পুরোটা ভাপ-ওঠা গরম হয়।",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Reheat the pulusu in a pan with a little water until it is steaming hot all the way through."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "মাটন ভেপুডু: 500 g হাড় ছাড়া খাসির মাংস মাখানোর মশলা আর ½ কাপ জল দিয়ে প্রেশার কুকারে 5–6টি সিটি দিন, নরম হওয়া পর্যন্ত, তারপর একইভাবে ভাজুন।",
+   "back": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "দুটোই চলে। হাড় ছাড়া তাড়াতাড়ি রান্না হয় আর বেশি মচমচে হয়; হাড়সুদ্ধ ছোট টুকরোয় স্বাদ বেশি, কিন্তু নিজের রসে 6–8 মিনিট বেশি লাগে।",
+   "back": "Both work. Boneless cooks faster and gets crispier; small bone-in pieces have more flavour but need 6–8 more minutes in their own juices."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "টিফিন বক্সে বা অল্প সময়ের যাত্রায় নিলে মোটামুটি 4 ঘণ্টার মধ্যে খেয়ে নিন। বেঁচে যাওয়াটা ঢেকে ফ্রিজে রাখুন আর এক দিনের মধ্যে খেয়ে নিন।",
+   "back": "If packed for a tiffin box or a short trip, eat within about 4 hours. Cover the leftovers, keep in the fridge and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "হয় লেবুর রস রান্না হয়ে গেছে, নয়তো তেলে হলুদ পুড়ে গেছে। হলুদ সবার শেষে দিন, তার ঠিক পরেই উনুন বন্ধ করুন আর মাত্র 5–10 সেকেন্ড নাড়ুন; লেবুর রস আঁচ থেকে নামিয়ে ভাতে দিন।",
+   "back": "Either the lemon juice got cooked, or the turmeric burnt in the oil. Add turmeric at the very end, switch off the stove right after and stir only 5–10 seconds; add the lemon juice to the rice off the heat."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "বাকি এক কাপ জল একটা ভারী তলার প্যানে ঢালুন; পাতলা প্যানে রাগি তলায় লেগে যায়।",
+   "back": "Pour the remaining one cup of water into a heavy-bottomed pan; in a thin pan the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "রাগি জাভায় কি আখের গুড় দেওয়া যায়?",
+   "back": "Can I use sugarcane jaggery in ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "হ্যাঁ। একই পরিমাণ কুরানো আখের গুড় (চেরুকু বেল্লাম) নিন আর উনুন বন্ধ করার পরে মিশিয়ে দিন, যাতে দুধ কেটে না যায়। এতে রং হালকা হয় আর মিষ্টিটা নরম, ক্যারামেলের মতো।",
+   "back": "Yes. Take the same amount of grated sugarcane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not curdle. It gives a lighter colour and a soft, caramel-like sweetness."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "বেঁচে যাওয়াটা ঢেকে ফ্রিজে রাখুন আর 1 দিনের মধ্যে খেয়ে নিন। প্যানে শুধু ততক্ষণ গরম করুন যতক্ষণ না ভেতর পর্যন্ত পুরোটা ভাপ-ওঠা গরম হয়; বেশিক্ষণ গরম করলে চিংড়ি শক্ত হয়ে যায়।",
+   "back": "Cover the leftovers, keep in the fridge and eat within 1 day. Reheat in a pan only until it is steaming hot all the way through; heating too long makes the prawns tough."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "আখের গুড় দিয়ে কি সুন্নুন্ডালু বানানো যায়?",
+   "back": "Can I make sunnundalu with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "হ্যাঁ। আখের গুড় (চেরুকু বেল্লাম) মিহি করে কুরে তালের গুড়ের সমান পরিমাণে দিন। লাড্ডুর রং হালকা হয়, আর মিষ্টিটা নরম, ক্যারামেলের মতো।",
+   "back": "Yes. Finely grate sugarcane jaggery (cheruku bellam) and use the same amount as palm jaggery. The laddus come out lighter in colour, and the sweetness is soft, caramel-like."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "কাঁচা রসুন: আরও ঝাঁঝালো স্বাদের জন্য রসুন গরম করা বাদ দিন; ফ্রিজে রাখুন আর 3 দিনের মধ্যে খেয়ে নিন।",
+   "back": "Raw garlic: for a sharper taste skip heating the garlic; keep it in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "পরিষ্কার, শুকনো, এয়ারটাইট বয়ামে ফ্রিজে রাখুন আর 2 সপ্তাহের মধ্যে খেয়ে নিন। সবসময় শুকনো চামচ ব্যবহার করুন।",
+   "back": "Keep in a clean, dry, airtight jar in the fridge and eat within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "শুকনো, এয়ারটাইট বয়ামে ফ্রিজে 2 সপ্তাহ পর্যন্ত। রসুন ভালো করে শুকিয়ে আগে তেলে গরম করে নিন, আর সবসময় শুকনো চামচ ব্যবহার করুন।",
+   "back": "In a dry, airtight jar in the fridge for up to 2 weeks. Dry the garlic well and heat it in oil first, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "হ্যাঁ। প্রায় 20টি শুকনো লাল লঙ্কা কয়েক ফোঁটা তেলে মচমচে হওয়া পর্যন্ত ভেজে, ঠান্ডা করে গুঁড়ো করে নিন, তারপর রসুন দিন।",
+   "back": "Yes. Fry about 20 dried red chillies in a few drops of oil until crisp, cool, grind them, then add the garlic."
   }
  }
 }

@@ -6869,7 +6869,7 @@
   "seg.f95b0650add7": {
    "src": "With skin: use black split urad dal with its skin for darker, grainier sunnundalu, the way some village homes make them.",
    "t": "ಸಿಪ್ಪೆ ಸಹಿತ: ಕೆಲವು ಹಳ್ಳಿಯ ಮನೆಗಳಲ್ಲಿ ಮಾಡುವಂತೆ, ಕಡು ಬಣ್ಣದ, ತರಿತರಿಯಾದ ಸುನ್ನುಂಡಲಿಗೆ ಸಿಪ್ಪೆ ಸಹಿತ ಕಪ್ಪು ಉದ್ದಿನಬೇಳೆ ಬಳಸಿ.",
-   "back": ""
+   "back": "With skin: as made in some village homes, for dark, coarse sunnundalu use black urad dal with skin."
   },
   "seg.07498f6166e4": {
    "src": "With sugar: use ¾ cup powdered sugar in place of the jaggery for pale, crisp-melting laddus.",
@@ -6924,7 +6924,7 @@
   "seg.b12320430e22": {
    "src": "Both are made in Andhra. White skinless urad dal gives smooth, light brown laddus; black urad dal with skin gives darker, grainier ones.",
    "t": "ಆಂಧ್ರದಲ್ಲಿ ಎರಡೂ ರೀತಿ ಮಾಡುತ್ತಾರೆ. ಸಿಪ್ಪೆ ಇಲ್ಲದ ಬಿಳಿ ಉದ್ದಿನಬೇಳೆಯಿಂದ ನಯವಾದ, ತಿಳಿ ಕಂದು ಉಂಡೆಗಳು; ಸಿಪ್ಪೆ ಸಹಿತ ಕಪ್ಪು ಉದ್ದಿನಬೇಳೆಯಿಂದ ಕಡು ಬಣ್ಣದ, ತರಿತರಿಯಾದವು.",
-   "back": ""
+   "back": "Both ways are made in Andhra. Skinless white urad dal gives smooth, light brown balls; black urad dal with skin gives dark, coarse ones."
   },
   "seg.f79a055965d9": {
    "src": "సున్నుండలు · Sunnundalu Recipe | 1acrefarms",
@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "ತುಪ್ಪ ಅಥವಾ ಎಣ್ಣೆ",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "ಚಿಕನ್‌ಗೆ ಮೊಸರು, ತೇಜ ಮೆಣಸಿನ ಪುಡಿ, ಅರಿಶಿನ ಪುಡಿ ಮತ್ತು ಉಪ್ಪು ಹಚ್ಚಿ ಕಲಸಿ. 30 ನಿಮಿಷ ಹಾಗೇ ಇಡಿ. ಬಟ್ಟಲು ಮುಚ್ಚಿ, ಆ ಸಮಯದಲ್ಲಿ ಅದನ್ನು ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಡಿ.",
+   "back": "Apply curd, hot chilli powder, turmeric powder and salt to the chicken and mix. Leave it like that for 30 minutes. Cover the bowl and keep it in the fridge during that time."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g ಮೀನಿನ ತುಂಡುಗಳು ⟦1⟧ಗಟ್ಟಿ ಮೀನು, ದಪ್ಪ ತುಂಡುಗಳಾಗಿ ಕತ್ತರಿಸಿದ್ದು: ರೋಹು, ಕಾಟ್ಲಾ (ಬೊಚ್ಚ), ಕೊರಮೀನು (ಮರ್ರೆಲ್) ಅಥವಾ ಅಂಜಲ್ (ವಂಜರಂ)⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm fish, cut into thick pieces: rohu, katla (bocha), murrel (korameenu) or anjal (vanjaram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g ಹುಣಸೆಹಣ್ಣು ⟦1⟧ನಿಂಬೆಗಾತ್ರದ ಸುಮಾರು ಎರಡು ಉಂಡೆ, 2 ಕಪ್ ಉಗುರುಬೆಚ್ಚಗಿನ ನೀರಿನಲ್ಲಿ 15 ನಿಮಿಷ ನೆನೆಸಿದ್ದು⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked for 15 minutes in 2 cups of lukewarm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "ಉಳಿದದ್ದನ್ನು ಮುಚ್ಚಿ ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಟ್ಟು 2 ದಿನದೊಳಗೆ ತಿನ್ನಿ. ಬಾಣಲೆಯಲ್ಲಿ ನಿಧಾನವಾಗಿ, ಕಲಕದೆ, ಒಳಗಿನವರೆಗೂ ಪೂರ್ತಿ ಹಬೆಯಾಡುವಷ್ಟು ಬಿಸಿಯಾಗುವವರೆಗೆ ಬಿಸಿಮಾಡಿ.",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Reheat slowly in a pan, without stirring, until it is steaming hot all the way through to the inside."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "ದಪ್ಪ ತುಂಡುಗಳಾಗಿ ಕತ್ತರಿಸಿದ ಗಟ್ಟಿ ನದಿ ಅಥವಾ ಸಮುದ್ರದ ಮೀನು: ರೋಹು, ಕಾಟ್ಲಾ (ಬೊಚ್ಚ), ಮರ್ರೆಲ್ (ಕೊರಮೀನು) ಅಥವಾ ಅಂಜಲ್. ಮುಳ್ಳಿರುವ ಸಣ್ಣ ಮೀನುಗಳೂ ಆಗುತ್ತವೆ, ಆದರೆ ನಾಜೂಕಾಗಿ ನಿರ್ವಹಿಸಬೇಕು.",
+   "back": "Firm river or sea fish cut into thick pieces: rohu, katla (bocha), murrel (korameenu) or anjal. Small fish with bones also work, but must be handled delicately."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "ಉಳಿದದ್ದನ್ನು ಮುಚ್ಚಿ ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಟ್ಟು 2 ದಿನದೊಳಗೆ ತಿನ್ನಿ. ಪುಲುಸನ್ನು ಸ್ವಲ್ಪ ನೀರು ಹಾಕಿ ಬಾಣಲೆಯಲ್ಲಿ ಒಳಗಿನವರೆಗೂ ಪೂರ್ತಿ ಹಬೆಯಾಡುವಷ್ಟು ಬಿಸಿಯಾಗುವವರೆಗೆ ಬಿಸಿಮಾಡಿ.",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Reheat the pulusu with a little water in a pan until it is steaming hot all the way through to the inside."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "ಮಟನ್ ವೇಪುಡು: 500 g ಮೂಳೆ ಇಲ್ಲದ ಮಟನ್ ಅನ್ನು ನೆನೆಸುವ ಮಸಾಲೆ ಮತ್ತು ½ ಕಪ್ ನೀರಿನೊಂದಿಗೆ ಕುಕ್ಕರ್‌ನಲ್ಲಿ 5–6 ಸೀಟಿ, ಮೆತ್ತಗಾಗುವವರೆಗೆ ಬೇಯಿಸಿ, ನಂತರ ಇದೇ ರೀತಿ ಹುರಿಯಿರಿ.",
+   "back": "Mutton vepudu: cook 500 g boneless mutton with the marinade masala and ½ cup water in the cooker for 5–6 whistles, until soft, then fry the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "ಎರಡೂ ಆಗುತ್ತವೆ. ಮೂಳೆ ಇಲ್ಲದ್ದು ಬೇಗ ಬೇಯುತ್ತದೆ, ಹೆಚ್ಚು ಗರಿಗರಿಯಾಗುತ್ತದೆ; ಮೂಳೆ ಸಹಿತ ಸಣ್ಣ ತುಂಡುಗಳಿಗೆ ರುಚಿ ಹೆಚ್ಚು, ಆದರೆ ಅವುಗಳ ರಸದಲ್ಲಿ 6–8 ನಿಮಿಷ ಹೆಚ್ಚು ಬೇಯಬೇಕು.",
+   "back": "Both work. Boneless cooks quickly and becomes crispier; small bone-in pieces have more flavour, but need 6–8 minutes more cooking in their juices."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "ಊಟದ ಡಬ್ಬಿಗೆ ಅಥವಾ ಸಣ್ಣ ಪ್ರಯಾಣಕ್ಕೆ ಕಟ್ಟಿಕೊಂಡರೆ ಸುಮಾರು 4 ಗಂಟೆಯೊಳಗೆ ತಿನ್ನಿ. ಉಳಿದದ್ದನ್ನು ಮುಚ್ಚಿ ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಟ್ಟು ಒಂದು ದಿನದೊಳಗೆ ತಿನ್ನಿ.",
+   "back": "If packed for a lunch box or a short journey, eat within about 4 hours. Cover the leftovers, keep in the fridge and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "ನಿಂಬೆರಸ ಬೆಂದಿದ್ದರೆ ಅಥವಾ ಅರಿಶಿನ ಎಣ್ಣೆಯಲ್ಲಿ ಸೀದಿದ್ದರೆ. ಅರಿಶಿನವನ್ನು ಕೊನೆಯಲ್ಲಿ ಹಾಕಿ, ಕೂಡಲೇ ಒಲೆ ಆರಿಸಿ, ಕೇವಲ 5–10 ಸೆಕೆಂಡ್ ಕಲಕಿ; ನಿಂಬೆರಸವನ್ನು ಒಲೆಯಿಂದ ಇಳಿಸಿ ಅನ್ನಕ್ಕೆ ಹಾಕಿ.",
+   "back": "If the lemon juice got cooked or the turmeric burnt in the oil. Add the turmeric at the end, turn off the stove immediately, stir for only 5–10 seconds; take off the stove and add the lemon juice to the rice."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "ಉಳಿದ ಒಂದು ಕಪ್ ನೀರನ್ನು ದಪ್ಪ ತಳದ ಪಾತ್ರೆಗೆ ಸುರಿಯಿರಿ; ತೆಳು ಪಾತ್ರೆಯಲ್ಲಿ ರಾಗಿ ತಳ ಹಿಡಿಯುತ್ತದೆ.",
+   "back": "Pour the remaining one cup of water into a heavy-bottomed vessel; in a thin vessel the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "ರಾಗಿ ಜಾವಕ್ಕೆ ಕಬ್ಬಿನ ಬೆಲ್ಲ ಬಳಸಬಹುದೇ?",
+   "back": "Can sugarcane jaggery be used for ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "ಬಳಸಬಹುದು. ಅಷ್ಟೇ ಪ್ರಮಾಣದ ತುರಿದ ಕಬ್ಬಿನ ಬೆಲ್ಲ (ಚೆರುಕು ಬೆಲ್ಲಂ) ತೆಗೆದುಕೊಂಡು, ಹಾಲು ಒಡೆಯದಂತೆ ಒಲೆ ಆರಿಸಿದ ಮೇಲೆ ಬೆರೆಸಿ. ಇದರಿಂದ ಬಣ್ಣ ತಿಳಿಯಾಗಿ, ಹಗುರವಾದ, ಕ್ಯಾರಮೆಲ್‌ನಂಥ ಸಿಹಿ ಬರುತ್ತದೆ.",
+   "back": "It can be used. Take the same quantity of grated sugarcane jaggery (cheruku bellam) and mix it in after turning off the stove so the milk does not split. This gives a lighter colour and a light, caramel-like sweetness."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "ಉಳಿದದ್ದನ್ನು ಮುಚ್ಚಿ ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಟ್ಟು 1 ದಿನದೊಳಗೆ ತಿನ್ನಿ. ಬಾಣಲೆಯಲ್ಲಿ ಒಳಗಿನವರೆಗೂ ಪೂರ್ತಿ ಹಬೆಯಾಡುವಷ್ಟು ಬಿಸಿಯಾಗುವವರೆಗೆ ಮಾತ್ರ ಬಿಸಿಮಾಡಿ; ಹೆಚ್ಚು ಹೊತ್ತು ಬಿಸಿಮಾಡಿದರೆ ಸೀಗಡಿ ಗಟ್ಟಿಯಾಗುತ್ತದೆ.",
+   "back": "Cover the leftovers, keep in the fridge and eat within 1 day. Reheat in a pan only until it is steaming hot all the way through to the inside; if heated too long the prawns become tough."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "ಕಬ್ಬಿನ ಬೆಲ್ಲದಿಂದ ಸುನ್ನುಂಡಲು ಮಾಡಬಹುದೇ?",
+   "back": "Can sunnundalu be made with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "ಮಾಡಬಹುದು. ಕಬ್ಬಿನ ಬೆಲ್ಲವನ್ನು (ಚೆರುಕು ಬೆಲ್ಲಂ) ಸಣ್ಣಗೆ ತುರಿದು, ತಾಳೆ ಬೆಲ್ಲದಷ್ಟೇ ಪ್ರಮಾಣದಲ್ಲಿ ಬಳಸಿ. ಉಂಡೆಗಳು ತಿಳಿ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿ, ಹಗುರವಾದ, ಕ್ಯಾರಮೆಲ್‌ನಂಥ ಸಿಹಿ ಇರುತ್ತದೆ.",
+   "back": "It can be made. Grate the sugarcane jaggery (cheruku bellam) finely and use the same quantity as palm jaggery. The balls turn a light colour and have a light, caramel-like sweetness."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "ಹಸಿ ಬೆಳ್ಳುಳ್ಳಿ: ಹೆಚ್ಚು ಚುರುಕಾದ ರುಚಿಗೆ ಬೆಳ್ಳುಳ್ಳಿಯನ್ನು ಬೆಚ್ಚಗೆ ಮಾಡಬೇಡಿ; ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಟ್ಟು 3 ದಿನದೊಳಗೆ ತಿನ್ನಿ.",
+   "back": "Raw garlic: for a sharper taste do not warm the garlic; keep in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "ಸ್ವಚ್ಛವಾದ, ಒಣಗಿದ, ಗಾಳಿಯಾಡದ ಜಾಡಿಯಲ್ಲಿ ಫ್ರಿಜ್‌ನಲ್ಲಿ ಇಟ್ಟು 2 ವಾರದೊಳಗೆ ಬಳಸಿ. ಯಾವಾಗಲೂ ಒಣ ಚಮಚ ಬಳಸಿ.",
+   "back": "Keep in a clean, dry, airtight jar in the fridge and use within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "ಒಣಗಿದ, ಗಾಳಿಯಾಡದ ಜಾಡಿಯಲ್ಲಿ ಫ್ರಿಜ್‌ನಲ್ಲಿ 2 ವಾರದವರೆಗೆ. ಬೆಳ್ಳುಳ್ಳಿಯನ್ನು ಚೆನ್ನಾಗಿ ಒಣಗಿಸಿ ಮೊದಲು ಎಣ್ಣೆಯಲ್ಲಿ ಬೆಚ್ಚಗೆ ಮಾಡಿ, ಮತ್ತು ಯಾವಾಗಲೂ ಒಣ ಚಮಚ ಬಳಸಿ.",
+   "back": "Up to 2 weeks in the fridge in a dry, airtight jar. Dry the garlic well and first warm it in oil, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "ಬಳಸಬಹುದು. ಸುಮಾರು 20 ಒಣ ಕೆಂಪು ಮೆಣಸಿನಕಾಯಿಯನ್ನು ಕೆಲವು ಹನಿ ಎಣ್ಣೆಯಲ್ಲಿ ಗರಿಗರಿಯಾಗುವವರೆಗೆ ಹುರಿದು, ತಣ್ಣಗಾಗಿಸಿ, ಬೆಳ್ಳುಳ್ಳಿ ಹಾಕುವ ಮೊದಲು ಪುಡಿಮಾಡಿ.",
+   "back": "It can be used. Fry about 20 dry red chillies in a few drops of oil until crisp, cool them, and powder them before adding the garlic."
   }
  }
 }

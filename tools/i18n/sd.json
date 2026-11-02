@@ -2864,7 +2864,7 @@
   "seg.b4fe3cc46ec4": {
    "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge if your kitchen is hot.",
    "t": "ڪڪڙ تي ڏهي، تيجا مرچ پائوڊر، هيڊ پائوڊر ۽ لوڻ مکيو. 30 منٽ ڇڏي ڏيو. جيڪڏهن رڌڻي گرم هجي ته پيالو ڍڪي فرج ۾ رکو.",
-   "back": ""
+   "back": "Rub curd, Teja chilli powder, turmeric powder and salt onto the chicken. Leave for 30 minutes. If the kitchen is hot, cover the bowl and keep it in the fridge."
   },
   "seg.217eb90c7dac": {
    "src": "Heat the oil in a heavy pan or kadai on medium heat. Add the cloves, cardamoms and cinnamon and let them sizzle for a few seconds.",
@@ -3553,8 +3553,8 @@
   },
   "seg.9fed4db6e81b": {
    "src": "Check one piece at the thickest part: the fish is cooked when the flesh is white or opaque right through and comes away from the bone easily.",
-   "t": "هڪ ٽڪرو سڀ کان ٿلهي حصي کان ڏسو: مڇي تڏهن پچيل آهي جڏهن گوشت اندر تائين اڇو يا شفاف نه رهي ۽ هڏيءَ کان آسانيءَ سان الڳ ٿي وڃي.",
-   "back": ""
+   "t": "هڪ ٽڪرو سڀ کان ٿلهي حصي کان ڏسو: مڇي تڏهن پچيل آهي جڏهن گوشت اندر تائين اڇو ٿي وڃي ۽ آرپار نظر نه اچي، ۽ هڏيءَ کان آسانيءَ سان الڳ ٿي وڃي.",
+   "back": "Check one piece at its thickest part: the fish is cooked when the flesh has turned white all the way inside and is not see-through, and comes away from the bone easily."
   },
   "seg.8a5166c34dc3": {
    "src": "Sprinkle the coriander leaves, switch off and let the pulusu rest at least 30 minutes, covered, before serving.",
@@ -6588,8 +6588,8 @@
   },
   "seg.af87e48d1429": {
    "src": "Check doneness: prawns are cooked when they are pink and opaque all the way through and curled into a loose C. Cut one open if unsure; there should be no grey, see-through centre.",
-   "t": "پچڻ جي جانچ ڪريو: جهينگا تڏهن پچيل آهن جڏهن اندر تائين گلابي ۽ شفاف نه رهن ۽ ڍلي C جي شڪل ۾ ڪُنڊ ٿي وڃن. پڪ نه هجي ته هڪ کي ڪٽي ڏسو؛ وچ ۾ ڪو ڀورو، آرپار نظر ايندڙ حصو نه هجي.",
-   "back": ""
+   "t": "پچڻ جي جانچ ڪريو: جهينگا تڏهن پچيل آهن جڏهن اندر تائين گلابي ٿي وڃن ۽ آرپار نظر نه اچن، ۽ ڍلي C جي شڪل ۾ ڪُنڊ ٿي وڃن. پڪ نه هجي ته هڪ کي ڪٽي ڏسو؛ وچ ۾ ڪو ڀورو، آرپار نظر ايندڙ حصو نه هجي.",
+   "back": "Check doneness: the prawns are cooked when they turn pink all the way inside and are not see-through, and curl into a loose C shape. If unsure, cut one and look; there should be no grey, see-through part in the centre."
   },
   "seg.32e58c09609e": {
    "src": "Taste for salt, scatter the coriander leaves and switch off. Do not keep cooking once the prawns are done, or they turn rubbery.",
@@ -6648,8 +6648,8 @@
   },
   "seg.45cd36ecb77b": {
    "src": "They turn pink and opaque all the way through and curl into a loose C shape, usually in 5–6 minutes in the hot masala. A grey, see-through centre means they need a little longer.",
-   "t": "اهي اندر تائين گلابي ۽ شفاف نه رهن ٿا ۽ ڍلي C جي شڪل ۾ ڪُنڊ ٿي وڃن ٿا، عام طور گرم مصالحي ۾ 5–6 منٽن ۾. وچ ۾ ڀورو، آرپار نظر ايندڙ حصو هجي ته ٿورو وڌيڪ پچائڻ گهرجي.",
-   "back": ""
+   "t": "اهي اندر تائين گلابي ٿي وڃن ٿا ۽ آرپار نظر نٿا اچن، ۽ ڍلي C جي شڪل ۾ ڪُنڊ ٿي وڃن ٿا، عام طور گرم مصالحي ۾ 5–6 منٽن ۾. وچ ۾ ڀورو، آرپار نظر ايندڙ حصو هجي ته ٿورو وڌيڪ پچائڻ گهرجي.",
+   "back": "They turn pink all the way inside and are not see-through, and curl into a loose C shape, usually in 5–6 minutes in the hot masala. If there is a grey, see-through part in the centre, cook a little longer."
   },
   "seg.2e4c4a4632d7": {
    "src": "What is the difference between iguru and vepudu?",
@@ -7444,7 +7444,7 @@
   "seg.562abdd39933": {
    "src": "About 4 whistles on medium heat, then let the pressure drop on its own. Older dal or dal that was not washed well may need 5.",
    "t": "وچولي باهه تي لڳ ڀڳ 4 سيٽيون، پوءِ دٻاءُ پاڻمرادو لهڻ ڏيو. پراڻي دال يا چڱيءَ طرح نه ڌوتل دال کي 5 گهرجن.",
-   "back": ""
+   "back": "About 4 whistles on medium heat, then let the pressure drop on its own. Older dal or dal that was not washed well may need 5."
   },
   "seg.6a800f643cf1": {
    "src": "What is the difference between tomato pappu and sambar?",
@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "گيهه يا تيل",
    "back": "ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "ڪڪڙ تي ڏهي، تيجا مرچ پائوڊر، هيڊ پائوڊر ۽ لوڻ مکيو. 30 منٽ ڇڏي ڏيو. ان دوران پيالو ڍڪي فرج ۾ رکو.",
+   "back": "Rub curd, Teja chilli powder, turmeric powder and salt onto the chicken. Leave for 30 minutes. Meanwhile cover the bowl and keep it in the fridge."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g مڇيءَ جا ٽڪرا ⟦1⟧ٿلهن ٽڪرن ۾ ڪٽيل سخت گوشت واري مڇي: روهو، ڪتلا (بوچا)، ڪورامينو (مرل) يا سير مڇي (ونجارم)⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm-fleshed fish cut into thick pieces: rohu, katla (bocha), koramenu (murrel) or seer fish (vanjaram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g املي ⟦1⟧لڳ ڀڳ ليمي جيڏا ٻه گولا، 2 ڪپ ڪوسي پاڻيءَ ۾ 15 منٽ پسايل⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked 15 minutes in 2 cups of lukewarm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "بچيل سالڻ فرج ۾ ڍڪي رکو ۽ 2 ڏينهن اندر کائو. پين ۾ هلڪي باهه تي، هلائڻ کان سواءِ ايترو ٻيهر گرم ڪريو جو اندر تائين پورو ٻاڦ ڇڏيندڙ گرم ٿي وڃي.",
+   "back": "Keep leftover curry covered in the fridge and eat within 2 days. Reheat in a pan on low heat, without stirring, until it is steaming hot all the way through."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "ٿلهن ٽڪرن ۾ ڪٽيل سخت گوشت واري درياهي يا سمنڊ جي مڇي: روهو، ڪتلا (بوچا)، مرل (ڪورامينو) يا سير مڇي. ننڍيون ڪنڊن واريون مڇيون به ٺيڪ آهن پر آهستگيءَ سان سنڀالڻيون پون ٿيون.",
+   "back": "Thick pieces of firm-fleshed river or sea fish: rohu, katla (bocha), murrel (koramenu) or seer fish. Small bony fish also work but need to be handled gently."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "بچيل سالڻ فرج ۾ ڍڪي رکو ۽ 2 ڏينهن اندر کائو. پلوسو کي پين ۾ ٿورو پاڻي وجهي ايترو گرم ڪريو جو اندر تائين پورو ٻاڦ ڇڏيندڙ گرم ٿي وڃي.",
+   "back": "Keep leftover curry covered in the fridge and eat within 2 days. Heat the pulusu in a pan with a little water until it is steaming hot all the way through."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "مٽن ويپوڊو: 500 g هڏين کان سواءِ ٻڪريءَ جو گوشت مصالحي ۽ ½ ڪپ پاڻيءَ سان پريشر ڪُڪر ۾ 5–6 سيٽين تائين، نرم ٿيڻ تائين پچايو، پوءِ ساڳيءَ طرح تريو.",
+   "back": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "ٻئي ٺيڪ آهن. هڏين کان سواءِ جلدي پچي ٿو ۽ وڌيڪ ڪُرڪُرو ٿئي ٿو؛ هڏين سميت ننڍن ٽڪرن ۾ ذائقو وڌيڪ آهي پر انهن کي پنهنجي رس ۾ 6–8 منٽ وڌيڪ گهرجن.",
+   "back": "Both work. Boneless cooks faster and becomes crispier; small bone-in pieces have more flavour but need 6–8 minutes more in their own juices."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "لنچ باڪس يا ننڍي سفر لاءِ ٻڌو ته لڳ ڀڳ 4 ڪلاڪن اندر کائو. بچيل فرج ۾ ڍڪي رکو ۽ هڪ ڏينهن اندر کائو.",
+   "back": "If packing for a lunch box or a short trip, eat within about 4 hours. Keep leftovers covered in the fridge and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "يا ته ليمي جي رس پچي وئي يا هيڊ تيل ۾ سڙي وئي. هيڊ سڀ کان آخر ۾ وجهو، ترت چُلهه بند ڪريو ۽ رڳو 5–10 سيڪنڊ هلايو؛ ليمي جي رس باهه کان پري، چانورن ۾ وجهو.",
+   "back": "Either the lemon juice got cooked or the turmeric burnt in the oil. Add the turmeric last of all, switch off the stove immediately and stir only 5–10 seconds; add the lemon juice to the rice away from the heat."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "ٻيو ڪپ پاڻي ڳري تري واري پين ۾ وجهو؛ سنهي پين ۾ راگي تري ۾ لڳي وڃي ٿي.",
+   "back": "Pour the second cup of water into a heavy-bottomed pan; in a thin pan the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "ڇا راگي جاوا ۾ ڪمند جو ڳڙ وجهي سگهجي ٿو؟",
+   "back": "Can sugarcane jaggery be added to ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "ها. اوترو ئي ڪدوڪش ڪيل ڪمند جو ڳڙ (چيروڪو بيلّم) وٺو ۽ چُلهه بند ڪرڻ کان پوءِ ملايو، ته کير نه ڦاٽي. اهو هلڪو رنگ ۽ هلڪي، ڪيريمل جهڙي مٺاڻ ڏئي ٿو.",
+   "back": "Yes. Take the same amount of grated sugarcane jaggery (cheruku bellam) and mix it in after switching off the stove, so the milk does not split. It gives a lighter colour and a light, caramel-like sweetness."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "بچيل فرج ۾ ڍڪي رکو ۽ 1 ڏينهن اندر کائو. پين ۾ رڳو ايترو گرم ڪريو جو اندر تائين پورو ٻاڦ ڇڏيندڙ گرم ٿي وڃي؛ ان کان وڌيڪ دير ٻيهر گرم ڪرڻ سان جهينگا سخت ٿي وڃن ٿا.",
+   "back": "Keep leftovers covered in the fridge and eat within 1 day. Heat in a pan only until steaming hot all the way through; reheating longer than that makes the prawns tough."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "ڇا ڪمند جي ڳڙ سان سنّنڊلو ٺاهي سگهجن ٿا؟",
+   "back": "Can sunnundalu be made with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "ها. ڪمند جو ڳڙ (چيروڪو بيلّم) سنهو ڪدوڪش ڪريو ۽ تاڙ جي ڳڙ جيترو ئي وجهو. لڏو هلڪي رنگ جا ٿين ٿا ۽ مٺاڻ هلڪي، ڪيريمل جهڙي.",
+   "back": "Yes. Finely grate sugarcane jaggery (cheruku bellam) and use the same amount as palm jaggery. The laddus come out lighter in colour and the sweetness is light, caramel-like."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "ڪچو ٿوم: تيز ذائقي لاءِ ٿوم گرم نه ڪريو؛ فرج ۾ رکو ۽ 3 ڏينهن اندر کائو.",
+   "back": "Raw garlic: for a sharper flavour do not heat the garlic; keep in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "صاف، سُڪي، هوا بند جار ۾ فرج ۾ رکو ۽ 2 هفتن اندر استعمال ڪريو. هميشه سُڪو چمچو استعمال ڪريو.",
+   "back": "Keep in a clean, dry, airtight jar in the fridge and use within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "سُڪي، هوا بند جار ۾ فرج ۾ 2 هفتن تائين. ٿوم چڱيءَ طرح سُڪايو ۽ پهريان تيل ۾ گرم ڪريو، ۽ هميشه سُڪو چمچو استعمال ڪريو.",
+   "back": "In a dry, airtight jar in the fridge for up to 2 weeks. Dry the garlic well and heat it in oil first, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "ها. لڳ ڀڳ 20 سُڪل ڳاڙها مرچ تيل جي ڪجهه ڦڙن ۾ ڪُرڪُرا ٿيڻ تائين ڀُڃيو، ٿڌا ڪري ٿوم وجهڻ کان اڳ پيهيو.",
+   "back": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind before adding the garlic."
   }
  }
 }

@@ -3378,8 +3378,8 @@
   },
   "seg.0fff539adaed": {
    "src": "Chepala pulusu is the tamarind fish curry of coastal Andhra, made with special care in the Godavari districts: thick fish steaks simmered in a sour, red tamarind gravy with onions, green chillies and curry leaves. It is a Sunday lunch dish, and many homes cook it in a clay pot and keep it for the next day, when the gravy has soaked into the fish.",
-   "t": "চেপালা পুলুচু হৈছে উপকূলীয় অন্ধ্ৰৰ তেঁতেলীৰ মাছৰ আঞ্জা, গোদাবৰী জিলাসমূহত বিশেষ যত্নেৰে ৰন্ধা হয়: ডাঠ ডাঠ মাছৰ টুকুৰা টে�ঙা, ৰঙা তেঁতেলীৰ জোলত পিঁয়াজ, কেঁচা জলকীয়া আৰু নৰসিংহ পাতৰ সৈতে উতলোৱা। এইটো দেওবাৰৰ দুপৰীয়াৰ ব্যঞ্জন, আৰু বহুতো ঘৰত মাটিৰ চৰুত ৰান্ধি পিছদিনাৰ বাবে ৰাখি দিয়ে, তেতিয়া জোলখিনি মাছৰ ভিতৰলৈ সোমাই যায়।",
-   "back": ""
+   "t": "চেপালা পুলুচু হৈছে উপকূলীয় অন্ধ্ৰৰ তেঁতেলীৰ মাছৰ আঞ্জা, গোদাবৰী জিলাসমূহত বিশেষ যত্নেৰে ৰন্ধা হয়: ডাঠ ডাঠ মাছৰ টুকুৰা টেঙা, ৰঙা তেঁতেলীৰ জোলত পিঁয়াজ, কেঁচা জলকীয়া আৰু নৰসিংহ পাতৰ সৈতে লাহে লাহে উতলোৱা। এইটো দেওবাৰৰ দুপৰীয়াৰ ব্যঞ্জন, আৰু বহুতো ঘৰত মাটিৰ চৰুত ৰান্ধি পিছদিনাৰ বাবে ৰাখি দিয়ে, তেতিয়ালৈ জোলখিনি মাছৰ ভিতৰলৈ সোমাই যায়।",
+   "back": "Chepala pulusu is coastal Andhra's tamarind fish curry, cooked with special care in the Godavari districts: thick firm fish pieces simmered slowly in a sour, red tamarind gravy with onion, green chilli and curry leaves. It is a Sunday-afternoon dish, and many homes cook it in a clay pot and keep it for the next day, by which time the gravy soaks into the fish."
   },
   "seg.17fc336d9c12": {
    "src": "Our turmeric powder goes into the marinade and the gravy. Sannam chilli powder gives the pulusu its deep red colour and a steady heat that balances the tamarind. This recipe serves 4.",
@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "ঘিঁউ বা তেল",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "কুকুৰা মাংসত দৈ, তেজা জলকীয়া গুড়ি, হালধি গুড়ি আৰু নিমখ সানক। 30 মিনিট ৰাখি দিয়ক। বাটিটো ঢাকি দিয়ক, আৰু ৰাখি থোৱা সময়খিনি ফ্ৰীজত ৰাখক।",
+   "back": "Rub curd, Teja chilli powder, turmeric powder and salt onto the chicken. Let it rest 30 minutes. Cover the bowl and keep it in the fridge for the whole resting time."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g মাছৰ টুকুৰা ⟦1⟧টান মাছ, ডাঠ টুকুৰা কৰি কটা: ৰৌ, ভকুৱা (বোচ্চা), কোৰামিনু (শল) বা চুৰমাই (ভাঞ্জাৰাম)⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm fish, cut into thick pieces: rohu, catla (boccha), koramenu (murrel) or surmai (vanjaram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g তেঁতেলী ⟦1⟧নেমুৰ আকাৰৰ প্ৰায় দুটা গোলা, 2 কাপ কুহুমীয়া পানীত 15 মিনিট তিয়াই ৰখা⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked 15 minutes in 2 cups warm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "বাকী থকাখিনি ঢাকি ফ্ৰীজত ৰাখক আৰু 2 দিনৰ ভিতৰত খাই লওক। পেনত লাহে লাহে, নালৰাকৈ, গৰম কৰক, যেতিয়ালৈকে ভিতৰলৈকে গোটেইখিনি ভাপ ওলোৱা গৰম নহয়।",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Reheat gently in a pan, without stirring, until it is steaming hot all the way through."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "ডাঠ টুকুৰা কৰি কটা টান নদী বা সাগৰৰ মাছ: ৰৌ, ভকুৱা (বোচ্চা), শল (কোৰামিনু) বা চুৰমাই। কাঁইটীয়া সৰু মাছো চলে, কিন্তু লাহেকৈ চম্ভালিব লাগে।",
+   "back": "Firm river or sea fish cut into thick pieces: rohu, catla (boccha), murrel (koramenu) or surmai. Small bony fish also work, but must be handled gently."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "বাকী থকাখিনি ঢাকি ফ্ৰীজত ৰাখক আৰু 2 দিনৰ ভিতৰত খাই লওক। পেনত অলপ পানী দি পুলুচু গৰম কৰক, যেতিয়ালৈকে ভিতৰলৈকে গোটেইখিনি ভাপ ওলোৱা গৰম নহয়।",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Reheat the pulusu in a pan with a little water until it is steaming hot all the way through."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "মাটন ৱেপুডু: 500 g হাড় নোহোৱা ছাগলীৰ মাংস সনা মছলা আৰু ½ কাপ পানীৰ সৈতে প্ৰেচাৰ কুকাৰত 5–6টা চিটি দিয়ক, কোমল নোহোৱালৈকে, তাৰ পিছত একেদৰে ভাজক।",
+   "back": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "দুয়োটাই চলে। হাড় নোহোৱাটো সোনকালে সিজে আৰু বেছি কুৰুকুৰীয়া হয়; হাড়সহ সৰু টুকুৰাত সোৱাদ বেছি, কিন্তু নিজৰ ৰসত 6–8 মিনিট বেছি লাগে।",
+   "back": "Both work. Boneless cooks faster and gets crispier; small bone-in pieces have more flavour but need 6–8 more minutes in their own juices."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "টিফিন বাকচ বা চুটি যাত্ৰাৰ বাবে বান্ধি লৈ গ’লে প্ৰায় 4 ঘণ্টাৰ ভিতৰত খাই লওক। বাকী থকাখিনি ঢাকি ফ্ৰীজত ৰাখক আৰু এদিনৰ ভিতৰত খাই লওক।",
+   "back": "If packed for a tiffin box or a short trip, eat within about 4 hours. Cover the leftovers, keep in the fridge and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "হয় নেমুৰ ৰস ৰন্ধা হৈ গৈছিল, নহয় তেলত হালধি পুৰি গৈছিল। হালধি একেবাৰে শেষত দিয়ক, তাৰ পিছতে চুলা নুমাওক আৰু মাত্ৰ 5–10 ছেকেণ্ড লৰাওক; নেমুৰ ৰস জুইৰ পৰা নমাই ভাতত দিয়ক।",
+   "back": "Either the lemon juice got cooked, or the turmeric burnt in the oil. Add turmeric at the very end, switch off the stove right after and stir only 5–10 seconds; add the lemon juice to the rice off the heat."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "বাকী এক কাপ পানী এখন গধুৰ তলিৰ পেনত ঢালক; পাতল পেনত ৰাগী তলিত লাগি যায়।",
+   "back": "Pour the remaining one cup of water into a heavy-bottomed pan; in a thin pan the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "ৰাগী জাৱাত কুঁহিয়াৰৰ গুড় দিব পাৰিনে?",
+   "back": "Can I use sugarcane jaggery in ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "পাৰি। একে পৰিমাণৰ খুৰুচা কুঁহিয়াৰৰ গুড় (চেৰুকু বেল্লাম) লওক আৰু চুলা নুমোৱাৰ পিছত মিহলাই দিয়ক, যাতে গাখীৰ ফাটি নাযায়। ইয়াৰে ৰং পাতল হয় আৰু মিঠা সোৱাদ কোমল, কেৰামেলৰ দৰে।",
+   "back": "Yes. Take the same amount of grated sugarcane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not curdle. It gives a lighter colour and a soft, caramel-like sweetness."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "বাকী থকাখিনি ঢাকি ফ্ৰীজত ৰাখক আৰু 1 দিনৰ ভিতৰত খাই লওক। পেনত কেৱল তেতিয়ালৈকে গৰম কৰক যেতিয়ালৈকে ভিতৰলৈকে গোটেইখিনি ভাপ ওলোৱা গৰম নহয়; বেছি সময় গৰম কৰিলে মিছামাছ টান হৈ যায়।",
+   "back": "Cover the leftovers, keep in the fridge and eat within 1 day. Reheat in a pan only until it is steaming hot all the way through; heating too long makes the prawns tough."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "কুঁহিয়াৰৰ গুড়েৰে চুন্নুণ্ডালু বনাব পাৰিনে?",
+   "back": "Can I make sunnundalu with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "পাৰি। কুঁহিয়াৰৰ গুড় (চেৰুকু বেল্লাম) মিহিকৈ খুৰুচি তালৰ গুড়ৰ সমান পৰিমাণে দিয়ক। লাড়ুৰ ৰং পাতল হয়, আৰু মিঠা সোৱাদ কোমল, কেৰামেলৰ দৰে।",
+   "back": "Yes. Finely grate sugarcane jaggery (cheruku bellam) and use the same amount as palm jaggery. The laddus come out lighter in colour, and the sweetness is soft, caramel-like."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "কেঁচা নহৰু: আৰু ঝাঁজাল সোৱাদৰ বাবে নহৰু গৰম কৰাটো বাদ দিয়ক; ফ্ৰীজত ৰাখক আৰু 3 দিনৰ ভিতৰত খাই লওক।",
+   "back": "Raw garlic: for a sharper taste skip heating the garlic; keep it in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "পৰিষ্কাৰ, শুকান, এয়াৰটাইট বটলত ফ্ৰীজত ৰাখক আৰু 2 সপ্তাহৰ ভিতৰত খাই শেষ কৰক। সদায় শুকান চামুচ ব্যৱহাৰ কৰক।",
+   "back": "Keep in a clean, dry, airtight bottle in the fridge and finish within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "শুকান, এয়াৰটাইট বটলত ফ্ৰীজত 2 সপ্তাহলৈকে। নহৰু ভালকৈ শুকুৱাই আগতে তেলত গৰম কৰি লওক, আৰু সদায় শুকান চামুচ ব্যৱহাৰ কৰক।",
+   "back": "In a dry, airtight bottle in the fridge up to 2 weeks. Dry the garlic well and heat it in oil first, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "পাৰি। প্ৰায় 20টা শুকান ৰঙা জলকীয়া কেইটোপালমান তেলত কুৰুকুৰীয়া নোহোৱালৈকে ভাজি, চেঁচা কৰি গুড়ি কৰি লওক, তাৰ পিছত নহৰু দিয়ক।",
+   "back": "Yes. Fry about 20 dried red chillies in a few drops of oil until crisp, cool, grind them, then add the garlic."
   }
  }
 }

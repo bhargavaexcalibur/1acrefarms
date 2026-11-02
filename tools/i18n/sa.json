@@ -5588,8 +5588,8 @@
   },
   "seg.d72b3c1c529a": {
    "src": "Grind the fry masala just before you cook; the roasted spice smell is the soul of a good vepudu.",
-   "t": "पाकात् किञ्चित् पूर्वम् एव भर्जनमसालां पिनष्टु; भृष्टमसालागन्धः एव उत्तमस्य वेपुडोः आत्मा।",
-   "back": "Grind the roasted masala only a little before cooking; the smell of freshly roasted masala is the soul of a good vepudu."
+   "t": "पाकात् किञ्चित् पूर्वम् एव भर्जनमसालां पिनष्टु; भृष्टमसालानां गन्धः एव उत्तमस्य वेपुडोः आत्मा।",
+   "back": "Grind the roasting masala only a little before cooking; the aroma of roasted spices is the very soul of a good vepudu."
   },
   "seg.62d6684e446e": {
    "src": "Bone-in: use 600 g small bone-in pieces and cook them in their juices for 18–20 minutes, until no pink remains near the bone.",
@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "घृतं तैलं वा",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "कुक्कुटमांसे दधि, तेजा-रक्तमरिचचूर्णं, हरिद्राचूर्णं, लवणं च मर्दयतु। 30 निमेषान् स्थापयतु। तावत्कालं पात्रम् आच्छाद्य शीतकपेटिकायां स्थापयतु।",
+   "back": "Rub curd, Teja red chilli powder, turmeric powder and salt into the chicken. Keep for 30 minutes. For that time cover the vessel and keep it in the refrigerator."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g मत्स्यखण्डाः ⟦1⟧दृढमांसः मत्स्यः स्थूलखण्डेषु कर्तितः: रोहितः, कतला (बोच्चा), कोरमीनु (मरेल्), सीर्-मत्स्यः (वंजरम्) वा⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm-fleshed fish cut into thick pieces: rohu, catla (boccha), korameenu (murrel), or seer fish (vanjaram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g चिञ्चा ⟦1⟧प्रायः जम्बीरप्रमाणौ द्वौ गोलौ, 2 चषकेषु कोष्णजलेषु 15 निमेषान् आर्द्रीकृतौ⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked 15 minutes in 2 cups of lukewarm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "अवशिष्टम् आच्छाद्य शीतकपेटिकायां स्थापयतु 2 दिनेषु च भक्षयतु। स्थाल्याम् अचालयन् मन्दं पुनः तापयतु, यावत् अन्तः अपि सर्वत्र बाष्पायमानम् उष्णं भवति।",
+   "back": "Cover the leftover, keep in the refrigerator and eat within 2 days. In a pan, without stirring, reheat gently until it becomes steaming hot everywhere, even inside."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "स्थूलखण्डेषु कर्तिताः नदीसमुद्रयोः दृढमांसाः मत्स्याः: रोहितः, कतला (बोच्चा), मरेल् (कोरमीनु), सीर्-मत्स्यः वा। कण्टकयुक्ताः लघुमत्स्याः अपि उपयुज्यन्ते, किन्तु मृदु व्यवहर्तव्याः।",
+   "back": "Firm-fleshed river and sea fish cut into thick pieces: rohu, catla (boccha), murrel (korameenu), or seer fish. Small bony fish are also usable, but must be handled gently."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "अवशिष्टम् आच्छाद्य शीतकपेटिकायां स्थापयतु 2 दिनेषु च भक्षयतु। पुलुसुं स्थाल्यां स्वल्पेन जलेन सह तापयतु, यावत् अन्तः अपि सर्वत्र बाष्पायमानम् उष्णं भवति।",
+   "back": "Cover the leftover, keep in the refrigerator and eat within 2 days. Heat the pulusu in a pan with a little water until it becomes steaming hot everywhere, even inside."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "अजमांस-वेपुडु: 500 g अस्थिरहितम् अजमांसं लेपनेन ½ चषकेण जलेन च सह प्रेशर-कुकरे 5–6 सीत्कारपर्यन्तं, मृदु यावत् भवति तावत् पचतु, ततः तथैव भर्जयतु।",
+   "back": "Mutton vepudu: cook 500 g boneless goat meat with the marinade and ½ cup of water in a pressure cooker up to 5–6 whistles, until it becomes soft, then fry the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "उभयम् उपयुक्तम्। अस्थिरहितं शीघ्रं पच्यते अधिकं खरं च भवति; सास्थि लघुखण्डेषु अधिकः स्वादः, किन्तु स्वरसे 6–8 निमेषाः अधिकाः लगन्ति।",
+   "back": "Both are suitable. Boneless cooks quickly and becomes crispier; small bone-in pieces have more flavour, but take 6–8 more minutes in their own juice."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "भोजनपेटिकायै लघुयात्रायै वा बद्ध्वा प्रायः 4 होराणाम् अन्तः भक्षयतु। अवशिष्टम् आच्छाद्य शीतकपेटिकायां स्थापयतु एकस्मिन् दिने च भक्षयतु।",
+   "back": "If packed for a lunch box or a short journey, eat within about 4 hours. Cover the leftover, keep in the refrigerator and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "जम्बीररसः पक्वः, अथवा हरिद्रा तैले दग्धा। हरिद्रां सर्वान्ते योजयतु, तत्क्षणं चुल्लीं निर्वापयतु, केवलं 5–10 क्षणान् चालयतु च; जम्बीररसम् अग्नेः बहिः ओदने योजयतु।",
+   "back": "The lemon juice was cooked, or the turmeric burnt in the oil. Add turmeric at the very end, put out the stove immediately, and stir only 5–10 seconds; add the lemon juice to the rice off the fire."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "अपरं चषकं जलं स्थूलतलस्थाल्यां पातयतु; तनुस्थाल्यां रागि अधः लगति।",
+   "back": "Pour the other cup of water into a thick-bottomed pan; in a thin pan the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "रागि जावायाम् इक्षुगुडं प्रयोक्तुं शक्नोमि किम्?",
+   "back": "Can I use sugarcane jaggery in ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "आम्। तावत्प्रमाणं घृष्टम् इक्षुगुडं (चेरुकु बेल्लम) गृहीत्वा चुल्लीनिर्वापणात् परं मिश्रयतु, येन दुग्धं न भिद्यते। तत् लघुवर्णं मृदु कैरमेल्-सदृशं माधुर्यं च ददाति।",
+   "back": "Yes. Take the same amount of grated sugarcane jaggery (cheruku bellam) and mix it in after putting out the stove, so that the milk does not split. It gives a light colour and a mild, caramel-like sweetness."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "अवशिष्टम् आच्छाद्य शीतकपेटिकायां स्थापयतु 1 दिने च भक्षयतु। स्थाल्यां केवलं तावत् तापयतु यावत् अन्तः अपि सर्वत्र बाष्पायमानम् उष्णं भवति; ततः अधिकेन पुनस्तापनेन चिङ्गटाः कठिनाः भवन्ति।",
+   "back": "Cover the leftover, keep in the refrigerator and eat within 1 day. In a pan heat only until it becomes steaming hot everywhere, even inside; reheating longer than that makes the prawns hard."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "इक्षुगुडेन सुन्नुण्डलु कर्तुं शक्नोमि किम्?",
+   "back": "Can I make sunnundalu with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "आम्। इक्षुगुडं (चेरुकु बेल्लम) सूक्ष्मं घर्षयतु, तालगुडवत् तावत्प्रमाणं च प्रयुङ्क्ताम्। लड्डुकाः लघुवर्णाः भवन्ति, तेषां माधुर्यं मृदु कैरमेल्-सदृशं च।",
+   "back": "Yes. Grate sugarcane jaggery (cheruku bellam) finely, and use the same amount as palm jaggery. The laddus become light-coloured, and their sweetness mild and caramel-like."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "अपक्वलशुनम्: तीक्ष्णतरस्वादाय लशुनतापनं त्यजतु; शीतकपेटिकायां स्थापयतु 3 दिनेषु च भक्षयतु।",
+   "back": "Raw garlic: for a sharper taste skip heating the garlic; keep in the refrigerator and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "स्वच्छे शुष्के वायुरोधिपात्रे शीतकपेटिकायां रक्षतु 2 सप्ताहेषु च उपयुङ्क्ताम्। सर्वदा शुष्कं चमसं प्रयुङ्क्ताम्।",
+   "back": "Keep in a clean, dry, airtight container in the refrigerator and use within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "शुष्के वायुरोधिपात्रे शीतकपेटिकायां 2 सप्ताहान् यावत्। लशुनं सम्यक् शोषयित्वा प्रथमं तैले तापयतु, सर्वदा शुष्कं चमसं च प्रयुङ्क्ताम्।",
+   "back": "Up to 2 weeks in the refrigerator in a dry, airtight container. Dry the garlic thoroughly and first heat it in oil, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "आम्। प्रायः 20 शुष्करक्तमरिचान् कतिपयेषु तैलबिन्दुषु खरत्वपर्यन्तं भर्जयतु, शीतलीकृत्य लशुनयोजनात् पूर्वं पिनष्टु।",
+   "back": "Yes. Fry about 20 dry red chillies in a few drops of oil until crisp, cool them and grind before adding the garlic."
   }
  }
 }

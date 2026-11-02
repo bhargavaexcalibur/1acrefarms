@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "നെയ്യോ എണ്ണയോ",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "ചിക്കനിൽ തൈര്, തേജ മുളകുപൊടി, മഞ്ഞൾപ്പൊടി, ഉപ്പ് എന്നിവ പുരട്ടൂ. 30 മിനിറ്റ് വയ്ക്കൂ. പാത്രം മൂടി, ആ സമയം മുഴുവൻ ഫ്രിഡ്ജിൽ വയ്ക്കൂ.",
+   "back": "Rub curd, Teja chilli powder, turmeric powder and salt on the chicken. Keep it 30 minutes. Cover the vessel and keep it in the fridge for that whole time."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g മീൻകഷണങ്ങൾ ⟦1⟧കട്ടിയുള്ള കഷണങ്ങളായി മുറിച്ച ഉറപ്പുള്ള മീൻ: രോഹു, കട്‌ല (ബൊച്ച), കൊരമീനു (വരാൽ) അല്ലെങ്കിൽ നെയ്മീൻ (വഞ്ചിരം)⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm fish cut into thick pieces: rohu, katla (bochcha), korameenu (varal) or seer fish (vanjiram)⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g പുളി ⟦1⟧നാരങ്ങാ വലുപ്പമുള്ള ഏകദേശം രണ്ട് ഉരുള, 2 കപ്പ് ഇളംചൂടുവെള്ളത്തിൽ 15 മിനിറ്റ് കുതിർത്തത്⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked 15 minutes in 2 cups of lukewarm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "ബാക്കിയുള്ളത് മൂടി ഫ്രിഡ്ജിൽ വച്ച് 2 ദിവസത്തിനുള്ളിൽ കഴിക്കൂ. പാനിൽ പതുക്കെ, ഇളക്കാതെ, ഉള്ളുവരെ മുഴുവൻ ആവി പറക്കുന്ന ചൂടാകുന്നതുവരെ ചൂടാക്കൂ.",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Heat slowly in a pan, without stirring, until it is steaming hot all the way through to the inside."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "കട്ടിയുള്ള കഷണങ്ങളായി മുറിച്ച ഉറപ്പുള്ള പുഴമീനോ കടൽമീനോ: രോഹു, കട്‌ല (ബൊച്ച), വരാൽ (കൊരമീനു) അല്ലെങ്കിൽ നെയ്മീൻ. മുള്ളുള്ള ചെറുമീനുകളും പറ്റും, പക്ഷേ പതുക്കെ കൈകാര്യം ചെയ്യണം.",
+   "back": "Firm river fish or sea fish cut into thick pieces: rohu, katla (bochcha), varal (korameenu) or seer fish. Small bony fish also work, but must be handled gently."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "ബാക്കിയുള്ളത് മൂടി ഫ്രിഡ്ജിൽ വച്ച് 2 ദിവസത്തിനുള്ളിൽ കഴിക്കൂ. പുലുസു അല്പം വെള്ളം ചേർത്ത് പാനിൽ, ഉള്ളുവരെ മുഴുവൻ ആവി പറക്കുന്ന ചൂടാകുന്നതുവരെ ചൂടാക്കൂ.",
+   "back": "Cover the leftovers, keep in the fridge and eat within 2 days. Heat the pulusu with a little water added in a pan until it is steaming hot all the way through to the inside."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "മട്ടൺ വേപുഡു: 500 g എല്ലില്ലാത്ത മട്ടൺ പുരട്ടിവയ്ക്കാനുള്ള മസാലയും ½ കപ്പ് വെള്ളവും ചേർത്ത് 5–6 വിസിൽ വരെ, മൃദുവാകുന്നതുവരെ പ്രഷർ കുക്ക് ചെയ്ത്, പിന്നെ ഇതേ രീതിയിൽ വറുക്കൂ.",
+   "back": "Mutton vepudu: pressure cook 500 g boneless mutton with the marinating masala and ½ cup water up to 5–6 whistles, until soft, then fry in this same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "രണ്ടും പറ്റും. എല്ലില്ലാത്തത് വേഗം വേവുകയും കൂടുതൽ കറുമുറെയാകുകയും ചെയ്യും; എല്ലോടുകൂടിയ ചെറിയ കഷണങ്ങൾക്ക് രുചി കൂടുതലാണ്, പക്ഷേ നീരിൽ 6–8 മിനിറ്റ് കൂടുതൽ വേവിക്കണം.",
+   "back": "Both work. Boneless cooks quickly and becomes crispier; small bone-in pieces have more flavour, but must be cooked 6–8 minutes more in the juices."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "ലഞ്ച് ബോക്സിലോ ചെറിയ യാത്രയ്ക്കോ പായ്ക്ക് ചെയ്താൽ ഏകദേശം 4 മണിക്കൂറിനുള്ളിൽ കഴിക്കൂ. ബാക്കിയുള്ളത് മൂടി ഫ്രിഡ്ജിൽ വച്ച് ഒരു ദിവസത്തിനുള്ളിൽ കഴിക്കൂ.",
+   "back": "If packed in a lunch box or for a short journey, eat within about 4 hours. Cover the leftovers, keep in the fridge and eat within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "നാരങ്ങാനീര് ചൂടായതുകൊണ്ടോ, മഞ്ഞൾ എണ്ണയിൽ കരിഞ്ഞതുകൊണ്ടോ. മഞ്ഞൾ ഏറ്റവും അവസാനം ചേർക്കൂ, ഉടൻ അടുപ്പ് ഓഫ് ചെയ്ത് 5–10 സെക്കൻഡ് മാത്രം ഇളക്കൂ; നാരങ്ങാനീര് തീയിൽ നിന്ന് മാറ്റി ചോറിൽ ചേർക്കൂ.",
+   "back": "Because the lemon juice got heated, or the turmeric burnt in the oil. Add the turmeric at the very end, immediately turn off the stove and stir only 5–10 seconds; take off the fire and add the lemon juice to the rice."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "ബാക്കിയുള്ള ഒരു കപ്പ് വെള്ളം അടികട്ടിയുള്ള പാത്രത്തിലൊഴിക്കൂ; കനം കുറഞ്ഞ പാത്രത്തിൽ റാഗി അടിയിൽ പിടിക്കും.",
+   "back": "Pour the remaining one cup of water into a heavy-bottomed vessel; in a thin vessel the ragi will stick to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "റാഗി ജാവയിൽ കരിമ്പ് ശർക്കര ഉപയോഗിക്കാമോ?",
+   "back": "Can sugarcane jaggery be used in ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "അതെ. അതേ അളവിൽ ചുരണ്ടിയ കരിമ്പ് ശർക്കര (ചെരുകു ബെല്ലം) എടുത്ത്, പാൽ പിരിയാതിരിക്കാൻ അടുപ്പ് ഓഫ് ചെയ്തശേഷം ഇളക്കിച്ചേർക്കൂ. അത് ഇളം നിറവും മൃദുവായ, കാരമൽ പോലുള്ള മധുരവും നൽകും.",
+   "back": "Yes. Take grated sugarcane jaggery (cheruku bellam) in the same amount and stir it in after turning off the stove so the milk does not split. It gives a pale colour and a soft, caramel-like sweetness."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "ബാക്കിയുള്ളത് മൂടി ഫ്രിഡ്ജിൽ വച്ച് 1 ദിവസത്തിനുള്ളിൽ കഴിക്കൂ. പാനിൽ ഉള്ളുവരെ മുഴുവൻ ആവി പറക്കുന്ന ചൂടാകുന്നതുവരെ മാത്രം ചൂടാക്കൂ; കൂടുതൽ നേരം ചൂടാക്കിയാൽ ചെമ്മീൻ കട്ടിയാകും.",
+   "back": "Cover the leftovers, keep in the fridge and eat within 1 day. Heat in a pan only until it is steaming hot all the way through to the inside; if heated longer the prawns become tough."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "കരിമ്പ് ശർക്കര കൊണ്ട് സുന്നുണ്ടലു ഉണ്ടാക്കാമോ?",
+   "back": "Can sunnundalu be made with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "അതെ. കരിമ്പ് ശർക്കര (ചെരുകു ബെല്ലം) നന്നായി ചുരണ്ടി, പനംചക്കരയുടെ അതേ അളവിൽ ഉപയോഗിക്കൂ. ലഡുവിന് ഇളം നിറമാകും, മധുരം മൃദുവായതും കാരമൽ പോലുള്ളതുമാകും.",
+   "back": "Yes. Grate the sugarcane jaggery (cheruku bellam) well and use it in the same amount as palm jaggery. The laddus will be a pale colour, and the sweetness soft and caramel-like."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "പച്ച വെളുത്തുള്ളി: കൂടുതൽ കടുത്ത രുചിക്ക് വെളുത്തുള്ളി ചൂടാക്കേണ്ട; ഫ്രിഡ്ജിൽ വച്ച് 3 ദിവസത്തിനുള്ളിൽ കഴിക്കൂ.",
+   "back": "Raw garlic: for a sharper taste do not heat the garlic; keep in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "വൃത്തിയുള്ള, ഉണങ്ങിയ, വായു കടക്കാത്ത ഭരണിയിൽ ഫ്രിഡ്ജിൽ വച്ച് 2 ആഴ്ചയ്ക്കുള്ളിൽ ഉപയോഗിക്കൂ. എപ്പോഴും ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ.",
+   "back": "Keep in a clean, dry, airtight jar in the fridge and use within 2 weeks. Always use a dry spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "ഉണങ്ങിയ, വായു കടക്കാത്ത ഭരണിയിൽ ഫ്രിഡ്ജിൽ 2 ആഴ്ച വരെ. വെളുത്തുള്ളി നന്നായി ഉണക്കി ആദ്യം എണ്ണയിൽ ചൂടാക്കൂ, എപ്പോഴും ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ.",
+   "back": "Up to 2 weeks in the fridge in a dry, airtight jar. Dry the garlic well and first heat it in oil, and always use a dry spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "അതെ. ഏകദേശം 20 ഉണക്കമുളക് ഏതാനും തുള്ളി എണ്ണയിൽ കറുമുറെയാകുന്നതുവരെ വറുത്ത്, തണുപ്പിച്ച്, വെളുത്തുള്ളി ചേർക്കുന്നതിന് മുമ്പ് പൊടിക്കൂ.",
+   "back": "Yes. Fry about 20 dried chillies in a few drops of oil until crisp, cool them and powder before adding the garlic."
   }
  }
 }

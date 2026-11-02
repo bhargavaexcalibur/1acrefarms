@@ -5059,7 +5059,7 @@
   "seg.72a2c55cca9c": {
    "src": "Yes. Use 2 tbsp more besan, or 1 tbsp cornflour. Rice flour gives the crispest coating, so the pakodi will be a little softer without it.",
    "t": "చేయొచ్చు. ఇంకో 2 టేబుల్ స్పూన్ల శనగపిండి, లేదా 1 టేబుల్ స్పూన్ కార్న్‌ఫ్లోర్ వాడండి. బియ్యప్పిండితోనే పూత బాగా కరకరలాడుతుంది, కాబట్టి అది లేకుండా పకోడి కొంచెం మెత్తగా ఉంటుంది.",
-   "back": "Yes. Use another 2 tablespoons gram flour, or 1 tablespoon cornflour. Rice flour is what makes the coating really crisp, so without it the pakodi is a little soft."
+   "back": "Yes. Use another 2 tablespoons gram flour, or 1 tablespoon cornflour. Rice flour is what makes the coating very crisp, so without it the pakodi is a little soft."
   },
   "seg.f129edc737b1": {
    "src": "How long does cashew pakodi stay crisp?",
@@ -7775,6 +7775,106 @@
    "src": "Ghee or oil",
    "t": "నెయ్యి లేదా నూనె",
    "back": "Ghee or oil"
+  },
+  "seg.3b01a30ec3ce": {
+   "src": "Rub the chicken with curd, Teja chilli powder, turmeric powder and salt. Rest 30 minutes. Cover the bowl and keep it in the fridge while it rests.",
+   "t": "చికెన్‌కు పెరుగు, తేజ కారం, పసుపు, ఉప్పు పట్టించండి. 30 నిమిషాలు అలాగే ఉంచండి. ఆ సమయంలో గిన్నెకు మూత పెట్టి ఫ్రిజ్‌లో ఉంచండి.",
+   "back": "Coat the chicken with curd, Teja chilli powder, turmeric and salt. Leave it like that for 30 minutes. During that time, cover the bowl and keep it in the fridge."
+  },
+  "seg.6cceb77cd01b": {
+   "src": "500 g fish pieces ⟦1⟧firm fish cut into thick steaks: rohu, catla (bochcha), korameenu (murrel) or seer fish (vanjaram)⟦/1⟧",
+   "t": "500 g చేప ముక్కలు ⟦1⟧గట్టి చేప, మందమైన ముక్కలుగా: రోహు, బొచ్చె (కట్ల), కొరమీను లేదా వంజరం⟦/1⟧",
+   "back": "500 g fish pieces ⟦1⟧firm fish, in thick pieces: rohu, bochche (katla), koramenu or vanjaram⟦/1⟧"
+  },
+  "seg.3248f0a2bb4b": {
+   "src": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked in 2 cups warm water for 15 minutes⟦/1⟧",
+   "t": "40 g చింతపండు ⟦1⟧సుమారు రెండు నిమ్మకాయంత ఉండలు, 2 కప్పుల గోరువెచ్చని నీళ్లలో 15 నిమిషాలు నానబెట్టినవి⟦/1⟧",
+   "back": "40 g tamarind ⟦1⟧about two lemon-sized balls, soaked 15 minutes in 2 cups of lukewarm water⟦/1⟧"
+  },
+  "seg.6efbfa504170": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Reheat gently in the pan without stirring, until steaming hot all the way through.",
+   "t": "మిగిలింది మూత పెట్టి ఫ్రిజ్‌లో ఉంచి, 2 రోజుల్లో తినేయండి. కలపకుండా గిన్నెలోనే మెల్లగా, లోపల దాకా ఆవిరి వచ్చేంత బాగా వేడయ్యే వరకు వేడి చేయండి.",
+   "back": "Cover what is left, keep it in the fridge, and eat it within 2 days. Without stirring, heat it gently in the vessel itself until it is properly hot, steaming all the way inside."
+  },
+  "seg.379b410c6994": {
+   "src": "Firm river or sea fish cut into thick steaks: rohu, catla (bochcha), murrel (korameenu) or seer fish. Bony small fish also work but need gentle handling.",
+   "t": "మందమైన ముక్కలుగా కోసిన గట్టి నది లేదా సముద్రపు చేప: రోహు, బొచ్చె (కట్ల), కొరమీను లేదా వంజరం. ముళ్లు ఎక్కువ ఉండే చిన్న చేపలు కూడా బాగుంటాయి, కానీ మెల్లగా చూసుకోవాలి.",
+   "back": "Firm river or sea fish cut into thick pieces: rohu, bochche (katla), koramenu or vanjaram. Small fish with many bones are also good, but must be handled gently."
+  },
+  "seg.3af5b68fc2e1": {
+   "src": "Keep leftovers covered in the fridge and eat within 2 days. Warm the pulusu in a pan with a splash of water until steaming hot all the way through.",
+   "t": "మిగిలింది మూత పెట్టి ఫ్రిజ్‌లో ఉంచి, 2 రోజుల్లో తినేయండి. కొంచెం నీళ్లు పోసి పులుసును గిన్నెలో, లోపల దాకా ఆవిరి వచ్చేంత బాగా వేడయ్యే వరకు వేడి చేయండి.",
+   "back": "Cover what is left, keep it in the fridge, and eat it within 2 days. Add a little water and heat the pulusu in the vessel until it is properly hot, steaming all the way inside."
+  },
+  "seg.b4d28033bb05": {
+   "src": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinade and ½ cup water for 5–6 whistles, until tender, then fry it the same way.",
+   "t": "మటన్ వేపుడు: 500 g ఎముకలు లేని మటన్‌ను నానబెట్టే మసాలా, ½ కప్పు నీళ్లతో 5–6 విజిల్స్ వచ్చే వరకు, మెత్తగా ఉడికేలా ప్రెషర్ కుక్ చేసి, తర్వాత ఇలాగే వేయించండి.",
+   "back": "Mutton vepudu: pressure-cook 500 g boneless mutton with the marinating masala and ½ cup water until 5–6 whistles, so it cooks soft, then fry the same way."
+  },
+  "seg.04112853a660": {
+   "src": "Both work. Boneless cooks faster and crisps more; small bone-in pieces have more flavour but need 6–8 minutes longer in their juices.",
+   "t": "రెండూ బాగుంటాయి. ఎముకలు లేనిది త్వరగా ఉడికి, ఇంకా కరకరలాడుతుంది; ఎముకలతో చిన్న ముక్కలకు రుచి ఎక్కువ, కానీ రసంలో ఇంకో 6–8 నిమిషాలు ఎక్కువ పడుతుంది.",
+   "back": "Both are good. Boneless cooks quickly and becomes crunchier; small pieces with bones have more taste, but take another 6–8 minutes more in the juice."
+  },
+  "seg.d20a641bec03": {
+   "src": "Pack it for a lunch box or a short journey and eat it within about 4 hours. Keep leftovers covered in the fridge and eat them within a day.",
+   "t": "లంచ్ బాక్సులోకి గానీ చిన్న ప్రయాణానికి గానీ కట్టుకుంటే, సుమారు 4 గంటల్లో తినేయండి. మిగిలింది మూత పెట్టి ఫ్రిజ్‌లో ఉంచి, ఒక రోజులో తినేయండి.",
+   "back": "If you pack it for a lunch box or a short trip, eat it within about 4 hours. Cover what is left, keep it in the fridge, and eat it within one day."
+  },
+  "seg.bc9078e02646": {
+   "src": "Either the lemon juice was cooked or the turmeric burnt in the oil. Add the turmeric last, switch off the stove right after and stir for only 5–10 seconds; add the lemon juice to the rice, off the heat.",
+   "t": "నిమ్మరసం ఉడికించినా, పసుపు నూనెలో మాడినా అలా అవుతుంది. పసుపు చివర్లో వేసి, వెంటనే స్టవ్ ఆపి, 5–10 సెకన్లు మాత్రమే కలపండి; నిమ్మరసం స్టవ్ మీంచి దించాక అన్నంలో కలపండి.",
+   "back": "That happens if the lemon juice was cooked or the turmeric burnt in the oil. Add turmeric at the end, switch off the stove at once, and mix only 5–10 seconds; mix the lemon juice into the rice after taking it off the stove."
+  },
+  "seg.c288f67fcabb": {
+   "src": "Pour the other cup of water into a heavy-bottomed pan; a thin pan lets the ragi catch.",
+   "t": "ఇంకో కప్పు నీళ్లను అడుగు మందంగా ఉన్న గిన్నెలో పోయండి; పలుచటి గిన్నెలో అయితే రాగి అడుగంటుతుంది.",
+   "back": "Pour another cup of water into a thick-bottomed vessel; in a thin vessel the ragi sticks to the bottom."
+  },
+  "seg.e87c26125f87": {
+   "src": "Can I use cane jaggery in ragi java?",
+   "t": "రాగి జావలో చెరుకు బెల్లం వాడొచ్చా?",
+   "back": "Can sugarcane jaggery be used in ragi java?"
+  },
+  "seg.a9a06390a945": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam) and stir it in after switching off the stove, so the milk does not split. It gives a lighter colour and a milder, caramel-like sweetness.",
+   "t": "వాడొచ్చు. అంతే కొలత తురిమిన చెరుకు బెల్లం తీసుకుని, పాలు విరగకుండా స్టవ్ ఆపాక కలపండి. దీంతో రంగు లేతగా, తీపి కొంచెం తేలికగా, కారమెల్ లాంటి రుచితో వస్తుంది.",
+   "back": "It can. Take the same measure of grated sugarcane jaggery and mix it in after switching off the stove so the milk does not split. With this the colour comes out pale and the sweetness a little lighter, with a caramel-like taste."
+  },
+  "seg.e7cb15cc47e2": {
+   "src": "Keep leftovers covered in the fridge and eat within 1 day. Reheat in a pan only until steaming hot all the way through; longer reheating makes the prawns tough.",
+   "t": "మిగిలింది మూత పెట్టి ఫ్రిజ్‌లో ఉంచి, 1 రోజులో తినేయండి. గిన్నెలో లోపల దాకా ఆవిరి వచ్చేంత బాగా వేడయ్యే వరకు మాత్రమే వేడి చేయండి; ఇంకా ఎక్కువసేపు వేడి చేస్తే రొయ్యలు గట్టిపడతాయి.",
+   "back": "Cover what is left, keep it in the fridge, and eat it within 1 day. Heat it in the vessel only until it is properly hot, steaming all the way inside; if you heat it longer, the prawns become hard."
+  },
+  "seg.ea5408ec0853": {
+   "src": "Can I make sunnundalu with cane jaggery?",
+   "t": "చెరుకు బెల్లంతో సున్నుండలు చేయొచ్చా?",
+   "back": "Can sunnundalu be made with sugarcane jaggery?"
+  },
+  "seg.ec48010dffbe": {
+   "src": "Yes. Grate the cane jaggery (cheruku bellam) finely and use the same amount as palm jaggery. The laddus turn lighter in colour, with a milder, caramel-like sweetness.",
+   "t": "చేయొచ్చు. చెరుకు బెల్లాన్ని సన్నగా తురిమి, తాటి బెల్లం ఎంత వాడతారో అంతే వాడండి. లడ్డూలు లేత రంగులో, తీపి కొంచెం తేలికగా, కారమెల్ లాంటి రుచితో ఉంటాయి.",
+   "back": "They can. Grate the sugarcane jaggery finely and use the same amount as you would use palm jaggery. The laddus come out pale in colour, the sweetness a little lighter, with a caramel-like taste."
+  },
+  "seg.767f9e16fa95": {
+   "src": "Raw garlic: skip warming the garlic for a sharper taste; keep it in the fridge and eat it within 3 days.",
+   "t": "పచ్చి వెల్లుల్లి: ఘాటైన రుచి కోసం వెల్లుల్లిని వేడి చేయకుండా వేయండి; ఫ్రిజ్‌లో ఉంచి 3 రోజుల్లో తినేయండి.",
+   "back": "Raw garlic: for a pungent taste, add the garlic without heating it; keep in the fridge and eat within 3 days."
+  },
+  "seg.8665687f81ce": {
+   "src": "Keep in a clean, dry, airtight jar in the fridge and use it within 2 weeks. Always use a dry spoon.",
+   "t": "శుభ్రమైన, తడి లేని, గాలి చొరని సీసాలో ఫ్రిజ్‌లో ఉంచి, 2 వారాల్లో వాడేయండి. ఎప్పుడూ తడి లేని చెంచానే వాడండి.",
+   "back": "Keep in a clean, moisture-free, airtight bottle in the fridge, and use it up within 2 weeks. Always use only a moisture-free spoon."
+  },
+  "seg.367798df40e3": {
+   "src": "Up to 2 weeks in a dry, airtight jar in the fridge. Dry the garlic well and warm it in oil first, and always use a dry spoon.",
+   "t": "తడి లేని, గాలి చొరని సీసాలో ఫ్రిజ్‌లో 2 వారాల వరకు ఉంటుంది. వెల్లుల్లిని బాగా ఆరబెట్టి, ముందు నూనెలో వేడి చేయండి; ఎప్పుడూ తడి లేని చెంచానే వాడండి.",
+   "back": "Keeps up to 2 weeks in a moisture-free, airtight bottle in the fridge. Dry the garlic well and heat it in oil first; always use only a moisture-free spoon."
+  },
+  "seg.1d41be2d17f9": {
+   "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
+   "t": "చేయొచ్చు. సుమారు 20 ఎండు మిరపకాయలను కొన్ని చుక్కల నూనెలో కరకరలాడే వరకు వేయించి, చల్లార్చి, వెల్లుల్లి వేసే ముందు పొడి చేయండి.",
+   "back": "They can. Fry about 20 dried red chillies in a few drops of oil until crunchy, cool, and powder them before adding the garlic."
   }
  }
 }
