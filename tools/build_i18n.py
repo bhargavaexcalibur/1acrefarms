@@ -203,6 +203,9 @@ def problem(key, src, row):
         for hit in rx.finditer(back):
             if hit.group(0).lower() == "cold" and re.search(r"\b(cool|chill|cold|temperature)", src, re.I):
                 continue  # "cool evening", "chilled": temperature, not the illness
+            if hit.group(0).lower() == "fresh" and re.search(r"\bfreshly (roasted|ground|made)", back, re.I) \
+                    and re.search(r"\bjust[- ](roasted|ground|made)", src, re.I):
+                continue  # "just-roasted masala" read back as "freshly roasted": timing, not a claim
             return f"claim word in back-translation {hit.group(0)!r}"
     return None
 
