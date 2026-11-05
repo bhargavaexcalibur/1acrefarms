@@ -58,7 +58,7 @@ PACKS = [
          g=540, mrp=396, category="Spices > Turmeric powder",
          title="Turmeric Powder (Pasupu) 540 g from Palnadu &amp; Guntur | 1acrefarms",
          desc="Pasupu (haldi) from Palnadu and Guntur, sun-dried and stone-ground, in a 540 g pack. "
-              "MRP ₹396 incl. of all taxes. Order online or on WhatsApp. Free delivery on 2+ packs.",
+              "MRP ₹396 incl. of all taxes.",
          lede="Turmeric powder from Palnadu and Guntur. Sun-dried, stone-ground and packed in Narasaraopet.",
          te_line="పల్నాడు, గుంటూరు పసుపు. ఎండలో ఆరబెట్టి, రాతి తిరగలిలో పట్టిన పొడి. నరసరావుపేటలో ప్యాక్ చేసినది.",
          hi_line="पलनाडु और गुंटूर की हल्दी, धूप में सुखाकर पत्थर की चक्की में पिसी। नरसरावपेट में पैक।",
@@ -70,7 +70,7 @@ PACKS = [
          g=540, mrp=495, category="Spices > Turmeric powder",
          title="Hill Turmeric Powder (Konda Pasupu) 540 g from Araku | 1acrefarms",
          desc="Konda pasupu: hill turmeric from the Araku and Maredumilli hills, packed as fine powder in a "
-              "540 g pack. MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+              "540 g pack. MRP ₹495 incl. of all taxes.",
          lede="Konda pasupu: hill turmeric from the Araku and Maredumilli hills. Whole hill turmeric fingers, "
               "packed as fine powder in Narasaraopet.",
          te_line="అరకు, మారేడుమిల్లి కొండల నుంచి కొండ పసుపు. కొండ పసుపు కొమ్ములను నరసరావుపేటలో మెత్తని పొడిగా ప్యాక్ చేస్తాం.",
@@ -84,7 +84,7 @@ PACKS = [
          g=540, mrp=306, category="Spices > Chilli powder",
          title="Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
          desc="Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. "
-              "MRP ₹306 incl. of all taxes. Free delivery on 2+ packs.",
+              "MRP ₹306 incl. of all taxes.",
          lede="Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine "
               "powder in Narasaraopet.",
          te_line="పల్నాడు, గుంటూరులో పండిన సన్నం మిరపకాయలు. ఎండబెట్టిన మిరపకాయలను మెత్తని కారంగా ప్యాక్ చేస్తాం.",
@@ -99,7 +99,7 @@ PACKS = [
          g=540, mrp=342, category="Spices > Chilli powder",
          title="Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
          desc="Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of "
-              "all taxes. Free delivery on 2+ packs.",
+              "all taxes.",
          lede="Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, "
               "packed in Narasaraopet.",
          te_line="పల్నాడు, గుంటూరులో పండిన తేజ మిరపకాయల కారం. చాలా కారంగా ఉంటుంది. ఎండబెట్టి, రాతి తిరగలిలో పట్టినది.",
@@ -113,7 +113,7 @@ PACKS = [
          g=540, mrp=234, category="Sweeteners > Jaggery",
          title="Cane Jaggery (Cheruku Bellam) 540 g from Anakapalli &amp; Chittoor | 1acrefarms",
          desc="Cheruku bellam (gud): dark, slow-boiled cane jaggery from the Chittoor and Anakapalli cane belts, "
-              "540 g. MRP ₹234 incl. of all taxes. Free delivery on 2+ packs.",
+              "540 g. MRP ₹234 incl. of all taxes.",
          lede="Cheruku bellam: dark, slow-boiled village desi cane jaggery from the Chittoor and Anakapalli "
               "cane belts, packed in Narasaraopet.",
          te_line="చిత్తూరు, అనకాపల్లి నుంచి చెరుకు బెల్లం. ముదురు రంగు, నెమ్మదిగా మరిగించిన పల్లె బెల్లం. నరసరావుపేటలో ప్యాక్ చేసినది.",
@@ -127,7 +127,7 @@ PACKS = [
          g=540, mrp=495, category="Sweeteners > Jaggery",
          title="Palm Jaggery (Thati Bellam) 540 g from the Godavari delta | 1acrefarms",
          desc="Thati bellam (taad gud): palm jaggery from the Godavari delta, made from palmyra sap, 540 g. "
-              "MRP ₹495 incl. of all taxes. Free delivery on 2+ packs.",
+              "MRP ₹495 incl. of all taxes.",
          lede="Thati bellam: palm jaggery from the Godavari delta, made from palmyra sap. Packed in Narasaraopet.",
          te_line="గోదావరి డెల్టా నుంచి తాటి బెల్లం, తాటి నీరాతో చేసినది. నరసరావుపేటలో ప్యాక్ చేసినది.",
          hi_line="गोदावरी डेल्टा से ताड़ का गुड़, ताड़ के रस से बना। नरसरावपेट में पैक।",
@@ -140,7 +140,7 @@ PACKS = [
          allergen="Contains cashew (tree nut).", g=540, mrp=891, category="Nuts > Cashew",
          title="Cashew Kernels (Jeedipappu) 540 g, whole and unsalted | 1acrefarms",
          desc="Jeedipappu (kaju): whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag "
-              "coast, 540 g. MRP ₹891 incl. of all taxes. Free delivery on 2+ packs.",
+              "coast, 540 g. MRP ₹891 incl. of all taxes.",
          lede="Jeedipappu: whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, "
               "packed in Narasaraopet.",
          te_line="చీరాల, బాపట్ల, విశాఖ తీరం నుంచి జీడిపప్పు. పూర్తి పప్పులు, ఉప్పు లేకుండా.",
@@ -165,6 +165,19 @@ def amazon_btn(p, label, lang=""):
     """The first button on a pack page while the pack is buyable on Amazon; label is already escaped."""
     a = amazon_link(p)
     return f'\n          <a class="btn btn-primary" href="{a}" target="_blank" rel="noopener"{lang}>{label}</a>' if a else ""
+
+
+def order_btn(p, buy_label="Buy on Amazon", store_label="Our Amazon store", lang=""):
+    """The one order button on a pack page (Amazon.in only, until the FSSAI central licence): the listing while
+    the pack is buyable there, otherwise our Amazon store. Labels are already escaped."""
+    if amazon_link(p):
+        return amazon_btn(p, buy_label, lang)
+    return f'\n          <a class="btn btn-primary" href="{AMAZON_STORE}" target="_blank" rel="noopener"{lang}>{store_label}</a>'
+
+
+def page_desc(p):
+    """Meta description: plain facts, plus where to order only while the pack is buyable on Amazon.in."""
+    return p["desc"] + (" Order on Amazon.in." if amazon_link(p) else "")
 
 
 def is_live(p):
@@ -193,9 +206,6 @@ def text_of(s):
     return html.unescape(re.sub(r"<[^>]+>", "", s))
 
 
-def wa_link(p):
-    msg = f"Hi 1acrefarms! I'd like to order {p['name']} ({p['local']}) {p['g']} g."
-    return f"https://wa.me/{WA}?text={quote(msg)}"
 
 
 def nutrition(p, facts):
@@ -398,13 +408,13 @@ def page(p, live, facts, guides=(), recipes=()):
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{p['title']}</title>
-  <meta name="description" content="{html.escape(p['desc'], quote=True)}" />
+  <meta name="description" content="{html.escape(page_desc(p), quote=True)}" />
   <link rel="canonical" href="{url}" />
   <meta property="og:type" content="product" />
   <meta property="og:site_name" content="1acrefarms" />
   <meta property="og:url" content="{url}" />
   <meta property="og:title" content="{p['name']} ({p['local']}) {p['g']} g · 1acrefarms" />
-  <meta property="og:description" content="{html.escape(p['desc'], quote=True)}" />
+  <meta property="og:description" content="{html.escape(page_desc(p), quote=True)}" />
   <meta property="og:image" content="{SITE}{img}" />
   <meta property="og:locale" content="en_IN" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -433,16 +443,12 @@ def page(p, live, facts, guides=(), recipes=()):
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
           <span class="upp">{p['g']} g · {per_g}</span>
         </div>
-        <p class="tax">Incl. of all taxes · In stock · Dispatched within 2 working days</p>
-        <div class="pdp-actions">{amazon_btn(p, "Buy on Amazon")}
-          <a class="btn {'btn-wa' if amazon_link(p) else 'btn-primary'}" href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a>
-          <a class="btn btn-wa" href="{wa_link(p)}" target="_blank" rel="noopener">Order on WhatsApp</a>
+        <p class="tax">Incl. of all taxes</p>
+        <div class="pdp-actions" id="order">{order_btn(p)}
         </div>
         <ul class="pdp-facts">
           <li><span>From</span>{p['origin']}</li>
           <li><span>Pack</span>{p['note']}</li>
-          <li><span>Delivery</span>Free on 2 or more packs · ₹81 for one pack</li>
-          <li><span>Pay</span>UPI, or pay on delivery where available</li>
         </ul>
         <p class="pdp-lang" lang="te">{p['te_line']}</p>
         <p class="pdp-lang" lang="hi">{p['hi_line']}</p>
@@ -478,8 +484,8 @@ def page(p, live, facts, guides=(), recipes=()):
     </section>
 
     <section class="pdp-ship">
-      <h2>Delivery, payment and returns</h2>
-      <p>Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full. <a href="/policies.html#shipping">Read our policies</a>.</p>
+      <h2>Orders, delivery and returns</h2>
+      <p>Our packs are sold on Amazon.in. Delivery, payment and returns for those orders follow Amazon.in&rsquo;s terms, shown on each listing. For a question about the pack itself, see Customer care above.</p>
     </section>
 
     <section class="pdp-others">
@@ -494,7 +500,7 @@ def page(p, live, facts, guides=(), recipes=()):
 </body>
 </html>
 """
-    for chunk in (p["title"], p["desc"], p["lede"], p["note"], " ".join(p["uses"])):
+    for chunk in (p["title"], page_desc(p), p["lede"], p["note"], " ".join(p["uses"])):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in {p['code']}: {BANNED.search(text_of(chunk)).group(0)!r}")
     return body

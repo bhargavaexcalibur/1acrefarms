@@ -137,9 +137,9 @@
    "back": "Turmeric, chilli powder, jaggery and cashew from India"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
-   "t": "गामक देसी हरदि, मरचाइ बुकनी, गुड़ आ काजू, 540 g पैकेटमे, आन्ध्र प्रदेशक नरसरावपेटमे पैक कयल। ऑनलाइन वा WhatsApp पर ऑर्डर करू। 2 वा बेसी पैकेट पर मुफ्त डिलीवरी।",
-   "back": "Village native (desi) turmeric, chilli powder, jaggery and cashew, in 540 g packets, packed in Narasaraopet of Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packets."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "गामक देसी हरदि, मरचाइ बुकनी, गुड़ आ काजू, 540 g पैकेटमे, आन्ध्र प्रदेशक नरसरावपेटमे पैक कयल। हमर पैकेट Amazon.in पर बिकाइत अछि।",
+   "back": "Village's native (desi) turmeric, chilli powder, jaggery and cashew, in 540 g packets, packed in Narasaraopet, Andhra Pradesh. Our packets are sold on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Village native (desi) food from India"
   },
   "ui.l_lede": {
-   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
-   "t": "हरदि, मरचाइ बुकनी, गुड़ आ काजू, 540 g पैकेटमे, आन्ध्र प्रदेशक नरसरावपेटमे पैक कयल। ऑनलाइन वा WhatsApp पर ऑर्डर करू। 2 वा बेसी पैकेट पर डिलीवरी मुफ्त अछि।",
-   "back": "Turmeric, chilli powder, jaggery and cashew, in 540 g packets, packed in Narasaraopet of Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packets."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "गामक देसी हरदि, मरचाइ बुकनी, गुड़ आ काजू, 540 g पैकेटमे, आन्ध्र प्रदेशक नरसरावपेटमे पैक कयल। हमर पैकेट Amazon.in पर बिकाइत अछि।",
+   "back": "Village's native (desi) turmeric, chilli powder, jaggery and cashew, in 540 g packets, packed in Narasaraopet, Andhra Pradesh. Our packets are sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -7875,6 +7875,506 @@
    "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
    "t": "हँ। करीब 20 टा सुखल लाल मरचाइ किछु बुन्न तेलमे कुरकुर होबा धरि भूजू, ठंढ़ा करू आ लहसुन डालबा सँ पहिने पीसि लिअ।",
    "back": "Yes. Fry about 20 dry red chillies in a few drops of oil until crisp, cool them and grind before adding the garlic."
+  },
+  "ui.incl_tax": {
+   "src": "Incl. of all taxes",
+   "t": "सभ कर सहित",
+   "back": "Including all taxes"
+  },
+  "ui.store": {
+   "src": "Our Amazon store",
+   "t": "हमर Amazon दोकान",
+   "back": "Our Amazon shop"
+  },
+  "seg.2803dd9940a3": {
+   "src": "Our Amazon store",
+   "t": "हमर Amazon दोकान",
+   "back": "Our Amazon shop"
+  },
+  "seg.f7a42e389759": {
+   "src": "Bellam Atukulu",
+   "t": "बेल्लम अटुकुलु",
+   "back": "Bellam Atukulu"
+  },
+  "seg.9d9b85baad03": {
+   "src": "Kobbari Undalu",
+   "t": "कोब्बरि उंडलु",
+   "back": "Kobbari Undalu"
+  },
+  "seg.35450cfdcdd8": {
+   "src": "With Cane Jaggery · 30 minutes",
+   "t": "कुसियारक गुड़क संग · 30 मिनट",
+   "back": "With sugarcane jaggery · 30 minutes"
+  },
+  "seg.6a0d4200f978": {
+   "src": "Bellam Atukulu recipe card",
+   "t": "बेल्लम अटुकुलु रेसिपी कार्ड",
+   "back": "Bellam Atukulu recipe card"
+  },
+  "seg.5e2064c58b7d": {
+   "src": "Kobbari Undalu recipe card",
+   "t": "कोब्बरि उंडलु रेसिपी कार्ड",
+   "back": "Kobbari Undalu recipe card"
+  },
+  "seg.c473a3556357": {
+   "src": "Andhra sweet · serves 2 · 10 minutes",
+   "t": "आन्ध्रक मिठाइ · 2 लोक लेल · 10 मिनट",
+   "back": "Andhra sweet · for 2 people · 10 minutes"
+  },
+  "seg.7099f7c35107": {
+   "src": "Bellam Atukulu ⟦1⟧(Sweet Poha with Palm Jaggery)⟦/1⟧",
+   "t": "बेल्लम अटुकुलु ⟦1⟧(ताड़क गुड़बला मीठ चूड़ा)⟦/1⟧",
+   "back": "Bellam Atukulu ⟦1⟧(sweet flattened rice with palm jaggery)⟦/1⟧"
+  },
+  "seg.b6b19d4f12bb": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Atukulu · Gud Wale Pohe",
+   "t": "⟦#1⟧ · ⟦#2⟧ · बेल्लम अटुकुलु · गुड़ वाले पोहे",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam Atukulu · poha with jaggery"
+  },
+  "seg.c9c11f5b43da": {
+   "src": "Bellam atukulu is the 10-minute sweet of Telugu homes. It is the poha offered to Krishna on Krishnashtami, recalling Kuchela's gift, and it is also a quick sweet for children after school. The poha is only rinsed, never cooked in water, and then tossed in warm jaggery syrup.",
+   "t": "बेल्लम अटुकुलु तेलुगु घरक 10 मिनटक मिठाइ अछि। ई ओ चूड़ा अछि जे कृष्णाष्टमी पर कृष्णकेँ चढ़ाओल जाइत अछि, कुचेलक उपहारक स्मरणमे, आ स्कूलक बाद बच्चा सभक लेल झटपट मिठाइ सेहो। चूड़ाकेँ मात्र धोओल जाइत अछि, पानिमे कहियो नहि पकाओल जाइत अछि, आ फेर गुनगुन गुड़क चाशनीमे मिलाओल जाइत अछि।",
+   "back": "Bellam Atukulu is a 10-minute sweet of Telugu homes. This flattened rice is offered to Krishna on Krishnashtami, in remembrance of Kuchela's gift; and also a quick sweet for children after school. The flattened rice is only washed, never cooked in water, and then mixed into lukewarm jaggery syrup."
+  },
+  "seg.8594fedb25dc": {
+   "src": "Our Thati Bellam palm jaggery gives it a deep brown colour and a rich, slightly smoky sweetness. This recipe serves 2.",
+   "t": "हमर ताटि बेल्लम ताड़क गुड़ एकरा गाढ़ भूरा रंग आ भरल-पूरल स्वादक, कनेक धुआँ सन मिठास दैत अछि। ई रेसिपी 2 लोक लेल अछि।",
+   "back": "Our Tati Bellam palm jaggery gives it a deep brown colour and a full-flavoured, slightly smoke-like sweetness. This recipe is for 2 people."
+  },
+  "seg.4003255240b7": {
+   "src": "⟦1⟧Prep⟦/1⟧5 min",
+   "t": "⟦1⟧तैयारी⟦/1⟧5 मिनट",
+   "back": "⟦1⟧Prep⟦/1⟧5 minutes"
+  },
+  "seg.26d04ba57d2a": {
+   "src": "⟦1⟧Total⟦/1⟧10 min",
+   "t": "⟦1⟧कुल⟦/1⟧10 मिनट",
+   "back": "⟦1⟧Total⟦/1⟧10 minutes"
+  },
+  "seg.25e28614accb": {
+   "src": "Prep includes 5 minutes for the rinsed poha to soften.",
+   "t": "तैयारीमे धोओल चूड़ाक नरम होयबा लेल 5 मिनट शामिल अछि।",
+   "back": "Prep includes 5 minutes for the washed flattened rice to soften."
+  },
+  "seg.b9dedcd705aa": {
+   "src": "Soften thick poha, toss it in warm palm jaggery syrup with coconut and cardamom, and finish with ghee.",
+   "t": "मोट चूड़ाकेँ नरम करू, नारियल आ इलायचीक संग गुनगुन ताड़क गुड़क चाशनीमे मिलाउ, आ अंतमे घी डालू।",
+   "back": "Soften the thick flattened rice, mix into lukewarm palm jaggery syrup with coconut and cardamom, and add ghee at the end."
+  },
+  "seg.4d040ba776bf": {
+   "src": "For the bellam atukulu",
+   "t": "बेल्लम अटुकुलु लेल",
+   "back": "For the Bellam Atukulu"
+  },
+  "seg.04f65369bdaa": {
+   "src": "1 cup thick poha ⟦1⟧atukulu, about 100 g⟦/1⟧",
+   "t": "1 कप मोट चूड़ा ⟦1⟧अटुकुलु, करीब 100 g⟦/1⟧",
+   "back": "1 cup thick flattened rice ⟦1⟧atukulu, about 100 g⟦/1⟧"
+  },
+  "seg.e13864ccb71f": {
+   "src": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧",
+   "t": "½ कप कद्दूकस कयल ताड़क गुड़ ⟦1⟧करीब 90 g⟦/1⟧",
+   "back": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧"
+  },
+  "seg.b78c520dca8d": {
+   "src": "½ cup grated coconut ⟦1⟧white part only⟦/1⟧",
+   "t": "½ कप कद्दूकस कयल नारियल ⟦1⟧मात्र उज्जर भाग⟦/1⟧",
+   "back": "½ cup grated coconut ⟦1⟧only the white part⟦/1⟧"
+  },
+  "seg.2d6d2ff14f71": {
+   "src": "¼ tsp cardamom powder ⟦1⟧or the crushed seeds of 2–3 pods⟦/1⟧",
+   "t": "¼ छोट चम्मच इलायची बुकनी ⟦1⟧वा 2–3 टा इलायचीक कूटल दाना⟦/1⟧",
+   "back": "¼ teaspoon cardamom powder ⟦1⟧or crushed seeds of 2–3 cardamoms⟦/1⟧"
+  },
+  "seg.2b8bfecc86e5": {
+   "src": "1 tsp ghee",
+   "t": "1 छोट चम्मच घी",
+   "back": "1 teaspoon ghee"
+  },
+  "seg.0c6c4102d4df": {
+   "src": "Optional",
+   "t": "ऐच्छिक",
+   "back": "Optional"
+  },
+  "seg.5f1854fd1277": {
+   "src": "6–8 cashews, optional ⟦1⟧fried golden in ghee⟦/1⟧",
+   "t": "6–8 टा काजू, ऐच्छिक ⟦1⟧घीमे सोनहुला भूजल⟦/1⟧",
+   "back": "6–8 cashews, optional ⟦1⟧fried golden in ghee⟦/1⟧"
+  },
+  "seg.fbe7b4b8afbc": {
+   "src": "Put the poha in a sieve and pick out any bits of husk.",
+   "t": "चूड़ाकेँ छलनीमे राखू आ भूसीक टुकड़ी बीछि कऽ निकालि दिअ।",
+   "back": "Put the flattened rice in a sieve and pick out the husk pieces."
+  },
+  "seg.b0f730c0b062": {
+   "src": "Rinse the poha in a sieve under running water for a few seconds, drain, and leave it for 5 minutes to soften. It should feel soft when pressed, but not wet.",
+   "t": "चूड़ाकेँ छलनीमे बहैत पानिक नीचाँ किछु सेकेंड धोउ, पानि निथारि दिअ, आ नरम होयबा लेल 5 मिनट छोड़ि दिअ। दबौला पर ई नरम लागय, मुदा भीजल नहि।",
+   "back": "Wash the flattened rice in the sieve under running water for a few seconds, let the water drain, and leave 5 minutes to soften. When pressed they should feel soft, but not wet."
+  },
+  "seg.0a3e2261d7bc": {
+   "src": "Grate the palm jaggery finely, breaking up any hard lumps.",
+   "t": "ताड़क गुड़केँ महीन कद्दूकस करू, कड़ा ढेपा तोड़ैत।",
+   "back": "Grate the palm jaggery finely, breaking hard lumps."
+  },
+  "seg.d2b892bf70af": {
+   "src": "Melt the palm jaggery with 2 tbsp water on a low flame, then strain it. Wipe the pan and pour the syrup back in.",
+   "t": "ताड़क गुड़केँ 2 पैघ चम्मच पानिक संग धीमा आँच पर गलाउ, फेर छानि लिअ। पैन पोछि कऽ चाशनी फेर ओहिमे ढारू।",
+   "back": "Melt the palm jaggery with 2 tablespoons of water on low flame, then strain. Wipe the pan and pour the syrup back into it."
+  },
+  "seg.d073ead78aef": {
+   "src": "If you are using cashews, fry them in a little ghee till golden.",
+   "t": "जँ काजू लऽ रहल छी तँ ओकरा कनेक घीमे सोनहुला होयबा धरि भूजू।",
+   "back": "If using cashews, fry them in a little ghee until golden."
+  },
+  "seg.62c17a0f01a5": {
+   "src": "Add the poha, coconut and cardamom to the warm syrup and toss gently on a low flame for 1–2 minutes, until every flake is coated. Use a light hand so the flakes do not break.",
+   "t": "गुनगुन चाशनीमे चूड़ा, नारियल आ इलायची डालू आ धीमा आँच पर 1–2 मिनट धीरे-धीरे मिलाउ, जा धरि हर दाना पर चाशनी नहि लपटि जाय। हल्लुक हाथ सँ करू जाहि सँ दाना नहि टूटय।",
+   "back": "Add the flattened rice, coconut and cardamom to the lukewarm syrup and gently mix on low flame for 1–2 minutes, until every flake is coated with syrup. Work with a light hand so the flakes do not break."
+  },
+  "seg.d1abe3d7557d": {
+   "src": "Take the pan off the heat as soon as the flakes are coated; longer cooking makes them chewy.",
+   "t": "जहिना दाना पर चाशनी लपटि जाय, तुरंत पैन आँच सँ उतारि लिअ; बेसी पकौला सँ ई चिम्मड़ भऽ जाइत अछि।",
+   "back": "As soon as the flakes are coated with syrup, take the pan off the flame immediately; cooking longer makes them chewy."
+  },
+  "seg.c91ffab6359d": {
+   "src": "Finish with the ghee and cashews. Serve warm or at room temperature.",
+   "t": "घी आ काजू डालि कऽ पूरा करू। गरम वा कोठलीक तापमान पर परोसू।",
+   "back": "Finish by adding ghee and cashews. Serve hot/warm or at room temperature."
+  },
+  "seg.544ea222a497": {
+   "src": "Use thick poha. Thin poha turns mushy in the syrup.",
+   "t": "मोट चूड़ा लिअ। पातर चूड़ा चाशनीमे लेबड़ा भऽ जाइत अछि।",
+   "back": "Use thick flattened rice. Thin flattened rice turns mushy in the syrup."
+  },
+  "seg.0f56d718ca89": {
+   "src": "Do not soak the poha in a bowl of water; a quick rinse is enough, or it turns soft and sticky.",
+   "t": "चूड़ाकेँ बाटीभरि पानिमे नहि भिजाउ; झटपट धोनाइ पर्याप्त अछि, नहि तँ ई बेसी नरम आ लसगर भऽ जाइत अछि।",
+   "back": "Do not soak the flattened rice in a bowlful of water; a quick wash is enough, otherwise it becomes too soft and sticky."
+  },
+  "seg.972f174730fe": {
+   "src": "Keep the syrup warm, not bubbling, when the poha goes in, so the flakes coat evenly.",
+   "t": "चूड़ा डालैत काल चाशनी गुनगुन राखू, खौलैत नहि, जाहि सँ सभ दाना पर एक समान चाशनी लागय।",
+   "back": "Keep the syrup lukewarm, not boiling, when adding the flattened rice, so that every flake gets coated evenly with syrup."
+  },
+  "seg.8496cfe4aa1d": {
+   "src": "With milk: pour 2–3 tbsp warm milk over the finished poha for a softer sweet.",
+   "t": "दूधक संग: बेसी नरम मिठाइ लेल तैयार चूड़ा पर 2–3 पैघ चम्मच गुनगुन दूध ढारू।",
+   "back": "With milk: for a softer sweet, pour 2–3 tablespoons of lukewarm milk over the ready flattened rice."
+  },
+  "seg.bb5e4ee879e6": {
+   "src": "With sesame: add 1 tbsp roasted sesame seeds along with the coconut.",
+   "t": "तिलक संग: नारियलक संग 1 पैघ चम्मच भूजल तिल डालू।",
+   "back": "With sesame: add 1 tablespoon of roasted sesame along with the coconut."
+  },
+  "seg.25d7247d3c7b": {
+   "src": "Serve it as naivedyam on Krishnashtami, or as a quick sweet for children after school.",
+   "t": "कृष्णाष्टमी पर नैवेद्यक रूपमे परोसू, वा स्कूलक बाद बच्चा सभकेँ झटपट मिठाइक रूपमे दिअ।",
+   "back": "Serve as naivedyam on Krishnashtami, or give to children after school as a quick sweet."
+  },
+  "seg.1170385c1b79": {
+   "src": "Best eaten the day it is made. Keep leftovers covered in the fridge and eat them the next day; the poha firms up as it stands.",
+   "t": "जाहि दिन बनय ओही दिन खायब सभ सँ नीक। बचलकेँ झाँपि कऽ फ्रिजमे राखू आ अगिला दिन खा लिअ; राखल रहला पर चूड़ा कड़ा भऽ जाइत अछि।",
+   "back": "Best eaten the same day it is made. Cover the leftover, keep in the fridge and eat the next day; when kept, the flattened rice becomes hard."
+  },
+  "seg.6acb206e9df4": {
+   "src": "Which poha is best for bellam atukulu?",
+   "t": "बेल्लम अटुकुलु लेल कोन चूड़ा सभ सँ नीक?",
+   "back": "Which flattened rice is best for Bellam Atukulu?"
+  },
+  "seg.7cb97f8423cf": {
+   "src": "Thick poha (atukulu). It holds its shape in the warm syrup; thin poha turns mushy.",
+   "t": "मोट चूड़ा (अटुकुलु)। ई गुनगुन चाशनीमे अपन आकार बनौने रहैत अछि; पातर चूड़ा लेबड़ा भऽ जाइत अछि।",
+   "back": "Thick flattened rice (atukulu). It keeps its shape in lukewarm syrup; thin flattened rice turns mushy."
+  },
+  "seg.ba8eb1721096": {
+   "src": "Can I make bellam atukulu with cane jaggery?",
+   "t": "की कुसियारक गुड़ सँ बेल्लम अटुकुलु बना सकैत छी?",
+   "back": "Can Bellam Atukulu be made with sugarcane jaggery?"
+  },
+  "seg.2a1aa941db07": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam). It turns lighter in colour, with a caramel-like sweetness.",
+   "t": "हँ। ओतबे कद्दूकस कयल कुसियारक गुड़ (चेरुकु बेल्लम) लिअ। रंग हल्लुक होइत अछि, आ मिठास कैरामेल सन।",
+   "back": "Yes. Use the same amount of grated sugarcane jaggery (Cheruku Bellam). The colour is lighter, and the sweetness caramel-like."
+  },
+  "seg.88008fa2d0e6": {
+   "src": "Why is my bellam atukulu sticky?",
+   "t": "हमर बेल्लम अटुकुलु लसगर किएक भऽ गेल?",
+   "back": "Why did my Bellam Atukulu become sticky?"
+  },
+  "seg.a6945e480c9a": {
+   "src": "The poha was soaked or cooked too long. Rinse it for only a few seconds, and take the pan off the heat as soon as every flake is coated.",
+   "t": "चूड़ा भिजाओल गेल छल वा बेसी काल पकाओल गेल। एकरा मात्र किछु सेकेंड धोउ, आ जहिना हर दाना पर चाशनी लपटि जाय, तुरंत पैन आँच सँ उतारि लिअ।",
+   "back": "The flattened rice was soaked or cooked too long. Wash it only a few seconds, and as soon as every flake is coated with syrup, take the pan off the flame immediately."
+  },
+  "seg.d4c0fab65bf7": {
+   "src": "Why is it made on Krishnashtami?",
+   "t": "ई कृष्णाष्टमी पर किएक बनाओल जाइत अछि?",
+   "back": "Why is this made on Krishnashtami?"
+  },
+  "seg.51ab1914ac8d": {
+   "src": "It recalls the story of Kuchela, who brought a handful of poha to his friend Krishna as his only gift.",
+   "t": "ई कुचेलक कथाक स्मरण करबैत अछि, जे अपन मित्र कृष्ण लग अपन एकमात्र उपहारक रूपमे मुट्ठीभरि चूड़ा लऽ गेल छलाह।",
+   "back": "It recalls the story of Kuchela, who brought a handful of flattened rice to his friend Krishna as his only gift."
+  },
+  "seg.f548f5c95f50": {
+   "src": "బెల్లం అటుకులు · Bellam Atukulu Recipe | 1acrefarms",
+   "t": "బెల్లం అటుకులు · बेल्लम अटुकुलु रेसिपी | 1acrefarms",
+   "back": "Bellam Atukulu · Bellam Atukulu recipe | 1acrefarms"
+  },
+  "seg.5080241b3883": {
+   "src": "బెల్లం అటుకులు. Andhra bellam atukulu: thick poha tossed in warm Thati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and FAQs.",
+   "t": "బెల్లం అటుకులు. आन्ध्रक बेल्लम अटुकुलु: गुनगुन ताटि बेल्लम ताड़क गुड़क चाशनीमे नारियल, इलायची आ घीक संग मिलाओल मोट चूड़ा। 10 मिनटक मिठाइ, सुझाव आ सामान्य प्रश्नक संग।",
+   "back": "Bellam Atukulu. Andhra Bellam Atukulu: thick flattened rice mixed in lukewarm Tati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and common questions."
+  },
+  "seg.4239bed21420": {
+   "src": "Bellam Atukulu (Sweet Poha with Palm Jaggery) · 1acrefarms",
+   "t": "बेल्लम अटुकुलु (ताड़क गुड़बला मीठ चूड़ा) · 1acrefarms",
+   "back": "Bellam Atukulu (sweet flattened rice with palm jaggery) · 1acrefarms"
+  },
+  "seg.8dafb14d8ade": {
+   "src": "Bellam Atukulu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "बेल्लम अटुकुलु: 1acrefarms क रेसिपी कार्ड, सामग्री आ विधिक संग",
+   "back": "Bellam Atukulu: 1acrefarms' recipe card, with ingredients and method"
+  },
+  "seg.f365b17eb48c": {
+   "src": "1 cup thick poha",
+   "t": "1 कप मोट चूड़ा",
+   "back": "1 cup thick flattened rice"
+  },
+  "seg.7c6d93848300": {
+   "src": "½ cup grated palm jaggery",
+   "t": "½ कप कद्दूकस कयल ताड़क गुड़",
+   "back": "½ cup grated palm jaggery"
+  },
+  "seg.98176a72f124": {
+   "src": "½ cup grated coconut",
+   "t": "½ कप कद्दूकस कयल नारियल",
+   "back": "½ cup grated coconut"
+  },
+  "seg.89530d979a1e": {
+   "src": "6–8 cashews, optional",
+   "t": "6–8 टा काजू, ऐच्छिक",
+   "back": "6–8 cashews, optional"
+  },
+  "seg.cf5b9ab6ccf1": {
+   "src": "Andhra sweet · makes about 14",
+   "t": "आन्ध्रक मिठाइ · करीब 14 टा बनैत अछि",
+   "back": "Andhra sweet · makes about 14"
+  },
+  "seg.aa55b9fd31e8": {
+   "src": "Kobbari Undalu ⟦1⟧(Coconut Jaggery Laddu)⟦/1⟧",
+   "t": "कोब्बरि उंडलु ⟦1⟧(नारियल-गुड़क लड्डू)⟦/1⟧",
+   "back": "Kobbari Undalu ⟦1⟧(coconut-jaggery laddus)⟦/1⟧"
+  },
+  "seg.753ec27036d4": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Kobbari Undalu · Nariyal Gud Ke Laddu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · कोब्बरि उंडलु · नारियल गुड़ के लड्डू",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Kobbari Undalu · coconut jaggery laddus"
+  },
+  "seg.de7ddbad7bf0": {
+   "src": "Kobbari undalu are the coconut laddus Andhra homes make for festivals, naivedyam and an everyday sweet. They need only coconut, jaggery, cardamom and a spoon of ghee. The jaggery is melted and strained, the coconut is cooked in it on a low flame until the mix holds together, and the laddus are rolled by hand while still warm.",
+   "t": "कोब्बरि उंडलु नारियलक लड्डू अछि, जे आन्ध्रक घरमे पाबनि, नैवेद्य आ रोजक मिठाइ लेल बनैत अछि। एहिमे मात्र नारियल, गुड़, इलायची आ एक चम्मच घी लगैत अछि। गुड़केँ गला कऽ छानल जाइत अछि, ओहिमे नारियलकेँ धीमा आँच पर तावत पकाओल जाइत अछि जा धरि मिश्रण जुटि नहि जाय, आ मिश्रण गरमे रहैत हाथ सँ लड्डू बान्हल जाइत अछि।",
+   "back": "Kobbari undalu is a coconut laddu, which is made in Andhra homes for festivals, naivedya and everyday sweet. In it only coconut, jaggery, cardamom and one spoon of ghee are used. The jaggery is melted and strained, in it the coconut is cooked on slow heat until the mixture binds (lit. 'until the mixture does not bind', standard until-construction), and while the mixture is still hot the laddus are shaped by hand."
+  },
+  "seg.089fb020d00e": {
+   "src": "Our Cheruku Bellam gives them a light golden colour and a mellow caramel taste. This recipe makes about 14 laddus.",
+   "t": "हमर चेरुकु बेल्लम एकरा हल्लुक सोनहुला रंग आ नरम कैरामेल सन स्वाद दैत अछि। एहि रेसिपी सँ करीब 14 टा लड्डू बनैत अछि।",
+   "back": "Our Cheruku Bellam gives them a light golden colour and a soft caramel-like taste. This recipe makes about 14 laddus."
+  },
+  "seg.c529404fc7f7": {
+   "src": "⟦1⟧Makes⟦/1⟧14",
+   "t": "⟦1⟧बनैत अछि⟦/1⟧14",
+   "back": "⟦1⟧Makes⟦/1⟧14"
+  },
+  "seg.d9e7175cce3e": {
+   "src": "Allow another 15 minutes for the laddus to cool before you store them.",
+   "t": "राखबा सँ पहिने लड्डू सभकेँ सेरयबा लेल आओर 15 मिनट दिअ।",
+   "back": "Give the laddus another 15 minutes to cool before storing."
+  },
+  "seg.80b59063a128": {
+   "src": "Melt cane jaggery, cook it with grated coconut till it comes together, add cardamom and ghee, and roll into laddus.",
+   "t": "कुसियारक गुड़ गलाउ, कद्दूकस कयल नारियलक संग जुटबा धरि पकाउ, इलायची आ घी डालू, आ लड्डू बान्हू।",
+   "back": "Melt the sugarcane jaggery, cook with the grated coconut until it comes together, add cardamom and ghee, and roll the laddus."
+  },
+  "seg.9bb95574c6d5": {
+   "src": "Ingredients ⟦1⟧makes 14⟦/1⟧",
+   "t": "सामग्री ⟦1⟧14 टा बनैत अछि⟦/1⟧",
+   "back": "Ingredients ⟦1⟧makes 14⟦/1⟧"
+  },
+  "seg.80fe874ac1b1": {
+   "src": "For the laddus",
+   "t": "लड्डू लेल",
+   "back": "For the laddus"
+  },
+  "seg.9dbfabbc7bd0": {
+   "src": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧",
+   "t": "2 कप कद्दूकस कयल नारियल ⟦1⟧1 टा मझोला नारियल; मात्र उज्जर भाग कद्दूकस करू⟦/1⟧",
+   "back": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧"
+  },
+  "seg.fa687abb7dd1": {
+   "src": "1 cup grated cane jaggery ⟦1⟧about 180 g; pound or grate the pieces first⟦/1⟧",
+   "t": "1 कप कद्दूकस कयल कुसियारक गुड़ ⟦1⟧करीब 180 g; पहिने टुकड़ीकेँ कूटि लिअ वा कद्दूकस करू⟦/1⟧",
+   "back": "1 cup grated sugarcane jaggery ⟦1⟧about 180 g; first pound or grate the pieces⟦/1⟧"
+  },
+  "seg.1ca2ce946869": {
+   "src": "1 tbsp ghee ⟦1⟧plus a little for greasing your palms⟦/1⟧",
+   "t": "1 पैघ चम्मच घी ⟦1⟧संगहि हथेरीमे लगाबऽ लेल कनेक⟦/1⟧",
+   "back": "1 tablespoon ghee ⟦1⟧plus a little to grease the palms⟦/1⟧"
+  },
+  "seg.ccf1a746b971": {
+   "src": "10 cashews, optional ⟦1⟧broken and fried golden in ghee⟦/1⟧",
+   "t": "10 टा काजू, ऐच्छिक ⟦1⟧तोड़ि कऽ घीमे सोनहुला भूजल⟦/1⟧",
+   "back": "10 cashews, optional ⟦1⟧broken and fried golden in ghee⟦/1⟧"
+  },
+  "seg.15ef8686cc9e": {
+   "src": "Grate the coconut, leaving out the brown skin so the laddus stay light in colour.",
+   "t": "नारियल कद्दूकस करू, भूरा छिलका छोड़ि कऽ, जाहि सँ लड्डूक रंग हल्लुक रहय।",
+   "back": "Grate the coconut, leaving out the brown skin, so the laddus stay light in colour."
+  },
+  "seg.00b442d7f507": {
+   "src": "Pound or grate the cane jaggery into small pieces so it melts evenly.",
+   "t": "कुसियारक गुड़केँ छोट-छोट टुकड़ीमे कूटू वा कद्दूकस करू, जाहि सँ ई एक समान गलय।",
+   "back": "Pound or grate the sugarcane jaggery into small pieces, so it melts evenly."
+  },
+  "seg.c25e0610c714": {
+   "src": "Melt the jaggery with 2 tbsp water on a low flame, then strain it through a fine sieve. This catches any grit or bits of cane from the block.",
+   "t": "गुड़केँ 2 पैघ चम्मच पानिक संग धीमा आँच पर गलाउ, फेर महीन छलनी सँ छानि लिअ। एहि सँ भेलीक कोनो किरकिरी वा कुसियारक टुकड़ी रुकि जाइत अछि।",
+   "back": "Melt the jaggery with 2 tablespoons of water on low flame, then strain through a fine sieve. This stops any grit from the jaggery block (bheli) or bits of sugarcane."
+  },
+  "seg.3eb20f2a7136": {
+   "src": "Return it to the pan, add the coconut and cook on medium-low, stirring, until the mix leaves the sides of the pan and holds together, 12–15 minutes. Keep stirring so it does not catch at the bottom.",
+   "t": "एकरा फेर पैनमे दिअ, नारियल डालू आ मध्यम सँ कम आँच पर चलबैत पकाउ, जा धरि मिश्रण पैनक कात नहि छोड़ि दिअय आ जुटि नहि जाय, 12–15 मिनट। चलबैत रहू जाहि सँ तरमे नहि लागय।",
+   "back": "Put it back in the pan, add the coconut and cook on medium-low flame while stirring, until the mixture leaves the sides of the pan and comes together, 12–15 minutes. Keep stirring so it does not stick at the bottom."
+  },
+  "seg.e1985b8e5f9c": {
+   "src": "If you are using cashews, fry them in a little ghee till golden while the mix cooks.",
+   "t": "जँ काजू लऽ रहल छी तँ मिश्रण पकैत काल ओकरा कनेक घीमे सोनहुला होयबा धरि भूजू।",
+   "back": "If using cashews, fry them in a little ghee until golden while the mixture cooks."
+  },
+  "seg.1dc27e2d9b3e": {
+   "src": "Stir in the cardamom, ghee and cashews. Take the pan off the heat.",
+   "t": "इलायची, घी आ काजू मिलाउ। पैन आँच सँ उतारि लिअ।",
+   "back": "Mix in the cardamom, ghee and cashews. Take the pan off the flame."
+  },
+  "seg.d4ee96780aba": {
+   "src": "Let it cool till you can handle it, grease your palms with ghee and roll it into small balls. Press each one firmly so it holds together.",
+   "t": "एतेक सेरयबा दिअ जे हाथमे लऽ सकी, हथेरीमे घी लगाउ आ छोट-छोट गोला बान्हू। हर गोलाकेँ कसि कऽ दबाउ जाहि सँ ओ जुटल रहय।",
+   "back": "Let it cool enough to hold in the hand, grease the palms with ghee and roll small balls. Press each one firmly so it stays together."
+  },
+  "seg.3753ea8bc7d0": {
+   "src": "Set the laddus on a greased plate and let them cool completely before you store them.",
+   "t": "लड्डू सभकेँ घी लागल थारी पर राखू आ राखबा सँ पहिने पूरा सेरा जाय दिअ।",
+   "back": "Place the laddus on a ghee-greased plate and let them cool completely before storing."
+  },
+  "seg.fb3de84de9f6": {
+   "src": "If the mix won't hold a shape, cook it 2 minutes more. If it sets too hard, sprinkle in a spoon of warm milk and press again.",
+   "t": "जँ मिश्रण आकार नहि धरय तँ आओर 2 मिनट पकाउ। जँ बेसी कड़ा भऽ जाय तँ एक चम्मच गुनगुन दूध छिड़कि कऽ फेर दबाउ।",
+   "back": "If the mixture does not hold shape, cook 2 more minutes. If it becomes too hard, sprinkle a spoon of lukewarm milk and press again."
+  },
+  "seg.71475e1a7345": {
+   "src": "Keep the flame at medium-low; on a high flame the jaggery darkens and the laddus turn hard.",
+   "t": "आँच मध्यम सँ कम राखू; तेज आँच पर गुड़ करिया भऽ जाइत अछि आ लड्डू कड़ा भऽ जाइत अछि।",
+   "back": "Keep the flame medium-low; on high flame the jaggery turns dark and the laddus become hard."
+  },
+  "seg.46a2e2b2d323": {
+   "src": "Roll the laddus while the mix is still warm; once it cools completely it will not bind.",
+   "t": "मिश्रण गरमे रहैत लड्डू बान्हू; पूरा सेरा गेला पर ई नहि जुटत।",
+   "back": "Roll the laddus while the mixture is still hot; once fully cooled it will not come together."
+  },
+  "seg.b277c024adad": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker laddus with a slightly smoky sweetness.",
+   "t": "ताड़क गुड़: बेसी गाढ़ रंगक आ कनेक धुआँ सन मिठासबला लड्डू लेल ओतबे कद्दूकस कयल ताड़क गुड़ लिअ।",
+   "back": "Palm jaggery: for darker laddus with a slightly smoke-like sweetness, use the same amount of grated palm jaggery."
+  },
+  "seg.7b597df04222": {
+   "src": "Dry coconut: use the same amount of grated dry coconut (kopra); the mix comes together faster, so watch it closely.",
+   "t": "सुखल नारियल: ओतबे कद्दूकस कयल सुखल नारियल (कोपरा) लिअ; मिश्रण जल्दी जुटैत अछि, तेँ ध्यान सँ देखैत रहू।",
+   "back": "Dry coconut: use the same amount of grated dry coconut (kopra); the mixture comes together faster, so watch carefully."
+  },
+  "seg.676bca051e10": {
+   "src": "Kobbari burfi: spread the cooked mix on a greased plate, let it set a little and cut it into squares instead of rolling laddus.",
+   "t": "कोब्बरि बर्फी: लड्डू बन्हबाक बदला पकाओल मिश्रणकेँ घी लागल थारी पर पसारू, कनेक जमय दिअ आ चौकोर टुकड़ीमे काटू।",
+   "back": "Kobbari Burfi: instead of rolling laddus, spread the cooked mixture on a ghee-greased plate, let it set a little and cut into square pieces."
+  },
+  "seg.80538d77ab41": {
+   "src": "Serve as an everyday sweet, offer them as naivedyam, or add them to the festival sweet plate.",
+   "t": "रोजक मिठाइक रूपमे परोसू, नैवेद्यक रूपमे चढ़ाउ, वा पाबनिक मिठाइक थारीमे राखू।",
+   "back": "Serve as an everyday sweet, offer as naivedyam, or put on a festival sweets plate."
+  },
+  "seg.6f3252f28ef8": {
+   "src": "Keep in an airtight container and eat within 3 days at room temperature, or within a week if kept in the fridge.",
+   "t": "हवाबंद डिब्बामे राखू आ कोठलीक तापमान पर 3 दिनक भीतर खा लिअ, वा फ्रिजमे राखी तँ एक सप्ताहक भीतर।",
+   "back": "Keep in an airtight container and eat within 3 days at room temperature, or within one week if kept in the fridge."
+  },
+  "seg.f232fb960e89": {
+   "src": "Why are my kobbari undalu not holding shape?",
+   "t": "हमर कोब्बरि उंडलु आकार किएक नहि धरैत अछि?",
+   "back": "Why do my Kobbari Undalu not hold shape?"
+  },
+  "seg.1cf59b528a13": {
+   "src": "The mix needs a little more cooking. Put it back on a low flame for 2 minutes, stirring, until it leaves the sides of the pan, then roll it while it is still warm.",
+   "t": "मिश्रणकेँ कनेक आओर पकयबाक जरूरति अछि। एकरा फेर धीमा आँच पर 2 मिनट चलबैत पकाउ, जा धरि ई पैनक कात नहि छोड़ि दिअय, फेर गरमे रहैत बान्हि लिअ।",
+   "back": "The mixture needs a little more cooking. Cook it again on low flame for 2 minutes while stirring, until it leaves the sides of the pan, then roll while still hot."
+  },
+  "seg.9371fa8705cd": {
+   "src": "Why did my laddus turn hard?",
+   "t": "हमर लड्डू कड़ा किएक भऽ गेल?",
+   "back": "Why did my laddus become hard?"
+  },
+  "seg.ee988ba3472f": {
+   "src": "The jaggery was cooked too long or on too high a flame. Sprinkle in a spoon of warm milk, mix and press again. Next time, take the pan off the heat as soon as the mix holds together.",
+   "t": "गुड़ बेसी काल वा बेसी तेज आँच पर पकि गेल। एक चम्मच गुनगुन दूध छिड़कू, मिलाउ आ फेर दबाउ। अगिला बेर, जहिना मिश्रण जुटि जाय, तुरंत पैन आँच सँ उतारि लिअ।",
+   "back": "The jaggery cooked too long or on too high a flame. Sprinkle a spoon of lukewarm milk, mix and press again. Next time, as soon as the mixture comes together, take the pan off the flame immediately."
+  },
+  "seg.d830316a6adb": {
+   "src": "Can I make kobbari undalu with palm jaggery?",
+   "t": "की ताड़क गुड़ सँ कोब्बरि उंडलु बना सकैत छी?",
+   "back": "Can Kobbari Undalu be made with palm jaggery?"
+  },
+  "seg.813bf680c8a8": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The laddus turn darker, with a slightly smoky sweetness.",
+   "t": "हँ। ओतबे कद्दूकस कयल ताड़क गुड़ (ताटि बेल्लम) लिअ। लड्डू बेसी गाढ़ रंगक होइत अछि, आ मिठासमे कनेक धुआँ सन स्वाद।",
+   "back": "Yes. Use the same amount of grated palm jaggery (Tati Bellam). The laddus become darker, and the sweetness gets a slight smoke-like hint."
+  },
+  "seg.ea6121eb3993": {
+   "src": "How long do kobbari undalu keep?",
+   "t": "कोब्बरि उंडलु कतेक दिन धरि ठीक रहैत अछि?",
+   "back": "For how many days do Kobbari Undalu stay fine?"
+  },
+  "seg.26aba27412dc": {
+   "src": "About 3 days in an airtight container at room temperature, and up to a week in the fridge.",
+   "t": "हवाबंद डिब्बामे कोठलीक तापमान पर करीब 3 दिन, आ फ्रिजमे एक सप्ताह धरि।",
+   "back": "About 3 days in an airtight container at room temperature, and up to one week in the fridge."
+  },
+  "seg.94e224d02e1d": {
+   "src": "కొబ్బరి ఉండలు · Kobbari Undalu Recipe | 1acrefarms",
+   "t": "కొబ్బరి ఉండలు · कोब्बरि उंडलु रेसिपी | 1acrefarms",
+   "back": "Kobbari Undalu · Kobbari Undalu recipe | 1acrefarms"
+  },
+  "seg.0156a887ba6f": {
+   "src": "కొబ్బరి ఉండలు. Andhra kobbari undalu: grated coconut cooked with Cheruku Bellam cane jaggery, cardamom and ghee, then rolled into laddus. Step-by-step method, tips and FAQs.",
+   "t": "కొబ్బరి ఉండలు. आन्ध्रक कोब्बरि उंडलु: चेरुकु बेल्लम कुसियारक गुड़, इलायची आ घीक संग पकाओल कद्दूकस कयल नारियल, फेर लड्डूक रूपमे बान्हल। डेग-डेग विधि, सुझाव आ सामान्य प्रश्न।",
+   "back": "Kobbari Undalu. Andhra Kobbari Undalu: grated coconut cooked with Cheruku Bellam sugarcane jaggery, cardamom and ghee, then rolled into laddus. Step-by-step method, tips and common questions."
+  },
+  "seg.bb9590a78439": {
+   "src": "Kobbari Undalu (Coconut Jaggery Laddu) · 1acrefarms",
+   "t": "कोब्बरि उंडलु (नारियल-गुड़क लड्डू) · 1acrefarms",
+   "back": "Kobbari Undalu (coconut-jaggery laddus) · 1acrefarms"
+  },
+  "seg.fc0444bcc4df": {
+   "src": "Kobbari Undalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "कोब्बरि उंडलु: 1acrefarms क रेसिपी कार्ड, सामग्री आ विधिक संग",
+   "back": "Kobbari Undalu: 1acrefarms' recipe card, with ingredients and method"
+  },
+  "seg.b1e766aa7cc6": {
+   "src": "2 cups grated coconut",
+   "t": "2 कप कद्दूकस कयल नारियल",
+   "back": "2 cups grated coconut"
+  },
+  "seg.b90390a9ff7d": {
+   "src": "10 cashews, optional",
+   "t": "10 टा काजू, ऐच्छिक",
+   "back": "10 cashews, optional"
   }
  }
 }

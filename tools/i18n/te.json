@@ -137,9 +137,9 @@
    "back": "Turmeric, chilli powder, jaggery, cashews from India"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
-   "t": "పల్లె నాటు పసుపు, కారం, బెల్లం, జీడిపప్పు 540 g ప్యాక్‌లలో, ఆంధ్రప్రదేశ్‌లోని నరసరావుపేటలో ప్యాక్ చేసినవి. ఆన్‌లైన్‌లో లేదా WhatsApp లో ఆర్డర్ చేయండి. 2 లేదా అంతకంటే ఎక్కువ ప్యాక్‌లకు డెలివరీ ఉచితం.",
-   "back": "Village native (naatu) turmeric, chilli powder, jaggery, cashews in 540 g packs, packed in Narasaraopet in Andhra Pradesh. Order online or on WhatsApp. Delivery free for 2 or more packs."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "పల్లె నాటు పసుపు, కారం, బెల్లం, జీడిపప్పు 540 g ప్యాక్‌లలో, ఆంధ్రప్రదేశ్‌లోని నరసరావుపేటలో ప్యాక్ చేసినవి. మా ప్యాక్‌లు Amazon.in లో అమ్ముతున్నాం.",
+   "back": "Village native turmeric, chilli powder (kaaram), jaggery, cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs we are selling on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Village native (naatu) provisions from India"
   },
   "ui.l_lede": {
-   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
-   "t": "పసుపు, కారం, బెల్లం, జీడిపప్పు 540 g ప్యాక్‌లలో, ఆంధ్రప్రదేశ్‌లోని నరసరావుపేటలో ప్యాక్ చేసినవి. ఆన్‌లైన్‌లో లేదా WhatsApp లో ఆర్డర్ చేయండి. 2 లేదా అంతకంటే ఎక్కువ ప్యాక్‌లకు డెలివరీ ఉచితం.",
-   "back": "Turmeric, chilli powder, jaggery, cashews in 540 g packs, packed in Narasaraopet in Andhra Pradesh. Order online or on WhatsApp. Delivery free for 2 or more packs."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "పల్లె నాటు పసుపు, కారం, బెల్లం, జీడిపప్పు 540 g ప్యాక్‌లలో, ఆంధ్రప్రదేశ్‌లోని నరసరావుపేటలో ప్యాక్ చేసినవి. మా ప్యాక్‌లు Amazon.in లో అమ్ముతున్నాం.",
+   "back": "Village native turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -7875,6 +7875,506 @@
    "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
    "t": "చేయొచ్చు. సుమారు 20 ఎండు మిరపకాయలను కొన్ని చుక్కల నూనెలో కరకరలాడే వరకు వేయించి, చల్లార్చి, వెల్లుల్లి వేసే ముందు పొడి చేయండి.",
    "back": "They can. Fry about 20 dried red chillies in a few drops of oil until crunchy, cool, and powder them before adding the garlic."
+  },
+  "ui.incl_tax": {
+   "src": "Incl. of all taxes",
+   "t": "అన్ని పన్నులతో కలిపి",
+   "back": "Including all taxes"
+  },
+  "ui.store": {
+   "src": "Our Amazon store",
+   "t": "మా Amazon స్టోర్",
+   "back": "Our Amazon store"
+  },
+  "seg.2803dd9940a3": {
+   "src": "Our Amazon store",
+   "t": "మా Amazon స్టోర్",
+   "back": "Our Amazon store"
+  },
+  "seg.f7a42e389759": {
+   "src": "Bellam Atukulu",
+   "t": "బెల్లం అటుకులు",
+   "back": "Bellam atukulu"
+  },
+  "seg.9d9b85baad03": {
+   "src": "Kobbari Undalu",
+   "t": "కొబ్బరి ఉండలు",
+   "back": "Kobbari undalu"
+  },
+  "seg.35450cfdcdd8": {
+   "src": "With Cane Jaggery · 30 minutes",
+   "t": "చెరుకు బెల్లంతో · 30 నిమిషాలు",
+   "back": "With sugarcane jaggery · 30 minutes"
+  },
+  "seg.6a0d4200f978": {
+   "src": "Bellam Atukulu recipe card",
+   "t": "బెల్లం అటుకులు రెసిపీ కార్డు",
+   "back": "Bellam atukulu recipe card"
+  },
+  "seg.5e2064c58b7d": {
+   "src": "Kobbari Undalu recipe card",
+   "t": "కొబ్బరి ఉండలు రెసిపీ కార్డు",
+   "back": "Kobbari undalu recipe card"
+  },
+  "seg.c473a3556357": {
+   "src": "Andhra sweet · serves 2 · 10 minutes",
+   "t": "ఆంధ్ర స్వీటు · 2 మందికి · 10 నిమిషాలు",
+   "back": "Andhra sweet · for 2 people · 10 minutes"
+  },
+  "seg.7099f7c35107": {
+   "src": "Bellam Atukulu ⟦1⟧(Sweet Poha with Palm Jaggery)⟦/1⟧",
+   "t": "బెల్లం అటుకులు ⟦1⟧(తాటి బెల్లంతో స్వీట్ పోహా)⟦/1⟧",
+   "back": "Bellam atukulu ⟦1⟧(sweet flattened rice with palm jaggery)⟦/1⟧"
+  },
+  "seg.b6b19d4f12bb": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Atukulu · Gud Wale Pohe",
+   "t": "⟦#1⟧ · ⟦#2⟧ · బెల్లం అటుకులు · గుడ్ వాలే పోహే",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam atukulu · Gud wale pohe"
+  },
+  "seg.c9c11f5b43da": {
+   "src": "Bellam atukulu is the 10-minute sweet of Telugu homes. It is the poha offered to Krishna on Krishnashtami, recalling Kuchela's gift, and it is also a quick sweet for children after school. The poha is only rinsed, never cooked in water, and then tossed in warm jaggery syrup.",
+   "t": "బెల్లం అటుకులు తెలుగు ఇళ్లలో 10 నిమిషాల్లో అయిపోయే స్వీటు. కృష్ణాష్టమి నాడు కుచేలుడు ఇచ్చిన కానుకను గుర్తు చేస్తూ శ్రీకృష్ణుడికి సమర్పించే అటుకులు ఇవే, బడి నుంచి వచ్చిన పిల్లలకు త్వరగా చేసి పెట్టే స్వీటు కూడా ఇదే. అటుకులను కడిగితే చాలు, నీళ్లలో ఉడికించరు; తర్వాత వెచ్చని బెల్లం పాకంలో కలుపుతారు.",
+   "back": "Bellam atukulu is a sweet made in Telugu homes in 10 minutes. This is the very flattened rice that is offered to Krishna on Krishnashtami, remembering Kuchela's gift; it is also the sweet quickly made for children coming from school. It is enough to wash the flattened rice, it is not boiled in water; then it is tossed in warm jaggery syrup."
+  },
+  "seg.8594fedb25dc": {
+   "src": "Our Thati Bellam palm jaggery gives it a deep brown colour and a rich, slightly smoky sweetness. This recipe serves 2.",
+   "t": "మా తాటి బెల్లం దీనికి ముదురు గోధుమ రంగును, గాఢమైన తీపిని, కొద్దిగా పొగ రుచిని ఇస్తుంది. ఈ రెసిపీ 2 మందికి సరిపోతుంది.",
+   "back": "Our Thati Bellam palm jaggery gives this a dark brown colour, a rich sweet taste, and a slight smoky taste. This recipe is for 2 people."
+  },
+  "seg.4003255240b7": {
+   "src": "⟦1⟧Prep⟦/1⟧5 min",
+   "t": "⟦1⟧తయారీ⟦/1⟧5 నిమిషాలు",
+   "back": "⟦1⟧Preparation⟦/1⟧5 minutes"
+  },
+  "seg.26d04ba57d2a": {
+   "src": "⟦1⟧Total⟦/1⟧10 min",
+   "t": "⟦1⟧మొత్తం⟦/1⟧10 నిమిషాలు",
+   "back": "⟦1⟧Total⟦/1⟧10 minutes"
+  },
+  "seg.25e28614accb": {
+   "src": "Prep includes 5 minutes for the rinsed poha to soften.",
+   "t": "కడిగిన అటుకులు మెత్తబడటానికి పట్టే 5 నిమిషాలు తయారీ సమయంలో కలిపాం.",
+   "back": "The 5 minutes it takes for washed flattened rice to soften we have included in the preparation time."
+  },
+  "seg.b9dedcd705aa": {
+   "src": "Soften thick poha, toss it in warm palm jaggery syrup with coconut and cardamom, and finish with ghee.",
+   "t": "మందపాటి అటుకులను మెత్తబరిచి, కొబ్బరి, యాలకులతో వెచ్చని తాటి బెల్లం పాకంలో కలిపి, చివరగా నెయ్యి వేయండి.",
+   "back": "Soften the thick flattened rice, toss it with coconut and cardamom in warm palm jaggery syrup, and add ghee at the end."
+  },
+  "seg.4d040ba776bf": {
+   "src": "For the bellam atukulu",
+   "t": "బెల్లం అటుకులకు కావలసినవి",
+   "back": "For bellam atukulu"
+  },
+  "seg.04f65369bdaa": {
+   "src": "1 cup thick poha ⟦1⟧atukulu, about 100 g⟦/1⟧",
+   "t": "1 కప్పు మందపాటి అటుకులు ⟦1⟧సుమారు 100 g⟦/1⟧",
+   "back": "1 cup thick flattened rice ⟦1⟧atukulu, about 100 g⟦/1⟧"
+  },
+  "seg.e13864ccb71f": {
+   "src": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧",
+   "t": "½ కప్పు తురిమిన తాటి బెల్లం ⟦1⟧సుమారు 90 g⟦/1⟧",
+   "back": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧"
+  },
+  "seg.b78c520dca8d": {
+   "src": "½ cup grated coconut ⟦1⟧white part only⟦/1⟧",
+   "t": "½ కప్పు తురిమిన కొబ్బరి ⟦1⟧తెల్లని భాగం మాత్రమే⟦/1⟧",
+   "back": "½ cup grated coconut ⟦1⟧white part only⟦/1⟧"
+  },
+  "seg.2d6d2ff14f71": {
+   "src": "¼ tsp cardamom powder ⟦1⟧or the crushed seeds of 2–3 pods⟦/1⟧",
+   "t": "¼ టీస్పూన్ యాలకుల పొడి ⟦1⟧లేదా 2–3 యాలకుల గింజలను దంచినవి⟦/1⟧",
+   "back": "¼ teaspoon cardamom powder ⟦1⟧or crushed seeds of 2–3 cardamoms⟦/1⟧"
+  },
+  "seg.2b8bfecc86e5": {
+   "src": "1 tsp ghee",
+   "t": "1 టీస్పూన్ నెయ్యి",
+   "back": "1 teaspoon ghee"
+  },
+  "seg.0c6c4102d4df": {
+   "src": "Optional",
+   "t": "ఇష్టమైతే",
+   "back": "If desired"
+  },
+  "seg.5f1854fd1277": {
+   "src": "6–8 cashews, optional ⟦1⟧fried golden in ghee⟦/1⟧",
+   "t": "6–8 జీడిపప్పులు, ఇష్టమైతే ⟦1⟧నేతిలో బంగారు రంగు వచ్చేలా వేయించినవి⟦/1⟧",
+   "back": "6–8 cashews, if desired ⟦1⟧fried golden in ghee⟦/1⟧"
+  },
+  "seg.fbe7b4b8afbc": {
+   "src": "Put the poha in a sieve and pick out any bits of husk.",
+   "t": "అటుకులను జల్లెడలో వేసి, ఏమైనా పొట్టు ముక్కలు ఉంటే తీసేయండి.",
+   "back": "Put the flattened rice in a strainer and pick out any husk pieces."
+  },
+  "seg.b0f730c0b062": {
+   "src": "Rinse the poha in a sieve under running water for a few seconds, drain, and leave it for 5 minutes to soften. It should feel soft when pressed, but not wet.",
+   "t": "అటుకులను జల్లెడలో ఉంచి, పారే నీటి కింద కొన్ని సెకన్లు కడిగి, నీళ్లు వడకట్టి, మెత్తబడటానికి 5 నిమిషాలు పక్కన ఉంచండి. నొక్కితే మెత్తగా ఉండాలి, కానీ తడిగా ఉండకూడదు.",
+   "back": "Wash the flattened rice in the strainer under running water for a few seconds, drain the water, and leave 5 minutes to soften. It should be soft when pressed, but should not be wet."
+  },
+  "seg.0a3e2261d7bc": {
+   "src": "Grate the palm jaggery finely, breaking up any hard lumps.",
+   "t": "తాటి బెల్లాన్ని సన్నగా తురమండి, గట్టి ముద్దలు ఉంటే పగలగొట్టండి.",
+   "back": "Grate the palm jaggery finely and break any hard lumps."
+  },
+  "seg.d2b892bf70af": {
+   "src": "Melt the palm jaggery with 2 tbsp water on a low flame, then strain it. Wipe the pan and pour the syrup back in.",
+   "t": "తాటి బెల్లాన్ని 2 టేబుల్‌స్పూన్ల నీళ్లతో తక్కువ మంట మీద కరిగించి, వడకట్టండి. పాత్రను తుడిచి, పాకాన్ని తిరిగి పోయండి.",
+   "back": "Melt the palm jaggery with 2 tablespoons of water on low heat and strain. Wipe the pan and pour the syrup back."
+  },
+  "seg.d073ead78aef": {
+   "src": "If you are using cashews, fry them in a little ghee till golden.",
+   "t": "జీడిపప్పు వేస్తున్నట్లయితే, కొద్దిగా నేతిలో బంగారు రంగు వచ్చే వరకు వేయించండి.",
+   "back": "If adding cashews, fry them golden in a little ghee."
+  },
+  "seg.62c17a0f01a5": {
+   "src": "Add the poha, coconut and cardamom to the warm syrup and toss gently on a low flame for 1–2 minutes, until every flake is coated. Use a light hand so the flakes do not break.",
+   "t": "వెచ్చని పాకంలో అటుకులు, కొబ్బరి, యాలకులు వేసి, తక్కువ మంట మీద 1–2 నిమిషాలు, ప్రతి అటుకుకు పాకం పట్టే వరకు మెల్లగా కలపండి. అటుకులు విరగకుండా చేతిని తేలికగా ఉంచండి.",
+   "back": "Add the flattened rice, coconut and cardamom to the warm syrup and gently toss on low heat for 1–2 minutes, until the syrup coats every flattened-rice flake. Keep a light hand so the flattened rice does not break."
+  },
+  "seg.d1abe3d7557d": {
+   "src": "Take the pan off the heat as soon as the flakes are coated; longer cooking makes them chewy.",
+   "t": "అటుకులకు పాకం పట్టగానే వెంటనే పాత్రను మంట మీద నుంచి దించండి; ఎక్కువసేపు ఉడికిస్తే అవి నమలడానికి గట్టిగా అవుతాయి.",
+   "back": "As soon as the syrup coats the flattened rice, immediately take the pan off the heat; if cooked longer they become hard to chew."
+  },
+  "seg.c91ffab6359d": {
+   "src": "Finish with the ghee and cashews. Serve warm or at room temperature.",
+   "t": "చివరగా నెయ్యి, జీడిపప్పు వేయండి. వేడిగా లేదా గది వేడిలో వడ్డించండి.",
+   "back": "Add ghee and cashews at the end. Serve warm or at room temperature."
+  },
+  "seg.544ea222a497": {
+   "src": "Use thick poha. Thin poha turns mushy in the syrup.",
+   "t": "మందపాటి అటుకులు వాడండి. పలుచని అటుకులు పాకంలో ముద్దగా అవుతాయి.",
+   "back": "Use thick flattened rice. Thin flattened rice turns lumpy in the syrup."
+  },
+  "seg.0f56d718ca89": {
+   "src": "Do not soak the poha in a bowl of water; a quick rinse is enough, or it turns soft and sticky.",
+   "t": "అటుకులను గిన్నెలో నీళ్లలో నానబెట్టకండి; త్వరగా కడిగితే చాలు, లేకపోతే అవి మెత్తబడి అంటుకుపోతాయి.",
+   "back": "Do not soak the flattened rice in a bowl of water; a quick wash is enough, otherwise it turns soft and sticks together."
+  },
+  "seg.972f174730fe": {
+   "src": "Keep the syrup warm, not bubbling, when the poha goes in, so the flakes coat evenly.",
+   "t": "అటుకులు వేసేటప్పుడు పాకం వెచ్చగా ఉండాలి, బుడగలు రాకూడదు; అప్పుడు ప్రతి అటుకుకు సమంగా పాకం పడుతుంది.",
+   "back": "The syrup should be warm when adding the flattened rice, bubbles should not come; then the syrup coats each flake equally."
+  },
+  "seg.8496cfe4aa1d": {
+   "src": "With milk: pour 2–3 tbsp warm milk over the finished poha for a softer sweet.",
+   "t": "పాలతో: ఇంకా మెత్తని స్వీటు కోసం, తయారైన అటుకులపై 2–3 టేబుల్‌స్పూన్ల వెచ్చని పాలు పోయండి.",
+   "back": "With milk: for an even softer sweet, pour 2–3 tablespoons of warm milk over the prepared flattened rice."
+  },
+  "seg.bb5e4ee879e6": {
+   "src": "With sesame: add 1 tbsp roasted sesame seeds along with the coconut.",
+   "t": "నువ్వులతో: కొబ్బరితో పాటు 1 టేబుల్‌స్పూన్ వేయించిన నువ్వులు కలపండి.",
+   "back": "With sesame: add 1 tablespoon of roasted sesame along with the coconut."
+  },
+  "seg.25d7247d3c7b": {
+   "src": "Serve it as naivedyam on Krishnashtami, or as a quick sweet for children after school.",
+   "t": "కృష్ణాష్టమి నాడు నైవేద్యంగా వడ్డించండి, లేదా బడి నుంచి వచ్చిన పిల్లలకు త్వరగా చేసే స్వీటుగా ఇవ్వండి.",
+   "back": "Serve as an offering (naivedyam) on Krishnashtami, or give as a quick sweet to children coming from school."
+  },
+  "seg.1170385c1b79": {
+   "src": "Best eaten the day it is made. Keep leftovers covered in the fridge and eat them the next day; the poha firms up as it stands.",
+   "t": "చేసిన రోజే తింటే బాగుంటుంది. మిగిలినవి మూత పెట్టి ఫ్రిజ్‌లో ఉంచి, మరుసటి రోజు తినండి; అటుకులు ఉంచితే గట్టిపడతాయి.",
+   "back": "Best eaten the same day it is made. Cover the rest and keep in the fridge and eat the next day; if kept, the flattened rice becomes firm."
+  },
+  "seg.6acb206e9df4": {
+   "src": "Which poha is best for bellam atukulu?",
+   "t": "బెల్లం అటుకులకు ఏ అటుకులు బాగుంటాయి?",
+   "back": "Which flattened rice is good for bellam atukulu?"
+  },
+  "seg.7cb97f8423cf": {
+   "src": "Thick poha (atukulu). It holds its shape in the warm syrup; thin poha turns mushy.",
+   "t": "మందపాటి అటుకులు. అవి వెచ్చని పాకంలో ఆకారం కోల్పోవు; పలుచని అటుకులు ముద్దగా అవుతాయి.",
+   "back": "Thick flattened rice (atukulu). It keeps its shape in warm syrup; thin flattened rice turns lumpy."
+  },
+  "seg.ba8eb1721096": {
+   "src": "Can I make bellam atukulu with cane jaggery?",
+   "t": "బెల్లం అటుకులను చెరుకు బెల్లంతో చేయవచ్చా?",
+   "back": "Can bellam atukulu be made with sugarcane jaggery?"
+  },
+  "seg.2a1aa941db07": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam). It turns lighter in colour, with a caramel-like sweetness.",
+   "t": "చేయవచ్చు. అంతే మోతాదులో తురిమిన చెరుకు బెల్లం (చెరుకు బెల్లం) వాడండి. రంగు లేతగా ఉంటుంది, కారమెల్ లాంటి తీపి వస్తుంది.",
+   "back": "It can be made. Use the same quantity of grated sugarcane jaggery (sugarcane jaggery). The colour will be light, a caramel-like sweetness comes."
+  },
+  "seg.88008fa2d0e6": {
+   "src": "Why is my bellam atukulu sticky?",
+   "t": "నా బెల్లం అటుకులు ఎందుకు జిగురుగా అయ్యాయి?",
+   "back": "Why is my bellam atukulu sticky?"
+  },
+  "seg.a6945e480c9a": {
+   "src": "The poha was soaked or cooked too long. Rinse it for only a few seconds, and take the pan off the heat as soon as every flake is coated.",
+   "t": "అటుకులను ఎక్కువసేపు నానబెట్టడం లేదా ఉడికించడం వల్ల. కొన్ని సెకన్లు మాత్రమే కడగండి, ప్రతి అటుకుకు పాకం పట్టగానే పాత్రను మంట మీద నుంచి దించండి.",
+   "back": "The reason is soaking or cooking the flattened rice too long. Wash only a few seconds; as soon as the syrup coats every flake, take the pan off the heat."
+  },
+  "seg.d4c0fab65bf7": {
+   "src": "Why is it made on Krishnashtami?",
+   "t": "కృష్ణాష్టమి నాడు దీన్ని ఎందుకు చేస్తారు?",
+   "back": "Why is this made on Krishnashtami?"
+  },
+  "seg.51ab1914ac8d": {
+   "src": "It recalls the story of Kuchela, who brought a handful of poha to his friend Krishna as his only gift.",
+   "t": "తన స్నేహితుడైన శ్రీకృష్ణుడికి కుచేలుడు తన ఏకైక కానుకగా పిడికెడు అటుకులు తెచ్చిన కథను ఇది గుర్తు చేస్తుంది.",
+   "back": "It reminds of the story in which Kuchela brought a handful of flattened rice as his only gift to his friend Krishna."
+  },
+  "seg.f548f5c95f50": {
+   "src": "బెల్లం అటుకులు · Bellam Atukulu Recipe | 1acrefarms",
+   "t": "బెల్లం అటుకులు · బెల్లం అటుకులు రెసిపీ | 1acrefarms",
+   "back": "[Telugu script: \"bellam atukulu\"/\"jaggery flattened-rice\"] · Bellam atukulu recipe | 1acrefarms"
+  },
+  "seg.5080241b3883": {
+   "src": "బెల్లం అటుకులు. Andhra bellam atukulu: thick poha tossed in warm Thati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and FAQs.",
+   "t": "బెల్లం అటుకులు. ఆంధ్ర బెల్లం అటుకులు: మందపాటి అటుకులను వెచ్చని తాటి బెల్లం పాకంలో కొబ్బరి, యాలకులు, నెయ్యితో కలిపిన స్వీటు. 10 నిమిషాల స్వీటు, చిట్కాలు, ప్రశ్నలు-జవాబులతో.",
+   "back": "[Telugu script: \"bellam atukulu\"/\"jaggery flattened-rice\"]. Andhra bellam atukulu: a sweet of thick flattened rice tossed in warm Thati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and questions and answers."
+  },
+  "seg.4239bed21420": {
+   "src": "Bellam Atukulu (Sweet Poha with Palm Jaggery) · 1acrefarms",
+   "t": "బెల్లం అటుకులు (తాటి బెల్లంతో స్వీట్ పోహా) · 1acrefarms",
+   "back": "Bellam atukulu (sweet flattened rice with palm jaggery) · 1acrefarms"
+  },
+  "seg.8dafb14d8ade": {
+   "src": "Bellam Atukulu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "బెల్లం అటుకులు: 1acrefarms రెసిపీ కార్డు, కావలసినవి, చేసే విధానంతో",
+   "back": "Bellam atukulu: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.f365b17eb48c": {
+   "src": "1 cup thick poha",
+   "t": "1 కప్పు మందపాటి అటుకులు",
+   "back": "1 cup thick flattened rice"
+  },
+  "seg.7c6d93848300": {
+   "src": "½ cup grated palm jaggery",
+   "t": "½ కప్పు తురిమిన తాటి బెల్లం",
+   "back": "½ cup grated palm jaggery"
+  },
+  "seg.98176a72f124": {
+   "src": "½ cup grated coconut",
+   "t": "½ కప్పు తురిమిన కొబ్బరి",
+   "back": "½ cup grated coconut"
+  },
+  "seg.89530d979a1e": {
+   "src": "6–8 cashews, optional",
+   "t": "6–8 జీడిపప్పులు, ఇష్టమైతే",
+   "back": "6–8 cashews, if desired"
+  },
+  "seg.cf5b9ab6ccf1": {
+   "src": "Andhra sweet · makes about 14",
+   "t": "ఆంధ్ర స్వీటు · సుమారు 14 వస్తాయి",
+   "back": "Andhra sweet · about 14 come out"
+  },
+  "seg.aa55b9fd31e8": {
+   "src": "Kobbari Undalu ⟦1⟧(Coconut Jaggery Laddu)⟦/1⟧",
+   "t": "కొబ్బరి ఉండలు ⟦1⟧(కొబ్బరి బెల్లం లడ్డూ)⟦/1⟧",
+   "back": "Kobbari undalu ⟦1⟧(coconut jaggery laddu)⟦/1⟧"
+  },
+  "seg.753ec27036d4": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Kobbari Undalu · Nariyal Gud Ke Laddu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · కొబ్బరి ఉండలు · నారియల్ గుడ్ కే లడ్డూ",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Kobbari undalu · Nariyal gud ke laddu"
+  },
+  "seg.de7ddbad7bf0": {
+   "src": "Kobbari undalu are the coconut laddus Andhra homes make for festivals, naivedyam and an everyday sweet. They need only coconut, jaggery, cardamom and a spoon of ghee. The jaggery is melted and strained, the coconut is cooked in it on a low flame until the mix holds together, and the laddus are rolled by hand while still warm.",
+   "t": "కొబ్బరి ఉండలు ఆంధ్ర ఇళ్లలో పండుగలకు, నైవేద్యానికి, రోజువారీ స్వీటుగా చేసే కొబ్బరి లడ్డూలు. వీటికి కొబ్బరి, బెల్లం, యాలకులు, ఒక చెంచా నెయ్యి చాలు. బెల్లాన్ని కరిగించి వడకట్టి, కొబ్బరిని అందులో తక్కువ మంట మీద మిశ్రమం ముద్దగా అయ్యే వరకు ఉడికించి, ఇంకా వెచ్చగా ఉండగానే చేత్తో ఉండలు చుడతారు.",
+   "back": "Kobbari undalu are coconut laddus that Andhra homes make for festivals, for offerings, and as an everyday sweet. It needs only coconut, jaggery, cardamom and one spoon of ghee. The jaggery is melted and strained, the coconut is cooked in it on low heat until the mixture binds, and while still warm the laddus are shaped by hand."
+  },
+  "seg.089fb020d00e": {
+   "src": "Our Cheruku Bellam gives them a light golden colour and a mellow caramel taste. This recipe makes about 14 laddus.",
+   "t": "మా చెరుకు బెల్లం వీటికి లేత బంగారు రంగును, మెత్తని కారమెల్ రుచిని ఇస్తుంది. ఈ రెసిపీతో సుమారు 14 లడ్డూలు వస్తాయి.",
+   "back": "Our Cheruku Bellam gives these a light golden colour and a soft caramel-like taste. This recipe makes about 14 laddus."
+  },
+  "seg.c529404fc7f7": {
+   "src": "⟦1⟧Makes⟦/1⟧14",
+   "t": "⟦1⟧వచ్చేవి⟦/1⟧14",
+   "back": "⟦1⟧Makes⟦/1⟧14"
+  },
+  "seg.d9e7175cce3e": {
+   "src": "Allow another 15 minutes for the laddus to cool before you store them.",
+   "t": "నిల్వ చేసే ముందు లడ్డూలు చల్లారడానికి ఇంకో 15 నిమిషాలు ఇవ్వండి.",
+   "back": "Give the laddus another 15 minutes to cool before storing."
+  },
+  "seg.80b59063a128": {
+   "src": "Melt cane jaggery, cook it with grated coconut till it comes together, add cardamom and ghee, and roll into laddus.",
+   "t": "చెరుకు బెల్లాన్ని కరిగించి, తురిమిన కొబ్బరితో ముద్దగా అయ్యే వరకు ఉడికించి, యాలకులు, నెయ్యి కలిపి, లడ్డూలుగా చుట్టండి.",
+   "back": "Melt the sugarcane jaggery, cook with grated coconut until it binds, add cardamom and ghee, and shape into laddus."
+  },
+  "seg.9bb95574c6d5": {
+   "src": "Ingredients ⟦1⟧makes 14⟦/1⟧",
+   "t": "కావలసినవి ⟦1⟧14 వస్తాయి⟦/1⟧",
+   "back": "Ingredients ⟦1⟧makes 14⟦/1⟧"
+  },
+  "seg.80fe874ac1b1": {
+   "src": "For the laddus",
+   "t": "లడ్డూలకు కావలసినవి",
+   "back": "For the laddus"
+  },
+  "seg.9dbfabbc7bd0": {
+   "src": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧",
+   "t": "2 కప్పులు తురిమిన కొబ్బరి ⟦1⟧1 మధ్యరకం కొబ్బరికాయ; తెల్లని భాగం మాత్రమే తురమండి⟦/1⟧",
+   "back": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧"
+  },
+  "seg.fa687abb7dd1": {
+   "src": "1 cup grated cane jaggery ⟦1⟧about 180 g; pound or grate the pieces first⟦/1⟧",
+   "t": "1 కప్పు తురిమిన చెరుకు బెల్లం ⟦1⟧సుమారు 180 g; ముక్కలను ముందు దంచండి లేదా తురమండి⟦/1⟧",
+   "back": "1 cup grated sugarcane jaggery ⟦1⟧about 180 g; first crush or grate the pieces⟦/1⟧"
+  },
+  "seg.1ca2ce946869": {
+   "src": "1 tbsp ghee ⟦1⟧plus a little for greasing your palms⟦/1⟧",
+   "t": "1 టేబుల్‌స్పూన్ నెయ్యి ⟦1⟧అరచేతులకు రాసుకోవడానికి కొద్దిగా అదనంగా⟦/1⟧",
+   "back": "1 tablespoon ghee ⟦1⟧plus a little extra to grease the palms⟦/1⟧"
+  },
+  "seg.ccf1a746b971": {
+   "src": "10 cashews, optional ⟦1⟧broken and fried golden in ghee⟦/1⟧",
+   "t": "10 జీడిపప్పులు, ఇష్టమైతే ⟦1⟧ముక్కలు చేసి నేతిలో బంగారు రంగు వచ్చేలా వేయించినవి⟦/1⟧",
+   "back": "10 cashews, if desired ⟦1⟧broken and fried golden in ghee⟦/1⟧"
+  },
+  "seg.15ef8686cc9e": {
+   "src": "Grate the coconut, leaving out the brown skin so the laddus stay light in colour.",
+   "t": "కొబ్బరిని తురమండి, గోధుమ రంగు పొరను వదిలేయండి; అప్పుడు లడ్డూలు లేత రంగులో ఉంటాయి.",
+   "back": "Grate the coconut, leaving the brown skin; then the laddus will be light in colour."
+  },
+  "seg.00b442d7f507": {
+   "src": "Pound or grate the cane jaggery into small pieces so it melts evenly.",
+   "t": "చెరుకు బెల్లాన్ని చిన్న ముక్కలుగా దంచండి లేదా తురమండి; అప్పుడు సమంగా కరుగుతుంది.",
+   "back": "Crush or grate the sugarcane jaggery into small pieces; then it melts evenly."
+  },
+  "seg.c25e0610c714": {
+   "src": "Melt the jaggery with 2 tbsp water on a low flame, then strain it through a fine sieve. This catches any grit or bits of cane from the block.",
+   "t": "బెల్లాన్ని 2 టేబుల్‌స్పూన్ల నీళ్లతో తక్కువ మంట మీద కరిగించి, సన్నని జల్లెడలో వడకట్టండి. దిమ్మలో ఉండే మట్టి రేణువులు, చెరుకు ముక్కలు ఇందులో ఆగిపోతాయి.",
+   "back": "Melt the jaggery with 2 tablespoons of water on low heat and strain through a fine strainer. Dirt particles and sugarcane bits in the jaggery block stay in it."
+  },
+  "seg.3eb20f2a7136": {
+   "src": "Return it to the pan, add the coconut and cook on medium-low, stirring, until the mix leaves the sides of the pan and holds together, 12–15 minutes. Keep stirring so it does not catch at the bottom.",
+   "t": "దాన్ని తిరిగి పాత్రలో పోసి, కొబ్బరి వేసి, మధ్యస్థం-తక్కువ మంట మీద కలుపుతూ, మిశ్రమం పాత్ర అంచులు వదిలి ముద్దగా అయ్యే వరకు, 12–15 నిమిషాలు ఉడికించండి. అడుగు అంటుకోకుండా కలుపుతూ ఉండండి.",
+   "back": "Pour it back into the pan, add the coconut, and cook on medium-low heat stirring, for 12–15 minutes, until the mixture leaves the sides of the pan and binds together. Keep stirring so it does not stick to the bottom."
+  },
+  "seg.e1985b8e5f9c": {
+   "src": "If you are using cashews, fry them in a little ghee till golden while the mix cooks.",
+   "t": "జీడిపప్పు వేస్తున్నట్లయితే, మిశ్రమం ఉడుకుతున్న సమయంలోనే కొద్దిగా నేతిలో బంగారు రంగు వచ్చే వరకు వేయించండి.",
+   "back": "If adding cashews, fry them golden in a little ghee while the mixture is cooking."
+  },
+  "seg.1dc27e2d9b3e": {
+   "src": "Stir in the cardamom, ghee and cashews. Take the pan off the heat.",
+   "t": "యాలకులు, నెయ్యి, జీడిపప్పు కలపండి. పాత్రను మంట మీద నుంచి దించండి.",
+   "back": "Add cardamom, ghee and cashews and mix. Take the pan off the heat."
+  },
+  "seg.d4ee96780aba": {
+   "src": "Let it cool till you can handle it, grease your palms with ghee and roll it into small balls. Press each one firmly so it holds together.",
+   "t": "చేత్తో పట్టుకోగలిగేంత వరకు చల్లారనివ్వండి, అరచేతులకు నెయ్యి రాసుకుని చిన్న ఉండలుగా చుట్టండి. ప్రతి ఉండను గట్టిగా నొక్కండి, అప్పుడు ముద్దగా నిలుస్తుంది.",
+   "back": "Let it cool until it can be held by hand, grease the palms with ghee, and shape into small balls. Press each one firmly, then it stays bound."
+  },
+  "seg.3753ea8bc7d0": {
+   "src": "Set the laddus on a greased plate and let them cool completely before you store them.",
+   "t": "లడ్డూలను నెయ్యి రాసిన పళ్లెంలో పెట్టి, నిల్వ చేసే ముందు పూర్తిగా చల్లారనివ్వండి.",
+   "back": "Put the laddus on a ghee-greased plate and let them cool completely before storing."
+  },
+  "seg.fb3de84de9f6": {
+   "src": "If the mix won't hold a shape, cook it 2 minutes more. If it sets too hard, sprinkle in a spoon of warm milk and press again.",
+   "t": "మిశ్రమం ఆకారం నిలవకపోతే, ఇంకో 2 నిమిషాలు ఉడికించండి. మరీ గట్టిపడితే, ఒక చెంచా వెచ్చని పాలు చల్లి మళ్లీ నొక్కండి.",
+   "back": "If the mixture does not hold shape, cook 2 more minutes. If it gets too hard, sprinkle a spoon of warm milk and press again."
+  },
+  "seg.71475e1a7345": {
+   "src": "Keep the flame at medium-low; on a high flame the jaggery darkens and the laddus turn hard.",
+   "t": "మంటను మధ్యస్థం-తక్కువగా ఉంచండి; ఎక్కువ మంటలో బెల్లం ముదురు రంగుకు మారి లడ్డూలు గట్టిపడతాయి.",
+   "back": "Keep the heat medium-low; on high heat the jaggery changes to a darker colour and the laddus become hard."
+  },
+  "seg.46a2e2b2d323": {
+   "src": "Roll the laddus while the mix is still warm; once it cools completely it will not bind.",
+   "t": "మిశ్రమం ఇంకా వెచ్చగా ఉండగానే లడ్డూలు చుట్టండి; పూర్తిగా చల్లారిన తర్వాత అది అంటుకోదు.",
+   "back": "Shape the laddus while the mixture is still warm; once fully cooled it will not bind."
+  },
+  "seg.b277c024adad": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker laddus with a slightly smoky sweetness.",
+   "t": "తాటి బెల్లం: ముదురు రంగు లడ్డూల కోసం, కొద్దిగా పొగ రుచితో కూడిన తీపి కోసం, అంతే మోతాదులో తురిమిన తాటి బెల్లం వాడండి.",
+   "back": "Palm jaggery: for dark laddus, for a sweetness with a slight smoky taste, use the same quantity of grated palm jaggery."
+  },
+  "seg.7b597df04222": {
+   "src": "Dry coconut: use the same amount of grated dry coconut (kopra); the mix comes together faster, so watch it closely.",
+   "t": "ఎండు కొబ్బరి: అంతే మోతాదులో తురిమిన ఎండు కొబ్బరి (కొప్పెర) వాడండి; మిశ్రమం త్వరగా ముద్దగా అవుతుంది, కాబట్టి జాగ్రత్తగా గమనించండి.",
+   "back": "Dry coconut: use the same quantity of grated dry coconut (koppera); the mixture binds quickly, so observe carefully."
+  },
+  "seg.676bca051e10": {
+   "src": "Kobbari burfi: spread the cooked mix on a greased plate, let it set a little and cut it into squares instead of rolling laddus.",
+   "t": "కొబ్బరి బర్ఫీ: ఉడికిన మిశ్రమాన్ని నెయ్యి రాసిన పళ్లెంలో పరిచి, కొద్దిగా గట్టిపడనిచ్చి, లడ్డూలు చుట్టకుండా చతురస్రాలుగా కోయండి.",
+   "back": "Kobbari burfi: spread the cooked mixture on a ghee-greased plate, let it set a little, and cut into squares instead of shaping laddus."
+  },
+  "seg.80538d77ab41": {
+   "src": "Serve as an everyday sweet, offer them as naivedyam, or add them to the festival sweet plate.",
+   "t": "రోజువారీ స్వీటుగా వడ్డించండి, నైవేద్యంగా సమర్పించండి, లేదా పండుగ స్వీట్ల పళ్లెంలో చేర్చండి.",
+   "back": "Serve as an everyday sweet, offer as naivedyam, or add to a festival sweet plate."
+  },
+  "seg.6f3252f28ef8": {
+   "src": "Keep in an airtight container and eat within 3 days at room temperature, or within a week if kept in the fridge.",
+   "t": "గాలి చొరని డబ్బాలో ఉంచి, గది వేడిలో అయితే 3 రోజుల్లోపు, ఫ్రిజ్‌లో అయితే ఒక వారంలోపు తినండి.",
+   "back": "Keep in an airtight box; eat within 3 days at room temperature, within one week if kept in the fridge."
+  },
+  "seg.f232fb960e89": {
+   "src": "Why are my kobbari undalu not holding shape?",
+   "t": "నా కొబ్బరి ఉండలు ఎందుకు ఆకారం నిలవడం లేదు?",
+   "back": "Why is my kobbari undalu not holding shape?"
+  },
+  "seg.1cf59b528a13": {
+   "src": "The mix needs a little more cooking. Put it back on a low flame for 2 minutes, stirring, until it leaves the sides of the pan, then roll it while it is still warm.",
+   "t": "మిశ్రమాన్ని ఇంకొంచెం ఉడికించాలి. తక్కువ మంట మీద 2 నిమిషాలు తిరిగి పెట్టి, కలుపుతూ, పాత్ర అంచులు వదిలే వరకు ఉంచి, ఇంకా వెచ్చగా ఉండగానే చుట్టండి.",
+   "back": "The mixture needs to be cooked a little more. Put it back on low heat for 2 minutes, stirring, until it leaves the sides of the pan, and shape while still warm."
+  },
+  "seg.9371fa8705cd": {
+   "src": "Why did my laddus turn hard?",
+   "t": "నా లడ్డూలు ఎందుకు గట్టిపడ్డాయి?",
+   "back": "Why did my laddus become hard?"
+  },
+  "seg.ee988ba3472f": {
+   "src": "The jaggery was cooked too long or on too high a flame. Sprinkle in a spoon of warm milk, mix and press again. Next time, take the pan off the heat as soon as the mix holds together.",
+   "t": "బెల్లాన్ని ఎక్కువసేపు లేదా ఎక్కువ మంట మీద ఉడికించారు. ఒక చెంచా వెచ్చని పాలు చల్లి, కలిపి, మళ్లీ నొక్కండి. వచ్చేసారి మిశ్రమం ముద్దగా అవ్వగానే పాత్రను మంట మీద నుంచి దించండి.",
+   "back": "You cooked the jaggery too long or on high heat. Sprinkle a spoon of warm milk, mix, and press again. Next time take the pan off the heat as soon as the mixture binds."
+  },
+  "seg.d830316a6adb": {
+   "src": "Can I make kobbari undalu with palm jaggery?",
+   "t": "కొబ్బరి ఉండలను తాటి బెల్లంతో చేయవచ్చా?",
+   "back": "Can kobbari undalu be made with palm jaggery?"
+  },
+  "seg.813bf680c8a8": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The laddus turn darker, with a slightly smoky sweetness.",
+   "t": "చేయవచ్చు. అంతే మోతాదులో తురిమిన తాటి బెల్లం (తాటి బెల్లం) వాడండి. లడ్డూలు ముదురు రంగులో, కొద్దిగా పొగ రుచితో కూడిన తీపితో వస్తాయి.",
+   "back": "It can be made. Use the same quantity of grated palm jaggery (palm jaggery). The laddus come out in dark colour, with a sweetness with a slight smoky taste."
+  },
+  "seg.ea6121eb3993": {
+   "src": "How long do kobbari undalu keep?",
+   "t": "కొబ్బరి ఉండలు ఎంతకాలం ఉంటాయి?",
+   "back": "How many days do kobbari undalu last?"
+  },
+  "seg.26aba27412dc": {
+   "src": "About 3 days in an airtight container at room temperature, and up to a week in the fridge.",
+   "t": "గాలి చొరని డబ్బాలో గది వేడిలో సుమారు 3 రోజులు, ఫ్రిజ్‌లో ఒక వారం వరకు.",
+   "back": "About 3 days at room temperature in an airtight box, up to one week in the fridge."
+  },
+  "seg.94e224d02e1d": {
+   "src": "కొబ్బరి ఉండలు · Kobbari Undalu Recipe | 1acrefarms",
+   "t": "కొబ్బరి ఉండలు · కొబ్బరి ఉండలు రెసిపీ | 1acrefarms",
+   "back": "[Telugu script: \"kobbari undalu\"/\"coconut balls\"] · Kobbari undalu recipe | 1acrefarms"
+  },
+  "seg.0156a887ba6f": {
+   "src": "కొబ్బరి ఉండలు. Andhra kobbari undalu: grated coconut cooked with Cheruku Bellam cane jaggery, cardamom and ghee, then rolled into laddus. Step-by-step method, tips and FAQs.",
+   "t": "కొబ్బరి ఉండలు. ఆంధ్ర కొబ్బరి ఉండలు: తురిమిన కొబ్బరిని చెరుకు బెల్లం, యాలకులు, నెయ్యితో ఉడికించి లడ్డూలుగా చుట్టినవి. ఒక్కో దశగా చేసే విధానం, చిట్కాలు, ప్రశ్నలు-జవాబులతో.",
+   "back": "[Telugu script: \"kobbari undalu\"/\"coconut balls\"]. Andhra kobbari undalu: grated coconut cooked with Cheruku Bellam sugarcane jaggery, cardamom and ghee and shaped into laddus. With step-by-step method, tips and questions and answers."
+  },
+  "seg.bb9590a78439": {
+   "src": "Kobbari Undalu (Coconut Jaggery Laddu) · 1acrefarms",
+   "t": "కొబ్బరి ఉండలు (కొబ్బరి బెల్లం లడ్డూ) · 1acrefarms",
+   "back": "Kobbari undalu (coconut jaggery laddu) · 1acrefarms"
+  },
+  "seg.fc0444bcc4df": {
+   "src": "Kobbari Undalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "కొబ్బరి ఉండలు: 1acrefarms రెసిపీ కార్డు, కావలసినవి, చేసే విధానంతో",
+   "back": "Kobbari undalu: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.b1e766aa7cc6": {
+   "src": "2 cups grated coconut",
+   "t": "2 కప్పులు తురిమిన కొబ్బరి",
+   "back": "2 cups grated coconut"
+  },
+  "seg.b90390a9ff7d": {
+   "src": "10 cashews, optional",
+   "t": "10 జీడిపప్పులు, ఇష్టమైతే",
+   "back": "10 cashews, if desired"
   }
  }
 }

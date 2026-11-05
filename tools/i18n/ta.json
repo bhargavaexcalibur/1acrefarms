@@ -137,9 +137,9 @@
    "back": "Turmeric powder, chilli powder, jaggery and cashew from Bharat"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
-   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தின் நரசராவ்பேட்டையில் பேக் செய்யப்பட்டவை. ஆன்லைனில் அல்லது WhatsApp-ல் ஆர்டர் செய்யுங்கள். 2 அல்லது அதற்கு மேற்பட்ட பாக்கெட்டுகளுக்கு இலவச டெலிவரி.",
-   "back": "Village native (naattu) turmeric powder, chilli powder, jaggery and cashew, in 540 g packets, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery for 2 or more packets."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தின் நரசராவ்பேட்டையில் பேக் செய்யப்பட்டது. எங்கள் பாக்கெட்டுகள் Amazon.in-ல் விற்கப்படுகின்றன.",
+   "back": "Village country (nattu) turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Village native (naattu) food products from Bharat"
   },
   "ui.l_lede": {
-   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
-   "t": "மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தின் நரசராவ்பேட்டையில் பேக் செய்யப்பட்டவை. ஆன்லைனில் அல்லது WhatsApp-ல் ஆர்டர் செய்யுங்கள். 2 அல்லது அதற்கு மேற்பட்ட பாக்கெட்டுகளுக்கு டெலிவரி இலவசம்.",
-   "back": "Turmeric powder, chilli powder, jaggery and cashew, in 540 g packets, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery free for 2 or more packets."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தின் நரசராவ்பேட்டையில் பேக் செய்யப்பட்டது. எங்கள் பாக்கெட்டுகள் Amazon.in-ல் விற்கப்படுகின்றன.",
+   "back": "Village native turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -7875,6 +7875,506 @@
    "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
    "t": "ஆம். சுமார் 20 காய்ந்த மிளகாயைச் சில துளி எண்ணெயில் மொறுமொறுப்பாகும் வரை வறுத்து, ஆறவைத்து, பூண்டு சேர்க்கும் முன் அரையுங்கள்.",
    "back": "Yes. Roast about 20 dried chillies in a few drops of oil until crisp, cool, and grind before adding the garlic."
+  },
+  "ui.incl_tax": {
+   "src": "Incl. of all taxes",
+   "t": "அனைத்து வரிகளும் உட்பட",
+   "back": "Including all taxes"
+  },
+  "ui.store": {
+   "src": "Our Amazon store",
+   "t": "எங்கள் Amazon கடை",
+   "back": "Our Amazon store"
+  },
+  "seg.2803dd9940a3": {
+   "src": "Our Amazon store",
+   "t": "எங்கள் Amazon கடை",
+   "back": "Our Amazon store"
+  },
+  "seg.f7a42e389759": {
+   "src": "Bellam Atukulu",
+   "t": "பெல்லம் அடுகுலு",
+   "back": "Bellam atukulu"
+  },
+  "seg.9d9b85baad03": {
+   "src": "Kobbari Undalu",
+   "t": "கொப்பரி உண்டலு",
+   "back": "Kobbari undalu"
+  },
+  "seg.35450cfdcdd8": {
+   "src": "With Cane Jaggery · 30 minutes",
+   "t": "கரும்பு வெல்லத்துடன் · 30 நிமிடம்",
+   "back": "With sugarcane jaggery · 30 minutes"
+  },
+  "seg.6a0d4200f978": {
+   "src": "Bellam Atukulu recipe card",
+   "t": "பெல்லம் அடுகுலு சமையல் குறிப்பு அட்டை",
+   "back": "Bellam atukulu recipe card"
+  },
+  "seg.5e2064c58b7d": {
+   "src": "Kobbari Undalu recipe card",
+   "t": "கொப்பரி உண்டலு சமையல் குறிப்பு அட்டை",
+   "back": "Kobbari undalu recipe card"
+  },
+  "seg.c473a3556357": {
+   "src": "Andhra sweet · serves 2 · 10 minutes",
+   "t": "ஆந்திர இனிப்பு · 2 பேருக்கு · 10 நிமிடம்",
+   "back": "Andhra sweet · for 2 people · 10 minutes"
+  },
+  "seg.7099f7c35107": {
+   "src": "Bellam Atukulu ⟦1⟧(Sweet Poha with Palm Jaggery)⟦/1⟧",
+   "t": "பெல்லம் அடுகுலு ⟦1⟧(பனை வெல்லத்துடன் இனிப்பு அவல்)⟦/1⟧",
+   "back": "Bellam atukulu ⟦1⟧(sweet flattened rice with palm jaggery)⟦/1⟧"
+  },
+  "seg.b6b19d4f12bb": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Atukulu · Gud Wale Pohe",
+   "t": "⟦#1⟧ · ⟦#2⟧ · பெல்லம் அடுகுலு · குட் வாலே போஹே",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam atukulu · Gud wale pohe"
+  },
+  "seg.c9c11f5b43da": {
+   "src": "Bellam atukulu is the 10-minute sweet of Telugu homes. It is the poha offered to Krishna on Krishnashtami, recalling Kuchela's gift, and it is also a quick sweet for children after school. The poha is only rinsed, never cooked in water, and then tossed in warm jaggery syrup.",
+   "t": "பெல்லம் அடுகுலு தெலுங்கு வீடுகளில் 10 நிமிடத்தில் செய்யும் இனிப்பு. கிருஷ்ணாஷ்டமி அன்று குசேலர் கொண்டுவந்த பரிசை நினைவுகூர்ந்து கிருஷ்ணருக்குப் படைக்கும் அவல் இதுவே; பள்ளியிலிருந்து வரும் குழந்தைகளுக்கு விரைவாகச் செய்யும் இனிப்பும் இதுவே. அவலை கழுவினால் போதும், தண்ணீரில் வேகவைப்பதில்லை; பிறகு சூடான வெல்லப் பாகில் புரட்டுகிறோம்.",
+   "back": "Bellam atukulu is a sweet made in Telugu homes in 10 minutes. This is the very flattened rice that is offered to Krishna on Krishnashtami, remembering Kuchela's gift; it is also the sweet quickly made for children coming from school. It is enough to wash the flattened rice, it is not boiled in water; then it is tossed in warm jaggery syrup."
+  },
+  "seg.8594fedb25dc": {
+   "src": "Our Thati Bellam palm jaggery gives it a deep brown colour and a rich, slightly smoky sweetness. This recipe serves 2.",
+   "t": "எங்கள் தாட்டி பெல்லம் பனை வெல்லம் இதற்கு அடர் பழுப்பு நிறத்தையும், செறிவான இனிப்புச் சுவையையும், லேசான புகை மணத்தையும் தருகிறது. இந்தக் குறிப்பு 2 பேருக்கானது.",
+   "back": "Our Thati Bellam palm jaggery gives this a dark brown colour, a rich sweet taste, and a slight smoky taste. This recipe is for 2 people."
+  },
+  "seg.4003255240b7": {
+   "src": "⟦1⟧Prep⟦/1⟧5 min",
+   "t": "⟦1⟧தயாரிப்பு⟦/1⟧5 நிமிடம்",
+   "back": "⟦1⟧Preparation⟦/1⟧5 minutes"
+  },
+  "seg.26d04ba57d2a": {
+   "src": "⟦1⟧Total⟦/1⟧10 min",
+   "t": "⟦1⟧மொத்தம்⟦/1⟧10 நிமிடம்",
+   "back": "⟦1⟧Total⟦/1⟧10 minutes"
+  },
+  "seg.25e28614accb": {
+   "src": "Prep includes 5 minutes for the rinsed poha to soften.",
+   "t": "கழுவிய அவல் மென்மையாவதற்கான 5 நிமிடமும் தயாரிப்பு நேரத்தில் அடங்கும்.",
+   "back": "The 5 minutes for the washed flattened rice to soften is also included in the preparation time."
+  },
+  "seg.b9dedcd705aa": {
+   "src": "Soften thick poha, toss it in warm palm jaggery syrup with coconut and cardamom, and finish with ghee.",
+   "t": "தடிமனான அவலை மென்மையாக்கி, தேங்காய், ஏலக்காயுடன் சூடான பனை வெல்லப் பாகில் புரட்டி, கடைசியில் நெய் சேர்க்கவும்.",
+   "back": "Soften the thick flattened rice, toss it with coconut and cardamom in warm palm jaggery syrup, and add ghee at the end."
+  },
+  "seg.4d040ba776bf": {
+   "src": "For the bellam atukulu",
+   "t": "பெல்லம் அடுகுலுக்கு",
+   "back": "For bellam atukulu"
+  },
+  "seg.04f65369bdaa": {
+   "src": "1 cup thick poha ⟦1⟧atukulu, about 100 g⟦/1⟧",
+   "t": "1 கப் தடிமனான அவல் ⟦1⟧அடுகுலு, சுமார் 100 g⟦/1⟧",
+   "back": "1 cup thick flattened rice ⟦1⟧atukulu, about 100 g⟦/1⟧"
+  },
+  "seg.e13864ccb71f": {
+   "src": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧",
+   "t": "½ கப் துருவிய பனை வெல்லம் ⟦1⟧சுமார் 90 g⟦/1⟧",
+   "back": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧"
+  },
+  "seg.b78c520dca8d": {
+   "src": "½ cup grated coconut ⟦1⟧white part only⟦/1⟧",
+   "t": "½ கப் துருவிய தேங்காய் ⟦1⟧வெள்ளைப் பகுதி மட்டும்⟦/1⟧",
+   "back": "½ cup grated coconut ⟦1⟧white part only⟦/1⟧"
+  },
+  "seg.2d6d2ff14f71": {
+   "src": "¼ tsp cardamom powder ⟦1⟧or the crushed seeds of 2–3 pods⟦/1⟧",
+   "t": "¼ டீஸ்பூன் ஏலக்காய் தூள் ⟦1⟧அல்லது 2–3 ஏலக்காய்களின் தட்டிய விதைகள்⟦/1⟧",
+   "back": "¼ teaspoon cardamom powder ⟦1⟧or crushed seeds of 2–3 cardamoms⟦/1⟧"
+  },
+  "seg.2b8bfecc86e5": {
+   "src": "1 tsp ghee",
+   "t": "1 டீஸ்பூன் நெய்",
+   "back": "1 teaspoon ghee"
+  },
+  "seg.0c6c4102d4df": {
+   "src": "Optional",
+   "t": "விருப்பப்பட்டால்",
+   "back": "If desired"
+  },
+  "seg.5f1854fd1277": {
+   "src": "6–8 cashews, optional ⟦1⟧fried golden in ghee⟦/1⟧",
+   "t": "6–8 முந்திரி, விருப்பப்பட்டால் ⟦1⟧நெய்யில் பொன்னிறமாக வறுத்தது⟦/1⟧",
+   "back": "6–8 cashews, if desired ⟦1⟧fried golden in ghee⟦/1⟧"
+  },
+  "seg.fbe7b4b8afbc": {
+   "src": "Put the poha in a sieve and pick out any bits of husk.",
+   "t": "அவலை ஒரு வடிகட்டியில் போட்டு, உமித் துண்டுகள் இருந்தால் எடுத்துவிடுங்கள்.",
+   "back": "Put the flattened rice in a strainer and pick out any husk pieces."
+  },
+  "seg.b0f730c0b062": {
+   "src": "Rinse the poha in a sieve under running water for a few seconds, drain, and leave it for 5 minutes to soften. It should feel soft when pressed, but not wet.",
+   "t": "வடிகட்டியில் உள்ள அவலை ஓடும் தண்ணீரில் சில விநாடிகள் கழுவி, தண்ணீரை வடித்து, மென்மையாவதற்கு 5 நிமிடம் வைக்கவும். அழுத்தினால் மென்மையாக இருக்க வேண்டும், ஆனால் ஈரமாக இருக்கக் கூடாது.",
+   "back": "Wash the flattened rice in the strainer under running water for a few seconds, drain the water, and leave 5 minutes to soften. It should be soft when pressed, but should not be wet."
+  },
+  "seg.0a3e2261d7bc": {
+   "src": "Grate the palm jaggery finely, breaking up any hard lumps.",
+   "t": "பனை வெல்லத்தை நைசாகத் துருவி, கெட்டியான கட்டிகள் இருந்தால் உடைத்துவிடுங்கள்.",
+   "back": "Grate the palm jaggery finely and break any hard lumps."
+  },
+  "seg.d2b892bf70af": {
+   "src": "Melt the palm jaggery with 2 tbsp water on a low flame, then strain it. Wipe the pan and pour the syrup back in.",
+   "t": "பனை வெல்லத்தை 2 டேபிள்ஸ்பூன் தண்ணீருடன் குறைந்த தீயில் உருக்கி, வடிகட்டவும். வாணலியைத் துடைத்து, பாகை மீண்டும் ஊற்றவும்.",
+   "back": "Melt the palm jaggery with 2 tablespoons of water on low heat and strain. Wipe the pan and pour the syrup back."
+  },
+  "seg.d073ead78aef": {
+   "src": "If you are using cashews, fry them in a little ghee till golden.",
+   "t": "முந்திரி சேர்ப்பதாக இருந்தால், சிறிது நெய்யில் பொன்னிறமாக வறுக்கவும்.",
+   "back": "If adding cashews, fry them golden in a little ghee."
+  },
+  "seg.62c17a0f01a5": {
+   "src": "Add the poha, coconut and cardamom to the warm syrup and toss gently on a low flame for 1–2 minutes, until every flake is coated. Use a light hand so the flakes do not break.",
+   "t": "சூடான பாகில் அவல், தேங்காய், ஏலக்காய் சேர்த்து, குறைந்த தீயில் 1–2 நிமிடம், ஒவ்வொரு அவலிலும் பாகு பிடிக்கும் வரை மெதுவாகப் புரட்டவும். அவல் உடையாமல் இருக்க லேசான கையால் கிளறுங்கள்.",
+   "back": "Add the flattened rice, coconut and cardamom to the warm syrup and gently toss on low heat for 1–2 minutes, until the syrup coats every flattened-rice flake. Keep a light hand so the flattened rice does not break."
+  },
+  "seg.d1abe3d7557d": {
+   "src": "Take the pan off the heat as soon as the flakes are coated; longer cooking makes them chewy.",
+   "t": "அவலில் பாகு பிடித்தவுடனேயே வாணலியை அடுப்பிலிருந்து இறக்கிவிடுங்கள்; அதிக நேரம் சமைத்தால் அவை மெல்லுவதற்குக் கடினமாகிவிடும்.",
+   "back": "As soon as the syrup coats the flattened rice, take the pan off the stove; if cooked too long it becomes hard to chew."
+  },
+  "seg.c91ffab6359d": {
+   "src": "Finish with the ghee and cashews. Serve warm or at room temperature.",
+   "t": "கடைசியில் நெய்யும் முந்திரியும் சேர்க்கவும். சூடாகவோ அறை வெப்பநிலையிலோ பரிமாறவும்.",
+   "back": "Add ghee and cashews at the end. Serve warm or at room temperature."
+  },
+  "seg.544ea222a497": {
+   "src": "Use thick poha. Thin poha turns mushy in the syrup.",
+   "t": "தடிமனான அவலைப் பயன்படுத்துங்கள். மெல்லிய அவல் பாகில் குழைந்துவிடும்.",
+   "back": "Use thick flattened rice. Thin flattened rice turns lumpy in the syrup."
+  },
+  "seg.0f56d718ca89": {
+   "src": "Do not soak the poha in a bowl of water; a quick rinse is enough, or it turns soft and sticky.",
+   "t": "அவலை கிண்ணத்தில் தண்ணீரில் ஊறவைக்காதீர்கள்; சட்டென்று கழுவினால் போதும், இல்லையெனில் அது குழைந்து ஒட்டிக்கொள்ளும்.",
+   "back": "Do not soak the flattened rice in a bowl of water; a quick wash is enough, otherwise it turns soft and sticks together."
+  },
+  "seg.972f174730fe": {
+   "src": "Keep the syrup warm, not bubbling, when the poha goes in, so the flakes coat evenly.",
+   "t": "அவல் போடும்போது பாகு சூடாக இருக்க வேண்டும், கொதிக்கக் கூடாது; அப்போதுதான் அவலில் சீராகப் பாகு பிடிக்கும்.",
+   "back": "The syrup should be warm when adding the flattened rice, not boiling; then the syrup coats every flake evenly."
+  },
+  "seg.8496cfe4aa1d": {
+   "src": "With milk: pour 2–3 tbsp warm milk over the finished poha for a softer sweet.",
+   "t": "பாலுடன்: இன்னும் மென்மையான இனிப்புக்கு, தயாரான அவலின் மேல் 2–3 டேபிள்ஸ்பூன் சூடான பால் ஊற்றவும்.",
+   "back": "With milk: for an even softer sweet, pour 2–3 tablespoons of warm milk over the prepared flattened rice."
+  },
+  "seg.bb5e4ee879e6": {
+   "src": "With sesame: add 1 tbsp roasted sesame seeds along with the coconut.",
+   "t": "எள்ளுடன்: தேங்காயுடன் சேர்த்து 1 டேபிள்ஸ்பூன் வறுத்த எள் சேர்க்கவும்.",
+   "back": "With sesame: add 1 tablespoon of roasted sesame along with the coconut."
+  },
+  "seg.25d7247d3c7b": {
+   "src": "Serve it as naivedyam on Krishnashtami, or as a quick sweet for children after school.",
+   "t": "கிருஷ்ணாஷ்டமி அன்று நைவேத்தியமாகப் பரிமாறுங்கள், அல்லது பள்ளியிலிருந்து வரும் குழந்தைகளுக்கு விரைவான இனிப்பாகக் கொடுங்கள்.",
+   "back": "Serve as an offering (naivedyam) on Krishnashtami, or give as a quick sweet to children coming from school."
+  },
+  "seg.1170385c1b79": {
+   "src": "Best eaten the day it is made. Keep leftovers covered in the fridge and eat them the next day; the poha firms up as it stands.",
+   "t": "செய்த அன்றே சாப்பிடுவது நல்லது. மீதமுள்ளதை மூடி ஃபிரிட்ஜில் வைத்து, மறுநாள் சாப்பிடுங்கள்; வைத்தால் அவல் இறுகிவிடும்.",
+   "back": "Best eaten the same day it is made. Cover the leftover and keep in the fridge, eat the next day; if kept the flattened rice becomes firm."
+  },
+  "seg.6acb206e9df4": {
+   "src": "Which poha is best for bellam atukulu?",
+   "t": "பெல்லம் அடுகுலுக்கு எந்த அவல் நல்லது?",
+   "back": "Which flattened rice is good for bellam atukulu?"
+  },
+  "seg.7cb97f8423cf": {
+   "src": "Thick poha (atukulu). It holds its shape in the warm syrup; thin poha turns mushy.",
+   "t": "தடிமனான அவல் (அடுகுலு). அது சூடான பாகில் வடிவம் மாறாமல் இருக்கும்; மெல்லிய அவல் குழைந்துவிடும்.",
+   "back": "Thick flattened rice (atukulu). It keeps its shape in warm syrup; thin flattened rice turns lumpy."
+  },
+  "seg.ba8eb1721096": {
+   "src": "Can I make bellam atukulu with cane jaggery?",
+   "t": "பெல்லம் அடுகுலுவை கரும்பு வெல்லத்தில் செய்யலாமா?",
+   "back": "Can bellam atukulu be made with sugarcane jaggery?"
+  },
+  "seg.2a1aa941db07": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam). It turns lighter in colour, with a caramel-like sweetness.",
+   "t": "செய்யலாம். அதே அளவு துருவிய கரும்பு வெல்லம் (செருகு பெல்லம்) பயன்படுத்துங்கள். நிறம் இலகுவாக இருக்கும், கேரமல் போன்ற இனிப்பு வரும்.",
+   "back": "Yes. Use the same quantity of grated sugarcane jaggery (cheruku bellam). The colour will be light, a caramel-like sweetness comes."
+  },
+  "seg.88008fa2d0e6": {
+   "src": "Why is my bellam atukulu sticky?",
+   "t": "என் பெல்லம் அடுகுலு ஏன் ஒட்டிக்கொள்கிறது?",
+   "back": "Why is my bellam atukulu sticky?"
+  },
+  "seg.a6945e480c9a": {
+   "src": "The poha was soaked or cooked too long. Rinse it for only a few seconds, and take the pan off the heat as soon as every flake is coated.",
+   "t": "அவலை அதிக நேரம் ஊறவைத்தது அல்லது சமைத்தது தான் காரணம். சில விநாடிகள் மட்டும் கழுவுங்கள்; ஒவ்வொரு அவலிலும் பாகு பிடித்தவுடனேயே வாணலியை அடுப்பிலிருந்து இறக்குங்கள்.",
+   "back": "The reason is soaking or cooking the flattened rice too long. Wash only a few seconds; as soon as the syrup coats every flake, take the pan off the heat."
+  },
+  "seg.d4c0fab65bf7": {
+   "src": "Why is it made on Krishnashtami?",
+   "t": "இதை ஏன் கிருஷ்ணாஷ்டமி அன்று செய்கிறார்கள்?",
+   "back": "Why is this made on Krishnashtami?"
+  },
+  "seg.51ab1914ac8d": {
+   "src": "It recalls the story of Kuchela, who brought a handful of poha to his friend Krishna as his only gift.",
+   "t": "தன் நண்பர் கிருஷ்ணருக்கு குசேலர் தன் ஒரே பரிசாக ஒரு பிடி அவல் கொண்டுவந்த கதையை இது நினைவுபடுத்துகிறது.",
+   "back": "It reminds of the story in which Kuchela brought a handful of flattened rice as his only gift to his friend Krishna."
+  },
+  "seg.f548f5c95f50": {
+   "src": "బెల్లం అటుకులు · Bellam Atukulu Recipe | 1acrefarms",
+   "t": "బెల్లం అటుకులు · பெல்லம் அடுகுலு சமையல் குறிப்பு | 1acrefarms",
+   "back": "[Telugu script: \"bellam atukulu\"/\"jaggery flattened-rice\"] · Bellam atukulu recipe | 1acrefarms"
+  },
+  "seg.5080241b3883": {
+   "src": "బెల్లం అటుకులు. Andhra bellam atukulu: thick poha tossed in warm Thati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and FAQs.",
+   "t": "బెల్లం అటుకులు. ஆந்திர பெல்லம் அடுகுலு: தடிமனான அவலை சூடான தாட்டி பெல்லம் பனை வெல்லப் பாகில் தேங்காய், ஏலக்காய், நெய்யுடன் புரட்டிய இனிப்பு. 10 நிமிட இனிப்பு, குறிப்புகள் மற்றும் கேள்வி பதில்களுடன்.",
+   "back": "[Telugu script: \"bellam atukulu\"/\"jaggery flattened-rice\"]. Andhra bellam atukulu: a sweet of thick flattened rice tossed in warm Thati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and questions and answers."
+  },
+  "seg.4239bed21420": {
+   "src": "Bellam Atukulu (Sweet Poha with Palm Jaggery) · 1acrefarms",
+   "t": "பெல்லம் அடுகுலு (பனை வெல்லத்துடன் இனிப்பு அவல்) · 1acrefarms",
+   "back": "Bellam atukulu (sweet flattened rice with palm jaggery) · 1acrefarms"
+  },
+  "seg.8dafb14d8ade": {
+   "src": "Bellam Atukulu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "பெல்லம் அடுகுலு: 1acrefarms-இன் சமையல் குறிப்பு அட்டை, தேவையான பொருட்களும் செய்முறையும்",
+   "back": "Bellam atukulu: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.f365b17eb48c": {
+   "src": "1 cup thick poha",
+   "t": "1 கப் தடிமனான அவல்",
+   "back": "1 cup thick flattened rice"
+  },
+  "seg.7c6d93848300": {
+   "src": "½ cup grated palm jaggery",
+   "t": "½ கப் துருவிய பனை வெல்லம்",
+   "back": "½ cup grated palm jaggery"
+  },
+  "seg.98176a72f124": {
+   "src": "½ cup grated coconut",
+   "t": "½ கப் துருவிய தேங்காய்",
+   "back": "½ cup grated coconut"
+  },
+  "seg.89530d979a1e": {
+   "src": "6–8 cashews, optional",
+   "t": "6–8 முந்திரி, விருப்பப்பட்டால்",
+   "back": "6–8 cashews, if desired"
+  },
+  "seg.cf5b9ab6ccf1": {
+   "src": "Andhra sweet · makes about 14",
+   "t": "ஆந்திர இனிப்பு · சுமார் 14 கிடைக்கும்",
+   "back": "Andhra sweet · about 14 come out"
+  },
+  "seg.aa55b9fd31e8": {
+   "src": "Kobbari Undalu ⟦1⟧(Coconut Jaggery Laddu)⟦/1⟧",
+   "t": "கொப்பரி உண்டலு ⟦1⟧(தேங்காய் வெல்ல லட்டு)⟦/1⟧",
+   "back": "Kobbari undalu ⟦1⟧(coconut jaggery laddu)⟦/1⟧"
+  },
+  "seg.753ec27036d4": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Kobbari Undalu · Nariyal Gud Ke Laddu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · கொப்பரி உண்டலு · நாரியல் குட் கே லட்டு",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Kobbari undalu · Nariyal gud ke laddu"
+  },
+  "seg.de7ddbad7bf0": {
+   "src": "Kobbari undalu are the coconut laddus Andhra homes make for festivals, naivedyam and an everyday sweet. They need only coconut, jaggery, cardamom and a spoon of ghee. The jaggery is melted and strained, the coconut is cooked in it on a low flame until the mix holds together, and the laddus are rolled by hand while still warm.",
+   "t": "கொப்பரி உண்டலு என்பது ஆந்திர வீடுகளில் பண்டிகைகளுக்கும், நைவேத்தியத்திற்கும், அன்றாட இனிப்பாகவும் செய்யும் தேங்காய் லட்டுகள். இதற்கு தேங்காய், வெல்லம், ஏலக்காய், ஒரு ஸ்பூன் நெய் மட்டும் போதும். வெல்லத்தை உருக்கி வடிகட்டி, தேங்காயை அதில் குறைந்த தீயில் கலவை சேர்ந்து உருண்டை பிடிக்கும் வரை வேகவைத்து, இன்னும் சூடாக இருக்கும்போதே கையால் லட்டுகளாக உருட்டுகிறார்கள்.",
+   "back": "Kobbari undalu are coconut laddus that Andhra homes make for festivals, for offerings, and as an everyday sweet. It needs only coconut, jaggery, cardamom and one spoon of ghee. The jaggery is melted and strained, the coconut is cooked in it on low heat until the mixture binds, and while still warm the laddus are shaped by hand."
+  },
+  "seg.089fb020d00e": {
+   "src": "Our Cheruku Bellam gives them a light golden colour and a mellow caramel taste. This recipe makes about 14 laddus.",
+   "t": "எங்கள் செருகு பெல்லம் இவற்றுக்கு இலகுவான பொன்நிறத்தையும், மென்மையான கேரமல் போன்ற சுவையையும் தருகிறது. இந்தக் குறிப்பில் சுமார் 14 லட்டுகள் கிடைக்கும்.",
+   "back": "Our Cheruku Bellam gives these a light golden colour and a soft caramel-like taste. This recipe makes about 14 laddus."
+  },
+  "seg.c529404fc7f7": {
+   "src": "⟦1⟧Makes⟦/1⟧14",
+   "t": "⟦1⟧கிடைப்பது⟦/1⟧14",
+   "back": "⟦1⟧Makes⟦/1⟧14"
+  },
+  "seg.d9e7175cce3e": {
+   "src": "Allow another 15 minutes for the laddus to cool before you store them.",
+   "t": "லட்டுகளை சேமித்து வைப்பதற்கு முன் ஆறுவதற்கு இன்னும் 15 நிமிடம் கொடுங்கள்.",
+   "back": "Give the laddus another 15 minutes to cool before storing."
+  },
+  "seg.80b59063a128": {
+   "src": "Melt cane jaggery, cook it with grated coconut till it comes together, add cardamom and ghee, and roll into laddus.",
+   "t": "கரும்பு வெல்லத்தை உருக்கி, துருவிய தேங்காயுடன் சேரும் வரை வேகவைத்து, ஏலக்காய், நெய் சேர்த்து, லட்டுகளாக உருட்டவும்.",
+   "back": "Melt the sugarcane jaggery, cook with grated coconut until it binds, add cardamom and ghee, and shape into laddus."
+  },
+  "seg.9bb95574c6d5": {
+   "src": "Ingredients ⟦1⟧makes 14⟦/1⟧",
+   "t": "தேவையான பொருட்கள் ⟦1⟧14 கிடைக்கும்⟦/1⟧",
+   "back": "Ingredients ⟦1⟧makes 14⟦/1⟧"
+  },
+  "seg.80fe874ac1b1": {
+   "src": "For the laddus",
+   "t": "லட்டுகளுக்கு",
+   "back": "For the laddus"
+  },
+  "seg.9dbfabbc7bd0": {
+   "src": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧",
+   "t": "2 கப் துருவிய தேங்காய் ⟦1⟧1 நடுத்தர தேங்காய்; வெள்ளைப் பகுதியை மட்டும் துருவுங்கள்⟦/1⟧",
+   "back": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧"
+  },
+  "seg.fa687abb7dd1": {
+   "src": "1 cup grated cane jaggery ⟦1⟧about 180 g; pound or grate the pieces first⟦/1⟧",
+   "t": "1 கப் துருவிய கரும்பு வெல்லம் ⟦1⟧சுமார் 180 g; துண்டுகளை முதலில் இடிக்கவும் அல்லது துருவவும்⟦/1⟧",
+   "back": "1 cup grated sugarcane jaggery ⟦1⟧about 180 g; first crush or grate the pieces⟦/1⟧"
+  },
+  "seg.1ca2ce946869": {
+   "src": "1 tbsp ghee ⟦1⟧plus a little for greasing your palms⟦/1⟧",
+   "t": "1 டேபிள்ஸ்பூன் நெய் ⟦1⟧உள்ளங்கையில் தடவ சிறிது கூடுதலாக⟦/1⟧",
+   "back": "1 tablespoon ghee ⟦1⟧plus a little extra to grease the palms⟦/1⟧"
+  },
+  "seg.ccf1a746b971": {
+   "src": "10 cashews, optional ⟦1⟧broken and fried golden in ghee⟦/1⟧",
+   "t": "10 முந்திரி, விருப்பப்பட்டால் ⟦1⟧உடைத்து நெய்யில் பொன்னிறமாக வறுத்தது⟦/1⟧",
+   "back": "10 cashews, if desired ⟦1⟧broken and fried golden in ghee⟦/1⟧"
+  },
+  "seg.15ef8686cc9e": {
+   "src": "Grate the coconut, leaving out the brown skin so the laddus stay light in colour.",
+   "t": "தேங்காயைத் துருவுங்கள், பழுப்பு நிறத் தோலை விட்டுவிடுங்கள்; அப்போது லட்டுகள் இலகுவான நிறத்தில் இருக்கும்.",
+   "back": "Grate the coconut, leaving the brown skin; then the laddus will be light in colour."
+  },
+  "seg.00b442d7f507": {
+   "src": "Pound or grate the cane jaggery into small pieces so it melts evenly.",
+   "t": "கரும்பு வெல்லத்தை சிறு துண்டுகளாக இடிக்கவும் அல்லது துருவவும்; அப்போது சீராக உருகும்.",
+   "back": "Crush or grate the sugarcane jaggery into small pieces; then it melts evenly."
+  },
+  "seg.c25e0610c714": {
+   "src": "Melt the jaggery with 2 tbsp water on a low flame, then strain it through a fine sieve. This catches any grit or bits of cane from the block.",
+   "t": "வெல்லத்தை 2 டேபிள்ஸ்பூன் தண்ணீருடன் குறைந்த தீயில் உருக்கி, நைசான வடிகட்டியில் வடிகட்டவும். கட்டியில் இருக்கும் மண் துகள்களும் கரும்புத் துண்டுகளும் இதில் தங்கிவிடும்.",
+   "back": "Melt the jaggery with 2 tablespoons of water on low heat and strain through a fine strainer. Dirt particles and sugarcane bits in the jaggery block stay in it."
+  },
+  "seg.3eb20f2a7136": {
+   "src": "Return it to the pan, add the coconut and cook on medium-low, stirring, until the mix leaves the sides of the pan and holds together, 12–15 minutes. Keep stirring so it does not catch at the bottom.",
+   "t": "அதை மீண்டும் வாணலியில் ஊற்றி, தேங்காய் சேர்த்து, நடுத்தர-குறைந்த தீயில் கிளறிக்கொண்டே, கலவை வாணலியின் ஓரங்களை விட்டு விலகி ஒன்றாகச் சேரும் வரை, 12–15 நிமிடம் வேகவைக்கவும். அடியில் ஒட்டாமல் இருக்க கிளறிக்கொண்டே இருங்கள்.",
+   "back": "Pour it back into the pan, add the coconut, and cook on medium-low heat stirring, for 12–15 minutes, until the mixture leaves the sides of the pan and binds together. Keep stirring so it does not stick to the bottom."
+  },
+  "seg.e1985b8e5f9c": {
+   "src": "If you are using cashews, fry them in a little ghee till golden while the mix cooks.",
+   "t": "முந்திரி சேர்ப்பதாக இருந்தால், கலவை வேகும்போதே சிறிது நெய்யில் பொன்னிறமாக வறுக்கவும்.",
+   "back": "If adding cashews, fry them golden in a little ghee while the mixture is cooking."
+  },
+  "seg.1dc27e2d9b3e": {
+   "src": "Stir in the cardamom, ghee and cashews. Take the pan off the heat.",
+   "t": "ஏலக்காய், நெய், முந்திரி சேர்த்துக் கிளறவும். வாணலியை அடுப்பிலிருந்து இறக்கவும்.",
+   "back": "Add cardamom, ghee and cashews and mix. Take the pan off the heat."
+  },
+  "seg.d4ee96780aba": {
+   "src": "Let it cool till you can handle it, grease your palms with ghee and roll it into small balls. Press each one firmly so it holds together.",
+   "t": "கையால் தொடும் அளவுக்கு ஆறவிடுங்கள், உள்ளங்கையில் நெய் தடவி, சிறு உருண்டைகளாக உருட்டுங்கள். ஒவ்வொன்றையும் அழுத்திப் பிடியுங்கள், அப்போதுதான் சேர்ந்து நிற்கும்.",
+   "back": "Let it cool until it can be held by hand, grease the palms with ghee, and shape into small balls. Press each one firmly, then it stays bound."
+  },
+  "seg.3753ea8bc7d0": {
+   "src": "Set the laddus on a greased plate and let them cool completely before you store them.",
+   "t": "லட்டுகளை நெய் தடவிய தட்டில் வைத்து, சேமிப்பதற்கு முன் முழுதாக ஆறவிடுங்கள்.",
+   "back": "Put the laddus on a ghee-greased plate and let them cool completely before storing."
+  },
+  "seg.fb3de84de9f6": {
+   "src": "If the mix won't hold a shape, cook it 2 minutes more. If it sets too hard, sprinkle in a spoon of warm milk and press again.",
+   "t": "கலவை வடிவம் பிடிக்கவில்லை என்றால், இன்னும் 2 நிமிடம் வேகவைக்கவும். மிகவும் இறுகிவிட்டால், ஒரு ஸ்பூன் சூடான பாலைத் தெளித்து மீண்டும் அழுத்தவும்.",
+   "back": "If the mixture does not hold shape, cook 2 more minutes. If it gets too hard, sprinkle a spoon of warm milk and press again."
+  },
+  "seg.71475e1a7345": {
+   "src": "Keep the flame at medium-low; on a high flame the jaggery darkens and the laddus turn hard.",
+   "t": "தீயை நடுத்தர-குறைவாக வையுங்கள்; அதிக தீயில் வெல்லம் கருமையாகி லட்டுகள் கடினமாகிவிடும்.",
+   "back": "Keep the heat medium-low; on high heat the jaggery turns dark and the laddus become hard."
+  },
+  "seg.46a2e2b2d323": {
+   "src": "Roll the laddus while the mix is still warm; once it cools completely it will not bind.",
+   "t": "கலவை இன்னும் சூடாக இருக்கும்போதே லட்டுகளை உருட்டுங்கள்; முழுதாக ஆறிவிட்டால் அது ஒட்டாது.",
+   "back": "Shape the laddus while the mixture is still warm; once fully cooled it will not bind."
+  },
+  "seg.b277c024adad": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker laddus with a slightly smoky sweetness.",
+   "t": "பனை வெல்லம்: கருமையான லட்டுகளுக்கு, லேசான புகை மணத்துடன் கூடிய இனிப்புக்கு, அதே அளவு துருவிய பனை வெல்லம் பயன்படுத்துங்கள்.",
+   "back": "Palm jaggery: for dark laddus, for a sweetness with a slight smoky taste, use the same quantity of grated palm jaggery."
+  },
+  "seg.7b597df04222": {
+   "src": "Dry coconut: use the same amount of grated dry coconut (kopra); the mix comes together faster, so watch it closely.",
+   "t": "உலர் தேங்காய்: அதே அளவு துருவிய கொப்பரைத் தேங்காய் பயன்படுத்துங்கள்; கலவை விரைவாகச் சேர்ந்துவிடும், எனவே கவனமாகப் பாருங்கள்.",
+   "back": "Dry coconut: use the same quantity of grated copra coconut; the mixture comes together quickly, so watch carefully."
+  },
+  "seg.676bca051e10": {
+   "src": "Kobbari burfi: spread the cooked mix on a greased plate, let it set a little and cut it into squares instead of rolling laddus.",
+   "t": "கொப்பரி பர்ஃபி: வெந்த கலவையை நெய் தடவிய தட்டில் பரப்பி, சிறிது இறுக விட்டு, லட்டுகளாக உருட்டுவதற்குப் பதில் சதுரங்களாக வெட்டுங்கள்.",
+   "back": "Kobbari burfi: spread the cooked mixture on a ghee-greased plate, let it set a little, and cut into squares instead of shaping laddus."
+  },
+  "seg.80538d77ab41": {
+   "src": "Serve as an everyday sweet, offer them as naivedyam, or add them to the festival sweet plate.",
+   "t": "அன்றாட இனிப்பாகப் பரிமாறுங்கள், நைவேத்தியமாகப் படையுங்கள், அல்லது பண்டிகை இனிப்புத் தட்டில் சேர்த்துக்கொள்ளுங்கள்.",
+   "back": "Serve as an everyday sweet, offer as naivedyam, or add to a festival sweet plate."
+  },
+  "seg.6f3252f28ef8": {
+   "src": "Keep in an airtight container and eat within 3 days at room temperature, or within a week if kept in the fridge.",
+   "t": "காற்றுப் புகாத டப்பாவில் வைத்து, அறை வெப்பநிலையில் 3 நாட்களுக்குள், ஃபிரிட்ஜில் வைத்தால் ஒரு வாரத்துக்குள் சாப்பிடுங்கள்.",
+   "back": "Keep in an airtight box; eat within 3 days at room temperature, within one week if kept in the fridge."
+  },
+  "seg.f232fb960e89": {
+   "src": "Why are my kobbari undalu not holding shape?",
+   "t": "என் கொப்பரி உண்டலு ஏன் வடிவம் பிடிக்கவில்லை?",
+   "back": "Why is my kobbari undalu not holding shape?"
+  },
+  "seg.1cf59b528a13": {
+   "src": "The mix needs a little more cooking. Put it back on a low flame for 2 minutes, stirring, until it leaves the sides of the pan, then roll it while it is still warm.",
+   "t": "கலவையை இன்னும் கொஞ்சம் வேகவைக்க வேண்டும். குறைந்த தீயில் 2 நிமிடம் மீண்டும் வைத்து, கிளறிக்கொண்டே, வாணலியின் ஓரங்களை விட்டு விலகும் வரை வைத்து, இன்னும் சூடாக இருக்கும்போதே உருட்டுங்கள்.",
+   "back": "The mixture needs to be cooked a little more. Put it back on low heat for 2 minutes, stirring, until it leaves the sides of the pan, and shape while still warm."
+  },
+  "seg.9371fa8705cd": {
+   "src": "Why did my laddus turn hard?",
+   "t": "என் லட்டுகள் ஏன் கடினமாகிவிட்டன?",
+   "back": "Why did my laddus become hard?"
+  },
+  "seg.ee988ba3472f": {
+   "src": "The jaggery was cooked too long or on too high a flame. Sprinkle in a spoon of warm milk, mix and press again. Next time, take the pan off the heat as soon as the mix holds together.",
+   "t": "வெல்லத்தை அதிக நேரம் அல்லது அதிக தீயில் வேகவைத்துவிட்டீர்கள். ஒரு ஸ்பூன் சூடான பாலைத் தெளித்து, கலந்து, மீண்டும் அழுத்துங்கள். அடுத்த முறை கலவை சேர்ந்தவுடனேயே வாணலியை அடுப்பிலிருந்து இறக்குங்கள்.",
+   "back": "You cooked the jaggery too long or on high heat. Sprinkle a spoon of warm milk, mix, and press again. Next time take the pan off the heat as soon as the mixture binds."
+  },
+  "seg.d830316a6adb": {
+   "src": "Can I make kobbari undalu with palm jaggery?",
+   "t": "கொப்பரி உண்டலுவை பனை வெல்லத்தில் செய்யலாமா?",
+   "back": "Can kobbari undalu be made with palm jaggery?"
+  },
+  "seg.813bf680c8a8": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The laddus turn darker, with a slightly smoky sweetness.",
+   "t": "செய்யலாம். அதே அளவு துருவிய பனை வெல்லம் (தாட்டி பெல்லம்) பயன்படுத்துங்கள். லட்டுகள் கருமையாக, லேசான புகை மணத்துடன் கூடிய இனிப்புடன் வரும்.",
+   "back": "Yes. Use the same quantity of grated palm jaggery (thati bellam). The laddus come out dark, with a sweetness with a slight smoky taste."
+  },
+  "seg.ea6121eb3993": {
+   "src": "How long do kobbari undalu keep?",
+   "t": "கொப்பரி உண்டலு எவ்வளவு நாள் இருக்கும்?",
+   "back": "How many days do kobbari undalu last?"
+  },
+  "seg.26aba27412dc": {
+   "src": "About 3 days in an airtight container at room temperature, and up to a week in the fridge.",
+   "t": "காற்றுப் புகாத டப்பாவில் அறை வெப்பநிலையில் சுமார் 3 நாட்கள், ஃபிரிட்ஜில் ஒரு வாரம் வரை.",
+   "back": "About 3 days at room temperature in an airtight box, up to one week in the fridge."
+  },
+  "seg.94e224d02e1d": {
+   "src": "కొబ్బరి ఉండలు · Kobbari Undalu Recipe | 1acrefarms",
+   "t": "కొబ్బరి ఉండలు · கொப்பரி உண்டலு சமையல் குறிப்பு | 1acrefarms",
+   "back": "[Telugu script: \"kobbari undalu\"/\"coconut balls\"] · Kobbari undalu recipe | 1acrefarms"
+  },
+  "seg.0156a887ba6f": {
+   "src": "కొబ్బరి ఉండలు. Andhra kobbari undalu: grated coconut cooked with Cheruku Bellam cane jaggery, cardamom and ghee, then rolled into laddus. Step-by-step method, tips and FAQs.",
+   "t": "కొబ్బరి ఉండలు. ஆந்திர கொப்பரி உண்டலு: துருவிய தேங்காயை செருகு பெல்லம் கரும்பு வெல்லம், ஏலக்காய், நெய்யுடன் வேகவைத்து லட்டுகளாக உருட்டியது. படிப்படியான செய்முறை, குறிப்புகள் மற்றும் கேள்வி பதில்களுடன்.",
+   "back": "[Telugu script: \"kobbari undalu\"/\"coconut balls\"]. Andhra kobbari undalu: grated coconut cooked with Cheruku Bellam sugarcane jaggery, cardamom and ghee and shaped into laddus. With step-by-step method, tips and questions and answers."
+  },
+  "seg.bb9590a78439": {
+   "src": "Kobbari Undalu (Coconut Jaggery Laddu) · 1acrefarms",
+   "t": "கொப்பரி உண்டலு (தேங்காய் வெல்ல லட்டு) · 1acrefarms",
+   "back": "Kobbari undalu (coconut jaggery laddu) · 1acrefarms"
+  },
+  "seg.fc0444bcc4df": {
+   "src": "Kobbari Undalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "கொப்பரி உண்டலு: 1acrefarms-இன் சமையல் குறிப்பு அட்டை, தேவையான பொருட்களும் செய்முறையும்",
+   "back": "Kobbari undalu: 1acrefarms recipe card, with ingredients and method"
+  },
+  "seg.b1e766aa7cc6": {
+   "src": "2 cups grated coconut",
+   "t": "2 கப் துருவிய தேங்காய்",
+   "back": "2 cups grated coconut"
+  },
+  "seg.b90390a9ff7d": {
+   "src": "10 cashews, optional",
+   "t": "10 முந்திரி, விருப்பப்பட்டால்",
+   "back": "10 cashews, if desired"
   }
  }
 }

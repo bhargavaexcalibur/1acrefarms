@@ -486,8 +486,11 @@ PACK_BY_SLUG = {p["slug"]: p for p in bp.PACKS}
 
 
 def amazon(p):
+    """The order link for a pack: its Amazon.in listing while buyable, otherwise our Amazon store (Amazon.in only)."""
     a = bp.amazon_link(p)
-    return f'<a class="rcp-amazon" href="{a}" target="_blank" rel="noopener">Buy on Amazon</a>' if a else ""
+    if a:
+        return f'<a class="rcp-amazon" href="{a}" target="_blank" rel="noopener">Buy on Amazon</a>'
+    return f'<a class="rcp-amazon" href="{bp.AMAZON_STORE}" target="_blank" rel="noopener">Our Amazon store</a>'
 
 
 def e(s):
@@ -679,7 +682,7 @@ def made_with(r):
               <a class="po-name" href="/{p['slug']}/">{p['name']}</a>
               <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>
               <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
-              <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a><a href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a></span>
+              <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a></span>
             </div>
           </div>""")
     also = ""

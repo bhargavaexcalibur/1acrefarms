@@ -218,6 +218,7 @@ img { max-width: 100%; display: block; }
   padding: 9px 14px; font-weight: 500; font-size: 0.76rem; letter-spacing: .05em; text-transform: uppercase;
   cursor: pointer; font-family: inherit; transition: background .2s, color .2s, border-color .2s; width: 100%;
 }
+a.add-btn { display: block; text-align: center; text-decoration: none; }
 .add-btn:hover { background: var(--green-deep); color: #fff; border-color: var(--green-deep); }
 
 .show-all-row { text-align: center; margin-top: 26px; }
@@ -419,6 +420,7 @@ img { max-width: 100%; display: block; }
 /* ---- Pack pages (/turmeric-powder/ etc., built by tools/build_pages.py) ---- */
 .card-name a:hover { color: var(--green); }
 .sourcing-points.sp4 { grid-template-columns: repeat(4, 1fr); max-width: 1040px; }
+.sourcing-points.sp5 { grid-template-columns: repeat(5, 1fr); max-width: 1200px; }
 a.src-pt { display: block; border-radius: var(--radius-lg); padding: 10px 8px; transition: background .2s; }
 a.src-pt:hover { background: rgba(255,255,255,.06); }
 .nav-shop { padding: 9px 18px; font-size: 0.82rem; }
@@ -462,7 +464,7 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .po-te { font-size: 0.8rem; color: var(--gold); }
 .po-price { font-size: 0.82rem; color: var(--ink-soft); }
 @media (max-width: 900px) {
-  .sourcing-points.sp4 { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
+  .sourcing-points.sp4, .sourcing-points.sp5 { grid-template-columns: repeat(2, 1fr); max-width: 560px; }
   .pdp { grid-template-columns: 1fr; gap: 26px; padding-top: 18px; }
   .pdp-media .pack-media { max-width: 300px; }
   .pdp-more { grid-template-columns: 1fr; gap: 30px; }

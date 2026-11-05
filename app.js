@@ -4,7 +4,9 @@
             "1acrefarms catalogue 2026-09-23", 49 SKUs). Fixed MRPs.
    MORE_SECTIONS = the wider pantry, made to order: price &
             sizes confirmed on WhatsApp.
-   Checkout = WhatsApp order. Delivery free on 2+ packs, ₹81 on one (DELIVERY); pay on delivery or UPI by pincode + order value (PAYMENT).
+   Ordering = Amazon.in only (Bhargava 05-11-2026) until the FSSAI central licence arrives: each pack card links
+   to its Amazon.in listing while buyable (AMAZON), otherwise to our Amazon store. The old WhatsApp checkout,
+   cart, delivery fee and pay-on-delivery rules were removed on 06-11-2026 (see git history before then).
    ========================================================= */
 
 const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
@@ -19,7 +21,7 @@ const OFFER = {
   // Cheruku is NOT in the offer: Bhargav's 09-10 rule, ₹234 is its floor (discount only inside bundles).
   prices: { "TURM@540": 324, "KPAS@540": 405, "TBEL@540": 405 },
 };
-const offerOn = () => /[?&]offerpreview=1/.test(location.search) || (Date.now() >= OFFER.start && Date.now() < OFFER.end);
+const offerOn = () => false;  // website offers are off: Amazon.in only since 06-11-2026
 const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
 const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 
@@ -39,35 +41,8 @@ const COMBOS = {
     { id: "festive-trio", name: "Festive Trio", te: "పసుపు + కొండ పసుపు + చెరుకు బెల్లం", sa: "हरिद्राचूर्णम् + गिरिहरिद्राचूर्णम् + इक्षुगुडः", items: [["TURM", 540, 1], ["KPAS", 540, 1], ["CBEL", 540, 1]], price: 990 },
   ],
 };
-const combosOn = () => /[?&]combopreview=1/.test(location.search) || (Date.now() >= COMBOS.start && Date.now() < COMBOS.end);
+const combosOn = () => false;  // website combos are off: Amazon.in only since 06-11-2026
 
-// Delivery (Bhargav 11-10-2026, after real Shiprocket rates: ~₹147 for one 540 g pouch to Hyderabad,
-// ₹174–213 for two): FREE on 2 or more packs, ₹81 on a single pack (rule of 9). Made-to-order items: on WhatsApp.
-const DELIVERY = { freeFromPacks: 2, singlePackFee: 81 };  // ₹81 keeps every single-pack total on the rule of 9 (234→315, 396→477, 495→576, 324→405, 405→486)
-const deliveryFee = (packCount) => (packCount === 0 || packCount >= DELIVERY.freeFromPacks) ? 0 : DELIVERY.singlePackFee;
-// Payment rule (Bhargav 11-10-2026): pay on delivery for small orders, UPI in advance for big ones,
-// by delivery pincode. First version, built on distance + courier cover until we have our own
-// delivered / returned data; then Bhargav's RTO model replaces these lists.
-const PAYMENT = {
-  codCap: { home: 999, rest: 599 },        // highest order value (₹) that can be paid on delivery
-  // South India (Bhargav 11-10: more prosperous, lower risk): Telangana + AP (50–53), Karnataka (56–59),
-  // Tamil Nadu + Puducherry (60–64), Kerala (67–69; Lakshadweep 68255x stays UPI-only, checked first).
-  homePrefixes: ["50", "51", "52", "53", "56", "57", "58", "59", "60", "61", "62", "63", "64", "67", "68", "69"],
-  // Long-transit areas: J&K + Ladakh (18, 19), Sikkim (737), Andaman & Nicobar (744),
-  // North-East (78, 79), Lakshadweep (68255x).
-  upiOnlyPrefixes: ["18", "19", "737", "744", "78", "79", "68255"],
-  upiOnlyPincodes: [],                       // pincodes with no pay-on-delivery courier (fill from Shiprocket)
-};
-function paymentFor(pin, total) {
-  if (!/^[1-9][0-9]{5}$/.test(pin)) return null;
-  const starts = (list) => list.some((x) => pin.startsWith(x));
-  if (PAYMENT.upiOnlyPincodes.includes(pin) || starts(PAYMENT.upiOnlyPrefixes)) return { cod: false, why: "area" };
-  const cap = starts(PAYMENT.homePrefixes) ? PAYMENT.codCap.home : PAYMENT.codCap.rest;
-  return total <= cap ? { cod: true, cap } : { cod: false, why: "value", cap };
-}
-let pin = "";
-try { pin = localStorage.getItem("oneacre_pin") || ""; } catch (e) {}
-let payChoice = "upi";
 
 // soft "kraft" tile colours, cycled across products
 const MEDIA = ["#e9e2d2","#e7efd9","#f6e3cf","#fdf3da","#f3ddd6","#eef2e6","#f1e8d6","#f6e7cf"];
@@ -94,7 +69,7 @@ const PACK_FACTS = {"TURM":{"storage":"3-layer metallised pouch keeps out light,
 const PACK_SECTIONS = [
   {
     id: "spices", eyebrow: "Spices", chip: "Spices",
-    title: "Turmeric &amp; chilli, sun-dried and stone-ground",
+    title: "Turmeric &amp; chilli powders",
     blurb: "Spice powders from Palnadu, Guntur and the Araku hills.",
     products: [
       { code: "TURM", name: "Turmeric Powder", te: "పసుపు", sa: "हरिद्राचूर्णम्", tr: "Pasupu", note: "Farm-sourced · sun-dried · stone-ground",
@@ -382,6 +357,7 @@ const soonLive = /[?&]soonpreview=1/.test(location.search) || Date.now() >= SOON
 if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") delete p.soon; });
 const sellable = (p) => p.live && !p.soon;
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
+const AMAZON_STORE = "https://www.amazon.in/s?me=A7XV2D991SSNH";  // our Amazon.in store, for packs not buyable there yet
 const AMAZON = {"KPAS": "B0HPWYG3KW", "CBEL": "B0HPXK9M5X", "TBEL": "B0HPX8DXT8"};  // buyable on Amazon.in; written by tools/build_pages.py
 const PACK_PAGE = { TURM: "/turmeric-powder/", KPAS: "/hill-turmeric-powder/", CBEL: "/cane-jaggery/", TBEL: "/palm-jaggery/", SANN: "/sannam-chilli-powder/", TEJA: "/teja-chilli-powder/", CASH: "/cashew-kernels/" };
 if (SELLING_ONLY) {
@@ -429,22 +405,6 @@ MORE_SECTIONS.forEach((s) => {
   });
 });
 
-// ---- Order state (persisted). Key = productId, or productId@grams for packs ----
-let cart = {};
-try { cart = JSON.parse(localStorage.getItem("oneacre_cart_v2") || "{}"); } catch (e) { cart = {}; }
-const saveCart = () => { try { localStorage.setItem("oneacre_cart_v2", JSON.stringify(cart)); } catch (e) {} };
-function lineOf(key) {
-  if (key.startsWith("cb-")) {           // a combo; gone from the cart once its dates end
-    const c = COMBO_BY_ID[key];
-    return c && combosOn() ? { p: c, sku: null, combo: c } : null;
-  }
-  const [id, g] = key.split("@");
-  const p = PRODUCTS[id]; if (!p || p.soon) return null;   // "soon" packs can't be ordered yet
-  if (SELLING_ONLY && !(p.skus && sellable(p))) return null;   // only packs we sell right now
-  const sku = g ? p.skus.find((k) => k.g === +g) : null;
-  if (g && !sku) return null;
-  return { p, sku };
-}
 
 const VISIBLE_PER_SECTION = 6; // made-to-order cards shown before "Show all"
 
@@ -582,10 +542,11 @@ function packCard(p) {
         </div>
         ${offerPrice(p, sku) ? `<p class="offer-tag">${OFFER.label} · on WhatsApp &amp; this website</p>` : ""}
         <p class="tax">Incl. of all taxes · ${status}</p>
-        <div class="card-foot">${p.soon
+        <div class="card-foot" id="order-${p.id}">${p.soon
           ? `<button class="add-btn block" disabled aria-disabled="true">Coming ${p.soon}</button>`
-          : `<button class="add-btn block" data-add="${p.id}@${sku.g}">Add ${qtyLabel(sku.g)} +</button>`}${AMAZON[p.code]
-          ? `<a class="amz-link" href="https://www.amazon.in/dp/${AMAZON[p.code]}" target="_blank" rel="noopener">or buy on Amazon</a>` : ""}</div>
+          : AMAZON[p.code]
+          ? `<a class="add-btn block" href="https://www.amazon.in/dp/${AMAZON[p.code]}" target="_blank" rel="noopener">Buy on Amazon</a>`
+          : `<a class="add-btn block" href="${AMAZON_STORE}" target="_blank" rel="noopener">Our Amazon store</a>`}</div>
         <details class="facts">
           <summary>Product details</summary>
           <dl>
@@ -652,172 +613,10 @@ function rerenderPack(id) {
   if (open) document.querySelector(`#${id} details.facts`).open = true;
 }
 
-function addToCart(key) { if (!lineOf(key)) return; cart[key] = (cart[key] || 0) + 1; saveCart(); renderCart(); bump(); }
-function setQty(key, d) { cart[key] = (cart[key] || 0) + d; if (cart[key] <= 0) delete cart[key]; saveCart(); renderCart(); }
-function cartCount() { return Object.values(cart).reduce((a, b) => a + b, 0); }
-// What the pack prices in the cart are: offer, combo, MRP, or a mix of combo + MRP.
-function priceBasis(keys, short) {
-  if (offerOn()) return short ? "offer prices" : OFFER.label;
-  const hasCombo = keys.some((k) => lineOf(k)?.combo), hasSingle = keys.some((k) => lineOf(k)?.sku);
-  if (!hasCombo) return "MRP";
-  return (hasSingle ? "MRP + " : "") + (short ? "combo prices" : COMBOS.label);
-}
-
-function renderCart() {
-  Object.keys(cart).forEach((k) => { if (!lineOf(k)) delete cart[k]; });
-  const n = cartCount();
-  document.getElementById("cartCount").textContent = n;
-  const bar = document.getElementById("orderBar");
-  if (bar) {
-    bar.classList.toggle("visible", n > 0);
-    document.getElementById("obCount").textContent = n + (n === 1 ? " item" : " items");
-  }
-  const items = document.getElementById("cartItems");
-  const keys = Object.keys(cart);
-  let total = 0, priced = 0, enquiry = 0;
-  if (!keys.length) {
-    items.innerHTML = `<div class="cart-empty">Your order is empty.<br>Add something from the village.</div>`;
-  } else {
-    items.innerHTML = keys.map((key) => {
-      const { p, sku, combo } = lineOf(key);
-      const q = cart[key];
-      let media, unit, price = "";
-      if (combo) {
-        total += combo.price * q; priced += combo.packs * q;
-        media = `<div class="cart-line-media pack" style="background-image:url('${combo.lines[0].p.pack}')"></div>`;
-        unit = `${comboContents(combo)} · combo`;
-        price = `<div class="cart-line-price">${inr(combo.price * q)}</div>`;
-      } else if (sku) {
-        total += sellPrice(p, sku) * q; priced += q;
-        media = p.pack
-          ? `<div class="cart-line-media pack" style="background-image:url('${p.pack}')"></div>`
-          : `<div class="cart-line-media pack-mini">${p.te}</div>`;
-        unit = `${qtyLabel(sku.g)} · ${sku.live ? "first batch" : "pre-order"}`;
-        price = `<div class="cart-line-price">${inr(sellPrice(p, sku) * q)}</div>`;
-      } else {
-        enquiry += q;
-        media = p.img
-          ? `<div class="cart-line-media" style="background:${p.media};background-image:url('${p.img}')"></div>`
-          : `<div class="cart-line-media" style="background:${p.media}">${p.emoji}</div>`;
-        unit = `${p.unit || ""} · price on request`;
-      }
-      return `
-        <div class="cart-line">
-          ${media}
-          <div class="cart-line-info">
-            <div class="cart-line-name">${p.name}</div>
-            <div class="cart-line-unit">${unit}</div>
-            <div class="qty">
-              <button data-dec="${key}" aria-label="One less">−</button><span>${q}</span><button data-inc="${key}" aria-label="One more">+</button>
-            </div>
-          </div>
-          ${price}
-        </div>`;
-    }).join("");
-  }
-  const tot = document.getElementById("cartTotal");
-  if (tot) {
-    tot.hidden = !priced;
-    const fee = deliveryFee(priced);
-    tot.innerHTML = `<div class="ct-row"><span>Packs (${priceBasis(keys, true)}, incl. of all taxes)</span><span>${inr(total)}</span></div>
-      <div class="ct-row"><span>Delivery</span>${fee ? `<span>${inr(fee)}</span>` : `<span class="ct-free">Free</span>`}</div>
-      ${fee ? `<div class="ct-hint">Add one more pack for free delivery</div>` : ""}
-      <div class="ct-row ct-grand"><span>Total to pay${enquiry ? " for packs" : ""}</span><strong>${inr(total + fee)}</strong></div>`;
-  }
-  renderPay(total + deliveryFee(priced), priced, keys.length);
-  const note = document.getElementById("cartNote");
-  if (note) note.textContent = enquiry
-    ? "Free delivery on 2 or more packs. We'll confirm prices for made-to-order items on WhatsApp before you pay."
-    : "Free delivery on 2 or more packs (₹81 for a single pack). We confirm every order on WhatsApp before dispatch.";
-}
-
-function renderPay(total, priced, lines) {
-  const box = document.getElementById("cartPin");
-  const res = document.getElementById("pinResult");
-  const btn = document.getElementById("checkoutBtn");
-  if (!box) { btn.disabled = !lines; return; }
-  box.hidden = !lines;
-  const input = document.getElementById("pinInput");
-  if (input && input.value !== pin) input.value = pin;
-  const pay = paymentFor(pin, total);
-  const choose = document.getElementById("payChoice");
-  if (!pay) {
-    res.textContent = pin.length ? "Please enter a valid 6-digit pincode." : "Enter your pincode to see payment options.";
-    res.className = "pin-result";
-    choose.hidden = true;
-    btn.disabled = true;
-    return;
-  }
-  btn.disabled = !lines;
-  const dl = deliveryFee(priced) ? `Delivery to ${pin}: ${inr(deliveryFee(priced))}.` : `Free delivery to ${pin}.`;
-  if (!priced) {                        // only made-to-order items: price comes later
-    res.textContent = `We deliver to ${pin}. We'll confirm the price, delivery and payment on WhatsApp.`;
-    res.className = "pin-result ok"; choose.hidden = true; return;
-  }
-  if (pay.cod) {
-    res.textContent = `${dl} Pay on delivery or by UPI.`;
-    res.className = "pin-result ok";
-    choose.hidden = false;
-    choose.querySelectorAll("input").forEach((r) => { r.checked = r.value === payChoice; });
-  } else {
-    res.textContent = pay.why === "area"
-      ? `${dl} For this pincode we take payment by UPI before dispatch.`
-      : `${dl} Pay on delivery is for orders up to ${inr(pay.cap)} in your area, so this order is paid by UPI before dispatch.`;
-    res.className = "pin-result upi";
-    choose.hidden = true;
-  }
-}
-
-function bump() {
-  const c = document.getElementById("cartCount");
-  c.animate([{ transform: "scale(1)" }, { transform: "scale(1.4)" }, { transform: "scale(1)" }], { duration: 280 });
-  openCart();
-}
-
-const drawer = document.getElementById("cartDrawer");
-const overlay = document.getElementById("cartOverlay");
-function openCart() { drawer.classList.add("open"); overlay.classList.add("open"); }
-function closeCart() { drawer.classList.remove("open"); overlay.classList.remove("open"); }
-
-function checkout() {
-  const keys = Object.keys(cart).filter((k) => lineOf(k));   // a combo can end while the page is open
-  if (!keys.length) return;
-  const lines = ["Hi 1acrefarms! 🌿 I'd like to order:", ""];
-  let total = 0, enquiry = false;
-  keys.forEach((key) => {
-    const { p, sku, combo } = lineOf(key); const q = cart[key];
-    if (combo) {
-      total += combo.price * q;
-      lines.push(`• ${q} × ${combo.name} combo (${comboContents(combo)}) @ ${inr(combo.price)} (MRP total ${inr(combo.mrp)}) = ${inr(combo.price * q)} [${combo.lines.map((l) => skuCode(l.p, l.sku.g) + (l.q > 1 ? " ×" + l.q : "")).join(" + ")}]`);
-    } else if (sku) {
-      const each = sellPrice(p, sku);
-      total += each * q;
-      lines.push(`• ${q} × ${p.name} ${qtyLabel(sku.g)} @ ${inr(each)}${offerPrice(p, sku) ? ` (offer; MRP ${inr(sku.mrp)})` : ""} = ${inr(each * q)}${sku.live ? "" : " (pre-order)"} [${skuCode(p, sku.g)}]`);
-    } else {
-      enquiry = true;
-      lines.push(`• ${q} × ${p.name}${p.unit ? " (" + p.unit + ")" : ""} — price on request`);
-    }
-  });
-  const packs = keys.reduce((n, k) => { const l = lineOf(k); return n + (l.combo ? l.combo.packs * cart[k] : l.sku ? cart[k] : 0); }, 0);
-  const fee = deliveryFee(packs);
-  if (total) lines.push("", `Packs total (${priceBasis(keys)}): ${inr(total)}`, `Delivery: ${fee ? inr(fee) : "Free"}`, `Total to pay: ${inr(total + fee)}`);
-  const pay = paymentFor(pin, total + fee);
-  lines.push("", `Delivery pincode: ${pin}`);
-  if (total && pay) lines.push(`Payment: ${pay.cod ? (payChoice === "cod" ? "Pay on delivery" : "UPI (please send your UPI details)") : "UPI before dispatch (please send your UPI details)"}`);
-  lines.push("", enquiry ? "Please confirm prices for the made-to-order items, and availability." : "Please confirm availability.",
-             "", "Name:", "Address:", "Notes:");
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`, "_blank");
-}
 
 document.addEventListener("click", (e) => {
-  const add = e.target.closest("[data-add]");
-  const inc = e.target.closest("[data-inc]");
-  const dec = e.target.closest("[data-dec]");
   const size = e.target.closest("[data-size]");
   const showall = e.target.closest("[data-showall]");
-  if (add) addToCart(add.dataset.add);
-  if (inc) setQty(inc.dataset.inc, +1);
-  if (dec) setQty(dec.dataset.dec, -1);
   if (size) {
     const [id, g] = size.dataset.size.split("@");
     PRODUCTS[id].sel = +g; rerenderPack(id);
@@ -829,21 +628,6 @@ document.addEventListener("click", (e) => {
     showall.closest(".show-all-row").remove();
   }
 });
-const pinInput = document.getElementById("pinInput");
-if (pinInput) pinInput.addEventListener("input", () => {
-  pin = pinInput.value.replace(/[^0-9]/g, "").slice(0, 6);
-  if (pinInput.value !== pin) pinInput.value = pin;
-  try { localStorage.setItem("oneacre_pin", pin); } catch (e) {}
-  renderCart();
-});
-const payBox = document.getElementById("payChoice");
-if (payBox) payBox.addEventListener("change", (e) => { if (e.target.name === "pay") payChoice = e.target.value; });
-document.getElementById("cartBtn").addEventListener("click", openCart);
-document.getElementById("cartClose").addEventListener("click", closeCart);
-document.getElementById("checkoutBtn").addEventListener("click", checkout);
-document.getElementById("orderBar").addEventListener("click", openCart);
-overlay.addEventListener("click", closeCart);
-document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeCart(); });
 
 document.getElementById("footerWhatsapp").href = `https://wa.me/${WHATSAPP_NUMBER}`;
 const ctaWa = document.getElementById("ctaWhatsapp");
@@ -861,12 +645,14 @@ const chipObserver = new IntersectionObserver((entries) => {
 
 renderChipNav();
 renderCatalog();
-renderCart();
 document.querySelectorAll(".section[id]").forEach((s) => chipObserver.observe(s));
-// Pack pages link here with ?add=pk-turm@540: put that pack in the order and open it, once.
+// Older links (?add=pk-turm@540, from when the site took orders) land on that pack's Amazon button.
 const addParam = new URLSearchParams(location.search).get("add");
-if (addParam && lineOf(addParam)) { addToCart(addParam); openCart(); }
-if (addParam) history.replaceState(null, "", location.pathname + location.hash);
+if (addParam) {
+  const btn = document.querySelector(`#order-${CSS.escape(addParam.split("@")[0])} a`);
+  if (btn) { btn.scrollIntoView({ block: "center" }); btn.focus({ preventScroll: true }); }
+  history.replaceState(null, "", location.pathname + location.hash);
+}
 
 /* ---------------------------------------------------------
    NEW PACK PRINTED? Add its front to assets/packs/, set "pack"

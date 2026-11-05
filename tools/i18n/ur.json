@@ -137,9 +137,9 @@
    "back": "Turmeric, chilli powder, jaggery and cashews from India"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
-   "t": "گاؤں کی دیسی ہلدی، مرچ پاؤڈر، گڑ اور کاجو، 540 g کے پیک میں، نرساراؤپیٹ، آندھرا پردیش میں پیک کیے گئے۔ آن لائن یا WhatsApp پر آرڈر کریں۔ 2 یا زیادہ پیک پر ڈیلیوری مفت۔",
-   "back": "Village desi (native/country) turmeric, chilli powder, jaggery and cashews, in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "گاؤں کی دیسی ہلدی، مرچ پاؤڈر، گڑ اور کاجو، 540 g کے پیک میں، نرساراؤپیٹ، آندھرا پردیش میں پیک کیے گئے۔ ہمارے پیک Amazon.in پر بکتے ہیں۔",
+   "back": "Village's desi turmeric, chilli powder, jaggery and cashew, in packs of 540 g, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Village desi (native/country) food items from India"
   },
   "ui.l_lede": {
-   "src": "Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.",
-   "t": "ہلدی، مرچ پاؤڈر، گڑ اور کاجو، 540 g کے پیک میں، نرساراؤپیٹ، آندھرا پردیش میں پیک کیے گئے۔ آن لائن یا WhatsApp پر آرڈر کریں۔ 2 یا زیادہ پیک پر ڈیلیوری مفت ہے۔",
-   "back": "Turmeric, chilli powder, jaggery and cashews, in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "گاؤں کی دیسی ہلدی، مرچ پاؤڈر، گڑ اور کاجو، 540 g کے پیک میں، نرساراؤپیٹ، آندھرا پردیش میں پیک کیے گئے۔ ہمارے پیک Amazon.in پر بکتے ہیں۔",
+   "back": "Village's desi turmeric, chilli powder, jaggery and cashew, in packs of 540 g, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -7875,6 +7875,506 @@
    "src": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind them before adding the garlic.",
    "t": "ہاں۔ تقریباً 20 سوکھی لال مرچیں تیل کی چند بوندوں میں کرکری ہونے تک بھونیں، ٹھنڈی کر کے پیس لیں، پھر لہسن ڈالیں۔",
    "back": "Yes. Roast about 20 dried red chillies in a few drops of oil until crisp, cool and grind, then add the garlic."
+  },
+  "ui.incl_tax": {
+   "src": "Incl. of all taxes",
+   "t": "تمام ٹیکس شامل",
+   "back": "All taxes included"
+  },
+  "ui.store": {
+   "src": "Our Amazon store",
+   "t": "Amazon پر ہماری دکان",
+   "back": "Our shop on Amazon"
+  },
+  "seg.2803dd9940a3": {
+   "src": "Our Amazon store",
+   "t": "Amazon پر ہماری دکان",
+   "back": "Our shop on Amazon"
+  },
+  "seg.f7a42e389759": {
+   "src": "Bellam Atukulu",
+   "t": "بیلّم اٹوکولو",
+   "back": "Bellam Atukulu"
+  },
+  "seg.9d9b85baad03": {
+   "src": "Kobbari Undalu",
+   "t": "کوبّری اُنڈلو",
+   "back": "Kobbari Undalu"
+  },
+  "seg.35450cfdcdd8": {
+   "src": "With Cane Jaggery · 30 minutes",
+   "t": "گنے کے گڑ کے ساتھ · 30 منٹ",
+   "back": "With sugarcane jaggery · 30 minutes"
+  },
+  "seg.6a0d4200f978": {
+   "src": "Bellam Atukulu recipe card",
+   "t": "بیلّم اٹوکولو کا ترکیب کارڈ",
+   "back": "Recipe card of Bellam Atukulu"
+  },
+  "seg.5e2064c58b7d": {
+   "src": "Kobbari Undalu recipe card",
+   "t": "کوبّری اُنڈلو کا ترکیب کارڈ",
+   "back": "Recipe card of Kobbari Undalu"
+  },
+  "seg.c473a3556357": {
+   "src": "Andhra sweet · serves 2 · 10 minutes",
+   "t": "آندھرا کی مٹھائی · 2 لوگوں کے لیے · 10 منٹ",
+   "back": "Andhra sweet · for 2 people · 10 minutes"
+  },
+  "seg.7099f7c35107": {
+   "src": "Bellam Atukulu ⟦1⟧(Sweet Poha with Palm Jaggery)⟦/1⟧",
+   "t": "بیلّم اٹوکولو ⟦1⟧(تاڑ کے گڑ والا میٹھا پوہا)⟦/1⟧",
+   "back": "Bellam Atukulu ⟦1⟧(sweet poha with palm jaggery)⟦/1⟧"
+  },
+  "seg.b6b19d4f12bb": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Bellam Atukulu · Gud Wale Pohe",
+   "t": "⟦#1⟧ · ⟦#2⟧ · بیلّم اٹوکولو · گڑ والے پوہے",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Bellam Atukulu · jaggery poha"
+  },
+  "seg.c9c11f5b43da": {
+   "src": "Bellam atukulu is the 10-minute sweet of Telugu homes. It is the poha offered to Krishna on Krishnashtami, recalling Kuchela's gift, and it is also a quick sweet for children after school. The poha is only rinsed, never cooked in water, and then tossed in warm jaggery syrup.",
+   "t": "بیلّم اٹوکولو تیلگو گھروں کی 10 منٹ والی مٹھائی ہے۔ یہ وہ پوہا ہے جو کرشناشٹمی پر کرشن کو چڑھایا جاتا ہے، کُچیلا کے تحفے کی یاد میں، اور یہ اسکول کے بعد بچوں کے لیے جلدی بننے والی مٹھائی بھی ہے۔ پوہے کو صرف دھویا جاتا ہے، پانی میں کبھی پکایا نہیں جاتا، پھر گڑ کے گرم شیرے میں ہلکے سے ملایا جاتا ہے۔",
+   "back": "Bellam Atukulu is a 10-minute sweet of Telugu homes. It is the poha that is offered to Krishna on Krishnashtami, in memory of Kuchela's gift, and it is also a quick-to-make sweet for children after school. The poha is only washed, never cooked in water, then lightly mixed into hot jaggery syrup."
+  },
+  "seg.8594fedb25dc": {
+   "src": "Our Thati Bellam palm jaggery gives it a deep brown colour and a rich, slightly smoky sweetness. This recipe serves 2.",
+   "t": "ہمارا تاٹی بیلّم یعنی تاڑ کا گڑ اسے گہرا بھورا رنگ اور بھرپور، ہلکی سی دھوئیں جیسی مٹھاس دیتا ہے۔ یہ ترکیب 2 لوگوں کے لیے ہے۔",
+   "back": "Our taati bellam, that is palm jaggery, gives it a deep brown colour and a rich, slightly smoke-like sweetness. This recipe is for 2 people."
+  },
+  "seg.4003255240b7": {
+   "src": "⟦1⟧Prep⟦/1⟧5 min",
+   "t": "⟦1⟧تیاری⟦/1⟧5 منٹ",
+   "back": "⟦1⟧Preparation⟦/1⟧5 minutes"
+  },
+  "seg.26d04ba57d2a": {
+   "src": "⟦1⟧Total⟦/1⟧10 min",
+   "t": "⟦1⟧کل وقت⟦/1⟧10 منٹ",
+   "back": "⟦1⟧Total time⟦/1⟧10 minutes"
+  },
+  "seg.25e28614accb": {
+   "src": "Prep includes 5 minutes for the rinsed poha to soften.",
+   "t": "تیاری میں دھوئے ہوئے پوہے کے نرم ہونے کے 5 منٹ شامل ہیں۔",
+   "back": "The preparation includes 5 minutes for the washed poha to soften."
+  },
+  "seg.b9dedcd705aa": {
+   "src": "Soften thick poha, toss it in warm palm jaggery syrup with coconut and cardamom, and finish with ghee.",
+   "t": "موٹے پوہے کو نرم کریں، اسے ناریل اور الائچی کے ساتھ تاڑ کے گڑ کے گرم شیرے میں ہلکے سے ملائیں، اور آخر میں گھی ڈالیں۔",
+   "back": "Soften the thick poha, mix it lightly with coconut and cardamom into hot palm jaggery syrup, and at the end add ghee."
+  },
+  "seg.4d040ba776bf": {
+   "src": "For the bellam atukulu",
+   "t": "بیلّم اٹوکولو کے لیے",
+   "back": "For Bellam Atukulu"
+  },
+  "seg.04f65369bdaa": {
+   "src": "1 cup thick poha ⟦1⟧atukulu, about 100 g⟦/1⟧",
+   "t": "1 کپ موٹا پوہا ⟦1⟧اٹوکولو، تقریباً 100 g⟦/1⟧",
+   "back": "1 cup thick poha ⟦1⟧atukulu, about 100 g⟦/1⟧"
+  },
+  "seg.e13864ccb71f": {
+   "src": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧",
+   "t": "½ کپ کدوکش کیا ہوا تاڑ کا گڑ ⟦1⟧تقریباً 90 g⟦/1⟧",
+   "back": "½ cup grated palm jaggery ⟦1⟧about 90 g⟦/1⟧"
+  },
+  "seg.b78c520dca8d": {
+   "src": "½ cup grated coconut ⟦1⟧white part only⟦/1⟧",
+   "t": "½ کپ کدوکش کیا ہوا ناریل ⟦1⟧صرف سفید حصہ⟦/1⟧",
+   "back": "½ cup grated coconut ⟦1⟧only the white part⟦/1⟧"
+  },
+  "seg.2d6d2ff14f71": {
+   "src": "¼ tsp cardamom powder ⟦1⟧or the crushed seeds of 2–3 pods⟦/1⟧",
+   "t": "¼ چھوٹا چمچ الائچی پاؤڈر ⟦1⟧یا 2–3 الائچیوں کے کُٹے ہوئے دانے⟦/1⟧",
+   "back": "¼ small spoon cardamom powder ⟦1⟧or crushed seeds of 2–3 cardamoms⟦/1⟧"
+  },
+  "seg.2b8bfecc86e5": {
+   "src": "1 tsp ghee",
+   "t": "1 چھوٹا چمچ گھی",
+   "back": "1 small spoon ghee"
+  },
+  "seg.0c6c4102d4df": {
+   "src": "Optional",
+   "t": "اختیاری",
+   "back": "Optional"
+  },
+  "seg.5f1854fd1277": {
+   "src": "6–8 cashews, optional ⟦1⟧fried golden in ghee⟦/1⟧",
+   "t": "6–8 کاجو، اختیاری ⟦1⟧گھی میں سنہرے تلے ہوئے⟦/1⟧",
+   "back": "6–8 cashews, optional ⟦1⟧fried golden in ghee⟦/1⟧"
+  },
+  "seg.fbe7b4b8afbc": {
+   "src": "Put the poha in a sieve and pick out any bits of husk.",
+   "t": "پوہا چھلنی میں ڈالیں اور بھوسی کے ٹکڑے چن کر نکال دیں۔",
+   "back": "Put the poha in a sieve and pick out the pieces of husk."
+  },
+  "seg.b0f730c0b062": {
+   "src": "Rinse the poha in a sieve under running water for a few seconds, drain, and leave it for 5 minutes to soften. It should feel soft when pressed, but not wet.",
+   "t": "پوہے کو چھلنی میں بہتے پانی کے نیچے چند سیکنڈ دھوئیں، پانی نکال دیں، اور نرم ہونے کے لیے 5 منٹ چھوڑ دیں۔ دبانے پر نرم لگے، مگر گیلا نہ ہو۔",
+   "back": "Wash the poha in the sieve under running water for a few seconds, drain the water, and leave for 5 minutes to soften. It should feel soft when pressed, but not be wet."
+  },
+  "seg.0a3e2261d7bc": {
+   "src": "Grate the palm jaggery finely, breaking up any hard lumps.",
+   "t": "تاڑ کا گڑ باریک کدوکش کریں، اور سخت ڈلیاں توڑ دیں۔",
+   "back": "Grate the palm jaggery finely, and break the hard lumps."
+  },
+  "seg.d2b892bf70af": {
+   "src": "Melt the palm jaggery with 2 tbsp water on a low flame, then strain it. Wipe the pan and pour the syrup back in.",
+   "t": "تاڑ کے گڑ کو 2 بڑے چمچ پانی کے ساتھ ہلکی آنچ پر پگھلائیں، پھر چھان لیں۔ پین صاف کریں اور شیرہ واپس اس میں ڈال دیں۔",
+   "back": "Melt the palm jaggery with 2 big spoons of water on low flame, then strain it. Clean the pan and pour the syrup back into it."
+  },
+  "seg.d073ead78aef": {
+   "src": "If you are using cashews, fry them in a little ghee till golden.",
+   "t": "اگر کاجو ڈال رہے ہیں تو انہیں تھوڑے سے گھی میں سنہرا ہونے تک تل لیں۔",
+   "back": "If you are adding cashews, fry them in a little ghee until golden."
+  },
+  "seg.62c17a0f01a5": {
+   "src": "Add the poha, coconut and cardamom to the warm syrup and toss gently on a low flame for 1–2 minutes, until every flake is coated. Use a light hand so the flakes do not break.",
+   "t": "پوہا، ناریل اور الائچی گرم شیرے میں ڈالیں اور ہلکی آنچ پر 1–2 منٹ ہلکے ہاتھ سے ملائیں، جب تک پوہے کا ہر دانہ شیرے میں لپٹ نہ جائے۔ ہاتھ ہلکا رکھیں تاکہ دانے نہ ٹوٹیں۔",
+   "back": "Put the poha, coconut and cardamom into the hot syrup and mix with a light hand on low flame for 1–2 minutes, until every grain of poha is coated in the syrup. Keep the hand light so that the grains do not break."
+  },
+  "seg.d1abe3d7557d": {
+   "src": "Take the pan off the heat as soon as the flakes are coated; longer cooking makes them chewy.",
+   "t": "جیسے ہی دانے شیرے میں لپٹ جائیں، پین آنچ سے اتار لیں؛ زیادہ پکانے سے یہ چبانے میں ربڑ جیسے ہو جاتے ہیں۔",
+   "back": "As soon as the grains are coated in syrup, take the pan off the flame; cooking more makes them rubber-like to chew."
+  },
+  "seg.c91ffab6359d": {
+   "src": "Finish with the ghee and cashews. Serve warm or at room temperature.",
+   "t": "آخر میں گھی اور کاجو ڈالیں۔ گرم یا کمرے کے درجۂ حرارت پر پیش کریں۔",
+   "back": "At the end add ghee and cashews. Serve warm or at room temperature."
+  },
+  "seg.544ea222a497": {
+   "src": "Use thick poha. Thin poha turns mushy in the syrup.",
+   "t": "موٹا پوہا لیں۔ پتلا پوہا شیرے میں گل کر گودا بن جاتا ہے۔",
+   "back": "Take thick poha. Thin poha dissolves in the syrup and becomes pulp."
+  },
+  "seg.0f56d718ca89": {
+   "src": "Do not soak the poha in a bowl of water; a quick rinse is enough, or it turns soft and sticky.",
+   "t": "پوہے کو پانی کے پیالے میں نہ بھگوئیں؛ جلدی سے دھونا کافی ہے، ورنہ یہ نرم اور چپچپا ہو جاتا ہے۔",
+   "back": "Do not soak the poha in a bowl of water; washing quickly is enough, otherwise it becomes soft and sticky."
+  },
+  "seg.972f174730fe": {
+   "src": "Keep the syrup warm, not bubbling, when the poha goes in, so the flakes coat evenly.",
+   "t": "پوہا ڈالتے وقت شیرہ گرم رکھیں، اُبلتا ہوا نہیں، تاکہ سب دانوں پر برابر لپٹے۔",
+   "back": "When adding the poha keep the syrup hot, not boiling, so that it coats all the grains evenly."
+  },
+  "seg.8496cfe4aa1d": {
+   "src": "With milk: pour 2–3 tbsp warm milk over the finished poha for a softer sweet.",
+   "t": "دودھ کے ساتھ: زیادہ نرم مٹھائی کے لیے تیار پوہے پر 2–3 بڑے چمچ گرم دودھ ڈالیں۔",
+   "back": "With milk: for a softer sweet, pour 2–3 big spoons of warm milk over the ready poha."
+  },
+  "seg.bb5e4ee879e6": {
+   "src": "With sesame: add 1 tbsp roasted sesame seeds along with the coconut.",
+   "t": "تل کے ساتھ: ناریل کے ساتھ ہی 1 بڑا چمچ بھنے ہوئے تل ڈالیں۔",
+   "back": "With sesame: add 1 big spoon of roasted sesame along with the coconut."
+  },
+  "seg.25d7247d3c7b": {
+   "src": "Serve it as naivedyam on Krishnashtami, or as a quick sweet for children after school.",
+   "t": "اسے کرشناشٹمی پر نیویدیم کے طور پر پیش کریں، یا اسکول کے بعد بچوں کے لیے جلدی بننے والی مٹھائی کے طور پر۔",
+   "back": "Serve it as naivedyam on Krishnashtami, or as a quick-to-make sweet for children after school."
+  },
+  "seg.1170385c1b79": {
+   "src": "Best eaten the day it is made. Keep leftovers covered in the fridge and eat them the next day; the poha firms up as it stands.",
+   "t": "جس دن بنائیں اسی دن کھانا سب سے اچھا ہے۔ بچا ہوا ڈھک کر فریج میں رکھیں اور اگلے دن کھا لیں؛ رکھا رہنے پر پوہا سخت ہو جاتا ہے۔",
+   "back": "Eating it the same day you make it is best. Cover the leftover, keep it in the fridge and eat it the next day; on keeping, the poha becomes hard."
+  },
+  "seg.6acb206e9df4": {
+   "src": "Which poha is best for bellam atukulu?",
+   "t": "بیلّم اٹوکولو کے لیے کون سا پوہا سب سے اچھا ہے؟",
+   "back": "Which poha is best for Bellam Atukulu?"
+  },
+  "seg.7cb97f8423cf": {
+   "src": "Thick poha (atukulu). It holds its shape in the warm syrup; thin poha turns mushy.",
+   "t": "موٹا پوہا (اٹوکولو)۔ یہ گرم شیرے میں اپنی شکل برقرار رکھتا ہے؛ پتلا پوہا گل کر گودا بن جاتا ہے۔",
+   "back": "Thick poha (atukulu). It keeps its shape in hot syrup; thin poha dissolves and becomes pulp."
+  },
+  "seg.ba8eb1721096": {
+   "src": "Can I make bellam atukulu with cane jaggery?",
+   "t": "کیا میں بیلّم اٹوکولو گنے کے گڑ سے بنا سکتا ہوں؟",
+   "back": "Can I make Bellam Atukulu with sugarcane jaggery?"
+  },
+  "seg.2a1aa941db07": {
+   "src": "Yes. Use the same amount of grated cane jaggery (cheruku bellam). It turns lighter in colour, with a caramel-like sweetness.",
+   "t": "جی ہاں۔ اتنا ہی کدوکش کیا ہوا گنے کا گڑ (چیروکو بیلّم) لیں۔ رنگ ہلکا ہوگا، اور مٹھاس کیریمل جیسی۔",
+   "back": "Yes. Take the same amount of grated sugarcane jaggery (cheruku bellam). The colour will be lighter, and the sweetness caramel-like."
+  },
+  "seg.88008fa2d0e6": {
+   "src": "Why is my bellam atukulu sticky?",
+   "t": "میرا بیلّم اٹوکولو چپچپا کیوں ہے؟",
+   "back": "Why is my Bellam Atukulu sticky?"
+  },
+  "seg.a6945e480c9a": {
+   "src": "The poha was soaked or cooked too long. Rinse it for only a few seconds, and take the pan off the heat as soon as every flake is coated.",
+   "t": "پوہا بھگویا گیا تھا یا بہت دیر پکایا گیا۔ اسے صرف چند سیکنڈ دھوئیں، اور جیسے ہی ہر دانہ شیرے میں لپٹ جائے، پین آنچ سے اتار لیں۔",
+   "back": "The poha was soaked or cooked too long. Wash it for only a few seconds, and as soon as every grain is coated in syrup, take the pan off the flame."
+  },
+  "seg.d4c0fab65bf7": {
+   "src": "Why is it made on Krishnashtami?",
+   "t": "یہ کرشناشٹمی پر کیوں بنایا جاتا ہے؟",
+   "back": "Why is it made on Krishnashtami?"
+  },
+  "seg.51ab1914ac8d": {
+   "src": "It recalls the story of Kuchela, who brought a handful of poha to his friend Krishna as his only gift.",
+   "t": "یہ کُچیلا کی کہانی یاد دلاتا ہے، جو اپنے دوست کرشن کے پاس اپنے واحد تحفے کے طور پر مٹھی بھر پوہا لے کر گئے تھے۔",
+   "back": "It recalls the story of Kuchela, who went to his friend Krishna carrying a handful of poha as his only gift."
+  },
+  "seg.f548f5c95f50": {
+   "src": "బెల్లం అటుకులు · Bellam Atukulu Recipe | 1acrefarms",
+   "t": "బెల్లం అటుకులు · بیلّم اٹوکولو کی ترکیب | 1acrefarms",
+   "back": "బెల్లం అటుకులు · Recipe of Bellam Atukulu | 1acrefarms"
+  },
+  "seg.5080241b3883": {
+   "src": "బెల్లం అటుకులు. Andhra bellam atukulu: thick poha tossed in warm Thati Bellam palm jaggery syrup with coconut, cardamom and ghee. A 10-minute sweet, with tips and FAQs.",
+   "t": "బెల్లం అటుకులు. آندھرا کا بیلّم اٹوکولو: موٹا پوہا، تاٹی بیلّم یعنی تاڑ کے گڑ کے گرم شیرے میں ناریل، الائچی اور گھی کے ساتھ ملایا ہوا۔ 10 منٹ کی مٹھائی، مشوروں اور عام سوالات کے ساتھ۔",
+   "back": "బెల్లం అటుకులు. Andhra's Bellam Atukulu: thick poha, mixed in hot syrup of taati bellam, that is palm jaggery, with coconut, cardamom and ghee. A 10-minute sweet, with tips and common questions."
+  },
+  "seg.4239bed21420": {
+   "src": "Bellam Atukulu (Sweet Poha with Palm Jaggery) · 1acrefarms",
+   "t": "بیلّم اٹوکولو (تاڑ کے گڑ والا میٹھا پوہا) · 1acrefarms",
+   "back": "Bellam Atukulu (sweet poha with palm jaggery) · 1acrefarms"
+  },
+  "seg.8dafb14d8ade": {
+   "src": "Bellam Atukulu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "بیلّم اٹوکولو: 1acrefarms کا ترکیب کارڈ، اجزا اور طریقے کے ساتھ",
+   "back": "Bellam Atukulu: recipe card of 1acrefarms, with ingredients and method"
+  },
+  "seg.f365b17eb48c": {
+   "src": "1 cup thick poha",
+   "t": "1 کپ موٹا پوہا",
+   "back": "1 cup thick poha"
+  },
+  "seg.7c6d93848300": {
+   "src": "½ cup grated palm jaggery",
+   "t": "½ کپ کدوکش کیا ہوا تاڑ کا گڑ",
+   "back": "½ cup grated palm jaggery"
+  },
+  "seg.98176a72f124": {
+   "src": "½ cup grated coconut",
+   "t": "½ کپ کدوکش کیا ہوا ناریل",
+   "back": "½ cup grated coconut"
+  },
+  "seg.89530d979a1e": {
+   "src": "6–8 cashews, optional",
+   "t": "6–8 کاجو، اختیاری",
+   "back": "6–8 cashews, optional"
+  },
+  "seg.cf5b9ab6ccf1": {
+   "src": "Andhra sweet · makes about 14",
+   "t": "آندھرا کی مٹھائی · تقریباً 14 بنتے ہیں",
+   "back": "Andhra sweet · makes about 14"
+  },
+  "seg.aa55b9fd31e8": {
+   "src": "Kobbari Undalu ⟦1⟧(Coconut Jaggery Laddu)⟦/1⟧",
+   "t": "کوبّری اُنڈلو ⟦1⟧(ناریل اور گڑ کے لڈو)⟦/1⟧",
+   "back": "Kobbari Undalu ⟦1⟧(coconut and jaggery laddoos)⟦/1⟧"
+  },
+  "seg.753ec27036d4": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Kobbari Undalu · Nariyal Gud Ke Laddu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · کوبّری اُنڈلو · ناریل گڑ کے لڈو",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Kobbari Undalu · coconut jaggery laddoos"
+  },
+  "seg.de7ddbad7bf0": {
+   "src": "Kobbari undalu are the coconut laddus Andhra homes make for festivals, naivedyam and an everyday sweet. They need only coconut, jaggery, cardamom and a spoon of ghee. The jaggery is melted and strained, the coconut is cooked in it on a low flame until the mix holds together, and the laddus are rolled by hand while still warm.",
+   "t": "کوبّری اُنڈلو ناریل کے وہ لڈو ہیں جو آندھرا کے گھروں میں تہواروں، نیویدیم اور روزمرہ کی مٹھائی کے لیے بنتے ہیں۔ ان کے لیے صرف ناریل، گڑ، الائچی اور ایک چمچ گھی چاہیے۔ گڑ کو پگھلا کر چھانا جاتا ہے، ناریل کو اس میں ہلکی آنچ پر تب تک پکایا جاتا ہے جب تک مکسچر جڑنے نہ لگے، اور لڈو گرم رہتے ہوئے ہی ہاتھ سے بنائے جاتے ہیں۔",
+   "back": "Kobbari Undalu are those coconut laddoos that are made in Andhra homes for festivals, naivedyam and everyday sweet. For them only coconut, jaggery, cardamom and one spoon of ghee are needed. The jaggery is melted and strained, the coconut is cooked in it on low flame until the mixture starts to bind, and the laddoos are made by hand while still warm."
+  },
+  "seg.089fb020d00e": {
+   "src": "Our Cheruku Bellam gives them a light golden colour and a mellow caramel taste. This recipe makes about 14 laddus.",
+   "t": "ہمارا چیروکو بیلّم انہیں ہلکا سنہرا رنگ اور نرم، کیریمل جیسا ذائقہ دیتا ہے۔ اس ترکیب سے تقریباً 14 لڈو بنتے ہیں۔",
+   "back": "Our cheruku bellam gives them a light golden colour and a soft, caramel-like taste. This recipe makes about 14 laddoos."
+  },
+  "seg.c529404fc7f7": {
+   "src": "⟦1⟧Makes⟦/1⟧14",
+   "t": "⟦1⟧بنتے ہیں⟦/1⟧14",
+   "back": "⟦1⟧Makes⟦/1⟧14"
+  },
+  "seg.d9e7175cce3e": {
+   "src": "Allow another 15 minutes for the laddus to cool before you store them.",
+   "t": "رکھنے سے پہلے لڈوؤں کو ٹھنڈا ہونے کے لیے 15 منٹ اور دیں۔",
+   "back": "Before storing, give the laddoos 15 more minutes to cool."
+  },
+  "seg.80b59063a128": {
+   "src": "Melt cane jaggery, cook it with grated coconut till it comes together, add cardamom and ghee, and roll into laddus.",
+   "t": "گنے کا گڑ پگھلائیں، اسے کدوکش کیے ہوئے ناریل کے ساتھ تب تک پکائیں جب تک جڑ نہ جائے، الائچی اور گھی ڈالیں، اور لڈو بنا لیں۔",
+   "back": "Melt the sugarcane jaggery, cook it with grated coconut until it binds, add cardamom and ghee, and make laddoos."
+  },
+  "seg.9bb95574c6d5": {
+   "src": "Ingredients ⟦1⟧makes 14⟦/1⟧",
+   "t": "اجزا ⟦1⟧14 بنتے ہیں⟦/1⟧",
+   "back": "Ingredients ⟦1⟧makes 14⟦/1⟧"
+  },
+  "seg.80fe874ac1b1": {
+   "src": "For the laddus",
+   "t": "لڈوؤں کے لیے",
+   "back": "For the laddoos"
+  },
+  "seg.9dbfabbc7bd0": {
+   "src": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧",
+   "t": "2 کپ کدوکش کیا ہوا ناریل ⟦1⟧1 درمیانہ ناریل؛ صرف سفید حصہ کدوکش کریں⟦/1⟧",
+   "back": "2 cups grated coconut ⟦1⟧1 medium coconut; grate only the white part⟦/1⟧"
+  },
+  "seg.fa687abb7dd1": {
+   "src": "1 cup grated cane jaggery ⟦1⟧about 180 g; pound or grate the pieces first⟦/1⟧",
+   "t": "1 کپ کدوکش کیا ہوا گنے کا گڑ ⟦1⟧تقریباً 180 g؛ ٹکڑوں کو پہلے کوٹ لیں یا کدوکش کر لیں⟦/1⟧",
+   "back": "1 cup grated sugarcane jaggery ⟦1⟧about 180 g; first pound or grate the pieces⟦/1⟧"
+  },
+  "seg.1ca2ce946869": {
+   "src": "1 tbsp ghee ⟦1⟧plus a little for greasing your palms⟦/1⟧",
+   "t": "1 بڑا چمچ گھی ⟦1⟧اور ہتھیلیوں پر لگانے کے لیے تھوڑا سا⟦/1⟧",
+   "back": "1 big spoon ghee ⟦1⟧and a little for applying on the palms⟦/1⟧"
+  },
+  "seg.ccf1a746b971": {
+   "src": "10 cashews, optional ⟦1⟧broken and fried golden in ghee⟦/1⟧",
+   "t": "10 کاجو، اختیاری ⟦1⟧توڑ کر گھی میں سنہرے تلے ہوئے⟦/1⟧",
+   "back": "10 cashews, optional ⟦1⟧broken and fried golden in ghee⟦/1⟧"
+  },
+  "seg.15ef8686cc9e": {
+   "src": "Grate the coconut, leaving out the brown skin so the laddus stay light in colour.",
+   "t": "ناریل کدوکش کریں، بھورا چھلکا چھوڑ دیں تاکہ لڈوؤں کا رنگ ہلکا رہے۔",
+   "back": "Grate the coconut, leave out the brown skin so that the laddoos' colour stays light."
+  },
+  "seg.00b442d7f507": {
+   "src": "Pound or grate the cane jaggery into small pieces so it melts evenly.",
+   "t": "گنے کے گڑ کو کوٹ کر یا کدوکش کر کے چھوٹے ٹکڑے کر لیں تاکہ برابر پگھلے۔",
+   "back": "Pound or grate the sugarcane jaggery into small pieces so that it melts evenly."
+  },
+  "seg.c25e0610c714": {
+   "src": "Melt the jaggery with 2 tbsp water on a low flame, then strain it through a fine sieve. This catches any grit or bits of cane from the block.",
+   "t": "گڑ کو 2 بڑے چمچ پانی کے ساتھ ہلکی آنچ پر پگھلائیں، پھر باریک چھلنی سے چھان لیں۔ اس سے ڈلی میں موجود کنکر یا گنے کے ریزے چھلنی میں رہ جاتے ہیں۔",
+   "back": "Melt the jaggery with 2 big spoons of water on low flame, then strain through a fine sieve. With this, any grit or bits of cane present in the lump stay in the sieve."
+  },
+  "seg.3eb20f2a7136": {
+   "src": "Return it to the pan, add the coconut and cook on medium-low, stirring, until the mix leaves the sides of the pan and holds together, 12–15 minutes. Keep stirring so it does not catch at the bottom.",
+   "t": "اسے واپس پین میں ڈالیں، ناریل ملائیں اور درمیانی سے ہلکی آنچ پر چلاتے ہوئے پکائیں، جب تک مکسچر پین کے کنارے نہ چھوڑ دے اور جڑ نہ جائے، 12–15 منٹ۔ چلاتے رہیں تاکہ نیچے نہ لگے۔",
+   "back": "Put it back in the pan, mix in the coconut and cook stirring on medium to low flame, until the mixture leaves the sides of the pan and binds, 12–15 minutes. Keep stirring so that it does not stick to the bottom."
+  },
+  "seg.e1985b8e5f9c": {
+   "src": "If you are using cashews, fry them in a little ghee till golden while the mix cooks.",
+   "t": "اگر کاجو ڈال رہے ہیں تو مکسچر پکنے کے دوران انہیں تھوڑے سے گھی میں سنہرا ہونے تک تل لیں۔",
+   "back": "If you are adding cashews, fry them in a little ghee until golden while the mixture is cooking."
+  },
+  "seg.1dc27e2d9b3e": {
+   "src": "Stir in the cardamom, ghee and cashews. Take the pan off the heat.",
+   "t": "الائچی، گھی اور کاجو ملا دیں۔ پین آنچ سے اتار لیں۔",
+   "back": "Mix in the cardamom, ghee and cashews. Take the pan off the flame."
+  },
+  "seg.d4ee96780aba": {
+   "src": "Let it cool till you can handle it, grease your palms with ghee and roll it into small balls. Press each one firmly so it holds together.",
+   "t": "اتنا ٹھنڈا ہونے دیں کہ ہاتھ لگا سکیں، ہتھیلیوں پر گھی لگائیں اور چھوٹے گول لڈو بنائیں۔ ہر ایک کو مضبوطی سے دبائیں تاکہ جڑا رہے۔",
+   "back": "Let it cool enough that you can touch it, apply ghee on the palms and make small round laddoos. Press each one firmly so that it stays bound."
+  },
+  "seg.3753ea8bc7d0": {
+   "src": "Set the laddus on a greased plate and let them cool completely before you store them.",
+   "t": "لڈو گھی لگی پلیٹ پر رکھیں اور رکھنے سے پہلے پوری طرح ٹھنڈا ہونے دیں۔",
+   "back": "Place the laddoos on a ghee-greased plate and let them cool fully before storing."
+  },
+  "seg.fb3de84de9f6": {
+   "src": "If the mix won't hold a shape, cook it 2 minutes more. If it sets too hard, sprinkle in a spoon of warm milk and press again.",
+   "t": "اگر مکسچر شکل نہ پکڑے تو 2 منٹ اور پکائیں۔ اگر بہت سخت ہو جائے تو ایک چمچ گرم دودھ چھڑکیں اور پھر سے دبائیں۔",
+   "back": "If the mixture does not take shape, cook 2 more minutes. If it becomes too hard, sprinkle a spoon of warm milk and press again."
+  },
+  "seg.71475e1a7345": {
+   "src": "Keep the flame at medium-low; on a high flame the jaggery darkens and the laddus turn hard.",
+   "t": "آنچ درمیانی سے ہلکی رکھیں؛ تیز آنچ پر گڑ کا رنگ گہرا ہو جاتا ہے اور لڈو سخت ہو جاتے ہیں۔",
+   "back": "Keep the flame medium to low; on high flame the jaggery's colour becomes dark and the laddoos become hard."
+  },
+  "seg.46a2e2b2d323": {
+   "src": "Roll the laddus while the mix is still warm; once it cools completely it will not bind.",
+   "t": "مکسچر گرم رہتے ہوئے ہی لڈو بنائیں؛ پوری طرح ٹھنڈا ہونے کے بعد یہ نہیں جڑے گا۔",
+   "back": "Make the laddoos while the mixture is still warm; after cooling fully it will not bind."
+  },
+  "seg.b277c024adad": {
+   "src": "Palm jaggery: use the same amount of grated palm jaggery for darker laddus with a slightly smoky sweetness.",
+   "t": "تاڑ کا گڑ: اتنا ہی کدوکش کیا ہوا تاڑ کا گڑ لیں، لڈو گہرے رنگ کے اور ہلکی سی دھوئیں جیسی مٹھاس والے بنیں گے۔",
+   "back": "Palm jaggery: take the same amount of grated palm jaggery, the laddoos will turn out dark-coloured and with a slightly smoke-like sweetness."
+  },
+  "seg.7b597df04222": {
+   "src": "Dry coconut: use the same amount of grated dry coconut (kopra); the mix comes together faster, so watch it closely.",
+   "t": "سوکھا ناریل: اتنا ہی کدوکش کیا ہوا سوکھا ناریل (کھوپرا) لیں؛ مکسچر جلدی جڑ جاتا ہے، اس لیے دھیان سے دیکھتے رہیں۔",
+   "back": "Dry coconut: take the same amount of grated dry coconut (khopra); the mixture binds quickly, so keep watching carefully."
+  },
+  "seg.676bca051e10": {
+   "src": "Kobbari burfi: spread the cooked mix on a greased plate, let it set a little and cut it into squares instead of rolling laddus.",
+   "t": "کوبّری برفی: لڈو بنانے کے بجائے پکا ہوا مکسچر گھی لگی پلیٹ پر پھیلائیں، تھوڑا جمنے دیں اور چوکور ٹکڑے کاٹ لیں۔",
+   "back": "Kobbari burfi: instead of making laddoos, spread the cooked mixture on a ghee-greased plate, let it set a little and cut square pieces."
+  },
+  "seg.80538d77ab41": {
+   "src": "Serve as an everyday sweet, offer them as naivedyam, or add them to the festival sweet plate.",
+   "t": "روزمرہ کی مٹھائی کے طور پر پیش کریں، نیویدیم کے طور پر چڑھائیں، یا تہوار کی مٹھائی کی تھالی میں شامل کریں۔",
+   "back": "Serve as an everyday sweet, offer as naivedyam, or include in a festival sweet platter."
+  },
+  "seg.6f3252f28ef8": {
+   "src": "Keep in an airtight container and eat within 3 days at room temperature, or within a week if kept in the fridge.",
+   "t": "ہوا بند ڈبے میں رکھیں اور کمرے کے درجۂ حرارت پر 3 دن کے اندر کھا لیں، یا فریج میں رکھیں تو ایک ہفتے کے اندر۔",
+   "back": "Keep in an airtight box and eat within 3 days at room temperature, or if kept in the fridge, within one week."
+  },
+  "seg.f232fb960e89": {
+   "src": "Why are my kobbari undalu not holding shape?",
+   "t": "میرے کوبّری اُنڈلو شکل کیوں نہیں پکڑ رہے؟",
+   "back": "Why are my Kobbari Undalu not taking shape?"
+  },
+  "seg.1cf59b528a13": {
+   "src": "The mix needs a little more cooking. Put it back on a low flame for 2 minutes, stirring, until it leaves the sides of the pan, then roll it while it is still warm.",
+   "t": "مکسچر کو تھوڑا اور پکانا ہے۔ اسے دوبارہ ہلکی آنچ پر 2 منٹ چلاتے ہوئے پکائیں، جب تک پین کے کنارے نہ چھوڑ دے، پھر گرم رہتے ہوئے ہی لڈو بنائیں۔",
+   "back": "The mixture has to be cooked a little more. Cook it again on low flame for 2 minutes stirring, until it leaves the sides of the pan, then make laddoos while still warm."
+  },
+  "seg.9371fa8705cd": {
+   "src": "Why did my laddus turn hard?",
+   "t": "میرے لڈو سخت کیوں ہو گئے؟",
+   "back": "Why did my laddoos become hard?"
+  },
+  "seg.ee988ba3472f": {
+   "src": "The jaggery was cooked too long or on too high a flame. Sprinkle in a spoon of warm milk, mix and press again. Next time, take the pan off the heat as soon as the mix holds together.",
+   "t": "گڑ بہت دیر تک یا بہت تیز آنچ پر پکا۔ ایک چمچ گرم دودھ چھڑکیں، ملائیں اور پھر سے دبائیں۔ اگلی بار، جیسے ہی مکسچر جڑ جائے، پین آنچ سے اتار لیں۔",
+   "back": "The jaggery cooked too long or on too high a flame. Sprinkle a spoon of warm milk, mix and press again. Next time, as soon as the mixture binds, take the pan off the flame."
+  },
+  "seg.d830316a6adb": {
+   "src": "Can I make kobbari undalu with palm jaggery?",
+   "t": "کیا میں کوبّری اُنڈلو تاڑ کے گڑ سے بنا سکتا ہوں؟",
+   "back": "Can I make Kobbari Undalu with palm jaggery?"
+  },
+  "seg.813bf680c8a8": {
+   "src": "Yes. Use the same amount of grated palm jaggery (thati bellam). The laddus turn darker, with a slightly smoky sweetness.",
+   "t": "جی ہاں۔ اتنا ہی کدوکش کیا ہوا تاڑ کا گڑ (تاٹی بیلّم) لیں۔ لڈو گہرے رنگ کے بنیں گے، اور مٹھاس ہلکی سی دھوئیں جیسی ہوگی۔",
+   "back": "Yes. Take the same amount of grated palm jaggery (taati bellam). The laddoos will be dark-coloured, and the sweetness will be slightly smoke-like."
+  },
+  "seg.ea6121eb3993": {
+   "src": "How long do kobbari undalu keep?",
+   "t": "کوبّری اُنڈلو کتنے دن چلتے ہیں؟",
+   "back": "How many days do Kobbari Undalu last?"
+  },
+  "seg.26aba27412dc": {
+   "src": "About 3 days in an airtight container at room temperature, and up to a week in the fridge.",
+   "t": "ہوا بند ڈبے میں کمرے کے درجۂ حرارت پر تقریباً 3 دن، اور فریج میں ایک ہفتے تک۔",
+   "back": "In an airtight box at room temperature about 3 days, and in the fridge up to one week."
+  },
+  "seg.94e224d02e1d": {
+   "src": "కొబ్బరి ఉండలు · Kobbari Undalu Recipe | 1acrefarms",
+   "t": "కొబ్బరి ఉండలు · کوبّری اُنڈلو کی ترکیب | 1acrefarms",
+   "back": "కొబ్బరి ఉండలు · Recipe of Kobbari Undalu | 1acrefarms"
+  },
+  "seg.0156a887ba6f": {
+   "src": "కొబ్బరి ఉండలు. Andhra kobbari undalu: grated coconut cooked with Cheruku Bellam cane jaggery, cardamom and ghee, then rolled into laddus. Step-by-step method, tips and FAQs.",
+   "t": "కొబ్బరి ఉండలు. آندھرا کے کوبّری اُنڈلو: کدوکش کیا ہوا ناریل، چیروکو بیلّم یعنی گنے کے گڑ، الائچی اور گھی کے ساتھ پکا کر لڈو بنائے جاتے ہیں۔ قدم بہ قدم طریقہ، مشورے اور عام سوالات۔",
+   "back": "కొబ్బరి ఉండలు. Andhra's Kobbari Undalu: grated coconut is cooked with cheruku bellam, that is sugarcane jaggery, cardamom and ghee, and laddoos are made. Step-by-step method, tips and common questions."
+  },
+  "seg.bb9590a78439": {
+   "src": "Kobbari Undalu (Coconut Jaggery Laddu) · 1acrefarms",
+   "t": "کوبّری اُنڈلو (ناریل اور گڑ کے لڈو) · 1acrefarms",
+   "back": "Kobbari Undalu (coconut and jaggery laddoos) · 1acrefarms"
+  },
+  "seg.fc0444bcc4df": {
+   "src": "Kobbari Undalu: the recipe card from 1acrefarms, with ingredients and method",
+   "t": "کوبّری اُنڈلو: 1acrefarms کا ترکیب کارڈ، اجزا اور طریقے کے ساتھ",
+   "back": "Kobbari Undalu: recipe card of 1acrefarms, with ingredients and method"
+  },
+  "seg.b1e766aa7cc6": {
+   "src": "2 cups grated coconut",
+   "t": "2 کپ کدوکش کیا ہوا ناریل",
+   "back": "2 cups grated coconut"
+  },
+  "seg.b90390a9ff7d": {
+   "src": "10 cashews, optional",
+   "t": "10 کاجو، اختیاری",
+   "back": "10 cashews, optional"
   }
  }
 }

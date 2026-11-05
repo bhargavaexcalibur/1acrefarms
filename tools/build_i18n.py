@@ -91,44 +91,30 @@ UI = {
     "ui.read_in": ("Read this page in <this language>", "banner offering this language; write the language's own name"),
     "ui.not_now": ("Not now", "closes that banner"),
     "ui.per_g": ("per g", "after a price, e.g. '₹0.73 per g'"),
-    "ui.tax": ("Incl. of all taxes · In stock · Dispatched within 2 working days", "under the MRP"),
-    "ui.add": ("Add to order", "button"),
-    "ui.wa": ("Order on WhatsApp", "button"),
+    "ui.incl_tax": ("Incl. of all taxes", "under the MRP (a legal requirement)"),
     "ui.amazon": ("Buy on Amazon", "button to our Amazon.in listing; write 'Amazon' in Latin letters exactly"),
+    "ui.store": ("Our Amazon store", "button/link to our store on Amazon.in; write 'Amazon' in Latin letters exactly"),
     "ui.f_from": ("From", "label: where the product comes from"),
     "ui.f_pack": ("Pack", "label"),
-    "ui.f_delivery": ("Delivery", "label"),
-    "ui.f_delivery_v": ("Free on 2 or more packs · ₹81 for one pack", "delivery charges"),
-    "ui.f_pay": ("Pay", "label"),
-    "ui.f_pay_v": ("UPI, or pay on delivery where available", "payment options"),
     "ui.how_to_use": ("How to use", "heading"),
     "ui.pack_details": ("Pack details", "heading"),
     "ui.as_printed": ("As printed on the pack, in English.", "note above the legal pack details, which stay in English"),
-    "ui.ship_h": ("Delivery, payment and returns", "heading"),
-    "ui.ship_p": ("Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 "
-                  "to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, "
-                  "anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South "
-                  "India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it "
-                  "or refund you in full.", "policy summary; keep every number exactly"),
-    "ui.read_policies": ("Read our policies (in English)", "link to the policies page"),
     "ui.other_packs": ("Our other packs", "heading"),
     "ui.translated": ("Translated from English. Spotted a mistake?", "small note at the end of the page"),
     "ui.wa_us": ("WhatsApp us", "link after that note"),
-    "ui.order_note": ("Orders are placed in our shop, which is in English.", "note next to the order buttons"),
     "ui.l_title": ("Turmeric, chilli powder, jaggery and cashew from Bharat", "browser tab title of the language home page; '| 1acrefarms' is added"),
-    "ui.l_desc": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in "
-                  "Narasaraopet, Andhra Pradesh. Order online or on WhatsApp. Free delivery on 2 or more packs.",
+    "ui.l_desc": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, "
+                  "Andhra Pradesh. Our packs are sold on Amazon.in.",
                   "search result description of the language home page"),
     "ui.l_eyebrow": ("Village desi foods from Bharat", "small line above the main heading"),
-    "ui.l_lede": ("Turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra "
-                  "Pradesh. Order online or on WhatsApp. Delivery is free on 2 or more packs.", "intro paragraph"),
+    "ui.l_lede": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, "
+                  "Andhra Pradesh. Our packs are sold on Amazon.in.", "intro paragraph"),
     "ui.l_packs": ("Our packs", "heading above the packs"),
     "ui.see_pack": ("See the pack", "link on each pack card"),
 }
 PACK_FIELDS = {
     "name": "the product name in this language (the H1 and in lists); keep it short",
     "title": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters",
-    "desc": "Google description; keep the MRP and every number",
     "lede": "intro sentence under the heading",
     "origin": "where it comes from (place names stay as names)",
     "note": "short facts line about the pack",
@@ -145,7 +131,7 @@ def source():
     for p in bp.PACKS:
         k = f"pack.{p['code']}"
         out[f"{k}.name"] = (f"{p['name']} ({p['local']})", PACK_FIELDS["name"] + "; the bracket is the Telugu name, keep or adapt")
-        for f in ("title", "desc", "lede", "origin", "note"):
+        for f in ("title", "lede", "origin", "note"):
             out[f"{k}.{f}"] = (plain(p[f]), PACK_FIELDS[f])
         for i, u in enumerate(p["uses"]):
             out[f"{k}.use{i}"] = (plain(u), "one 'how to use' line")
@@ -232,11 +218,11 @@ def usable(code, src):
 
 def pack_keys(p):
     k = f"pack.{p['code']}"
-    return [f"{k}.{f}" for f in ("name", "title", "desc", "lede", "origin", "note")] + \
+    return [f"{k}.{f}" for f in ("name", "title", "lede", "origin", "note")] + \
            [f"{k}.use{i}" for i in range(len(p["uses"]))]
 
 
-OPTIONAL = {"ui.amazon"}  # newer strings: English is shown until translated
+OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store"}  # newer strings: English is shown until translated
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
 
@@ -420,11 +406,19 @@ def pack_card(code, t, p):
         </a>"""
 
 
-def amazon_btn(code, t, p):
-    # A newer string than the rest: until it is translated, the button stays in English.
-    if "ui.amazon" in t:
-        return bp.amazon_btn(p, x(code, t["ui.amazon"]))
-    return bp.amazon_btn(p, "Buy on Amazon", ' lang="en" dir="ltr"')
+def opt(code, t, key):
+    """A newer (OPTIONAL) string: the translation once it passes, until then the English, marked as English."""
+    if key in t:
+        return x(code, t[key])
+    return f'<span lang="en" dir="ltr">{e(UI[key][0])}</span>'
+
+
+def order_btn(code, t, p):
+    """Amazon.in only: the listing while the pack is buyable there, otherwise our Amazon store."""
+    key = "ui.amazon" if bp.amazon_link(p) else "ui.store"
+    if key in t:
+        return bp.order_btn(p, x(code, t[key]), x(code, t[key]))
+    return bp.order_btn(p, e(UI[key][0]), e(UI[key][0]), ' lang="en" dir="ltr"')
 
 
 def pack_page(code, t, p, packs, facts):
@@ -442,7 +436,9 @@ def pack_page(code, t, p, packs, facts):
     row = facts.get(p["code"], {})
     storage = f"<dt>Storage</dt><dd>{row['storage']}</dd>" if row.get("storage") else ""
     others = "\n".join(pack_card(code, t, q) for q in packs if q is not p)
-    return head(code, t[k + ".title"], t[k + ".desc"], url, "product", f"{SITE}/assets/packs/{p['pack']}",
+    # Built from strings that are already translated (the lede and the MRP), so no ordering talk is needed here.
+    desc = f"{t[k + '.lede']} {p['g']} g · MRP ₹{p['mrp']}"
+    return head(code, t[k + ".title"], desc, url, "product", f"{SITE}/assets/packs/{p['pack']}",
                 json.dumps(ld, ensure_ascii=False, indent=2)) + f"""
 <body class="pdp-page i18n-page">
 {header(t, code)}
@@ -463,17 +459,12 @@ def pack_page(code, t, p, packs, facts):
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
           <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
         </div>
-        <p class="tax">{x(code, t['ui.tax'])}</p>
-        <div class="pdp-actions">{amazon_btn(code, t, p)}
-          <a class="btn {'btn-wa' if bp.amazon_link(p) else 'btn-primary'}" href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">{x(code, t['ui.add'])}</a>
-          <a class="btn btn-wa" href="{bp.wa_link(p)}" target="_blank" rel="noopener">{x(code, t['ui.wa'])}</a>
+        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>
+        <div class="pdp-actions" id="order">{order_btn(code, t, p)}
         </div>
-        <p class="i18n-order-note">{x(code, t['ui.order_note'])}</p>
         <ul class="pdp-facts">
           <li><span>{x(code, t['ui.f_from'])}</span>{x(code, t[k + '.origin'])}</li>
           <li><span>{x(code, t['ui.f_pack'])}</span>{x(code, t[k + '.note'])}</li>
-          <li><span>{x(code, t['ui.f_delivery'])}</span>{x(code, t['ui.f_delivery_v'])}</li>
-          <li><span>{x(code, t['ui.f_pay'])}</span>{x(code, t['ui.f_pay_v'])}</li>
         </ul>
       </div>
     </section>
@@ -505,11 +496,6 @@ def pack_page(code, t, p, packs, facts):
         <h2>Nutritional information</h2>
         {bp.nutrition(p, facts)}
       </div>
-    </section>
-
-    <section class="pdp-ship">
-      <h2>{x(code, t['ui.ship_h'])}</h2>
-      <p>{x(code, t['ui.ship_p'])} <a href="/policies.html#shipping">{x(code, t['ui.read_policies'])}</a></p>
     </section>
 
     <section class="pdp-others">
