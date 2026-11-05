@@ -253,6 +253,28 @@ def video_ld(name, title, desc):
             "uploadDate": v["date"], "duration": f"PT{round(v['secs'])}S"}
 
 
+# More videos on a pack page, shown right after its pack video. Real footage only, no text on the page, and the
+# VideoObject reuses strings the page already has (name + pack note), so the language pages need nothing new.
+# jaggery-unit: Bhargav's own footage of the cane jaggery unit we buy from, filmed 05-10-2026
+# (docs/marketing/video/make_unit_video.py); he OK'd posting it everywhere on 05-11-2026.
+PACK_EXTRA_VIDEOS = {"cane-jaggery": ["jaggery-unit"]}
+
+
+def pack_video_names(p):
+    return [n for n in [f"pack-{p['slug']}", *PACK_EXTRA_VIDEOS.get(p["slug"], ())] if n in VIDEOS]
+
+
+def pack_videos_html(p):
+    return "\n        ".join(video_html(n, "pack-video") for n in pack_video_names(p))
+
+
+def pack_videos_ld(p):
+    """One VideoObject per video on the pack page; a single one stays a plain object, as before."""
+    lds = [video_ld(n, f"{p['name']} ({p['local']}) {p['g']} g", text_of(p["lede"])) if n == f"pack-{p['slug']}"
+           else video_ld(n, f"{p['name']} ({p['local']})", text_of(p["note"])) for n in pack_video_names(p)]
+    return {"subjectOf": lds[0] if len(lds) == 1 else lds} if lds else {}
+
+
 def product_ld(p, facts):
     url = f"{SITE}/{p['slug']}/"
     ld = {
@@ -265,8 +287,7 @@ def product_ld(p, facts):
                 "alternateName": [p["local"], p["te"], p["hi"], p["sa"], p["hi_tr"]],
                 "description": text_of(p["lede"]),
                 "image": [f"{SITE}/assets/packs/{p['pack']}"],
-                **({"subjectOf": video_ld(f"pack-{p['slug']}", f"{p['name']} ({p['local']}) {p['g']} g", text_of(p["lede"]))}
-                   if f"pack-{p['slug']}" in VIDEOS else {}),
+                **pack_videos_ld(p),
                 "sku": f"1AF-{p['code']}-{p['g']:04d}",
                 "brand": {"@type": "Brand", "name": "1acrefarms"},
                 "category": p["category"],
@@ -425,7 +446,7 @@ def page(p, live, facts, guides=(), recipes=()):
     <section class="pdp">
       <div class="pdp-media">
         <div class="pack-media"><img src="{img}" alt="{p['name']} ({p['local']}) {p['g']} g pack, front" width="800" height="1122" /></div>
-        {video_html(f"pack-{p['slug']}", "pack-video")}
+        {pack_videos_html(p)}
       </div>
       <div class="pdp-info">
         <p class="eyebrow">{p['origin']}</p>
