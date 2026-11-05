@@ -439,9 +439,9 @@ GUIDES = [
              "low flame so it does not burn."),
         ],
         sources=[
-            ("FSSAI: Food Products Standards regulations, chapter 2.9 (salt, spices and condiments), "
+            ("FSSAI: Food Products Standards regulations, chapter 2.9 (Version 4, 01.08.2025), "
              "2.9.18 Turmeric (Haldi)",
-             "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_9%20(Salt%20Spices%2C%20Condiments%20and%20related%20products).pdf"),
+             "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_9_Salt_Spices_Condiments%20and%20related%20products.pdf"),
             ("ICAR-Indian Institute of Spices Research: Turmeric, extension pamphlet (March 2022), on the "
              "Spices Board India website",
              "https://indianspices.com/sites/default/files/185.%20Institute%20Publication-Turmeric%20Extension%20Pamphlet%20-%20March%202022.pdf"),
@@ -560,7 +560,7 @@ GUIDES = [
               </div>
               <div class="gd-result gd-result-warn">
                 <p class="gd-result-head">A blue colour</p>
-                <p>Points to added starch. Stop using that batch and get it tested.</p>
+                <p>Points to added starch. Stop using that batch and get it tested. On red powder a faint change is hard to judge, so if you are not sure, let a lab decide.</p>
               </div>
             </div>
             <p><strong>Why it works.</strong> Iodine turns blue when it meets starch.</p>"""),
