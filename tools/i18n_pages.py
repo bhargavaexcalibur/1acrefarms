@@ -11,8 +11,10 @@ English text, so:
 Inline markup inside a piece is shown to translators as numbered markers: ⟦1⟧…⟦/1⟧ wrap text that
 keeps its tag (a link, bold), and ⟦#1⟧ stands for something kept exactly as it is (a Telugu or Hindi
 name, an image). The build puts the original tags back, so links and classes never pass through a
-translation. Text marked with another language (lang="te", lang="hi") is never translated: the
-Telugu and Hindi lines stay on every language's page, as on the English one.
+translation. Text marked with another language (lang="te", lang="hi", lang="sa") is never translated:
+the Telugu, Hindi and Sanskrit names stay on every language's page, as on the English one. A Sanskrit
+name (lang="sa") rides inside the marker of the Telugu or Hindi name just before it (see rides()), so
+adding Sanskrit names changed no piece's key and no translation.
 
 A language page is built only when every piece of it passes build_i18n.problem() (numbers, brand
 name, markers, claim filter on the translation and on its blind back-translation).
@@ -106,21 +108,49 @@ class Segment:
         self.key = key_of(src)
 
 
+RIDE_SEP = re.compile(r"\s*·?\s*")  # what may sit between a name and the Sanskrit name that follows it
+
+
+def rides(nodes, i):
+    """Index of the last Sanskrit name (lang="sa") that follows the other-language name nodes[i], or i.
+    Sanskrit names ride with the Telugu/Hindi name before them inside one ⟦#n⟧ marker, so adding them
+    (05-11-2026: "wherever there is Telugu there should be Sanskrit") changes no segment key and no
+    translation: the Sanskrit sits on every language's page next to the Telugu and Hindi, untranslated."""
+    end, j = i, i + 1
+    while True:
+        k = j
+        if k < len(nodes) and nodes[k].text is not None and RIDE_SEP.fullmatch(nodes[k].text):
+            k += 1
+        if k < len(nodes) and nodes[k].text is None and attr(nodes[k], "lang") == "sa":
+            end, j = k, k + 1
+        else:
+            return end
+
+
 def serialize(nodes, parts, counter):
     out = []
-    for n in nodes:
+    nodes = list(nodes)
+    i = 0
+    while i < len(nodes):
+        n = nodes[i]
         if n.text is not None:
             out.append(html.unescape(n.text))
         elif n.tag in VOID or foreign(n) or not n.kids:
             counter[0] += 1
             m = f"⟦#{counter[0]}⟧"
-            parts[m] = SRC[0][n.start - SRC[1]:n.end - SRC[1]]
+            last = rides(nodes, i) if foreign(n) and attr(n, "lang") != "sa" else i
+            if attr(n, "lang") == "sa" and n.tag is not None:
+                raise ValueError("a lang=\"sa\" name must follow a Telugu or Hindi name (it rides in that name's marker)")
+            parts[m] = SRC[0][n.start - SRC[1]:nodes[last].end - SRC[1]]
             out.append(m)
+            i = last + 1
+            continue
         else:
             counter[0] += 1
-            i = counter[0]
-            parts[f"⟦{i}⟧"], parts[f"⟦/{i}⟧"] = n.open, n.close
-            out.append(f"⟦{i}⟧" + serialize(n.kids, parts, counter) + f"⟦/{i}⟧")
+            c = counter[0]
+            parts[f"⟦{c}⟧"], parts[f"⟦/{c}⟧"] = n.open, n.close
+            out.append(f"⟦{c}⟧" + serialize(n.kids, parts, counter) + f"⟦/{c}⟧")
+        i += 1
     return "".join(out)
 
 

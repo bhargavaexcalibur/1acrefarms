@@ -377,7 +377,7 @@ def head(code, title, desc, url, og_type, og_image, ld):
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family={L['font'][1]}&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family={L['font'][1]}{'' if L['font'] == DEVA else '&family=' + DEVA[1]}&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
   <style>html[lang="{code}"] body {{ font-family: "Inter", "{L['font'][0]}", system-ui, sans-serif; }}</style>
@@ -454,7 +454,7 @@ def pack_page(code, t, p, packs, facts):
       <div class="pdp-info">
         <p class="eyebrow">{x(code, t[k + '.origin'])}</p>
         <h1>{x(code, t[k + '.name'])}</h1>
-        <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span></p>
+        <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
         <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>
         <div class="price-row">
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>

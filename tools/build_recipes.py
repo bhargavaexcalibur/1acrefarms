@@ -60,6 +60,7 @@ PHONE = re.compile(r"(?<!\d)(?:\+?91[\s-]?)?[6-9]\d{4}[\s-]?\d{5}(?!\d)")
 
 # Fields
 #   approved   exact copy of the month_specs.json entry (checked); the page shows the fuller recipe
+#   te, hi, sa the dish name in Telugu, Hindi and Sanskrit (sa: blind back-checked, 05-11-2026)
 #   quick      the approved English caption (after the emoji); te_line / hi_line the approved
 #              Telugu / Hindi captions; te_more / hi_more one ADDED line each
 #   times      (prep, cook, total) in minutes · yields (label, shown, schema.org recipeYield)
@@ -70,7 +71,7 @@ RECIPES = [
         slug="palm-jaggery-coffee", post="2026-10-28_recipe-palm-coffee",
         name="Palm Jaggery Coffee",
         gloss="Thati Bellam Coffee",       # the Telugu name in Latin letters
-        te="తాటి బెల్లం కాఫీ", hi="ताड़ के गुड़ वाली कॉफ़ी",
+        te="తాటి బెల్లం కాఫీ", hi="ताड़ के गुड़ वाली कॉफ़ी", sa="तालगुड-काफी",
         te_tr="Thati Bellam Coffee",
         hi_tr="Taad Ke Gud Wali Coffee",   # ADDED: transliteration of the approved Hindi name
         alt=[],
@@ -173,7 +174,7 @@ RECIPES = [
         slug="paramannam", post="2026-11-05_recipe-paramannam",
         name="Bellam Paramannam",
         gloss="Jaggery Rice Kheer",        # ADDED: English gloss
-        te="బెల్లం పరమాన్నం", hi="गुड़ वाली खीर",
+        te="బెల్లం పరమాన్నం", hi="गुड़ वाली खीर", sa="गुडतण्डुलपायसम्",
         te_tr="Bellam Paramannam",
         hi_tr="Gud Wali Kheer",            # ADDED: transliteration of the approved Hindi name
         alt=["Paramannam"],
@@ -284,7 +285,7 @@ RECIPES = [
         slug="chimmili", post="2026-11-12_recipe-chimmili",
         name="Chimmili for Nagula Chavithi",
         gloss="Sesame Jaggery Balls",      # ADDED: English gloss
-        te="నాగుల చవితికి చిమ్మిలి", hi="नागुल चविति के लिए तिल-गुड़ के लड्डू",
+        te="నాగుల చవితికి చిమ్మిలి", hi="नागुल चविति के लिए तिल-गुड़ के लड्डू", sa="तिलगुडगोलकाः",
         te_tr="Nuvvula Chimmili",          # ADDED: the usual Telugu name (nuvvulu = sesame)
         hi_tr="Til-Gud Ke Laddoo",         # ADDED: transliteration of the approved Hindi name
         alt=["Chimmili", "చిమ్మిలి", "तिल-गुड़ के लड्डू"],
@@ -388,7 +389,7 @@ RECIPES = [
         slug="pasupu-paalu", post="2026-11-16_recipe-pasupu-paalu",
         name="Warm Pasupu Paalu",
         gloss="Turmeric Milk",             # ADDED: English gloss
-        te="పసుపు పాలు", hi="हल्दी वाला दूध",
+        te="పసుపు పాలు", hi="हल्दी वाला दूध", sa="हरिद्रादुग्धम्",
         te_tr="Pasupu Paalu",
         hi_tr="Haldi Wala Doodh",          # ADDED: transliteration of the approved Hindi name
         alt=["Haldi Doodh"],               # from the approved hashtag #HaldiDoodh
@@ -559,6 +560,8 @@ def check_against_social():
         else:
             drift += [k for k in ("ingredients", "steps", "meta") if s[k] != r["approved"][k]]
             drift += [k for k in ("te", "hi") if s[k] != r[k]]
+            if s.get("sa") and s["sa"] != r["sa"]:
+                drift.append(f"sa: post {s['sa']} vs page {r['sa']}")
         if c:
             en, te, hi = c["caption"].split("\n")[:3]
             for label, line, ours in (("en", en, r["quick"]), ("te", te, r["te_line"]), ("hi", hi, r["hi_line"])):
@@ -633,7 +636,7 @@ def crumbs_ld(*links):
 
 def recipe_ld(r, url):
     prep, cook, total = r["times"]
-    names = [r["gloss"], r["te"], r["hi"], r["te_tr"], r["hi_tr"]] + r["alt"]
+    names = [r["gloss"], r["te"], r["hi"], r["sa"], r["te_tr"], r["hi_tr"]] + r["alt"]
     return {
         "@type": "Recipe",
         "@id": url + "#recipe",
@@ -674,7 +677,7 @@ def made_with(r):
             <a href="/{p['slug']}/"><img src="/assets/packs/{p['pack']}" alt="{p['name']} {p['g']} g pack" width="800" height="1122" loading="lazy" /></a>
             <div>
               <a class="po-name" href="/{p['slug']}/">{p['name']}</a>
-              <span class="po-te"><span lang="te">{p['te']}</span> · {p['local']}</span>
+              <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>
               <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
               <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a><a href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a></span>
             </div>
@@ -697,7 +700,7 @@ def tile(r):
     return f"""        <a class="rcp-tile" href="/recipes/{r['slug']}/">
           <img src="/assets/recipes/{r['slug']}.png" alt="{e(r['name'])} recipe card" width="{r['_w']}" height="{r['_h']}" loading="lazy" />
           <span class="rt-name">{e(r['name'])}</span>
-          <span class="rt-names"><span lang="te">{r['te']}</span> · <span lang="hi">{r['hi']}</span></span>
+          <span class="rt-names"><span lang="te">{r['te']}</span> · <span lang="hi">{r['hi']}</span> · <span lang="sa">{r['sa']}</span></span>
           <span class="rt-line">With {p['name']} · {when.lower()}</span>
         </a>"""
 
@@ -755,7 +758,7 @@ def recipe_page(r, live):
         <div class="rcp-hero-text">
           <p class="eyebrow">{e(r['eyebrow'])}</p>
           <h1>{e(r['name'])} <span class="pdp-local">({e(r['gloss'])})</span></h1>
-          <p class="pdp-names"><span lang="te">{r['te']}</span> · <span lang="hi">{r['hi']}</span> · {e(r['te_tr'])} · {e(r['hi_tr'])}</p>
+          <p class="pdp-names"><span lang="te">{r['te']}</span> · <span lang="hi">{r['hi']}</span> · <span lang="sa">{r['sa']}</span> · {e(r['te_tr'])} · {e(r['hi_tr'])}</p>
           <div class="rcp-intro">
 {intro}
           </div>
@@ -857,7 +860,7 @@ def hub_page(live):
         rs = [r for r in RECIPES if r["packs"][0] == p["slug"]]
         if rs:
             tiles = "\n".join(tile(r) for r in rs)
-            groups.append(f"""      <h2 class="rcp-shelf" id="with-{p['slug']}">With {e(p['name'])} <span lang="te">{p['te']}</span></h2>
+            groups.append(f"""      <h2 class="rcp-shelf" id="with-{p['slug']}">With {e(p['name'])} <span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span></h2>
       <div class="rcp-grid">
 {tiles}
       </div>""")

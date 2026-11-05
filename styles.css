@@ -585,7 +585,7 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .gd-packfig a { display: flex; flex-direction: column; gap: 8px; text-align: center; font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
 .gd-packfig img { width: 100%; height: auto; border-radius: 5px; box-shadow: 0 8px 20px rgba(30,40,22,.14); }
 .gd-packfig [lang="te"], .gd-table [lang="te"], .gd-te, .gd-section [lang="te"], .gd-tile [lang="te"] { font-family: "Noto Sans Telugu", sans-serif; }
-.gd-packfig span [lang="te"] { font-weight: 500; color: var(--ink-soft); }
+.gd-packfig span [lang="te"], .gd-packfig span [lang="sa"] { font-weight: 500; color: var(--ink-soft); }
 .gd-table-wrap { overflow-x: auto; max-width: 44em; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
 .gd-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 .gd-table th, .gd-table td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--hairline); }
@@ -639,10 +639,16 @@ html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
 .i18n-more { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 28px; }
 .i18n-more .btn { flex: 1 1 220px; }
 .rcp-shelf { font-size: 1.15rem; margin: 34px 0 16px; }
-.rcp-shelf span { color: var(--ink-soft); font-weight: 500; margin-left: 6px; }
+.rcp-shelf span { color: var(--ink-soft); font-weight: 500; }
+.rcp-shelf [lang="te"] { margin-left: 6px; }
 
 /* Recipe and pack videos (assets/video/, made by docs/marketing/video/make_videos.py) */
 .pack-video, .rcp-video { display: block; width: 100%; height: auto; aspect-ratio: 16/9; border-radius: 10px; background: var(--green-deep); box-shadow: 0 10px 26px rgba(30,40,22,.12); }
 .pack-video { max-width: 420px; margin: 18px auto 0; }
 .rcp-video { margin: 22px 0 6px; }
 @media (max-width: 720px) { .pack-video { max-width: 100%; } }
+
+/* ---- Sanskrit names beside the Telugu (05-11-2026: "wherever there is Telugu there should be Sanskrit") ----
+   Every Telugu name has its Sanskrit name (lang="sa") after the Hindi; both Devanagari names use one font. */
+span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { font-family: "Noto Sans Devanagari", sans-serif; }
+.pt-te[lang="sa"] { font-size: 0.85rem; }

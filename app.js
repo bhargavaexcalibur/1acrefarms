@@ -34,9 +34,9 @@ const COMBOS = {
   label: "Deepavali combos · 27 Oct – 8 Nov",
   dates: "27 Oct – 8 Nov", until: "8 Nov",   // shown on the page; keep in step with start/end
   list: [
-    { id: "buy2-pasupu", name: "Buy 2 Pasupu", te: "పసుపు × 2", items: [["TURM", 540, 2]], price: 747 },
-    { id: "pasupu-duo", name: "Pasupu Duo", te: "పసుపు + కొండ పసుపు", items: [["TURM", 540, 1], ["KPAS", 540, 1]], price: 846 },
-    { id: "festive-trio", name: "Festive Trio", te: "పసుపు + కొండ పసుపు + చెరుకు బెల్లం", items: [["TURM", 540, 1], ["KPAS", 540, 1], ["CBEL", 540, 1]], price: 990 },
+    { id: "buy2-pasupu", name: "Buy 2 Pasupu", te: "పసుపు × 2", sa: "हरिद्राचूर्णम् × 2", items: [["TURM", 540, 2]], price: 747 },
+    { id: "pasupu-duo", name: "Pasupu Duo", te: "పసుపు + కొండ పసుపు", sa: "हरिद्राचूर्णम् + गिरिहरिद्राचूर्णम्", items: [["TURM", 540, 1], ["KPAS", 540, 1]], price: 846 },
+    { id: "festive-trio", name: "Festive Trio", te: "పసుపు + కొండ పసుపు + చెరుకు బెల్లం", sa: "हरिद्राचूर्णम् + गिरिहरिद्राचूर्णम् + इक्षुगुडः", items: [["TURM", 540, 1], ["KPAS", 540, 1], ["CBEL", 540, 1]], price: 990 },
   ],
 };
 const combosOn = () => /[?&]combopreview=1/.test(location.search) || (Date.now() >= COMBOS.start && Date.now() < COMBOS.end);
@@ -97,19 +97,19 @@ const PACK_SECTIONS = [
     title: "Turmeric &amp; chilli, sun-dried and stone-ground",
     blurb: "Spice powders from Palnadu, Guntur and the Araku hills.",
     products: [
-      { code: "TURM", name: "Turmeric Powder", te: "పసుపు", tr: "Pasupu", note: "Farm-sourced · sun-dried · stone-ground",
+      { code: "TURM", name: "Turmeric Powder", te: "పసుపు", sa: "हरिद्राचूर्णम्", tr: "Pasupu", note: "Farm-sourced · sun-dried · stone-ground",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/turmeric-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Turmeric (Curcuma longa).",
         skus: [[270, 198], [540, 396, true], [1080, 702]] },
-      { code: "KPAS", name: "Hill Turmeric Powder", te: "కొండ పసుపు", tr: "Konda Pasupu", note: "Whole hill turmeric fingers, packed as fine powder",
+      { code: "KPAS", name: "Hill Turmeric Powder", te: "కొండ పసుపు", sa: "गिरिहरिद्राचूर्णम्", tr: "Konda Pasupu", note: "Whole hill turmeric fingers, packed as fine powder",
         origin: "Araku &amp; Maredumilli hills", pack: "assets/packs/hill-turmeric-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Turmeric (Curcuma longa).",
         skus: [[270, 252], [540, 495, true], [1080, 900]] },
-      { code: "SANN", soon: "31 Oct", name: "Sannam Chilli Powder", te: "సన్నం కారం", tr: "Sannam Kaaram", note: "Whole sun-dried chillies, packed as fine powder",
+      { code: "SANN", soon: "31 Oct", name: "Sannam Chilli Powder", te: "సన్నం కారం", sa: "सन्नम-रक्तमरिचचूर्णम्", tr: "Sannam Kaaram", note: "Whole sun-dried chillies, packed as fine powder",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/sannam-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Sannam red chillies (Capsicum annuum).",
         skus: [[180, 135], [270, 180], [540, 306, true]] },
-      { code: "TEJA", soon: "31 Oct", name: "Teja Chilli Powder", te: "తేజ కారం", tr: "Teja Kaaram", note: "Extra hot · sun-dried · stone-ground",
+      { code: "TEJA", soon: "31 Oct", name: "Teja Chilli Powder", te: "తేజ కారం", sa: "तेजा-रक्तमरिचचूर्णम्", tr: "Teja Kaaram", note: "Extra hot · sun-dried · stone-ground",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/teja-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Teja red chillies (Capsicum annuum).",
         skus: [[180, 144], [270, 198], [540, 342, true]] },
@@ -120,11 +120,11 @@ const PACK_SECTIONS = [
     title: "Desi jaggery, instead of white sugar",
     blurb: "Dark desi cane jaggery and palm jaggery from village makers in Andhra Pradesh.",
     products: [
-      { code: "CBEL", name: "Cane Jaggery", te: "చెరుకు బెల్లం", tr: "Cheruku Bellam", note: "Village desi · dark · slow-boiled",
+      { code: "CBEL", name: "Cane Jaggery", te: "చెరుకు బెల్లం", sa: "इक्षुगुडः", tr: "Cheruku Bellam", note: "Village desi · dark · slow-boiled",
         origin: "Chittoor &amp; Anakapalli cane belts", pack: "assets/packs/cane-jaggery-540g.jpg", by: "packed", shelf: 9, useBy: 12,
         ingredients: "Sugarcane jaggery.",
         skus: [[270, 108], [540, 234, true], [1080, 369]] },
-      { code: "TBEL", name: "Palm Jaggery", te: "తాటి బెల్లం", tr: "Thati Bellam", note: "Village desi · palmyra sap",
+      { code: "TBEL", name: "Palm Jaggery", te: "తాటి బెల్లం", sa: "तालगुडः", tr: "Thati Bellam", note: "Village desi · palmyra sap",
         origin: "From the Godavari delta", pack: "assets/packs/palm-jaggery-540g.jpg", by: "packed", shelf: 9, useBy: 12,
         ingredients: "Palmyra palm jaggery.",
         skus: [[270, 225], [540, 495, true], [1080, 711]] },
@@ -135,7 +135,7 @@ const PACK_SECTIONS = [
     title: "Whole kernels, plain and unsalted",
     blurb: "Cashews from the Andhra coast, plus walnuts, almonds and pistachios from select orchards.",
     products: [
-      { code: "CASH", soon: "31 Oct", name: "Cashew Kernels", te: "జీడిపప్పు", tr: "Jeedipappu", note: "Whole kernels · plain · unsalted",
+      { code: "CASH", soon: "31 Oct", name: "Cashew Kernels", te: "జీడిపప్పు", sa: "काजूतकम्", tr: "Jeedipappu", note: "Whole kernels · plain · unsalted",
         origin: "Chirala · Bapatla · Vizag coast", pack: "assets/packs/cashew-540g.jpg", by: "packed", shelf: 9, useBy: 12,
         ingredients: "Cashew kernels (Anacardium occidentale).", allergen: "Contains cashew (tree nut).",
         skus: [[90, 180], [180, 324], [270, 477], [540, 891, true]] },
@@ -528,7 +528,7 @@ function packMedia(p) {
   return `<div class="pack-media pack-tile">
       <span class="pt-brand"><span class="one">1</span>acrefarms</span>
       <span class="pt-name">${p.name}</span>
-      <span class="pt-te" lang="te">${p.te}</span>
+      <span class="pt-te" lang="te">${p.te}</span>${p.sa ? `<span class="pt-te" lang="sa">${p.sa}</span>` : ""}
       <span class="pt-origin">${p.origin}</span>
     </div>
     <p class="pack-caption">Pack in print</p>`;
@@ -569,7 +569,7 @@ function packCard(p) {
       <div class="card-media-wrap">${packMedia(p)}</div>
       <div class="card-body">
         <h3 class="card-name">${PACK_PAGE[p.code] ? `<a href="${PACK_PAGE[p.code]}">${p.name}</a>` : p.name}</h3>
-        <p class="card-te"><span lang="te">${p.te}</span> · ${p.tr}</p>
+        <p class="card-te"><span lang="te">${p.te}</span>${p.sa ? ` · <span lang="sa">${p.sa}</span>` : ""} · ${p.tr}</p>
         <p class="card-note">${p.note}</p>
         <p class="card-origin">${p.origin}</p>
         ${sizes}
@@ -616,7 +616,7 @@ function comboCard(c) {
       </div>
       <div class="card-body">
         <h3 class="card-name">${c.name}</h3>
-        <p class="card-te"><span lang="te">${c.te}</span></p>
+        <p class="card-te"><span lang="te">${c.te}</span>${c.sa ? `<br /><span lang="sa">${c.sa}</span>` : ""}</p>
         <p class="card-note">${comboContents(c)}</p>
         <div class="price-row">
           <span class="mrp offer"><small>MRP total</small> <s>${inr(c.mrp)}</s> ${inr(c.price)}</span>

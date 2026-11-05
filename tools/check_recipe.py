@@ -17,7 +17,7 @@ import build_pages as bp  # noqa: E402
 import build_recipes as br  # noqa: E402
 import build_guides as bg  # noqa: E402
 
-KEYS = ["slug", "post", "name", "gloss", "te", "hi", "te_tr", "hi_tr", "alt", "eyebrow", "title", "desc", "approved",
+KEYS = ["slug", "post", "name", "gloss", "te", "hi", "sa", "te_tr", "hi_tr", "alt", "eyebrow", "title", "desc", "approved",
         "intro", "quick", "te_line", "hi_line", "te_more", "hi_more", "times", "time_note", "yields", "groups", "steps",
         "tips", "variations", "serving", "storage", "faq", "packs", "category", "keywords", "card"]
 CARD_PRODUCTS = {"turmeric-powder": "pasupu", "hill-turmeric-powder": "konda", "cane-jaggery": "cheruku",

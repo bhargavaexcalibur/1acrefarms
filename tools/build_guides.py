@@ -69,7 +69,7 @@ GUIDES = [
         slug="turmeric-adulteration-test",
         name="How to check turmeric powder at home",
         short="How to check turmeric powder at home",
-        names='<span lang="te">పసుపు</span> · <span lang="hi">हल्दी</span> · Pasupu · Haldi',
+        names='<span lang="te">పసుపు</span> · <span lang="hi">हल्दी</span> · <span lang="sa">हरिद्रा</span> · Pasupu · Haldi',
         eyebrow="Guide · turmeric",
         title="Turmeric Adulteration Test at Home (Haldi, Pasupu) | 1acrefarms",
         desc="How to check turmeric powder (haldi, pasupu) at home: the water check, what it misses, "
@@ -190,7 +190,8 @@ GUIDES = [
         name="Cane jaggery or palm jaggery: which to use",
         short="Cane jaggery or palm jaggery",
         names='<span lang="te">చెరుకు బెల్లం</span> · <span lang="te">తాటి బెల్లం</span> · '
-              '<span lang="hi">गन्ने का गुड़</span> · <span lang="hi">ताड़ का गुड़</span>',
+              '<span lang="hi">गन्ने का गुड़</span> · <span lang="hi">ताड़ का गुड़</span> · '
+              '<span lang="sa">इक्षुगुडः</span> · <span lang="sa">तालगुडः</span>',
         eyebrow="Guide · jaggery",
         title="చెరుకు బెల్లం vs తాటి బెల్లం · Cane vs Palm Jaggery | 1acrefarms",
         desc="చెరుకు బెల్లం, తాటి బెల్లం తేడా. Cane jaggery (cheruku bellam) vs palm jaggery (thati bellam): "
@@ -228,7 +229,7 @@ GUIDES = [
             ("glance", "At a glance", """            <div class="gd-table-wrap">
               <table class="gd-table">
                 <thead>
-                  <tr><th></th><th>Cane jaggery<span lang="te">చెరుకు బెల్లం</span></th><th>Palm jaggery<span lang="te">తాటి బెల్లం</span></th></tr>
+                  <tr><th></th><th>Cane jaggery<span lang="te">చెరుకు బెల్లం</span><span lang="sa">इक्षुगुडः</span></th><th>Palm jaggery<span lang="te">తాటి బెల్లం</span><span lang="sa">तालगुडः</span></th></tr>
                 </thead>
                 <tbody>
                   <tr><th>Made from</th><td>Juice pressed out of sugarcane</td><td>Sap of the palmyra palm (thati neera)</td></tr>
@@ -331,7 +332,7 @@ def pack_figure(slugs):
     """The pack photos side by side, each with its name under it."""
     cells = "\n".join(f"""            <a href="/{PACK_BY_SLUG[s]['slug']}/">
               <img src="/assets/packs/{PACK_BY_SLUG[s]['pack']}" alt="{PACK_BY_SLUG[s]['name']} {PACK_BY_SLUG[s]['g']} g pack" width="800" height="1122" />
-              <span>{PACK_BY_SLUG[s]['name']}<br /><span lang="te">{PACK_BY_SLUG[s]['te']}</span></span>
+              <span>{PACK_BY_SLUG[s]['name']}<br /><span lang="te">{PACK_BY_SLUG[s]['te']}</span> · <span lang="sa">{PACK_BY_SLUG[s]['sa']}</span></span>
             </a>""" for s in slugs)
     return f"""<div class="gd-packfig">
 {cells}
@@ -347,7 +348,7 @@ def our_packs(g):
             <a href="/{p['slug']}/"><img src="/assets/packs/{p['pack']}" alt="{p['name']} {p['g']} g pack" width="800" height="1122" loading="lazy" /></a>
             <div>
               <a class="po-name" href="/{p['slug']}/">{p['name']}</a>
-              <span class="po-te"><span lang="te">{p['te']}</span> · {p['local']}</span>
+              <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>
               <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
               <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a><a href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a></span>
             </div>

@@ -4,6 +4,8 @@
 Why: the shop on index.html is drawn by app.js, so Google sees one page and ranks us only for
 "1acrefarms". A crawlable page per pack, with its Telugu/Hindi names, origin, price and Product
 structured data, lets people find us for "konda pasupu", "thati bellam", "palm jaggery" and so on.
+Every Telugu name on the site has its Sanskrit name (sa) beside it, after the Hindi (Bhargava
+05-11-2026: "wherever there is Telugu there should be Sanskrit"); the names were blind back-checked.
 
 Facts come from app.js (names, origins, MRPs, shelf life, PACK_FACTS nutrition) and from the
 approved social copy (Telugu/Hindi lines). Plain facts only: no claim words, no health claims.
@@ -50,7 +52,7 @@ JAGGERY_TIP = "If it sets hard, grate it."
 
 PACKS = [
     dict(code="TURM", slug="turmeric-powder", section="spices", crumb="Turmeric",
-         name="Turmeric Powder", local="Pasupu", te="పసుపు", hi="हल्दी", hi_tr="Haldi",
+         name="Turmeric Powder", local="Pasupu", te="పసుపు", hi="हल्दी", sa="हरिद्राचूर्णम्", hi_tr="Haldi",
          note="Farm-sourced · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
          pack="turmeric-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Turmeric (Curcuma longa).",
          g=540, mrp=396, category="Spices > Turmeric powder",
@@ -62,7 +64,7 @@ PACKS = [
          hi_line="पलनाडु और गुंटूर की हल्दी, धूप में सुखाकर पत्थर की चक्की में पिसी। नरसरावपेट में पैक।",
          uses=TURMERIC_USES),
     dict(code="KPAS", slug="hill-turmeric-powder", section="spices", crumb="Turmeric",
-         name="Hill Turmeric Powder", local="Konda Pasupu", te="కొండ పసుపు", hi="पहाड़ी हल्दी", hi_tr="Pahadi Haldi",
+         name="Hill Turmeric Powder", local="Konda Pasupu", te="కొండ పసుపు", hi="पहाड़ी हल्दी", sa="गिरिहरिद्राचूर्णम्", hi_tr="Pahadi Haldi",
          note="Whole hill turmeric fingers, packed as fine powder", origin="Araku &amp; Maredumilli hills",
          pack="hill-turmeric-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Turmeric (Curcuma longa).",
          g=540, mrp=495, category="Spices > Turmeric powder",
@@ -76,7 +78,7 @@ PACKS = [
          uses=["Use it wherever you use turmeric: dal, sambar, curries and pulihora."] + TURMERIC_USES[1:]),
     dict(code="SANN", slug="sannam-chilli-powder", section="spices", crumb="Chilli",
          live_from=dt.date(2026, 10, 31),
-         name="Sannam Chilli Powder", local="Sannam Kaaram", te="సన్నం కారం", hi="सन्नम मिर्च पाउडर", hi_tr="Lal Mirch",
+         name="Sannam Chilli Powder", local="Sannam Kaaram", te="సన్నం కారం", hi="सन्नम मिर्च पाउडर", sa="सन्नम-रक्तमरिचचूर्णम्", hi_tr="Lal Mirch",
          note="Whole sun-dried chillies, packed as fine powder", origin="Grown in Palnadu &amp; Guntur",
          pack="sannam-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Sannam red chillies (Capsicum annuum).",
          g=540, mrp=306, category="Spices > Chilli powder",
@@ -91,7 +93,7 @@ PACKS = [
                "Use a dry spoon and keep the zip shut after use."]),
     dict(code="TEJA", slug="teja-chilli-powder", section="spices", crumb="Chilli",
          live_from=dt.date(2026, 10, 31),
-         name="Teja Chilli Powder", local="Teja Kaaram", te="తేజ కారం", hi="तेजा मिर्च पाउडर", hi_tr="Lal Mirch",
+         name="Teja Chilli Powder", local="Teja Kaaram", te="తేజ కారం", hi="तेजा मिर्च पाउडर", sa="तेजा-रक्तमरिचचूर्णम्", hi_tr="Lal Mirch",
          note="Extra hot · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
          pack="teja-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Teja red chillies (Capsicum annuum).",
          g=540, mrp=342, category="Spices > Chilli powder",
@@ -105,7 +107,7 @@ PACKS = [
          uses=["A little goes a long way: start with less than you would of milder chilli powder.",
                "Use in curries, chutneys, podis and pickles.", "Use a dry spoon and keep the zip shut after use."]),
     dict(code="CBEL", slug="cane-jaggery", section="jaggery", crumb="Jaggery",
-         name="Cane Jaggery", local="Cheruku Bellam", te="చెరుకు బెల్లం", hi="गन्ने का गुड़", hi_tr="Gud",
+         name="Cane Jaggery", local="Cheruku Bellam", te="చెరుకు బెల్లం", hi="गन्ने का गुड़", sa="इक्षुगुडः", hi_tr="Gud",
          note="Village desi · dark · slow-boiled", origin="Chittoor &amp; Anakapalli cane belts",
          pack="cane-jaggery-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Sugarcane jaggery.",
          g=540, mrp=234, category="Sweeteners > Jaggery",
@@ -119,7 +121,7 @@ PACKS = [
          uses=["Sweeten payasam, pongal, chikki and laddu.", "Stir a little into tea, coffee or panakam.",
                JAGGERY_TIP]),
     dict(code="TBEL", slug="palm-jaggery", section="jaggery", crumb="Jaggery",
-         name="Palm Jaggery", local="Thati Bellam", te="తాటి బెల్లం", hi="ताड़ का गुड़", hi_tr="Taad Gud",
+         name="Palm Jaggery", local="Thati Bellam", te="తాటి బెల్లం", hi="ताड़ का गुड़", sa="तालगुडः", hi_tr="Taad Gud",
          note="Village desi · palmyra sap", origin="From the Godavari delta",
          pack="palm-jaggery-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Palmyra palm jaggery.",
          g=540, mrp=495, category="Sweeteners > Jaggery",
@@ -132,7 +134,7 @@ PACKS = [
          uses=["Make palm jaggery coffee or tea.", "Sweeten payasam, paramannam and sunnundalu.", JAGGERY_TIP]),
     dict(code="CASH", slug="cashew-kernels", section="nuts", crumb="Nuts",
          live_from=dt.date(2026, 10, 31),
-         name="Cashew Kernels", local="Jeedipappu", te="జీడిపప్పు", hi="काजू", hi_tr="Kaju",
+         name="Cashew Kernels", local="Jeedipappu", te="జీడిపప్పు", hi="काजू", sa="काजूतकम्", hi_tr="Kaju",
          note="Whole kernels · plain · unsalted", origin="Chirala · Bapatla · Vizag coast",
          pack="cashew-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Cashew kernels (Anacardium occidentale).",
          allergen="Contains cashew (tree nut).", g=540, mrp=891, category="Nuts > Cashew",
@@ -260,7 +262,7 @@ def product_ld(p, facts):
                 "@type": "Product",
                 "@id": url + "#product",
                 "name": f"{p['name']} ({p['local']}) {p['g']} g",
-                "alternateName": [p["local"], p["te"], p["hi"], p["hi_tr"]],
+                "alternateName": [p["local"], p["te"], p["hi"], p["sa"], p["hi_tr"]],
                 "description": text_of(p["lede"]),
                 "image": [f"{SITE}/assets/packs/{p['pack']}"],
                 **({"subjectOf": video_ld(f"pack-{p['slug']}", f"{p['name']} ({p['local']}) {p['g']} g", text_of(p["lede"]))}
@@ -367,7 +369,7 @@ def footer(live):
 
 HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Telugu:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Telugu:wght@500;600&family=Noto+Sans+Devanagari:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />"""
 
@@ -380,7 +382,7 @@ def page(p, live, facts, guides=(), recipes=()):
     others_html = "\n".join(f"""        <a class="pdp-other" href="/{q['slug']}/">
           <img src="/assets/packs/{q['pack']}" alt="{q['name']} {q['g']} g pack" width="800" height="1122" loading="lazy" />
           <span class="po-name">{q['name']}</span>
-          <span class="po-te"><span lang="te">{q['te']}</span> · {q['local']}</span>
+          <span class="po-te"><span lang="te">{q['te']}</span> · <span lang="sa">{q['sa']}</span> · {q['local']}</span>
           <span class="po-price">₹{q['mrp']} · {q['g']} g</span>
         </a>""" for q in others)
     uses = "\n".join(f"          <li>{u}</li>" for u in p["uses"])
@@ -428,7 +430,7 @@ def page(p, live, facts, guides=(), recipes=()):
       <div class="pdp-info">
         <p class="eyebrow">{p['origin']}</p>
         <h1>{p['name']} <span class="pdp-local">({p['local']})</span></h1>
-        <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · {p['local']} · {p['hi_tr']}</p>
+        <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
         <p class="pdp-lede">{p['lede']}</p>
         <div class="price-row">
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
