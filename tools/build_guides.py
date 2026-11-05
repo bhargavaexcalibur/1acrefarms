@@ -294,6 +294,643 @@ GUIDES = [
              "https://anakapalli.ap.gov.in/"),
         ],
     ),
+    dict(
+        slug="hill-turmeric-vs-turmeric",
+        name="Hill turmeric (konda pasupu) or turmeric: the difference",
+        short="Hill turmeric or turmeric",
+        names='<span lang="te">కొండ పసుపు</span> · <span lang="te">పసుపు</span> · '
+              '<span lang="hi">पहाड़ी हल्दी</span> · <span lang="hi">हल्दी</span> · '
+              '<span lang="sa">गिरिहरिद्राचूर्णम्</span> · <span lang="sa">हरिद्राचूर्णम्</span> · Konda Pasupu · Pasupu',
+        eyebrow="Guide · turmeric",
+        title="కొండ పసుపు vs మైదాన పసుపు · Hill vs Plains Turmeric | 1acrefarms",
+        desc="కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. Konda pasupu (hill turmeric) vs plains turmeric: where each grows, "
+             "how each is dried, what curcumin is, cooking and storage.",
+        published="2026-11-06",
+        tile_line="Where each grows, how it is dried, what curcumin is, and how to compare two. With a Telugu section.",
+        intro=[
+            "Konda pasupu means hill turmeric: turmeric grown in hill country. In Andhra Pradesh that includes "
+            "the agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu, where most "
+            "tribal farmers grow turmeric. Plains turmeric grows on farmland in districts such as Guntur.",
+            "FSSAI's standard for turmeric powder is the same wherever it grew. What changes is the place, "
+            "the variety, and how it is grown and dried. This guide covers each of those, what curcumin is, "
+            "how to cook with each and how to compare two turmerics fairly. There is a Telugu section "
+            "further down.",
+        ],
+        quick="Hill turmeric (konda pasupu) grows in hill country, such as the Eastern Ghats around Araku, "
+              "where most tribal farmers grow it. Plains turmeric grows on farmland in districts such as "
+              "Guntur. Both are boiled, dried and ground, and FSSAI holds both to the same "
+              "standard. Curcumin, the yellow pigment in turmeric, changes with variety, soil, climate and "
+              "processing, so the word hill or plains does not tell you how much a turmeric has. Cook with "
+              "both the same way.",
+        te_line="కొండ పసుపు తూర్పు కనుమల కొండల్లో, అరకు చుట్టుపక్కల పండుతుంది; అక్కడి గిరిజన రైతుల్లో "
+                "ఎక్కువమంది పసుపు పండిస్తారు. మైదాన పసుపు గుంటూరు లాంటి జిల్లాల్లోని పొలాల్లో పండుతుంది. "
+                "రెండింటినీ ఉడకబెట్టి, ఎండబెట్టి, పొడి చేస్తారు; FSSAI ప్రమాణం రెండింటికీ ఒకటే. పసుపుకు "
+                "రంగు ఇచ్చే కర్కుమిన్ శాతం పసుపు రకం, నేల, వాతావరణం, తయారీ విధానాన్ని బట్టి మారుతుంది, కాబట్టి \"కొండ\" "
+                "లేదా \"మైదానం\" అనే మాట అది ఎంత ఉందో చెప్పదు. రెండింటినీ వంటల్లో ఒకేలా వాడండి.",
+        hi_line="पहाड़ी हल्दी पूर्वी घाट की पहाड़ियों में, अरकू के आसपास उगती है, जहाँ के ज़्यादातर आदिवासी किसान "
+                "हल्दी उगाते हैं। मैदानी हल्दी गुंटूर जैसे ज़िलों के खेतों में उगती है। दोनों को उबालकर, "
+                "सुखाकर पीसा जाता है, और FSSAI का मानक दोनों के लिए एक ही है। हल्दी को पीला रंग देने वाले "
+                "करक्यूमिन की मात्रा किस्म, मिट्टी, जलवायु और प्रोसेसिंग से बदलती है, इसलिए सिर्फ़ \"पहाड़ी\" या \"मैदानी\" "
+                "शब्द से पता नहीं चलता कि उसमें कितना है। दोनों को खाने में एक ही तरह इस्तेमाल करें।",
+        figure=dict(
+            packs=["hill-turmeric-powder", "turmeric-powder"],
+            label="Our two turmerics",
+            caption="Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in "
+                    "Palnadu and Guntur. Both packed in Narasaraopet."),
+        packs=["turmeric-powder", "hill-turmeric-powder"],
+        packs_label="Our turmeric",
+        packs_note="Both packs list one ingredient, turmeric (Curcuma longa), and name where it was grown.",
+        sections=[
+            ("glance", "At a glance", """            <div class="gd-table-wrap">
+              <table class="gd-table">
+                <thead>
+                  <tr><th></th><th>Hill turmeric<span lang="te">కొండ పసుపు</span><span lang="sa">गिरिहरिद्राचूर्णम्</span></th><th>Plains turmeric<span lang="te">మైదాన పసుపు</span><span lang="sa">हरिद्राचूर्णम्</span></th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Where it grows</th><td>Hill country, such as the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu</td><td>Farmland in districts such as Guntur</td></tr>
+                  <tr><th>Who grows it</th><td>Most tribal farmers in the Paderu agency</td><td>Farms in Guntur district, where turmeric is one of the commercial crops, with cotton, chillies and tobacco</td></tr>
+                  <tr><th>In the ground</th><td>The old local variety has often been left for 2 to 3 seasons, up to 18 to 24 months; newer varieties such as Roma are dug after one season</td><td>ICAR-IISR's general guide: a well-managed crop is ready in 7 to 9 months, usually dug between January and March</td></tr>
+                  <tr><th>After digging</th><td>Boiled and dried by hand, which takes a lot of labour and firewood</td><td>The usual steps: boiled, sun-dried, then polished by hand or by machine</td></tr>
+                  <tr><th>FSSAI standard</th><td colspan="2">The same one for both: at least 2% curcuminoids on a dry basis, and added colour is not allowed</td></tr>
+                  <tr><th>Our pack says</th><td>Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder</td><td>Grown in Palnadu and Guntur. Sun-dried, stone-ground</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="gd-note">The rows above describe each region in general, from the sources at the end of this page. Only the last row is about our packs.</p>"""),
+            ("where", "Where each grows", """            <p><strong>Hill turmeric.</strong> ICAR-IISR's report on the Paderu agency, the tribal hill country of the Eastern Ghats that takes in Araku Valley, Chintapalle and Paderu, says turmeric is grown there by most tribal farmers.</p>
+            <p><strong>Plains turmeric.</strong> Guntur district lists turmeric among its commercial crops, with cotton, chillies and tobacco. Duggirala, in Guntur, has a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022, Guntur district was divided into three districts: Guntur, Palnadu and Bapatla.</p>
+            <p>Turmeric can be grown either way: ICAR-IISR says it can be grown rain-fed or irrigated, from sea level up to 1,500 m.</p>
+            <p>Our <a href="/hill-turmeric-powder/">hill turmeric</a> comes from the Araku and Maredumilli hills, and our <a href="/turmeric-powder/">turmeric</a> is grown in Palnadu and Guntur. Both are packed in Narasaraopet.</p>"""),
+            ("grown", "How each is grown and dried", """            <p><strong>In the hills.</strong> ICAR-IISR's Paderu report says tribal farmers there have grown a local variety called Chayapasupu, or Chintapalle Local, for ages. It has been common practice to leave it in the ground for two or three seasons, up to 18 to 24 months, before digging. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested varieties for the hill zone and brought in Roma and IISR Pragati, which are dug after one season. The report says tribal farmers boil and dry their turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boilers and polishers.</p>
+            <p><strong>The usual steps.</strong> ICAR-IISR's turmeric guide describes how the crop is handled after it is dug:</p>
+            <ol class="rcp-steps">
+              <li id="step-1">Dig it when the leaves dry and turn light brown to yellowish. A well-managed crop is ready seven to nine months after planting, usually between January and March.</li>
+              <li id="step-2">Separate the fingers from the bulbs and boil them within 3 or 4 days of digging, in water until soft: 45 to 60 minutes for fingers and 90 minutes for bulbs. Boiling takes away the raw smell, cuts the drying time and gives an even colour.</li>
+              <li id="step-3">Dry them in the sun in layers 5 to 7 cm deep, heaped and covered at night. It may take 10 to 12 days for the moisture to fall below 12%.</li>
+              <li id="step-4">Polish off the rough, dull, scaly skin by rubbing, by hand or in a turning drum.</li>
+              <li id="step-5">Grind the dried turmeric into powder. FSSAI allows turmeric powder up to 10% moisture.</li>
+            </ol>
+            <p class="gd-note">Fingers are the side branches of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulbs are the shorter, thicker central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground.</p>"""),
+            ("curcumin", "Curcumin, and how they look", """            <p>Curcumin is the yellow pigment in turmeric, ICAR-IISR says. FSSAI measures a turmeric powder's colouring power as its curcuminoid content, and asks for at least 2% on a dry basis. That standard is the same for hill and plains turmeric.</p>
+            <p>Curcumin changes from one turmeric to the next:</p>
+            <ul class="rcp-bullets">
+              <li><strong>Variety.</strong> ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha).</li>
+              <li><strong>Soil and climate.</strong> ICAR-IISR notes that turmeric from different regions differs in quality because of soil, climate and farming practice. Its Paderu report calls curcumin content highly sensitive to changes in the growing environment.</li>
+              <li><strong>Processing.</strong> Handling and processing after harvest add to the differences, and boiling too long or too short affects the quality of the dried turmeric.</li>
+            </ul>
+            <p class="gd-note">So the word hill or plains on a pack does not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch.</p>
+            <p><strong>How they look.</strong> Colour varies too. ICAR-IISR describes its varieties' rhizomes as ranging from reddish yellow to deep orange. Processing counts as well: boiling evens out the colour, drying in too thin a layer can spoil it, and polishing by hand leaves a rough, dull surface.</p>"""),
+            ("cook", "Cooking with each, and keeping it", """            <ul class="rcp-bullets">
+              <li>Use either one wherever you use turmeric: dal, sambar, rasam, curries and pulihora.</li>
+              <li>Add it on a low flame so it does not burn.</li>
+              <li>To swap one for the other, start with the amount you usually use and adjust to taste.</li>
+              <li>Try either one in <a href="/recipes/pasupu-annam/">pasupu annam</a>, <a href="/recipes/nimmakaya-pulihora/">nimmakaya pulihora</a>, <a href="/recipes/tomato-pappu/">tomato pappu</a> or <a href="/recipes/pasupu-paalu/">pasupu paalu</a>.</li>
+            </ul>
+            <p><strong>Keeping it well.</strong></p>
+            <ul class="rcp-bullets">
+              <li>Keep the pack zipped shut, or move the powder to a dry, airtight jar.</li>
+              <li>Use a dry spoon every time.</li>
+              <li>Store it in a cool, dry place, away from light.</li>
+              <li>Use it within the best-before date on the pack.</li>
+            </ul>"""),
+            ("compare", "How to compare two turmerics fairly", """            <ol class="rcp-steps">
+              <li id="cmp-1">Compare powder with powder. FSSAI allows whole turmeric up to 12% moisture and powder up to 10%, so the two are held to different limits.</li>
+              <li id="cmp-2">Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note the batch numbers, so you know which lots you compared.</li>
+              <li id="cmp-3">Do the water check on both, side by side, with the same amount in the same kind of glass. The steps are in <a href="/learn/turmeric-adulteration-test/">how to check turmeric powder at home</a>.</li>
+              <li id="cmp-4">Cook the same dish with each, with the same amount, and compare the colour and taste.</li>
+              <li id="cmp-5">Do not judge curcumin by colour alone. A brighter yellow is not a measurement; a food testing lab can measure curcuminoid content.</li>
+            </ol>"""),
+            ("telugu", "తెలుగులో: తేడా ఏమిటి?", """            <div class="gd-te" lang="te">
+              <p><strong>కొండ పసుపు</strong> <span lang="sa">गिरिहरिद्राचूर्णम्</span> · <strong>మైదాన పసుపు</strong> <span lang="sa">हरिद्राचूर्णम्</span></p>
+              <p>కొండ పసుపు అంటే కొండ ప్రాంతాల్లో పండే పసుపు. తూర్పు కనుమల్లోని పాడేరు ఏజెన్సీలో (అరకు లోయ, చింతపల్లి, పాడేరు) గిరిజన రైతుల్లో ఎక్కువమంది పసుపు పండిస్తారు. అక్కడి రైతులు చాలా కాలంగా ఛాయ పసుపు (చింతపల్లి లోకల్) అనే పాత రకాన్ని పండిస్తున్నారు. దాన్ని రెండు మూడు సీజన్లు, 18 నుంచి 24 నెలల వరకు, తవ్వకుండా భూమిలోనే ఉంచడం అక్కడ మామూలు. 2011-12 నుంచి ICAR-IISR, చింతపల్లి ఉద్యాన పరిశోధన స్థానం రెండూ కలిసి కొండ ప్రాంతానికి తగిన రకాలను పరీక్షించి, రోమా, IISR ప్రగతి అనే కొత్త రకాలను ప్రవేశపెట్టాయి; ఇవి ఒక్క సీజన్‌లోనే తవ్వకానికి వస్తాయి.</p>
+              <p>మైదాన ప్రాంతాల పసుపు గుంటూరు లాంటి జిల్లాల్లో పండుతుంది. గుంటూరు జిల్లాలో పత్తి, మిరప, పొగాకుతో పాటు పసుపు కూడా ఒక వాణిజ్య పంట. గుంటూరు జిల్లా దుగ్గిరాలలో పసుపు ప్రాసెసింగ్ క్లస్టర్ ఉంది. 2022లో గుంటూరు జిల్లాను గుంటూరు, పల్నాడు, బాపట్ల అనే మూడు జిల్లాలుగా విభజించారు.</p>
+              <p>తవ్విన పసుపు కొమ్ములను, దుంపలను వేరు చేసి, మెత్తబడే వరకు నీటిలో ఉడకబెడతారు. తర్వాత 10 నుంచి 12 రోజులు ఎండలో ఆరబెట్టి, పాలిష్ చేసి, పొడి చేస్తారు. ఉడకబెట్టడం వల్ల పచ్చి వాసన పోతుంది, త్వరగా ఆరుతుంది, రంగు అంతటా ఒకేలా వస్తుంది. పాడేరు ఏజెన్సీలో గిరిజన రైతులు ఉడకబెట్టడం, ఆరబెట్టడం చేతితోనే చేస్తారు; దానికి శ్రమ, కట్టెలు ఎక్కువగా పడతాయి.</p>
+              <p>FSSAI ప్రమాణం ప్రకారం పసుపు పొడిలో తేమ లేని బరువు లెక్కన కర్కుమినాయిడ్లు కనీసం 2% ఉండాలి, ఏ రంగూ కలపకూడదు, తేమ 10% మించకూడదు. ఈ ప్రమాణం కొండ పసుపుకు, మైదాన పసుపుకు ఒకటే.</p>
+              <p>కర్కుమిన్ పసుపులో ఉండే పసుపు రంగు పదార్థం. దీని శాతం రకం, నేల, వాతావరణం, సాగు, తయారీ పద్ధతులను బట్టి మారుతుంది. ICAR-IISR రకాల్లోనే కర్కుమిన్ 4.3% నుంచి 6.5% వరకు ఉంది. కాబట్టి ప్యాక్ మీద "కొండ" లేదా "మైదానం" అనే మాట కర్కుమిన్ ఎంతో చెప్పదు. రంగును బట్టి మాత్రమే దాన్ని అంచనా వేయకండి; ఒక బ్యాచ్‌లో ఎంత ఉందో ఫుడ్ టెస్టింగ్ ల్యాబ్ కొలవగలదు.</p>
+              <ul class="rcp-bullets">
+                <li>పసుపు వేసే ప్రతి వంటలో రెండింటినీ వాడొచ్చు: పప్పు, సాంబారు, రసం, కూరలు, పులిహోర.</li>
+                <li>మాడిపోకుండా సన్నని మంటపై వేయండి.</li>
+                <li>రెండింటినీ పోల్చాలంటే: పొడిని పొడితోనే పోల్చండి. ప్యాక్ మీద పండిన ప్రాంతం, బ్యాచ్ నంబర్, బెస్ట్ బిఫోర్ తేదీ, FSSAI నంబర్ చూడండి. రెండింటికీ పక్కపక్కనే <a href="/learn/turmeric-adulteration-test/">నీటి పరీక్ష</a> చేయండి.</li>
+                <li>తడి లేని చెంచా వాడండి, ప్యాక్ జిప్ మూసి ఉంచండి. చల్లని, పొడి చోట, వెలుతురు తగలకుండా ఉంచండి.</li>
+              </ul>
+              <p>మా కొండ పసుపు అరకు, మారేడుమిల్లి కొండల నుంచి వస్తుంది. మా మైదాన ప్రాంత పసుపు పల్నాడు, గుంటూరులో పండినది. రెండూ నరసరావుపేటలో ప్యాక్ చేసినవి.</p>
+            </div>"""),
+        ],
+        faq=[
+            ("What is konda pasupu?",
+             "Konda pasupu is Telugu for hill turmeric: turmeric grown in hill country. In Andhra Pradesh it "
+             "grows in the Eastern Ghats, for example in the Paderu agency around Araku Valley and "
+             "Chintapalle, where most tribal farmers grow turmeric."),
+            ("Is hill turmeric different from regular turmeric?",
+             "FSSAI holds all turmeric powder to the same standard, wherever it grew. Hill and plains "
+             "turmeric can differ in where they grow, the varieties grown, and how they are grown and dried. In "
+             "the Paderu hills, for example, an old local variety has often been left in the ground for up to "
+             "two years."),
+            ("Does hill turmeric have more curcumin?",
+             "The word hill alone does not tell you. Curcumin changes with the variety, the soil and climate, "
+             "and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid "
+             "content of a batch."),
+            ("What are the types of turmeric (haldi) in India?",
+             "ICAR-IISR says India grows many turmeric cultivars, mostly known by the name of the place where "
+             "they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released "
+             "improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati."),
+            ("Can I use hill turmeric instead of regular turmeric?",
+             "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it on a "
+             "low flame so it does not burn."),
+        ],
+        sources=[
+            ("FSSAI: Food Products Standards regulations, chapter 2.9 (salt, spices and condiments), "
+             "2.9.18 Turmeric (Haldi)",
+             "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_9%20(Salt%20Spices%2C%20Condiments%20and%20related%20products).pdf"),
+            ("ICAR-Indian Institute of Spices Research: Turmeric, extension pamphlet (March 2022), on the "
+             "Spices Board India website",
+             "https://indianspices.com/sites/default/files/185.%20Institute%20Publication-Turmeric%20Extension%20Pamphlet%20-%20March%202022.pdf"),
+            ("ICAR-Indian Institute of Spices Research: Spices Varieties of ICAR-IISR (2022), preface",
+             "https://spices.res.in/sites/default/files/IISR%20Varieties-Booklet%20-%20Final.pdf"),
+            ("ICAR-Indian Institute of Spices Research: Value chain model for promotion of spice farming "
+             "systems in Paderu tribal agency area, Visakhapatnam",
+             "https://spices.res.in/storage/app/public/pdfs/GENERAL/17ENG.pdf"),
+            ("Guntur district, Government of Andhra Pradesh: about the district",
+             "https://guntur.ap.gov.in/about-district/"),
+        ],
+    ),
+    dict(
+        slug="chilli-powder-adulteration-test",
+        name="How to check chilli powder at home",
+        short="How to check chilli powder at home",
+        names='<span lang="te">సన్నం కారం</span> · <span lang="te">తేజ కారం</span> · '
+              '<span lang="hi">सन्नम मिर्च पाउडर</span> · <span lang="hi">तेजा मिर्च पाउडर</span> · '
+              '<span lang="sa">सन्नम-रक्तमरिचचूर्णम्</span> · <span lang="sa">तेजा-रक्तमरिचचूर्णम्</span> · '
+              'Kaaram · Lal mirch',
+        eyebrow="Guide · chilli powder",
+        title="కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
+        desc="కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. How to check chilli powder at home: the water glass, rub and "
+             "iodine tests, what they miss, and when you need a lab.",
+        published="2026-11-06",
+        tile_line="The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
+        intro=[
+            "FSSAI's standard says chilli powder must be dry and free from dirt, added colouring matter, "
+            "flavouring matter and mineral oil. Its testing manual has methods for finding brick powder, "
+            "added starch, added colour, colours that dissolve in oil, and the dyes Sudan III and "
+            "Rhodamine B.",
+            "Some of this you can check in your kitchen with a glass of water, your fingers and a few drops "
+            "of iodine. Some, like Sudan dyes, only a lab can find. This guide covers both. Try the checks "
+            "on any chilli powder you buy.",
+        ],
+        quick="Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks "
+              "running down at once point to added colour, and bits still floating after the powder sinks "
+              "point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel "
+              "to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do "
+              "not show in water; for those, use a lab.",
+        te_line="ఒక గ్లాసు నీటిపై చెంచా కారం చల్లి, కలపకుండా ఉంచండి. వెంటనే రంగు గీతలు కిందికి దిగితే రంగు "
+                "కలిపి ఉండొచ్చు. పొడి అడుగుకు చేరాక కూడా పైన తేలేవి రంపపు పొట్టు లేదా తవుడు కావచ్చు. "
+                "అడుగున మిగిలినదాన్ని వేళ్లతో రుద్దండి: గరుకుగా ఉంటే ఇటుక పొడి లేదా ఇసుక కావచ్చు, సబ్బులా "
+                "నునుపుగా ఉంటే బలపం రాయి కావచ్చు. అయోడిన్ చుక్కలతో నీలం రంగు వస్తే పిండిపదార్థం కలిపి "
+                "ఉండొచ్చు. సూడాన్ I వంటి రంగులు నీటి పరీక్షలో కనిపించవు; వాటికి ల్యాబ్ పరీక్ష కావాలి.",
+        hi_line="एक गिलास पानी पर एक चम्मच लाल मिर्च पाउडर छिड़कें और बिना हिलाए छोड़ दें। अगर तुरंत रंग की "
+                "धारियाँ नीचे उतरें, तो रंग मिलाया गया हो सकता है। पाउडर बैठने के बाद भी ऊपर तैरते कण बुरादा "
+                "या चोकर हो सकते हैं। तली में बचे हिस्से को उँगलियों से रगड़ें: किरकिरा लगे तो ईंट का चूरा या "
+                "रेत, साबुन जैसा चिकना लगे तो सोपस्टोन हो सकता है। आयोडीन की बूँदों से नीला रंग आए तो स्टार्च "
+                "मिलाया गया हो सकता है। सूडान I जैसे रंग पानी की जाँच में नहीं दिखते, उनके लिए लैब टेस्ट ज़रूरी है।",
+        figure=dict(
+            packs=["sannam-chilli-powder", "teja-chilli-powder"],
+            label="Our two chilli powders",
+            caption="Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in "
+                    "Palnadu and Guntur, sun-dried and packed in Narasaraopet."),
+        packs=["sannam-chilli-powder", "teja-chilli-powder"],
+        packs_label="Our chilli powder",
+        packs_note="Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+        sections=[
+            ("what", "What FSSAI checks chilli powder for", """            <dl class="gd-dl">
+              <dt>Added colour</dt>
+              <dd>FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for colours that dissolve in water, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.</dd>
+              <dt>Sudan dyes</dt>
+              <dd>Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian Standard on quick tests for adulterants says Sudan III, much used in wax polishes, has been used to make chilli pods shine, and so finds its way into chilli powder.</dd>
+              <dt>Brick powder, sand, salt, talc and soapstone</dt>
+              <dd>FSSAI's household tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase bulk.</dd>
+              <dt>Starch</dt>
+              <dd>FSSAI's manual tests powdered spices other than turmeric for added starch. The Indian Standard notes that colour is also added to chilli powder to hide added starch.</dd>
+              <dt>Sawdust and bran</dt>
+              <dd>Both float on water, which is how FSSAI's household tests spot them.</dd>
+            </dl>"""),
+            ("water-check", "Check 1: the water glass and the rub test", """            <ol class="rcp-steps">
+              <li id="step-1">Fill a clear glass with water at room temperature.</li>
+              <li id="step-2">Sprinkle one teaspoon of chilli powder on top. Do not stir.</li>
+              <li id="step-3">Watch the first minute. Look for coloured streaks running down from the powder.</li>
+              <li id="step-4">Leave it until most of the powder has sunk. Look at the surface for bits still floating.</li>
+              <li id="step-5">Pour off most of the water and rub the sediment at the bottom between your fingers.</li>
+            </ol>
+            <div class="gd-table-wrap">
+              <table class="gd-table">
+                <thead>
+                  <tr><th>What you see or feel</th><th>What it can point to</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>Colour streaks running down at once</th><td>Added colour that dissolves in water</td></tr>
+                  <tr><th>Bits still floating after the powder sinks</th><td>Sawdust or bran</td></tr>
+                  <tr><th>Sediment that feels gritty</th><td>Brick powder or sand</td></tr>
+                  <tr><th>White sediment that feels soapy and smooth</th><td>Soapstone</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="gd-results">
+              <div class="gd-result">
+                <p class="gd-result-head">None of these</p>
+                <p>No sign of what this check can find.</p>
+              </div>
+              <div class="gd-result gd-result-warn">
+                <p class="gd-result-head">Any one of these</p>
+                <p>Possible adulteration. Stop using that batch and get it tested.</p>
+              </div>
+            </div>
+            <p><strong>Why it works.</strong> Colours that dissolve in water leave the powder and run down as streaks. Brick powder is heavy and settles to the bottom, while sawdust and bran float.</p>
+            <p><strong>What it misses.</strong> Dyes that do not dissolve in water stay in the powder. Sudan I is one: it does not dissolve in water, and it is used to colour oils, fats and waxes. Chilli powder coloured with such dyes can pass this check. Only a lab test can rule them out.</p>
+            <p class="gd-note">Wash your hands after the rub test, before you touch your eyes.</p>"""),
+            ("iodine", "Check 2: the iodine test for starch", """            <p>FSSAI's manual uses the iodine test for powdered spices other than turmeric, so chilli powder can take it. <a href="/learn/turmeric-adulteration-test/">Our turmeric guide</a> explains why turmeric is left out.</p>
+            <ol class="rcp-steps">
+              <li id="iodine-1">Put half a teaspoon of chilli powder on a white saucer.</li>
+              <li id="iodine-2">Add a few drops of tincture of iodine from a chemist.</li>
+              <li id="iodine-3">Look at the colour where the drops land.</li>
+              <li id="iodine-4">Throw that powder away afterwards.</li>
+            </ol>
+            <div class="gd-results">
+              <div class="gd-result">
+                <p class="gd-result-head">No blue colour</p>
+                <p>No sign of added starch.</p>
+              </div>
+              <div class="gd-result gd-result-warn">
+                <p class="gd-result-head">A blue colour</p>
+                <p>Points to added starch. Stop using that batch and get it tested.</p>
+              </div>
+            </div>
+            <p><strong>Why it works.</strong> Iodine turns blue when it meets starch.</p>"""),
+            ("lab", "Leave these to a lab", """            <div class="gd-skip">
+              <h3>Acid and solvent tests at home</h3>
+              <p>The methods in FSSAI's manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. The acids can cause burns, and several of the solvents catch fire easily. They belong in a lab, not a kitchen.</p>
+            </div>
+            <p>For a sure answer, send a sample to a NABL-accredited food testing lab. Ask it to test for added colours, including Sudan dyes, and against FSSAI's chilli powder standard. Its limits include moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%, all by weight, with both ash limits on a dry basis. Keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack.</p>"""),
+            ("pack", "Read the pack before you buy", """            <ul class="rcp-bullets">
+              <li>An FSSAI licence or registration number.</li>
+              <li>The name and address of whoever made or packed it.</li>
+              <li>Net quantity, a batch or lot number, and a best-before date.</li>
+              <li>The ingredients. FSSAI allows up to 2% edible vegetable oil by weight in chilli powder, but only if the label says which oil and how much.</li>
+              <li>Where it was grown, and the chilli variety if named. Our <a href="/sannam-chilli-powder/">Sannam</a> and <a href="/teja-chilli-powder/">Teja</a> packs say Palnadu and Guntur.</li>
+            </ul>"""),
+            ("store", "Keep it well", """            <ul class="rcp-bullets">
+              <li>Keep the pack zipped shut, or move the powder to a dry, airtight jar.</li>
+              <li>Use a dry spoon, and keep the jar away from steam from the stove.</li>
+              <li>Keep it in a cool, dry place, out of direct sunlight.</li>
+              <li>Use it within the best-before date on the pack, in dishes such as <a href="/recipes/vellulli-kaaram/">vellulli kaaram</a>, <a href="/recipes/gongura-pachadi/">gongura pachadi</a> or <a href="/recipes/tomato-pachadi/">tomato pachadi</a>.</li>
+            </ul>"""),
+            ("telugu", "తెలుగులో: ఇంట్లోనే కల్తీ పరీక్ష", """            <div class="gd-te" lang="te">
+              <p>FSSAI ప్రమాణం ప్రకారం కారం ఎండి ఉండాలి; అందులో మట్టి, అదనంగా కలిపిన రంగు, రుచి కోసం కలిపే పదార్థాలు, మినరల్ ఆయిల్ ఉండకూడదు. FSSAI పరీక్షలు కారంలో వెతికే కల్తీలు: ఇటుక పొడి, ఇసుక, ఉప్పు, టాల్క్, బలపం రాయి, రంపపు పొట్టు, తవుడు, పిండిపదార్థం, రంగులు.</p>
+              <ul class="rcp-bullets">
+                <li>నీటి గ్లాసు పరీక్ష: ఒక గ్లాసు నీటిపై చెంచా కారం చల్లండి, కలపకండి. వెంటనే రంగు గీతలు కిందికి దిగితే, నీటిలో కరిగే రంగు కలిపి ఉండొచ్చు.</li>
+                <li>పొడి అడుగుకు చేరాక కూడా పైన ఏదైనా తేలుతూ ఉంటే, అది రంపపు పొట్టు లేదా తవుడు కావచ్చు.</li>
+                <li>రుద్దే పరీక్ష: చాలావరకు నీళ్లు ఒంపేసి, అడుగున మిగిలినదాన్ని వేళ్లతో రుద్దండి. గరుకుగా తగిలితే ఇటుక పొడి లేదా ఇసుక కావచ్చు; తెల్లగా, సబ్బులా నునుపుగా ఉంటే బలపం రాయి కావచ్చు. తర్వాత, కళ్లు ముట్టుకునే ముందు చేతులు కడుక్కోండి.</li>
+                <li>అయోడిన్ పరీక్ష: తెల్లని సాసర్‌లో అర చెంచా కారం వేసి, కొన్ని చుక్కల టింక్చర్ అయోడిన్ వేయండి. నీలం రంగు వస్తే పిండిపదార్థం కలిపి ఉండొచ్చు. FSSAI మాన్యువల్ ఈ పరీక్షను పసుపు తప్ప మిగతా మసాలా పొడులకు వాడుతుంది; కారం వాటిలో ఒకటి. పరీక్ష తర్వాత ఆ పొడిని పారేయండి.</li>
+                <li>సూడాన్ I వంటి రంగులు నీటిలో కరగవు, కాబట్టి నీటి పరీక్షలో కనిపించవు. వాటికి ల్యాబ్ పరీక్ష కావాలి. ఆమ్లాలు, ద్రావకాలతో చేసే పరీక్షలు ఇంట్లో చేయకండి. కచ్చితమైన సమాధానం కోసం NABL గుర్తింపు ఉన్న ఫుడ్ టెస్టింగ్ ల్యాబ్‌కు శాంపిల్ పంపండి.</li>
+                <li>కొనేముందు ప్యాక్‌పై FSSAI నంబర్, తయారు చేసినవారి లేదా ప్యాక్ చేసినవారి పేరు, చిరునామా, నికర బరువు, బ్యాచ్ నంబర్, బెస్ట్-బిఫోర్ తేదీ చూడండి. FSSAI కారంలో బరువులో 2% వరకు వంట నూనె కలపడానికి అనుమతిస్తుంది, కానీ ఏ నూనె, ఎంత అనేది ప్యాక్‌పై రాసి ఉండాలి.</li>
+                <li>ప్యాక్‌ను జిప్ మూసి, చల్లని పొడి చోట, ఎండ తగలకుండా ఉంచండి. తడి లేని చెంచాతో వాడండి.</li>
+              </ul>
+            </div>"""),
+        ],
+        faq=[
+            ("How do I check chilli powder for brick powder at home?",
+             "Put a teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the "
+             "water and rub the sediment between your fingers: grit points to brick powder or sand, and a "
+             "white residue that feels soapy and smooth points to soapstone."),
+            ("Can the water test detect Sudan dye in chilli powder?",
+             "No. Sudan I does not dissolve in water, so it cannot run out as streaks. FSSAI's manual tests "
+             "for Sudan III and for oil-soluble colours with solvents such as hexane and petroleum ether, so "
+             "those tests need a lab."),
+            ("Does the iodine test work on chilli powder?",
+             "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli "
+             "powder is one of them. A blue colour points to added starch."),
+            ("Is bright red chilli powder a sign of adulteration?",
+             "Colour alone does not tell you. The water check looks for colour that leaves the powder and "
+             "runs down as streaks, not for how red the powder looks, and a lab can test for added colours."),
+            ("What should I do if a check looks wrong?",
+             "Stop using that batch and keep the pack. Contact the seller with the batch number, or send a "
+             "sample to a NABL-accredited food testing lab for a sure answer."),
+        ],
+        sources=[
+            ("FSSAI: Food Products Standards regulations, chapter 2.9 (Version 4, 01.08.2025), 2.9.3 "
+             "Chillies and Capsicum (Lal Mirchi) powder",
+             "https://www.fssai.gov.in/upload/uploadfiles/files/Chapter%202_9_Salt_Spices_Condiments%20and%20related%20products.pdf"),
+            ("FSSAI (Eat Right India): DART, Detect Adulteration with Rapid Test, household and sensory tests",
+             "https://eatrightindia.gov.in/dart/"),
+            ("FSSAI: Manual of Methods for testing common adulterants (2019), section IV, Spices and condiments",
+             "https://fssai.gov.in/upload/uploadfiles/files/Manual_Methods_Testing_Adulterants_18_10_2019.pdf"),
+            ("BIS: IS 15642 (Parts 1 and 2): 2006, Quick methods for detection of adulterants/contaminants "
+             "in common food products",
+             "https://law.resource.org/pub/in/bis/S06/is.15642.1-2.2006.pdf"),
+            ("PubChem (NCBI) compound record: Sudan I, solubility and uses",
+             "https://pubchem.ncbi.nlm.nih.gov/compound/13297"),
+        ],
+    ),
+    dict(
+        slug="sannam-vs-teja-chilli",
+        name="Sannam or Teja chilli powder: which to use",
+        short="Sannam or Teja chilli powder",
+        names='<span lang="te">సన్నం కారం</span> · <span lang="te">తేజ కారం</span> · '
+              '<span lang="hi">सन्नम मिर्च पाउडर</span> · <span lang="hi">तेजा मिर्च पाउडर</span> · '
+              '<span lang="sa">सन्नम-रक्तमरिचचूर्णम्</span> · <span lang="sa">तेजा-रक्तमरिचचूर्णम्</span> · '
+              'Sannam Kaaram · Teja Kaaram',
+        eyebrow="Guide · chilli",
+        title="సన్నం కారం vs తేజ కారం · Sannam vs Teja Chilli | 1acrefarms",
+        desc="సన్నం కారం, తేజ కారం మధ్య తేడా. Sannam (S4) vs Teja (S17) chilli powder: what each is, "
+             "heat and colour, the Guntur chilli yard, which to use, and storage.",
+        published="2026-11-09",
+        tile_line="What S4 and S17 mean, how heat and colour are measured, and which to use where. "
+                  "With a Telugu section.",
+        intro=[
+            "Sannam and Teja are two chilli types grown around Guntur and sold at the Guntur Mirchi "
+            "Yard, Asia's largest dried red chilli market. Sannam is Telugu for thin, and the chilli is "
+            "traded as the S4 type. Teja, also known as S17, is a hybrid.",
+            "Both go into curries, chutneys, podis and pickles. Of our two packs, Teja is the one marked "
+            "extra hot. Here is what each one is, how heat and colour are measured, which to use where, "
+            "and how to keep the powder. There is a full Telugu section further down.",
+        ],
+        quick="Sannam is Telugu for thin, and the chilli is traded as the S4 type; Teja (S17) is a hybrid. "
+              "Both are grown around Guntur and sold at its Mirchi Yard. Use Sannam chilli powder for "
+              "everyday curries, pulusu, pappu and tomato pachadi. Use Teja when you want a dish extra hot, "
+              "as in kodi vepudu or gongura pachadi; our Teja pack is marked extra hot, so start with less. "
+              "Keep both airtight, dry and out of the light.",
+        te_line="సన్నం అంటే సన్నని అని; ఈ మిరపను వ్యాపారంలో S4 రకంగా అమ్ముతారు. తేజ (S17) ఒక హైబ్రిడ్ "
+                "రకం. రెండూ గుంటూరు ప్రాంతంలో పండుతాయి, గుంటూరు మిర్చి యార్డులో అమ్ముతారు. రోజువారీ "
+                "కూరలు, పులుసు, పప్పు, టమాటా పచ్చడికి సన్నం కారం; కోడి వేపుడు, గోంగూర పచ్చడి లాంటి "
+                "ఘాటు ఎక్కువ కావాల్సిన వంటలకు తేజ కారం. మా తేజ ప్యాక్ మీద ఎక్స్‌ట్రా హాట్ అని ఉంది, "
+                "కాబట్టి కొంచెం తక్కువతో మొదలుపెట్టండి. రెండు కారం పొడులనూ గాలి చొరబడని డబ్బాలో, తేమ, "
+                "వెలుతురు తగలకుండా ఉంచండి.",
+        hi_line="तेलुगु में सन्नम का अर्थ है पतला; व्यापार में यह मिर्च S4 टाइप के नाम से बिकती है। तेजा "
+                "(S17) एक हाइब्रिड किस्म है। दोनों गुंटूर के आसपास उगती हैं और गुंटूर मिर्ची यार्ड में बिकती "
+                "हैं। रोज़ की करी, पुलुसु, दाल और टमाटर की चटनी के लिए सन्नम मिर्च पाउडर; कोडी वेपुडु "
+                "(चिकन फ्राई) और गोंगूरा चटनी जैसे ज़्यादा तीखे व्यंजनों के लिए तेजा मिर्च पाउडर। हमारे "
+                "तेजा पैक पर एक्स्ट्रा हॉट लिखा है, इसलिए कम मात्रा से शुरू करें। दोनों को हवाबंद डिब्बे "
+                "में, नमी और रोशनी से दूर रखें।",
+        figure=dict(
+            packs=["sannam-chilli-powder", "teja-chilli-powder"],
+            label="Our two chilli powders",
+            caption="Left: Sannam chilli powder, from whole sun-dried Sannam chillies, packed as fine "
+                    "powder. Right: Teja chilli powder, extra hot, sun-dried and stone-ground. Both grown "
+                    "in Palnadu and Guntur and packed in Narasaraopet."),
+        packs=["sannam-chilli-powder", "teja-chilli-powder"],
+        packs_label="Our chilli powder",
+        packs_note="Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+        sections=[
+            ("glance", "At a glance", """            <div class="gd-table-wrap">
+              <table class="gd-table">
+                <thead>
+                  <tr><th></th><th>Sannam chilli<span lang="te">సన్నం కారం</span><span lang="sa">सन्नम-रक्तमरिचचूर्णम्</span></th><th>Teja chilli<span lang="te">తేజ కారం</span><span lang="sa">तेजा-रक्तमरिचचूर्णम्</span></th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>What it is</th><td>A chilli type; sannam is Telugu for thin</td><td>A hybrid chilli</td></tr>
+                  <tr><th>Trade name</th><td>S4. A variety called 334 is also listed as Sannam S4</td><td>S17, also written S-17</td></tr>
+                  <tr><th>Grown in</th><td>Guntur, Warangal and Khammam districts, says Spices Board</td><td>Guntur district, among its hybrids</td></tr>
+                  <tr><th>Heat</th><td>Hot, says Spices Board; capsaicin 0.226%</td><td>Second hottest extract of 19 varieties in a 2020 lab study</td></tr>
+                  <tr><th>Colour</th><td>Red; ASTA colour value 32.11, says Spices Board</td><td>No figure in the Spices Board list</td></tr>
+                  <tr><th>Traded at</th><td>The Guntur Mirchi Yard</td><td>The Guntur Mirchi Yard</td></tr>
+                  <tr><th>Our pack</th><td><a href="/sannam-chilli-powder/">Whole sun-dried chillies, packed as fine powder</a></td><td><a href="/teja-chilli-powder/">Extra hot, sun-dried, stone-ground</a></td></tr>
+                  <tr><th>Try it in</th><td>Tomato pappu, tomato pachadi, gutti vankaya kura, pulusu</td><td>Kodi vepudu, gongura pachadi, vellulli kaaram</td></tr>
+                </tbody>
+              </table>
+            </div>"""),
+            ("what", "What Sannam and Teja are", """            <dl class="gd-dl">
+              <dt>Sannam (S4)</dt>
+              <dd>Sannam is Telugu for thin, and Sannam chilli is traded as the S4 type. In a 2020 study of chillies from the Guntur Mirchi Yard, a variety called 334 is listed as Sannam S4. Spices Board's list of Indian chilli varieties has a Sannam S4 entry for chillies grown in Guntur, Warangal and Khammam districts, harvested from December to May.</dd>
+              <dt>Teja (S17)</dt>
+              <dd>A hybrid chilli, also known as S17. In Guntur district, hybrids such as Teja cover 60% of the chilli area, and open-pollinated varieties the other 40%, says the district's One District One Product page.</dd>
+              <dt>Where they are traded</dt>
+              <dd>The Guntur Mirchi Yard, about 5 km from the centre of Guntur, is known as Asia's biggest chilli market yard, and it influences chilli prices in India and abroad.</dd>
+            </dl>"""),
+            ("heat", "Heat and colour: how they are measured", """            <p><strong>Heat</strong> comes mainly from capsaicin and related compounds called capsaicinoids, and is measured in Scoville heat units (SHU).</p>
+            <p><strong>Colour</strong> is measured in ASTA units, by a method of the American Spice Trade Association that measures the colour that can be extracted from the chilli. The higher the value, the brighter or richer the red. The red comes from pigments called carotenoids, such as capsanthin and capsorubin.</p>
+            <p><strong>Sannam.</strong> Spices Board's entry for the Sannam S4 type grown in Guntur, Warangal and Khammam describes it as thick-skinned, hot and red, with an ASTA colour value of 32.11 and capsaicin of 0.226%.</p>
+            <p><strong>Teja.</strong> Teja is not in that list. In a 2020 lab study of 19 chilli varieties collected at the Guntur Mirchi Yard, Teja (S-17) gave the second hottest concentrated extract of the 19, and a hotter one than 334 (Sannam S4).</p>
+            <p class="gd-note">We give no Scoville number for either chilli: that study measured extracts made from the chillies, not chilli powder, and Spices Board gives capsaicin as a percentage. Colour also changes with how the powder is packed and stored.</p>"""),
+            ("which", "Which one to use", """            <p>This is how our recipes use them:</p>
+            <ul class="rcp-bullets">
+              <li>Vegetable curries and pulusu: Sannam. Try <a href="/recipes/gutti-vankaya-kura/">gutti vankaya kura</a>, <a href="/recipes/guddu-pulusu/">kodi guddu pulusu</a> or <a href="/recipes/chepala-pulusu/">chepala pulusu</a>.</li>
+              <li>Pappu and tomato pachadi: Sannam, as in <a href="/recipes/tomato-pappu/">tomato pappu</a> and <a href="/recipes/tomato-pachadi/">tomato pachadi</a>.</li>
+              <li>Fry dishes: Teja, as in <a href="/recipes/kodi-vepudu/">kodi vepudu</a>.</li>
+              <li>Chicken, mutton and prawn curries: Teja, as in <a href="/recipes/andhra-kodi-kura/">Andhra kodi kura</a>, <a href="/recipes/gongura-mamsam/">gongura mamsam</a> and <a href="/recipes/royyala-iguru/">royyala iguru</a>.</li>
+              <li>Gongura pachadi and podis: Teja, as in <a href="/recipes/gongura-pachadi/">gongura pachadi</a> and <a href="/recipes/vellulli-kaaram/">vellulli kaaram</a>.</li>
+              <li>Snacks: Sannam, as in <a href="/recipes/jeedipappu-pakodi/">jeedipappu pakodi</a>.</li>
+              <li>Pickles: either. Both packs list pickles among their uses.</li>
+            </ul>"""),
+            ("swap", "Swapping and mixing", """            <p>To use Teja where a recipe asks for Sannam, start with less, taste, and add more. Our Teja pack is marked extra hot. Going the other way, add Sannam a little at a time until the heat suits you.</p>
+            <p>To turn up the heat in a dish made with Sannam, mix in a little Teja.</p>
+            <p>Add either powder to hot oil on a low flame, so it does not burn.</p>"""),
+            ("store", "Keeping it well", """            <ul class="rcp-bullets">
+              <li>Keep the pack zipped shut, or move the powder to a dry, airtight jar. Air slowly breaks down the red pigments, so the colour fades.</li>
+              <li>Keep it out of the light, which speeds up that loss.</li>
+              <li>Keep it away from the stove. Warmth speeds it up too.</li>
+              <li>Use a dry spoon. Damp powder can grow mould.</li>
+              <li>Use it within the best-before date on the pack.</li>
+            </ul>"""),
+            ("telugu", "తెలుగులో: ఏ కారం పొడి దేనికి?", """            <div class="gd-te" lang="te">
+              <p>సన్నం, తేజ రెండూ గుంటూరు ప్రాంతంలో పండే మిరప రకాలు. సన్నం అంటే సన్నని అని అర్థం; ఈ మిరపను వ్యాపారంలో S4 రకంగా అమ్ముతారు. 2020 నాటి ఒక అధ్యయనంలో 334 అనే రకాన్ని సన్నం S4గా చూపారు. తేజ ఒక హైబ్రిడ్ రకం; దీన్ని S17 అని కూడా అంటారు. గుంటూరు జిల్లాలో మిరప సాగులో 60% విస్తీర్ణం తేజ లాంటి హైబ్రిడ్ రకాలదే. రెండూ గుంటూరు మిర్చి యార్డులో అమ్ముడవుతాయి; ఆసియాలోనే అతిపెద్ద మిరప మార్కెట్‌గా ఈ యార్డుకు పేరుంది.</p>
+              <p>స్పైసెస్ బోర్డు జాబితా ప్రకారం గుంటూరు, వరంగల్, ఖమ్మం జిల్లాల్లో పండే సన్నం S4 రకం మందమైన తొక్కతో, ఘాటుగా, ఎర్రగా ఉంటుంది. 2020లో గుంటూరు మిర్చి యార్డు నుంచి తీసుకున్న 19 మిరప రకాలపై చేసిన ఒక ల్యాబ్ అధ్యయనంలో, తేజ (S17) నుంచి తీసిన సారం ఘాటులో రెండో స్థానంలో నిలిచింది; 334 (సన్నం S4) సారం కంటే ఘాటుగా ఉంది.</p>
+              <ul class="rcp-bullets">
+                <li>రోజువారీ కూరలు, పులుసు, పప్పు, టమాటా పచ్చడికి: సన్నం కారం.</li>
+                <li>కోడి వేపుడు, గోంగూర పచ్చడి, వెల్లుల్లి కారం లాంటి ఘాటైన వంటకాలకు: తేజ కారం.</li>
+                <li>ఊరగాయలకు రెండూ వాడొచ్చు.</li>
+                <li>సన్నం బదులు తేజ వాడితే, కొంచెం తక్కువతో మొదలుపెట్టి, రుచి చూసి పెంచండి. మా తేజ ప్యాక్ మీద ఎక్స్‌ట్రా హాట్ అని ఉంది.</li>
+                <li>కారాన్ని వేడి నూనెలో వేసేటప్పుడు మంట తగ్గించండి; లేకపోతే మాడిపోతుంది.</li>
+                <li>గాలి చొరబడని డబ్బాలో, వెలుతురు, వేడి, తేమ తగలకుండా ఉంచి, తడి లేని చెంచాతో వాడండి.</li>
+              </ul>
+              <p>గాలి తగిలితే కారం పొడిలోని ఎర్ర రంగు మెల్లగా వెలిసిపోతుంది; వెలుతురు, వేడి తగిలితే రంగు ఇంకా త్వరగా పోతుంది. అందుకే ప్యాక్ జిప్ ఎప్పుడూ మూసి ఉంచండి.</p>
+            </div>"""),
+        ],
+        faq=[
+            ("Which is hotter, Sannam or Teja chilli powder?",
+             "Of our two packs, Teja is the one marked extra hot. In a 2020 lab study of 19 chilli varieties "
+             "from the Guntur Mirchi Yard, the extract from Teja (S-17) tested hotter than the one from 334 "
+             "(Sannam S4). Start with a little and taste as you add."),
+            ("What are S4 and S17 chillies?",
+             "S4 is the type Sannam chilli is traded as, and a variety called 334 is also listed as Sannam "
+             "S4. S17 is another name for Teja, a hybrid chilli grown in Guntur district."),
+            ("What does Sannam mean?",
+             "Sannam is Telugu for thin. Spices Board lists a Sannam S4 type grown in Guntur, Warangal and "
+             "Khammam districts."),
+            ("Can I use Teja chilli powder instead of Sannam?",
+             "Yes. Start with less Teja than the recipe asks for, taste, and add more. Going the other way, "
+             "add Sannam a little at a time."),
+            ("Why does chilli powder lose its colour?",
+             "Air slowly breaks down its red pigments, and light and warmth speed this up. Keep the pack "
+             "zipped shut, out of the light and away from the stove."),
+        ],
+        sources=[
+            ("Spices Board India: Chilli, Indian chilli varieties (ASTA colour value and capsaicin by type)",
+             "https://www.indianspices.com/spice-catalog/chilli-1.html"),
+            ("Guntur district, Government of Andhra Pradesh: One District One Product 2024, chillies",
+             "https://guntur.ap.gov.in/odop2024/"),
+            ("Sarojam et al., A comparative study on cultivars of Capsicum: critical assessment based on "
+             "colour values, pungency and total capsaicinoids content, The Open Food Science Journal (2020)",
+             "https://benthamopenarchives.com/abstract.php?ArticleCode=TOFSJ-12-9"),
+            ("Nath, Kale and Meena (ICAR-CIPHET), Influence of packaging material and storage temperature on "
+             "colour quality and shelf life of red chilli powder, Indian Journal of Horticulture (2019)",
+             "https://www.journal.iahs.org.in/index.php/ijh/article/download/376/1503"),
+        ],
+    ),
+    dict(
+        slug="cashew-grades-explained",
+        name="Cashew grades explained: W180, W240, W320 and more",
+        short="Cashew grades explained",
+        names='<span lang="te">జీడిపప్పు</span> · <span lang="hi">काजू</span> · <span lang="sa">काजूतकम्</span> · '
+              'Jeedipappu · Kaju',
+        eyebrow="Guide · cashew",
+        title="జీడిపప్పు గ్రేడ్లు · Cashew Grades W180, W240, W320 | 1acrefarms",
+        desc="జీడిపప్పు గ్రేడ్‌లు అంటే ఏమిటి? What cashew grades W180, W240, W320 and W450 mean, kernels per pound and "
+             "per kg, SW, splits and pieces, and which grade to use.",
+        published="2026-11-09",
+        tile_line="What W180, W240 and W320 mean, kernels per kg, and which grade suits which dish. With a "
+                  "Telugu section.",
+        intro=[
+            "W180, W240, W320: these are cashew kernel grades, and each letter and number means something "
+            "exact. In India the grades are set out in AGMARK's Cashew Kernels Grading and Marking Rules, "
+            "and the Cashew Export Promotion Council of India (CEPCI) describes the grades India exports.",
+            "This guide explains each grade name, gives the kernels per pound and per kg for the whole "
+            "grades, and says what a grade tells you and what it does not. It also covers which kind suits "
+            "which dish, where Andhra's cashews grow and how to keep them. There is a Telugu section further "
+            "down.",
+        ],
+        quick="In a grade such as W320, W means white whole kernels and the number is how many kernels make "
+              "a pound (454 g): W320 is 300 to 320 kernels a pound, or 660 to 705 a kg. A smaller number "
+              "means bigger kernels, and W180 is the biggest grade listed. SW means scorched wholes, browner "
+              "from longer roasting. S, B, LWP, SWP and BB are splits, butts and pieces. A grade describes "
+              "size, colour and wholeness, not taste.",
+        te_line="W320 లాంటి గ్రేడ్‌లో W అంటే తెల్లని పూర్తి జీడిపప్పు; సంఖ్య అంటే ఒక పౌండు (454 గ్రాములు)లో "
+                "ఎన్ని పప్పులు ఉంటాయో. W320 అంటే పౌండుకు 300 నుంచి 320, కిలోకు 660 నుంచి 705 పప్పులు. "
+                "సంఖ్య తక్కువైతే పప్పు పెద్దది; W180 అన్నింటికంటే పెద్దది. SW అంటే ఎక్కువసేపు వేయించడం వల్ల "
+                "కొద్దిగా గోధుమ రంగుకు మారిన పూర్తి పప్పు. S, B, LWP, SWP, BB అంటే బద్దలు, ముక్కలు. గ్రేడ్ "
+                "సైజు, రంగు, పప్పు పూర్తిగా ఉందా అనేది చెబుతుంది; రుచిని కాదు.",
+        hi_line="W320 जैसे ग्रेड में W का मतलब है सफ़ेद साबुत काजू, और संख्या बताती है कि एक पाउंड (454 ग्राम) "
+                "में कितने दाने आते हैं। W320 में एक पाउंड में 300 से 320 और एक किलो में 660 से 705 दाने होते "
+                "हैं। संख्या जितनी कम, दाना उतना बड़ा; W180 सबसे बड़ा है। SW यानी ज़्यादा देर भूनने से हल्के "
+                "भूरे हो गए साबुत काजू। S, B, LWP, SWP और BB टुकड़ों के ग्रेड हैं। ग्रेड से आकार, रंग और दाना "
+                "साबुत है या टूटा, यह पता चलता है; स्वाद नहीं।",
+        figure=dict(
+            packs=["cashew-kernels"],
+            label="Our cashew kernels",
+            caption="Whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed "
+                    "in Narasaraopet."),
+        packs=["cashew-kernels"],
+        packs_label="Our cashews",
+        packs_note="Our pack holds whole, plain, unsalted cashew kernels, packed in Narasaraopet.",
+        sections=[
+            ("names", "What the grade names mean", """            <dl class="gd-dl">
+              <dt>W: white wholes (W180, W210, W240, W320, W450 and more)</dt>
+              <dd>Whole kernels that are white, pale ivory or light ash in colour. The number is how many kernels make a pound (454 g), so a smaller number means bigger kernels.</dd>
+              <dt>SW: scorched wholes</dt>
+              <dd>Whole kernels that are light brown, light ivory, light ash or deep ivory in colour from scorching, which AGMARK puts down to overheating and CEPCI to longer roasting. CEPCI notes they have all the other characteristics of white kernels.</dd>
+              <dt>SWS and DW: scorched wholes seconds and dessert wholes</dt>
+              <dd>Whole kernels with more marks allowed, such as speckled, discoloured or shrivelled kernels.</dd>
+              <dt>B: butts</dt>
+              <dd>Kernels broken across (crosswise), but not split apart along their length.</dd>
+              <dt>S: splits</dt>
+              <dd>Kernels split along their length.</dd>
+              <dt>LWP, SWP and BB: large white pieces, small white pieces and baby bits</dt>
+              <dd>Broken kernels, sorted by sieve. LWP are kernels broken into more than two pieces. In the ISO standard, LWP stay on a 4.75 mm sieve, SWP on a 2.80 mm sieve and BB on a 1.70 mm sieve.</dd>
+              <dt>SB, SS, SP and SSP</dt>
+              <dd>Scorched butts, scorched splits, scorched pieces and scorched small pieces: the same cuts in the browner scorched colours.</dd>
+            </dl>"""),
+            ("counts", "Kernels per pound and per kg", """            <div class="gd-table-wrap">
+              <table class="gd-table">
+                <thead>
+                  <tr><th>Grade</th><th>Kernels per pound (454 g)</th><th>Kernels per kg</th></tr>
+                </thead>
+                <tbody>
+                  <tr><th>W180</th><td>120 to 180</td><td>265 to 395</td></tr>
+                  <tr><th>W210</th><td>200 to 210</td><td>440 to 465</td></tr>
+                  <tr><th>W240</th><td>220 to 240</td><td>485 to 530</td></tr>
+                  <tr><th>W280</th><td>260 to 280</td><td>575 to 620</td></tr>
+                  <tr><th>W320</th><td>300 to 320</td><td>660 to 705</td></tr>
+                  <tr><th>W400</th><td>350 to 400</td><td>770 to 880</td></tr>
+                  <tr><th>W450</th><td>400 to 450</td><td>880 to 990</td></tr>
+                  <tr><th>W500</th><td>450 to 500</td><td>990 to 1,100</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The W210 to W500 rows are from AGMARK's rules, whose table starts at W210. The W180 row is from ISO 6477, the international standard for cashew kernels, and CEPCI lists W180 among the grades India exports.</p>
+            <p><strong>Count it yourself.</strong> ISO 6477's test for the white whole grades counts the kernels in 1 kg or 1 lb. For a rough check at home, count the whole kernels in 100 g on a kitchen scale, multiply by 10 and compare with the per kg column.</p>
+            <p class="gd-note">AGMARK's whole grades allow up to 5% broken kernels at the time of packing.</p>"""),
+            ("means", "What a grade tells you, and what it does not", """            <ul class="rcp-bullets">
+              <li><strong>Size.</strong> The number is a count, so W180 kernels are bigger than W320 kernels.</li>
+              <li><strong>Colour.</strong> White wholes are white, pale ivory or light ash. Scorched grades are browner from scorching.</li>
+              <li><strong>Whole or broken.</strong> Wholes, butts, splits and pieces are separate grades.</li>
+              <li><strong>Limits on defects.</strong> AGMARK's white whole grades must be reasonably dry, free from insect damage, damaged kernels and black or brown spots, and completely free from testa, the kernel's skin. ISO 6477 caps moisture at 5%.</li>
+            </ul>
+            <p><strong>What a grade does not tell you.</strong> AGMARK's grade definitions are about count, colour, shape and defects, and none of them ranks flavour. So a W180 is a bigger kernel than a W320, not one graded as tastier. Scorched is a colour grade too: CEPCI notes scorched wholes have all the other characteristics of white kernels.</p>"""),
+            ("which", "Which grade for which dish", """            <ul class="rcp-bullets">
+              <li><strong>To eat as they are, or toasted in a dry pan:</strong> whole kernels, in whatever size you like.</li>
+              <li><strong><a href="/recipes/jeedipappu-pakodi/">Jeedipappu pakodi</a>:</strong> whole kernels, which stay crunchy inside the coating. Split any very large ones in half.</li>
+              <li><strong><a href="/recipes/kaju-upma/">Jeedipappu upma</a>:</strong> wholes or halves, fried golden in ghee and stirred in at the end.</li>
+              <li><strong><a href="/recipes/paramannam/">Paramannam</a>:</strong> our recipe halves the cashews before frying them in ghee, so splits do the same job.</li>
+              <li><strong>Cooking, sweets and savoury snacks:</strong> butts, splits and pieces. CEPCI calls them ideal for these.</li>
+              <li><strong>The everyday grade:</strong> CEPCI calls W320 the most popular grade and the most widely available worldwide.</li>
+            </ul>
+            <p>Our <a href="/cashew-kernels/">cashew kernels</a> are whole, plain and unsalted.</p>"""),
+            ("belt", "Andhra's cashew belt", """            <p>Andhra Pradesh is one of India's main cashew states. In 2017-18 it produced 14% of India's cashew nuts, second only to Maharashtra at 33%, going by CEPCI figures cited in a 2021 study.</p>
+            <p>In Srikakulam district alone, cashew grows on about 24,000 hectares, across the plains, the tribal high-altitude areas and the sea coast. Cashew kernels are the district's One District One Product for 2024.</p>
+            <p>Our cashew kernels come from the Chirala, Bapatla and Vizag coast and are packed in Narasaraopet.</p>"""),
+            ("store", "Keeping cashews well", """            <ul class="rcp-bullets">
+              <li>Keep the zip shut after use, or move the kernels to a dry, airtight jar.</li>
+              <li>Keep them in a cool, dry place, out of direct sunlight.</li>
+              <li>A rancid taste is taken as the first sign that nuts are going off, since most nuts hold a lot of oil. Taste one before you cook with a batch that has been open a while.</li>
+              <li>Use them within the best-before date on the pack.</li>
+            </ul>"""),
+            ("telugu", "తెలుగులో: జీడిపప్పు గ్రేడ్లు", """            <div class="gd-te" lang="te">
+              <p>జీడిపప్పు గ్రేడ్‌లో W అంటే తెల్లని పూర్తి పప్పు. దాని పక్కన ఉన్న సంఖ్య ఒక పౌండు (454 గ్రాములు)లో ఎన్ని పప్పులు పడతాయో చెబుతుంది. సంఖ్య తక్కువైతే పప్పు పెద్దది.</p>
+              <ul class="rcp-bullets">
+                <li>W180: పౌండుకు 120 నుంచి 180, కిలోకు 265 నుంచి 395 పప్పులు. ఈ గ్రేడ్లలో ఇదే అతి పెద్ద పప్పు.</li>
+                <li>W240: పౌండుకు 220 నుంచి 240, కిలోకు 485 నుంచి 530 పప్పులు.</li>
+                <li>W320: పౌండుకు 300 నుంచి 320, కిలోకు 660 నుంచి 705 పప్పులు. ఎక్కువగా దొరికే గ్రేడ్ ఇదే.</li>
+                <li>W450: పౌండుకు 400 నుంచి 450, కిలోకు 880 నుంచి 990 పప్పులు.</li>
+                <li>SW: ఎక్కువసేపు వేయించడం వల్ల కొద్దిగా గోధుమ రంగుకు మారిన పూర్తి పప్పు.</li>
+                <li>S అంటే పొడవుగా చీలిన పప్పు (బద్దలు); B అంటే అడ్డంగా విరిగిన పప్పు; LWP, SWP, BB అంటే పెద్ద, చిన్న, ఇంకా చిన్న ముక్కలు.</li>
+              </ul>
+              <p>గ్రేడ్ జీడిపప్పు సైజు, రంగు, పప్పు పూర్తిగా ఉందా లేదా అనేది చెబుతుంది; రుచిని చెప్పదు. నేరుగా తినడానికి, పకోడీకి పూర్తి జీడిపప్పు బాగుంటుంది. వంటలకు, స్వీట్లకు బద్దలు, ముక్కలు సరిపోతాయి.</p>
+              <p>శ్రీకాకుళం జిల్లాలోనే సుమారు 24,000 హెక్టార్లలో జీడి తోటలు ఉన్నాయి.</p>
+              <p>జీడిపప్పును గాలి చొరబడని డబ్బాలో, చల్లని, పొడి చోట, ఎండ తగలకుండా ఉంచండి.</p>
+            </div>"""),
+        ],
+        faq=[
+            ("What does W320 mean in cashew?",
+             "W320 means white whole cashew kernels at 300 to 320 kernels per pound, or 660 to 705 per kg, "
+             "under AGMARK's rules. CEPCI calls it the most popular grade and the most widely available "
+             "worldwide."),
+            ("What is the difference between W240 and W320 cashews?",
+             "Size. W240 has 220 to 240 kernels per pound (485 to 530 per kg) and W320 has 300 to 320 "
+             "(660 to 705 per kg), so W240 kernels are bigger. Both are white whole grades under AGMARK's "
+             "rules."),
+            ("Which cashew grade is best?",
+             "No grade is best for everything. W180 and W210 are the biggest whole kernels, W320 is the most "
+             "widely available, and CEPCI calls butts, splits and pieces ideal for cooking and sweets. A grade "
+             "describes size, colour and wholeness, not taste."),
+            ("How many cashews are there in 1 kg?",
+             "It depends on the grade. Under AGMARK's rules, 1 kg of W240 holds 485 to 530 kernels, W320 "
+             "holds 660 to 705 and W450 holds 880 to 990."),
+            ("What does SW mean on cashews?",
+             "SW means scorched wholes: whole kernels with a slight brown colour from longer roasting. CEPCI "
+             "notes they have all the other characteristics of white kernels."),
+        ],
+        sources=[
+            ("AGMARK: Cashew Kernels Grading and Marking Rules, Schedules I to VI, Directorate of Marketing "
+             "and Inspection",
+             "https://dmi.gov.in/Documents/cashewkernelsgmr.pdf"),
+            ("Cashew Export Promotion Council of India (CEPCI): Cashew kernels, specifications and grades",
+             "http://cashewindia.org/cashew-kernels"),
+            ("ISO 6477:1988, Cashew kernels: Specification (preview of the standard, with the grade table)",
+             "https://cdn.standards.iteh.ai/samples/12841/dc872c80da6e4dd28178731790bf176d/ISO-6477-1988.pdf"),
+            ("Srikakulam district, Government of Andhra Pradesh: One District One Product 2024, cashew kernels",
+             "https://srikakulam.ap.gov.in/departments/one-district-one-product-odop-2024-cashew-kernels/"),
+            ("Jacob and Sobhana, Qualitative and organoleptic evaluation of immature cashew kernels under "
+             "storage, Journal of Horticultural Sciences 16(2), 2021",
+             "https://doi.org/10.24154/jhs.v16i2.990"),
+        ],
+    ),
 ]
 
 PACK_BY_SLUG = {p["slug"]: p for p in bp.PACKS}
