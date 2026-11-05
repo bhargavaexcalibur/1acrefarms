@@ -176,6 +176,8 @@ GUIDES = [
              "photo of the pack and the glass."),
         ],
         sources=[
+            ("Forsyth et al., lead chromate pigments added to turmeric in Bangladesh, Environmental Research (2019)",
+             "https://doi.org/10.1016/j.envres.2019.108722"),
             ("FSSAI: Manual of Methods for testing common adulterants (2019), section IV, Spices and condiments",
              "https://fssai.gov.in/upload/uploadfiles/files/Manual_Methods_Testing_Adulterants_18_10_2019.pdf"),
             ("FSSAI: DART, Detect Adulteration with Rapid Test (household tests)",
@@ -224,7 +226,7 @@ GUIDES = [
                     "from the Godavari delta. Both packed in Narasaraopet."),
         packs=["cane-jaggery", "palm-jaggery"],
         packs_label="Our jaggery",
-        packs_note="Two or more packs ship free, so you can try both.",
+        packs_note="",
         sections=[
             ("glance", "At a glance", """            <div class="gd-table-wrap">
               <table class="gd-table">
@@ -353,10 +355,11 @@ def our_packs(g):
               <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a><a href="/?add=pk-{p['code'].lower()}@{p['g']}#{p['section']}">Add to order</a></span>
             </div>
           </div>""")
+    note = f"""\n          <p class="rcp-also">{g['packs_note'].format(wa=wa)}</p>""" if g["packs_note"] else ""
     return f"""        <div class="rcp-made">
           <p class="eyebrow">{e(g['packs_label'])}</p>
 {chr(10).join(cards)}
-          <p class="rcp-also">{g['packs_note'].format(wa=wa)}</p>
+{note}
         </div>"""
 
 

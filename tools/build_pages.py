@@ -217,22 +217,6 @@ def nutrition(p, facts):
         </div>"""
 
 
-# As policies.html#returns: free replacement or full refund for a pack that arrives damaged, wrong
-# or short (tell us within 48 hours of delivery); no return shipping cost, ever; opened packs are
-# not taken back for a change of mind. Quality problems are covered until best-before (page only).
-RETURN_POLICY = {
-    "@type": "MerchantReturnPolicy",
-    "applicableCountry": "IN",
-    "returnPolicyCountry": "IN",
-    "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-    "merchantReturnDays": 2,
-    "returnMethod": "https://schema.org/ReturnByMail",
-    "returnFees": "https://schema.org/FreeReturn",
-    "refundType": "https://schema.org/FullRefund",
-    "merchantReturnLink": f"{SITE}/policies.html#returns",
-}
-
-
 VIDEOS_JSON = ROOT / "assets" / "video" / "videos.json"  # {name: {"secs", "date"}}, from docs/marketing/video/make_videos.py --web
 VIDEOS = json.loads(VIDEOS_JSON.read_text(encoding="utf-8")) if VIDEOS_JSON.exists() else {}
 
@@ -250,7 +234,7 @@ def video_ld(name, title, desc):
     v = VIDEOS[name]
     return {"@type": "VideoObject", "name": title, "description": desc,
             "thumbnailUrl": [f"{SITE}/assets/video/{name}.jpg"], "contentUrl": f"{SITE}/assets/video/{name}.mp4",
-            "uploadDate": v["date"], "duration": f"PT{round(v['secs'])}S"}
+            "uploadDate": v["date"] + ("T00:00:00+05:30" if len(v["date"]) == 10 else ""), "duration": f"PT{round(v['secs'])}S"}
 
 
 # More videos on a pack page, shown right after its pack video. Real footage only, no text on the page, and the
@@ -293,33 +277,25 @@ def product_ld(p, facts):
                 "category": p["category"],
                 "countryOfOrigin": {"@type": "Country", "name": "India"},
                 "weight": {"@type": "QuantitativeValue", "value": p["g"], "unitCode": "GRM"},
-                "offers": {
+                # Product-snippet markup, not merchant-listing markup: the website itself does not sell
+                # (Amazon.in only since 06-11-2026), so no shipping or return policy here. The Offer is the
+                # Amazon.in one, shown only while the pack is buyable there; Amazon sells at the MRP (checked
+                # 05-11-2026: 495 / 234 / 495), which is the price this page shows.
+                **({"offers": {
                     "@type": "Offer",
-                    "url": url,
+                    "url": amazon_link(p),
                     "priceCurrency": "INR",
                     "price": str(p["mrp"]),
                     "availability": "https://schema.org/InStock",
                     "itemCondition": "https://schema.org/NewCondition",
                     "seller": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms"},
-                    "hasMerchantReturnPolicy": RETURN_POLICY,
-                    "shippingDetails": {
-                        "@type": "OfferShippingDetails",
-                        "shippingRate": {"@type": "MonetaryAmount", "value": "81", "currency": "INR"},
-                        "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "IN"},
-                        "deliveryTime": {
-                            "@type": "ShippingDeliveryTime",
-                            "handlingTime": {"@type": "QuantitativeValue", "minValue": 0, "maxValue": 2, "unitCode": "DAY"},
-                            "transitTime": {"@type": "QuantitativeValue", "minValue": 2, "maxValue": 7, "unitCode": "DAY"},
-                        },
-                    },
-                },
+                }} if amazon_link(p) else {}),
             },
             {
                 "@type": "BreadcrumbList",
                 "itemListElement": [
                     {"@type": "ListItem", "position": 1, "name": "Home", "item": f"{SITE}/"},
-                    {"@type": "ListItem", "position": 2, "name": p["crumb"], "item": f"{SITE}/#{p['section']}"},
-                    {"@type": "ListItem", "position": 3, "name": p["name"], "item": url},
+                    {"@type": "ListItem", "position": 2, "name": p["name"], "item": url},
                 ],
             },
         ],
@@ -404,7 +380,7 @@ def page(p, live, facts, guides=(), recipes=()):
           <img src="/assets/packs/{q['pack']}" alt="{q['name']} {q['g']} g pack" width="800" height="1122" loading="lazy" />
           <span class="po-name">{q['name']}</span>
           <span class="po-te"><span lang="te">{q['te']}</span> · <span lang="sa">{q['sa']}</span> · {q['local']}</span>
-          <span class="po-price">₹{q['mrp']} · {q['g']} g</span>
+          <span class="po-price">MRP ₹{q['mrp']} · {q['g']} g</span>
         </a>""" for q in others)
     uses = "\n".join(f"          <li>{u}</li>" for u in p["uses"])
     guide_links = "".join(f'\n        <p class="pdp-guide"><span>Guide</span><a href="{u}">{n}</a></p>' for u, n in guides)

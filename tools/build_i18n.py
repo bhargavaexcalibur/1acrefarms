@@ -35,6 +35,7 @@ Recipes and guides (and their hubs) are translated whole, piece by piece: see to
 """
 import html
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -341,7 +342,10 @@ def inject(page, current, alts, cta, same=None):
     alts: where the menu goes per language; same: the true translations of this page (hreflang)."""
     page = re.sub(r"\n  <!-- I18N:HEAD -->.*?<!-- /I18N:HEAD -->", "", page, flags=re.S)
     page = re.sub(r"<!-- I18N:BANNER -->.*?<!-- /I18N:BANNER -->\n", "", page, flags=re.S)
-    links = hreflang_links(alts if same is None else same)
+    # Google reads hreflang only for ISO 639-1 codes; a page whose own language has none (brx, doi, kok,
+    # mai, mni, sat) cannot list itself, so its cluster would be ignored: give it no hreflang block.
+    own = current == "en" or LANG[current]["hreflang"]
+    links = hreflang_links(alts if same is None else same) if own else ""
     links = f"\n  {links}" if links else ""
     head = f'\n  <!-- I18N:HEAD -->{links}\n  <link href="{html.escape(MENU_FONTS)}" rel="stylesheet" />\n  <!-- /I18N:HEAD -->'
     page = page.replace("</head>", head + "\n</head>", 1)
@@ -430,7 +434,6 @@ def pack_page(code, t, p, packs, facts):
     prod, crumbs = ld["@graph"]
     prod.update({"@id": SITE + url + "#product", "name": f"{t[k + '.name']} {p['g']} g", "description": t[k + ".lede"],
                  "inLanguage": code})
-    prod["offers"]["url"] = SITE + url
     crumbs["itemListElement"] = [
         {"@type": "ListItem", "position": 1, "name": t["ui.home"], "item": f"{SITE}/{code}/"},
         {"@type": "ListItem", "position": 2, "name": t[k + ".name"], "item": SITE + url}]
@@ -649,6 +652,22 @@ def build(live):
     english = {base: f.read_text(encoding="utf-8") for base, f in content_files()}
     for base in english:
         versions[base] = {c: f"/{c}{base}" for c, d in langs.items() if base in d["pages"]}
+    # GUARD: never delete language pages that exist now. A language whose home strings went stale (for
+    # example after an English UI string was edited without its 22 translations) would otherwise lose
+    # every page but its home. Pass --allow-drop (or I18N_ALLOW_DROP=1) when a drop is really meant.
+    doomed = []
+    for code in LANG:
+        d = ROOT / code
+        if not d.is_dir():
+            continue
+        keep = {f"/{code}/"} | {f"/{code}/{p['slug']}/" for p in langs.get(code, {}).get("packs", [])} | \
+            {f"/{code}{base}" for base in langs.get(code, {}).get("pages", [])}
+        doomed += [url_of(f) for f in d.rglob("index.html") if url_of(f) not in keep]
+    if doomed and "--allow-drop" not in sys.argv and os.environ.get("I18N_ALLOW_DROP") != "1":
+        why = "; ".join(f"{c}: {'; '.join(w)[:200]}" for c, w in pending.items())
+        sys.exit(f"STOP: this build would delete {len(doomed)} language pages, e.g. {doomed[:8]}. "
+                 f"Pending: {why or 'none'}. Translate (todo/merge/blind/merge-back) or remove the key instead of "
+                 f"editing English; pass --allow-drop only if the drop is intended.")
     # write the language pages
     written = 0
     for code, d in langs.items():

@@ -1,8 +1,8 @@
 User-agent: *
 Disallow: /docs/
 Disallow: /print/
-Disallow: /logo-lab.html
-Disallow: /logo-color.html
+Disallow: /tools/
+Disallow: /README.md
 Disallow: /telugu-test.html
 
 Sitemap: https://1acrefarms.co.in/sitemap.xml
