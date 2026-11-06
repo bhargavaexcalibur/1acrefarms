@@ -153,7 +153,10 @@ PACKS = [
 # Our Amazon.in listings (tools/amazon.json, refreshed by tools/amazon_check.py). A pack gets a
 # "Buy on Amazon" button only while a shopper can actually buy it there.
 AMAZON = json.loads((ROOT / "tools" / "amazon.json").read_text(encoding="utf-8"))
-AMAZON_STORE = f"https://www.amazon.in/s?me={AMAZON['seller']}"
+# Our Amazon Brand Store (live 05-11-2026). It lists our in-stock packs straight from the catalogue, so a
+# newly stocked pack shows at once; the seller search page (s?me=) waits for Amazon's search index (TURM was
+# missing there for hours on 06-11) and carries other brands' sponsored results.
+AMAZON_STORE = AMAZON.get("store") or f"https://www.amazon.in/s?me={AMAZON['seller']}"
 
 
 def amazon_link(p):

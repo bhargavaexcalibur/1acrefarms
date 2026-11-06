@@ -334,7 +334,9 @@ BANNER_JS = """<script>
 def inject(page, current, alts, cta, same=None):
     """Add the menu, hreflang links and banner script to a built page (idempotent).
     alts: where the menu goes per language; same: the true translations of this page (hreflang)."""
-    page = re.sub(r"\n  <!-- I18N:HEAD -->.*?<!-- /I18N:HEAD -->", "", page, flags=re.S)
+    # Take the newline before </head> with the old block: the new block brings its own, so a page
+    # re-injected in place (the hand-made English index.html) no longer gains a blank line per build.
+    page = re.sub(r"\n  <!-- I18N:HEAD -->.*?<!-- /I18N:HEAD -->(\n(?=</head>))?", "", page, flags=re.S)
     page = re.sub(r"<!-- I18N:BANNER -->.*?<!-- /I18N:BANNER -->\n", "", page, flags=re.S)
     # Google reads hreflang only for ISO 639-1 codes; a page whose own language has none (brx, doi, kok,
     # mai, mni, sat) cannot list itself, so its cluster would be ignored: give it no hreflang block.
