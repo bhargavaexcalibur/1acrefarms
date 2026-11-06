@@ -658,7 +658,9 @@ def recipe_ld(r, url):
         "name": r["name"],
         "alternateName": list(dict.fromkeys(n for n in names if n != r["name"])),
         "description": r["intro"][0],
-        "image": [f"{SITE}/assets/recipes/{r['slug']}.png"],
+        # 16:9, 4:3 and 1:1 (Google recipe results) from tools/make_recipe_wide_cards.py, then the 4:5 card
+        "image": [f"{SITE}/assets/recipes/{r['slug']}-{t}.jpg" for t in ("16x9", "4x3", "1x1")
+                  if (ROOT / "assets" / "recipes" / f"{r['slug']}-{t}.jpg").exists()] + [f"{SITE}/assets/recipes/{r['slug']}.png"],
         "author": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms", "url": f"{SITE}/"},
         "datePublished": published(r),
         "recipeCuisine": "Andhra / Telugu",
