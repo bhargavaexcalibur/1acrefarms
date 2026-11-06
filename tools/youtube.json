@@ -1,0 +1,29 @@
+{
+ "channel": "https://www.youtube.com/@1acrefarms",
+ "videos": {
+  "jaggery-unit": {
+   "short": "https://youtube.com/shorts/51bRBKuzs9k"
+  },
+  "pack-cane-jaggery": {
+   "video": "https://youtu.be/UWq1FocBXRg",
+   "short": "https://youtube.com/shorts/F3uOPA2rTkk"
+  },
+  "pack-hill-turmeric-powder": {
+   "video": "https://youtu.be/42zyLNAplBc",
+   "short": "https://youtube.com/shorts/Fua28QZUCtI"
+  },
+  "pack-palm-jaggery": {
+   "video": "https://youtu.be/1HrN2hIxsmY",
+   "short": "https://youtube.com/shorts/QkPFlTtg6RI"
+  },
+  "recipe-palm-jaggery-coffee": {
+   "video": "https://youtu.be/qbjCfovwKBc"
+  },
+  "recipe-paramannam": {
+   "video": "https://youtu.be/y3ou02pzkmA"
+  },
+  "recipe-chimmili": {
+   "short": "https://youtube.com/shorts/8DR6c4sEN58"
+  }
+ }
+}

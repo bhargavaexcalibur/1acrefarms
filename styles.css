@@ -274,6 +274,9 @@ a.add-btn { display: block; text-align: center; text-decoration: none; }
 .footer-social a { color: #b6bea7; display: inline-flex; transition: color .2s; }
 .footer-social a:hover { color: #fff; }
 .footer-social svg { width: 22px; height: 22px; display: block; }
+.yt-watch { margin: 8px 0 0; font-size: .9rem; }
+.yt-watch a { display: inline-flex; align-items: center; gap: 6px; color: var(--green, #45573a); font-weight: 600; text-decoration: none; border: 1px solid #dcdfd2; border-radius: 999px; padding: 5px 12px; background: #fff; }
+.yt-watch a:hover { border-color: #c4302b; color: #c4302b; }
 .footer-col h4 { color: #fff; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 16px; }
 .footer-col a { display: block; font-size: 0.9rem; color: #b6bea7; margin-bottom: 10px; transition: color .2s; }
 .footer-col a:hover { color: #fff; }
