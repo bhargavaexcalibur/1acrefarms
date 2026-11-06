@@ -80,6 +80,12 @@ LANGS = [
 ]
 LANG = {c: dict(code=c, hreflang=h, native=n, english=en, font=f, dir=d) for c, h, n, en, f, d in LANGS}
 # The rare scripts in the menu itself, so their names render on phones without those fonts.
+# Google Analytics 4 (property 1acrefarms.co.in, Google tag GTM-MB6JX532 -> G-985D0EDL8E), set up 06-11-2026.
+# Enhanced measurement counts page views, scrolls and outbound clicks (so every Buy on Amazon click).
+# Bhargava asked for it; policies.html#privacy says so. Keep it inside the I18N:HEAD block (idempotent).
+GA_TAG = """<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MB6JX532"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>"""
+
 MENU_FONTS = ("https://fonts.googleapis.com/css2?family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Meetei+Mayek"
               "&text=" + "".join(sorted(set("ᱥᱟᱱᱛᱟᱲᱤꯃꯤꯇꯩꯂꯣꯟ"))) + "&display=swap")
 
@@ -333,7 +339,7 @@ def inject(page, current, alts, cta, same=None):
     own = current == "en" or LANG[current]["hreflang"]
     links = hreflang_links(alts if same is None else same) if own else ""
     links = f"\n  {links}" if links else ""
-    head = f'\n  <!-- I18N:HEAD -->{links}\n  <link href="{html.escape(MENU_FONTS)}" rel="stylesheet" />\n  <!-- /I18N:HEAD -->'
+    head = f'\n  <!-- I18N:HEAD -->\n  {GA_TAG}{links}\n  <link href="{html.escape(MENU_FONTS)}" rel="stylesheet" />\n  <!-- /I18N:HEAD -->'
     page = page.replace("</head>", head + "\n</head>", 1)
     menu = lang_menu(current, alts, cta)
     page, n = re.subn(r"<!--LANG-->.*?<!--/LANG-->|<!--LANG-->", f"<!--LANG-->{menu}<!--/LANG-->", page, count=1, flags=re.S)
