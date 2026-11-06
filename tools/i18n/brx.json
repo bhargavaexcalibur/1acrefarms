@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 खाजु, लुबैयोब्ला",
    "back": "10 cashews, if you wish"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "जोंनि पेकेट बायखोमा? Google आव जोंनि रिभिउ लिर",
+   "back": "Bought our packet? Write our review on Google"
   }
  }
 }

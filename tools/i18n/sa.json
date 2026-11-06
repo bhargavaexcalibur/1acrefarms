@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 काजूतकानि, ऐच्छिकम्",
    "back": "10 cashews, optional"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "अस्माकं पुटकानि क्रीतानि किम्? Google इत्यत्र अस्माकं समीक्षां लिखत",
+   "back": "Were our packets bought? Write our review on Google"
   }
  }
 }

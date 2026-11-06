@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 ಗೋಡಂಬಿ, ಬೇಕಿದ್ದರೆ",
    "back": "10 cashews, if desired"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "ನಮ್ಮ ಪ್ಯಾಕೆಟ್ ಕೊಂಡಿರಾ? Google ನಲ್ಲಿ ನಮಗೆ ರಿವ್ಯೂ ಕೊಡಿ",
+   "back": "Bought our packet? Give us a review on Google"
   }
  }
 }

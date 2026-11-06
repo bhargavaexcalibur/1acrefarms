@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 ਕਾਜੂ, ਵਿਕਲਪਿਕ",
    "back": "10 cashews, optional"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "ਸਾਡੇ ਪੈਕੇਟ ਖਰੀਦੇ? Google ਉੱਤੇ ਸਾਨੂੰ ਰਿਵਿਊ ਦਿਓ",
+   "back": "Bought our packets? Give us a review on Google"
   }
  }
 }

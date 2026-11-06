@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 முந்திரி, விருப்பப்பட்டால்",
    "back": "10 cashews, if desired"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "எங்கள் பாக்கெட்டுகளை வாங்கினீர்களா? Google-இல் எங்களுக்கு ரிவ்யூ எழுதுங்கள்",
+   "back": "Did you buy our packets? Write a review for us on Google"
   }
  }
 }

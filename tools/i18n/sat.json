@@ -8238,8 +8238,8 @@
   },
   "seg.c25e0610c714": {
    "src": "Melt the jaggery with 2 tbsp water on a low flame, then strain it through a fine sieve. This catches any grit or bits of cane from the block.",
-   "t": "ᱜᱩᱲ 2 ᱢᱟᱨᱟᱝ ᱪᱟᱢᱚᱪ ᱫᱟᱜ ᱥᱟᱶ ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱨᱮ ᱞᱤᱞᱤ ᱢᱮ, ᱛᱟᱭᱚᱢ ᱵᱟᱨᱤᱠ ᱪᱷᱟᱸᱠᱱᱤ ᱛᱮ ᱪᱷᱟᱸᱠ ᱢᱮ᱾ ᱱᱚᱶᱟ ᱛᱮ ᱜᱩᱲ ᱫᱤᱞᱟ ᱠᱷᱚᱱ ᱡᱟᱦᱟᱸ ᱦᱚᱸ ᱜᱤᱛᱤᱞ ᱥᱮ ᱟᱸᱠ ᱨᱮᱭᱟᱜ ᱴᱩᱠᱨᱟᱹ ᱠᱚ ᱛᱟᱦᱮᱸᱱᱟ᱾",
-   "back": ""
+   "t": "ᱜᱩᱲ ᱫᱚ 2 ᱢᱟᱨᱟᱝ ᱪᱟᱢᱩᱪ ᱫᱟᱜ ᱥᱟᱶᱛᱮ ᱦᱩᱰᱤᱧ ᱥᱮᱸᱜᱮᱞ ᱨᱮ ᱜᱟᱞᱟᱣ ᱢᱮ, ᱛᱟᱭᱚᱢ ᱢᱤᱦᱤᱱ ᱪᱟᱞᱱᱤ ᱛᱮ ᱪᱷᱟᱱ ᱢᱮ᱾ ᱪᱟᱞᱱᱤ ᱫᱚ ᱜᱩᱲ ᱰᱷᱮᱯᱟ ᱨᱮᱭᱟᱜ ᱡᱟᱦᱟᱱ ᱵᱟᱞᱤ ᱥᱮ ᱟᱜ ᱠᱩᱴᱤ ᱠᱚ ᱥᱟᱵ ᱠᱟᱛᱮ ᱚᱪᱚᱜ ᱜᱤᱰᱤᱭᱟ᱾",
+   "back": "Melt the jaggery with 2 big spoons of water on a small fire, then strain with a fine strainer. The strainer catches any sand or ag bits of the jaggery lump and removes them."
   },
   "seg.3eb20f2a7136": {
    "src": "Return it to the pan, add the coconut and cook on medium-low, stirring, until the mix leaves the sides of the pan and holds together, 12–15 minutes. Keep stirring so it does not catch at the bottom.",
@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 ᱠᱟᱡᱩ, ᱢᱚᱱ ᱞᱮᱠᱟᱛᱮ",
    "back": "10 cashews, as you like"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱯᱮᱠᱮᱴ ᱠᱤᱨᱤᱧᱟᱠᱟᱫᱟᱯᱮ? Google ᱨᱮ ᱟᱞᱮᱭᱟᱜ ᱨᱤᱵᱷᱤᱭᱩ ᱚᱞᱯᱮ",
+   "back": "Bought our packet? Write our review on Google"
   }
  }
 }

@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "ꯀꯥꯖꯨ 10, ꯄꯥꯝꯂꯕꯗꯤ",
    "back": "10 cashews, if wanted"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "ꯑꯩꯈꯣꯏꯒꯤ ꯄꯦꯀꯦꯠ ꯂꯩꯈ꯭ꯔꯕꯔꯥ? Google ꯗ ꯑꯩꯈꯣꯏꯒꯤ ꯔꯤꯚꯤꯎ ꯏꯕꯤꯌꯨ",
+   "back": "Got our packet? Write our review on Google"
   }
  }
 }

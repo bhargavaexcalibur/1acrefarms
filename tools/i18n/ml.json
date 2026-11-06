@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 കശുവണ്ടി, ഇഷ്ടമെങ്കിൽ",
    "back": "10 cashews, if desired"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "ഞങ്ങളുടെ പാക്കറ്റുകൾ വാങ്ങിയോ? Google-ൽ ഞങ്ങൾക്ക് റിവ്യൂ നൽകൂ",
+   "back": "Bought our packets? Give us a review on Google"
   }
  }
 }

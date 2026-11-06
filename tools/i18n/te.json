@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 జీడిపప్పులు, ఇష్టమైతే",
    "back": "10 cashews, if desired"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "మా ప్యాకెట్లు కొన్నారా? Google లో మాకు రివ్యూ ఇవ్వండి",
+   "back": "Bought our packets? Give us a review on Google"
   }
  }
 }

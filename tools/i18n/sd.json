@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10 ڪاجو، مرضيءَ موجب",
    "back": "10 cashews, as per wish"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "اسان جا پيڪيٽ خريد ڪيا؟ Google تي اسان جو ريويو ڏيو",
+   "back": "Bought our packets? Give our review on Google"
   }
  }
 }

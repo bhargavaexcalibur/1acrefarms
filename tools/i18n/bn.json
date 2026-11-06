@@ -8375,6 +8375,11 @@
    "src": "10 cashews, optional",
    "t": "10টি কাজু, ঐচ্ছিক",
    "back": "10 cashews, optional"
+  },
+  "ui.review": {
+   "src": "Bought our packs? Review us on Google",
+   "t": "আমাদের প্যাকেট কিনেছেন? Google-এ আমাদের রিভিউ দিন",
+   "back": "Bought our packet? Give our review on Google"
   }
  }
 }
