@@ -81,10 +81,12 @@ LANGS = [
 LANG = {c: dict(code=c, hreflang=h, native=n, english=en, font=f, dir=d) for c, h, n, en, f, d in LANGS}
 # The rare scripts in the menu itself, so their names render on phones without those fonts.
 # Google Analytics 4 (property 1acrefarms.co.in, Google tag GTM-MB6JX532 -> G-985D0EDL8E), set up 06-11-2026.
-# Enhanced measurement counts page views, scrolls and outbound clicks (so every Buy on Amazon click).
+# Enhanced measurement counts page views, scrolls and outbound clicks; the second script sends the key event
+# amazon_click (link_url = the Amazon listing, so the ASIN tells the pack) for every Buy on Amazon / store link.
 # Bhargava asked for it; policies.html#privacy says so. Keep it inside the I18N:HEAD block (idempotent).
 GA_TAG = """<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MB6JX532"></script>
-  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>"""
+  <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>
+  <script>document.addEventListener('click', function (e) { var a = e.target.closest && e.target.closest('a[href*="amazon.in"]'); if (a && window.gtag) gtag('event', 'amazon_click', { link_url: a.href, link_text: (a.textContent || '').trim().slice(0, 60) }); }, true);</script>"""
 
 MENU_FONTS = ("https://fonts.googleapis.com/css2?family=Noto+Sans+Ol+Chiki&family=Noto+Sans+Meetei+Mayek"
               "&text=" + "".join(sorted(set("ᱥᱟᱱᱛᱟᱲᱤꯃꯤꯇꯩꯂꯣꯟ"))) + "&display=swap")
