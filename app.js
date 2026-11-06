@@ -355,7 +355,11 @@ const SELLING_ONLY = true;
 const SOON_LIVE = Date.parse("2026-10-31T00:00:00+05:30");
 const soonLive = /[?&]soonpreview=1/.test(location.search) || Date.now() >= SOON_LIVE;
 if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") delete p.soon; });
-const sellable = (p) => p.live && !p.soon;
+// 06-11-2026: one of our seven Amazon packs shows on the home page only while it is buyable on Amazon.in
+// (AMAZON below, written by tools/build_pages.py from tools/amazon.json). The 31 Oct switch above had
+// marked chilli + cashew "In stock" here while their Amazon listings had no stock.
+const onAmazonNow = (p) => !PACK_PAGE[p.code] || Boolean(AMAZON[p.code]);
+const sellable = (p) => p.live && !p.soon && onAmazonNow(p);
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
 const AMAZON_STORE = "https://www.amazon.in/stores/page/50DF04FC-8BF5-4F2F-97C2-371C2DEB0A29";  // our Amazon.in store, for packs not buyable there yet
 const AMAZON = {"TURM": "B0HPX556NS", "KPAS": "B0HPWYG3KW", "CBEL": "B0HPXK9M5X", "TBEL": "B0HPX8DXT8"};  // buyable on Amazon.in; written by tools/build_pages.py
@@ -367,7 +371,7 @@ if (SELLING_ONLY) {
     Object.assign(spices, { chip: "Turmeric", title: "Turmeric, sun-dried and stone-ground",
       blurb: "Turmeric powders from Palnadu, Guntur and the Araku hills." });
 }
-if (soonLive) {
+if (soonLive && ["SANN", "TEJA", "CASH"].every((c) => AMAZON[c])) {  // only once chilli + cashew are on Amazon
   const badge = document.querySelector(".hero-photo-badge");
   if (badge) badge.innerHTML = "<strong>Our new packs</strong> Turmeric, jaggery, chilli powders &amp; cashew: all ready now.";
   const subSoon = document.querySelector(".hero-sub-soon");

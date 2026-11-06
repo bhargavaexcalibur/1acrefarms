@@ -25,13 +25,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 FILE = ROOT / "tools" / "amazon.json"
-UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36"
+UA = "1acrefarms-stock-check/1.0 (+https://1acrefarms.co.in; our own listings only)"  # honest name, no browser disguise (06-11-2026)
 
 
 def fetch(url):
-    # curl, not urllib: Amazon answers urllib with a robot check
+    # Plain curl under our own name. If Amazon answers with its robot page, the pack reads "unknown, kept"
+    # and the routines read it in a real browser instead (--set); we never disguise this script.
     for attempt in range(3):  # this Mac's Wi-Fi drops for ~30 s now and then
-        r = subprocess.run(["curl", "-s", "-L", "--max-time", "30", "-A", UA, "-H", "Accept-Language: en-IN,en;q=0.9", url],
+        r = subprocess.run(["curl", "-s", "-L", "--max-time", "30", "-A", UA, url],
                            capture_output=True, text=True, errors="replace")
         if r.returncode == 0 and r.stdout:
             return r.stdout
