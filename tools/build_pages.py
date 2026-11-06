@@ -341,6 +341,8 @@ HEADER = """  <header class="header" id="top">
       <ul class="nav-links">
         <li><a href="/#spices">Our Packs</a></li>
         <li><a href="/#story">Our Story</a></li>
+        <li class="nav-more"><a href="/recipes/">Recipes</a></li>
+        <li class="nav-more"><a href="/learn/">Guides</a></li>
       </ul>
       <!--LANG-->
       <a class="btn btn-green nav-shop" href="/#spices">Shop all packs</a>
@@ -350,6 +352,10 @@ HEADER = """  <header class="header" id="top">
 
 RECIPES_LINK = '        <a href="/recipes/">Recipes</a>'
 GUIDES_LINK = '        <a href="/learn/">Guides</a>'
+# Google review line in every footer (Bhargava 06-11-2026). Our Business Profile's own write-a-review link;
+# fixed wording, no stars/reward. build_i18n swaps in the translation (ui.review) or drops the line.
+REVIEW_URL = "https://g.page/r/CSwkMxt_n2McEAI/review"
+REVIEW_LINE = '    <p class="footer-review"><a href="https://g.page/r/CSwkMxt_n2McEAI/review" target="_blank" rel="noopener">Bought our packs? Review us on Google</a></p>\n'
 STORE_LINK = f'        <a href="{AMAZON_STORE}" target="_blank" rel="noopener">Our Amazon store</a>'
 
 
@@ -412,7 +418,7 @@ def footer(live):
         <a href="/policies.html#terms">Terms of sale</a>
       </div>
     </div>
-    <p class="footer-addr"><b>Head office:</b> Shop No. 7, Ground Floor, Ponnapati&rsquo;s Hi Street, near PWD Colony, opposite NSP Office, Narasaraopet, Palnadu District, Andhra Pradesh 522601<br><b>Packing unit:</b> Flat No. 202, Prudhvi Exotica, D.No. 13-1-375/7/A, Srinivasa Nagar 1st Line, Narasaraopet, Palnadu District, Andhra Pradesh 522601</p>
+{REVIEW_LINE}    <p class="footer-addr"><b>Head office:</b> Shop No. 7, Ground Floor, Ponnapati&rsquo;s Hi Street, near PWD Colony, opposite NSP Office, Narasaraopet, Palnadu District, Andhra Pradesh 522601<br><b>Packing unit:</b> Flat No. 202, Prudhvi Exotica, D.No. 13-1-375/7/A, Srinivasa Nagar 1st Line, Narasaraopet, Palnadu District, Andhra Pradesh 522601</p>
     <p class="footer-base">© {TODAY.year} 1acrefarms &middot; GSTIN 37BHKPR3386Q1Z8 &middot; FSSAI Reg. 20126161000590 &middot; Made in India</p>
   </footer>"""
 

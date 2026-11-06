@@ -119,6 +119,8 @@ UI = {
                   "Andhra Pradesh. Our packs are sold on Amazon.in.", "intro paragraph"),
     "ui.l_packs": ("Our packs", "heading above the packs"),
     "ui.see_pack": ("See the pack", "link on each pack card"),
+    "ui.review": ("Bought our packs? Review us on Google", "footer link to write a review of 1acrefarms on Google Maps; "
+                  "write 'Google' in Latin letters exactly; plain ask, no stars, no reward"),
 }
 PACK_FIELDS = {
     "name": "the product name in this language (the H1 and in lists); keep it short",
@@ -230,7 +232,7 @@ def pack_keys(p):
            [f"{k}.use{i}" for i in range(len(p["uses"]))]
 
 
-OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store"}  # newer strings: English is shown until translated
+OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review"}  # newer strings: English is shown until translated
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
 
@@ -407,7 +409,18 @@ def x(code, s):
 def header(t, code):
     return bp.HEADER.replace('href="/#spices">Our Packs</a>', f'href="/{code}/#packs">{x(code, t["ui.nav_packs"])}</a>') \
         .replace('<li><a href="/#story">Our Story</a></li>\n', "") \
-        .replace('href="/#spices">Shop all packs</a>', f'href="/{code}/#packs">{x(code, t["ui.shop_all"])}</a>')
+        .replace('href="/#spices">Shop all packs</a>', f'href="/{code}/#packs">{x(code, t["ui.shop_all"])}</a>') \
+        .replace('<a href="/recipes/">Recipes</a></li>', f'<a href="/{code}/recipes/">{x(code, t[ip.key_of("Recipes")])}</a></li>') \
+        .replace('<a href="/learn/">Guides</a></li>', f'<a href="/{code}/learn/">{x(code, t[ip.key_of("Guides")])}</a></li>')
+
+
+def review_line(page, t, code):
+    """The footer's Google review line in this language, or no line until its translation passes the back-check."""
+    if bp.REVIEW_LINE not in page:
+        return page
+    if "ui.review" not in t:
+        return page.replace(bp.REVIEW_LINE, "")
+    return page.replace(bp.REVIEW_LINE, bp.REVIEW_LINE.replace("Bought our packs? Review us on Google", x(code, t["ui.review"])))
 
 
 def translated_note(t, code):
@@ -686,7 +699,7 @@ def build(live):
         for url, body in pages.items():
             base = "/" if url == f"/{code}/" else url[len(code) + 1:]
             alts = alternates(base, versions.get(base, {}))
-            body = inject(localize(body, code, local), code, alts, cta)
+            body = inject(localize(review_line(body, t, code), code, local), code, alts, cta)
             out = ROOT / url.strip("/") / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(body, encoding="utf-8")

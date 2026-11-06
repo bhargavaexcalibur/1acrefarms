@@ -282,6 +282,10 @@ a.add-btn { display: block; text-align: center; text-decoration: none; }
 .footer-col h4 { color: #fff; font-weight: 600; font-size: 0.72rem; text-transform: uppercase; letter-spacing: .14em; margin-bottom: 16px; }
 .footer-col a { display: block; font-size: 0.9rem; color: #b6bea7; margin-bottom: 10px; transition: color .2s; }
 .footer-col a:hover { color: #fff; }
+.footer-review { text-align: center; margin: 36px auto 0; padding: 0 16px; font-size: 0.86rem; }
+.footer-review a { color: #c9cfba; text-decoration: underline; text-underline-offset: 3px; }
+.footer-review a:hover { color: #fff; }
+.footer-review + .footer-addr { margin-top: 18px; }
 .footer-addr { text-align: center; max-width: 62em; margin: 40px auto 0; padding: 0 16px; font-size: 0.8rem; line-height: 1.7; color: #9aa589; }
 .footer-addr b { color: #c9cfba; font-weight: 600; }
 .footer-addr + .footer-base { margin-top: 20px; }

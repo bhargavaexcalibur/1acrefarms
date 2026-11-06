@@ -703,6 +703,10 @@ def made_with(r):
         links = " or ".join(f'<a href="/{s}/">{PACK_BY_SLUG[s]["name"]}</a>' for s in r["also"])
         lead = "Sweeten it with" if all(PACK_BY_SLUG[s]["section"] == "jaggery" for s in r["also"]) else "Also good with"
         also = f'\n          <p class="rcp-also">{lead} {links}.</p>'
+        # 07-11-2026: a single buyable "also" pack gets the same Buy on Amazon link as the made-with cards, on its
+        # own line so the translated "Also good with" piece stays as it is ("Buy on Amazon" is already translated).
+        if len(r["also"]) == 1 and bp.amazon_link(PACK_BY_SLUG[r["also"][0]]):
+            also += f'\n          <p class="rcp-also rcp-also-buy"><span class="rcp-pack-links">{amazon(PACK_BY_SLUG[r["also"][0]])}</span></p>'
     # Buyer guides about these packs. The label is the guide's own eyebrow ("Guide · jaggery") and the link its
     # short name: both are already translated pieces, so the 22 language copies need no new strings.
     import build_guides as bg  # lazy: build_guides imports this module
