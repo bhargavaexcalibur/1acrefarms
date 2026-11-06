@@ -51,7 +51,7 @@ TURMERIC_USES = [
 JAGGERY_TIP = "If it sets hard, grate it."
 
 PACKS = [
-    dict(code="TURM", slug="turmeric-powder", section="spices", crumb="Turmeric",
+    dict(code="TURM", seo_en="Turmeric Powder (Pasupu, Haldi) 540 g", slug="turmeric-powder", section="spices", crumb="Turmeric",
          name="Turmeric Powder", local="Pasupu", te="పసుపు", hi="हल्दी", sa="हरिद्राचूर्णम्", hi_tr="Haldi",
          note="Farm-sourced · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
          pack="turmeric-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Turmeric (Curcuma longa).",
@@ -63,7 +63,7 @@ PACKS = [
          te_line="పల్నాడు, గుంటూరు పసుపు. ఎండలో ఆరబెట్టి, రాతి తిరగలిలో పట్టిన పొడి. నరసరావుపేటలో ప్యాక్ చేసినది.",
          hi_line="पलनाडु और गुंटूर की हल्दी, धूप में सुखाकर पत्थर की चक्की में पिसी। नरसरावपेट में पैक।",
          uses=TURMERIC_USES),
-    dict(code="KPAS", slug="hill-turmeric-powder", section="spices", crumb="Turmeric",
+    dict(code="KPAS", seo_en="Hill Turmeric Powder (Konda Pasupu)", slug="hill-turmeric-powder", section="spices", crumb="Turmeric",
          name="Hill Turmeric Powder", local="Konda Pasupu", te="కొండ పసుపు", hi="पहाड़ी हल्दी", sa="गिरिहरिद्राचूर्णम्", hi_tr="Pahadi Haldi",
          note="Whole hill turmeric fingers, packed as fine powder", origin="Araku &amp; Maredumilli hills",
          pack="hill-turmeric-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Turmeric (Curcuma longa).",
@@ -76,7 +76,7 @@ PACKS = [
          te_line="అరకు, మారేడుమిల్లి కొండల నుంచి కొండ పసుపు. కొండ పసుపు కొమ్ములను నరసరావుపేటలో మెత్తని పొడిగా ప్యాక్ చేస్తాం.",
          hi_line="अरकू और मारेडुमिल्ली की पहाड़ियों से पहाड़ी हल्दी। साबुत पहाड़ी हल्दी, नरसरावपेट में बारीक पाउडर के रूप में पैक।",
          uses=["Use it wherever you use turmeric: dal, sambar, curries and pulihora."] + TURMERIC_USES[1:]),
-    dict(code="SANN", slug="sannam-chilli-powder", section="spices", crumb="Chilli",
+    dict(code="SANN", seo_en="Sannam Chilli Powder 540 g", slug="sannam-chilli-powder", section="spices", crumb="Chilli",
          live_from=dt.date(2026, 10, 31),
          name="Sannam Chilli Powder", local="Sannam Kaaram", te="సన్నం కారం", hi="सन्नम मिर्च पाउडर", sa="सन्नम-रक्तमरिचचूर्णम्", hi_tr="Lal Mirch",
          note="Whole sun-dried chillies, packed as fine powder", origin="Grown in Palnadu &amp; Guntur",
@@ -91,7 +91,7 @@ PACKS = [
          hi_line="पलनाडु और गुंटूर में उगी सन्नम मिर्च। धूप में सूखी साबुत मिर्च, बारीक पाउडर के रूप में पैक।",
          uses=["Use in curries, chutneys, podis and pickles.", "Add it to hot oil on a low flame.",
                "Use a dry spoon and keep the zip shut after use."]),
-    dict(code="TEJA", slug="teja-chilli-powder", section="spices", crumb="Chilli",
+    dict(code="TEJA", seo_en="Teja Chilli Powder (Extra Hot) 540 g", slug="teja-chilli-powder", section="spices", crumb="Chilli",
          live_from=dt.date(2026, 10, 31),
          name="Teja Chilli Powder", local="Teja Kaaram", te="తేజ కారం", hi="तेजा मिर्च पाउडर", sa="तेजा-रक्तमरिचचूर्णम्", hi_tr="Lal Mirch",
          note="Extra hot · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
@@ -106,7 +106,7 @@ PACKS = [
          hi_line="पलनाडु और गुंटूर की तेजा मिर्च का पाउडर। बहुत तीखा। धूप में सुखाकर पत्थर की चक्की में पिसा।",
          uses=["A little goes a long way: start with less than you would of milder chilli powder.",
                "Use in curries, chutneys, podis and pickles.", "Use a dry spoon and keep the zip shut after use."]),
-    dict(code="CBEL", slug="cane-jaggery", section="jaggery", crumb="Jaggery",
+    dict(code="CBEL", seo_en="Cheruku Bellam (Cane Jaggery) 540 g", slug="cane-jaggery", section="jaggery", crumb="Jaggery",
          name="Cane Jaggery", local="Cheruku Bellam", te="చెరుకు బెల్లం", hi="गन्ने का गुड़", sa="इक्षुगुडः", hi_tr="Gud",
          note="Village desi · dark · slow-boiled", origin="Chittoor &amp; Anakapalli cane belts",
          pack="cane-jaggery-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Sugarcane jaggery.",
@@ -120,7 +120,7 @@ PACKS = [
          hi_line="चित्तूर और अनकापल्ली का गन्ने का गुड़। गहरे रंग का, धीमी आँच पर पकाया गाँव का गुड़। नरसरावपेट में पैक।",
          uses=["Sweeten payasam, pongal, chikki and laddu.", "Stir a little into tea, coffee or panakam.",
                JAGGERY_TIP]),
-    dict(code="TBEL", slug="palm-jaggery", section="jaggery", crumb="Jaggery",
+    dict(code="TBEL", seo_en="Thati Bellam (Palm Jaggery) 540 g", slug="palm-jaggery", section="jaggery", crumb="Jaggery",
          name="Palm Jaggery", local="Thati Bellam", te="తాటి బెల్లం", hi="ताड़ का गुड़", sa="तालगुडः", hi_tr="Taad Gud",
          note="Village desi · palmyra sap", origin="From the Godavari delta",
          pack="palm-jaggery-540g.jpg", by="packed", shelf=9, use_by=12, ingredients="Palmyra palm jaggery.",
@@ -132,7 +132,7 @@ PACKS = [
          te_line="గోదావరి డెల్టా నుంచి తాటి బెల్లం, తాటి నీరాతో చేసినది. నరసరావుపేటలో ప్యాక్ చేసినది.",
          hi_line="गोदावरी डेल्टा से ताड़ का गुड़, ताड़ के रस से बना। नरसरावपेट में पैक।",
          uses=["Make palm jaggery coffee or tea.", "Sweeten payasam, paramannam and sunnundalu.", JAGGERY_TIP]),
-    dict(code="CASH", slug="cashew-kernels", section="nuts", crumb="Nuts",
+    dict(code="CASH", seo_en="Jeedipappu (Cashew Kernels) 540 g", slug="cashew-kernels", section="nuts", crumb="Nuts",
          live_from=dt.date(2026, 10, 31),
          name="Cashew Kernels", local="Jeedipappu", te="జీడిపప్పు", hi="काजू", sa="काजूतकम्", hi_tr="Kaju",
          note="Whole kernels · plain · unsalted", origin="Chirala · Bapatla · Vizag coast",
@@ -176,6 +176,13 @@ def order_btn(p, buy_label="Buy on Amazon", store_label="Our Amazon store", lang
     if amazon_link(p):
         return amazon_btn(p, buy_label, lang)
     return f'\n          <a class="btn btn-primary" href="{AMAZON_STORE}" target="_blank" rel="noopener"{lang}>{store_label}</a>'
+
+
+def seo_title(p):
+    """The English pack page's <title> and og:title: Telugu, then Sanskrit, then English (Bhargava 05-11-2026:
+    "wherever there is Telugu there should be Sanskrit"; titles past 64 characters accepted on 06-11).
+    English pages only: the language pages keep their translated pack.<CODE>.title (p['title'])."""
+    return f"{p['te']} · {p['sa']} · {p['seo_en']} | 1acrefarms"
 
 
 def page_desc(p):
@@ -384,7 +391,7 @@ def footer(live):
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-name"><span class="one">1</span>acrefarms<span class="tm">™</span></span>
-        <p>Let the soil breathe again. Village desi turmeric and jaggery from Andhra Pradesh, packed in Narasaraopet.</p>
+        <p>Let the soil breathe again. Village desi turmeric, chilli, jaggery and cashew from Andhra Pradesh, packed in Narasaraopet.</p>
 {SOCIAL}
       </div>
       <div class="footer-col">
@@ -412,7 +419,7 @@ def footer(live):
 
 HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Telugu:wght@500;600&family=Noto+Sans+Devanagari:wght@500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,600&family=Noto+Sans+Telugu:wght@500;600&family=Noto+Sans+Devanagari:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />"""
 
@@ -443,13 +450,13 @@ def page(p, live, facts, guides=(), recipes=()):
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{p['title']}</title>
+  <title>{html.escape(seo_title(p), quote=False)}</title>
   <meta name="description" content="{html.escape(page_desc(p), quote=True)}" />
   <link rel="canonical" href="{url}" />
   <meta property="og:type" content="product" />
   <meta property="og:site_name" content="1acrefarms" />
   <meta property="og:url" content="{url}" />
-  <meta property="og:title" content="{p['name']} ({p['local']}) {p['g']} g · 1acrefarms" />
+  <meta property="og:title" content="{html.escape(seo_title(p), quote=True)}" />
   <meta property="og:description" content="{html.escape(page_desc(p), quote=True)}" />
   <meta property="og:image" content="{SITE}{img}" />
   <meta property="og:locale" content="en_IN" />
@@ -536,10 +543,60 @@ def page(p, live, facts, guides=(), recipes=()):
 </body>
 </html>
 """
-    for chunk in (p["title"], page_desc(p), p["lede"], p["note"], " ".join(p["uses"])):
+    for chunk in (p["title"], seo_title(p), page_desc(p), p["lede"], p["note"], " ".join(p["uses"])):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in {p['code']}: {BANNED.search(text_of(chunk)).group(0)!r}")
     return body
+
+
+# Sitemap <lastmod>: a URL's date changes only when its page body changes (tools/lastmod.json: url -> {hash, date}).
+# The hash skips what changes without the page changing: the footer year and the I18N head/menu/banner blocks
+# (GA tag, hreflang links, language menu). The same file keeps each recipe's datePublished (first git commit).
+LASTMOD_JSON = ROOT / "tools" / "lastmod.json"
+LASTMOD = json.loads(LASTMOD_JSON.read_text(encoding="utf-8")) if LASTMOD_JSON.exists() else {}
+LASTMOD.setdefault("urls", {})
+LASTMOD.setdefault("recipe_published", {})
+
+
+def save_lastmod():
+    LASTMOD_JSON.write_text(json.dumps(LASTMOD, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def page_file(url):
+    path = url[len(SITE):].lstrip("/")
+    return ROOT / (path + "index.html" if path == "" or path.endswith("/") else path)
+
+
+def body_hash(text):
+    import hashlib
+    text = re.sub(r"<!-- I18N:HEAD -->.*?<!-- /I18N:HEAD -->", "", text, flags=re.S)
+    text = re.sub(r"<!-- I18N:BANNER -->.*?<!-- /I18N:BANNER -->", "", text, flags=re.S)
+    text = re.sub(r"<!--LANG-->.*?<!--/LANG-->", "", text, flags=re.S)
+    text = re.sub(r"©\s*\d{4}", "©", text)
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:16]
+
+
+def lastmod(url):
+    """The day this URL's page body last changed (today for a new or changed page)."""
+    f = page_file(url)
+    if not f.exists():
+        return TODAY.isoformat()
+    h = body_hash(f.read_text(encoding="utf-8"))
+    row = LASTMOD["urls"].get(url)
+    if not row or row.get("hash") != h:
+        row = LASTMOD["urls"][url] = {"hash": h, "date": TODAY.isoformat()}
+    return row["date"]
+
+
+def git_first_date(*args):
+    """Date (YYYY-MM-DD) of the first commit matching `git log args`, or None."""
+    import subprocess
+    try:
+        out = subprocess.run(["git", "log", "--reverse", "--format=%ad", "--date=short", *args], cwd=ROOT,
+                             capture_output=True, text=True, timeout=30).stdout.split()
+    except (OSError, subprocess.SubprocessError):
+        return None
+    return out[0] if out else None
 
 
 def sitemap(live, extra=()):
@@ -550,7 +607,7 @@ def sitemap(live, extra=()):
     urls += [(f"{SITE}/policies.html", "monthly", "0.3")]
     rows = "\n".join(f"""  <url>
     <loc>{u}</loc>
-    <lastmod>{TODAY.isoformat()}</lastmod>
+    <lastmod>{lastmod(u)}</lastmod>
     <changefreq>{f}</changefreq>
     <priority>{pr}</priority>
   </url>""" for u, f, pr in urls)
@@ -583,9 +640,6 @@ def main():
         out.write_text(page(p, live, facts, build_guides.links_by_pack().get(p["slug"], ()),
                             build_recipes.links_by_pack().get(p["slug"], ())), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
-    extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows() + build_i18n.sitemap_rows(live)
-    (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
-    print("wrote sitemap.xml with", len(live) + 2 + len(extra), "urls")
     idx = ROOT / "index.html"
     src = idx.read_text(encoding="utf-8")
     new, n = re.subn(r"<!-- PACK-LINKS:START.*?PACK-LINKS:END -->", pack_links_block(live), src, flags=re.S)
@@ -603,7 +657,12 @@ def main():
     print("refreshed PACK-LINKS in index.html:", ", ".join(p["slug"] for p in live))
     build_recipes.build(live)
     build_guides.build(live)
-    build_i18n.build(live)  # last: adds the language menu + hreflang to every page above
+    build_i18n.build(live)  # adds the language menu + hreflang to every page above
+    # sitemap last: each URL's lastmod comes from its finished page (see lastmod())
+    extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows() + build_i18n.sitemap_rows(live)
+    (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
+    save_lastmod()
+    print("wrote sitemap.xml with", len(live) + 2 + len(extra), "urls")
 
 
 if __name__ == "__main__":

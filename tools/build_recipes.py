@@ -637,6 +637,18 @@ def crumbs_ld(*links):
     }
 
 
+def published(r):
+    """First git commit of the recipe (tools/recipes/<slug>.json, or its entry in this file), kept in
+    tools/lastmod.json so it never moves."""
+    known = bp.LASTMOD["recipe_published"]
+    if r["slug"] not in known:
+        f = MORE / f"{r['slug']}.json"
+        d = (bp.git_first_date("--diff-filter=A", "--", str(f.relative_to(ROOT))) if f.exists() else
+             bp.git_first_date("-S", f'slug="{r["slug"]}"', "--", "tools/build_recipes.py"))
+        known[r["slug"]] = d or bp.TODAY.isoformat()
+    return known[r["slug"]]
+
+
 def recipe_ld(r, url):
     prep, cook, total = r["times"]
     names = [r["gloss"], r["te"], r["hi"], r["sa"], r["te_tr"], r["hi_tr"]] + r["alt"]
@@ -648,6 +660,7 @@ def recipe_ld(r, url):
         "description": r["intro"][0],
         "image": [f"{SITE}/assets/recipes/{r['slug']}.png"],
         "author": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms", "url": f"{SITE}/"},
+        "datePublished": published(r),
         "recipeCuisine": "Andhra / Telugu",
         "recipeCategory": r["category"],
         "keywords": r["keywords"],
@@ -690,6 +703,13 @@ def made_with(r):
         links = " or ".join(f'<a href="/{s}/">{PACK_BY_SLUG[s]["name"]}</a>' for s in r["also"])
         lead = "Sweeten it with" if all(PACK_BY_SLUG[s]["section"] == "jaggery" for s in r["also"]) else "Also good with"
         also = f'\n          <p class="rcp-also">{lead} {links}.</p>'
+    # Buyer guides about these packs. The label is the guide's own eyebrow ("Guide · jaggery") and the link its
+    # short name: both are already translated pieces, so the 22 language copies need no new strings.
+    import build_guides as bg  # lazy: build_guides imports this module
+    eyebrow = {f"/learn/{g['slug']}/": g["eyebrow"] for g in bg.GUIDES}
+    guides = dict(gl for s in r["packs"] for gl in bg.links_by_pack().get(s, ()))
+    also += "".join(f'\n          <p class="rcp-also rcp-guide"><span>{e(eyebrow[u])}</span> <a href="{u}">{e(n)}</a></p>'
+                    for u, n in guides.items())
     return f"""        <div class="rcp-made">
           <p class="eyebrow">Made with</p>
 {chr(10).join(cards)}{also}
@@ -915,6 +935,7 @@ def build(live):
         if missing:
             sys.exit(f"{r['slug']} links to packs that are not live: {missing}")
         r["_w"], r["_h"] = refresh_image(r)
+        published(r)
     pages = {ROOT / "recipes" / "index.html": hub_page(live)}
     for r in RECIPES:
         pages[ROOT / "recipes" / r["slug"] / "index.html"] = recipe_page(r, live)
@@ -923,6 +944,7 @@ def build(live):
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(body, encoding="utf-8")
         print("wrote", path.relative_to(ROOT))
+    bp.save_lastmod()  # keeps new recipes' datePublished
 
 
 def main():

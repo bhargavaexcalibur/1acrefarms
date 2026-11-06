@@ -105,8 +105,10 @@ img { max-width: 100%; display: block; }
 .hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(120% 90% at 50% -20%, rgba(223,174,85,.10), transparent 60%); pointer-events: none; }
 .hero-inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; position: relative; z-index: 1; }
 .hero .eyebrow { color: var(--gold-light); }
-.hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: 20px; font-weight: 600; letter-spacing: -0.035em; color: var(--cream); }
-.hero h1 em { color: var(--gold-light); }
+/* Home H1 names the products in the small eyebrow style; the motto keeps the old heading look (05-11-2026). */
+h1.eyebrow { line-height: inherit; }
+.hero .hero-motto { font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: 20px; font-weight: 600; line-height: 1.12; letter-spacing: -0.035em; color: var(--cream); }
+.hero .hero-motto em { color: var(--gold-light); }
 .hero-sub { font-size: 1.02rem; color: var(--cream-muted); max-width: 30em; margin-bottom: 28px; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
 .hero-badges { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -354,7 +356,7 @@ a.add-btn { display: block; text-align: center; text-decoration: none; }
   .nav { height: 58px; }
   .logo-mark { width: 33px; height: 33px; }
   .brand { gap: 8px; }
-  .hero h1 { font-size: 2rem; }
+  .hero .hero-motto { font-size: 2rem; }
   .hero-sub { font-size: 0.95rem; margin-bottom: 22px; }
   .hero { padding: 34px 0 40px; }
   .hero-photo-badge { left: 8px; bottom: 14px; padding: 10px 14px; font-size: 0.72rem; }
@@ -580,6 +582,8 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .pdp-guide { margin-top: 16px; font-size: 0.9rem; }
 .pdp-guide span { display: block; font-size: 0.62rem; text-transform: uppercase; letter-spacing: .14em; font-weight: 600; color: var(--gold); }
 .pdp-guide a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
+.rcp-guide span { display: block; font-size: 0.62rem; text-transform: uppercase; letter-spacing: .14em; font-weight: 600; color: var(--gold); }
+.rcp-also + .rcp-guide { border-top: 0; padding-top: 4px; }
 @media (max-width: 900px) {
   .gd-body .rcp-aside { margin-top: 28px; }
   .gd-results { grid-template-columns: 1fr; }
@@ -624,9 +628,9 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .lang-banner a { color: var(--cream); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .lang-banner button { background: transparent; border: 0; color: var(--cream); font-size: 1.5rem; line-height: 1; cursor: pointer; padding: 2px 6px; }
 .i18n-home { padding: 36px 0 6px; }
-.i18n-home h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); font-family: "Inter", system-ui, sans-serif; }
-.i18n-home h1 .one { color: var(--orange); }
-.i18n-home h1 .tm { font-size: 0.4em; vertical-align: super; color: var(--ink-faint); }
+.i18n-wordmark { font-size: clamp(2.2rem, 6vw, 3.2rem); font-family: "Inter", system-ui, sans-serif; font-weight: 600; line-height: 1.12; letter-spacing: -0.02em; color: var(--ink); }
+.i18n-wordmark .one { color: var(--orange); }
+.i18n-wordmark .tm { font-size: 0.4em; vertical-align: super; color: var(--ink-faint); }
 .i18n-motto { font-style: italic; color: var(--green); margin: 2px 0 18px; }
 .i18n-order-note { margin-top: 10px; font-size: 0.8rem; color: var(--ink-faint); }
 .i18n-legal-note { margin: -6px 0 10px; font-size: 0.78rem; color: var(--ink-faint); }

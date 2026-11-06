@@ -199,6 +199,7 @@ GUIDES = [
         desc="చెరుకు బెల్లం, తాటి బెల్లం తేడా. Cane jaggery (cheruku bellam) vs palm jaggery (thati bellam): "
              "what each is made from, how they differ, which to use, and how to store them.",
         published="2026-10-31",
+        modified="2026-11-07",  # Sanskrit names beside the Telugu heading
         tile_line="What each is made from, how they taste, and which to use where. With a Telugu section.",
         intro=[
             "Bellam in a Telugu kitchen usually means one of two things: cheruku bellam, made from sugarcane "
@@ -259,7 +260,7 @@ GUIDES = [
               <li>If it sets hard, grate it.</li>
               <li>Use it within the best-before date on the pack.</li>
             </ul>"""),
-            ("telugu", "తెలుగులో: చెరుకు బెల్లం, తాటి బెల్లం", """            <div class="gd-te" lang="te">
+            ("telugu", "తెలుగులో: చెరుకు బెల్లం (इक्षुगुडः), తాటి బెల్లం (तालगुडः)", """            <div class="gd-te" lang="te">
               <p>చెరుకు బెల్లాన్ని చెరుకు రసాన్ని మరిగించి చేస్తారు. తాటి బెల్లాన్ని తాటి నీరాను మరిగించి చేస్తారు. FSSAI ఈ రెండింటికీ వేర్వేరు ప్రమాణాలు పెట్టింది: చెరుకు బెల్లంలో తేమ 7% వరకు, తాటి బెల్లంలో 10% వరకు ఉండొచ్చు.</p>
               <p>రుచిలో కూడా తేడా ఉంటుంది. చెరుకు బెల్లం తీపి తేలికగా, పాకం రుచితో ఉంటుంది. తాటి బెల్లం రంగు ముదురుగా, రుచి లోతుగా, కొంచెం పొగ రుచితో ఉంటుంది.</p>
               <ul class="rcp-bullets">
@@ -325,7 +326,7 @@ def article_ld(g, url):
         "image": [f"{SITE}/assets/og-image.jpg"],
         "inLanguage": "en-IN",
         "datePublished": g["published"],
-        "dateModified": bp.TODAY.isoformat(),
+        "dateModified": g.get("modified", g["published"]),  # set "modified" when the guide's own data changes
         "author": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms", "url": f"{SITE}/"},
         "publisher": {"@id": f"{SITE}/#business"},
         "mainEntityOfPage": url,

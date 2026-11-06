@@ -343,7 +343,10 @@ def inject(page, current, alts, cta, same=None):
     own = current == "en" or LANG[current]["hreflang"]
     links = hreflang_links(alts if same is None else same) if own else ""
     links = f"\n  {links}" if links else ""
-    head = f'\n  <!-- I18N:HEAD -->\n  {GA_TAG}{links}\n  <link href="{html.escape(MENU_FONTS)}" rel="stylesheet" />\n  <!-- /I18N:HEAD -->'
+    # The menu font loads without blocking the page (print -> all once loaded); <noscript> for no-JS visitors.
+    font = html.escape(MENU_FONTS)
+    head = (f'\n  <!-- I18N:HEAD -->\n  {GA_TAG}{links}\n  <link href="{font}" rel="stylesheet" media="print" onload="this.media=\'all\'" />'
+            f'\n  <noscript><link href="{font}" rel="stylesheet" /></noscript>\n  <!-- /I18N:HEAD -->')
     page = page.replace("</head>", head + "\n</head>", 1)
     menu = lang_menu(current, alts, cta)
     page, n = re.subn(r"<!--LANG-->.*?<!--/LANG-->|<!--LANG-->", f"<!--LANG-->{menu}<!--/LANG-->", page, count=1, flags=re.S)
@@ -353,6 +356,12 @@ def inject(page, current, alts, cta, same=None):
 
 
 # ---------- language pages ----------
+
+def og_locale(code):
+    """og:locale line for a language with an ISO 639-1 code (te_IN, hi_IN ...); none for the others."""
+    h = LANG[code]["hreflang"]
+    return f'\n  <meta property="og:locale" content="{h}_IN" />' if h else ""
+
 
 def head(code, title, desc, url, og_type, og_image, ld):
     L = LANG[code]
@@ -370,7 +379,7 @@ def head(code, title, desc, url, og_type, og_image, ld):
   <meta property="og:url" content="{SITE}{url}" />
   <meta property="og:title" content="{e(title)}" />
   <meta property="og:description" content="{e(desc)}" />
-  <meta property="og:image" content="{og_image}" />
+  <meta property="og:image" content="{og_image}" />{og_locale(code)}
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json">
 {ld}
@@ -540,8 +549,8 @@ def home_page(code, t, packs, pages=()):
 
   <main class="container">
     <section class="i18n-home">
-      <p class="eyebrow">{x(code, t['ui.l_eyebrow'])}</p>
-      <h1><span class="one">1</span>acrefarms<span class="tm">™</span></h1>
+      <h1 class="eyebrow">{x(code, t['ui.l_title'])}</h1>
+      <p class="i18n-wordmark"><span class="one">1</span>acrefarms<span class="tm">™</span></p>
       <p class="i18n-motto" lang="en">Let the soil breathe again.</p>
       <p class="pdp-lede">{x(code, t['ui.l_lede'])}</p>
     </section>
@@ -586,7 +595,7 @@ def content_page(code, t, base, english):
     L = LANG[code]
     page = ip.translate(clean(english), lambda s: t[ip.key_of(s)], lambda s: x(code, s))
     page = page.replace('<html lang="en-IN">', f'<html lang="{code}" dir="{L["dir"]}">', 1)
-    page = page.replace('\n  <meta property="og:locale" content="en_IN" />', "", 1)
+    page = page.replace('\n  <meta property="og:locale" content="en_IN" />', og_locale(code), 1)
     page = page.replace('"inLanguage": "en-IN"', f'"inLanguage": "{code}"')
     page = page.replace('<link rel="stylesheet" href="/styles.css" />',
                         f'<link href="https://fonts.googleapis.com/css2?family={L["font"][1]}&display=swap" rel="stylesheet" />\n'
