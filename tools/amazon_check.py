@@ -8,6 +8,12 @@ keeps the last known answer, so one bad fetch never removes a button.
 
 Run from the repo root, then rebuild:
   python3 tools/amazon_check.py && python3 tools/build_pages.py
+
+Amazon often answers curl with its robot check (every curl check from 02-11 to 06-11-2026 got it, so
+"unknown, kept"). Never try to get around that page. Read the pack's state yourself instead, from our
+Seller Central inventory or the public listing open in a real browser ("In stock" + Add to Cart =
+buyable; "Currently unavailable" = unavailable). Then record it:
+  python3 tools/amazon_check.py --set TURM=buyable SANN=unavailable
 """
 import json
 import re
@@ -48,8 +54,29 @@ def state(page):
     return "add-to-cart-button" in page
 
 
+def set_from_browser(doc, args):
+    """--set CODE=buyable|unavailable: a reading made in a real browser or in Seller Central."""
+    changed = False
+    for arg in args:
+        code, _, val = arg.partition("=")
+        if code not in doc["packs"] or val not in ("buyable", "unavailable"):
+            raise SystemExit(f"bad --set value {arg!r}: use CODE=buyable or CODE=unavailable, CODE one of {', '.join(doc['packs'])}")
+        row, now = doc["packs"][code], val == "buyable"
+        changed |= row.get("buyable") != now
+        row.update(buyable=now, checked=date.today().isoformat(), source="browser")
+        print(f"{code} {row['asin']}: {val} (browser reading)")
+    return changed
+
+
 def main():
     doc = json.loads(FILE.read_text(encoding="utf-8"))
+    if sys.argv[1:2] == ["--set"]:
+        if not sys.argv[2:]:
+            raise SystemExit("--set needs at least one CODE=buyable|unavailable")
+        changed = set_from_browser(doc, sys.argv[2:])
+        FILE.write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8")
+        print("changed" if changed else "no change")
+        return 0
     changed = False
     for code, row in doc["packs"].items():
         now = state(fetch(f"https://www.amazon.in/dp/{row['asin']}"))
@@ -59,6 +86,7 @@ def main():
             changed |= row.get("buyable") != now
             row["buyable"] = now
             row["checked"] = date.today().isoformat()
+            row["source"] = "curl"
     FILE.write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8")
     print("changed" if changed else "no change")
     return 0

@@ -3,38 +3,45 @@
  "packs": {
   "TURM": {
    "asin": "B0HPX556NS",
-   "buyable": false,
-   "checked": "2026-11-02"
+   "buyable": true,
+   "checked": "2026-11-06",
+   "source": "browser"
   },
   "KPAS": {
    "asin": "B0HPWYG3KW",
    "buyable": true,
-   "checked": "2026-11-02"
+   "checked": "2026-11-06",
+   "source": "browser"
   },
   "SANN": {
    "asin": "B0HPY66QPX",
    "buyable": false,
-   "checked": "2026-11-02"
+   "checked": "2026-11-06",
+   "source": "browser"
   },
   "TEJA": {
    "asin": "B0HPXYLWDC",
    "buyable": false,
-   "checked": "2026-11-02"
+   "checked": "2026-11-06",
+   "source": "browser"
   },
   "CBEL": {
    "asin": "B0HPXK9M5X",
    "buyable": true,
-   "checked": "2026-11-02"
+   "checked": "2026-11-06",
+   "source": "browser"
   },
   "TBEL": {
    "asin": "B0HPX8DXT8",
    "buyable": true,
-   "checked": "2026-11-02"
+   "checked": "2026-11-06",
+   "source": "browser"
   },
   "CASH": {
    "asin": "B0HPY39Q6V",
    "buyable": false,
-   "checked": "2026-11-02"
+   "checked": "2026-11-06",
+   "source": "browser"
   }
  }
 }
