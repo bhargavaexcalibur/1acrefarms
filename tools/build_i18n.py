@@ -430,11 +430,12 @@ def translated_note(t, code):
 
 def pack_card(code, t, p):
     k = f"pack.{p['code']}"
+    # 08-11-2026: no price on the site until the pack is buyable on Amazon.in (bp.shows_price)
+    po_price = f"\n          <span class=\"po-price\">MRP ₹{p['mrp']} · {p['g']} g</span>" if bp.shows_price(p) else ""
     return f"""        <a class="pdp-other" href="/{code}/{p['slug']}/">
           <img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" loading="lazy" />
           <span class="po-name">{x(code, t[k + '.name'])}</span>
-          <span class="po-te" lang="en">{p['name']}</span>
-          <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
+          <span class="po-te" lang="en">{p['name']}</span>{po_price}
         </a>"""
 
 
@@ -469,7 +470,13 @@ def pack_page(code, t, p, packs, facts):
     storage = f"<dt>Storage</dt><dd>{row['storage']}</dd>" if row.get("storage") else ""
     others = "\n".join(pack_card(code, t, q) for q in packs if q is not p)
     # Built from strings that are already translated (the lede and the MRP), so no ordering talk is needed here.
-    desc = f"{t[k + '.lede']} {p['g']} g · MRP ₹{p['mrp']}"
+    desc = f"{t[k + '.lede']} {p['g']} g" + (f" · MRP ₹{p['mrp']}" if bp.shows_price(p) else "")
+    price = f"""
+        <div class="price-row">
+          <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
+          <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
+        </div>
+        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>""" if bp.shows_price(p) else ""
     return head(code, t[k + ".title"], desc, url, "product", f"{SITE}/assets/packs/{p['pack']}",
                 json.dumps(ld, ensure_ascii=False, indent=2)) + f"""
 <body class="pdp-page i18n-page">
@@ -480,18 +487,13 @@ def pack_page(code, t, p, packs, facts):
 
     <section class="pdp">
       <div class="pdp-media">
-        <div class="pack-media"><img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" /></div>
+        <div class="pack-media"><img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" /></div>{bp.youtube_link(f"pack-{p['slug']}-{code}")}
       </div>
       <div class="pdp-info">
         <p class="eyebrow">{x(code, t[k + '.origin'])}</p>
         <h1>{x(code, t[k + '.name'])}</h1>
         <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
-        <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>
-        <div class="price-row">
-          <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
-          <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
-        </div>
-        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>
+        <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}
         <div class="pdp-actions" id="order">{order_btn(code, t, p)}
         </div>
         <ul class="pdp-facts">

@@ -354,8 +354,7 @@ def our_packs(g):
             <a href="/{p['slug']}/"><img src="/assets/packs/{p['pack']}" alt="{p['name']} {p['g']} g pack" width="800" height="1122" loading="lazy" /></a>
             <div>
               <a class="po-name" href="/{p['slug']}/">{p['name']}</a>
-              <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>
-              <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
+              <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>{br.po_price(p)}
               <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a></span>
             </div>
           </div>""")

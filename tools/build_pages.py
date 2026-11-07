@@ -164,6 +164,11 @@ def amazon_link(p):
     return f"https://www.amazon.in/dp/{row['asin']}" if row.get("buyable") else None
 
 
+# 08-11-2026: no price on the site until the pack is buyable on Amazon.in
+def shows_price(p):
+    return bool(amazon_link(p))
+
+
 def amazon_btn(p, label, lang=""):
     """The first button on a pack page while the pack is buyable on Amazon; label is already escaped."""
     a = amazon_link(p)
@@ -187,7 +192,8 @@ def seo_title(p):
 
 def page_desc(p):
     """Meta description: plain facts, plus where to order only while the pack is buyable on Amazon.in."""
-    return p["desc"] + (" Order on Amazon.in." if amazon_link(p) else "")
+    desc = p["desc"] if shows_price(p) else re.sub(r"\s*MRP ₹[\d,]+ incl\. of all taxes\.", "", p["desc"])
+    return desc + (" Order on Amazon.in." if amazon_link(p) else "")
 
 
 def is_live(p):
@@ -430,6 +436,11 @@ HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />"""
 
 
+def po_price(q):
+    """The MRP line of an "other packs" tile, only while that pack is buyable on Amazon.in."""
+    return f"\n          <span class=\"po-price\">MRP ₹{q['mrp']} · {q['g']} g</span>" if shows_price(q) else ""
+
+
 def page(p, live, facts, guides=(), recipes=()):
     """guides: [(url, name)] of buyer guides about this pack (build_guides.links_by_pack())."""
     url = f"{SITE}/{p['slug']}/"
@@ -438,8 +449,7 @@ def page(p, live, facts, guides=(), recipes=()):
     others_html = "\n".join(f"""        <a class="pdp-other" href="/{q['slug']}/">
           <img src="/assets/packs/{q['pack']}" alt="{q['name']} {q['g']} g pack" width="800" height="1122" loading="lazy" />
           <span class="po-name">{q['name']}</span>
-          <span class="po-te"><span lang="te">{q['te']}</span> · <span lang="sa">{q['sa']}</span> · {q['local']}</span>
-          <span class="po-price">MRP ₹{q['mrp']} · {q['g']} g</span>
+          <span class="po-te"><span lang="te">{q['te']}</span> · <span lang="sa">{q['sa']}</span> · {q['local']}</span>{po_price(q)}
         </a>""" for q in others)
     uses = "\n".join(f"          <li>{u}</li>" for u in p["uses"])
     guide_links = "".join(f'\n        <p class="pdp-guide"><span>Guide</span><a href="{u}">{n}</a></p>' for u, n in guides)
@@ -451,6 +461,12 @@ def page(p, live, facts, guides=(), recipes=()):
     facts_row = facts.get(p["code"], {})
     storage = f"<dt>Storage</dt><dd>{facts_row['storage']}</dd>" if facts_row.get("storage") else ""
     per_g = f"₹{p['mrp'] / p['g']:.2f} per g"
+    price_block = f"""
+        <div class="price-row">
+          <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
+          <span class="upp">{p['g']} g · {per_g}</span>
+        </div>
+        <p class="tax">Incl. of all taxes</p>""" if shows_price(p) else ""
     body = f"""<!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -487,12 +503,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <p class="eyebrow">{p['origin']}</p>
         <h1>{p['name']} <span class="pdp-local">({p['local']})</span></h1>
         <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
-        <p class="pdp-lede">{p['lede']}</p>
-        <div class="price-row">
-          <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
-          <span class="upp">{p['g']} g · {per_g}</span>
-        </div>
-        <p class="tax">Incl. of all taxes</p>
+        <p class="pdp-lede">{p['lede']}</p>{price_block}
         <div class="pdp-actions" id="order">{order_btn(p)}
         </div>
         <ul class="pdp-facts">

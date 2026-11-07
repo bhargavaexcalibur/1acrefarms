@@ -687,6 +687,11 @@ def faq_ld(r, url):
     }
 
 
+def po_price(p):
+    """08-11-2026: the MRP line only while the pack is buyable on Amazon.in (bp.shows_price)."""
+    return f"\n              <span class=\"po-price\">MRP ₹{p['mrp']} · {p['g']} g</span>" if bp.shows_price(p) else ""
+
+
 def made_with(r):
     cards = []
     for slug in r["packs"]:
@@ -695,8 +700,7 @@ def made_with(r):
             <a href="/{p['slug']}/"><img src="/assets/packs/{p['pack']}" alt="{p['name']} {p['g']} g pack" width="800" height="1122" loading="lazy" /></a>
             <div>
               <a class="po-name" href="/{p['slug']}/">{p['name']}</a>
-              <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>
-              <span class="po-price">MRP ₹{p['mrp']} · {p['g']} g</span>
+              <span class="po-te"><span lang="te">{p['te']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']}</span>{po_price(p)}
               <span class="rcp-pack-links">{amazon(p)}<a href="/{p['slug']}/">See the pack</a></span>
             </div>
           </div>""")
