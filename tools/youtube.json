@@ -2,7 +2,8 @@
  "channel": "https://www.youtube.com/@1acrefarms",
  "videos": {
   "jaggery-unit": {
-   "short": "https://youtube.com/shorts/51bRBKuzs9k"
+   "short": "https://youtube.com/shorts/51bRBKuzs9k",
+   "video": "https://youtu.be/JN9nS0qO15c"
   },
   "pack-cane-jaggery": {
    "video": "https://youtu.be/UWq1FocBXRg",
@@ -23,13 +24,31 @@
    "video": "https://youtu.be/y3ou02pzkmA"
   },
   "recipe-chimmili": {
-   "short": "https://youtube.com/shorts/8DR6c4sEN58"
+   "short": "https://youtube.com/shorts/8DR6c4sEN58",
+   "video": "https://youtu.be/UO86DWPHPj8"
   },
   "pack-turmeric-powder": {
-   "video": "https://youtu.be/pzvQQjL_8m4"
+   "video": "https://youtu.be/pzvQQjL_8m4",
+   "short": "https://youtube.com/shorts/0HlW1M1uBL4"
   },
   "pack-turmeric-powder-te": {
-   "video": "https://youtu.be/WCtaTqTvAFM"
+   "video": "https://youtu.be/WCtaTqTvAFM",
+   "short": "https://youtube.com/shorts/hLvexLh8Z5c"
+  },
+  "pack-hill-turmeric-powder-te": {
+   "video": "https://youtu.be/_wXoqvI_-is"
+  },
+  "recipe-chimmili-hi": {
+   "video": "https://youtu.be/JBTs_luJ130"
+  },
+  "recipe-palm-jaggery-coffee-sa": {
+   "video": "https://youtu.be/ZfcYKQaOaEM"
+  },
+  "recipe-ragi-java": {
+   "video": "https://youtu.be/RGWy6P6fdgI"
+  },
+  "recipe-sunnundalu": {
+   "video": "https://youtu.be/X1XO84ceTyo"
   }
  }
 }
