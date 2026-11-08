@@ -18,10 +18,12 @@
    "short": "https://youtube.com/shorts/QkPFlTtg6RI"
   },
   "recipe-palm-jaggery-coffee": {
-   "video": "https://youtu.be/qbjCfovwKBc"
+   "video": "https://youtu.be/qbjCfovwKBc",
+   "short": "https://youtube.com/shorts/kUbRD-dJXWk"
   },
   "recipe-paramannam": {
-   "video": "https://youtu.be/y3ou02pzkmA"
+   "video": "https://youtu.be/y3ou02pzkmA",
+   "short": "https://youtube.com/shorts/K1fAlL_sM2E"
   },
   "recipe-chimmili": {
    "short": "https://youtube.com/shorts/8DR6c4sEN58",
@@ -49,6 +51,18 @@
   },
   "recipe-sunnundalu": {
    "video": "https://youtu.be/X1XO84ceTyo"
+  },
+  "pack-turmeric-powder-hi": {
+   "video": "https://youtu.be/JXhHkM-WgW0"
+  },
+  "pack-turmeric-powder-sa": {
+   "video": "https://youtu.be/yaH7MHLcJyA"
+  },
+  "recipe-pasupu-paalu": {
+   "video": "https://youtu.be/5Q7-bC68p68"
+  },
+  "recipe-pasupu-paalu-te": {
+   "video": "https://youtu.be/CxmvFLx9yWk"
   }
  }
 }
