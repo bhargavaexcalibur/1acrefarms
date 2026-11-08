@@ -8380,6 +8380,796 @@
    "src": "Bought our packs? Review us on Google",
    "t": "ଆମ ପ୍ୟାକେଟ କିଣିଛନ୍ତି? Google ରେ ଆମକୁ ରିଭ୍ୟୁ ଦିଅନ୍ତୁ",
    "back": "Bought our packet? Give us a review on Google"
+  },
+  "seg.13ab70df1ad4": {
+   "src": "How to check chilli powder at home",
+   "t": "ଘରେ ଲଙ୍କା ଗୁଣ୍ଡ କିପରି ଯାଞ୍ଚ କରିବେ",
+   "back": "How to check chilli powder at home"
+  },
+  "seg.4dff3a175ddd": {
+   "src": "Guide · chilli powder",
+   "t": "ଗାଇଡ୍ · ଲଙ୍କା ଗୁଣ୍ଡ",
+   "back": "Guide · Chilli powder"
+  },
+  "seg.27f1af0437bd": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · କାରମ · ଲାଲ ମିର୍ଚ",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Karam · Lal mirch"
+  },
+  "seg.1841c397898f": {
+   "src": "FSSAI's standard says chilli powder must be dry and free from dirt, added colouring matter, flavouring matter and mineral oil. Its testing manual has methods for finding brick powder, added starch, added colour, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAIର ମାନକ କହେ ଯେ ଲଙ୍କା ଗୁଣ୍ଡ ଶୁଖିଲା ହେବା ଉଚିତ, ଆଉ ସେଥିରେ ମଇଳା, ମିଶାଯାଇଥିବା ରଙ୍ଗ ପଦାର୍ଥ, ମିଶାଯାଇଥିବା ସୁଗନ୍ଧ ପଦାର୍ଥ ଓ ଖଣିଜ ତେଲ ରହିବା ଉଚିତ ନୁହେଁ। ଏହାର ପରୀକ୍ଷା ପୁସ୍ତିକାରେ ଇଟା ଗୁଣ୍ଡ, ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚ, ମିଶାଯାଇଥିବା ରଙ୍ଗ, ତେଲରେ ମିଳେଇଯାଉଥିବା ରଙ୍ଗ, ଆଉ ସୁଡାନ III ଓ ରୋଡାମିନ B ରଙ୍ଗ ଖୋଜିବାର ପଦ୍ଧତି ଅଛି।",
+   "back": "The FSSAI standard says that chilli powder should be dry, and it should not contain dirt, added colouring matter, added flavouring [or: aroma] matter and mineral oil. Its testing booklet has methods for finding brick powder, added starch, added colour, oil-soluble colour, and Sudan III and Rhodamine B colours."
+  },
+  "seg.a0af610174e4": {
+   "src": "Some of this you can check in your kitchen with a glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can find. This guide covers both. Try the checks on any chilli powder you buy.",
+   "t": "ଏଥିରୁ କିଛି ଆପଣ ରୋଷେଇଘରେ ଏକ ଗ୍ଲାସ ପାଣି, ଆପଣଙ୍କ ଆଙ୍ଗୁଠି ଓ କିଛି ଟୋପା ଆୟୋଡିନରେ ଯାଞ୍ଚ କରିପାରିବେ। କିଛି, ଯେପରି ସୁଡାନ ରଙ୍ଗ, କେବଳ ଲ୍ୟାବ ହିଁ ଧରିପାରେ। ଏହି ଗାଇଡ୍ ଦୁଇଟିକୁ ଦେଖାଏ। ଆପଣ କିଣୁଥିବା ଯେକୌଣସି ଲଙ୍କା ଗୁଣ୍ଡରେ ଏହି ଯାଞ୍ଚ କରି ଦେଖନ୍ତୁ।",
+   "back": "Some of this you can check in the kitchen with a glass of water, your finger and a few drops of iodine. Some, like Sudan colour, only a lab can catch. This guide shows both. Try these checks on any chilli powder you buy."
+  },
+  "seg.5bf2055f3057": {
+   "src": "Sannam Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "ସନ୍ନମ ଲଙ୍କା ଗୁଣ୍ଡ⟦#1⟧⟦#2⟧",
+   "back": "Sannam chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.f5224d4b1cca": {
+   "src": "Teja Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "ତେଜା ଲଙ୍କା ଗୁଣ୍ଡ⟦#1⟧⟦#2⟧",
+   "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.b356a193952e": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+   "t": "⟦1⟧ଆମର ଦୁଇଟି ଲଙ୍କା ଗୁଣ୍ଡ⟦/1⟧ବାମରେ: ସନ୍ନମ ଲଙ୍କା ଗୁଣ୍ଡ। ଡାହାଣରେ: ତେଜା ଲଙ୍କା ଗୁଣ୍ଡ। ଦୁଇଟି ପଲ୍ନାଡୁ ଓ ଗୁଣ୍ଟୁରରେ ଚାଷ ହୋଇଥିବା ଲଙ୍କାରୁ, ଖରାରେ ଶୁଖାଯାଇ ନରସରାଓପେଟରେ ପ୍ୟାକ୍ କରାଯାଇଛି।",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both are from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet."
+  },
+  "seg.a574ced14407": {
+   "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
+   "t": "ଏକ ଗ୍ଲାସ ପାଣି ଉପରେ ଏକ ଚା ଚାମଚ ଲଙ୍କା ଗୁଣ୍ଡ ଛିଞ୍ଚନ୍ତୁ, ଘାଣ୍ଟନ୍ତୁ ନାହିଁ। ସଙ୍ଗେ ସଙ୍ଗେ ରଙ୍ଗ ଧାର ତଳକୁ ବହିଲେ ରଙ୍ଗ ମିଶାଯାଇଥାଇପାରେ, ଆଉ ଗୁଣ୍ଡ ବୁଡ଼ିବା ପରେ ବି ଖଣ୍ଡ ଭାସୁଥିଲେ କାଠ ଗୁଣ୍ଡ ବା ଚୋକଡ଼ ଥାଇପାରେ। ତଳେ ଜମିଥିବା ଗୁଣ୍ଡକୁ ଘଷନ୍ତୁ: କିଚିକିଚି ଲାଗିଲେ ଇଟା ଗୁଣ୍ଡ ବା ବାଲି ଥାଇପାରେ, ସାବୁନ ପରି ଲାଗିଲେ ସୋପଷ୍ଟୋନ। ଆୟୋଡିନରେ ଗୁଣ୍ଡ ନୀଳ ହେଲେ ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚ ଥାଇପାରେ। ସୁଡାନ I ପରି ରଙ୍ଗ ପାଣିରେ ଦେଖାଯାଏ ନାହିଁ; ସେଗୁଡ଼ିକ ପାଇଁ ଲ୍ୟାବ ବ୍ୟବହାର କରନ୍ତୁ।",
+   "back": "Sprinkle one teaspoon of chilli powder on top of a glass of water, do not stir. If streaks of colour flow down immediately, colour may have been added, and if pieces still float after the powder sinks, there may be sawdust [lit. wood powder] or bran [or: husk]. Rub the powder settled at the bottom: if it feels gritty, there may be brick powder or sand; if it feels like soap, soapstone. If the powder turns blue with iodine, there may be added starch. Dyes like Sudan I do not show in water; use a lab for those."
+  },
+  "seg.11caa5f871e4": {
+   "src": "What FSSAI checks chilli powder for",
+   "t": "FSSAI ଲଙ୍କା ଗୁଣ୍ଡରେ କଣ ଯାଞ୍ଚ କରେ",
+   "back": "What FSSAI checks in chilli powder"
+  },
+  "seg.87f56e160312": {
+   "src": "Added colour",
+   "t": "ମିଶାଯାଇଥିବା ରଙ୍ଗ",
+   "back": "Added colour"
+  },
+  "seg.7d346e39c41e": {
+   "src": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for colours that dissolve in water, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAIର ଲଙ୍କା ଗୁଣ୍ଡ ମାନକ ମିଶାଯାଇଥିବା ରଙ୍ଗ ପଦାର୍ଥକୁ ଅନୁମତି ଦିଏ ନାହିଁ। FSSAIର ପରୀକ୍ଷା ପାଣିରେ ମିଳେଇଯାଉଥିବା ରଙ୍ଗ, ତେଲରେ ମିଳେଇଯାଉଥିବା ରଙ୍ଗ, ଆଉ ସୁଡାନ III ଓ ରୋଡାମିନ B ରଙ୍ଗ ଖୋଜେ।",
+   "back": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's test looks for water-soluble colours, oil-soluble colours, and Sudan III and Rhodamine B colours."
+  },
+  "seg.7f79f4c5fcd6": {
+   "src": "Sudan dyes",
+   "t": "ସୁଡାନ ରଙ୍ଗ",
+   "back": "Sudan dyes [or: colours]"
+  },
+  "seg.dab0f1b06607": {
+   "src": "Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian Standard on quick tests for adulterants says Sudan III, much used in wax polishes, has been used to make chilli pods shine, and so finds its way into chilli powder.",
+   "t": "ସୁଡାନ I ତେଲ, ଚର୍ବି, ମହମ, ଆଉ ଜୋତା ଓ ଚଟାଣ ପାଲିସ୍ ରଙ୍ଗ କରିବାରେ ବ୍ୟବହାର ହୁଏ। ଭେଜାଲ ପାଇଁ ଶୀଘ୍ର ପରୀକ୍ଷା ବିଷୟରେ ଭାରତୀୟ ମାନକ କହେ ଯେ ମହମ ପାଲିସରେ ବହୁତ ବ୍ୟବହୃତ ସୁଡାନ III ଗୋଟା ଲଙ୍କାକୁ ଚକଚକ କରିବାରେ ବ୍ୟବହାର ହୋଇଛି, ଆଉ ଏହିପରି ଲଙ୍କା ଗୁଣ୍ଡରେ ପହଞ୍ଚେ।",
+   "back": "Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian standard on quick tests for detecting adulteration says that Sudan III, widely used in wax polish, has been used to make whole chillies shiny, and this is how it gets into chilli powder."
+  },
+  "seg.65d2132b3a71": {
+   "src": "Brick powder, sand, salt, talc and soapstone",
+   "t": "ଇଟା ଗୁଣ୍ଡ, ବାଲି, ଲୁଣ, ଟାଲ୍କ ଓ ସୋପଷ୍ଟୋନ",
+   "back": "Brick powder, sand, salt, talc and soapstone"
+  },
+  "seg.eaaa28049f76": {
+   "src": "FSSAI's household tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase bulk.",
+   "t": "FSSAIର ଘରୋଇ ପରୀକ୍ଷା ଲଙ୍କା ଗୁଣ୍ଡ ପାଇଁ ଏଗୁଡ଼ିକର ତାଲିକା ଦିଏ। ଭାରତୀୟ ମାନକ କହେ ଯେ ପରିମାଣ ବଢ଼ାଇବା ପାଇଁ ଇଟା ଗୁଣ୍ଡ ମିଶାଯାଏ।",
+   "back": "FSSAI's home test lists these for chilli powder. The Indian standard says brick powder is added to increase the quantity [or: bulk]."
+  },
+  "seg.e159a2e5efb2": {
+   "src": "Starch",
+   "t": "ଷ୍ଟାର୍ଚ୍ଚ",
+   "back": "Starch"
+  },
+  "seg.591f55c64be8": {
+   "src": "FSSAI's manual tests powdered spices other than turmeric for added starch. The Indian Standard notes that colour is also added to chilli powder to hide added starch.",
+   "t": "FSSAIର ପୁସ୍ତିକା ହଳଦୀ ଛଡ଼ା ଅନ୍ୟ ଗୁଣ୍ଡ ମସଲାରେ ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚ ପାଇଁ ପରୀକ୍ଷା କରେ। ଭାରତୀୟ ମାନକ ଲେଖେ ଯେ ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚକୁ ଲୁଚାଇବା ପାଇଁ ଲଙ୍କା ଗୁଣ୍ଡରେ ରଙ୍ଗ ମଧ୍ୟ ମିଶାଯାଏ।",
+   "back": "FSSAI's booklet tests for added starch in powdered spices other than turmeric. The Indian standard writes that colour is also added to chilli powder to hide added starch."
+  },
+  "seg.77e497cd9160": {
+   "src": "Sawdust and bran",
+   "t": "କାଠ ଗୁଣ୍ଡ ଓ ଚୋକଡ଼",
+   "back": "Sawdust and husk [or: bran]"
+  },
+  "seg.6cdabb4ac9cc": {
+   "src": "Both float on water, which is how FSSAI's household tests spot them.",
+   "t": "ଦୁଇଟି ପାଣିରେ ଭାସେ, ଆଉ FSSAIର ଘରୋଇ ପରୀକ୍ଷା ଏହିପରି ସେଗୁଡ଼ିକୁ ଚିହ୍ନେ।",
+   "back": "Both float in water, and this is how FSSAI's home test catches [or: identifies] them."
+  },
+  "seg.2ad2a1900226": {
+   "src": "Check 1: the water glass and the rub test",
+   "t": "ଯାଞ୍ଚ 1: ପାଣି ଗ୍ଲାସ ଓ ଘଷା ପରୀକ୍ଷା",
+   "back": "Check 1: Water glass and rub test"
+  },
+  "seg.5ebb4d43f1c6": {
+   "src": "Sprinkle one teaspoon of chilli powder on top. Do not stir.",
+   "t": "ଉପରେ ଏକ ଚା ଚାମଚ ଲଙ୍କା ଗୁଣ୍ଡ ଛିଞ୍ଚନ୍ତୁ। ଘାଣ୍ଟନ୍ତୁ ନାହିଁ।",
+   "back": "Sprinkle a teaspoon of chilli powder on top. Do not stir."
+  },
+  "seg.e11be0844965": {
+   "src": "Watch the first minute. Look for coloured streaks running down from the powder.",
+   "t": "ପ୍ରଥମ ମିନିଟଟି ଦେଖନ୍ତୁ। ଗୁଣ୍ଡରୁ ତଳକୁ ବହୁଥିବା ରଙ୍ଗୀନ ଧାର ଖୋଜନ୍ତୁ।",
+   "back": "Watch the first minute. Look for coloured streaks flowing down from the powder."
+  },
+  "seg.14ad43586f91": {
+   "src": "Leave it until most of the powder has sunk. Look at the surface for bits still floating.",
+   "t": "ଅଧିକାଂଶ ଗୁଣ୍ଡ ବୁଡ଼ିବା ଯାଏ ଛାଡ଼ି ଦିଅନ୍ତୁ। ଉପରେ ଏବେ ବି ଭାସୁଥିବା ଖଣ୍ଡ ଅଛି କି ନାହିଁ ଦେଖନ୍ତୁ।",
+   "back": "Leave it until most of the powder has sunk. See whether bits are still floating on top."
+  },
+  "seg.379262f468f1": {
+   "src": "Pour off most of the water and rub the sediment at the bottom between your fingers.",
+   "t": "ଅଧିକାଂଶ ପାଣି ଢାଳି ଦିଅନ୍ତୁ ଆଉ ତଳେ ଜମିଥିବା ଗୁଣ୍ଡକୁ ଆଙ୍ଗୁଠି ମଝିରେ ଘଷନ୍ତୁ।",
+   "back": "Pour off most of the water and rub the sediment at the bottom between your fingers."
+  },
+  "seg.7455fbe1d38d": {
+   "src": "What you see or feel",
+   "t": "ଆପଣ ଯାହା ଦେଖନ୍ତି ବା ଅନୁଭବ କରନ୍ତି",
+   "back": "What you see or feel"
+  },
+  "seg.5ddc9ed4a863": {
+   "src": "What it can point to",
+   "t": "ଏହାର ଅର୍ଥ କଣ ହୋଇପାରେ",
+   "back": "What this may mean"
+  },
+  "seg.9d20132af7ae": {
+   "src": "Colour streaks running down at once",
+   "t": "ସଙ୍ଗେ ସଙ୍ଗେ ତଳକୁ ବହୁଥିବା ରଙ୍ଗ ଧାର",
+   "back": "Colour streaks going down immediately"
+  },
+  "seg.4dd6d7d4418f": {
+   "src": "Added colour that dissolves in water",
+   "t": "ପାଣିରେ ମିଳେଇଯାଉଥିବା ମିଶାଯାଇଥିବା ରଙ୍ଗ",
+   "back": "Added colour that dissolves in water"
+  },
+  "seg.99d03e1725f4": {
+   "src": "Bits still floating after the powder sinks",
+   "t": "ଗୁଣ୍ଡ ବୁଡ଼ିବା ପରେ ବି ଭାସୁଥିବା ଖଣ୍ଡ",
+   "back": "Bits still floating after the powder sinks"
+  },
+  "seg.909cfed7ea11": {
+   "src": "Sawdust or bran",
+   "t": "କାଠ ଗୁଣ୍ଡ ବା ଚୋକଡ଼",
+   "back": "Sawdust or husk [or: bran]"
+  },
+  "seg.f211ed47d57c": {
+   "src": "Sediment that feels gritty",
+   "t": "ତଳେ ଜମିଥିବା ଗୁଣ୍ଡ କିଚିକିଚି ଲାଗେ",
+   "back": "The sediment feels gritty"
+  },
+  "seg.6b3ebad45f08": {
+   "src": "Brick powder or sand",
+   "t": "ଇଟା ଗୁଣ୍ଡ ବା ବାଲି",
+   "back": "Brick powder or sand"
+  },
+  "seg.0778aeb79734": {
+   "src": "White sediment that feels soapy and smooth",
+   "t": "ଧଳା ଜମା ଗୁଣ୍ଡ, ସାବୁନ ପରି ଚିକ୍କଣ ଲାଗେ",
+   "back": "White sediment, feels smooth like soap"
+  },
+  "seg.08846b1820d9": {
+   "src": "Soapstone",
+   "t": "ସୋପଷ୍ଟୋନ",
+   "back": "Soapstone"
+  },
+  "seg.175ed947e347": {
+   "src": "None of these",
+   "t": "ଏଗୁଡ଼ିକ ମଧ୍ୟରୁ କିଛି ନୁହେଁ",
+   "back": "None of these"
+  },
+  "seg.92ba3085667d": {
+   "src": "No sign of what this check can find.",
+   "t": "ଏହି ଯାଞ୍ଚ ଯାହା ଧରିପାରେ, ତାହାର କୌଣସି ଚିହ୍ନ ନାହିଁ।",
+   "back": "No sign of what this test can catch."
+  },
+  "seg.3cf82af49b09": {
+   "src": "Any one of these",
+   "t": "ଏଗୁଡ଼ିକ ମଧ୍ୟରୁ ଯେକୌଣସି ଗୋଟିଏ",
+   "back": "Any one of these"
+  },
+  "seg.e4f5d2924afa": {
+   "src": "Possible adulteration. Stop using that batch and get it tested.",
+   "t": "ଭେଜାଲ ଥାଇପାରେ। ସେହି ବ୍ୟାଚ ବ୍ୟବହାର ବନ୍ଦ କରନ୍ତୁ ଓ ପରୀକ୍ଷା କରାନ୍ତୁ।",
+   "back": "May be adulterated. Stop using that batch and get it tested."
+  },
+  "seg.e5e493d4cb12": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Colours that dissolve in water leave the powder and run down as streaks. Brick powder is heavy and settles to the bottom, while sawdust and bran float.",
+   "t": "⟦1⟧ଏହା କାହିଁକି କାମ କରେ।⟦/1⟧ ପାଣିରେ ମିଳେଇଯାଉଥିବା ରଙ୍ଗ ଗୁଣ୍ଡରୁ ବାହାରି ଧାର ହୋଇ ତଳକୁ ବହେ। ଇଟା ଗୁଣ୍ଡ ଭାରି, ତେଣୁ ତଳେ ବସିଯାଏ, ଆଉ କାଠ ଗୁଣ୍ଡ ଓ ଚୋକଡ଼ ଭାସେ।",
+   "back": "⟦1⟧Why it works.⟦/1⟧ Water-soluble colour leaves the powder and goes down as streaks. Brick powder is heavy, so it settles at the bottom, and sawdust and husk float."
+  },
+  "seg.551c97147aa3": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Dyes that do not dissolve in water stay in the powder. Sudan I is one: it does not dissolve in water, and it is used to colour oils, fats and waxes. Chilli powder coloured with such dyes can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧ଏହା କଣ ଧରିପାରେ ନାହିଁ।⟦/1⟧ ପାଣିରେ ମିଳେଇ ନଥିବା ରଙ୍ଗ ଗୁଣ୍ଡ ଭିତରେ ହିଁ ରହିଯାଏ। ସୁଡାନ I ସେହିପରି ଗୋଟିଏ: ଏହା ପାଣିରେ ମିଳେଇ ନାହିଁ, ଆଉ ତେଲ, ଚର୍ବି ଓ ମହମ ରଙ୍ଗ କରିବାରେ ବ୍ୟବହାର ହୁଏ। ଏପରି ରଙ୍ଗରେ ରଙ୍ଗ କରାଯାଇଥିବା ଲଙ୍କା ଗୁଣ୍ଡ ଏହି ଯାଞ୍ଚରେ ପାସ୍ କରିପାରେ। କେବଳ ଲ୍ୟାବ ପରୀକ୍ଷା ହିଁ ସେଗୁଡ଼ିକ ଅଛି କି ନାହିଁ କହିପାରେ।",
+   "back": "⟦1⟧What this cannot catch.⟦/1⟧ A dye that does not dissolve in water stays inside the powder itself. Sudan I is one such: it has not dissolved [or: does not dissolve] in water, and is used for colouring oil, fat and wax. Chilli powder coloured with such a dye can pass this check. Only a lab test can tell whether they are present or not."
+  },
+  "seg.5bbec3bc6fbf": {
+   "src": "Wash your hands after the rub test, before you touch your eyes.",
+   "t": "ଘଷା ପରୀକ୍ଷା ପରେ, ଆଖି ଛୁଇଁବା ଆଗରୁ, ହାତ ଧୋଇ ନିଅନ୍ତୁ।",
+   "back": "After the rub test, before touching your eyes, wash your hands."
+  },
+  "seg.36726998b551": {
+   "src": "Check 2: the iodine test for starch",
+   "t": "ଯାଞ୍ଚ 2: ଷ୍ଟାର୍ଚ୍ଚ ପାଇଁ ଆୟୋଡିନ ପରୀକ୍ଷା",
+   "back": "Check 2: Iodine test for starch"
+  },
+  "seg.3d76d0b2a476": {
+   "src": "FSSAI's manual uses the iodine test for powdered spices other than turmeric, so chilli powder can take it. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is left out.",
+   "t": "FSSAIର ପୁସ୍ତିକା ଆୟୋଡିନ ପରୀକ୍ଷାକୁ ହଳଦୀ ଛଡ଼ା ଅନ୍ୟ ଗୁଣ୍ଡ ମସଲା ପାଇଁ ବ୍ୟବହାର କରେ, ତେଣୁ ଲଙ୍କା ଗୁଣ୍ଡରେ ଏହା କରାଯାଇପାରେ। ହଳଦୀକୁ କାହିଁକି ବାଦ ଦିଆଯାଇଛି, ତାହା ⟦1⟧ଆମ ହଳଦୀ ଗାଇଡ୍⟦/1⟧ ବୁଝାଏ।",
+   "back": "FSSAI's booklet uses the iodine test for powdered spices other than turmeric, so it can be done on chilli powder. Why turmeric has been left out, ⟦1⟧our turmeric guide⟦/1⟧ explains."
+  },
+  "seg.c7d23b036696": {
+   "src": "Put half a teaspoon of chilli powder on a white saucer.",
+   "t": "ଏକ ଧଳା ପ୍ଲେଟରେ ଅଧ ଚା ଚାମଚ ଲଙ୍କା ଗୁଣ୍ଡ ରଖନ୍ତୁ।",
+   "back": "Put half a teaspoon of chilli powder on a white plate."
+  },
+  "seg.9b2fb67a0f9a": {
+   "src": "Add a few drops of tincture of iodine from a chemist.",
+   "t": "କେମିଷ୍ଟ ଦୋକାନରୁ ଆଣିଥିବା ଟିଞ୍ଚର ଆୟୋଡିନର କିଛି ଟୋପା ପକାନ୍ତୁ।",
+   "back": "Add a few drops of tincture of iodine brought from a chemist's shop."
+  },
+  "seg.2d93dfc80312": {
+   "src": "Look at the colour where the drops land.",
+   "t": "ଟୋପା ଯେଉଁଠି ପଡ଼ିଛି, ସେଠାକାର ରଙ୍ଗ ଦେଖନ୍ତୁ।",
+   "back": "Look at the colour where the drops have fallen."
+  },
+  "seg.c698ff17efbf": {
+   "src": "Throw that powder away afterwards.",
+   "t": "ପରେ ସେହି ଗୁଣ୍ଡକୁ ଫିଙ୍ଗି ଦିଅନ୍ତୁ।",
+   "back": "Afterwards, throw that powder away."
+  },
+  "seg.25bf59d68c4e": {
+   "src": "No blue colour",
+   "t": "ନୀଳ ରଙ୍ଗ ନାହିଁ",
+   "back": "No blue colour"
+  },
+  "seg.2f88b779aa2b": {
+   "src": "No sign of added starch.",
+   "t": "ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚର କୌଣସି ଚିହ୍ନ ନାହିଁ।",
+   "back": "No sign of added starch."
+  },
+  "seg.ac80a4934254": {
+   "src": "A blue colour",
+   "t": "ନୀଳ ରଙ୍ଗ",
+   "back": "Blue colour"
+  },
+  "seg.0db85a4ff58c": {
+   "src": "Points to added starch. Stop using that batch and get it tested. On red powder a faint change is hard to judge, so if you are not sure, let a lab decide.",
+   "t": "ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚ ଥାଇପାରେ। ସେହି ବ୍ୟାଚ ବ୍ୟବହାର ବନ୍ଦ କରନ୍ତୁ ଓ ପରୀକ୍ଷା କରାନ୍ତୁ। ନାଲି ଗୁଣ୍ଡ ଉପରେ ହାଲୁକା ବଦଳ ବୁଝିବା କଷ୍ଟ, ତେଣୁ ନିଶ୍ଚିତ ନ ହେଲେ ଲ୍ୟାବକୁ ସ୍ଥିର କରିବାକୁ ଦିଅନ୍ତୁ।",
+   "back": "There may be added starch. Stop using that batch and get it tested. A slight change on red powder is hard to make out, so if you are not sure, let the lab decide."
+  },
+  "seg.ed4a959013d8": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Iodine turns blue when it meets starch.",
+   "t": "⟦1⟧ଏହା କାହିଁକି କାମ କରେ।⟦/1⟧ ଆୟୋଡିନ ଷ୍ଟାର୍ଚ୍ଚ ସଂସ୍ପର୍ଶରେ ଆସିଲେ ନୀଳ ହୋଇଯାଏ।",
+   "back": "⟦1⟧Why it works.⟦/1⟧ Iodine turns blue when it comes into contact with starch."
+  },
+  "seg.5adf326d0b8f": {
+   "src": "Leave these to a lab",
+   "t": "ଏଗୁଡ଼ିକ ଲ୍ୟାବ ପାଇଁ ଛାଡ଼ି ଦିଅନ୍ତୁ",
+   "back": "Leave these for the lab"
+  },
+  "seg.9e0f62706054": {
+   "src": "Acid and solvent tests at home",
+   "t": "ଘରେ ଏସିଡ୍ ଓ ଦ୍ରାବକ ପରୀକ୍ଷା",
+   "back": "Acid and solvent tests at home"
+  },
+  "seg.f5e28e97055b": {
+   "src": "The methods in FSSAI's manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. The acids can cause burns, and several of the solvents catch fire easily. They belong in a lab, not a kitchen.",
+   "t": "ଲଙ୍କା ଗୁଣ୍ଡରେ ଇଟା ଗୁଣ୍ଡ, ମିଶାଯାଇଥିବା ରଙ୍ଗ, ତେଲରେ ମିଳେଇଯାଉଥିବା ରଙ୍ଗ, ସୁଡାନ III ଓ ରୋଡାମିନ B ପାଇଁ FSSAIର ପୁସ୍ତିକାର ପଦ୍ଧତିରେ କଡ଼ା ଏସିଡ୍ ଆଉ କ୍ଲୋରୋଫର୍ମ, ପେଟ୍ରୋଲିୟମ ଇଥର, ହେକ୍ସେନ ଓ ଏସିଟୋନ ପରି ଦ୍ରାବକ ବ୍ୟବହାର ହୁଏ। ଏସିଡ୍ ପୋଡ଼ିଦେଇପାରେ, ଆଉ କେତେକ ଦ୍ରାବକରେ ସହଜରେ ନିଆଁ ଲାଗେ। ଏଗୁଡ଼ିକର ସ୍ଥାନ ଲ୍ୟାବରେ, ରୋଷେଇଘରେ ନୁହେଁ।",
+   "back": "The FSSAI booklet's methods for brick powder, added colour, oil-soluble colour, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. Acid can burn, and some solvents catch fire easily. Their place is in a lab, not in the kitchen."
+  },
+  "seg.1e30ce9ef855": {
+   "src": "For a sure answer, send a sample to a NABL-accredited food testing lab. Ask it to test for added colours, including Sudan dyes, and against FSSAI's chilli powder standard. Its limits include moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%, all by weight, with both ash limits on a dry basis. Keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack.",
+   "t": "ନିଶ୍ଚିତ ଉତ୍ତର ପାଇଁ, NABL ମାନ୍ୟତାପ୍ରାପ୍ତ ଖାଦ୍ୟ ପରୀକ୍ଷା ଲ୍ୟାବକୁ ନମୁନା ପଠାନ୍ତୁ। ସୁଡାନ ରଙ୍ଗ ସମେତ ମିଶାଯାଇଥିବା ରଙ୍ଗ ପାଇଁ, ଆଉ FSSAIର ଲଙ୍କା ଗୁଣ୍ଡ ମାନକ ଅନୁସାରେ ପରୀକ୍ଷା କରିବାକୁ କୁହନ୍ତୁ। ଏହାର ସୀମା ମଧ୍ୟରେ ଅଛି: ଆର୍ଦ୍ରତା ସର୍ବାଧିକ 11%, ମୋଟ ପାଉଁଶ ସର୍ବାଧିକ 8%, ଆଉ ପତଳା ହାଇଡ୍ରୋକ୍ଲୋରିକ ଏସିଡରେ ମିଳେଇ ନଥିବା ପାଉଁଶ ସର୍ବାଧିକ 1.3%, ସବୁ ଓଜନ ହିସାବରେ, ଆଉ ପାଉଁଶର ଦୁଇଟି ସୀମା ଶୁଖିଲା ଓଜନ ହିସାବରେ। ଗୁଣ୍ଡକୁ ତାର ସିଲ୍ ହୋଇଥିବା ପ୍ୟାକେଟରେ ବା ଏକ ସଫା ସିଲ୍ ବ୍ୟାଗରେ ରଖନ୍ତୁ, ଆଉ ପ୍ୟାକେଟରେ ଛପା ବ୍ୟାଚ ନମ୍ବର ଲେଖି ରଖନ୍ତୁ।",
+   "back": "For a certain [or: definite] answer, send a sample to an NABL-recognised food testing lab. Ask them to test for added colour including Sudan colour, and according to FSSAI's chilli powder standard. Within its limits are: moisture at most 11%, total ash at most 8%, and ash insoluble in dilute hydrochloric acid at most 1.3%, all by weight, and both ash limits on a dry-weight basis. Keep the powder in its sealed packet or a clean sealed bag, and note down the batch number printed on the packet."
+  },
+  "seg.8ef59aeeebe4": {
+   "src": "An FSSAI licence or registration number.",
+   "t": "ଏକ FSSAI ଲାଇସେନ୍ସ ବା ପଞ୍ଜୀକରଣ ନମ୍ବର।",
+   "back": "An FSSAI licence or registration number."
+  },
+  "seg.f90b0f258a47": {
+   "src": "Net quantity, a batch or lot number, and a best-before date.",
+   "t": "ନିଟ୍ ପରିମାଣ, ବ୍ୟାଚ ବା ଲଟ୍ ନମ୍ବର, ଆଉ ବେଷ୍ଟ-ବିଫୋର ତାରିଖ।",
+   "back": "Net quantity, batch or lot number, and best-before date."
+  },
+  "seg.fa3907160dbb": {
+   "src": "The ingredients. FSSAI allows up to 2% edible vegetable oil by weight in chilli powder, but only if the label says which oil and how much.",
+   "t": "ଉପାଦାନ। FSSAI ଲଙ୍କା ଗୁଣ୍ଡରେ ଓଜନ ହିସାବରେ ସର୍ବାଧିକ 2% ଖାଇବା ଯୋଗ୍ୟ ଉଦ୍ଭିଜ୍ଜ ତେଲ ଅନୁମତି ଦିଏ, କିନ୍ତୁ କେବଳ ଯଦି ଲେବେଲରେ କେଉଁ ତେଲ ଓ କେତେ ତାହା ଲେଖାଥାଏ।",
+   "back": "Ingredients. FSSAI allows at most 2% edible vegetable oil by weight in chilli powder, but only if the label states which oil and how much."
+  },
+  "seg.616cb55edf33": {
+   "src": "Where it was grown, and the chilli variety if named. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur.",
+   "t": "ଏହା କେଉଁଠି ଚାଷ ହୋଇଛି, ଆଉ ଲଙ୍କା କିସମର ନାମ ଥିଲେ ତାହା ମଧ୍ୟ। ଆମ ⟦1⟧ସନ୍ନମ⟦/1⟧ ଓ ⟦2⟧ତେଜା⟦/2⟧ ପ୍ୟାକେଟରେ ପଲ୍ନାଡୁ ଓ ଗୁଣ୍ଟୁର ଲେଖାଅଛି।",
+   "back": "Where it was grown, and the chilli variety name if there is one. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur."
+  },
+  "seg.5766b566dbba": {
+   "src": "Use a dry spoon, and keep the jar away from steam from the stove.",
+   "t": "ଶୁଖିଲା ଚାମଚ ବ୍ୟବହାର କରନ୍ତୁ, ଆଉ ଡବାକୁ ଚୁଲିର ବାମ୍ଫରୁ ଦୂରରେ ରଖନ୍ତୁ।",
+   "back": "Use a dry spoon, and keep the container [or: tin] away from stove steam."
+  },
+  "seg.ae76fa3c0a37": {
+   "src": "Keep it in a cool, dry place, out of direct sunlight.",
+   "t": "ଥଣ୍ଡା, ଶୁଖିଲା ଜାଗାରେ, ସିଧା ଖରାରୁ ଦୂରରେ ରଖନ୍ତୁ।",
+   "back": "Store in a cool, dry place, away from direct sunlight."
+  },
+  "seg.cee32139c40b": {
+   "src": "Use it within the best-before date on the pack, in dishes such as ⟦1⟧vellulli kaaram⟦/1⟧, ⟦2⟧gongura pachadi⟦/2⟧ or ⟦3⟧tomato pachadi⟦/3⟧.",
+   "t": "ପ୍ୟାକେଟର ବେଷ୍ଟ-ବିଫୋର ତାରିଖ ଭିତରେ ବ୍ୟବହାର କରନ୍ତୁ, ⟦1⟧ଭେଲ୍ଲୁଲ୍ଲି କାରମ⟦/1⟧, ⟦2⟧ଗୋଙ୍ଗୁରା ପଚ୍ଚଡ଼ି⟦/2⟧ ବା ⟦3⟧ଟମାଟା ପଚ୍ଚଡ଼ି⟦/3⟧ ପରି ବ୍ୟଞ୍ଜନରେ।",
+   "back": "Use within the best-before date on the pack, in dishes like ⟦1⟧Vellulli Karam⟦/1⟧, ⟦2⟧Gongura Pachadi⟦/2⟧ or ⟦3⟧Tomato Pachadi⟦/3⟧."
+  },
+  "seg.13c76694dc1e": {
+   "src": "How do I check chilli powder for brick powder at home?",
+   "t": "ଘରେ ଲଙ୍କା ଗୁଣ୍ଡରେ ଇଟା ଗୁଣ୍ଡ ଅଛି କି ନାହିଁ କିପରି ଯାଞ୍ଚ କରିବି?",
+   "back": "How can I check at home whether chilli powder has brick powder in it?"
+  },
+  "seg.3e87e1d30613": {
+   "src": "Put a teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the water and rub the sediment between your fingers: grit points to brick powder or sand, and a white residue that feels soapy and smooth points to soapstone.",
+   "t": "ଏକ ଗ୍ଲାସ ପାଣିରେ ଏକ ଚା ଚାମଚ ଲଙ୍କା ଗୁଣ୍ଡ ପକାଇ ବସିବାକୁ ଦିଅନ୍ତୁ। ଅଧିକାଂଶ ପାଣି ଢାଳି ତଳେ ଜମିଥିବା ଗୁଣ୍ଡକୁ ଆଙ୍ଗୁଠି ମଝିରେ ଘଷନ୍ତୁ: କିଚିକିଚି ଲାଗିଲେ ଇଟା ଗୁଣ୍ଡ ବା ବାଲି ଥାଇପାରେ, ଆଉ ସାବୁନ ପରି ଚିକ୍କଣ ଲାଗୁଥିବା ଧଳା ଅବଶେଷ ଥିଲେ ସୋପଷ୍ଟୋନ ଥାଇପାରେ।",
+   "back": "Put one teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the water and rub the powder settled at the bottom between your fingers: if it feels gritty there may be brick powder or sand, and if there is a white residue that feels smooth [or: slippery] like soap, there may be soapstone."
+  },
+  "seg.f609f5773557": {
+   "src": "Can the water test detect Sudan dye in chilli powder?",
+   "t": "ପାଣି ପରୀକ୍ଷା କଣ ଲଙ୍କା ଗୁଣ୍ଡରେ ସୁଡାନ ରଙ୍ଗ ଧରିପାରେ?",
+   "back": "Can the water test catch Sudan colour in chilli powder?"
+  },
+  "seg.7bd8af24de2f": {
+   "src": "No. Sudan I does not dissolve in water, so it cannot run out as streaks. FSSAI's manual tests for Sudan III and for oil-soluble colours with solvents such as hexane and petroleum ether, so those tests need a lab.",
+   "t": "ନା। ସୁଡାନ I ପାଣିରେ ମିଳେଇ ନାହିଁ, ତେଣୁ ଧାର ହୋଇ ବାହାରିପାରେ ନାହିଁ। FSSAIର ପୁସ୍ତିକା ସୁଡାନ III ଓ ତେଲରେ ମିଳେଇଯାଉଥିବା ରଙ୍ଗ ପାଇଁ ହେକ୍ସେନ ଓ ପେଟ୍ରୋଲିୟମ ଇଥର ପରି ଦ୍ରାବକରେ ପରୀକ୍ଷା କରେ, ତେଣୁ ସେହି ପରୀକ୍ଷା ପାଇଁ ଲ୍ୟାବ ଦରକାର।",
+   "back": "No. Sudan I does not dissolve in water, so it cannot come out as streaks. In the FSSAI manual the tests for Sudan III and oil-soluble colours are done with solvents like hexane and petroleum ether, so those tests need a lab."
+  },
+  "seg.d63c02ec2e5c": {
+   "src": "Does the iodine test work on chilli powder?",
+   "t": "ଆୟୋଡିନ ପରୀକ୍ଷା କଣ ଲଙ୍କା ଗୁଣ୍ଡରେ କାମ କରେ?",
+   "back": "Does the iodine test work on chilli powder?"
+  },
+  "seg.01e86c518d41": {
+   "src": "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli powder is one of them. A blue colour points to added starch.",
+   "t": "ହଁ। FSSAIର ପୁସ୍ତିକା ଆୟୋଡିନ ପରୀକ୍ଷାକୁ ହଳଦୀ ଛଡ଼ା ଅନ୍ୟ ଗୁଣ୍ଡ ମସଲା ପାଇଁ ବ୍ୟବହାର କରେ, ଆଉ ଲଙ୍କା ଗୁଣ୍ଡ ସେଥିମଧ୍ୟରୁ ଗୋଟିଏ। ନୀଳ ରଙ୍ଗ ହେଲେ ମିଶାଯାଇଥିବା ଷ୍ଟାର୍ଚ୍ଚ ଥାଇପାରେ।",
+   "back": "Yes. FSSAI's booklet uses the iodine test for ground spices other than turmeric, and chilli powder is one of them. If it turns blue, there may be added starch."
+  },
+  "seg.75e20911cd47": {
+   "src": "Is bright red chilli powder a sign of adulteration?",
+   "t": "ଚମକଦାର ନାଲି ଲଙ୍କା ଗୁଣ୍ଡ କଣ ଭେଜାଲର ସଙ୍କେତ?",
+   "back": "Is shiny [or: bright] red chilli powder a sign of adulteration?"
+  },
+  "seg.dcfec3eff0b8": {
+   "src": "Colour alone does not tell you. The water check looks for colour that leaves the powder and runs down as streaks, not for how red the powder looks, and a lab can test for added colours.",
+   "t": "କେବଳ ରଙ୍ଗରୁ ଜଣାପଡ଼େ ନାହିଁ। ପାଣି ଯାଞ୍ଚ ଦେଖେ ରଙ୍ଗ ଗୁଣ୍ଡରୁ ବାହାରି ଧାର ହୋଇ ତଳକୁ ବହୁଛି କି ନାହିଁ, ଗୁଣ୍ଡ କେତେ ନାଲି ଦେଖାଯାଉଛି ତାହା ନୁହେଁ, ଆଉ ଲ୍ୟାବ ମିଶାଯାଇଥିବା ରଙ୍ଗ ପାଇଁ ପରୀକ୍ଷା କରିପାରେ।",
+   "back": "You cannot tell from the colour alone. The water test looks at whether colour comes out of the powder and goes down as streaks, not at how red the powder looks, and a lab can test for added colour."
+  },
+  "seg.54f85d34859f": {
+   "src": "Stop using that batch and keep the pack. Contact the seller with the batch number, or send a sample to a NABL-accredited food testing lab for a sure answer.",
+   "t": "ସେହି ବ୍ୟାଚ ବ୍ୟବହାର ବନ୍ଦ କରନ୍ତୁ ଓ ପ୍ୟାକେଟଟି ରଖନ୍ତୁ। ବ୍ୟାଚ ନମ୍ବର ସହିତ ବିକ୍ରେତାଙ୍କ ସହ ଯୋଗାଯୋଗ କରନ୍ତୁ, କିମ୍ବା ନିଶ୍ଚିତ ଉତ୍ତର ପାଇଁ NABL ମାନ୍ୟତାପ୍ରାପ୍ତ ଖାଦ୍ୟ ପରୀକ୍ଷା ଲ୍ୟାବକୁ ନମୁନା ପଠାନ୍ତୁ।",
+   "back": "Stop using that batch and keep the packet. Contact the seller with the batch number, or send a sample to an NABL-recognised food testing lab for a certain [or: definite] answer."
+  },
+  "seg.ff09628b25c1": {
+   "src": "Our chilli powder",
+   "t": "ଆମ ଲଙ୍କା ଗୁଣ୍ଡ",
+   "back": "Our chilli powder"
+  },
+  "seg.a7d8a3890045": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "ଦୁଇଟି ପଲ୍ନାଡୁ ଓ ଗୁଣ୍ଟୁରରେ ଚାଷ ହୋଇ ନରସରାଓପେଟରେ ପ୍ୟାକ୍ କରାଯାଇଛି।",
+   "back": "Both are grown in Palnadu and Guntur and packed in Narasaraopet."
+  },
+  "seg.3ed867d1961c": {
+   "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
+   "t": "కారం కల్తీ · ଲଙ୍କା ଗୁଣ୍ଡ ଭେଜାଲ ପରୀକ୍ଷା | 1acrefarms",
+   "back": "కారం కల్తీ [Telugu: chilli powder adulteration] · Chilli powder adulteration test | 1acrefarms"
+  },
+  "seg.20f494d041fc": {
+   "src": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. How to check chilli powder at home: the water glass, rub and iodine tests, what they miss, and when you need a lab.",
+   "t": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. ଘରେ ଲଙ୍କା ଗୁଣ୍ଡ କିପରି ଯାଞ୍ଚ କରିବେ: ପାଣି ଗ୍ଲାସ, ଘଷା ଓ ଆୟୋଡିନ ପରୀକ୍ଷା, ଏଗୁଡ଼ିକ କଣ ଧରିପାରେ ନାହିଁ, ଆଉ କେବେ ଲ୍ୟାବ ଦରକାର।",
+   "back": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. [Telugu: How to identify chilli powder adulteration at home itself.] How to check chilli powder at home: the water glass, rub and iodine tests, what these cannot catch, and when a lab is needed."
+  },
+  "seg.cf3eac803a81": {
+   "src": "How to check chilli powder at home · 1acrefarms",
+   "t": "ଘରେ ଲଙ୍କା ଗୁଣ୍ଡ କିପରି ଯାଞ୍ଚ କରିବେ · 1acrefarms",
+   "back": "How to check chilli powder at home · 1acrefarms"
+  },
+  "seg.3a7ecf1759a7": {
+   "src": "Hill turmeric or turmeric",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ ନା ହଳଦୀ",
+   "back": "Hill turmeric or [vs] turmeric"
+  },
+  "seg.0e55b39feef1": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ (କୋଣ୍ଡା ପସୁପୁ) ଓ ହଳଦୀ: ଫରକ କଣ",
+   "back": "Hill turmeric (Konda Pasupu) and turmeric: what is the difference"
+  },
+  "seg.ebf6f90777d6": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · କୋଣ୍ଡା ପସୁପୁ · ପସୁପୁ",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu"
+  },
+  "seg.8b7a90a6aed6": {
+   "src": "Konda pasupu means hill turmeric: turmeric grown in hill country. In Andhra Pradesh that includes the agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu, where most tribal farmers grow turmeric. Plains turmeric grows on farmland in districts such as Guntur.",
+   "t": "କୋଣ୍ଡା ପସୁପୁ ଅର୍ଥ ପାହାଡ଼ିଆ ହଳଦୀ: ପାହାଡ଼ିଆ ଅଞ୍ଚଳରେ ଚାଷ ହେଉଥିବା ହଳଦୀ। ଆନ୍ଧ୍ରପ୍ରଦେଶରେ ଏଥିରେ ଆରାକୁ ଉପତ୍ୟକା, ଚିନ୍ତାପଲ୍ଲେ ଓ ପାଡେରୁ ଆଖପାଖର ପୂର୍ବଘାଟର ଏଜେନ୍ସି ପାହାଡ଼ ଅନ୍ତର୍ଭୁକ୍ତ, ଯେଉଁଠି ଆଦିବାସୀ ଚାଷୀଙ୍କ ମଧ୍ୟରୁ ଅଧିକାଂଶ ହଳଦୀ ଚାଷ କରନ୍ତି। ସମତଳ ହଳଦୀ ଗୁଣ୍ଟୁର ପରି ଜିଲ୍ଲାର ଚାଷ ଜମିରେ ହୁଏ।",
+   "back": "Konda pasupu means hill turmeric: turmeric grown in hilly areas. In Andhra Pradesh this includes the Agency hills of the Eastern Ghats around Araku valley, Chintapalle and Paderu, where most of the tribal farmers grow turmeric. Plains turmeric is grown in the farmland of districts like Guntur."
+  },
+  "seg.404d008584f4": {
+   "src": "FSSAI's standard for turmeric powder is the same wherever it grew. What changes is the place, the variety, and how it is grown and dried. This guide covers each of those, what curcumin is, how to cook with each and how to compare two turmerics fairly. There is a Telugu section further down.",
+   "t": "ହଳଦୀ ଗୁଣ୍ଡ ପାଇଁ FSSAIର ମାନକ ସମାନ, ଯେଉଁଠି ବି ଚାଷ ହୋଇଥାଉ। ବଦଳେ ସ୍ଥାନ, କିସମ, ଆଉ କିପରି ଚାଷ ଓ ଶୁଖାଯାଏ। ଏହି ଗାଇଡ୍ ଏଗୁଡ଼ିକର ପ୍ରତ୍ୟେକ, କରକ୍ୟୁମିନ କଣ, ପ୍ରତ୍ୟେକରେ କିପରି ରାନ୍ଧିବେ ଓ ଦୁଇଟି ହଳଦୀର ନ୍ୟାୟସଙ୍ଗତ ତୁଳନା କିପରି କରିବେ, ସବୁ ଦେଖାଏ। ଆହୁରି ତଳେ ଏକ ତେଲୁଗୁ ଅଂଶ ଅଛି।",
+   "back": "FSSAI's standard for turmeric powder is the same wherever the turmeric is grown. What changes is the place, the variety, and how it is grown and dried. This guide covers each of these, what curcumin is, how to cook with each, and how to compare the two turmerics fairly. Further below there is a Telugu section."
+  },
+  "seg.b4d7b88f52e3": {
+   "src": "Hill Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ ଗୁଣ୍ଡ⟦#1⟧⟦#2⟧",
+   "back": "Hill turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.6c894965ab39": {
+   "src": "Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "ହଳଦୀ ଗୁଣ୍ଡ⟦#1⟧⟦#2⟧",
+   "back": "Turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.2e709bd87897": {
+   "src": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet.",
+   "t": "⟦1⟧ଆମର ଦୁଇଟି ହଳଦୀ⟦/1⟧ବାମରେ: ଆରାକୁ ଓ ମାରେଡୁମିଲ୍ଲି ପାହାଡ଼ର ପାହାଡ଼ିଆ ହଳଦୀ। ଡାହାଣରେ: ପଲ୍ନାଡୁ ଓ ଗୁଣ୍ଟୁରରେ ଚାଷ ହୋଇଥିବା ହଳଦୀ। ଦୁଇଟି ନରସରାଓପେଟରେ ପ୍ୟାକ୍ କରାଯାଇଛି।",
+   "back": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both are packed in Narasaraopet."
+  },
+  "seg.10eec083bb3d": {
+   "src": "Hill turmeric (konda pasupu) grows in hill country, such as the Eastern Ghats around Araku, where most tribal farmers grow it. Plains turmeric grows on farmland in districts such as Guntur. Both are boiled, dried and ground, and FSSAI holds both to the same standard. Curcumin, the yellow pigment in turmeric, changes with variety, soil, climate and processing, so the word hill or plains does not tell you how much a turmeric has. Cook with both the same way.",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ (କୋଣ୍ଡା ପସୁପୁ) ପାହାଡ଼ିଆ ଅଞ୍ଚଳରେ ହୁଏ, ଯେପରି ଆରାକୁ ଆଖପାଖର ପୂର୍ବଘାଟରେ, ଯେଉଁଠି ଆଦିବାସୀ ଚାଷୀଙ୍କ ମଧ୍ୟରୁ ଅଧିକାଂଶ ଏହା ଚାଷ କରନ୍ତି। ସମତଳ ହଳଦୀ ଗୁଣ୍ଟୁର ପରି ଜିଲ୍ଲାର ଚାଷ ଜମିରେ ହୁଏ। ଦୁଇଟିକୁ ସିଝାଇ, ଶୁଖାଇ, ଗୁଣ୍ଡ କରାଯାଏ, ଆଉ FSSAI ଦୁଇଟି ପାଇଁ ସମାନ ମାନକ ରଖେ। କରକ୍ୟୁମିନ, ଅର୍ଥାତ୍ ହଳଦୀର ହଳଦିଆ ରଙ୍ଗଦ୍ରବ୍ୟ, କିସମ, ମାଟି, ପାଣିପାଗ ଓ ପ୍ରକ୍ରିୟାକରଣ ଅନୁସାରେ ବଦଳେ, ତେଣୁ ପାହାଡ଼ିଆ ବା ସମତଳ ଶବ୍ଦରୁ ଜଣାପଡ଼େ ନାହିଁ ଯେ ହଳଦୀରେ କେତେ କରକ୍ୟୁମିନ ଅଛି। ଦୁଇଟିରେ ସମାନ ଭାବେ ରାନ୍ଧନ୍ତୁ।",
+   "back": "Hill turmeric (konda pasupu) is grown in hilly areas, such as in the Eastern Ghats around Araku, where most of the tribal farmers grow it. Plains turmeric is grown in the farmland of districts like Guntur. Both are boiled, dried and ground, and FSSAI keeps the same standard for both. Curcumin, that is turmeric's yellow pigment, changes according to variety, soil, climate and processing, so the word hill or plains does not tell how much curcumin a turmeric has. Cook with both the same way."
+  },
+  "seg.1930852dafc4": {
+   "src": "Hill turmeric⟦#1⟧",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ⟦#1⟧",
+   "back": "Hill turmeric⟦#1⟧"
+  },
+  "seg.85c353a8dfbf": {
+   "src": "Plains turmeric⟦#1⟧",
+   "t": "ସମତଳ ହଳଦୀ⟦#1⟧",
+   "back": "Plains turmeric⟦#1⟧"
+  },
+  "seg.e4c8ef75f71b": {
+   "src": "Where it grows",
+   "t": "କେଉଁଠି ହୁଏ",
+   "back": "Where it grows"
+  },
+  "seg.42213bedfb12": {
+   "src": "Hill country, such as the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu",
+   "t": "ପାହାଡ଼ିଆ ଅଞ୍ଚଳ, ଯେପରି ପୂର୍ବଘାଟର ପାଡେରୁ ଏଜେନ୍ସି ପାହାଡ଼: ଆରାକୁ ଉପତ୍ୟକା, ଚିନ୍ତାପଲ୍ଲେ ଓ ପାଡେରୁ",
+   "back": "Hilly areas, such as the Paderu agency hills of the Eastern Ghats: Araku valley, Chintapalle and Paderu"
+  },
+  "seg.34cc236d9133": {
+   "src": "Farmland in districts such as Guntur",
+   "t": "ଗୁଣ୍ଟୁର ପରି ଜିଲ୍ଲାର ଚାଷ ଜମି",
+   "back": "Farmland in districts like Guntur"
+  },
+  "seg.0bf2cf67b524": {
+   "src": "Who grows it",
+   "t": "କିଏ ଚାଷ କରନ୍ତି",
+   "back": "Who grows it"
+  },
+  "seg.ef7b65af6af7": {
+   "src": "Most tribal farmers in the Paderu agency",
+   "t": "ପାଡେରୁ ଏଜେନ୍ସିର ଆଦିବାସୀ ଚାଷୀଙ୍କ ମଧ୍ୟରୁ ଅଧିକାଂଶ",
+   "back": "Most of the tribal farmers of Paderu Agency"
+  },
+  "seg.6fcc769ff4cc": {
+   "src": "Farms in Guntur district, where turmeric is one of the commercial crops, with cotton, chillies and tobacco",
+   "t": "ଗୁଣ୍ଟୁର ଜିଲ୍ଲାର ଚାଷ ଜମି, ଯେଉଁଠି କପା, ଲଙ୍କା ଓ ତମାଖୁ ସହିତ ହଳଦୀ ମଧ୍ୟ ଏକ ବାଣିଜ୍ୟିକ ଫସଲ",
+   "back": "Farmland of Guntur district, where turmeric is also a commercial crop along with cotton, chilli and tobacco"
+  },
+  "seg.2c6469748e2d": {
+   "src": "In the ground",
+   "t": "ମାଟିରେ କେତେ ଦିନ",
+   "back": "How long in the ground"
+  },
+  "seg.4fad87cf8112": {
+   "src": "The old local variety has often been left for 2 to 3 seasons, up to 18 to 24 months; newer varieties such as Roma are dug after one season",
+   "t": "ପୁରୁଣା ସ୍ଥାନୀୟ କିସମକୁ ପ୍ରାୟତଃ 2 ରୁ 3 ଋତୁ, 18 ରୁ 24 ମାସ ପର୍ଯ୍ୟନ୍ତ, ମାଟିରେ ଛାଡ଼ି ଦିଆଯାଇଛି; ରୋମା ପରି ନୂଆ କିସମ ଗୋଟିଏ ଋତୁ ପରେ ହିଁ ଖୋଳାଯାଏ",
+   "back": "The old local variety has often been left in the ground for 2 to 3 seasons, up to 18 to 24 months; new varieties like Roma are dug up after just one season"
+  },
+  "seg.186488dd4390": {
+   "src": "ICAR-IISR's general guide: a well-managed crop is ready in 7 to 9 months, usually dug between January and March",
+   "t": "ICAR-IISRର ସାଧାରଣ ଗାଇଡ୍: ଭଲ ଭାବେ ଯତ୍ନ ନିଆଯାଇଥିବା ଫସଲ 7 ରୁ 9 ମାସରେ ପ୍ରସ୍ତୁତ ହୁଏ, ସାଧାରଣତଃ ଜାନୁଆରୀରୁ ମାର୍ଚ୍ଚ ମଧ୍ୟରେ ଖୋଳାଯାଏ",
+   "back": "ICAR-IISR's general guide: a well-tended crop is ready in 7 to 9 months, usually dug up between January and March"
+  },
+  "seg.b60ef1949c00": {
+   "src": "After digging",
+   "t": "ଖୋଳିବା ପରେ",
+   "back": "After digging up"
+  },
+  "seg.a5d9b319040e": {
+   "src": "Boiled and dried by hand, which takes a lot of labour and firewood",
+   "t": "ହାତରେ ସିଝାଇ ଶୁଖାଯାଏ, ଯେଥିରେ ବହୁତ ପରିଶ୍ରମ ଓ ଜାଳେଣି କାଠ ଲାଗେ",
+   "back": "Boiled and dried by hand, which takes a lot of labour and firewood"
+  },
+  "seg.9094d5bd4e83": {
+   "src": "The usual steps: boiled, sun-dried, then polished by hand or by machine",
+   "t": "ସାଧାରଣ ପର୍ଯ୍ୟାୟ: ସିଝାଇବା, ଖରାରେ ଶୁଖାଇବା, ତାପରେ ହାତରେ ବା ମେସିନରେ ପାଲିସ୍",
+   "back": "Usual steps: boiling, sun-drying, then polishing by hand or by machine"
+  },
+  "seg.d3963fd16edc": {
+   "src": "The same one for both: at least 2% curcuminoids on a dry basis, and added colour is not allowed",
+   "t": "ଦୁଇଟି ପାଇଁ ସମାନ: ଶୁଖିଲା ଓଜନ ହିସାବରେ ଅତି କମରେ 2% କରକ୍ୟୁମିନଏଡ୍, ଆଉ ମିଶାଯାଇଥିବା ରଙ୍ଗ ଅନୁମତି ନାହିଁ",
+   "back": "The same for both: at least 2% curcuminoids on a dry-weight basis, and added colour is not permitted"
+  },
+  "seg.802e452a9783": {
+   "src": "Our pack says",
+   "t": "ଆମ ପ୍ୟାକେଟରେ ଲେଖାଅଛି",
+   "back": "What our packs say"
+  },
+  "seg.2e323e56fef7": {
+   "src": "Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder",
+   "t": "ଆରାକୁ ଓ ମାରେଡୁମିଲ୍ଲି ପାହାଡ଼। ଗୋଟା ପାହାଡ଼ିଆ ହଳଦୀ ଗଣ୍ଠି, ମିହି ଗୁଣ୍ଡ କରି ପ୍ୟାକ୍ କରାଯାଇଛି",
+   "back": "Araku and Maredumilli hills. Whole hill turmeric knots [or: fingers], finely ground and packed"
+  },
+  "seg.ce4850eb3b73": {
+   "src": "Grown in Palnadu and Guntur. Sun-dried, stone-ground",
+   "t": "ପଲ୍ନାଡୁ ଓ ଗୁଣ୍ଟୁରରେ ଚାଷ। ଖରାରେ ଶୁଖା, ପଥରରେ ପେଷା",
+   "back": "Grown in Palnadu and Guntur. Sun-dried, stone-ground"
+  },
+  "seg.8c0d21f32664": {
+   "src": "The rows above describe each region in general, from the sources at the end of this page. Only the last row is about our packs.",
+   "t": "ଉପରର ଧାଡ଼ିଗୁଡ଼ିକ ପ୍ରତ୍ୟେକ ଅଞ୍ଚଳକୁ ସାଧାରଣ ଭାବେ ବର୍ଣ୍ଣନା କରେ, ଏହି ପୃଷ୍ଠାର ଶେଷରେ ଥିବା ଉତ୍ସରୁ। କେବଳ ଶେଷ ଧାଡ଼ିଟି ଆମ ପ୍ୟାକେଟ ବିଷୟରେ।",
+   "back": "The rows above give a general description of each region, from the sources given at the end of this page. Only the last row is about our packs."
+  },
+  "seg.b6ab1dcdcf8d": {
+   "src": "Where each grows",
+   "t": "କେଉଁଟି କେଉଁଠି ହୁଏ",
+   "back": "Which grows where"
+  },
+  "seg.a9e5b44e1be6": {
+   "src": "⟦1⟧Hill turmeric.⟦/1⟧ ICAR-IISR's report on the Paderu agency, the tribal hill country of the Eastern Ghats that takes in Araku Valley, Chintapalle and Paderu, says turmeric is grown there by most tribal farmers.",
+   "t": "⟦1⟧ପାହାଡ଼ିଆ ହଳଦୀ।⟦/1⟧ ପାଡେରୁ ଏଜେନ୍ସି ବିଷୟରେ ICAR-IISRର ରିପୋର୍ଟ କହେ ଯେ ପୂର୍ବଘାଟର ଏହି ଆଦିବାସୀ ପାହାଡ଼ିଆ ଅଞ୍ଚଳରେ, ଯେଉଁଥିରେ ଆରାକୁ ଉପତ୍ୟକା, ଚିନ୍ତାପଲ୍ଲେ ଓ ପାଡେରୁ ଅଛି, ଆଦିବାସୀ ଚାଷୀଙ୍କ ମଧ୍ୟରୁ ଅଧିକାଂଶ ହଳଦୀ ଚାଷ କରନ୍ତି।",
+   "back": "⟦1⟧Hill turmeric.⟦/1⟧ The ICAR-IISR report on Paderu Agency says that in this tribal hill area of the Eastern Ghats, which includes Araku valley, Chintapalle and Paderu, most of the tribal farmers grow turmeric."
+  },
+  "seg.736e66a0b5de": {
+   "src": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops, with cotton, chillies and tobacco. Duggirala, in Guntur, has a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022, Guntur district was divided into three districts: Guntur, Palnadu and Bapatla.",
+   "t": "⟦1⟧ସମତଳ ହଳଦୀ।⟦/1⟧ ଗୁଣ୍ଟୁର ଜିଲ୍ଲା ନିଜ ବାଣିଜ୍ୟିକ ଫସଲ ତାଲିକାରେ କପା, ଲଙ୍କା ଓ ତମାଖୁ ସହିତ ହଳଦୀକୁ ରଖେ। ଗୁଣ୍ଟୁରର ଦୁଗ୍ଗିରାଲାରେ ଏକ ହଳଦୀ ପ୍ରକ୍ରିୟାକରଣ କ୍ଲଷ୍ଟର ଅଛି, ଯାହା ପ୍ରକ୍ରିୟାକୃତ ହଳଦୀ ଓ ହଳଦୀ ଗୁଣ୍ଡ ତିଆରି କରେ। 2022ରେ ଗୁଣ୍ଟୁର ଜିଲ୍ଲାକୁ ତିନୋଟି ଜିଲ୍ଲାରେ ଭାଗ କରାଗଲା: ଗୁଣ୍ଟୁର, ପଲ୍ନାଡୁ ଓ ବାପଟ୍ଲା।",
+   "back": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district's list of commercial crops includes turmeric along with cotton, chilli and tobacco. Duggirala in Guntur has a turmeric processing cluster, where processed turmeric and turmeric powder are made. In 2022 Guntur district was split into three districts: Guntur, Palnadu and Bapatla."
+  },
+  "seg.0f26c0785ed1": {
+   "src": "Turmeric can be grown either way: ICAR-IISR says it can be grown rain-fed or irrigated, from sea level up to 1,500 m.",
+   "t": "ହଳଦୀ ଦୁଇ ଭାବେ ଚାଷ କରାଯାଇପାରେ: ICAR-IISR କହେ ଯେ ଏହା ବର୍ଷା ପାଣିରେ ବା ଜଳସେଚନରେ, ସମୁଦ୍ର ପତ୍ତନରୁ 1,500 m ଉଚ୍ଚତା ପର୍ଯ୍ୟନ୍ତ ଚାଷ କରାଯାଇପାରେ।",
+   "back": "Turmeric can be grown both ways: ICAR-IISR says it can be grown rain-fed or with irrigation, up to an altitude of 1,500 m above sea level."
+  },
+  "seg.b687346df428": {
+   "src": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet.",
+   "t": "ଆମ ⟦1⟧ପାହାଡ଼ିଆ ହଳଦୀ⟦/1⟧ ଆରାକୁ ଓ ମାରେଡୁମିଲ୍ଲି ପାହାଡ଼ରୁ ଆସେ, ଆଉ ଆମ ⟦2⟧ହଳଦୀ⟦/2⟧ ପଲ୍ନାଡୁ ଓ ଗୁଣ୍ଟୁରରେ ଚାଷ ହୁଏ। ଦୁଇଟି ନରସରାଓପେଟରେ ପ୍ୟାକ୍ କରାଯାଇଛି।",
+   "back": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet."
+  },
+  "seg.9a5af9e957e1": {
+   "src": "How each is grown and dried",
+   "t": "କେଉଁଟି କିପରି ଚାଷ ଓ ଶୁଖାଯାଏ",
+   "back": "How each is grown and dried"
+  },
+  "seg.e641ce21ee35": {
+   "src": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says tribal farmers there have grown a local variety called Chayapasupu, or Chintapalle Local, for ages. It has been common practice to leave it in the ground for two or three seasons, up to 18 to 24 months, before digging. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested varieties for the hill zone and brought in Roma and IISR Pragati, which are dug after one season. The report says tribal farmers boil and dry their turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boilers and polishers.",
+   "t": "⟦1⟧ପାହାଡ଼ରେ।⟦/1⟧ ICAR-IISRର ପାଡେରୁ ରିପୋର୍ଟ କହେ ଯେ ସେଠାକାର ଆଦିବାସୀ ଚାଷୀ ବହୁ କାଳରୁ ଛାୟାପସୁପୁ, ବା ଚିନ୍ତାପଲ୍ଲେ ଲୋକାଲ୍, ନାମକ ଏକ ସ୍ଥାନୀୟ କିସମ ଚାଷ କରିଆସୁଛନ୍ତି। ଖୋଳିବା ଆଗରୁ ଏହାକୁ ଦୁଇ ବା ତିନି ଋତୁ, 18 ରୁ 24 ମାସ ପର୍ଯ୍ୟନ୍ତ, ମାଟିରେ ଛାଡ଼ିବା ଚଳଣି ହୋଇଆସିଛି। 2011-12ରୁ ICAR-IISR ଓ ଚିନ୍ତାପଲ୍ଲେର ହର୍ଟିକଲଚରାଲ ରିସର୍ଚ୍ଚ ଷ୍ଟେସନ ପାହାଡ଼ିଆ ଅଞ୍ଚଳ ପାଇଁ ବିଭିନ୍ନ କିସମ ପରୀକ୍ଷା କରି ରୋମା ଓ IISR ପ୍ରଗତି ଆଣିଲେ, ଯାହା ଗୋଟିଏ ଋତୁ ପରେ ହିଁ ଖୋଳାଯାଏ। ରିପୋର୍ଟ କହେ ଯେ ଆଦିବାସୀ ଚାଷୀ ହାତରେ ହଳଦୀ ସିଝାଇ ଶୁଖାନ୍ତି, ଯେଥିରେ ବହୁତ ପରିଶ୍ରମ ଓ ଜାଳେଣି କାଠ ଲାଗେ; ପ୍ରକଳ୍ପଟି ଚାରୋଟି ଚାଷୀ ଉତ୍ପାଦକ ସଂଗଠନକୁ ହଳଦୀ ସିଝା ଯନ୍ତ୍ର ଓ ପାଲିସ୍ ଯନ୍ତ୍ର ଦେଲା।",
+   "back": "⟦1⟧In the hills.⟦/1⟧ The ICAR-IISR Paderu report says the tribal farmers there have for a long time grown a local variety called Chayapasupu, or Chintapalle Local. Leaving it in the soil for two or three seasons, up to 18 to 24 months, before harvesting [lit. digging out] has been the customary practice. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested various varieties for the hill region and brought in Roma and IISR Pragati, which are harvested [lit. dug out] after just one season. The report says the tribal farmers boil and dry turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boiling machines and polishing machines."
+  },
+  "seg.f93b2805162b": {
+   "src": "⟦1⟧The usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after it is dug:",
+   "t": "⟦1⟧ସାଧାରଣ ପର୍ଯ୍ୟାୟ।⟦/1⟧ ICAR-IISRର ହଳଦୀ ଗାଇଡ୍ ଖୋଳିବା ପରେ ଫସଲକୁ କିପରି ସମ୍ଭାଳାଯାଏ ତାହା ବର୍ଣ୍ଣନା କରେ:",
+   "back": "⟦1⟧The usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after digging:"
+  },
+  "seg.675a9ec4355c": {
+   "src": "Dig it when the leaves dry and turn light brown to yellowish. A well-managed crop is ready seven to nine months after planting, usually between January and March.",
+   "t": "ପତ୍ର ଶୁଖି ହାଲୁକା ବାଦାମୀରୁ ହଳଦିଆ ହୋଇଗଲେ ଖୋଳନ୍ତୁ। ଭଲ ଭାବେ ଯତ୍ନ ନିଆଯାଇଥିବା ଫସଲ ଲଗାଇବାର ସାତରୁ ନଅ ମାସ ପରେ ପ୍ରସ୍ତୁତ ହୁଏ, ସାଧାରଣତଃ ଜାନୁଆରୀରୁ ମାର୍ଚ୍ଚ ମଧ୍ୟରେ।",
+   "back": "Dig up when the leaves dry and turn from light brown to yellow. A well-tended crop is ready seven to nine months after planting, usually between January and March."
+  },
+  "seg.763940881dcd": {
+   "src": "Separate the fingers from the bulbs and boil them within 3 or 4 days of digging, in water until soft: 45 to 60 minutes for fingers and 90 minutes for bulbs. Boiling takes away the raw smell, cuts the drying time and gives an even colour.",
+   "t": "ଗଣ୍ଠିଗୁଡ଼ିକୁ ମୂଳ କନ୍ଦରୁ ଅଲଗା କରନ୍ତୁ ଓ ଖୋଳିବାର 3 ବା 4 ଦିନ ଭିତରେ ନରମ ହେବା ଯାଏ ପାଣିରେ ସିଝାନ୍ତୁ: ଗଣ୍ଠି ପାଇଁ 45 ରୁ 60 ମିନିଟ ଓ ମୂଳ କନ୍ଦ ପାଇଁ 90 ମିନିଟ। ସିଝାଇଲେ କଞ୍ଚା ଗନ୍ଧ ଚାଲିଯାଏ, ଶୁଖିବା ସମୟ କମେ ଓ ରଙ୍ଗ ସମାନ ହୁଏ।",
+   "back": "Separate the knots [or: fingers] from the mother rhizome and, within 3 or 4 days of digging, boil them in water until soft: 45 to 60 minutes for knots and 90 minutes for mother rhizomes. Boiling removes the raw smell, shortens drying time and makes the colour even."
+  },
+  "seg.a52a5947071a": {
+   "src": "Dry them in the sun in layers 5 to 7 cm deep, heaped and covered at night. It may take 10 to 12 days for the moisture to fall below 12%.",
+   "t": "5 ରୁ 7 cm ମୋଟା ସ୍ତରରେ ଖରାରେ ଶୁଖାନ୍ତୁ, ରାତିରେ ଗଦା କରି ଘୋଡ଼ାଇ ରଖନ୍ତୁ। ଆର୍ଦ୍ରତା 12%ରୁ ତଳକୁ ଆସିବାକୁ 10 ରୁ 12 ଦିନ ଲାଗିପାରେ।",
+   "back": "Dry in the sun in layers 5 to 7 cm thick, heaping and covering them at night. It can take 10 to 12 days for moisture to fall below 12%."
+  },
+  "seg.69d24ab1420a": {
+   "src": "Polish off the rough, dull, scaly skin by rubbing, by hand or in a turning drum.",
+   "t": "ଖସଖସିଆ, ମଳିନ, ଚୋପା ପରି ଛାଲକୁ ଘଷି ପାଲିସ୍ କରି ବାହାର କରନ୍ତୁ, ହାତରେ ବା ଘୂରୁଥିବା ଡ୍ରମରେ।",
+   "back": "Rub off the rough, dull, husk-like skin by polishing, by hand or in a rotating drum."
+  },
+  "seg.1b7d7df8b7fa": {
+   "src": "Grind the dried turmeric into powder. FSSAI allows turmeric powder up to 10% moisture.",
+   "t": "ଶୁଖିଲା ହଳଦୀକୁ ଗୁଣ୍ଡ କରନ୍ତୁ। FSSAI ହଳଦୀ ଗୁଣ୍ଡରେ ସର୍ବାଧିକ 10% ଆର୍ଦ୍ରତା ଅନୁମତି ଦିଏ।",
+   "back": "Grind the dried turmeric into powder. FSSAI allows at most 10% moisture in turmeric powder."
+  },
+  "seg.1668650874a7": {
+   "src": "Fingers are the side branches of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulbs are the shorter, thicker central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground.",
+   "t": "ଗଣ୍ଠି ହେଉଛି ହଳଦୀ କନ୍ଦର ପାଖ ଶାଖା, ସାଧାରଣତଃ 2.5 ରୁ 7.5 cm ଲମ୍ବା; ମୂଳ କନ୍ଦ ହେଉଛି ମଝିର ଛୋଟ, ମୋଟା କନ୍ଦ। ଆମ ପାହାଡ଼ିଆ ହଳଦୀ ପ୍ୟାକେଟରେ ଲେଖାଅଛି ଗୋଟା ପାହାଡ଼ିଆ ହଳଦୀ ଗଣ୍ଠି, ମିହି ଗୁଣ୍ଡ କରି ପ୍ୟାକ୍ କରାଯାଇଛି। ଆମ ହଳଦୀ ପ୍ୟାକେଟରେ ଲେଖାଅଛି ଖରାରେ ଶୁଖା ଓ ପଥରରେ ପେଷା।",
+   "back": "A finger [lit. knot/joint] is a side branch of the turmeric rhizome, usually 2.5 to 7.5 cm long; the mother rhizome is the short, thick rhizome in the middle. Our hill turmeric packet says whole hill turmeric fingers [lit. knots], finely ground and packed. Our turmeric packet says sun-dried and stone-ground."
+  },
+  "seg.4a08c0de8660": {
+   "src": "Curcumin, and how they look",
+   "t": "କରକ୍ୟୁମିନ, ଆଉ ଦେଖିବାକୁ କିପରି",
+   "back": "Curcumin, and what it looks like"
+  },
+  "seg.7ef4d7667b4e": {
+   "src": "Curcumin is the yellow pigment in turmeric, ICAR-IISR says. FSSAI measures a turmeric powder's colouring power as its curcuminoid content, and asks for at least 2% on a dry basis. That standard is the same for hill and plains turmeric.",
+   "t": "ICAR-IISR କହେ ଯେ କରକ୍ୟୁମିନ ହେଉଛି ହଳଦୀର ହଳଦିଆ ରଙ୍ଗଦ୍ରବ୍ୟ। FSSAI ହଳଦୀ ଗୁଣ୍ଡର ରଙ୍ଗ ଦେବା କ୍ଷମତାକୁ ତାର କରକ୍ୟୁମିନଏଡ୍ ପରିମାଣ ଭାବେ ମାପେ, ଆଉ ଶୁଖିଲା ଓଜନ ହିସାବରେ ଅତି କମରେ 2% ଚାହେଁ। ଏହି ମାନକ ପାହାଡ଼ିଆ ଓ ସମତଳ ହଳଦୀ ପାଇଁ ସମାନ।",
+   "back": "ICAR-IISR says curcumin is turmeric's yellow colouring substance. FSSAI measures turmeric powder's colouring power as its curcuminoid content, and wants at least 2% on a dry-weight basis. This standard is the same for hill and plains turmeric."
+  },
+  "seg.fec370db2315": {
+   "src": "Curcumin changes from one turmeric to the next:",
+   "t": "କରକ୍ୟୁମିନ ଗୋଟିଏ ହଳଦୀରୁ ଆର ହଳଦୀକୁ ବଦଳେ:",
+   "back": "Curcumin varies from one turmeric to another:"
+  },
+  "seg.bf314e75200d": {
+   "src": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha).",
+   "t": "⟦1⟧କିସମ।⟦/1⟧ ICAR-IISRର 2022 ହଳଦୀ ଗାଇଡ୍ ନିଜ କିସମଗୁଡ଼ିକର କରକ୍ୟୁମିନ 4.3% (ସୁବର୍ଣ୍ଣା) ରୁ 6.5% (IISR ପ୍ରଭା) ପର୍ଯ୍ୟନ୍ତ ଦେଖାଏ।",
+   "back": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide gives the curcumin of its own varieties as ranging from 4.3% (Suvarna) to 6.5% (IISR Prabha)."
+  },
+  "seg.cee7632d2998": {
+   "src": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR notes that turmeric from different regions differs in quality because of soil, climate and farming practice. Its Paderu report calls curcumin content highly sensitive to changes in the growing environment.",
+   "t": "⟦1⟧ମାଟି ଓ ପାଣିପାଗ।⟦/1⟧ ICAR-IISR ଲେଖେ ଯେ ମାଟି, ପାଣିପାଗ ଓ ଚାଷ ପଦ୍ଧତି ଯୋଗୁଁ ଅଲଗା ଅଲଗା ଅଞ୍ଚଳର ହଳଦୀର ଗୁଣ ଅଲଗା ହୁଏ। ଏହାର ପାଡେରୁ ରିପୋର୍ଟ କହେ ଯେ ଚାଷ ପରିବେଶ ବଦଳିଲେ କରକ୍ୟୁମିନ ପରିମାଣ ବହୁତ ସହଜରେ ବଦଳିଯାଏ।",
+   "back": "⟦1⟧Soil and weather.⟦/1⟧ ICAR-IISR writes that, because of soil, weather and farming practices, the quality of turmeric differs from region to region. Its Paderu report says the curcumin content changes very easily when the growing environment changes."
+  },
+  "seg.70b529fe0f69": {
+   "src": "⟦1⟧Processing.⟦/1⟧ Handling and processing after harvest add to the differences, and boiling too long or too short affects the quality of the dried turmeric.",
+   "t": "⟦1⟧ପ୍ରକ୍ରିୟାକରଣ।⟦/1⟧ ଅମଳ ପରେ ସମ୍ଭାଳିବା ଓ ପ୍ରକ୍ରିୟାକରଣ ମଧ୍ୟ ଫରକ ବଢ଼ାଏ, ଆଉ ବହୁତ ବେଶି ବା ବହୁତ କମ ସିଝାଇଲେ ଶୁଖିଲା ହଳଦୀର ଗୁଣ ଉପରେ ପ୍ରଭାବ ପଡ଼େ।",
+   "back": "⟦1⟧Processing.⟦/1⟧ Handling and processing after harvest also widen the differences, and boiling too much or too little affects the quality of the dried turmeric."
+  },
+  "seg.493187b22749": {
+   "src": "So the word hill or plains on a pack does not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "ତେଣୁ ପ୍ୟାକେଟରେ ପାହାଡ଼ିଆ ବା ସମତଳ ଶବ୍ଦରୁ ହଳଦୀର କରକ୍ୟୁମିନ ପରିମାଣ ଜଣାପଡ଼େ ନାହିଁ। ଖାଦ୍ୟ ପରୀକ୍ଷା ଲ୍ୟାବ ଏକ ବ୍ୟାଚର କରକ୍ୟୁମିନଏଡ୍ ପରିମାଣ ମାପିପାରେ।",
+   "back": "So the words hill or plains on a pack do not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch."
+  },
+  "seg.53dc21b97510": {
+   "src": "⟦1⟧How they look.⟦/1⟧ Colour varies too. ICAR-IISR describes its varieties' rhizomes as ranging from reddish yellow to deep orange. Processing counts as well: boiling evens out the colour, drying in too thin a layer can spoil it, and polishing by hand leaves a rough, dull surface.",
+   "t": "⟦1⟧ଦେଖିବାକୁ କିପରି।⟦/1⟧ ରଙ୍ଗ ମଧ୍ୟ ଅଲଗା ହୁଏ। ICAR-IISR ନିଜ କିସମଗୁଡ଼ିକର କନ୍ଦକୁ ନାଲିଆ ହଳଦିଆରୁ ଗାଢ଼ କମଳା ପର୍ଯ୍ୟନ୍ତ ବୋଲି ବର୍ଣ୍ଣନା କରେ। ପ୍ରକ୍ରିୟାକରଣ ମଧ୍ୟ ଗୁରୁତ୍ୱପୂର୍ଣ୍ଣ: ସିଝାଇଲେ ରଙ୍ଗ ସମାନ ହୁଏ, ବହୁତ ପତଳା ସ୍ତରରେ ଶୁଖାଇଲେ ରଙ୍ଗ ଖରାପ ହୋଇପାରେ, ଆଉ ହାତରେ ପାଲିସ୍ କଲେ ଉପର ଖସଖସିଆ, ମଳିନ ରହେ।",
+   "back": "⟦1⟧What it looks like.⟦/1⟧ Colour also differs. ICAR-IISR describes the rhizome colour of its varieties as ranging from reddish yellow to deep orange. Processing also matters: boiling makes the colour even, drying in very thin layers can spoil the colour, and hand polishing leaves the surface rough and dull."
+  },
+  "seg.d8ece11f902a": {
+   "src": "Cooking with each, and keeping it",
+   "t": "କେଉଁଟିରେ କିପରି ରାନ୍ଧିବେ, ଆଉ କିପରି ରଖିବେ",
+   "back": "How to cook with each, and how to store it"
+  },
+  "seg.276f633c7a1f": {
+   "src": "Use either one wherever you use turmeric: dal, sambar, rasam, curries and pulihora.",
+   "t": "ଯେଉଁଠି ହଳଦୀ ପକାନ୍ତି, ସେଠି ଯେକୌଣସି ଗୋଟିଏ ପକାନ୍ତୁ: ଡାଲି, ସାମ୍ବାର, ରସମ, ତରକାରୀ ଓ ପୁଳିହୋରା।",
+   "back": "Wherever you use turmeric, use either of these: dal, sambar, rasam, curries and pulihora."
+  },
+  "seg.ca5e9b6340f2": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "କମ ନିଆଁରେ ପକାନ୍ତୁ, ଯେପରି ପୋଡ଼ି ନ ଯାଏ।",
+   "back": "Add it over low heat, so that it does not burn."
+  },
+  "seg.7e910d4ad2a1": {
+   "src": "To swap one for the other, start with the amount you usually use and adjust to taste.",
+   "t": "ଗୋଟିଏ ବଦଳରେ ଅନ୍ୟଟି ପକାଇବାକୁ ହେଲେ, ସାଧାରଣତଃ ଯେତିକି ପକାନ୍ତି ସେତିକିରୁ ଆରମ୍ଭ କରନ୍ତୁ ଓ ସ୍ୱାଦ ଦେଖି କମ-ବେଶି କରନ୍ତୁ।",
+   "back": "If you want to use one in place of the other, start with the amount you usually use and adjust to taste."
+  },
+  "seg.731001f6177d": {
+   "src": "Try either one in ⟦1⟧pasupu annam⟦/1⟧, ⟦2⟧nimmakaya pulihora⟦/2⟧, ⟦3⟧tomato pappu⟦/3⟧ or ⟦4⟧pasupu paalu⟦/4⟧.",
+   "t": "⟦1⟧ପସୁପୁ ଅନ୍ନମ⟦/1⟧, ⟦2⟧ନିମ୍ମକାୟ ପୁଳିହୋରା⟦/2⟧, ⟦3⟧ଟମାଟା ପପ୍ପୁ⟦/3⟧ ବା ⟦4⟧ପସୁପୁ ପାଲୁ⟦/4⟧ରେ ଯେକୌଣସି ଗୋଟିଏ ପକାଇ ଦେଖନ୍ତୁ।",
+   "back": "Try either one in ⟦1⟧Pasupu Annam⟦/1⟧, ⟦2⟧Nimmakaya Pulihora⟦/2⟧, ⟦3⟧Tomato Pappu⟦/3⟧ or ⟦4⟧Pasupu Palu⟦/4⟧."
+  },
+  "seg.259a5f63423a": {
+   "src": "Keeping it well.",
+   "t": "ଭଲ ଭାବେ ରଖିବା।",
+   "back": "Storing well."
+  },
+  "seg.073f63fe23e0": {
+   "src": "Use a dry spoon every time.",
+   "t": "ପ୍ରତି ଥର ଶୁଖିଲା ଚାମଚ ବ୍ୟବହାର କରନ୍ତୁ।",
+   "back": "Use a dry spoon every time."
+  },
+  "seg.b334ade49a15": {
+   "src": "Store it in a cool, dry place, away from light.",
+   "t": "ଥଣ୍ଡା, ଶୁଖିଲା ଜାଗାରେ, ଆଲୁଅରୁ ଦୂରରେ ରଖନ୍ତୁ।",
+   "back": "Store in a cool, dry place, away from light."
+  },
+  "seg.ea935ed7c1aa": {
+   "src": "How to compare two turmerics fairly",
+   "t": "ଦୁଇଟି ହଳଦୀର ନ୍ୟାୟସଙ୍ଗତ ତୁଳନା କିପରି କରିବେ",
+   "back": "How to compare two turmerics fairly"
+  },
+  "seg.dcebc75ff722": {
+   "src": "Compare powder with powder. FSSAI allows whole turmeric up to 12% moisture and powder up to 10%, so the two are held to different limits.",
+   "t": "ଗୁଣ୍ଡ ସହିତ ଗୁଣ୍ଡର ତୁଳନା କରନ୍ତୁ। FSSAI ଗୋଟା ହଳଦୀରେ ସର୍ବାଧିକ 12% ଓ ଗୁଣ୍ଡରେ ସର୍ବାଧିକ 10% ଆର୍ଦ୍ରତା ଅନୁମତି ଦିଏ, ତେଣୁ ଦୁଇଟିର ସୀମା ଅଲଗା।",
+   "back": "Compare powder with powder. FSSAI allows at most 12% moisture in whole turmeric and at most 10% in powder, so the two have different limits."
+  },
+  "seg.9d14be920107": {
+   "src": "Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note the batch numbers, so you know which lots you compared.",
+   "t": "ଦୁଇଟି ପ୍ୟାକେଟ ପଢ଼ନ୍ତୁ: କେଉଁଠି ଚାଷ ହୋଇଛି, ବ୍ୟାଚ ବା ଲଟ୍ ନମ୍ବର, ବେଷ୍ଟ-ବିଫୋର ତାରିଖ ଓ FSSAI ଲାଇସେନ୍ସ ବା ପଞ୍ଜୀକରଣ ନମ୍ବର। ବ୍ୟାଚ ନମ୍ବରଗୁଡ଼ିକ ଲେଖି ରଖନ୍ତୁ, ଯେପରି ଜାଣିବେ କେଉଁ ଲଟ୍‌ଗୁଡ଼ିକର ତୁଳନା କଲେ।",
+   "back": "Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note down the batch numbers, so that you know which lots you compared."
+  },
+  "seg.fbb64b2b32b0": {
+   "src": "Do the water check on both, side by side, with the same amount in the same kind of glass. The steps are in ⟦1⟧how to check turmeric powder at home⟦/1⟧.",
+   "t": "ଦୁଇଟିର ପାଖାପାଖି ପାଣି ଯାଞ୍ଚ କରନ୍ତୁ, ସମାନ ପରିମାଣରେ, ସମାନ ପ୍ରକାର ଗ୍ଲାସରେ। ପର୍ଯ୍ୟାୟଗୁଡ଼ିକ ⟦1⟧ଘରେ ହଳଦୀ ଗୁଣ୍ଡ କିପରି ଯାଞ୍ଚ କରିବେ⟦/1⟧ରେ ଅଛି।",
+   "back": "Do the water check on both side by side, with the same amount, in the same kind of glass. The steps are in ⟦1⟧How to check turmeric powder at home⟦/1⟧."
+  },
+  "seg.bd82039194f2": {
+   "src": "Cook the same dish with each, with the same amount, and compare the colour and taste.",
+   "t": "ପ୍ରତ୍ୟେକରେ ସମାନ ବ୍ୟଞ୍ଜନ, ସମାନ ପରିମାଣରେ ରାନ୍ଧନ୍ତୁ, ଆଉ ରଙ୍ଗ ଓ ସ୍ୱାଦ ତୁଳନା କରନ୍ତୁ।",
+   "back": "Cook the same dish with each, in the same amount, and compare the colour and taste."
+  },
+  "seg.8949107c3ad8": {
+   "src": "Do not judge curcumin by colour alone. A brighter yellow is not a measurement; a food testing lab can measure curcuminoid content.",
+   "t": "କେବଳ ରଙ୍ଗ ଦେଖି କରକ୍ୟୁମିନର ବିଚାର କରନ୍ତୁ ନାହିଁ। ଅଧିକ ଉଜ୍ଜ୍ୱଳ ହଳଦିଆ କୌଣସି ମାପ ନୁହେଁ; ଖାଦ୍ୟ ପରୀକ୍ଷା ଲ୍ୟାବ କରକ୍ୟୁମିନଏଡ୍ ପରିମାଣ ମାପିପାରେ।",
+   "back": "Do not judge curcumin by colour alone. A brighter yellow is not a measure of anything; a food testing lab can measure the curcuminoid content."
+  },
+  "seg.45a1aaa1ac2f": {
+   "src": "What is konda pasupu?",
+   "t": "କୋଣ୍ଡା ପସୁପୁ କଣ?",
+   "back": "What is Konda Pasupu?"
+  },
+  "seg.1810d213ce3f": {
+   "src": "Konda pasupu is Telugu for hill turmeric: turmeric grown in hill country. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu agency around Araku Valley and Chintapalle, where most tribal farmers grow turmeric.",
+   "t": "କୋଣ୍ଡା ପସୁପୁ ହେଉଛି ପାହାଡ଼ିଆ ହଳଦୀର ତେଲୁଗୁ ନାମ: ପାହାଡ଼ିଆ ଅଞ୍ଚଳରେ ଚାଷ ହେଉଥିବା ହଳଦୀ। ଆନ୍ଧ୍ରପ୍ରଦେଶରେ ଏହା ପୂର୍ବଘାଟରେ ହୁଏ, ଯେପରି ଆରାକୁ ଉପତ୍ୟକା ଓ ଚିନ୍ତାପଲ୍ଲେ ଆଖପାଖର ପାଡେରୁ ଏଜେନ୍ସିରେ, ଯେଉଁଠି ଆଦିବାସୀ ଚାଷୀଙ୍କ ମଧ୍ୟରୁ ଅଧିକାଂଶ ହଳଦୀ ଚାଷ କରନ୍ତି।",
+   "back": "Konda pasupu is the Telugu name for hill turmeric: turmeric grown in hilly areas. In Andhra Pradesh it is grown in the Eastern Ghats, such as in Paderu Agency around Araku valley and Chintapalle, where most of the tribal farmers grow turmeric."
+  },
+  "seg.15730f8cc6b8": {
+   "src": "Is hill turmeric different from regular turmeric?",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ କଣ ସାଧାରଣ ହଳଦୀଠାରୁ ଅଲଗା?",
+   "back": "Is hill turmeric different from ordinary turmeric?"
+  },
+  "seg.47cf644d0819": {
+   "src": "FSSAI holds all turmeric powder to the same standard, wherever it grew. Hill and plains turmeric can differ in where they grow, the varieties grown, and how they are grown and dried. In the Paderu hills, for example, an old local variety has often been left in the ground for up to two years.",
+   "t": "FSSAI ସବୁ ହଳଦୀ ଗୁଣ୍ଡ ପାଇଁ ସମାନ ମାନକ ରଖେ, ଯେଉଁଠି ବି ଚାଷ ହୋଇଥାଉ। ପାହାଡ଼ିଆ ଓ ସମତଳ ହଳଦୀ ଅଲଗା ହୋଇପାରେ କେଉଁଠି ହୁଏ, କେଉଁ କିସମ ଚାଷ ହୁଏ, ଆଉ କିପରି ଚାଷ ଓ ଶୁଖାଯାଏ ସେଥିରେ। ଯେପରି, ପାଡେରୁ ପାହାଡ଼ରେ ଏକ ପୁରୁଣା ସ୍ଥାନୀୟ କିସମକୁ ପ୍ରାୟତଃ ଦୁଇ ବର୍ଷ ପର୍ଯ୍ୟନ୍ତ ମାଟିରେ ଛାଡ଼ି ଦିଆଯାଇଛି।",
+   "back": "FSSAI keeps the same standard for all turmeric powder, wherever the turmeric is grown. Hill and plains turmeric can differ in where they are grown, which variety is grown, and how they are grown and dried. For example, in the Paderu hills an old local variety has often been left in the ground for up to two years."
+  },
+  "seg.925655ca4b05": {
+   "src": "Does hill turmeric have more curcumin?",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀରେ କଣ ଅଧିକ କରକ୍ୟୁମିନ ଥାଏ?",
+   "back": "Does hill turmeric have more curcumin?"
+  },
+  "seg.0d1b42a32899": {
+   "src": "The word hill alone does not tell you. Curcumin changes with the variety, the soil and climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "କେବଳ ପାହାଡ଼ିଆ ଶବ୍ଦରୁ ଜଣାପଡ଼େ ନାହିଁ। କରକ୍ୟୁମିନ କିସମ, ମାଟି ଓ ପାଣିପାଗ, ଆଉ ହଳଦୀକୁ କିପରି ସିଝାଇ ଶୁଖାଯାଇଛି ତା ଉପରେ ବଦଳେ। ଖାଦ୍ୟ ପରୀକ୍ଷା ଲ୍ୟାବ ଏକ ବ୍ୟାଚର କରକ୍ୟୁମିନଏଡ୍ ପରିମାଣ ମାପିପାରେ।",
+   "back": "The word hill alone does not tell you. Curcumin varies with variety, soil and weather, and with how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid content of a batch."
+  },
+  "seg.4bce9a44c11e": {
+   "src": "What are the types of turmeric (haldi) in India?",
+   "t": "ଭାରତରେ ହଳଦୀ (ହଲଦୀ)ର କେଉଁ କେଉଁ ପ୍ରକାର ଅଛି?",
+   "back": "What types of turmeric (haldi) are there in India?"
+  },
+  "seg.4e6e7201dae6": {
+   "src": "ICAR-IISR says India grows many turmeric cultivars, mostly known by the name of the place where they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati.",
+   "t": "ICAR-IISR କହେ ଯେ ଭାରତରେ ହଳଦୀର ଅନେକ କିସମ ଚାଷ ହୁଏ, ଅଧିକାଂଶ ଯେଉଁ ସ୍ଥାନରେ ଚାଷ ହୁଏ ସେହି ନାମରେ ଜଣାଶୁଣା, ଯେପରି ଦୁଗ୍ଗିରାଲା, ମାଇଦୁକୁର, ଟେକ୍କୁରପେଟ ଓ ଅମଲାପୁରମ। ଏହା IISR ପ୍ରଭା, IISR ପ୍ରତିଭା ଓ IISR ପ୍ରଗତି ପରି ଉନ୍ନତ କିସମ ମଧ୍ୟ ବାହାର କରିଛି।",
+   "back": "ICAR-IISR says many varieties of turmeric are grown in India, most known by the name of the place where they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also brought out improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati."
+  },
+  "seg.7f1a5999ea66": {
+   "src": "Can I use hill turmeric instead of regular turmeric?",
+   "t": "ସାଧାରଣ ହଳଦୀ ବଦଳରେ କଣ ପାହାଡ଼ିଆ ହଳଦୀ ବ୍ୟବହାର କରିପାରିବି?",
+   "back": "Can I use hill turmeric instead of ordinary turmeric?"
+  },
+  "seg.4ed419c2136a": {
+   "src": "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it on a low flame so it does not burn.",
+   "t": "ହଁ। ଯେଉଁଠି ହଳଦୀ ପକାନ୍ତି ସେଠି ପକାନ୍ତୁ, ସାଧାରଣତଃ ଯେତିକି ପକାନ୍ତି ସେତିକିରୁ ଆରମ୍ଭ କରନ୍ତୁ, ଆଉ କମ ନିଆଁରେ ପକାନ୍ତୁ ଯେପରି ପୋଡ଼ି ନ ଯାଏ।",
+   "back": "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it over low heat so that it does not burn."
+  },
+  "seg.1a441b0df6de": {
+   "src": "Both packs list one ingredient, turmeric (Curcuma longa), and name where it was grown.",
+   "t": "ଦୁଇଟି ପ୍ୟାକେଟରେ ଗୋଟିଏ ଉପାଦାନ ଲେଖାଅଛି, ହଳଦୀ (Curcuma longa), ଆଉ କେଉଁଠି ଚାଷ ହୋଇଛି ତାର ନାମ।",
+   "back": "Both packs list a single ingredient, turmeric (Curcuma longa), and the name of where it was grown."
+  },
+  "seg.1adc349b6e08": {
+   "src": "కొండ పసుపు vs మైదాన పసుపు · Hill vs Plains Turmeric | 1acrefarms",
+   "t": "కొండ పసుపు vs మైదాన పసుపు · ପାହାଡ଼ିଆ ନା ସମତଳ ହଳଦୀ | 1acrefarms",
+   "back": "కొండ పసుపు vs మైదాన పసుపు [Telugu: hill turmeric vs plains turmeric] · Hill or [vs] plains turmeric | 1acrefarms"
+  },
+  "seg.71bf7490dd33": {
+   "src": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. Konda pasupu (hill turmeric) vs plains turmeric: where each grows, how each is dried, what curcumin is, cooking and storage.",
+   "t": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. କୋଣ୍ଡା ପସୁପୁ (ପାହାଡ଼ିଆ ହଳଦୀ) ଓ ସମତଳ ହଳଦୀ: କେଉଁଟି କେଉଁଠି ହୁଏ, କେଉଁଟି କିପରି ଶୁଖାଯାଏ, କରକ୍ୟୁମିନ କଣ, ରାନ୍ଧିବା ଓ ରଖିବା।",
+   "back": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. [Telugu: The difference between hill turmeric and plains turmeric.] Konda Pasupu (hill turmeric) and plains turmeric: which grows where, how each is dried, what curcumin is, cooking and storing."
+  },
+  "seg.4e013e66158c": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference · 1acrefarms",
+   "t": "ପାହାଡ଼ିଆ ହଳଦୀ (କୋଣ୍ଡା ପସୁପୁ) ଓ ହଳଦୀ: ଫରକ କଣ · 1acrefarms",
+   "back": "Hill turmeric (Konda Pasupu) and turmeric: what is the difference · 1acrefarms"
+  },
+  "seg.bb2ec13fea03": {
+   "src": "Where each grows, how it is dried, what curcumin is, and how to compare two. With a Telugu section.",
+   "t": "କେଉଁଟି କେଉଁଠି ହୁଏ, କିପରି ଶୁଖାଯାଏ, କରକ୍ୟୁମିନ କଣ, ଆଉ ଦୁଇଟିର ତୁଳନା କିପରି କରିବେ। ସହିତ ଏକ ତେଲୁଗୁ ଅଂଶ।",
+   "back": "Which grows where, how it is dried, what curcumin is, and how to compare the two. Plus a Telugu section."
+  },
+  "seg.7811216916d3": {
+   "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
+   "t": "ପାଣି ଗ୍ଲାସ, ଘଷା ପରୀକ୍ଷା, ଆୟୋଡିନ ପରୀକ୍ଷା, ଆଉ କେବେ ଲ୍ୟାବ ଦରକାର। ସହିତ ଏକ ତେଲୁଗୁ ଅଂଶ।",
+   "back": "The water glass, the rub test, the iodine test, and when you need a lab. Plus a Telugu section."
   }
  }
 }

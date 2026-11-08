@@ -95,6 +95,10 @@
   "en": "See the pack",
   "note": "link on each pack card"
  },
+ "ui.review": {
+  "en": "Bought our packs? Review us on Google",
+  "note": "footer link to write a review of 1acrefarms on Google Maps; write 'Google' in Latin letters exactly; plain ask, no stars, no reward"
+ },
  "pack.TURM.name": {
   "en": "Turmeric Powder (Pasupu)",
   "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
@@ -471,10 +475,6 @@
   "en": "⟦#1⟧ · Teja Kaaram",
   "note": "text on /recipes/andhra-kodi-kura/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
- "seg.27cee3f0f8ff": {
-  "en": "MRP ₹342 · 540 g",
-  "note": "text on /recipes/andhra-kodi-kura/"
- },
  "seg.2803dd9940a3": {
   "en": "Our Amazon store",
   "note": "text on /recipes/andhra-kodi-kura/"
@@ -495,9 +495,21 @@
   "en": "MRP ₹396 · 540 g",
   "note": "text on /recipes/andhra-kodi-kura/"
  },
+ "seg.5ff7431ccbb1": {
+  "en": "Buy on Amazon",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
  "seg.cf5fbb1e5375": {
   "en": "Also good with ⟦1⟧Sannam Chilli Powder⟦/1⟧.",
   "note": "text on /recipes/andhra-kodi-kura/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.6b4f74dc7f36": {
+  "en": "Guide · turmeric",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.d3855c7cad24": {
+  "en": "How to check turmeric powder at home",
+  "note": "text on /recipes/andhra-kodi-kura/"
  },
  "seg.88306943fea7": {
   "en": "Method",
@@ -1047,13 +1059,17 @@
   "en": "MRP ₹495 · 540 g",
   "note": "text on /recipes/bellam-atukulu/"
  },
- "seg.5ff7431ccbb1": {
-  "en": "Buy on Amazon",
-  "note": "text on /recipes/bellam-atukulu/"
- },
  "seg.0a94735294ba": {
   "en": "Sweeten it with ⟦1⟧Cane Jaggery⟦/1⟧.",
   "note": "text on /recipes/bellam-atukulu/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.d1cc45d4f641": {
+  "en": "Guide · jaggery",
+  "note": "text on /recipes/bellam-atukulu/"
+ },
+ "seg.c388948b1966": {
+  "en": "Cane jaggery or palm jaggery",
+  "note": "text on /recipes/bellam-atukulu/"
  },
  "seg.fbe7b4b8afbc": {
   "en": "Put the poha in a sieve and pick out any bits of husk.",
@@ -1302,10 +1318,6 @@
  "seg.db0c9e6c42d6": {
   "en": "⟦#1⟧ · Jeedipappu",
   "note": "text on /recipes/bellam-pongali/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
- },
- "seg.155aa5ed5fa1": {
-  "en": "MRP ₹891 · 540 g",
-  "note": "text on /recipes/bellam-pongali/"
  },
  "seg.b1655e025b6c": {
   "en": "Sweeten it with ⟦1⟧Palm Jaggery⟦/1⟧.",
@@ -1582,10 +1594,6 @@
  "seg.6340b4041025": {
   "en": "⟦#1⟧ · Sannam Kaaram",
   "note": "text on /recipes/chepala-pulusu/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
- },
- "seg.0f9c3a486042": {
-  "en": "MRP ₹306 · 540 g",
-  "note": "text on /recipes/chepala-pulusu/"
  },
  "seg.ba6dcf57651d": {
   "en": "Also good with ⟦1⟧Teja Chilli Powder⟦/1⟧.",
@@ -6003,14 +6011,6 @@
   "en": "Guides",
   "note": "text on /learn/cane-vs-palm-jaggery/"
  },
- "seg.c388948b1966": {
-  "en": "Cane jaggery or palm jaggery",
-  "note": "text on /learn/cane-vs-palm-jaggery/"
- },
- "seg.d1cc45d4f641": {
-  "en": "Guide · jaggery",
-  "note": "text on /learn/cane-vs-palm-jaggery/"
- },
  "seg.d8082aa0cdf1": {
   "en": "Cane jaggery or palm jaggery: which to use",
   "note": "text on /learn/cane-vs-palm-jaggery/"
@@ -6235,20 +6235,664 @@
   "en": "Cane jaggery or palm jaggery: which to use · 1acrefarms",
   "note": "share preview text on /learn/cane-vs-palm-jaggery/"
  },
+ "seg.13ab70df1ad4": {
+  "en": "How to check chilli powder at home",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.4dff3a175ddd": {
+  "en": "Guide · chilli powder",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.27f1af0437bd": {
+  "en": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.1841c397898f": {
+  "en": "FSSAI's standard says chilli powder must be dry and free from dirt, added colouring matter, flavouring matter and mineral oil. Its testing manual has methods for finding brick powder, added starch, added colour, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.a0af610174e4": {
+  "en": "Some of this you can check in your kitchen with a glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can find. This guide covers both. Try the checks on any chilli powder you buy.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.5bf2055f3057": {
+  "en": "Sannam Chilli Powder⟦#1⟧⟦#2⟧",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.f5224d4b1cca": {
+  "en": "Teja Chilli Powder⟦#1⟧⟦#2⟧",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.b356a193952e": {
+  "en": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.a574ced14407": {
+  "en": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.11caa5f871e4": {
+  "en": "What FSSAI checks chilli powder for",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.87f56e160312": {
+  "en": "Added colour",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.7d346e39c41e": {
+  "en": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for colours that dissolve in water, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.7f79f4c5fcd6": {
+  "en": "Sudan dyes",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.dab0f1b06607": {
+  "en": "Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian Standard on quick tests for adulterants says Sudan III, much used in wax polishes, has been used to make chilli pods shine, and so finds its way into chilli powder.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.65d2132b3a71": {
+  "en": "Brick powder, sand, salt, talc and soapstone",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.eaaa28049f76": {
+  "en": "FSSAI's household tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase bulk.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.e159a2e5efb2": {
+  "en": "Starch",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.591f55c64be8": {
+  "en": "FSSAI's manual tests powdered spices other than turmeric for added starch. The Indian Standard notes that colour is also added to chilli powder to hide added starch.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.77e497cd9160": {
+  "en": "Sawdust and bran",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.6cdabb4ac9cc": {
+  "en": "Both float on water, which is how FSSAI's household tests spot them.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.2ad2a1900226": {
+  "en": "Check 1: the water glass and the rub test",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.1b1af7f63ffd": {
+  "en": "Fill a clear glass with water at room temperature.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.5ebb4d43f1c6": {
+  "en": "Sprinkle one teaspoon of chilli powder on top. Do not stir.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.e11be0844965": {
+  "en": "Watch the first minute. Look for coloured streaks running down from the powder.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.14ad43586f91": {
+  "en": "Leave it until most of the powder has sunk. Look at the surface for bits still floating.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.379262f468f1": {
+  "en": "Pour off most of the water and rub the sediment at the bottom between your fingers.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.7455fbe1d38d": {
+  "en": "What you see or feel",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.5ddc9ed4a863": {
+  "en": "What it can point to",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.9d20132af7ae": {
+  "en": "Colour streaks running down at once",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.4dd6d7d4418f": {
+  "en": "Added colour that dissolves in water",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.99d03e1725f4": {
+  "en": "Bits still floating after the powder sinks",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.909cfed7ea11": {
+  "en": "Sawdust or bran",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.f211ed47d57c": {
+  "en": "Sediment that feels gritty",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.6b3ebad45f08": {
+  "en": "Brick powder or sand",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.0778aeb79734": {
+  "en": "White sediment that feels soapy and smooth",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.08846b1820d9": {
+  "en": "Soapstone",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.175ed947e347": {
+  "en": "None of these",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.92ba3085667d": {
+  "en": "No sign of what this check can find.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.3cf82af49b09": {
+  "en": "Any one of these",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.e4f5d2924afa": {
+  "en": "Possible adulteration. Stop using that batch and get it tested.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.e5e493d4cb12": {
+  "en": "⟦1⟧Why it works.⟦/1⟧ Colours that dissolve in water leave the powder and run down as streaks. Brick powder is heavy and settles to the bottom, while sawdust and bran float.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.551c97147aa3": {
+  "en": "⟦1⟧What it misses.⟦/1⟧ Dyes that do not dissolve in water stay in the powder. Sudan I is one: it does not dissolve in water, and it is used to colour oils, fats and waxes. Chilli powder coloured with such dyes can pass this check. Only a lab test can rule them out.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.5bbec3bc6fbf": {
+  "en": "Wash your hands after the rub test, before you touch your eyes.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.36726998b551": {
+  "en": "Check 2: the iodine test for starch",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.3d76d0b2a476": {
+  "en": "FSSAI's manual uses the iodine test for powdered spices other than turmeric, so chilli powder can take it. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is left out.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.c7d23b036696": {
+  "en": "Put half a teaspoon of chilli powder on a white saucer.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.9b2fb67a0f9a": {
+  "en": "Add a few drops of tincture of iodine from a chemist.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.2d93dfc80312": {
+  "en": "Look at the colour where the drops land.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.c698ff17efbf": {
+  "en": "Throw that powder away afterwards.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.25bf59d68c4e": {
+  "en": "No blue colour",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.2f88b779aa2b": {
+  "en": "No sign of added starch.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.ac80a4934254": {
+  "en": "A blue colour",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.0db85a4ff58c": {
+  "en": "Points to added starch. Stop using that batch and get it tested. On red powder a faint change is hard to judge, so if you are not sure, let a lab decide.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.ed4a959013d8": {
+  "en": "⟦1⟧Why it works.⟦/1⟧ Iodine turns blue when it meets starch.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.5adf326d0b8f": {
+  "en": "Leave these to a lab",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.9e0f62706054": {
+  "en": "Acid and solvent tests at home",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.f5e28e97055b": {
+  "en": "The methods in FSSAI's manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. The acids can cause burns, and several of the solvents catch fire easily. They belong in a lab, not a kitchen.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.1e30ce9ef855": {
+  "en": "For a sure answer, send a sample to a NABL-accredited food testing lab. Ask it to test for added colours, including Sudan dyes, and against FSSAI's chilli powder standard. Its limits include moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%, all by weight, with both ash limits on a dry basis. Keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.456379c75c24": {
+  "en": "Read the pack before you buy",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.8ef59aeeebe4": {
+  "en": "An FSSAI licence or registration number.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.476e4849c1d8": {
+  "en": "The name and address of whoever made or packed it.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.f90b0f258a47": {
+  "en": "Net quantity, a batch or lot number, and a best-before date.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.fa3907160dbb": {
+  "en": "The ingredients. FSSAI allows up to 2% edible vegetable oil by weight in chilli powder, but only if the label says which oil and how much.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.616cb55edf33": {
+  "en": "Where it was grown, and the chilli variety if named. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.f11314eef092": {
+  "en": "Keep it well",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.7cdc58c0c7e8": {
+  "en": "Keep the pack zipped shut, or move the powder to a dry, airtight jar.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.5766b566dbba": {
+  "en": "Use a dry spoon, and keep the jar away from steam from the stove.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.ae76fa3c0a37": {
+  "en": "Keep it in a cool, dry place, out of direct sunlight.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.cee32139c40b": {
+  "en": "Use it within the best-before date on the pack, in dishes such as ⟦1⟧vellulli kaaram⟦/1⟧, ⟦2⟧gongura pachadi⟦/2⟧ or ⟦3⟧tomato pachadi⟦/3⟧.",
+  "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.13c76694dc1e": {
+  "en": "How do I check chilli powder for brick powder at home?",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.3e87e1d30613": {
+  "en": "Put a teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the water and rub the sediment between your fingers: grit points to brick powder or sand, and a white residue that feels soapy and smooth points to soapstone.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.f609f5773557": {
+  "en": "Can the water test detect Sudan dye in chilli powder?",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.7bd8af24de2f": {
+  "en": "No. Sudan I does not dissolve in water, so it cannot run out as streaks. FSSAI's manual tests for Sudan III and for oil-soluble colours with solvents such as hexane and petroleum ether, so those tests need a lab.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.d63c02ec2e5c": {
+  "en": "Does the iodine test work on chilli powder?",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.01e86c518d41": {
+  "en": "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli powder is one of them. A blue colour points to added starch.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.75e20911cd47": {
+  "en": "Is bright red chilli powder a sign of adulteration?",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.dcfec3eff0b8": {
+  "en": "Colour alone does not tell you. The water check looks for colour that leaves the powder and runs down as streaks, not for how red the powder looks, and a lab can test for added colours.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.87fe2929801d": {
+  "en": "What should I do if a check looks wrong?",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.54f85d34859f": {
+  "en": "Stop using that batch and keep the pack. Contact the seller with the batch number, or send a sample to a NABL-accredited food testing lab for a sure answer.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.ff09628b25c1": {
+  "en": "Our chilli powder",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.a7d8a3890045": {
+  "en": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+  "note": "text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.3ed867d1961c": {
+  "en": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
+  "note": "browser tab / Google title; keep ' | 1acrefarms' at the end on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.20f494d041fc": {
+  "en": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. How to check chilli powder at home: the water glass, rub and iodine tests, what they miss, and when you need a lab.",
+  "note": "Google description on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.cf3eac803a81": {
+  "en": "How to check chilli powder at home · 1acrefarms",
+  "note": "share preview text on /learn/chilli-powder-adulteration-test/"
+ },
+ "seg.3a7ecf1759a7": {
+  "en": "Hill turmeric or turmeric",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.0e55b39feef1": {
+  "en": "Hill turmeric (konda pasupu) or turmeric: the difference",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.ebf6f90777d6": {
+  "en": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.8b7a90a6aed6": {
+  "en": "Konda pasupu means hill turmeric: turmeric grown in hill country. In Andhra Pradesh that includes the agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu, where most tribal farmers grow turmeric. Plains turmeric grows on farmland in districts such as Guntur.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.404d008584f4": {
+  "en": "FSSAI's standard for turmeric powder is the same wherever it grew. What changes is the place, the variety, and how it is grown and dried. This guide covers each of those, what curcumin is, how to cook with each and how to compare two turmerics fairly. There is a Telugu section further down.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.b4d7b88f52e3": {
+  "en": "Hill Turmeric Powder⟦#1⟧⟦#2⟧",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.6c894965ab39": {
+  "en": "Turmeric Powder⟦#1⟧⟦#2⟧",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.2e709bd87897": {
+  "en": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.10eec083bb3d": {
+  "en": "Hill turmeric (konda pasupu) grows in hill country, such as the Eastern Ghats around Araku, where most tribal farmers grow it. Plains turmeric grows on farmland in districts such as Guntur. Both are boiled, dried and ground, and FSSAI holds both to the same standard. Curcumin, the yellow pigment in turmeric, changes with variety, soil, climate and processing, so the word hill or plains does not tell you how much a turmeric has. Cook with both the same way.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.1930852dafc4": {
+  "en": "Hill turmeric⟦#1⟧",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.85c353a8dfbf": {
+  "en": "Plains turmeric⟦#1⟧",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.e4c8ef75f71b": {
+  "en": "Where it grows",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.42213bedfb12": {
+  "en": "Hill country, such as the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.34cc236d9133": {
+  "en": "Farmland in districts such as Guntur",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.0bf2cf67b524": {
+  "en": "Who grows it",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.ef7b65af6af7": {
+  "en": "Most tribal farmers in the Paderu agency",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.6fcc769ff4cc": {
+  "en": "Farms in Guntur district, where turmeric is one of the commercial crops, with cotton, chillies and tobacco",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.2c6469748e2d": {
+  "en": "In the ground",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.4fad87cf8112": {
+  "en": "The old local variety has often been left for 2 to 3 seasons, up to 18 to 24 months; newer varieties such as Roma are dug after one season",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.186488dd4390": {
+  "en": "ICAR-IISR's general guide: a well-managed crop is ready in 7 to 9 months, usually dug between January and March",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.b60ef1949c00": {
+  "en": "After digging",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.a5d9b319040e": {
+  "en": "Boiled and dried by hand, which takes a lot of labour and firewood",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.9094d5bd4e83": {
+  "en": "The usual steps: boiled, sun-dried, then polished by hand or by machine",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.d3963fd16edc": {
+  "en": "The same one for both: at least 2% curcuminoids on a dry basis, and added colour is not allowed",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.802e452a9783": {
+  "en": "Our pack says",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.2e323e56fef7": {
+  "en": "Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.ce4850eb3b73": {
+  "en": "Grown in Palnadu and Guntur. Sun-dried, stone-ground",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.8c0d21f32664": {
+  "en": "The rows above describe each region in general, from the sources at the end of this page. Only the last row is about our packs.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.b6ab1dcdcf8d": {
+  "en": "Where each grows",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.a9e5b44e1be6": {
+  "en": "⟦1⟧Hill turmeric.⟦/1⟧ ICAR-IISR's report on the Paderu agency, the tribal hill country of the Eastern Ghats that takes in Araku Valley, Chintapalle and Paderu, says turmeric is grown there by most tribal farmers.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.736e66a0b5de": {
+  "en": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops, with cotton, chillies and tobacco. Duggirala, in Guntur, has a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022, Guntur district was divided into three districts: Guntur, Palnadu and Bapatla.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.0f26c0785ed1": {
+  "en": "Turmeric can be grown either way: ICAR-IISR says it can be grown rain-fed or irrigated, from sea level up to 1,500 m.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.b687346df428": {
+  "en": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.9a5af9e957e1": {
+  "en": "How each is grown and dried",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.e641ce21ee35": {
+  "en": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says tribal farmers there have grown a local variety called Chayapasupu, or Chintapalle Local, for ages. It has been common practice to leave it in the ground for two or three seasons, up to 18 to 24 months, before digging. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested varieties for the hill zone and brought in Roma and IISR Pragati, which are dug after one season. The report says tribal farmers boil and dry their turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boilers and polishers.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.f93b2805162b": {
+  "en": "⟦1⟧The usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after it is dug:",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.675a9ec4355c": {
+  "en": "Dig it when the leaves dry and turn light brown to yellowish. A well-managed crop is ready seven to nine months after planting, usually between January and March.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.763940881dcd": {
+  "en": "Separate the fingers from the bulbs and boil them within 3 or 4 days of digging, in water until soft: 45 to 60 minutes for fingers and 90 minutes for bulbs. Boiling takes away the raw smell, cuts the drying time and gives an even colour.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.a52a5947071a": {
+  "en": "Dry them in the sun in layers 5 to 7 cm deep, heaped and covered at night. It may take 10 to 12 days for the moisture to fall below 12%.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.69d24ab1420a": {
+  "en": "Polish off the rough, dull, scaly skin by rubbing, by hand or in a turning drum.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.1b7d7df8b7fa": {
+  "en": "Grind the dried turmeric into powder. FSSAI allows turmeric powder up to 10% moisture.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.1668650874a7": {
+  "en": "Fingers are the side branches of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulbs are the shorter, thicker central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.4a08c0de8660": {
+  "en": "Curcumin, and how they look",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.7ef4d7667b4e": {
+  "en": "Curcumin is the yellow pigment in turmeric, ICAR-IISR says. FSSAI measures a turmeric powder's colouring power as its curcuminoid content, and asks for at least 2% on a dry basis. That standard is the same for hill and plains turmeric.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.fec370db2315": {
+  "en": "Curcumin changes from one turmeric to the next:",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.bf314e75200d": {
+  "en": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha).",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.cee7632d2998": {
+  "en": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR notes that turmeric from different regions differs in quality because of soil, climate and farming practice. Its Paderu report calls curcumin content highly sensitive to changes in the growing environment.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.70b529fe0f69": {
+  "en": "⟦1⟧Processing.⟦/1⟧ Handling and processing after harvest add to the differences, and boiling too long or too short affects the quality of the dried turmeric.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.493187b22749": {
+  "en": "So the word hill or plains on a pack does not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.53dc21b97510": {
+  "en": "⟦1⟧How they look.⟦/1⟧ Colour varies too. ICAR-IISR describes its varieties' rhizomes as ranging from reddish yellow to deep orange. Processing counts as well: boiling evens out the colour, drying in too thin a layer can spoil it, and polishing by hand leaves a rough, dull surface.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.d8ece11f902a": {
+  "en": "Cooking with each, and keeping it",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.276f633c7a1f": {
+  "en": "Use either one wherever you use turmeric: dal, sambar, rasam, curries and pulihora.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.ca5e9b6340f2": {
+  "en": "Add it on a low flame so it does not burn.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.7e910d4ad2a1": {
+  "en": "To swap one for the other, start with the amount you usually use and adjust to taste.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.731001f6177d": {
+  "en": "Try either one in ⟦1⟧pasupu annam⟦/1⟧, ⟦2⟧nimmakaya pulihora⟦/2⟧, ⟦3⟧tomato pappu⟦/3⟧ or ⟦4⟧pasupu paalu⟦/4⟧.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.259a5f63423a": {
+  "en": "Keeping it well.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.073f63fe23e0": {
+  "en": "Use a dry spoon every time.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.b334ade49a15": {
+  "en": "Store it in a cool, dry place, away from light.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.ea935ed7c1aa": {
+  "en": "How to compare two turmerics fairly",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.dcebc75ff722": {
+  "en": "Compare powder with powder. FSSAI allows whole turmeric up to 12% moisture and powder up to 10%, so the two are held to different limits.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.9d14be920107": {
+  "en": "Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note the batch numbers, so you know which lots you compared.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.fbb64b2b32b0": {
+  "en": "Do the water check on both, side by side, with the same amount in the same kind of glass. The steps are in ⟦1⟧how to check turmeric powder at home⟦/1⟧.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.bd82039194f2": {
+  "en": "Cook the same dish with each, with the same amount, and compare the colour and taste.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.8949107c3ad8": {
+  "en": "Do not judge curcumin by colour alone. A brighter yellow is not a measurement; a food testing lab can measure curcuminoid content.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.45a1aaa1ac2f": {
+  "en": "What is konda pasupu?",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.1810d213ce3f": {
+  "en": "Konda pasupu is Telugu for hill turmeric: turmeric grown in hill country. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu agency around Araku Valley and Chintapalle, where most tribal farmers grow turmeric.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.15730f8cc6b8": {
+  "en": "Is hill turmeric different from regular turmeric?",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.47cf644d0819": {
+  "en": "FSSAI holds all turmeric powder to the same standard, wherever it grew. Hill and plains turmeric can differ in where they grow, the varieties grown, and how they are grown and dried. In the Paderu hills, for example, an old local variety has often been left in the ground for up to two years.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.925655ca4b05": {
+  "en": "Does hill turmeric have more curcumin?",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.0d1b42a32899": {
+  "en": "The word hill alone does not tell you. Curcumin changes with the variety, the soil and climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid content of a batch.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.4bce9a44c11e": {
+  "en": "What are the types of turmeric (haldi) in India?",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.4e6e7201dae6": {
+  "en": "ICAR-IISR says India grows many turmeric cultivars, mostly known by the name of the place where they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.7f1a5999ea66": {
+  "en": "Can I use hill turmeric instead of regular turmeric?",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.4ed419c2136a": {
+  "en": "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it on a low flame so it does not burn.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.ba0682e12278": {
+  "en": "Our turmeric",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.1a441b0df6de": {
+  "en": "Both packs list one ingredient, turmeric (Curcuma longa), and name where it was grown.",
+  "note": "text on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.1adc349b6e08": {
+  "en": "కొండ పసుపు vs మైదాన పసుపు · Hill vs Plains Turmeric | 1acrefarms",
+  "note": "browser tab / Google title; keep ' | 1acrefarms' at the end on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.71bf7490dd33": {
+  "en": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. Konda pasupu (hill turmeric) vs plains turmeric: where each grows, how each is dried, what curcumin is, cooking and storage.",
+  "note": "Google description on /learn/hill-turmeric-vs-turmeric/"
+ },
+ "seg.4e013e66158c": {
+  "en": "Hill turmeric (konda pasupu) or turmeric: the difference · 1acrefarms",
+  "note": "share preview text on /learn/hill-turmeric-vs-turmeric/"
+ },
  "seg.76d52912e55b": {
   "en": "Know what you buy",
   "note": "text on /learn/"
  },
  "seg.0fba3c8b175a": {
   "en": "Plain answers to what buyers ask us, with the sources behind them.",
-  "note": "text on /learn/"
- },
- "seg.6b4f74dc7f36": {
-  "en": "Guide · turmeric",
-  "note": "text on /learn/"
- },
- "seg.d3855c7cad24": {
-  "en": "How to check turmeric powder at home",
   "note": "text on /learn/"
  },
  "seg.b54cac8c5de3": {
@@ -6261,6 +6905,14 @@
  },
  "seg.1401601b2e2c": {
   "en": "What each is made from, how they taste, and which to use where. With a Telugu section.",
+  "note": "text on /learn/"
+ },
+ "seg.bb2ec13fea03": {
+  "en": "Where each grows, how it is dried, what curcumin is, and how to compare two. With a Telugu section.",
+  "note": "text on /learn/"
+ },
+ "seg.7811216916d3": {
+  "en": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
   "note": "text on /learn/"
  },
  "seg.336c642e2ba5": {
@@ -6347,10 +6999,6 @@
   "en": "Check 1: the water glass",
   "note": "text on /learn/turmeric-adulteration-test/"
  },
- "seg.1b1af7f63ffd": {
-  "en": "Fill a clear glass with water at room temperature.",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
  "seg.653731f2ed6f": {
   "en": "Sprinkle one level teaspoon of turmeric powder on top. Do not stir.",
   "note": "text on /learn/turmeric-adulteration-test/"
@@ -6427,16 +7075,8 @@
   "en": "A NABL-accredited food testing lab can test turmeric for lead and for added colours. Ask the lab how much sample it needs, keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack. FSSAI publishes a list of notified food testing labs on its website.",
   "note": "text on /learn/turmeric-adulteration-test/"
  },
- "seg.456379c75c24": {
-  "en": "Read the pack before you buy",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
  "seg.ff7951e2f36b": {
   "en": "An FSSAI licence or registration number. You can look it up on FSSAI's FoSCoS website.",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
- "seg.476e4849c1d8": {
-  "en": "The name and address of whoever made or packed it.",
   "note": "text on /learn/turmeric-adulteration-test/"
  },
  "seg.beee8eda6466": {
@@ -6445,14 +7085,6 @@
  },
  "seg.f9270fd96202": {
   "en": "Where it was grown. Turmeric from different regions differs in colour, so a named region helps you compare like with like.",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
- "seg.f11314eef092": {
-  "en": "Keep it well",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
- "seg.7cdc58c0c7e8": {
-  "en": "Keep the pack zipped shut, or move the powder to a dry, airtight jar.",
   "note": "text on /learn/turmeric-adulteration-test/"
  },
  "seg.bb4d61f86b55": {
@@ -6487,16 +7119,8 @@
   "en": "Moisture. A wet spoon or an open pack lets the powder take in water. Break the lumps with a dry spoon and keep the pack sealed.",
   "note": "text on /learn/turmeric-adulteration-test/"
  },
- "seg.87fe2929801d": {
-  "en": "What should I do if a check looks wrong?",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
  "seg.e83aba6cc6df": {
   "en": "Stop using that batch, keep the pack, and contact the seller with the batch number. You can also report it to FSSAI through its Food Safety Connect app. If it is ours, WhatsApp us a photo of the pack and the glass.",
-  "note": "text on /learn/turmeric-adulteration-test/"
- },
- "seg.ba0682e12278": {
-  "en": "Our turmeric",
   "note": "text on /learn/turmeric-adulteration-test/"
  },
  "seg.1dd4194330b1": {

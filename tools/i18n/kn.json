@@ -8380,6 +8380,796 @@
    "src": "Bought our packs? Review us on Google",
    "t": "ನಮ್ಮ ಪ್ಯಾಕೆಟ್ ಕೊಂಡಿರಾ? Google ನಲ್ಲಿ ನಮಗೆ ರಿವ್ಯೂ ಕೊಡಿ",
    "back": "Bought our packet? Give us a review on Google"
+  },
+  "seg.13ab70df1ad4": {
+   "src": "How to check chilli powder at home",
+   "t": "ಮನೆಯಲ್ಲೇ ಮೆಣಸಿನ ಪುಡಿಯನ್ನು ಹೇಗೆ ಪರೀಕ್ಷಿಸುವುದು",
+   "back": "How to test chilli powder at home"
+  },
+  "seg.4dff3a175ddd": {
+   "src": "Guide · chilli powder",
+   "t": "ಮಾರ್ಗದರ್ಶಿ · ಮೆಣಸಿನ ಪುಡಿ",
+   "back": "Guide · Chilli powder"
+  },
+  "seg.27f1af0437bd": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · ಕಾರಂ · ಲಾಲ್ ಮಿರ್ಚ್",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Karam · Lal mirch"
+  },
+  "seg.1841c397898f": {
+   "src": "FSSAI's standard says chilli powder must be dry and free from dirt, added colouring matter, flavouring matter and mineral oil. Its testing manual has methods for finding brick powder, added starch, added colour, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAI ಮಾನದಂಡದ ಪ್ರಕಾರ ಮೆಣಸಿನ ಪುಡಿ ಒಣಗಿರಬೇಕು, ಮತ್ತು ಅದರಲ್ಲಿ ಮಣ್ಣು-ಕಸ, ಸೇರಿಸಿದ ಬಣ್ಣ ಪದಾರ್ಥ, ಸುವಾಸನೆ ಪದಾರ್ಥ ಮತ್ತು ಖನಿಜ ತೈಲ (ಮಿನರಲ್ ಆಯಿಲ್) ಇರಬಾರದು. ಅದರ ಪರೀಕ್ಷಾ ಕೈಪಿಡಿಯಲ್ಲಿ ಇಟ್ಟಿಗೆ ಪುಡಿ, ಸೇರಿಸಿದ ಪಿಷ್ಟ, ಸೇರಿಸಿದ ಬಣ್ಣ, ಎಣ್ಣೆಯಲ್ಲಿ ಕರಗುವ ಬಣ್ಣಗಳು, ಹಾಗೂ ಸುಡಾನ್ III ಮತ್ತು ರೋಡಮೈನ್ B ಎಂಬ ಬಣ್ಣಗಳನ್ನು ಪತ್ತೆ ಮಾಡುವ ವಿಧಾನಗಳಿವೆ.",
+   "back": "As per the FSSAI standard, chilli powder must be dry, and it must not contain dirt-debris [lit: mud-trash], added colouring matter, flavouring matter, or mineral oil. Its testing manual has methods to detect brick powder, added starch, added colour, oil-soluble colours, and the dyes [lit: colours] Sudan III and Rhodamine B."
+  },
+  "seg.a0af610174e4": {
+   "src": "Some of this you can check in your kitchen with a glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can find. This guide covers both. Try the checks on any chilli powder you buy.",
+   "t": "ಇವುಗಳಲ್ಲಿ ಕೆಲವನ್ನು ಒಂದು ಲೋಟ ನೀರು, ನಿಮ್ಮ ಬೆರಳುಗಳು ಮತ್ತು ಕೆಲವು ಹನಿ ಅಯೋಡಿನ್ ಬಳಸಿ ನಿಮ್ಮ ಅಡುಗೆಮನೆಯಲ್ಲೇ ಪರೀಕ್ಷಿಸಬಹುದು. ಸುಡಾನ್ ಬಣ್ಣಗಳಂತಹ ಕೆಲವನ್ನು ಲ್ಯಾಬ್ ಮಾತ್ರ ಪತ್ತೆ ಮಾಡಬಲ್ಲದು. ಈ ಮಾರ್ಗದರ್ಶಿ ಎರಡನ್ನೂ ತಿಳಿಸುತ್ತದೆ. ನೀವು ಕೊಳ್ಳುವ ಯಾವುದೇ ಮೆಣಸಿನ ಪುಡಿಯ ಮೇಲೆ ಈ ಪರೀಕ್ಷೆಗಳನ್ನು ಮಾಡಿ ನೋಡಿ.",
+   "back": "Some of these you can test in your own kitchen using a glass of water, your fingers and a few drops of iodine. Some, like Sudan colours [dyes], only a lab can detect. This guide tells both. Try these tests on any chilli powder you buy."
+  },
+  "seg.5bf2055f3057": {
+   "src": "Sannam Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "ಸನ್ನಂ ಮೆಣಸಿನ ಪುಡಿ⟦#1⟧⟦#2⟧",
+   "back": "Sannam chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.f5224d4b1cca": {
+   "src": "Teja Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "ತೇಜ ಮೆಣಸಿನ ಪುಡಿ⟦#1⟧⟦#2⟧",
+   "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.b356a193952e": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+   "t": "⟦1⟧ನಮ್ಮ ಎರಡು ಮೆಣಸಿನ ಪುಡಿಗಳು⟦/1⟧ಎಡಕ್ಕೆ: ಸನ್ನಂ ಮೆಣಸಿನ ಪುಡಿ. ಬಲಕ್ಕೆ: ತೇಜ ಮೆಣಸಿನ ಪುಡಿ. ಎರಡೂ ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರಿನಲ್ಲಿ ಬೆಳೆದ ಮೆಣಸಿನಕಾಯಿಯಿಂದ; ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ, ನರಸರಾವುಪೇಟೆಯಲ್ಲಿ ಪ್ಯಾಕ್ ಮಾಡಿದವು.",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both are from chillies grown in Palnadu and Guntur; sun-dried and packed in Narasaraopet."
+  },
+  "seg.a574ced14407": {
+   "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
+   "t": "ಒಂದು ಲೋಟ ನೀರಿನ ಮೇಲೆ ಒಂದು ಟೀ ಚಮಚ ಮೆಣಸಿನ ಪುಡಿ ಉದುರಿಸಿ, ಕಲಕಬೇಡಿ. ತಕ್ಷಣ ಕೆಳಗೆ ಇಳಿಯುವ ಬಣ್ಣದ ಗೆರೆಗಳು ಸೇರಿಸಿದ ಬಣ್ಣವನ್ನು ಸೂಚಿಸುತ್ತವೆ; ಪುಡಿ ಮುಳುಗಿದ ನಂತರವೂ ತೇಲುವ ಚೂರುಗಳು ಮರದ ಹೊಟ್ಟು ಅಥವಾ ತೌಡನ್ನು ಸೂಚಿಸುತ್ತವೆ. ತಳದಲ್ಲಿ ಕುಳಿತದ್ದನ್ನು ಉಜ್ಜಿ ನೋಡಿ: ತರಿತರಿಯಾಗಿದ್ದರೆ ಇಟ್ಟಿಗೆ ಪುಡಿ ಅಥವಾ ಮರಳನ್ನು, ಸಾಬೂನಿನಂತೆ ಅನಿಸಿದರೆ ಬಳಪದ ಕಲ್ಲನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಅಯೋಡಿನ್ ಹಾಕಿದಾಗ ಪುಡಿ ನೀಲಿಯಾದರೆ ಅದು ಸೇರಿಸಿದ ಪಿಷ್ಟವನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಸುಡಾನ್ I ನಂತಹ ಬಣ್ಣಗಳು ನೀರಿನಲ್ಲಿ ಕಾಣಿಸುವುದಿಲ್ಲ; ಅವುಗಳಿಗಾಗಿ ಲ್ಯಾಬ್ ಬಳಸಿ.",
+   "back": "Sprinkle a teaspoon of chilli powder on top of a glass of water, do not stir. Coloured streaks that go down immediately indicate added colour; bits that float even after the powder has sunk indicate sawdust [lit: wood husk] or bran. Rub what has settled at the bottom: if gritty it indicates brick powder or sand, if it feels like soap it indicates soapstone [lit: slate-pencil stone]. If the powder turns blue when iodine is added, it indicates added starch. Colours like Sudan I do not show in water; use a lab for them."
+  },
+  "seg.11caa5f871e4": {
+   "src": "What FSSAI checks chilli powder for",
+   "t": "FSSAI ಮೆಣಸಿನ ಪುಡಿಯಲ್ಲಿ ಏನನ್ನು ಪರೀಕ್ಷಿಸುತ್ತದೆ",
+   "back": "What FSSAI tests for in chilli powder"
+  },
+  "seg.87f56e160312": {
+   "src": "Added colour",
+   "t": "ಸೇರಿಸಿದ ಬಣ್ಣ",
+   "back": "Added colour"
+  },
+  "seg.7d346e39c41e": {
+   "src": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for colours that dissolve in water, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAI ಯ ಮೆಣಸಿನ ಪುಡಿ ಮಾನದಂಡ ಸೇರಿಸಿದ ಬಣ್ಣ ಪದಾರ್ಥಕ್ಕೆ ಅವಕಾಶ ಕೊಡುವುದಿಲ್ಲ. FSSAI ಯ ಪರೀಕ್ಷೆಗಳು ನೀರಿನಲ್ಲಿ ಕರಗುವ ಬಣ್ಣಗಳು, ಎಣ್ಣೆಯಲ್ಲಿ ಕರಗುವ ಬಣ್ಣಗಳು, ಹಾಗೂ ಸುಡಾನ್ III ಮತ್ತು ರೋಡಮೈನ್ B ಎಂಬ ಬಣ್ಣಗಳನ್ನು ಹುಡುಕುತ್ತವೆ.",
+   "back": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for water-soluble colours, oil-soluble colours, and the colours [dyes] Sudan III and Rhodamine B."
+  },
+  "seg.7f79f4c5fcd6": {
+   "src": "Sudan dyes",
+   "t": "ಸುಡಾನ್ ಬಣ್ಣಗಳು",
+   "back": "Sudan colours [dyes]"
+  },
+  "seg.dab0f1b06607": {
+   "src": "Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian Standard on quick tests for adulterants says Sudan III, much used in wax polishes, has been used to make chilli pods shine, and so finds its way into chilli powder.",
+   "t": "ಸುಡಾನ್ I ಅನ್ನು ಎಣ್ಣೆ, ಕೊಬ್ಬು, ಮೇಣ, ಹಾಗೂ ಶೂ ಪಾಲಿಶ್ ಮತ್ತು ನೆಲದ ಪಾಲಿಶ್‌ಗೆ ಬಣ್ಣ ಕೊಡಲು ಬಳಸುತ್ತಾರೆ. ಕಲಬೆರಕೆ ವಸ್ತುಗಳ ತ್ವರಿತ ಪರೀಕ್ಷೆಗಳ ಕುರಿತ ಭಾರತೀಯ ಮಾನದಂಡ ಹೇಳುವಂತೆ, ಮೇಣದ ಪಾಲಿಶ್‌ಗಳಲ್ಲಿ ಹೆಚ್ಚಾಗಿ ಬಳಸುವ ಸುಡಾನ್ III ಅನ್ನು ಮೆಣಸಿನಕಾಯಿಗಳು ಹೊಳೆಯುವಂತೆ ಮಾಡಲು ಬಳಸಲಾಗಿದೆ, ಹಾಗಾಗಿ ಅದು ಮೆಣಸಿನ ಪುಡಿಯೊಳಗೂ ಸೇರುತ್ತದೆ.",
+   "back": "Sudan I is used to give colour to oil, fat, wax, and shoe polish and floor polish. As the Indian Standard on rapid tests for adulterants says, Sudan III, much used in wax polishes, has been used to make chillies shiny, and so it also gets into chilli powder."
+  },
+  "seg.65d2132b3a71": {
+   "src": "Brick powder, sand, salt, talc and soapstone",
+   "t": "ಇಟ್ಟಿಗೆ ಪುಡಿ, ಮರಳು, ಉಪ್ಪು, ಟಾಲ್ಕ್ ಮತ್ತು ಬಳಪದ ಕಲ್ಲು",
+   "back": "Brick powder, sand, salt, talc, soapstone [lit: slate-pencil stone]"
+  },
+  "seg.eaaa28049f76": {
+   "src": "FSSAI's household tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase bulk.",
+   "t": "FSSAI ಯ ಮನೆಯ ಪರೀಕ್ಷೆಗಳು ಮೆಣಸಿನ ಪುಡಿಗೆ ಇವುಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತವೆ. ಪ್ರಮಾಣ ಹೆಚ್ಚಿಸಲು ಇಟ್ಟಿಗೆ ಪುಡಿ ಬೆರೆಸಲಾಗುತ್ತದೆ ಎಂದು ಭಾರತೀಯ ಮಾನದಂಡ ಹೇಳುತ್ತದೆ.",
+   "back": "FSSAI's home tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase the quantity."
+  },
+  "seg.e159a2e5efb2": {
+   "src": "Starch",
+   "t": "ಪಿಷ್ಟ",
+   "back": "Starch"
+  },
+  "seg.591f55c64be8": {
+   "src": "FSSAI's manual tests powdered spices other than turmeric for added starch. The Indian Standard notes that colour is also added to chilli powder to hide added starch.",
+   "t": "FSSAI ಯ ಕೈಪಿಡಿ ಅರಿಶಿನವನ್ನು ಬಿಟ್ಟು ಬೇರೆ ಮಸಾಲೆ ಪುಡಿಗಳಲ್ಲಿ ಸೇರಿಸಿದ ಪಿಷ್ಟಕ್ಕಾಗಿ ಪರೀಕ್ಷಿಸುತ್ತದೆ. ಸೇರಿಸಿದ ಪಿಷ್ಟವನ್ನು ಮರೆಮಾಡಲು ಕೂಡ ಮೆಣಸಿನ ಪುಡಿಗೆ ಬಣ್ಣ ಸೇರಿಸಲಾಗುತ್ತದೆ ಎಂದು ಭಾರತೀಯ ಮಾನದಂಡ ಗುರುತಿಸುತ್ತದೆ.",
+   "back": "FSSAI's manual tests for added starch in spice powders other than turmeric. The Indian Standard recognises that colour is also added to chilli powder to hide added starch."
+  },
+  "seg.77e497cd9160": {
+   "src": "Sawdust and bran",
+   "t": "ಮರದ ಹೊಟ್ಟು ಮತ್ತು ತೌಡು",
+   "back": "Sawdust [lit: wood husk] and bran"
+  },
+  "seg.6cdabb4ac9cc": {
+   "src": "Both float on water, which is how FSSAI's household tests spot them.",
+   "t": "ಎರಡೂ ನೀರಿನ ಮೇಲೆ ತೇಲುತ್ತವೆ; FSSAI ಯ ಮನೆಯ ಪರೀಕ್ಷೆಗಳು ಅವುಗಳನ್ನು ಹೀಗೆಯೇ ಪತ್ತೆ ಮಾಡುತ್ತವೆ.",
+   "back": "Both float on water; FSSAI's home tests detect them in just this way."
+  },
+  "seg.2ad2a1900226": {
+   "src": "Check 1: the water glass and the rub test",
+   "t": "ಪರೀಕ್ಷೆ 1: ನೀರಿನ ಲೋಟ ಮತ್ತು ಉಜ್ಜುವ ಪರೀಕ್ಷೆ",
+   "back": "Test 1: Water glass and rub test"
+  },
+  "seg.5ebb4d43f1c6": {
+   "src": "Sprinkle one teaspoon of chilli powder on top. Do not stir.",
+   "t": "ಮೇಲೆ ಒಂದು ಟೀ ಚಮಚ ಮೆಣಸಿನ ಪುಡಿ ಉದುರಿಸಿ. ಕಲಕಬೇಡಿ.",
+   "back": "Sprinkle a teaspoon of chilli powder on top. Do not stir."
+  },
+  "seg.e11be0844965": {
+   "src": "Watch the first minute. Look for coloured streaks running down from the powder.",
+   "t": "ಮೊದಲ ಒಂದು ನಿಮಿಷ ಗಮನಿಸಿ. ಪುಡಿಯಿಂದ ಕೆಳಗೆ ಇಳಿಯುವ ಬಣ್ಣದ ಗೆರೆಗಳಿವೆಯೇ ನೋಡಿ.",
+   "back": "Watch the first one minute. See whether there are coloured streaks going down from the powder."
+  },
+  "seg.14ad43586f91": {
+   "src": "Leave it until most of the powder has sunk. Look at the surface for bits still floating.",
+   "t": "ಹೆಚ್ಚಿನ ಪುಡಿ ಮುಳುಗುವವರೆಗೆ ಹಾಗೇ ಬಿಡಿ. ಮೇಲ್ಮೈಯಲ್ಲಿ ಇನ್ನೂ ತೇಲುತ್ತಿರುವ ಚೂರುಗಳಿವೆಯೇ ನೋಡಿ.",
+   "back": "Leave it as it is until most of the powder sinks. See whether there are bits still floating on the surface."
+  },
+  "seg.379262f468f1": {
+   "src": "Pour off most of the water and rub the sediment at the bottom between your fingers.",
+   "t": "ಹೆಚ್ಚಿನ ನೀರನ್ನು ಬಸಿದು, ತಳದಲ್ಲಿ ಕುಳಿತದ್ದನ್ನು ಬೆರಳುಗಳ ನಡುವೆ ಉಜ್ಜಿ ನೋಡಿ.",
+   "back": "Drain off most of the water and rub what has settled at the bottom between your fingers."
+  },
+  "seg.7455fbe1d38d": {
+   "src": "What you see or feel",
+   "t": "ನಿಮಗೆ ಕಾಣುವುದು ಅಥವಾ ಅನಿಸುವುದು",
+   "back": "What you see or feel"
+  },
+  "seg.5ddc9ed4a863": {
+   "src": "What it can point to",
+   "t": "ಅದು ಏನನ್ನು ಸೂಚಿಸಬಹುದು",
+   "back": "What it may show"
+  },
+  "seg.9d20132af7ae": {
+   "src": "Colour streaks running down at once",
+   "t": "ತಕ್ಷಣ ಕೆಳಗೆ ಇಳಿಯುವ ಬಣ್ಣದ ಗೆರೆಗಳು",
+   "back": "Coloured streaks that go down immediately"
+  },
+  "seg.4dd6d7d4418f": {
+   "src": "Added colour that dissolves in water",
+   "t": "ನೀರಿನಲ್ಲಿ ಕರಗುವ ಸೇರಿಸಿದ ಬಣ್ಣ",
+   "back": "Water-soluble added colour"
+  },
+  "seg.99d03e1725f4": {
+   "src": "Bits still floating after the powder sinks",
+   "t": "ಪುಡಿ ಮುಳುಗಿದ ನಂತರವೂ ತೇಲುವ ಚೂರುಗಳು",
+   "back": "Bits that float even after the powder has sunk"
+  },
+  "seg.909cfed7ea11": {
+   "src": "Sawdust or bran",
+   "t": "ಮರದ ಹೊಟ್ಟು ಅಥವಾ ತೌಡು",
+   "back": "Sawdust [lit: wood husk] or bran"
+  },
+  "seg.f211ed47d57c": {
+   "src": "Sediment that feels gritty",
+   "t": "ತರಿತರಿಯಾಗಿ ಅನಿಸುವ ತಳದ ಪುಡಿ",
+   "back": "Bottom powder [sediment] that feels gritty"
+  },
+  "seg.6b3ebad45f08": {
+   "src": "Brick powder or sand",
+   "t": "ಇಟ್ಟಿಗೆ ಪುಡಿ ಅಥವಾ ಮರಳು",
+   "back": "Brick powder or sand"
+  },
+  "seg.0778aeb79734": {
+   "src": "White sediment that feels soapy and smooth",
+   "t": "ಸಾಬೂನಿನಂತೆ ನುಣುಪಾಗಿ ಅನಿಸುವ ಬಿಳಿ ತಳದ ಪುಡಿ",
+   "back": "White bottom powder [sediment] that feels smooth like soap"
+  },
+  "seg.08846b1820d9": {
+   "src": "Soapstone",
+   "t": "ಬಳಪದ ಕಲ್ಲು",
+   "back": "Soapstone [lit: slate-pencil stone]"
+  },
+  "seg.175ed947e347": {
+   "src": "None of these",
+   "t": "ಇವುಗಳಲ್ಲಿ ಯಾವುದೂ ಇಲ್ಲ",
+   "back": "None of these"
+  },
+  "seg.92ba3085667d": {
+   "src": "No sign of what this check can find.",
+   "t": "ಈ ಪರೀಕ್ಷೆ ಪತ್ತೆ ಮಾಡಬಲ್ಲ ಯಾವುದರ ಸುಳಿವೂ ಇಲ್ಲ.",
+   "back": "No hint of anything this test can detect."
+  },
+  "seg.3cf82af49b09": {
+   "src": "Any one of these",
+   "t": "ಇವುಗಳಲ್ಲಿ ಯಾವುದಾದರೂ ಒಂದು",
+   "back": "Any one of these"
+  },
+  "seg.e4f5d2924afa": {
+   "src": "Possible adulteration. Stop using that batch and get it tested.",
+   "t": "ಕಲಬೆರಕೆ ಇರಬಹುದು. ಆ ಬ್ಯಾಚ್ ಬಳಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ, ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ.",
+   "back": "There may be adulteration. Stop using that batch and get it tested."
+  },
+  "seg.e5e493d4cb12": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Colours that dissolve in water leave the powder and run down as streaks. Brick powder is heavy and settles to the bottom, while sawdust and bran float.",
+   "t": "⟦1⟧ಇದು ಯಾಕೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ.⟦/1⟧ ನೀರಿನಲ್ಲಿ ಕರಗುವ ಬಣ್ಣಗಳು ಪುಡಿಯನ್ನು ಬಿಟ್ಟು ಗೆರೆಗಳಾಗಿ ಕೆಳಗೆ ಇಳಿಯುತ್ತವೆ. ಇಟ್ಟಿಗೆ ಪುಡಿ ಭಾರವಾಗಿರುವುದರಿಂದ ತಳಕ್ಕೆ ಕುಳಿತುಕೊಳ್ಳುತ್ತದೆ, ಆದರೆ ಮರದ ಹೊಟ್ಟು ಮತ್ತು ತೌಡು ತೇಲುತ್ತವೆ.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Water-soluble colours leave the powder and go down as streaks. Brick powder, being heavy, settles at the bottom, but sawdust and bran float."
+  },
+  "seg.551c97147aa3": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Dyes that do not dissolve in water stay in the powder. Sudan I is one: it does not dissolve in water, and it is used to colour oils, fats and waxes. Chilli powder coloured with such dyes can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧ಇದು ಏನನ್ನು ಪತ್ತೆ ಮಾಡುವುದಿಲ್ಲ.⟦/1⟧ ನೀರಿನಲ್ಲಿ ಕರಗದ ಬಣ್ಣಗಳು ಪುಡಿಯಲ್ಲೇ ಉಳಿಯುತ್ತವೆ. ಸುಡಾನ್ I ಅಂತಹದ್ದು: ಅದು ನೀರಿನಲ್ಲಿ ಕರಗುವುದಿಲ್ಲ, ಮತ್ತು ಎಣ್ಣೆ, ಕೊಬ್ಬು ಹಾಗೂ ಮೇಣಕ್ಕೆ ಬಣ್ಣ ಕೊಡಲು ಅದನ್ನು ಬಳಸುತ್ತಾರೆ. ಅಂತಹ ಬಣ್ಣಗಳನ್ನು ಸೇರಿಸಿದ ಮೆಣಸಿನ ಪುಡಿ ಈ ಪರೀಕ್ಷೆಯಲ್ಲಿ ಪಾಸ್ ಆಗಬಹುದು. ಅವು ಇಲ್ಲ ಎಂದು ಲ್ಯಾಬ್ ಪರೀಕ್ಷೆ ಮಾತ್ರ ಹೇಳಬಲ್ಲದು.",
+   "back": "⟦1⟧What this does not detect.⟦/1⟧ Colours that do not dissolve in water stay in the powder itself. Sudan I is one such: it does not dissolve in water, and it is used to give colour to oil, fat and wax. Chilli powder with such colours added can pass this test. Only a lab test can say that they are absent."
+  },
+  "seg.5bbec3bc6fbf": {
+   "src": "Wash your hands after the rub test, before you touch your eyes.",
+   "t": "ಉಜ್ಜುವ ಪರೀಕ್ಷೆಯ ನಂತರ, ಕಣ್ಣು ಮುಟ್ಟುವ ಮೊದಲು ಕೈ ತೊಳೆಯಿರಿ.",
+   "back": "After the rub test, wash your hands before touching your eyes."
+  },
+  "seg.36726998b551": {
+   "src": "Check 2: the iodine test for starch",
+   "t": "ಪರೀಕ್ಷೆ 2: ಪಿಷ್ಟಕ್ಕಾಗಿ ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆ",
+   "back": "Test 2: Iodine test for starch"
+  },
+  "seg.3d76d0b2a476": {
+   "src": "FSSAI's manual uses the iodine test for powdered spices other than turmeric, so chilli powder can take it. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is left out.",
+   "t": "FSSAI ಯ ಕೈಪಿಡಿ ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆಯನ್ನು ಅರಿಶಿನವನ್ನು ಬಿಟ್ಟು ಬೇರೆ ಮಸಾಲೆ ಪುಡಿಗಳಿಗೆ ಬಳಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಮೆಣಸಿನ ಪುಡಿಗೆ ಇದನ್ನು ಮಾಡಬಹುದು. ಅರಿಶಿನವನ್ನು ಯಾಕೆ ಬಿಡಲಾಗಿದೆ ಎಂದು ⟦1⟧ನಮ್ಮ ಅರಿಶಿನ ಮಾರ್ಗದರ್ಶಿ⟦/1⟧ ವಿವರಿಸುತ್ತದೆ.",
+   "back": "FSSAI's manual uses the iodine test for spice powders other than turmeric; so it can be done on chilli powder. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is excluded."
+  },
+  "seg.c7d23b036696": {
+   "src": "Put half a teaspoon of chilli powder on a white saucer.",
+   "t": "ಒಂದು ಬಿಳಿ ತಟ್ಟೆಯ ಮೇಲೆ ಅರ್ಧ ಟೀ ಚಮಚ ಮೆಣಸಿನ ಪುಡಿ ಹಾಕಿ.",
+   "back": "Put half a teaspoon of chilli powder on a white plate."
+  },
+  "seg.9b2fb67a0f9a": {
+   "src": "Add a few drops of tincture of iodine from a chemist.",
+   "t": "ಕೆಮಿಸ್ಟ್ ಅಂಗಡಿಯಿಂದ ತಂದ ಟಿಂಚರ್ ಅಯೋಡಿನ್‌ನ ಕೆಲವು ಹನಿ ಹಾಕಿ.",
+   "back": "Add a few drops of tincture of iodine brought from a chemist shop."
+  },
+  "seg.2d93dfc80312": {
+   "src": "Look at the colour where the drops land.",
+   "t": "ಹನಿಗಳು ಬಿದ್ದ ಜಾಗದಲ್ಲಿ ಬಣ್ಣ ನೋಡಿ.",
+   "back": "Look at the colour where the drops fell."
+  },
+  "seg.c698ff17efbf": {
+   "src": "Throw that powder away afterwards.",
+   "t": "ನಂತರ ಆ ಪುಡಿಯನ್ನು ಎಸೆದುಬಿಡಿ.",
+   "back": "Then throw that powder away."
+  },
+  "seg.25bf59d68c4e": {
+   "src": "No blue colour",
+   "t": "ನೀಲಿ ಬಣ್ಣ ಇಲ್ಲ",
+   "back": "No blue colour"
+  },
+  "seg.2f88b779aa2b": {
+   "src": "No sign of added starch.",
+   "t": "ಸೇರಿಸಿದ ಪಿಷ್ಟದ ಸುಳಿವು ಇಲ್ಲ.",
+   "back": "No hint of added starch."
+  },
+  "seg.ac80a4934254": {
+   "src": "A blue colour",
+   "t": "ನೀಲಿ ಬಣ್ಣ",
+   "back": "Blue colour"
+  },
+  "seg.0db85a4ff58c": {
+   "src": "Points to added starch. Stop using that batch and get it tested. On red powder a faint change is hard to judge, so if you are not sure, let a lab decide.",
+   "t": "ಸೇರಿಸಿದ ಪಿಷ್ಟವನ್ನು ಸೂಚಿಸುತ್ತದೆ. ಆ ಬ್ಯಾಚ್ ಬಳಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ, ಪರೀಕ್ಷೆ ಮಾಡಿಸಿ. ಕೆಂಪು ಪುಡಿಯ ಮೇಲೆ ಸ್ವಲ್ಪ ಬದಲಾವಣೆಯನ್ನು ಗುರುತಿಸುವುದು ಕಷ್ಟ, ಆದ್ದರಿಂದ ನಿಮಗೆ ಖಚಿತವಿಲ್ಲದಿದ್ದರೆ ಲ್ಯಾಬ್ ತೀರ್ಮಾನಿಸಲಿ.",
+   "back": "Indicates added starch. Stop using that batch and get it tested. A slight change is hard to spot on a red powder, so if you are not sure, let the lab decide."
+  },
+  "seg.ed4a959013d8": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Iodine turns blue when it meets starch.",
+   "t": "⟦1⟧ಇದು ಯಾಕೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ.⟦/1⟧ ಅಯೋಡಿನ್ ಪಿಷ್ಟಕ್ಕೆ ತಾಗಿದಾಗ ನೀಲಿಯಾಗುತ್ತದೆ.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Iodine turns blue when it touches starch."
+  },
+  "seg.5adf326d0b8f": {
+   "src": "Leave these to a lab",
+   "t": "ಇವುಗಳನ್ನು ಲ್ಯಾಬ್‌ಗೆ ಬಿಡಿ",
+   "back": "Leave these to the lab"
+  },
+  "seg.9e0f62706054": {
+   "src": "Acid and solvent tests at home",
+   "t": "ಮನೆಯಲ್ಲಿ ಆಮ್ಲ ಮತ್ತು ದ್ರಾವಕ ಪರೀಕ್ಷೆಗಳು",
+   "back": "Acid and solvent tests at home"
+  },
+  "seg.f5e28e97055b": {
+   "src": "The methods in FSSAI's manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. The acids can cause burns, and several of the solvents catch fire easily. They belong in a lab, not a kitchen.",
+   "t": "ಮೆಣಸಿನ ಪುಡಿಯಲ್ಲಿ ಇಟ್ಟಿಗೆ ಪುಡಿ, ಸೇರಿಸಿದ ಬಣ್ಣ, ಎಣ್ಣೆಯಲ್ಲಿ ಕರಗುವ ಬಣ್ಣಗಳು, ಸುಡಾನ್ III ಮತ್ತು ರೋಡಮೈನ್ B ಪತ್ತೆ ಮಾಡಲು FSSAI ಕೈಪಿಡಿಯಲ್ಲಿರುವ ವಿಧಾನಗಳು ತೀಕ್ಷ್ಣ ಆಮ್ಲಗಳನ್ನು ಮತ್ತು ಕ್ಲೋರೋಫಾರ್ಮ್, ಪೆಟ್ರೋಲಿಯಂ ಈಥರ್, ಹೆಕ್ಸೇನ್, ಅಸಿಟೋನ್ ಮುಂತಾದ ದ್ರಾವಕಗಳನ್ನು ಬಳಸುತ್ತವೆ. ಆಮ್ಲಗಳು ಸುಟ್ಟ ಗಾಯ ಮಾಡಬಹುದು, ಮತ್ತು ಹಲವು ದ್ರಾವಕಗಳು ಸುಲಭವಾಗಿ ಬೆಂಕಿ ಹಿಡಿಯುತ್ತವೆ. ಇವು ಲ್ಯಾಬ್‌ಗೆ ಸೇರಿದವು, ಅಡುಗೆಮನೆಗಲ್ಲ.",
+   "back": "The methods in the FSSAI manual for detecting brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong [lit: sharp] acids and solvents such as chloroform, petroleum ether, hexane, acetone. Acids can cause burn injuries, and many solvents catch fire easily. These belong to the lab, not the kitchen."
+  },
+  "seg.1e30ce9ef855": {
+   "src": "For a sure answer, send a sample to a NABL-accredited food testing lab. Ask it to test for added colours, including Sudan dyes, and against FSSAI's chilli powder standard. Its limits include moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%, all by weight, with both ash limits on a dry basis. Keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack.",
+   "t": "ಖಚಿತ ಉತ್ತರಕ್ಕಾಗಿ, NABL ಮಾನ್ಯತೆ ಪಡೆದ ಆಹಾರ ಪರೀಕ್ಷಾ ಲ್ಯಾಬ್‌ಗೆ ಮಾದರಿ ಕಳುಹಿಸಿ. ಸುಡಾನ್ ಬಣ್ಣಗಳು ಸೇರಿದಂತೆ ಸೇರಿಸಿದ ಬಣ್ಣಗಳಿಗಾಗಿ, ಮತ್ತು FSSAI ಯ ಮೆಣಸಿನ ಪುಡಿ ಮಾನದಂಡದ ಪ್ರಕಾರ ಪರೀಕ್ಷಿಸಲು ಕೇಳಿ. ಆ ಮಾನದಂಡದ ಮಿತಿಗಳಲ್ಲಿ ಕೆಲವು: ತೇವಾಂಶ 11% ವರೆಗೆ, ಒಟ್ಟು ಬೂದಿ 8% ವರೆಗೆ, ಮತ್ತು ದುರ್ಬಲ ಹೈಡ್ರೋಕ್ಲೋರಿಕ್ ಆಮ್ಲದಲ್ಲಿ ಕರಗದ ಬೂದಿ 1.3% ವರೆಗೆ; ಎಲ್ಲವೂ ತೂಕದ ಆಧಾರದಲ್ಲಿ, ಮತ್ತು ಎರಡೂ ಬೂದಿ ಮಿತಿಗಳು ಒಣ ತೂಕದ ಆಧಾರದಲ್ಲಿ. ಪುಡಿಯನ್ನು ಅದರ ಸೀಲ್ ಆದ ಪ್ಯಾಕ್‌ನಲ್ಲೇ ಅಥವಾ ಸ್ವಚ್ಛವಾದ, ಸೀಲ್ ಮಾಡಿದ ಚೀಲದಲ್ಲಿ ಇಡಿ, ಮತ್ತು ಪ್ಯಾಕ್ ಮೇಲೆ ಮುದ್ರಿಸಿದ ಬ್ಯಾಚ್ ಸಂಖ್ಯೆ ಬರೆದಿಟ್ಟುಕೊಳ್ಳಿ.",
+   "back": "For a definite answer, send a sample to a NABL-accredited food testing lab. Ask them to test for added colours including Sudan colours [dyes], and as per FSSAI's chilli powder standard. Some of that standard's limits: moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%; all on a weight basis, and both ash limits on a dry-weight basis. Keep the powder in its sealed pack or in a clean, sealed bag, and write down the batch number printed on the pack."
+  },
+  "seg.8ef59aeeebe4": {
+   "src": "An FSSAI licence or registration number.",
+   "t": "FSSAI ಲೈಸೆನ್ಸ್ ಅಥವಾ ನೋಂದಣಿ ಸಂಖ್ಯೆ.",
+   "back": "FSSAI licence or registration number."
+  },
+  "seg.f90b0f258a47": {
+   "src": "Net quantity, a batch or lot number, and a best-before date.",
+   "t": "ನಿವ್ವಳ ಪ್ರಮಾಣ, ಬ್ಯಾಚ್ ಅಥವಾ ಲಾಟ್ ಸಂಖ್ಯೆ, ಮತ್ತು ಬೆಸ್ಟ್-ಬಿಫೋರ್ ದಿನಾಂಕ.",
+   "back": "Net quantity, batch or lot number, and best-before date."
+  },
+  "seg.fa3907160dbb": {
+   "src": "The ingredients. FSSAI allows up to 2% edible vegetable oil by weight in chilli powder, but only if the label says which oil and how much.",
+   "t": "ಪದಾರ್ಥಗಳು. FSSAI ಮೆಣಸಿನ ಪುಡಿಯಲ್ಲಿ ತೂಕದಲ್ಲಿ 2% ವರೆಗೆ ತಿನ್ನಬಹುದಾದ ಸಸ್ಯಜನ್ಯ ಎಣ್ಣೆಗೆ ಅವಕಾಶ ಕೊಡುತ್ತದೆ, ಆದರೆ ಯಾವ ಎಣ್ಣೆ ಮತ್ತು ಎಷ್ಟು ಎಂದು ಲೇಬಲ್ ಹೇಳಿದರೆ ಮಾತ್ರ.",
+   "back": "Ingredients. FSSAI allows up to 2% by weight of edible vegetable oil in chilli powder, but only if the label says which oil and how much."
+  },
+  "seg.616cb55edf33": {
+   "src": "Where it was grown, and the chilli variety if named. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur.",
+   "t": "ಎಲ್ಲಿ ಬೆಳೆದದ್ದು, ಮತ್ತು ಹೆಸರಿಸಿದ್ದರೆ ಮೆಣಸಿನ ತಳಿ. ನಮ್ಮ ⟦1⟧ಸನ್ನಂ⟦/1⟧ ಮತ್ತು ⟦2⟧ತೇಜ⟦/2⟧ ಪ್ಯಾಕ್‌ಗಳಲ್ಲಿ ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರು ಎಂದಿದೆ.",
+   "back": "Where it was grown, and the chilli variety if named. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur."
+  },
+  "seg.5766b566dbba": {
+   "src": "Use a dry spoon, and keep the jar away from steam from the stove.",
+   "t": "ಒಣ ಚಮಚ ಬಳಸಿ, ಮತ್ತು ಡಬ್ಬಿಯನ್ನು ಒಲೆಯ ಹಬೆಯಿಂದ ದೂರ ಇಡಿ.",
+   "back": "Use a dry spoon, and keep the container [tin] away from the stove's steam."
+  },
+  "seg.ae76fa3c0a37": {
+   "src": "Keep it in a cool, dry place, out of direct sunlight.",
+   "t": "ನೇರ ಬಿಸಿಲು ಬೀಳದ, ತಂಪಾದ, ಒಣ ಜಾಗದಲ್ಲಿ ಇಡಿ.",
+   "back": "Keep in a cool, dry place where direct sunlight does not fall."
+  },
+  "seg.cee32139c40b": {
+   "src": "Use it within the best-before date on the pack, in dishes such as ⟦1⟧vellulli kaaram⟦/1⟧, ⟦2⟧gongura pachadi⟦/2⟧ or ⟦3⟧tomato pachadi⟦/3⟧.",
+   "t": "ಪ್ಯಾಕ್ ಮೇಲಿನ ಬೆಸ್ಟ್-ಬಿಫೋರ್ ದಿನಾಂಕದೊಳಗೆ, ⟦1⟧ವೆಲ್ಲುಲ್ಲಿ ಕಾರಂ⟦/1⟧, ⟦2⟧ಗೋಂಗೂರ ಪಚ್ಚಡಿ⟦/2⟧ ಅಥವಾ ⟦3⟧ಟೊಮೆಟೊ ಪಚ್ಚಡಿ⟦/3⟧ ಮುಂತಾದ ಅಡುಗೆಗಳಲ್ಲಿ ಬಳಸಿ.",
+   "back": "Within the best-before date on the pack, use it in dishes like ⟦1⟧Vellulli karam⟦/1⟧, ⟦2⟧Gongura pachadi⟦/2⟧ or ⟦3⟧Tomato pachadi⟦/3⟧."
+  },
+  "seg.13c76694dc1e": {
+   "src": "How do I check chilli powder for brick powder at home?",
+   "t": "ಮೆಣಸಿನ ಪುಡಿಯಲ್ಲಿ ಇಟ್ಟಿಗೆ ಪುಡಿ ಇದೆಯೇ ಎಂದು ಮನೆಯಲ್ಲಿ ಹೇಗೆ ಪರೀಕ್ಷಿಸುವುದು?",
+   "back": "How to test at home whether chilli powder contains brick powder?"
+  },
+  "seg.3e87e1d30613": {
+   "src": "Put a teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the water and rub the sediment between your fingers: grit points to brick powder or sand, and a white residue that feels soapy and smooth points to soapstone.",
+   "t": "ಒಂದು ಲೋಟ ನೀರಿಗೆ ಒಂದು ಟೀ ಚಮಚ ಮೆಣಸಿನ ಪುಡಿ ಹಾಕಿ, ತಳಕ್ಕೆ ಕುಳಿತುಕೊಳ್ಳಲು ಬಿಡಿ. ಹೆಚ್ಚಿನ ನೀರನ್ನು ಬಸಿದು, ತಳದಲ್ಲಿ ಕುಳಿತದ್ದನ್ನು ಬೆರಳುಗಳ ನಡುವೆ ಉಜ್ಜಿ: ತರಿತರಿಯಾಗಿದ್ದರೆ ಇಟ್ಟಿಗೆ ಪುಡಿ ಅಥವಾ ಮರಳನ್ನು ಸೂಚಿಸುತ್ತದೆ, ಮತ್ತು ಸಾಬೂನಿನಂತೆ ನುಣುಪಾಗಿ ಅನಿಸುವ ಬಿಳಿ ಉಳಿಕೆ ಬಳಪದ ಕಲ್ಲನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+   "back": "Put a teaspoon of chilli powder into a glass of water and let it settle to the bottom. Drain off most of the water and rub what has settled at the bottom between your fingers: if gritty it indicates brick powder or sand, and a white residue that feels smooth like soap indicates soapstone [lit: slate-pencil stone]."
+  },
+  "seg.f609f5773557": {
+   "src": "Can the water test detect Sudan dye in chilli powder?",
+   "t": "ನೀರಿನ ಪರೀಕ್ಷೆ ಮೆಣಸಿನ ಪುಡಿಯಲ್ಲಿರುವ ಸುಡಾನ್ ಬಣ್ಣವನ್ನು ಪತ್ತೆ ಮಾಡಬಲ್ಲದೇ?",
+   "back": "Can the water test detect Sudan colour [dye] in chilli powder?"
+  },
+  "seg.7bd8af24de2f": {
+   "src": "No. Sudan I does not dissolve in water, so it cannot run out as streaks. FSSAI's manual tests for Sudan III and for oil-soluble colours with solvents such as hexane and petroleum ether, so those tests need a lab.",
+   "t": "ಇಲ್ಲ. ಸುಡಾನ್ I ನೀರಿನಲ್ಲಿ ಕರಗುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಅದು ಗೆರೆಗಳಾಗಿ ಹೊರಬರಲಾರದು. FSSAI ಯ ಕೈಪಿಡಿ ಸುಡಾನ್ III ಮತ್ತು ಎಣ್ಣೆಯಲ್ಲಿ ಕರಗುವ ಬಣ್ಣಗಳನ್ನು ಹೆಕ್ಸೇನ್, ಪೆಟ್ರೋಲಿಯಂ ಈಥರ್ ಮುಂತಾದ ದ್ರಾವಕಗಳಿಂದ ಪರೀಕ್ಷಿಸುತ್ತದೆ, ಆದ್ದರಿಂದ ಆ ಪರೀಕ್ಷೆಗಳಿಗೆ ಲ್ಯಾಬ್ ಬೇಕು.",
+   "back": "No. Sudan I does not dissolve in water; so it cannot come out as streaks. FSSAI's manual tests for Sudan III and oil-soluble colours using solvents such as hexane and petroleum ether; so those tests need a lab."
+  },
+  "seg.d63c02ec2e5c": {
+   "src": "Does the iodine test work on chilli powder?",
+   "t": "ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆ ಮೆಣಸಿನ ಪುಡಿಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆಯೇ?",
+   "back": "Does the iodine test work on chilli powder?"
+  },
+  "seg.01e86c518d41": {
+   "src": "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli powder is one of them. A blue colour points to added starch.",
+   "t": "ಹೌದು. FSSAI ಯ ಕೈಪಿಡಿ ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆಯನ್ನು ಅರಿಶಿನವನ್ನು ಬಿಟ್ಟು ಬೇರೆ ಮಸಾಲೆ ಪುಡಿಗಳಿಗೆ ಬಳಸುತ್ತದೆ, ಮತ್ತು ಮೆಣಸಿನ ಪುಡಿ ಅವುಗಳಲ್ಲಿ ಒಂದು. ನೀಲಿ ಬಣ್ಣ ಸೇರಿಸಿದ ಪಿಷ್ಟವನ್ನು ಸೂಚಿಸುತ್ತದೆ.",
+   "back": "Yes. FSSAI's manual uses the iodine test for spice powders other than turmeric, and chilli powder is one of them. A blue colour indicates added starch."
+  },
+  "seg.75e20911cd47": {
+   "src": "Is bright red chilli powder a sign of adulteration?",
+   "t": "ಹೊಳಪಾದ ಕೆಂಪು ಮೆಣಸಿನ ಪುಡಿ ಕಲಬೆರಕೆಯ ಲಕ್ಷಣವೇ?",
+   "back": "Is bright [or: glossy] red chilli powder a sign of adulteration?"
+  },
+  "seg.dcfec3eff0b8": {
+   "src": "Colour alone does not tell you. The water check looks for colour that leaves the powder and runs down as streaks, not for how red the powder looks, and a lab can test for added colours.",
+   "t": "ಬಣ್ಣ ಒಂದರಿಂದಲೇ ಗೊತ್ತಾಗುವುದಿಲ್ಲ. ಪುಡಿ ಎಷ್ಟು ಕೆಂಪಾಗಿ ಕಾಣುತ್ತದೆ ಎಂಬುದನ್ನು ನೀರಿನ ಪರೀಕ್ಷೆ ನೋಡುವುದಿಲ್ಲ; ಬಣ್ಣ ಪುಡಿಯನ್ನು ಬಿಟ್ಟು ಗೆರೆಗಳಾಗಿ ಕೆಳಗೆ ಇಳಿಯುತ್ತದೆಯೇ ಎಂಬುದನ್ನು ನೋಡುತ್ತದೆ. ಸೇರಿಸಿದ ಬಣ್ಣಗಳಿಗಾಗಿ ಲ್ಯಾಬ್ ಪರೀಕ್ಷಿಸಬಲ್ಲದು.",
+   "back": "Colour alone does not tell. The water test does not look at how red the powder appears; it looks at whether colour leaves the powder and goes down as streaks. A lab can test for added colours."
+  },
+  "seg.54f85d34859f": {
+   "src": "Stop using that batch and keep the pack. Contact the seller with the batch number, or send a sample to a NABL-accredited food testing lab for a sure answer.",
+   "t": "ಆ ಬ್ಯಾಚ್ ಬಳಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ, ಪ್ಯಾಕ್ ಇಟ್ಟುಕೊಳ್ಳಿ. ಬ್ಯಾಚ್ ಸಂಖ್ಯೆಯೊಂದಿಗೆ ಮಾರಾಟಗಾರರನ್ನು ಸಂಪರ್ಕಿಸಿ, ಅಥವಾ ಖಚಿತ ಉತ್ತರಕ್ಕಾಗಿ NABL ಮಾನ್ಯತೆ ಪಡೆದ ಆಹಾರ ಪರೀಕ್ಷಾ ಲ್ಯಾಬ್‌ಗೆ ಮಾದರಿ ಕಳುಹಿಸಿ.",
+   "back": "Stop using that batch, keep the pack. Contact the seller with the batch number, or send a sample to a NABL-accredited food testing lab for a definite answer."
+  },
+  "seg.ff09628b25c1": {
+   "src": "Our chilli powder",
+   "t": "ನಮ್ಮ ಮೆಣಸಿನ ಪುಡಿ",
+   "back": "Our chilli powder"
+  },
+  "seg.a7d8a3890045": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "ಎರಡೂ ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರಿನಲ್ಲಿ ಬೆಳೆದು, ನರಸರಾವುಪೇಟೆಯಲ್ಲಿ ಪ್ಯಾಕ್ ಆದವು.",
+   "back": "Both grown in Palnadu and Guntur, and packed in Narasaraopet."
+  },
+  "seg.3ed867d1961c": {
+   "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
+   "t": "కారం కల్తీ · ಮೆಣಸಿನ ಪುಡಿ ಕಲಬೆರಕೆ ಪರೀಕ್ಷೆ | 1acrefarms",
+   "back": "[Telugu: Karam adulteration] · Chilli powder adulteration test | 1acrefarms"
+  },
+  "seg.20f494d041fc": {
+   "src": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. How to check chilli powder at home: the water glass, rub and iodine tests, what they miss, and when you need a lab.",
+   "t": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. ಮನೆಯಲ್ಲೇ ಮೆಣಸಿನ ಪುಡಿಯನ್ನು ಹೇಗೆ ಪರೀಕ್ಷಿಸುವುದು: ನೀರಿನ ಲೋಟ, ಉಜ್ಜುವ ಮತ್ತು ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆಗಳು, ಅವು ಏನನ್ನು ಪತ್ತೆ ಮಾಡುವುದಿಲ್ಲ, ಮತ್ತು ಲ್ಯಾಬ್ ಯಾವಾಗ ಬೇಕು.",
+   "back": "[Telugu: How to identify karam adulteration at home.] How to test chilli powder at home: glass of water, rub and iodine tests, what they do not detect, and when a lab is needed."
+  },
+  "seg.cf3eac803a81": {
+   "src": "How to check chilli powder at home · 1acrefarms",
+   "t": "ಮನೆಯಲ್ಲೇ ಮೆಣಸಿನ ಪುಡಿಯನ್ನು ಹೇಗೆ ಪರೀಕ್ಷಿಸುವುದು · 1acrefarms",
+   "back": "How to test chilli powder at home · 1acrefarms"
+  },
+  "seg.3a7ecf1759a7": {
+   "src": "Hill turmeric or turmeric",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನವೋ ಅರಿಶಿನವೋ",
+   "back": "Hill turmeric or turmeric?"
+  },
+  "seg.0e55b39feef1": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನ (ಕೊಂಡ ಪಸುಪು) ಅಥವಾ ಅರಿಶಿನ: ವ್ಯತ್ಯಾಸ ಏನು",
+   "back": "Hill turmeric (konda pasupu) or turmeric: what is the difference"
+  },
+  "seg.ebf6f90777d6": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · ಕೊಂಡ ಪಸುಪು · ಪಸುಪು",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda pasupu · Pasupu"
+  },
+  "seg.8b7a90a6aed6": {
+   "src": "Konda pasupu means hill turmeric: turmeric grown in hill country. In Andhra Pradesh that includes the agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu, where most tribal farmers grow turmeric. Plains turmeric grows on farmland in districts such as Guntur.",
+   "t": "ಕೊಂಡ ಪಸುಪು ಎಂದರೆ ಬೆಟ್ಟದ ಅರಿಶಿನ: ಬೆಟ್ಟ ಪ್ರದೇಶದಲ್ಲಿ ಬೆಳೆಯುವ ಅರಿಶಿನ. ಆಂಧ್ರಪ್ರದೇಶದಲ್ಲಿ ಇದರಲ್ಲಿ ಅರಕು ಕಣಿವೆ, ಚಿಂತಪಲ್ಲೆ ಮತ್ತು ಪಾಡೇರು ಸುತ್ತಲಿನ ಪೂರ್ವ ಘಟ್ಟಗಳ ಏಜೆನ್ಸಿ ಬೆಟ್ಟಗಳೂ ಸೇರಿವೆ; ಅಲ್ಲಿನ ಬುಡಕಟ್ಟು ರೈತರಲ್ಲಿ ಹೆಚ್ಚಿನವರು ಅರಿಶಿನ ಬೆಳೆಯುತ್ತಾರೆ. ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ ಗುಂಟೂರಿನಂತಹ ಜಿಲ್ಲೆಗಳ ಹೊಲಗಳಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ.",
+   "back": "Konda pasupu means hill turmeric: turmeric that grows in hill regions. In Andhra Pradesh this also includes the Agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu; most of the tribal farmers there grow turmeric. Plains turmeric grows in the fields of districts like Guntur."
+  },
+  "seg.404d008584f4": {
+   "src": "FSSAI's standard for turmeric powder is the same wherever it grew. What changes is the place, the variety, and how it is grown and dried. This guide covers each of those, what curcumin is, how to cook with each and how to compare two turmerics fairly. There is a Telugu section further down.",
+   "t": "ಅರಿಶಿನ ಪುಡಿಗೆ FSSAI ಮಾನದಂಡ ಅದು ಎಲ್ಲೇ ಬೆಳೆದರೂ ಒಂದೇ. ಬದಲಾಗುವುದು ಜಾಗ, ತಳಿ, ಮತ್ತು ಅದನ್ನು ಬೆಳೆಸುವ ಹಾಗೂ ಒಣಗಿಸುವ ರೀತಿ. ಈ ಮಾರ್ಗದರ್ಶಿ ಇವುಗಳಲ್ಲಿ ಪ್ರತಿಯೊಂದನ್ನೂ, ಕರ್ಕ್ಯುಮಿನ್ ಎಂದರೇನು, ಪ್ರತಿಯೊಂದರಿಂದ ಹೇಗೆ ಅಡುಗೆ ಮಾಡುವುದು, ಮತ್ತು ಎರಡು ಅರಿಶಿನಗಳನ್ನು ನ್ಯಾಯವಾಗಿ ಹೇಗೆ ಹೋಲಿಸುವುದು ಎಂಬುದನ್ನೂ ತಿಳಿಸುತ್ತದೆ. ಕೆಳಗೆ ಒಂದು ತೆಲುಗು ವಿಭಾಗವಿದೆ.",
+   "back": "The FSSAI standard for turmeric powder is the same wherever it grows. What changes is the place, the variety, and the way it is grown and dried. This guide tells each of these, what curcumin is, how to cook with each, and how to compare two turmerics fairly. There is a Telugu section below."
+  },
+  "seg.b4d7b88f52e3": {
+   "src": "Hill Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನ ಪುಡಿ⟦#1⟧⟦#2⟧",
+   "back": "Hill turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.6c894965ab39": {
+   "src": "Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "ಅರಿಶಿನ ಪುಡಿ⟦#1⟧⟦#2⟧",
+   "back": "Turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.2e709bd87897": {
+   "src": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet.",
+   "t": "⟦1⟧ನಮ್ಮ ಎರಡು ಅರಿಶಿನಗಳು⟦/1⟧ಎಡಕ್ಕೆ: ಅರಕು ಮತ್ತು ಮಾರೇಡುಮಿಲ್ಲಿ ಬೆಟ್ಟಗಳ ಬೆಟ್ಟದ ಅರಿಶಿನ. ಬಲಕ್ಕೆ: ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರಿನಲ್ಲಿ ಬೆಳೆದ ಅರಿಶಿನ. ಎರಡೂ ನರಸರಾವುಪೇಟೆಯಲ್ಲಿ ಪ್ಯಾಕ್ ಆದವು.",
+   "back": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet."
+  },
+  "seg.10eec083bb3d": {
+   "src": "Hill turmeric (konda pasupu) grows in hill country, such as the Eastern Ghats around Araku, where most tribal farmers grow it. Plains turmeric grows on farmland in districts such as Guntur. Both are boiled, dried and ground, and FSSAI holds both to the same standard. Curcumin, the yellow pigment in turmeric, changes with variety, soil, climate and processing, so the word hill or plains does not tell you how much a turmeric has. Cook with both the same way.",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನ (ಕೊಂಡ ಪಸುಪು) ಅರಕು ಸುತ್ತಲಿನ ಪೂರ್ವ ಘಟ್ಟಗಳಂತಹ ಬೆಟ್ಟ ಪ್ರದೇಶಗಳಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ; ಅಲ್ಲಿನ ಬುಡಕಟ್ಟು ರೈತರಲ್ಲಿ ಹೆಚ್ಚಿನವರು ಅದನ್ನು ಬೆಳೆಯುತ್ತಾರೆ. ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ ಗುಂಟೂರಿನಂತಹ ಜಿಲ್ಲೆಗಳ ಹೊಲಗಳಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ. ಎರಡನ್ನೂ ಬೇಯಿಸಿ, ಒಣಗಿಸಿ, ಪುಡಿ ಮಾಡುತ್ತಾರೆ, ಮತ್ತು FSSAI ಎರಡಕ್ಕೂ ಒಂದೇ ಮಾನದಂಡ ಇಟ್ಟಿದೆ. ಅರಿಶಿನದ ಹಳದಿ ಬಣ್ಣದ ವರ್ಣದ್ರವ್ಯವಾದ ಕರ್ಕ್ಯುಮಿನ್, ತಳಿ, ಮಣ್ಣು, ಹವಾಮಾನ ಮತ್ತು ಸಂಸ್ಕರಣೆಯಿಂದ ಬದಲಾಗುತ್ತದೆ; ಆದ್ದರಿಂದ ಬೆಟ್ಟ ಅಥವಾ ಬಯಲು ಎಂಬ ಪದ ಒಂದು ಅರಿಶಿನದಲ್ಲಿ ಅದು ಎಷ್ಟಿದೆ ಎಂದು ಹೇಳುವುದಿಲ್ಲ. ಎರಡನ್ನೂ ಒಂದೇ ರೀತಿ ಅಡುಗೆಗೆ ಬಳಸಿ.",
+   "back": "Hill turmeric (konda pasupu) grows in hill regions like the Eastern Ghats around Araku; most of the tribal farmers there grow it. Plains turmeric grows in the fields of districts like Guntur. Both are boiled, dried and powdered, and FSSAI has kept one standard for both. Curcumin, the yellow pigment of turmeric, changes with variety, soil, climate and processing; so the word hill or plains does not tell how much of it is in a turmeric. Use both the same way for cooking."
+  },
+  "seg.1930852dafc4": {
+   "src": "Hill turmeric⟦#1⟧",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನ⟦#1⟧",
+   "back": "Hill turmeric⟦#1⟧"
+  },
+  "seg.85c353a8dfbf": {
+   "src": "Plains turmeric⟦#1⟧",
+   "t": "ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ⟦#1⟧",
+   "back": "Plains-area turmeric⟦#1⟧"
+  },
+  "seg.e4c8ef75f71b": {
+   "src": "Where it grows",
+   "t": "ಎಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ",
+   "back": "Where it grows"
+  },
+  "seg.42213bedfb12": {
+   "src": "Hill country, such as the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu",
+   "t": "ಬೆಟ್ಟ ಪ್ರದೇಶ, ಉದಾಹರಣೆಗೆ ಪೂರ್ವ ಘಟ್ಟಗಳ ಪಾಡೇರು ಏಜೆನ್ಸಿ ಬೆಟ್ಟಗಳು: ಅರಕು ಕಣಿವೆ, ಚಿಂತಪಲ್ಲೆ ಮತ್ತು ಪಾಡೇರು",
+   "back": "Hill areas, for example the Paderu Agency hills of the Eastern Ghats: Araku Valley, Chintapalle, Paderu"
+  },
+  "seg.34cc236d9133": {
+   "src": "Farmland in districts such as Guntur",
+   "t": "ಗುಂಟೂರಿನಂತಹ ಜಿಲ್ಲೆಗಳ ಹೊಲಗಳು",
+   "back": "Fields of districts like Guntur"
+  },
+  "seg.0bf2cf67b524": {
+   "src": "Who grows it",
+   "t": "ಯಾರು ಬೆಳೆಯುತ್ತಾರೆ",
+   "back": "Who grows it"
+  },
+  "seg.ef7b65af6af7": {
+   "src": "Most tribal farmers in the Paderu agency",
+   "t": "ಪಾಡೇರು ಏಜೆನ್ಸಿಯ ಬುಡಕಟ್ಟು ರೈತರಲ್ಲಿ ಹೆಚ್ಚಿನವರು",
+   "back": "Most of the tribal farmers of the Paderu Agency"
+  },
+  "seg.6fcc769ff4cc": {
+   "src": "Farms in Guntur district, where turmeric is one of the commercial crops, with cotton, chillies and tobacco",
+   "t": "ಗುಂಟೂರು ಜಿಲ್ಲೆಯ ಹೊಲಗಳು; ಅಲ್ಲಿ ಹತ್ತಿ, ಮೆಣಸಿನಕಾಯಿ ಮತ್ತು ತಂಬಾಕಿನ ಜೊತೆ ಅರಿಶಿನವೂ ಒಂದು ವಾಣಿಜ್ಯ ಬೆಳೆ",
+   "back": "Guntur district fields; there turmeric too is a commercial crop along with cotton, chilli and tobacco"
+  },
+  "seg.2c6469748e2d": {
+   "src": "In the ground",
+   "t": "ಮಣ್ಣಿನಲ್ಲಿ ಇರುವ ಅವಧಿ",
+   "back": "Period in the soil"
+  },
+  "seg.4fad87cf8112": {
+   "src": "The old local variety has often been left for 2 to 3 seasons, up to 18 to 24 months; newer varieties such as Roma are dug after one season",
+   "t": "ಹಳೆಯ ಸ್ಥಳೀಯ ತಳಿಯನ್ನು ಹಲವು ಬಾರಿ 2 ರಿಂದ 3 ಬೆಳೆ ಋತುಗಳವರೆಗೆ, ಅಂದರೆ ಗರಿಷ್ಠ 18 ರಿಂದ 24 ತಿಂಗಳವರೆಗೆ, ಮಣ್ಣಿನಲ್ಲೇ ಬಿಡಲಾಗುತ್ತಿತ್ತು; ರೋಮಾದಂತಹ ಹೊಸ ತಳಿಗಳನ್ನು ಒಂದು ಋತುವಿನ ನಂತರ ಅಗೆಯುತ್ತಾರೆ",
+   "back": "The old local variety was often [lit. many times] left in the soil for 2 to 3 crop seasons, that is, up to a maximum of 18 to 24 months; new varieties like Roma are dug up after one season"
+  },
+  "seg.186488dd4390": {
+   "src": "ICAR-IISR's general guide: a well-managed crop is ready in 7 to 9 months, usually dug between January and March",
+   "t": "ICAR-IISR ನ ಸಾಮಾನ್ಯ ಮಾರ್ಗದರ್ಶಿ: ಚೆನ್ನಾಗಿ ನೋಡಿಕೊಂಡ ಬೆಳೆ 7 ರಿಂದ 9 ತಿಂಗಳಲ್ಲಿ ಸಿದ್ಧವಾಗುತ್ತದೆ, ಸಾಮಾನ್ಯವಾಗಿ ಜನವರಿ ಮತ್ತು ಮಾರ್ಚ್ ನಡುವೆ ಅಗೆಯುತ್ತಾರೆ",
+   "back": "ICAR-IISR's general guide: a well-looked-after crop is ready in 7 to 9 months, usually dug between January and March"
+  },
+  "seg.b60ef1949c00": {
+   "src": "After digging",
+   "t": "ಅಗೆದ ನಂತರ",
+   "back": "After digging"
+  },
+  "seg.a5d9b319040e": {
+   "src": "Boiled and dried by hand, which takes a lot of labour and firewood",
+   "t": "ಕೈಯಿಂದ ಬೇಯಿಸಿ ಒಣಗಿಸುತ್ತಾರೆ; ಇದಕ್ಕೆ ತುಂಬಾ ದುಡಿಮೆ ಮತ್ತು ಸೌದೆ ಬೇಕು",
+   "back": "Boiled and dried by hand; this needs a lot of labour and firewood"
+  },
+  "seg.9094d5bd4e83": {
+   "src": "The usual steps: boiled, sun-dried, then polished by hand or by machine",
+   "t": "ಸಾಮಾನ್ಯ ಹಂತಗಳು: ಬೇಯಿಸುವುದು, ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸುವುದು, ನಂತರ ಕೈಯಿಂದ ಅಥವಾ ಯಂತ್ರದಿಂದ ಪಾಲಿಶ್ ಮಾಡುವುದು",
+   "back": "Usual steps: boiling, drying in the sun, then polishing by hand or by machine"
+  },
+  "seg.d3963fd16edc": {
+   "src": "The same one for both: at least 2% curcuminoids on a dry basis, and added colour is not allowed",
+   "t": "ಎರಡಕ್ಕೂ ಒಂದೇ: ಒಣ ತೂಕದ ಆಧಾರದಲ್ಲಿ ಕನಿಷ್ಠ 2% ಕರ್ಕ್ಯುಮಿನಾಯ್ಡ್‌ಗಳು, ಮತ್ತು ಬಣ್ಣ ಸೇರಿಸಲು ಅವಕಾಶವಿಲ್ಲ",
+   "back": "Same for both: at least 2% curcuminoids on a dry-weight basis, and no allowance to add colour"
+  },
+  "seg.802e452a9783": {
+   "src": "Our pack says",
+   "t": "ನಮ್ಮ ಪ್ಯಾಕ್ ಮೇಲೆ ಇರುವುದು",
+   "back": "What is on our pack"
+  },
+  "seg.2e323e56fef7": {
+   "src": "Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder",
+   "t": "ಅರಕು ಮತ್ತು ಮಾರೇಡುಮಿಲ್ಲಿ ಬೆಟ್ಟಗಳು. ಇಡೀ ಬೆಟ್ಟದ ಅರಿಶಿನ ಕೊಂಬುಗಳು, ನುಣ್ಣನೆಯ ಪುಡಿಯಾಗಿ ಪ್ಯಾಕ್ ಮಾಡಿದ್ದು",
+   "back": "Araku and Maredumilli hills. Whole hill turmeric fingers [lit: horns], packed as fine powder"
+  },
+  "seg.ce4850eb3b73": {
+   "src": "Grown in Palnadu and Guntur. Sun-dried, stone-ground",
+   "t": "ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರಿನಲ್ಲಿ ಬೆಳೆದದ್ದು. ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ, ಕಲ್ಲಿನಲ್ಲಿ ಬೀಸಿದ್ದು",
+   "back": "Grown in Palnadu and Guntur. Sun-dried, stone-ground [lit: ground on a stone mill]"
+  },
+  "seg.8c0d21f32664": {
+   "src": "The rows above describe each region in general, from the sources at the end of this page. Only the last row is about our packs.",
+   "t": "ಮೇಲಿನ ಸಾಲುಗಳು ಪ್ರತಿಯೊಂದು ಪ್ರದೇಶವನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ವಿವರಿಸುತ್ತವೆ; ಇವು ಈ ಪುಟದ ಕೊನೆಯಲ್ಲಿರುವ ಮೂಲಗಳಿಂದ ಬಂದವು. ಕೊನೆಯ ಸಾಲು ಮಾತ್ರ ನಮ್ಮ ಪ್ಯಾಕ್‌ಗಳ ಬಗ್ಗೆ.",
+   "back": "The rows above describe each region in general; these came from the sources at the end of this page. Only the last row is about our packs."
+  },
+  "seg.b6ab1dcdcf8d": {
+   "src": "Where each grows",
+   "t": "ಪ್ರತಿಯೊಂದೂ ಎಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ",
+   "back": "Where each one grows"
+  },
+  "seg.a9e5b44e1be6": {
+   "src": "⟦1⟧Hill turmeric.⟦/1⟧ ICAR-IISR's report on the Paderu agency, the tribal hill country of the Eastern Ghats that takes in Araku Valley, Chintapalle and Paderu, says turmeric is grown there by most tribal farmers.",
+   "t": "⟦1⟧ಬೆಟ್ಟದ ಅರಿಶಿನ.⟦/1⟧ ಅರಕು ಕಣಿವೆ, ಚಿಂತಪಲ್ಲೆ ಮತ್ತು ಪಾಡೇರು ಒಳಗೊಂಡ, ಪೂರ್ವ ಘಟ್ಟಗಳ ಬುಡಕಟ್ಟು ಬೆಟ್ಟ ಪ್ರದೇಶವಾದ ಪಾಡೇರು ಏಜೆನ್ಸಿಯ ಕುರಿತ ICAR-IISR ವರದಿ, ಅಲ್ಲಿನ ಬುಡಕಟ್ಟು ರೈತರಲ್ಲಿ ಹೆಚ್ಚಿನವರು ಅರಿಶಿನ ಬೆಳೆಯುತ್ತಾರೆ ಎಂದು ಹೇಳುತ್ತದೆ.",
+   "back": "⟦1⟧Hill turmeric.⟦/1⟧ An ICAR-IISR report on the Paderu Agency, the tribal hill region of the Eastern Ghats comprising Araku Valley, Chintapalle and Paderu, says that most of the tribal farmers there grow turmeric."
+  },
+  "seg.736e66a0b5de": {
+   "src": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops, with cotton, chillies and tobacco. Duggirala, in Guntur, has a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022, Guntur district was divided into three districts: Guntur, Palnadu and Bapatla.",
+   "t": "⟦1⟧ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ.⟦/1⟧ ಗುಂಟೂರು ಜಿಲ್ಲೆ ತನ್ನ ವಾಣಿಜ್ಯ ಬೆಳೆಗಳಲ್ಲಿ ಹತ್ತಿ, ಮೆಣಸಿನಕಾಯಿ ಮತ್ತು ತಂಬಾಕಿನ ಜೊತೆ ಅರಿಶಿನವನ್ನೂ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ. ಗುಂಟೂರಿನ ದುಗ್ಗಿರಾಲದಲ್ಲಿ ಸಂಸ್ಕರಿಸಿದ ಅರಿಶಿನ ಮತ್ತು ಅರಿಶಿನ ಪುಡಿ ತಯಾರಿಸುವ ಅರಿಶಿನ ಸಂಸ್ಕರಣಾ ಕ್ಲಸ್ಟರ್ ಇದೆ. 2022 ರಲ್ಲಿ ಗುಂಟೂರು ಜಿಲ್ಲೆಯನ್ನು ಗುಂಟೂರು, ಪಲ್ನಾಡು ಮತ್ತು ಬಾಪಟ್ಲ ಎಂಬ ಮೂರು ಜಿಲ್ಲೆಗಳಾಗಿ ವಿಭಜಿಸಲಾಯಿತು.",
+   "back": "⟦1⟧Plains-area turmeric.⟦/1⟧ Guntur district lists turmeric too among its commercial crops along with cotton, chilli and tobacco. At Duggirala in Guntur there is a turmeric processing cluster making processed turmeric and turmeric powder. In 2022 Guntur district was divided into three districts named Guntur, Palnadu and Bapatla."
+  },
+  "seg.0f26c0785ed1": {
+   "src": "Turmeric can be grown either way: ICAR-IISR says it can be grown rain-fed or irrigated, from sea level up to 1,500 m.",
+   "t": "ಅರಿಶಿನವನ್ನು ಎರಡೂ ರೀತಿ ಬೆಳೆಯಬಹುದು: ಮಳೆಯಾಶ್ರಿತವಾಗಿಯೋ ನೀರಾವರಿಯಲ್ಲೋ, ಸಮುದ್ರ ಮಟ್ಟದಿಂದ ಹಿಡಿದು 1,500 m ಎತ್ತರದವರೆಗೂ ಬೆಳೆಯಬಹುದು ಎಂದು ICAR-IISR ಹೇಳುತ್ತದೆ.",
+   "back": "Turmeric can be grown both ways: ICAR-IISR says it can be grown rain-fed or under irrigation, from sea level up to an altitude of 1,500 m."
+  },
+  "seg.b687346df428": {
+   "src": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet.",
+   "t": "ನಮ್ಮ ⟦1⟧ಬೆಟ್ಟದ ಅರಿಶಿನ⟦/1⟧ ಅರಕು ಮತ್ತು ಮಾರೇಡುಮಿಲ್ಲಿ ಬೆಟ್ಟಗಳಿಂದ ಬರುತ್ತದೆ, ಮತ್ತು ನಮ್ಮ ⟦2⟧ಅರಿಶಿನ⟦/2⟧ ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರಿನಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ. ಎರಡನ್ನೂ ನರಸರಾವುಪೇಟೆಯಲ್ಲಿ ಪ್ಯಾಕ್ ಮಾಡಲಾಗುತ್ತದೆ.",
+   "back": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ grows in Palnadu and Guntur. Both are packed in Narasaraopet."
+  },
+  "seg.9a5af9e957e1": {
+   "src": "How each is grown and dried",
+   "t": "ಪ್ರತಿಯೊಂದನ್ನೂ ಹೇಗೆ ಬೆಳೆಸಿ ಒಣಗಿಸುತ್ತಾರೆ",
+   "back": "How each one is grown and dried"
+  },
+  "seg.e641ce21ee35": {
+   "src": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says tribal farmers there have grown a local variety called Chayapasupu, or Chintapalle Local, for ages. It has been common practice to leave it in the ground for two or three seasons, up to 18 to 24 months, before digging. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested varieties for the hill zone and brought in Roma and IISR Pragati, which are dug after one season. The report says tribal farmers boil and dry their turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boilers and polishers.",
+   "t": "⟦1⟧ಬೆಟ್ಟಗಳಲ್ಲಿ.⟦/1⟧ ಅಲ್ಲಿನ ಬುಡಕಟ್ಟು ರೈತರು ಛಾಯಾಪಸುಪು ಅಥವಾ ಚಿಂತಪಲ್ಲೆ ಲೋಕಲ್ ಎಂಬ ಸ್ಥಳೀಯ ತಳಿಯನ್ನು ಬಹಳ ಕಾಲದಿಂದ ಬೆಳೆಯುತ್ತಿದ್ದಾರೆ ಎಂದು ICAR-IISR ನ ಪಾಡೇರು ವರದಿ ಹೇಳುತ್ತದೆ. ಅಗೆಯುವ ಮೊದಲು ಅದನ್ನು ಎರಡು ಅಥವಾ ಮೂರು ಬೆಳೆ ಋತುಗಳವರೆಗೆ, ಅಂದರೆ ಗರಿಷ್ಠ 18 ರಿಂದ 24 ತಿಂಗಳವರೆಗೆ, ಮಣ್ಣಿನಲ್ಲೇ ಬಿಡುವುದು ಸಾಮಾನ್ಯ ಪದ್ಧತಿಯಾಗಿತ್ತು. 2011-12 ರಿಂದ, ICAR-IISR ಮತ್ತು ಚಿಂತಪಲ್ಲೆಯ ತೋಟಗಾರಿಕಾ ಸಂಶೋಧನಾ ಕೇಂದ್ರ ಬೆಟ್ಟ ಪ್ರದೇಶಕ್ಕಾಗಿ ತಳಿಗಳನ್ನು ಪರೀಕ್ಷಿಸಿ, ಒಂದು ಋತುವಿನ ನಂತರ ಅಗೆಯುವ ರೋಮಾ ಮತ್ತು IISR ಪ್ರಗತಿ ತಳಿಗಳನ್ನು ತಂದವು. ಬುಡಕಟ್ಟು ರೈತರು ತಮ್ಮ ಅರಿಶಿನವನ್ನು ಕೈಯಿಂದ ಬೇಯಿಸಿ ಒಣಗಿಸುತ್ತಾರೆ, ಇದಕ್ಕೆ ತುಂಬಾ ದುಡಿಮೆ ಮತ್ತು ಸೌದೆ ಬೇಕು ಎಂದು ವರದಿ ಹೇಳುತ್ತದೆ; ಈ ಯೋಜನೆ ನಾಲ್ಕು ರೈತ ಉತ್ಪಾದಕ ಸಂಸ್ಥೆಗಳಿಗೆ ಅರಿಶಿನ ಬೇಯಿಸುವ ಯಂತ್ರಗಳು ಮತ್ತು ಪಾಲಿಶ್ ಯಂತ್ರಗಳನ್ನು ಕೊಟ್ಟಿತು.",
+   "back": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says that the tribal farmers there have been growing a local variety called Chhayapasupu or Chintapalle Local for a long time. Leaving it in the soil itself for two or three crop seasons, that is, up to a maximum of 18 to 24 months, before digging was the common practice. From 2011-12, ICAR-IISR and the Horticultural Research Station of Chintapalle tested varieties for the hill region and brought in the Roma and IISR Pragati varieties, which are dug up after one season. The report says the tribal farmers boil and dry their turmeric by hand, and that this needs a lot of labour and firewood; this project gave turmeric boiling machines and polishing machines to four farmer producer organisations."
+  },
+  "seg.f93b2805162b": {
+   "src": "⟦1⟧The usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after it is dug:",
+   "t": "⟦1⟧ಸಾಮಾನ್ಯ ಹಂತಗಳು.⟦/1⟧ ಅಗೆದ ನಂತರ ಬೆಳೆಯನ್ನು ಹೇಗೆ ನಿರ್ವಹಿಸಲಾಗುತ್ತದೆ ಎಂದು ICAR-IISR ನ ಅರಿಶಿನ ಮಾರ್ಗದರ್ಶಿ ಹೀಗೆ ವಿವರಿಸುತ್ತದೆ:",
+   "back": "⟦1⟧Usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is managed after digging as follows:"
+  },
+  "seg.675a9ec4355c": {
+   "src": "Dig it when the leaves dry and turn light brown to yellowish. A well-managed crop is ready seven to nine months after planting, usually between January and March.",
+   "t": "ಎಲೆಗಳು ಒಣಗಿ ತಿಳಿ ಕಂದು ಬಣ್ಣದಿಂದ ಹಳದಿ ಮಿಶ್ರಿತ ಬಣ್ಣಕ್ಕೆ ತಿರುಗಿದಾಗ ಅಗೆಯಿರಿ. ಚೆನ್ನಾಗಿ ನೋಡಿಕೊಂಡ ಬೆಳೆ ನೆಟ್ಟ ಏಳರಿಂದ ಒಂಬತ್ತು ತಿಂಗಳ ನಂತರ, ಸಾಮಾನ್ಯವಾಗಿ ಜನವರಿ ಮತ್ತು ಮಾರ್ಚ್ ನಡುವೆ, ಸಿದ್ಧವಾಗುತ್ತದೆ.",
+   "back": "Dig when the leaves dry and turn from light brown to a yellowish colour. A well-looked-after crop is ready seven to nine months after planting, usually between January and March."
+  },
+  "seg.763940881dcd": {
+   "src": "Separate the fingers from the bulbs and boil them within 3 or 4 days of digging, in water until soft: 45 to 60 minutes for fingers and 90 minutes for bulbs. Boiling takes away the raw smell, cuts the drying time and gives an even colour.",
+   "t": "ಕೊಂಬುಗಳನ್ನು ಗೆಡ್ಡೆಗಳಿಂದ ಬೇರ್ಪಡಿಸಿ, ಅಗೆದ 3 ಅಥವಾ 4 ದಿನಗಳೊಳಗೆ, ಮೆತ್ತಗಾಗುವವರೆಗೆ ನೀರಿನಲ್ಲಿ ಬೇಯಿಸಿ: ಕೊಂಬುಗಳಿಗೆ 45 ರಿಂದ 60 ನಿಮಿಷ, ಗೆಡ್ಡೆಗಳಿಗೆ 90 ನಿಮಿಷ. ಬೇಯಿಸುವುದರಿಂದ ಹಸಿ ವಾಸನೆ ಹೋಗುತ್ತದೆ, ಒಣಗುವ ಸಮಯ ಕಡಿಮೆಯಾಗುತ್ತದೆ ಮತ್ತು ಬಣ್ಣ ಸಮವಾಗುತ್ತದೆ.",
+   "back": "Separate the fingers [lit: horns] from the bulbs [lit: tubers] and, within 3 or 4 days of digging, boil in water until soft: 45 to 60 minutes for fingers, 90 minutes for bulbs. Boiling removes the raw smell, reduces the drying time, and makes the colour even."
+  },
+  "seg.a52a5947071a": {
+   "src": "Dry them in the sun in layers 5 to 7 cm deep, heaped and covered at night. It may take 10 to 12 days for the moisture to fall below 12%.",
+   "t": "5 ರಿಂದ 7 cm ದಪ್ಪದ ಪದರಗಳಲ್ಲಿ ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ; ರಾತ್ರಿ ರಾಶಿ ಮಾಡಿ ಮುಚ್ಚಿಡಿ. ತೇವಾಂಶ 12% ಗಿಂತ ಕಡಿಮೆಯಾಗಲು 10 ರಿಂದ 12 ದಿನ ಬೇಕಾಗಬಹುದು.",
+   "back": "Dry in the sun in layers 5 to 7 cm thick; at night make a heap and cover it. It may take 10 to 12 days for moisture to fall below 12%."
+  },
+  "seg.69d24ab1420a": {
+   "src": "Polish off the rough, dull, scaly skin by rubbing, by hand or in a turning drum.",
+   "t": "ಒರಟಾದ, ಮಂಕಾದ, ಹುರುಪೆಯಂತಹ ಸಿಪ್ಪೆಯನ್ನು ಕೈಯಿಂದ ಅಥವಾ ತಿರುಗುವ ಡ್ರಮ್‌ನಲ್ಲಿ ಉಜ್ಜಿ ಪಾಲಿಶ್ ಮಾಡಿ ತೆಗೆಯಿರಿ.",
+   "back": "Remove the rough, dull, scab-like peel by rubbing and polishing by hand or in a rotating drum."
+  },
+  "seg.1b7d7df8b7fa": {
+   "src": "Grind the dried turmeric into powder. FSSAI allows turmeric powder up to 10% moisture.",
+   "t": "ಒಣಗಿದ ಅರಿಶಿನವನ್ನು ಪುಡಿ ಮಾಡಿ. FSSAI ಅರಿಶಿನ ಪುಡಿಯಲ್ಲಿ 10% ವರೆಗೆ ತೇವಾಂಶಕ್ಕೆ ಅವಕಾಶ ಕೊಡುತ್ತದೆ.",
+   "back": "Powder the dried turmeric. FSSAI allows up to 10% moisture in turmeric powder."
+  },
+  "seg.1668650874a7": {
+   "src": "Fingers are the side branches of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulbs are the shorter, thicker central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground.",
+   "t": "ಕೊಂಬುಗಳು ಅರಿಶಿನದ ಗೆಡ್ಡೆಕಾಂಡದ ಪಕ್ಕದ ಕವಲುಗಳು, ಸಾಮಾನ್ಯವಾಗಿ 2.5 ರಿಂದ 7.5 cm ಉದ್ದ; ಗೆಡ್ಡೆಗಳು ಚಿಕ್ಕದಾದ, ದಪ್ಪವಾದ ನಡುವಿನ ಗೆಡ್ಡೆಕಾಂಡ. ನಮ್ಮ ಬೆಟ್ಟದ ಅರಿಶಿನ ಪ್ಯಾಕ್ ಮೇಲೆ, ಇಡೀ ಬೆಟ್ಟದ ಅರಿಶಿನ ಕೊಂಬುಗಳು, ನುಣ್ಣನೆಯ ಪುಡಿಯಾಗಿ ಪ್ಯಾಕ್ ಮಾಡಿದ್ದು ಎಂದಿದೆ. ನಮ್ಮ ಅರಿಶಿನ ಪ್ಯಾಕ್ ಮೇಲೆ, ಬಿಸಿಲಿನಲ್ಲಿ ಒಣಗಿಸಿ ಕಲ್ಲಿನಲ್ಲಿ ಬೀಸಿದ್ದು ಎಂದಿದೆ.",
+   "back": "Fingers [lit: horns] are the side branches of the turmeric rhizome [lit: tuber-stem], usually 2.5 to 7.5 cm long; bulbs are the short, thick central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground."
+  },
+  "seg.4a08c0de8660": {
+   "src": "Curcumin, and how they look",
+   "t": "ಕರ್ಕ್ಯುಮಿನ್, ಮತ್ತು ಅವು ಹೇಗೆ ಕಾಣುತ್ತವೆ",
+   "back": "Curcumin, and how they look"
+  },
+  "seg.7ef4d7667b4e": {
+   "src": "Curcumin is the yellow pigment in turmeric, ICAR-IISR says. FSSAI measures a turmeric powder's colouring power as its curcuminoid content, and asks for at least 2% on a dry basis. That standard is the same for hill and plains turmeric.",
+   "t": "ಕರ್ಕ್ಯುಮಿನ್ ಅರಿಶಿನದ ಹಳದಿ ವರ್ಣದ್ರವ್ಯ ಎಂದು ICAR-IISR ಹೇಳುತ್ತದೆ. FSSAI ಅರಿಶಿನ ಪುಡಿಯ ಬಣ್ಣ ಕೊಡುವ ಶಕ್ತಿಯನ್ನು ಅದರ ಕರ್ಕ್ಯುಮಿನಾಯ್ಡ್ ಪ್ರಮಾಣವಾಗಿ ಅಳೆಯುತ್ತದೆ, ಮತ್ತು ಒಣ ತೂಕದ ಆಧಾರದಲ್ಲಿ ಕನಿಷ್ಠ 2% ಕೇಳುತ್ತದೆ. ಆ ಮಾನದಂಡ ಬೆಟ್ಟದ ಮತ್ತು ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನಕ್ಕೆ ಒಂದೇ.",
+   "back": "ICAR-IISR says curcumin is the yellow pigment of turmeric. FSSAI measures a turmeric powder's colour-giving strength as its curcuminoid quantity, and asks for at least 2% on a dry-weight basis. That standard is the same for hill and plains-area turmeric."
+  },
+  "seg.fec370db2315": {
+   "src": "Curcumin changes from one turmeric to the next:",
+   "t": "ಕರ್ಕ್ಯುಮಿನ್ ಒಂದು ಅರಿಶಿನದಿಂದ ಇನ್ನೊಂದಕ್ಕೆ ಬದಲಾಗುತ್ತದೆ:",
+   "back": "Curcumin changes from one turmeric to another:"
+  },
+  "seg.bf314e75200d": {
+   "src": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha).",
+   "t": "⟦1⟧ತಳಿ.⟦/1⟧ ICAR-IISR ನ 2022 ರ ಅರಿಶಿನ ಮಾರ್ಗದರ್ಶಿ ತನ್ನದೇ ತಳಿಗಳನ್ನು 4.3% ಕರ್ಕ್ಯುಮಿನ್ (ಸುವರ್ಣ) ನಿಂದ 6.5% (IISR ಪ್ರಭಾ) ವರೆಗೆ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
+   "back": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha)."
+  },
+  "seg.cee7632d2998": {
+   "src": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR notes that turmeric from different regions differs in quality because of soil, climate and farming practice. Its Paderu report calls curcumin content highly sensitive to changes in the growing environment.",
+   "t": "⟦1⟧ಮಣ್ಣು ಮತ್ತು ಹವಾಮಾನ.⟦/1⟧ ಮಣ್ಣು, ಹವಾಮಾನ ಮತ್ತು ಕೃಷಿ ಪದ್ಧತಿಯಿಂದಾಗಿ ಬೇರೆ ಬೇರೆ ಪ್ರದೇಶಗಳ ಅರಿಶಿನದ ಗುಣಮಟ್ಟ ಬೇರೆಯಾಗಿರುತ್ತದೆ ಎಂದು ICAR-IISR ಗುರುತಿಸುತ್ತದೆ. ಬೆಳೆಯುವ ಪರಿಸರ ಬದಲಾದರೆ ಕರ್ಕ್ಯುಮಿನ್ ಪ್ರಮಾಣ ತುಂಬಾ ಸುಲಭವಾಗಿ ಬದಲಾಗುತ್ತದೆ ಎಂದು ಅದರ ಪಾಡೇರು ವರದಿ ಹೇಳುತ್ತದೆ.",
+   "back": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR recognises that the quality of turmeric from different regions differs because of soil, climate and farming practice. Its Paderu report says the curcumin quantity changes very easily if the growing environment changes."
+  },
+  "seg.70b529fe0f69": {
+   "src": "⟦1⟧Processing.⟦/1⟧ Handling and processing after harvest add to the differences, and boiling too long or too short affects the quality of the dried turmeric.",
+   "t": "⟦1⟧ಸಂಸ್ಕರಣೆ.⟦/1⟧ ಕೊಯ್ಲಿನ ನಂತರದ ನಿರ್ವಹಣೆ ಮತ್ತು ಸಂಸ್ಕರಣೆ ವ್ಯತ್ಯಾಸಗಳನ್ನು ಹೆಚ್ಚಿಸುತ್ತವೆ, ಮತ್ತು ಹೆಚ್ಚು ಹೊತ್ತು ಅಥವಾ ಕಡಿಮೆ ಹೊತ್ತು ಬೇಯಿಸುವುದು ಒಣಗಿದ ಅರಿಶಿನದ ಗುಣಮಟ್ಟದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.",
+   "back": "⟦1⟧Processing.⟦/1⟧ Post-harvest management and processing increase the differences, and boiling for too long or too short a time affects the quality of the dried turmeric."
+  },
+  "seg.493187b22749": {
+   "src": "So the word hill or plains on a pack does not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "ಆದ್ದರಿಂದ ಪ್ಯಾಕ್ ಮೇಲಿನ ಬೆಟ್ಟ ಅಥವಾ ಬಯಲು ಎಂಬ ಪದ ಒಂದು ಅರಿಶಿನದ ಕರ್ಕ್ಯುಮಿನ್ ಪ್ರಮಾಣವನ್ನು ಹೇಳುವುದಿಲ್ಲ. ಆಹಾರ ಪರೀಕ್ಷಾ ಲ್ಯಾಬ್ ಒಂದು ಬ್ಯಾಚ್‌ನ ಕರ್ಕ್ಯುಮಿನಾಯ್ಡ್ ಪ್ರಮಾಣವನ್ನು ಅಳೆಯಬಲ್ಲದು.",
+   "back": "So the word hill or plains on the pack does not tell a turmeric's curcumin quantity. A food testing lab can measure a batch's curcuminoid quantity."
+  },
+  "seg.53dc21b97510": {
+   "src": "⟦1⟧How they look.⟦/1⟧ Colour varies too. ICAR-IISR describes its varieties' rhizomes as ranging from reddish yellow to deep orange. Processing counts as well: boiling evens out the colour, drying in too thin a layer can spoil it, and polishing by hand leaves a rough, dull surface.",
+   "t": "⟦1⟧ಅವು ಹೇಗೆ ಕಾಣುತ್ತವೆ.⟦/1⟧ ಬಣ್ಣವೂ ಬದಲಾಗುತ್ತದೆ. ICAR-IISR ತನ್ನ ತಳಿಗಳ ಗೆಡ್ಡೆಕಾಂಡಗಳು ಕೆಂಪು ಮಿಶ್ರಿತ ಹಳದಿಯಿಂದ ಗಾಢ ಕಿತ್ತಳೆಯವರೆಗೆ ಇರುತ್ತವೆ ಎಂದು ವಿವರಿಸುತ್ತದೆ. ಸಂಸ್ಕರಣೆಗೂ ಪಾತ್ರವಿದೆ: ಬೇಯಿಸುವುದು ಬಣ್ಣವನ್ನು ಸಮಗೊಳಿಸುತ್ತದೆ, ತುಂಬಾ ತೆಳು ಪದರದಲ್ಲಿ ಒಣಗಿಸಿದರೆ ಬಣ್ಣ ಕೆಡಬಹುದು, ಮತ್ತು ಕೈಯಿಂದ ಪಾಲಿಶ್ ಮಾಡಿದರೆ ಮೇಲ್ಮೈ ಒರಟಾಗಿ, ಮಂಕಾಗಿ ಉಳಿಯುತ್ತದೆ.",
+   "back": "⟦1⟧How they look.⟦/1⟧ Colour also changes. ICAR-IISR describes the rhizomes of its varieties as ranging from reddish yellow to deep orange. Processing also has a role: boiling evens the colour, drying in a very thin layer can spoil the colour, and polishing by hand leaves the surface rough and dull."
+  },
+  "seg.d8ece11f902a": {
+   "src": "Cooking with each, and keeping it",
+   "t": "ಪ್ರತಿಯೊಂದರಿಂದ ಅಡುಗೆ, ಮತ್ತು ಕಾಪಾಡುವುದು",
+   "back": "Cooking with each, and preserving [or: storing]"
+  },
+  "seg.276f633c7a1f": {
+   "src": "Use either one wherever you use turmeric: dal, sambar, rasam, curries and pulihora.",
+   "t": "ನೀವು ಅರಿಶಿನ ಬಳಸುವ ಎಲ್ಲ ಕಡೆ ಇವುಗಳಲ್ಲಿ ಯಾವುದನ್ನಾದರೂ ಬಳಸಿ: ಬೇಳೆ, ಸಾಂಬಾರ್, ರಸಂ, ಪಲ್ಯ-ಗೊಜ್ಜುಗಳು ಮತ್ತು ಪುಳಿಹೋರ.",
+   "back": "Use any of these everywhere you use turmeric: dal [lentils], sambar, rasam, palya-gojju [stir-fries and gravies] and pulihora."
+  },
+  "seg.ca5e9b6340f2": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "ಸೀದುಹೋಗದಂತೆ ಸಣ್ಣ ಉರಿಯಲ್ಲಿ ಹಾಕಿ.",
+   "back": "Add on a low flame so it does not scorch."
+  },
+  "seg.7e910d4ad2a1": {
+   "src": "To swap one for the other, start with the amount you usually use and adjust to taste.",
+   "t": "ಒಂದರ ಬದಲು ಇನ್ನೊಂದನ್ನು ಬಳಸಲು, ನೀವು ಸಾಮಾನ್ಯವಾಗಿ ಹಾಕುವ ಪ್ರಮಾಣದಿಂದ ಶುರು ಮಾಡಿ, ರುಚಿಗೆ ತಕ್ಕಂತೆ ಹೊಂದಿಸಿ.",
+   "back": "To use one instead of the other, start from the amount you usually add and adjust to taste."
+  },
+  "seg.731001f6177d": {
+   "src": "Try either one in ⟦1⟧pasupu annam⟦/1⟧, ⟦2⟧nimmakaya pulihora⟦/2⟧, ⟦3⟧tomato pappu⟦/3⟧ or ⟦4⟧pasupu paalu⟦/4⟧.",
+   "t": "⟦1⟧ಪಸುಪು ಅನ್ನಂ⟦/1⟧, ⟦2⟧ನಿಮ್ಮಕಾಯ ಪುಳಿಹೋರ⟦/2⟧, ⟦3⟧ಟೊಮೆಟೊ ಪಪ್ಪು⟦/3⟧ ಅಥವಾ ⟦4⟧ಪಸುಪು ಪಾಲು⟦/4⟧ ಗಳಲ್ಲಿ ಇವುಗಳಲ್ಲಿ ಯಾವುದನ್ನಾದರೂ ಬಳಸಿ ನೋಡಿ.",
+   "back": "Try using any of these in ⟦1⟧Pasupu annam⟦/1⟧, ⟦2⟧Nimmakaya pulihora⟦/2⟧, ⟦3⟧Tomato pappu⟦/3⟧ or ⟦4⟧Pasupu palu⟦/4⟧."
+  },
+  "seg.259a5f63423a": {
+   "src": "Keeping it well.",
+   "t": "ಚೆನ್ನಾಗಿ ಕಾಪಾಡಲು.",
+   "back": "To preserve [or: store] well."
+  },
+  "seg.073f63fe23e0": {
+   "src": "Use a dry spoon every time.",
+   "t": "ಪ್ರತಿ ಬಾರಿಯೂ ಒಣ ಚಮಚ ಬಳಸಿ.",
+   "back": "Use a dry spoon every time."
+  },
+  "seg.b334ade49a15": {
+   "src": "Store it in a cool, dry place, away from light.",
+   "t": "ಬೆಳಕಿನಿಂದ ದೂರ, ತಂಪಾದ, ಒಣ ಜಾಗದಲ್ಲಿ ಇಡಿ.",
+   "back": "Keep in a cool, dry place away from light."
+  },
+  "seg.ea935ed7c1aa": {
+   "src": "How to compare two turmerics fairly",
+   "t": "ಎರಡು ಅರಿಶಿನಗಳನ್ನು ನ್ಯಾಯವಾಗಿ ಹೋಲಿಸುವುದು ಹೇಗೆ",
+   "back": "How to compare two turmerics fairly"
+  },
+  "seg.dcebc75ff722": {
+   "src": "Compare powder with powder. FSSAI allows whole turmeric up to 12% moisture and powder up to 10%, so the two are held to different limits.",
+   "t": "ಪುಡಿಯನ್ನು ಪುಡಿಯೊಂದಿಗೇ ಹೋಲಿಸಿ. FSSAI ಇಡೀ ಅರಿಶಿನದಲ್ಲಿ 12% ವರೆಗೆ ಮತ್ತು ಪುಡಿಯಲ್ಲಿ 10% ವರೆಗೆ ತೇವಾಂಶಕ್ಕೆ ಅವಕಾಶ ಕೊಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಎರಡಕ್ಕೂ ಬೇರೆ ಬೇರೆ ಮಿತಿಗಳಿವೆ.",
+   "back": "Compare powder only with powder. FSSAI allows up to 12% moisture in whole turmeric and up to 10% in powder, so the two have different limits."
+  },
+  "seg.9d14be920107": {
+   "src": "Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note the batch numbers, so you know which lots you compared.",
+   "t": "ಎರಡೂ ಪ್ಯಾಕ್‌ಗಳನ್ನು ಓದಿ: ಎಲ್ಲಿ ಬೆಳೆದದ್ದು, ಬ್ಯಾಚ್ ಅಥವಾ ಲಾಟ್ ಸಂಖ್ಯೆ, ಬೆಸ್ಟ್-ಬಿಫೋರ್ ದಿನಾಂಕ ಮತ್ತು FSSAI ಲೈಸೆನ್ಸ್ ಅಥವಾ ನೋಂದಣಿ ಸಂಖ್ಯೆ. ಯಾವ ಲಾಟ್‌ಗಳನ್ನು ಹೋಲಿಸಿದಿರಿ ಎಂದು ತಿಳಿಯಲು, ಬ್ಯಾಚ್ ಸಂಖ್ಯೆಗಳನ್ನು ಬರೆದಿಟ್ಟುಕೊಳ್ಳಿ.",
+   "back": "Read both packs: where it was grown, batch or lot number, best-before date and FSSAI licence or registration number. Write down the batch numbers so you know which lots you compared."
+  },
+  "seg.fbb64b2b32b0": {
+   "src": "Do the water check on both, side by side, with the same amount in the same kind of glass. The steps are in ⟦1⟧how to check turmeric powder at home⟦/1⟧.",
+   "t": "ಎರಡಕ್ಕೂ ಅಕ್ಕಪಕ್ಕದಲ್ಲಿ, ಒಂದೇ ಪ್ರಮಾಣದಲ್ಲಿ, ಒಂದೇ ತರಹದ ಲೋಟದಲ್ಲಿ ನೀರಿನ ಪರೀಕ್ಷೆ ಮಾಡಿ. ಹಂತಗಳು ⟦1⟧ಮನೆಯಲ್ಲೇ ಅರಿಶಿನ ಪುಡಿಯನ್ನು ಹೇಗೆ ಪರೀಕ್ಷಿಸುವುದು⟦/1⟧ ಎಂಬಲ್ಲಿ ಇವೆ.",
+   "back": "Do the water test for both side by side, in the same amount, in the same kind of glass. The steps are in ⟦1⟧How to test turmeric powder at home⟦/1⟧."
+  },
+  "seg.bd82039194f2": {
+   "src": "Cook the same dish with each, with the same amount, and compare the colour and taste.",
+   "t": "ಪ್ರತಿಯೊಂದರಿಂದ, ಒಂದೇ ಪ್ರಮಾಣದಲ್ಲಿ, ಒಂದೇ ಅಡುಗೆ ಮಾಡಿ, ಬಣ್ಣ ಮತ್ತು ರುಚಿಯನ್ನು ಹೋಲಿಸಿ.",
+   "back": "With each, in the same amount, cook the same dish and compare colour and taste."
+  },
+  "seg.8949107c3ad8": {
+   "src": "Do not judge curcumin by colour alone. A brighter yellow is not a measurement; a food testing lab can measure curcuminoid content.",
+   "t": "ಕರ್ಕ್ಯುಮಿನ್ ಅನ್ನು ಬಣ್ಣ ಒಂದರಿಂದಲೇ ಅಂದಾಜು ಮಾಡಬೇಡಿ. ಹೆಚ್ಚು ಹೊಳಪಾದ ಹಳದಿ ಒಂದು ಅಳತೆಯಲ್ಲ; ಆಹಾರ ಪರೀಕ್ಷಾ ಲ್ಯಾಬ್ ಕರ್ಕ್ಯುಮಿನಾಯ್ಡ್ ಪ್ರಮಾಣವನ್ನು ಅಳೆಯಬಲ್ಲದು.",
+   "back": "Do not estimate curcumin from colour alone. A brighter yellow is not a measurement; a food testing lab can measure the curcuminoid amount."
+  },
+  "seg.45a1aaa1ac2f": {
+   "src": "What is konda pasupu?",
+   "t": "ಕೊಂಡ ಪಸುಪು ಎಂದರೇನು?",
+   "back": "What is Konda pasupu?"
+  },
+  "seg.1810d213ce3f": {
+   "src": "Konda pasupu is Telugu for hill turmeric: turmeric grown in hill country. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu agency around Araku Valley and Chintapalle, where most tribal farmers grow turmeric.",
+   "t": "ಕೊಂಡ ಪಸುಪು ಎಂಬುದು ಬೆಟ್ಟದ ಅರಿಶಿನಕ್ಕೆ ತೆಲುಗು ಹೆಸರು: ಬೆಟ್ಟ ಪ್ರದೇಶದಲ್ಲಿ ಬೆಳೆಯುವ ಅರಿಶಿನ. ಆಂಧ್ರಪ್ರದೇಶದಲ್ಲಿ ಇದು ಪೂರ್ವ ಘಟ್ಟಗಳಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ, ಉದಾಹರಣೆಗೆ ಅರಕು ಕಣಿವೆ ಮತ್ತು ಚಿಂತಪಲ್ಲೆ ಸುತ್ತಲಿನ ಪಾಡೇರು ಏಜೆನ್ಸಿಯಲ್ಲಿ; ಅಲ್ಲಿನ ಬುಡಕಟ್ಟು ರೈತರಲ್ಲಿ ಹೆಚ್ಚಿನವರು ಅರಿಶಿನ ಬೆಳೆಯುತ್ತಾರೆ.",
+   "back": "Konda pasupu is the Telugu name for hill turmeric: turmeric that grows in hill regions. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu Agency around Araku Valley and Chintapalle; most of the tribal farmers there grow turmeric."
+  },
+  "seg.15730f8cc6b8": {
+   "src": "Is hill turmeric different from regular turmeric?",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನ ಸಾಮಾನ್ಯ ಅರಿಶಿನಕ್ಕಿಂತ ಬೇರೆಯೇ?",
+   "back": "Is hill turmeric different from ordinary turmeric?"
+  },
+  "seg.47cf644d0819": {
+   "src": "FSSAI holds all turmeric powder to the same standard, wherever it grew. Hill and plains turmeric can differ in where they grow, the varieties grown, and how they are grown and dried. In the Paderu hills, for example, an old local variety has often been left in the ground for up to two years.",
+   "t": "ಎಲ್ಲೇ ಬೆಳೆದರೂ, FSSAI ಎಲ್ಲ ಅರಿಶಿನ ಪುಡಿಗೂ ಒಂದೇ ಮಾನದಂಡ ಇಟ್ಟಿದೆ. ಬೆಟ್ಟದ ಮತ್ತು ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ ಬೆಳೆಯುವ ಜಾಗ, ಬೆಳೆಸುವ ತಳಿಗಳು, ಮತ್ತು ಬೆಳೆಸುವ ಹಾಗೂ ಒಣಗಿಸುವ ರೀತಿಯಲ್ಲಿ ಬೇರೆಯಾಗಿರಬಹುದು. ಉದಾಹರಣೆಗೆ, ಪಾಡೇರು ಬೆಟ್ಟಗಳಲ್ಲಿ ಒಂದು ಹಳೆಯ ಸ್ಥಳೀಯ ತಳಿಯನ್ನು ಹಲವು ಬಾರಿ ಎರಡು ವರ್ಷಗಳವರೆಗೆ ಮಣ್ಣಿನಲ್ಲೇ ಬಿಡಲಾಗುತ್ತಿತ್ತು.",
+   "back": "Wherever it grows, FSSAI has kept the same standard for all turmeric powder. Hill and plains-area turmeric may differ in the place they grow, the varieties grown, and the way they are grown and dried. For example, in the Paderu hills an old local variety was many times left in the soil for up to two years."
+  },
+  "seg.925655ca4b05": {
+   "src": "Does hill turmeric have more curcumin?",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನದಲ್ಲಿ ಕರ್ಕ್ಯುಮಿನ್ ಹೆಚ್ಚೇ?",
+   "back": "Is curcumin higher in hill turmeric?"
+  },
+  "seg.0d1b42a32899": {
+   "src": "The word hill alone does not tell you. Curcumin changes with the variety, the soil and climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "ಬೆಟ್ಟ ಎಂಬ ಪದ ಒಂದರಿಂದಲೇ ಗೊತ್ತಾಗುವುದಿಲ್ಲ. ಕರ್ಕ್ಯುಮಿನ್ ತಳಿ, ಮಣ್ಣು, ಹವಾಮಾನ, ಮತ್ತು ಅರಿಶಿನವನ್ನು ಹೇಗೆ ಬೇಯಿಸಿ ಒಣಗಿಸಲಾಯಿತು ಎಂಬುದರಿಂದ ಬದಲಾಗುತ್ತದೆ. ಆಹಾರ ಪರೀಕ್ಷಾ ಲ್ಯಾಬ್ ಒಂದು ಬ್ಯಾಚ್‌ನ ಕರ್ಕ್ಯುಮಿನಾಯ್ಡ್ ಪ್ರಮಾಣವನ್ನು ಅಳೆಯಬಲ್ಲದು.",
+   "back": "The word hill alone does not tell. Curcumin changes with variety, soil, climate, and how the turmeric was boiled and dried. A food testing lab can measure a batch's curcuminoid quantity."
+  },
+  "seg.4bce9a44c11e": {
+   "src": "What are the types of turmeric (haldi) in India?",
+   "t": "ಭಾರತದಲ್ಲಿ ಅರಿಶಿನದ (ಹಲ್ದಿ) ಬಗೆಗಳು ಯಾವುವು?",
+   "back": "What are the kinds of turmeric (haldi) in India?"
+  },
+  "seg.4e6e7201dae6": {
+   "src": "ICAR-IISR says India grows many turmeric cultivars, mostly known by the name of the place where they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati.",
+   "t": "ಭಾರತದಲ್ಲಿ ಹಲವು ಅರಿಶಿನ ತಳಿಗಳನ್ನು ಬೆಳೆಯುತ್ತಾರೆ, ಅವುಗಳಲ್ಲಿ ಹೆಚ್ಚಿನವು ಅವು ಬೆಳೆಯುವ ಜಾಗದ ಹೆಸರಿನಿಂದ ಗುರುತಿಸಲ್ಪಡುತ್ತವೆ, ಉದಾಹರಣೆಗೆ ದುಗ್ಗಿರಾಲ, ಮೈದುಕೂರು, ತೆಕ್ಕೂರುಪೇಟೆ ಮತ್ತು ಅಮಲಾಪುರಂ ಎಂದು ICAR-IISR ಹೇಳುತ್ತದೆ. ಅದು IISR ಪ್ರಭಾ, IISR ಪ್ರತಿಭಾ ಮತ್ತು IISR ಪ್ರಗತಿ ಮುಂತಾದ ಸುಧಾರಿತ ತಳಿಗಳನ್ನೂ ಬಿಡುಗಡೆ ಮಾಡಿದೆ.",
+   "back": "ICAR-IISR says many turmeric varieties are grown in India, most of them identified by the name of the place they grow, for example Duggirala, Mydukur, Thekkurpet and Amalapuram. It has also released improved varieties like IISR Prabha, IISR Prathibha and IISR Pragati."
+  },
+  "seg.7f1a5999ea66": {
+   "src": "Can I use hill turmeric instead of regular turmeric?",
+   "t": "ಸಾಮಾನ್ಯ ಅರಿಶಿನದ ಬದಲು ಬೆಟ್ಟದ ಅರಿಶಿನ ಬಳಸಬಹುದೇ?",
+   "back": "Can hill turmeric be used instead of ordinary turmeric?"
+  },
+  "seg.4ed419c2136a": {
+   "src": "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it on a low flame so it does not burn.",
+   "t": "ಹೌದು. ನೀವು ಅರಿಶಿನ ಬಳಸುವ ಎಲ್ಲ ಕಡೆ ಇದನ್ನು ಬಳಸಿ, ಸಾಮಾನ್ಯವಾಗಿ ಹಾಕುವ ಪ್ರಮಾಣದಿಂದ ಶುರು ಮಾಡಿ, ಮತ್ತು ಸೀದುಹೋಗದಂತೆ ಸಣ್ಣ ಉರಿಯಲ್ಲಿ ಹಾಕಿ.",
+   "back": "Yes. Use it everywhere you use turmeric, start from the amount you usually add, and add on a low flame so it does not scorch."
+  },
+  "seg.1a441b0df6de": {
+   "src": "Both packs list one ingredient, turmeric (Curcuma longa), and name where it was grown.",
+   "t": "ಎರಡೂ ಪ್ಯಾಕ್‌ಗಳಲ್ಲಿ ಒಂದೇ ಪದಾರ್ಥ ಇದೆ, ಅರಿಶಿನ (Curcuma longa), ಮತ್ತು ಅದು ಎಲ್ಲಿ ಬೆಳೆದದ್ದು ಎಂಬ ಹೆಸರೂ ಇದೆ.",
+   "back": "Both packs have only one ingredient, turmeric (Curcuma longa), and the name of where it was grown is also there."
+  },
+  "seg.1adc349b6e08": {
+   "src": "కొండ పసుపు vs మైదాన పసుపు · Hill vs Plains Turmeric | 1acrefarms",
+   "t": "కొండ పసుపు vs మైదాన పసుపు · ಬೆಟ್ಟದ ಅರಿಶಿನ vs ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ | 1acrefarms",
+   "back": "[Telugu: Konda pasupu vs Maidana pasupu] · Hill turmeric vs plains-area turmeric | 1acrefarms"
+  },
+  "seg.71bf7490dd33": {
+   "src": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. Konda pasupu (hill turmeric) vs plains turmeric: where each grows, how each is dried, what curcumin is, cooking and storage.",
+   "t": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. ಕೊಂಡ ಪಸುಪು (ಬೆಟ್ಟದ ಅರಿಶಿನ) vs ಬಯಲು ಪ್ರದೇಶದ ಅರಿಶಿನ: ಪ್ರತಿಯೊಂದೂ ಎಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ, ಹೇಗೆ ಒಣಗಿಸುತ್ತಾರೆ, ಕರ್ಕ್ಯುಮಿನ್ ಎಂದರೇನು, ಅಡುಗೆ ಮತ್ತು ಕಾಪಾಡುವಿಕೆ.",
+   "back": "[Telugu: Difference between Konda pasupu and Maidana pasupu.] Konda pasupu (hill turmeric) vs plains-area turmeric: where each grows, how it is dried, what curcumin is, cooking and preserving [storing]."
+  },
+  "seg.4e013e66158c": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference · 1acrefarms",
+   "t": "ಬೆಟ್ಟದ ಅರಿಶಿನ (ಕೊಂಡ ಪಸುಪು) ಅಥವಾ ಅರಿಶಿನ: ವ್ಯತ್ಯಾಸ ಏನು · 1acrefarms",
+   "back": "Hill turmeric (konda pasupu) or turmeric: what is the difference · 1acrefarms"
+  },
+  "seg.bb2ec13fea03": {
+   "src": "Where each grows, how it is dried, what curcumin is, and how to compare two. With a Telugu section.",
+   "t": "ಪ್ರತಿಯೊಂದೂ ಎಲ್ಲಿ ಬೆಳೆಯುತ್ತದೆ, ಹೇಗೆ ಒಣಗಿಸುತ್ತಾರೆ, ಕರ್ಕ್ಯುಮಿನ್ ಎಂದರೇನು, ಮತ್ತು ಎರಡನ್ನು ಹೇಗೆ ಹೋಲಿಸುವುದು. ತೆಲುಗು ವಿಭಾಗದೊಂದಿಗೆ.",
+   "back": "Where each grows, how it is dried, what curcumin is, and how to compare the two. With a Telugu section."
+  },
+  "seg.7811216916d3": {
+   "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
+   "t": "ನೀರಿನ ಲೋಟ, ಉಜ್ಜುವ ಪರೀಕ್ಷೆ, ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆ, ಮತ್ತು ಲ್ಯಾಬ್ ಯಾವಾಗ ಬೇಕು. ತೆಲುಗು ವಿಭಾಗದೊಂದಿಗೆ.",
+   "back": "Glass of water, rub test, iodine test, and when a lab is needed. With a Telugu section."
   }
  }
 }

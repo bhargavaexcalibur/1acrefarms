@@ -8380,6 +8380,796 @@
    "src": "Bought our packs? Review us on Google",
    "t": "जोंनि पेकेट बायखोमा? Google आव जोंनि रिभिउ लिर",
    "back": "Bought our packet? Write our review on Google"
+  },
+  "seg.13ab70df1ad4": {
+   "src": "How to check chilli powder at home",
+   "t": "न'आव बानलु गुन्दैखौ माबोरै नायसंनो",
+   "back": "How to test chilli [unsure: 'banlu' read as chilli] powder at home"
+  },
+  "seg.4dff3a175ddd": {
+   "src": "Guide · chilli powder",
+   "t": "लामा दिन्थिनाय · बानलु गुन्दै",
+   "back": "Guide [lit. path-showing] · Chilli powder"
+  },
+  "seg.27f1af0437bd": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · कारम · लाल मिर्च",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Karam · Lal mirch [red chilli]"
+  },
+  "seg.1841c397898f": {
+   "src": "FSSAI's standard says chilli powder must be dry and free from dirt, added colouring matter, flavouring matter and mineral oil. Its testing manual has methods for finding brick powder, added starch, added colour, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAIनि मानदण्डआव बुङो दङ, बानलु गुन्दैआ गोरान जानांगौ, आरो बेनि सिङाव मैला, दाजाबनाय गाब होग्रा मुवा, सोवाद-मुसुं होग्रा मुवा आरो मिनारेल थाउ थानो मोनाखै. बेनि आनजाद मेनुयेलआव इटा गुन्दै, दाजाबनाय स्टार्च, दाजाबनाय गाब, थाउआव गलायग्रा गाब, आरो सुडान III आरो रडामिन B रं दिहुननायनि आदबफोर दं.",
+   "back": "FSSAI's standard says that chilli powder must be dry, and that in it dirt, added colouring agents, taste-smell [flavour] agents and mineral oil must not be present. Its testing manual has methods for detecting brick powder, added starch, added colour, colour that dissolves in oil, and Sudan III and Rhodamine B dyes."
+  },
+  "seg.a0af610174e4": {
+   "src": "Some of this you can check in your kitchen with a glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can find. This guide covers both. Try the checks on any chilli powder you buy.",
+   "t": "बेनि खायसेखौ नों नोंनि संनाय न'आव मोनसे गिलास दै, नोंनि आखाय आसि आरो आयडिननि खायसे थोपाजों नायसंनो हायो. खायसेखौ, जेरै सुडान रं, लेबलासिनो दिहुननो हायो. बे लामा दिन्थिनायआव नैटाखौबो बुङो. नों बायनाय जायखिजाय बानलु गुन्दैआव बे नायसंनायफोरखौ खालामनानै नाय.",
+   "back": "Some of these you can test in your cooking house [kitchen] with one glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can detect. This guide talks about both. On whatever chilli powder you buy, do these tests and see."
+  },
+  "seg.5bf2055f3057": {
+   "src": "Sannam Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "सन्नम बानलु गुन्दै⟦#1⟧⟦#2⟧",
+   "back": "Sannam chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.f5224d4b1cca": {
+   "src": "Teja Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "तेजा बानलु गुन्दै⟦#1⟧⟦#2⟧",
+   "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.b356a193952e": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+   "t": "⟦1⟧जोंनि बानलु गुन्दै नैटा⟦/1⟧आगसि: सन्नम बानलु गुन्दै. आगदा: तेजा बानलु गुन्दै. नैटाबो पलनाडु आरो गुन्टुरआव गायनाय बानलुनिफ्राय बानायनाय, सानाव फोराननाय आरो नरसरावपेटआव पेक खालामनाय.",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both made from chillies grown in Palnadu and Guntur, dried in the sun and packed in Narasaraopet."
+  },
+  "seg.a574ced14407": {
+   "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
+   "t": "दै मोनसे गिलासनि सायाव फिसा सामुस मोनसे बानलु गुन्दै सिथ आरो दा लोरसोर. गोख्रोंयै गाहायाव बोहैनाय गाबनि सारिफोरा दाजाबनाय गाबखौ दिन्थियो, आरो गुन्दैआ थुनलायनायनि उनावबो सायाव बुखुनानै थानाय फिसा फिसाफोरा बोननि गुन्दै एबा भुसिखौ दिन्थियो. गाहायाव थुनलायनाय गुन्दैखौ हुर: खरखरा मोनोब्ला इटा गुन्दै एबा बालिखौ, आरो साबुन बादि मोनोब्ला सपस्टनखौ दिन्थियो. आयडिनआ गुन्दैखौ नीला खालामोब्ला दाजाबनाय स्टार्चखौ दिन्थियो. सुडान I बादि रंफोरा दैआव नुजाया; बेफोरनि थाखाय लेब बाहाय.",
+   "back": "On top of a glass of water sprinkle [unsure: सिथ] one small spoon [unsure: सामुस] of chilli [unsure: बानलु] powder and do not stir [unsure: लोरसोर]. Streaks of colour flowing quickly [unsure: गोख्रोंयै] downward show added [lit: mixed] colour, and small bits that stay floating on top even after the powder sinks show wood [unsure: बोन] powder or bran/husk. Rub [unsure: हुर] the powder that sank to the bottom: if it feels gritty it shows brick powder or sand, and if it feels like soap it shows soapstone. If iodine makes the powder blue, it shows added starch. Dyes like Sudan I do not show up [lit: are not seen] in water; for those use a lab."
+  },
+  "seg.11caa5f871e4": {
+   "src": "What FSSAI checks chilli powder for",
+   "t": "FSSAIआ बानलु गुन्दैआव मा मा नायसंयो",
+   "back": "What things FSSAI tests in chilli powder"
+  },
+  "seg.87f56e160312": {
+   "src": "Added colour",
+   "t": "दाजाबनाय गाब",
+   "back": "Added colour"
+  },
+  "seg.7d346e39c41e": {
+   "src": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for colours that dissolve in water, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAIनि बानलु गुन्दैनि मानदण्डआ दाजाबनाय गाब होग्रा मुवा होआ. FSSAIनि आनजादफोरा दैआव गलायग्रा गाब, थाउआव गलायग्रा गाब, आरो सुडान III आरो रडामिन B रं नायसंयो.",
+   "back": "FSSAI's chilli powder standard does not allow [lit. does not give] added colouring agents. FSSAI's tests check for colour that dissolves in water, colour that dissolves in oil, and Sudan III and Rhodamine B dyes."
+  },
+  "seg.7f79f4c5fcd6": {
+   "src": "Sudan dyes",
+   "t": "सुडान रं",
+   "back": "Sudan dyes"
+  },
+  "seg.dab0f1b06607": {
+   "src": "Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian Standard on quick tests for adulterants says Sudan III, much used in wax polishes, has been used to make chilli pods shine, and so finds its way into chilli powder.",
+   "t": "सुडान I खौ थाउ, चर्बि, मम, आरो जुता आरो फ्लरनि पलिसआव गाब होनो बाहायो. गुबुन मुवा मिसायनायखौ गोख्रोंयै नायसंनायनि बागै भारतीय मानदण्डआ बुङो, मम पलिसआव गोबां बाहायनाय सुडान III खौ आबुं बानलुखौ जोंजों खालामनो बाहायनाय जाबाय, आरो बेबादिनो बेयो बानलु गुन्दैआव हाबो.",
+   "back": "Sudan I is used to give colour to oil, fat, wax, and shoe and floor polish. The Indian Standard about quickly testing for mixing of other things [adulteration] says that Sudan III, used a lot in wax polish, has been used to make whole chillies shiny [unsure: 'jongjong khalamno'], and in this way it reaches chilli powder."
+  },
+  "seg.65d2132b3a71": {
+   "src": "Brick powder, sand, salt, talc and soapstone",
+   "t": "इटा गुन्दै, बालि, संख्रि, टेल्क आरो सपस्टन",
+   "back": "Brick powder, sand, salt, talc and soapstone"
+  },
+  "seg.eaaa28049f76": {
+   "src": "FSSAI's household tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase bulk.",
+   "t": "FSSAIनि न'नि आनजादफोराव बानलु गुन्दैनि थाखाय बेफोरखौ लिस्ट खालामनाय दं. भारतीय मानदण्डआ बुङो, इटा गुन्दैखौ बिबां बांहोनो मिसायो.",
+   "back": "In FSSAI's home tests these are listed for chilli powder. The Indian Standard says brick powder is mixed in to increase the quantity."
+  },
+  "seg.e159a2e5efb2": {
+   "src": "Starch",
+   "t": "स्टार्च",
+   "back": "Starch"
+  },
+  "seg.591f55c64be8": {
+   "src": "FSSAI's manual tests powdered spices other than turmeric for added starch. The Indian Standard notes that colour is also added to chilli powder to hide added starch.",
+   "t": "FSSAIनि मेनुयेलआ हालदैनि अनगायै गुबुन गुन्दै मसलाफोराव दाजाबनाय स्टार्चनि थाखाय आनजाद खालामो. भारतीय मानदण्डआ लिरो दङ, दाजाबनाय स्टार्चखौ नुनो हायाखै खालामनो बानलु गुन्दैआव गाबबो दाजाबो.",
+   "back": "FSSAI's manual tests for added starch in powdered spices other than turmeric. The Indian Standard writes that colour is also added to chilli powder to make added starch unseen [hide added starch]."
+  },
+  "seg.77e497cd9160": {
+   "src": "Sawdust and bran",
+   "t": "बोननि गुन्दै आरो भुसि",
+   "back": "Sawdust [lit. wood powder] and husk"
+  },
+  "seg.6cdabb4ac9cc": {
+   "src": "Both float on water, which is how FSSAI's household tests spot them.",
+   "t": "नैटाबो दैनि सायाव बुखुयो, आरो FSSAIनि न'नि आनजादफोरा बेनिखायनो बेफोरखौ दिहुनो.",
+   "back": "Both float on the water, and FSSAI's home tests detect them because of this."
+  },
+  "seg.2ad2a1900226": {
+   "src": "Check 1: the water glass and the rub test",
+   "t": "नायसंनाय 1: दैनि गिलास आरो हुरनाय आनजाद",
+   "back": "Test 1: Glass of water and rubbing test"
+  },
+  "seg.5ebb4d43f1c6": {
+   "src": "Sprinkle one teaspoon of chilli powder on top. Do not stir.",
+   "t": "सायाव मोनसे फिसा सामुस बानलु गुन्दै सिथ. दा लोरसोर.",
+   "back": "On top sprinkle [unsure] one small spoon of chilli powder. Do not stir [unsure]."
+  },
+  "seg.e11be0844965": {
+   "src": "Watch the first minute. Look for coloured streaks running down from the powder.",
+   "t": "गिबि मिनिटखौ नाय. गुन्दैनिफ्राय गाहायाव बोहैनाय गाब थानाय सारिफोर नाय.",
+   "back": "Watch the first minute. Look for streaks with colour flowing downward from the powder."
+  },
+  "seg.14ad43586f91": {
+   "src": "Leave it until most of the powder has sunk. Look at the surface for bits still floating.",
+   "t": "गोबां गुन्दै थुनलायनो सिम लाखि. सायाव दासिमबो बुखुनानै थानाय फिसा फिसाफोर नाय.",
+   "back": "Leave it until much of the powder sinks. Look for small particles still floating on top."
+  },
+  "seg.379262f468f1": {
+   "src": "Pour off most of the water and rub the sediment at the bottom between your fingers.",
+   "t": "गोबां दैखौ फोनांनानै गार आरो गाहायाव थुनलायनाय गुन्दैखौ नोंनि आखाय आसिफोरनि गेजेराव हुर.",
+   "back": "Pour off [lit. throw away after pouring] much of the water and rub the sunk powder between your fingers."
+  },
+  "seg.7455fbe1d38d": {
+   "src": "What you see or feel",
+   "t": "नों मा नुयो एबा मा मोनो",
+   "back": "What do you see or what do you feel"
+  },
+  "seg.5ddc9ed4a863": {
+   "src": "What it can point to",
+   "t": "बेयो मा दिन्थिनो हागौ",
+   "back": "What this can show"
+  },
+  "seg.9d20132af7ae": {
+   "src": "Colour streaks running down at once",
+   "t": "गोख्रोंयै गाहायाव बोहैनाय गाबनि सारि",
+   "back": "Streaks of colour flowing down quickly"
+  },
+  "seg.4dd6d7d4418f": {
+   "src": "Added colour that dissolves in water",
+   "t": "दैआव गलायग्रा दाजाबनाय गाब",
+   "back": "Added colour that dissolves in water"
+  },
+  "seg.99d03e1725f4": {
+   "src": "Bits still floating after the powder sinks",
+   "t": "गुन्दैआ थुनलायनायनि उनावबो बुखुनानै थानाय फिसा फिसा",
+   "back": "Small particles floating even after the powder sinks"
+  },
+  "seg.909cfed7ea11": {
+   "src": "Sawdust or bran",
+   "t": "बोननि गुन्दै एबा भुसि",
+   "back": "Sawdust [lit. wood powder] or husk"
+  },
+  "seg.f211ed47d57c": {
+   "src": "Sediment that feels gritty",
+   "t": "खरखरा मोननाय थुनलायनाय गुन्दै",
+   "back": "Sunk powder that feels gritty"
+  },
+  "seg.6b3ebad45f08": {
+   "src": "Brick powder or sand",
+   "t": "इटा गुन्दै एबा बालि",
+   "back": "Brick powder or sand"
+  },
+  "seg.0778aeb79734": {
+   "src": "White sediment that feels soapy and smooth",
+   "t": "साबुन बादि आरो गुदुर मोननाय गुफुर थुनलायनाय गुन्दै",
+   "back": "White sunk powder that feels like soap and smooth [or: soft]"
+  },
+  "seg.08846b1820d9": {
+   "src": "Soapstone",
+   "t": "सपस्टन",
+   "back": "Soapstone"
+  },
+  "seg.175ed947e347": {
+   "src": "None of these",
+   "t": "बेफोरनि मोनसेबो नङा",
+   "back": "Not even one of these"
+  },
+  "seg.92ba3085667d": {
+   "src": "No sign of what this check can find.",
+   "t": "बे नायसंनायआ दिहुननो हानाय मोनसेबो सिन गैया.",
+   "back": "Not even one sign that this test can detect."
+  },
+  "seg.3cf82af49b09": {
+   "src": "Any one of these",
+   "t": "बेफोरनि जायखिजाय मोनसे",
+   "back": "Any one of these"
+  },
+  "seg.e4f5d2924afa": {
+   "src": "Possible adulteration. Stop using that batch and get it tested.",
+   "t": "गुबुन मुवा मिसायनाय जानो हागौ. बे बेचखौ बाहायनाय थाद' आरो बेखौ आनजाद खालाम.",
+   "back": "There may be mixing of other things [adulteration]. Stop using this batch and get it tested."
+  },
+  "seg.e5e493d4cb12": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Colours that dissolve in water leave the powder and run down as streaks. Brick powder is heavy and settles to the bottom, while sawdust and bran float.",
+   "t": "⟦1⟧मानो बेयो मावो.⟦/1⟧ दैआव गलायग्रा गाबफोरा गुन्दैनिफ्राय ओंखारनानै सारि महरै गाहायाव बोहैयो. इटा गुन्दैआ गोरोंथि आरो गाहायाव थुनलायो, जेब्ला बोननि गुन्दै आरो भुसिआ बुखुयो.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Colours that dissolve in water come out of the powder and flow down as streaks. Brick powder is heavy and sinks to the bottom, while sawdust and husk float."
+  },
+  "seg.551c97147aa3": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Dyes that do not dissolve in water stay in the powder. Sudan I is one: it does not dissolve in water, and it is used to colour oils, fats and waxes. Chilli powder coloured with such dyes can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧बेयो मा नुनो हाया.⟦/1⟧ जाय रंफोरा दैआव गलाया, बेफोरा गुन्दैआवनो थायो. सुडान I बेफोरनि मोनसे: बेयो दैआव गलाया, आरो बेखौ थाउ, चर्बि आरो ममआव गाब होनो बाहायो. बेबादि रंजों गाब होनाय बानलु गुन्दैआ बे नायसंनायाव फासनो हायो. लेबनि आनजादलासिनो बेफोरखौ गैया होन्नो बुङो हायो.",
+   "back": "⟦1⟧It cannot be seen [lit: 'it, what, cannot be seen'; मा unsure].⟦/1⟧ Dyes that do not dissolve in water stay in the powder. Sudan I is one of them: it does not dissolve in water, and it is used to colour oil, fat and wax. Chilli powder coloured with such a dye can pass this test. Only a lab test can say that they are absent."
+  },
+  "seg.5bbec3bc6fbf": {
+   "src": "Wash your hands after the rub test, before you touch your eyes.",
+   "t": "हुरनाय आनजादनि उनाव, मेगनाव आखाय होनायनि सिगां आखाय सु.",
+   "back": "After the rubbing test, wash your hands before touching [lit. giving hand to] your eyes."
+  },
+  "seg.36726998b551": {
+   "src": "Check 2: the iodine test for starch",
+   "t": "नायसंनाय 2: स्टार्चनि थाखाय आयडिन आनजाद",
+   "back": "Test 2: Iodine test for starch"
+  },
+  "seg.3d76d0b2a476": {
+   "src": "FSSAI's manual uses the iodine test for powdered spices other than turmeric, so chilli powder can take it. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is left out.",
+   "t": "FSSAIनि मेनुयेलआ हालदैनि अनगायै गुबुन गुन्दै मसलानि थाखाय आयडिन आनजाद बाहायो, बेनिखायनो बानलु गुन्दैआव बेखौ खालामनो हायो. ⟦1⟧जोंनि हालदैनि लामा दिन्थिनाया⟦/1⟧ हालदैखौ मानो बाद होनाय बेखौ बुङो.",
+   "back": "FSSAI's manual uses the iodine test for powdered spices other than turmeric, so it can be done on chilli powder. ⟦1⟧Our turmeric guide⟦/1⟧ says why turmeric is excluded."
+  },
+  "seg.c7d23b036696": {
+   "src": "Put half a teaspoon of chilli powder on a white saucer.",
+   "t": "मोनसे गुफुर फिसा थालियाव खावसे फिसा सामुस बानलु गुन्दै दोन.",
+   "back": "Put half a small spoon of chilli powder on a small white plate."
+  },
+  "seg.9b2fb67a0f9a": {
+   "src": "Add a few drops of tincture of iodine from a chemist.",
+   "t": "केमिस्टनि दकाननिफ्राय लानाय टिंचार आयडिननि खायसे थोपा दोन.",
+   "back": "Put a few drops of tincture iodine taken from a chemist's shop."
+  },
+  "seg.2d93dfc80312": {
+   "src": "Look at the colour where the drops land.",
+   "t": "थोपाफोरा गोग्लैनाय जायगायाव गाबखौ नाय.",
+   "back": "Look at the colour at the place where the drops fell."
+  },
+  "seg.c698ff17efbf": {
+   "src": "Throw that powder away afterwards.",
+   "t": "उनाव बे गुन्दैखौ गार.",
+   "back": "Afterwards throw away this powder."
+  },
+  "seg.25bf59d68c4e": {
+   "src": "No blue colour",
+   "t": "नीला गाब गैया",
+   "back": "No blue colour"
+  },
+  "seg.2f88b779aa2b": {
+   "src": "No sign of added starch.",
+   "t": "दाजाबनाय स्टार्चनि मोनसेबो सिन गैया.",
+   "back": "Not even one sign of added starch."
+  },
+  "seg.ac80a4934254": {
+   "src": "A blue colour",
+   "t": "नीला गाब",
+   "back": "Blue colour"
+  },
+  "seg.0db85a4ff58c": {
+   "src": "Points to added starch. Stop using that batch and get it tested. On red powder a faint change is hard to judge, so if you are not sure, let a lab decide.",
+   "t": "दाजाबनाय स्टार्चखौ दिन्थियो. बे बेचखौ बाहायनाय थाद' आरो बेखौ आनजाद खालाम. गोजा गुन्दैआव इसेसे सोलायनायखौ बिजिरनो गोब्राब, बेनिखायनो नों थि नङाब्ला, लेबखौ थार खालामनो हो.",
+   "back": "Shows added starch. Stop using this batch and get it tested. On red powder a slight change is hard to judge, so if you are not certain, let the lab confirm [lit. make it true]."
+  },
+  "seg.ed4a959013d8": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Iodine turns blue when it meets starch.",
+   "t": "⟦1⟧मानो बेयो मावो.⟦/1⟧ आयडिनआ स्टार्चजों लोगो मोनोब्ला नीला जायो.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Iodine becomes blue when it meets [comes in contact with] starch."
+  },
+  "seg.5adf326d0b8f": {
+   "src": "Leave these to a lab",
+   "t": "बेफोरखौ लेबनि थाखाय लाखि",
+   "back": "Keep these for the lab"
+  },
+  "seg.9e0f62706054": {
+   "src": "Acid and solvent tests at home",
+   "t": "न'आव एसिड आरो सल्भेन्टनि आनजाद",
+   "back": "Acid and solvent tests at home"
+  },
+  "seg.f5e28e97055b": {
+   "src": "The methods in FSSAI's manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. The acids can cause burns, and several of the solvents catch fire easily. They belong in a lab, not a kitchen.",
+   "t": "बानलु गुन्दैआव इटा गुन्दै, दाजाबनाय गाब, थाउआव गलायग्रा गाब, सुडान III आरो रडामिन B नायसंनो FSSAIनि मेनुयेलनि आदबफोराव गोहो एसिड, आरो क्लरफर्म, पेट्रलियाम इथार, हेक्सेन आरो एसिटन बादि सल्भेन्ट बाहायो. एसिडफोरा बिगुर साथिनो हायो, आरो सल्भेन्ट खायसेआ गोरलैयै सावखांयो. बेफोरा लेबआव थानांगौ, संनाय न'आव नङा.",
+   "back": "FSSAI manual's methods for testing brick powder, added colour, colour that dissolves in oil, Sudan III and Rhodamine B in chilli powder use strong acids, and solvents like chloroform, petroleum ether, hexane and acetone. Acids can burn the skin, and some solvents catch fire easily. These must be in the lab, not in the cooking house [kitchen]."
+  },
+  "seg.1e30ce9ef855": {
+   "src": "For a sure answer, send a sample to a NABL-accredited food testing lab. Ask it to test for added colours, including Sudan dyes, and against FSSAI's chilli powder standard. Its limits include moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%, all by weight, with both ash limits on a dry basis. Keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack.",
+   "t": "थि फिन मोननो, NABLआ मान्यता होनाय जानाय मुवा आनजाद खालामग्रा लेबआव नमुना फाथाय. लेबखौ सुडान रं लाफानानै दाजाबनाय गाबनि थाखाय, आरो FSSAIनि बानलु गुन्दैनि मानदण्ड बादि आनजाद खालामनो बुङ. बे मानदण्डनि सिमाफोराव दं: दैथि 11% सिम, गासै छाइ 8% सिम, आरो पातला हाइड्रोक्लोरिक एसिडआवबो गलाया जाय छाइ, बेयो 1.3% सिम, गासैबो ओजननि सायाव, आरो छाइनि सिमा नैटाबो गोरान मुवानि सायाव. गुन्दैखौ बेनि बन्द खालामनाय पेकआव एबा मोनसे सिखां बन्द खालामनाय बेगआव लाखि, आरो पेकआव दिहुननाय बेच नम्बरखौ लिरनानै लाखि.",
+   "back": "To be sure, send a sample to an NABL-accredited testing lab for things [unsure: मुवा, could mean food/items]. Tell the lab to test for added colour, including Sudan dyes, and according to FSSAI's chilli powder standard. Among the limits of this standard are: moisture [unsure: दैथि] up to 11%, total ash [unsure: छाइ] up to 8%, and ash that does not dissolve even in dilute hydrochloric acid, up to 1.3%, all on weight basis, and both ash limits on a dry-matter basis. Keep the powder in its sealed pack or in a tightly sealed bag, and keep it after noting down the batch number shown on the pack."
+  },
+  "seg.8ef59aeeebe4": {
+   "src": "An FSSAI licence or registration number.",
+   "t": "FSSAI लाइसेन्स एबा रेजिस्ट्रेसन नम्बर.",
+   "back": "FSSAI licence or registration number."
+  },
+  "seg.f90b0f258a47": {
+   "src": "Net quantity, a batch or lot number, and a best-before date.",
+   "t": "नेट बिबां, बेच एबा लट नम्बर, आरो बेस्ट-बिफर तारिख.",
+   "back": "Net quantity, batch or lot number, and best-before date."
+  },
+  "seg.fa3907160dbb": {
+   "src": "The ingredients. FSSAI allows up to 2% edible vegetable oil by weight in chilli powder, but only if the label says which oil and how much.",
+   "t": "मुवाफोर. FSSAIआ बानलु गुन्दैआव ओजननि सायाव 2% सिम जानो हानाय बिफांनि थाउ होयो, नाथाय लेबेलआव बबे थाउ आरो बेसेबां बेखौ लिरनाय थायोब्लासो.",
+   "back": "Ingredients [lit. things]. FSSAI allows up to 2% by weight of edible plant oil in chilli powder, but only if the label writes which oil and how much."
+  },
+  "seg.616cb55edf33": {
+   "src": "Where it was grown, and the chilli variety if named. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur.",
+   "t": "बेखौ बबेयाव गायनाय, आरो मुं होनाय थायोब्ला बानलुनि रोखोम. जोंनि ⟦1⟧सन्नम⟦/1⟧ आरो ⟦2⟧तेजा⟦/2⟧ पेकआव पलनाडु आरो गुन्टुर लिरनाय दं.",
+   "back": "Where it was grown, and if a name is given, the variety of chilli. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs have Palnadu and Guntur written."
+  },
+  "seg.5766b566dbba": {
+   "src": "Use a dry spoon, and keep the jar away from steam from the stove.",
+   "t": "गोरान सामुस बाहाय, आरो जारखौ चुलानि भापनिफ्राय गोजानाव लाखि.",
+   "back": "Use a dry spoon, and keep the jar far from the steam of the stove."
+  },
+  "seg.ae76fa3c0a37": {
+   "src": "Keep it in a cool, dry place, out of direct sunlight.",
+   "t": "बेखौ गुसु, गोरान जायगायाव लाखि, सोजा सानि सोरांआव दा लाखि.",
+   "back": "Keep it in a cool [or: cold], dry place, do not keep it in direct sunlight."
+  },
+  "seg.cee32139c40b": {
+   "src": "Use it within the best-before date on the pack, in dishes such as ⟦1⟧vellulli kaaram⟦/1⟧, ⟦2⟧gongura pachadi⟦/2⟧ or ⟦3⟧tomato pachadi⟦/3⟧.",
+   "t": "पेकआव लिरनाय बेस्ट-बिफर तारिखनि सिङावनो, ⟦1⟧वेल्लुल्ली कारम⟦/1⟧, ⟦2⟧गोंगुरा पच्चडी⟦/2⟧ एबा ⟦3⟧टोमाटो पच्चडी⟦/3⟧ बादि संनाय मुवाफोराव बाहाय.",
+   "back": "Within the best-before date written on the pack, use it in dishes like ⟦1⟧Vellulli Karam⟦/1⟧, ⟦2⟧Gongura Pachadi⟦/2⟧ or ⟦3⟧Tomato Pachadi⟦/3⟧."
+  },
+  "seg.13c76694dc1e": {
+   "src": "How do I check chilli powder for brick powder at home?",
+   "t": "न'आव बानलु गुन्दैआव इटा गुन्दै दं नामा माबोरै नायसंनो?",
+   "back": "How to test at home whether there is brick powder in chilli powder?"
+  },
+  "seg.3e87e1d30613": {
+   "src": "Put a teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the water and rub the sediment between your fingers: grit points to brick powder or sand, and a white residue that feels soapy and smooth points to soapstone.",
+   "t": "दै मोनसे गिलासआव फिसा सामुस मोनसे बानलु गुन्दै दोन आरो थुनलायनो हो. गोबां दैखौ फोनांनानै गार आरो थुनलायनाय गुन्दैखौ आखाय आसिफोरनि गेजेराव हुर: खरखरा मोनोब्ला इटा गुन्दै एबा बालिखौ दिन्थियो, आरो साबुन बादि आरो गुदुर मोननाय गुफुर मुवाआ सपस्टनखौ दिन्थियो.",
+   "back": "Put one small spoon of chilli powder in one glass of water and let it sink. Pour off much of the water and rub the sunk powder between your fingers: if it feels gritty it shows brick powder or sand, and a white substance that feels like soap and smooth [or: soft] shows soapstone."
+  },
+  "seg.f609f5773557": {
+   "src": "Can the water test detect Sudan dye in chilli powder?",
+   "t": "दैनि नायसंनायआ बानलु गुन्दैआव सुडान रं दिहुननो हागोमा?",
+   "back": "Can the water test detect Sudan dye in chilli powder?"
+  },
+  "seg.7bd8af24de2f": {
+   "src": "No. Sudan I does not dissolve in water, so it cannot run out as streaks. FSSAI's manual tests for Sudan III and for oil-soluble colours with solvents such as hexane and petroleum ether, so those tests need a lab.",
+   "t": "हाया. सुडान I दैआव गलाया, बेनिखायनो बेयो सारि महरै बोहैनो हाया. FSSAIनि मेनुयेलआ सुडान III आरो थाउआव गलायग्रा गाबनि थाखाय हेक्सेन आरो पेट्रलियाम इथार बादि सल्भेन्टजों आनजाद खालामो, बेनिखायनो बे आनजादफोरनि थाखाय लेब नांगौ.",
+   "back": "No. Sudan I does not dissolve in water, so it cannot flow as streaks. FSSAI's manual tests for Sudan III and colours that dissolve in oil with solvents like hexane and petroleum ether, so for these tests a lab is needed."
+  },
+  "seg.d63c02ec2e5c": {
+   "src": "Does the iodine test work on chilli powder?",
+   "t": "आयडिन आनजादआ बानलु गुन्दैआव मावोमा?",
+   "back": "Does the iodine test work on chilli powder?"
+  },
+  "seg.01e86c518d41": {
+   "src": "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli powder is one of them. A blue colour points to added starch.",
+   "t": "नंगौ. FSSAIनि मेनुयेलआ हालदैनि अनगायै गुबुन गुन्दै मसलानि थाखाय आयडिन आनजाद बाहायो, आरो बानलु गुन्दैआ बेफोरनि मोनसे. नीला गाबआ दाजाबनाय स्टार्चखौ दिन्थियो.",
+   "back": "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli powder is one of them. Blue colour shows added starch."
+  },
+  "seg.75e20911cd47": {
+   "src": "Is bright red chilli powder a sign of adulteration?",
+   "t": "जोबोद सोरांथि गोजा बानलु गुन्दैआ गुबुन मुवा मिसायनायनि सिन नामा?",
+   "back": "Is very bright red chilli powder a sign of mixing of other things [adulteration]?"
+  },
+  "seg.dcfec3eff0b8": {
+   "src": "Colour alone does not tell you. The water check looks for colour that leaves the powder and runs down as streaks, not for how red the powder looks, and a lab can test for added colours.",
+   "t": "गाब गावसेयावनो बेखौ बुङो हाया. दैनि नायसंनायआ गुन्दैनिफ्राय ओंखारनानै सारि महरै गाहायाव बोहैनाय गाबखौ नायो, गुन्दैआ माखाव गोजा नुजायो बेखौ नङा, आरो लेबआ दाजाबनाय गाबनि थाखाय आनजाद खालामनो हायो.",
+   "back": "Colour alone cannot tell this. The water test looks at colour coming out of the powder and flowing down as streaks, not how red the powder looks, and a lab can test for added colour."
+  },
+  "seg.54f85d34859f": {
+   "src": "Stop using that batch and keep the pack. Contact the seller with the batch number, or send a sample to a NABL-accredited food testing lab for a sure answer.",
+   "t": "बे बेचखौ बाहायनाय थाद' आरो पेकखौ लाखि. बेच नम्बरजों फानग्राजों सोमोन्दो दाथाय, एबा थि फिन मोननो NABLआ मान्यता होनाय जानाय मुवा आनजाद खालामग्रा लेबआव नमुना फाथाय.",
+   "back": "Stop using this batch and keep the pack. Contact the seller with the batch number, or to get a definite answer send a sample to a food testing lab accredited by NABL."
+  },
+  "seg.ff09628b25c1": {
+   "src": "Our chilli powder",
+   "t": "जोंनि बानलु गुन्दै",
+   "back": "Our chilli powder"
+  },
+  "seg.a7d8a3890045": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "नैटाबो पलनाडु आरो गुन्टुरआव गायनाय आरो नरसरावपेटआव पेक खालामनाय.",
+   "back": "Both grown in Palnadu and Guntur and packed in Narasaraopet."
+  },
+  "seg.3ed867d1961c": {
+   "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
+   "t": "కారం కల్తీ · बानलु गुन्दैआव गुबुन मुवा मिसायनाय आनजाद | 1acrefarms",
+   "back": "[Telugu: Chilli powder adulteration] · Test for mixing of other things [adulteration] in chilli powder | 1acrefarms"
+  },
+  "seg.20f494d041fc": {
+   "src": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. How to check chilli powder at home: the water glass, rub and iodine tests, what they miss, and when you need a lab.",
+   "t": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. न'आव बानलु गुन्दैखौ माबोरै नायसंनो: दैनि गिलास, हुरनाय आरो आयडिन आनजाद, बेफोरा मा नुनो हाया, आरो माब्लाय लेब नांगौ.",
+   "back": "[Telugu: How to detect chilli powder adulteration at home.] How to test chilli powder at home: glass of water, rubbing and iodine tests, what these cannot see, and when a lab is needed."
+  },
+  "seg.cf3eac803a81": {
+   "src": "How to check chilli powder at home · 1acrefarms",
+   "t": "न'आव बानलु गुन्दैखौ माबोरै नायसंनो · 1acrefarms",
+   "back": "How to test chilli powder at home · 1acrefarms"
+  },
+  "seg.3a7ecf1759a7": {
+   "src": "Hill turmeric or turmeric",
+   "t": "हाजोनि हालदै एबा हालदै",
+   "back": "Hill turmeric or turmeric"
+  },
+  "seg.0e55b39feef1": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference",
+   "t": "हाजोनि हालदै (कोंडा पसुपु) एबा हालदै: फारागआ मा",
+   "back": "Hill turmeric (Konda Pasupu) or turmeric: what is the difference"
+  },
+  "seg.ebf6f90777d6": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · कोंडा पसुपु · पसुपु",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu"
+  },
+  "seg.8b7a90a6aed6": {
+   "src": "Konda pasupu means hill turmeric: turmeric grown in hill country. In Andhra Pradesh that includes the agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu, where most tribal farmers grow turmeric. Plains turmeric grows on farmland in districts such as Guntur.",
+   "t": "कोंडा पसुपु बुङोब्ला हाजोनि हालदै: हाजो हादराव गायनाय हालदै. आन्ध्र प्रदेशआव बेयाव अरकु भेलि, चिन्तापल्ले आरो पाडेरुनि खाथिनि पूर्ब घाटनि एजेन्सि हाजोफोर लाफायो, जेराव जनजाति आबादारिफोरनि गोबांसिनआ हालदै गायो. समान हानि हालदैआ गुन्टुर बादि जिलाफोरनि आबाद हायाव गायजायो.",
+   "back": "Konda Pasupu means hill turmeric: turmeric grown in hill areas. In Andhra Pradesh this includes the agency hills of the Eastern Ghats near Araku Valley, Chintapalle and Paderu, where the majority of tribal farmers grow turmeric. Plain-land [level-land] turmeric is grown in the farm land of districts like Guntur."
+  },
+  "seg.404d008584f4": {
+   "src": "FSSAI's standard for turmeric powder is the same wherever it grew. What changes is the place, the variety, and how it is grown and dried. This guide covers each of those, what curcumin is, how to cook with each and how to compare two turmerics fairly. There is a Telugu section further down.",
+   "t": "हालदै गुन्दैनि थाखाय FSSAIनि मानदण्डआ मोनसेनो, बेखौ बबेयावबो गायनाय जायोब्लाबो. सोलायनाया जायगा, रोखोम, आरो बेखौ माबोरै गायनाय आरो फोराननाय. बे लामा दिन्थिनायआव बेफोर मोनफ्रोमनि बागै, करकुमिनआ मा, मोनफ्रोमजों माबोरै संनो, आरो हालदै नैटाखौ माबोरै समानै रुजुनो, बेखौ बुङो. गाहायाव मोनसे तेलुगु बाहागो दं.",
+   "back": "FSSAI's standard for turmeric powder is one and the same, even if it is grown anywhere. What changes is the place, the variety, and how it is grown and dried. This guide talks about these of both, what curcumin is, how to cook with both, and how to compare two turmerics equally [fairly]. Below there is a Telugu section."
+  },
+  "seg.b4d7b88f52e3": {
+   "src": "Hill Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "हाजोनि हालदै गुन्दै⟦#1⟧⟦#2⟧",
+   "back": "Hill turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.6c894965ab39": {
+   "src": "Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "हालदै गुन्दै⟦#1⟧⟦#2⟧",
+   "back": "Turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.2e709bd87897": {
+   "src": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet.",
+   "t": "⟦1⟧जोंनि हालदै नैटा⟦/1⟧आगसि: अरकु आरो मारेडुमिल्लि हाजोफोरनिफ्राय हाजोनि हालदै. आगदा: पलनाडु आरो गुन्टुरआव गायनाय हालदै. नैटाबो नरसरावपेटआव पेक खालामनाय.",
+   "back": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet."
+  },
+  "seg.10eec083bb3d": {
+   "src": "Hill turmeric (konda pasupu) grows in hill country, such as the Eastern Ghats around Araku, where most tribal farmers grow it. Plains turmeric grows on farmland in districts such as Guntur. Both are boiled, dried and ground, and FSSAI holds both to the same standard. Curcumin, the yellow pigment in turmeric, changes with variety, soil, climate and processing, so the word hill or plains does not tell you how much a turmeric has. Cook with both the same way.",
+   "t": "हाजोनि हालदैआ (कोंडा पसुपु) हाजो हादराव गायजायो, जेरै अरकुनि खाथिनि पूर्ब घाटआव, जेराव जनजाति आबादारिफोरनि गोबांसिनआ बेखौ गायो. समान हानि हालदैआ गुन्टुर बादि जिलाफोरनि आबाद हायाव गायजायो. नैटाखौबो फुदुंनानै, फोराननानै आरो गुन्दै खालामो, आरो FSSAIआ नैटाखौबो मोनसेनो मानदण्डआव नायो. करकुमिन, हालदैनि गोमो गाबनि मुवा, रोखोम, हा, जलबायु आरो प्रसेसिंनि सायाव सोलायो, बेनिखायनो हाजोनि एबा समान हानि बुंनाय सोदोबआ हालदै मोनसेआव बेसेबां करकुमिन दं बेखौ बुङा. नैटाखौबो समान आदबै सं.",
+   "back": "Hill turmeric (Konda Pasupu) is grown in hill areas, like in the Eastern Ghats near Araku, where the majority of tribal farmers grow it. Plain-land turmeric is grown in the farm land of districts like Guntur. Both are boiled, dried and made into powder, and FSSAI judges both by the same standard. Curcumin, the yellow colour substance of turmeric, changes depending on variety, soil, climate and processing, so the word hill or plain-land does not tell how much curcumin is in a turmeric. Cook both in the same way."
+  },
+  "seg.1930852dafc4": {
+   "src": "Hill turmeric⟦#1⟧",
+   "t": "हाजोनि हालदै⟦#1⟧",
+   "back": "Hill turmeric⟦#1⟧"
+  },
+  "seg.85c353a8dfbf": {
+   "src": "Plains turmeric⟦#1⟧",
+   "t": "समान हानि हालदै⟦#1⟧",
+   "back": "Plain-land turmeric⟦#1⟧"
+  },
+  "seg.e4c8ef75f71b": {
+   "src": "Where it grows",
+   "t": "बबेयाव गायजायो",
+   "back": "Where it is grown"
+  },
+  "seg.42213bedfb12": {
+   "src": "Hill country, such as the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu",
+   "t": "हाजो हादर, जेरै पूर्ब घाटनि पाडेरु एजेन्सि हाजोफोर: अरकु भेलि, चिन्तापल्ले आरो पाडेरु",
+   "back": "Hill areas, like the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu"
+  },
+  "seg.34cc236d9133": {
+   "src": "Farmland in districts such as Guntur",
+   "t": "गुन्टुर बादि जिलाफोरनि आबाद हा",
+   "back": "Farm land of districts like Guntur"
+  },
+  "seg.0bf2cf67b524": {
+   "src": "Who grows it",
+   "t": "सोर गायो",
+   "back": "Who grows it"
+  },
+  "seg.ef7b65af6af7": {
+   "src": "Most tribal farmers in the Paderu agency",
+   "t": "पाडेरु एजेन्सिनि जनजाति आबादारिफोरनि गोबांसिनआ",
+   "back": "The majority of tribal farmers of the Paderu agency"
+  },
+  "seg.6fcc769ff4cc": {
+   "src": "Farms in Guntur district, where turmeric is one of the commercial crops, with cotton, chillies and tobacco",
+   "t": "गुन्टुर जिलानि आबाद हा, जेराव कपास, बानलु आरो तामाकुजों लोगोसे हालदैबो बेपारनि फसलफोरनि मोनसे",
+   "back": "Farm land of Guntur district, where along with cotton, chilli and tobacco, turmeric is also one of the commercial [trade] crops"
+  },
+  "seg.2c6469748e2d": {
+   "src": "In the ground",
+   "t": "हायाव माखाव सम",
+   "back": "How long in the soil"
+  },
+  "seg.4fad87cf8112": {
+   "src": "The old local variety has often been left for 2 to 3 seasons, up to 18 to 24 months; newer varieties such as Roma are dug after one season",
+   "t": "गोजाम हादरारि रोखोमखौ सरासनस्रायै 2 निफ्राय 3 सिजन, 18 निफ्राय 24 दान सिम हायाव लाखिनाय जायो; रोमा बादि गोदान रोखोमफोरखौ सिजन मोनसेनि उनाव हानिफ्राय बेखारो",
+   "back": "The old local variety is usually kept in the soil for 2 to 3 seasons, up to 18 to 24 months; new varieties like Roma are dug out of the soil after one season"
+  },
+  "seg.186488dd4390": {
+   "src": "ICAR-IISR's general guide: a well-managed crop is ready in 7 to 9 months, usually dug between January and March",
+   "t": "ICAR-IISRनि साधारण लामा दिन्थिनाय: मोजां जतन लानाय फसलआ 7 निफ्राय 9 दाननि सिङाव थियारि जायो, सरासनस्रायै जानुवारि आरो मार्चनि गेजेराव बेखारो",
+   "back": "ICAR-IISR general guide: a well-cared crop becomes ready within 7 to 9 months, usually dug out between January and March"
+  },
+  "seg.b60ef1949c00": {
+   "src": "After digging",
+   "t": "बेखारनायनि उनाव",
+   "back": "After digging out"
+  },
+  "seg.a5d9b319040e": {
+   "src": "Boiled and dried by hand, which takes a lot of labour and firewood",
+   "t": "आखायजों फुदुंनाय आरो फोराननाय, जेराव गोबां खामानि आरो बोन नांगौ",
+   "back": "Boiled and dried by hand, which needs much labour and firewood"
+  },
+  "seg.9094d5bd4e83": {
+   "src": "The usual steps: boiled, sun-dried, then polished by hand or by machine",
+   "t": "सरासनस्रा आदब: फुदुंनाय, सानाव फोराननाय, बेनि उनाव आखायजों एबा मेसिनजों पलिस खालामनाय",
+   "back": "Usual method: boiling, drying in the sun, after that polishing by hand or by machine"
+  },
+  "seg.d3963fd16edc": {
+   "src": "The same one for both: at least 2% curcuminoids on a dry basis, and added colour is not allowed",
+   "t": "नैटानि थाखाय मोनसेनो: गोरान मुवानि सायाव खमैबो 2% करकुमिनयड, आरो दाजाबनाय गाब होआ",
+   "back": "Same for both: at least 2% curcuminoid on dry matter basis, and added colour not allowed"
+  },
+  "seg.802e452a9783": {
+   "src": "Our pack says",
+   "t": "जोंनि पेकआव लिरनाय दं",
+   "back": "Written on our pack"
+  },
+  "seg.2e323e56fef7": {
+   "src": "Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder",
+   "t": "अरकु आरो मारेडुमिल्लि हाजोफोर. आबुं हाजोनि हालदै, मिहि गुन्दै खालामनानै पेक खालामनाय",
+   "back": "Araku and Maredumilli hills. Whole hill turmeric, made into fine powder and packed"
+  },
+  "seg.ce4850eb3b73": {
+   "src": "Grown in Palnadu and Guntur. Sun-dried, stone-ground",
+   "t": "पलनाडु आरो गुन्टुरआव गायनाय. सानाव फोराननाय, अन्थाइजों गुन्दै खालामनाय",
+   "back": "Grown in Palnadu and Guntur. Dried in the sun, powdered with stone"
+  },
+  "seg.8c0d21f32664": {
+   "src": "The rows above describe each region in general, from the sources at the end of this page. Only the last row is about our packs.",
+   "t": "सायनि सारिफोरा बे बिलाइनि जोबथाआव होनाय बिफुंफोरनिफ्राय मोनफ्रोम ओनसोलखौ साधारणै बुङो. जोबथा सारिआलासिनो जोंनि पेकफोरनि बागै.",
+   "back": "The rows above generally describe each region from the sources given at the end of this page. Only the last row is about our packs."
+  },
+  "seg.b6ab1dcdcf8d": {
+   "src": "Where each grows",
+   "t": "मोनफ्रोमआ बबेयाव गायजायो",
+   "back": "Where each is grown"
+  },
+  "seg.a9e5b44e1be6": {
+   "src": "⟦1⟧Hill turmeric.⟦/1⟧ ICAR-IISR's report on the Paderu agency, the tribal hill country of the Eastern Ghats that takes in Araku Valley, Chintapalle and Paderu, says turmeric is grown there by most tribal farmers.",
+   "t": "⟦1⟧हाजोनि हालदै.⟦/1⟧ पाडेरु एजेन्सि, अरकु भेलि, चिन्तापल्ले आरो पाडेरु लाफानाय पूर्ब घाटनि जनजाति हाजो हादर, बेनि बागै ICAR-IISRनि रिपर्टआ बुङो, बेयाव जनजाति आबादारिफोरनि गोबांसिनआ हालदै गायो.",
+   "back": "⟦1⟧Hill turmeric.⟦/1⟧ About the Paderu agency, the tribal hill area of the Eastern Ghats including Araku Valley, Chintapalle and Paderu, ICAR-IISR's report says that there the majority of tribal farmers grow turmeric."
+  },
+  "seg.736e66a0b5de": {
+   "src": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops, with cotton, chillies and tobacco. Duggirala, in Guntur, has a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022, Guntur district was divided into three districts: Guntur, Palnadu and Bapatla.",
+   "t": "⟦1⟧समान हानि हालदै.⟦/1⟧ गुन्टुर जिलाआ बेनि बेपारनि फसलफोरनि गेजेराव कपास, बानलु आरो तामाकुजों लोगोसे हालदैखौ लिस्ट खालामो. गुन्टुरनि दुग्गिरालायाव हालदै प्रसेसिंनि क्लाष्टार मोनसे दं, जेराव प्रसेसिं खालामनाय हालदै आरो हालदै गुन्दै बानायो. 2022 आव गुन्टुर जिलाखौ जिला थामआव राननाय जाबाय: गुन्टुर, पलनाडु आरो बापटला.",
+   "back": "⟦1⟧Plain-land turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops along with cotton, chilli and tobacco. In Duggirala of Guntur there is a turmeric processing cluster, where processed turmeric and turmeric powder are made. In 2022 Guntur district was divided into three districts: Guntur, Palnadu and Bapatla."
+  },
+  "seg.0f26c0785ed1": {
+   "src": "Turmeric can be grown either way: ICAR-IISR says it can be grown rain-fed or irrigated, from sea level up to 1,500 m.",
+   "t": "हालदैखौ नैटा आदबैबो गायनो हायो: ICAR-IISRआ बुङो, बेखौ अखानि दैआव एबा दै होनानै, लैथोनि सारिनिफ्राय 1,500 m गोजौ सिम गायनो हायो.",
+   "back": "Turmeric can be grown in both ways: ICAR-IISR says it can be grown on rain water or by giving water [irrigation], up to 1,500 m height from the sea level."
+  },
+  "seg.b687346df428": {
+   "src": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet.",
+   "t": "जोंनि ⟦1⟧हाजोनि हालदै⟦/1⟧आ अरकु आरो मारेडुमिल्लि हाजोफोरनिफ्राय फैयो, आरो जोंनि ⟦2⟧हालदै⟦/2⟧आ पलनाडु आरो गुन्टुरआव गायजायो. नैटाबो नरसरावपेटआव पेक खालामो.",
+   "back": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet."
+  },
+  "seg.9a5af9e957e1": {
+   "src": "How each is grown and dried",
+   "t": "मोनफ्रोमखौ माबोरै गायो आरो फोरानो",
+   "back": "How both are grown and dried"
+  },
+  "seg.e641ce21ee35": {
+   "src": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says tribal farmers there have grown a local variety called Chayapasupu, or Chintapalle Local, for ages. It has been common practice to leave it in the ground for two or three seasons, up to 18 to 24 months, before digging. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested varieties for the hill zone and brought in Roma and IISR Pragati, which are dug after one season. The report says tribal farmers boil and dry their turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boilers and polishers.",
+   "t": "⟦1⟧हाजोआव.⟦/1⟧ ICAR-IISRनि पाडेरु रिपर्टआ बुङो, बेयाव जनजाति आबादारिफोरा गोबां बोसोर सिगांनिफ्राय छायापसुपु, एबा चिन्तापल्ले लकेल, मुंनि मोनसे हादरारि रोखोम गायो. बेखारनायनि सिगां बेखौ सिजन नै एबा थाम, 18 निफ्राय 24 दान सिम, हायाव लाखिनाया सरासनस्रा आदब जानानै थाबाय. 2011-12 निफ्राय ICAR-IISR आरो चिन्तापल्लेनि हर्टिकालचारल रिसार्च स्टेसनआ हाजो ओनसोलनि थाखाय रोखोमफोरखौ आनजाद खालामबाय आरो रोमा आरो IISR प्रगति लाबोबाय, जायफोरखौ सिजन मोनसेनि उनाव बेखारो. रिपर्टआ बुङो, जनजाति आबादारिफोरा बिसोरनि हालदैखौ आखायजों फुदुंयो आरो फोरानो, जेराव गोबां खामानि आरो बोन नांगौ; प्रजेक्टआ आबादारि उत्पादक अर्गानाइजेसन ब्रैखौ हालदै फुदुंग्रा आरो पलिस खालामग्रा मेसिन होबाय.",
+   "back": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says that there tribal farmers have for many years grown a local variety named Chayapasupu, or Chintapalle Local. Before digging out, keeping it in the soil for two or three seasons, 18 to 24 months, has been the usual method. From 2011-12 ICAR-IISR and Chintapalle's Horticultural Research Station tested varieties for the hill region and brought Roma and IISR Pragati, which are dug out after one season. The report says the tribal farmers boil and dry their turmeric by hand, which needs much labour and firewood; the project gave four farmer producer organisations turmeric boiling and polishing machines."
+  },
+  "seg.f93b2805162b": {
+   "src": "⟦1⟧The usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after it is dug:",
+   "t": "⟦1⟧सरासनस्रा आदब.⟦/1⟧ ICAR-IISRनि हालदैनि लामा दिन्थिनायआ फसलखौ बेखारनायनि उनाव माबोरै मावो बेखौ बुङो:",
+   "back": "⟦1⟧Usual method.⟦/1⟧ ICAR-IISR's turmeric guide says how the crop is worked after digging out:"
+  },
+  "seg.675a9ec4355c": {
+   "src": "Dig it when the leaves dry and turn light brown to yellowish. A well-managed crop is ready seven to nine months after planting, usually between January and March.",
+   "t": "बिलाइफोरा गोरान जानानै गुरै बादामि निफ्राय गोमो गोमो जायोब्ला बेखार. मोजां जतन लानाय फसलआ गायनायनि उनाव स्नि निफ्राय गु दाननि सिङाव थियारि जायो, सरासनस्रायै जानुवारि आरो मार्चनि गेजेराव.",
+   "back": "Dig out when the leaves become dry and turn from light brown to yellowish. A well-cared crop becomes ready within seven to nine months after planting, usually between January and March."
+  },
+  "seg.763940881dcd": {
+   "src": "Separate the fingers from the bulbs and boil them within 3 or 4 days of digging, in water until soft: 45 to 60 minutes for fingers and 90 minutes for bulbs. Boiling takes away the raw smell, cuts the drying time and gives an even colour.",
+   "t": "हालदै आसिफोरखौ गेजेरनि गेदेर हालदैनिफ्राय गुबुन खालाम आरो बेखारनायनि 3 एबा 4 साननि सिङाव गुदुर जानो सिम दैआव फुदुं: आसिनि थाखाय 45 निफ्राय 60 मिनिट आरो गेदेर हालदैनि थाखाय 90 मिनिट. फुदुंनाया खां मुसुंखौ होखारो, फोरानना समखौ खमायो आरो समान गाब होयो.",
+   "back": "Separate the turmeric fingers from the big central turmeric [mother rhizome] and within 3 or 4 days of digging out, boil in water until soft: 45 to 60 minutes for fingers and 90 minutes for the big turmeric. Boiling removes the raw smell, reduces drying time and gives even colour."
+  },
+  "seg.a52a5947071a": {
+   "src": "Dry them in the sun in layers 5 to 7 cm deep, heaped and covered at night. It may take 10 to 12 days for the moisture to fall below 12%.",
+   "t": "बेफोरखौ सानाव 5 निफ्राय 7 cm गोथौ फान्दाआव फोरान, आरो हरआव गोरोबनानै खुबुम. दैथिआ 12%निख्रुइ खम जानो 10 निफ्राय 12 सान लानो हागौ.",
+   "back": "Dry them in the sun in a 5 to 7 cm thick layer, and at night gather them in a heap and cover. It can take 10 to 12 days for moisture to become less than 12%."
+  },
+  "seg.69d24ab1420a": {
+   "src": "Polish off the rough, dull, scaly skin by rubbing, by hand or in a turning drum.",
+   "t": "खरखरा, गाब गैयि आरो फान्दा फान्दा बिगुरखौ हुरनानै बेखार, आखायजों एबा बोलायग्रा ड्रामआव.",
+   "back": "Rub off the rough, colourless [dull] and flaky [lit. layer-layer] skin, by hand or in a rotating drum."
+  },
+  "seg.1b7d7df8b7fa": {
+   "src": "Grind the dried turmeric into powder. FSSAI allows turmeric powder up to 10% moisture.",
+   "t": "फोराननाय हालदैखौ गुन्दै खालाम. FSSAIआ हालदै गुन्दैआव 10% सिम दैथि होयो.",
+   "back": "Make the dried turmeric into powder. FSSAI allows up to 10% moisture in turmeric powder."
+  },
+  "seg.1668650874a7": {
+   "src": "Fingers are the side branches of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulbs are the shorter, thicker central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground.",
+   "t": "आसिफोरा हालदैनि राइजमनि सेराव ओंखारनाय दालाइफोर, सरासनस्रायै 2.5 निफ्राय 7.5 cm गोलाव; गेदेर हालदैआ गेजेरनि बांसिन गुसुं आरो मोटा राइजम. जोंनि हाजोनि हालदैनि पेकआव लिरनाय दं: आबुं हाजोनि हालदै, मिहि गुन्दै खालामनानै पेक खालामनाय. जोंनि हालदैनि पेकआव लिरनाय दं: सानाव फोराननाय आरो अन्थाइजों गुन्दै खालामनाय.",
+   "back": "Fingers are the branches coming out at the side of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulb [lit: big] turmeric is the thicker and fatter rhizome of the middle. On our hill turmeric pack it is written: wild [unsure: आबुं, or 'original'] hill turmeric, made into fine powder and packed. On our turmeric pack it is written: dried in the sun and ground with stone."
+  },
+  "seg.4a08c0de8660": {
+   "src": "Curcumin, and how they look",
+   "t": "करकुमिन, आरो बेफोरा माबोरै नुजायो",
+   "back": "Curcumin, and how they look"
+  },
+  "seg.7ef4d7667b4e": {
+   "src": "Curcumin is the yellow pigment in turmeric, ICAR-IISR says. FSSAI measures a turmeric powder's colouring power as its curcuminoid content, and asks for at least 2% on a dry basis. That standard is the same for hill and plains turmeric.",
+   "t": "ICAR-IISRआ बुङो, करकुमिनआ हालदैनि गोमो गाबनि मुवा. FSSAIआ हालदै गुन्दैनि गाब होनाय गोहोखौ बेनि करकुमिनयडनि बिबांजों जोखा खालामो, आरो गोरान मुवानि सायाव खमैबो 2% थानांगौ होन्नो बुङो. बे मानदण्डआ हाजोनि आरो समान हानि हालदैनि थाखाय मोनसेनो.",
+   "back": "ICAR-IISR says that curcumin is the yellow colour substance of turmeric. FSSAI measures the colour-giving strength of turmeric powder by its curcuminoid quantity, and says there must be at least 2% on dry matter basis. This standard is the same for hill and plain-land turmeric."
+  },
+  "seg.fec370db2315": {
+   "src": "Curcumin changes from one turmeric to the next:",
+   "t": "करकुमिनआ हालदै मोनसेनिफ्राय गुबुन मोनसेआव सोलायो:",
+   "back": "Curcumin changes from one turmeric to another:"
+  },
+  "seg.bf314e75200d": {
+   "src": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha).",
+   "t": "⟦1⟧रोखोम.⟦/1⟧ ICAR-IISRनि 2022 नि हालदैनि लामा दिन्थिनायआ बेनि गावनि रोखोमफोरखौ 4.3% करकुमिन (सुवर्णा) निफ्राय 6.5% (IISR प्रभा) सिम लिस्ट खालामो.",
+   "back": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha)."
+  },
+  "seg.cee7632d2998": {
+   "src": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR notes that turmeric from different regions differs in quality because of soil, climate and farming practice. Its Paderu report calls curcumin content highly sensitive to changes in the growing environment.",
+   "t": "⟦1⟧हा आरो जलबायु.⟦/1⟧ ICAR-IISRआ लिरो दङ, हा, जलबायु आरो आबाद खालामनाय आदबनि जाहोनाव गुबुन गुबुन ओनसोलनि हालदैनि गुनआ गुबुन जायो. बेनि पाडेरु रिपर्टआ बुङो, करकुमिननि बिबांआ गायनाय जायगानि सोलायनायजों जोबोद गोरलैयै सोलायो.",
+   "back": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR writes that due to soil, climate and farming methods the quality of turmeric of different regions becomes different. Its Paderu report says the quantity of curcumin changes very easily with change in the growing place."
+  },
+  "seg.70b529fe0f69": {
+   "src": "⟦1⟧Processing.⟦/1⟧ Handling and processing after harvest add to the differences, and boiling too long or too short affects the quality of the dried turmeric.",
+   "t": "⟦1⟧प्रसेसिं.⟦/1⟧ फसल बेखारनायनि उनाव मावनाय खामानि आरो प्रसेसिंआ फारागखौ बांसिन खालामो, आरो जोबोद गोलाव एबा जोबोद गुसुं सम फुदुंनाया फोराननाय हालदैनि गुनखौ सोलायो.",
+   "back": "⟦1⟧Processing.⟦/1⟧ Work done after harvesting the crop and processing make the difference bigger, and boiling for a very long or very short time changes the quality of dried turmeric."
+  },
+  "seg.493187b22749": {
+   "src": "So the word hill or plains on a pack does not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "बेनिखायनो पेकआव हाजोनि एबा समान हानि बुंनाय सोदोबआ हालदै मोनसेआव बेसेबां करकुमिन दं बेखौ बुङा. जानाय मुवा आनजाद खालामग्रा लेबआ बेच मोनसेनि करकुमिनयडनि बिबांखौ जोखा खालामनो हायो.",
+   "back": "So the word hill or plain-land on the pack does not tell how much curcumin is in a turmeric. A food testing lab can measure the curcuminoid quantity of a batch."
+  },
+  "seg.53dc21b97510": {
+   "src": "⟦1⟧How they look.⟦/1⟧ Colour varies too. ICAR-IISR describes its varieties' rhizomes as ranging from reddish yellow to deep orange. Processing counts as well: boiling evens out the colour, drying in too thin a layer can spoil it, and polishing by hand leaves a rough, dull surface.",
+   "t": "⟦1⟧बेफोरा माबोरै नुजायो.⟦/1⟧ गाबआबो सोलायो. ICAR-IISRआ बेनि रोखोमफोरनि राइजमखौ गोजा-गोमो निफ्राय गोहो कमला गाब सिम बुङो. प्रसेसिंनि गोहोबो दं: फुदुंनाया गाबखौ समान खालामो, जोबोद पातला फान्दाआव फोराननाया गाबखौ गाज्रि खालामनो हायो, आरो आखायजों पलिस खालामनाया सायखौ खरखरा आरो गाब गैयि दोनथायो.",
+   "back": "⟦1⟧How they look.⟦/1⟧ The colour also changes. ICAR-IISR describes the rhizome of its varieties as from red-yellow to deep orange colour. Processing also has strength [effect]: boiling makes the colour even, drying in a very thin layer can make the colour bad, and polishing by hand leaves the surface rough and colourless [dull]."
+  },
+  "seg.d8ece11f902a": {
+   "src": "Cooking with each, and keeping it",
+   "t": "मोनफ्रोमजों संनाय, आरो थिना दोनाय",
+   "back": "Cooking with both, and storing"
+  },
+  "seg.276f633c7a1f": {
+   "src": "Use either one wherever you use turmeric: dal, sambar, rasam, curries and pulihora.",
+   "t": "नों हालदै बाहायनाय जायगा गासैयावनो जायखिजाय मोनसे बाहाय: दाल, साम्बार, रसम, ओंख्री आरो पुलिहोरा.",
+   "back": "In all the places you use turmeric, use any one: dal, sambar, rasam, curry and pulihora."
+  },
+  "seg.ca5e9b6340f2": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "बेखौ गुरै अराव दोन, अब्ला बेयो साथिया.",
+   "back": "Put it on mild [low] fire, so that it does not burn."
+  },
+  "seg.7e910d4ad2a1": {
+   "src": "To swap one for the other, start with the amount you usually use and adjust to taste.",
+   "t": "मोनसेनि सोलायाव गुबुन मोनसे बाहायनो, नों सरासनस्रायै बाहायनाय बिबांनिफ्राय जागाय आरो सोवाद नायनानै समान खालाम.",
+   "back": "To use one in place of the other, start from the quantity you usually use and adjust [lit. make equal] by tasting."
+  },
+  "seg.731001f6177d": {
+   "src": "Try either one in ⟦1⟧pasupu annam⟦/1⟧, ⟦2⟧nimmakaya pulihora⟦/2⟧, ⟦3⟧tomato pappu⟦/3⟧ or ⟦4⟧pasupu paalu⟦/4⟧.",
+   "t": "⟦1⟧पसुपु अन्नम⟦/1⟧, ⟦2⟧निम्मकाया पुलिहोरा⟦/2⟧, ⟦3⟧टोमाटो पप्पु⟦/3⟧ एबा ⟦4⟧पसुपु पालु⟦/4⟧आव जायखिजाय मोनसे बाहायनानै नाय.",
+   "back": "Use any one in ⟦1⟧Pasupu Annam⟦/1⟧, ⟦2⟧Nimmakaya Pulihora⟦/2⟧, ⟦3⟧Tomato Pappu⟦/3⟧ or ⟦4⟧Pasupu Palu⟦/4⟧ and see."
+  },
+  "seg.259a5f63423a": {
+   "src": "Keeping it well.",
+   "t": "मोजां थिना दोनाय.",
+   "back": "Storing well."
+  },
+  "seg.073f63fe23e0": {
+   "src": "Use a dry spoon every time.",
+   "t": "सारासे गोरान सामुस बाहाय.",
+   "back": "Always use a dry spoon."
+  },
+  "seg.b334ade49a15": {
+   "src": "Store it in a cool, dry place, away from light.",
+   "t": "बेखौ गुसु, गोरान जायगायाव, सोरांनिफ्राय गोजानाव लाखि.",
+   "back": "Keep it in a cool [or: cold], dry place, far from light."
+  },
+  "seg.ea935ed7c1aa": {
+   "src": "How to compare two turmerics fairly",
+   "t": "हालदै नैटाखौ माबोरै समानै रुजुनो",
+   "back": "How to compare two turmerics equally [fairly]"
+  },
+  "seg.dcebc75ff722": {
+   "src": "Compare powder with powder. FSSAI allows whole turmeric up to 12% moisture and powder up to 10%, so the two are held to different limits.",
+   "t": "गुन्दैखौ गुन्दैजोंनो रुजु. FSSAIआ आबुं हालदैआव 12% सिम आरो गुन्दैआव 10% सिम दैथि होयो, बेनिखायनो नैटानि सिमाआ गुबुन.",
+   "back": "Compare powder only with powder. FSSAI allows up to 12% moisture in whole turmeric and up to 10% in powder, so the limits of the two are different."
+  },
+  "seg.9d14be920107": {
+   "src": "Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note the batch numbers, so you know which lots you compared.",
+   "t": "नैटा पेकखौबो फराय: बबेयाव गायनाय, बेच एबा लट नम्बर, बेस्ट-बिफर तारिख आरो FSSAI लाइसेन्स एबा रेजिस्ट्रेसन नम्बर. बेच नम्बरफोरखौ लिरनानै लाखि, अब्ला नों बबे लटफोरखौ रुजुबाय बेखौ मिथियो.",
+   "back": "Read both packs: where grown, batch or lot number, best-before date and FSSAI licence or registration number. Write down and keep the batch numbers, so that you know which lots you compared."
+  },
+  "seg.fbb64b2b32b0": {
+   "src": "Do the water check on both, side by side, with the same amount in the same kind of glass. The steps are in ⟦1⟧how to check turmeric powder at home⟦/1⟧.",
+   "t": "नैटाबोआव लोगोसे, समान बिबांजों आरो समान रोखोमनि गिलासआव दैनि नायसंनाय खालाम. आदबफोरा ⟦1⟧न'आव हालदै गुन्दैखौ माबोरै नायसंनो⟦/1⟧आव दं.",
+   "back": "Do the water test on both together, with the same quantity and in the same kind of glass. The methods are in ⟦1⟧How to test turmeric powder at home⟦/1⟧."
+  },
+  "seg.bd82039194f2": {
+   "src": "Cook the same dish with each, with the same amount, and compare the colour and taste.",
+   "t": "मोनफ्रोमजों समान बिबांनि मोनसेनो संनाय मुवा सं, आरो गाब आरो सोवादखौ रुजु.",
+   "back": "Cook one and the same dish with both in the same quantity, and compare colour and taste."
+  },
+  "seg.8949107c3ad8": {
+   "src": "Do not judge curcumin by colour alone. A brighter yellow is not a measurement; a food testing lab can measure curcuminoid content.",
+   "t": "गाबलासिखौ नायनानै करकुमिनखौ बिजिरनो नङा. बांसिन सोरांथि गोमो गाबआ जोखा नङा; जानाय मुवा आनजाद खालामग्रा लेबआ करकुमिनयडनि बिबांखौ जोखा खालामनो हायो.",
+   "back": "Do not judge curcumin by looking at colour only. A brighter yellow colour is not a measurement; a food testing lab can measure the curcuminoid quantity."
+  },
+  "seg.45a1aaa1ac2f": {
+   "src": "What is konda pasupu?",
+   "t": "कोंडा पसुपुआ मा?",
+   "back": "What is Konda Pasupu?"
+  },
+  "seg.1810d213ce3f": {
+   "src": "Konda pasupu is Telugu for hill turmeric: turmeric grown in hill country. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu agency around Araku Valley and Chintapalle, where most tribal farmers grow turmeric.",
+   "t": "तेलुगुआव हाजोनि हालदैखौ कोंडा पसुपु बुङो: हाजो हादराव गायनाय हालदै. आन्ध्र प्रदेशआव बेयो पूर्ब घाटआव गायजायो, जेरै अरकु भेलि आरो चिन्तापल्लेनि खाथिनि पाडेरु एजेन्सिआव, जेराव जनजाति आबादारिफोरनि गोबांसिनआ हालदै गायो.",
+   "back": "In Telugu hill turmeric is called Konda Pasupu: turmeric grown in hill areas. In Andhra Pradesh it is grown in the Eastern Ghats, like in the Paderu agency near Araku Valley and Chintapalle, where the majority of tribal farmers grow turmeric."
+  },
+  "seg.15730f8cc6b8": {
+   "src": "Is hill turmeric different from regular turmeric?",
+   "t": "हाजोनि हालदैआ सरासनस्रा हालदैनिफ्राय गुबुन नामा?",
+   "back": "Is hill turmeric different from ordinary turmeric?"
+  },
+  "seg.47cf644d0819": {
+   "src": "FSSAI holds all turmeric powder to the same standard, wherever it grew. Hill and plains turmeric can differ in where they grow, the varieties grown, and how they are grown and dried. In the Paderu hills, for example, an old local variety has often been left in the ground for up to two years.",
+   "t": "FSSAIआ हालदै गुन्दै गासैखौबो, बबेयाव गायनाय जायोब्लाबो, मोनसेनो मानदण्डआव नायो. हाजोनि आरो समान हानि हालदैआ बबेयाव गायजायो, बबे रोखोम गायो, आरो माबोरै गायो आरो फोरानो, बेफोराव गुबुन जानो हायो. बिदिन्थि, पाडेरु हाजोफोराव गोजाम हादरारि रोखोम मोनसेखौ सरासनस्रायै बोसोर नै सिम हायाव लाखिनाय जायो.",
+   "back": "FSSAI judges all turmeric powder by the same standard, even if it is grown anywhere. Hill and plain-land turmeric can be different in: where they are grown, which variety is grown, and how they are grown and dried. For example, in the Paderu hills an old local variety is usually kept in the soil for up to two years."
+  },
+  "seg.925655ca4b05": {
+   "src": "Does hill turmeric have more curcumin?",
+   "t": "हाजोनि हालदैआव बांसिन करकुमिन थायोमा?",
+   "back": "Does hill turmeric have more curcumin?"
+  },
+  "seg.0d1b42a32899": {
+   "src": "The word hill alone does not tell you. Curcumin changes with the variety, the soil and climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "हाजोनि बुंनाय सोदोबलासिआ बेखौ बुङा. करकुमिनआ रोखोम, हा आरो जलबायु, आरो हालदैखौ माबोरै फुदुंनाय आरो फोराननाय, बेनि सायाव सोलायो. जानाय मुवा आनजाद खालामग्रा लेबआ बेच मोनसेनि करकुमिनयडनि बिबांखौ जोखा खालामनो हायो.",
+   "back": "The word hill alone does not tell this. Curcumin changes depending on variety, soil and climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid quantity of a batch."
+  },
+  "seg.4bce9a44c11e": {
+   "src": "What are the types of turmeric (haldi) in India?",
+   "t": "भारतआव हालदै (हल्दी)नि मा मा रोखोम दं?",
+   "back": "What types of turmeric (haldi) are there in India?"
+  },
+  "seg.4e6e7201dae6": {
+   "src": "ICAR-IISR says India grows many turmeric cultivars, mostly known by the name of the place where they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati.",
+   "t": "ICAR-IISRआ बुङो, भारतआव गोबां रोखोमनि हालदै गायो, जायफोरनि गोबांसिनखौ बेफोरखौ गायनाय जायगानि मुंजों मिथियो, जेरै दुग्गिराला, माइदुकुर, टेक्कुरपेट आरो अमलापुरम. बेयो IISR प्रभा, IISR प्रतिभा आरो IISR प्रगति बादि मोजां खालामनाय रोखोमफोरबो ओंखारहोबाय.",
+   "back": "ICAR-IISR says that in India many varieties of turmeric are grown, most of which are known by the name of the place where they are grown, like Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released improved varieties like IISR Prabha, IISR Prathibha and IISR Pragati."
+  },
+  "seg.7f1a5999ea66": {
+   "src": "Can I use hill turmeric instead of regular turmeric?",
+   "t": "सरासनस्रा हालदैनि सोलायाव हाजोनि हालदै बाहायनो हागोमा?",
+   "back": "Can hill turmeric be used in place of ordinary turmeric?"
+  },
+  "seg.4ed419c2136a": {
+   "src": "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it on a low flame so it does not burn.",
+   "t": "नंगौ. नों हालदै बाहायनाय जायगा गासैयावनो बेखौ बाहाय, नों सरासनस्रायै बाहायनाय बिबांनिफ्राय जागाय, आरो बेखौ गुरै अराव दोन, अब्ला बेयो साथिया.",
+   "back": "Yes. Use it in all the places you use turmeric, start from the quantity you usually use, and put it on mild [low] fire, so that it does not burn."
+  },
+  "seg.1a441b0df6de": {
+   "src": "Both packs list one ingredient, turmeric (Curcuma longa), and name where it was grown.",
+   "t": "नैटा पेकआवबो मुवा मोनसेलासि लिरनाय दं, हालदै (Curcuma longa), आरो बेखौ बबेयाव गायनाय बेखौबो लिरनाय दं.",
+   "back": "Both packs have only one ingredient written, turmeric (Curcuma longa), and where it was grown is also written."
+  },
+  "seg.1adc349b6e08": {
+   "src": "కొండ పసుపు vs మైదాన పసుపు · Hill vs Plains Turmeric | 1acrefarms",
+   "t": "కొండ పసుపు vs మైదాన పసుపు · हाजोनि हालदै आरो समान हानि हालदै | 1acrefarms",
+   "back": "[Telugu: Hill turmeric vs plains turmeric] · Hill turmeric and plain-land turmeric | 1acrefarms"
+  },
+  "seg.71bf7490dd33": {
+   "src": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. Konda pasupu (hill turmeric) vs plains turmeric: where each grows, how each is dried, what curcumin is, cooking and storage.",
+   "t": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. कोंडा पसुपु (हाजोनि हालदै) आरो समान हानि हालदै: मोनफ्रोमआ बबेयाव गायजायो, मोनफ्रोमखौ माबोरै फोरानो, करकुमिनआ मा, संनाय आरो थिना दोनाय.",
+   "back": "[Telugu: The difference between hill turmeric and plains turmeric.] Konda Pasupu (hill turmeric) and plain-land turmeric: where each is grown, how each is dried, what curcumin is, cooking and storing."
+  },
+  "seg.4e013e66158c": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference · 1acrefarms",
+   "t": "हाजोनि हालदै (कोंडा पसुपु) एबा हालदै: फारागआ मा · 1acrefarms",
+   "back": "Hill turmeric (Konda Pasupu) or turmeric: what is the difference · 1acrefarms"
+  },
+  "seg.bb2ec13fea03": {
+   "src": "Where each grows, how it is dried, what curcumin is, and how to compare two. With a Telugu section.",
+   "t": "मोनफ्रोमआ बबेयाव गायजायो, माबोरै फोरानो, करकुमिनआ मा, आरो नैटाखौ माबोरै रुजुनो. तेलुगु बाहागोजों.",
+   "back": "Where each is grown, how it is dried, what curcumin is, and how to compare the two. With a Telugu section."
+  },
+  "seg.7811216916d3": {
+   "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
+   "t": "दैनि गिलास, हुरनाय आनजाद, आयडिन आनजाद, आरो माब्लाय लेब नांगौ. तेलुगु बाहागोजों.",
+   "back": "Glass of water, rubbing test, iodine test, and when a lab is needed. With a Telugu section."
   }
  }
 }

@@ -8380,6 +8380,796 @@
    "src": "Bought our packs? Review us on Google",
    "t": "ഞങ്ങളുടെ പാക്കറ്റുകൾ വാങ്ങിയോ? Google-ൽ ഞങ്ങൾക്ക് റിവ്യൂ നൽകൂ",
    "back": "Bought our packets? Give us a review on Google"
+  },
+  "seg.13ab70df1ad4": {
+   "src": "How to check chilli powder at home",
+   "t": "വീട്ടിൽ മുളകുപൊടി എങ്ങനെ പരിശോധിക്കാം",
+   "back": "How to test chilli powder at home"
+  },
+  "seg.4dff3a175ddd": {
+   "src": "Guide · chilli powder",
+   "t": "ഗൈഡ് · മുളകുപൊടി",
+   "back": "Guide · Chilli powder"
+  },
+  "seg.27f1af0437bd": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · കാരം · ലാൽ മിർച്ച്",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Karam · Lal mirch"
+  },
+  "seg.1841c397898f": {
+   "src": "FSSAI's standard says chilli powder must be dry and free from dirt, added colouring matter, flavouring matter and mineral oil. Its testing manual has methods for finding brick powder, added starch, added colour, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAI നിലവാരമാനദണ്ഡം അനുസരിച്ച്, മുളകുപൊടി ഉണങ്ങിയതായിരിക്കണം; അതിൽ അഴുക്ക്, ചേർത്ത നിറവസ്തു, മണം നൽകുന്ന വസ്തു, മിനറൽ ഓയിൽ എന്നിവ പാടില്ല. അതിന്റെ പരിശോധനാ മാനുവലിൽ ഇഷ്ടികപ്പൊടി, ചേർത്ത സ്റ്റാർച്ച്, ചേർത്ത നിറം, എണ്ണയിൽ അലിയുന്ന നിറങ്ങൾ, സുഡാൻ III, റോഡമിൻ B എന്നീ ചായങ്ങൾ എന്നിവ കണ്ടെത്താനുള്ള രീതികളുണ്ട്.",
+   "back": "As per the FSSAI standard, chilli powder must be dry; it must not have dirt, added colouring matter, smell-giving [flavouring] matter, or mineral oil. Its testing manual has methods to detect brick powder, added starch, added colour, oil-soluble colours, and the dyes Sudan III and Rhodamine B."
+  },
+  "seg.a0af610174e4": {
+   "src": "Some of this you can check in your kitchen with a glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can find. This guide covers both. Try the checks on any chilli powder you buy.",
+   "t": "ഇവയിൽ ചിലത് ഒരു ഗ്ലാസ് വെള്ളം, നിങ്ങളുടെ വിരലുകൾ, ഏതാനും തുള്ളി അയഡിൻ എന്നിവ കൊണ്ട് അടുക്കളയിൽ തന്നെ പരിശോധിക്കാം. സുഡാൻ ചായങ്ങൾ പോലുള്ള ചിലത് ലാബിന് മാത്രമേ കണ്ടെത്താനാകൂ. ഈ ഗൈഡ് രണ്ടും പറയുന്നു. നിങ്ങൾ വാങ്ങുന്ന ഏത് മുളകുപൊടിയിലും ഈ പരിശോധനകൾ ചെയ്തുനോക്കൂ.",
+   "back": "Some of these can be tested right in the kitchen with a glass of water, your fingers and a few drops of iodine. Some, like Sudan dyes, only a lab can detect. This guide tells both. Try these tests on any chilli powder you buy."
+  },
+  "seg.5bf2055f3057": {
+   "src": "Sannam Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "സന്നം മുളകുപൊടി⟦#1⟧⟦#2⟧",
+   "back": "Sannam chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.f5224d4b1cca": {
+   "src": "Teja Chilli Powder⟦#1⟧⟦#2⟧",
+   "t": "തേജ മുളകുപൊടി⟦#1⟧⟦#2⟧",
+   "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.b356a193952e": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+   "t": "⟦1⟧ഞങ്ങളുടെ രണ്ട് മുളകുപൊടികൾ⟦/1⟧ഇടത്: സന്നം മുളകുപൊടി. വലത്: തേജ മുളകുപൊടി. രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ മുളകിൽ നിന്ന്; വെയിലത്ത് ഉണക്കി, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both are from chillies grown in Palnadu and Guntur; sun-dried and packed in Narasaraopet."
+  },
+  "seg.a574ced14407": {
+   "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
+   "t": "ഒരു ഗ്ലാസ് വെള്ളത്തിന് മുകളിൽ ഒരു ടീസ്പൂൺ മുളകുപൊടി വിതറൂ; ഇളക്കരുത്. ഉടനെ താഴേക്ക് ഇറങ്ങുന്ന നിറമുള്ള വരകൾ ചേർത്ത നിറത്തിലേക്ക് വിരൽ ചൂണ്ടുന്നു; പൊടി താഴ്ന്നശേഷവും പൊങ്ങിക്കിടക്കുന്ന തരികൾ അറക്കപ്പൊടിയിലേക്കോ തവിടിലേക്കോ വിരൽ ചൂണ്ടുന്നു. അടിയിൽ അടിഞ്ഞത് തിരുമ്മിനോക്കൂ: തരുതരുപ്പ് ഇഷ്ടികപ്പൊടിയിലേക്കോ മണലിലേക്കോ, സോപ്പ് പോലുള്ള വഴുവഴുപ്പ് സോപ്പുകല്ലിലേക്കോ വിരൽ ചൂണ്ടുന്നു. അയഡിൻ വീഴുമ്പോൾ പൊടി നീലയാകുന്നത് ചേർത്ത സ്റ്റാർച്ചിലേക്ക് വിരൽ ചൂണ്ടുന്നു. സുഡാൻ I പോലുള്ള ചായങ്ങൾ വെള്ളത്തിൽ കാണില്ല; അവയ്ക്ക് ലാബിനെ ആശ്രയിക്കൂ.",
+   "back": "Sprinkle a teaspoon of chilli powder on top of a glass of water; do not stir. Coloured streaks that go down immediately point to added colour; particles that keep floating even after the powder sinks point to sawdust or bran. Rub what has settled at the bottom: grittiness points to brick powder or sand, soap-like slipperiness points to soapstone. The powder turning blue when iodine falls on it points to added starch. Dyes like Sudan I do not show in water; rely on a lab for them."
+  },
+  "seg.11caa5f871e4": {
+   "src": "What FSSAI checks chilli powder for",
+   "t": "FSSAI മുളകുപൊടിയിൽ എന്തൊക്കെ പരിശോധിക്കുന്നു",
+   "back": "What FSSAI tests for in chilli powder"
+  },
+  "seg.87f56e160312": {
+   "src": "Added colour",
+   "t": "ചേർത്ത നിറം",
+   "back": "Added colour"
+  },
+  "seg.7d346e39c41e": {
+   "src": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests look for colours that dissolve in water, colours that dissolve in oil, and the dyes Sudan III and Rhodamine B.",
+   "t": "FSSAI-യുടെ മുളകുപൊടി നിലവാരമാനദണ്ഡം ചേർത്ത നിറവസ്തു അനുവദിക്കുന്നില്ല. FSSAI-യുടെ ടെസ്റ്റുകൾ വെള്ളത്തിൽ അലിയുന്ന നിറങ്ങൾ, എണ്ണയിൽ അലിയുന്ന നിറങ്ങൾ, സുഡാൻ III, റോഡമിൻ B എന്നീ ചായങ്ങൾ എന്നിവ തിരയുന്നു.",
+   "back": "FSSAI's chilli powder standard does not allow added colouring matter. FSSAI's tests search for water-soluble colours, oil-soluble colours, and the dyes Sudan III and Rhodamine B."
+  },
+  "seg.7f79f4c5fcd6": {
+   "src": "Sudan dyes",
+   "t": "സുഡാൻ ചായങ്ങൾ",
+   "back": "Sudan dyes"
+  },
+  "seg.dab0f1b06607": {
+   "src": "Sudan I is used to colour oils, fats, waxes, and shoe and floor polish. The Indian Standard on quick tests for adulterants says Sudan III, much used in wax polishes, has been used to make chilli pods shine, and so finds its way into chilli powder.",
+   "t": "എണ്ണകൾ, കൊഴുപ്പുകൾ, മെഴുകുകൾ, ഷൂ പോളിഷ്, തറ പോളിഷ് എന്നിവയ്ക്ക് നിറം നൽകാൻ സുഡാൻ I ഉപയോഗിക്കുന്നു. മായം ചേർക്കുന്ന വസ്തുക്കൾക്കുള്ള ദ്രുത പരിശോധനകളെക്കുറിച്ചുള്ള ഇന്ത്യൻ സ്റ്റാൻഡേർഡ് പറയുന്നത്, മെഴുക് പോളിഷുകളിൽ ധാരാളമായി ഉപയോഗിക്കുന്ന സുഡാൻ III മുളകിന് തിളക്കം നൽകാൻ ഉപയോഗിച്ചിട്ടുണ്ടെന്നും, അങ്ങനെ അത് മുളകുപൊടിയിൽ എത്തുന്നുവെന്നുമാണ്.",
+   "back": "Sudan I is used to give colour to oils, fats, waxes, shoe polish and floor polish. What the Indian Standard on rapid tests for adulterating substances says is that Sudan III, used plentifully in wax polishes, has been used to give shine to chilli, and that in this way it reaches chilli powder."
+  },
+  "seg.65d2132b3a71": {
+   "src": "Brick powder, sand, salt, talc and soapstone",
+   "t": "ഇഷ്ടികപ്പൊടി, മണൽ, ഉപ്പ്, ടാൽക്ക്, സോപ്പുകല്ല്",
+   "back": "Brick powder, sand, salt, talc, soapstone"
+  },
+  "seg.eaaa28049f76": {
+   "src": "FSSAI's household tests list these for chilli powder. The Indian Standard says brick powder is mixed in to increase bulk.",
+   "t": "FSSAI-യുടെ വീട്ടിൽ ചെയ്യാവുന്ന പരിശോധനകൾ മുളകുപൊടിക്കായി ഇവ പട്ടികപ്പെടുത്തുന്നു. അളവ് കൂട്ടാനാണ് ഇഷ്ടികപ്പൊടി കലർത്തുന്നതെന്ന് ഇന്ത്യൻ സ്റ്റാൻഡേർഡ് പറയുന്നു.",
+   "back": "FSSAI's tests that can be done at home list these for chilli powder. The Indian Standard says brick powder is mixed in to increase the quantity."
+  },
+  "seg.e159a2e5efb2": {
+   "src": "Starch",
+   "t": "സ്റ്റാർച്ച്",
+   "back": "Starch"
+  },
+  "seg.591f55c64be8": {
+   "src": "FSSAI's manual tests powdered spices other than turmeric for added starch. The Indian Standard notes that colour is also added to chilli powder to hide added starch.",
+   "t": "FSSAI-യുടെ മാനുവൽ മഞ്ഞൾ ഒഴികെയുള്ള മസാലപ്പൊടികളിൽ ചേർത്ത സ്റ്റാർച്ച് പരിശോധിക്കുന്നു. ചേർത്ത സ്റ്റാർച്ച് മറയ്ക്കാനും മുളകുപൊടിയിൽ നിറം ചേർക്കാറുണ്ടെന്ന് ഇന്ത്യൻ സ്റ്റാൻഡേർഡ് രേഖപ്പെടുത്തുന്നു.",
+   "back": "FSSAI's manual tests for added starch in spice powders other than turmeric. The Indian Standard records that colour is also usually added to chilli powder to hide added starch."
+  },
+  "seg.77e497cd9160": {
+   "src": "Sawdust and bran",
+   "t": "അറക്കപ്പൊടിയും തവിടും",
+   "back": "Sawdust and bran"
+  },
+  "seg.6cdabb4ac9cc": {
+   "src": "Both float on water, which is how FSSAI's household tests spot them.",
+   "t": "രണ്ടും വെള്ളത്തിൽ പൊങ്ങിക്കിടക്കും; FSSAI-യുടെ വീട്ടിൽ ചെയ്യാവുന്ന പരിശോധനകൾ അവയെ കണ്ടെത്തുന്നത് അങ്ങനെയാണ്.",
+   "back": "Both float in water; that is how FSSAI's home-doable tests detect them."
+  },
+  "seg.2ad2a1900226": {
+   "src": "Check 1: the water glass and the rub test",
+   "t": "പരിശോധന 1: വെള്ളം നിറച്ച ഗ്ലാസും തിരുമ്മിനോക്കലും",
+   "back": "Test 1: Glass filled with water and rubbing check"
+  },
+  "seg.5ebb4d43f1c6": {
+   "src": "Sprinkle one teaspoon of chilli powder on top. Do not stir.",
+   "t": "മുകളിൽ ഒരു ടീസ്പൂൺ മുളകുപൊടി വിതറൂ. ഇളക്കരുത്.",
+   "back": "Sprinkle a teaspoon of chilli powder on top. Do not stir."
+  },
+  "seg.e11be0844965": {
+   "src": "Watch the first minute. Look for coloured streaks running down from the powder.",
+   "t": "ആദ്യത്തെ ഒരു മിനിറ്റ് ശ്രദ്ധിക്കൂ. പൊടിയിൽ നിന്ന് നിറമുള്ള വരകൾ താഴേക്ക് ഇറങ്ങുന്നുണ്ടോ എന്ന് നോക്കൂ.",
+   "back": "Watch the first one minute. Look whether coloured streaks go down from the powder."
+  },
+  "seg.14ad43586f91": {
+   "src": "Leave it until most of the powder has sunk. Look at the surface for bits still floating.",
+   "t": "പൊടിയുടെ മിക്കവാറും ഭാഗം താഴുന്നതുവരെ അങ്ങനെ വയ്ക്കൂ. മുകൾപ്പരപ്പിൽ ഇനിയും തരികൾ പൊങ്ങിക്കിടക്കുന്നുണ്ടോ എന്ന് നോക്കൂ.",
+   "back": "Leave it so until most of the powder sinks. Look whether particles are still floating on the top surface."
+  },
+  "seg.379262f468f1": {
+   "src": "Pour off most of the water and rub the sediment at the bottom between your fingers.",
+   "t": "വെള്ളത്തിന്റെ മിക്കവാറും ഭാഗം ഊറ്റിക്കളഞ്ഞ്, അടിയിൽ അടിഞ്ഞത് വിരലുകൾക്കിടയിൽ തിരുമ്മിനോക്കൂ.",
+   "back": "Drain off most of the water and rub what has settled at the bottom between your fingers."
+  },
+  "seg.7455fbe1d38d": {
+   "src": "What you see or feel",
+   "t": "നിങ്ങൾ കാണുന്നതോ തൊട്ടറിയുന്നതോ",
+   "back": "What you see or feel by touch"
+  },
+  "seg.5ddc9ed4a863": {
+   "src": "What it can point to",
+   "t": "അത് എന്തിലേക്ക് വിരൽ ചൂണ്ടാം",
+   "back": "What it may point to"
+  },
+  "seg.9d20132af7ae": {
+   "src": "Colour streaks running down at once",
+   "t": "ഉടനെ താഴേക്ക് ഇറങ്ങുന്ന നിറമുള്ള വരകൾ",
+   "back": "Coloured streaks that go down immediately"
+  },
+  "seg.4dd6d7d4418f": {
+   "src": "Added colour that dissolves in water",
+   "t": "വെള്ളത്തിൽ അലിയുന്ന ചേർത്ത നിറം",
+   "back": "Water-soluble added colour"
+  },
+  "seg.99d03e1725f4": {
+   "src": "Bits still floating after the powder sinks",
+   "t": "പൊടി താഴ്ന്നശേഷവും പൊങ്ങിക്കിടക്കുന്ന തരികൾ",
+   "back": "Particles that keep floating even after the powder sinks"
+  },
+  "seg.909cfed7ea11": {
+   "src": "Sawdust or bran",
+   "t": "അറക്കപ്പൊടി അല്ലെങ്കിൽ തവിട്",
+   "back": "Sawdust or bran"
+  },
+  "seg.f211ed47d57c": {
+   "src": "Sediment that feels gritty",
+   "t": "തരുതരുപ്പുള്ള അടിമട്ട്",
+   "back": "Gritty bottom sediment"
+  },
+  "seg.6b3ebad45f08": {
+   "src": "Brick powder or sand",
+   "t": "ഇഷ്ടികപ്പൊടി അല്ലെങ്കിൽ മണൽ",
+   "back": "Brick powder or sand"
+  },
+  "seg.0778aeb79734": {
+   "src": "White sediment that feels soapy and smooth",
+   "t": "സോപ്പ് പോലെ വഴുവഴുപ്പും മിനുസവുമുള്ള വെളുത്ത അടിമട്ട്",
+   "back": "White bottom sediment that is slippery and smooth like soap"
+  },
+  "seg.08846b1820d9": {
+   "src": "Soapstone",
+   "t": "സോപ്പുകല്ല്",
+   "back": "Soapstone"
+  },
+  "seg.175ed947e347": {
+   "src": "None of these",
+   "t": "ഇവയൊന്നുമില്ല",
+   "back": "None of these"
+  },
+  "seg.92ba3085667d": {
+   "src": "No sign of what this check can find.",
+   "t": "ഈ പരിശോധനയ്ക്ക് കണ്ടെത്താനാകുന്ന ഒന്നിന്റെയും സൂചനയില്ല.",
+   "back": "No sign of anything this test can detect."
+  },
+  "seg.3cf82af49b09": {
+   "src": "Any one of these",
+   "t": "ഇവയിൽ ഏതെങ്കിലും ഒന്ന്",
+   "back": "Any one of these"
+  },
+  "seg.e4f5d2924afa": {
+   "src": "Possible adulteration. Stop using that batch and get it tested.",
+   "t": "മായം ഉണ്ടായേക്കാം. ആ ബാച്ച് ഉപയോഗിക്കുന്നത് നിർത്തി, പരിശോധിപ്പിക്കൂ.",
+   "back": "There may be adulteration. Stop using that batch and get it tested."
+  },
+  "seg.e5e493d4cb12": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Colours that dissolve in water leave the powder and run down as streaks. Brick powder is heavy and settles to the bottom, while sawdust and bran float.",
+   "t": "⟦1⟧ഇത് എന്തുകൊണ്ട് ഫലിക്കുന്നു.⟦/1⟧ വെള്ളത്തിൽ അലിയുന്ന നിറങ്ങൾ പൊടിയിൽ നിന്ന് വിട്ടുപോയി വരകളായി താഴേക്ക് ഇറങ്ങും. ഇഷ്ടികപ്പൊടി ഭാരമുള്ളതിനാൽ അടിയിൽ അടിയും; അറക്കപ്പൊടിയും തവിടും പൊങ്ങിക്കിടക്കും.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Water-soluble colours leave the powder and go down as streaks. Brick powder, being heavy, settles at the bottom; sawdust and bran float."
+  },
+  "seg.551c97147aa3": {
+   "src": "⟦1⟧What it misses.⟦/1⟧ Dyes that do not dissolve in water stay in the powder. Sudan I is one: it does not dissolve in water, and it is used to colour oils, fats and waxes. Chilli powder coloured with such dyes can pass this check. Only a lab test can rule them out.",
+   "t": "⟦1⟧ഇത് എന്ത് കണ്ടെത്തില്ല.⟦/1⟧ വെള്ളത്തിൽ അലിയാത്ത ചായങ്ങൾ പൊടിയിൽ തന്നെ നിൽക്കും. സുഡാൻ I അത്തരത്തിലൊന്നാണ്: അത് വെള്ളത്തിൽ അലിയില്ല; എണ്ണകൾക്കും കൊഴുപ്പുകൾക്കും മെഴുകുകൾക്കും നിറം നൽകാൻ ഉപയോഗിക്കുന്നു. അത്തരം ചായങ്ങൾ കൊണ്ട് നിറം നൽകിയ മുളകുപൊടി ഈ പരിശോധനയിൽ കടന്നുപോയേക്കാം. ലാബ് ടെസ്റ്റിന് മാത്രമേ അവ ഇല്ലെന്ന് ഉറപ്പിക്കാനാകൂ.",
+   "back": "⟦1⟧What this will not detect.⟦/1⟧ Dyes that do not dissolve in water stay in the powder itself. Sudan I is one such: it does not dissolve in water; it is used to give colour to oils, fats and waxes. Chilli powder coloured with such dyes may pass [lit: go through] this test. Only a lab test can confirm that they are absent."
+  },
+  "seg.5bbec3bc6fbf": {
+   "src": "Wash your hands after the rub test, before you touch your eyes.",
+   "t": "തിരുമ്മിനോക്കിയശേഷം, കണ്ണിൽ തൊടുന്നതിന് മുമ്പ് കൈ കഴുകൂ.",
+   "back": "After the rubbing check, wash your hands before touching your eyes."
+  },
+  "seg.36726998b551": {
+   "src": "Check 2: the iodine test for starch",
+   "t": "പരിശോധന 2: സ്റ്റാർച്ചിനുള്ള അയഡിൻ ടെസ്റ്റ്",
+   "back": "Test 2: Iodine test for starch"
+  },
+  "seg.3d76d0b2a476": {
+   "src": "FSSAI's manual uses the iodine test for powdered spices other than turmeric, so chilli powder can take it. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is left out.",
+   "t": "FSSAI-യുടെ മാനുവൽ മഞ്ഞൾ ഒഴികെയുള്ള മസാലപ്പൊടികൾക്ക് അയഡിൻ ടെസ്റ്റ് ഉപയോഗിക്കുന്നു; അതിനാൽ മുളകുപൊടിയിൽ ഇത് ചെയ്യാം. മഞ്ഞൾ എന്തുകൊണ്ട് ഒഴിവാക്കുന്നു എന്ന് ⟦1⟧ഞങ്ങളുടെ മഞ്ഞൾ ഗൈഡ്⟦/1⟧ വിശദീകരിക്കുന്നു.",
+   "back": "FSSAI's manual uses the iodine test for spice powders other than turmeric; so it can be done on chilli powder. ⟦1⟧Our turmeric guide⟦/1⟧ explains why turmeric is excluded."
+  },
+  "seg.c7d23b036696": {
+   "src": "Put half a teaspoon of chilli powder on a white saucer.",
+   "t": "ഒരു വെളുത്ത സോസറിൽ അര ടീസ്പൂൺ മുളകുപൊടി വയ്ക്കൂ.",
+   "back": "Put half a teaspoon of chilli powder on a white saucer."
+  },
+  "seg.9b2fb67a0f9a": {
+   "src": "Add a few drops of tincture of iodine from a chemist.",
+   "t": "ഫാർമസിയിൽ നിന്ന് വാങ്ങിയ ടിങ്ചർ അയഡിൻ ഏതാനും തുള്ളി ഒഴിക്കൂ.",
+   "back": "Pour a few drops of tincture of iodine bought from a pharmacy."
+  },
+  "seg.2d93dfc80312": {
+   "src": "Look at the colour where the drops land.",
+   "t": "തുള്ളികൾ വീണ ഇടത്തെ നിറം നോക്കൂ.",
+   "back": "Look at the colour of the place where the drops fell."
+  },
+  "seg.c698ff17efbf": {
+   "src": "Throw that powder away afterwards.",
+   "t": "അതിനുശേഷം ആ പൊടി കളഞ്ഞേക്കൂ.",
+   "back": "After that, discard that powder."
+  },
+  "seg.25bf59d68c4e": {
+   "src": "No blue colour",
+   "t": "നീല നിറമില്ല",
+   "back": "No blue colour"
+  },
+  "seg.2f88b779aa2b": {
+   "src": "No sign of added starch.",
+   "t": "ചേർത്ത സ്റ്റാർച്ചിന്റെ സൂചനയില്ല.",
+   "back": "No sign of added starch."
+  },
+  "seg.ac80a4934254": {
+   "src": "A blue colour",
+   "t": "നീല നിറം",
+   "back": "Blue colour"
+  },
+  "seg.0db85a4ff58c": {
+   "src": "Points to added starch. Stop using that batch and get it tested. On red powder a faint change is hard to judge, so if you are not sure, let a lab decide.",
+   "t": "ചേർത്ത സ്റ്റാർച്ചിലേക്ക് വിരൽ ചൂണ്ടുന്നു. ആ ബാച്ച് ഉപയോഗിക്കുന്നത് നിർത്തി, പരിശോധിപ്പിക്കൂ. ചുവന്ന പൊടിയിൽ നേരിയ മാറ്റം തിരിച്ചറിയാൻ പ്രയാസമാണ്; അതിനാൽ ഉറപ്പില്ലെങ്കിൽ ലാബ് തീരുമാനിക്കട്ടെ.",
+   "back": "Points to added starch. Stop using that batch and get it tested. A slight change is hard to recognise on a red powder; so if not sure, let the lab decide."
+  },
+  "seg.ed4a959013d8": {
+   "src": "⟦1⟧Why it works.⟦/1⟧ Iodine turns blue when it meets starch.",
+   "t": "⟦1⟧ഇത് എന്തുകൊണ്ട് ഫലിക്കുന്നു.⟦/1⟧ അയഡിൻ സ്റ്റാർച്ചുമായി ചേരുമ്പോൾ നീലയാകും.",
+   "back": "⟦1⟧Why this works.⟦/1⟧ Iodine turns blue when it combines with starch."
+  },
+  "seg.5adf326d0b8f": {
+   "src": "Leave these to a lab",
+   "t": "ഇവ ലാബിന് വിടൂ",
+   "back": "Leave these to the lab"
+  },
+  "seg.9e0f62706054": {
+   "src": "Acid and solvent tests at home",
+   "t": "വീട്ടിൽ ആസിഡ്, ലായക ടെസ്റ്റുകൾ",
+   "back": "Acid and solvent tests at home"
+  },
+  "seg.f5e28e97055b": {
+   "src": "The methods in FSSAI's manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong acids and solvents such as chloroform, petroleum ether, hexane and acetone. The acids can cause burns, and several of the solvents catch fire easily. They belong in a lab, not a kitchen.",
+   "t": "മുളകുപൊടിയിലെ ഇഷ്ടികപ്പൊടി, ചേർത്ത നിറം, എണ്ണയിൽ അലിയുന്ന നിറങ്ങൾ, സുഡാൻ III, റോഡമിൻ B എന്നിവയ്ക്കായി FSSAI മാനുവലിലുള്ള രീതികൾ വീര്യമുള്ള ആസിഡുകളും ക്ലോറോഫോം, പെട്രോളിയം ഈതർ, ഹെക്സേൻ, അസെറ്റോൺ പോലുള്ള ലായകങ്ങളും ഉപയോഗിക്കുന്നു. ആസിഡുകൾ പൊള്ളലുണ്ടാക്കാം; പല ലായകങ്ങൾക്കും എളുപ്പം തീപിടിക്കും. അവയുടെ സ്ഥാനം ലാബിലാണ്, അടുക്കളയിലല്ല.",
+   "back": "The methods in the FSSAI manual for brick powder, added colour, oil-soluble colours, Sudan III and Rhodamine B in chilli powder use strong [lit: potent] acids and solvents such as chloroform, petroleum ether, hexane and acetone. Acids can cause burns; many solvents catch fire easily. Their place is in the lab, not the kitchen."
+  },
+  "seg.1e30ce9ef855": {
+   "src": "For a sure answer, send a sample to a NABL-accredited food testing lab. Ask it to test for added colours, including Sudan dyes, and against FSSAI's chilli powder standard. Its limits include moisture up to 11%, total ash up to 8%, and ash insoluble in dilute hydrochloric acid up to 1.3%, all by weight, with both ash limits on a dry basis. Keep the powder in its sealed pack or a clean sealed bag, and note the batch number printed on the pack.",
+   "t": "ഉറപ്പുള്ള ഉത്തരത്തിന്, NABL അക്രെഡിറ്റേഷനുള്ള ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിലേക്ക് സാമ്പിൾ അയയ്ക്കൂ. സുഡാൻ ചായങ്ങൾ ഉൾപ്പെടെ ചേർത്ത നിറങ്ങൾക്കായും, FSSAI-യുടെ മുളകുപൊടി നിലവാരമാനദണ്ഡം അനുസരിച്ചും പരിശോധിക്കാൻ ആവശ്യപ്പെടൂ. അതിലെ പരിധികളിൽ ചിലത്: ഈർപ്പം 11% വരെ, ആകെ ചാരം 8% വരെ, നേർപ്പിച്ച ഹൈഡ്രോക്ലോറിക് ആസിഡിൽ അലിയാത്ത ചാരം 1.3% വരെ; എല്ലാം ഭാരത്തിന്റെ അടിസ്ഥാനത്തിൽ, രണ്ട് ചാര പരിധികളും ഉണക്ക അടിസ്ഥാനത്തിൽ. പൊടി അതിന്റെ സീൽ ചെയ്ത പാക്കറ്റിലോ വൃത്തിയുള്ള, സീൽ ചെയ്ത ബാഗിലോ സൂക്ഷിക്കൂ; പാക്കറ്റിൽ അച്ചടിച്ച ബാച്ച് നമ്പർ കുറിച്ചുവയ്ക്കൂ.",
+   "back": "For a definite answer, send a sample to a food testing lab with NABL accreditation. Ask them to test for added colours including Sudan dyes, and as per FSSAI's chilli powder standard. Some of its limits: moisture up to 11%, total ash up to 8%, ash insoluble in dilute hydrochloric acid up to 1.3%; all on a weight basis, both ash limits on a dry basis. Keep the powder in its sealed packet or in a clean, sealed bag; note down the batch number printed on the packet."
+  },
+  "seg.8ef59aeeebe4": {
+   "src": "An FSSAI licence or registration number.",
+   "t": "ഒരു FSSAI ലൈസൻസ് അല്ലെങ്കിൽ രജിസ്ട്രേഷൻ നമ്പർ.",
+   "back": "An FSSAI licence or registration number."
+  },
+  "seg.f90b0f258a47": {
+   "src": "Net quantity, a batch or lot number, and a best-before date.",
+   "t": "അറ്റ അളവ്, ബാച്ച് അല്ലെങ്കിൽ ലോട്ട് നമ്പർ, 'ബെസ്റ്റ് ബിഫോർ' തീയതി.",
+   "back": "Net quantity, batch or lot number, 'best before' date."
+  },
+  "seg.fa3907160dbb": {
+   "src": "The ingredients. FSSAI allows up to 2% edible vegetable oil by weight in chilli powder, but only if the label says which oil and how much.",
+   "t": "ചേരുവകൾ. മുളകുപൊടിയിൽ ഭാരത്തിന്റെ 2% വരെ ഭക്ഷ്യയോഗ്യമായ സസ്യഎണ്ണ FSSAI അനുവദിക്കുന്നു; പക്ഷേ ഏത് എണ്ണ, എത്ര എന്ന് ലേബലിൽ പറയുന്നുണ്ടെങ്കിൽ മാത്രം.",
+   "back": "Ingredients. FSSAI allows up to 2% of the weight as edible vegetable oil in chilli powder; but only if the label says which oil and how much."
+  },
+  "seg.616cb55edf33": {
+   "src": "Where it was grown, and the chilli variety if named. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packs say Palnadu and Guntur.",
+   "t": "എവിടെ വിളഞ്ഞത്; മുളകിന്റെ ഇനം പറയുന്നുണ്ടെങ്കിൽ അതും. ഞങ്ങളുടെ ⟦1⟧സന്നം⟦/1⟧, ⟦2⟧തേജ⟦/2⟧ പാക്കറ്റുകളിൽ പൽനാട്, ഗുണ്ടൂർ എന്നാണുള്ളത്.",
+   "back": "Where it was grown; and the chilli variety too, if stated. Our ⟦1⟧Sannam⟦/1⟧ and ⟦2⟧Teja⟦/2⟧ packets say Palnadu, Guntur."
+  },
+  "seg.5766b566dbba": {
+   "src": "Use a dry spoon, and keep the jar away from steam from the stove.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ; അടുപ്പിലെ ആവി തട്ടാത്തിടത്ത് ഭരണി വയ്ക്കൂ.",
+   "back": "Use a dry spoon; keep the jar where the stove's steam does not touch."
+  },
+  "seg.ae76fa3c0a37": {
+   "src": "Keep it in a cool, dry place, out of direct sunlight.",
+   "t": "നേരിട്ട് വെയിൽ കൊള്ളാത്ത, തണുത്ത, ഉണങ്ങിയ സ്ഥലത്ത് സൂക്ഷിക്കൂ.",
+   "back": "Store in a cool, dry place where direct sunlight does not fall."
+  },
+  "seg.cee32139c40b": {
+   "src": "Use it within the best-before date on the pack, in dishes such as ⟦1⟧vellulli kaaram⟦/1⟧, ⟦2⟧gongura pachadi⟦/2⟧ or ⟦3⟧tomato pachadi⟦/3⟧.",
+   "t": "പാക്കറ്റിലെ 'ബെസ്റ്റ് ബിഫോർ' തീയതിക്കുള്ളിൽ, ⟦1⟧വെല്ലുല്ലി കാരം⟦/1⟧, ⟦2⟧ഗോംഗൂര പച്ചടി⟦/2⟧, ⟦3⟧ടൊമാറ്റോ പച്ചടി⟦/3⟧ പോലുള്ള വിഭവങ്ങളിൽ ഉപയോഗിക്കൂ.",
+   "back": "Within the 'best before' date on the packet, use it in dishes like ⟦1⟧Vellulli karam⟦/1⟧, ⟦2⟧Gongura pachadi⟦/2⟧, ⟦3⟧Tomato pachadi⟦/3⟧."
+  },
+  "seg.13c76694dc1e": {
+   "src": "How do I check chilli powder for brick powder at home?",
+   "t": "മുളകുപൊടിയിൽ ഇഷ്ടികപ്പൊടി ഉണ്ടോ എന്ന് വീട്ടിൽ എങ്ങനെ പരിശോധിക്കാം?",
+   "back": "How to test at home whether chilli powder contains brick powder?"
+  },
+  "seg.3e87e1d30613": {
+   "src": "Put a teaspoon of chilli powder in a glass of water and let it settle. Pour off most of the water and rub the sediment between your fingers: grit points to brick powder or sand, and a white residue that feels soapy and smooth points to soapstone.",
+   "t": "ഒരു ഗ്ലാസ് വെള്ളത്തിൽ ഒരു ടീസ്പൂൺ മുളകുപൊടി ഇട്ട് അടിയാൻ വിടൂ. വെള്ളത്തിന്റെ മിക്കവാറും ഭാഗം ഊറ്റിക്കളഞ്ഞ്, അടിയിൽ അടിഞ്ഞത് വിരലുകൾക്കിടയിൽ തിരുമ്മിനോക്കൂ: തരുതരുപ്പ് ഇഷ്ടികപ്പൊടിയിലേക്കോ മണലിലേക്കോ വിരൽ ചൂണ്ടുന്നു; സോപ്പ് പോലെ വഴുവഴുപ്പും മിനുസവുമുള്ള വെളുത്ത അവശിഷ്ടം സോപ്പുകല്ലിലേക്ക് വിരൽ ചൂണ്ടുന്നു.",
+   "back": "Put a teaspoon of chilli powder in a glass of water and let it settle. Drain off most of the water and rub what has settled at the bottom between your fingers: grittiness points to brick powder or sand; a white residue that is slippery and smooth like soap points to soapstone."
+  },
+  "seg.f609f5773557": {
+   "src": "Can the water test detect Sudan dye in chilli powder?",
+   "t": "മുളകുപൊടിയിലെ സുഡാൻ ചായം വെള്ളം കൊണ്ടുള്ള പരിശോധനയിൽ കണ്ടെത്താനാകുമോ?",
+   "back": "Can Sudan dye in chilli powder be detected in the test with water?"
+  },
+  "seg.7bd8af24de2f": {
+   "src": "No. Sudan I does not dissolve in water, so it cannot run out as streaks. FSSAI's manual tests for Sudan III and for oil-soluble colours with solvents such as hexane and petroleum ether, so those tests need a lab.",
+   "t": "ഇല്ല. സുഡാൻ I വെള്ളത്തിൽ അലിയില്ല; അതിനാൽ അത് വരകളായി പുറത്തേക്ക് ഇറങ്ങില്ല. FSSAI-യുടെ മാനുവൽ സുഡാൻ III-ഉം എണ്ണയിൽ അലിയുന്ന നിറങ്ങളും ഹെക്സേൻ, പെട്രോളിയം ഈതർ പോലുള്ള ലായകങ്ങൾ കൊണ്ടാണ് പരിശോധിക്കുന്നത്; അതിനാൽ ആ ടെസ്റ്റുകൾക്ക് ലാബ് വേണം.",
+   "back": "No. Sudan I does not dissolve in water; so it will not come out as streaks. FSSAI's manual tests Sudan III and oil-soluble colours with solvents such as hexane and petroleum ether; so those tests need a lab."
+  },
+  "seg.d63c02ec2e5c": {
+   "src": "Does the iodine test work on chilli powder?",
+   "t": "അയഡിൻ ടെസ്റ്റ് മുളകുപൊടിയിൽ ഫലിക്കുമോ?",
+   "back": "Does the iodine test work on chilli powder?"
+  },
+  "seg.01e86c518d41": {
+   "src": "Yes. FSSAI's manual uses the iodine test for powdered spices other than turmeric, and chilli powder is one of them. A blue colour points to added starch.",
+   "t": "ഉവ്വ്. FSSAI-യുടെ മാനുവൽ മഞ്ഞൾ ഒഴികെയുള്ള മസാലപ്പൊടികൾക്ക് അയഡിൻ ടെസ്റ്റ് ഉപയോഗിക്കുന്നു; മുളകുപൊടി അവയിലൊന്നാണ്. നീല നിറം ചേർത്ത സ്റ്റാർച്ചിലേക്ക് വിരൽ ചൂണ്ടുന്നു.",
+   "back": "Yes. FSSAI's manual uses the iodine test for spice powders other than turmeric; chilli powder is one of them. A blue colour points to added starch."
+  },
+  "seg.75e20911cd47": {
+   "src": "Is bright red chilli powder a sign of adulteration?",
+   "t": "തിളക്കമുള്ള ചുവപ്പ് നിറമുള്ള മുളകുപൊടി മായത്തിന്റെ ലക്ഷണമാണോ?",
+   "back": "Is chilli powder with a bright [or: shiny] red colour a sign of adulteration?"
+  },
+  "seg.dcfec3eff0b8": {
+   "src": "Colour alone does not tell you. The water check looks for colour that leaves the powder and runs down as streaks, not for how red the powder looks, and a lab can test for added colours.",
+   "t": "നിറം മാത്രം നോക്കി പറയാനാവില്ല. പൊടി എത്ര ചുവന്നിരിക്കുന്നു എന്നല്ല വെള്ളം കൊണ്ടുള്ള പരിശോധന നോക്കുന്നത്; പൊടിയിൽ നിന്ന് വിട്ടുപോയി വരകളായി താഴേക്ക് ഇറങ്ങുന്ന നിറമുണ്ടോ എന്നാണ്. ചേർത്ത നിറങ്ങൾക്കായി ലാബിന് പരിശോധിക്കാനാകും.",
+   "back": "It cannot be told by looking at colour alone. The test with water does not look at how red the powder is; it looks at whether there is colour that leaves the powder and goes down as streaks. A lab can test for added colours."
+  },
+  "seg.54f85d34859f": {
+   "src": "Stop using that batch and keep the pack. Contact the seller with the batch number, or send a sample to a NABL-accredited food testing lab for a sure answer.",
+   "t": "ആ ബാച്ച് ഉപയോഗിക്കുന്നത് നിർത്തൂ, പാക്കറ്റ് സൂക്ഷിച്ചുവയ്ക്കൂ. ബാച്ച് നമ്പർ സഹിതം വിൽപ്പനക്കാരനെ ബന്ധപ്പെടൂ, അല്ലെങ്കിൽ ഉറപ്പുള്ള ഉത്തരത്തിന് NABL അക്രെഡിറ്റേഷനുള്ള ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിലേക്ക് സാമ്പിൾ അയയ്ക്കൂ.",
+   "back": "Stop using that batch, keep the packet. Contact the seller along with the batch number, or send a sample to a food testing lab with NABL accreditation for a definite answer."
+  },
+  "seg.ff09628b25c1": {
+   "src": "Our chilli powder",
+   "t": "ഞങ്ങളുടെ മുളകുപൊടി",
+   "back": "Our chilli powder"
+  },
+  "seg.a7d8a3890045": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Both grown in Palnadu and Guntur, and packed in Narasaraopet."
+  },
+  "seg.3ed867d1961c": {
+   "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
+   "t": "కారం కల్తీ · മുളകുപൊടി മായം പരിശോധന | 1acrefarms",
+   "back": "[Telugu: Karam adulteration] · Chilli powder adulteration test | 1acrefarms"
+  },
+  "seg.20f494d041fc": {
+   "src": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. How to check chilli powder at home: the water glass, rub and iodine tests, what they miss, and when you need a lab.",
+   "t": "కారం కల్తీని ఇంట్లోనే ఎలా గుర్తించాలి. വീട്ടിൽ മുളകുപൊടി എങ്ങനെ പരിശോധിക്കാം: വെള്ളം നിറച്ച ഗ്ലാസ്, തിരുമ്മിനോക്കൽ, അയഡിൻ ടെസ്റ്റുകൾ, അവ എന്ത് കണ്ടെത്തില്ല, എപ്പോൾ ലാബ് വേണം.",
+   "back": "[Telugu: How to identify karam adulteration at home.] How to test chilli powder at home: glass filled with water, rubbing check, iodine tests, what they will not detect, when a lab is needed."
+  },
+  "seg.cf3eac803a81": {
+   "src": "How to check chilli powder at home · 1acrefarms",
+   "t": "വീട്ടിൽ മുളകുപൊടി എങ്ങനെ പരിശോധിക്കാം · 1acrefarms",
+   "back": "How to test chilli powder at home · 1acrefarms"
+  },
+  "seg.3a7ecf1759a7": {
+   "src": "Hill turmeric or turmeric",
+   "t": "മലയോര മഞ്ഞളോ മഞ്ഞളോ",
+   "back": "Hilly-region turmeric or turmeric?"
+  },
+  "seg.0e55b39feef1": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference",
+   "t": "മലയോര മഞ്ഞൾ (കൊണ്ട പസുപു) അല്ലെങ്കിൽ മഞ്ഞൾ: എന്താണ് വ്യത്യാസം",
+   "back": "Hilly-region turmeric (Konda pasupu) or turmeric: what is the difference"
+  },
+  "seg.ebf6f90777d6": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda Pasupu · Pasupu",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · കൊണ്ട പസുപു · പസുപു",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Konda pasupu · Pasupu"
+  },
+  "seg.8b7a90a6aed6": {
+   "src": "Konda pasupu means hill turmeric: turmeric grown in hill country. In Andhra Pradesh that includes the agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu, where most tribal farmers grow turmeric. Plains turmeric grows on farmland in districts such as Guntur.",
+   "t": "കൊണ്ട പസുപു എന്നാൽ മലയോര മഞ്ഞൾ: മലമ്പ്രദേശത്ത് വിളയുന്ന മഞ്ഞൾ. ആന്ധ്രാപ്രദേശിൽ ഇതിൽ അരക്കു താഴ്വര, ചിന്തപ്പള്ളെ, പാഡേരു എന്നിവയ്ക്ക് ചുറ്റുമുള്ള പൂർവഘട്ടത്തിലെ ഏജൻസി മലകളും ഉൾപ്പെടുന്നു; അവിടെ ആദിവാസി കർഷകരിൽ ഭൂരിഭാഗവും മഞ്ഞൾ കൃഷി ചെയ്യുന്നു. സമതല മഞ്ഞൾ ഗുണ്ടൂർ പോലുള്ള ജില്ലകളിലെ കൃഷിഭൂമിയിൽ വിളയുന്നു.",
+   "back": "Konda pasupu means hilly-region turmeric: turmeric grown in hill regions. In Andhra Pradesh this includes the Agency hills of the Eastern Ghats around Araku Valley, Chintapalle and Paderu; there, the majority of tribal [Adivasi] farmers cultivate turmeric. Plains turmeric grows on farmland in districts like Guntur."
+  },
+  "seg.404d008584f4": {
+   "src": "FSSAI's standard for turmeric powder is the same wherever it grew. What changes is the place, the variety, and how it is grown and dried. This guide covers each of those, what curcumin is, how to cook with each and how to compare two turmerics fairly. There is a Telugu section further down.",
+   "t": "മഞ്ഞൾപ്പൊടിക്കുള്ള FSSAI നിലവാരമാനദണ്ഡം, അത് എവിടെ വിളഞ്ഞാലും ഒന്നുതന്നെ. മാറുന്നത് സ്ഥലം, ഇനം, കൃഷി ചെയ്യുന്നതും ഉണക്കുന്നതുമായ രീതി എന്നിവയാണ്. ഈ ഗൈഡ് ഇവ ഓരോന്നും, കുർക്കുമിൻ എന്താണ്, ഓരോന്നും കൊണ്ട് എങ്ങനെ പാചകം ചെയ്യാം, രണ്ട് മഞ്ഞളുകളെ എങ്ങനെ ന്യായമായി താരതമ്യം ചെയ്യാം എന്നിവയും പറയുന്നു. താഴെ ഒരു തെലുങ്ക് ഭാഗമുണ്ട്.",
+   "back": "The FSSAI standard for turmeric powder is the same wherever it is grown. What changes is the place, the variety, and the way it is cultivated and dried. This guide tells each of these, what curcumin is, how to cook with each, and how to compare two turmerics fairly. There is a Telugu section below."
+  },
+  "seg.b4d7b88f52e3": {
+   "src": "Hill Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "മലയോര മഞ്ഞൾപ്പൊടി⟦#1⟧⟦#2⟧",
+   "back": "Hilly-region turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.6c894965ab39": {
+   "src": "Turmeric Powder⟦#1⟧⟦#2⟧",
+   "t": "മഞ്ഞൾപ്പൊടി⟦#1⟧⟦#2⟧",
+   "back": "Turmeric powder⟦#1⟧⟦#2⟧"
+  },
+  "seg.2e709bd87897": {
+   "src": "⟦1⟧Our two turmerics⟦/1⟧Left: hill turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet.",
+   "t": "⟦1⟧ഞങ്ങളുടെ രണ്ട് മഞ്ഞളുകൾ⟦/1⟧ഇടത്: അരക്കു, മാരേഡുമില്ലി മലകളിൽ നിന്നുള്ള മലയോര മഞ്ഞൾ. വലത്: പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ മഞ്ഞൾ. രണ്ടും നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "⟦1⟧Our two turmerics⟦/1⟧Left: hilly-region turmeric from the Araku and Maredumilli hills. Right: turmeric grown in Palnadu and Guntur. Both packed in Narasaraopet."
+  },
+  "seg.10eec083bb3d": {
+   "src": "Hill turmeric (konda pasupu) grows in hill country, such as the Eastern Ghats around Araku, where most tribal farmers grow it. Plains turmeric grows on farmland in districts such as Guntur. Both are boiled, dried and ground, and FSSAI holds both to the same standard. Curcumin, the yellow pigment in turmeric, changes with variety, soil, climate and processing, so the word hill or plains does not tell you how much a turmeric has. Cook with both the same way.",
+   "t": "മലയോര മഞ്ഞൾ (കൊണ്ട പസുപു) അരക്കുവിന് ചുറ്റുമുള്ള പൂർവഘട്ടം പോലുള്ള മലമ്പ്രദേശങ്ങളിൽ വിളയുന്നു; അവിടെ ആദിവാസി കർഷകരിൽ ഭൂരിഭാഗവും അത് കൃഷി ചെയ്യുന്നു. സമതല മഞ്ഞൾ ഗുണ്ടൂർ പോലുള്ള ജില്ലകളിലെ കൃഷിഭൂമിയിൽ വിളയുന്നു. രണ്ടും പുഴുങ്ങി, ഉണക്കി, പൊടിക്കുന്നു; FSSAI രണ്ടിനും ഒരേ നിലവാരമാനദണ്ഡമാണ് വച്ചിരിക്കുന്നത്. മഞ്ഞളിലെ മഞ്ഞ നിറവസ്തുവായ കുർക്കുമിൻ ഇനം, മണ്ണ്, കാലാവസ്ഥ, സംസ്കരണം എന്നിവയനുസരിച്ച് മാറുന്നു; അതിനാൽ മലയോരം എന്നോ സമതലം എന്നോ ഉള്ള വാക്ക് ഒരു മഞ്ഞളിൽ അത് എത്രയുണ്ടെന്ന് പറയുന്നില്ല. രണ്ടും ഒരേ രീതിയിൽ പാചകത്തിന് ഉപയോഗിക്കൂ.",
+   "back": "Hilly-region turmeric (Konda pasupu) grows in hill regions like the Eastern Ghats around Araku; there the majority of tribal farmers cultivate it. Plains turmeric grows on farmland in districts like Guntur. Both are boiled, dried and powdered; FSSAI has set the same standard for both. Curcumin, the yellow colouring matter in turmeric, changes with variety, soil, climate and processing; so the word hilly-region or plains does not say how much of it a turmeric has. Use both the same way for cooking."
+  },
+  "seg.1930852dafc4": {
+   "src": "Hill turmeric⟦#1⟧",
+   "t": "മലയോര മഞ്ഞൾ⟦#1⟧",
+   "back": "Hilly-region turmeric⟦#1⟧"
+  },
+  "seg.85c353a8dfbf": {
+   "src": "Plains turmeric⟦#1⟧",
+   "t": "സമതല മഞ്ഞൾ⟦#1⟧",
+   "back": "Plains turmeric⟦#1⟧"
+  },
+  "seg.e4c8ef75f71b": {
+   "src": "Where it grows",
+   "t": "എവിടെ വിളയുന്നു",
+   "back": "Where it grows"
+  },
+  "seg.42213bedfb12": {
+   "src": "Hill country, such as the Paderu agency hills of the Eastern Ghats: Araku Valley, Chintapalle and Paderu",
+   "t": "മലമ്പ്രദേശം, ഉദാഹരണത്തിന് പൂർവഘട്ടത്തിലെ പാഡേരു ഏജൻസി മലകൾ: അരക്കു താഴ്വര, ചിന്തപ്പള്ളെ, പാഡേരു",
+   "back": "Hill region, for example the Paderu Agency hills of the Eastern Ghats: Araku Valley, Chintapalle, Paderu"
+  },
+  "seg.34cc236d9133": {
+   "src": "Farmland in districts such as Guntur",
+   "t": "ഗുണ്ടൂർ പോലുള്ള ജില്ലകളിലെ കൃഷിഭൂമി",
+   "back": "Farmland of districts like Guntur"
+  },
+  "seg.0bf2cf67b524": {
+   "src": "Who grows it",
+   "t": "ആരാണ് കൃഷി ചെയ്യുന്നത്",
+   "back": "Who cultivates it"
+  },
+  "seg.ef7b65af6af7": {
+   "src": "Most tribal farmers in the Paderu agency",
+   "t": "പാഡേരു ഏജൻസിയിലെ ആദിവാസി കർഷകരിൽ ഭൂരിഭാഗവും",
+   "back": "The majority of tribal farmers in the Paderu Agency"
+  },
+  "seg.6fcc769ff4cc": {
+   "src": "Farms in Guntur district, where turmeric is one of the commercial crops, with cotton, chillies and tobacco",
+   "t": "ഗുണ്ടൂർ ജില്ലയിലെ കൃഷിയിടങ്ങൾ; അവിടെ പരുത്തി, മുളക്, പുകയില എന്നിവയ്ക്കൊപ്പം മഞ്ഞളും ഒരു വാണിജ്യവിളയാണ്",
+   "back": "Guntur district farmlands; there turmeric too is a commercial crop along with cotton, chilli and tobacco"
+  },
+  "seg.2c6469748e2d": {
+   "src": "In the ground",
+   "t": "മണ്ണിൽ കിടക്കുന്ന കാലം",
+   "back": "Time lying in the soil"
+  },
+  "seg.4fad87cf8112": {
+   "src": "The old local variety has often been left for 2 to 3 seasons, up to 18 to 24 months; newer varieties such as Roma are dug after one season",
+   "t": "പഴയ നാടൻ ഇനം പലപ്പോഴും 2 മുതൽ 3 സീസൺ വരെ, അതായത് പരമാവധി 18 മുതൽ 24 മാസം വരെ, മണ്ണിൽ തന്നെ വിട്ടിരുന്നു; റോമ പോലുള്ള പുതിയ ഇനങ്ങൾ ഒരു സീസണിനുശേഷം പറിച്ചെടുക്കുന്നു",
+   "back": "The old native [or: local] variety was often left in the soil itself for 2 to 3 seasons, that is, up to a maximum of 18 to 24 months; new varieties like Roma are pulled out [i.e. harvested] after one season"
+  },
+  "seg.186488dd4390": {
+   "src": "ICAR-IISR's general guide: a well-managed crop is ready in 7 to 9 months, usually dug between January and March",
+   "t": "ICAR-IISR-ന്റെ പൊതുവായ ഗൈഡ്: നന്നായി പരിപാലിച്ച വിള 7 മുതൽ 9 മാസത്തിനുള്ളിൽ തയ്യാറാകും; സാധാരണയായി ജനുവരിക്കും മാർച്ചിനും ഇടയിൽ പറിച്ചെടുക്കുന്നു",
+   "back": "ICAR-IISR's general guide: a well-tended crop will be ready within 7 to 9 months; usually harvested between January and March"
+  },
+  "seg.b60ef1949c00": {
+   "src": "After digging",
+   "t": "പറിച്ചെടുത്ത ശേഷം",
+   "back": "After harvesting [lit: plucking out]"
+  },
+  "seg.a5d9b319040e": {
+   "src": "Boiled and dried by hand, which takes a lot of labour and firewood",
+   "t": "കൈകൊണ്ട് പുഴുങ്ങി ഉണക്കുന്നു; ഇതിന് ധാരാളം അധ്വാനവും വിറകും വേണം",
+   "back": "Boiled and dried by hand; this needs a lot of labour and firewood"
+  },
+  "seg.9094d5bd4e83": {
+   "src": "The usual steps: boiled, sun-dried, then polished by hand or by machine",
+   "t": "സാധാരണ ഘട്ടങ്ങൾ: പുഴുങ്ങൽ, വെയിലത്ത് ഉണക്കൽ, പിന്നെ കൈകൊണ്ടോ യന്ത്രം കൊണ്ടോ പോളിഷ് ചെയ്യൽ",
+   "back": "Usual steps: boiling, sun-drying, then polishing by hand or machine"
+  },
+  "seg.d3963fd16edc": {
+   "src": "The same one for both: at least 2% curcuminoids on a dry basis, and added colour is not allowed",
+   "t": "രണ്ടിനും ഒന്നുതന്നെ: ഉണക്ക അടിസ്ഥാനത്തിൽ കുറഞ്ഞത് 2% കുർക്കുമിനോയിഡുകൾ; നിറം ചേർക്കാൻ അനുവാദമില്ല",
+   "back": "Same for both: at least 2% curcuminoids on a dry basis; adding colour is not permitted"
+  },
+  "seg.802e452a9783": {
+   "src": "Our pack says",
+   "t": "ഞങ്ങളുടെ പാക്കറ്റിൽ പറയുന്നത്",
+   "back": "What our packet says"
+  },
+  "seg.2e323e56fef7": {
+   "src": "Araku and Maredumilli hills. Whole hill turmeric fingers, packed as fine powder",
+   "t": "അരക്കു, മാരേഡുമില്ലി മലകൾ. മുഴുവൻ മലയോര മഞ്ഞൾ വിരലുകൾ, നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്",
+   "back": "Araku and Maredumilli hills. Whole hilly-region turmeric fingers, packed as fine powder"
+  },
+  "seg.ce4850eb3b73": {
+   "src": "Grown in Palnadu and Guntur. Sun-dried, stone-ground",
+   "t": "പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞത്. വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ചത്",
+   "back": "Grown in Palnadu and Guntur. Sun-dried, ground on stone"
+  },
+  "seg.8c0d21f32664": {
+   "src": "The rows above describe each region in general, from the sources at the end of this page. Only the last row is about our packs.",
+   "t": "മുകളിലെ വരികൾ ഓരോ പ്രദേശത്തെയും പൊതുവായി വിവരിക്കുന്നു; ഈ പേജിന്റെ അവസാനമുള്ള സ്രോതസ്സുകളിൽ നിന്ന് എടുത്തവയാണ് അവ. അവസാനത്തെ വരി മാത്രമാണ് ഞങ്ങളുടെ പാക്കറ്റുകളെക്കുറിച്ചുള്ളത്.",
+   "back": "The rows above describe each region in general; they are taken from the sources at the end of this page. Only the last row is about our packets."
+  },
+  "seg.b6ab1dcdcf8d": {
+   "src": "Where each grows",
+   "t": "ഓരോന്നും എവിടെ വിളയുന്നു",
+   "back": "Where each one grows"
+  },
+  "seg.a9e5b44e1be6": {
+   "src": "⟦1⟧Hill turmeric.⟦/1⟧ ICAR-IISR's report on the Paderu agency, the tribal hill country of the Eastern Ghats that takes in Araku Valley, Chintapalle and Paderu, says turmeric is grown there by most tribal farmers.",
+   "t": "⟦1⟧മലയോര മഞ്ഞൾ.⟦/1⟧ അരക്കു താഴ്വര, ചിന്തപ്പള്ളെ, പാഡേരു എന്നിവ ഉൾപ്പെടുന്ന, പൂർവഘട്ടത്തിലെ ആദിവാസി മലമ്പ്രദേശമായ പാഡേരു ഏജൻസിയെക്കുറിച്ചുള്ള ICAR-IISR റിപ്പോർട്ട്, അവിടെ ആദിവാസി കർഷകരിൽ ഭൂരിഭാഗവും മഞ്ഞൾ കൃഷി ചെയ്യുന്നുവെന്ന് പറയുന്നു.",
+   "back": "⟦1⟧Hilly-region turmeric.⟦/1⟧ An ICAR-IISR report on the Paderu Agency, the tribal hill region of the Eastern Ghats that includes Araku Valley, Chintapalle and Paderu, says that there the majority of tribal farmers cultivate turmeric."
+  },
+  "seg.736e66a0b5de": {
+   "src": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops, with cotton, chillies and tobacco. Duggirala, in Guntur, has a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022, Guntur district was divided into three districts: Guntur, Palnadu and Bapatla.",
+   "t": "⟦1⟧സമതല മഞ്ഞൾ.⟦/1⟧ ഗുണ്ടൂർ ജില്ല അതിന്റെ വാണിജ്യവിളകളിൽ പരുത്തി, മുളക്, പുകയില എന്നിവയ്ക്കൊപ്പം മഞ്ഞളും പട്ടികപ്പെടുത്തുന്നു. ഗുണ്ടൂരിലെ ദുഗ്ഗിരാലയിൽ, സംസ്കരിച്ച മഞ്ഞളും മഞ്ഞൾപ്പൊടിയും ഉണ്ടാക്കുന്ന ഒരു മഞ്ഞൾ സംസ്കരണ ക്ലസ്റ്റർ ഉണ്ട്. 2022-ൽ ഗുണ്ടൂർ ജില്ല ഗുണ്ടൂർ, പൽനാട്, ബാപട്ല എന്നിങ്ങനെ മൂന്ന് ജില്ലകളായി വിഭജിച്ചു.",
+   "back": "⟦1⟧Plains turmeric.⟦/1⟧ Guntur district lists turmeric among its commercial crops along with cotton, chilli and tobacco. At Duggirala in Guntur there is a turmeric processing cluster that makes processed turmeric and turmeric powder. In 2022 Guntur district was divided into three districts: Guntur, Palnadu and Bapatla."
+  },
+  "seg.0f26c0785ed1": {
+   "src": "Turmeric can be grown either way: ICAR-IISR says it can be grown rain-fed or irrigated, from sea level up to 1,500 m.",
+   "t": "മഞ്ഞൾ രണ്ട് രീതിയിലും കൃഷി ചെയ്യാം: മഴയെ ആശ്രയിച്ചോ ജലസേചനത്തോടെയോ, സമുദ്രനിരപ്പ് മുതൽ 1,500 m ഉയരം വരെ കൃഷി ചെയ്യാമെന്ന് ICAR-IISR പറയുന്നു.",
+   "back": "Turmeric can be cultivated both ways: depending on rain or with irrigation; ICAR-IISR says it can be cultivated from sea level up to 1,500 m altitude."
+  },
+  "seg.b687346df428": {
+   "src": "Our ⟦1⟧hill turmeric⟦/1⟧ comes from the Araku and Maredumilli hills, and our ⟦2⟧turmeric⟦/2⟧ is grown in Palnadu and Guntur. Both are packed in Narasaraopet.",
+   "t": "ഞങ്ങളുടെ ⟦1⟧മലയോര മഞ്ഞൾ⟦/1⟧ അരക്കു, മാരേഡുമില്ലി മലകളിൽ നിന്നാണ് വരുന്നത്; ഞങ്ങളുടെ ⟦2⟧മഞ്ഞൾ⟦/2⟧ പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളയുന്നു. രണ്ടും നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്യുന്നു.",
+   "back": "Our ⟦1⟧hilly-region turmeric⟦/1⟧ comes from the Araku and Maredumilli hills; our ⟦2⟧turmeric⟦/2⟧ grows in Palnadu and Guntur. Both are packed in Narasaraopet."
+  },
+  "seg.9a5af9e957e1": {
+   "src": "How each is grown and dried",
+   "t": "ഓരോന്നും എങ്ങനെ കൃഷി ചെയ്ത് ഉണക്കുന്നു",
+   "back": "How each one is cultivated and dried"
+  },
+  "seg.e641ce21ee35": {
+   "src": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says tribal farmers there have grown a local variety called Chayapasupu, or Chintapalle Local, for ages. It has been common practice to leave it in the ground for two or three seasons, up to 18 to 24 months, before digging. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintapalle tested varieties for the hill zone and brought in Roma and IISR Pragati, which are dug after one season. The report says tribal farmers boil and dry their turmeric by hand, which takes a lot of labour and firewood; the project gave four farmer producer organisations turmeric boilers and polishers.",
+   "t": "⟦1⟧മലകളിൽ.⟦/1⟧ അവിടത്തെ ആദിവാസി കർഷകർ ഛായാപസുപു അഥവാ ചിന്തപ്പള്ളെ ലോക്കൽ എന്ന നാടൻ ഇനം വളരെക്കാലമായി കൃഷി ചെയ്തുവരുന്നുവെന്ന് ICAR-IISR-ന്റെ പാഡേരു റിപ്പോർട്ട് പറയുന്നു. പറിച്ചെടുക്കുന്നതിന് മുമ്പ് അത് രണ്ടോ മൂന്നോ സീസൺ, അതായത് പരമാവധി 18 മുതൽ 24 മാസം വരെ, മണ്ണിൽ തന്നെ വിടുന്നത് പതിവായിരുന്നു. 2011-12 മുതൽ ICAR-IISR-ഉം ചിന്തപ്പള്ളെയിലെ ഹോർട്ടികൾച്ചറൽ റിസർച്ച് സ്റ്റേഷനും മലമേഖലയ്ക്കായി ഇനങ്ങൾ പരീക്ഷിച്ച്, ഒരു സീസണിനുശേഷം പറിച്ചെടുക്കുന്ന റോമ, IISR പ്രഗതി എന്നീ ഇനങ്ങൾ കൊണ്ടുവന്നു. ആദിവാസി കർഷകർ അവരുടെ മഞ്ഞൾ കൈകൊണ്ട് പുഴുങ്ങി ഉണക്കുന്നുവെന്നും, ഇതിന് ധാരാളം അധ്വാനവും വിറകും വേണമെന്നും റിപ്പോർട്ട് പറയുന്നു; ഈ പദ്ധതി നാല് കർഷക ഉൽപ്പാദക സംഘടനകൾക്ക് മഞ്ഞൾ പുഴുങ്ങാനുള്ള ബോയിലറുകളും പോളിഷറുകളും നൽകി.",
+   "back": "⟦1⟧In the hills.⟦/1⟧ ICAR-IISR's Paderu report says that the Adivasi [tribal] farmers there have been cultivating a native variety called Chhayapasupu or Chintappalle Local for a very long time. It was customary to leave it in the soil itself for two or three seasons, that is, up to a maximum of 18 to 24 months, before pulling it out [i.e. harvesting]. From 2011-12, ICAR-IISR and the Horticultural Research Station at Chintappalle tested varieties for the hill region and brought in the varieties Roma and IISR Pragati, which are pulled out after one season. The report says the tribal farmers boil and dry their turmeric by hand, and that this needs a lot of labour and firewood; this project gave boilers for boiling turmeric and polishers to four farmer producer organisations."
+  },
+  "seg.f93b2805162b": {
+   "src": "⟦1⟧The usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after it is dug:",
+   "t": "⟦1⟧സാധാരണ ഘട്ടങ്ങൾ.⟦/1⟧ പറിച്ചെടുത്ത ശേഷം വിള എങ്ങനെ കൈകാര്യം ചെയ്യുന്നുവെന്ന് ICAR-IISR-ന്റെ മഞ്ഞൾ ഗൈഡ് ഇങ്ങനെ വിവരിക്കുന്നു:",
+   "back": "⟦1⟧Usual steps.⟦/1⟧ ICAR-IISR's turmeric guide describes how the crop is handled after harvesting as follows:"
+  },
+  "seg.675a9ec4355c": {
+   "src": "Dig it when the leaves dry and turn light brown to yellowish. A well-managed crop is ready seven to nine months after planting, usually between January and March.",
+   "t": "ഇലകൾ ഉണങ്ങി ഇളം തവിട്ട് മുതൽ മഞ്ഞ കലർന്ന നിറം വരെ ആകുമ്പോൾ പറിച്ചെടുക്കൂ. നന്നായി പരിപാലിച്ച വിള നട്ട് ഏഴ് മുതൽ ഒമ്പത് മാസത്തിനുള്ളിൽ, സാധാരണയായി ജനുവരിക്കും മാർച്ചിനും ഇടയിൽ, തയ്യാറാകും.",
+   "back": "Harvest [lit: pluck out] when the leaves dry and turn light brown to yellowish. A well-tended crop will be ready within seven to nine months of planting, usually between January and March."
+  },
+  "seg.763940881dcd": {
+   "src": "Separate the fingers from the bulbs and boil them within 3 or 4 days of digging, in water until soft: 45 to 60 minutes for fingers and 90 minutes for bulbs. Boiling takes away the raw smell, cuts the drying time and gives an even colour.",
+   "t": "വിരലുകൾ നടുവിലെ മുഴകളിൽ (ബൾബുകൾ) നിന്ന് വേർപെടുത്തി, പറിച്ചെടുത്ത് 3 അല്ലെങ്കിൽ 4 ദിവസത്തിനുള്ളിൽ, മൃദുവാകുന്നതുവരെ വെള്ളത്തിൽ പുഴുങ്ങൂ: വിരലുകൾക്ക് 45 മുതൽ 60 മിനിറ്റ്, മുഴകൾക്ക് 90 മിനിറ്റ്. പുഴുങ്ങുന്നത് പച്ചമണം മാറ്റുകയും, ഉണങ്ങാനുള്ള സമയം കുറയ്ക്കുകയും, ഒരേപോലുള്ള നിറം നൽകുകയും ചെയ്യുന്നു.",
+   "back": "Separate the fingers from the central knobs (bulbs), and within 3 or 4 days of harvesting [lit. pulling out], boil them in water until soft: 45 to 60 minutes for fingers, 90 minutes for bulbs. Boiling removes the raw smell, cuts the drying time, and gives an even colour."
+  },
+  "seg.a52a5947071a": {
+   "src": "Dry them in the sun in layers 5 to 7 cm deep, heaped and covered at night. It may take 10 to 12 days for the moisture to fall below 12%.",
+   "t": "5 മുതൽ 7 cm കനമുള്ള അടുക്കുകളായി വെയിലത്ത് ഉണക്കൂ; രാത്രിയിൽ കൂട്ടിവച്ച് മൂടിവയ്ക്കൂ. ഈർപ്പം 12%-ൽ താഴെയാകാൻ 10 മുതൽ 12 ദിവസം വരെ എടുത്തേക്കാം.",
+   "back": "Dry in the sun in layers 5 to 7 cm thick; at night heap them together and cover. It may take 10 to 12 days for moisture to go below 12%."
+  },
+  "seg.69d24ab1420a": {
+   "src": "Polish off the rough, dull, scaly skin by rubbing, by hand or in a turning drum.",
+   "t": "പരുക്കനും മങ്ങിയതും ചെതുമ്പൽ പോലുള്ളതുമായ തൊലി കൈകൊണ്ടോ കറങ്ങുന്ന ഡ്രമ്മിലോ ഉരച്ച് പോളിഷ് ചെയ്ത് നീക്കൂ.",
+   "back": "Remove the rough, dull, scale-like skin by rubbing and polishing by hand or in a rotating drum."
+  },
+  "seg.1b7d7df8b7fa": {
+   "src": "Grind the dried turmeric into powder. FSSAI allows turmeric powder up to 10% moisture.",
+   "t": "ഉണങ്ങിയ മഞ്ഞൾ പൊടിക്കൂ. മഞ്ഞൾപ്പൊടിയിൽ 10% വരെ ഈർപ്പം FSSAI അനുവദിക്കുന്നു.",
+   "back": "Powder the dried turmeric. FSSAI allows up to 10% moisture in turmeric powder."
+  },
+  "seg.1668650874a7": {
+   "src": "Fingers are the side branches of the turmeric rhizome, usually 2.5 to 7.5 cm long; bulbs are the shorter, thicker central rhizome. Our hill turmeric pack says whole hill turmeric fingers, packed as fine powder. Our turmeric pack says sun-dried and stone-ground.",
+   "t": "മഞ്ഞളിന്റെ മണ്ണിനടിയിലെ തണ്ടാണ് (കിഴങ്ങ്) നമ്മൾ ഉപയോഗിക്കുന്നത്. വിരലുകൾ അതിന്റെ വശങ്ങളിലേക്ക് പിരിയുന്ന ശാഖകളാണ്, സാധാരണയായി 2.5 മുതൽ 7.5 cm വരെ നീളം; മുഴകൾ (ബൾബുകൾ) നടുവിലുള്ള, നീളം കുറഞ്ഞ, തടിച്ച പ്രധാന ഭാഗമാണ്. ഞങ്ങളുടെ മലയോര മഞ്ഞൾ പാക്കറ്റിൽ, മുഴുവൻ മലയോര മഞ്ഞൾ വിരലുകൾ, നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത് എന്ന് പറയുന്നു. ഞങ്ങളുടെ മഞ്ഞൾ പാക്കറ്റിൽ, വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ചത് എന്ന് പറയുന്നു.",
+   "back": "What we use is the underground stem (tuber [or: rhizome]) of turmeric. The fingers are the branches that split off to its sides, usually 2.5 to 7.5 cm long; the knobs (bulbs) are the short, thick main part in the middle. Our hill turmeric packet says: whole hill turmeric fingers, packed as fine powder. Our turmeric packet says: sun-dried, stone-ground."
+  },
+  "seg.4a08c0de8660": {
+   "src": "Curcumin, and how they look",
+   "t": "കുർക്കുമിനും, അവ കാഴ്ചയിൽ എങ്ങനെയെന്നും",
+   "back": "Curcumin, and how they look"
+  },
+  "seg.7ef4d7667b4e": {
+   "src": "Curcumin is the yellow pigment in turmeric, ICAR-IISR says. FSSAI measures a turmeric powder's colouring power as its curcuminoid content, and asks for at least 2% on a dry basis. That standard is the same for hill and plains turmeric.",
+   "t": "കുർക്കുമിൻ മഞ്ഞളിലെ മഞ്ഞ നിറവസ്തുവാണെന്ന് ICAR-IISR പറയുന്നു. FSSAI ഒരു മഞ്ഞൾപ്പൊടിയുടെ നിറം നൽകാനുള്ള ശേഷി അതിലെ കുർക്കുമിനോയിഡ് അളവായി അളക്കുന്നു; ഉണക്ക അടിസ്ഥാനത്തിൽ കുറഞ്ഞത് 2% വേണമെന്ന് ആവശ്യപ്പെടുന്നു. ആ നിലവാരമാനദണ്ഡം മലയോര മഞ്ഞളിനും സമതല മഞ്ഞളിനും ഒന്നുതന്നെ.",
+   "back": "ICAR-IISR says curcumin is the yellow colouring matter in turmeric. FSSAI measures a turmeric powder's ability to give colour as its curcuminoid quantity; it requires at least 2% on a dry basis. That standard is the same for hilly-region turmeric and plains turmeric."
+  },
+  "seg.fec370db2315": {
+   "src": "Curcumin changes from one turmeric to the next:",
+   "t": "കുർക്കുമിൻ ഒരു മഞ്ഞളിൽ നിന്ന് അടുത്തതിലേക്ക് മാറുന്നു:",
+   "back": "Curcumin changes from one turmeric to the next:"
+  },
+  "seg.bf314e75200d": {
+   "src": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha).",
+   "t": "⟦1⟧ഇനം.⟦/1⟧ ICAR-IISR-ന്റെ 2022-ലെ മഞ്ഞൾ ഗൈഡ് അതിന്റെ സ്വന്തം ഇനങ്ങളെ 4.3% കുർക്കുമിൻ (സുവർണ) മുതൽ 6.5% (IISR പ്രഭ) വരെ പട്ടികപ്പെടുത്തുന്നു.",
+   "back": "⟦1⟧Variety.⟦/1⟧ ICAR-IISR's 2022 turmeric guide lists its own varieties from 4.3% curcumin (Suvarna) to 6.5% (IISR Prabha)."
+  },
+  "seg.cee7632d2998": {
+   "src": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR notes that turmeric from different regions differs in quality because of soil, climate and farming practice. Its Paderu report calls curcumin content highly sensitive to changes in the growing environment.",
+   "t": "⟦1⟧മണ്ണും കാലാവസ്ഥയും.⟦/1⟧ മണ്ണ്, കാലാവസ്ഥ, കൃഷിരീതി എന്നിവ കാരണം വിവിധ പ്രദേശങ്ങളിലെ മഞ്ഞൾ ഗുണനിലവാരത്തിൽ വ്യത്യാസപ്പെടുന്നുവെന്ന് ICAR-IISR രേഖപ്പെടുത്തുന്നു. വളരുന്ന ചുറ്റുപാട് മാറിയാൽ കുർക്കുമിൻ അളവ് വളരെ എളുപ്പം മാറുമെന്ന് അതിന്റെ പാഡേരു റിപ്പോർട്ട് പറയുന്നു.",
+   "back": "⟦1⟧Soil and climate.⟦/1⟧ ICAR-IISR records that turmeric from different regions differs in quality because of soil, climate and farming method. Its Paderu report says the curcumin quantity changes very easily if the growing surroundings change."
+  },
+  "seg.70b529fe0f69": {
+   "src": "⟦1⟧Processing.⟦/1⟧ Handling and processing after harvest add to the differences, and boiling too long or too short affects the quality of the dried turmeric.",
+   "t": "⟦1⟧സംസ്കരണം.⟦/1⟧ വിളവെടുപ്പിനുശേഷമുള്ള കൈകാര്യവും സംസ്കരണവും വ്യത്യാസങ്ങൾ കൂട്ടുന്നു; അധികനേരമോ കുറഞ്ഞനേരമോ പുഴുങ്ങുന്നത് ഉണങ്ങിയ മഞ്ഞളിന്റെ ഗുണനിലവാരത്തെ ബാധിക്കുന്നു.",
+   "back": "⟦1⟧Processing.⟦/1⟧ Post-harvest handling and processing method add to the differences; boiling too long or too short affects the quality of the dried turmeric."
+  },
+  "seg.493187b22749": {
+   "src": "So the word hill or plains on a pack does not tell you a turmeric's curcumin content. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "അതിനാൽ പാക്കറ്റിലെ മലയോരം എന്നോ സമതലം എന്നോ ഉള്ള വാക്ക് ഒരു മഞ്ഞളിലെ കുർക്കുമിൻ അളവ് പറയുന്നില്ല. ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിന് ഒരു ബാച്ചിലെ കുർക്കുമിനോയിഡ് അളവ് അളക്കാനാകും.",
+   "back": "So the word hilly-region or plains on the packet does not tell the curcumin quantity in a turmeric. A food testing lab can measure the curcuminoid quantity in a batch."
+  },
+  "seg.53dc21b97510": {
+   "src": "⟦1⟧How they look.⟦/1⟧ Colour varies too. ICAR-IISR describes its varieties' rhizomes as ranging from reddish yellow to deep orange. Processing counts as well: boiling evens out the colour, drying in too thin a layer can spoil it, and polishing by hand leaves a rough, dull surface.",
+   "t": "⟦1⟧കാഴ്ചയിൽ എങ്ങനെ.⟦/1⟧ നിറവും വ്യത്യാസപ്പെടുന്നു. ICAR-IISR അതിന്റെ ഇനങ്ങളുടെ കിഴങ്ങുകൾ ചുവപ്പ് കലർന്ന മഞ്ഞ മുതൽ കടും ഓറഞ്ച് വരെയാണെന്ന് വിവരിക്കുന്നു. സംസ്കരണത്തിനും പങ്കുണ്ട്: പുഴുങ്ങുന്നത് നിറം ഒരേപോലെയാക്കുന്നു, വളരെ നേർത്ത അടുക്കായി ഉണക്കുന്നത് നിറം കേടാക്കിയേക്കാം, കൈകൊണ്ട് പോളിഷ് ചെയ്യുന്നത് പരുക്കനും മങ്ങിയതുമായ പുറംഭാഗം ബാക്കിവയ്ക്കുന്നു.",
+   "back": "⟦1⟧How they look.⟦/1⟧ Colour also varies. ICAR-IISR describes the tubers [rhizomes] of its varieties as ranging from reddish yellow to deep orange. Processing also has a part: boiling makes the colour uniform, drying in a very thin layer may spoil the colour, and polishing by hand leaves a rough, dull outer surface."
+  },
+  "seg.d8ece11f902a": {
+   "src": "Cooking with each, and keeping it",
+   "t": "ഓരോന്നും കൊണ്ടുള്ള പാചകവും സൂക്ഷിപ്പും",
+   "back": "Cooking with each, and storing"
+  },
+  "seg.276f633c7a1f": {
+   "src": "Use either one wherever you use turmeric: dal, sambar, rasam, curries and pulihora.",
+   "t": "നിങ്ങൾ മഞ്ഞൾ ഉപയോഗിക്കുന്നിടത്തെല്ലാം ഇവയിൽ ഏതും ഉപയോഗിക്കാം: പരിപ്പ്, സാമ്പാർ, രസം, കറികൾ, പുളിഹോര.",
+   "back": "You can use any of these everywhere you use turmeric: dal [parippu], sambar, rasam, curries, pulihora."
+  },
+  "seg.ca5e9b6340f2": {
+   "src": "Add it on a low flame so it does not burn.",
+   "t": "കരിഞ്ഞുപോകാതിരിക്കാൻ ചെറുതീയിൽ ചേർക്കൂ.",
+   "back": "Add on a low flame so it does not burn."
+  },
+  "seg.7e910d4ad2a1": {
+   "src": "To swap one for the other, start with the amount you usually use and adjust to taste.",
+   "t": "ഒന്നിന് പകരം മറ്റൊന്ന് ഉപയോഗിക്കാൻ, സാധാരണ ചേർക്കുന്ന അളവിൽ തുടങ്ങി, രുചിക്കനുസരിച്ച് മാറ്റൂ.",
+   "back": "To use one in place of the other, start at the amount you usually add and change according to taste."
+  },
+  "seg.731001f6177d": {
+   "src": "Try either one in ⟦1⟧pasupu annam⟦/1⟧, ⟦2⟧nimmakaya pulihora⟦/2⟧, ⟦3⟧tomato pappu⟦/3⟧ or ⟦4⟧pasupu paalu⟦/4⟧.",
+   "t": "⟦1⟧പസുപു അന്നം⟦/1⟧, ⟦2⟧നിമ്മകായ പുളിഹോര⟦/2⟧, ⟦3⟧ടൊമാറ്റോ പപ്പു⟦/3⟧ അല്ലെങ്കിൽ ⟦4⟧പസുപു പാലു⟦/4⟧ എന്നിവയിൽ ഇവയിൽ ഏതെങ്കിലും ഉപയോഗിച്ചുനോക്കൂ.",
+   "back": "Try either of these in ⟦1⟧Pasupu annam⟦/1⟧, ⟦2⟧Nimmakaya pulihora⟦/2⟧, ⟦3⟧Tomato pappu⟦/3⟧ or ⟦4⟧Pasupu palu⟦/4⟧."
+  },
+  "seg.259a5f63423a": {
+   "src": "Keeping it well.",
+   "t": "നന്നായി സൂക്ഷിക്കാൻ.",
+   "back": "To store well."
+  },
+  "seg.073f63fe23e0": {
+   "src": "Use a dry spoon every time.",
+   "t": "ഓരോ തവണയും ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ.",
+   "back": "Use a dry spoon each time."
+  },
+  "seg.b334ade49a15": {
+   "src": "Store it in a cool, dry place, away from light.",
+   "t": "വെളിച്ചം തട്ടാതെ, തണുത്ത, ഉണങ്ങിയ സ്ഥലത്ത് സൂക്ഷിക്കൂ.",
+   "back": "Store in a cool, dry place without light touching it."
+  },
+  "seg.ea935ed7c1aa": {
+   "src": "How to compare two turmerics fairly",
+   "t": "രണ്ട് മഞ്ഞളുകളെ എങ്ങനെ ന്യായമായി താരതമ്യം ചെയ്യാം",
+   "back": "How to compare two turmerics fairly"
+  },
+  "seg.dcebc75ff722": {
+   "src": "Compare powder with powder. FSSAI allows whole turmeric up to 12% moisture and powder up to 10%, so the two are held to different limits.",
+   "t": "പൊടിയെ പൊടിയുമായി താരതമ്യം ചെയ്യൂ. മുഴുവൻ മഞ്ഞളിൽ 12% വരെയും പൊടിയിൽ 10% വരെയും ഈർപ്പം FSSAI അനുവദിക്കുന്നു; അതിനാൽ രണ്ടിനും വ്യത്യസ്ത പരിധികളാണ്.",
+   "back": "Compare powder with powder. FSSAI allows up to 12% moisture in whole turmeric and up to 10% in powder; so the two have different limits."
+  },
+  "seg.9d14be920107": {
+   "src": "Read both packs: where it was grown, the batch or lot number, the best-before date and the FSSAI licence or registration number. Note the batch numbers, so you know which lots you compared.",
+   "t": "രണ്ട് പാക്കറ്റുകളും വായിക്കൂ: എവിടെ വിളഞ്ഞത്, ബാച്ച് അല്ലെങ്കിൽ ലോട്ട് നമ്പർ, 'ബെസ്റ്റ് ബിഫോർ' തീയതി, FSSAI ലൈസൻസ് അല്ലെങ്കിൽ രജിസ്ട്രേഷൻ നമ്പർ. ഏതൊക്കെ ലോട്ടുകളാണ് താരതമ്യം ചെയ്തതെന്ന് അറിയാൻ, ബാച്ച് നമ്പറുകൾ കുറിച്ചുവയ്ക്കൂ.",
+   "back": "Read both packets: where it was grown, batch or lot number, 'best before' date, FSSAI licence or registration number. Note the batch numbers so you know which lots you compared."
+  },
+  "seg.fbb64b2b32b0": {
+   "src": "Do the water check on both, side by side, with the same amount in the same kind of glass. The steps are in ⟦1⟧how to check turmeric powder at home⟦/1⟧.",
+   "t": "രണ്ടിലും അടുത്തടുത്തായി, ഒരേ അളവിൽ, ഒരേതരം ഗ്ലാസിൽ വെള്ളം കൊണ്ടുള്ള പരിശോധന ചെയ്യൂ. ഘട്ടങ്ങൾ ⟦1⟧വീട്ടിൽ മഞ്ഞൾപ്പൊടി എങ്ങനെ പരിശോധിക്കാം⟦/1⟧ എന്നതിലുണ്ട്.",
+   "back": "Do the test with water on both side by side, in the same amount, in the same kind of glass. The steps are in ⟦1⟧How to test turmeric powder at home⟦/1⟧."
+  },
+  "seg.bd82039194f2": {
+   "src": "Cook the same dish with each, with the same amount, and compare the colour and taste.",
+   "t": "ഓരോന്നും കൊണ്ട്, ഒരേ അളവിൽ, ഒരേ വിഭവം പാകം ചെയ്ത്, നിറവും രുചിയും താരതമ്യം ചെയ്യൂ.",
+   "back": "With each, in the same amount, cook the same dish and compare colour and taste."
+  },
+  "seg.8949107c3ad8": {
+   "src": "Do not judge curcumin by colour alone. A brighter yellow is not a measurement; a food testing lab can measure curcuminoid content.",
+   "t": "കുർക്കുമിൻ നിറം മാത്രം നോക്കി വിലയിരുത്തരുത്. കൂടുതൽ തെളിഞ്ഞ മഞ്ഞ ഒരു അളവെടുപ്പല്ല; ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിന് കുർക്കുമിനോയിഡ് അളവ് അളക്കാനാകും.",
+   "back": "Do not judge curcumin by looking at colour alone. A clearer [brighter] yellow is not a measurement; a food testing lab can measure curcuminoid quantity."
+  },
+  "seg.45a1aaa1ac2f": {
+   "src": "What is konda pasupu?",
+   "t": "കൊണ്ട പസുപു എന്നാൽ എന്താണ്?",
+   "back": "What is Konda pasupu?"
+  },
+  "seg.1810d213ce3f": {
+   "src": "Konda pasupu is Telugu for hill turmeric: turmeric grown in hill country. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu agency around Araku Valley and Chintapalle, where most tribal farmers grow turmeric.",
+   "t": "കൊണ്ട പസുപു എന്നത് മലയോര മഞ്ഞളിന്റെ തെലുങ്ക് പേരാണ്: മലമ്പ്രദേശത്ത് വിളയുന്ന മഞ്ഞൾ. ആന്ധ്രാപ്രദേശിൽ ഇത് പൂർവഘട്ടത്തിൽ വിളയുന്നു, ഉദാഹരണത്തിന് അരക്കു താഴ്വരയ്ക്കും ചിന്തപ്പള്ളെയ്ക്കും ചുറ്റുമുള്ള പാഡേരു ഏജൻസിയിൽ; അവിടെ ആദിവാസി കർഷകരിൽ ഭൂരിഭാഗവും മഞ്ഞൾ കൃഷി ചെയ്യുന്നു.",
+   "back": "Konda pasupu is the Telugu name for hilly-region turmeric: turmeric grown in hill regions. In Andhra Pradesh it grows in the Eastern Ghats, for example in the Paderu Agency around Araku Valley and Chintapalle; there the majority of tribal farmers cultivate turmeric."
+  },
+  "seg.15730f8cc6b8": {
+   "src": "Is hill turmeric different from regular turmeric?",
+   "t": "മലയോര മഞ്ഞൾ സാധാരണ മഞ്ഞളിൽ നിന്ന് വ്യത്യസ്തമാണോ?",
+   "back": "Is hilly-region turmeric different from ordinary turmeric?"
+  },
+  "seg.47cf644d0819": {
+   "src": "FSSAI holds all turmeric powder to the same standard, wherever it grew. Hill and plains turmeric can differ in where they grow, the varieties grown, and how they are grown and dried. In the Paderu hills, for example, an old local variety has often been left in the ground for up to two years.",
+   "t": "എവിടെ വിളഞ്ഞാലും, എല്ലാ മഞ്ഞൾപ്പൊടിക്കും FSSAI ഒരേ നിലവാരമാനദണ്ഡമാണ് വച്ചിരിക്കുന്നത്. മലയോര മഞ്ഞളും സമതല മഞ്ഞളും വിളയുന്ന സ്ഥലം, കൃഷി ചെയ്യുന്ന ഇനങ്ങൾ, കൃഷി ചെയ്യുന്നതും ഉണക്കുന്നതുമായ രീതി എന്നിവയിൽ വ്യത്യാസപ്പെട്ടേക്കാം. ഉദാഹരണത്തിന്, പാഡേരു മലകളിൽ ഒരു പഴയ നാടൻ ഇനം പലപ്പോഴും രണ്ട് വർഷം വരെ മണ്ണിൽ തന്നെ വിട്ടിരുന്നു.",
+   "back": "Wherever it is grown, FSSAI has set the same standard for all turmeric powder. Hilly-region turmeric and plains turmeric may differ in the place they grow, the varieties cultivated, and the way they are cultivated and dried. For example, in the Paderu hills an old native variety was often left in the soil itself for up to two years."
+  },
+  "seg.925655ca4b05": {
+   "src": "Does hill turmeric have more curcumin?",
+   "t": "മലയോര മഞ്ഞളിൽ കുർക്കുമിൻ കൂടുതലുണ്ടോ?",
+   "back": "Does hilly-region turmeric have more curcumin?"
+  },
+  "seg.0d1b42a32899": {
+   "src": "The word hill alone does not tell you. Curcumin changes with the variety, the soil and climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid content of a batch.",
+   "t": "മലയോരം എന്ന വാക്ക് മാത്രം അത് പറയുന്നില്ല. ഇനം, മണ്ണ്, കാലാവസ്ഥ, മഞ്ഞൾ എങ്ങനെ പുഴുങ്ങി ഉണക്കി എന്നിവയനുസരിച്ച് കുർക്കുമിൻ മാറുന്നു. ഒരു ഭക്ഷ്യ പരിശോധനാ ലാബിന് ഒരു ബാച്ചിലെ കുർക്കുമിനോയിഡ് അളവ് അളക്കാനാകും.",
+   "back": "The word hilly-region alone does not say that. Curcumin changes with variety, soil, climate, and how the turmeric was boiled and dried. A food testing lab can measure the curcuminoid quantity in a batch."
+  },
+  "seg.4bce9a44c11e": {
+   "src": "What are the types of turmeric (haldi) in India?",
+   "t": "ഇന്ത്യയിലെ മഞ്ഞളിന്റെ (ഹൽദി) തരങ്ങൾ ഏതൊക്കെ?",
+   "back": "What are the kinds of turmeric (haldi) in India?"
+  },
+  "seg.4e6e7201dae6": {
+   "src": "ICAR-IISR says India grows many turmeric cultivars, mostly known by the name of the place where they are grown, such as Duggirala, Mydukur, Tekkurpet and Amalapuram. It has also released improved varieties such as IISR Prabha, IISR Prathibha and IISR Pragati.",
+   "t": "ഇന്ത്യയിൽ ധാരാളം മഞ്ഞൾ ഇനങ്ങൾ കൃഷി ചെയ്യുന്നുണ്ടെന്നും, അവ മിക്കതും ദുഗ്ഗിരാല, മൈദുകൂർ, തെക്കൂർപേട്ട്, അമലാപുരം എന്നിങ്ങനെ അവ വിളയുന്ന സ്ഥലത്തിന്റെ പേരിലാണ് അറിയപ്പെടുന്നതെന്നും ICAR-IISR പറയുന്നു. IISR പ്രഭ, IISR പ്രതിഭ, IISR പ്രഗതി പോലുള്ള മെച്ചപ്പെടുത്തിയ ഇനങ്ങളും അത് പുറത്തിറക്കിയിട്ടുണ്ട്.",
+   "back": "ICAR-IISR says many turmeric varieties are cultivated in India, and that most of them are known by the name of the place where they grow, such as Duggirala, Mydukur, Thekkurpet and Amalapuram. It has also released improved varieties like IISR Prabha, IISR Prathibha and IISR Pragati."
+  },
+  "seg.7f1a5999ea66": {
+   "src": "Can I use hill turmeric instead of regular turmeric?",
+   "t": "സാധാരണ മഞ്ഞളിന് പകരം മലയോര മഞ്ഞൾ ഉപയോഗിക്കാമോ?",
+   "back": "Can hilly-region turmeric be used in place of ordinary turmeric?"
+  },
+  "seg.4ed419c2136a": {
+   "src": "Yes. Use it wherever you use turmeric, start with the amount you usually use, and add it on a low flame so it does not burn.",
+   "t": "ഉവ്വ്. നിങ്ങൾ മഞ്ഞൾ ഉപയോഗിക്കുന്നിടത്തെല്ലാം ഇത് ഉപയോഗിക്കൂ; സാധാരണ ചേർക്കുന്ന അളവിൽ തുടങ്ങൂ; കരിഞ്ഞുപോകാതിരിക്കാൻ ചെറുതീയിൽ ചേർക്കൂ.",
+   "back": "Yes. Use it everywhere you use turmeric; start at the amount you usually add; add on a low flame so it does not burn."
+  },
+  "seg.1a441b0df6de": {
+   "src": "Both packs list one ingredient, turmeric (Curcuma longa), and name where it was grown.",
+   "t": "രണ്ട് പാക്കറ്റുകളിലും ഒരൊറ്റ ചേരുവ മാത്രം, മഞ്ഞൾ (Curcuma longa); അത് എവിടെ വിളഞ്ഞു എന്നും പറയുന്നു.",
+   "back": "Both packets have only one single ingredient, turmeric (Curcuma longa); it also says where it was grown."
+  },
+  "seg.1adc349b6e08": {
+   "src": "కొండ పసుపు vs మైదాన పసుపు · Hill vs Plains Turmeric | 1acrefarms",
+   "t": "కొండ పసుపు vs మైదాన పసుపు · മലയോര മഞ്ഞളോ സമതല മഞ്ഞളോ | 1acrefarms",
+   "back": "[Telugu: Konda pasupu vs Maidana pasupu] · Hilly-region turmeric or plains turmeric? | 1acrefarms"
+  },
+  "seg.71bf7490dd33": {
+   "src": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. Konda pasupu (hill turmeric) vs plains turmeric: where each grows, how each is dried, what curcumin is, cooking and storage.",
+   "t": "కొండ పసుపు, మైదాన పసుపు మధ్య తేడా. കൊണ്ട പസുപു (മലയോര മഞ്ഞൾ) vs സമതല മഞ്ഞൾ: ഓരോന്നും എവിടെ വിളയുന്നു, എങ്ങനെ ഉണക്കുന്നു, കുർക്കുമിൻ എന്താണ്, പാചകവും സൂക്ഷിപ്പും.",
+   "back": "[Telugu: Difference between Konda pasupu and Maidana pasupu.] Konda pasupu (hilly-region turmeric) vs plains turmeric: where each grows, how it is dried, what curcumin is, cooking and storing."
+  },
+  "seg.4e013e66158c": {
+   "src": "Hill turmeric (konda pasupu) or turmeric: the difference · 1acrefarms",
+   "t": "മലയോര മഞ്ഞൾ (കൊണ്ട പസുപു) അല്ലെങ്കിൽ മഞ്ഞൾ: എന്താണ് വ്യത്യാസം · 1acrefarms",
+   "back": "Hilly-region turmeric (Konda pasupu) or turmeric: what is the difference · 1acrefarms"
+  },
+  "seg.bb2ec13fea03": {
+   "src": "Where each grows, how it is dried, what curcumin is, and how to compare two. With a Telugu section.",
+   "t": "ഓരോന്നും എവിടെ വിളയുന്നു, എങ്ങനെ ഉണക്കുന്നു, കുർക്കുമിൻ എന്താണ്, രണ്ടെണ്ണം എങ്ങനെ താരതമ്യം ചെയ്യാം. ഒരു തെലുങ്ക് ഭാഗം സഹിതം.",
+   "back": "Where each grows, how it is dried, what curcumin is, how to compare the two. With a Telugu section."
+  },
+  "seg.7811216916d3": {
+   "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
+   "t": "വെള്ളം നിറച്ച ഗ്ലാസ്, തിരുമ്മിനോക്കൽ, അയഡിൻ ടെസ്റ്റ്, എപ്പോൾ ലാബ് വേണം. ഒരു തെലുങ്ക് ഭാഗം സഹിതം.",
+   "back": "Glass filled with water, rubbing check, iodine test, when a lab is needed. With a Telugu section."
   }
  }
 }
