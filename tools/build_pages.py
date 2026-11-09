@@ -81,10 +81,10 @@ PACKS = [
          name="Sannam Chilli Powder", local="Sannam Kaaram", te="సన్నం కారం", hi="सन्नम मिर्च पाउडर", sa="सन्नम-रक्तमरिचचूर्णम्", hi_tr="Lal Mirch",
          note="Whole sun-dried chillies, packed as fine powder", origin="Grown in Palnadu &amp; Guntur",
          pack="sannam-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Sannam red chillies (Capsicum annuum).",
-         g=540, mrp=306, category="Spices > Chilli powder",
+         g=540, mrp=495, category="Spices > Chilli powder",
          title="Sannam Chilli Powder (Sannam Kaaram) 540 g | 1acrefarms",
          desc="Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. "
-              "MRP ₹306 incl. of all taxes.",
+              "MRP ₹495 incl. of all taxes.",
          lede="Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine "
               "powder in Narasaraopet.",
          te_line="పల్నాడు, గుంటూరులో పండిన సన్నం మిరపకాయలు. ఎండబెట్టిన మిరపకాయలను మెత్తని కారంగా ప్యాక్ చేస్తాం.",
@@ -96,9 +96,9 @@ PACKS = [
          name="Teja Chilli Powder", local="Teja Kaaram", te="తేజ కారం", hi="तेजा मिर्च पाउडर", sa="तेजा-रक्तमरिचचूर्णम्", hi_tr="Lal Mirch",
          note="Extra hot · sun-dried · stone-ground", origin="Grown in Palnadu &amp; Guntur",
          pack="teja-540g.jpg", by="mfd", shelf=9, use_by=12, ingredients="Teja red chillies (Capsicum annuum).",
-         g=540, mrp=342, category="Spices > Chilli powder",
+         g=540, mrp=495, category="Spices > Chilli powder",
          title="Teja Chilli Powder (Teja Kaaram) 540 g, extra hot | 1acrefarms",
-         desc="Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹342 incl. of "
+         desc="Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹495 incl. of "
               "all taxes.",
          lede="Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, "
               "packed in Narasaraopet.",

@@ -83,11 +83,11 @@ const PACK_SECTIONS = [
       { code: "SANN", soon: "31 Oct", name: "Sannam Chilli Powder", te: "సన్నం కారం", sa: "सन्नम-रक्तमरिचचूर्णम्", tr: "Sannam Kaaram", note: "Whole sun-dried chillies, packed as fine powder",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/sannam-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Sannam red chillies (Capsicum annuum).",
-        skus: [[180, 135], [270, 180], [540, 306, true]] },
+        skus: [[180, 135], [270, 180], [540, 495, true]] },
       { code: "TEJA", soon: "31 Oct", name: "Teja Chilli Powder", te: "తేజ కారం", sa: "तेजा-रक्तमरिचचूर्णम्", tr: "Teja Kaaram", note: "Extra hot · sun-dried · stone-ground",
         origin: "Grown in Palnadu &amp; Guntur", pack: "assets/packs/teja-540g.jpg", by: "mfd", shelf: 9, useBy: 12,
         ingredients: "Teja red chillies (Capsicum annuum).",
-        skus: [[180, 144], [270, 198], [540, 342, true]] },
+        skus: [[180, 144], [270, 198], [540, 495, true]] },
     ],
   },
   {
