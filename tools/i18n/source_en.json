@@ -76,7 +76,7 @@
   "note": "browser tab title of the language home page; '| 1acrefarms' is added"
  },
  "ui.l_desc": {
-  "en": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+  "en": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
   "note": "search result description of the language home page"
  },
  "ui.l_eyebrow": {
@@ -84,7 +84,7 @@
   "note": "small line above the main heading"
  },
  "ui.l_lede": {
-  "en": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+  "en": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
   "note": "intro paragraph"
  },
  "ui.l_packs": {
@@ -172,7 +172,7 @@
   "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
  },
  "pack.SANN.lede": {
-  "en": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+  "en": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Andhra Pradesh.",
   "note": "intro sentence under the heading"
  },
  "pack.SANN.origin": {
@@ -204,7 +204,7 @@
   "note": "browser tab / Google title; keep '540 g' and end with ' | 1acrefarms'; at most ~60 characters"
  },
  "pack.TEJA.lede": {
-  "en": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+  "en": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Andhra Pradesh.",
   "note": "intro sentence under the heading"
  },
  "pack.TEJA.origin": {
@@ -503,12 +503,24 @@
   "en": "Also good with ⟦1⟧Sannam Chilli Powder⟦/1⟧.",
   "note": "text on /recipes/andhra-kodi-kura/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
+ "seg.4dff3a175ddd": {
+  "en": "Guide · chilli powder",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.13ab70df1ad4": {
+  "en": "How to check chilli powder at home",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
  "seg.6b4f74dc7f36": {
   "en": "Guide · turmeric",
   "note": "text on /recipes/andhra-kodi-kura/"
  },
  "seg.d3855c7cad24": {
   "en": "How to check turmeric powder at home",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.3a7ecf1759a7": {
+  "en": "Hill turmeric or turmeric",
   "note": "text on /recipes/andhra-kodi-kura/"
  },
  "seg.88306943fea7": {
@@ -6235,14 +6247,6 @@
   "en": "Cane jaggery or palm jaggery: which to use · 1acrefarms",
   "note": "share preview text on /learn/cane-vs-palm-jaggery/"
  },
- "seg.13ab70df1ad4": {
-  "en": "How to check chilli powder at home",
-  "note": "text on /learn/chilli-powder-adulteration-test/"
- },
- "seg.4dff3a175ddd": {
-  "en": "Guide · chilli powder",
-  "note": "text on /learn/chilli-powder-adulteration-test/"
- },
  "seg.27f1af0437bd": {
   "en": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
   "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
@@ -6263,8 +6267,8 @@
   "en": "Teja Chilli Powder⟦#1⟧⟦#2⟧",
   "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
- "seg.b356a193952e": {
-  "en": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+ "seg.26408d28ebd1": {
+  "en": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Andhra Pradesh.",
   "note": "text on /learn/chilli-powder-adulteration-test/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
  "seg.a574ced14407": {
@@ -6555,8 +6559,8 @@
   "en": "Our chilli powder",
   "note": "text on /learn/chilli-powder-adulteration-test/"
  },
- "seg.a7d8a3890045": {
-  "en": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+ "seg.9e3169dd1d71": {
+  "en": "Both are grown in Palnadu and Guntur and packed in Andhra Pradesh.",
   "note": "text on /learn/chilli-powder-adulteration-test/"
  },
  "seg.3ed867d1961c": {
@@ -6570,10 +6574,6 @@
  "seg.cf3eac803a81": {
   "en": "How to check chilli powder at home · 1acrefarms",
   "note": "share preview text on /learn/chilli-powder-adulteration-test/"
- },
- "seg.3a7ecf1759a7": {
-  "en": "Hill turmeric or turmeric",
-  "note": "text on /learn/hill-turmeric-vs-turmeric/"
  },
  "seg.0e55b39feef1": {
   "en": "Hill turmeric (konda pasupu) or turmeric: the difference",

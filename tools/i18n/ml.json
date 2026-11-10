@@ -137,9 +137,9 @@
    "back": "Turmeric powder, chilli powder, jaggery, cashew from Bharat"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
-   "t": "ഗ്രാമീണ നാടൻ മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി 540 g പാക്കറ്റുകളിൽ, ആന്ധ്രാപ്രദേശിലെ നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്. ഞങ്ങളുടെ പാക്കറ്റുകൾ Amazon.in-ൽ വിൽക്കുന്നുണ്ട്.",
-   "back": "Rural native turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "ഗ്രാമീണ നാടൻ മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി 540 g പാക്കറ്റുകളിൽ, ആന്ധ്രാപ്രദേശിൽ പാക്ക് ചെയ്തത്. ഞങ്ങളുടെ പാക്കറ്റുകൾ Amazon.in-ൽ വിൽക്കുന്നുണ്ട്.",
+   "back": "Rural native turmeric powder, chilli powder, jaggery, cashew in 540 g packets, packed in Andhra Pradesh. Our packets are being sold on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Rural native (naadan) food items from Bharat"
   },
   "ui.l_lede": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
-   "t": "ഗ്രാമീണ നാടൻ മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി 540 g പാക്കറ്റുകളിൽ, ആന്ധ്രാപ്രദേശിലെ നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്. ഞങ്ങളുടെ പാക്കറ്റുകൾ Amazon.in-ൽ വിൽക്കുന്നുണ്ട്.",
-   "back": "Village native turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "ഗ്രാമീണ നാടൻ മഞ്ഞൾപ്പൊടി, മുളകുപൊടി, ശർക്കര, കശുവണ്ടി 540 g പാക്കറ്റുകളിൽ, ആന്ധ്രാപ്രദേശിൽ പാക്ക് ചെയ്തത്. ഞങ്ങളുടെ പാക്കറ്റുകൾ Amazon.in-ൽ വിൽക്കുന്നുണ്ട്.",
+   "back": "Rural native turmeric powder, chilli powder, jaggery, cashew in 540 g packets, packed in Andhra Pradesh. Our packets are being sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -267,9 +267,9 @@
    "back": "Sannam Karam: red chilli powder from whole Sannam chillies grown in Palnadu, dried in the sun, 540 g. MRP ₹495, including all taxes. Free delivery for 2+ packets."
   },
   "pack.SANN.lede": {
-   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
-   "t": "സന്നം കാരം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ വിളഞ്ഞ, വെയിലത്ത് ഉണക്കിയ മുഴുവൻ സന്നം മുളക്, നരസറാവുപേട്ടയിൽ നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്.",
-   "back": "Sannam Karam: whole Sannam chillies grown in Palnadu and Guntur, dried in the sun, packed as fine powder in Narasaraopet."
+   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Andhra Pradesh.",
+   "t": "സന്നം കാരം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ വിളഞ്ഞ, വെയിലത്ത് ഉണക്കിയ മുഴുവൻ സന്നം മുളക്, ആന്ധ്രാപ്രദേശിൽ നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്.",
+   "back": "Sannam Karam: whole Sannam chilli grown in Palnadu, Guntur, dried in the sun, packed as fine powder in Andhra Pradesh."
   },
   "pack.SANN.origin": {
    "src": "Grown in Palnadu & Guntur",
@@ -312,9 +312,9 @@
    "back": "Teja Karam: intensely pungent red chilli powder, dried in the sun and ground on stone, 540 g. MRP ₹495, including all taxes. Free delivery for 2+ packets."
   },
   "pack.TEJA.lede": {
-   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
-   "t": "തേജ കാരം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ വിളഞ്ഞ കടുത്ത എരിവുള്ള തേജ മുളക്, വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ച്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
-   "back": "Teja Karam: intensely pungent Teja chillies grown in Palnadu and Guntur, dried in the sun, ground on stone, packed in Narasaraopet."
+   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Andhra Pradesh.",
+   "t": "തേജ കാരം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ വിളഞ്ഞ കടുത്ത എരിവുള്ള തേജ മുളക്, വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ച്, ആന്ധ്രാപ്രദേശിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Teja Karam: intensely hot Teja chilli grown in Palnadu, Guntur, dried in the sun, powdered on stone, packed in Andhra Pradesh."
   },
   "pack.TEJA.origin": {
    "src": "Grown in Palnadu & Guntur",
@@ -8416,11 +8416,6 @@
    "t": "തേജ മുളകുപൊടി⟦#1⟧⟦#2⟧",
    "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
   },
-  "seg.b356a193952e": {
-   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
-   "t": "⟦1⟧ഞങ്ങളുടെ രണ്ട് മുളകുപൊടികൾ⟦/1⟧ഇടത്: സന്നം മുളകുപൊടി. വലത്: തേജ മുളകുപൊടി. രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ മുളകിൽ നിന്ന്; വെയിലത്ത് ഉണക്കി, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
-   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both are from chillies grown in Palnadu and Guntur; sun-dried and packed in Narasaraopet."
-  },
   "seg.a574ced14407": {
    "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
    "t": "ഒരു ഗ്ലാസ് വെള്ളത്തിന് മുകളിൽ ഒരു ടീസ്പൂൺ മുളകുപൊടി വിതറൂ; ഇളക്കരുത്. ഉടനെ താഴേക്ക് ഇറങ്ങുന്ന നിറമുള്ള വരകൾ ചേർത്ത നിറത്തിലേക്ക് വിരൽ ചൂണ്ടുന്നു; പൊടി താഴ്ന്നശേഷവും പൊങ്ങിക്കിടക്കുന്ന തരികൾ അറക്കപ്പൊടിയിലേക്കോ തവിടിലേക്കോ വിരൽ ചൂണ്ടുന്നു. അടിയിൽ അടിഞ്ഞത് തിരുമ്മിനോക്കൂ: തരുതരുപ്പ് ഇഷ്ടികപ്പൊടിയിലേക്കോ മണലിലേക്കോ, സോപ്പ് പോലുള്ള വഴുവഴുപ്പ് സോപ്പുകല്ലിലേക്കോ വിരൽ ചൂണ്ടുന്നു. അയഡിൻ വീഴുമ്പോൾ പൊടി നീലയാകുന്നത് ചേർത്ത സ്റ്റാർച്ചിലേക്ക് വിരൽ ചൂണ്ടുന്നു. സുഡാൻ I പോലുള്ള ചായങ്ങൾ വെള്ളത്തിൽ കാണില്ല; അവയ്ക്ക് ലാബിനെ ആശ്രയിക്കൂ.",
@@ -8750,11 +8745,6 @@
    "src": "Our chilli powder",
    "t": "ഞങ്ങളുടെ മുളകുപൊടി",
    "back": "Our chilli powder"
-  },
-  "seg.a7d8a3890045": {
-   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
-   "t": "രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
-   "back": "Both grown in Palnadu and Guntur, and packed in Narasaraopet."
   },
   "seg.3ed867d1961c": {
    "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
@@ -9170,6 +9160,16 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "വെള്ളം നിറച്ച ഗ്ലാസ്, തിരുമ്മിനോക്കൽ, അയഡിൻ ടെസ്റ്റ്, എപ്പോൾ ലാബ് വേണം. ഒരു തെലുങ്ക് ഭാഗം സഹിതം.",
    "back": "Glass filled with water, rubbing check, iodine test, when a lab is needed. With a Telugu section."
+  },
+  "seg.26408d28ebd1": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Andhra Pradesh.",
+   "t": "⟦1⟧ഞങ്ങളുടെ രണ്ട് മുളകുപൊടികൾ⟦/1⟧ഇടത്: സന്നം മുളകുപൊടി. വലത്: തേജ മുളകുപൊടി. രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ മുളകിൽ നിന്ന്; വെയിലത്ത് ഉണക്കി, ആന്ധ്രാപ്രദേശിൽ പാക്ക് ചെയ്തത്.",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chilli grown in Palnadu and Guntur; dried in the sun, packed in Andhra Pradesh."
+  },
+  "seg.9e3169dd1d71": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Andhra Pradesh.",
+   "t": "രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ്, ആന്ധ്രാപ്രദേശിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Both grown in Palnadu and Guntur, packed in Andhra Pradesh."
   }
  }
 }
