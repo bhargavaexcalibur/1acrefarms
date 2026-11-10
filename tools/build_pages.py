@@ -86,7 +86,7 @@ PACKS = [
          desc="Sannam kaaram: red chilli powder from whole sun-dried Sannam chillies grown in Palnadu, 540 g. "
               "MRP ₹495 incl. of all taxes.",
          lede="Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine "
-              "powder in Andhra Pradesh.",
+              "powder in Narasaraopet.",
          te_line="పల్నాడు, గుంటూరులో పండిన సన్నం మిరపకాయలు. ఎండబెట్టిన మిరపకాయలను మెత్తని కారంగా ప్యాక్ చేస్తాం.",
          hi_line="पलनाडु और गुंटूर में उगी सन्नम मिर्च। धूप में सूखी साबुत मिर्च, बारीक पाउडर के रूप में पैक।",
          uses=["Use in curries, chutneys, podis and pickles.", "Add it to hot oil on a low flame.",
@@ -101,7 +101,7 @@ PACKS = [
          desc="Teja kaaram: extra hot red chilli powder, sun-dried and stone-ground, 540 g. MRP ₹495 incl. of "
               "all taxes.",
          lede="Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, "
-              "packed in Andhra Pradesh.",
+              "packed in Narasaraopet.",
          te_line="పల్నాడు, గుంటూరులో పండిన తేజ మిరపకాయల కారం. చాలా కారంగా ఉంటుంది. ఎండబెట్టి, రాతి తిరగలిలో పట్టినది.",
          hi_line="पलनाडु और गुंटूर की तेजा मिर्च का पाउडर। बहुत तीखा। धूप में सुखाकर पत्थर की चक्की में पिसा।",
          uses=["A little goes a long way: start with less than you would of milder chilli powder.",
@@ -403,7 +403,7 @@ def footer(live):
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-name"><span class="one">1</span>acrefarms<span class="tm">™</span></span>
-        <p>Let the soil breathe again. Village desi turmeric, chilli, jaggery and cashew, sourced and packed in Andhra Pradesh.</p>
+        <p>Let the soil breathe again. Village desi turmeric, chilli, jaggery and cashew from Andhra Pradesh, packed in Narasaraopet.</p>
 {SOCIAL}
       </div>
       <div class="footer-col">

@@ -111,12 +111,12 @@ UI = {
     "ui.translated": ("Translated from English. Spotted a mistake?", "small note at the end of the page"),
     "ui.wa_us": ("WhatsApp us", "link after that note"),
     "ui.l_title": ("Turmeric, chilli powder, jaggery and cashew from Bharat", "browser tab title of the language home page; '| 1acrefarms' is added"),
-    "ui.l_desc": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. "
-                  "Our packs are sold on Amazon.in.",
+    "ui.l_desc": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, "
+                  "Andhra Pradesh. Our packs are sold on Amazon.in.",
                   "search result description of the language home page"),
     "ui.l_eyebrow": ("Village desi foods from Bharat", "small line above the main heading"),
-    "ui.l_lede": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. "
-                  "Our packs are sold on Amazon.in.", "intro paragraph"),
+    "ui.l_lede": ("Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, "
+                  "Andhra Pradesh. Our packs are sold on Amazon.in.", "intro paragraph"),
     "ui.l_packs": ("Our packs", "heading above the packs"),
     "ui.see_pack": ("See the pack", "link on each pack card"),
     "ui.review": ("Bought our packs? Review us on Google", "footer link to write a review of 1acrefarms on Google Maps; "

@@ -497,10 +497,10 @@ GUIDES = [
             packs=["sannam-chilli-powder", "teja-chilli-powder"],
             label="Our two chilli powders",
             caption="Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in "
-                    "Palnadu and Guntur, sun-dried and packed in Andhra Pradesh."),
+                    "Palnadu and Guntur, sun-dried and packed in Narasaraopet."),
         packs=["sannam-chilli-powder", "teja-chilli-powder"],
         packs_label="Our chilli powder",
-        packs_note="Both are grown in Palnadu and Guntur and packed in Andhra Pradesh.",
+        packs_note="Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
         sections=[
             ("what", "What FSSAI checks chilli powder for", """            <dl class="gd-dl">
               <dt>Added colour</dt>

@@ -137,9 +137,9 @@
    "back": "India's turmeric, chili powder, jaggery and cashew"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
-   "t": "গ্রামের দেশি হলুদ, লঙ্কা গুঁড়ো, গুড় ও কাজু, 540 g-এর প্যাকে, অন্ধ্রপ্রদেশে প্যাক করা। আমাদের প্যাক Amazon.in-এ বিক্রি হয়।",
-   "back": "Village desi turmeric, chilli powder, jaggery and cashew, in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "গ্রামের দেশি হলুদ, লঙ্কা গুঁড়ো, গুড় ও কাজু, 540 g-এর প্যাকে, অন্ধ্রপ্রদেশের নরসারাওপেটে প্যাক করা। আমাদের প্যাক Amazon.in-এ বিক্রি হয়।",
+   "back": "Village's desi turmeric, chilli powder, jaggery and cashew, in packs of 540 g, packed in Narasaraopet of Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Village desi food of India"
   },
   "ui.l_lede": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
-   "t": "গ্রামের দেশি হলুদ, লঙ্কা গুঁড়ো, গুড় ও কাজু, 540 g-এর প্যাকে, অন্ধ্রপ্রদেশে প্যাক করা। আমাদের প্যাক Amazon.in-এ বিক্রি হয়।",
-   "back": "Village desi turmeric, chilli powder, jaggery and cashew, in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "গ্রামের দেশি হলুদ, লঙ্কা গুঁড়ো, গুড় ও কাজু, 540 g-এর প্যাকে, অন্ধ্রপ্রদেশের নরসারাওপেটে প্যাক করা। আমাদের প্যাক Amazon.in-এ বিক্রি হয়।",
+   "back": "Village's desi turmeric, chilli powder, jaggery and cashew, in packs of 540 g, packed in Narasaraopet of Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -267,9 +267,9 @@
    "back": "Sannam Karam: red chili powder made from whole, sun-dried Sannam chilies cultivated in Palnadu, 540 g. MRP ₹495, including all taxes. Free delivery on 2+ packs."
   },
   "pack.SANN.lede": {
-   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Andhra Pradesh.",
-   "t": "সান্নাম কারাম: পালনাড়ু ও গুন্টুরে চাষ করা গোটা, রোদে শুকানো সান্নাম লঙ্কা, অন্ধ্রপ্রদেশে মিহি গুঁড়ো করে প্যাক করা।",
-   "back": "Sannam Karam: whole, sun-dried Sannam chilli cultivated in Palnadu and Guntur, made into fine powder and packed in Andhra Pradesh."
+   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+   "t": "সান্নাম কারাম: পালনাড়ু ও গুন্টুরে চাষ করা গোটা, রোদে শুকানো সান্নাম লঙ্কা, নরসারাওপেটে মিহি গুঁড়ো করে প্যাক করা।",
+   "back": "Sannam Karam: whole, sun-dried Sannam chilies cultivated in Palnadu and Guntur, finely ground and packed in Narasaraopet."
   },
   "pack.SANN.origin": {
    "src": "Grown in Palnadu & Guntur",
@@ -312,9 +312,9 @@
    "back": "Teja Karam: very hot red chili powder, sun-dried and stone-ground, 540 g. MRP ₹495, including all taxes. Free delivery on 2+ packs."
   },
   "pack.TEJA.lede": {
-   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Andhra Pradesh.",
-   "t": "তেজা কারাম: পালনাড়ু ও গুন্টুরে চাষ করা খুব ঝাল তেজা লঙ্কা, রোদে শুকানো ও পাথরে পেষা, অন্ধ্রপ্রদেশে প্যাক করা।",
-   "back": "Teja Karam: very hot Teja chilli cultivated in Palnadu and Guntur, sun-dried and ground on stone, packed in Andhra Pradesh."
+   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+   "t": "তেজা কারাম: পালনাড়ু ও গুন্টুরে চাষ করা খুব ঝাল তেজা লঙ্কা, রোদে শুকানো ও পাথরে পেষা, নরসারাওপেটে প্যাক করা।",
+   "back": "Teja Karam: very hot Teja chilies cultivated in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet."
   },
   "pack.TEJA.origin": {
    "src": "Grown in Palnadu & Guntur",
@@ -8416,6 +8416,11 @@
    "t": "তেজা লঙ্কা গুঁড়ো⟦#1⟧⟦#2⟧",
    "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
   },
+  "seg.b356a193952e": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+   "t": "⟦1⟧আমাদের দুটো লঙ্কা গুঁড়ো⟦/1⟧বাঁদিকে: সান্নাম লঙ্কা গুঁড়ো। ডানদিকে: তেজা লঙ্কা গুঁড়ো। দুটোই পালনাড়ু ও গুন্টুরে চাষ করা লঙ্কা থেকে, রোদে শুকানো আর নরসারাওপেটে প্যাক করা।",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both are from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet."
+  },
   "seg.a574ced14407": {
    "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
    "t": "এক গ্লাস জলের ওপর এক চা-চামচ লঙ্কা গুঁড়ো ছড়িয়ে দিন, নাড়বেন না। সঙ্গে সঙ্গে রঙের রেখা নিচে নামলে বুঝবেন রং মেশানো থাকতে পারে, আর গুঁড়ো ডুবে যাওয়ার পরেও কুচি ভাসতে থাকলে কাঠের গুঁড়ো বা ভুসি থাকতে পারে। তলানিটা আঙুলে ঘষুন: কিচকিচে লাগলে ইটের গুঁড়ো বা বালি থাকতে পারে, সাবানের মতো লাগলে সোপস্টোন। আয়োডিনে গুঁড়ো নীল হয়ে গেলে মেশানো স্টার্চ থাকতে পারে। সুদান I-এর মতো রং জলে ধরা পড়ে না; সেগুলোর জন্য ল্যাবে যান।",
@@ -8745,6 +8750,11 @@
    "src": "Our chilli powder",
    "t": "আমাদের লঙ্কা গুঁড়ো",
    "back": "Our chilli powder"
+  },
+  "seg.a7d8a3890045": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "দুটোই পালনাড়ু ও গুন্টুরে চাষ করা আর নরসারাওপেটে প্যাক করা।",
+   "back": "Both are grown in Palnadu and Guntur and packed in Narasaraopet."
   },
   "seg.3ed867d1961c": {
    "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
@@ -9160,16 +9170,6 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "জলের গ্লাস, ঘষার পরীক্ষা, আয়োডিন পরীক্ষা, আর কখন ল্যাব লাগে। সঙ্গে একটা তেলুগু অংশ।",
    "back": "The water glass, the rub test, the iodine test, and when you need a lab. Plus a Telugu section."
-  },
-  "seg.26408d28ebd1": {
-   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Andhra Pradesh.",
-   "t": "⟦1⟧আমাদের দুটো লঙ্কা গুঁড়ো⟦/1⟧বাঁদিকে: সান্নাম লঙ্কা গুঁড়ো। ডানদিকে: তেজা লঙ্কা গুঁড়ো। দুটোই পালনাড়ু ও গুন্টুরে চাষ করা লঙ্কা থেকে, রোদে শুকানো আর অন্ধ্রপ্রদেশে প্যাক করা।",
-   "back": "⟦1⟧Our two chilli powders⟦/1⟧On the left: Sannam chilli powder. On the right: Teja chilli powder. Both from chillies cultivated in Palnadu and Guntur, sun-dried and packed in Andhra Pradesh."
-  },
-  "seg.9e3169dd1d71": {
-   "src": "Both are grown in Palnadu and Guntur and packed in Andhra Pradesh.",
-   "t": "দুটোই পালনাড়ু ও গুন্টুরে চাষ করা আর অন্ধ্রপ্রদেশে প্যাক করা।",
-   "back": "Both cultivated in Palnadu and Guntur and packed in Andhra Pradesh."
   }
  }
 }

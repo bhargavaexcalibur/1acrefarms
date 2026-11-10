@@ -137,9 +137,9 @@
    "back": "Turmeric powder, chilli powder, jaggery and cashew from Bharat"
   },
   "ui.l_desc": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
-   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தில் பேக் செய்யப்பட்டது. எங்கள் பாக்கெட்டுகள் Amazon.in-ல் விற்கப்படுகின்றன.",
-   "back": "Village native turmeric powder, chilli powder, jaggery and cashew, in 540 g packets, packed in Andhra Pradesh. Our packets are sold on Amazon.in."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தின் நரசராவ்பேட்டையில் பேக் செய்யப்பட்டது. எங்கள் பாக்கெட்டுகள் Amazon.in-ல் விற்கப்படுகின்றன.",
+   "back": "Village country (nattu) turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_eyebrow": {
    "src": "Village desi foods from Bharat",
@@ -147,9 +147,9 @@
    "back": "Village native (naattu) food products from Bharat"
   },
   "ui.l_lede": {
-   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Andhra Pradesh. Our packs are sold on Amazon.in.",
-   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தில் பேக் செய்யப்பட்டது. எங்கள் பாக்கெட்டுகள் Amazon.in-ல் விற்கப்படுகின்றன.",
-   "back": "Village native turmeric powder, chilli powder, jaggery and cashew, in 540 g packets, packed in Andhra Pradesh. Our packets are sold on Amazon.in."
+   "src": "Village desi turmeric, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in.",
+   "t": "கிராமத்து நாட்டு மஞ்சள் தூள், மிளகாய் தூள், வெல்லம் மற்றும் முந்திரி, 540 g பாக்கெட்டுகளில், ஆந்திரப் பிரதேசத்தின் நரசராவ்பேட்டையில் பேக் செய்யப்பட்டது. எங்கள் பாக்கெட்டுகள் Amazon.in-ல் விற்கப்படுகின்றன.",
+   "back": "Village native turmeric powder, chilli powder, jaggery and cashew in 540 g packs, packed in Narasaraopet, Andhra Pradesh. Our packs are sold on Amazon.in."
   },
   "ui.l_packs": {
    "src": "Our packs",
@@ -267,9 +267,9 @@
    "back": "Sannam Karam: red chilli powder made from whole Sannam chillies grown in the Palnadu area and dried in the sun, 540 g. MRP ₹495, including all taxes. Free delivery for 2+ packets."
   },
   "pack.SANN.lede": {
-   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Andhra Pradesh.",
-   "t": "சன்னம் காரம்: பல்நாடு மற்றும் குண்டூரில் விளைந்த, வெயிலில் காயவைத்த முழு சன்னம் மிளகாய், ஆந்திரப் பிரதேசத்தில் நைசான தூளாக பேக் செய்யப்பட்டது.",
-   "back": "Sannam Karam: whole Sannam chilli grown in Palnadu and Guntur, dried in the sun, packed as fine powder in Andhra Pradesh."
+   "src": "Sannam kaaram: whole sun-dried Sannam chillies, grown in Palnadu and Guntur and packed as fine powder in Narasaraopet.",
+   "t": "சன்னம் காரம்: பல்நாடு மற்றும் குண்டூரில் விளைந்த, வெயிலில் காயவைத்த முழு சன்னம் மிளகாய், நரசராவ்பேட்டையில் நைசான தூளாக பேக் செய்யப்பட்டது.",
+   "back": "Sannam Karam: whole Sannam chillies grown in Palnadu and Guntur, dried in the sun, packed as fine powder in Narasaraopet."
   },
   "pack.SANN.origin": {
    "src": "Grown in Palnadu & Guntur",
@@ -312,9 +312,9 @@
    "back": "Teja Karam: very spicy-hot red chilli powder, dried in the sun and ground on stone, 540 g. MRP ₹495, including all taxes. Free delivery for 2+ packets."
   },
   "pack.TEJA.lede": {
-   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Andhra Pradesh.",
-   "t": "தேஜா காரம்: பல்நாடு மற்றும் குண்டூரில் விளைந்த அதிக காரமான தேஜா மிளகாய், வெயிலில் காயவைத்து, கல்லில் அரைத்து, ஆந்திரப் பிரதேசத்தில் பேக் செய்யப்பட்டது.",
-   "back": "Teja Karam: very hot Teja chilli grown in Palnadu and Guntur, dried in the sun, ground on stone, packed in Andhra Pradesh."
+   "src": "Teja kaaram: extra hot Teja chillies grown in Palnadu and Guntur, sun-dried and stone-ground, packed in Narasaraopet.",
+   "t": "தேஜா காரம்: பல்நாடு மற்றும் குண்டூரில் விளைந்த அதிக காரமான தேஜா மிளகாய், வெயிலில் காயவைத்து, கல்லில் அரைத்து, நரசராவ்பேட்டையில் பேக் செய்யப்பட்டது.",
+   "back": "Teja Karam: very spicy-hot Teja chillies grown in Palnadu and Guntur, dried in the sun, ground on stone, packed in Narasaraopet."
   },
   "pack.TEJA.origin": {
    "src": "Grown in Palnadu & Guntur",
@@ -8416,6 +8416,11 @@
    "t": "தேஜா மிளகாய் தூள்⟦#1⟧⟦#2⟧",
    "back": "Teja chilli powder⟦#1⟧⟦#2⟧"
   },
+  "seg.b356a193952e": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Narasaraopet.",
+   "t": "⟦1⟧எங்கள் இரண்டு மிளகாய் தூள்கள்⟦/1⟧இடது: சன்னம் மிளகாய் தூள். வலது: தேஜா மிளகாய் தூள். இரண்டும் பல்நாடு, குண்டூரில் விளைந்த மிளகாயிலிருந்து; வெயிலில் காயவைத்து, நரசராவ்பேட்டையில் பேக் செய்யப்பட்டவை.",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both are from chillies grown in Palnadu, Guntur; sun-dried and packed in Narasaraopet."
+  },
   "seg.a574ced14407": {
    "src": "Sprinkle a teaspoon of chilli powder on a glass of water and do not stir. Colour streaks running down at once point to added colour, and bits still floating after the powder sinks point to sawdust or bran. Rub the sediment: grit points to brick powder or sand, a soapy feel to soapstone. Iodine turning the powder blue points to added starch. Dyes such as Sudan I do not show in water; for those, use a lab.",
    "t": "ஒரு டம்ளர் தண்ணீரின் மேல் ஒரு டீஸ்பூன் மிளகாய் தூளைத் தூவுங்கள்; கலக்க வேண்டாம். உடனே கீழே இறங்கும் நிறக் கோடுகள் சேர்க்கப்பட்ட நிறத்தைக் காட்டுகின்றன; தூள் மூழ்கிய பிறகும் மிதக்கும் துகள்கள் மரத்தூள் அல்லது தவிட்டைக் காட்டுகின்றன. அடியில் படிந்ததைத் தேய்த்துப் பாருங்கள்: நறநறப்பு செங்கல் தூள் அல்லது மணலைக் காட்டுகிறது; சோப்பு போன்ற வழுவழுப்பு மாக்கல்லைக் காட்டுகிறது. அயோடின் பட்டு தூள் நீலமாக மாறினால், அது சேர்க்கப்பட்ட ஸ்டார்ச்சைக் காட்டுகிறது. சூடான் I போன்ற சாயங்கள் தண்ணீரில் தெரியாது; அவற்றுக்கு ஆய்வகத்தை நாடுங்கள்.",
@@ -8745,6 +8750,11 @@
    "src": "Our chilli powder",
    "t": "எங்கள் மிளகாய் தூள்",
    "back": "Our chilli powder"
+  },
+  "seg.a7d8a3890045": {
+   "src": "Both are grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "இரண்டும் பல்நாடு, குண்டூரில் விளைந்து, நரசராவ்பேட்டையில் பேக் செய்யப்பட்டவை.",
+   "back": "Both grown in Palnadu, Guntur, and packed in Narasaraopet."
   },
   "seg.3ed867d1961c": {
    "src": "కారం కల్తీ · Chilli Powder Adulteration Test | 1acrefarms",
@@ -9160,16 +9170,6 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "தண்ணீர் டம்ளர், தேய்ப்புச் சோதனை, அயோடின் சோதனை, எப்போது ஆய்வகம் தேவை. ஒரு தெலுங்குப் பகுதியுடன்.",
    "back": "Water tumbler, rub test, iodine test, when a lab is needed. With a Telugu section."
-  },
-  "seg.26408d28ebd1": {
-   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu and Guntur, sun-dried and packed in Andhra Pradesh.",
-   "t": "⟦1⟧எங்கள் இரண்டு மிளகாய் தூள்கள்⟦/1⟧இடது: சன்னம் மிளகாய் தூள். வலது: தேஜா மிளகாய் தூள். இரண்டும் பல்நாடு, குண்டூரில் விளைந்த மிளகாயிலிருந்து; வெயிலில் காயவைத்து, ஆந்திரப் பிரதேசத்தில் பேக் செய்யப்பட்டவை.",
-   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder. Right: Teja chilli powder. Both from chillies grown in Palnadu, Guntur; dried in the sun, packed in Andhra Pradesh."
-  },
-  "seg.9e3169dd1d71": {
-   "src": "Both are grown in Palnadu and Guntur and packed in Andhra Pradesh.",
-   "t": "இரண்டும் பல்நாடு, குண்டூரில் விளைந்து, ஆந்திரப் பிரதேசத்தில் பேக் செய்யப்பட்டவை.",
-   "back": "Both grown in Palnadu, Guntur, packed in Andhra Pradesh."
   }
  }
 }
