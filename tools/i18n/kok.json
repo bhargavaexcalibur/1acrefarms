@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "उदकाचो पेलो, चोळून पळोवपाची चांचणी, आयोडीन चांचणी, आनी लॅबाची गरज केन्ना पडटा. तेलुगु विभागा सयत.",
    "back": "The glass of water, rub test, iodine test, and when a lab is needed. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "दुकान (भेट दियात)",
+   "back": "Shop (do visit)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "सोम-शेन सकाळीं 9 - सांजे 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "नोंदणीकृत कार्यालय",
+   "back": "Registered office"
   }
  }
 }

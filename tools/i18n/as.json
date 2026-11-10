@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "পানীৰ গিলাচ, ঘঁহাৰ পৰীক্ষা, আয়’ডিন পৰীক্ষা, আৰু কেতিয়া লেব লাগে। লগতে এটা তেলুগু অংশ।",
    "back": "The water glass, the rub test, the iodine test, and when you need a lab. Plus a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "দোকান (আহি চাব পাৰে)",
+   "back": "Shop (can come and see)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "সোম-শনি পুৱা 9 - সন্ধিয়া 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "পঞ্জীয়নভুক্ত কাৰ্যালয়",
+   "back": "Registered office"
   }
  }
 }

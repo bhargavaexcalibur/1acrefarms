@@ -40,6 +40,25 @@ MAKER = {
 }
 ADDRESS = ("1acrefarms, Flat No. 202, Prudhvi Exotica, D.No. 13-1-375/7/A, Srinivasa Nagar, "
            "Narasaraopet, Palnadu Dist., A.P. 522601")
+# Footer addresses (Bhargava 09-11-2026: "lets keep adding both places wherever possible"): the walk-in shop
+# (Shop 7, as on Justdial) and the registered office, each labelled. Never the flat/door number here.
+# ADDRESS above is the maker address printed on the pouch ("Pack details") and stays as printed.
+# build_i18n.address_line() puts in the translated labels (ui.addr_*); the addresses stay in English.
+SHOP_ADDRESS = ("Shop No. 7, Ground Floor, Ponnapati&rsquo;s Hi Street, Opp. NSP Office, Near PWD Colony, "
+                "Narasaraopet, Andhra Pradesh 522601")
+OFFICE_ADDRESS = "Srinivasa Nagar 1st Line, Narasaraopet, Andhra Pradesh 522601"
+ADDR_LABELS = {"shop": "Shop (walk in)", "hours": "Mon-Sat 9 am-7 pm", "office": "Registered office"}
+
+
+def footer_addr(lab=None, en=lambda s: s):
+    """The footer's two addresses; lab: the labels (English by default), en: wraps each English address."""
+    lab = lab or ADDR_LABELS
+    return (f'    <p class="footer-addr"><b>{lab["shop"]}:</b> {en(SHOP_ADDRESS)} &middot; '
+            f'<span class="addr-hours">{lab["hours"]}</span><br>'
+            f'<b>{lab["office"]}:</b> {en(OFFICE_ADDRESS)}</p>\n')
+
+
+FOOTER_ADDR = footer_addr()
 BANNED = re.compile(r"\b(natural|pure|100%|no added|traditional|chemical[- ]free|organic|healthy|"
                     r"authentic|premium|fresh)\b", re.I)
 
@@ -424,8 +443,7 @@ def footer(live):
         <a href="/policies.html#terms">Terms of sale</a>
       </div>
     </div>
-{REVIEW_LINE}    <p class="footer-addr"><b>Head office:</b> Shop No. 7, Ground Floor, Ponnapati&rsquo;s Hi Street, near PWD Colony, opposite NSP Office, Narasaraopet, Palnadu District, Andhra Pradesh 522601<br><b>Packing unit:</b> Flat No. 202, Prudhvi Exotica, D.No. 13-1-375/7/A, Srinivasa Nagar 1st Line, Narasaraopet, Palnadu District, Andhra Pradesh 522601</p>
-    <p class="footer-base">© {TODAY.year} 1acrefarms &middot; GSTIN 37BHKPR3386Q1Z8 &middot; FSSAI Reg. 20126161000590 &middot; Made in India</p>
+{REVIEW_LINE}{FOOTER_ADDR}    <p class="footer-base">© {TODAY.year} 1acrefarms &middot; GSTIN 37BHKPR3386Q1Z8 &middot; FSSAI Reg. 20126161000590 &middot; Made in India</p>
   </footer>"""
 
 

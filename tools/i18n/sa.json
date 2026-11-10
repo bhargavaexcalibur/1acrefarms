@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "जलकाचपात्रं, घर्षणपरीक्षा, आयोडीन-परीक्षा, प्रयोगशाला कदा आवश्यकी इति च। तेलुगुविभागेन सह।",
    "back": "Water-glass vessel, rubbing test, iodine test, and when a laboratory is necessary. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "आपणः (आगच्छन्तु)",
+   "back": "Shop (please come)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "सोम-शनि प्रातः 9 - सायं 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "पञ्जीकृतं कार्यालयम्",
+   "back": "Registered office"
   }
  }
 }

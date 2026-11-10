@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "জলের গ্লাস, ঘষার পরীক্ষা, আয়োডিন পরীক্ষা, আর কখন ল্যাব লাগে। সঙ্গে একটা তেলুগু অংশ।",
    "back": "The water glass, the rub test, the iodine test, and when you need a lab. Plus a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "দোকান (চলে আসুন)",
+   "back": "Shop (come on over)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "সোম-শনি সকাল 9 - সন্ধ্যা 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "নিবন্ধিত কার্যালয়",
+   "back": "Registered office"
   }
  }
 }

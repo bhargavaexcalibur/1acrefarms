@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "தண்ணீர் டம்ளர், தேய்ப்புச் சோதனை, அயோடின் சோதனை, எப்போது ஆய்வகம் தேவை. ஒரு தெலுங்குப் பகுதியுடன்.",
    "back": "Water tumbler, rub test, iodine test, when a lab is needed. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "கடை (நேரில் வாருங்கள்)",
+   "back": "Shop (come in person)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "திங்கள்-சனி காலை 9 - மாலை 7",
+   "back": "Monday-Saturday morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "பதிவுசெய்யப்பட்ட அலுவலகம்",
+   "back": "Registered office"
   }
  }
 }

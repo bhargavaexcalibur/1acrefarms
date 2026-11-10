@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "पानी दा गलास, मलने आह्ली जांच, आयोडीन टेस्ट, ते लैब दी लोड़ कदूं ऐ. इक तेलुगु हिस्से कन्नै.",
    "back": "Glass of water, rubbing check, iodine test, and when a lab is needed. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "हट्टी (आइयै मिलो)",
+   "back": "Shop (come and meet)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "सोम-शनि सवेरै 9 - संझा 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "पंजीकृत दफ्तर",
+   "back": "Registered office"
   }
  }
 }

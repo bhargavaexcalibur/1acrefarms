@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "ꯏꯁꯤꯡꯒꯤ ꯒ꯭ꯂꯥꯁ, ꯁꯨꯕꯒꯤ ꯇꯦꯁ꯭ꯠ, ꯑꯥꯏꯑꯣꯗꯤꯟ ꯇꯦꯁ꯭ꯠ, ꯑꯃꯁꯨꯡ ꯀꯗꯥꯏꯗꯥ ꯂꯦꯕ ꯃꯊꯧ ꯇꯥꯕꯒꯦ꯫ ꯇꯦꯂꯨꯒꯨ ꯁꯔꯨꯛ ꯑꯃꯒꯥ ꯂꯣꯌꯅꯅꯥ꯫",
    "back": "Glass of water, rubbing test, iodine test, and when a lab is needed. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "ꯗꯨꯀꯥꯟ (ꯂꯥꯛꯄꯤꯌꯨ)",
+   "back": "Shop (please come)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "ꯅꯤꯡꯊꯧꯀꯥꯕ-ꯊꯥꯡꯖ ꯑꯌꯨꯛ 9 - ꯅꯨꯃꯤꯗꯥꯡ 7",
+   "back": "Monday-Saturday morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "ꯔꯦꯖꯤꯁ꯭ꯇꯔ ꯇꯧꯔꯕ ꯑꯣꯐꯤꯁ",
+   "back": "Registered office"
   }
  }
 }

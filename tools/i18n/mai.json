@@ -9170,6 +9170,16 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "पानिक गिलास, रगड़बाक जाँच, आयोडिन परीक्षण, आ कखन लैबक जरूरति अछि। तेलुगु खण्डक संग।",
    "back": "Water glass, rubbing check, iodine test, and when a lab is needed. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "दोकान (आउ, भेंट करू)",
+   "back": "Shop (come, visit [meet])"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "पंजीकृत कार्यालय",
+   "back": "Registered office"
   }
  }
 }

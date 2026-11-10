@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "آبُک گلاس، مَلنٕچ جانچ، آیوڈین ٹیسٹ، تہٕ لیبٕچ ضروٗرت کر چھےٚ پیوان۔ تیلگو حصس سٟتۍ۔",
    "back": "Glass of water, rubbing check, iodine test, and when there is need of a lab. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "دُکان (یِتھ وُچھِو)",
+   "back": "Shop (come and see)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "ژٔندرٕوار-بٹہٕ وار صُبحٕ 9 - شام 7",
+   "back": "Monday-Saturday morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "رجسٹرڈ دفتر",
+   "back": "Registered office"
   }
  }
 }

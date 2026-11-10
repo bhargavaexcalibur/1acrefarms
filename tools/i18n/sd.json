@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "پاڻيءَ جو گلاس، مَهٽڻ وارو ٽيسٽ، آئوڊين ٽيسٽ، ۽ ليبارٽريءَ جي ضرورت ڪڏهن پوي ٿي. گڏ هڪ تيلگو حصو به.",
    "back": "The water glass, rub test, iodine test, and when a laboratory is needed. Plus a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "دڪان (اچي ملو)",
+   "back": "Shop (come and meet)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "سومر-ڇنڇر صبح 9 - شام 7",
+   "back": "Monday-Saturday morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "رجسٽرڊ آفيس",
+   "back": "Registered office"
   }
  }
 }

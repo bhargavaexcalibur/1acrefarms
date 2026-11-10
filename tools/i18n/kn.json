@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "ನೀರಿನ ಲೋಟ, ಉಜ್ಜುವ ಪರೀಕ್ಷೆ, ಅಯೋಡಿನ್ ಪರೀಕ್ಷೆ, ಮತ್ತು ಲ್ಯಾಬ್ ಯಾವಾಗ ಬೇಕು. ತೆಲುಗು ವಿಭಾಗದೊಂದಿಗೆ.",
    "back": "Glass of water, rub test, iodine test, and when a lab is needed. With a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "ಅಂಗಡಿ (ನೇರವಾಗಿ ಬನ್ನಿ)",
+   "back": "Shop (come directly [in person])"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "ಸೋಮ-ಶನಿ ಬೆಳಿಗ್ಗೆ 9 - ಸಂಜೆ 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "ನೋಂದಾಯಿತ ಕಚೇರಿ",
+   "back": "Registered office"
   }
  }
 }

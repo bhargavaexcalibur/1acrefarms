@@ -9170,6 +9170,21 @@
    "src": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
    "t": "ਪਾਣੀ ਦਾ ਗਲਾਸ, ਰਗੜ ਵਾਲਾ ਟੈਸਟ, ਆਇਓਡੀਨ ਟੈਸਟ, ਅਤੇ ਲੈਬ ਦੀ ਲੋੜ ਕਦੋਂ ਪੈਂਦੀ ਹੈ। ਨਾਲ ਇੱਕ ਤੇਲਗੂ ਹਿੱਸਾ ਵੀ।",
    "back": "The water glass, rub test, iodine test, and when a lab is needed. Plus a Telugu section."
+  },
+  "ui.addr_shop": {
+   "src": "Shop (walk in)",
+   "t": "ਦੁਕਾਨ (ਆ ਕੇ ਮਿਲੋ)",
+   "back": "Shop (come and meet)"
+  },
+  "ui.addr_hours": {
+   "src": "Mon-Sat 9 am-7 pm",
+   "t": "ਸੋਮ-ਸ਼ਨਿ ਸਵੇਰੇ 9 - ਸ਼ਾਮ 7",
+   "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.addr_office": {
+   "src": "Registered office",
+   "t": "ਰਜਿਸਟਰਡ ਦਫ਼ਤਰ",
+   "back": "Registered office"
   }
  }
 }

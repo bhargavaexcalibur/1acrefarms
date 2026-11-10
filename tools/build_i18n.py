@@ -121,6 +121,12 @@ UI = {
     "ui.see_pack": ("See the pack", "link on each pack card"),
     "ui.review": ("Bought our packs? Review us on Google", "footer link to write a review of 1acrefarms on Google Maps; "
                   "write 'Google' in Latin letters exactly; plain ask, no stars, no reward"),
+    "ui.addr_shop": ("Shop (walk in)", "footer label before our shop's street address (the address itself stays in "
+                     "English): our shop, where customers can come in person; not an online shop, not 'buy'"),
+    "ui.addr_hours": ("Mon-Sat 9 am-7 pm", "the shop's opening days and hours, after its address: Monday to Saturday, "
+                      "9 in the morning to 7 in the evening (closed on Sunday); keep 9 and 7 as Western digits"),
+    "ui.addr_office": ("Registered office", "footer label before our registered office address (the address itself stays "
+                       "in English): the business's official registered address; not a government registration office"),
 }
 PACK_FIELDS = {
     "name": "the product name in this language (the H1 and in lists); keep it short",
@@ -232,7 +238,7 @@ def pack_keys(p):
            [f"{k}.use{i}" for i in range(len(p["uses"]))]
 
 
-OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review"}  # newer strings: English is shown until translated
+OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office"}  # newer strings: English is shown until translated
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
 
@@ -421,6 +427,16 @@ def review_line(page, t, code):
     if "ui.review" not in t:
         return page.replace(bp.REVIEW_LINE, "")
     return page.replace(bp.REVIEW_LINE, bp.REVIEW_LINE.replace("Bought our packs? Review us on Google", x(code, t["ui.review"])))
+
+
+def address_line(page, t, code):
+    """The footer's address labels in this language; a label whose translation has not passed stays English.
+    The two addresses stay in English (marked lang="en"), like the maker address on the pack."""
+    if bp.FOOTER_ADDR not in page:
+        return page
+    en = lambda s: f'<span lang="en" dir="ltr">{s}</span>'  # noqa: E731
+    lab = {k: x(code, t[f"ui.addr_{k}"]) if f"ui.addr_{k}" in t else en(e(v)) for k, v in bp.ADDR_LABELS.items()}
+    return page.replace(bp.FOOTER_ADDR, bp.footer_addr(lab, en))
 
 
 def translated_note(t, code):
@@ -701,7 +717,7 @@ def build(live):
         for url, body in pages.items():
             base = "/" if url == f"/{code}/" else url[len(code) + 1:]
             alts = alternates(base, versions.get(base, {}))
-            body = inject(localize(review_line(body, t, code), code, local), code, alts, cta)
+            body = inject(localize(address_line(review_line(body, t, code), t, code), code, local), code, alts, cta)
             out = ROOT / url.strip("/") / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(body, encoding="utf-8")
