@@ -83,7 +83,7 @@ export function loadConfig(env = {}) {
     // Shiprocket has no sandbox: pushing is OFF in test mode unless SHIPROCKET_PUSH = "on"
     // (for the one real test order, cancelled afterwards). In live mode it is on unless "off".
     shiprocketPush: live ? env.SHIPROCKET_PUSH !== "off" : env.SHIPROCKET_PUSH === "on",
-    shiprocketPickup: env.SHIPROCKET_PICKUP_LOCATION || "Home",
+    shiprocketPickup: env.SHIPROCKET_PICKUP_LOCATION || "home",
     shiprocketTimeoutMs: int(env.SHIPROCKET_TIMEOUT_MS, 8000),
     shiprocketInlineAttempts: Math.max(1, int(env.SHIPROCKET_INLINE_ATTEMPTS, 3)),
     shiprocketMaxAttempts: Math.max(1, int(env.SHIPROCKET_MAX_ATTEMPTS, 8)),

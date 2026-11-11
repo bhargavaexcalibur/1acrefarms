@@ -23,7 +23,7 @@ export const TEST_ENV = Object.freeze({
   SHIPROCKET_API_PASSWORD: "mock-shiprocket-password-GHI",
   RESEND_API_KEY: "re_mock_key_JKL",
   SHIPROCKET_PUSH: "on",
-  SHIPROCKET_PICKUP_LOCATION: "Home",
+  SHIPROCKET_PICKUP_LOCATION: "home",
   SITE_URL: "https://1acrefarms.co.in",
   PUBLIC_URL: "https://1acrefarms-checkout.example.workers.dev",
   CUSTOMER_MAIL_FROM: "1acrefarms orders <orders@mail.example.test>",
