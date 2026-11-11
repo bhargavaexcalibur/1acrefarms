@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, ਇਕੱਲੇ ਮਾਲਕ, ⟦#2⟧ ਦੇ ਨਾਂ ਹੇਠ ਵਪਾਰ ਕਰਦੇ ਹੋਏ",
    "back": "⟦#1⟧, sole owner, doing business under the name of ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "ਕਾਰਟ ਵਿੱਚ ਪਾਓ",
+   "back": "Put in cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "ਹੁਣੇ ਖਰੀਦੋ",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "ਸਾਡੇ ਕੋਲ ਦਿੱਤੇ ਆਰਡਰਾਂ ਉੱਤੇ ਮੁਫ਼ਤ ਡਿਲੀਵਰੀ",
+   "back": "Free delivery on orders placed with us"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "ਕਾਰਟ",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "ਤੁਹਾਡੇ ਕਾਰਟ ਵਿੱਚ ਪਾ ਦਿੱਤਾ",
+   "back": "Put into your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "ਤੁਹਾਡੇ ਕਾਰਟ ਵਿੱਚ ਪਹਿਲਾਂ ਹੀ ਓਨੇ ਪੈਕ ਹਨ ਜਿੰਨੇ ਅਸੀਂ ਇੱਕ ਆਰਡਰ ਵਿੱਚ ਭੇਜ ਸਕਦੇ ਹਾਂ",
+   "back": "Your cart already has as many packs as we can send in one order"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "ਚੈੱਕਆਊਟ · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← ਦੁਕਾਨ ਉੱਤੇ ਵਾਪਸ ਜਾਓ",
+   "back": "← Go back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "ਚੈੱਕਆਊਟ",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "ਟੈਸਟ ਮੋਡ: ਕੋਈ ਵੀ ਪੈਸਾ ਨਹੀਂ ਕੱਟਿਆ ਜਾਂਦਾ। ਇਹ ਪੰਨਾ ਲੁਕਿਆ ਹੋਇਆ ਹੈ ਅਤੇ ਸਿਰਫ਼ ਟੈਸਟ ਲਈ ਹੈ।",
+   "back": "Test mode: no money at all is deducted. This page is hidden and is only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "ਲਾਈਵ ਭੁਗਤਾਨ ਚਾਲੂ ਹਨ।",
+   "back": "Live payments are on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਇਸ ਵੇਲੇ ਬੰਦ ਹੈ।",
+   "back": "Online payment is off at this time."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "ਭੁਗਤਾਨ ਸਰਵਰ ਨਾਲ ਇਸ ਵੇਲੇ ਸੰਪਰਕ ਨਹੀਂ ਹੋ ਰਿਹਾ।",
+   "back": "Contact with the payment server is not happening at this time."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "ਤੁਹਾਡੇ ਪੈਕ",
+   "back": "Your packs"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (ਸਾਰੇ ਟੈਕਸ ਸ਼ਾਮਲ) · {unit} ਪ੍ਰਤੀ g · {details}",
+   "back": "{grams} g · MRP {price} (all taxes included) · {unit} per g · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "ਪੈਕ ਦੀ ਜਾਣਕਾਰੀ",
+   "back": "Pack information"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "ਇੱਕ ਘੱਟ: {name}",
+   "back": "One less: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "ਇੱਕ ਹੋਰ: {name}",
+   "back": "One more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "ਲਿੰਕ ਤੋਂ ਨਹੀਂ ਜੋੜੇ ਗਏ (ਹੁਣ ਇੱਥੇ ਆਰਡਰ ਲਈ ਉਪਲਬਧ ਨਹੀਂ): {items}।",
+   "back": "Not added from the link (not available for order here now): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "ਇੱਕ ਆਰਡਰ ਵਿੱਚ ਇੱਕੋ ਪੈਕ ਵੱਧ ਤੋਂ ਵੱਧ {max}: ਲਿੰਕ ਵਾਲੀ ਇੱਕ ਮਾਤਰਾ ਘਟਾ ਦਿੱਤੀ ਗਈ।",
+   "back": "The same pack in one order at most {max}: one quantity from the link was reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "ਇੱਕ ਆਰਡਰ ਵਿੱਚ ਵੱਧ ਤੋਂ ਵੱਧ {max} ਪੈਕ: ਲਿੰਕ ਵਾਲੇ ਕੁਝ ਪੈਕ ਨਹੀਂ ਜੋੜੇ ਗਏ।",
+   "back": "At most {max} packs in one order: some packs from the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "ਡਿਲੀਵਰੀ ਦਾ ਪਤਾ",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "ਪੂਰਾ ਨਾਂ",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "ਮੋਬਾਈਲ ਨੰਬਰ",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ਈਮੇਲ (ਆਰਡਰ ਦੀ ਪੁਸ਼ਟੀ ਲਈ)",
+   "back": "Email (for order confirmation)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "ਪਤਾ (ਮਕਾਨ ਨੰ., ਗਲੀ, ਇਲਾਕਾ, ਨੇੜੇ ਦੀ ਨਿਸ਼ਾਨੀ)",
+   "back": "Address (house no., street, area, nearby landmark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "ਸ਼ਹਿਰ / ਕਸਬਾ",
+   "back": "City / town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "ਰਾਜ",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "ਆਪਣਾ ਰਾਜ ਚੁਣੋ",
+   "back": "Choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN ਕੋਡ",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "ਪਰਦੇਦਾਰੀ ਨੀਤੀ",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਨਾਂ ਲਿਖੋ।",
+   "back": "Please write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਨਾਂ ਅੱਖਰਾਂ ਵਿੱਚ ਲਿਖੋ (ਵੱਧ ਤੋਂ ਵੱਧ 60)।",
+   "back": "Please write your name in letters (at most 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ 10 ਅੰਕਾਂ ਦਾ ਮੋਬਾਈਲ ਨੰਬਰ ਲਿਖੋ।",
+   "back": "Please write your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ 10 ਅੰਕਾਂ ਦਾ ਸਹੀ ਭਾਰਤੀ ਮੋਬਾਈਲ ਨੰਬਰ ਲਿਖੋ।",
+   "back": "Please write a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਲਿਖੋ।",
+   "back": "Please write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਈਮੇਲ ਪਤਾ ਜਾਂਚੋ।",
+   "back": "Please check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਪਤਾ ਲਿਖੋ।",
+   "back": "Please write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਮਕਾਨ ਨੰਬਰ, ਗਲੀ ਅਤੇ ਇਲਾਕਾ ਜੋੜੋ।",
+   "back": "Please add your house number, street and area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਪਤਾ 200 ਅੱਖਰਾਂ ਤੋਂ ਘੱਟ ਰੱਖੋ, < ਜਾਂ > ਤੋਂ ਬਿਨਾਂ।",
+   "back": "Please keep the address under 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਸ਼ਹਿਰ ਜਾਂ ਕਸਬਾ ਲਿਖੋ।",
+   "back": "Please write your city or town."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਸ਼ਹਿਰ ਦਾ ਨਾਂ ਅੱਖਰਾਂ ਵਿੱਚ ਲਿਖੋ (ਵੱਧ ਤੋਂ ਵੱਧ 30)।",
+   "back": "Please write the city name in letters (at most 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ ਰਾਜ ਚੁਣੋ।",
+   "back": "Please choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਸੂਚੀ ਵਿੱਚੋਂ ਆਪਣਾ ਰਾਜ ਚੁਣੋ।",
+   "back": "Please choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਆਪਣਾ 6 ਅੰਕਾਂ ਦਾ PIN ਕੋਡ ਲਿਖੋ।",
+   "back": "Please write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ 6 ਅੰਕਾਂ ਦਾ ਸਹੀ PIN ਕੋਡ ਲਿਖੋ।",
+   "back": "Please write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "ਇਹ PIN ਕੋਡ ਤੁਹਾਡੇ ਚੁਣੇ ਰਾਜ ਵਿੱਚ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਦੋਵੇਂ ਜਾਂਚੋ।",
+   "back": "This PIN code is not in your chosen state. Please check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਪੈਕ ਪਾਓ।",
+   "back": "Please put in at least one pack."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "ਇੱਕ ਆਰਡਰ ਵਿੱਚ ਇੱਕੋ ਪੈਕ ਵੱਧ ਤੋਂ ਵੱਧ {max}।",
+   "back": "The same pack in one order at most {max}."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "ਇੱਕ ਆਰਡਰ ਵਿੱਚ ਵੱਧ ਤੋਂ ਵੱਧ {max} ਪੈਕ। ਹੋਰ ਲਈ, ਕਿਰਪਾ ਕਰਕੇ ਦੂਜਾ ਆਰਡਰ ਦਿਓ।",
+   "back": "At most {max} packs in one order. For more, please place a second order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "ਤੁਹਾਡੇ ਕਾਰਟ ਵਿੱਚ ਇੱਕ ਪੈਕ ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਹਟਾਓ।",
+   "back": "A pack in your cart is no longer available. Please remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "ਤੁਹਾਡੇ ਕਾਰਟ ਵਿੱਚ ਇੱਕ ਪੈਕ ਹੁਣ ਉਪਲਬਧ ਨਹੀਂ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਹਟਾਓ।",
+   "back": "A pack in your cart is no longer available. Please remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਮਾਤਰਾ ਜਾਂਚੋ।",
+   "back": "Please check the quantity."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "ਆਰਡਰ ਦਾ ਸਾਰ",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "ਪੈਕ ({n})",
+   "back": "Packs ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP ਵਿੱਚ ਸ਼ਾਮਲ GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP ਵਿੱਚ ਸ਼ਾਮਲ GST: {tax} (IGST {rate}%)",
+   "back": "GST included in MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP ਵਿੱਚ ਸ਼ਾਮਲ GST ({rate}%)",
+   "back": "GST included in MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "ਡਿਲੀਵਰੀ",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (ਪੂਰੇ ਭਾਰਤ ਵਿੱਚ ਮੁਫ਼ਤ)",
+   "back": "{amount} (free in all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "ਕੁੱਲ ਭੁਗਤਾਨ",
+   "back": "Total payment"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "ਤੁਹਾਡਾ ਕਾਰਟ ਖਾਲੀ ਹੈ। ਉੱਪਰੋਂ ਕੋਈ ਪੈਕ ਪਾਓ।",
+   "back": "Your cart is empty. Put in a pack from above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "ਤੁਸੀਂ ਸਿਰਫ਼ MRP ਦਿੰਦੇ ਹੋ। ਚੈੱਕਆਊਟ ਵੇਲੇ ਕੁਝ ਵੀ ਨਹੀਂ ਜੋੜਿਆ ਜਾਂਦਾ।",
+   "back": "You pay only the MRP. Nothing is added at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "ਸਿਰਫ਼ ਪਹਿਲਾਂ ਭੁਗਤਾਨ: UPI, ਡੈਬਿਟ ਜਾਂ ਕ੍ਰੈਡਿਟ ਕਾਰਡ, ਨੈੱਟ ਬੈਂਕਿੰਗ ਜਾਂ ਵਾਲਿਟ। ਕੈਸ਼ ਆਨ ਡਿਲੀਵਰੀ ਨਹੀਂ। ਭੁਗਤਾਨ ਸਾਡਾ ਪੇਮੈਂਟ ਗੇਟਵੇ ({gateways}) ਆਪਣੇ ਸੁਰੱਖਿਅਤ ਪੰਨੇ ਉੱਤੇ ਸੰਭਾਲਦਾ ਹੈ; ਅਸੀਂ ਤੁਹਾਡੇ ਕਾਰਡ ਦੀ ਜਾਣਕਾਰੀ ਜਾਂ UPI PIN ਕਦੇ ਨਹੀਂ ਵੇਖਦੇ।",
+   "back": "Only payment in advance: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card information or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "ਡਿਲੀਵਰੀ",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "ਰੱਦ ਕਰਨਾ, ਵਾਪਸੀ ਅਤੇ ਰਿਫੰਡ",
+   "back": "Cancelling, return and refund"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "ਵੇਚਣ ਵਾਲਾ",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "ਵੇਚਣ ਵਾਲੇ ਦੀ ਜਾਣਕਾਰੀ",
+   "back": "Seller information"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI ਰਜਿਸਟ੍ਰੇਸ਼ਨ ਨੰ. {no}",
+   "back": "FSSAI registration no. {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI ਲਾਇਸੈਂਸ ਨੰ. {no}",
+   "back": "FSSAI licence no. {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "ਗਾਹਕ ਸੇਵਾ ਅਤੇ ਸ਼ਿਕਾਇਤ ਅਧਿਕਾਰੀ: {name}, {designation} · {phone} (ਕਾਲ ਜਾਂ WhatsApp) · {email}",
+   "back": "Customer service and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "ਵੇਚਣ ਵਾਲੇ ਦੀ ਜਾਣਕਾਰੀ, ਵਿਕਰੀ ਦੀਆਂ ਸ਼ਰਤਾਂ, ਸ਼ਿਪਿੰਗ, ਵਾਪਸੀ ਅਤੇ ਪਰਦੇਦਾਰੀ",
+   "back": "Seller information, terms of sale, shipping, returns and privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "ਭੁਗਤਾਨ ਕਰਕੇ ਤੁਸੀਂ ਸਾਡੀਆਂ {link} ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ।",
+   "back": "By paying you agree to our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "ਵਿਕਰੀ ਦੀਆਂ ਸ਼ਰਤਾਂ, ਸ਼ਿਪਿੰਗ ਅਤੇ ਰਿਫੰਡ ਨੀਤੀਆਂ",
+   "back": "Terms of sale, shipping and refund policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} ਭੁਗਤਾਨ ਕਰੋ",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "ਭੁਗਤਾਨ ਲਈ ਪੈਕ ਪਾਓ",
+   "back": "Put in packs to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "ਸੁਰੱਖਿਅਤ ਭੁਗਤਾਨ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ…",
+   "back": "Secure payment is starting…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "ਭੁਗਤਾਨ ਲਈ ਤੁਹਾਨੂੰ PhonePe ਉੱਤੇ ਲਿਜਾਇਆ ਜਾ ਰਿਹਾ ਹੈ…",
+   "back": "You are being taken to PhonePe for payment…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "ਤੁਹਾਡੇ ਭੁਗਤਾਨ ਦੀ ਪੁਸ਼ਟੀ ਹੋ ਰਹੀ ਹੈ…",
+   "back": "Your payment is being confirmed…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "ਕੁੱਲ ਰਕਮ ਬਦਲ ਗਈ",
+   "back": "The total amount changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "ਇਸ ਆਰਡਰ ਦੀ ਕੁੱਲ ਰਕਮ {amount} ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਇਸਨੂੰ ਜਾਂਚੋ ਅਤੇ 'ਭੁਗਤਾਨ ਕਰੋ' ਦੁਬਾਰਾ ਦਬਾਓ।",
+   "back": "The total amount of this order is {amount}. Please check it and press 'Pay' again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "ਧੰਨਵਾਦ! ਤੁਹਾਡਾ ਭੁਗਤਾਨ ਮਿਲ ਗਿਆ ਹੈ।",
+   "back": "Thank you! Your payment has been received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ਆਰਡਰ ਨੰਬਰ: {id}। ਅਸੀਂ 1–2 ਕੰਮਕਾਜੀ ਦਿਨਾਂ ਵਿੱਚ ਪੈਕ ਕਰਕੇ ਭੇਜ ਦਿੰਦੇ ਹਾਂ (ਐਤਵਾਰ ਜਾਂ ਸਰਕਾਰੀ ਛੁੱਟੀਆਂ ਨੂੰ ਨਹੀਂ) ਅਤੇ ਕੂਰੀਅਰ ਦਾ ਨਾਂ ਤੇ ਟਰੈਕਿੰਗ ਲਿੰਕ WhatsApp ਜਾਂ ਈਮੇਲ ਉੱਤੇ ਭੇਜਦੇ ਹਾਂ।",
+   "back": "Order number: {id}. We pack and send within 1–2 working days (not on Sundays or government holidays) and send the courier name and tracking link on WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "{from} ਤੋਂ {to} ਦੇ ਵਿਚਕਾਰ ਡਿਲੀਵਰੀ ਦੀ ਉਮੀਦ ਹੈ।",
+   "back": "Delivery is expected between {from} and {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "ਕਿਸੇ ਵੀ ਸਵਾਲ ਲਈ ਕਿਰਪਾ ਕਰਕੇ ਆਰਡਰ ਨੰਬਰ ਲਿਖ ਕੇ ਆਪਣੇ ਕੋਲ ਰੱਖੋ।",
+   "back": "For any question, please write down the order number and keep it with you."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "ਤੁਹਾਡੇ ਭੁਗਤਾਨ ਦੀ ਪੁਸ਼ਟੀ ਹੋ ਰਹੀ ਹੈ",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "ਆਰਡਰ ਨੰਬਰ: {id}। ਜੇ ਤੁਹਾਡੇ ਖਾਤੇ ਵਿੱਚੋਂ ਪੈਸੇ ਕੱਟੇ ਗਏ ਹਨ, ਤਾਂ ਦੁਬਾਰਾ ਭੁਗਤਾਨ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ: ਅਸੀਂ ਕੁਝ ਮਿੰਟਾਂ ਵਿੱਚ ਇਸਦੀ ਪੁਸ਼ਟੀ ਕਰਦੇ ਹਾਂ, ਅਤੇ ਜੋ ਭੁਗਤਾਨ ਪੂਰਾ ਨਹੀਂ ਹੁੰਦਾ ਉਸਦੇ ਪੈਸੇ ਆਪਣੇ ਆਪ ਵਾਪਸ ਹੋ ਜਾਂਦੇ ਹਨ।",
+   "back": "Order number: {id}. If money has been deducted from your account, there is no need to pay again: we confirm it within a few minutes, and for a payment that does not complete, its money comes back automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "ਭੁਗਤਾਨ ਨਹੀਂ ਹੋਇਆ",
+   "back": "Payment did not happen"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "ਇਸ ਕੋਸ਼ਿਸ਼ ਵਿੱਚ ਕੋਈ ਪੈਸਾ ਨਹੀਂ ਕੱਟਿਆ ਗਿਆ। ਤੁਸੀਂ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰ ਸਕਦੇ ਹੋ, ਜਾਂ ਸਾਡੇ Amazon.in ਸਟੋਰ ਤੋਂ ਆਰਡਰ ਕਰ ਸਕਦੇ ਹੋ।",
+   "back": "No money was deducted in this attempt. You can try again, or order from our Amazon.in store."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "ਬੈਂਕ ਜਾਂ ਐਪ ਵੱਲੋਂ ਦੱਸਿਆ ਕਾਰਨ: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "ਭੁਗਤਾਨ ਵਾਲੀ ਵਿੰਡੋ ਬੰਦ ਹੋ ਗਈ",
+   "back": "The payment window closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "ਕੋਈ ਪੈਸਾ ਨਹੀਂ ਕੱਟਿਆ ਗਿਆ। ਤੁਹਾਡਾ ਕਾਰਟ ਸੰਭਾਲਿਆ ਹੋਇਆ ਹੈ: ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਲਈ 'ਭੁਗਤਾਨ ਕਰੋ' ਦਬਾਓ।",
+   "back": "No money was deducted. Your cart is saved: press 'Pay' to try again."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "ਅਸੀਂ ਭੁਗਤਾਨ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰ ਸਕੇ",
+   "back": "We could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਇੱਕ ਮਿੰਟ ਬਾਅਦ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ, ਜਾਂ ਸਾਡੇ Amazon.in ਸਟੋਰ ਤੋਂ ਆਰਡਰ ਕਰੋ।",
+   "back": "Please try again after one minute, or order from our Amazon.in store."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "ਆਨਲਾਈਨ ਭੁਗਤਾਨ ਇਸ ਵੇਲੇ ਬੰਦ ਹੈ",
+   "back": "Online payment is off at this time"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਸਾਡੇ Amazon.in ਸਟੋਰ ਤੋਂ ਆਰਡਰ ਕਰੋ। ਮਦਦ ਲਈ ਸਾਨੂੰ WhatsApp ਉੱਤੇ ਸੁਨੇਹਾ ਭੇਜੋ।",
+   "back": "Please order from our Amazon.in store. For help, send us a message on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} ਹੁਣੇ ਖ਼ਤਮ ਹੋ ਗਿਆ ਹੈ। ਕਿਰਪਾ ਕਰਕੇ ਮਾਤਰਾ ਘਟਾਓ ਜਾਂ ਇਸਨੂੰ ਹਟਾਓ।",
+   "back": "{name} has just run out. Please reduce the quantity or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "ਕਿਰਪਾ ਕਰਕੇ ਨਿਸ਼ਾਨ ਲੱਗੇ ਖਾਨੇ ਜਾਂਚੋ।",
+   "back": "Please check the marked boxes."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "ਸਾਡਾ Amazon.in ਸਟੋਰ",
+   "back": "Our Amazon.in store"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp ਉੱਤੇ ਮਦਦ",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "ਹੈਲੋ 1acrefarms, ਮੈਨੂੰ ਤੁਹਾਡੀ ਵੈੱਬਸਾਈਟ ਦੇ ਚੈੱਕਆਊਟ ਵਿੱਚ ਮਦਦ ਚਾਹੀਦੀ ਹੈ।",
+   "back": "Hello 1acrefarms, I need help with checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "ਆਰਡਰ ਨੰਬਰ: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} ਪੈਕ · ਆਰਡਰ {id}",
+   "back": "{n} packs · order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "ਅਸੀਂ ਇਹ ਵੇਰਵੇ ਤੁਹਾਡਾ ਆਰਡਰ ਪਹੁੰਚਾਉਣ, ਉਸਦਾ GST ਬਿੱਲ ਭੇਜਣ ਅਤੇ ਤੁਹਾਡੀ ਮਦਦ ਲਈ ਵਰਤਦੇ ਹਾਂ। ਅਸੀਂ ਇਹ ਕਿਸ ਨਾਲ ਸਾਂਝੇ ਕਰਦੇ ਹਾਂ: ਸਾਡੀ {link} ਵੇਖੋ।",
+   "back": "We use these details to deliver your order, send its GST bill and help you. Who we share them with: see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "ਅਸੀਂ ਭੁਗਤਾਨ ਤੋਂ 1–2 ਕੰਮਕਾਜੀ ਦਿਨਾਂ ਵਿੱਚ ਭੇਜ ਦਿੰਦੇ ਹਾਂ (ਐਤਵਾਰ ਜਾਂ ਸਰਕਾਰੀ ਛੁੱਟੀਆਂ ਨੂੰ ਨਹੀਂ)। ਭੇਜਣ ਤੋਂ ਬਾਅਦ ਆਮ ਡਿਲੀਵਰੀ ਸਮਾਂ: ਪਲਨਾਡੂ ਅਤੇ ਗੁੰਟੂਰ ਵਿੱਚ 1–3 ਦਿਨ, ਬਾਕੀ ਆਂਧਰਾ ਪ੍ਰਦੇਸ਼ ਅਤੇ ਦੱਖਣੀ ਭਾਰਤ ਵਿੱਚ 3–5 ਦਿਨ, ਭਾਰਤ ਵਿੱਚ ਹੋਰ ਥਾਵਾਂ ਉੱਤੇ 4–10 ਦਿਨ।",
+   "back": "We send within 1–2 working days of payment (not on Sundays or government holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days in other places in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "ਭੇਜਣ ਤੋਂ ਪਹਿਲਾਂ ਬਿਨਾਂ ਕਿਸੇ ਖ਼ਰਚੇ ਦੇ ਰੱਦ ਕਰ ਸਕਦੇ ਹੋ। ਖ਼ਰਾਬ, ਗ਼ਲਤ, ਨੁਕਸ ਵਾਲਾ ਜਾਂ ਦੱਸੇ ਮੁਤਾਬਕ ਨਾ ਹੋਣ ਵਾਲਾ ਪੈਕ: ਤੁਹਾਡੀ ਮਰਜ਼ੀ ਅਨੁਸਾਰ ਮੁਫ਼ਤ ਬਦਲੀ ਜਾਂ ਪੂਰਾ ਰਿਫੰਡ; ਵਾਪਸ ਭੇਜਣ ਦਾ ਖ਼ਰਚਾ ਤੁਹਾਨੂੰ ਕਦੇ ਨਹੀਂ ਦੇਣਾ ਪੈਂਦਾ। ਤੁਹਾਡੇ ਇਲਾਕੇ ਦੇ ਆਮ ਡਿਲੀਵਰੀ ਸਮੇਂ ਤੋਂ ਦੇਰ ਨਾਲ ਪਹੁੰਚੇ (ਜਦੋਂ ਤੱਕ ਹੜ੍ਹ ਜਾਂ ਹੜਤਾਲ ਵਰਗੀਆਂ ਕਿਸੇ ਦੇ ਵੀ ਵੱਸ ਤੋਂ ਬਾਹਰ ਦੀਆਂ ਘਟਨਾਵਾਂ ਕਾਰਨ ਦੇਰੀ ਨਾ ਹੋਈ ਹੋਵੇ): ਤੁਸੀਂ ਇਸਨੂੰ ਲੈਣ ਤੋਂ ਇਨਕਾਰ ਕਰ ਸਕਦੇ ਹੋ ਜਾਂ ਪੂਰਾ ਰਿਫੰਡ ਮੰਗ ਸਕਦੇ ਹੋ। ਰਿਫੰਡ ਮਨਜ਼ੂਰੀ ਤੋਂ 5–7 ਕੰਮਕਾਜੀ ਦਿਨਾਂ ਵਿੱਚ ਉਸੇ ਤਰੀਕੇ ਵਿੱਚ ਵਾਪਸ ਆਉਂਦਾ ਹੈ ਜਿਸ ਨਾਲ ਭੁਗਤਾਨ ਕੀਤਾ ਗਿਆ ਸੀ।",
+   "back": "You can cancel without any charge before sending. A pack that is spoiled, wrong, defective or not as described: free replacement or full refund as you choose; you never have to pay the cost of sending it back. If it arrives later than the usual delivery time for your area (unless the delay was caused by events beyond anyone's control such as flood or strike): you can refuse to take it or ask for a full refund. The refund comes back within 5–7 working days of approval in the same method with which the payment was made."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "ਅਸੀਂ ਹਰ ਸ਼ਿਕਾਇਤ ਮਿਲਣ ਦੀ ਸੂਚਨਾ 48 ਘੰਟਿਆਂ ਵਿੱਚ ਦਿੰਦੇ ਹਾਂ, ਉਸਨੂੰ ਇੱਕ ਸ਼ਿਕਾਇਤ ਨੰਬਰ ਦਿੰਦੇ ਹਾਂ (ਜਿਵੇਂ 1AF-C-0001) ਜਿਸ ਨਾਲ ਤੁਸੀਂ ਕਦੇ ਵੀ ਉਸਦੀ ਸਥਿਤੀ ਪੁੱਛ ਸਕਦੇ ਹੋ, ਅਤੇ ਇੱਕ ਮਹੀਨੇ ਦੇ ਅੰਦਰ ਉਸਦਾ ਹੱਲ ਕਰਦੇ ਹਾਂ।",
+   "back": "We give notice of receiving every complaint within 48 hours, give it a complaint number (such as 1AF-C-0001) with which you can ask its status at any time, and resolve it within one month."
   }
  }
 }

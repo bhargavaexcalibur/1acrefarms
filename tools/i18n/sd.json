@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧، واحد مالڪ، ⟦#2⟧ نالي سان واپار",
    "back": "⟦#1⟧, sole owner, business with the name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "ڪارٽ ۾ وجهو",
+   "back": "Put in cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "هاڻي خريد ڪريو",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "اسان وٽ ڏنل آرڊرن تي مفت ڊليوري",
+   "back": "Free delivery on orders placed with us"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "ڪارٽ",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "توهان جي ڪارٽ ۾ شامل ٿي ويو",
+   "back": "Added to your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "توهان جي ڪارٽ ۾ اڳ ئي هڪ آرڊر جي وڌ ۾ وڌ مقدار آهي",
+   "back": "Your cart already has the maximum quantity of one order"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "چيڪ آئوٽ · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← دڪان ڏانهن واپس",
+   "back": "← Back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "چيڪ آئوٽ",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "ٽيسٽ موڊ: ڪا به رقم نه ڪٽي ويندي. هي صفحو لڪيل آهي ۽ صرف جانچ لاءِ آهي.",
+   "back": "Test mode: no money will be deducted. This page is hidden and is only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "لائيو ادائگيون چالو آهن.",
+   "back": "Live payments are on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "آن لائن ادائگي هن وقت بند آهي.",
+   "back": "Online payment is off at this time."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "ادائگي سرور سان هن وقت رابطو نٿو ٿي سگهي.",
+   "back": "Contact with the payment server cannot be made at this time."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "توهان جا پيڪ",
+   "back": "Your packs"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (سڀ ٽيڪس شامل) · {unit} في g · {details}",
+   "back": "{grams} g · MRP {price} (all taxes included) · {unit} per g · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "پيڪ جا تفصيل",
+   "back": "Pack details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "هڪ گهٽ: {name}",
+   "back": "One less: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "هڪ وڌيڪ: {name}",
+   "back": "One more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "لنڪ مان شامل نه ڪيو ويو (هتي هن وقت آرڊر لاءِ دستياب ناهي): {items}.",
+   "back": "Not added from the link (not available to order here at this time): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "هڪ آرڊر ۾ ساڳيو پيڪ وڌ ۾ وڌ {max}: لنڪ مان هڪ مقدار گهٽ ڪئي وئي.",
+   "back": "At most {max} of the same pack in one order: one quantity from the link was reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "هڪ آرڊر ۾ وڌ ۾ وڌ {max} پيڪ: لنڪ مان ڪجهه پيڪ شامل نه ڪيا ويا.",
+   "back": "At most {max} packs in one order: some packs from the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "ڊليوري جو پتو",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "پورو نالو",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "موبائل نمبر",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "اي ميل (توهان جي آرڊر جي تصديق لاءِ)",
+   "back": "Email (for confirmation of your order)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "پتو (گهر نمبر، گهٽي، علائقو، نشاني)",
+   "back": "Address (house number, street, area, landmark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "شهر / قصبو",
+   "back": "City / town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "رياست",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "پنهنجي رياست چونڊيو",
+   "back": "Choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN ڪوڊ",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "رازداري پاليسي",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "مهرباني ڪري پنهنجو نالو لکو.",
+   "back": "Please write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "مهرباني ڪري پنهنجو نالو اکرن ۾ لکو (60 تائين).",
+   "back": "Please write your name in letters (up to 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "مهرباني ڪري پنهنجو 10 انگن وارو موبائل نمبر لکو.",
+   "back": "Please write your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "مهرباني ڪري صحيح 10 انگن وارو ڀارتي موبائل نمبر لکو.",
+   "back": "Please write a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "مهرباني ڪري پنهنجو اي ميل پتو لکو.",
+   "back": "Please write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "مهرباني ڪري پنهنجو اي ميل پتو جانچيو.",
+   "back": "Please check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "مهرباني ڪري پنهنجو پتو لکو.",
+   "back": "Please write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "مهرباني ڪري پنهنجو گهر نمبر، گهٽي ۽ علائقو شامل ڪريو.",
+   "back": "Please include your house number, street and area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "مهرباني ڪري پتو 200 اکرن کان گهٽ رکو، < يا > کان سواءِ.",
+   "back": "Please keep the address under 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "مهرباني ڪري پنهنجو شهر يا قصبو لکو.",
+   "back": "Please write your city or town."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "مهرباني ڪري شهر جو نالو اکرن ۾ لکو (30 تائين).",
+   "back": "Please write the city name in letters (up to 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "مهرباني ڪري پنهنجي رياست چونڊيو.",
+   "back": "Please choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "مهرباني ڪري لسٽ مان پنهنجي رياست چونڊيو.",
+   "back": "Please choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "مهرباني ڪري پنهنجو 6 انگن وارو PIN ڪوڊ لکو.",
+   "back": "Please write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "مهرباني ڪري صحيح 6 انگن وارو PIN ڪوڊ لکو.",
+   "back": "Please write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "هي PIN ڪوڊ توهان جي چونڊيل رياست ۾ ناهي. مهرباني ڪري ٻئي جانچيو.",
+   "back": "This PIN code is not in your chosen state. Please check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "مهرباني ڪري گهٽ ۾ گهٽ هڪ پيڪ شامل ڪريو.",
+   "back": "Please add at least one pack."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "هڪ آرڊر ۾ ساڳيو پيڪ وڌ ۾ وڌ {max}.",
+   "back": "At most {max} of the same pack in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "هڪ آرڊر ۾ وڌ ۾ وڌ {max} پيڪ. وڌيڪ لاءِ مهرباني ڪري ٻيو آرڊر ڏيو.",
+   "back": "At most {max} packs in one order. For more, please place another order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "توهان جي ڪارٽ ۾ هڪ پيڪ هن وقت دستياب ناهي. مهرباني ڪري ان کي هٽايو.",
+   "back": "A pack in your cart is not available at this time. Please remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "توهان جي ڪارٽ ۾ هڪ پيڪ هن وقت دستياب ناهي. مهرباني ڪري ان کي هٽايو.",
+   "back": "A pack in your cart is not available at this time. Please remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "مهرباني ڪري مقدارون جانچيو.",
+   "back": "Please check the quantities."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "آرڊر جو خلاصو",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "پيڪ ({n})",
+   "back": "Packs ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP ۾ شامل GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP ۾ شامل GST: {tax} (IGST {rate}%)",
+   "back": "GST included in MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP ۾ شامل GST ({rate}%)",
+   "back": "GST included in MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "ڊليوري",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (سڄي ڀارت ۾ مفت)",
+   "back": "{amount} (free in all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "ڪل ادائگي",
+   "back": "Total payment"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "توهان جي ڪارٽ خالي آهي. مٿي کان هڪ پيڪ شامل ڪريو.",
+   "back": "Your cart is empty. Add a pack from above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "توهان صرف MRP ادا ڪريو ٿا. چيڪ آئوٽ تي ڪجهه به وڌيڪ نٿو وڌايو وڃي.",
+   "back": "You pay only the MRP. Nothing extra at all is added at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "صرف اڳواٽ ادائگي: UPI، ڊيبٽ يا ڪريڊٽ ڪارڊ، نيٽ بئنڪنگ يا والٽ. ڊليوري تي نقد ادائگي ناهي. ادائگي اسان جو پيمينٽ گيٽ وي ({gateways}) پنهنجي محفوظ صفحي تي سنڀالي ٿو؛ اسان توهان جي ڪارڊ جا تفصيل يا UPI PIN ڪڏهن به نٿا ڏسون.",
+   "back": "Advance payment only: UPI, debit or credit card, net banking or wallet. No cash payment on delivery. The payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "ڊليوري",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "منسوخي، واپسي ۽ رقم واپسي",
+   "back": "Cancellation, return and refund of money"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "وڪڻندڙ",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "وڪڻندڙ جا تفصيل",
+   "back": "Seller details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI رجسٽريشن نمبر {no}",
+   "back": "FSSAI registration number {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI لائسنس نمبر {no}",
+   "back": "FSSAI licence number {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "ڪسٽمر ڪيئر ۽ شڪايت آفيسر: {name}، {designation} · {phone} (ڪال يا WhatsApp) · {email}",
+   "back": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "وڪڻندڙ جا تفصيل، وڪري جون شرطون، ترسيل، واپسي ۽ رازداري",
+   "back": "Seller details, terms of sale, shipping, returns and privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "ادائگي ڪري توهان اسان جي {link} سان متفق ٿيو ٿا.",
+   "back": "By paying you agree with our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "وڪري جي شرطن، ترسيل ۽ رقم واپسي جي پاليسين",
+   "back": "terms of sale, shipping and refund policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} ادا ڪريو",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "ادا ڪرڻ لاءِ پيڪ شامل ڪريو",
+   "back": "Add packs to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "مهرباني ڪري انتظار ڪريو…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "محفوظ ادائگي شروع ٿي رهي آهي…",
+   "back": "Secure payment is starting…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "ادائگي لاءِ توهان کي PhonePe ڏانهن وٺي وڃي رهيا آهيون…",
+   "back": "We are taking you to PhonePe for payment…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "توهان جي ادائگي جي تصديق ٿي رهي آهي…",
+   "back": "Your payment is being confirmed…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "ڪل رقم تازه ڪئي وئي",
+   "back": "Total amount was updated"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "هن آرڊر جي ڪل رقم {amount} آهي. مهرباني ڪري ان کي جانچيو ۽ ٻيهر \"ادا ڪريو\" دٻايو.",
+   "back": "The total amount of this order is {amount}. Please check it and press \"Pay\" again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "مهرباني! توهان جي ادائگي ملي وئي.",
+   "back": "Thank you! Your payment was received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "آرڊر نمبر: {id}. اسان 1–2 ڪم وارن ڏينهن اندر (آچر ۽ سرڪاري موڪلن کان سواءِ) پيڪ ڪري موڪليون ٿا ۽ ڪوريئر جو نالو ۽ ٽريڪنگ لنڪ WhatsApp يا اي ميل تي موڪليون ٿا.",
+   "back": "Order number: {id}. We pack and send within 1–2 working days (except Sunday and government holidays) and send the courier name and tracking link on WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "متوقع ڊليوري {from} ۽ {to} جي وچ ۾.",
+   "back": "Expected delivery between {from} and {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "ڪنهن به سوال لاءِ مهرباني ڪري آرڊر نمبر لکي پاڻ وٽ رکو.",
+   "back": "For any question, please write down the order number and keep it with you."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "توهان جي ادائگي جي تصديق ٿي رهي آهي",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "آرڊر نمبر: {id}. جيڪڏهن توهان جي کاتي مان رقم ڪٽجي وئي آهي ته ٻيهر ادا ڪرڻ جي ضرورت ناهي: اسان چند منٽن ۾ ان جي تصديق ڪريون ٿا، ۽ جيڪا ادائگي مڪمل نه ٿئي ان جي رقم پاڻمرادو واپس ٿي وڃي ٿي.",
+   "back": "Order number: {id}. If money has been deducted from your account, there is no need to pay again: we confirm it within a few minutes, and the money of a payment that is not completed comes back automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "ادائگي نه ٿي سگهي",
+   "back": "The payment could not be made"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "هن ڪوشش ۾ ڪا به رقم نه ڪٽي وئي. توهان ٻيهر ڪوشش ڪري سگهو ٿا، يا اسان جي Amazon.in اسٽور تان آرڊر ڪريو.",
+   "back": "No money was deducted in this attempt. You can try again, or order from our Amazon.in store."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "بئنڪ يا ايپ پاران ڏنل سبب: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "ادائگي جي ونڊو بند ٿي وئي",
+   "back": "The payment window closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "ڪا به رقم نه ڪٽي وئي. توهان جي ڪارٽ اڃا به اتي ئي آهي، خالي نه ٿي آهي: ٻيهر ڪوشش لاءِ ادائگي وارو بٽڻ دٻايو.",
+   "back": "No amount was deducted. Your cart is still right there, it has not become empty: to try again, press the payment button."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "اسان ادائگي شروع نه ڪري سگهياسين",
+   "back": "We could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "مهرباني ڪري هڪ منٽ کانپوءِ ٻيهر ڪوشش ڪريو، يا اسان جي Amazon.in اسٽور تان آرڊر ڪريو.",
+   "back": "Please try again after one minute, or order from our Amazon.in store."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "آن لائن ادائگي هن وقت بند آهي",
+   "back": "Online payment is off at this time"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "مهرباني ڪري اسان جي Amazon.in اسٽور تان آرڊر ڪريو. مدد لاءِ اسان کي WhatsApp تي پيغام موڪليو.",
+   "back": "Please order from our Amazon.in store. For help, send us a message on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} اجهو ئي ختم ٿي ويو. مهرباني ڪري مقدار گهٽ ڪريو يا ان کي هٽايو.",
+   "back": "{name} has just now run out. Please reduce the quantity or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "مهرباني ڪري نشان لڳل خانا جانچيو.",
+   "back": "Please check the marked boxes."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "ٻيهر ڪوشش ڪريو",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "اسان جو Amazon.in اسٽور",
+   "back": "Our Amazon.in store"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp تي مدد",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "هيلو 1acrefarms، مون کي توهان جي ويب سائيٽ تي چيڪ آئوٽ ۾ مدد گهرجي.",
+   "back": "Hello 1acrefarms, I need help with checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "آرڊر نمبر: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} پيڪ · آرڊر {id}",
+   "back": "{n} packs · order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "اسان اهي تفصيل توهان جو آرڊر پهچائڻ، ان جو GST انوائس موڪلڻ ۽ توهان جي مدد لاءِ استعمال ڪريون ٿا. اسان اهي ڪنهن سان شيئر ڪريون ٿا: اسان جي {link} ڏسو.",
+   "back": "We use these details to deliver your order, send its GST invoice and help you. Whom we share them with: see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "اسان ادائگي کان پوءِ 1–2 ڪم وارن ڏينهن اندر موڪليون ٿا (آچر ۽ سرڪاري موڪلن کان سواءِ). موڪلڻ کانپوءِ عام ڊليوري وقت: پلناڊو ۽ گنٽور ۾ 1–3 ڏينهن، باقي آنڌرا پرديش ۽ ڏکڻ ڀارت ۾ 3–5 ڏينهن، ڀارت ۾ ٻين هنڌن تي 4–10 ڏينهن.",
+   "back": "We send within 1–2 working days after payment (except Sunday and government holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days at other places in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "موڪلڻ کان اڳ مفت ۾ منسوخ ڪريو. خراب، غلط، نقص وارو يا بيان مطابق نه هجڻ وارو پيڪ: توهان جي پسند مطابق مفت متبادل يا پوري رقم واپسي؛ واپسي جي ترسيل جو خرچ توهان ڪڏهن به نٿا ڏيو. جيڪڏهن پيڪ توهان جي علائقي جي عام ڊليوري وقت کان دير سان پهچي (سواءِ ان جي ته دير ڪنهن جي به وس کان ٻاهر واقعن، جهڙوڪ ٻوڏ يا هڙتال، سبب ٿئي): توهان ان کي وٺڻ کان انڪار ڪري سگهو ٿا يا پوري رقم واپس گهري سگهو ٿا. منظوري کانپوءِ 5–7 ڪم وارن ڏينهن اندر رقم ان ئي طريقي ۾ واپس اچي ٿي جنهن سان ادائگي ڪئي وئي هئي.",
+   "back": "Cancel free before sending. Damaged, wrong, defective or not-as-described pack: free replacement or full refund of money as you prefer; you never pay the cost of return shipping. If the pack arrives later than the usual delivery time of your area (except if the delay is because of events beyond anyone's control, such as flood or strike): you can refuse to take it or ask for the full money back. After approval, within 5–7 working days the money comes back to the same method with which the payment was made."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "اسان هر شڪايت 48 ڪلاڪن اندر تسليم ڪريون ٿا، ان کي هڪ شڪايت نمبر ڏيون ٿا (مثال طور 1AF-C-0001) جيڪو توهان ڪنهن به وقت ان جي صورتحال ڄاڻڻ لاءِ ٻڌائي سگهو ٿا، ۽ هڪ مهيني اندر ان کي حل ڪريون ٿا.",
+   "back": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) which you can quote at any time to know its status, and resolve it within one month."
   }
  }
 }

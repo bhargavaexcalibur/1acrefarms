@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, एकलो मालक, ⟦#2⟧ ह्या नांवान वेवसाय",
    "back": "⟦#1⟧, sole owner, business under the name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "कार्टांत घालात",
+   "back": "Put in cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "आतां विकतें घेयात",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "आमचे कडेन केल्ल्या ऑर्डरांचेर डिलिव्हरी फुकट",
+   "back": "Delivery free on orders placed with us"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "कार्ट",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "कार्टांत घालें",
+   "back": "Put in cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "एका ऑर्डरींत आमी धाडूंक शकतात तितले पॅक तुमच्या कार्टांत आदींच आसात",
+   "back": "Your cart already has as many packs as we can send in one order"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "चेकआउट · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← दुकानांत परत वचात",
+   "back": "← Go back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "चेकआउट",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "टेस्ट मोड: खंयचेच प्रत्यक्ष पयशे घेनात. हें पान लिपयल्लें आसा आनी फकत तपासणेखातीर.",
+   "back": "Test mode: no actual money is taken. This page is hidden and only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "प्रत्यक्ष पेमेंट चालू आसा.",
+   "back": "Actual payment is on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "ऑनलायन पेमेंट सद्या बंद आसा.",
+   "back": "Online payment is currently off."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "पेमेंट सर्वराकडेन सद्या संपर्क जायना.",
+   "back": "Cannot contact the payment server at the moment."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "तुमचे पॅक",
+   "back": "Your packs"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (सगळे कर धरून) · दर g {unit} · {details}",
+   "back": "{grams} g · MRP {price} (including all taxes) · per g {unit} · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "पॅकाचो तपशील",
+   "back": "Pack details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "एक उणो: {name}",
+   "back": "One less: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "एक चड: {name}",
+   "back": "One more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "लिंकांतल्यान घालूंक ना (सद्या हांगा ऑर्डर करूंक मेळना): {items}.",
+   "back": "Not added from the link (cannot be ordered here at the moment): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "एका ऑर्डरींत एकाच पॅकाचे चडांत चड {max}: लिंकांतली संख्या उणी केल्या.",
+   "back": "At most {max} of the same pack in one order: the quantity from the link has been reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "एका ऑर्डरींत चडांत चड {max} पॅक: लिंकांतले कांय पॅक घालूंक नात.",
+   "back": "At most {max} packs in one order: some packs from the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "डिलिव्हरीचो पत्तो",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "पुराय नांव",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "मोबायल नंबर",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ईमेल (ऑर्डर पक्की जाल्ल्याचे कळयेखातीर)",
+   "back": "Email (to inform you that the order is confirmed)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "पत्तो (घर नं., रस्तो, वाठार, खूण)",
+   "back": "Address (house no., street, area, landmark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "शार / गांव",
+   "back": "City / village"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "राज्य",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "तुमचें राज्य वेंचात",
+   "back": "Choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN कोड",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "गुपितताय धोरण",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "उपकार करून तुमचें नांव बरयात.",
+   "back": "Please write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "उपकार करून तुमचें नांव अक्षरांनी बरयात (60 मेरेन).",
+   "back": "Please write your name in letters (up to 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "उपकार करून तुमचो 10 आंकड्यांचो मोबायल नंबर बरयात.",
+   "back": "Please write your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "उपकार करून योग्य 10 आंकड्यांचो भारतीय मोबायल नंबर बरयात.",
+   "back": "Please write a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "उपकार करून तुमचो ईमेल पत्तो बरयात.",
+   "back": "Please write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "उपकार करून तुमचो ईमेल पत्तो तपासात.",
+   "back": "Please check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "उपकार करून तुमचो पत्तो बरयात.",
+   "back": "Please write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "उपकार करून घर नंबर, रस्तो आनी वाठार घालात.",
+   "back": "Please add house number, street and area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "उपकार करून पत्तो 200 अक्षरां भितर दवरात, < वा > बगर.",
+   "back": "Please keep the address within 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "उपकार करून तुमचें शार वा गांव बरयात.",
+   "back": "Please write your city or village."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "उपकार करून शाराचें नांव अक्षरांनी बरयात (30 मेरेन).",
+   "back": "Please write the city name in letters (up to 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "उपकार करून तुमचें राज्य वेंचात.",
+   "back": "Please choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "उपकार करून वळेरेंतल्यान तुमचें राज्य वेंचात.",
+   "back": "Please choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "उपकार करून तुमचो 6 आंकड्यांचो PIN कोड बरयात.",
+   "back": "Please write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "उपकार करून योग्य 6 आंकड्यांचो PIN कोड बरयात.",
+   "back": "Please write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "हो PIN कोड तुमी वेंचिल्ल्या राज्यांतलो न्हय. उपकार करून दोनूय तपासात.",
+   "back": "This PIN code is not from the state you chose. Please check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "उपकार करून उणेंआड उणो एक पॅक घालात.",
+   "back": "Please add at least one pack."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "एका ऑर्डरींत एकाच पॅकाचे चडांत चड {max}.",
+   "back": "At most {max} of the same pack in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "एका ऑर्डरींत चडांत चड {max} पॅक. चड जाय जाल्यार, उपकार करून दुसरी ऑर्डर करात.",
+   "back": "At most {max} packs in one order. If you want more, please place another order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "तुमच्या कार्टांतलो एक पॅक सद्या मेळना. उपकार करून तो काडात.",
+   "back": "One pack in your cart is not available at the moment. Please remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "तुमच्या कार्टांतलो एक पॅक सद्या मेळना. उपकार करून तो काडात.",
+   "back": "One pack in your cart is not available at the moment. Please remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "उपकार करून संख्या तपासात.",
+   "back": "Please check the quantity."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "ऑर्डरीचो सारांश",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "पॅक ({n})",
+   "back": "Packs ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP भितर आशिल्लो GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP भितर आशिल्लो GST: {tax} (IGST {rate}%)",
+   "back": "GST included in MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP भितर आशिल्लो GST ({rate}%)",
+   "back": "GST included in MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "डिलिव्हरी",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (पुराय भारतांत फुकट)",
+   "back": "{amount} (free across all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "एकूण दिवपाचे पयशे",
+   "back": "Total money to pay"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "तुमची कार्ट रिकामी आसा. वयर एक पॅक घालात.",
+   "back": "Your cart is empty. Add a pack above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "तुमी फकत MRP दितात. चेकआउटाक कांयच वाडयना.",
+   "back": "You pay only the MRP. Nothing is increased at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "फकत आदीं पेमेंट: UPI, डेबिट वा क्रेडिट कार्ड, नेट बँकिंग वा वॉलेट. कॅश ऑन डिलिव्हरी ना. पेमेंट आमचो पेमेंट गेटवे ({gateways}) आपल्याच सुरक्षीत पानाचेर सांबाळटा; तुमच्या कार्डाचो तपशील वा UPI PIN आमी केन्नाच पळयनात.",
+   "back": "Advance payment only: UPI, debit or credit card, net banking or wallet. No cash on delivery. The payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "डिलिव्हरी",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "ऑर्डर रद्द करप, परत करप आनी पयशे परत",
+   "back": "Cancelling an order, returns and money back"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "विकपी",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "विकप्याचो तपशील",
+   "back": "Seller's details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI नोंदणी क्र. {no}",
+   "back": "FSSAI registration no. {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI परवानो क्र. {no}",
+   "back": "FSSAI licence no. {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "गिरायक सेवा आनी गाऱ्हाणें निवारण अधिकारी: {name}, {designation} · {phone} (फोन वा WhatsApp) · {email}",
+   "back": "Customer service and grievance redressal officer: {name}, {designation} · {phone} (phone or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "विकप्याचो तपशील, विक्रेच्यो अटी, शिपिंग, परत करप आनी गुपितताय",
+   "back": "Seller's details, terms of sale, shipping, returns and privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "पयशे दिवन तुमी आमच्यो {link} मान्य करतात.",
+   "back": "By paying, you accept our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "विक्रेच्यो अटी, शिपिंग आनी पयशे परत दिवपाचीं धोरणां",
+   "back": "terms of sale, shipping and money-back policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} दियात",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "पयशे दिवपाक पॅक घालात",
+   "back": "Add packs to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "उपकार करून राकात…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "सुरक्षीत पेमेंट सुरू जाता…",
+   "back": "Secure payment is starting…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "पयशे दिवपाक तुमकां PhonePe चेर व्हरतात…",
+   "back": "Taking you to PhonePe to pay…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "तुमचें पेमेंट पक्कें करतात…",
+   "back": "Confirming your payment…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "एकूण रक्कम बदल्ली",
+   "back": "The total amount changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "ह्या ऑर्डरीची एकूण रक्कम {amount} आसा. उपकार करून ती तपासात आनी परत 'दियात' दामात.",
+   "back": "The total amount of this order is {amount}. Please check it and press 'Pay' again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "देव बरें करूं! तुमचें पेमेंट मेळ्ळां.",
+   "back": "May God do good! Your payment has been received. [NOTE: 'Dev borem korum' is the standard Konkani way of saying 'thank you'; literally 'may God do good']"
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ऑर्डर नंबर: {id}. आमी 1–2 कामाच्या दिसां भितर (आयतार आनी सार्वजनीक सुटयो सोडून) पॅक करून धाडटात आनी कुरियराचें नांव आनी ट्रॅकिंग लिंक WhatsApp वा ईमेलार धाडटात.",
+   "back": "Order number: {id}. We pack and send within 1–2 working days (excluding Sundays and public holidays) and send the courier's name and tracking link on WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "डिलिव्हरी {from} आनी {to} मदीं अपेक्षीत.",
+   "back": "Delivery expected between {from} and {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "खंयच्याय प्रस्नाखातीर उपकार करून ऑर्डर नंबर बरोवन आपल्याकडेन दवरात।",
+   "back": "For any question, please write down the order number and keep it with you."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "तुमचें पेमेंट पक्कें जाता",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "ऑर्डर नंबर: {id}. तुमच्या खात्यांतल्यान पयशे गेल्यात जाल्यार, परत दिवपाची गरज ना: आमी कांय मिनटां भितर तें पक्कें करतात, आनी पुराय जावंक नाशिल्ल्या पेमेंटाचे पयशे आपसूक परत मेळटात.",
+   "back": "Order number: {id}. If money has gone from your account, there is no need to pay again: we confirm it within a few minutes, and the money for payments that did not complete comes back automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "पेमेंट जावंक ना",
+   "back": "Payment did not go through"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "ह्या यत्नाखातीर खंयचेच पयशे घेवंक नात. तुमी परत यत्न करूं येता, वा आमच्या Amazon.in स्टोअरांतल्यान ऑर्डर करूं येता.",
+   "back": "No money was taken for this attempt. You can try again, or order from our Amazon.in store."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "बँकेन वा ॲपान दिल्लें कारण: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "पेमेंट विंडो बंद जाली",
+   "back": "Payment window closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "कांयच पयशे कापूंक नात. तुमची कार्ट अजून आसा तशीच आसा, रिकामी जावंक ना: परत यत्न करपाक पयशे दिवपाचो बटण दामात.",
+   "back": "No money at all has been deducted. Your cart is still as it was, it has not become empty: to try again, press the button for paying money."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "आमी पेमेंट सुरू करूंक शकलेनात",
+   "back": "We could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "उपकार करून एका मिनटान परत यत्न करात, वा आमच्या Amazon.in स्टोअरांतल्यान ऑर्डर करात.",
+   "back": "Please try again in a minute, or order from our Amazon.in store."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "ऑनलायन पेमेंट सद्या बंद आसा",
+   "back": "Online payment is currently off"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "उपकार करून आमच्या Amazon.in स्टोअरांतल्यान ऑर्डर करात. मदतीखातीर आमकां WhatsApp चेर मेसेज करात.",
+   "back": "Please order from our Amazon.in store. For help, message us on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} आतांच सोंपलो. उपकार करून संख्या उणी करात वा तो काडात.",
+   "back": "{name} just ran out. Please reduce the quantity or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "उपकार करून हायलायट केल्लो तपशील तपासात.",
+   "back": "Please check the highlighted details."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "परत यत्न करात",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "आमचें Amazon.in स्टोअर",
+   "back": "Our Amazon.in store"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp चेर मदत",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "नमस्कार 1acrefarms, म्हाका तुमच्या वेबसायटीचेर चेकआउटाखातीर मदत जाय.",
+   "back": "Hello 1acrefarms, I need help with checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "ऑर्डर नंबर: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} पॅक · ऑर्डर {id}",
+   "back": "{n} packs · order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "हो तपशील आमी तुमची ऑर्डर पावोवपाक, ताचें GST बील धाडपाक आनी तुमकां आदार दिवपाक वापरतात. तो कोणाक दितात: आमचें {link} पळयात.",
+   "back": "We use these details to deliver your order, to send its GST bill and to help you. Who it is given to: see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "पेमेंट उपरांत 1–2 कामाच्या दिसां भितर आमी धाडटात (आयतार आनी सार्वजनीक सुटयो सोडून). धाडल्या उपरांत सादारण डिलिव्हरी वेळ: पल्नाडु आनी गुंटूरांत 1–3 दीस, उरिल्ल्या आंध्र प्रदेशांत आनी दक्षिण भारतांत 3–5 दीस, भारतांत हेर कडेन 4–10 दीस.",
+   "back": "We send within 1–2 working days after payment (excluding Sundays and public holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and in South India, 4–10 days elsewhere in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "पॅक धाडचे आदीं फुकट रद्द करात. पॅक मोडिल्लो, ऑर्डर केल्लो नाशिल्लो दुसरोच माल आयलो, पॅकांत दोश आसा वा वर्णन केल्लेभशेन ना: तुमच्या आवडी प्रमाणें फुकट बदली वा पुराय परतावो; परत धाडपाचो खर्च तुमकां केन्नाच दिवचो पडना. तुमच्या वाठारांतल्या सदांच्या डिलिव्हरी वेळा परस उशिरां पावल्यार (हुंवार वा संप सारकिल्या कोणाच्याय हाताभायल्या घडणुकांक लागून उशीर जाल्लो आसल्यार सोडून): तुमी तो नाकारूं येता वा पुराय परताव्याची मागणी करूं येता. मान्यताये उपरांत 5–7 वावराच्या दिसांनी परतावो तुमी ज्या पद्दतीन पयशे दिल्ले त्याच पद्दतीक वता.",
+   "back": "Cancel free of charge before the pack is sent. Pack broken, some other item that was not ordered arrived, there is a defect in the pack, or it is not as described: as you prefer, free replacement or full refund; you never have to pay the cost of sending it back. If it arrives later than the usual delivery time in your area (except when the delay happened because of events outside anyone's control, such as flood or strike): you can refuse it or ask for a full refund. After approval, in 5–7 working days the refund goes to the same method by which you paid the money."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "आमी दरेक गाऱ्हाण्याची पावती 48 वरां भितर दितात, ताका गाऱ्हाणें नंबर दितात (देखीक 1AF-C-0001), जो सांगून तुमी खंयच्याय वेळार ताची स्थिती तपासूं येता, आनी एका म्हयन्या भितर ताचें निवारण करतात.",
+   "back": "We give an acknowledgement of every complaint within 48 hours, give it a complaint number (e.g. 1AF-C-0001), by quoting which you can check its status at any time, and resolve it within one month."
   }
  }
 }

@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, தனி உரிமையாளர், ⟦#2⟧ என்ற வணிகப் பெயரில்",
    "back": "⟦#1⟧, sole proprietor, under the business name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "கார்ட்டில் சேர்",
+   "back": "Add to cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "இப்போதே வாங்கு",
+   "back": "Buy right now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "எங்களிடம் நேரடியாக ஆர்டர் செய்தால் டெலிவரி இலவசம்",
+   "back": "Delivery is free if you order directly from us"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "கார்ட்",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "உங்கள் கார்ட்டில் சேர்க்கப்பட்டது",
+   "back": "Added to your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "ஒரு ஆர்டரில் அனுப்பக்கூடிய அதிகபட்ச அளவு ஏற்கனவே உங்கள் கார்ட்டில் உள்ளது",
+   "back": "The maximum quantity that can be sent in one order is already in your cart"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "செக்அவுட் · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← கடைக்குத் திரும்பு",
+   "back": "← Return to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "செக்அவுட்",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "சோதனை முறை: இதில் எந்தப் பணமும் வசூலிக்கப்படாது. இந்தப் பக்கம் மறைக்கப்பட்டது, சோதனைக்கு மட்டுமே.",
+   "back": "Test mode: no money will be collected in this. This page is hidden, only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "லைவ் கட்டணம் இயக்கத்தில் உள்ளது: இப்போது ஒவ்வொரு கட்டணத்திலும் கணக்கிலிருந்து பணம் எடுக்கப்படும்.",
+   "back": "Live payment is in operation: now, on every payment, money will be taken from the account."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "ஆன்லைன் பணம் செலுத்துதல் இப்போது நிறுத்தப்பட்டுள்ளது.",
+   "back": "Online payment is stopped now."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "பணம் செலுத்தும் சர்வரை இப்போது தொடர்புகொள்ள முடியவில்லை.",
+   "back": "The payment server cannot be contacted now."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "உங்கள் பாக்கெட்டுகள்",
+   "back": "Your packets"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (அனைத்து வரிகளும் உட்பட) · ஒரு g-க்கு {unit} · {details}",
+   "back": "{grams} g · MRP {price} (all taxes included) · {unit} per g · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "பாக்கெட் விவரங்கள்",
+   "back": "Packet details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "ஒன்று குறை: {name}",
+   "back": "Reduce one: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "ஒன்று கூட்டு: {name}",
+   "back": "Add one: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "இணைப்பிலிருந்து சேர்க்கப்படவில்லை (இப்போது இங்கே ஆர்டர் செய்ய இயலாது): {items}.",
+   "back": "Not added from the link (cannot be ordered here now): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "ஒரு ஆர்டரில் ஒரே பாக்கெட் அதிகபட்சம் {max}: இணைப்பில் இருந்த ஒரு அளவு குறைக்கப்பட்டது.",
+   "back": "The same packet maximum {max} in one order: one quantity that was in the link was reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "ஒரு ஆர்டரில் அதிகபட்சம் {max} பாக்கெட்டுகள்: இணைப்பில் இருந்த சில பாக்கெட்டுகள் சேர்க்கப்படவில்லை.",
+   "back": "Maximum {max} packets in one order: some packets that were in the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "டெலிவரி முகவரி",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "முழுப் பெயர்",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "மொபைல் எண்",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "மின்னஞ்சல் (ஆர்டர் உறுதிப்படுத்தலுக்கு)",
+   "back": "Email (for order confirmation)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "முகவரி (வீட்டு எண், தெரு, பகுதி, அருகிலுள்ள அடையாளம்)",
+   "back": "Address (house number, street, area, nearby landmark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "நகரம் / ஊர்",
+   "back": "City / town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "மாநிலம்",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "உங்கள் மாநிலத்தைத் தேர்ந்தெடுக்கவும்",
+   "back": "Select your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN குறியீடு",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "தனியுரிமைக் கொள்கை",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "உங்கள் பெயரை உள்ளிடவும்.",
+   "back": "Enter your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "உங்கள் பெயரை எழுத்துகளில் உள்ளிடவும் (அதிகபட்சம் 60).",
+   "back": "Enter your name in letters (maximum 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "உங்கள் 10 இலக்க மொபைல் எண்ணை உள்ளிடவும்.",
+   "back": "Enter your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "சரியான 10 இலக்க இந்திய மொபைல் எண்ணை உள்ளிடவும்.",
+   "back": "Enter a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "உங்கள் மின்னஞ்சல் முகவரியை உள்ளிடவும்.",
+   "back": "Enter your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "உங்கள் மின்னஞ்சல் முகவரியைச் சரிபார்க்கவும்.",
+   "back": "Check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "உங்கள் முகவரியை உள்ளிடவும்.",
+   "back": "Enter your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "வீட்டு எண், தெரு, பகுதி ஆகியவற்றைச் சேர்க்கவும்.",
+   "back": "Add house number, street, area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "முகவரியை 200 எழுத்துகளுக்குள், < அல்லது > இல்லாமல் எழுதவும்.",
+   "back": "Write the address within 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "உங்கள் நகரம் அல்லது ஊரை உள்ளிடவும்.",
+   "back": "Enter your city or town."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "நகரின் பெயரை எழுத்துகளில் உள்ளிடவும் (அதிகபட்சம் 30).",
+   "back": "Enter the city name in letters (maximum 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "உங்கள் மாநிலத்தைத் தேர்ந்தெடுக்கவும்.",
+   "back": "Select your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "பட்டியலிலிருந்து உங்கள் மாநிலத்தைத் தேர்ந்தெடுக்கவும்.",
+   "back": "Select your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "உங்கள் 6 இலக்க PIN குறியீட்டை உள்ளிடவும்.",
+   "back": "Enter your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "சரியான 6 இலக்க PIN குறியீட்டை உள்ளிடவும்.",
+   "back": "Enter a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "இந்த PIN குறியீடு நீங்கள் தேர்ந்தெடுத்த மாநிலத்தில் இல்லை. இரண்டையும் சரிபார்க்கவும்.",
+   "back": "This PIN code is not in the state you selected. Check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "குறைந்தது ஒரு பாக்கெட்டையாவது சேர்க்கவும்.",
+   "back": "Add at least one packet."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "ஒரு ஆர்டரில் ஒரே பாக்கெட் அதிகபட்சம் {max}.",
+   "back": "The same packet maximum {max} in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "ஒரு ஆர்டரில் அதிகபட்சம் {max} பாக்கெட்டுகள். கூடுதலாக வேண்டுமெனில், இரண்டாவது ஆர்டர் செய்யவும்.",
+   "back": "Maximum {max} packets in one order. If you want more, place a second order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "உங்கள் கார்ட்டில் உள்ள ஒரு பாக்கெட் இப்போது கிடைக்கவில்லை. அதை நீக்கவும்.",
+   "back": "A packet in your cart is not available now. Remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "உங்கள் கார்ட்டில் உள்ள ஒரு பாக்கெட் இப்போது கிடைக்கவில்லை. அதை நீக்கவும்.",
+   "back": "A packet in your cart is not available now. Remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "அளவுகளைச் சரிபார்க்கவும்.",
+   "back": "Check the quantities."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "ஆர்டர் சுருக்கம்",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "பாக்கெட்டுகள் ({n})",
+   "back": "Packets ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP-யில் சேர்ந்துள்ள GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP-யில் சேர்ந்துள்ள GST: {tax} (IGST {rate}%)",
+   "back": "GST included in the MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP-யில் சேர்ந்துள்ள GST ({rate}%)",
+   "back": "GST included in the MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "டெலிவரி",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (இந்தியா முழுவதும் இலவசம்)",
+   "back": "{amount} (free all over India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "செலுத்த வேண்டிய மொத்தம்",
+   "back": "Total to be paid"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "உங்கள் கார்ட் காலியாக உள்ளது. மேலே ஒரு பாக்கெட்டைச் சேர்க்கவும்.",
+   "back": "Your cart is empty. Add a packet above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "நீங்கள் MRP மட்டுமே செலுத்துகிறீர்கள். செக்அவுட்டில் கூடுதலாக எதுவும் சேர்க்கப்படாது.",
+   "back": "You pay only the MRP. Nothing extra will be added at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "முன்பணம் மட்டும்: UPI, டெபிட் அல்லது கிரெடிட் கார்டு, நெட் பேங்கிங் அல்லது வாலெட். கேஷ் ஆன் டெலிவரி இல்லை. பணம் செலுத்துதலை எங்கள் பேமெண்ட் கேட்வே ({gateways}) தனது சொந்தப் பாதுகாப்பான பக்கத்தில் கையாளுகிறது; உங்கள் கார்டு விவரங்களையோ UPI PIN-ஐயோ நாங்கள் ஒருபோதும் பார்ப்பதில்லை.",
+   "back": "Advance payment only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "டெலிவரி",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "ரத்து, திருப்பி அனுப்புதல், பணம் திருப்பித் தருதல்",
+   "back": "Cancellation, return, refund of money"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "விற்பனையாளர்",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "விற்பனையாளர் விவரங்கள்",
+   "back": "Seller details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI பதிவு எண் {no}",
+   "back": "FSSAI registration number {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI உரிம எண் {no}",
+   "back": "FSSAI licence number {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "வாடிக்கையாளர் சேவை மற்றும் குறைதீர்ப்பு அலுவலர்: {name}, {designation} · {phone} (அழைக்கவும் அல்லது WhatsApp செய்யவும்) · {email}",
+   "back": "Customer service and grievance redressal officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "விற்பனையாளர் விவரங்கள், விற்பனை நிபந்தனைகள், அனுப்புதல், திருப்பி அனுப்புதல், தனியுரிமை",
+   "back": "Seller details, terms of sale, shipping, return, privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "பணம் செலுத்துவதன் மூலம் எங்கள் {link} ஏற்றுக்கொள்கிறீர்கள்.",
+   "back": "By paying you accept our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "விற்பனை நிபந்தனைகள், அனுப்புதல் மற்றும் பணம் திருப்பித் தரும் கொள்கைகளை",
+   "back": "terms of sale, shipping and refund policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} செலுத்து",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "பணம் செலுத்த ஒரு பாக்கெட்டைச் சேர்க்கவும்",
+   "back": "Add a packet to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "சற்றுக் காத்திருக்கவும்…",
+   "back": "Please wait a moment…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "பாதுகாப்பான பணம் செலுத்துதல் தொடங்குகிறது…",
+   "back": "Secure payment is starting…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "பணம் செலுத்த PhonePe-க்கு அழைத்துச் செல்கிறோம்…",
+   "back": "Taking you to PhonePe to pay…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "உங்கள் பணம் செலுத்துதலை உறுதிசெய்கிறோம்…",
+   "back": "Confirming your payment…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "மொத்தத் தொகை மாறியுள்ளது",
+   "back": "The total amount has changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "இந்த ஆர்டரின் மொத்தத் தொகை {amount}. அதைச் சரிபார்த்து மீண்டும் 'செலுத்து' அழுத்தவும்.",
+   "back": "The total amount of this order is {amount}. Check it and press 'Pay' again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "நன்றி! உங்கள் பணம் கிடைத்தது.",
+   "back": "Thank you! Your money has been received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ஆர்டர் எண்: {id}. 1–2 வேலை நாட்களுக்குள் (ஞாயிறு மற்றும் பொது விடுமுறை நாட்கள் தவிர) பேக் செய்து அனுப்புவோம்; கூரியர் பெயரையும் டிராக்கிங் இணைப்பையும் WhatsApp அல்லது மின்னஞ்சலில் அனுப்புவோம்.",
+   "back": "Order number: {id}. We will pack and send within 1–2 working days (except Sundays and public holidays); we will send the courier name and tracking link on WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "{from} முதல் {to} வரை டெலிவரி எதிர்பார்க்கப்படுகிறது.",
+   "back": "Delivery is expected from {from} to {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "ஏதேனும் கேள்வி இருந்தால் சொல்ல, ஆர்டர் எண்ணை வைத்துக்கொள்ளவும்.",
+   "back": "Keep the order number to mention if you have any question."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "உங்கள் பணம் செலுத்துதல் உறுதிசெய்யப்படுகிறது",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "ஆர்டர் எண்: {id}. உங்கள் கணக்கிலிருந்து பணம் எடுக்கப்பட்டிருந்தால், மீண்டும் செலுத்தத் தேவையில்லை: சில நிமிடங்களில் அதை உறுதிசெய்வோம்; நிறைவடையாத பணம் செலுத்துதல் தானாகவே திருப்பித் தரப்படும்.",
+   "back": "Order number: {id}. If money has been taken from your account, there is no need to pay again: we will confirm it in a few minutes; an incomplete payment will be returned automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "பணம் செலுத்துதல் நிறைவடையவில்லை",
+   "back": "Payment was not completed"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "இந்த முயற்சிக்கு எந்தப் பணமும் எடுக்கப்படவில்லை. மீண்டும் முயலலாம், அல்லது எங்கள் Amazon.in கடையில் ஆர்டர் செய்யலாம்.",
+   "back": "No money was taken for this attempt. You can try again, or order at our Amazon.in shop."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "வங்கி அல்லது ஆப் கூறிய காரணம்: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "பணம் செலுத்தும் சாளரம் மூடப்பட்டது",
+   "back": "The payment window was closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "எந்தக் கட்டணமும் வசூலிக்கப்படவில்லை. உங்கள் கார்ட் சேமிக்கப்பட்டுள்ளது: மீண்டும் முயல 'செலுத்து' அழுத்தவும்.",
+   "back": "No charge was collected. Your cart is saved: press 'Pay' to try again."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "பணம் செலுத்துதலைத் தொடங்க முடியவில்லை",
+   "back": "Could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "ஒரு நிமிடம் கழித்து மீண்டும் முயலவும், அல்லது எங்கள் Amazon.in கடையில் ஆர்டர் செய்யவும்.",
+   "back": "Try again after a minute, or order at our Amazon.in shop."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "ஆன்லைன் பணம் செலுத்துதல் இப்போது இல்லை",
+   "back": "Online payment is not available now"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "எங்கள் Amazon.in கடையில் ஆர்டர் செய்யவும். உதவிக்கு WhatsApp-ல் எங்களுக்குச் செய்தி அனுப்பவும்.",
+   "back": "Order at our Amazon.in shop. For help, send us a message on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} இப்போதுதான் விற்றுத் தீர்ந்தது. அளவைக் குறைக்கவும் அல்லது அதை நீக்கவும்.",
+   "back": "{name} has just sold out. Reduce the quantity or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "குறிக்கப்பட்ட இடங்களைச் சரிபார்க்கவும்.",
+   "back": "Check the marked places."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "மீண்டும் முயல்க",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "எங்கள் Amazon.in கடை",
+   "back": "Our Amazon.in shop"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp-ல் உதவி",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "வணக்கம் 1acrefarms, உங்கள் இணையதளத்தில் செக்அவுட் செய்ய எனக்கு உதவி தேவை.",
+   "back": "Hello 1acrefarms, I need help to check out on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "ஆர்டர் எண்: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} பாக்கெட்(டுகள்) · ஆர்டர் {id}",
+   "back": "{n} packet(s) · order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "உங்கள் ஆர்டரை டெலிவரி செய்ய, அதன் GST இன்வாய்ஸை அனுப்ப, உங்களுக்கு உதவ இந்த விவரங்களைப் பயன்படுத்துகிறோம். யாருடன் பகிர்கிறோம் என்பதை அறிய எங்கள் {link} பார்க்கவும்.",
+   "back": "We use these details to deliver your order, to send its GST invoice, and to help you. To know with whom we share them, see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "பணம் செலுத்திய 1–2 வேலை நாட்களுக்குள் அனுப்புவோம் (ஞாயிறு மற்றும் பொது விடுமுறை நாட்கள் தவிர). அனுப்பிய பின் வழக்கமான டெலிவரி நேரம்: பல்நாடு மற்றும் குண்டூரில் 1–3 நாட்கள், ஆந்திரப் பிரதேசத்தின் மற்ற பகுதிகளிலும் தென்னிந்தியாவிலும் 3–5 நாட்கள், இந்தியாவின் பிற இடங்களில் 4–10 நாட்கள்.",
+   "back": "We will send within 1–2 working days of payment (except Sundays and public holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in other parts of Andhra Pradesh and in South India, 4–10 days in other places in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "அனுப்புவதற்கு முன் கட்டணமின்றி ரத்து செய்யலாம். சேதமடைந்த, தவறான, குறைபாடுள்ள அல்லது விவரித்தபடி இல்லாத பாக்கெட்: நீங்கள் விரும்பியபடி இலவச மாற்றுப் பாக்கெட் அல்லது முழுப் பணத்தையும் திருப்பித் தருவோம்; திருப்பி அனுப்பும் செலவை நீங்கள் ஒருபோதும் ஏற்க வேண்டியதில்லை. உங்கள் பகுதிக்கான வழக்கமான டெலிவரி நேரத்தை விடத் தாமதமாக வந்தால் (வெள்ளம், வேலைநிறுத்தம் போன்ற யாருடைய கட்டுப்பாட்டிலும் இல்லாத நிகழ்வுகளால் தாமதமானால் தவிர): அதை ஏற்க மறுக்கலாம் அல்லது முழுப் பணத்தையும் திரும்பக் கேட்கலாம். ஒப்புதல் அளிக்கப்பட்ட 5–7 வேலை நாட்களுக்குள், நீங்கள் பணம் செலுத்திய அதே முறைக்கே பணம் திருப்பித் தரப்படும்.",
+   "back": "You can cancel without charge before sending. A damaged, wrong, defective or not-as-described packet: as you prefer, we will give a free replacement packet or return the full money; you never have to bear the cost of sending it back. If it arrives later than the usual delivery time for your area (except if delayed by events not in anyone's control, such as flood or strike): you can refuse to accept it or ask for the full money back. Within 5–7 working days of approval being given, the money will be returned to the same method you paid with."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "ஒவ்வொரு புகாரையும் 48 மணி நேரத்திற்குள் பெற்றுக்கொண்டதாகத் தெரிவித்து, அதற்கு ஒரு புகார் எண் (உதாரணமாக 1AF-C-0001) தருவோம்; அதன் நிலையை அறிய அந்த எண்ணை எப்போது வேண்டுமானாலும் குறிப்பிடலாம். ஒரு மாதத்திற்குள் புகாரைத் தீர்த்து வைப்போம்.",
+   "back": "We will inform you that each complaint was received within 48 hours and give it a complaint number (for example 1AF-C-0001); you can mention that number any time to know its status. We will resolve the complaint within one month."
   }
  }
 }

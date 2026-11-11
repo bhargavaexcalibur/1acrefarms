@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, एकलस्वामी, ⟦#2⟧ इति व्यापारनाम्ना",
    "back": "⟦#1⟧, sole owner, by the trade name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "क्रयपेटिकायां योजयतु",
+   "back": "Please add to the purchase-box"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "इदानीं क्रीणातु",
+   "back": "Please buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "अस्मत्तः साक्षात् क्रयादेशे वितरणं निःशुल्कम्",
+   "back": "On a direct purchase order from us, delivery is free of charge"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "क्रयपेटिका",
+   "back": "Purchase-box (cart)"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "भवतः क्रयपेटिकायां योजितम्",
+   "back": "Added to your purchase-box"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "एकस्मिन् क्रयादेशे यावत् प्रेषयितुं शक्यते तावत् भवतः क्रयपेटिकायां पूर्वमेव अस्ति",
+   "back": "As much as can be sent in one purchase order is already in your purchase-box"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "क्रयपूर्तिः · 1acrefarms",
+   "back": "Purchase completion · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← आपणं प्रति प्रत्यागच्छतु",
+   "back": "← Please go back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "क्रयपूर्तिः",
+   "back": "Purchase completion"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "परीक्षाप्रकारः: अत्र किमपि धनं न गृह्यते। एतत् पृष्ठं गुप्तम्, केवलं परीक्षार्थम्।",
+   "back": "Test mode: no money at all is taken here. This page is hidden, only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "लाइव्-मूल्यदानं सक्रियम्: इदानीं प्रत्येकेन मूल्यदानेन धनं खाताद् गृह्यते।",
+   "back": "Live payment is active: now, with every payment, money is taken from the account."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "अन्तर्जालमूल्यदानम् इदानीं स्थगितम्।",
+   "back": "Internet payment is now suspended."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "मूल्यदानसेवकेन सह इदानीं सम्पर्कः न भवति।",
+   "back": "There is no contact with the payment server now. [NOTE: 'सेवक' literally 'servant', used for 'server']"
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "भवतः पुटकानि",
+   "back": "Your packets"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (सर्वकरसहितम्) · प्रति g {unit} · {details}",
+   "back": "{grams} g · MRP {price} (with all taxes) · per g {unit} · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "पुटकविवरणम्",
+   "back": "Packet details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "एकं न्यूनम्: {name}",
+   "back": "One less: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "एकम् अधिकम्: {name}",
+   "back": "One more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "सम्पर्कतन्तोः न योजितम् (अत्र इदानीं क्रेतुं न उपलभ्यते): {items}।",
+   "back": "Not added from the link (not available to buy here now): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "एकस्मिन् क्रयादेशे एकस्य पुटकस्य अधिकतमं {max}: सम्पर्कतन्तोः एका सङ्ख्या न्यूनीकृता।",
+   "back": "In one purchase order, maximum {max} of one packet: one quantity from the link was reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "एकस्मिन् क्रयादेशे अधिकतमं {max} पुटकानि: सम्पर्कतन्तोः कानिचित् पुटकानि न योजितानि।",
+   "back": "In one purchase order, maximum {max} packets: some packets from the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "वितरणसङ्केतः",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "पूर्णं नाम",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "चलदूरवाणीसङ्ख्या",
+   "back": "Mobile phone number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ईमेल (क्रयादेशपुष्ट्यर्थम्)",
+   "back": "Email (for purchase-order confirmation)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "सङ्केतः (गृहसङ्ख्या, वीथिः, क्षेत्रम्, समीपस्थं चिह्नम्)",
+   "back": "Address (house number, street, area, nearby mark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "नगरम् / ग्रामः",
+   "back": "City / village"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "राज्यम्",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "भवतः राज्यं चिनोतु",
+   "back": "Please choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN सङ्केतः",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "गोपनीयतानीतिः",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "कृपया भवतः नाम लिखतु।",
+   "back": "Please write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "कृपया नाम अक्षरैः लिखतु (अधिकतमं 60)।",
+   "back": "Please write the name in letters (maximum 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "कृपया भवतः 10 अङ्कीयां चलदूरवाणीसङ्ख्यां लिखतु।",
+   "back": "Please write your 10-digit mobile phone number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "कृपया समीचीनां 10 अङ्कीयां भारतीयचलदूरवाणीसङ्ख्यां लिखतु।",
+   "back": "Please write a correct 10-digit Indian mobile phone number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "कृपया भवतः ईमेल-सङ्केतं लिखतु।",
+   "back": "Please write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "कृपया भवतः ईमेल-सङ्केतं परीक्षताम्।",
+   "back": "Please check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "कृपया भवतः सङ्केतं लिखतु।",
+   "back": "Please write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "कृपया गृहसङ्ख्यां, वीथिं क्षेत्रं च योजयतु।",
+   "back": "Please add house number, street and area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "कृपया सङ्केतं 200 अक्षरेभ्यः न्यूनं, < अथवा > विना लिखतु।",
+   "back": "Please write the address in less than 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "कृपया भवतः नगरं ग्रामं वा लिखतु।",
+   "back": "Please write your city or village."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "कृपया नगरस्य नाम अक्षरैः लिखतु (अधिकतमं 30)।",
+   "back": "Please write the city's name in letters (maximum 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "कृपया भवतः राज्यं चिनोतु।",
+   "back": "Please choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "कृपया सूच्याः भवतः राज्यं चिनोतु।",
+   "back": "Please choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "कृपया भवतः 6 अङ्कीयं PIN सङ्केतं लिखतु।",
+   "back": "Please write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "कृपया समीचीनं 6 अङ्कीयं PIN सङ्केतं लिखतु।",
+   "back": "Please write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "एषः PIN सङ्केतः भवता चिते राज्ये नास्ति। कृपया उभयं परीक्षताम्।",
+   "back": "This PIN code is not in the state chosen by you. Please check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "कृपया न्यूनातिन्यूनम् एकं पुटकं योजयतु।",
+   "back": "Please add at least one packet."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "एकस्मिन् क्रयादेशे एकस्य पुटकस्य अधिकतमं {max}।",
+   "back": "In one purchase order, maximum {max} of one packet."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "एकस्मिन् क्रयादेशे अधिकतमं {max} पुटकानि। अधिकार्थं कृपया द्वितीयं क्रयादेशं ददातु।",
+   "back": "In one purchase order, maximum {max} packets. For more, please give a second purchase order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "भवतः क्रयपेटिकायाम् एकं पुटकम् इदानीं न उपलभ्यते। कृपया तत् निष्कासयतु।",
+   "back": "One packet in your purchase-box is not available now. Please remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "भवतः क्रयपेटिकायाम् एकं पुटकम् इदानीं न उपलभ्यते। कृपया तत् निष्कासयतु।",
+   "back": "One packet in your purchase-box is not available now. Please remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "कृपया सङ्ख्याः परीक्षताम्।",
+   "back": "Please check the numbers."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "क्रयादेशसारांशः",
+   "back": "Purchase-order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "पुटकानि ({n})",
+   "back": "Packets ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP-मध्ये अन्तर्भूतः GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included within the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP-मध्ये अन्तर्भूतः GST: {tax} (IGST {rate}%)",
+   "back": "GST included within the MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP-मध्ये अन्तर्भूतः GST ({rate}%)",
+   "back": "GST included within the MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "वितरणम्",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (सम्पूर्णे भारते निःशुल्कम्)",
+   "back": "{amount} (free of charge in all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "देयं समग्रमूल्यम्",
+   "back": "Total price payable"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "भवतः क्रयपेटिका रिक्ता अस्ति। उपरि एकं पुटकं योजयतु।",
+   "back": "Your purchase-box is empty. Please add a packet above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "भवान् केवलं MRP ददाति। क्रयपूर्तौ किमपि अधिकं न योज्यते।",
+   "back": "You give only the MRP. Nothing more is added at purchase completion."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "केवलं पूर्वमूल्यदानम्: UPI, डेबिट् अथवा क्रेडिट् कार्ड्, नेट्-बैङ्किङ्ग् अथवा वालेट्। वितरणसमये नगदं न स्वीक्रियते। मूल्यदानम् अस्माकं मूल्यदानद्वारं ({gateways}) स्वस्य सुरक्षिते पृष्ठे निर्वहति; भवतः कार्ड्-विवरणं UPI PIN वा वयं कदापि न पश्यामः।",
+   "back": "Advance payment only: UPI, debit or credit card, net-banking or wallet. Cash is not accepted at delivery time. Payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "वितरणम्",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "निरसनं, प्रत्यर्पणं, धनप्रत्यर्पणं च",
+   "back": "Cancellation, return, and money refund"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "विक्रेता",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "विक्रेतृविवरणम्",
+   "back": "Seller details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI पञ्जीकरणसङ्ख्या {no}",
+   "back": "FSSAI registration number {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI अनुज्ञापत्रसङ्ख्या {no}",
+   "back": "FSSAI licence number {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "ग्राहकसेवा-परिवादनिवारणाधिकारी: {name}, {designation} · {phone} (दूरवाणीं करोतु अथवा WhatsApp करोतु) · {email}",
+   "back": "Customer-service and complaint-redressal officer: {name}, {designation} · {phone} (please make a phone call or do WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "विक्रेतृविवरणं, विक्रयनियमाः, प्रेषणं, प्रत्यर्पणं, गोपनीयता च",
+   "back": "Seller details, terms of sale, shipping, return, and privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "मूल्यदानेन भवान् अस्माकं {link} स्वीकरोति।",
+   "back": "By paying, you accept our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "विक्रयनियमान्, प्रेषणनीतिं धनप्रत्यर्पणनीतिं च",
+   "back": "terms of sale, shipping policy and money-refund policy"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} ददातु",
+   "back": "Please give {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "मूल्यदानाय पुटकं योजयतु",
+   "back": "Please add a packet for payment"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "कृपया प्रतीक्षताम्…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "सुरक्षितं मूल्यदानम् आरभ्यते…",
+   "back": "Secure payment is being started…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "मूल्यदानाय PhonePe प्रति नीयते…",
+   "back": "Being taken to PhonePe for payment…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "भवतः मूल्यदानं परीक्ष्यते…",
+   "back": "Your payment is being checked…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "समग्रमूल्यं परिवर्तितम्",
+   "back": "The total price has changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "अस्य क्रयादेशस्य समग्रमूल्यं {amount} अस्ति। कृपया परीक्ष्य पुनः 'ददातु' इति नुदतु।",
+   "back": "The total price of this purchase order is {amount}. Please check and press 'Please give' again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "धन्यवादः! भवतः मूल्यं प्राप्तम्।",
+   "back": "Thank you! Your payment (lit. price) has been received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "क्रयादेशसङ्ख्या: {id}। वयं 1–2 कार्यदिनेषु (रविवासरान् सार्वजनिकावकाशदिनानि च विहाय) पुटीकृत्य प्रेषयामः, सन्देशवाहकस्य नाम अनुसरणसम्पर्कतन्तुं च WhatsApp अथवा ईमेल द्वारा प्रेषयामः।",
+   "back": "Purchase-order number: {id}. We pack and send within 1–2 working days (excluding Sundays and public holidays), and send the courier's (lit. message-carrier's) name and tracking link via WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "{from} तः {to} पर्यन्तं वितरणम् अपेक्षितम्।",
+   "back": "Delivery is expected from {from} up to {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "कस्यापि प्रश्नस्य कृते क्रयादेशसङ्ख्यां रक्षतु।",
+   "back": "Keep the purchase-order number for any question."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "भवतः मूल्यदानं पुष्यते",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "क्रयादेशसङ्ख्या: {id}। यदि भवतः खातात् धनं गतं, तर्हि पुनः दातुं न आवश्यकम्: वयं कतिपयनिमेषेषु तत् पुष्णीमः, अपूर्णं मूल्यदानं च स्वयमेव प्रत्यर्प्यते।",
+   "back": "Purchase-order number: {id}. If money has gone from your account, then there is no need to pay again: we confirm it within a few minutes, and an incomplete payment is returned automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "मूल्यदानं न सम्पन्नम्",
+   "back": "Payment was not completed"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "अस्य प्रयासस्य कृते किमपि धनं न गृहीतम्। पुनः प्रयतताम्, अथवा अस्माकम् Amazon.in आपणात् क्रीणातु।",
+   "back": "No money at all was taken for this attempt. Please try again, or buy from our Amazon.in shop."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "वित्तकोशेन अथवा अनुप्रयोगेण दत्तं कारणम्: {reason}",
+   "back": "Reason given by the bank or the application: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "मूल्यदानगवाक्षः पिहितः",
+   "back": "The payment window is closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "किमपि धनं न गृहीतम्। भवतः क्रयसूची अद्यापि तथैव अस्ति, रिक्ता न कृता: पुनः प्रयतितुं मूल्यदान-बटनं नुदतु।",
+   "back": "No money at all was taken. Your purchase list [cart] is still just as it was, it was not made empty: to try again, press the payment button."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "मूल्यदानम् आरब्धुं न शक्तम्",
+   "back": "Payment could not be started"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "कृपया एकनिमेषानन्तरं पुनः प्रयतताम्, अथवा अस्माकम् Amazon.in आपणात् क्रीणातु।",
+   "back": "Please try again after one minute, or buy from our Amazon.in shop."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "अन्तर्जालमूल्यदानम् इदानीं स्थगितम्",
+   "back": "Internet payment is now suspended"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "कृपया अस्माकम् Amazon.in आपणात् क्रीणातु। साहाय्याय WhatsApp द्वारा सन्देशं प्रेषयतु।",
+   "back": "Please buy from our Amazon.in shop. For help, send a message via WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} इदानीमेव समाप्तम्। कृपया सङ्ख्यां न्यूनीकरोतु अथवा तत् निष्कासयतु।",
+   "back": "{name} has just now run out. Please reduce the number or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "कृपया चिह्नितानि क्षेत्राणि परीक्षताम्।",
+   "back": "Please check the marked fields."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "पुनः प्रयतताम्",
+   "back": "Please try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "अस्माकम् Amazon.in आपणः",
+   "back": "Our Amazon.in shop"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp द्वारा साहाय्यम्",
+   "back": "Help via WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "नमस्ते 1acrefarms, भवतां जालस्थाने क्रयपूर्तौ मम साहाय्यम् आवश्यकम्।",
+   "back": "Hello 1acrefarms, I need help with purchase completion on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "क्रयादेशसङ्ख्या: {id}",
+   "back": "Purchase-order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} पुटकम्/पुटकानि · क्रयादेशः {id}",
+   "back": "{n} packet/packets · purchase order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "भवतः क्रयादेशस्य वितरणाय, तस्य GST चालानपत्रस्य प्रेषणाय, भवतः साहाय्याय च वयम् एतानि विवरणानि उपयुञ्ज्महे। केन सह विभज्यन्ते इति ज्ञातुम् अस्माकं {link} पश्यतु।",
+   "back": "We use these details for delivering your purchase order, sending its GST invoice, and helping you. To know with whom they are shared, see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "मूल्यदानात् 1–2 कार्यदिनेषु वयं प्रेषयामः (रविवासरान् सार्वजनिकावकाशदिनानि च विहाय)। प्रेषणानन्तरं सामान्यवितरणकालः: पल्नाडु-गुण्टूरयोः 1–3 दिनानि, आन्ध्रप्रदेशस्य अवशिष्टभागेषु दक्षिणभारते च 3–5 दिनानि, भारतस्य अन्यत्र 4–10 दिनानि।",
+   "back": "We send within 1–2 working days of payment (excluding Sundays and public holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the remaining parts of Andhra Pradesh and in South India, 4–10 days elsewhere in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "प्रेषणात् पूर्वं निःशुल्कं निरस्तं कुर्वन्तु। पुटकं क्षतिग्रस्तम्, आदिष्टात् भिन्नं वस्तु प्राप्तम्, पुटके त्रुटिः अस्ति, अथवा वर्णनानुसारं नास्ति: भवतः इच्छानुसारं निःशुल्कं प्रतिस्थापनम् अथवा पूर्णं धनप्रत्यर्पणम्; प्रत्यागमनप्रेषणस्य व्ययः भवता कदापि न देयः। भवतः क्षेत्रस्य सामान्यवितरणसमयात् विलम्बेन प्राप्तम् (जलप्लावनं हडताल् इत्यादिभिः कस्यापि नियन्त्रणात् बहिः घटनाभिः विलम्बः अभवत् चेत् विहाय): भवान् तत् अस्वीकर्तुं पूर्णं धनप्रत्यर्पणं याचितुं वा शक्नोति। अनुमोदनात् 5–7 कार्यदिवसेषु धनप्रत्यर्पणं येन मार्गेण मूल्यं दत्तं तस्मिन् एव मार्गे गच्छति।",
+   "back": "Cancel free of charge before dispatch. Package damaged, an item different from what was ordered received, there is a defect in the package, or it is not as described: as you wish, free replacement or full refund; the cost of return shipping is never to be paid by you. Received later than the usual delivery time of your area (except if the delay happened due to events outside anyone's control such as flood, strike etc.): you can reject it or ask for a full refund. Within 5–7 working days from approval, the refund goes by the same method in which the price was paid."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "वयं प्रत्येकं परिवादं 48 होराभ्यन्तरे प्राप्तम् इति सूचयामः, तस्मै परिवादसङ्ख्यां (उदाहरणार्थं 1AF-C-0001) दद्मः, यां भवान् कदापि उद्धृत्य तस्य स्थितिं ज्ञातुं शक्नोति, एकमासाभ्यन्तरे च तं निवारयामः।",
+   "back": "We notify within 48 hours that each complaint has been received, give it a complaint number (for example 1AF-C-0001), which you can quote at any time to know its status, and resolve it within one month."
   }
  }
 }

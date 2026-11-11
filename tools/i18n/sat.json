@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, ᱮᱠᱮᱞ ᱢᱟᱞᱤᱠ, ⟦#2⟧ ᱧᱩᱛᱩᱢ ᱛᱮ ᱠᱤᱨᱤᱧ ᱟᱠᱷᱨᱤᱧ ᱠᱟᱱᱟᱭ",
    "back": "⟦#1⟧, sole owner, is trading (buying and selling) under the name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "ᱠᱟᱨᱴ ᱨᱮ ᱥᱮᱞᱮᱫ ᱢᱮ",
+   "back": "Add to cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "ᱱᱤᱛᱚᱜ ᱠᱤᱨᱤᱧ ᱢᱮ",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "ᱟᱞᱮ ᱴᱷᱮᱱ ᱚᱨᱰᱟᱨ ᱮᱢ ᱞᱮᱠᱷᱟᱱ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ",
+   "back": "If you order from us, there is no charge for delivery"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "ᱠᱟᱨᱴ",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "ᱟᱢᱟᱜ ᱠᱟᱨᱴ ᱨᱮ ᱥᱮᱞᱮᱫ ᱮᱱᱟ",
+   "back": "Added to your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "ᱢᱤᱫ ᱚᱨᱰᱟᱨ ᱨᱮ ᱡᱟᱦᱟᱸᱱ ᱟᱹᱰᱤ ᱵᱟᱹᱲᱛᱤ ᱞᱮ ᱠᱩᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ, ᱚᱱᱟ ᱟᱢᱟᱜ ᱠᱟᱨᱴ ᱨᱮ ᱢᱮᱱᱟᱜ ᱜᱮᱭᱟ",
+   "back": "The most that can be sent in one order is in your cart [NOTE: says the cart is at the maximum, not that it is over the limit]"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "ᱪᱮᱠᱟᱣᱴ · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← ᱫᱚᱠᱟᱱ ᱛᱮ ᱨᱩᱣᱟᱹᱲ ᱢᱮ",
+   "back": "← Go back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "ᱪᱮᱠᱟᱣᱴ",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "ᱴᱮᱥᱴ ᱢᱚᱰ: ᱪᱮᱫ ᱦᱚᱸ ᱴᱟᱠᱟ ᱵᱟᱝ ᱠᱟᱴᱟᱣᱜᱼᱟ᱾ ᱱᱚᱶᱟ ᱥᱟᱦᱴᱟ ᱩᱠᱩ ᱢᱮᱱᱟᱜᱼᱟ ᱟᱨ ᱮᱠᱮᱞ ᱴᱮᱥᱴ ᱞᱟᱹᱜᱤᱫ ᱜᱮᱭᱟ᱾",
+   "back": "Test mode: no money at all will be deducted. This page is hidden and is only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "ᱞᱟᱭᱤᱵᱷ ᱯᱮᱢᱮᱱᱴ ᱪᱟᱹᱞᱩ ᱢᱮᱱᱟᱜᱼᱟ᱾",
+   "back": "Live payment is on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "ᱱᱤᱛᱚᱜ ᱚᱱᱞᱟᱭᱤᱱ ᱯᱮᱢᱮᱱᱴ ᱵᱚᱸᱫ ᱢᱮᱱᱟᱜᱼᱟ᱾",
+   "back": "Online payment is closed right now."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "ᱱᱤᱛᱚᱜ ᱯᱮᱢᱮᱱᱴ ᱥᱚᱨᱵᱷᱟᱨ ᱥᱟᱶ ᱡᱚᱜᱟᱡᱚᱜ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜ ᱠᱟᱱᱟ᱾",
+   "back": "Cannot connect with the payment server right now."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "ᱟᱢᱟᱜ ᱯᱮᱠ ᱠᱚ",
+   "back": "Your packs"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ) · ᱯᱨᱚᱛᱤ g {unit} · {details}",
+   "back": "{grams} g · MRP {price} (all tax included) · per g {unit} · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱵᱤᱵᱨᱚᱬ",
+   "back": "Pack details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "ᱢᱤᱫᱴᱟᱝ ᱠᱚᱢ: {name}",
+   "back": "One less: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "ᱢᱤᱫᱴᱟᱝ ᱵᱟᱹᱲᱛᱤ: {name}",
+   "back": "One more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "ᱞᱤᱝᱠ ᱠᱷᱚᱱ ᱵᱟᱝ ᱥᱮᱞᱮᱫ ᱮᱱᱟ (ᱱᱤᱛᱚᱜ ᱱᱚᱸᱰᱮ ᱚᱨᱰᱟᱨ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ): {items}᱾",
+   "back": "Not added from the link (cannot be ordered here right now): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "ᱢᱤᱫ ᱚᱨᱰᱟᱨ ᱨᱮ ᱢᱤᱫ ᱞᱮᱠᱟᱱ ᱯᱮᱠ {max} ᱦᱟᱹᱵᱤᱡ: ᱞᱤᱝᱠ ᱨᱮᱭᱟᱜ ᱢᱤᱫᱴᱟᱝ ᱜᱤᱱᱛᱤ ᱠᱚᱢ ᱦᱩᱭ ᱮᱱᱟ᱾",
+   "back": "Up to {max} packs of one kind in one order: a quantity from the link has been reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "ᱢᱤᱫ ᱚᱨᱰᱟᱨ ᱨᱮ {max} ᱯᱮᱠ ᱦᱟᱹᱵᱤᱡ: ᱞᱤᱝᱠ ᱨᱮᱭᱟᱜ ᱛᱤᱱᱟᱹᱜ ᱜᱟᱱ ᱯᱮᱠ ᱵᱟᱝ ᱥᱮᱞᱮᱫ ᱮᱱᱟ᱾",
+   "back": "Up to {max} packs in one order: some packs from the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱴᱷᱤᱠᱟᱹᱱᱟ",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "ᱯᱩᱨᱟᱹ ᱧᱩᱛᱩᱢ",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "ᱢᱚᱵᱟᱭᱤᱞ ᱱᱟᱢᱵᱟᱨ",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ᱤᱢᱮᱞ (ᱟᱢᱟᱜ ᱚᱨᱰᱟᱨ ᱠᱚᱱᱯᱷᱟᱨᱢ ᱞᱟᱹᱜᱤᱫ)",
+   "back": "Email (for your order confirmation)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "ᱴᱷᱤᱠᱟᱹᱱᱟ (ᱚᱲᱟᱜ ᱱᱟᱢᱵᱟᱨ, ᱥᱚᱲᱚᱠ, ᱴᱚᱞᱟ, ᱪᱤᱱᱦᱟᱹ ᱴᱷᱟᱶ)",
+   "back": "Address (house number, road, neighbourhood, landmark place)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "ᱥᱚᱦᱚᱨ / ᱴᱟᱣᱩᱱ",
+   "back": "City / Town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "ᱯᱚᱱᱚᱛ",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "ᱟᱢᱟᱜ ᱯᱚᱱᱚᱛ ᱵᱟᱪᱷᱟᱣ ᱢᱮ",
+   "back": "Choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN ᱠᱳᱰ",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "ᱯᱨᱟᱭᱣᱮᱥᱤ ᱱᱤᱛᱤ",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "ᱟᱢᱟᱜ ᱧᱩᱛᱩᱢ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "ᱟᱢᱟᱜ ᱧᱩᱛᱩᱢ ᱟᱠᱷᱚᱨ ᱛᱮ ᱚᱞ ᱢᱮ (60 ᱟᱠᱷᱚᱨ ᱦᱟᱹᱵᱤᱡ)᱾",
+   "back": "Write your name in letters (up to 60 letters)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "ᱟᱢᱟᱜ 10 ᱮᱞ ᱨᱮᱭᱟᱜ ᱢᱚᱵᱟᱭᱤᱞ ᱱᱟᱢᱵᱟᱨ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "10 ᱮᱞ ᱨᱮᱭᱟᱜ ᱴᱷᱤᱠ ᱵᱷᱟᱨᱚᱛᱤᱭᱟᱹ ᱢᱚᱵᱟᱭᱤᱞ ᱱᱟᱢᱵᱟᱨ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "ᱟᱢᱟᱜ ᱤᱢᱮᱞ ᱴᱷᱤᱠᱟᱹᱱᱟ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "ᱟᱢᱟᱜ ᱤᱢᱮᱞ ᱴᱷᱤᱠᱟᱹᱱᱟ ᱧᱮᱞ ᱡᱟᱸᱪ ᱢᱮ᱾",
+   "back": "Check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "ᱟᱢᱟᱜ ᱴᱷᱤᱠᱟᱹᱱᱟ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "ᱟᱢᱟᱜ ᱚᱲᱟᱜ ᱱᱟᱢᱵᱟᱨ, ᱥᱚᱲᱚᱠ ᱟᱨ ᱴᱚᱞᱟ ᱥᱮᱞᱮᱫ ᱢᱮ᱾",
+   "back": "Add your house number, road and neighbourhood."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "ᱴᱷᱤᱠᱟᱹᱱᱟ 200 ᱟᱠᱷᱚᱨ ᱠᱷᱚᱱ ᱠᱚᱢ ᱨᱮ ᱚᱞ ᱢᱮ, < ᱥᱮ > ᱵᱟᱹᱱᱩᱜ ᱠᱟᱛᱮ᱾",
+   "back": "Write the address in fewer than 200 letters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "ᱟᱢᱟᱜ ᱥᱚᱦᱚᱨ ᱥᱮ ᱴᱟᱣᱩᱱ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write your city or town."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "ᱥᱚᱦᱚᱨ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱟᱠᱷᱚᱨ ᱛᱮ ᱚᱞ ᱢᱮ (30 ᱟᱠᱷᱚᱨ ᱦᱟᱹᱵᱤᱡ)᱾",
+   "back": "Write the city name in letters (up to 30 letters)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "ᱟᱢᱟᱜ ᱯᱚᱱᱚᱛ ᱵᱟᱪᱷᱟᱣ ᱢᱮ᱾",
+   "back": "Choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "ᱞᱤᱥᱴ ᱠᱷᱚᱱ ᱟᱢᱟᱜ ᱯᱚᱱᱚᱛ ᱵᱟᱪᱷᱟᱣ ᱢᱮ᱾",
+   "back": "Choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "ᱟᱢᱟᱜ 6 ᱮᱞ ᱨᱮᱭᱟᱜ PIN ᱠᱳᱰ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "6 ᱮᱞ ᱨᱮᱭᱟᱜ ᱴᱷᱤᱠ PIN ᱠᱳᱰ ᱚᱞ ᱢᱮ᱾",
+   "back": "Write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "ᱱᱚᱶᱟ PIN ᱠᱳᱰ ᱟᱢ ᱵᱟᱪᱷᱟᱣ ᱟᱠᱟᱫ ᱯᱚᱱᱚᱛ ᱨᱮ ᱵᱟᱹᱱᱩᱜᱼᱟ᱾ ᱵᱟᱨᱭᱟ ᱜᱮ ᱧᱮᱞ ᱡᱟᱸᱪ ᱢᱮ᱾",
+   "back": "This PIN code is not in the state you chose. Check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "ᱠᱚᱢ ᱥᱮ ᱠᱚᱢ ᱢᱤᱫᱴᱟᱝ ᱯᱮᱠ ᱥᱮᱞᱮᱫ ᱢᱮ᱾",
+   "back": "Add at least one pack."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "ᱢᱤᱫ ᱚᱨᱰᱟᱨ ᱨᱮ ᱢᱤᱫ ᱞᱮᱠᱟᱱ ᱯᱮᱠ {max} ᱦᱟᱹᱵᱤᱡ᱾",
+   "back": "Up to {max} packs of one kind in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "ᱢᱤᱫ ᱚᱨᱰᱟᱨ ᱨᱮ {max} ᱯᱮᱠ ᱦᱟᱹᱵᱤᱡ᱾ ᱵᱟᱹᱲᱛᱤ ᱞᱟᱹᱜᱤᱫ ᱫᱚᱥᱟᱨ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ᱾",
+   "back": "Up to {max} packs in one order. For more, place another order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "ᱟᱢᱟᱜ ᱠᱟᱨᱴ ᱨᱮ ᱢᱤᱫᱴᱟᱝ ᱯᱮᱠ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱧᱟᱢᱚᱜᱼᱟ᱾ ᱚᱱᱟ ᱚᱪᱚᱜ ᱢᱮ᱾",
+   "back": "One pack in your cart is not available right now. Remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "ᱟᱢᱟᱜ ᱠᱟᱨᱴ ᱨᱮ ᱢᱤᱫᱴᱟᱝ ᱯᱮᱠ ᱱᱤᱛᱚᱜ ᱵᱟᱝ ᱧᱟᱢᱚᱜᱼᱟ᱾ ᱚᱱᱟ ᱚᱪᱚᱜ ᱢᱮ᱾",
+   "back": "One pack in your cart is not available right now. Remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "ᱜᱤᱱᱛᱤ ᱠᱚ ᱧᱮᱞ ᱡᱟᱸᱪ ᱢᱮ᱾",
+   "back": "Check the quantities."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "ᱚᱨᱰᱟᱨ ᱨᱮᱭᱟᱜ ᱦᱤᱥᱟᱹᱵ",
+   "back": "Order account"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "ᱯᱮᱠ ({n})",
+   "back": "Packs ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP ᱨᱮ GST ᱥᱮᱞᱮᱫ: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP ᱨᱮ GST ᱥᱮᱞᱮᱫ: {tax} (IGST {rate}%)",
+   "back": "GST included in MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP ᱨᱮ GST ᱥᱮᱞᱮᱫ ({rate}%)",
+   "back": "GST included in MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "ᱰᱮᱞᱤᱵᱷᱟᱨᱤ",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (ᱡᱚᱛᱚ ᱵᱷᱟᱨᱚᱛ ᱨᱮ ᱜᱚᱱᱚᱝ ᱵᱟᱹᱱᱩᱜᱼᱟ)",
+   "back": "{amount} (no charge in all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "ᱡᱚᱛᱚ ᱮᱢᱚᱜ ᱴᱟᱠᱟ",
+   "back": "Total money to be paid"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "ᱟᱢᱟᱜ ᱠᱟᱨᱴ ᱠᱷᱟᱹᱞᱤ ᱢᱮᱱᱟᱜᱼᱟ᱾ ᱪᱮᱛᱟᱱ ᱨᱮ ᱢᱤᱫᱴᱟᱝ ᱯᱮᱠ ᱥᱮᱞᱮᱫ ᱢᱮ᱾",
+   "back": "Your cart is empty. Add one pack above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "ᱟᱢ ᱮᱠᱮᱞ MRP ᱜᱮ ᱮᱢᱟᱢ᱾ ᱪᱮᱠᱟᱣᱴ ᱨᱮ ᱪᱮᱫ ᱦᱚᱸ ᱵᱟᱝ ᱥᱮᱞᱮᱫᱚᱜᱼᱟ᱾",
+   "back": "You will pay only the MRP. Nothing is added at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "ᱢᱟᱲᱟᱝ ᱴᱟᱠᱟ ᱮᱢ ᱠᱟᱛᱮ ᱜᱮ: UPI, ᱰᱮᱵᱤᱴ ᱥᱮ ᱠᱨᱮᱰᱤᱴ ᱠᱟᱨᱰ, ᱱᱮᱴ ᱵᱮᱝᱠᱤᱝ ᱥᱮ ᱣᱟᱞᱮᱴ᱾ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ ᱚᱠᱛᱚ ᱨᱮ ᱱᱚᱜᱚᱫ ᱴᱟᱠᱟ ᱵᱟᱝ ᱦᱟᱛᱟᱣᱜᱼᱟ᱾ ᱴᱟᱠᱟ ᱮᱢ ᱫᱚ ᱟᱞᱮᱭᱟᱜ ᱯᱮᱢᱮᱱᱴ ᱜᱮᱴᱣᱮ ({gateways}) ᱟᱡᱟᱜ ᱨᱩᱠᱷᱤᱭᱟᱹ ᱥᱟᱦᱴᱟ ᱨᱮ ᱧᱮᱞ ᱫᱚᱦᱚᱭᱟᱭ; ᱟᱞᱮ ᱫᱚ ᱟᱢᱟᱜ ᱠᱟᱨᱰ ᱵᱤᱵᱨᱚᱬ ᱥᱮ UPI PIN ᱡᱚᱠᱷᱚᱱ ᱦᱚᱸ ᱵᱟᱝ ᱞᱮ ᱧᱮᱞᱟ᱾",
+   "back": "Only by paying money in advance: UPI, debit or credit card, net banking or wallet. Cash is not accepted at the time of delivery. Payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "ᱰᱮᱞᱤᱵᱷᱟᱨᱤ",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "ᱵᱟᱹᱛᱤᱞ, ᱨᱩᱣᱟᱹᱲ ᱟᱨ ᱴᱟᱠᱟ ᱨᱩᱣᱟᱹᱲ",
+   "back": "Cancel, return and money back"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "ᱠᱟᱹᱵᱤᱡ ᱦᱚᱲ",
+   "back": "Seller (trading person)"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "ᱠᱟᱹᱵᱤᱡ ᱦᱚᱲ ᱨᱮᱭᱟᱜ ᱵᱤᱵᱨᱚᱬ",
+   "back": "Seller details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI ᱨᱮᱡᱤᱥᱴᱨᱮᱥᱚᱱ ᱱᱟᱢᱵᱟᱨ {no}",
+   "back": "FSSAI registration number {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI ᱞᱟᱭᱤᱥᱮᱱᱥ ᱱᱟᱢᱵᱟᱨ {no}",
+   "back": "FSSAI licence number {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "ᱜᱨᱟᱦᱚᱠ ᱜᱚᱲᱚ ᱟᱨ ᱱᱟᱞᱤᱥ ᱚᱯᱷᱤᱥᱟᱨ: {name}, {designation} · {phone} (ᱠᱚᱞ ᱥᱮ WhatsApp) · {email}",
+   "back": "Customer help and complaint officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "ᱠᱟᱹᱵᱤᱡ ᱦᱚᱲ ᱨᱮᱭᱟᱜ ᱵᱤᱵᱨᱚᱬ, ᱟᱠᱷᱨᱤᱧ ᱨᱮᱭᱟᱜ ᱱᱤᱭᱚᱢ, ᱠᱩᱞ, ᱨᱩᱣᱟᱹᱲ ᱟᱨ ᱯᱨᱟᱭᱣᱮᱥᱤ",
+   "back": "Seller details, rules of selling, sending, return and privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "ᱴᱟᱠᱟ ᱮᱢ ᱠᱟᱛᱮ ᱟᱢ ᱟᱞᱮᱭᱟᱜ {link} ᱢᱟᱱᱟᱣ ᱮᱫᱟᱢ᱾",
+   "back": "By paying, you accept our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "ᱟᱠᱷᱨᱤᱧ, ᱠᱩᱞ ᱟᱨ ᱴᱟᱠᱟ ᱨᱩᱣᱟᱹᱲ ᱨᱮᱭᱟᱜ ᱱᱤᱭᱚᱢ ᱠᱚ",
+   "back": "Rules of selling, sending and money back"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} ᱮᱢ ᱢᱮ",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "ᱴᱟᱠᱟ ᱮᱢ ᱞᱟᱹᱜᱤᱫ ᱯᱮᱠ ᱥᱮᱞᱮᱫ ᱢᱮ",
+   "back": "Add a pack to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "ᱛᱟᱸᱜᱤ ᱢᱮ…",
+   "back": "Wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "ᱨᱩᱠᱷᱤᱭᱟᱹ ᱯᱮᱢᱮᱱᱴ ᱮᱦᱚᱵ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ…",
+   "back": "Secure payment is being started…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "ᱴᱟᱠᱟ ᱮᱢ ᱞᱟᱹᱜᱤᱫ PhonePe ᱛᱮ ᱞᱮ ᱤᱫᱤ ᱮᱫᱟᱢ…",
+   "back": "We are taking you to PhonePe to pay…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "ᱟᱢᱟᱜ ᱯᱮᱢᱮᱱᱴ ᱠᱚᱱᱯᱷᱟᱨᱢ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ…",
+   "back": "Your payment is being confirmed…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "ᱡᱚᱛᱚ ᱴᱟᱠᱟ ᱵᱚᱫᱚᱞ ᱮᱱᱟ",
+   "back": "Total money has changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "ᱱᱚᱶᱟ ᱚᱨᱰᱟᱨ ᱨᱮᱭᱟᱜ ᱡᱚᱛᱚ ᱴᱟᱠᱟ {amount}᱾ ᱧᱮᱞ ᱡᱟᱸᱪ ᱠᱟᱛᱮ ᱴᱟᱠᱟ ᱮᱢ ᱵᱟᱴᱚᱱ ᱫᱩᱦᱲᱟᱹ ᱴᱤᱯᱟᱹᱣ ᱢᱮ᱾",
+   "back": "The total money for this order is {amount}. After checking, tap the pay button again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "ᱥᱟᱨᱦᱟᱣ! ᱟᱢᱟᱜ ᱴᱟᱠᱟ ᱧᱟᱢ ᱮᱱᱟ᱾",
+   "back": "Thank you! Your money has been received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ᱚᱨᱰᱟᱨ ᱱᱟᱢᱵᱟᱨ: {id}᱾ 1–2 ᱠᱟᱹᱢᱤ ᱢᱟᱦᱟᱸ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱯᱮᱠ ᱠᱟᱛᱮ ᱞᱮ ᱠᱩᱞᱟ (ᱥᱤᱸᱜᱮ ᱫᱤᱱ ᱟᱨ ᱥᱚᱨᱠᱟᱨᱤ ᱪᱷᱩᱴᱤ ᱫᱤᱱ ᱵᱟᱝ), ᱟᱨ ᱠᱩᱨᱤᱭᱟᱨ ᱨᱮᱭᱟᱜ ᱧᱩᱛᱩᱢ ᱟᱨ ᱴᱨᱮᱠᱤᱝ ᱞᱤᱝᱠ WhatsApp ᱥᱮ ᱤᱢᱮᱞ ᱛᱮ ᱞᱮ ᱠᱩᱞᱟ᱾",
+   "back": "Order number: {id}. We will pack and send it within 1–2 working days (not Sunday and government holidays), and we will send the courier's name and tracking link by WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "{from} ᱟᱨ {to} ᱛᱟᱞᱟ ᱨᱮ ᱥᱮᱴᱮᱨ ᱨᱮᱭᱟᱜ ᱟᱥᱟ ᱢᱮᱱᱟᱜᱼᱟ᱾",
+   "back": "It is expected to arrive between {from} and {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "ᱡᱟᱦᱟᱱ ᱠᱩᱠᱞᱤ ᱞᱟᱹᱜᱤᱫ ᱚᱨᱰᱟᱨ ᱱᱟᱢᱵᱟᱨ ᱫᱚᱦᱚ ᱢᱮ᱾",
+   "back": "Keep the order number for any question."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "ᱟᱢᱟᱜ ᱯᱮᱢᱮᱱᱴ ᱠᱚᱱᱯᱷᱟᱨᱢ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "ᱚᱨᱰᱟᱨ ᱱᱟᱢᱵᱟᱨ: {id}᱾ ᱡᱩᱫᱤ ᱟᱢᱟᱜ ᱮᱠᱟᱣᱩᱱᱴ ᱠᱷᱚᱱ ᱴᱟᱠᱟ ᱠᱟᱴᱟᱣ ᱮᱱᱟ, ᱫᱩᱦᱲᱟᱹ ᱮᱢ ᱨᱮᱭᱟᱜ ᱵᱟᱝ ᱞᱟᱹᱠᱛᱤᱭᱟ: ᱛᱤᱱᱟᱹᱜ ᱜᱟᱱ ᱢᱤᱱᱤᱴ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱞᱮ ᱠᱚᱱᱯᱷᱟᱨᱢᱟ, ᱟᱨ ᱡᱟᱦᱟᱸ ᱯᱮᱢᱮᱱᱴ ᱯᱩᱨᱟᱹᱣ ᱵᱟᱝ ᱦᱩᱭᱩᱜᱼᱟ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱴᱟᱠᱟ ᱟᱡ ᱛᱮ ᱜᱮ ᱨᱩᱣᱟᱹᱲᱚᱜᱼᱟ᱾",
+   "back": "Order number: {id}. If money has been deducted from your account, there is no need to pay again: we will confirm within a few minutes, and the money for any payment that does not complete will come back by itself."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "ᱯᱮᱢᱮᱱᱴ ᱵᱟᱝ ᱦᱩᱭ ᱞᱮᱱᱟ",
+   "back": "Payment did not go through"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "ᱱᱚᱶᱟ ᱪᱮᱥᱴᱟ ᱨᱮ ᱪᱮᱫ ᱦᱚᱸ ᱴᱟᱠᱟ ᱵᱟᱝ ᱠᱟᱴᱟᱣ ᱞᱮᱱᱟ᱾ ᱫᱩᱦᱲᱟᱹ ᱪᱮᱥᱴᱟᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ, ᱥᱮ ᱟᱞᱮᱭᱟᱜ Amazon.in ᱫᱚᱠᱟᱱ ᱠᱷᱚᱱ ᱚᱨᱰᱟᱨ ᱮᱢ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ᱾",
+   "back": "In this attempt no money at all was deducted. You can try again, or you can order from our Amazon.in shop."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "ᱵᱮᱝᱠ ᱥᱮ ᱮᱯ ᱦᱚᱛᱮᱛᱮ ᱮᱢ ᱟᱠᱟᱱ ᱠᱟᱨᱚᱬ: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "ᱯᱮᱢᱮᱱᱴ ᱣᱤᱱᱰᱚ ᱵᱚᱸᱫ ᱮᱱᱟ",
+   "back": "Payment window closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "ᱪᱮᱫ ᱦᱚᱸ ᱴᱟᱠᱟ ᱵᱟᱝ ᱠᱟᱴᱟᱣ ᱞᱮᱱᱟ᱾ ᱟᱢᱟᱜ ᱠᱟᱨᱴ ᱫᱚᱦᱚ ᱢᱮᱱᱟᱜᱼᱟ: ᱫᱩᱦᱲᱟᱹ ᱪᱮᱥᱴᱟ ᱞᱟᱹᱜᱤᱫ ᱴᱟᱠᱟ ᱮᱢ ᱵᱟᱴᱚᱱ ᱴᱤᱯᱟᱹᱣ ᱢᱮ᱾",
+   "back": "No money at all was deducted. Your cart is kept: to try again, tap the pay button."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "ᱯᱮᱢᱮᱱᱴ ᱮᱦᱚᱵ ᱵᱟᱝ ᱫᱟᱲᱮ ᱞᱮᱱᱟ",
+   "back": "Payment could not be started"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "ᱢᱤᱫ ᱢᱤᱱᱤᱴ ᱛᱟᱭᱚᱢ ᱫᱩᱦᱲᱟᱹ ᱪᱮᱥᱴᱟᱭ ᱢᱮ, ᱥᱮ ᱟᱞᱮᱭᱟᱜ Amazon.in ᱫᱚᱠᱟᱱ ᱠᱷᱚᱱ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ᱾",
+   "back": "Try again after one minute, or order from our Amazon.in shop."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "ᱱᱤᱛᱚᱜ ᱚᱱᱞᱟᱭᱤᱱ ᱯᱮᱢᱮᱱᱴ ᱵᱚᱸᱫ ᱢᱮᱱᱟᱜᱼᱟ",
+   "back": "Online payment is closed right now"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "ᱟᱞᱮᱭᱟᱜ Amazon.in ᱫᱚᱠᱟᱱ ᱠᱷᱚᱱ ᱚᱨᱰᱟᱨ ᱮᱢ ᱢᱮ᱾ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ WhatsApp ᱨᱮ ᱟᱞᱮ ᱴᱷᱮᱱ ᱢᱮᱥᱮᱡ ᱠᱩᱞ ᱢᱮ᱾",
+   "back": "Order from our Amazon.in shop. For help, send us a message on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} ᱫᱚ ᱱᱤᱛᱚᱜ ᱜᱮ ᱟᱠᱷᱨᱤᱧ ᱪᱟᱵᱟ ᱮᱱᱟ᱾ ᱜᱤᱱᱛᱤ ᱠᱚᱢ ᱢᱮ ᱥᱮ ᱚᱪᱚᱜ ᱢᱮ᱾",
+   "back": "{name} has sold out right now. Reduce the quantity or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "ᱪᱤᱱᱦᱟᱹ ᱟᱠᱟᱱ ᱡᱟᱭᱜᱟ ᱠᱚ ᱧᱮᱞ ᱡᱟᱸᱪ ᱢᱮ᱾",
+   "back": "Check the marked fields."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "ᱫᱩᱦᱲᱟᱹ ᱪᱮᱥᱴᱟᱭ ᱢᱮ",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "ᱟᱞᱮᱭᱟᱜ Amazon.in ᱫᱚᱠᱟᱱ",
+   "back": "Our Amazon.in shop"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp ᱨᱮ ᱜᱚᱲᱚ",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "ᱡᱚᱦᱟᱨ 1acrefarms, ᱟᱯᱮᱭᱟᱜ ᱣᱮᱵᱥᱟᱭᱤᱴ ᱨᱮ ᱪᱮᱠᱟᱣᱴ ᱞᱟᱹᱜᱤᱫ ᱤᱧ ᱜᱚᱲᱚ ᱞᱟᱹᱠᱛᱤ ᱠᱟᱱᱟ᱾",
+   "back": "Greetings (Johar) 1acrefarms, I need help with checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "ᱚᱨᱰᱟᱨ ᱱᱟᱢᱵᱟᱨ: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} ᱯᱮᱠ · ᱚᱨᱰᱟᱨ {id}",
+   "back": "{n} packs · Order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "ᱱᱚᱶᱟ ᱵᱤᱵᱨᱚᱬ ᱟᱞᱮ ᱟᱢᱟᱜ ᱚᱨᱰᱟᱨ ᱰᱮᱞᱤᱵᱷᱟᱨᱤ, ᱚᱱᱟ ᱨᱮᱭᱟᱜ GST ᱤᱱᱵᱷᱚᱭᱮᱥ ᱠᱩᱞ ᱟᱨ ᱟᱢ ᱜᱚᱲᱚ ᱞᱟᱹᱜᱤᱫ ᱞᱮ ᱵᱮᱵᱷᱟᱨᱟ᱾ ᱚᱠᱟ ᱦᱚᱲ ᱥᱟᱶ ᱞᱮ ᱦᱟᱹᱴᱤᱧᱟ: ᱟᱞᱮᱭᱟᱜ {link} ᱧᱮᱞ ᱢᱮ᱾",
+   "back": "We use these details to deliver your order, send its GST invoice and help you. Who we share with: see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "ᱴᱟᱠᱟ ᱮᱢ ᱛᱟᱭᱚᱢ 1–2 ᱠᱟᱹᱢᱤ ᱢᱟᱦᱟᱸ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱞᱮ ᱠᱩᱞᱟ (ᱥᱤᱸᱜᱮ ᱫᱤᱱ ᱟᱨ ᱥᱚᱨᱠᱟᱨᱤ ᱪᱷᱩᱴᱤ ᱫᱤᱱ ᱵᱟᱝ)᱾ ᱠᱩᱞ ᱛᱟᱭᱚᱢ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱥᱮᱴᱮᱨ ᱚᱠᱛᱚ: ᱯᱟᱞᱱᱟᱰᱩ ᱟᱨ ᱜᱩᱱᱴᱩᱨ ᱨᱮ 1–3 ᱢᱟᱦᱟᱸ, ᱟᱱᱫᱷᱨᱚ ᱯᱨᱚᱫᱮᱥ ᱨᱮᱭᱟᱜ ᱮᱴᱟᱜ ᱴᱷᱟᱶ ᱟᱨ ᱮᱛᱚᱢ ᱵᱷᱟᱨᱚᱛ ᱨᱮ 3–5 ᱢᱟᱦᱟᱸ, ᱵᱷᱟᱨᱚᱛ ᱨᱮᱭᱟᱜ ᱮᱴᱟᱜ ᱴᱷᱟᱶ ᱨᱮ 4–10 ᱢᱟᱦᱟᱸ᱾",
+   "back": "After payment we send within 1–2 working days (not Sunday and government holidays). Usual arrival time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in other places of Andhra Pradesh and in South India, 4–10 days in other places of India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "ᱠᱩᱞ ᱞᱟᱦᱟ ᱨᱮ ᱵᱤᱱᱟᱹ ᱜᱚᱱᱚᱝ ᱛᱮ ᱵᱟᱹᱛᱤᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ᱾ ᱠᱷᱟᱨᱟᱯ, ᱵᱷᱩᱞ, ᱮᱴᱠᱮᱴᱚᱬᱮ ᱢᱮᱱᱟᱜ ᱥᱮ ᱞᱟᱹᱭ ᱞᱮᱠᱟ ᱵᱟᱝ ᱯᱮᱠ: ᱟᱢ ᱡᱟᱦᱟᱸ ᱞᱮᱠᱟ ᱠᱷᱚᱡᱚᱜ ᱠᱟᱱᱟ, ᱵᱤᱱᱟᱹ ᱜᱚᱱᱚᱝ ᱛᱮ ᱵᱚᱫᱚᱞ ᱥᱮ ᱯᱩᱨᱟᱹ ᱴᱟᱠᱟ ᱨᱩᱣᱟᱹᱲ; ᱨᱩᱣᱟᱹᱲ ᱠᱩᱞ ᱨᱮᱭᱟᱜ ᱜᱚᱱᱚᱝ ᱟᱢ ᱡᱚᱠᱷᱚᱱ ᱦᱚᱸ ᱵᱟᱝ ᱮᱢᱟ᱾ ᱟᱢᱟᱜ ᱴᱷᱟᱶ ᱞᱟᱹᱜᱤᱫ ᱥᱟᱫᱷᱟᱨᱚᱱ ᱥᱮᱴᱮᱨ ᱚᱠᱛᱚ ᱠᱷᱚᱱ ᱛᱟᱭᱚᱢ ᱥᱮᱴᱮᱨᱚᱜ ᱠᱷᱟᱱ (ᱵᱟᱱ ᱥᱮ ᱦᱚᱨᱛᱟᱞ ᱞᱮᱠᱟᱱ, ᱡᱟᱦᱟᱱ ᱦᱚᱲ ᱨᱮᱭᱟᱜ ᱦᱟᱛ ᱨᱮ ᱵᱟᱝ ᱛᱟᱦᱮᱸᱱ ᱜᱷᱟᱴᱱᱟ ᱛᱮ ᱫᱮᱨᱤ ᱦᱩᱭ ᱞᱮᱱ ᱠᱷᱟᱱ ᱵᱟᱝ): ᱟᱢ ᱵᱟᱝ ᱦᱟᱛᱟᱣ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ ᱥᱮ ᱯᱩᱨᱟᱹ ᱴᱟᱠᱟ ᱨᱩᱣᱟᱹᱲ ᱠᱷᱚᱡ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ᱾ ᱢᱟᱱᱚᱛ ᱛᱟᱭᱚᱢ 5–7 ᱠᱟᱹᱢᱤ ᱢᱟᱦᱟᱸ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱢᱩᱞ ᱴᱟᱠᱟ ᱮᱢ ᱦᱚᱨ ᱛᱮ ᱜᱮ ᱴᱟᱠᱟ ᱨᱩᱣᱟᱹᱲᱚᱜᱼᱟ᱾",
+   "back": "You can cancel without charge before it is sent. Bad, wrong, damaged, or a pack not as described: as you wish, a replacement without charge or full money back; you never pay the return shipping charge. If it arrives later than the usual arrival time for your place (not if delayed by events not in anyone's hands, such as flood or strike): you can refuse to accept it or ask for full money back. After approval, the money comes back to the original payment method within 5–7 working days."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "ᱡᱚᱛᱚ ᱱᱟᱞᱤᱥ 48 ᱜᱷᱚᱱᱴᱟ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱧᱟᱢ ᱞᱮᱫᱟ ᱢᱮᱱᱛᱮ ᱞᱮ ᱞᱟᱹᱭᱟ, ᱚᱱᱟ ᱞᱟᱹᱜᱤᱫ ᱢᱤᱫᱴᱟᱝ ᱱᱟᱞᱤᱥ ᱱᱟᱢᱵᱟᱨ (ᱡᱮᱞᱮᱠᱟ 1AF-C-0001) ᱞᱮ ᱮᱢᱟ, ᱚᱱᱟ ᱟᱢ ᱡᱚᱠᱷᱚᱱ ᱦᱚᱸ ᱞᱟᱹᱭ ᱠᱟᱛᱮ ᱚᱱᱟ ᱨᱮᱭᱟᱜ ᱦᱟᱹᱞᱚᱛ ᱧᱮᱞ ᱫᱟᱲᱮᱭᱟᱜᱼᱟᱢ, ᱟᱨ ᱢᱤᱫ ᱪᱟᱸᱫᱚ ᱵᱷᱤᱛᱤᱨ ᱨᱮ ᱚᱱᱟ ᱥᱟᱢᱟᱫᱷᱟᱱ ᱞᱮ ᱵᱮᱱᱟᱣᱟ᱾",
+   "back": "We will tell you within 48 hours that every complaint has been received, give a complaint number for it (for example 1AF-C-0001), which you can quote at any time to see its status, and we will resolve it within one month."
   }
  }
 }

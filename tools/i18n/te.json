@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, ఏకైక యజమాని, ⟦#2⟧ పేరుతో వ్యాపారం",
    "back": "⟦#1⟧, sole owner, business under the name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "కార్ట్‌లో చేర్చండి",
+   "back": "Add to cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "ఇప్పుడే కొనండి",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "మా దగ్గర ఆర్డర్ చేస్తే డెలివరీ ఉచితం",
+   "back": "If you order from us, delivery is free"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "కార్ట్",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "మీ కార్ట్‌లో చేర్చాం",
+   "back": "We added it to your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "ఒక ఆర్డర్‌లో పంపగలిగినన్ని ప్యాక్‌లు ఇప్పటికే మీ కార్ట్‌లో ఉన్నాయి",
+   "back": "As many packs as can be sent in one order are already in your cart"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "చెక్‌అవుట్ · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← షాపుకు తిరిగి వెళ్లండి",
+   "back": "← Go back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "చెక్‌అవుట్",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "టెస్ట్ మోడ్: మీ ఖాతా నుంచి ఎలాంటి డబ్బూ కట్ అవ్వదు. ఈ పేజీ దాచి ఉంచినది, టెస్టింగ్ కోసం మాత్రమే.",
+   "back": "Test mode: no money at all will be deducted from your account. This page is kept hidden, only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "లైవ్ చెల్లింపులు ఆన్‌లో ఉన్నాయి.",
+   "back": "Live payments are on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "ప్రస్తుతం ఆన్‌లైన్ చెల్లింపు ఆపేశాం.",
+   "back": "We have currently stopped online payment."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "ప్రస్తుతం పేమెంట్ సర్వర్ అందుబాటులో లేదు.",
+   "back": "The payment server is currently not available."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "మీ ప్యాక్‌లు",
+   "back": "Your packs"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (అన్ని పన్నులతో కలిపి) · గ్రాముకు {unit} · {details}",
+   "back": "{grams} g · MRP {price} (including all taxes) · {unit} per gram · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "ప్యాక్ వివరాలు",
+   "back": "Pack details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "ఒకటి తగ్గించండి: {name}",
+   "back": "Reduce one: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "ఇంకొకటి చేర్చండి: {name}",
+   "back": "Add one more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "లింక్ నుంచి చేర్చలేదు (ప్రస్తుతం ఇక్కడ ఆర్డర్ చేయడానికి అందుబాటులో లేవు): {items}.",
+   "back": "Not added from the link (currently not available to order here): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "ఒక ఆర్డర్‌లో ఒకే ప్యాక్ {max} వరకు మాత్రమే: లింక్‌లోని ఒక ప్యాక్ సంఖ్యను తగ్గించాం.",
+   "back": "Only up to {max} of the same pack in one order: we reduced the count of one pack in the link."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "ఒక ఆర్డర్‌లో {max} ప్యాక్‌ల వరకు మాత్రమే: లింక్‌లోని కొన్ని ప్యాక్‌లను చేర్చలేదు.",
+   "back": "Only up to {max} packs in one order: some packs in the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "డెలివరీ చిరునామా",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "పూర్తి పేరు",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "మొబైల్ నంబర్",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ఈమెయిల్ (మీ ఆర్డర్ కన్ఫర్మేషన్ పంపడానికి)",
+   "back": "Email (to send your order confirmation)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "చిరునామా (ఇంటి నంబర్, వీధి, ఏరియా, ల్యాండ్‌మార్క్)",
+   "back": "Address (house number, street, area, landmark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "నగరం / ఊరు",
+   "back": "City / town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "రాష్ట్రం",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "మీ రాష్ట్రం ఎంచుకోండి",
+   "back": "Choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN కోడ్",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "గోప్యతా విధానం",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "దయచేసి మీ పేరు రాయండి.",
+   "back": "Please write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "దయచేసి మీ పేరును అక్షరాలలో రాయండి (60 అక్షరాల వరకు).",
+   "back": "Please write your name in letters (up to 60 characters)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "దయచేసి మీ 10 అంకెల మొబైల్ నంబర్ రాయండి.",
+   "back": "Please write your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "దయచేసి సరైన 10 అంకెల భారతీయ మొబైల్ నంబర్ రాయండి.",
+   "back": "Please write a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "దయచేసి మీ ఈమెయిల్ అడ్రస్ రాయండి.",
+   "back": "Please write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "దయచేసి మీ ఈమెయిల్ అడ్రస్ సరిచూసుకోండి.",
+   "back": "Please check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "దయచేసి మీ చిరునామా రాయండి.",
+   "back": "Please write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "దయచేసి ఇంటి నంబర్, వీధి, ఏరియా కూడా రాయండి.",
+   "back": "Please also write the house number, street, area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "దయచేసి చిరునామా 200 అక్షరాల లోపు ఉంచండి, < లేదా > లేకుండా.",
+   "back": "Please keep the address within 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "దయచేసి మీ నగరం లేదా ఊరు పేరు రాయండి.",
+   "back": "Please write your city or town name."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "దయచేసి నగరం పేరును అక్షరాలలో రాయండి (30 అక్షరాల వరకు).",
+   "back": "Please write the city name in letters (up to 30 characters)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "దయచేసి మీ రాష్ట్రం ఎంచుకోండి.",
+   "back": "Please choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "దయచేసి జాబితా నుంచి మీ రాష్ట్రం ఎంచుకోండి.",
+   "back": "Please choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "దయచేసి మీ 6 అంకెల PIN కోడ్ రాయండి.",
+   "back": "Please write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "దయచేసి సరైన 6 అంకెల PIN కోడ్ రాయండి.",
+   "back": "Please write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "ఈ PIN కోడ్ మీరు ఎంచుకున్న రాష్ట్రంలో లేదు. దయచేసి రెండూ సరిచూసుకోండి.",
+   "back": "This PIN code is not in the state you chose. Please check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "దయచేసి కనీసం ఒక ప్యాక్ చేర్చండి.",
+   "back": "Please add at least one pack."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "ఒక ఆర్డర్‌లో ఒకే ప్యాక్ {max} వరకు మాత్రమే.",
+   "back": "Only up to {max} of the same pack in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "ఒక ఆర్డర్‌లో {max} ప్యాక్‌ల వరకు మాత్రమే. ఇంకా కావాలంటే, దయచేసి రెండో ఆర్డర్ పెట్టండి.",
+   "back": "Only up to {max} packs in one order. If you want more, please place a second order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "మీ కార్ట్‌లోని ఒక ప్యాక్ ప్రస్తుతం అందుబాటులో లేదు. దయచేసి దాన్ని తీసేయండి.",
+   "back": "One pack in your cart is currently not available. Please remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "మీ కార్ట్‌లోని ఒక ప్యాక్ ప్రస్తుతం అందుబాటులో లేదు. దయచేసి దాన్ని తీసేయండి.",
+   "back": "One pack in your cart is currently not available. Please remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "దయచేసి ప్యాక్‌ల సంఖ్య సరిచూసుకోండి.",
+   "back": "Please check the number of packs."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "ఆర్డర్ సారాంశం",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "ప్యాక్‌లు ({n})",
+   "back": "Packs ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP లోనే కలిసి ఉన్న GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST already included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP లోనే కలిసి ఉన్న GST: {tax} (IGST {rate}%)",
+   "back": "GST already included in the MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP లోనే కలిసి ఉన్న GST ({rate}%)",
+   "back": "GST already included in the MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "డెలివరీ",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (భారతదేశమంతటా ఉచితం)",
+   "back": "{amount} (free across all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "చెల్లించాల్సిన మొత్తం",
+   "back": "Total amount to pay"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "మీ కార్ట్ ఖాళీగా ఉంది. పైన ఒక ప్యాక్ చేర్చండి.",
+   "back": "Your cart is empty. Add a pack above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "మీరు MRP మాత్రమే చెల్లిస్తారు. చెక్‌అవుట్‌లో అదనంగా ఏమీ కలపం.",
+   "back": "You pay only the MRP. We do not add anything extra at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "ముందుగా చెల్లింపు మాత్రమే: UPI, డెబిట్ లేదా క్రెడిట్ కార్డ్, నెట్ బ్యాంకింగ్ లేదా వాలెట్. క్యాష్ ఆన్ డెలివరీ లేదు. చెల్లింపులను మా పేమెంట్ గేట్‌వే ({gateways}) తన సొంత సురక్షిత పేజీలో చూసుకుంటుంది; మీ కార్డ్ వివరాలు గానీ UPI PIN గానీ మేము ఎప్పుడూ చూడము.",
+   "back": "Advance payment only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or your UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "డెలివరీ",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "ఆర్డర్ రద్దు, రిటర్న్‌లు, రీఫండ్‌లు",
+   "back": "Order cancellation, returns, refunds"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "విక్రేత",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "విక్రేత వివరాలు",
+   "back": "Seller details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI రిజిస్ట్రేషన్ నం. {no}",
+   "back": "FSSAI registration no. {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI లైసెన్స్ నం. {no}",
+   "back": "FSSAI licence no. {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "కస్టమర్ కేర్, ఫిర్యాదుల పరిష్కార అధికారి: {name}, {designation} · {phone} (కాల్ లేదా WhatsApp) · {email}",
+   "back": "Customer care, grievance redressal officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "విక్రేత వివరాలు, అమ్మకపు నిబంధనలు, షిప్పింగ్, రిటర్న్‌లు, గోప్యత",
+   "back": "Seller details, terms of sale, shipping, returns, privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "చెల్లిస్తే, మా {link} మీకు అంగీకారమని అర్థం.",
+   "back": "If you pay, it means our {link} are acceptable to you."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "అమ్మకపు నిబంధనలు, షిప్పింగ్, రీఫండ్ విధానాలు",
+   "back": "Terms of sale, shipping, refund policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} చెల్లించండి",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "చెల్లించడానికి ప్యాక్ చేర్చండి",
+   "back": "Add a pack to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "దయచేసి ఆగండి…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "సురక్షిత చెల్లింపు మొదలవుతోంది…",
+   "back": "Secure payment is starting…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "చెల్లించడానికి మిమ్మల్ని PhonePe కి తీసుకెళ్తున్నాం…",
+   "back": "We are taking you to PhonePe to pay…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "మీ చెల్లింపును నిర్ధారిస్తున్నాం…",
+   "back": "We are confirming your payment…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "మొత్తం మారింది",
+   "back": "The total has changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "ఈ ఆర్డర్ మొత్తం {amount}. దయచేసి సరిచూసుకుని, మళ్లీ 'చెల్లించండి' నొక్కండి.",
+   "back": "The total of this order is {amount}. Please check and press 'Pay' again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "ధన్యవాదాలు! మీ చెల్లింపు అందింది.",
+   "back": "Thank you! Your payment has been received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ఆర్డర్ నంబర్: {id}. 1–2 పని దినాల్లో (ఆదివారాలు, ప్రభుత్వ సెలవు దినాలు తప్ప) ప్యాక్ చేసి పంపిస్తాం. కొరియర్ పేరు, ట్రాకింగ్ లింక్ WhatsApp లో లేదా ఈమెయిల్‌లో పంపుతాం.",
+   "back": "Order number: {id}. We will pack and send it within 1–2 working days (except Sundays and government holidays). We will send the courier name and tracking link on WhatsApp or by email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "{from} నుంచి {to} మధ్య డెలివరీ అవుతుందని అంచనా.",
+   "back": "Delivery is estimated between {from} and {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "ఏ సందేహం ఉన్నా అడగడానికి, దయచేసి ఆర్డర్ నంబర్ దగ్గర ఉంచుకోండి.",
+   "back": "To ask about any doubt, please keep the order number with you."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "మీ చెల్లింపు నిర్ధారణ అవుతోంది",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "ఆర్డర్ నంబర్: {id}. మీ ఖాతా నుంచి డబ్బు కట్ అయి ఉంటే, మళ్లీ చెల్లించాల్సిన అవసరం లేదు: కొన్ని నిమిషాల్లో నిర్ధారిస్తాం. చెల్లింపు పూర్తి కాకపోతే, ఆ డబ్బు ఆటోమేటిక్‌గా తిరిగి వస్తుంది.",
+   "back": "Order number: {id}. If money has been deducted from your account, there is no need to pay again: we will confirm within a few minutes. If the payment is not completed, that money will come back automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "చెల్లింపు జరగలేదు",
+   "back": "The payment did not happen"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "ఈ ప్రయత్నంలో ఎలాంటి డబ్బూ కట్ కాలేదు. మళ్లీ ప్రయత్నించవచ్చు, లేదా మా Amazon.in స్టోర్‌లో ఆర్డర్ చేయవచ్చు.",
+   "back": "No money at all was deducted in this attempt. You can try again, or order at our Amazon.in store."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "బ్యాంక్ లేదా యాప్ చెప్పిన కారణం: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "చెల్లింపు విండో మూసేశారు",
+   "back": "You closed the payment window"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "ఎలాంటి డబ్బూ కట్ కాలేదు. మీ కార్ట్ సేవ్ అయి ఉంది: మళ్లీ ప్రయత్నించడానికి 'చెల్లించండి' నొక్కండి.",
+   "back": "No money at all was deducted. Your cart is saved: press 'Pay' to try again."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "చెల్లింపు మొదలుపెట్టలేకపోయాం",
+   "back": "We could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "దయచేసి ఒక నిమిషం తర్వాత మళ్లీ ప్రయత్నించండి, లేదా మా Amazon.in స్టోర్‌లో ఆర్డర్ చేయండి.",
+   "back": "Please try again after a minute, or order at our Amazon.in store."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "ప్రస్తుతం ఆన్‌లైన్ చెల్లింపు ఆపేశాం",
+   "back": "We have currently stopped online payment"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "దయచేసి మా Amazon.in స్టోర్‌లో ఆర్డర్ చేయండి. సహాయం కావాలంటే WhatsApp లో మాకు మెసేజ్ చేయండి.",
+   "back": "Please order at our Amazon.in store. If you need help, message us on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} ఇప్పుడే అయిపోయింది. దయచేసి సంఖ్య తగ్గించండి లేదా దాన్ని తీసేయండి.",
+   "back": "{name} has just run out. Please reduce the number or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "దయచేసి హైలైట్ చేసిన వివరాలను సరిచూసుకోండి.",
+   "back": "Please check the highlighted details."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "మళ్లీ ప్రయత్నించండి",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "మా Amazon.in స్టోర్",
+   "back": "Our Amazon.in store"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp లో సహాయం",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "నమస్తే 1acrefarms, మీ వెబ్‌సైట్‌లో చెక్‌అవుట్ దగ్గర నాకు సహాయం కావాలి.",
+   "back": "Namaste 1acrefarms, I need help at checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "ఆర్డర్ నంబర్: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} ప్యాక్(లు) · ఆర్డర్ {id}",
+   "back": "{n} pack(s) · Order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "మీ ఆర్డర్ డెలివరీ చేయడానికి, దాని GST ఇన్‌వాయిస్ పంపడానికి, మీకు సహాయం చేయడానికి ఈ వివరాలను వాడతాం. వీటిని ఎవరితో పంచుకుంటామో తెలుసుకోవడానికి మా {link} చూడండి.",
+   "back": "We use these details to deliver your order, to send its GST invoice, and to help you. To know with whom we share them, see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "చెల్లింపు అయిన 1–2 పని దినాల్లో పంపిస్తాం (ఆదివారాలు, ప్రభుత్వ సెలవు దినాలు తప్ప). పంపిన తర్వాత మామూలుగా డెలివరీకి పట్టే సమయం: పల్నాడు, గుంటూరులో 1–3 రోజులు, మిగతా ఆంధ్రప్రదేశ్, దక్షిణ భారతదేశంలో 3–5 రోజులు, భారతదేశంలో మిగతా చోట్ల 4–10 రోజులు.",
+   "back": "We send within 1–2 working days of payment (except Sundays and government holidays). Usual time taken for delivery after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "పంపకముందే ఉచితంగా రద్దు చేసుకోవచ్చు. ప్యాక్ దెబ్బతిని వచ్చినా, వేరేది వచ్చినా, లోపం ఉన్నా, చెప్పిన విధంగా లేకపోయినా: మీ ఇష్టం ప్రకారం ఉచితంగా మార్చి ఇస్తాం లేదా పూర్తి రీఫండ్ ఇస్తాం; రిటర్న్ షిప్పింగ్ ఖర్చు మీరు ఎప్పుడూ కట్టనక్కర్లేదు. మీ ప్రాంతానికి మామూలు డెలివరీ సమయం కంటే ఆలస్యంగా వస్తే (వరదలు, సమ్మెలు లాంటి ఎవరి చేతుల్లోనూ లేని కారణాల వల్ల ఆలస్యమైతే తప్ప): మీరు దాన్ని తీసుకోవడానికి నిరాకరించవచ్చు లేదా పూర్తి రీఫండ్ అడగవచ్చు. రీఫండ్ ఆమోదించిన 5–7 పని దినాల్లో, మీరు చెల్లించిన పద్ధతిలోనే డబ్బు తిరిగి వస్తుంది.",
+   "back": "You can cancel free before it is sent. If the pack arrives damaged, if a different one arrives, if it has a defect, or if it is not as described: as you wish, we will replace it free or give a full refund; you never have to pay the return shipping cost. If it arrives later than the usual delivery time for your area (unless the delay is due to causes not in anyone's hands, like floods or strikes): you can refuse to take it or ask for a full refund. Within 5–7 working days of the refund being approved, the money comes back by the same method you paid."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "ప్రతి ఫిర్యాదు అందినట్లు 48 గంటల్లో తెలియజేస్తాం, దానికి ఒక ఫిర్యాదు నంబర్ ఇస్తాం (ఉదాహరణకు 1AF-C-0001; దాని స్థితి తెలుసుకోవడానికి ఎప్పుడైనా ఈ నంబర్ చెప్పవచ్చు), ఒక నెలలోపు దాన్ని పరిష్కరిస్తాం.",
+   "back": "We will inform you within 48 hours that each complaint has been received, and give it a complaint number (for example 1AF-C-0001; you can quote this number at any time to know its status), and we will resolve it within one month."
   }
  }
 }

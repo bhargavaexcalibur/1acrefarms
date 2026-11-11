@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧، واحد مالِک، ⟦#2⟧ ناوٕ سٟتۍ کاروبار",
    "back": "⟦#1⟧, sole owner, business with the name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "کارٹس منٛز تراوِو",
+   "back": "Put in cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "وۄنۍ خرید کٔرِو",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "سانہِ کِنۍ آرڈر کرنس پیٹھ مُفت ڈلیوری",
+   "back": "Free delivery on ordering from us"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "کارٹ",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "تُہٕنٛدِس کارٹس منٛز آو تراونہٕ",
+   "back": "Was put in your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "تُہٕنٛدِس کارٹس منٛز چھُ گۄڈے اکِس آرڈرس ہُند زیادٕ کھۄتہٕ زیادٕ سامان",
+   "back": "Your cart already has the maximum goods of one order"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "چیک آؤٹ · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← دُکانہِ واپس",
+   "back": "← Back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "چیک آؤٹ",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "ٹیسٹ موڈ: کانٛہہ رقم چھےٚ نہٕ کٹنہٕ یِوان۔ یہ صفحہٕ چھُ پوشیدٕ تہٕ صِرف ٹیسٹ کرنہٕ خٲطرٕ۔",
+   "back": "Test mode: no money is deducted. This page is hidden and only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "لائیو ادائیگی چھےٚ چالوٗ۔",
+   "back": "Live payment is on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "آن لائن ادائیگی چھےٚ وۄنۍ بنٛد۔",
+   "back": "Online payment is off now."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "ادائیگی سرورس سٟتۍ چھُ نہٕ وۄنۍ رابطہٕ سپدان۔",
+   "back": "Contact with the payment server is not happening now."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "تُہٕنٛدۍ پیک",
+   "back": "Your packs"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (سٲری ٹیکس شامل) · {unit} فی g · {details}",
+   "back": "{grams} g · MRP {price} (all taxes included) · {unit} per g · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "پیکُک تفصیل",
+   "back": "Pack details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "اکھ کم: {name}",
+   "back": "One less: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "اکھ زیادٕ: {name}",
+   "back": "One more: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "لنکہٕ منٛزٕ آو نہٕ شامِل کرنہٕ (یتہِ چھُ نہٕ وۄنۍ آرڈرٕ خٲطرٕ دستیاب): {items}۔",
+   "back": "Was not added from the link (not available to order here now): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "اکِس آرڈرس منٛز اکھ ہی پیک زیادٕ کھۄتہٕ زیادٕ {max}: لنکہٕ منٛزٕ آیہِ اکھ تعداد کم کرنہٕ۔",
+   "back": "At most {max} of the same pack in one order: one quantity from the link was reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "اکِس آرڈرس منٛز زیادٕ کھۄتہٕ زیادٕ {max} پیک: لنکہٕ منٛزٕ آیہِ نہٕ کیٛنہہ پیک شامِل کرنہٕ۔",
+   "back": "At most {max} packs in one order: some packs from the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "ڈلیوری پتہٕ",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "پوٗرٕ ناو",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "موبائل نمبر",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ای میل (تُہٕنٛدِ آرڈرٕ کہِ تصدیقہٕ خٲطرٕ)",
+   "back": "Email (for confirmation of your order)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "پتہٕ (مکان نمبر، گلی، علاقہٕ، نِشانہٕ)",
+   "back": "Address (house number, street, area, landmark)"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "شہر / قصبہٕ",
+   "back": "City / town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "ریاست",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "پنٕنۍ ریاست ژارِو",
+   "back": "Choose your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN کوڈ",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "رازداری پالیسی",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن ناو۔",
+   "back": "Please write your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن ناو حرفن منٛز (60 تام)۔",
+   "back": "Please write your name in letters (up to 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن 10 ہندسن ہُند موبائل نمبر۔",
+   "back": "Please write your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو اکھ صحیح 10 ہندسن ہُند ہِندوستٲنی موبائل نمبر۔",
+   "back": "Please write a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن ای میل پتہٕ۔",
+   "back": "Please write your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "مہربٲنی کٔرِتھ وُچھِو پنُن ای میل پتہٕ۔",
+   "back": "Please look at your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن پتہٕ۔",
+   "back": "Please write your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن مکان نمبر، گلی تہٕ علاقہٕ۔",
+   "back": "Please write your house number, street and area."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "مہربٲنی کٔرِتھ تھٲوِو پتہٕ 200 حرفن کھۄتہٕ کم، < یا > ورٲے۔",
+   "back": "Please keep the address under 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن شہر یا قصبہٕ۔",
+   "back": "Please write your city or town."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو شہرُک ناو حرفن منٛز (30 تام)۔",
+   "back": "Please write the city name in letters (up to 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "مہربٲنی کٔرِتھ ژارِو پنٕنۍ ریاست۔",
+   "back": "Please choose your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "مہربٲنی کٔرِتھ ژارِو پنٕنۍ ریاست لِسٹہِ منٛزٕ۔",
+   "back": "Please choose your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو پنُن 6 ہندسن ہُند PIN کوڈ۔",
+   "back": "Please write your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "مہربٲنی کٔرِتھ لیٚکھِو اکھ صحیح 6 ہندسن ہُند PIN کوڈ۔",
+   "back": "Please write a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "یہ PIN کوڈ چھُ نہٕ تٔمِس ریاستس منٛز یۄسہٕ تۄہہِ ژٲرِو۔ مہربٲنی کٔرِتھ وُچھِو دۄشوَے۔",
+   "back": "This PIN code is not in the state that you chose. Please look at both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "مہربٲنی کٔرِتھ کٔرِو کم از کم اکھ پیک شامِل۔",
+   "back": "Please add at least one pack."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "اکِس آرڈرس منٛز اکھ ہی پیک زیادٕ کھۄتہٕ زیادٕ {max}۔",
+   "back": "At most {max} of the same pack in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "اکِس آرڈرس منٛز زیادٕ کھۄتہٕ زیادٕ {max} پیک۔ امہِ کھۄتہٕ زیادٕ خٲطرٕ کٔرِو مہربٲنی کٔرِتھ دۄیُم آرڈر۔",
+   "back": "At most {max} packs in one order. For more than that, please make a second order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "تُہٕنٛدِس کارٹس منٛز اکھ پیک چھُ نہٕ وۄنۍ دستیاب۔ مہربٲنی کٔرِتھ کٔڈِو سُہ نیٚبر۔",
+   "back": "A pack in your cart is not available now. Please take it out."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "تُہٕنٛدِس کارٹس منٛز اکھ پیک چھُ نہٕ وۄنۍ دستیاب۔ مہربٲنی کٔرِتھ کٔڈِو سُہ نیٚبر۔",
+   "back": "A pack in your cart is not available now. Please take it out."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "مہربٲنی کٔرِتھ وُچھِو تعداد۔",
+   "back": "Please look at the quantity."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "آرڈرُک خلاصہٕ",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "پیک ({n})",
+   "back": "Packs ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP منٛز شامل GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP منٛز شامل GST: {tax} (IGST {rate}%)",
+   "back": "GST included in MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP منٛز شامل GST ({rate}%)",
+   "back": "GST included in MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "ڈلیوری",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (پورٕ ہِندوستانس منٛز مُفت)",
+   "back": "{amount} (free in all of India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "کُل ادائیگی",
+   "back": "Total payment"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "تُہٕنٛد کارٹ چھُ خٲلی۔ ہیٚرِ کٔرِو اکھ پیک شامِل۔",
+   "back": "Your cart is empty. Add a pack from above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "تۄہہِ چھِو صِرف MRP دِوان۔ چیک آؤٹس پیٹھ چھُ نہٕ کیٛنہہ تہِ جوڑنہٕ یِوان۔",
+   "back": "You pay only the MRP. Nothing at all is added at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "صِرف پیشگی ادائیگی: UPI، ڈیبٹ یا کریڈٹ کارڈ، نیٹ بینکنگ یا والیٹ۔ ڈلیوری وِزِ نقد ادائیگی چھےٚ نہٕ۔ ادائیگی چھُ سون پیمنٹ گیٹ وے ({gateways}) پننِس محفوظ صفحس پیٹھ سنبھالان؛ أسۍ چھِنہٕ کٕنہِ تہِ تُہٕنٛد کارڈُک تفصیل یا UPI PIN وُچھان۔",
+   "back": "Advance payment only: UPI, debit or credit card, net banking or wallet. There is no cash payment at delivery. The payment is handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "ڈلیوری",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "منسوخی، واپسی تہٕ رقمہٕ واپسی",
+   "back": "Cancellation, return and refund of money"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "کِنن وول",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "کِنن والِس ہُند تفصیل",
+   "back": "Seller's details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI رجسٹریشن نمبر {no}",
+   "back": "FSSAI registration number {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI لائسنس نمبر {no}",
+   "back": "FSSAI licence number {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "کسٹمر کیئر تہٕ شکایت افسر: {name}، {designation} · {phone} (کال یا WhatsApp) · {email}",
+   "back": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "کِنن والِس ہُند تفصیل، کِننٕچ شرطہٕ، ترسیل، واپسی تہٕ رازداری",
+   "back": "Seller's details, terms of sale, shipping, return and privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "ادائیگی کٔرِتھ چھِو تۄہہِ سانہِ {link} سٟتۍ متفق۔",
+   "back": "By paying you agree with our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "کِننٕچن شرطن، ترسیل تہٕ رقمہٕ واپسی پالیسیو",
+   "back": "terms of sale, shipping and refund policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} ادا کٔرِو",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "ادائیگی خٲطرٕ پیک کٔرِو شامِل",
+   "back": "Add packs for payment"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "مہربٲنی کٔرِتھ پرارِو…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "محفوظ ادائیگی چھےٚ شروٗع گژھان…",
+   "back": "Secure payment is starting…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "ادائیگی خٲطرٕ چھِ تۄہہِ PhonePe پیٹھ نِوان…",
+   "back": "You are being taken to PhonePe for payment…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "تُہٕنٛز ادائیگی چھےٚ تصدیق گژھان…",
+   "back": "Your payment is being confirmed…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "کُل رقم آیہِ اپڈیٹ کرنہٕ",
+   "back": "Total amount was updated"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "یَتھ آرڈرس ہٕنٛز کُل رقم چھےٚ {amount}۔ مہربٲنی کٔرِتھ وُچھِو یہ تہٕ دبٲوِو دوبارٕ \"ادا کٔرِو\"۔",
+   "back": "The total amount of this order is {amount}. Please look at it and press \"Pay\" again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "شُکریہ! تُہٕنٛز ادائیگی آیہِ وصول۔",
+   "back": "Thank you! Your payment was received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "آرڈر نمبر: {id}۔ أسۍ چھِ 1–2 کامہٕ کیٛن دۄہن اندر (آتھوارس تہٕ سرکٲری چھُٹین ورٲے) پیک کٔرِتھ روانہٕ کران تہٕ کوٗرئیرُک ناو تہٕ ٹریکنگ لنک WhatsApp یا ای میلہِ پیٹھ سوزان۔",
+   "back": "Order number: {id}. We pack and dispatch within 1–2 working days (except Sunday and government holidays) and send the courier name and tracking link on WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "متوقع ڈلیوری {from} تہٕ {to} درمیان۔",
+   "back": "Expected delivery between {from} and {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "کُنہِ تہِ سوالہٕ خٲطرٕ کٔرِو مہربٲنی تہٕ آرڈر نمبر لیکھِتھ تھٲوِیو پانس نِش۔",
+   "back": "For any question, please write down the order number and keep it with you."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "تُہٕنٛز ادائیگی چھےٚ تصدیق گژھان",
+   "back": "Your payment is being confirmed"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "آرڈر نمبر: {id}۔ اگر تُہٕنٛدِ کھاتہٕ منٛزٕ چھےٚ رقم کٹیمٕژ، دوبارٕ ادائیگی کرنٕچ چھےٚ نہٕ ضروٗرت: أسۍ چھِ کیٛنژن منٹن منٛز اَمِچ تصدیق کران، تہٕ یۄسہٕ ادائیگی مکمل نہٕ گژھہِ، تٔمۍ سٕنز رقم چھےٚ پانے واپس یِوان۔",
+   "back": "Order number: {id}. If money has been deducted from your account, there is no need to pay again: we confirm it within a few minutes, and for a payment that is not completed, its money comes back by itself."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "ادائیگی سپٕز نہٕ",
+   "back": "The payment did not happen"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "یَتھ کوشش منٛز آیہِ نہٕ کانٛہہ رقم کٹنہٕ۔ تۄہہِ ہیٚکِو دوبارٕ کوشش کٔرِتھ، یا سانہِ Amazon.in اسٹورٕ پیٹھٕ آرڈر کٔرِتھ۔",
+   "back": "No money was deducted in this attempt. You can try again, or order from our Amazon.in store."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "بینک یا ایپٕچ دِژمٕژ وجہ: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "ادائیگی وِنڈو گیہِ بنٛد",
+   "back": "The payment window closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "کانٛہہ رقم چھےٚ نہٕ کٔٹمٕژ۔ تُہُنٛد کارٹ چھُ وُنہِ تِتھۍ پٲٹھۍ، خٲلی چھُنہٕ گوٚمُت: دوبارٕ کوشش کرنہٕ خٲطرٕ دبٲیِو ادائیگی بٹن۔",
+   "back": "No amount has been deducted. Your cart is still as it was, it has not become empty: to try again, press the payment button."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "أسۍ ہیٚکٕو نہٕ ادائیگی شروٗع کٔرِتھ",
+   "back": "We could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "مہربٲنی کٔرِتھ کٔرِو اکہِ منٹہٕ پتہٕ دوبارٕ کوشش، یا سانہِ Amazon.in اسٹورٕ پیٹھٕ کٔرِو آرڈر۔",
+   "back": "Please try again after one minute, or order from our Amazon.in store."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "آن لائن ادائیگی چھےٚ وۄنۍ بنٛد",
+   "back": "Online payment is off now"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "مہربٲنی کٔرِتھ سانہِ Amazon.in اسٹورٕ پیٹھٕ کٔرِو آرڈر۔ مدد خٲطرٕ سوٗزِو اَسہِ WhatsApp پیٹھ پیغام۔",
+   "back": "Please order from our Amazon.in store. For help, send us a message on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} گوو وۄنۍ وۄنۍ ختم۔ مہربٲنی کٔرِتھ کٔرِو تعداد کم یا کٔڈِو سُہ نیٚبر۔",
+   "back": "{name} just now ran out. Please reduce the quantity or take it out."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "مہربٲنی کٔرِتھ وُچھِو نِشانہٕ دِتمٕتۍ خانہٕ۔",
+   "back": "Please look at the marked boxes."
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "دوبارٕ کوشش کٔرِو",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "سون Amazon.in اسٹور",
+   "back": "Our Amazon.in store"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp پیٹھ مدد",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "ہیلو 1acrefarms، مےٚ چھےٚ تُہٕنٛزِ ویب سائٹ پیٹھ چیک آؤٹس منٛز مدد ضروٗرت۔",
+   "back": "Hello 1acrefarms, I need help with checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "آرڈر نمبر: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} پیک · آرڈر {id}",
+   "back": "{n} packs · order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "أسۍ چھِ یِم تفصیل تُہٕنٛد آرڈر واتناونہٕ، اَمیُک GST انوائس سوزنہٕ تہٕ تۄہہِ مدد کرنہٕ خٲطرٕ ورتاوان۔ یِم کٔمۍ سٟتۍ چھِ شیئر کرنہٕ یِوان: وُچھِو سانہِ {link}۔",
+   "back": "We use these details to deliver your order, send its GST invoice and help you. With whom they are shared: see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "أسۍ چھِ ادائیگی پتہٕ 1–2 کامہٕ کیٛن دۄہن اندر روانہٕ کران (آتھوارس تہٕ سرکٲری چھُٹین ورٲے)۔ روانگی پتہٕ عام ڈلیوری وقت: پلناڈو تہٕ گنٹور منٛز 1–3 دۄہ، باقی آندھرا پردیش تہٕ جنوٗبی ہِندوستانس منٛز 3–5 دۄہ، ہِندوستانس منٛز باقی جاین پیٹھ 4–10 دۄہ۔",
+   "back": "We dispatch within 1–2 working days after payment (except Sunday and government holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days at other places in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "روانگی برونٛہہ کٔرِو مُفت منسوخ۔ خراب، غلط، نقص وول یا بیانس مطٲبق نہٕ آسن وول پیک: تُہٕنٛزِ پسنٛدِ مطٲبق مُفت بدل یا پوٗرٕ رقمہٕ واپسی؛ واپسی ترسیلُک خرچ چھُ نہٕ تۄہہِ کٕنہِ تہِ دِنُن۔ اگر پیک تُہٕنٛدِ علاقُک عام ڈلیوری وقت کھۄتہٕ پتہٕ واتہِ (یِلہِ نہٕ دیر کُنہِ تہِ ہٕنٛدِ اختیارٕ نیٚبر واقعو، مثلاً سیلاب یا ہڑتال، کِنۍ گٔیہِ): تۄہہِ ہیٚکِو سُہ نِنہٕ نِشہِ انکار کٔرِتھ یا پوٗرٕ رقمہٕ واپسی مَنٛگِتھ۔ منظوٗری پتہٕ 5–7 کامہٕ کیٛن دۄہن اندر چھےٚ رقم تٔتھۍ طریقس منٛز واپس یِوان یَتھ سٟتۍ ادائیگی آسہِ کرنہٕ آمٕژ۔",
+   "back": "Cancel free before dispatch. Damaged, wrong, defective or not-as-described pack: free replacement or full refund of money as you prefer; you never have to pay the cost of return shipping. If the pack arrives later than the usual delivery time of your area (unless the delay happened because of events outside anyone's control, for example flood or strike): you can refuse to take it or ask for a full refund of money. After approval, within 5–7 working days the money comes back to the same method with which the payment was made."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "أسۍ چھِ پرٛتھ شکایت 48 گھنٹن اندر تسلیم کران، تتھ چھِ اکھ شکایت نمبر دِوان (مثلاً 1AF-C-0001) یُس تۄہہِ کُنہِ تہِ وقتہٕ اَمِچ حالت زانٛنہٕ خٲطرٕ ونِتھ ہیٚکِو، تہٕ اکِس رٮ۪تس اندر چھِ أسۍ سُہ حل کران۔",
+   "back": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) which you can quote at any time to know its status, and we resolve it within one month."
   }
  }
 }

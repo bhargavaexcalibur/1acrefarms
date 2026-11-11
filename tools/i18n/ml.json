@@ -9215,6 +9215,556 @@
    "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
    "t": "⟦#1⟧, ഏക ഉടമസ്ഥൻ, ⟦#2⟧ എന്ന വ്യാപാരനാമത്തിൽ",
    "back": "⟦#1⟧, sole owner, under the trade name ⟦#2⟧"
+  },
+  "ui.add_to_cart": {
+   "src": "Add to cart",
+   "t": "കാർട്ടിൽ ചേർക്കൂ",
+   "back": "Add to cart"
+  },
+  "ui.buy_now": {
+   "src": "Buy now",
+   "t": "ഇപ്പോൾ വാങ്ങൂ",
+   "back": "Buy now"
+  },
+  "ui.free_delivery": {
+   "src": "Free delivery on orders placed with us",
+   "t": "ഞങ്ങളോട് നേരിട്ട് ഓർഡർ ചെയ്താൽ ഡെലിവറി സൗജന്യം",
+   "back": "Delivery free if you order directly from us"
+  },
+  "ui.cart": {
+   "src": "Cart",
+   "t": "കാർട്ട്",
+   "back": "Cart"
+  },
+  "ui.cart_added": {
+   "src": "Added to your cart",
+   "t": "നിങ്ങളുടെ കാർട്ടിൽ ചേർത്തു",
+   "back": "Added to your cart"
+  },
+  "ui.cart_full": {
+   "src": "Your cart already has the most we can send in one order",
+   "t": "ഒരു ഓർഡറിൽ അയയ്ക്കാവുന്ന പരമാവധി എണ്ണം ഇതിനകം നിങ്ങളുടെ കാർട്ടിലുണ്ട്",
+   "back": "The maximum number that can be sent in one order is already in your cart"
+  },
+  "co.pageTitle": {
+   "src": "Checkout · 1acrefarms",
+   "t": "ചെക്ക്ഔട്ട് · 1acrefarms",
+   "back": "Checkout · 1acrefarms"
+  },
+  "co.back": {
+   "src": "← Back to the shop",
+   "t": "← ഷോപ്പിലേക്ക് മടങ്ങൂ",
+   "back": "← Go back to the shop"
+  },
+  "co.title": {
+   "src": "Checkout",
+   "t": "ചെക്ക്ഔട്ട്",
+   "back": "Checkout"
+  },
+  "co.bannerTest": {
+   "src": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+   "t": "ടെസ്റ്റ് മോഡ്: ഇതിൽ പണമൊന്നും ഈടാക്കില്ല. ഈ പേജ് മറച്ചിരിക്കുന്നു, പരിശോധനയ്ക്ക് മാത്രം.",
+   "back": "Test mode: no money will be charged in this. This page is hidden, only for testing."
+  },
+  "co.bannerLive": {
+   "src": "Live payments are on.",
+   "t": "ലൈവ് പേയ്‌മെന്റുകൾ ഓണാണ്.",
+   "back": "Live payments are on."
+  },
+  "co.bannerOff": {
+   "src": "Online payment is switched off right now.",
+   "t": "ഓൺലൈൻ പേയ്‌മെന്റ് ഇപ്പോൾ ഓഫാണ്.",
+   "back": "Online payment is off now."
+  },
+  "co.bannerUnreachable": {
+   "src": "The payment server cannot be reached right now.",
+   "t": "പേയ്‌മെന്റ് സെർവറുമായി ഇപ്പോൾ ബന്ധപ്പെടാൻ കഴിയുന്നില്ല.",
+   "back": "Cannot contact the payment server now."
+  },
+  "co.packsTitle": {
+   "src": "Your packs",
+   "t": "നിങ്ങളുടെ പാക്കറ്റുകൾ",
+   "back": "Your packets"
+  },
+  "co.packMeta": {
+   "src": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {price} (എല്ലാ നികുതികളും ഉൾപ്പെടെ) · ഒരു g-ക്ക് {unit} · {details}",
+   "back": "{grams} g · MRP {price} (including all taxes) · {unit} per g · {details}"
+  },
+  "co.packDetails": {
+   "src": "Pack details",
+   "t": "പാക്കറ്റ് വിവരങ്ങൾ",
+   "back": "Packet details"
+  },
+  "co.less": {
+   "src": "One less: {name}",
+   "t": "ഒന്ന് കുറയ്ക്കൂ: {name}",
+   "back": "Reduce one: {name}"
+  },
+  "co.more": {
+   "src": "One more: {name}",
+   "t": "ഒന്ന് കൂട്ടൂ: {name}",
+   "back": "Add one: {name}"
+  },
+  "co.linkIgnored": {
+   "src": "Not added from the link (not available to order here now): {items}.",
+   "t": "ലിങ്കിൽ നിന്ന് ചേർത്തില്ല (ഇപ്പോൾ ഇവിടെ ഓർഡർ ചെയ്യാൻ ലഭ്യമല്ല): {items}.",
+   "back": "Not added from the link (not available to order here now): {items}."
+  },
+  "co.linkClampedLine": {
+   "src": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+   "t": "ഒരു ഓർഡറിൽ ഒരേ പാക്കറ്റ് പരമാവധി {max}: ലിങ്കിലെ ഒരു എണ്ണം കുറച്ചു.",
+   "back": "The same packet maximum {max} in one order: one quantity in the link was reduced."
+  },
+  "co.linkClampedTotal": {
+   "src": "Up to {max} packs per order: some packs from the link were not added.",
+   "t": "ഒരു ഓർഡറിൽ പരമാവധി {max} പാക്കറ്റുകൾ: ലിങ്കിലെ ചില പാക്കറ്റുകൾ ചേർത്തില്ല.",
+   "back": "Maximum {max} packets in one order: some packets in the link were not added."
+  },
+  "co.addressTitle": {
+   "src": "Delivery address",
+   "t": "ഡെലിവറി വിലാസം",
+   "back": "Delivery address"
+  },
+  "co.fName": {
+   "src": "Full name",
+   "t": "മുഴുവൻ പേര്",
+   "back": "Full name"
+  },
+  "co.fPhone": {
+   "src": "Mobile number",
+   "t": "മൊബൈൽ നമ്പർ",
+   "back": "Mobile number"
+  },
+  "co.fEmail": {
+   "src": "Email (for your order confirmation)",
+   "t": "ഇമെയിൽ (ഓർഡർ സ്ഥിരീകരണത്തിന്)",
+   "back": "Email (for order confirmation)"
+  },
+  "co.fAddress": {
+   "src": "Address (house no., street, area, landmark)",
+   "t": "വിലാസം (വീട്ടുനമ്പർ, തെരുവ്, സ്ഥലം, അടയാളം)",
+   "back": "Address (house number, street, place, mark) [NOTE: 'അടയാളം' = mark/sign; likely meant as landmark]"
+  },
+  "co.fCity": {
+   "src": "City / town",
+   "t": "നഗരം / പട്ടണം",
+   "back": "City / town"
+  },
+  "co.fState": {
+   "src": "State",
+   "t": "സംസ്ഥാനം",
+   "back": "State"
+  },
+  "co.fStatePick": {
+   "src": "Choose your state",
+   "t": "നിങ്ങളുടെ സംസ്ഥാനം തിരഞ്ഞെടുക്കൂ",
+   "back": "Select your state"
+  },
+  "co.fPin": {
+   "src": "PIN code",
+   "t": "PIN കോഡ്",
+   "back": "PIN code"
+  },
+  "co.privacyLink": {
+   "src": "privacy policy",
+   "t": "സ്വകാര്യതാ നയം",
+   "back": "Privacy policy"
+  },
+  "co.err.name.required": {
+   "src": "Please enter your name.",
+   "t": "ദയവായി നിങ്ങളുടെ പേര് നൽകൂ.",
+   "back": "Please enter your name."
+  },
+  "co.err.name.invalid": {
+   "src": "Please enter your name in letters (up to 60).",
+   "t": "ദയവായി പേര് അക്ഷരങ്ങളിൽ നൽകൂ (പരമാവധി 60).",
+   "back": "Please enter the name in letters (maximum 60)."
+  },
+  "co.err.phone.required": {
+   "src": "Please enter your 10-digit mobile number.",
+   "t": "ദയവായി നിങ്ങളുടെ 10 അക്ക മൊബൈൽ നമ്പർ നൽകൂ.",
+   "back": "Please enter your 10-digit mobile number."
+  },
+  "co.err.phone.invalid": {
+   "src": "Please enter a valid 10-digit Indian mobile number.",
+   "t": "ദയവായി ശരിയായ 10 അക്ക ഇന്ത്യൻ മൊബൈൽ നമ്പർ നൽകൂ.",
+   "back": "Please enter a correct 10-digit Indian mobile number."
+  },
+  "co.err.email.required": {
+   "src": "Please enter your email address.",
+   "t": "ദയവായി നിങ്ങളുടെ ഇമെയിൽ വിലാസം നൽകൂ.",
+   "back": "Please enter your email address."
+  },
+  "co.err.email.invalid": {
+   "src": "Please check your email address.",
+   "t": "ദയവായി നിങ്ങളുടെ ഇമെയിൽ വിലാസം പരിശോധിക്കൂ.",
+   "back": "Please check your email address."
+  },
+  "co.err.address.required": {
+   "src": "Please enter your address.",
+   "t": "ദയവായി നിങ്ങളുടെ വിലാസം നൽകൂ.",
+   "back": "Please enter your address."
+  },
+  "co.err.address.too_short": {
+   "src": "Please add your house number, street and area.",
+   "t": "ദയവായി വീട്ടുനമ്പർ, തെരുവ്, സ്ഥലം എന്നിവ ചേർക്കൂ.",
+   "back": "Please add house number, street, place."
+  },
+  "co.err.address.invalid": {
+   "src": "Please keep the address under 200 characters, without < or >.",
+   "t": "ദയവായി വിലാസം 200 അക്ഷരങ്ങളിൽ താഴെ, < അല്ലെങ്കിൽ > ഇല്ലാതെ എഴുതൂ.",
+   "back": "Please write the address in under 200 characters, without < or >."
+  },
+  "co.err.city.required": {
+   "src": "Please enter your city or town.",
+   "t": "ദയവായി നിങ്ങളുടെ നഗരം അല്ലെങ്കിൽ പട്ടണം നൽകൂ.",
+   "back": "Please enter your city or town."
+  },
+  "co.err.city.invalid": {
+   "src": "Please enter the city name in letters (up to 30).",
+   "t": "ദയവായി നഗരത്തിന്റെ പേര് അക്ഷരങ്ങളിൽ നൽകൂ (പരമാവധി 30).",
+   "back": "Please enter the city's name in letters (maximum 30)."
+  },
+  "co.err.state.required": {
+   "src": "Please choose your state.",
+   "t": "ദയവായി നിങ്ങളുടെ സംസ്ഥാനം തിരഞ്ഞെടുക്കൂ.",
+   "back": "Please select your state."
+  },
+  "co.err.state.invalid": {
+   "src": "Please choose your state from the list.",
+   "t": "ദയവായി പട്ടികയിൽ നിന്ന് നിങ്ങളുടെ സംസ്ഥാനം തിരഞ്ഞെടുക്കൂ.",
+   "back": "Please select your state from the list."
+  },
+  "co.err.pin.required": {
+   "src": "Please enter your 6-digit PIN code.",
+   "t": "ദയവായി നിങ്ങളുടെ 6 അക്ക PIN കോഡ് നൽകൂ.",
+   "back": "Please enter your 6-digit PIN code."
+  },
+  "co.err.pin.invalid": {
+   "src": "Please enter a valid 6-digit PIN code.",
+   "t": "ദയവായി ശരിയായ 6 അക്ക PIN കോഡ് നൽകൂ.",
+   "back": "Please enter a correct 6-digit PIN code."
+  },
+  "co.err.pin.state_mismatch": {
+   "src": "This PIN code is not in the state you chose. Please check both.",
+   "t": "ഈ PIN കോഡ് നിങ്ങൾ തിരഞ്ഞെടുത്ത സംസ്ഥാനത്തിലല്ല. ദയവായി രണ്ടും പരിശോധിക്കൂ.",
+   "back": "This PIN code is not in the state you selected. Please check both."
+  },
+  "co.err.items.empty_cart": {
+   "src": "Please add at least one pack.",
+   "t": "ദയവായി കുറഞ്ഞത് ഒരു പാക്കറ്റെങ്കിലും ചേർക്കൂ.",
+   "back": "Please add at least one packet."
+  },
+  "co.err.items.qty_over_limit": {
+   "src": "Up to {max} of the same pack per order.",
+   "t": "ഒരു ഓർഡറിൽ ഒരേ പാക്കറ്റ് പരമാവധി {max}.",
+   "back": "The same packet maximum {max} in one order."
+  },
+  "co.err.items.too_many_packs": {
+   "src": "Up to {max} packs per order. For more, please place a second order.",
+   "t": "ഒരു ഓർഡറിൽ പരമാവധി {max} പാക്കറ്റുകൾ. കൂടുതൽ വേണമെങ്കിൽ, ദയവായി രണ്ടാമതൊരു ഓർഡർ നൽകൂ.",
+   "back": "Maximum {max} packets in one order. If you want more, please place a second order."
+  },
+  "co.err.items.not_sellable": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "നിങ്ങളുടെ കാർട്ടിലെ ഒരു പാക്കറ്റ് ഇപ്പോൾ ലഭ്യമല്ല. ദയവായി അത് നീക്കം ചെയ്യൂ.",
+   "back": "A packet in your cart is not available now. Please remove it."
+  },
+  "co.err.items.unknown_item": {
+   "src": "A pack in your cart is not available now. Please remove it.",
+   "t": "നിങ്ങളുടെ കാർട്ടിലെ ഒരു പാക്കറ്റ് ഇപ്പോൾ ലഭ്യമല്ല. ദയവായി അത് നീക്കം ചെയ്യൂ.",
+   "back": "A packet in your cart is not available now. Please remove it."
+  },
+  "co.err.items.bad_qty": {
+   "src": "Please check the quantities.",
+   "t": "ദയവായി എണ്ണങ്ങൾ പരിശോധിക്കൂ.",
+   "back": "Please check the quantities."
+  },
+  "co.summaryTitle": {
+   "src": "Order summary",
+   "t": "ഓർഡർ സംഗ്രഹം",
+   "back": "Order summary"
+  },
+  "co.sumPacks": {
+   "src": "Packs ({n})",
+   "t": "പാക്കറ്റുകൾ ({n})",
+   "back": "Packets ({n})"
+  },
+  "co.sumGstIntra": {
+   "src": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "MRP-യിൽ ഉൾപ്പെട്ട GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInter": {
+   "src": "GST included in the MRP: {tax} (IGST {rate}%)",
+   "t": "MRP-യിൽ ഉൾപ്പെട്ട GST: {tax} (IGST {rate}%)",
+   "back": "GST included in the MRP: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoState": {
+   "src": "GST included in the MRP ({rate}%)",
+   "t": "MRP-യിൽ ഉൾപ്പെട്ട GST ({rate}%)",
+   "back": "GST included in the MRP ({rate}%)"
+  },
+  "co.sumDelivery": {
+   "src": "Delivery",
+   "t": "ഡെലിവറി",
+   "back": "Delivery"
+  },
+  "co.sumDeliveryFree": {
+   "src": "{amount} (free across India)",
+   "t": "{amount} (ഇന്ത്യയിലെവിടെയും സൗജന്യം)",
+   "back": "{amount} (free anywhere in India)"
+  },
+  "co.sumTotal": {
+   "src": "Total to pay",
+   "t": "അടയ്ക്കേണ്ട ആകെ തുക",
+   "back": "Total amount to be paid"
+  },
+  "co.sumEmpty": {
+   "src": "Your cart is empty. Add a pack above.",
+   "t": "നിങ്ങളുടെ കാർട്ട് ശൂന്യമാണ്. മുകളിൽ ഒരു പാക്കറ്റ് ചേർക്കൂ.",
+   "back": "Your cart is empty. Add a packet above."
+  },
+  "co.sumMrpOnly": {
+   "src": "You pay the MRP only. Nothing is added at checkout.",
+   "t": "നിങ്ങൾ MRP മാത്രം അടച്ചാൽ മതി. ചെക്ക്ഔട്ടിൽ ഒന്നും കൂട്ടിച്ചേർക്കുന്നില്ല.",
+   "back": "It is enough if you pay only the MRP. Nothing is added at checkout."
+  },
+  "co.prepaidNote": {
+   "src": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+   "t": "മുൻകൂർ പേയ്‌മെന്റ് മാത്രം: UPI, ഡെബിറ്റ് അല്ലെങ്കിൽ ക്രെഡിറ്റ് കാർഡ്, നെറ്റ് ബാങ്കിങ് അല്ലെങ്കിൽ വാലറ്റ്. ക്യാഷ് ഓൺ ഡെലിവറി ഇല്ല. പേയ്‌മെന്റുകൾ ഞങ്ങളുടെ പേയ്‌മെന്റ് ഗേറ്റ്‌വേ ({gateways}) അതിന്റെ സ്വന്തം സുരക്ഷിത പേജിൽ കൈകാര്യം ചെയ്യുന്നു; നിങ്ങളുടെ കാർഡ് വിവരങ്ങളോ UPI PIN-ഓ ഞങ്ങൾ ഒരിക്കലും കാണുന്നില്ല.",
+   "back": "Advance payment only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN."
+  },
+  "co.deliveryTitle": {
+   "src": "Delivery",
+   "t": "ഡെലിവറി",
+   "back": "Delivery"
+  },
+  "co.returnsTitle": {
+   "src": "Cancellation, returns and refunds",
+   "t": "റദ്ദാക്കൽ, തിരിച്ചുനൽകൽ, റീഫണ്ട്",
+   "back": "Cancellation, return, refund"
+  },
+  "co.sellerTitle": {
+   "src": "Sold by",
+   "t": "വിൽപ്പനക്കാരൻ",
+   "back": "Seller"
+  },
+  "co.footTitle": {
+   "src": "Seller details",
+   "t": "വിൽപ്പനക്കാരന്റെ വിവരങ്ങൾ",
+   "back": "Seller's details"
+  },
+  "co.gstin": {
+   "src": "GSTIN {gstin}",
+   "t": "GSTIN {gstin}",
+   "back": "GSTIN {gstin}"
+  },
+  "co.fssaiReg": {
+   "src": "FSSAI Reg. No. {no}",
+   "t": "FSSAI രജിസ്ട്രേഷൻ നമ്പർ {no}",
+   "back": "FSSAI registration number {no}"
+  },
+  "co.fssaiLic": {
+   "src": "FSSAI Lic. No. {no}",
+   "t": "FSSAI ലൈസൻസ് നമ്പർ {no}",
+   "back": "FSSAI licence number {no}"
+  },
+  "co.careLine": {
+   "src": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+   "t": "കസ്റ്റമർ കെയർ, പരാതി പരിഹാര ഓഫീസർ: {name}, {designation} · {phone} (വിളിക്കാം അല്ലെങ്കിൽ WhatsApp ചെയ്യാം) · {email}",
+   "back": "Customer care, complaint redressal officer: {name}, {designation} · {phone} (you can call or WhatsApp) · {email}"
+  },
+  "co.policiesLink": {
+   "src": "Seller details, terms of sale, shipping, returns and privacy",
+   "t": "വിൽപ്പനക്കാരന്റെ വിവരങ്ങൾ, വിൽപ്പന വ്യവസ്ഥകൾ, ഷിപ്പിങ്, തിരിച്ചുനൽകൽ, സ്വകാര്യത",
+   "back": "Seller's details, terms of sale, shipping, return, privacy"
+  },
+  "co.terms": {
+   "src": "By paying you agree to our {link}.",
+   "t": "പണമടയ്ക്കുന്നതിലൂടെ ഞങ്ങളുടെ {link} നിങ്ങൾ അംഗീകരിക്കുന്നു.",
+   "back": "By paying, you accept our {link}."
+  },
+  "co.termsLink": {
+   "src": "terms of sale, shipping and refund policies",
+   "t": "വിൽപ്പന വ്യവസ്ഥകൾ, ഷിപ്പിങ്, റീഫണ്ട് നയങ്ങൾ",
+   "back": "terms of sale, shipping, refund policies"
+  },
+  "co.pay": {
+   "src": "Pay {amount}",
+   "t": "{amount} അടയ്ക്കൂ",
+   "back": "Pay {amount}"
+  },
+  "co.payEmpty": {
+   "src": "Add a pack to pay",
+   "t": "പണമടയ്ക്കാൻ ഒരു പാക്കറ്റ് ചേർക്കൂ",
+   "back": "Add a packet to pay"
+  },
+  "co.payBusy": {
+   "src": "Please wait…",
+   "t": "ദയവായി കാത്തിരിക്കൂ…",
+   "back": "Please wait…"
+  },
+  "co.creating": {
+   "src": "Starting secure payment…",
+   "t": "സുരക്ഷിത പേയ്‌മെന്റ് തുടങ്ങുന്നു…",
+   "back": "Starting secure payment…"
+  },
+  "co.redirecting": {
+   "src": "Taking you to PhonePe to pay…",
+   "t": "പണമടയ്ക്കാൻ PhonePe-യിലേക്ക് കൊണ്ടുപോകുന്നു…",
+   "back": "Taking you to PhonePe to pay…"
+  },
+  "co.verifying": {
+   "src": "Confirming your payment…",
+   "t": "നിങ്ങളുടെ പേയ്‌മെന്റ് സ്ഥിരീകരിക്കുന്നു…",
+   "back": "Confirming your payment…"
+  },
+  "co.priceChangedTitle": {
+   "src": "Total updated",
+   "t": "ആകെ തുക മാറി",
+   "back": "The total amount changed"
+  },
+  "co.priceChangedBody": {
+   "src": "The total for this order is {amount}. Please check it and press Pay again.",
+   "t": "ഈ ഓർഡറിന്റെ ആകെ തുക {amount} ആണ്. ദയവായി പരിശോധിച്ച് വീണ്ടും 'അടയ്ക്കൂ' അമർത്തൂ.",
+   "back": "The total amount of this order is {amount}. Please check and press 'Pay' again."
+  },
+  "co.successTitle": {
+   "src": "Thank you! Your payment is received.",
+   "t": "നന്ദി! നിങ്ങളുടെ പണം ലഭിച്ചു.",
+   "back": "Thank you! Your money was received."
+  },
+  "co.successBody": {
+   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ഓർഡർ നമ്പർ: {id}. 1–2 പ്രവൃത്തി ദിവസത്തിനകം (ഞായറാഴ്ചകളും പൊതു അവധി ദിവസങ്ങളും ഒഴികെ) പാക്ക് ചെയ്ത് അയയ്ക്കും; കൊറിയറിന്റെ പേരും ട്രാക്കിങ് ലിങ്കും WhatsApp-ലോ ഇമെയിലിലോ അയയ്ക്കും.",
+   "back": "Order number: {id}. Will pack and send within 1–2 working days (excluding Sundays and public holidays); will send the courier's name and tracking link on WhatsApp or email."
+  },
+  "co.successDelivery": {
+   "src": "Expected delivery between {from} and {to}.",
+   "t": "{from} മുതൽ {to} വരെയുള്ള ദിവസങ്ങളിൽ ഡെലിവറി പ്രതീക്ഷിക്കാം.",
+   "back": "Delivery can be expected on the days from {from} to {to}."
+  },
+  "co.successKeep": {
+   "src": "Please keep the order number for any question.",
+   "t": "എന്തെങ്കിലും സംശയമുണ്ടെങ്കിൽ ചോദിക്കാൻ, ദയവായി ഓർഡർ നമ്പർ കുറിച്ചുവെച്ച് കൈയിൽ കരുതുക.",
+   "back": "If you have any doubt, to ask about it, please note down the order number and keep it with you."
+  },
+  "co.pendingTitle": {
+   "src": "Your payment is being confirmed",
+   "t": "നിങ്ങളുടെ പേയ്‌മെന്റ് സ്ഥിരീകരിക്കുന്നു",
+   "back": "Confirming your payment"
+  },
+  "co.pendingBody": {
+   "src": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+   "t": "ഓർഡർ നമ്പർ: {id}. നിങ്ങളുടെ അക്കൗണ്ടിൽ നിന്ന് പണം പോയിട്ടുണ്ടെങ്കിൽ, വീണ്ടും അടയ്ക്കേണ്ടതില്ല: കുറച്ച് മിനിറ്റിനകം ഞങ്ങൾ അത് സ്ഥിരീകരിക്കും, പൂർത്തിയാകാത്ത പേയ്‌മെന്റ് തനിയെ റീഫണ്ട് ചെയ്യും.",
+   "back": "Order number: {id}. If money has gone from your account, you need not pay again: we will confirm it within a few minutes, and an incomplete payment will be refunded automatically."
+  },
+  "co.failedTitle": {
+   "src": "Payment did not go through",
+   "t": "പേയ്‌മെന്റ് നടന്നില്ല",
+   "back": "Payment did not go through"
+  },
+  "co.failedBody": {
+   "src": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+   "t": "ഈ ശ്രമത്തിന് പണമൊന്നും എടുത്തിട്ടില്ല. വീണ്ടും ശ്രമിക്കാം, അല്ലെങ്കിൽ ഞങ്ങളുടെ Amazon.in സ്റ്റോറിൽ നിന്ന് ഓർഡർ ചെയ്യാം.",
+   "back": "No money was taken for this attempt. You can try again, or order from our Amazon.in store."
+  },
+  "co.failedReason": {
+   "src": "Reason given by the bank or app: {reason}",
+   "t": "ബാങ്ക് അല്ലെങ്കിൽ ആപ്പ് നൽകിയ കാരണം: {reason}",
+   "back": "Reason given by the bank or app: {reason}"
+  },
+  "co.cancelledTitle": {
+   "src": "Payment window closed",
+   "t": "പേയ്‌മെന്റ് വിൻഡോ അടച്ചു",
+   "back": "Payment window closed"
+  },
+  "co.cancelledBody": {
+   "src": "Nothing was charged. Your cart is saved: press Pay to try again.",
+   "t": "ഒന്നും ഈടാക്കിയിട്ടില്ല. നിങ്ങളുടെ കാർട്ട് സേവ് ചെയ്തിട്ടുണ്ട്: വീണ്ടും ശ്രമിക്കാൻ 'അടയ്ക്കൂ' അമർത്തൂ.",
+   "back": "Nothing has been charged. Your cart has been saved: press 'Pay' to try again."
+  },
+  "co.errorTitle": {
+   "src": "We could not start the payment",
+   "t": "പേയ്‌മെന്റ് തുടങ്ങാൻ കഴിഞ്ഞില്ല",
+   "back": "Could not start the payment"
+  },
+  "co.errorBody": {
+   "src": "Please try again in a minute, or order from our Amazon.in store.",
+   "t": "ഒരു മിനിറ്റിനു ശേഷം വീണ്ടും ശ്രമിക്കൂ, അല്ലെങ്കിൽ ഞങ്ങളുടെ Amazon.in സ്റ്റോറിൽ നിന്ന് ഓർഡർ ചെയ്യൂ.",
+   "back": "Try again after a minute, or order from our Amazon.in store."
+  },
+  "co.disabledTitle": {
+   "src": "Online payment is off right now",
+   "t": "ഓൺലൈൻ പേയ്‌മെന്റ് ഇപ്പോൾ ഓഫാണ്",
+   "back": "Online payment is off now"
+  },
+  "co.disabledBody": {
+   "src": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+   "t": "ദയവായി ഞങ്ങളുടെ Amazon.in സ്റ്റോറിൽ നിന്ന് ഓർഡർ ചെയ്യൂ. സഹായത്തിന് WhatsApp-ൽ സന്ദേശം അയയ്ക്കൂ.",
+   "back": "Please order from our Amazon.in store. For help, send a message on WhatsApp."
+  },
+  "co.outOfStock": {
+   "src": "{name} has just sold out. Please lower the quantity or remove it.",
+   "t": "{name} ഇപ്പോൾ വിറ്റുതീർന്നു. ദയവായി എണ്ണം കുറയ്ക്കൂ അല്ലെങ്കിൽ അത് നീക്കം ചെയ്യൂ.",
+   "back": "{name} just sold out. Please reduce the quantity or remove it."
+  },
+  "co.fixForm": {
+   "src": "Please check the highlighted fields.",
+   "t": "അടയാളപ്പെടുത്തിയ കോളങ്ങൾ ദയവായി പരിശോധിക്കൂ.",
+   "back": "Please check the marked columns. [NOTE: 'കോളങ്ങൾ' = columns; meant as form fields]"
+  },
+  "co.tryAgain": {
+   "src": "Try again",
+   "t": "വീണ്ടും ശ്രമിക്കൂ",
+   "back": "Try again"
+  },
+  "co.amazon": {
+   "src": "Our Amazon.in store",
+   "t": "ഞങ്ങളുടെ Amazon.in സ്റ്റോർ",
+   "back": "Our Amazon.in store"
+  },
+  "co.help": {
+   "src": "Help on WhatsApp",
+   "t": "WhatsApp-ൽ സഹായം",
+   "back": "Help on WhatsApp"
+  },
+  "co.waHelp": {
+   "src": "Hi 1acrefarms, I need help with the checkout on your website.",
+   "t": "നമസ്കാരം 1acrefarms, നിങ്ങളുടെ വെബ്സൈറ്റിലെ ചെക്ക്ഔട്ടിൽ എനിക്ക് സഹായം വേണം.",
+   "back": "Hello 1acrefarms, I need help with the checkout on your website."
+  },
+  "co.waHelpOrder": {
+   "src": "Order number: {id}",
+   "t": "ഓർഡർ നമ്പർ: {id}",
+   "back": "Order number: {id}"
+  },
+  "co.rzpDescription": {
+   "src": "{n} pack(s) · order {id}",
+   "t": "{n} പാക്കറ്റ്(കൾ) · ഓർഡർ {id}",
+   "back": "{n} packet(s) · order {id}"
+  },
+  "co.privacyNote": {
+   "src": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+   "t": "നിങ്ങളുടെ ഓർഡർ എത്തിക്കാനും അതിന്റെ GST ഇൻവോയ്സ് അയയ്ക്കാനും നിങ്ങളെ സഹായിക്കാനുമാണ് ഈ വിവരങ്ങൾ ഉപയോഗിക്കുന്നത്. ആരുമായി പങ്കിടുന്നു എന്നറിയാൻ ഞങ്ങളുടെ {link} കാണൂ.",
+   "back": "These details are used to deliver your order, send its GST invoice and help you. To know with whom they are shared, see our {link}."
+  },
+  "co.deliveryNote": {
+   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+   "t": "പണമടച്ച് 1–2 പ്രവൃത്തി ദിവസത്തിനകം അയയ്ക്കും (ഞായറാഴ്ചകളും പൊതു അവധി ദിവസങ്ങളും ഒഴികെ). അയച്ച ശേഷം സാധാരണ ഡെലിവറി സമയം: പൽനാട്, ഗുണ്ടൂർ എന്നിവിടങ്ങളിൽ 1–3 ദിവസം, ആന്ധ്രാപ്രദേശിന്റെ മറ്റു ഭാഗങ്ങളിലും ദക്ഷിണേന്ത്യയിലും 3–5 ദിവസം, ഇന്ത്യയിലെ മറ്റിടങ്ങളിൽ 4–10 ദിവസം.",
+   "back": "Will send within 1–2 working days of payment (excluding Sundays and public holidays). Usual delivery time after sending: 1–3 days in Palnad and Guntur, 3–5 days in other parts of Andhra Pradesh and in South India, 4–10 days elsewhere in India."
+  },
+  "co.returnsNote": {
+   "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+   "t": "അയയ്ക്കുന്നതിന് മുമ്പ് സൗജന്യമായി റദ്ദാക്കാം. കേടുവന്ന, തെറ്റായ, തകരാറുള്ള അല്ലെങ്കിൽ വിവരിച്ചതുപോലെയല്ലാത്ത പാക്കറ്റ്: നിങ്ങൾക്ക് ഇഷ്ടമുള്ളതുപോലെ സൗജന്യമായി മാറ്റിനൽകും അല്ലെങ്കിൽ മുഴുവൻ തുകയും റീഫണ്ട് ചെയ്യും; തിരിച്ചയയ്ക്കാനുള്ള ഷിപ്പിങ് ചെലവ് നിങ്ങൾ ഒരിക്കലും വഹിക്കേണ്ടതില്ല. നിങ്ങളുടെ പ്രദേശത്തെ സാധാരണ ഡെലിവറി സമയത്തേക്കാൾ വൈകി എത്തിയാൽ (വെള്ളപ്പൊക്കം, പണിമുടക്ക് പോലെ ആരുടെയും നിയന്ത്രണത്തിലല്ലാത്ത സംഭവങ്ങൾ കാരണം വൈകിയാൽ ഒഴികെ): നിങ്ങൾക്ക് അത് നിരസിക്കാം അല്ലെങ്കിൽ മുഴുവൻ തുകയുടെ റീഫണ്ട് ആവശ്യപ്പെടാം. അംഗീകരിച്ച് 5–7 പ്രവൃത്തി ദിവസത്തിനകം, നിങ്ങൾ പണമടച്ച അതേ രീതിയിലേക്ക് റീഫണ്ട് നൽകും.",
+   "back": "Can cancel free of charge before sending. A damaged, wrong, defective or not-as-described packet: as you like, will replace it free or refund the full amount; you never have to bear the shipping cost for sending it back. If it arrives later than the usual delivery time for your area (except when delayed due to events not in anyone's control, like flood or strike): you can refuse it or ask for a refund of the full amount. Within 5–7 working days of approval, the refund will be given to the same method you paid with."
+  },
+  "co.grievanceNote": {
+   "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+   "t": "ഓരോ പരാതിയും 48 മണിക്കൂറിനകം ലഭിച്ചതായി അറിയിക്കും, അതിന് ഒരു പരാതി നമ്പർ (ഉദാഹരണം 1AF-C-0001) നൽകും; അതിന്റെ നില അറിയാൻ എപ്പോൾ വേണമെങ്കിലും ആ നമ്പർ പറയാം. ഒരു മാസത്തിനകം പരാതി പരിഹരിക്കും.",
+   "back": "Will inform that each complaint was received within 48 hours, and give it a complaint number (example 1AF-C-0001); you can quote that number any time to know its status. Will resolve the complaint within one month."
   }
  }
 }
