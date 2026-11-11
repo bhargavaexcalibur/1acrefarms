@@ -52,7 +52,7 @@ describe("the e-mail itself (pure)", () => {
       "Delivery: ₹0 (free across India)",
       "Total paid: ₹1,728",
       "You paid the MRP only. Nothing was added at checkout.",
-      "Expected delivery between Sat, 14 Nov 2026 and Fri, 20 Nov 2026.",
+      "Expected delivery between Sat, 14 Nov 2026 and Thu, 19 Nov 2026.",
       TERMS.delivery, TERMS.returns, TERMS.cancelHow, TERMS.grievance,
       `Customer care and grievance officer: ${SELLER.care.name}, ${SELLER.care.designation} · ${SELLER.care.phone} (call or WhatsApp) · ${SELLER.care.email}`,
       SELLER.legalName,
@@ -85,7 +85,7 @@ describe("the e-mail itself (pure)", () => {
     assert.ok(delhi.subject.startsWith("[TEST] "));
     assert.ok(delhi.text.startsWith("TEST ORDER: test-mode payment, no real money was taken."));
     assert.ok(delhi.text.includes("GST included in the MRP: ₹82.28 (IGST 5%)"), "2 x 18.86 + 4 x 11.14");
-    assert.ok(delhi.text.includes("Expected delivery between Wed, 18 Nov 2026 and Thu, 26 Nov 2026."));
+    assert.ok(delhi.text.includes("Expected delivery between Tue, 17 Nov 2026 and Tue, 24 Nov 2026."));
     assert.ok(delhi.text.includes(`FSSAI Lic. No. ${FAKE_TEST_LICENCE}`));
   });
 });
@@ -197,7 +197,7 @@ describe("/verify gives the success page its delivery window", () => {
     const { r } = await paid(h, [{ code: "TURM", qty: 1 }], { ...CUSTOMER, city: "New Delhi", state: "Delhi", pin: "110001" });
     const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
     assert.equal(v.body.status, "paid");
-    assert.deepEqual(v.body.delivery, { from: "2026-11-18", to: "2026-11-26" }, "paid Thu 12 Nov 2026 (harness clock), Delhi 4–10 days");
+    assert.deepEqual(v.body.delivery, { from: "2026-11-17", to: "2026-11-24" }, "paid Thu 12 Nov 2026 (harness clock), Delhi 4–10 days");
     assert.deepEqual(Object.keys(v.body).sort(), ["delivery", "ok", "orderId", "status"], "no address or customer data");
   });
 
@@ -208,7 +208,7 @@ describe("/verify gives the success page its delivery window", () => {
     const pay = h.mocks.razorpayCapture(gw, r.body.totalPaise);
     const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId, razorpay_order_id: gw, razorpay_payment_id: pay, razorpay_signature: razorpaySignature(TEST_ENV.RAZORPAY_KEY_SECRET, gw, pay) } });
     assert.equal(v.body.status, "verified");
-    assert.deepEqual(v.body.delivery, { from: "2026-11-14", to: "2026-11-20" }, "Guntur 522002: 1–5 days");
+    assert.deepEqual(v.body.delivery, { from: "2026-11-14", to: "2026-11-19" }, "Guntur 522002: 1–5 days");
     h.mocks.state.razorpay.create = 503;
     const cf = await h.createOrder([{ code: "CBEL", qty: 1 }]);
     const pending = await h.call("POST", "/verify", { body: { orderId: cf.body.orderId } });

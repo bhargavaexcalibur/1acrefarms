@@ -5,10 +5,11 @@
 // for your area").
 // Pure functions, no I/O; the hidden page imports this same file.
 //
-// Day counting, in India time (IST): the payment day is day 0. Sundays are never counted, for dispatch (we do not
-// dispatch on Sundays) or for transit (most courier partners do not deliver on Sundays), so the last date is never
-// earlier than the policy allows. Public holidays are not known to this code; policies.html already says remote
-// areas, weather, strikes and festival rush can add a few days.
+// Day counting, in India time (IST): the payment day is day 0. Dispatch counts working days (we do not dispatch on
+// Sundays, as policies.html says); transit counts plain calendar days, exactly as the policy's "usual delivery time
+// after dispatch" table reads, so the date shown is never LATER than the policy's own benchmark for a late order.
+// Public holidays are not known to this code; policies.html already says remote areas, weather, strikes and festival
+// rush can add a few days.
 import { pinInfo } from "./pricing.js";
 
 export const DISPATCH_WORKING_DAYS = Object.freeze([1, 2]);
@@ -83,7 +84,7 @@ export function expectedDelivery({ paidAt, pin, state }) {
   const lo = Math.min(...zones.map((z) => DELIVERY_ZONES[z].days[0]));
   const hi = Math.max(...zones.map((z) => DELIVERY_ZONES[z].days[1]));
   const day0 = istDay(paidAt);
-  const from = addWorkingDays(addWorkingDays(day0, DISPATCH_WORKING_DAYS[0]), lo);
-  const to = addWorkingDays(addWorkingDays(day0, DISPATCH_WORKING_DAYS[1]), hi);
+  const from = addWorkingDays(day0, DISPATCH_WORKING_DAYS[0]) + lo * DAY_MS;
+  const to = addWorkingDays(day0, DISPATCH_WORKING_DAYS[1]) + hi * DAY_MS;
   return { from: isoDay(from), to: isoDay(to), days: [lo, hi], zones };
 }

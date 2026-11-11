@@ -39,23 +39,23 @@ test("PIN + state: agreement narrows, disagreement (or an ambiguous PIN) takes t
 });
 
 test("dates: paid Thursday 12 Nov 2026 (IST)", () => {
-  // dispatch Fri 13 (1st working day) to Sat 14 (2nd); Sunday 15 never counts
-  assert.deepEqual(expectedDelivery({ paidAt: THU, pin: "110001", state: "Delhi" }), { from: "2026-11-18", to: "2026-11-26", days: [4, 10], zones: ["REST"] });
-  assert.deepEqual(expectedDelivery({ paidAt: THU, pin: "522601", state: "Andhra Pradesh" }), { from: "2026-11-14", to: "2026-11-20", days: [1, 5], zones: ["GNT_PLN", "AP_SOUTH"] });
-  assert.deepEqual(expectedDelivery({ paidAt: THU, pin: "530001", state: "Andhra Pradesh" }), { from: "2026-11-17", to: "2026-11-20", days: [3, 5], zones: ["AP_SOUTH"] });
+  // dispatch Fri 13 (1st working day) to Sat 14 (2nd); transit counts calendar days, as policies.html reads
+  assert.deepEqual(expectedDelivery({ paidAt: THU, pin: "110001", state: "Delhi" }), { from: "2026-11-17", to: "2026-11-24", days: [4, 10], zones: ["REST"] });
+  assert.deepEqual(expectedDelivery({ paidAt: THU, pin: "522601", state: "Andhra Pradesh" }), { from: "2026-11-14", to: "2026-11-19", days: [1, 5], zones: ["GNT_PLN", "AP_SOUTH"] });
+  assert.deepEqual(expectedDelivery({ paidAt: THU, pin: "530001", state: "Andhra Pradesh" }), { from: "2026-11-16", to: "2026-11-19", days: [3, 5], zones: ["AP_SOUTH"] });
 });
 
 test("dates: Sunday payment and the IST day boundary", () => {
   const sun = at("2026-11-15T10:00:00+05:30");
-  assert.deepEqual(expectedDelivery({ paidAt: sun, pin: "110001", state: "Delhi" }), { from: "2026-11-20", to: "2026-11-28", days: [4, 10], zones: ["REST"] });
+  assert.deepEqual(expectedDelivery({ paidAt: sun, pin: "110001", state: "Delhi" }), { from: "2026-11-20", to: "2026-11-27", days: [4, 10], zones: ["REST"] });
   // 00:30 IST on Saturday 14 Nov is still Friday 13 Nov in UTC: the IST day (Saturday) is day 0
   const satEarly = at("2026-11-14T00:30:00+05:30");
-  assert.deepEqual(expectedDelivery({ paidAt: satEarly, pin: "110001", state: "Delhi" }), { from: "2026-11-20", to: "2026-11-28", days: [4, 10], zones: ["REST"] });
+  assert.deepEqual(expectedDelivery({ paidAt: satEarly, pin: "110001", state: "Delhi" }), { from: "2026-11-20", to: "2026-11-27", days: [4, 10], zones: ["REST"] });
   const friLate = at("2026-11-13T23:59:00+05:30");
-  assert.deepEqual(expectedDelivery({ paidAt: friLate, pin: "110001", state: "Delhi" }).from, "2026-11-19", "Friday IST: dispatch Sat 14 / Mon 16, earliest Thu 19");
+  assert.deepEqual(expectedDelivery({ paidAt: friLate, pin: "110001", state: "Delhi" }).from, "2026-11-18", "Friday IST: dispatch Sat 14 / Mon 16, earliest Wed 18 (Sat 14 + 4 calendar days)");
 });
 
-test("never a Sunday, never sooner than the policy allows (sweep over 5 weeks, every area)", () => {
+test("dispatch skips Sundays, transit is calendar days: never sooner and never later than the policy (sweep over 5 weeks, every area)", () => {
   const DAY = 24 * 3600 * 1000;
   const start = at("2026-11-02T09:00:00+05:30");
   for (let i = 0; i < 35 * 4; i++) {
@@ -65,11 +65,10 @@ test("never a Sunday, never sooner than the policy allows (sweep over 5 weeks, e
       const day0 = Date.parse(new Date(paidAt + 5.5 * 3600 * 1000).toISOString().slice(0, 10));
       const from = Date.parse(w.from);
       const to = Date.parse(w.to);
-      assert.notEqual(new Date(from).getUTCDay(), 0, `from on a Sunday: ${w.from}`);
-      assert.notEqual(new Date(to).getUTCDay(), 0, `to on a Sunday: ${w.to}`);
       assert.ok(from >= day0 + (1 + w.days[0]) * DAY, `${pin} from ${w.from}`);
       assert.ok(to >= day0 + (2 + w.days[1]) * DAY, `${pin} to ${w.to}`);
-      assert.ok(to <= day0 + (2 + w.days[1]) * DAY * 7 / 6 + 2 * DAY, "only Sundays are skipped");
+      assert.equal(from, addWorkingDays(day0, 1) + w.days[0] * DAY, `${pin} from = 1st working day + ${w.days[0]} calendar days`);
+      assert.equal(to, addWorkingDays(day0, 2) + w.days[1] * DAY, `${pin} to = 2nd working day + ${w.days[1]} calendar days`);
       assert.ok(from <= to);
     }
   }
