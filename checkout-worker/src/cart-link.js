@@ -47,3 +47,49 @@ export function parseProductsParam(raw) {
   }
   return out;
 }
+
+// ---------------------------------------------------------------------------------------------------------------------
+// The site-wide cart (product pages, home cards and /checkout/ share it). It lives only in the buyer's own browser:
+// localStorage[CART_KEY] = { cart: { CODE: qty }, pin, lang }. No account, nothing pre-filled or pre-ticked, and nothing
+// is ever added that the buyer did not press. These pure helpers keep it inside the Worker's own rules (sellable packs
+// only, LIMITS per pack and per order), so the page never shows a cart the Worker would refuse.
+export const CART_KEY = "oneacre_cart_v1";
+
+// Any stored value -> { items: [{code, qty}], clamped } with unknown / not-sellable packs and bad quantities dropped,
+// each pack at most LIMITS.maxQtyPerLine and the whole cart at most LIMITS.maxPacksPerOrder (in stored order).
+export function clampCart(raw) {
+  const out = { items: [], clamped: false };
+  if (!raw || typeof raw !== "object" || Array.isArray(raw)) return out;
+  let total = 0;
+  for (const [code, value] of Object.entries(raw).slice(0, MAX_ENTRIES)) {
+    if (!CATALOGUE[code]?.sellable || !Number.isInteger(value) || value < 1) { out.clamped = true; continue; }
+    let qty = Math.min(value, LIMITS.maxQtyPerLine);
+    if (total + qty > LIMITS.maxPacksPerOrder) qty = LIMITS.maxPacksPerOrder - total;
+    if (qty !== value) out.clamped = true;
+    if (qty < 1) continue;
+    out.items.push({ code, qty });
+    total += qty;
+  }
+  return out;
+}
+
+export const cartObject = (items) => Object.fromEntries(items.map((i) => [i.code, i.qty]));
+export const cartCount = (raw) => clampCart(raw).items.reduce((n, i) => n + i.qty, 0);
+
+// One more of `code` ("Add to cart"), or at least one ("Buy now", atLeastOne = true).
+// -> { ok: false } for a pack that cannot be ordered here; else { ok: true, cart: {CODE: qty}, added: bool }, where
+// added = false means the cart already held the most one order can take (nothing changed).
+export function cartAdd(raw, code, { atLeastOne = false } = {}) {
+  const c = String(code ?? "").toUpperCase();
+  if (!CATALOGUE[c]?.sellable) return { ok: false };
+  const items = clampCart(raw).items;
+  const line = items.find((i) => i.code === c);
+  const total = items.reduce((n, i) => n + i.qty, 0);
+  if (line && atLeastOne) return { ok: true, cart: cartObject(items), added: false };
+  if (total >= LIMITS.maxPacksPerOrder || (line && line.qty >= LIMITS.maxQtyPerLine)) {
+    return { ok: true, cart: cartObject(items), added: false };
+  }
+  if (line) line.qty += 1;
+  else items.push({ code: c, qty: 1 });
+  return { ok: true, cart: cartObject(items), added: true };
+}

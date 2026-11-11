@@ -31,9 +31,12 @@ the MRP (CGST 2.5% + SGST 2.5% for Andhra Pradesh, IGST 5% elsewhere, the rate o
 packing-unit addresses, GSTIN, FSSAI Reg. No., customer care and grievance officer, link to policies.html), again in
 the page footer. After paying: the expected delivery window, and a confirmation e-mail.
 
-**What can be ordered** is one flag per pack, `sellable` in `src/pricing.js` `CATALOGUE`. Today: turmeric, hill
-turmeric, cane jaggery, palm jaggery. Sannam and Teja are held (stock count and real pack photos first) and cashew is
-parked. Switching a pack on = changing that one flag; the page, the Worker and the Meta link all follow.
+**What can be ordered, and at what price**, is ONE file: `src/catalogue.json`, one pack per line (code, sku, slug,
+name, grams, mrp, hsn, image, sellable). Today: turmeric, hill turmeric, cane jaggery, palm jaggery. Sannam and Teja are
+held (stock count and real pack photos first) and cashew is parked. Switching a pack on = changing `"sellable"` on its
+line. The Worker prices from it (`src/pricing.js`), the site build reads it (`tools/build_pages.py`: product pages, home
+cards, `/checkout/`; the build stops if an MRP, size, slug or image differs from the pack pages), and the checkout page
+and the Meta link list only its sellable packs. After a change: run the site build and deploy the Worker.
 
 ```
 browser (/checkout-test/)            Worker (workers.dev)                         outside
@@ -55,18 +58,45 @@ browser (/checkout-test/)            Worker (workers.dev)                       
 |---|---|
 | `src/index.js` | Routes, failover chain, the single "paid" hand-off, `scheduled()` |
 | `src/config.js` | MODE / LIVE_ENABLED guard, `GATEWAY_ORDER`, all settings |
-| `src/pricing.js` | **The only price list** (MRPs; `DELIVERY_FEE_RUPEES = 0`), what is `sellable`, product-page slugs, GST rate, unit price per g, PIN table, parcel sizes (also used by the page) |
+| `src/catalogue.json` | **The only list of packs and MRPs**, and what is `sellable` here: one pack per line (shared with the site build and the page) |
+| `src/pricing.js` | Reads `catalogue.json` into `CATALOGUE` (a malformed row is never sellable), `quoteCart` (= sum of the MRPs; `DELIVERY_FEE_RUPEES = 0`), GST rate, unit price per g, PIN table, parcel sizes (also used by the page) |
 | `src/gst.js` | GST inside the MRP, for display: per unit CGST = SGST = MRP/42 (Andhra Pradesh) or IGST = MRP/21, then x qty (our invoice method) |
 | `src/seller.js` | Legal name, both addresses (labels in one place), GSTIN, FSSAI Reg. No., customer care / grievance officer, Amazon.in store link, short delivery / returns / privacy terms (page + e-mail) |
 | `src/delivery.js` | Expected delivery window: dispatch 1–2 working days + 1–3 / 3–5 / 4–10 days by area (Sundays not counted, IST) |
 | `src/confirmation.js` | The customer's order-confirmation e-mail (Resend), once per paid order |
-| `src/cart-link.js` | Meta catalogue link `?products=SKU%3Aqty,...` -> cart (used by the page) |
+| `src/cart-link.js` | Meta catalogue link `?products=SKU%3Aqty,...` -> cart, and the site-wide cart helpers (`CART_KEY`, `clampCart`, `cartAdd`: sellable packs only, within `LIMITS`) used by the page and `/checkout/cart.js` |
 | `src/validate.js` | Address-form rules (also used by the page) |
 | `src/gateways/razorpay.js`, `cashfree.js`, `phonepe.js` | Create order, look up payment, signature checks (PhonePe: OAuth token cache too) |
 | `src/shiprocket.js` | Token cache (9 days), adhoc order, retry rules |
 | `src/storage/d1.js`, `memory.js` | Same interface: D1 in production, memory in tests |
 | `src/alerts.js`, `src/log.js` | Owner e-mails and the shared Resend call; logs that cannot carry phones, addresses, e-mails or secrets |
 | `schema.sql` | D1 tables: `orders` (with `gateway` + `gw_failover`: who took the order and who failed first), `webhook_events`, `kv`, `stock` |
+
+## The real checkout page `/checkout/` and the ONE switch (site side)
+
+- `tools/build_pages.py` writes `/checkout/` on every build (`tools/build_checkout.py`), from `checkout-test/`:
+  `index.html` (the `checkout-page` meta says `prod`), `checkout.js` and `cart.js` with their imports pointed at
+  `/checkout/lib/` (copies of the pure modules `pricing.js` (catalogue import -> generated `catalogue.js`),
+  `validate.js`, `gst.js`, `seller.js`, `cart-link.js`, `delivery.js`; the build stops if one of them imports anything
+  else or uses `env` / `fetch`), and the strings `/checkout/i18n/<lang>.json`.
+- Strings: `checkout-test/strings.en.json` (English + a translator note per key) and `src/seller.js` `TERMS` (privacy,
+  delivery, returns, grievance). Each is an OPTIONAL i18n key `co.<key>`, so `python3 tools/build_i18n.py todo <lang>
+  out.json` lists them and `merge` / `blind` / `merge-back` translate them like any other key (a translation must keep
+  every `{placeholder}` and number). Untranslated keys arrive in English and the page marks them `lang="en"`. The page
+  picks the language from `?lang=xx`, else the `/xx/` page the buyer came from, else the last one used, else English.
+- **`CHECKOUT_LIVE = False`** (in `tools/build_pages.py`): the site is byte-identical to the Amazon-only build;
+  `/checkout/` is noindex, not in `sitemap.xml` and linked from nowhere (it can still be tried against the TEST
+  Worker). **`True`**: only through `tools/switch_on.py --apply` on the licence day (see below). Then each sellable
+  pack page gets "Add to cart" + "Buy now" beside its Amazon.in button, "MRP / Incl. of all taxes / Free delivery on
+  orders placed with us" and per-pack "Order here" / "Order on Amazon.in" terms; every header gets a cart link with
+  the count; the home cards get Add to cart; `policies.html` says direct orders are open; `/checkout/` is indexable
+  and in `sitemap.xml`. The cart is `localStorage` (`oneacre_cart_v1`), shared by those pages and the checkout.
+- `tools/switch_on.py` (dry run by default; `--apply` acts): checks every gate (site licence number, Worker vars,
+  secret NAMES via `npx wrangler@4 secret list`, a live Razorpay key via `/health`, Shiprocket, tests), then flips
+  the switch, builds, commits on this branch and prints the deploy / merge / push commands. It never pushes,
+  deploys or prints a secret. Runbook: `docs/marketing/checkout-plan/switch-on-runbook.md` (local).
+- PhonePe and Cashfree send the buyer back to `/checkout-test/` in test mode and to `/checkout/` in live mode
+  (`CHECKOUT_PATH = "/checkout/"` tries the real page in test mode).
 
 ## Run the tests and the smoke run (no accounts needed)
 
@@ -162,6 +192,8 @@ In `wrangler.toml` [vars] (plain values, not secrets; see `wrangler.toml.example
 
 Then `npx wrangler secret put LIVE_ENABLED` with `yes-owner-approved`, a live `RAZORPAY_KEY_ID`, and deploy.
 `/health` must show `"checkout":"enabled"`; any other answer names the missing gate in `reason`.
+The website side is the same day, one step: `python3 tools/switch_on.py` (dry run), then `--apply` (see "The real
+checkout page" above and `docs/marketing/checkout-plan/switch-on-runbook.md`).
 
 ## Test-mode checklist (all in TEST / SANDBOX; no real money)
 
@@ -254,9 +286,9 @@ can never book twice.
   proven in test step 4. If webhooks are blocked, the 15-minute reconcile still marks the order paid.
 - The `stock` table is read at checkout (a row with qty 0 blocks a pack), but nothing fills it yet. The nightly sync
   from the Stock tab is not built.
-- English only. Every visible string is in `STRINGS.en` in `checkout-test/checkout.js`, ready for the 22 languages
-  (the delivery / returns / privacy / grievance texts come from `src/seller.js` `TERMS`; the address labels are in
-  `src/seller.js` `ADDRESS_LABELS`). The order e-mail is English only.
+- The page's strings are in `checkout-test/strings.en.json` (+ `src/seller.js` `TERMS`) and go through the site's
+  translation flow (keys `co.<key>`); none is translated yet, so every language shows English (marked `lang="en"`).
+  Seller name, addresses and their labels stay English (legal identity, as on the pack). The order e-mail is English only.
 - Expected delivery dates skip Sundays but do not know public holidays (policies.html already says festival rush and
   remote areas can add days). PIN 522xxx covers Guntur and Palnadu but also part of Bapatla district, so it gets the
   wider 1–5 days, never a 1–3 promise. A state that contradicts the PIN gets the wider of the two areas.
@@ -269,8 +301,8 @@ can never book twice.
 - Meta catalogue link: the products in the link replace the saved cart (only when at least one can be ordered).
 - PhonePe is a full-page redirect: after a failed or abandoned PhonePe payment the cart and PIN are still there,
   but name, phone and address must be typed again (the page never stores them on the device).
-- The PhonePe and Cashfree return URLs point at `/checkout-test/`. At go-live they must point at the real checkout
-  page (one line each in `src/gateways/phonepe.js` and `cashfree.js`).
+- The PhonePe and Cashfree return URLs follow the mode: `/checkout-test/` in test mode, `/checkout/` in live mode
+  (`src/config.js` `checkoutPath`).
 - `policies.html` on main (11-11) has free delivery on every order and names Razorpay, Cashfree and PhonePe, but its
   "How to order" line still says "pay online through Razorpay", and it says direct orders are not open yet. Its
   "delivery date we gave you" now has a date: the success page and the order e-mail give the expected window. The

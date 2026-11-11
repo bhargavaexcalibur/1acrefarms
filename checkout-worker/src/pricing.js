@@ -1,35 +1,57 @@
-// Prices and parcel sizes: the ONE place they live. There is no delivery fee (see DELIVERY_FEE_RUPEES).
-// The Worker prices every order from this file and never from the browser. The hidden test page
-// (/checkout-test/) imports this same file only to show the numbers before the Worker confirms them.
+// Prices and parcel sizes. There is no delivery fee (see DELIVERY_FEE_RUPEES).
+// The Worker prices every order from this file and never from the browser. The checkout pages (/checkout/ and the
+// hidden /checkout-test/) import this same file only to show the numbers before the Worker confirms them.
 // No secrets here: this file is served publicly by GitHub Pages.
 //
-// MRPs = the 540 g Amazon.in MRPs (Rs, incl. GST). test/pricing.test.js fails if they drift from app.js.
+// WHAT CAN BE ORDERED AND AT WHAT PRICE lives in ONE file: ./catalogue.json (one pack per line; `sellable` switches a
+// pack on or off for direct orders). The same JSON drives tools/build_pages.py (product pages, home cards, /checkout/),
+// so the Worker, the site and the page can never disagree. MRPs = the 540 g Amazon.in MRPs (Rs, incl. GST);
+// test/pricing.test.js fails if they drift from app.js, and the site build stops if they drift from its pages.
+// The browser copy (/checkout/lib/pricing.js) is written by the build with this one import pointing at a generated
+// ./catalogue.js (JSON import attributes are not in every phone browser yet); nothing else in the copy changes.
+import CATALOGUE_DATA from "./catalogue.json" with { type: "json" };
 
 export const PACK_GRAMS = 540;
 
-// ONE source of truth for what can be ordered: the `sellable` flag. The Worker refuses a pack with sellable:false,
-// and the page (checkout-test/checkout.js) and the Meta catalogue link (src/cart-link.js) list only sellable packs.
-// Switching a pack on or off = changing that one flag on its line below.
-//   CASH  false: parked (not packed yet).
-//   SANN, TEJA  false: held until their stock is counted and real pack photos exist (G12, 11-11-2026).
-// hsn: only codes on record (turmeric 09103030, cane jaggery 17011310, palm jaggery 17029010).
-// Chilli HSN is left blank until the invoice master (ChittaGupta) confirms it; Shiprocket treats hsn as optional.
-// slug: the product page on the site (/{slug}/) with the pack's full details.
-export const CATALOGUE = Object.freeze({
-  TURM: Object.freeze({ name: "Turmeric Powder", mrp: 396, hsn: "09103030", slug: "turmeric-powder", sellable: true }),
-  KPAS: Object.freeze({ name: "Hill Turmeric Powder", mrp: 495, hsn: "09103030", slug: "hill-turmeric-powder", sellable: true }),
-  SANN: Object.freeze({ name: "Sannam Chilli Powder", mrp: 495, hsn: "", slug: "sannam-chilli-powder", sellable: false }),
-  TEJA: Object.freeze({ name: "Teja Chilli Powder", mrp: 495, hsn: "", slug: "teja-chilli-powder", sellable: false }),
-  CBEL: Object.freeze({ name: "Cane Jaggery", mrp: 234, hsn: "17011310", slug: "cane-jaggery", sellable: true }),
-  TBEL: Object.freeze({ name: "Palm Jaggery", mrp: 495, hsn: "17029010", slug: "palm-jaggery", sellable: true }),
-  CASH: Object.freeze({ name: "Cashew Kernels", mrp: 891, hsn: "", slug: "cashew-kernels", sellable: false }),
-});
+export const skuOf = (code) => `1AF-${code}-${String(PACK_GRAMS).padStart(4, "0")}`;
+
+// Problems in a catalogue document (an empty list = fine). The tests and tools/build_pages.py both insist on [].
+export function catalogueProblems(doc) {
+  const out = [];
+  const rows = Array.isArray(doc?.packs) ? doc.packs : null;
+  if (!rows || !rows.length) return ["packs: missing or empty"];
+  const seen = new Set();
+  rows.forEach((p, i) => {
+    const at = `packs[${i}]${p && p.code ? ` (${p.code})` : ""}`;
+    if (!p || typeof p !== "object") { out.push(`${at}: not an object`); return; }
+    if (!/^[A-Z]{4}$/.test(p.code ?? "")) out.push(`${at}: code must be 4 capital letters`);
+    if (seen.has(p.code)) out.push(`${at}: code repeated`);
+    seen.add(p.code);
+    if (p.sku !== skuOf(p.code)) out.push(`${at}: sku must be ${skuOf(p.code)}`);
+    if (p.grams !== PACK_GRAMS) out.push(`${at}: grams must be ${PACK_GRAMS}`);
+    if (!Number.isInteger(p.mrp) || p.mrp < 1) out.push(`${at}: mrp must be a whole number of rupees`);
+    if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.slug ?? "")) out.push(`${at}: slug`);
+    if (typeof p.name !== "string" || !p.name.trim()) out.push(`${at}: name`);
+    if (!/^(\d{8})?$/.test(p.hsn ?? "x")) out.push(`${at}: hsn must be 8 digits or empty`);
+    if (!/^[a-z0-9-]+\.jpg$/.test(p.image ?? "")) out.push(`${at}: image`);
+    if (typeof p.sellable !== "boolean") out.push(`${at}: sellable must be true or false`);
+  });
+  return out;
+}
+
+// { CODE: { name, mrp, hsn, slug, image, sku, grams, sellable } } in catalogue order. A malformed row is never
+// sellable (fail closed); catalogueProblems() names it.
+export const CATALOGUE = Object.freeze(Object.fromEntries((CATALOGUE_DATA.packs || []).map((p) => {
+  const ok = catalogueProblems({ packs: [p] }).length === 0;
+  return [p.code, Object.freeze({
+    name: p.name, mrp: p.mrp, hsn: p.hsn, slug: p.slug, image: p.image, sku: p.sku, grams: p.grams,
+    sellable: ok && p.sellable === true,
+  })];
+})));
 
 // GST rate inside the MRP, for every pack above: 5% (invoices 1AF/26-27/0001-0003 at CGST 2.5% + SGST 2.5%, the MRP
 // sheet and the Amazon listings all agree). Used only to SHOW the tax inside the MRP (src/gst.js); prices never change.
 export const GST_PCT = 5;
-
-export const skuOf = (code) => `1AF-${code}-${String(PACK_GRAMS).padStart(4, "0")}`;
 
 export const LIMITS = Object.freeze({ maxQtyPerLine: 10, maxPacksPerOrder: 12 });
 

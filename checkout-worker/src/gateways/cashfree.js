@@ -24,7 +24,7 @@ export async function createCashfreeOrder({ cfg, env, fetchImpl, order }) {
   if (!cashfreeConfigured(env)) throw new GatewayError("cashfree", 0, "not_configured");
   const c = order.customer;
   const meta = {};
-  if (env.SITE_URL) meta.return_url = `${env.SITE_URL.replace(/\/$/, "")}/checkout-test/?order_id={order_id}`;
+  if (env.SITE_URL) meta.return_url = `${env.SITE_URL.replace(/\/$/, "")}${cfg.checkoutPath || "/checkout-test/"}?order_id={order_id}`;
   if (env.PUBLIC_URL && env.PUBLIC_URL.startsWith("https://")) meta.notify_url = `${env.PUBLIC_URL.replace(/\/$/, "")}/cashfree-webhook`;
   let res;
   try {

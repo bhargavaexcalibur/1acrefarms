@@ -114,7 +114,7 @@ export async function createPhonePeOrder({ cfg, env, fetchImpl, store, now, orde
   if (!phonepeConfigured(env)) throw new GatewayError(G, 0, "not_configured");
   // PhonePe sends the customer back here; the page then calls /verify (Order Status), never trusting the redirect.
   const site = String(env.SITE_URL || "https://1acrefarms.co.in").replace(/\/$/, "");
-  const redirectUrl = `${site}/checkout-test/?order_id=${encodeURIComponent(order.id)}&gw=phonepe`;
+  const redirectUrl = `${site}${cfg.checkoutPath || "/checkout-test/"}?order_id=${encodeURIComponent(order.id)}&gw=phonepe`;
   const res = await callApi({ cfg, env, fetchImpl, store, now }, `${cfg.phonepeApi}/checkout/v2/pay`, {
     method: "POST",
     headers: JSON_HEADERS,

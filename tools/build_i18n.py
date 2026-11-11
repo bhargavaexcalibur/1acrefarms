@@ -44,6 +44,7 @@ sys.dont_write_bytecode = True  # no tools/__pycache__ left in the repo
 import build_pages as bp  # noqa: E402
 import build_recipes as br  # noqa: E402
 import build_guides as bg  # noqa: E402
+import build_checkout as bc  # noqa: E402
 import i18n_pages as ip  # noqa: E402
 
 ROOT = bp.ROOT
@@ -141,6 +142,17 @@ UI = {
     "ui.legal_name": (bp.LEGAL_LABELS["legal_name"], "footer, the seller's legal identity: ⟦#1⟧ is the owner's name and ⟦#2⟧ "
                       "our brand name; keep both markers exactly, in the word order that reads best in this language. Meaning: the owner runs "
                       "the business alone (sole proprietor) and sells under the brand name ⟦#2⟧"),
+    # Direct orders on this website (shown only while build_pages.CHECKOUT_LIVE = True); English in build_pages
+    # DIRECT_LABELS; all OPTIONAL. Plain facts: no urgency, no discount.
+    "ui.add_to_cart": (bp.DIRECT_LABELS["add_to_cart"], "button on a product page: put one pack in the shopping cart on this "
+                       "website (the buyer stays on the page)"),
+    "ui.buy_now": (bp.DIRECT_LABELS["buy_now"], "button on a product page: go straight to this website's checkout with this pack"),
+    "ui.free_delivery": (bp.DIRECT_LABELS["free_delivery"], "line under the price on a product page: we charge nothing for "
+                         "delivery when you order from this website"),
+    "ui.cart": (bp.DIRECT_LABELS["cart"], "header link to the shopping cart / checkout of this website"),
+    "ui.cart_added": (bp.DIRECT_LABELS["cart_added"], "short confirmation shown on the button after it put a pack in the cart"),
+    "ui.cart_full": (bp.DIRECT_LABELS["cart_full"], "shown on the button when the cart already holds the most packs one order can "
+                     "take (nothing was added)"),
 }
 PACK_FIELDS = {
     "name": "the product name in this language (the H1 and in lists); keep it short",
@@ -168,6 +180,9 @@ def source():
     for base, f in content_files():
         for key, row in ip.sources(f.read_text(encoding="utf-8"), base).items():
             out.setdefault(key, row)
+    # the checkout page (/checkout/): co.<key>, all OPTIONAL; written to /checkout/i18n/<lang>.json by build_checkout
+    for key, row in bc.strings_en().items():
+        out.setdefault(key, row)
     return out
 
 
@@ -192,6 +207,7 @@ def export():
 
 
 NUM = re.compile(r"\d+(?:[.,]\d+)?")
+PLACEHOLDER = re.compile(r"\{\w+\}")
 
 
 def problem(key, src, row):
@@ -206,7 +222,12 @@ def problem(key, src, row):
         return f"numbers changed {missing}"
     if "1acrefarms" in src and "1acrefarms" not in t:
         return "brand name changed"
-    if "<" in t or ">" in t:
+    if key.startswith("co."):  # checkout page strings: shown as text (never as markup); {placeholders} must survive
+        if sorted(PLACEHOLDER.findall(src)) != sorted(PLACEHOLDER.findall(t)):
+            return "placeholders changed"
+        if (t.count("<"), t.count(">")) != (src.count("<"), src.count(">")):
+            return "markup in translation"
+    elif "<" in t or ">" in t:
         return "markup in translation"
     if sorted(ip.MARK.findall(src)) != sorted(ip.MARK.findall(t)) or t.count("⟦") != len(ip.MARK.findall(t)):
         return "markers changed"
@@ -254,7 +275,9 @@ def pack_keys(p):
 
 OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
             "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
-            "ui.legal_name"}  # newer strings: English is shown until translated
+            "ui.legal_name", "ui.add_to_cart", "ui.buy_now", "ui.free_delivery", "ui.cart", "ui.cart_added",
+            "ui.cart_full"}  # newer strings: English is shown until translated
+OPTIONAL |= set(bc.strings_en())  # every checkout page string (co.<key>)
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
 
@@ -429,7 +452,9 @@ def x(code, s):
 
 
 def header(t, code):
-    return bp.HEADER.replace('href="/#spices">Our Packs</a>', f'href="/{code}/#packs">{x(code, t["ui.nav_packs"])}</a>') \
+    # the cart link (only while CHECKOUT_LIVE): this language's label, and /checkout/?lang=<code>
+    return bp.HEADER.replace(bp.cart_link(), bp.cart_link(opt(code, t, "ui.cart"), bp.checkout_href(code))) \
+        .replace('href="/#spices">Our Packs</a>', f'href="/{code}/#packs">{x(code, t["ui.nav_packs"])}</a>') \
         .replace('<li><a href="/#story">Our Story</a></li>\n', "") \
         .replace('href="/#spices">Shop all packs</a>', f'href="/{code}/#packs">{x(code, t["ui.shop_all"])}</a>') \
         .replace('<a href="/recipes/">Recipes</a></li>', f'<a href="/{code}/recipes/">{x(code, t[ip.key_of("Recipes")])}</a></li>') \
@@ -494,6 +519,13 @@ def opt(code, t, key):
     return f'<span lang="en" dir="ltr">{e(UI[key][0])}</span>'
 
 
+def direct_btns(code, t, p):
+    """"Add to cart" + "Buy now" for a pack sold on this website (only while CHECKOUT_LIVE), to /checkout/?lang=<code>."""
+    lab = {k: opt(code, t, f"ui.{k}") for k in ("add_to_cart", "buy_now")}
+    attrs = {k: e(t[f"ui.{k}"] if f"ui.{k}" in t else UI[f"ui.{k}"][0]) for k in ("cart_added", "cart_full")}
+    return bp.direct_btns(p, lab, attrs, lang=code)
+
+
 def order_btn(code, t, p):
     """Amazon.in only: the listing while the pack is buyable there, otherwise our Amazon store."""
     key = "ui.amazon" if bp.amazon_link(p) else "ui.store"
@@ -524,8 +556,8 @@ def pack_page(code, t, p, packs, facts):
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
           <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
         </div>
-        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>""" if bp.shows_price(p) else ""
-    status = "" if bp.amazon_link(p) else f'\n        <p class="pdp-status">{opt(code, t, "ui.not_online")}</p>'
+        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>{bp.free_line(p, opt(code, t, 'ui.free_delivery'))}""" if bp.shows_price(p) else ""
+    status = "" if bp.amazon_link(p) or bp.direct(p) else f'\n        <p class="pdp-status">{opt(code, t, "ui.not_online")}</p>'
     return head(code, t[k + ".title"], desc, url, "product", f"{SITE}/assets/packs/{p['pack']}",
                 json.dumps(ld, ensure_ascii=False, indent=2)) + f"""
 <body class="pdp-page i18n-page">
@@ -543,7 +575,7 @@ def pack_page(code, t, p, packs, facts):
         <h1>{x(code, t[k + '.name'])}</h1>
         <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
         <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}{status}
-        <div class="pdp-actions" id="order">{order_btn(code, t, p)}
+        <div class="pdp-actions" id="order">{order_btn(code, t, p)}{direct_btns(code, t, p)}
         </div>
         <ul class="pdp-facts">
           <li><span>{x(code, t['ui.f_from'])}</span>{x(code, t[k + '.origin'])}</li>

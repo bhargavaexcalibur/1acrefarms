@@ -10,9 +10,10 @@ import { buildConfirmationEmail } from "../src/confirmation.js";
 const repo = (p) => readFileSync(new URL(`../../${p}`, import.meta.url), "utf8");
 const plain = (html) => html.replace(/<[^>]+>/g, "").replace(/&rsquo;|&#39;/g, "'").replace(/&amp;/g, "&").replace(/\s+/g, " ");
 const POLICIES = plain(repo("policies.html"));
-const PAGE_JS = repo("checkout-test/checkout.js");
 const PAGE_HTML = repo("checkout-test/index.html");
-const STRINGS_BLOCK = PAGE_JS.slice(PAGE_JS.indexOf("const STRINGS = {"), PAGE_JS.indexOf("\n};", PAGE_JS.indexOf("const STRINGS = {")));
+// Every visible string of the checkout page: checkout-test/strings.en.json (the i18n source of /checkout/i18n/*.json).
+const STRINGS = Object.fromEntries(Object.entries(JSON.parse(repo("checkout-test/strings.en.json")).strings).map(([k, v]) => [k, v.en]));
+const STRINGS_BLOCK = Object.values(STRINGS).join("\n");
 
 // The site's banned claim words, read from tools/build_pages.py itself so the two can never drift apart.
 const BANNED = (() => {
@@ -73,7 +74,8 @@ test("no licence number, placeholder or 'applied for' anywhere in the public che
   const files = [
     ...readdirSync(new URL("../src/", import.meta.url)).filter((f) => f.endsWith(".js")).map((f) => `checkout-worker/src/${f}`),
     ...readdirSync(new URL("../src/gateways/", import.meta.url)).map((f) => `checkout-worker/src/gateways/${f}`),
-    "checkout-test/checkout.js", "checkout-test/index.html", "checkout-test/checkout.css", "checkout-worker/wrangler.toml.example",
+    "checkout-test/checkout.js", "checkout-test/index.html", "checkout-test/checkout.css", "checkout-test/cart.js",
+    "checkout-test/strings.en.json", "checkout-worker/src/catalogue.json", "checkout-worker/wrangler.toml.example",
   ];
   for (const f of files) {
     const text = repo(f);
@@ -83,7 +85,7 @@ test("no licence number, placeholder or 'applied for' anywhere in the public che
 });
 
 test("copy obeys the site's banned claim words", () => {
-  assert.ok(STRINGS_BLOCK.length > 1000, "STRINGS block found in checkout.js");
+  assert.ok(Object.keys(STRINGS).length > 90, "strings.en.json read");
   assert.doesNotMatch(STRINGS_BLOCK, BANNED);
   for (const t of Object.values(TERMS)) assert.doesNotMatch(t, BANNED);
   for (const a of SELLER.addresses) assert.doesNotMatch(`${a.label} ${a.text}`, BANNED);
@@ -102,9 +104,8 @@ test("fallbacks never invite paid WhatsApp orders: Amazon.in for orders, WhatsAp
   assert.doesNotMatch(STRINGS_BLOCK, /i'?d like to order/i);
   assert.doesNotMatch(PAGE_HTML, /order (?:on|via|by|through) whatsapp/i);
   for (const key of ["failedBody", "errorBody", "disabledBody"]) {
-    const m = STRINGS_BLOCK.match(new RegExp(`${key}: "([^"]*)"`));
-    assert.ok(m, key);
-    assert.match(m[1], /Amazon\.in/, `${key} points to Amazon.in`);
+    assert.ok(STRINGS[key], key);
+    assert.match(STRINGS[key], /Amazon\.in/, `${key} points to Amazon.in`);
   }
 });
 

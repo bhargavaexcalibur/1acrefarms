@@ -98,6 +98,10 @@ export function loadConfig(env = {}) {
     customerMailFrom: String(env.CUSTOMER_MAIL_FROM || "").trim() || null,
     customerMailReplyTo: String(env.CUSTOMER_MAIL_REPLY_TO || "").trim() || "1acrefarmsindia@gmail.com",
 
+    // The checkout page PhonePe and Cashfree send the buyer back to. Live mode: always the real page /checkout/.
+    // Test mode: the hidden /checkout-test/, unless CHECKOUT_PATH = "/checkout/" (to try the production page in TEST).
+    checkoutPath: live ? "/checkout/" : env.CHECKOUT_PATH === "/checkout/" ? "/checkout/" : "/checkout-test/",
+
     orderPrefix: live ? "1AF-W-" : "1AF-T-",
     reconcileAfterMs: int(env.RECONCILE_AFTER_MS, 10 * 60 * 1000),
     expireAfterMs: int(env.EXPIRE_AFTER_MS, 24 * 3600 * 1000),

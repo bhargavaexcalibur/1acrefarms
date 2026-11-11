@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- HIDDEN TEST PAGE: not linked from any page, not in sitemap.xml, never indexed. -->
+  <!-- HIDDEN TEST PAGE: not linked from any page, not in sitemap.xml, never indexed. tools/build_pages.py writes the real
+       page /checkout/ from this file (and checkout.js, checkout.css, cart.js beside it): edit here, then run the build. -->
   <meta name="robots" content="noindex, nofollow, noarchive" />
+  <!-- "test" here; "prod" on the generated /checkout/ page (it hides the mode banner once payments are live). -->
+  <meta name="checkout-page" content="test" />
+  <!-- The page's strings: /checkout/i18n/<lang>.json, written by tools/build_pages.py (English + translations). -->
+  <meta name="checkout-strings" content="/checkout/i18n/" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <!-- The checkout Worker's URL. The owner replaces REPLACE-ME after `wrangler deploy` (see checkout-worker/README.md).
        On localhost the page talks to http://127.0.0.1:8787 (wrangler dev or scripts/dev-server.mjs) instead. -->
@@ -19,7 +24,7 @@
 </head>
 <body>
   <main class="co" id="top">
-    <a class="co-back" href="/" data-t="back"></a>
+    <a class="co-back" href="/" id="backLink" data-t="back"></a>
     <p class="co-brand"><span class="brand-name"><span class="one">1</span>acrefarms<span class="tm">™</span></span></p>
     <p class="co-banner" id="modeBanner" hidden></p>
     <h1 data-t="title"></h1>
@@ -90,6 +95,7 @@
   </main>
   <!-- Seller details again, as the page footer (same source as the block above). -->
   <footer class="co co-foot" id="sellerFoot"></footer>
+  <p class="co" id="loadError" hidden>The checkout could not load. Please reload the page, or order from our <a href="https://www.amazon.in/stores/page/50DF04FC-8BF5-4F2F-97C2-371C2DEB0A29">Amazon.in store</a>. For help: WhatsApp or call +91 78999 29779.</p>
   <noscript><p class="co">This checkout needs JavaScript. Please order from our <a href="https://www.amazon.in/stores/page/50DF04FC-8BF5-4F2F-97C2-371C2DEB0A29">Amazon.in store</a>. For help: WhatsApp or call +91 78999 29779, or e-mail 1acrefarmsindia@gmail.com. Seller details and policies: <a href="/policies.html">1acrefarms.co.in/policies.html</a>.</p></noscript>
   <script type="module" src="checkout.js"></script>
 </body>

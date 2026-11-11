@@ -33,7 +33,8 @@ ALERT_FROM = "1acrefarms checkout <onboarding@resend.dev>"   # until a sending d
 # (README step 10; keep Resend open/click tracking OFF). Reply-to defaults to 1acrefarmsindia@gmail.com.
 # CUSTOMER_MAIL_FROM = "1acrefarms <orders@REPLACE-WITH-YOUR-VERIFIED-RESEND-DOMAIN>"
 # CUSTOMER_MAIL_REPLY_TO = "1acrefarmsindia@gmail.com"
-SITE_URL = "https://1acrefarms.co.in"   # PhonePe and Cashfree send the customer back to SITE_URL/checkout-test/
+SITE_URL = "https://1acrefarms.co.in"   # PhonePe / Cashfree send the customer back to SITE_URL/checkout-test/ (test) or /checkout/ (live)
+# CHECKOUT_PATH = "/checkout/"   # test mode only: return to the real page /checkout/ instead of /checkout-test/
 PUBLIC_URL = "https://1acrefarms-checkout.REPLACE-ME.workers.dev"
 # DEV_ORIGINS = "http://localhost:4321"   # local page testing only; ignored in live mode
 
