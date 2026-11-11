@@ -131,7 +131,7 @@ FOOTER_CARE = footer_care()
 NOT_ONLINE = "Not available to order online yet."
 SHIP_AMAZON = ("Our packs are sold on Amazon.in. Delivery, payment and returns for those orders follow Amazon.in&rsquo;s "
                "terms, shown on each listing. For a question about the pack itself, see Customer care above.")
-SHIP_NOT_ONLINE = ("This pack is not available to order online yet. Our other packs are sold on Amazon.in; delivery, "
+SHIP_NOT_ONLINE = ("This pack is not available to order online yet. Some of our other packs are sold on Amazon.in; delivery, "
                    "payment and returns for those orders follow Amazon.in&rsquo;s terms, shown on each listing. "
                    "For a question about this pack, see Customer care above.")
 BANNED = re.compile(r"\b(natural|pure|100%|no added|traditional|chemical[- ]free|organic|healthy|"
