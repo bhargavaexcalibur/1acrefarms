@@ -55,6 +55,8 @@ test("short terms keep policies.html's figures", () => {
   for (const z of Object.values(DELIVERY_ZONES)) assert.ok(TERMS.delivery.includes(`${z.days[0]}–${z.days[1]} days`), z.area);
   assert.match(TERMS.returns, /free of charge before dispatch/);
   assert.match(TERMS.returns, /never pay return shipping/);
+  assert.match(TERMS.returns, /not-as-described/); // policies.html #returns "Quality problems"
+  assert.match(TERMS.returns, /later than the usual delivery time for your area/); // policies.html "Late delivery"
   assert.match(TERMS.returns, /original payment method/);
   assert.match(TERMS.privacy, /\{link\}/);
 });

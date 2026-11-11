@@ -106,7 +106,7 @@
   "rzpDescription": "{n} pack(s) · order {id}",
   "privacyNote": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
   "deliveryNote": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
-  "returnsNote": "Cancel free of charge before dispatch. Damaged, wrong or faulty pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Refunds go to the original payment method within 5–7 working days of approval.",
+  "returnsNote": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
   "grievanceNote": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month."
  },
  "packs": {},

@@ -3,7 +3,8 @@
 // this file, so the page and the e-mail can never disagree.
 //
 // Figures must stay identical to policies.html (test/seller.test.js checks them): dispatch within 1–2 working days;
-// delivery 1–3 / 3–5 / 4–10 days by area; refunds within 5–7 working days; complaints acknowledged within 48 hours
+// delivery 1–3 / 3–5 / 4–10 days by area; the same remedies (damaged, wrong, faulty or not as described: replacement
+// or refund; late: refuse or refund, policies.html #returns); refunds within 5–7 working days; complaints acknowledged within 48 hours
 // and resolved within one month, with a complaint number.
 //
 // No secrets: GitHub Pages serves this file. NEVER put a licence number, a placeholder or a "pending" note here: the
@@ -53,7 +54,7 @@ export const SELLER = Object.freeze({
 // the e-mail uses them as they are. {link} is replaced by a link to the privacy policy.
 export const TERMS = Object.freeze({
   delivery: "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
-  returns: "Cancel free of charge before dispatch. Damaged, wrong or faulty pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Refunds go to the original payment method within 5–7 working days of approval.",
+  returns: "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
   privacy: "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
   grievance: "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
   cancelHow: "To cancel before dispatch, or to report a problem with your order, message us on WhatsApp at +91 78999 29779 or e-mail 1acrefarmsindia@gmail.com with your order number.",
