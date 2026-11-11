@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "నమోదిత కార్యాలయం",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "ఇంకా ఆన్‌లైన్‌లో ఆర్డర్ చేయడానికి అందుబాటులో లేదు.",
+   "back": "Not yet available to order online."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "ఫిర్యాదుల పరిష్కార అధికారి",
+   "back": "Grievance redressal officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "కస్టమర్ కేర్, ఫిర్యాదుల పరిష్కార అధికారి",
+   "back": "Customer care, grievance redressal officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "యజమాని",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "కాల్ లేదా WhatsApp",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, ఏకైక యజమాని, ⟦#2⟧ పేరుతో వ్యాపారం",
+   "back": "⟦#1⟧, sole owner, business under the name ⟦#2⟧"
   }
  }
 }

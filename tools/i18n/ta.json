@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "பதிவுசெய்யப்பட்ட அலுவலகம்",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "இதை இன்னும் ஆன்லைனில் ஆர்டர் செய்ய முடியாது.",
+   "back": "This cannot be ordered online yet."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "குறைதீர்ப்பு அலுவலர்",
+   "back": "Grievance redressal officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "வாடிக்கையாளர் சேவை மற்றும் குறைதீர்ப்பு அலுவலர்",
+   "back": "Customer service and grievance redressal officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "உரிமையாளர்",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "அழைக்கவும் அல்லது WhatsApp செய்யவும்",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, தனி உரிமையாளர், ⟦#2⟧ என்ற வணிகப் பெயரில்",
+   "back": "⟦#1⟧, sole proprietor, under the business name ⟦#2⟧"
   }
  }
 }

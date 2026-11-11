@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "رجسٹرڈ دفتر",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "وُنہِ چھُ نہٕ آن لائن آرڈرٕ خٲطرٕ دستیاب۔",
+   "back": "Still not available for online order."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "شکایت افسر",
+   "back": "Grievance officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "کسٹمر کیئر تہٕ شکایت افسر",
+   "back": "Customer care and grievance officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "مالِک",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "کال یا WhatsApp",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧، واحد مالِک، ⟦#2⟧ ناوٕ سٟتۍ کاروبار",
+   "back": "⟦#1⟧, sole owner, business with the name ⟦#2⟧"
   }
  }
 }

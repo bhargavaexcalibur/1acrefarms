@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "ನೋಂದಾಯಿತ ಕಚೇರಿ",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "ಇನ್ನೂ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಲು ಲಭ್ಯವಿಲ್ಲ.",
+   "back": "Not yet available to order online."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "ಕುಂದುಕೊರತೆ ನಿವಾರಣಾ ಅಧಿಕಾರಿ",
+   "back": "Grievance redressal officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "ಗ್ರಾಹಕ ಸೇವೆ ಮತ್ತು ಕುಂದುಕೊರತೆ ನಿವಾರಣಾ ಅಧಿಕಾರಿ",
+   "back": "Customer service and grievance redressal officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "ಮಾಲೀಕರು",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "ಕರೆ ಅಥವಾ WhatsApp",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, ಏಕಮಾತ್ರ ಮಾಲೀಕರು, ⟦#2⟧ ಹೆಸರಿನಲ್ಲಿ ವ್ಯಾಪಾರ",
+   "back": "⟦#1⟧, sole owner, business under the name ⟦#2⟧"
   }
  }
 }

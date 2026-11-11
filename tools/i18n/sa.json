@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "पञ्जीकृतं कार्यालयम्",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "एतत् अधुना अन्तर्जालेन क्रेतुं न उपलभ्यते।",
+   "back": "This is not available to buy through the internet now."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "परिवादनिवारणाधिकारी",
+   "back": "Complaint-redressal officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "ग्राहकसेवा-परिवादनिवारणाधिकारी",
+   "back": "Customer-service and complaint-redressal officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "स्वामी",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "दूरवाणीं करोतु अथवा WhatsApp करोतु",
+   "back": "Please make a phone call or do WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, एकलस्वामी, ⟦#2⟧ इति व्यापारनाम्ना",
+   "back": "⟦#1⟧, sole owner, by the trade name ⟦#2⟧"
   }
  }
 }

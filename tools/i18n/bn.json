@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "নিবন্ধিত কার্যালয়",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "এই প্যাকটি এখনও অনলাইনে অর্ডার করা যায় না।",
+   "back": "This pack cannot yet be ordered online."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "অভিযোগ নিষ্পত্তি আধিকারিক",
+   "back": "Grievance redressal officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "গ্রাহক সহায়তা ও অভিযোগ নিষ্পত্তি আধিকারিক",
+   "back": "Customer support and grievance redressal officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "মালিক",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "কল বা WhatsApp",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, একমাত্র মালিক, ⟦#2⟧ নামে ব্যবসা করেন",
+   "back": "⟦#1⟧, sole owner, does business under the name ⟦#2⟧"
   }
  }
 }

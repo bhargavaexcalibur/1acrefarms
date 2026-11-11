@@ -9180,6 +9180,36 @@
    "src": "Mon-Sat 9 am-7 pm",
    "t": "सोम-सनि फुं 9 - बेलासि 7",
    "back": "Mon-Sat morning 9 - evening 7"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "दानो अनलाइनआव अर्डार खालामनो हाया.",
+   "back": "Now cannot be ordered online. [NOTE: says 'now cannot', not 'not yet']"
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "नालिस आफिसार",
+   "back": "Complaint officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "बायग्रा सेवा आरो नालिस आफिसार",
+   "back": "Buyer service and complaint officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "मालिक",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "कल एबा WhatsApp",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, हारसिंङै मालिक, ⟦#2⟧ मुंआव बेफार खालामग्रा",
+   "back": "⟦#1⟧, sole owner, doing business in the name ⟦#2⟧"
   }
  }
 }

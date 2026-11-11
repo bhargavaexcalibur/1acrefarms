@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "രജിസ്റ്റേർഡ് ഓഫീസ്",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "ഇത് ഇതുവരെ ഓൺലൈനായി ഓർഡർ ചെയ്യാൻ ലഭ്യമല്ല.",
+   "back": "This is not yet available to order online."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "പരാതി പരിഹാര ഓഫീസർ",
+   "back": "Complaint redressal officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "കസ്റ്റമർ കെയർ, പരാതി പരിഹാര ഓഫീസർ",
+   "back": "Customer care, complaint redressal officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "ഉടമസ്ഥൻ",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "വിളിക്കാം അല്ലെങ്കിൽ WhatsApp ചെയ്യാം",
+   "back": "You can call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, ഏക ഉടമസ്ഥൻ, ⟦#2⟧ എന്ന വ്യാപാരനാമത്തിൽ",
+   "back": "⟦#1⟧, sole owner, under the trade name ⟦#2⟧"
   }
  }
 }

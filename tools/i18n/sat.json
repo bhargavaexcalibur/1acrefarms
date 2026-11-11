@@ -9185,6 +9185,36 @@
    "src": "Registered office",
    "t": "ᱨᱮᱡᱤᱥᱴᱚᱨ ᱟᱠᱟᱱ ᱚᱯᱷᱤᱥ",
    "back": "Registered office"
+  },
+  "ui.not_online": {
+   "src": "Not available to order online yet.",
+   "t": "ᱱᱤᱛᱚᱜ ᱦᱟᱹᱵᱤᱡ ᱚᱱᱞᱟᱭᱤᱱ ᱚᱨᱰᱟᱨ ᱵᱟᱝ ᱦᱩᱭ ᱫᱟᱲᱮᱭᱟᱜᱼᱟ᱾",
+   "back": "Up to now, online orders cannot be placed."
+  },
+  "ui.grievance": {
+   "src": "Grievance officer",
+   "t": "ᱱᱟᱞᱤᱥ ᱚᱯᱷᱤᱥᱟᱨ",
+   "back": "Complaint officer"
+  },
+  "ui.care_officer": {
+   "src": "Customer care and grievance officer",
+   "t": "ᱜᱨᱟᱦᱚᱠ ᱜᱚᱲᱚ ᱟᱨ ᱱᱟᱞᱤᱥ ᱚᱯᱷᱤᱥᱟᱨ",
+   "back": "Customer help and complaint officer"
+  },
+  "ui.proprietor": {
+   "src": "Proprietor",
+   "t": "ᱢᱟᱞᱤᱠ",
+   "back": "Owner"
+  },
+  "ui.call_wa": {
+   "src": "call or WhatsApp",
+   "t": "ᱠᱚᱞ ᱥᱮ WhatsApp",
+   "back": "Call or WhatsApp"
+  },
+  "ui.legal_name": {
+   "src": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+   "t": "⟦#1⟧, ᱮᱠᱮᱞ ᱢᱟᱞᱤᱠ, ⟦#2⟧ ᱧᱩᱛᱩᱢ ᱛᱮ ᱠᱤᱨᱤᱧ ᱟᱠᱷᱨᱤᱧ ᱠᱟᱱᱟᱭ",
+   "back": "⟦#1⟧, sole owner, is trading (buying and selling) under the name ⟦#2⟧"
   }
  }
 }
