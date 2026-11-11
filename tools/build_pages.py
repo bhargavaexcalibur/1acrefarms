@@ -76,6 +76,13 @@ FOOTER_ADDR = footer_addr()
 FSSAI_REG = "20126161000590"
 FSSAI_ECOM_LIC = ""
 FSSAI_ECOM_LIC_LABEL = "FSSAI Lic. No."  # final wording is set on grant day
+# Owner's dated decision (Bhargava, 11-11-2026, typed to Shiva and confirmed to the SEO & Web session) to open direct
+# orders BEFORE the Central licence is granted (filing 14-11). It only lets CHECKOUT_LIVE = True build without
+# FSSAI_ECOM_LIC; pages keep showing "FSSAI Reg. No. 20126161000590" alone until the licence number is set. The Worker
+# needs the same date in wrangler.toml [vars] PRE_GRANT_OWNER_GO. Empty it once the licence is granted and set.
+PRE_GRANT_OWNER_GO = "2026-11-11"
+if PRE_GRANT_OWNER_GO and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", PRE_GRANT_OWNER_GO):
+    sys.exit(f"PRE_GRANT_OWNER_GO must be empty or YYYY-MM-DD, not {PRE_GRANT_OWNER_GO!r}")
 if FSSAI_ECOM_LIC and not re.fullmatch(r"\d{14}", FSSAI_ECOM_LIC):
     sys.exit(f"FSSAI_ECOM_LIC must be empty or exactly 14 digits (the granted licence number), not {FSSAI_ECOM_LIC!r}")
 FSSAI_LOGO = '<img class="fssai-logo" src="/assets/fssai-logo.svg" alt="FSSAI logo" width="41" height="20" />'
@@ -99,7 +106,7 @@ def ecom_lic_line():
 #                          placed with us" and the direct-order terms; every page header gets a cart link with the item
 #                          count; the home cards (app.js) get Add to cart; policies.html says direct orders are open;
 #                          /checkout/ becomes indexable and goes into sitemap.xml. Amazon.in stays on every page.
-#   main() refuses True while FSSAI_ECOM_LIC is empty. Rollback = False, run this build, push (and in the Worker,
+#   main() refuses True while both FSSAI_ECOM_LIC and PRE_GRANT_OWNER_GO are empty. Rollback = False, run this build, push (and in the Worker,
 #   GATEWAY_ORDER = "none"): see docs/marketing/checkout-plan/switch-on-runbook.md.
 CHECKOUT_LIVE = False
 
@@ -923,9 +930,9 @@ def main():
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
     check_catalogue()
-    if CHECKOUT_LIVE and not FSSAI_ECOM_LIC:
-        sys.exit("CHECKOUT_LIVE = True needs the granted FSSAI Central licence in FSSAI_ECOM_LIC first "
-                 "(run tools/switch_on.py: it checks every gate)")
+    if CHECKOUT_LIVE and not (FSSAI_ECOM_LIC or PRE_GRANT_OWNER_GO):
+        sys.exit("CHECKOUT_LIVE = True needs the granted FSSAI Central licence in FSSAI_ECOM_LIC, or the owner's dated "
+                 "PRE_GRANT_OWNER_GO decision (run tools/switch_on.py: it checks every gate)")
     for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values(),
                   *DIRECT_LABELS.values(), SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
                   *SHIP_HEADS.values(), *seller_terms().values()):

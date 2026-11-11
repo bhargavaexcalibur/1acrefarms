@@ -16,6 +16,9 @@ MODE = "test"
 # FSSAI_ECOM_LIC = ""
 # "yes" ONLY when that granted licence lists the E-commerce kind of business (check the licence copy / Form C).
 # FSSAI_ECOM_KOB_ENDORSED = ""
+# Owner's dated go to sell BEFORE the FSSAI Central licence is granted (Bhargava 11-11-2026; filing 14-11).
+# Waives only the two licence gates; remove once the licence is granted and FSSAI_ECOM_LIC is set.
+# PRE_GRANT_OWNER_GO = ""
 # Exact nickname of the pickup address in Shiprocket > Settings > Pickup Addresses (today the 522601 "home" address, lower case: Shiprocket matches it exactly; checked via the API 11-11).
 SHIPROCKET_PICKUP_LOCATION = "home"
 # Shiprocket has no sandbox. In test mode the push is OFF unless this is "on" (only for the one real test order,

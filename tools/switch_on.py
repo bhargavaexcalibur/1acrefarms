@@ -41,6 +41,7 @@ ROOT = Path(__file__).resolve().parent.parent
 WORKER = ROOT / "checkout-worker"
 BUILD_PAGES = ROOT / "tools" / "build_pages.py"
 BRANCH = "checkout-b-build"
+WAIVER = {"date": ""}  # PRE_GRANT_OWNER_GO from tools/build_pages.py (owner's dated pre-grant go)
 SITE = "https://1acrefarms.co.in"
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 
@@ -72,7 +73,12 @@ def check_site():
         gate("PASS", "CHECKOUT_LIVE", "False now (the --apply step flips it)")
     lic = (py_const(src, "FSSAI_ECOM_LIC") or "").strip('"\'')
     reg = (py_const(src, "FSSAI_REG") or "").strip('"\'')
-    if not re.fullmatch(r"\d{14}", lic) or lic == reg:
+    WAIVER["date"] = (py_const(src, "PRE_GRANT_OWNER_GO") or "").strip('"\'')
+    if (not re.fullmatch(r"\d{14}", lic) or lic == reg) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", WAIVER["date"]):
+        gate("CHECK", "FSSAI licence (site)", f"not granted yet: owner's pre-grant go dated {WAIVER['date']} "
+             "(pages show FSSAI Reg. No. 20126161000590 only; run --set-licence on grant day, then empty PRE_GRANT_OWNER_GO)")
+        lic = ""
+    elif not re.fullmatch(r"\d{14}", lic) or lic == reg:
         gate("FAIL", "FSSAI licence (site)", 'set FSSAI_ECOM_LIC = "<the 14-digit FSSAI Central licence number>" in '
              "tools/build_pages.py, only once FoSCoS shows it GRANTED (not the Reg. No., never a placeholder)")
         lic = ""
@@ -112,15 +118,23 @@ def check_worker_vars(lic):
     s = lambda k: str(v.get(k, "")).strip()  # noqa: E731
     gate("PASS" if s("MODE") == "live" else "FAIL", "MODE", 'live' if s("MODE") == "live" else
          f'wrangler.toml [vars] MODE = "live" (now "{s("MODE") or "unset"}")')
-    if not lic:
+    if not lic and WAIVER["date"]:
+        same = s("PRE_GRANT_OWNER_GO") == WAIVER["date"]
+        gate("CHECK" if same else "FAIL", "FSSAI licence (Worker)",
+             f"owner's pre-grant go {WAIVER['date']} (licence gates waived until the grant)" if same else
+             f'wrangler.toml [vars] PRE_GRANT_OWNER_GO = "{WAIVER["date"]}" (the same date as tools/build_pages.py)')
+    elif not lic:
         gate("FAIL", "FSSAI licence (Worker)", "set the site's FSSAI_ECOM_LIC first, then the same number here")
     elif s("FSSAI_ECOM_LIC") != lic:
         gate("FAIL", "FSSAI licence (Worker)", f'wrangler.toml [vars] FSSAI_ECOM_LIC = "{lic}" (the same number as the site)')
     else:
         gate("PASS", "FSSAI licence (Worker)", "same number as the site")
-    gate("PASS" if s("FSSAI_ECOM_KOB_ENDORSED") == "yes" else "FAIL", "E-commerce kind of business",
-         "endorsed" if s("FSSAI_ECOM_KOB_ENDORSED") == "yes" else
-         'FSSAI_ECOM_KOB_ENDORSED = "yes" in wrangler.toml, ONLY when the granted licence lists the E-commerce kind of business')
+    if not lic and WAIVER["date"] and s("PRE_GRANT_OWNER_GO") == WAIVER["date"]:
+        gate("CHECK", "E-commerce kind of business", "waived by the owner's pre-grant go until the licence is granted")
+    else:
+        gate("PASS" if s("FSSAI_ECOM_KOB_ENDORSED") == "yes" else "FAIL", "E-commerce kind of business",
+             "endorsed" if s("FSSAI_ECOM_KOB_ENDORSED") == "yes" else
+             'FSSAI_ECOM_KOB_ENDORSED = "yes" in wrangler.toml, ONLY when the granted licence lists the E-commerce kind of business')
     push = s("SHIPROCKET_PUSH")
     gate("FAIL" if push == "off" else "PASS", "Shiprocket push",
          'remove SHIPROCKET_PUSH = "off" from wrangler.toml (or set "on"): paid orders must reach Shiprocket'

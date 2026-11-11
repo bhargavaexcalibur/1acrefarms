@@ -11,6 +11,10 @@
 //                              later by a Form C modification, so a licence number alone is not enough);
 //                            - the Razorpay key is a live key.
 //                            Each missing piece has its own refusal code (see checkoutGuard).
+//                          OWNER'S PRE-GRANT GO: PRE_GRANT_OWNER_GO = "YYYY-MM-DD" (the date Bhargava decided to sell
+//                          before the licence is granted; 2026-11-11, licence filing 14-11) waives ONLY the two licence
+//                          gates. Pages and e-mails then show FSSAI Reg. No. 20126161000590 alone; the licence line
+//                          appears by itself once FSSAI_ECOM_LIC is set. Remove the var once the licence is granted.
 //   Any other MODE value  -> refuses every new order (fail closed).
 // Webhooks, /verify and the scheduled job keep working in every mode: they only record payments that
 // already happened, so a payment is never lost.
@@ -60,6 +64,8 @@ export function loadConfig(env = {}) {
     // The FSSAI Central licence number: shown at checkout and in the e-mail ONLY when it is a real 14-digit number.
     fssaiEcomLic: isFssaiLicence(env.FSSAI_ECOM_LIC) ? env.FSSAI_ECOM_LIC : null,
     fssaiEcomKobEndorsed: env.FSSAI_ECOM_KOB_ENDORSED === "yes",
+    // Owner's dated decision to sell before the licence is granted (see the header). Exact YYYY-MM-DD only.
+    preGrantOwnerGo: /^\d{4}-\d{2}-\d{2}$/.test(String(env.PRE_GRANT_OWNER_GO ?? "")) ? env.PRE_GRANT_OWNER_GO : null,
     allowedOrigins: Object.freeze([...ALLOWED_ORIGINS, ...devOrigins]),
 
     gatewayOrder: parseGatewayOrder(env.GATEWAY_ORDER),
@@ -115,8 +121,10 @@ export function checkoutGuard(cfg, env = {}) {
   if (!cfg.gatewayOrder.length) return { ok: false, code: "no_gateway" };
   if (cfg.mode === "live") {
     if (!cfg.liveApproved) return { ok: false, code: "live_not_approved" };
-    if (!cfg.fssaiEcomLic) return { ok: false, code: "no_fssai_ecom_licence" };
-    if (!cfg.fssaiEcomKobEndorsed) return { ok: false, code: "fssai_ecom_kob_not_endorsed" };
+    if (!cfg.preGrantOwnerGo) {
+      if (!cfg.fssaiEcomLic) return { ok: false, code: "no_fssai_ecom_licence" };
+      if (!cfg.fssaiEcomKobEndorsed) return { ok: false, code: "fssai_ecom_kob_not_endorsed" };
+    }
     if (key && !key.startsWith("rzp_live_")) return { ok: false, code: "test_key_in_live_mode" };
     return { ok: true };
   }

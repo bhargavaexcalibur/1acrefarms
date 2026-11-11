@@ -217,6 +217,22 @@ describe("live-mode guard", () => {
     assert.equal((await harness().createOrder()).status, 200);
   });
 
+  test("owner's pre-grant go (PRE_GRANT_OWNER_GO = YYYY-MM-DD) waives only the two licence gates", async () => {
+    const noLic = { FSSAI_ECOM_LIC: undefined, FSSAI_ECOM_KOB_ENDORSED: undefined };
+    const ok = harness({ env: { ...LIVE_ENV, ...noLic, PRE_GRANT_OWNER_GO: "2026-11-11" } });
+    assert.equal((await ok.createOrder()).status, 200);
+    assert.equal((await ok.call("GET", "/health")).body.fssaiLic ?? null, null, "no licence line without a licence");
+    for (const bad of ["yes", "11-11-2026", "2026-11-11 ", "", undefined]) {
+      const h = harness({ env: { ...LIVE_ENV, ...noLic, PRE_GRANT_OWNER_GO: bad } });
+      assert.equal((await h.createOrder()).body.reason, "no_fssai_ecom_licence", String(bad));
+    }
+    // the other live gates still apply
+    const noGo = harness({ env: { ...LIVE_ENV, ...noLic, PRE_GRANT_OWNER_GO: "2026-11-11", LIVE_ENABLED: undefined } });
+    assert.equal((await noGo.createOrder()).body.reason, "live_not_approved");
+    const testKey = harness({ env: { ...LIVE_ENV, ...noLic, PRE_GRANT_OWNER_GO: "2026-11-11", RAZORPAY_KEY_ID: "rzp_test_MOCK" } });
+    assert.equal((await testKey.createOrder()).body.reason, "test_key_in_live_mode");
+  });
+
   test("/health shows the licence number only when it is a real 14-digit number", async () => {
     const live = harness({ env: LIVE_ENV });
     assert.equal((await live.call("GET", "/health")).body.fssaiLic, FAKE_TEST_LICENCE);
