@@ -144,7 +144,8 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 // ---------------------------------------------------------------------------------------------
 // Config
 // ---------------------------------------------------------------------------------------------
-const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
+// ?remote on a localhost page = test against the deployed (TEST-mode) worker instead of `wrangler dev` on :8787.
+const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname) && !new URLSearchParams(location.search).has("remote");
 const API = (LOCAL ? "http://127.0.0.1:8787" : document.querySelector('meta[name="checkout-api"]')?.content || "").replace(/\/$/, "");
 const POLICIES_URL = SELLER.policiesPath;
 const CART_KEY = "oneacre_checkout_test_v1";
