@@ -1,0 +1,53 @@
+# Copy to wrangler.toml (gitignored) and replace the REPLACE-... placeholders.
+# NO SECRETS IN THIS FILE. Secrets go in with `npx wrangler secret put <NAME>` (see README.md).
+
+name = "1acrefarms-checkout"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true          # https://1acrefarms-checkout.<your-subdomain>.workers.dev (DNS stays at GoDaddy)
+
+[vars]
+# "test" until Bhargava's go. "live" ALSO needs the secret LIVE_ENABLED = yes-owner-approved, FSSAI_ECOM_LIC and
+# FSSAI_ECOM_KOB_ENDORSED below, and a live Razorpay key, or every order is refused (README "Go-live gates").
+MODE = "test"
+# --- Go-live gates: leave both commented out / empty until the day. NEVER a placeholder or a number not yet granted. ---
+# The FSSAI Central licence number, 14 digits, ONLY once FoSCoS shows it GRANTED. When set, the checkout page and the
+# order e-mail show it as "FSSAI Lic. No.".
+# FSSAI_ECOM_LIC = ""
+# "yes" ONLY when that granted licence lists the E-commerce kind of business (check the licence copy / Form C).
+# FSSAI_ECOM_KOB_ENDORSED = ""
+# Owner's dated go to sell BEFORE the FSSAI Central licence is granted (Bhargava 11-11-2026; filing 14-11).
+# Waives only the two licence gates; remove once the licence is granted and FSSAI_ECOM_LIC is set.
+# PRE_GRANT_OWNER_GO = ""
+# Exact nickname of the pickup address in Shiprocket > Settings > Pickup Addresses (today the 522601 "home" address, lower case: Shiprocket matches it exactly; checked via the API 11-11).
+SHIPROCKET_PICKUP_LOCATION = "home"
+# Shiprocket has no sandbox. In test mode the push is OFF unless this is "on" (only for the one real test order,
+# cancelled in Shiprocket afterwards). In live mode the push is ON unless this is "off".
+SHIPROCKET_PUSH = "off"
+# Payment gateways, tried in this order for each new order; the next one is used when one returns 4xx/5xx,
+# a network error or a 6 s timeout. Reorder or drop names to switch a gateway off (e.g. "cashfree,razorpay").
+# "none" refuses new orders. Unset = "razorpay,cashfree,phonepe".
+GATEWAY_ORDER = "razorpay,cashfree,phonepe"
+# PHONEPE_EXPIRE_AFTER_SEC = "1200"   # how long PhonePe's pay page stays open (300-3600 s)
+TURNSTILE_REQUIRED = "false"   # "true" + secret TURNSTILE_SECRET_KEY + the widget on the page
+ALERT_TO = "1acrefarmsindia@gmail.com"
+ALERT_FROM = "1acrefarms checkout <onboarding@resend.dev>"   # until a sending domain is verified in Resend
+# Customer order-confirmation e-mail: NOT sent until CUSTOMER_MAIL_FROM is an address on a domain verified in Resend
+# (README step 10; keep Resend open/click tracking OFF). Reply-to defaults to 1acrefarmsindia@gmail.com.
+# CUSTOMER_MAIL_FROM = "1acrefarms <orders@REPLACE-WITH-YOUR-VERIFIED-RESEND-DOMAIN>"
+# CUSTOMER_MAIL_REPLY_TO = "1acrefarmsindia@gmail.com"
+SITE_URL = "https://1acrefarms.co.in"   # PhonePe / Cashfree send the customer back to SITE_URL/checkout-test/ (test) or /checkout/ (live)
+# CHECKOUT_PATH = "/checkout/"   # test mode only: return to the real page /checkout/ instead of /checkout-test/
+PUBLIC_URL = "https://1acrefarms-checkout.REPLACE-ME.workers.dev"
+# DEV_ORIGINS = "http://localhost:4321"   # local page testing only; ignored in live mode
+
+[[d1_databases]]
+binding = "DB"
+database_name = "1acrefarms-checkout"
+database_id = "REPLACE-WITH-THE-ID-FROM-wrangler-d1-create"
+
+[triggers]
+crons = ["*/15 * * * *"]   # Shiprocket retries + reconcile unpaid orders
+
+[observability]
+enabled = true

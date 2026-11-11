@@ -1,0 +1,65 @@
+// Address-form rules, shared by the Worker (authoritative) and the hidden test page (instant hints).
+// Error codes, never text: the page maps codes to its STRINGS so translation stays in one place.
+import { PIN_RE, pinStateMismatch } from "./pricing.js";
+
+// Names as couriers expect them (28 states + 8 union territories).
+export const INDIAN_STATES = Object.freeze([
+  "Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh",
+  "Chhattisgarh", "Dadra and Nagar Haveli and Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana",
+  "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Ladakh", "Lakshadweep",
+  "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Puducherry",
+  "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Telangana", "Tripura", "Uttar Pradesh", "Uttarakhand",
+  "West Bengal",
+]);
+
+const CONTROL = /[\u0000-\u001f\u007f<>]/;
+const clean = (s) => String(s ?? "").replace(/\s+/g, " ").trim();
+
+// Indian mobile: 10 digits starting 6-9; accepts +91 / 91 / 0 prefixes, spaces and dashes.
+export function normalisePhone(raw) {
+  let d = String(raw ?? "").replace(/[\s\-().]/g, "");
+  if (d.startsWith("+91")) d = d.slice(3);
+  else if (d.length === 12 && d.startsWith("91")) d = d.slice(2);
+  else if (d.length === 11 && d.startsWith("0")) d = d.slice(1);
+  return /^[6-9][0-9]{9}$/.test(d) ? d : null;
+}
+
+const EMAIL_RE = /^[^\s@<>()",;:]+@[^\s@<>()",;:]+\.[A-Za-z]{2,}$/;
+
+export function validateCustomer(input) {
+  const c = input && typeof input === "object" ? input : {};
+  const errors = [];
+  const out = {
+    name: clean(c.name),
+    phone: normalisePhone(c.phone),
+    email: clean(c.email).toLowerCase(),
+    address: clean(c.address),
+    city: clean(c.city),
+    state: clean(c.state),
+    pin: clean(c.pin),
+  };
+  const bad = (field, code) => errors.push({ field, code });
+
+  if (out.name.length < 2) bad("name", "required");
+  else if (out.name.length > 60 || CONTROL.test(out.name) || /[0-9]{3,}/.test(out.name)) bad("name", "invalid");
+
+  if (!out.phone) bad("phone", String(c.phone ?? "").trim() ? "invalid" : "required");
+
+  if (!out.email) bad("email", "required");
+  else if (out.email.length > 100 || !EMAIL_RE.test(out.email)) bad("email", "invalid");
+
+  if (out.address.length < 10) bad("address", out.address ? "too_short" : "required");
+  else if (out.address.length > 200 || CONTROL.test(out.address)) bad("address", "invalid");
+
+  if (out.city.length < 2) bad("city", "required");
+  else if (out.city.length > 30 || CONTROL.test(out.city) || /[0-9]/.test(out.city)) bad("city", "invalid");
+
+  if (!out.state) bad("state", "required");
+  else if (!INDIAN_STATES.includes(out.state)) bad("state", "invalid");
+
+  if (!out.pin) bad("pin", "required");
+  else if (!PIN_RE.test(out.pin)) bad("pin", "invalid");
+  else if (out.state && INDIAN_STATES.includes(out.state) && pinStateMismatch(out.pin, out.state)) bad("pin", "state_mismatch");
+
+  return { ok: errors.length === 0, errors, value: out };
+}

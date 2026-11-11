@@ -675,3 +675,21 @@ html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
    Every Telugu name has its Sanskrit name (lang="sa") after the Hindi; both Devanagari names use one font. */
 span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { font-family: "Noto Sans Devanagari", sans-serif; }
 .pt-te[lang="sa"] { font-size: 0.85rem; }
+
+/* CHECKOUT:START written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False): direct orders */
+.nav-cart { text-decoration: none; font-size: 0.82rem; font-weight: 500; flex: none; }
+.cart-count[hidden] { display: none; }
+@media (max-width: 420px) {
+  .nav-cart-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .nav-cart { padding: 7px 10px; }
+}
+.pdp-free { margin: -6px 0 0; font-size: 0.9rem; font-weight: 600; color: var(--green); }
+.pdp-ship h3 { font-size: 1rem; margin: 14px 0 6px; color: var(--green-deep); }
+.pdp-ship h3:first-of-type { margin-top: 0; }
+.card-direct { display: flex; gap: 8px; margin-top: 8px; }
+.card-direct .add-btn { flex: 1 1 0; min-width: 0; }
+.add-btn.add-cart { background: var(--green-deep); color: var(--cream); border-color: var(--green-deep); }
+.add-btn.add-cart:hover { background: var(--green-dark); border-color: var(--green-dark); }
+a.is-added { pointer-events: none; }
+.cart-live { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+/* CHECKOUT:END */

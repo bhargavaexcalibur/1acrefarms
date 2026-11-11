@@ -19,6 +19,11 @@ The same run also rebuilds the recipe pages (/recipes/ and /recipes/<slug>/) thr
 tools/build_recipes.py, and the buyer guides (/learn/ and /learn/<slug>/) through tools/build_guides.py.
 Both reuse this file's header, footer and head links, and list their pages in sitemap.xml. So one
 command regenerates the whole crawlable layer:  python3 tools/build_pages.py
+
+Direct orders on this website: ONE switch, CHECKOUT_LIVE below (False = Amazon.in only, byte-identical to before).
+The same run writes the checkout page /checkout/ (tools/build_checkout.py, hidden while the switch is off) and keeps
+app.js, styles.css, index.html and policies.html in step with the switch. What can be ordered and at what price:
+checkout-worker/src/catalogue.json. Switching on: python3 tools/switch_on.py (dry run first).
 """
 import datetime as dt
 import html
@@ -71,6 +76,13 @@ FOOTER_ADDR = footer_addr()
 FSSAI_REG = "20126161000590"
 FSSAI_ECOM_LIC = ""
 FSSAI_ECOM_LIC_LABEL = "FSSAI Lic. No."  # final wording is set on grant day
+# Owner's dated decision (Bhargava, 11-11-2026, typed to Shiva and confirmed to the SEO & Web session) to open direct
+# orders BEFORE the Central licence is granted (filing 14-11). It only lets CHECKOUT_LIVE = True build without
+# FSSAI_ECOM_LIC; pages keep showing "FSSAI Reg. No. 20126161000590" alone until the licence number is set. The Worker
+# needs the same date in wrangler.toml [vars] PRE_GRANT_OWNER_GO. Empty it once the licence is granted and set.
+PRE_GRANT_OWNER_GO = "2026-11-11"
+if PRE_GRANT_OWNER_GO and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", PRE_GRANT_OWNER_GO):
+    sys.exit(f"PRE_GRANT_OWNER_GO must be empty or YYYY-MM-DD, not {PRE_GRANT_OWNER_GO!r}")
 if FSSAI_ECOM_LIC and not re.fullmatch(r"\d{14}", FSSAI_ECOM_LIC):
     sys.exit(f"FSSAI_ECOM_LIC must be empty or exactly 14 digits (the granted licence number), not {FSSAI_ECOM_LIC!r}")
 FSSAI_LOGO = '<img class="fssai-logo" src="/assets/fssai-logo.svg" alt="FSSAI logo" width="41" height="20" />'
@@ -80,6 +92,119 @@ FSSAI_ROW = f"<dt>FSSAI</dt><dd>{FSSAI_LOGO} Reg. No. {FSSAI_REG}</dd>"
 def ecom_lic_line():
     """The e-commerce licence line after Pack details; nothing at all until FSSAI_ECOM_LIC is set."""
     return f'\n        <p class="pdp-lic">{FSSAI_ECOM_LIC_LABEL} {FSSAI_ECOM_LIC}</p>' if FSSAI_ECOM_LIC else ""
+
+
+# =====================================================================================================================
+# DIRECT ORDERS ON THIS WEBSITE: ONE SWITCH.
+#   CHECKOUT_LIVE = False  Amazon.in only, exactly as before: every page is byte-identical to the Amazon-only build.
+#                          The checkout page /checkout/ is still written, but hidden (noindex, not in sitemap.xml,
+#                          linked from nowhere), so it can be tried against the TEST Worker.
+#   CHECKOUT_LIVE = True   ONLY on the day the FSSAI Central licence is granted (with the E-commerce kind of business),
+#                          and ONLY through tools/switch_on.py, which checks every gate first and then flips this line.
+#                          Each pack sold here (checkout-worker/src/catalogue.json "sellable") gets "Add to cart" and
+#                          "Buy now" beside its Amazon.in button, "MRP / incl. of all taxes / Free delivery on orders
+#                          placed with us" and the direct-order terms; every page header gets a cart link with the item
+#                          count; the home cards (app.js) get Add to cart; policies.html says direct orders are open;
+#                          /checkout/ becomes indexable and goes into sitemap.xml. Amazon.in stays on every page.
+#   main() refuses True while both FSSAI_ECOM_LIC and PRE_GRANT_OWNER_GO are empty. Rollback = False, run this build, push (and in the Worker,
+#   GATEWAY_ORDER = "none"): see docs/marketing/checkout-plan/switch-on-runbook.md.
+CHECKOUT_LIVE = True
+
+# What can be ordered here and at what price: ONE file, shared with the checkout Worker and the checkout page.
+CATALOGUE_JSON = ROOT / "checkout-worker" / "src" / "catalogue.json"
+
+
+def load_catalogue():
+    """{code: row} from checkout-worker/src/catalogue.json; stops the build on a malformed row (the same rules as
+    catalogueProblems() in checkout-worker/src/pricing.js)."""
+    if not CATALOGUE_JSON.exists():
+        sys.exit("checkout-worker/src/catalogue.json is missing")
+    rows = json.loads(CATALOGUE_JSON.read_text(encoding="utf-8")).get("packs") or []
+    bad, out = [], {}
+    for r in rows:
+        code = r.get("code", "")
+        ok = (re.fullmatch(r"[A-Z]{4}", code) and code not in out and r.get("sku") == f"1AF-{code}-0540"
+              and r.get("grams") == 540 and isinstance(r.get("mrp"), int) and not isinstance(r.get("mrp"), bool)
+              and r["mrp"] > 0 and re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", r.get("slug", ""))
+              and str(r.get("name", "")).strip() and re.fullmatch(r"(\d{8})?", r.get("hsn", "x"))
+              and re.fullmatch(r"[a-z0-9-]+\.jpg", r.get("image", "")) and isinstance(r.get("sellable"), bool))
+        if not ok:
+            bad.append(code or "?")
+        out[code] = r
+    if bad or not out:
+        sys.exit(f"checkout-worker/src/catalogue.json: malformed pack row(s): {', '.join(bad) or 'no packs'}")
+    return out
+
+
+CATALOGUE = load_catalogue()
+
+
+def direct(p):
+    """True when this pack can be ordered on this website right now (the switch is on and the pack is sellable)."""
+    return CHECKOUT_LIVE and CATALOGUE.get(p["code"], {}).get("sellable") is True
+
+
+# The short delivery and returns terms, shared with the checkout page and the order e-mail: TERMS in
+# checkout-worker/src/seller.js (one 'key: "text",' per line). Its figures = policies.html (checked by the Worker tests,
+# and by main() while CHECKOUT_LIVE).
+SELLER_JS = ROOT / "checkout-worker" / "src" / "seller.js"
+
+
+def seller_terms():
+    src = SELLER_JS.read_text(encoding="utf-8")
+    m = re.search(r"^export const TERMS = Object\.freeze\(\{\n(.*?)\n\}\);", src, re.S | re.M)
+    if not m:
+        sys.exit("TERMS not found in checkout-worker/src/seller.js")
+    out = {}
+    for line in m.group(1).split("\n"):
+        mm = re.fullmatch(r'\s+(\w+): ("(?:[^"\\]|\\.)*"),', line)
+        if not mm:
+            sys.exit(f"checkout-worker/src/seller.js TERMS: cannot read {line.strip()[:60]!r} (one 'key: \"text\",' per line)")
+        out[mm.group(1)] = json.loads(mm.group(2))
+    return out
+
+
+# Direct-order labels. build_i18n shows them on the language pages as OPTIONAL keys ui.<key> (English, marked
+# lang="en", until translated). Plain facts: no urgency, no discount, nothing pre-ticked.
+DIRECT_LABELS = {"add_to_cart": "Add to cart", "buy_now": "Buy now",
+                 "free_delivery": "Free delivery on orders placed with us", "cart": "Cart",
+                 "cart_added": "Added to your cart", "cart_full": "Your cart already has the most we can send in one order"}
+CHECKOUT_PATH = "/checkout/"
+
+
+def checkout_href(lang=None, **params):
+    """/checkout/ with ?lang= for a language page and ?add= / ?buy= for a pack (already escaped for an attribute)."""
+    q = ([f"lang={lang}"] if lang and lang != "en" else []) + [f"{k}={v}" for k, v in params.items()]
+    return CHECKOUT_PATH + ("?" + "&amp;".join(q) if q else "")
+
+
+def direct_btns(p, lab=None, attrs=None, lang=None):
+    """"Add to cart" and "Buy now", after the Amazon.in button, for a pack sold here. lab: label HTML per key (English by
+    default); attrs: plain (escaped) text for data-added / data-full."""
+    if not direct(p):
+        return ""
+    lab = lab or DIRECT_LABELS
+    attrs = attrs or {k: html.escape(v, quote=True) for k, v in DIRECT_LABELS.items()}
+    code = p["code"]
+    return (f'\n          <a class="btn btn-green" href="{checkout_href(lang, add=code)}" rel="nofollow" data-cart-add="{code}" '
+            f'data-added="{attrs["cart_added"]}" data-full="{attrs["cart_full"]}">{lab["add_to_cart"]}</a>'
+            f'\n          <a class="btn btn-wa" href="{checkout_href(lang, buy=code)}" rel="nofollow">{lab["buy_now"]}</a>')
+
+
+def free_line(p, label=None):
+    """Under "Incl. of all taxes", for a pack sold here."""
+    return f'\n        <p class="pdp-free">{label or DIRECT_LABELS["free_delivery"]}</p>' if direct(p) else ""
+
+
+CART_ICON = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
+             'stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 10.4a1.5 1.5 0 0 0 1.5 1.1h8.3a1.5 1.5 0 0 0 '
+             '1.5-1.1L20.5 8H6"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>')
+
+
+def cart_link(label=DIRECT_LABELS["cart"], href=CHECKOUT_PATH):
+    """The header's cart link (count filled in by /checkout/cart.js from this browser's cart)."""
+    return (f'<a class="cart-btn nav-cart" href="{href}">{CART_ICON}<span class="nav-cart-label">{label}</span>'
+            f'<span class="cart-count" data-cart-count hidden></span></a><script type="module" src="/checkout/cart.js"></script>')
 
 
 # Seller identity in every footer (CP (E-Commerce) Rules 2020 r.4(2), r.4(4)): the legal name, and the customer care and
@@ -134,6 +259,42 @@ SHIP_AMAZON = ("Our packs are sold on Amazon.in. Delivery, payment and returns f
 SHIP_NOT_ONLINE = ("This pack is not available to order online yet. Some of our other packs are sold on Amazon.in; delivery, "
                    "payment and returns for those orders follow Amazon.in&rsquo;s terms, shown on each listing. "
                    "For a question about this pack, see Customer care above.")
+# While CHECKOUT_LIVE, the "Orders, delivery and returns" section of a pack page says, per pack, "Order here", "Order on
+# Amazon.in" or both (from direct() and amazon_link()). The direct terms are seller.js TERMS (the checkout page and the
+# order e-mail say the same), so their figures are policies.html's; main() checks that too.
+SHIP_HERE_INTRO = ("You pay only the MRP printed on the pack, which includes GST; delivery is free anywhere in India. "
+                   "Prepaid only: UPI, debit or credit card, net banking or wallet; no cash on delivery.")
+SHIP_HERE_LINKS = ('Full terms: <a href="/policies.html#shipping">shipping and delivery</a>, '
+                   '<a href="/policies.html#returns">cancellation, returns and refunds</a>.')
+SHIP_AMAZON_TOO = ("This pack is also sold on Amazon.in. Delivery, payment and returns for orders placed there follow "
+                   "Amazon.in&rsquo;s terms, shown on the listing.")
+SHIP_AMAZON_ONLY = ("This pack can be ordered on Amazon.in only for now. Delivery, payment and returns for those orders follow "
+                    "Amazon.in&rsquo;s terms, shown on the listing. For a question about the pack itself, see Customer care above.")
+SHIP_NOT_ONLINE_LIVE = "This pack is not available to order online yet. For a question about this pack, see Customer care above."
+SHIP_HEADS = {"here": "Order here", "amazon": "Order on Amazon.in"}
+
+
+def ship_here():
+    t = seller_terms()
+    return " ".join([SHIP_HERE_INTRO, html.escape(t["delivery"], quote=False), html.escape(t["returns"], quote=False),
+                     SHIP_HERE_LINKS])
+
+
+def ship_html(p):
+    """The inside of the "Orders, delivery and returns" section."""
+    here, amz = direct(p), bool(amazon_link(p))
+    if not CHECKOUT_LIVE:
+        return f"      <p>{SHIP_AMAZON if amz else SHIP_NOT_ONLINE}</p>"
+    parts = []
+    if here:
+        parts += [f"      <h3>{SHIP_HEADS['here']}</h3>", f"      <p>{ship_here()}</p>"]
+    if amz:
+        parts += [f"      <h3>{SHIP_HEADS['amazon']}</h3>", f"      <p>{SHIP_AMAZON_TOO if here else SHIP_AMAZON_ONLY}</p>"]
+    if not parts:
+        parts = [f"      <p>{SHIP_NOT_ONLINE_LIVE}</p>"]
+    return "\n".join(parts)
+
+
 BANNED = re.compile(r"\b(natural|pure|100%|no added|traditional|chemical[- ]free|organic|healthy|"
                     r"authentic|premium|fresh)\b", re.I)
 
@@ -258,9 +419,9 @@ def amazon_link(p):
     return f"https://www.amazon.in/dp/{row['asin']}" if row.get("buyable") else None
 
 
-# 08-11-2026: no price on the site until the pack is buyable on Amazon.in
+# 08-11-2026: no price on the site until the pack is buyable on Amazon.in (or, while CHECKOUT_LIVE, orderable here)
 def shows_price(p):
-    return bool(amazon_link(p))
+    return bool(amazon_link(p)) or direct(p)
 
 
 def amazon_btn(p, label, lang=""):
@@ -287,7 +448,9 @@ def seo_title(p):
 def page_desc(p):
     """Meta description: plain facts, plus where to order only while the pack is buyable on Amazon.in."""
     desc = p["desc"] if shows_price(p) else re.sub(r"\s*MRP ₹[\d,]+ incl\. of all taxes\.", "", p["desc"])
-    return desc + (" Order on Amazon.in." if amazon_link(p) else "")
+    where = (" Order on 1acrefarms.co.in or Amazon.in." if amazon_link(p) else " Order on 1acrefarms.co.in.") if direct(p) \
+        else (" Order on Amazon.in." if amazon_link(p) else "")
+    return desc + where
 
 
 def is_live(p):
@@ -300,6 +463,22 @@ def pack_facts():
     if not m:
         sys.exit("PACK_FACTS not found in app.js")
     return json.loads(m.group(1))
+
+
+def check_catalogue():
+    """Stop if checkout-worker/src/catalogue.json (what the checkout sells, at what price) differs from the pack pages."""
+    by_code = {p["code"]: p for p in PACKS}
+    for code, r in CATALOGUE.items():
+        p = by_code.get(code)
+        if not p:
+            sys.exit(f"catalogue.json has {code}, which has no pack in tools/build_pages.py PACKS")
+        want = {"mrp": p["mrp"], "grams": p["g"], "slug": p["slug"], "image": p["pack"], "name": p["name"]}
+        got = {k: r.get(k) for k in want}
+        if got != want:
+            sys.exit(f"catalogue.json {code} = {got}, but the pack page has {want}")
+    missing = [c for c in by_code if c not in CATALOGUE]
+    if missing:
+        sys.exit(f"catalogue.json has no row for {', '.join(missing)}")
 
 
 def check_mrps(packs):
@@ -423,7 +602,7 @@ def product_ld(p, facts):
     return json.dumps(ld, ensure_ascii=False, indent=2)
 
 
-HEADER = """  <header class="header" id="top">
+HEADER_AMAZON_ONLY = """  <header class="header" id="top">
     <nav class="nav container">
       <a href="/" class="brand" aria-label="1acrefarms home">
         <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -448,6 +627,9 @@ HEADER = """  <header class="header" id="top">
       <a class="btn btn-green nav-shop" href="/#spices">Shop all packs</a>
     </nav>
   </header>"""
+# While CHECKOUT_LIVE every header gets the cart link right after the language menu (build_i18n localises it).
+HEADER = HEADER_AMAZON_ONLY.replace("      <!--LANG-->\n", f"      <!--LANG-->\n      {cart_link()}\n", 1) \
+    if CHECKOUT_LIVE else HEADER_AMAZON_ONLY
 
 
 RECIPES_LINK = '        <a href="/recipes/">Recipes</a>'
@@ -558,8 +740,8 @@ def page(p, live, facts, guides=(), recipes=()):
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
           <span class="upp">{p['g']} g · {per_g}</span>
         </div>
-        <p class="tax">Incl. of all taxes</p>""" if shows_price(p) else ""
-    status = "" if amazon_link(p) else f'\n        <p class="pdp-status">{NOT_ONLINE}</p>'
+        <p class="tax">Incl. of all taxes</p>{free_line(p)}""" if shows_price(p) else ""
+    status = "" if amazon_link(p) or direct(p) else f'\n        <p class="pdp-status">{NOT_ONLINE}</p>'
     body = f"""<!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -597,7 +779,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <h1>{p['name']} <span class="pdp-local">({p['local']})</span></h1>
         <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
         <p class="pdp-lede">{p['lede']}</p>{price_block}{status}
-        <div class="pdp-actions" id="order">{order_btn(p)}
+        <div class="pdp-actions" id="order">{order_btn(p)}{direct_btns(p)}
         </div>
         <ul class="pdp-facts">
           <li><span>From</span>{p['origin']}</li>
@@ -638,7 +820,7 @@ def page(p, live, facts, guides=(), recipes=()):
 
     <section class="pdp-ship">
       <h2>Orders, delivery and returns</h2>
-      <p>{SHIP_AMAZON if amazon_link(p) else SHIP_NOT_ONLINE}</p>
+{ship_html(p)}
     </section>
 
     <section class="pdp-others">
@@ -653,7 +835,7 @@ def page(p, live, facts, guides=(), recipes=()):
 </body>
 </html>
 """
-    for chunk in (p["title"], seo_title(p), page_desc(p), p["lede"], p["note"], " ".join(p["uses"])):
+    for chunk in (p["title"], seo_title(p), page_desc(p), p["lede"], p["note"], " ".join(p["uses"]), ship_html(p)):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in {p['code']}: {BANNED.search(text_of(chunk)).group(0)!r}")
     return body
@@ -715,6 +897,8 @@ def sitemap(live, extra=()):
     urls += [(f"{SITE}/{p['slug']}/", "weekly", "0.9") for p in live]
     urls += list(extra)
     urls += [(f"{SITE}/policies.html", "monthly", "0.3")]
+    if CHECKOUT_LIVE:  # hidden (noindex, not listed) until direct orders are open
+        urls += [(f"{SITE}{CHECKOUT_PATH}", "monthly", "0.3")]
     rows = "\n".join(f"""  <url>
     <loc>{u}</loc>
     <lastmod>{lastmod(u)}</lastmod>
@@ -741,16 +925,30 @@ def main():
     import build_recipes
     import build_guides
     import build_i18n
+    import build_checkout
     facts = pack_facts()
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
-    for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values()):
+    check_catalogue()
+    if CHECKOUT_LIVE and not (FSSAI_ECOM_LIC or PRE_GRANT_OWNER_GO):
+        sys.exit("CHECKOUT_LIVE = True needs the granted FSSAI Central licence in FSSAI_ECOM_LIC, or the owner's dated "
+                 "PRE_GRANT_OWNER_GO decision (run tools/switch_on.py: it checks every gate)")
+    for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values(),
+                  *DIRECT_LABELS.values(), SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
+                  *SHIP_HEADS.values(), *seller_terms().values()):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in the footer/order lines: {BANNED.search(text_of(chunk)).group(0)!r}")
+    if CHECKOUT_LIVE:  # the direct-order terms on the pack pages must carry policies.html's own figures
+        pol = text_of((ROOT / "policies.html").read_text(encoding="utf-8"))
+        for fig in sorted(set(re.findall(r"\d+–\d+ (?:working )?days", ship_here()))):
+            if fig not in pol:
+                sys.exit(f"Direct-order terms say {fig!r} but policies.html does not: fix checkout-worker/src/seller.js TERMS")
     if FSSAI_ECOM_LIC:  # grant day: the hand-written pages must carry the same number (see their GRANT DAY comments)
         stale = [f for f in ("index.html", "policies.html") if FSSAI_ECOM_LIC not in (ROOT / f).read_text(encoding="utf-8")]
         if stale:
             sys.exit(f"FSSAI_ECOM_LIC is set but not yet added by hand to {', '.join(stale)} (see the GRANT DAY comments)")
+    build_checkout.hand_written()  # app.js, styles.css, index.html, policies.html follow CHECKOUT_LIVE (after every check that
+    # can stop the build, so a stopped build never leaves them half switched)
     for p in live:
         out = ROOT / p["slug"] / "index.html"
         out.parent.mkdir(exist_ok=True)
@@ -775,11 +973,12 @@ def main():
     build_recipes.build(live)
     build_guides.build(live)
     build_i18n.build(live)  # adds the language menu + hreflang to every page above
+    build_checkout.build(live)  # /checkout/: the page, its modules (lib/) and its strings (i18n/), hidden until live
     # sitemap last: each URL's lastmod comes from its finished page (see lastmod())
     extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows() + build_i18n.sitemap_rows(live)
     (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
     save_lastmod()
-    print("wrote sitemap.xml with", len(live) + 2 + len(extra), "urls")
+    print("wrote sitemap.xml with", len(live) + 2 + len(extra) + (1 if CHECKOUT_LIVE else 0), "urls")
 
 
 if __name__ == "__main__":

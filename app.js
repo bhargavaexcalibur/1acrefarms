@@ -359,7 +359,11 @@ if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") 
 // (AMAZON below, written by tools/build_pages.py from tools/amazon.json). The 31 Oct switch above had
 // marked chilli + cashew "In stock" here while their Amazon listings had no stock.
 const onAmazonNow = (p) => !PACK_PAGE[p.code] || Boolean(AMAZON[p.code]);
-const sellable = (p) => p.live && !p.soon && onAmazonNow(p);
+// CHECKOUT:START(sellable) written by tools/build_pages.py while CHECKOUT_LIVE = True; with False the build puts
+// back the Amazon-only line. DIRECT = the packs sold on this website ("sellable" in checkout-worker/src/catalogue.json).
+const DIRECT = ["TURM", "KPAS", "CBEL", "TBEL"];
+const sellable = (p) => p.live && !p.soon && (onAmazonNow(p) || DIRECT.includes(p.code));
+// CHECKOUT:END(sellable)
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
 const AMAZON_STORE = "https://www.amazon.in/stores/page/50DF04FC-8BF5-4F2F-97C2-371C2DEB0A29";  // our Amazon.in store, for packs not buyable there yet
 const AMAZON = {"TURM": "B0HPX556NS", "KPAS": "B0HPWYG3KW", "CBEL": "B0HPXK9M5X", "TBEL": "B0HPX8DXT8"};  // buyable on Amazon.in; written by tools/build_pages.py
@@ -648,6 +652,15 @@ const chipObserver = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: "-20% 0px -70% 0px" });
 
+// CHECKOUT:START(buttons) written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False):
+// "Add to cart" and "Buy now" under the Amazon.in button of each pack sold here; /checkout/cart.js does the adding.
+const directButtons = (p) => `<div class="card-direct"><a class="add-btn add-cart" href="/checkout/?add=${p.code}" rel="nofollow" data-cart-add="${p.code}" data-added="Added to your cart" data-full="Your cart already has the most we can send in one order">Add to cart</a><a class="add-btn" href="/checkout/?buy=${p.code}" rel="nofollow">Buy now</a></div>`;
+packCard = ((amazonCard) => (p) => {
+  const card = amazonCard(p);
+  if (!DIRECT.includes(p.code) || p.soon) return card;
+  return card.replace(new RegExp(`(id="order-${p.id}">[\\s\\S]*?)(</div>)`), (m, foot, end) => foot + directButtons(p) + end);
+})(packCard);
+// CHECKOUT:END(buttons)
 renderChipNav();
 renderCatalog();
 document.querySelectorAll(".section[id]").forEach((s) => chipObserver.observe(s));
