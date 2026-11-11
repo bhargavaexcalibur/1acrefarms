@@ -1,0 +1,6 @@
+# local secrets for `wrangler dev` and the owner's real config: never commit
+.dev.vars
+.env
+wrangler.toml
+.wrangler/
+node_modules/

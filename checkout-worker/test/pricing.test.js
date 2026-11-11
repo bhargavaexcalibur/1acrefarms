@@ -1,0 +1,129 @@
+// Prices, the Rs 999 boundary, the AP/TS PIN rule, limits, parcels, form validation, and drift vs app.js.
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { CATALOGUE, PIN_TABLE, deliveryFeeRupees, parcelFor, pinInfo, pinStateMismatch, quoteCart, skuOf } from "../src/pricing.js";
+import { normalisePhone, validateCustomer } from "../src/validate.js";
+import { CUSTOMER } from "./helpers/harness.js";
+
+test("server price table = the Amazon MRPs in the brief", () => {
+  const mrp = Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, v.mrp]));
+  assert.deepEqual(mrp, { TURM: 396, KPAS: 495, SANN: 495, TEJA: 495, CBEL: 234, TBEL: 495, CASH: 891 });
+  assert.equal(CATALOGUE.CASH.sellable, false, "cashew is parked");
+  assert.equal(skuOf("TURM"), "1AF-TURM-0540");
+});
+
+test("server price table matches the 540 g MRPs in the site's app.js (drift guard)", () => {
+  const app = readFileSync(new URL("../../app.js", import.meta.url), "utf8");
+  for (const [code, item] of Object.entries(CATALOGUE)) {
+    const block = app.slice(app.indexOf(`code: "${code}"`));
+    const m = block.match(/\[540,\s*(\d+)/);
+    assert.ok(m, `540 g SKU for ${code} found in app.js`);
+    assert.equal(Number(m[1]), item.mrp, `${code} MRP in app.js`);
+  }
+});
+
+test("delivery fee: Rs 999 boundary", () => {
+  assert.equal(deliveryFeeRupees(998, "522601"), 99);
+  assert.equal(deliveryFeeRupees(999, "522601"), 0);
+  assert.equal(deliveryFeeRupees(1000, "522601"), 0);
+  assert.equal(deliveryFeeRupees(998, "110001"), 189);
+  assert.equal(deliveryFeeRupees(999, "110001"), 0);
+  assert.equal(deliveryFeeRupees(0, "110001"), 0, "empty cart");
+  assert.equal(deliveryFeeRupees(234, ""), null, "no PIN yet: unknown");
+});
+
+test("delivery fee on real carts", () => {
+  const two495 = quoteCart([{ code: "KPAS", qty: 1 }, { code: "TBEL", qty: 1 }], "500081");
+  assert.equal(two495.subtotalPaise, 99000);
+  assert.equal(two495.deliveryPaise, 9900, "Rs 990 < 999 in Telangana: Rs 99");
+  assert.equal(two495.totalPaise, 108900);
+  assert.equal(two495.freeDeliveryShortfallPaise, 900);
+  const delhi = quoteCart([{ code: "KPAS", qty: 2 }], "110001");
+  assert.equal(delhi.deliveryPaise, 18900, "Rs 990 < 999 in Delhi: Rs 189");
+  const free = quoteCart([{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }], "110001");
+  assert.equal(free.subtotalPaise, 102600);
+  assert.equal(free.deliveryPaise, 0, "Rs 1,026 >= 999: free anywhere");
+  assert.equal(free.freeDeliveryShortfallPaise, 0);
+  const cane = quoteCart([{ code: "CBEL", qty: 1 }], "522601");
+  assert.equal(cane.totalPaise, (234 + 99) * 100);
+});
+
+test("AP/TS PIN rule (one table)", () => {
+  const band = (p) => pinInfo(p)?.band ?? "INVALID";
+  const state = (p) => pinInfo(p)?.state ?? null;
+  assert.equal(band("500001"), "AP_TS"); assert.equal(state("500001"), "Telangana");
+  assert.equal(band("509001"), "AP_TS"); assert.equal(state("509001"), "Telangana");
+  assert.equal(band("515001"), "AP_TS"); assert.equal(state("515001"), "Andhra Pradesh");
+  assert.equal(band("522601"), "AP_TS"); assert.equal(state("522601"), "Andhra Pradesh");
+  assert.equal(band("530001"), "AP_TS");
+  assert.equal(band("535001"), "AP_TS");
+  assert.equal(band("533464"), "AP_TS"); assert.equal(state("533464"), "Puducherry", "Yanam: longest prefix wins");
+  assert.equal(band("499999"), "REST");
+  assert.equal(band("540001"), "REST");
+  assert.equal(band("560001"), "REST", "Bengaluru");
+  assert.equal(band("600001"), "REST", "Chennai");
+  assert.equal(band("110001"), "REST", "Delhi");
+  assert.equal(band("900001"), "INVALID", "Army Postal Service: not deliverable by courier");
+  assert.equal(band("012345"), "INVALID");
+  assert.equal(band("52260"), "INVALID");
+  assert.equal(band("5226011"), "INVALID");
+  assert.equal(band(" 522601 "), "AP_TS", "spaces trimmed");
+  assert.deepEqual(PIN_TABLE.map((r) => r.prefix), ["50", "51", "52", "53", "533464"]);
+});
+
+test("PIN vs state consistency", () => {
+  assert.equal(pinStateMismatch("522601", "Andhra Pradesh"), false);
+  assert.equal(pinStateMismatch("507111", "Andhra Pradesh"), false, "AP mandals that kept 507 PINs");
+  assert.equal(pinStateMismatch("500001", "Telangana"), false);
+  assert.equal(pinStateMismatch("522601", "Karnataka"), true);
+  assert.equal(pinStateMismatch("560001", "Andhra Pradesh"), true);
+  assert.equal(pinStateMismatch("533464", "Puducherry"), false);
+  assert.equal(pinStateMismatch("605001", "Puducherry"), false);
+  assert.equal(pinStateMismatch("110001", "Delhi"), false);
+});
+
+test("cart rules: client prices ignored, unknown/parked items, limits, merge", () => {
+  const q = quoteCart([{ code: "turm", qty: 1, price: 1, unitPaise: 100 }, { code: "TURM", qty: 1 }], "522601");
+  assert.equal(q.ok, true);
+  assert.equal(q.lines.length, 1, "same code merged");
+  assert.equal(q.lines[0].qty, 2);
+  assert.equal(q.lines[0].unitPaise, 39600, "price from the server table only");
+  assert.deepEqual(quoteCart([{ code: "CASH", qty: 1 }], "522601").errors.map((e) => e.code), ["not_sellable"]);
+  assert.deepEqual(quoteCart([{ code: "XXXX", qty: 1 }], "522601").errors.map((e) => e.code), ["unknown_item"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 0 }], "522601").errors.map((e) => e.code), ["bad_qty"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 1.5 }], "522601").errors.map((e) => e.code), ["bad_qty"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: "2" }], "522601").errors.map((e) => e.code), ["bad_qty"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 11 }], "522601").errors.map((e) => e.code), ["qty_over_limit"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 7 }, { code: "CBEL", qty: 6 }], "522601").errors.map((e) => e.code), ["too_many_packs"]);
+  assert.deepEqual(quoteCart([], "522601").errors.map((e) => e.code), ["empty_cart"]);
+  assert.deepEqual(quoteCart({ TURM: 1, CBEL: 2 }, "522601").lines.map((l) => [l.code, l.qty]), [["TURM", 1], ["CBEL", 2]]);
+});
+
+test("parcel weights and sizes", () => {
+  assert.deepEqual(parcelFor(1), { weightKg: 0.6, lengthCm: 30, breadthCm: 25, heightCm: 5, estimated: false });
+  assert.equal(parcelFor(2).weightKg, 1.18);
+  assert.equal(parcelFor(3).weightKg, 1.9);
+  assert.equal(parcelFor(5).weightKg, 3.14);
+  assert.equal(parcelFor(5).estimated, true);
+  assert.throws(() => parcelFor(0));
+});
+
+test("address form validation", () => {
+  const ok = validateCustomer(CUSTOMER);
+  assert.equal(ok.ok, true);
+  assert.equal(ok.value.phone, "9876543210");
+  assert.equal(normalisePhone("+91 98765-43210"), "9876543210");
+  assert.equal(normalisePhone("09876543210"), "9876543210");
+  assert.equal(normalisePhone("919876543210"), "9876543210");
+  assert.equal(normalisePhone("5876543210"), null, "Indian mobiles start 6-9");
+  assert.equal(normalisePhone("98765"), null);
+  const bad = validateCustomer({ name: "A", phone: "123", email: "x@y", address: "short", city: "", state: "Narnia", pin: "999999" });
+  assert.deepEqual(bad.errors.map((e) => `${e.field}:${e.code}`), [
+    "name:required", "phone:invalid", "email:invalid", "address:too_short", "city:required", "state:invalid", "pin:invalid",
+  ]);
+  const mismatch = validateCustomer({ ...CUSTOMER, state: "Karnataka" });
+  assert.deepEqual(mismatch.errors.map((e) => `${e.field}:${e.code}`), ["pin:state_mismatch"]);
+  assert.equal(validateCustomer({ ...CUSTOMER, address: "<script>alert(1)</script> road" }).ok, false);
+  assert.equal(validateCustomer(null).ok, false);
+});

@@ -1,0 +1,35 @@
+# Copy to wrangler.toml (gitignored) and replace the REPLACE-... placeholders.
+# NO SECRETS IN THIS FILE. Secrets go in with `npx wrangler secret put <NAME>` (see README.md).
+
+name = "1acrefarms-checkout"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = true          # https://1acrefarms-checkout.<your-subdomain>.workers.dev (DNS stays at GoDaddy)
+
+[vars]
+# "test" until Bhargava's go. "live" ALSO needs the secret LIVE_ENABLED = yes-owner-approved, or every order is refused.
+MODE = "test"
+# Exact nickname of the pickup address in Shiprocket > Settings > Pickup Addresses (today the 522601 "Home" address).
+SHIPROCKET_PICKUP_LOCATION = "Home"
+# Shiprocket has no sandbox. In test mode the push is OFF unless this is "on" (only for the one real test order,
+# cancelled in Shiprocket afterwards). In live mode the push is ON unless this is "off".
+SHIPROCKET_PUSH = "off"
+PRIMARY_GATEWAY = "razorpay"   # or "cashfree" to route new orders to Cashfree first
+BACKUP_GATEWAY = "on"          # "off" disables the automatic failover
+TURNSTILE_REQUIRED = "false"   # "true" + secret TURNSTILE_SECRET_KEY + the widget on the page
+ALERT_TO = "1acrefarmsindia@gmail.com"
+ALERT_FROM = "1acrefarms checkout <onboarding@resend.dev>"   # until a sending domain is verified in Resend
+SITE_URL = "https://1acrefarms.co.in"
+PUBLIC_URL = "https://1acrefarms-checkout.REPLACE-ME.workers.dev"
+# DEV_ORIGINS = "http://localhost:4321"   # local page testing only; ignored in live mode
+
+[[d1_databases]]
+binding = "DB"
+database_name = "1acrefarms-checkout"
+database_id = "REPLACE-WITH-THE-ID-FROM-wrangler-d1-create"
+
+[triggers]
+crons = ["*/15 * * * *"]   # Shiprocket retries + reconcile unpaid orders
+
+[observability]
+enabled = true

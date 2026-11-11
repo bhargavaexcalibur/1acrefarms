@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- HIDDEN TEST PAGE: not linked from any page, not in sitemap.xml, never indexed. -->
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <!-- The checkout Worker's URL. The owner replaces REPLACE-ME after `wrangler deploy` (see checkout-worker/README.md).
+       On localhost the page talks to http://127.0.0.1:8787 (wrangler dev or scripts/dev-server.mjs) instead. -->
+  <meta name="checkout-api" content="https://1acrefarms-checkout.REPLACE-ME.workers.dev" />
+  <title>Checkout (test) · 1acrefarms</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="checkout.css" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
+</head>
+<body>
+  <main class="co" id="top">
+    <a class="co-back" href="/" data-t="back"></a>
+    <p class="co-brand"><span class="brand-name"><span class="one">1</span>acrefarms<span class="tm">™</span></span></p>
+    <p class="co-banner" id="modeBanner" hidden></p>
+    <h1 data-t="title"></h1>
+
+    <section class="co-card" aria-labelledby="packsH">
+      <h2 id="packsH"><span class="co-step">1</span> <span data-t="packsTitle"></span></h2>
+      <ul class="co-packs" id="packList"></ul>
+    </section>
+
+    <section class="co-card" aria-labelledby="addrH">
+      <h2 id="addrH"><span class="co-step">2</span> <span data-t="addressTitle"></span></h2>
+      <form id="addrForm" novalidate autocomplete="on">
+        <div class="co-field">
+          <label for="f-name" data-t="fName"></label>
+          <input id="f-name" name="name" autocomplete="name" maxlength="60" required />
+          <p class="co-err" id="e-name"></p>
+        </div>
+        <div class="co-row">
+          <div class="co-field">
+            <label for="f-phone" data-t="fPhone"></label>
+            <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel-national" maxlength="16" required />
+            <p class="co-err" id="e-phone"></p>
+          </div>
+          <div class="co-field">
+            <label for="f-email" data-t="fEmail"></label>
+            <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="100" required />
+            <p class="co-err" id="e-email"></p>
+          </div>
+        </div>
+        <div class="co-field">
+          <label for="f-address" data-t="fAddress"></label>
+          <textarea id="f-address" name="address" rows="2" autocomplete="street-address" maxlength="200" required></textarea>
+          <p class="co-err" id="e-address"></p>
+        </div>
+        <div class="co-row co-row3">
+          <div class="co-field">
+            <label for="f-city" data-t="fCity"></label>
+            <input id="f-city" name="city" autocomplete="address-level2" maxlength="30" required />
+            <p class="co-err" id="e-city"></p>
+          </div>
+          <div class="co-field">
+            <label for="f-state" data-t="fState"></label>
+            <select id="f-state" name="state" autocomplete="address-level1" required></select>
+            <p class="co-err" id="e-state"></p>
+          </div>
+          <div class="co-field">
+            <label for="f-pin" data-t="fPin"></label>
+            <input id="f-pin" name="pin" inputmode="numeric" autocomplete="postal-code" maxlength="6" pattern="[0-9]{6}" required />
+            <p class="co-err" id="e-pin"></p>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="co-card" aria-labelledby="sumH">
+      <h2 id="sumH"><span class="co-step">3</span> <span data-t="summaryTitle"></span></h2>
+      <div class="co-sum" id="summary"></div>
+      <p class="co-note" data-t="prepaidNote"></p>
+      <p class="co-note" id="termsNote"></p>
+      <button class="btn btn-green btn-block co-pay" id="payBtn" type="button" disabled></button>
+      <div class="co-status" id="status" role="status" aria-live="polite" hidden></div>
+    </section>
+  </main>
+  <noscript><p class="co">This checkout needs JavaScript. Please order on WhatsApp: +91 78999 29779.</p></noscript>
+  <script type="module" src="checkout.js"></script>
+</body>
+</html>

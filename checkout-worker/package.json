@@ -1,0 +1,10 @@
+{
+  "name": "1acrefarms-checkout-worker",
+  "private": true,
+  "type": "module",
+  "description": "1acrefarms website checkout: Cloudflare Worker (Razorpay primary, Cashfree backup, Shiprocket push). No dependencies.",
+  "scripts": {
+    "test": "node --test test/",
+    "smoke": "node scripts/smoke.mjs"
+  }
+}
