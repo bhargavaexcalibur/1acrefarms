@@ -59,6 +59,81 @@ def footer_addr(lab=None, en=lambda s: s):
 
 
 FOOTER_ADDR = footer_addr()
+
+# FSSAI. FSSAI_REG is the packing unit's registration, printed on every pouch beside the FSSAI logo (the logo file is
+# a byte copy of print/fssai-logo-official.svg, the mark on the pouch; never the PLACEHOLDER png).
+# FSSAI_ECOM_LIC is the FSSAI Central licence for our own e-commerce sales. It stays EMPTY until FoSCoS shows the
+# licence GRANTED; then it holds the real 14-digit number only. Never a placeholder, "applied for" or a made-up number:
+# while it is empty nothing about it renders anywhere. Once set, it renders one line after Pack details on every
+# product page (English and the 22 languages) and a labelled entry in the footer base, kept apart from
+# "FSSAI Reg. No. (packing unit)". index.html and policies.html are hand-written: add it there by hand (see the
+# GRANT DAY comments in both); main() stops the build until both carry the number.
+FSSAI_REG = "20126161000590"
+FSSAI_ECOM_LIC = ""
+FSSAI_ECOM_LIC_LABEL = "FSSAI Lic. No."  # final wording is set on grant day
+if FSSAI_ECOM_LIC and not re.fullmatch(r"\d{14}", FSSAI_ECOM_LIC):
+    sys.exit(f"FSSAI_ECOM_LIC must be empty or exactly 14 digits (the granted licence number), not {FSSAI_ECOM_LIC!r}")
+FSSAI_LOGO = '<img class="fssai-logo" src="/assets/fssai-logo.svg" alt="FSSAI logo" width="41" height="20" />'
+FSSAI_ROW = f"<dt>FSSAI</dt><dd>{FSSAI_LOGO} Reg. No. {FSSAI_REG}</dd>"
+
+
+def ecom_lic_line():
+    """The e-commerce licence line after Pack details; nothing at all until FSSAI_ECOM_LIC is set."""
+    return f'\n        <p class="pdp-lic">{FSSAI_ECOM_LIC_LABEL} {FSSAI_ECOM_LIC}</p>' if FSSAI_ECOM_LIC else ""
+
+
+# Seller identity in every footer (CP (E-Commerce) Rules 2020 r.4(2), r.4(4)): the legal name, and the customer care and
+# grievance officer with designation, phone and email. build_i18n.legal_lines() swaps in the translated labels (OPTIONAL
+# keys ui.grievance, ui.care_officer, ui.proprietor, ui.call_wa, ui.legal_name); the name, phone, email, GSTIN and FSSAI
+# numbers stay in English. In legal_name, ⟦#1⟧ is the owner's name and ⟦#2⟧ the brand (markers, so a translation can
+# put them in its own word order). The address lines and their labels above are on hold: leave them as they are.
+LEGAL_NAME = "Bhargava Reddy Medikonda"
+# Non-breaking spaces: the number never wraps mid-number, and build_recipes.check_copy's PHONE guard (meant for recipe and
+# guide body copy, "the footer's wa.me link is an href, not text") does not stop every recipe page over this footer line.
+CARE_PHONE = "+91&nbsp;78999&nbsp;29779"
+CARE_EMAIL = "1acrefarmsindia@gmail.com"
+LEGAL_LABELS = {"grievance": "Grievance officer", "care_officer": "Customer care and grievance officer",
+                "proprietor": "Proprietor", "call_wa": "call or WhatsApp",
+                "legal_name": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧"}
+
+
+def grievance_link(label=LEGAL_LABELS["grievance"]):
+    """First link of the footer's Policies column."""
+    return f'        <a href="/policies.html#seller">{label}</a>\n'
+
+
+def footer_care(lab=None, en=lambda s: s):
+    """The footer's customer care and grievance officer line; lab: the labels, en: wraps each English value."""
+    lab = lab or LEGAL_LABELS
+    return (f'    <p class="footer-legal"><b>{lab["care_officer"]}:</b> {en(LEGAL_NAME)}, {lab["proprietor"]} &middot; '
+            f'<a href="tel:+917899929779">{en(CARE_PHONE)}</a> ({lab["call_wa"]}) &middot; '
+            f'<a href="mailto:{CARE_EMAIL}">{en(CARE_EMAIL)}</a></p>\n')
+
+
+def legal_name_en():
+    return LEGAL_LABELS["legal_name"].replace("⟦#1⟧", LEGAL_NAME).replace("⟦#2⟧", "1acrefarms")
+
+
+def footer_base(legal=None):
+    """The footer's last line; legal: the legal name, already rendered (English by default)."""
+    fssai = (f"FSSAI Reg. No. (packing unit) {FSSAI_REG} &middot; {FSSAI_ECOM_LIC_LABEL} {FSSAI_ECOM_LIC}"
+             if FSSAI_ECOM_LIC else f"FSSAI Reg. No. {FSSAI_REG}")
+    return (f'    <p class="footer-base">© {TODAY.year} {legal or legal_name_en()} &middot; 1acrefarms.co.in &middot; '
+            f'GSTIN 37BHKPR3386Q1Z8 &middot; {fssai} &middot; Made in India</p>\n')
+
+
+GRIEVANCE_LINK = grievance_link()
+FOOTER_CARE = footer_care()
+
+# A pack that cannot be ordered online yet (not buyable on Amazon.in; the website takes no orders yet): say so plainly.
+# build_i18n shows NOT_ONLINE on the language pages as the OPTIONAL key ui.not_online. The language pages have no
+# "Orders, delivery and returns" section, so the two SHIP_ lines are English-page only.
+NOT_ONLINE = "Not available to order online yet."
+SHIP_AMAZON = ("Our packs are sold on Amazon.in. Delivery, payment and returns for those orders follow Amazon.in&rsquo;s "
+               "terms, shown on each listing. For a question about the pack itself, see Customer care above.")
+SHIP_NOT_ONLINE = ("This pack is not available to order online yet. Some of our other packs are sold on Amazon.in; delivery, "
+                   "payment and returns for those orders follow Amazon.in&rsquo;s terms, shown on each listing. "
+                   "For a question about this pack, see Customer care above.")
 BANNED = re.compile(r"\b(natural|pure|100%|no added|traditional|chemical[- ]free|organic|healthy|"
                     r"authentic|premium|fresh)\b", re.I)
 
@@ -437,14 +512,13 @@ def footer(live):
       </div>
       <div class="footer-col">
         <h4>Policies</h4>
-        <a href="/policies.html#shipping">Shipping &amp; delivery</a>
+{GRIEVANCE_LINK}        <a href="/policies.html#shipping">Shipping &amp; delivery</a>
         <a href="/policies.html#returns">Returns &amp; refunds</a>
         <a href="/policies.html#privacy">Privacy</a>
         <a href="/policies.html#terms">Terms of sale</a>
       </div>
     </div>
-{REVIEW_LINE}{FOOTER_ADDR}    <p class="footer-base">© {TODAY.year} 1acrefarms &middot; GSTIN 37BHKPR3386Q1Z8 &middot; FSSAI Reg. 20126161000590 &middot; Made in India</p>
-  </footer>"""
+{REVIEW_LINE}{FOOTER_ADDR}{FOOTER_CARE}{footer_base()}  </footer>"""
 
 
 HEAD_ASSETS = """  <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -485,6 +559,7 @@ def page(p, live, facts, guides=(), recipes=()):
           <span class="upp">{p['g']} g · {per_g}</span>
         </div>
         <p class="tax">Incl. of all taxes</p>""" if shows_price(p) else ""
+    status = "" if amazon_link(p) else f'\n        <p class="pdp-status">{NOT_ONLINE}</p>'
     body = f"""<!DOCTYPE html>
 <html lang="en-IN">
 <head>
@@ -521,7 +596,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <p class="eyebrow">{p['origin']}</p>
         <h1>{p['name']} <span class="pdp-local">({p['local']})</span></h1>
         <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
-        <p class="pdp-lede">{p['lede']}</p>{price_block}
+        <p class="pdp-lede">{p['lede']}</p>{price_block}{status}
         <div class="pdp-actions" id="order">{order_btn(p)}
         </div>
         <ul class="pdp-facts">
@@ -550,10 +625,10 @@ def page(p, live, facts, guides=(), recipes=()):
           {f"<dt>Use by</dt><dd>{p['use_by']} months from packing</dd>" if p.get('use_by') else ""}
           {storage}
           <dt>{MAKER[p['by']]}</dt><dd>{ADDRESS}</dd>
-          <dt>FSSAI</dt><dd>Reg. 20126161000590</dd>
+          {FSSAI_ROW}
           <dt>Country of origin</dt><dd>India</dd>
           <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com</dd>
-        </dl>
+        </dl>{ecom_lic_line()}
       </div>
       <div>
         <h2>Nutritional information</h2>
@@ -563,7 +638,7 @@ def page(p, live, facts, guides=(), recipes=()):
 
     <section class="pdp-ship">
       <h2>Orders, delivery and returns</h2>
-      <p>Our packs are sold on Amazon.in. Delivery, payment and returns for those orders follow Amazon.in&rsquo;s terms, shown on each listing. For a question about the pack itself, see Customer care above.</p>
+      <p>{SHIP_AMAZON if amazon_link(p) else SHIP_NOT_ONLINE}</p>
     </section>
 
     <section class="pdp-others">
@@ -669,6 +744,13 @@ def main():
     facts = pack_facts()
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
+    for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values()):
+        if BANNED.search(text_of(chunk)):
+            sys.exit(f"Banned claim word in the footer/order lines: {BANNED.search(text_of(chunk)).group(0)!r}")
+    if FSSAI_ECOM_LIC:  # grant day: the hand-written pages must carry the same number (see their GRANT DAY comments)
+        stale = [f for f in ("index.html", "policies.html") if FSSAI_ECOM_LIC not in (ROOT / f).read_text(encoding="utf-8")]
+        if stale:
+            sys.exit(f"FSSAI_ECOM_LIC is set but not yet added by hand to {', '.join(stale)} (see the GRANT DAY comments)")
     for p in live:
         out = ROOT / p["slug"] / "index.html"
         out.parent.mkdir(exist_ok=True)

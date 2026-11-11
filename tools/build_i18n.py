@@ -127,6 +127,20 @@ UI = {
                       "9 in the morning to 7 in the evening (closed on Sunday); keep 9 and 7 as Western digits"),
     "ui.addr_office": ("Registered office", "footer label before our registered office address (the address itself stays "
                        "in English): the business's official registered address; not a government registration office"),
+    # 11-11-2026 (compliance G01, G04): English text lives in build_pages (LEGAL_LABELS, NOT_ONLINE); all OPTIONAL.
+    "ui.not_online": (bp.NOT_ONLINE, "line above the button on a product page whose pack cannot be bought online yet "
+                      "(not on Amazon.in, and this website takes no orders yet); a plain fact: no urgency, no 'soon'"),
+    "ui.grievance": (bp.LEGAL_LABELS["grievance"], "footer link to our grievance officer's details: under Indian consumer "
+                     "law, the named person who receives and resolves customer complaints"),
+    "ui.care_officer": (bp.LEGAL_LABELS["care_officer"], "footer label before the name, phone number and email of the one "
+                        "person who answers customer questions and handles complaints (name, number and email stay in English)"),
+    "ui.proprietor": (bp.LEGAL_LABELS["proprietor"], "job title after the owner's name: the owner of a one-person business "
+                      "(sole proprietorship)"),
+    "ui.call_wa": (bp.LEGAL_LABELS["call_wa"], "in brackets after a phone number: you can phone this number or message it on "
+                   "WhatsApp; write 'WhatsApp' in Latin letters exactly"),
+    "ui.legal_name": (bp.LEGAL_LABELS["legal_name"], "footer, the seller's legal identity: ⟦#1⟧ is the owner's name and ⟦#2⟧ "
+                      "our brand name; keep both markers exactly, in the word order that reads best in this language. Meaning: the owner runs "
+                      "the business alone (sole proprietor) and sells under the brand name ⟦#2⟧"),
 }
 PACK_FIELDS = {
     "name": "the product name in this language (the H1 and in lists); keep it short",
@@ -238,7 +252,9 @@ def pack_keys(p):
            [f"{k}.use{i}" for i in range(len(p["uses"]))]
 
 
-OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office"}  # newer strings: English is shown until translated
+OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
+            "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
+            "ui.legal_name"}  # newer strings: English is shown until translated
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
 
@@ -439,6 +455,22 @@ def address_line(page, t, code):
     return page.replace(bp.FOOTER_ADDR, bp.footer_addr(lab, en))
 
 
+def legal_lines(page, t, code):
+    """The footer's seller identity in this language: the grievance-officer link, the customer care and grievance
+    officer line, and the legal name in the footer base. A label whose translation has not passed stays English
+    (marked lang="en"); the name, phone, email, brand, GSTIN and FSSAI numbers always stay in English."""
+    en = lambda s: f'<span lang="en" dir="ltr">{s}</span>'  # noqa: E731
+    lab = {k: opt(code, t, f"ui.{k}") for k in ("grievance", "care_officer", "proprietor", "call_wa")}
+    page = page.replace(bp.GRIEVANCE_LINK, bp.grievance_link(lab["grievance"]))
+    page = page.replace(bp.FOOTER_CARE, bp.footer_care(lab, en))
+    if "ui.legal_name" in t:  # markers checked by problem(): ⟦#1⟧ the owner's name, ⟦#2⟧ the brand
+        parts = {"⟦#1⟧": en(bp.LEGAL_NAME), "⟦#2⟧": en("1acrefarms")}
+        legal = "".join(parts.get(s) or x(code, s) for s in re.split(r"(⟦#[12]⟧)", t["ui.legal_name"]))
+    else:
+        legal = en(e(bp.legal_name_en()))
+    return page.replace(bp.footer_base(), bp.footer_base(legal))
+
+
 def translated_note(t, code):
     return (f'<p class="i18n-note">{x(code, t["ui.translated"])} <a href="https://wa.me/{bp.WA}" target="_blank" '
             f'rel="noopener">{x(code, t["ui.wa_us"])}</a></p>')
@@ -493,6 +525,7 @@ def pack_page(code, t, p, packs, facts):
           <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
         </div>
         <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>""" if bp.shows_price(p) else ""
+    status = "" if bp.amazon_link(p) else f'\n        <p class="pdp-status">{opt(code, t, "ui.not_online")}</p>'
     return head(code, t[k + ".title"], desc, url, "product", f"{SITE}/assets/packs/{p['pack']}",
                 json.dumps(ld, ensure_ascii=False, indent=2)) + f"""
 <body class="pdp-page i18n-page">
@@ -509,7 +542,7 @@ def pack_page(code, t, p, packs, facts):
         <p class="eyebrow">{x(code, t[k + '.origin'])}</p>
         <h1>{x(code, t[k + '.name'])}</h1>
         <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
-        <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}
+        <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}{status}
         <div class="pdp-actions" id="order">{order_btn(code, t, p)}
         </div>
         <ul class="pdp-facts">
@@ -537,10 +570,10 @@ def pack_page(code, t, p, packs, facts):
           {f"<dt>Use by</dt><dd>{p['use_by']} months from packing</dd>" if p.get('use_by') else ""}
           {storage}
           <dt>{bp.MAKER[p['by']]}</dt><dd>{bp.ADDRESS}</dd>
-          <dt>FSSAI</dt><dd>Reg. 20126161000590</dd>
+          {bp.FSSAI_ROW}
           <dt>Country of origin</dt><dd>India</dd>
           <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com</dd>
-        </dl>
+        </dl>{bp.ecom_lic_line()}
       </div>
       <div lang="en" dir="ltr">
         <h2>Nutritional information</h2>
@@ -717,7 +750,8 @@ def build(live):
         for url, body in pages.items():
             base = "/" if url == f"/{code}/" else url[len(code) + 1:]
             alts = alternates(base, versions.get(base, {}))
-            body = inject(localize(address_line(review_line(body, t, code), t, code), code, local), code, alts, cta)
+            body = inject(localize(legal_lines(address_line(review_line(body, t, code), t, code), t, code), code, local),
+                          code, alts, cta)
             out = ROOT / url.strip("/") / "index.html"
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(body, encoding="utf-8")
