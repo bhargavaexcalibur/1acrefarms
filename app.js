@@ -561,6 +561,7 @@ function packCard(p) {
             ${p.useBy ? `<dt>Use by</dt><dd>${p.useBy} months from packing</dd>` : ""}
             ${PACK_FACTS[p.code] ? `<dt>Storage</dt><dd>${PACK_FACTS[p.code].storage}</dd>` : ""}
             <dt>${by}</dt><dd>${MAKER.address}</dd>
+            <dt>FSSAI</dt><dd><img class="fssai-logo" src="/assets/fssai-logo.svg" alt="FSSAI logo" width="41" height="20" /> Reg. No. 20126161000590</dd>
             <dt>Country of origin</dt><dd>${p.country || "India"}</dd>
             <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com</dd>
           </dl>

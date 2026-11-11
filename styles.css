@@ -290,6 +290,12 @@ a.add-btn { display: block; text-align: center; text-decoration: none; }
 .footer-addr b { color: #c9cfba; font-weight: 600; }
 .footer-addr .addr-hours { display: inline-block; }
 .footer-addr + .footer-base { margin-top: 20px; }
+.footer-legal { text-align: center; max-width: 62em; margin: 18px auto 0; padding: 0 16px; font-size: 0.8rem; line-height: 1.7; color: #9aa589; }
+.footer-addr + .footer-legal { margin-top: 8px; }
+.footer-legal b { color: #c9cfba; font-weight: 600; }
+.footer-legal a { color: #c9cfba; text-decoration: underline; text-underline-offset: 3px; }
+.footer-legal a:hover { color: #fff; }
+.footer-legal + .footer-base { margin-top: 20px; }
 .footer-base { text-align: center; margin-top: 44px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.1); font-size: 0.76rem; letter-spacing: .04em; color: #8a9479; }
 
 /* Cart drawer */
@@ -461,6 +467,9 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .pdp-dl { display: grid; gap: 2px; font-size: 0.85rem; color: var(--ink-soft); }
 .pdp-dl dt { font-size: 0.6rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); margin-top: 8px; font-weight: 600; }
 .pdp-dl dd { line-height: 1.5; }
+img.fssai-logo { display: inline-block; vertical-align: middle; margin: -2px 4px 0 0; }
+.pdp-status { margin: 18px 0 -8px; font-size: 0.92rem; font-weight: 600; color: var(--ink-soft); }
+.pdp-lic { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--ink-soft); }
 .pdp-more .nutri table { font-size: 0.78rem; }
 .pdp-ship { padding: 36px 0; border-top: 1px solid var(--hairline); }
 .pdp-ship p { color: var(--ink-soft); font-size: 0.94rem; max-width: 48em; }
