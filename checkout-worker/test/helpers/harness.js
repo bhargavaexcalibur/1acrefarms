@@ -1,6 +1,6 @@
 // Test harness: the real Worker (createWorker) wired to the mock gateways, an in-memory (or SQLite-backed D1)
 // store, a controllable clock, instant sleeps and a captured log.
-import { createHmac } from "node:crypto";
+import { createHash, createHmac } from "node:crypto";
 import { createWorker } from "../../src/index.js";
 import { makeLogger } from "../../src/log.js";
 import { createMemoryStore } from "../../src/storage/memory.js";
@@ -14,6 +14,11 @@ export const TEST_ENV = Object.freeze({
   RAZORPAY_WEBHOOK_SECRET: "mock_razorpay_webhook_secret_ABC",
   CASHFREE_APP_ID: "MOCKCFAPP0001",
   CASHFREE_SECRET_KEY: "cfsk_mock_secret_DEF",
+  PHONEPE_CLIENT_ID: "MOCKPPCLIENT01",
+  PHONEPE_CLIENT_SECRET: "mock_phonepe_client_secret_MNO",
+  PHONEPE_CLIENT_VERSION: "1",
+  PHONEPE_WEBHOOK_USERNAME: "onacre_hook",
+  PHONEPE_WEBHOOK_PASSWORD: "mockHookPass123",
   SHIPROCKET_API_EMAIL: "api-user@shop.test",
   SHIPROCKET_API_PASSWORD: "mock-shiprocket-password-GHI",
   RESEND_API_KEY: "re_mock_key_JKL",
@@ -23,7 +28,10 @@ export const TEST_ENV = Object.freeze({
   PUBLIC_URL: "https://1acrefarms-checkout.example.workers.dev",
 });
 
-export const SECRET_VALUES = ["RAZORPAY_KEY_SECRET", "RAZORPAY_WEBHOOK_SECRET", "CASHFREE_SECRET_KEY", "SHIPROCKET_API_PASSWORD", "RESEND_API_KEY"].map((k) => TEST_ENV[k]);
+export const SECRET_VALUES = [
+  "RAZORPAY_KEY_SECRET", "RAZORPAY_WEBHOOK_SECRET", "CASHFREE_SECRET_KEY", "PHONEPE_CLIENT_SECRET", "PHONEPE_WEBHOOK_PASSWORD",
+  "SHIPROCKET_API_PASSWORD", "RESEND_API_KEY",
+].map((k) => TEST_ENV[k]);
 
 export const CUSTOMER = Object.freeze({
   name: "Lakshmi Devi",
@@ -54,6 +62,7 @@ export function harness({ env = {}, store = createMemoryStore(), now = T0 } = {}
   const logs = [];
   const sleeps = [];
   let clock = now;
+  mocks.state.phonepe.nowMs = () => clock; // PhonePe token expiry follows the harness clock
   let seq = 0;
   const fullEnv = { ...TEST_ENV, ...env };
   for (const [k, v] of Object.entries(fullEnv)) if (v === undefined) delete fullEnv[k];
@@ -99,6 +108,7 @@ export function harness({ env = {}, store = createMemoryStore(), now = T0 } = {}
 export const razorpaySignature = (secret, orderId, paymentId) => createHmac("sha256", secret).update(`${orderId}|${paymentId}`).digest("hex");
 export const razorpayWebhookSignature = (secret, raw) => createHmac("sha256", secret).update(raw).digest("hex");
 export const cashfreeWebhookSignature = (secret, ts, raw) => createHmac("sha256", secret).update(ts + raw).digest("base64");
+export const phonepeWebhookAuth = (username, password) => createHash("sha256").update(`${username}:${password}`).digest("hex");
 
 export function razorpayOrderPaidEvent(gwOrderId, paymentId, amount, { receipt = "" } = {}) {
   return JSON.stringify({
@@ -148,5 +158,26 @@ export async function postCashfreeWebhook(h, raw, { ts = "1762921801", secret = 
     raw,
     origin: null,
     headers: { "content-type": "application/json", "x-webhook-timestamp": ts, "x-webhook-signature": signature ?? cashfreeWebhookSignature(secret, ts, raw) },
+  });
+}
+
+// PhonePe webhook body (Standard Checkout v2 shape: event + payload; "type" is deprecated and ignored).
+export function phonepeEvent(event, merchantOrderId, amount, { state = "COMPLETED", orderId = "OMO26111000001", transactionId = "OM261110000011" } = {}) {
+  return JSON.stringify({
+    event,
+    payload: {
+      orderId, merchantId: "MOCKMERCHANT", merchantOrderId, state, amount, expireAt: 1762923000000,
+      metaInfo: {},
+      paymentDetails: [{ paymentMode: "UPI_QR", transactionId, timestamp: 1762921800000, amount, state }],
+    },
+  });
+}
+
+export async function postPhonePeWebhook(h, raw, { username = TEST_ENV.PHONEPE_WEBHOOK_USERNAME, password = TEST_ENV.PHONEPE_WEBHOOK_PASSWORD, authorization } = {}) {
+  const auth = authorization === undefined ? phonepeWebhookAuth(username, password) : authorization;
+  return h.call("POST", "/phonepe-webhook", {
+    raw,
+    origin: null,
+    headers: { "content-type": "application/json", ...(auth === null ? {} : { authorization: auth }) },
   });
 }

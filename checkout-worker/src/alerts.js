@@ -41,9 +41,9 @@ export function orderSummary(order) {
   const c = order.customer || {};
   return [
     `Order: ${order.id} (${order.mode})`,
-    `Gateway: ${order.gateway || "-"}  payment: ${order.paymentId || "-"}`,
+    `Gateway: ${order.gateway || "-"}${order.gwFailover ? ` (after ${order.gwFailover.split(",").map((f) => f.split(":").slice(0, 2).join(" ")).join(", ")})` : ""}  payment: ${order.paymentId || "-"}`,
     ...order.items.map((l) => `  ${l.qty} x ${l.name} ${l.grams} g [${l.sku}] @ ${inr(l.unitPaise)}`),
-    `Packs ${inr(order.subtotalPaise)} + delivery ${inr(order.deliveryPaise)} = ${inr(order.totalPaise)}`,
+    `Total ${inr(order.totalPaise)} = MRPs ${inr(order.subtotalPaise)}${order.deliveryPaise ? ` + delivery ${inr(order.deliveryPaise)} (CHECK: should be free)` : ", delivery free"}`,
     `Customer: ${c.name || "-"}, ${c.city || "-"} ${c.pin || ""} (${c.state || "-"})`,
     "Phone and street address: in D1, see README 'Look up an order'.",
   ];

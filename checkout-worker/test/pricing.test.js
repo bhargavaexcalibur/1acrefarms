@@ -1,8 +1,8 @@
-// Prices, the Rs 999 boundary, the AP/TS PIN rule, limits, parcels, form validation, and drift vs app.js.
+// Prices, no delivery fee (total = sum of MRPs), the AP/TS PIN check, limits, parcels, form validation, and drift vs app.js.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { CATALOGUE, PIN_TABLE, deliveryFeeRupees, parcelFor, pinInfo, pinStateMismatch, quoteCart, skuOf } from "../src/pricing.js";
+import { CATALOGUE, DELIVERY_FEE_RUPEES, PIN_TABLE, parcelFor, pinInfo, pinStateMismatch, quoteCart, skuOf } from "../src/pricing.js";
 import { normalisePhone, validateCustomer } from "../src/validate.js";
 import { CUSTOMER } from "./helpers/harness.js";
 
@@ -23,33 +23,44 @@ test("server price table matches the 540 g MRPs in the site's app.js (drift guar
   }
 });
 
-test("delivery fee: Rs 999 boundary", () => {
-  assert.equal(deliveryFeeRupees(998, "522601"), 99);
-  assert.equal(deliveryFeeRupees(999, "522601"), 0);
-  assert.equal(deliveryFeeRupees(1000, "522601"), 0);
-  assert.equal(deliveryFeeRupees(998, "110001"), 189);
-  assert.equal(deliveryFeeRupees(999, "110001"), 0);
-  assert.equal(deliveryFeeRupees(0, "110001"), 0, "empty cart");
-  assert.equal(deliveryFeeRupees(234, ""), null, "no PIN yet: unknown");
+// Owner 11-11-2026: "lets never charge our customers other than MRP". No delivery fee at any order value, anywhere.
+test("no delivery fee: the fee machinery is gone, one constant is left and it is 0", async () => {
+  assert.equal(DELIVERY_FEE_RUPEES, 0);
+  const mod = await import("../src/pricing.js");
+  for (const gone of ["DELIVERY", "deliveryFeeRupees"]) assert.equal(gone in mod, false, `${gone} no longer exists`);
 });
 
-test("delivery fee on real carts", () => {
-  const two495 = quoteCart([{ code: "KPAS", qty: 1 }, { code: "TBEL", qty: 1 }], "500081");
-  assert.equal(two495.subtotalPaise, 99000);
-  assert.equal(two495.deliveryPaise, 9900, "Rs 990 < 999 in Telangana: Rs 99");
-  assert.equal(two495.totalPaise, 108900);
-  assert.equal(two495.freeDeliveryShortfallPaise, 900);
-  const delhi = quoteCart([{ code: "KPAS", qty: 2 }], "110001");
-  assert.equal(delhi.deliveryPaise, 18900, "Rs 990 < 999 in Delhi: Rs 189");
-  const free = quoteCart([{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }], "110001");
-  assert.equal(free.subtotalPaise, 102600);
-  assert.equal(free.deliveryPaise, 0, "Rs 1,026 >= 999: free anywhere");
-  assert.equal(free.freeDeliveryShortfallPaise, 0);
-  const cane = quoteCart([{ code: "CBEL", qty: 1 }], "522601");
-  assert.equal(cane.totalPaise, (234 + 99) * 100);
+test("any basket, any PIN: fee 0, total = sum of MRP x qty", () => {
+  const codes = Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable);
+  const pins = ["522601", "500081", "507111", "533464", "110001", "560001", "799001", "", "999999"];
+  // every single pack at qty 1..3, every pair of packs, and the 12-pack maximum
+  const baskets = [];
+  for (const a of codes) for (let q = 1; q <= 3; q++) baskets.push([{ code: a, qty: q }]);
+  for (const a of codes) for (const b of codes) if (a < b) baskets.push([{ code: a, qty: 1 }, { code: b, qty: 1 }]);
+  baskets.push([{ code: "TURM", qty: 6 }, { code: "CBEL", qty: 6 }]);
+  let checked = 0;
+  for (const items of baskets) {
+    const want = items.reduce((sum, i) => sum + CATALOGUE[i.code].mrp * i.qty, 0) * 100;
+    for (const pin of pins) {
+      const q = quoteCart(items, pin);
+      assert.equal(q.ok, true);
+      assert.equal(q.deliveryPaise, 0, `fee for ${JSON.stringify(items)} to ${pin}`);
+      assert.equal(q.subtotalPaise, want);
+      assert.equal(q.totalPaise, want, `total for ${JSON.stringify(items)} to ${pin}`);
+      checked++;
+    }
+  }
+  assert.ok(checked > 300);
+  // the cheapest order (1 cane jaggery) is Rs 234 flat, to AP and to Delhi alike; two Rs 495 packs are Rs 990
+  assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], "522601").totalPaise, 23400);
+  assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], "110001").totalPaise, 23400);
+  assert.equal(quoteCart([{ code: "KPAS", qty: 1 }, { code: "TBEL", qty: 1 }], "500081").totalPaise, 99000);
+  assert.equal(quoteCart([{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }]).totalPaise, 102600, "no PIN needed to know the total");
+  assert.deepEqual(Object.keys(quoteCart([{ code: "TURM", qty: 1 }], "522601")).sort(),
+    ["deliveryPaise", "errors", "lines", "ok", "packs", "subtotalPaise", "totalPaise"], "no band / shortfall fields left");
 });
 
-test("AP/TS PIN rule (one table)", () => {
+test("PIN table: AP/TS prefixes, rest of India, Army Postal 9xxxxx refused (address check only, no price)", () => {
   const band = (p) => pinInfo(p)?.band ?? "INVALID";
   const state = (p) => pinInfo(p)?.state ?? null;
   assert.equal(band("500001"), "AP_TS"); assert.equal(state("500001"), "Telangana");

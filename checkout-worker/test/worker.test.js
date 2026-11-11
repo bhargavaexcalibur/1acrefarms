@@ -3,12 +3,23 @@ import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import {
   CUSTOMER, SECRET_VALUES, TEST_ENV, harness, razorpaySignature, razorpayOrderPaidEvent, razorpayPaymentEvent,
-  postRazorpayWebhook, cashfreeEvent, postCashfreeWebhook,
+  postRazorpayWebhook, cashfreeEvent, postCashfreeWebhook, phonepeEvent, postPhonePeWebhook, phonepeWebhookAuth,
 } from "./helpers/harness.js";
 import { makeLogger, redact } from "../src/log.js";
 
 const shiprocketCreates = (h) => h.mocks.calls.filter((c) => c.path === "/v1/external/orders/create/adhoc");
-const gatewayCalls = (h) => h.mocks.calls.filter((c) => c.host === "api.razorpay.com" || c.host.endsWith("cashfree.com"));
+const gatewayCalls = (h) => h.mocks.calls.filter((c) => c.host === "api.razorpay.com" || c.host.endsWith("cashfree.com") || c.host.endsWith("phonepe.com"));
+const phonepeCalls = (h, suffix) => h.mocks.calls.filter((c) => c.host.endsWith("phonepe.com") && c.path.endsWith(suffix));
+
+// Razorpay and Cashfree both down: the order lands on PhonePe (the default third gateway).
+async function phonepeOrder(h, items, customer) {
+  h.mocks.state.razorpay.create = 503;
+  h.mocks.state.cashfree.create = 500;
+  const r = await h.createOrder(items, customer);
+  assert.equal(r.status, 200, JSON.stringify(r.body));
+  assert.equal(r.body.gateway, "phonepe");
+  return r;
+}
 
 async function paidViaRazorpay(h) {
   const r = await h.createOrder();
@@ -26,7 +37,6 @@ describe("create-order", () => {
     assert.equal(r.body.gateway, "razorpay");
     assert.equal(r.body.mode, "test");
     assert.equal(r.body.subtotalPaise, 102600);
-    assert.equal(r.body.deliveryPaise, 0);
     assert.equal(r.body.totalPaise, 102600);
     assert.match(r.body.orderId, /^1AF-T-261112-[0-9A-Z]{6}$/);
     assert.equal(r.body.razorpay.keyId, TEST_ENV.RAZORPAY_KEY_ID);
@@ -39,13 +49,31 @@ describe("create-order", () => {
     assert.equal(r.headers.get("access-control-allow-origin"), "https://1acrefarms.co.in");
   });
 
-  test("delivery fee by PIN: AP Rs 99, rest of India Rs 189 below Rs 999", async () => {
-    const h = harness();
-    const ap = await h.createOrder([{ code: "CBEL", qty: 1 }]);
-    assert.equal(ap.body.deliveryPaise, 9900);
-    const ka = await h.createOrder([{ code: "CBEL", qty: 1 }], { ...CUSTOMER, city: "Bengaluru", state: "Karnataka", pin: "560001" });
-    assert.equal(ka.body.deliveryPaise, 18900);
-    assert.equal(ka.body.totalPaise, 23400 + 18900);
+  test("no delivery fee: every gateway is asked for exactly the sum of MRP x qty, whatever the PIN", async () => {
+    const baskets = [
+      [[{ code: "CBEL", qty: 1 }], { ...CUSTOMER, pin: "522601" }, 23400],
+      [[{ code: "CBEL", qty: 1 }], { ...CUSTOMER, city: "New Delhi", state: "Delhi", pin: "110001" }, 23400],
+      [[{ code: "SANN", qty: 1 }], { ...CUSTOMER, city: "Bengaluru", state: "Karnataka", pin: "560001" }, 49500],
+      [[{ code: "SANN", qty: 1 }, { code: "TEJA", qty: 1 }], { ...CUSTOMER, city: "Hyderabad", state: "Telangana", pin: "500081" }, 99000],
+      [[{ code: "TURM", qty: 1 }, { code: "CBEL", qty: 2 }], { ...CUSTOMER, city: "Agartala", state: "Tripura", pin: "799001" }, 86400],
+      [[{ code: "TURM", qty: 6 }, { code: "TBEL", qty: 6 }], CUSTOMER, 534600],
+    ];
+    for (const gateway of ["razorpay", "cashfree", "phonepe"]) {
+      for (const [items, customer, want] of baskets) {
+        const h = harness({ env: { GATEWAY_ORDER: gateway } });
+        const r = await h.createOrder(items, customer);
+        assert.equal(r.status, 200, JSON.stringify(r.body));
+        assert.equal(r.body.gateway, gateway);
+        assert.equal(r.body.totalPaise, want);
+        assert.equal(r.body.subtotalPaise, want);
+        assert.equal(r.body.deliveryPaise, undefined, "no delivery line in the reply");
+        const sent = h.mocks.calls.find((c) => c.method === "POST" && ["/v1/orders", "/pg/orders", "/apis/pg-sandbox/checkout/v2/pay"].includes(c.path)).body;
+        const asked = gateway === "cashfree" ? Math.round(sent.order_amount * 100) : sent.amount;
+        assert.equal(asked, want, `${gateway} asked for the MRP sum (${JSON.stringify(items)} to ${customer.pin})`);
+        const o = await h.store.getOrder(r.body.orderId);
+        assert.deepEqual([o.subtotalPaise, o.deliveryPaise, o.totalPaise], [want, 0, want]);
+      }
+    }
   });
 
   test("CORS: only the two site origins", async () => {
@@ -208,29 +236,305 @@ describe("failover to Cashfree", () => {
     }
   });
 
-  test("both gateways down -> 502, order kept as gateway_error, owner alerted", async () => {
+  test("Razorpay healthy -> Cashfree and PhonePe never called; the order records razorpay with no failover", async () => {
+    const h = harness();
+    const r = await h.createOrder();
+    assert.ok(!h.mocks.calls.some((c) => c.host.endsWith("cashfree.com") || c.host.endsWith("phonepe.com")));
+    const o = await h.store.getOrder(r.body.orderId);
+    assert.equal(o.gateway, "razorpay");
+    assert.equal(o.gwFailover, null);
+  });
+});
+
+describe("three-step failover: Razorpay -> Cashfree -> PhonePe", () => {
+  test("Razorpay down -> Cashfree down -> PhonePe takes the order; each gateway tried once, in order", async () => {
+    const h = harness();
+    h.mocks.state.razorpay.create = 503;
+    h.mocks.state.cashfree.create = "network";
+    const r = await h.createOrder();
+    assert.equal(r.status, 200, JSON.stringify(r.body));
+    assert.equal(r.body.gateway, "phonepe");
+    assert.match(r.body.phonepe.redirectUrl, /^https:\/\/mercury-uat\.phonepe\.com\//);
+    assert.equal(r.body.phonepe.mode, "sandbox");
+    assert.equal(r.body.razorpay, undefined);
+    const creates = h.mocks.calls.filter((c) => c.method === "POST" && ["/v1/orders", "/pg/orders", "/apis/pg-sandbox/checkout/v2/pay"].includes(c.path));
+    assert.deepEqual(creates.map((c) => c.host), ["api.razorpay.com", "sandbox.cashfree.com", "api-preprod.phonepe.com"]);
+    const o = await h.store.getOrder(r.body.orderId);
+    assert.equal(o.status, "created");
+    assert.equal(o.gateway, "phonepe", "the order records which gateway took it");
+    assert.equal(o.gwOrderId, r.body.orderId, "PhonePe merchantOrderId = our id");
+    assert.equal(o.gwFailover, "razorpay:server_error:503,cashfree:network:0", "and why the others did not");
+    assert.ok(h.logs.some((l) => l.includes('"evt":"gateway_failover"') && l.includes('"gateway":"phonepe"')));
+    await h.drain();
+    const mail = h.mocks.state.resend.sent.find((m) => /failed over to phonepe/.test(m.subject));
+    assert.ok(mail, "owner told");
+    assert.match(mail.text, /razorpay failed: server_error \(http 503\)\ncashfree failed: network/);
+  });
+
+  test("Razorpay timeout -> Cashfree timeout -> PhonePe, without waiting for the hung requests", async () => {
+    const h = harness({ env: { GATEWAY_TIMEOUT_MS: "40" } });
+    h.mocks.state.razorpay.create = "timeout";
+    h.mocks.state.cashfree.create = "timeout";
+    const t0 = Date.now();
+    const r = await h.createOrder();
+    assert.equal(r.body.gateway, "phonepe");
+    assert.ok(Date.now() - t0 < 2000);
+    assert.equal((await h.store.getOrder(r.body.orderId)).gwFailover, "razorpay:timeout:0,cashfree:timeout:0");
+  });
+
+  test("all three down -> 502 payment_unavailable, gateway_error, nothing paid, nothing shipped, owner alerted", async () => {
     const h = harness();
     h.mocks.state.razorpay.create = 502;
     h.mocks.state.cashfree.create = 500;
+    h.mocks.state.phonepe.create = 503;
     const r = await h.createOrder();
     assert.equal(r.status, 502);
+    assert.deepEqual(Object.keys(r.body).sort(), ["error", "ok", "orderId"], "a clean error: no gateway details for the buyer");
+    assert.equal(r.body.ok, false);
     assert.equal(r.body.error, "payment_unavailable");
-    assert.equal((await h.store.getOrder(r.body.orderId)).status, "gateway_error");
+    const o = await h.store.getOrder(r.body.orderId);
+    assert.equal(o.status, "gateway_error");
+    assert.equal(o.gwFailover, "razorpay:server_error:502,cashfree:server_error:500,phonepe:server_error:503");
+    // nothing can turn it paid: not /verify, not a webhook, not the cron
+    const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+    assert.equal(v.status, 409);
+    assert.equal((await postPhonePeWebhook(h, phonepeEvent("checkout.order.completed", r.body.orderId, 102600))).body.ignored, true);
+    h.advance(11 * 60 * 1000);
+    await h.scheduled();
     await h.drain();
-    assert.ok(h.mocks.state.resend.sent.some((m) => /Checkout DOWN/.test(m.subject)));
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "gateway_error");
+    assert.equal(shiprocketCreates(h).length, 0);
+    const down = h.mocks.state.resend.sent.filter((m) => /Checkout DOWN/.test(m.subject));
+    assert.equal(down.length, 1);
+    assert.match(down[0].text, /razorpay: server_error \(http 502\)\ncashfree: server_error \(http 500\)\nphonepe: server_error \(http 503\)/);
+    assert.ok(!h.mocks.state.resend.sent.some((m) => /New paid order/.test(m.subject)));
   });
 
-  test("Razorpay healthy -> Cashfree never called; PRIMARY_GATEWAY=cashfree flips the order", async () => {
+  test("PhonePe token failure counts as PhonePe down (the chain ends cleanly)", async () => {
     const h = harness();
-    await h.createOrder();
-    assert.ok(!h.mocks.calls.some((c) => c.host.endsWith("cashfree.com")));
-    const flip = harness({ env: { PRIMARY_GATEWAY: "cashfree" } });
-    const r = await flip.createOrder();
-    assert.equal(r.body.gateway, "cashfree");
-    assert.ok(!flip.mocks.calls.some((c) => c.host === "api.razorpay.com"));
-    const noBackup = harness({ env: { BACKUP_GATEWAY: "off" } });
-    noBackup.mocks.state.razorpay.create = 503;
-    assert.equal((await noBackup.createOrder()).status, 502);
+    h.mocks.state.razorpay.create = 503;
+    h.mocks.state.cashfree.create = 503;
+    h.mocks.state.phonepe.token = 401;
+    const r = await h.createOrder();
+    assert.equal(r.status, 502);
+    assert.match((await h.store.getOrder(r.body.orderId)).gwFailover, /phonepe:auth_failed:401$/);
+  });
+
+  test("GATEWAY_ORDER reorders or switches gateways off without code changes", async () => {
+    const pp = harness({ env: { GATEWAY_ORDER: "phonepe,razorpay" } });
+    const r1 = await pp.createOrder();
+    assert.equal(r1.body.gateway, "phonepe");
+    assert.ok(!pp.mocks.calls.some((c) => c.host === "api.razorpay.com"));
+    assert.deepEqual((await pp.call("GET", "/health")).body.gateways, ["phonepe", "razorpay"]);
+
+    const cf = harness({ env: { GATEWAY_ORDER: " Cashfree , RAZORPAY,bogus,cashfree" } });
+    assert.deepEqual((await cf.call("GET", "/health")).body.gateways, ["cashfree", "razorpay"], "trimmed, case-insensitive, unknown and repeated names dropped");
+    assert.equal((await cf.createOrder()).body.gateway, "cashfree");
+
+    const noPhonePe = harness({ env: { GATEWAY_ORDER: "razorpay,cashfree" } });
+    noPhonePe.mocks.state.razorpay.create = 503;
+    noPhonePe.mocks.state.cashfree.create = 503;
+    assert.equal((await noPhonePe.createOrder()).status, 502, "PhonePe off: never tried");
+    assert.equal(noPhonePe.mocks.calls.filter((c) => c.host.endsWith("phonepe.com")).length, 0);
+
+    const solo = harness({ env: { GATEWAY_ORDER: "razorpay" } });
+    solo.mocks.state.razorpay.create = 503;
+    assert.equal((await solo.createOrder()).status, 502, "no backup at all");
+
+    for (const v of [undefined, "", "  "]) {
+      const d = harness({ env: { GATEWAY_ORDER: v } });
+      assert.deepEqual((await d.call("GET", "/health")).body.gateways, ["razorpay", "cashfree", "phonepe"], `default for ${JSON.stringify(v)}`);
+    }
+
+    const none = harness({ env: { GATEWAY_ORDER: "none" } });
+    const r2 = await none.createOrder();
+    assert.equal(r2.status, 503);
+    assert.equal(r2.body.reason, "no_gateway");
+    assert.equal(gatewayCalls(none).length, 0);
+    assert.equal((await none.call("GET", "/health")).body.checkout, "disabled");
+  });
+});
+
+describe("PhonePe (Standard Checkout v2, UAT in test mode)", () => {
+  test("create: amount in paise from our table, our id as merchantOrderId, return URL to /checkout-test/, no customer data", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    const pay = phonepeCalls(h, "/checkout/v2/pay")[0];
+    assert.equal(pay.host, "api-preprod.phonepe.com");
+    assert.equal(pay.path, "/apis/pg-sandbox/checkout/v2/pay");
+    assert.equal(pay.body.merchantOrderId, r.body.orderId);
+    assert.equal(pay.body.amount, 102600);
+    assert.equal(pay.body.paymentFlow.type, "PG_CHECKOUT");
+    assert.equal(pay.body.paymentFlow.merchantUrls.redirectUrl, `https://1acrefarms.co.in/checkout-test/?order_id=${r.body.orderId}&gw=phonepe`);
+    assert.equal(pay.body.expireAfter, 1200);
+    const sent = JSON.stringify(pay.body);
+    for (const pii of ["9876543210", "Lakshmi", "lakshmi.devi@example.com", "Gandhi Nagar", "522002"]) assert.ok(!sent.includes(pii), `PhonePe never gets ${pii}`);
+    const tok = phonepeCalls(h, "/v1/oauth/token")[0];
+    assert.equal(tok.path, "/apis/pg-sandbox/v1/oauth/token");
+  });
+
+  test("verify: Order Status PENDING -> pending; COMPLETED -> paid + one Shiprocket order; never the redirect alone", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    // the customer comes back from PhonePe without paying (or a forged return): still pending
+    const p1 = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+    assert.equal(p1.status, 200);
+    assert.equal(p1.body.status, "pending");
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "created");
+    const tx = h.mocks.phonepeFinish(r.body.orderId, "COMPLETED");
+    const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+    assert.equal(v.body.ok, true);
+    assert.equal(v.body.status, "paid");
+    await h.drain();
+    const o = await h.store.getOrder(r.body.orderId);
+    assert.equal(o.status, "paid");
+    assert.equal(o.paidSource, "verify");
+    assert.equal(o.paymentId, tx);
+    assert.equal(o.shipStatus, "pushed");
+    assert.equal(shiprocketCreates(h).length, 1);
+    assert.equal(shiprocketCreates(h)[0].body.payment_method, "Prepaid");
+    const status = phonepeCalls(h, "/status");
+    assert.equal(status[0].path, `/apis/pg-sandbox/checkout/v2/order/${r.body.orderId}/status`);
+    assert.equal(h.mocks.state.phonepe.tokens.length, 1, "one token for create + every status check");
+    const mail = h.mocks.state.resend.sent.find((m) => /New paid order/.test(m.subject));
+    assert.match(mail.text, /Gateway: phonepe \(after razorpay server_error, cashfree server_error\)/);
+  });
+
+  test("verify: Order Status FAILED -> failed (the page shows 'did not go through'); a later COMPLETED still counts", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.phonepeFinish(r.body.orderId, "FAILED");
+    const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+    assert.equal(v.status, 200);
+    assert.deepEqual([v.body.ok, v.body.status], [false, "failed"]);
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "failed");
+    h.mocks.phonepeFinish(r.body.orderId, "COMPLETED");
+    assert.equal((await h.call("POST", "/verify", { body: { orderId: r.body.orderId } })).body.status, "paid");
+  });
+
+  test("verify: paid amount differs -> amount_mismatch, never shipped", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.phonepeFinish(r.body.orderId, "COMPLETED", { amount: 100 });
+    const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+    assert.equal(v.status, 409);
+    assert.equal(v.body.status, "mismatch");
+    await h.drain();
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "amount_mismatch");
+    assert.equal(shiprocketCreates(h).length, 0);
+  });
+
+  test("verify: PhonePe status API down -> unknown (200), nothing changes", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.state.phonepe.status = 500;
+    const v = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+    assert.deepEqual([v.status, v.body.status], [200, "unknown"]);
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "created");
+  });
+
+  test("webhook: SHA256(username:password) checked; paid only after Order Status says COMPLETED; duplicates dropped", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.phonepeFinish(r.body.orderId, "COMPLETED", { transactionId: "OM2611TXN0001" });
+    const raw = phonepeEvent("checkout.order.completed", r.body.orderId, r.body.totalPaise);
+    assert.equal((await postPhonePeWebhook(h, raw, { password: "wrongPass123" })).status, 401);
+    assert.equal((await postPhonePeWebhook(h, raw, { authorization: null })).status, 401, "no header");
+    assert.equal((await postPhonePeWebhook(h, raw, { authorization: `SHA256 ${phonepeWebhookAuth("onacre_hook", "mockHookPass123")}` })).status, 401, "exact value only");
+    const statusBefore = phonepeCalls(h, "/status").length;
+    const w1 = await postPhonePeWebhook(h, raw);
+    assert.deepEqual([w1.status, w1.body], [200, { ok: true }]);
+    assert.ok(h.ctx.pendingCount() > 0, "the status check runs after the reply (PhonePe wants 2xx in 3-5 s)");
+    const w2 = await postPhonePeWebhook(h, raw);
+    assert.equal(w2.body.duplicate, true);
+    await h.drain();
+    assert.equal(phonepeCalls(h, "/status").length, statusBefore + 1, "one status check for two deliveries");
+    await h.call("POST", "/verify", { body: { orderId: r.body.orderId } }); // the browser's return trip too
+    await h.drain();
+    const o = await h.store.getOrder(r.body.orderId);
+    assert.equal(o.status, "paid");
+    assert.equal(o.paidSource, "webhook");
+    assert.equal(o.paymentId, "OM2611TXN0001");
+    assert.equal(shiprocketCreates(h).length, 1, "exactly one Shiprocket order");
+    assert.equal(h.mocks.state.resend.sent.filter((m) => /New paid order/.test(m.subject)).length, 1, "exactly one owner alert");
+  });
+
+  test("webhook: a 'completed' body is NOT trusted when Order Status disagrees (forged/early); it can be retried later", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    const raw = phonepeEvent("checkout.order.completed", r.body.orderId, r.body.totalPaise);
+    assert.equal((await postPhonePeWebhook(h, raw)).status, 200);
+    await h.drain();
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "created", "status API says PENDING: not paid");
+    assert.equal(shiprocketCreates(h).length, 0);
+    h.mocks.phonepeFinish(r.body.orderId, "COMPLETED");
+    const again = await postPhonePeWebhook(h, raw);
+    assert.equal(again.body.duplicate, undefined, "the undecided event was forgotten, so PhonePe's retry is processed");
+    await h.drain();
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "paid");
+  });
+
+  test("webhook: checkout.order.failed -> failed via Order Status; unknown order and other events ignored; bad JSON 400", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.phonepeFinish(r.body.orderId, "FAILED");
+    assert.equal((await postPhonePeWebhook(h, phonepeEvent("checkout.order.failed", r.body.orderId, r.body.totalPaise, { state: "FAILED" }))).status, 200);
+    await h.drain();
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "failed");
+    assert.equal((await postPhonePeWebhook(h, phonepeEvent("checkout.order.completed", "1AF-T-261112-NOTOUR", 50000))).body.ignored, true);
+    assert.equal((await postPhonePeWebhook(h, phonepeEvent("pg.refund.completed", r.body.orderId, 100))).body.ignored, true);
+    assert.equal((await postPhonePeWebhook(h, "{not json")).status, 400);
+    // a Razorpay order id sent to the PhonePe webhook is ignored too
+    const rz = harness();
+    const rr = await rz.createOrder();
+    assert.equal((await postPhonePeWebhook(rz, phonepeEvent("checkout.order.completed", rr.body.orderId, rr.body.totalPaise))).body.ignored, true);
+  });
+
+  test("webhook: refused when the username/password secrets are not set", async () => {
+    const h = harness({ env: { PHONEPE_WEBHOOK_USERNAME: undefined, PHONEPE_WEBHOOK_PASSWORD: undefined } });
+    const r = await postPhonePeWebhook(h, phonepeEvent("checkout.order.completed", "1AF-T-261112-AAAAAA", 100), { username: "", password: "" });
+    assert.equal(r.status, 401);
+  });
+
+  test("reconcile: paid at PhonePe, no webhook, browser never came back -> paid and shipped by the cron", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.phonepeFinish(r.body.orderId, "COMPLETED");
+    h.advance(11 * 60 * 1000);
+    await h.scheduled();
+    const o = await h.store.getOrder(r.body.orderId);
+    assert.equal(o.status, "paid");
+    assert.equal(o.paidSource, "reconcile");
+    assert.equal(o.shipStatus, "pushed");
+  });
+
+  test("reconcile: a FAILED PhonePe order is marked failed, then expired after 24 h (not re-checked forever)", async () => {
+    const h = harness();
+    const r = await phonepeOrder(h);
+    h.mocks.phonepeFinish(r.body.orderId, "FAILED");
+    h.advance(11 * 60 * 1000);
+    await h.scheduled();
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "failed");
+    h.advance(25 * 3600 * 1000);
+    await h.scheduled();
+    assert.equal((await h.store.getOrder(r.body.orderId)).status, "expired");
+    h.advance(3600 * 1000);
+    assert.equal((await h.store.listUnpaidForReconcile(h.now(), 10 * 60 * 1000, 10)).length, 0, "out of the reconcile list");
+  });
+
+  test("live mode: PhonePe production hosts (identity-manager + pg); test mode never touches them", async () => {
+    const h = harness({ env: { MODE: "live", LIVE_ENABLED: "yes-owner-approved", RAZORPAY_KEY_ID: "rzp_live_MOCK" } });
+    const r = await phonepeOrder(h);
+    assert.match(r.body.orderId, /^1AF-W-/);
+    assert.equal(r.body.phonepe.mode, "production");
+    assert.match(r.body.phonepe.redirectUrl, /^https:\/\/mercury-t2\.phonepe\.com\//);
+    assert.deepEqual(h.mocks.calls.filter((c) => c.host.endsWith("phonepe.com")).map((c) => `${c.host}${c.path}`), [
+      "api.phonepe.com/apis/identity-manager/v1/oauth/token",
+      "api.phonepe.com/apis/pg/checkout/v2/pay",
+    ]);
+    const t = harness();
+    await phonepeOrder(t);
+    assert.ok(!t.mocks.calls.some((c) => c.host === "api.phonepe.com"), "test mode: UAT only");
   });
 });
 
@@ -395,7 +699,7 @@ describe("Shiprocket push", () => {
     assert.equal(body.billing_customer_name, "Lakshmi");
     assert.equal(body.billing_last_name, "Devi");
     assert.equal(body.sub_total, 1026);
-    assert.equal(body.shipping_charges, 0);
+    assert.equal(body.shipping_charges, 0, "delivery is free: nothing charged for shipping");
     assert.equal(body.weight, 1.9);
     assert.deepEqual([body.length, body.breadth, body.height], [26, 21, 13]);
     assert.deepEqual(body.order_items.map((i) => [i.sku, i.units, i.selling_price]), [["1AF-TURM-0540", 2, 396], ["1AF-CBEL-0540", 1, 234]]);
@@ -528,11 +832,23 @@ test("logs never contain phone numbers, addresses, emails or secrets", async () 
   h.mocks.state.razorpay.create = 503;
   const cf = await h.createOrder(undefined, { ...CUSTOMER, phone: "+91 91234 56789" });
   await postCashfreeWebhook(h, cashfreeEvent("PAYMENT_SUCCESS_WEBHOOK", cf.body.orderId, cf.body.totalPaise / 100));
+  h.mocks.state.cashfree.create = 500;
+  const pp = await h.createOrder();
+  assert.equal(pp.body.gateway, "phonepe");
+  await postPhonePeWebhook(h, "{}", { password: "wrongPass123" });
+  h.mocks.phonepeFinish(pp.body.orderId, "COMPLETED");
+  await postPhonePeWebhook(h, phonepeEvent("checkout.order.completed", pp.body.orderId, pp.body.totalPaise));
+  await h.call("POST", "/verify", { body: { orderId: pp.body.orderId } });
+  h.mocks.state.phonepe.create = 500;
+  await h.createOrder();
   await h.drain();
   await h.scheduled();
   const all = h.logs.join("\n");
   assert.ok(h.logs.length > 10, "the flow did log");
-  for (const needle of ["9876543210", "98765", "9123456789", "Gandhi Nagar", "12-3-45", "Water Tank", "lakshmi.devi@example.com", "Lakshmi", "522002", ...SECRET_VALUES]) {
+  const tokens = h.mocks.state.phonepe.tokens.map((t) => t.token);
+  assert.ok(tokens.length >= 1);
+  for (const needle of ["9876543210", "98765", "9123456789", "Gandhi Nagar", "12-3-45", "Water Tank", "lakshmi.devi@example.com", "Lakshmi", "522002",
+    ...SECRET_VALUES, ...tokens, phonepeWebhookAuth(TEST_ENV.PHONEPE_WEBHOOK_USERNAME, TEST_ENV.PHONEPE_WEBHOOK_PASSWORD), TEST_ENV.PHONEPE_WEBHOOK_USERNAME]) {
     assert.ok(!all.includes(needle), `log leaked ${needle}`);
   }
   for (const line of h.logs) assert.doesNotThrow(() => JSON.parse(line), "structured JSON lines");

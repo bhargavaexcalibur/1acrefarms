@@ -14,12 +14,15 @@ SHIPROCKET_PICKUP_LOCATION = "Home"
 # Shiprocket has no sandbox. In test mode the push is OFF unless this is "on" (only for the one real test order,
 # cancelled in Shiprocket afterwards). In live mode the push is ON unless this is "off".
 SHIPROCKET_PUSH = "off"
-PRIMARY_GATEWAY = "razorpay"   # or "cashfree" to route new orders to Cashfree first
-BACKUP_GATEWAY = "on"          # "off" disables the automatic failover
+# Payment gateways, tried in this order for each new order; the next one is used when one returns 4xx/5xx,
+# a network error or a 6 s timeout. Reorder or drop names to switch a gateway off (e.g. "cashfree,razorpay").
+# "none" refuses new orders. Unset = "razorpay,cashfree,phonepe".
+GATEWAY_ORDER = "razorpay,cashfree,phonepe"
+# PHONEPE_EXPIRE_AFTER_SEC = "1200"   # how long PhonePe's pay page stays open (300-3600 s)
 TURNSTILE_REQUIRED = "false"   # "true" + secret TURNSTILE_SECRET_KEY + the widget on the page
 ALERT_TO = "1acrefarmsindia@gmail.com"
 ALERT_FROM = "1acrefarms checkout <onboarding@resend.dev>"   # until a sending domain is verified in Resend
-SITE_URL = "https://1acrefarms.co.in"
+SITE_URL = "https://1acrefarms.co.in"   # PhonePe and Cashfree send the customer back to SITE_URL/checkout-test/
 PUBLIC_URL = "https://1acrefarms-checkout.REPLACE-ME.workers.dev"
 # DEV_ORIGINS = "http://localhost:4321"   # local page testing only; ignored in live mode
 

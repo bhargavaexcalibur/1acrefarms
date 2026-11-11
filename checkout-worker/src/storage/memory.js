@@ -19,7 +19,7 @@ export function createMemoryStore() {
     async insertOrder(order) {
       if (orders.has(order.id)) throw new Error("duplicate order id");
       orders.set(order.id, clone({
-        gateway: null, gwOrderId: null, paymentId: null, paidAt: null, paidSource: null,
+        gateway: null, gwOrderId: null, gwFailover: null, paymentId: null, paidAt: null, paidSource: null,
         shipStatus: null, shipAttempts: 0, shipNextAt: null, shipError: null, srOrderId: null, srShipmentId: null,
         reconcileAt: null, ...order,
       }));
@@ -31,17 +31,18 @@ export function createMemoryStore() {
       for (const o of orders.values()) if (o.gateway === gateway && o.gwOrderId === gwOrderId) return clone(o);
       return null;
     },
-    async setGatewayOrder(id, gateway, gwOrderId, now) {
+    async setGatewayOrder(id, gateway, gwOrderId, now, failover = null) {
       const o = orders.get(id);
       if (!o || o.status !== "new") return false;
+      if (!["razorpay", "cashfree", "phonepe"].includes(gateway)) throw new Error("unknown gateway"); // = the D1 CHECK
       for (const x of orders.values()) if (x.gateway === gateway && x.gwOrderId === gwOrderId) throw new Error("duplicate gateway order");
-      upd(o, { gateway, gwOrderId, status: "created" }, now);
+      upd(o, { gateway, gwOrderId, gwFailover: failover ?? null, status: "created" }, now);
       return true;
     },
-    async markGatewayError(id, now) {
+    async markGatewayError(id, now, failover = null) {
       const o = orders.get(id);
       if (!o || o.status !== "new") return false;
-      upd(o, { status: "gateway_error" }, now);
+      upd(o, { status: "gateway_error", gwFailover: failover ?? null }, now);
       return true;
     },
     async markVerified(id, paymentId, now) {

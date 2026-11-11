@@ -1,4 +1,4 @@
-// Prices, delivery fee and parcel sizes: the ONE place they live.
+// Prices and parcel sizes: the ONE place they live. There is no delivery fee (see DELIVERY_FEE_RUPEES).
 // The Worker prices every order from this file and never from the browser. The hidden test page
 // (/checkout-test/) imports this same file only to show the numbers before the Worker confirms them.
 // No secrets here: this file is served publicly by GitHub Pages.
@@ -24,16 +24,20 @@ export const skuOf = (code) => `1AF-${code}-${String(PACK_GRAMS).padStart(4, "0"
 
 export const LIMITS = Object.freeze({ maxQtyPerLine: 10, maxPacksPerOrder: 12 });
 
-// Delivery rule (draft, Bhargava's call; matches policies.html on origin/main 11-11-2026):
-// free from Rs 999 of packs; below that Rs 99 in Andhra Pradesh + Telangana, Rs 189 elsewhere in India.
-export const DELIVERY = Object.freeze({ freeFromRupees: 999, apTsFeeRupees: 99, restFeeRupees: 189 });
+// Delivery: FREE on every order, anywhere in India (Bhargava 11-11-2026: "lets never charge our customers other
+// than MRP"; this replaces the earlier Rs 999 / Rs 990 threshold rule). The customer pays the sum of the MRPs and
+// nothing else. There is no fee function and no fee table: this one constant is all that is left, read by
+// quoteCart (deliveryPaise) and by Shiprocket's shipping_charges. It must stay 0; test/pricing.test.js fails otherwise.
+export const DELIVERY_FEE_RUPEES = 0;
 
-// PIN table (the only place the AP/TS rule lives). The longest matching prefix wins.
+// PIN table. No price depends on it: it only checks the address (a valid Indian PIN, the Army Postal 9xxxxx
+// range refused, and a PIN that clearly contradicts the chosen state caught as a typo), so Shiprocket gets
+// a deliverable address and the right state. The longest matching prefix wins.
 // Source: India Post PIN allocation (first two digits): 50 = Telangana, 51-53 = Andhra Pradesh
 // (Wikipedia "Postal Index Number", checked 11-11-2026). Notes:
 //  - 510-514 are not allotted; AP runs 515-535.
-//  - The seven mandals moved from Khammam to AP in 2014 kept their 507xxx PINs: same band, so the fee is right.
-//  - Yanam (533464) is Puducherry but sits inside AP's Kakinada district: same courier zone, AP/TS band.
+//  - The seven mandals moved from Khammam to AP in 2014 kept their 507xxx PINs: AP or Telangana both pass.
+//  - Yanam (533464) is Puducherry inside AP's Kakinada district: Puducherry, AP or Telangana all pass.
 //  - Everything else in India (1xxxxx-8xxxxx) is the "rest of India" band. 9xxxxx is the Army Postal
 //    Service, which couriers cannot reach, so the form rejects it.
 export const PIN_TABLE = Object.freeze([
@@ -66,17 +70,9 @@ export function pinStateMismatch(pin, state) {
   return AP_TS.has(state);
 }
 
-export function deliveryFeeRupees(subtotalRupees, pin) {
-  if (!subtotalRupees) return 0;
-  if (subtotalRupees >= DELIVERY.freeFromRupees) return 0;
-  const info = pinInfo(pin);
-  if (!info) return null; // unknown until a valid PIN is given
-  return info.band === "AP_TS" ? DELIVERY.apTsFeeRupees : DELIVERY.restFeeRupees;
-}
-
 // Prices a cart from CATALOGUE. items = [{code, qty}] or {CODE: qty}. Amounts in paise (integers).
-// pin may be empty on the page (delivery then shows as "enter PIN"); the Worker always passes one.
-export function quoteCart(items, pin) {
+// total = the sum of MRP x qty, whatever the PIN (the PIN is checked by validate.js, not priced).
+export function quoteCart(items) {
   const list = Array.isArray(items)
     ? items
     : Object.entries(items || {}).map(([code, qty]) => ({ code, qty }));
@@ -103,19 +99,14 @@ export function quoteCart(items, pin) {
   }
   if (!lines.length && !errors.length) errors.push({ field: "items", code: "empty_cart" });
   if (packs > LIMITS.maxPacksPerOrder) errors.push({ field: "items", code: "too_many_packs" });
-  const info = pinInfo(pin);
-  const fee = deliveryFeeRupees(subtotalRupees, pin);
-  const shortfall = subtotalRupees > 0 && subtotalRupees < DELIVERY.freeFromRupees ? DELIVERY.freeFromRupees - subtotalRupees : 0;
   return {
     ok: errors.length === 0,
     errors,
     lines,
     packs,
     subtotalPaise: subtotalRupees * 100,
-    deliveryPaise: fee === null ? null : fee * 100,
-    totalPaise: fee === null ? null : (subtotalRupees + fee) * 100,
-    band: info ? info.band : null,
-    freeDeliveryShortfallPaise: shortfall * 100,
+    deliveryPaise: DELIVERY_FEE_RUPEES * 100, // always 0: stored on the order and sent to Shiprocket as shipping_charges
+    totalPaise: (subtotalRupees + DELIVERY_FEE_RUPEES) * 100, // = sum of MRP x qty
   };
 }
 

@@ -1,9 +1,10 @@
 // 1acrefarms checkout (hidden TEST page). Clean rewrite; ideas from the old WhatsApp cart (app.js at e2d48352^):
 // localStorage cart, live delivery line, itemised WhatsApp message as the fallback.
 //
-// Prices, delivery fee and form rules are imported from the Worker's own modules, so what the page shows is
-// what the Worker charges. The Worker re-prices every order anyway and is the only authority.
-import { CATALOGUE, DELIVERY, LIMITS, PACK_GRAMS, quoteCart } from "../checkout-worker/src/pricing.js";
+// Prices and form rules are imported from the Worker's own modules, so what the page shows is what the Worker
+// charges: the sum of the MRPs, nothing added (delivery is free across India). The Worker re-prices every order
+// anyway and is the only authority.
+import { CATALOGUE, LIMITS, PACK_GRAMS, quoteCart } from "../checkout-worker/src/pricing.js";
 import { INDIAN_STATES, validateCustomer } from "../checkout-worker/src/validate.js";
 
 // ---------------------------------------------------------------------------------------------
@@ -58,22 +59,18 @@ const STRINGS = {
     },
     summaryTitle: "Order summary",
     sumPacks: "Packs ({n})",
-    sumDelivery: "Delivery",
-    sumFree: "Free",
-    sumNeedPin: "Enter your PIN code",
-    sumApTs: "Andhra Pradesh / Telangana",
-    sumRest: "Rest of India",
     sumTotal: "Total to pay",
     sumEmpty: "Your cart is empty. Add a pack above.",
-    sumFreeHint: "Add {amount} more for free delivery.",
-    sumRule: "Free delivery from {free}. Below that, {apts} in Andhra Pradesh and Telangana and {rest} elsewhere in India.",
-    prepaidNote: "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by Razorpay (Cashfree as backup); we never see your card details or UPI PIN.",
+    sumFreeDelivery: "Free delivery across India",
+    sumMrpOnly: "You pay the MRP only, incl. of all taxes. Nothing is added at checkout.",
+    prepaidNote: "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by Razorpay (Cashfree and PhonePe as backups); we never see your card details or UPI PIN.",
     terms: "By paying you agree to our {link}.",
     termsLink: "terms of sale, shipping and refund policies",
     pay: "Pay {amount}",
     payEmpty: "Add a pack to pay",
     payBusy: "Please wait…",
     creating: "Starting secure payment…",
+    redirecting: "Taking you to PhonePe to pay…",
     verifying: "Confirming your payment…",
     priceChangedTitle: "Total updated",
     priceChangedBody: "The total for this order is {amount}. Please check it and press Pay again.",
@@ -98,9 +95,7 @@ const STRINGS = {
     rzpDescription: "{n} pack(s) · order {id}",
     waIntro: "Hi 1acrefarms! I'd like to order:",
     waLine: "{qty} × {name} {grams} g @ {price} [{sku}]",
-    waPacks: "Packs: {amount}",
-    waDelivery: "Delivery: {amount}",
-    waTotal: "Total: {amount}",
+    waTotal: "Total: {amount} (free delivery)",
     waPin: "PIN code: {pin}",
   },
 };
@@ -150,7 +145,7 @@ let pending = null; // { key, data } of the last created order, reused while car
 const $ = (id) => document.getElementById(id);
 const items = () => Object.entries(cart).map(([code, qty]) => ({ code, qty }));
 const formValues = () => Object.fromEntries(FIELDS.map((f) => [f, $(`f-${f}`).value]));
-const quote = () => quoteCart(items(), $("f-pin").value.trim());
+const quote = () => quoteCart(items());
 const packCount = () => Object.values(cart).reduce((a, b) => a + b, 0);
 
 // ---------------------------------------------------------------------------------------------
@@ -197,19 +192,14 @@ function renderSummary() {
     btn.disabled = true;
     return;
   }
-  let delivery;
-  if (q.deliveryPaise === null) delivery = `<span class="muted">${esc(T.sumNeedPin)}</span>`;
-  else if (q.deliveryPaise === 0) delivery = `<span class="free">${esc(T.sumFree)}</span>`;
-  else delivery = `<span>${esc(inr(q.deliveryPaise))} <span class="muted">(${esc(q.band === "AP_TS" ? T.sumApTs : T.sumRest)})</span></span>`;
   box.innerHTML = `
     <div class="r"><span>${esc(fmt(T.sumPacks, { n: q.packs }))}</span><span>${esc(inr(q.subtotalPaise))}</span></div>
-    <div class="r"><span>${esc(T.sumDelivery)}</span>${delivery}</div>
-    ${q.freeDeliveryShortfallPaise ? `<p class="hint">${esc(fmt(T.sumFreeHint, { amount: inr(q.freeDeliveryShortfallPaise) }))}</p>` : ""}
-    <div class="r total"><span>${esc(T.sumTotal)}</span><span>${q.totalPaise === null ? "–" : esc(inr(q.totalPaise))}</span></div>
-    <p class="co-note">${esc(fmt(T.sumRule, { free: inr(DELIVERY.freeFromRupees * 100), apts: inr(DELIVERY.apTsFeeRupees * 100), rest: inr(DELIVERY.restFeeRupees * 100) }))}</p>
+    <p class="free">${esc(T.sumFreeDelivery)}</p>
+    <div class="r total"><span>${esc(T.sumTotal)}</span><span>${esc(inr(q.totalPaise))}</span></div>
+    <p class="co-note">${esc(T.sumMrpOnly)}</p>
     ${q.errors.length ? `<p class="co-err">${esc(itemError(q.errors[0]))}</p>` : ""}`;
   btn.disabled = busy || !q.ok;
-  btn.textContent = busy ? T.payBusy : fmt(T.pay, { amount: q.totalPaise === null ? inr(q.subtotalPaise) + "+" : inr(q.totalPaise) });
+  btn.textContent = busy ? T.payBusy : fmt(T.pay, { amount: inr(q.totalPaise) });
 }
 
 const itemError = (e) => fmt(T.errors[`items:${e.code}`] || T.errors["items:bad_qty"], {
@@ -244,10 +234,7 @@ function whatsappLink() {
   const q = quote();
   const lines = [T.waIntro, ""];
   for (const l of q.lines) lines.push(fmt(T.waLine, { qty: l.qty, name: l.name, grams: l.grams, price: inr(l.unitPaise), sku: l.sku }));
-  if (q.lines.length) {
-    lines.push("", fmt(T.waPacks, { amount: inr(q.subtotalPaise) }));
-    if (q.deliveryPaise !== null) lines.push(fmt(T.waDelivery, { amount: q.deliveryPaise ? inr(q.deliveryPaise) : T.sumFree }), fmt(T.waTotal, { amount: inr(q.totalPaise) }));
-  }
+  if (q.lines.length) lines.push("", fmt(T.waTotal, { amount: inr(q.totalPaise) }));
   const pin = $("f-pin").value.trim();
   if (pin) lines.push(fmt(T.waPin, { pin }));
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
@@ -345,6 +332,7 @@ async function pay() {
     status(null);
     if (data.gateway === "razorpay") await openRazorpay(data, v.value);
     else if (data.gateway === "cashfree") await openCashfree(data);
+    else if (data.gateway === "phonepe") await openPhonePe(data);
     else status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "wa"] });
   } catch {
     status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "wa"] });
@@ -396,6 +384,32 @@ async function openCashfree(data) {
   await verify({ orderId: data.orderId }, { closedWithError: Boolean(result?.error) });
 }
 
+// PhonePe Standard Checkout, redirect mode: the customer pays on PhonePe's page and comes back to
+// /checkout-test/?order_id=...&gw=phonepe (the Worker's redirectUrl). The start-up code below then calls /verify,
+// and the Worker asks PhonePe's Order Status API: the return trip alone never counts as paid.
+// Docs: developer.phonepe.com/payment-gateway/website-integration/standard-checkout/api-integration/api-reference/invoke-iframe-paypage
+const PHONEPE_JS = "https://mercury.phonepe.com/web/bundle/checkout.js";
+async function openPhonePe(data) {
+  const url = String(data.phonepe?.redirectUrl || "");
+  let host = "";
+  try { host = new URL(url).hostname; } catch { /* not a URL */ }
+  const onPhonePe = url.startsWith("https://") && (host === "phonepe.com" || host.endsWith(".phonepe.com"));
+  const localMock = LOCAL && (host === "127.0.0.1" || host === "localhost"); // scripts/dev-server.mjs only
+  if (!onPhonePe && !localMock) throw new Error("unexpected payment page");
+  status("info", { body: esc(T.redirecting) });
+  if (onPhonePe) {
+    try {
+      await loadScript(PHONEPE_JS);
+      if (window.PhonePeCheckout?.transact) {
+        window.PhonePeCheckout.transact({ tokenUrl: url }); // no "type": redirect mode
+        await new Promise((res) => setTimeout(res, 5000)); // normally the page has left by now
+      }
+    } catch { /* script blocked: a plain redirect does the same */ }
+  }
+  location.assign(url);
+  await new Promise(() => {});
+}
+
 async function verify(body, { closedWithError = false } = {}) {
   status("info", { body: esc(T.verifying) });
   for (let i = 0; i < 4; i++) {
@@ -403,7 +417,7 @@ async function verify(body, { closedWithError = false } = {}) {
     try { r = await api("/verify", body); } catch { r = { status: 0, data: null }; }
     const st = r.data?.status;
     if (st === "paid" || st === "verified") return success(r.data.orderId);
-    if (r.status === 400) return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "wa"] });
+    if (r.status === 400 || st === "failed") return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "wa"] });
     if (st === "pending" && closedWithError) return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "wa"] });
     await new Promise((res) => setTimeout(res, 2000));
   }
@@ -462,7 +476,7 @@ $("status").addEventListener("click", (e) => { if (e.target.closest("[data-act=r
 renderStatic();
 rerender();
 checkHealth();
-// Back from a Cashfree redirect (some banks leave the popup): ?order_id=1AF-...
+// Back from PhonePe (always a redirect) or a Cashfree redirect (some banks leave the popup): ?order_id=1AF-...
 const back = new URLSearchParams(location.search).get("order_id");
 if (back && /^1AF-[TW]-\d{6}-[0-9A-Z]{6}$/.test(back)) {
   history.replaceState(null, "", location.pathname);

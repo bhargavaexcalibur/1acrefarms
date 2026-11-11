@@ -48,6 +48,10 @@ export function timingSafeEqual(a, b) {
   return diff === 0;
 }
 
+export async function sha256Bytes(text) {
+  return new Uint8Array(await crypto.subtle.digest("SHA-256", enc.encode(text)));
+}
+
 export async function sha256Hex(text) {
-  return toHex(new Uint8Array(await crypto.subtle.digest("SHA-256", enc.encode(text))));
+  return toHex(await sha256Bytes(text));
 }

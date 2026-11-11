@@ -1,4 +1,5 @@
-// A fake internet for tests and the smoke run: Razorpay, Cashfree (sandbox), Shiprocket, Resend, Turnstile.
+// A fake internet for tests and the smoke run: Razorpay, Cashfree (sandbox), PhonePe (UAT + production hosts),
+// Shiprocket, Resend, Turnstile.
 // Behaviour is steered through `state`; every request is recorded in `calls`.
 
 const reply = (status, data, headers = {}) =>
@@ -14,6 +15,12 @@ export function createMockGateways() {
   const state = {
     razorpay: { create: "ok", orders: new Map(), payments: new Map(), n: 0 },
     cashfree: { create: "ok", orders: new Map(), n: 0 },
+    // PhonePe: create / status = "ok" | "timeout" | "network" | <http status>; token = "ok" | <http status> | "timeout".
+    // nowMs: the clock used for issued_at / expires_at (the harness points it at its own clock).
+    phonepe: {
+      create: "ok", status: "ok", token: "ok", tokenTtlSec: 3600, tokens: [], revoked: new Set(), orders: new Map(), n: 0,
+      nowMs: () => Date.now(),
+    },
     // queue of outcomes for successive adhoc creates: "ok" | "timeout" | <http status>; empty = "ok"
     shiprocket: { queue: [], created: new Map(), logins: 0, n: 0, gate: null, loginStatus: 200 },
     resend: { sent: [] },
@@ -57,6 +64,7 @@ export function createMockGateways() {
       if (method === "POST" && url.pathname === "/pg/orders") {
         const mode = cf.create;
         if (mode === "timeout") return hang(init.signal);
+        if (mode === "network") throw new TypeError("fetch failed");
         if (typeof mode === "number") return reply(mode, { message: "mock" });
         if (cf.orders.has(body.order_id)) return reply(409, { message: "order_id already exists" });
         const o = { cf_order_id: 5000 + ++cf.n, order_id: body.order_id, order_amount: body.order_amount, order_currency: "INR", order_status: "ACTIVE", payment_session_id: `session_mock_${body.order_id}`, customer_details: body.customer_details, host: url.host };
@@ -69,6 +77,61 @@ export function createMockGateways() {
         return o ? reply(200, o) : reply(404, { message: "order not found" });
       }
       return reply(404, { message: "not found" });
+    }
+
+    // ---------------- PhonePe PG (UAT: api-preprod.phonepe.com/apis/pg-sandbox; prod: api.phonepe.com/apis/pg + /identity-manager) ----------------
+    if (url.host === "api-preprod.phonepe.com" || url.host === "api.phonepe.com") {
+      const pp = state.phonepe;
+      const uat = url.host === "api-preprod.phonepe.com";
+      const pg = uat ? "/apis/pg-sandbox" : "/apis/pg";
+      const auth = uat ? "/apis/pg-sandbox" : "/apis/identity-manager";
+      const fail = (mode) => {
+        if (mode === "timeout") return hang(init.signal);
+        if (mode === "network") throw new TypeError("fetch failed");
+        if (typeof mode === "number") return reply(mode, { code: mode >= 500 ? "INTERNAL_SERVER_ERROR" : "BAD_REQUEST", message: "mock" });
+        return null;
+      };
+      if (method === "POST" && url.pathname === `${auth}/v1/oauth/token`) {
+        const failed = fail(pp.token);
+        if (failed) return failed;
+        const form = new URLSearchParams(bodyText);
+        if (!headers.get("content-type")?.includes("application/x-www-form-urlencoded") || form.get("grant_type") !== "client_credentials" ||
+          !form.get("client_id") || !form.get("client_secret") || !form.get("client_version")) {
+          return reply(400, { code: "BAD_REQUEST", message: "mock: bad token request" });
+        }
+        const issued = Math.floor(pp.nowMs() / 1000);
+        const tok = `pp-mock-token-${pp.tokens.length + 1}`;
+        pp.tokens.push({ token: tok, form: Object.fromEntries(form), host: url.host });
+        return reply(200, { access_token: tok, encrypted_access_token: tok, expires_in: null, issued_at: issued, expires_at: issued + pp.tokenTtlSec, session_expires_at: issued + pp.tokenTtlSec, token_type: "O-Bearer" });
+      }
+      const authz = headers.get("authorization") || "";
+      const tokenOk = authz.startsWith("O-Bearer pp-mock-token-") && !pp.revoked.has(authz.slice("O-Bearer ".length));
+      if (method === "POST" && url.pathname === `${pg}/checkout/v2/pay`) {
+        if (!tokenOk) return reply(401, { code: "UNAUTHORIZED", message: "mock: token" });
+        const failed = fail(pp.create);
+        if (failed) return failed;
+        const redirect = body?.paymentFlow?.merchantUrls?.redirectUrl;
+        if (!body || typeof body.merchantOrderId !== "string" || body.merchantOrderId.length > 63 || !/^[A-Za-z0-9_-]+$/.test(body.merchantOrderId) ||
+          !Number.isInteger(body.amount) || body.amount < 100 || body.paymentFlow?.type !== "PG_CHECKOUT" || typeof redirect !== "string") {
+          return reply(400, { code: "BAD_REQUEST", message: "mock: bad pay request" });
+        }
+        if (pp.orders.has(body.merchantOrderId)) return reply(400, { code: "BAD_REQUEST", message: "Please check the inputs you have provided." });
+        const n = ++pp.n;
+        const o = { orderId: `OMO26111${String(n).padStart(6, "0")}`, merchantOrderId: body.merchantOrderId, state: "PENDING", amount: body.amount, expireAt: pp.nowMs() + 1000 * (body.expireAfter || 1200), paymentDetails: [], redirectUrl: redirect, host: url.host, request: body };
+        pp.orders.set(body.merchantOrderId, o);
+        const page = uat ? "https://mercury-uat.phonepe.com/transact/uat_v2" : "https://mercury-t2.phonepe.com/transact/pg";
+        return reply(200, { orderId: o.orderId, state: "PENDING", expireAt: o.expireAt, redirectUrl: `${page}?token=mock${n}` });
+      }
+      const m = url.pathname.match(new RegExp(`^${pg}/checkout/v2/order/([^/]+)/status$`));
+      if (method === "GET" && m) {
+        if (!tokenOk) return reply(401, { code: "UNAUTHORIZED", message: "mock: token" });
+        const failed = fail(pp.status);
+        if (failed) return failed;
+        const o = pp.orders.get(decodeURIComponent(m[1]));
+        if (!o) return reply(400, { code: "BAD_REQUEST", message: "mock: order not found" });
+        return reply(200, { orderId: o.orderId, state: o.state, amount: o.amount, expireAt: o.expireAt, metaInfo: {}, paymentDetails: o.paymentDetails });
+      }
+      return reply(404, { code: "NOT_FOUND" });
     }
 
     // ---------------- Shiprocket ----------------
@@ -123,5 +186,18 @@ export function createMockGateways() {
     return o;
   }
 
-  return { fetch: fetchImpl, state, calls, razorpayCapture, cashfreePay };
+  // Simulate the customer at PhonePe's PayPage. outcome "COMPLETED" | "FAILED"; amount defaults to the order amount.
+  function phonepeFinish(merchantOrderId, outcome = "COMPLETED", { amount, transactionId } = {}) {
+    const o = state.phonepe.orders.get(merchantOrderId);
+    if (!o) return null;
+    const paid = amount ?? o.amount;
+    const tx = transactionId ?? `OM26111${String(state.phonepe.n).padStart(6, "0")}${o.paymentDetails.length + 1}`;
+    o.paymentDetails.push({ paymentMode: "UPI_QR", transactionId: tx, timestamp: state.phonepe.nowMs(), amount: paid, state: outcome,
+      ...(outcome === "FAILED" ? { errorCode: "TXN_AUTO_FAILED", detailedErrorCode: "ZM" } : {}) });
+    o.state = outcome;
+    if (outcome === "COMPLETED") o.amount = paid;
+    return tx;
+  }
+
+  return { fetch: fetchImpl, state, calls, razorpayCapture, cashfreePay, phonepeFinish };
 }

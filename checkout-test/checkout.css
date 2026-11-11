@@ -38,8 +38,7 @@
 
 .co-sum .r { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; font-size: .95rem; }
 .co-sum .r.total { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 10px; font-size: 1.1rem; font-weight: 700; }
-.co-sum .free { color: var(--green); font-weight: 600; }
-.co-sum .hint { font-size: .82rem; color: var(--gold); margin-top: 2px; }
+.co-sum .free { color: var(--green); font-weight: 600; font-size: .95rem; padding: 2px 0; }
 .co-sum .muted { color: var(--ink-faint); }
 .co-note { font-size: .82rem; color: var(--ink-soft); margin-top: 10px; }
 .co-note a { color: var(--green); }

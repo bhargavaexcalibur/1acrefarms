@@ -8,7 +8,7 @@ function rowToOrder(r) {
   if (!r) return null;
   return {
     id: r.id, createdAt: r.created_at, updatedAt: r.updated_at, mode: r.mode, status: r.status,
-    gateway: r.gateway, gwOrderId: r.gw_order_id, paymentId: r.payment_id,
+    gateway: r.gateway, gwOrderId: r.gw_order_id, gwFailover: r.gw_failover, paymentId: r.payment_id,
     items: JSON.parse(r.items_json), packs: r.packs,
     subtotalPaise: r.subtotal_paise, deliveryPaise: r.delivery_paise, totalPaise: r.total_paise,
     customer: JSON.parse(r.customer_json),
@@ -47,14 +47,14 @@ export function createD1Store(db) {
     async findByGatewayOrder(gateway, gwOrderId) {
       return rowToOrder(await q("SELECT * FROM orders WHERE gateway = ? AND gw_order_id = ?", gateway, gwOrderId).first());
     },
-    async setGatewayOrder(id, gateway, gwOrderId, now) {
+    async setGatewayOrder(id, gateway, gwOrderId, now, failover = null) {
       return changed(await q(
-        "UPDATE orders SET gateway = ?, gw_order_id = ?, status = 'created', updated_at = ? WHERE id = ? AND status = 'new'",
-        gateway, gwOrderId, now, id,
+        "UPDATE orders SET gateway = ?, gw_order_id = ?, gw_failover = ?, status = 'created', updated_at = ? WHERE id = ? AND status = 'new'",
+        gateway, gwOrderId, failover ?? null, now, id,
       ).run());
     },
-    async markGatewayError(id, now) {
-      return changed(await q("UPDATE orders SET status = 'gateway_error', updated_at = ? WHERE id = ? AND status = 'new'", now, id).run());
+    async markGatewayError(id, now, failover = null) {
+      return changed(await q("UPDATE orders SET status = 'gateway_error', gw_failover = ?, updated_at = ? WHERE id = ? AND status = 'new'", failover ?? null, now, id).run());
     },
     async markVerified(id, paymentId, now) {
       return changed(await q(

@@ -11,7 +11,7 @@ const NOW = 1_762_921_800_000;
 const order = (id, extra = {}) => ({
   id, createdAt: NOW, updatedAt: NOW, mode: "test", status: "new",
   items: [{ code: "TURM", sku: "1AF-TURM-0540", name: "Turmeric Powder", grams: 540, qty: 1, unitPaise: 39600, totalPaise: 39600, hsn: "09103030" }],
-  packs: 1, subtotalPaise: 39600, deliveryPaise: 9900, totalPaise: 49500,
+  packs: 1, subtotalPaise: 39600, deliveryPaise: 0, totalPaise: 39600,
   customer: { name: "A B", phone: "9876543210", email: "a@b.in", address: "1-2-3 Some Road Town", city: "Guntur", state: "Andhra Pradesh", pin: "522002" },
   ...extra,
 });

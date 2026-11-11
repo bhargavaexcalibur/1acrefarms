@@ -1,10 +1,12 @@
 // 1acrefarms checkout Worker (Cloudflare Workers, ES modules). Plain JavaScript: fetch + Web Crypto only.
 //
 //   GET  /health            mode + whether new orders are accepted (no secrets)
-//   POST /create-order      validate, price from OUR table, delivery fee, Razorpay order (Cashfree on failure)
-//   POST /verify            Razorpay checkout signature, or Cashfree Get Order, after the customer pays
+//   POST /create-order      validate, price from OUR table (sum of MRPs; delivery free), then a gateway order: GATEWAY_ORDER
+//                           (default Razorpay -> Cashfree -> PhonePe; next one on 4xx/5xx, network error or timeout)
+//   POST /verify            Razorpay checkout signature, or Cashfree Get Order / PhonePe Order Status, after paying
 //   POST /razorpay-webhook  signed (raw body HMAC), deduped by x-razorpay-event-id, answers fast
 //   POST /cashfree-webhook  signed (timestamp + raw body HMAC, base64)
+//   POST /phonepe-webhook   Authorization = sha256(username:password); deduped; paid only after Order Status says so
 //   scheduled()             retries Shiprocket pushes, reconciles unpaid orders with the gateways
 //
 // Money only becomes "paid" through storage.markPaid(), which succeeds once per order; whoever wins
@@ -18,6 +20,7 @@ import { sha256Hex } from "./crypto.js";
 import { createD1Store } from "./storage/d1.js";
 import { GatewayError, createRazorpayOrder, fetchRazorpayPaid, verifyRazorpayPayment, verifyRazorpayWebhook } from "./gateways/razorpay.js";
 import { createCashfreeOrder, fetchCashfreePaid, verifyCashfreeWebhook } from "./gateways/cashfree.js";
+import { createPhonePeOrder, fetchPhonePePaid, verifyPhonePeWebhook } from "./gateways/phonepe.js";
 import { nextRetryDelayMs, pushToShiprocket } from "./shiprocket.js";
 import { orderSummary, sendOwnerAlert } from "./alerts.js";
 
@@ -34,28 +37,31 @@ function newOrderId(d) {
 
 const publicLine = (l) => ({ code: l.code, sku: l.sku, name: l.name, grams: l.grams, qty: l.qty, unitPaise: l.unitPaise, totalPaise: l.totalPaise });
 
-// ---------- gateways with failover ----------
-const CREATORS = { razorpay: createRazorpayOrder, cashfree: createCashfreeOrder };
+// ---------- gateways with failover (order from GATEWAY_ORDER, see config.js) ----------
+const CREATORS = { razorpay: createRazorpayOrder, cashfree: createCashfreeOrder, phonepe: createPhonePeOrder };
+const FETCHERS = { razorpay: fetchRazorpayPaid, cashfree: fetchCashfreePaid, phonepe: fetchPhonePePaid };
+
+// "razorpay:server_error:503,cashfree:timeout:0": the gateways that failed before the one that took the order.
+// Stored on the order (gw_failover) so every order records which gateway took it and why.
+const failoverNote = (failures) => (failures.length ? failures.map((f) => `${f.gateway}:${f.reason}:${f.http}`).join(",").slice(0, 200) : null);
 
 async function createGatewayOrder(d, order) {
-  const primary = d.cfg.primaryGateway;
-  const sequence = [primary];
-  if (d.cfg.backupEnabled) sequence.push(primary === "razorpay" ? "cashfree" : "razorpay");
   const failures = [];
-  for (const gateway of sequence) {
+  for (const gateway of d.cfg.gatewayOrder) {
     const t0 = Date.now();
     try {
-      const out = await CREATORS[gateway]({ cfg: d.cfg, env: d.env, fetchImpl: d.fetchImpl, order });
+      const out = await CREATORS[gateway]({ cfg: d.cfg, env: d.env, fetchImpl: d.fetchImpl, store: d.store, now: d.now, order });
       if (failures.length) {
-        d.log("gateway_failover", { orderId: order.id, gateway, reason: failures.map((f) => `${f.gateway}:${f.reason}:${f.http}`).join(",") });
+        d.log("gateway_failover", { orderId: order.id, gateway, reason: failoverNote(failures) });
         d.defer(sendOwnerAlert(d, {
           subject: `Checkout failed over to ${gateway}`,
           lines: [`${failures.map((f) => `${f.gateway} failed: ${f.reason} (http ${f.http})`).join("\n")}`, `Order ${order.id} went to ${gateway}.`,
+            `Gateway order now: ${d.cfg.gatewayOrder.join(" -> ")}.`,
             "If this repeats, check the gateway status page. One alert per hour at most."],
           throttleKey: "failover",
         }));
       }
-      return { gateway, ...out };
+      return { gateway, failures, ...out };
     } catch (e) {
       const f = e instanceof GatewayError ? e : new GatewayError(gateway, 0, "unexpected");
       failures.push(f);
@@ -88,7 +94,7 @@ async function createOrder(request, d) {
   }
   const body = await readJson(request, 8192);
   const v = validateCustomer(body.customer);
-  const quote = quoteCart(body.items, v.value.pin);
+  const quote = quoteCart(body.items); // sum of MRP x qty; delivery is free everywhere
   const errors = [...v.errors, ...quote.errors];
   if (errors.length) throw new HttpError(400, "invalid", { errors });
   if (d.cfg.turnstileRequired && !(await turnstileOk(d, body.turnstileToken, request.headers.get("cf-connecting-ip")))) {
@@ -109,7 +115,8 @@ async function createOrder(request, d) {
 
   const gw = await createGatewayOrder(d, order);
   if (!gw.gateway) {
-    await d.store.markGatewayError(order.id, d.now);
+    await d.store.markGatewayError(order.id, d.now, failoverNote(gw.failures));
+    d.log("gateway_all_failed", { orderId: order.id, count: gw.failures.length, reason: failoverNote(gw.failures) });
     d.defer(sendOwnerAlert(d, {
       subject: "Checkout DOWN: no payment gateway answered",
       lines: [...gw.failures.map((f) => `${f.gateway}: ${f.reason} (http ${f.http})`), `Last order attempt: ${order.id}. The customer saw "try again or order on WhatsApp".`],
@@ -117,7 +124,7 @@ async function createOrder(request, d) {
     }));
     throw new HttpError(502, "payment_unavailable", { orderId: order.id });
   }
-  await d.store.setGatewayOrder(order.id, gw.gateway, gw.gwOrderId, d.now);
+  await d.store.setGatewayOrder(order.id, gw.gateway, gw.gwOrderId, d.now, failoverNote(gw.failures));
   d.log("order_created", { orderId: order.id, gateway: gw.gateway, mode: d.cfg.mode, count: order.packs });
 
   return json({
@@ -129,8 +136,7 @@ async function createOrder(request, d) {
     lines: quote.lines.map(publicLine),
     packs: quote.packs,
     subtotalPaise: quote.subtotalPaise,
-    deliveryPaise: quote.deliveryPaise,
-    totalPaise: quote.totalPaise,
+    totalPaise: quote.totalPaise, // = subtotalPaise: nothing is added to the MRPs
     [gw.gateway]: gw.client,
   });
 }
@@ -173,19 +179,24 @@ async function amountMismatch(d, order, source) {
   }
 }
 
-// Ask the gateway (server to server) whether the order is paid; settle if so. Returns paid | pending | mismatch | unknown.
+// Ask the gateway (server to server) whether the order is paid; settle if so.
+// Returns paid | pending | failed (PhonePe says the order FAILED) | mismatch | unknown.
 async function confirmWithGateway(d, orderId, source) {
   const order = await d.store.getOrder(orderId);
   if (!order) return "unknown";
   if (order.status === "paid") return "paid";
-  if (!order.gwOrderId) return "unknown";
-  const fetcher = order.gateway === "cashfree" ? fetchCashfreePaid : fetchRazorpayPaid;
+  const fetcher = FETCHERS[order.gateway];
+  if (!order.gwOrderId || !fetcher) return "unknown";
   let r;
   try {
-    r = await fetcher({ cfg: d.cfg, env: d.env, fetchImpl: d.fetchImpl, gwOrderId: order.gwOrderId, amountPaise: order.totalPaise });
+    r = await fetcher({ cfg: d.cfg, env: d.env, fetchImpl: d.fetchImpl, store: d.store, now: d.now, gwOrderId: order.gwOrderId, amountPaise: order.totalPaise });
   } catch (e) {
     d.log("gateway_lookup_failed", { orderId, gateway: order.gateway, http: e?.http, reason: e?.reason ?? e?.name });
     return "unknown";
+  }
+  if (!r.paid && r.failed) {
+    if (await d.store.markPaymentFailed(order.id, d.now)) d.log("payment_failed", { orderId: order.id, gateway: order.gateway, status: source });
+    return "failed";
   }
   if (!r.paid) return "pending";
   if (!r.amountOk) {
@@ -246,9 +257,10 @@ async function verify(request, d) {
     d.defer(confirmWithGateway(d, order.id, "verify"));
     return json({ ok: true, status: "verified", orderId: order.id });
   }
-  if (order.gateway === "cashfree") {
+  if (order.gateway === "cashfree" || order.gateway === "phonepe") {
+    // Never the redirect or the popup's word: the Worker asks the gateway itself.
     const st = await confirmWithGateway(d, order.id, "verify");
-    return json({ ok: st === "paid", status: st, orderId: order.id }, st === "paid" || st === "pending" || st === "unknown" ? 200 : 409);
+    return json({ ok: st === "paid", status: st, orderId: order.id }, st === "mismatch" ? 409 : 200);
   }
   throw new HttpError(409, "no_payment_started");
 }
@@ -344,6 +356,51 @@ async function cashfreeWebhook(request, d) {
   }
 }
 
+// ---------- POST /phonepe-webhook ----------
+// PhonePe's SHA header proves the caller knows our webhook username/password, but it does not sign the body.
+// So the body only tells us WHICH order to look at: paid/failed is decided by the Order Status API, after the
+// reply (PhonePe wants a 2xx within 3-5 s). A lookup that cannot decide lets PhonePe's retry try again.
+const PHONEPE_ORDER_EVENTS = new Set(["checkout.order.completed", "checkout.order.failed", "pg.order.completed", "pg.order.failed"]);
+
+async function phonepeWebhook(request, d) {
+  const raw = await readText(request, 256 * 1024);
+  const ok = await verifyPhonePeWebhook(d.env.PHONEPE_WEBHOOK_USERNAME, d.env.PHONEPE_WEBHOOK_PASSWORD, request.headers.get("authorization"));
+  if (!ok) {
+    d.log("webhook_bad_signature", { gateway: "phonepe" });
+    throw new HttpError(401, "bad_signature");
+  }
+  let evt;
+  try {
+    evt = JSON.parse(raw);
+  } catch {
+    throw new HttpError(400, "bad_json");
+  }
+  const type = String(evt?.event || "").slice(0, 60); // "type" is deprecated: PhonePe says use "event"
+  const payload = evt?.payload;
+  const ourId = String(payload?.merchantOrderId || "").slice(0, 63);
+  const key = `pp:${type}:${ourId || `sha:${await sha256Hex(raw)}`}`.slice(0, 150);
+  if (!(await d.store.recordEvent(key, d.now))) {
+    d.log("webhook_duplicate", { gateway: "phonepe", duplicate: true });
+    return json({ ok: true, duplicate: true });
+  }
+  const order = ourId ? await d.store.getOrder(ourId) : null;
+  if (!order || order.gateway !== "phonepe") {
+    d.log("webhook_ignored", { gateway: "phonepe", event: type, reason: "unknown_order" });
+    return json({ ok: true, ignored: true });
+  }
+  if (!PHONEPE_ORDER_EVENTS.has(type)) {
+    d.log("webhook_ignored", { orderId: order.id, gateway: "phonepe", event: type });
+    return json({ ok: true, ignored: true });
+  }
+  d.defer((async () => {
+    const st = await confirmWithGateway(d, order.id, "webhook");
+    d.log("webhook_checked", { orderId: order.id, gateway: "phonepe", event: type, status: st });
+    // Not settled either way: forget the event so PhonePe's retry (or the 15-min reconcile) decides later.
+    if (st === "unknown" || st === "pending") await d.store.forgetEvent(key);
+  })());
+  return json({ ok: true });
+}
+
 // ---------- scheduled(): Shiprocket retries + reconcile ----------
 export async function runScheduled(d) {
   const out = { shipments: {}, reconciled: {} };
@@ -364,7 +421,8 @@ export async function runScheduled(d) {
         throttleKey: `uncaptured:${o.id}`, throttleMs: 24 * 3600 * 1000,
       }));
     }
-    if (st === "pending" && age > d.cfg.expireAfterMs) await d.store.markExpired(o.id, d.now);
+    // failed (PhonePe reports a FAILED order) expires too, so old dead orders never crowd the 10-per-run reconcile
+    if ((st === "pending" || st === "failed") && age > d.cfg.expireAfterMs) await d.store.markExpired(o.id, d.now);
   }
   d.log("scheduled_done", { count: Object.values(out.shipments).reduce((a, b) => a + b, 0) });
   return out;
@@ -421,13 +479,14 @@ export function createWorker(overrides = {}) {
       try {
         if (route === "/health" && request.method === "GET") {
           const g = checkoutGuard(d.cfg, env);
-          return reply(json({ ok: true, mode: d.cfg.rawMode, checkout: g.ok ? "enabled" : "disabled", reason: g.ok ? undefined : g.code }));
+          return reply(json({ ok: true, mode: d.cfg.rawMode, checkout: g.ok ? "enabled" : "disabled", reason: g.ok ? undefined : g.code, gateways: d.cfg.gatewayOrder }));
         }
         if (request.method !== "POST") return reply(json({ ok: false, error: "not_found" }, 404));
         if (route === "/create-order") return reply(await createOrder(request, d));
         if (route === "/verify") return reply(await verify(request, d));
         if (route === "/razorpay-webhook") return await razorpayWebhook(request, d);
         if (route === "/cashfree-webhook") return await cashfreeWebhook(request, d);
+        if (route === "/phonepe-webhook") return await phonepeWebhook(request, d);
         return json({ ok: false, error: "not_found" }, 404);
       } catch (e) {
         if (e instanceof HttpError) return reply(json({ ok: false, error: e.code, ...e.extra }, e.status));
