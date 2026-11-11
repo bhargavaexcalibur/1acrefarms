@@ -6,8 +6,12 @@
                                            # policies.html "Last updated", the full site build, one commit on this branch;
                                            # then it PRINTS the deploy / merge / push commands for a human to run
     python3 tools/switch_on.py --offline   # skip the two network checks (wrangler secret names, the Worker's /health)
+    python3 tools/switch_on.py --set-licence=<14 digits>
+                                           # GRANT DAY step 1: writes the granted number into tools/build_pages.py, the
+                                           # wrangler.toml [vars] line, the index.html footer and policies.html (row +
+                                           # footer). It never sets FSSAI_ECOM_KOB_ENDORSED (a deliberate hand edit).
 
-What it never does: push, deploy, edit checkout-worker/wrangler.toml, or set or print a secret. Cloudflare is asked for
+What it never does: push, deploy, set or print a secret, or touch wrangler.toml beyond that one FSSAI_ECOM_LIC line. Cloudflare is asked for
 secret NAMES only (`npx wrangler@4 secret list`), and the Worker's public /health for its mode.
 The owner's steps around it, and the rollback: docs/marketing/checkout-plan/switch-on-runbook.md (local, not in git).
 
@@ -257,6 +261,60 @@ def report():
 
 
 # ---------------------------------------------------------------------------------------------------------------------
+def set_licence(lic):
+    """Grant day, step 1: write the granted licence number everywhere it must appear, in one go:
+    tools/build_pages.py FSSAI_ECOM_LIC, checkout-worker/wrangler.toml [vars] FSSAI_ECOM_LIC, and the hand-written
+    index.html footer and policies.html (seller table row + footer), exactly as their GRANT DAY comments say.
+    It does NOT set FSSAI_ECOM_KOB_ENDORSED: that stays a deliberate hand edit after reading the licence itself."""
+    if not re.fullmatch(r"\d{14}", lic):
+        sys.exit(f"--set-licence: {lic!r} is not 14 digits")
+    src = BUILD_PAGES.read_text(encoding="utf-8")
+    reg = (py_const(src, "FSSAI_REG") or "20126161000590").strip('"\'')
+    if lic == reg:
+        sys.exit("--set-licence: that is the packing unit's Registration No., not the Central licence")
+    label = (py_const(src, "FSSAI_ECOM_LIC_LABEL") or "FSSAI Lic. No.").strip('"\'')
+    new, n = re.subn(r'^FSSAI_ECOM_LIC = "[^"]*"', f'FSSAI_ECOM_LIC = "{lic}"', src, count=1, flags=re.M)
+    if n != 1:
+        sys.exit("--set-licence: no 'FSSAI_ECOM_LIC = \"...\"' line in tools/build_pages.py")
+    changed = ["tools/build_pages.py"]
+    BUILD_PAGES.write_text(new, encoding="utf-8")
+
+    toml = WORKER / "wrangler.toml"
+    if toml.exists():
+        t = toml.read_text(encoding="utf-8")
+        t2, n = re.subn(r'^#?\s*FSSAI_ECOM_LIC\s*=\s*"[^"]*"', f'FSSAI_ECOM_LIC = "{lic}"', t, count=1, flags=re.M)
+        if n == 0:
+            t2 = re.sub(r"^\[vars\]\s*$", f'[vars]\nFSSAI_ECOM_LIC = "{lic}"', t, count=1, flags=re.M)
+        if t2 != t:
+            toml.write_text(t2, encoding="utf-8")
+            changed.append("checkout-worker/wrangler.toml (not in git)")
+
+    idx = ROOT / "index.html"
+    t = idx.read_text(encoding="utf-8")
+    if lic not in t:
+        old = f"FSSAI Reg. No. {reg} &middot; Made in India</p>"
+        if t.count(old) != 1:
+            sys.exit("--set-licence: index.html footer line not found as expected; edit it by hand (GRANT DAY comment)")
+        t = t.replace(old, f"FSSAI Reg. No. (packing unit) {reg} &middot; {label} {lic} &middot; Made in India</p>")
+        idx.write_text(t, encoding="utf-8")
+        changed.append("index.html")
+
+    pol = ROOT / "policies.html"
+    t = pol.read_text(encoding="utf-8")
+    if lic not in t:
+        row = f'<tr><th scope="row">FSSAI</th><td>Registration No. {reg}</td></tr>'
+        foot = f"FSSAI Reg. No. {reg} · Made in India</p>"
+        if t.count(row) != 1 or t.count(foot) != 1:
+            sys.exit("--set-licence: policies.html seller row or footer not found as expected; edit by hand (GRANT DAY comments)")
+        t = t.replace(row, row.replace(f"Registration No. {reg}", f"Registration No. {reg} (packing unit)")
+                      + f'\n        <tr><th scope="row">{label}</th><td>{lic} (FSSAI Central licence, Shop No. 7)</td></tr>')
+        t = t.replace(foot, f"FSSAI Reg. No. (packing unit) {reg} · {label} {lic} · Made in India</p>")
+        pol.write_text(t, encoding="utf-8")
+        changed.append("policies.html")
+    print("Licence written to: " + ", ".join(changed) + ".\nNext: read the licence; only if it lists E-commerce, set "
+          'FSSAI_ECOM_KOB_ENDORSED = "yes" in checkout-worker/wrangler.toml [vars]. Then run tools/switch_on.py (dry run).')
+
+# ---------------------------------------------------------------------------------------------------------------------
 def apply(url):
     src = BUILD_PAGES.read_text(encoding="utf-8")
     new, n = re.subn(r"^CHECKOUT_LIVE = False$", "CHECKOUT_LIVE = True", src, count=1, flags=re.M)
@@ -325,6 +383,10 @@ and in checkout-worker/wrangler.toml GATEWAY_ORDER = "none", then npx wrangler@4
 
 
 def main():
+    sets = [a for a in sys.argv[1:] if a.startswith("--set-licence=")]
+    if sets:
+        set_licence(sets[0].split("=", 1)[1].strip())
+        return
     args = set(sys.argv[1:])
     unknown = args - {"--apply", "--offline"}
     if unknown:
