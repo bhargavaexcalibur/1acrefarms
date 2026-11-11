@@ -108,7 +108,7 @@ def ecom_lic_line():
 #                          /checkout/ becomes indexable and goes into sitemap.xml. Amazon.in stays on every page.
 #   main() refuses True while both FSSAI_ECOM_LIC and PRE_GRANT_OWNER_GO are empty. Rollback = False, run this build, push (and in the Worker,
 #   GATEWAY_ORDER = "none"): see docs/marketing/checkout-plan/switch-on-runbook.md.
-CHECKOUT_LIVE = False
+CHECKOUT_LIVE = True
 
 # What can be ordered here and at what price: ONE file, shared with the checkout Worker and the checkout page.
 CATALOGUE_JSON = ROOT / "checkout-worker" / "src" / "catalogue.json"
