@@ -936,11 +936,12 @@ def main():
         for fig in sorted(set(re.findall(r"\d+–\d+ (?:working )?days", ship_here()))):
             if fig not in pol:
                 sys.exit(f"Direct-order terms say {fig!r} but policies.html does not: fix checkout-worker/src/seller.js TERMS")
-    build_checkout.hand_written()  # app.js, styles.css, index.html, policies.html follow CHECKOUT_LIVE
     if FSSAI_ECOM_LIC:  # grant day: the hand-written pages must carry the same number (see their GRANT DAY comments)
         stale = [f for f in ("index.html", "policies.html") if FSSAI_ECOM_LIC not in (ROOT / f).read_text(encoding="utf-8")]
         if stale:
             sys.exit(f"FSSAI_ECOM_LIC is set but not yet added by hand to {', '.join(stale)} (see the GRANT DAY comments)")
+    build_checkout.hand_written()  # app.js, styles.css, index.html, policies.html follow CHECKOUT_LIVE (after every check that
+    # can stop the build, so a stopped build never leaves them half switched)
     for p in live:
         out = ROOT / p["slug"] / "index.html"
         out.parent.mkdir(exist_ok=True)
