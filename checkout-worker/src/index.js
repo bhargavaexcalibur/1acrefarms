@@ -185,7 +185,10 @@ async function afterPaid(d, orderId, shipStatus) {
   const parcelNote = order.packs > 3 ? ["Parcel size is an estimate for more than 3 packs: check the box before booking."] : [];
   await sendOwnerAlert(d, {
     subject: `New paid order ${order.id} (Rs ${(order.totalPaise / 100).toFixed(0)})`,
-    lines: [...orderSummary(order), `Shiprocket: ${SHIP_TEXT[ship] || ship}`, `Customer e-mail: ${mailText(mail)}`, ...parcelNote],
+    lines: [
+      "Shani: GST invoice (next 1AF/26-27/ number, make_invoice.py) e-mailed to the buyer + book the courier (Blue Dart/DTDC only, never Delhivery) within 2 h.",
+      ...orderSummary(order), `Shiprocket: ${SHIP_TEXT[ship] || ship}`, `Customer e-mail: ${mailText(mail)}`, ...parcelNote,
+    ],
   });
 }
 
