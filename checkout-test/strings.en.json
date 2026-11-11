@@ -58,7 +58,7 @@
   "sumTotal": {"en": "Total to pay", "note": "summary row label"},
   "sumEmpty": {"en": "Your cart is empty. Add a pack above.", "note": "shown when the cart is empty"},
   "sumMrpOnly": {"en": "You pay the MRP only. Nothing is added at checkout.", "note": "plain fact under the total: the price printed on the pack is all the buyer pays"},
-  "prepaidNote": {"en": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by Razorpay (Cashfree and PhonePe as backups); we never see your card details or UPI PIN.", "note": "payment methods; keep UPI, PIN, Razorpay, Cashfree, PhonePe in Latin letters"},
+  "prepaidNote": {"en": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.", "note": "payment methods; keep UPI and PIN in Latin letters; {gateways} is filled with gateway names such as Razorpay / Cashfree"},
   "deliveryTitle": {"en": "Delivery", "note": "small heading before the delivery terms"},
   "returnsTitle": {"en": "Cancellation, returns and refunds", "note": "small heading before the cancellation and refund terms"},
   "sellerTitle": {"en": "Sold by", "note": "small heading before the seller's legal name and addresses"},

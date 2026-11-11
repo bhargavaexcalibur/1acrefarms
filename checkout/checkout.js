@@ -108,6 +108,10 @@ let busy = false;
 let touched = new Set();
 let pending = null; // { key, data } of the last created order, reused while cart + address are unchanged
 let lastOrderId = null; // quoted in the WhatsApp help message
+const GW_NAMES = { razorpay: "Razorpay", cashfree: "Cashfree", phonepe: "PhonePe" };
+let gateways = ["razorpay"]; // the Worker's /health lists the gateways that are on, in order
+const renderPrepaid = () => document.querySelectorAll('[data-t="prepaidNote"]').forEach((el) =>
+  setText(el, "prepaidNote", { gateways: gateways.map((g) => GW_NAMES[g] || g).join(" / ") }));
 let fssaiLic = null; // the FSSAI licence number, only when the Worker reports a real 14-digit one (/health)
 
 const $ = (id) => document.getElementById(id);
@@ -164,6 +168,7 @@ const newTab = (href, html) => `<a href="${esc(href)}" target="_blank" rel="noop
 function renderStatic() {
   document.title = (PAGE === "test" ? "TEST · " : "") + t("pageTitle");
   document.querySelectorAll("[data-t]").forEach((el) => setText(el, el.dataset.t));
+  renderPrepaid();
   $("backLink").href = HOME;
   $("termsNote").innerHTML = h("terms", { link: newTab(POLICIES_URL, h("termsLink")) });
   $("privacyNote").innerHTML = h("privacyNote", { link: newTab(`${POLICIES_URL}#privacy`, h("privacyLink")) });
@@ -325,6 +330,8 @@ async function checkHealth() {
     // The licence line appears only when the Worker holds a real licence number (never a placeholder).
     const lic = typeof data?.fssaiLic === "string" && isFssaiLicence(data.fssaiLic) ? data.fssaiLic : null;
     if (lic !== fssaiLic) { fssaiLic = lic; renderSeller(); }
+    const gw = Array.isArray(data?.gateways) ? data.gateways.filter((g) => g in GW_NAMES) : [];
+    if (gw.length && gw.join() !== gateways.join()) { gateways = gw; renderPrepaid(); }
   } catch { /* unreachable */ }
   setText(b, key);
   b.classList.toggle("live", liveOn);

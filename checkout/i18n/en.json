@@ -61,7 +61,7 @@
   "sumTotal": "Total to pay",
   "sumEmpty": "Your cart is empty. Add a pack above.",
   "sumMrpOnly": "You pay the MRP only. Nothing is added at checkout.",
-  "prepaidNote": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by Razorpay (Cashfree and PhonePe as backups); we never see your card details or UPI PIN.",
+  "prepaidNote": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
   "deliveryTitle": "Delivery",
   "returnsTitle": "Cancellation, returns and refunds",
   "sellerTitle": "Sold by",
