@@ -26,6 +26,20 @@ export const TEST_ENV = Object.freeze({
   SHIPROCKET_PICKUP_LOCATION: "Home",
   SITE_URL: "https://1acrefarms.co.in",
   PUBLIC_URL: "https://1acrefarms-checkout.example.workers.dev",
+  CUSTOMER_MAIL_FROM: "1acrefarms orders <orders@mail.example.test>",
+});
+
+// Test fixture ONLY, built at runtime: fourteen zeros, the shape of an FSSAI licence number and obviously not one.
+// Never shown anywhere; the real number goes into wrangler.toml only on grant day.
+export const FAKE_TEST_LICENCE = "0".repeat(14);
+
+// Every live-mode gate open (src/config.js checkoutGuard). Tests remove one at a time.
+export const LIVE_ENV = Object.freeze({
+  MODE: "live",
+  LIVE_ENABLED: "yes-owner-approved",
+  RAZORPAY_KEY_ID: "rzp_live_MOCK",
+  FSSAI_ECOM_LIC: FAKE_TEST_LICENCE,
+  FSSAI_ECOM_KOB_ENDORSED: "yes",
 });
 
 export const SECRET_VALUES = [

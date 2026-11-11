@@ -10,7 +10,8 @@
 //   scheduled()             retries Shiprocket pushes, reconciles unpaid orders with the gateways
 //
 // Money only becomes "paid" through storage.markPaid(), which succeeds once per order; whoever wins
-// that transition hands the order to Shiprocket (in ctx.waitUntil, after the reply has gone).
+// that transition hands the order to Shiprocket and e-mails the customer's order confirmation
+// (both in ctx.waitUntil, after the reply has gone).
 import { checkoutGuard, loadConfig } from "./config.js";
 import { HttpError, corsHeaders, fetchWithTimeout, json, readJson, readText, safeJson } from "./http.js";
 import { makeLogger } from "./log.js";
@@ -23,6 +24,8 @@ import { createCashfreeOrder, fetchCashfreePaid, verifyCashfreeWebhook } from ".
 import { createPhonePeOrder, fetchPhonePePaid, verifyPhonePeWebhook } from "./gateways/phonepe.js";
 import { nextRetryDelayMs, pushToShiprocket } from "./shiprocket.js";
 import { orderSummary, sendOwnerAlert } from "./alerts.js";
+import { sendOrderConfirmation } from "./confirmation.js";
+import { expectedDelivery } from "./delivery.js";
 
 const SHIP_LEASE_MS = 2 * 60 * 1000;
 const BASE32 = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"; // Crockford: no I, L, O, U
@@ -119,7 +122,7 @@ async function createOrder(request, d) {
     d.log("gateway_all_failed", { orderId: order.id, count: gw.failures.length, reason: failoverNote(gw.failures) });
     d.defer(sendOwnerAlert(d, {
       subject: "Checkout DOWN: no payment gateway answered",
-      lines: [...gw.failures.map((f) => `${f.gateway}: ${f.reason} (http ${f.http})`), `Last order attempt: ${order.id}. The customer saw "try again or order on WhatsApp".`],
+      lines: [...gw.failures.map((f) => `${f.gateway}: ${f.reason} (http ${f.http})`), `Last order attempt: ${order.id}. The customer saw "try again in a minute, or order from our Amazon.in store".`],
       throttleKey: "gateway_down",
     }));
     throw new HttpError(502, "payment_unavailable", { orderId: order.id });
@@ -158,14 +161,31 @@ const SHIP_TEXT = {
   not_claimed: "another run is sending it to Shiprocket",
 };
 
+const MAIL_TEXT = {
+  sent: "order confirmation sent to the customer",
+  no_sender: "NOT sent: CUSTOMER_MAIL_FROM is not set (README step 10)",
+  no_key: "NOT sent: RESEND_API_KEY is not set",
+  already_sent: "already sent earlier",
+};
+const mailText = (m) => MAIL_TEXT[m.sent ? "sent" : m.reason] || `NOT sent (${m.reason}): send the customer the order details by hand`;
+
 async function afterPaid(d, orderId, shipStatus) {
-  const ship = shipStatus === "pending" ? await shipOrder(d, orderId, d.cfg.shiprocketInlineAttempts) : "skipped";
-  if (ship === "failed") return; // shipOrder already sent the failure alert with the details
+  // Shiprocket and the customer e-mail run side by side, so neither waits for the other's retries.
+  const [ship, mail] = await Promise.all([
+    shipStatus === "pending" ? shipOrder(d, orderId, d.cfg.shiprocketInlineAttempts) : "skipped",
+    d.store.getOrder(orderId).then((o) => sendOrderConfirmation(d, o)),
+  ]);
+  if (ship === "failed") { // shipOrder already sent the failure alert with the details
+    if (!mail.sent && !["no_sender", "no_key", "already_sent"].includes(mail.reason)) {
+      await sendOwnerAlert(d, { subject: `ACTION: send the order confirmation for ${orderId} by hand`, lines: [`Customer e-mail: ${mailText(mail)}.`] });
+    }
+    return;
+  }
   const order = await d.store.getOrder(orderId);
   const parcelNote = order.packs > 3 ? ["Parcel size is an estimate for more than 3 packs: check the box before booking."] : [];
   await sendOwnerAlert(d, {
     subject: `New paid order ${order.id} (Rs ${(order.totalPaise / 100).toFixed(0)})`,
-    lines: [...orderSummary(order), `Shiprocket: ${SHIP_TEXT[ship] || ship}`, ...parcelNote],
+    lines: [...orderSummary(order), `Shiprocket: ${SHIP_TEXT[ship] || ship}`, `Customer e-mail: ${mailText(mail)}`, ...parcelNote],
   });
 }
 
@@ -237,11 +257,17 @@ async function shipOrder(d, orderId, attempts) {
 }
 
 // ---------- POST /verify ----------
+// Expected delivery window for the success page: dates only (no address), from the payment time and the stored PIN/state.
+const deliveryWindow = (d, order) => {
+  const w = expectedDelivery({ paidAt: order.paidAt ?? d.now, pin: order.customer?.pin, state: order.customer?.state });
+  return w ? { from: w.from, to: w.to } : undefined;
+};
+
 async function verify(request, d) {
   const body = await readJson(request, 4096);
   const order = await d.store.getOrder(String(body.orderId || "").slice(0, 40));
   if (!order) throw new HttpError(404, "unknown_order");
-  if (order.status === "paid") return json({ ok: true, status: "paid", orderId: order.id });
+  if (order.status === "paid") return json({ ok: true, status: "paid", orderId: order.id, delivery: deliveryWindow(d, order) });
 
   if (order.gateway === "razorpay") {
     if (body.razorpay_order_id && body.razorpay_order_id !== order.gwOrderId) throw new HttpError(400, "order_mismatch");
@@ -255,12 +281,13 @@ async function verify(request, d) {
     d.log("payment_verified", { orderId: order.id, gateway: "razorpay" });
     // Capture is confirmed by the webhook; this server-side lookup is the belt-and-braces path.
     d.defer(confirmWithGateway(d, order.id, "verify"));
-    return json({ ok: true, status: "verified", orderId: order.id });
+    return json({ ok: true, status: "verified", orderId: order.id, delivery: deliveryWindow(d, order) });
   }
   if (order.gateway === "cashfree" || order.gateway === "phonepe") {
     // Never the redirect or the popup's word: the Worker asks the gateway itself.
     const st = await confirmWithGateway(d, order.id, "verify");
-    return json({ ok: st === "paid", status: st, orderId: order.id }, st === "mismatch" ? 409 : 200);
+    const delivery = st === "paid" ? deliveryWindow(d, (await d.store.getOrder(order.id)) || order) : undefined;
+    return json({ ok: st === "paid", status: st, orderId: order.id, delivery }, st === "mismatch" ? 409 : 200);
   }
   throw new HttpError(409, "no_payment_started");
 }
@@ -479,7 +506,8 @@ export function createWorker(overrides = {}) {
       try {
         if (route === "/health" && request.method === "GET") {
           const g = checkoutGuard(d.cfg, env);
-          return reply(json({ ok: true, mode: d.cfg.rawMode, checkout: g.ok ? "enabled" : "disabled", reason: g.ok ? undefined : g.code, gateways: d.cfg.gatewayOrder }));
+          // fssaiLic: the FSSAI licence number, only when FSSAI_ECOM_LIC holds a real 14-digit number (the page shows it then)
+          return reply(json({ ok: true, mode: d.cfg.rawMode, checkout: g.ok ? "enabled" : "disabled", reason: g.ok ? undefined : g.code, gateways: d.cfg.gatewayOrder, fssaiLic: d.cfg.fssaiEcomLic || undefined }));
         }
         if (request.method !== "POST") return reply(json({ ok: false, error: "not_found" }, 404));
         if (route === "/create-order") return reply(await createOrder(request, d));

@@ -13,25 +13,32 @@ export async function sendOwnerAlert(deps, { subject, lines, throttleKey = null,
     log("alert_skipped", { reason: "no_resend_key" });
     return { sent: false, reason: "no_key" };
   }
+  const r = await postResend(deps, {
+    from: cfg.alertFrom,
+    to: [cfg.alertTo],
+    subject: `[1acrefarms checkout ${cfg.mode.toUpperCase()}] ${subject}`,
+    text: lines.join("\n"),
+  });
+  if (!r.ok) {
+    log("alert_failed", r.http ? { http: r.http } : { reason: r.reason });
+    return { sent: false, reason: r.http ? "http" : "network" };
+  }
+  return { sent: true };
+}
+
+// One POST to Resend (https://api.resend.com/emails). Never throws. -> { ok, http, reason, retryable }
+// Used by the owner alerts above and the customer confirmation (src/confirmation.js).
+export async function postResend({ env, fetchImpl }, payload, { idempotencyKey = null, timeoutMs = 5000 } = {}) {
   try {
+    const headers = { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json" };
+    if (idempotencyKey) headers["idempotency-key"] = idempotencyKey;
     const res = await fetchWithTimeout(fetchImpl, "https://api.resend.com/emails", {
-      method: "POST",
-      headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, "content-type": "application/json" },
-      body: JSON.stringify({
-        from: cfg.alertFrom,
-        to: [cfg.alertTo],
-        subject: `[1acrefarms checkout ${cfg.mode.toUpperCase()}] ${subject}`,
-        text: lines.join("\n"),
-      }),
-    }, 5000);
-    if (!res.ok) {
-      log("alert_failed", { http: res.status });
-      return { sent: false, reason: "http" };
-    }
-    return { sent: true };
+      method: "POST", headers, body: JSON.stringify(payload),
+    }, timeoutMs);
+    if (!res.ok) return { ok: false, http: res.status, reason: "http", retryable: res.status === 429 || res.status >= 500 };
+    return { ok: true, http: res.status };
   } catch (e) {
-    log("alert_failed", { reason: e?.name === "TimeoutError" ? "timeout" : "network" });
-    return { sent: false, reason: "network" };
+    return { ok: false, http: 0, reason: e?.name === "TimeoutError" ? "timeout" : "network", retryable: true };
   }
 }
 

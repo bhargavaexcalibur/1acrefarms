@@ -7,18 +7,27 @@
 
 export const PACK_GRAMS = 540;
 
+// ONE source of truth for what can be ordered: the `sellable` flag. The Worker refuses a pack with sellable:false,
+// and the page (checkout-test/checkout.js) and the Meta catalogue link (src/cart-link.js) list only sellable packs.
+// Switching a pack on or off = changing that one flag on its line below.
+//   CASH  false: parked (not packed yet).
+//   SANN, TEJA  false: held until their stock is counted and real pack photos exist (G12, 11-11-2026).
 // hsn: only codes on record (turmeric 09103030, cane jaggery 17011310, palm jaggery 17029010).
 // Chilli HSN is left blank until the invoice master (ChittaGupta) confirms it; Shiprocket treats hsn as optional.
-// sellable:false = parked, cannot be ordered (cashew).
+// slug: the product page on the site (/{slug}/) with the pack's full details.
 export const CATALOGUE = Object.freeze({
-  TURM: Object.freeze({ name: "Turmeric Powder", mrp: 396, hsn: "09103030", sellable: true }),
-  KPAS: Object.freeze({ name: "Hill Turmeric Powder", mrp: 495, hsn: "09103030", sellable: true }),
-  SANN: Object.freeze({ name: "Sannam Chilli Powder", mrp: 495, hsn: "", sellable: true }),
-  TEJA: Object.freeze({ name: "Teja Chilli Powder", mrp: 495, hsn: "", sellable: true }),
-  CBEL: Object.freeze({ name: "Cane Jaggery", mrp: 234, hsn: "17011310", sellable: true }),
-  TBEL: Object.freeze({ name: "Palm Jaggery", mrp: 495, hsn: "17029010", sellable: true }),
-  CASH: Object.freeze({ name: "Cashew Kernels", mrp: 891, hsn: "", sellable: false }),
+  TURM: Object.freeze({ name: "Turmeric Powder", mrp: 396, hsn: "09103030", slug: "turmeric-powder", sellable: true }),
+  KPAS: Object.freeze({ name: "Hill Turmeric Powder", mrp: 495, hsn: "09103030", slug: "hill-turmeric-powder", sellable: true }),
+  SANN: Object.freeze({ name: "Sannam Chilli Powder", mrp: 495, hsn: "", slug: "sannam-chilli-powder", sellable: false }),
+  TEJA: Object.freeze({ name: "Teja Chilli Powder", mrp: 495, hsn: "", slug: "teja-chilli-powder", sellable: false }),
+  CBEL: Object.freeze({ name: "Cane Jaggery", mrp: 234, hsn: "17011310", slug: "cane-jaggery", sellable: true }),
+  TBEL: Object.freeze({ name: "Palm Jaggery", mrp: 495, hsn: "17029010", slug: "palm-jaggery", sellable: true }),
+  CASH: Object.freeze({ name: "Cashew Kernels", mrp: 891, hsn: "", slug: "cashew-kernels", sellable: false }),
 });
+
+// GST rate inside the MRP, for every pack above: 5% (invoices 1AF/26-27/0001-0003 at CGST 2.5% + SGST 2.5%, the MRP
+// sheet and the Amazon listings all agree). Used only to SHOW the tax inside the MRP (src/gst.js); prices never change.
+export const GST_PCT = 5;
 
 export const skuOf = (code) => `1AF-${code}-${String(PACK_GRAMS).padStart(4, "0")}`;
 
@@ -131,3 +140,10 @@ export function parcelFor(packs) {
 }
 
 export const rupees = (paise) => paise / 100;
+
+// Unit sale price (LM Rules r.6(11)(i): per gram below 1 kg, rounded to 2 decimals), in paise per gram:
+// TURM 396 / 540 g = 73 (Rs 0.73 per g), KPAS 92, CBEL 43, TBEL 92. Same figures as the product pages (build_pages.py).
+export function unitPaisePerGram(mrpRupees, grams = PACK_GRAMS) {
+  if (!Number.isInteger(mrpRupees) || mrpRupees < 0 || !Number.isInteger(grams) || grams < 1) throw new Error("unitPaisePerGram: bad input");
+  return Math.floor((2 * mrpRupees * 100 + grams) / (2 * grams)); // half-up, integer maths
+}

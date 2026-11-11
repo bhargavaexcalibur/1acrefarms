@@ -23,7 +23,8 @@ export function createMockGateways() {
     },
     // queue of outcomes for successive adhoc creates: "ok" | "timeout" | <http status>; empty = "ok"
     shiprocket: { queue: [], created: new Map(), logins: 0, n: 0, gate: null, loginStatus: 200 },
-    resend: { sent: [] },
+    // fail: optional (body) => <http status> | "network" | null, to make Resend refuse some mails; failed mails are not in `sent`
+    resend: { sent: [], failed: [], fail: null },
     turnstile: { success: true },
   };
 
@@ -158,7 +159,11 @@ export function createMockGateways() {
 
     // ---------------- Resend ----------------
     if (url.host === "api.resend.com" && url.pathname === "/emails") {
-      state.resend.sent.push(body);
+      if (!headers.get("authorization")?.startsWith("Bearer ")) return reply(401, { name: "missing_api_key" });
+      const failWith = state.resend.fail ? state.resend.fail(body) : null;
+      if (failWith === "network") { state.resend.failed.push(body); throw new TypeError("fetch failed"); }
+      if (typeof failWith === "number") { state.resend.failed.push(body); return reply(failWith, { name: "mock_error" }); }
+      state.resend.sent.push({ ...body, idempotencyKey: headers.get("idempotency-key") });
       return reply(200, { id: `email_${state.resend.sent.length}` });
     }
 

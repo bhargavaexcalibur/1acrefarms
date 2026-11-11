@@ -11,8 +11,29 @@ Worker asks Razorpay, Cashfree or PhonePe for. The PIN is still checked (valid I
 refused, PIN vs state) so Shiprocket gets a deliverable address.
 
 **Live mode is hard-disabled.** `MODE` defaults to `test`. With `MODE = "live"`, every new order is refused
-unless the secret `LIVE_ENABLED` is exactly `yes-owner-approved`. A live Razorpay key in test mode is refused
-too. Do not flip either until Shiva confirms the licence/legal check and Bhargava says go.
+unless ALL of these hold (each missing piece has its own refusal code, shown by `/health` as `reason`):
+
+| Gate | Refusal code when missing |
+|---|---|
+| secret `LIVE_ENABLED` is exactly `yes-owner-approved` (Bhargava's go) | `live_not_approved` |
+| var `FSSAI_ECOM_LIC` is the granted FSSAI Central licence number: exactly 14 digits, not our Reg. No. | `no_fssai_ecom_licence` |
+| var `FSSAI_ECOM_KOB_ENDORSED` is exactly `yes`: set by hand only when that licence shows the **E-commerce** kind of business (a licence can be granted first without it and gain it later by a Form C modification) | `fssai_ecom_kob_not_endorsed` |
+| `RAZORPAY_KEY_ID` is a live key (`rzp_live_...`) | `test_key_in_live_mode` |
+
+A live Razorpay key in test mode is refused too (`live_key_in_test_mode`). Do not set any of these until Shiva
+confirms the licence/legal check and Bhargava says go. Never put a placeholder or a number that is not yet granted in
+`FSSAI_ECOM_LIC`: when it holds a valid number, the checkout page and the order e-mail show it as "FSSAI Lic. No.".
+
+**What the buyer sees before paying** (all from one file, `src/seller.js`, shared with the order e-mail): each pack
+as "540 g · MRP ₹396 (incl. of all taxes) · ₹0.73 per g · Pack details" (link to the product page); the GST inside
+the MRP (CGST 2.5% + SGST 2.5% for Andhra Pradesh, IGST 5% elsewhere, the rate only until a state is chosen); "Delivery
+₹0 (free across India)"; the total; the delivery and returns terms; and the seller block (legal name, shop and
+packing-unit addresses, GSTIN, FSSAI Reg. No., customer care and grievance officer, link to policies.html), again in
+the page footer. After paying: the expected delivery window, and a confirmation e-mail.
+
+**What can be ordered** is one flag per pack, `sellable` in `src/pricing.js` `CATALOGUE`. Today: turmeric, hill
+turmeric, cane jaggery, palm jaggery. Sannam and Teja are held (stock count and real pack photos first) and cashew is
+parked. Switching a pack on = changing that one flag; the page, the Worker and the Meta link all follow.
 
 ```
 browser (/checkout-test/)            Worker (workers.dev)                         outside
@@ -34,12 +55,17 @@ browser (/checkout-test/)            Worker (workers.dev)                       
 |---|---|
 | `src/index.js` | Routes, failover chain, the single "paid" hand-off, `scheduled()` |
 | `src/config.js` | MODE / LIVE_ENABLED guard, `GATEWAY_ORDER`, all settings |
-| `src/pricing.js` | **The only price list** (MRPs; `DELIVERY_FEE_RUPEES = 0`), PIN table, parcel sizes (also used by the page) |
+| `src/pricing.js` | **The only price list** (MRPs; `DELIVERY_FEE_RUPEES = 0`), what is `sellable`, product-page slugs, GST rate, unit price per g, PIN table, parcel sizes (also used by the page) |
+| `src/gst.js` | GST inside the MRP, for display: per unit CGST = SGST = MRP/42 (Andhra Pradesh) or IGST = MRP/21, then x qty (our invoice method) |
+| `src/seller.js` | Legal name, both addresses (labels in one place), GSTIN, FSSAI Reg. No., customer care / grievance officer, Amazon.in store link, short delivery / returns / privacy terms (page + e-mail) |
+| `src/delivery.js` | Expected delivery window: dispatch 1–2 working days + 1–3 / 3–5 / 4–10 days by area (Sundays not counted, IST) |
+| `src/confirmation.js` | The customer's order-confirmation e-mail (Resend), once per paid order |
+| `src/cart-link.js` | Meta catalogue link `?products=SKU%3Aqty,...` -> cart (used by the page) |
 | `src/validate.js` | Address-form rules (also used by the page) |
 | `src/gateways/razorpay.js`, `cashfree.js`, `phonepe.js` | Create order, look up payment, signature checks (PhonePe: OAuth token cache too) |
 | `src/shiprocket.js` | Token cache (9 days), adhoc order, retry rules |
 | `src/storage/d1.js`, `memory.js` | Same interface: D1 in production, memory in tests |
-| `src/alerts.js`, `src/log.js` | Owner e-mails (Resend); logs that cannot carry phones, addresses or secrets |
+| `src/alerts.js`, `src/log.js` | Owner e-mails and the shared Resend call; logs that cannot carry phones, addresses, e-mails or secrets |
 | `schema.sql` | D1 tables: `orders` (with `gateway` + `gw_failover`: who took the order and who failed first), `webhook_events`, `kv`, `stock` |
 
 ## Run the tests and the smoke run (no accounts needed)
@@ -82,10 +108,12 @@ UAT keys for that (step 9).
    npx wrangler secret put SHIPROCKET_API_PASSWORD  # the API user's password (shown once by Shiprocket)
    npx wrangler secret put RESEND_API_KEY           # resend.com > API Keys (sending access)
    ```
-   Optional: `TURNSTILE_SECRET_KEY` (with `TURNSTILE_REQUIRED = "true"`). Set `LIVE_ENABLED` only at go-live.
+   Optional: `TURNSTILE_SECRET_KEY` (with `TURNSTILE_REQUIRED = "true"`). Set `LIVE_ENABLED` only at go-live
+   (see "Go-live gates" below).
 6. `npx wrangler deploy`. Copy the printed URL (https://1acrefarms-checkout.<name>.workers.dev) into
    `PUBLIC_URL` in `wrangler.toml` and into `<meta name="checkout-api">` in `checkout-test/index.html`, then deploy again.
-   Check that `https://<url>/health` returns `{"ok":true,"mode":"test","checkout":"enabled","gateways":["razorpay","cashfree","phonepe"]}`.
+   Check that `https://<url>/health` returns `{"ok":true,"mode":"test","checkout":"enabled","gateways":["razorpay","cashfree","phonepe"]}`
+   (plus `"fssaiLic"` only once `FSSAI_ECOM_LIC` holds the granted number).
 7. **Webhook URLs**:
    - **Razorpay** (Test Mode on), Account & Settings > Webhooks > Add new webhook:
      - URL: `https://<url>/razorpay-webhook`
@@ -111,19 +139,54 @@ UAT keys for that (step 9).
 9. Optional, for local work with real TEST keys: put the same names in `checkout-worker/.dev.vars` (gitignored)
    with `DEV_ORIGINS="http://localhost:4321"` and `SITE_URL="http://localhost:4321"` (so PhonePe and Cashfree send the
    customer back to the local page), run `npx wrangler dev`, and open the page from `python3 -m http.server 4321`.
+10. **Customer order-confirmation e-mail** (sent once per paid order, to the e-mail the buyer typed):
+    - In Resend > Domains, add a sending domain (e.g. a subdomain of 1acrefarms.co.in) and add the DNS records Resend
+      shows at GoDaddy. Resend's `onboarding@resend.dev` sender can only reach the Resend account owner, so buyers get
+      nothing until a domain is verified.
+    - In that domain's settings keep **open tracking and click tracking OFF** (the e-mail must carry no tracking).
+    - In `wrangler.toml` [vars] set `CUSTOMER_MAIL_FROM` to an address on that domain (e.g.
+      `"1acrefarms <orders@your-verified-domain>"`) and, if wanted, `CUSTOMER_MAIL_REPLY_TO` (default
+      1acrefarmsindia@gmail.com). Deploy. Until `CUSTOMER_MAIL_FROM` is set, no customer e-mail is sent and each
+      "New paid order" owner alert says so.
+    - The same `RESEND_API_KEY` (step 5) is used. Owner alerts keep `ALERT_FROM`.
+
+## Go-live gates (set on the day, by hand; never before)
+
+In `wrangler.toml` [vars] (plain values, not secrets; see `wrangler.toml.example`):
+
+| Var | Set it when | Value |
+|---|---|---|
+| `FSSAI_ECOM_LIC` | FoSCoS shows the FSSAI Central licence **granted** | the 14-digit licence number, nothing else. Empty / unset until then. |
+| `FSSAI_ECOM_KOB_ENDORSED` | the granted licence lists the **E-commerce** kind of business (check the licence copy; if it was granted without it, wait for the Form C modification) | `yes` |
+| `MODE` | everything below is true and Bhargava says go | `live` |
+
+Then `npx wrangler secret put LIVE_ENABLED` with `yes-owner-approved`, a live `RAZORPAY_KEY_ID`, and deploy.
+`/health` must show `"checkout":"enabled"`; any other answer names the missing gate in `reason`.
 
 ## Test-mode checklist (all in TEST / SANDBOX; no real money)
 
 1. `/health` shows mode test and checkout enabled.
 2. Open `https://1acrefarms.co.in/checkout-test/` (hidden, noindex). The yellow TEST MODE banner shows.
 3. No delivery fee anywhere: one cane jaggery shows Rs 234 to 522601 and Rs 234 to 110001; two turmeric + one cane
-   shows Rs 1,026. The summary says "Free delivery across India" and has no fee line. In D1, `delivery_paise = 0` and
-   `total_paise` = the sum of the MRPs.
+   shows Rs 1,026. The summary shows "Delivery ₹0 (free across India)" and the total stays the sum of the MRPs. In D1,
+   `delivery_paise = 0` and `total_paise` = the sum of the MRPs.
+   - GST line: no state chosen = "GST included in the MRP (5%)"; Andhra Pradesh, 2 turmeric + 1 cane = "₹48.86 (CGST
+     2.5% ₹24.43 + SGST 2.5% ₹24.43)"; Delhi, the same cart = "₹48.86 (IGST 5%)". The total does not change.
+   - Each pack line has "₹… per g" and a "Pack details" link that opens the product page. Sannam, Teja and cashew are
+     not listed.
+   - Before the Pay button and in the footer: legal name, both addresses, GSTIN, FSSAI Reg. No. (no licence line until
+     `FSSAI_ECOM_LIC` is set), customer care and grievance officer, delivery and returns terms, policies link. Under
+     the address form: the privacy note with its link.
+   - Meta link: open `/checkout-test/?products=1AF-TURM-0540%3A2,1AF-SANN-0540%3A1`: the cart is 2 turmeric, and a
+     note says 1AF-SANN-0540 was not added.
 4. Pay with Razorpay test UPI or card (e.g. Visa 4100 2800 0000 1007, any CVV, a future date) and get the success
-   state. In D1, `status = paid` and `paid_source = webhook` or `verify`. **This also proves the Razorpay webhook
+   state, with "Expected delivery between … and …". In D1, `status = paid` and `paid_source = webhook` or `verify`.
+   With step 10 done, one "[TEST] Your 1acrefarms order …" e-mail reaches the address typed in the form (use your
+   own), with the packs, GST, total, delivery window, cancel/returns, grievance contact and seller details. **This also proves the Razorpay webhook
    reaches workers.dev** (Cloudflare's Browser Integrity Check is the known risk). If only `verify` or `reconcile`
    ever appears, the webhook is being blocked: look at Razorpay > Webhooks > the delivery log.
-5. Failure path: use Razorpay's failure test option. The page shows "Payment did not go through", and D1 shows `failed`.
+5. Failure path: use Razorpay's failure test option. The page shows "Payment did not go through" with "Try again",
+   "Our Amazon.in store" and "Help on WhatsApp" (help only: no order message), and D1 shows `failed`.
 6. **One real Shiprocket test order:**
    - Set `SHIPROCKET_PUSH = "on"`, deploy, and pay once.
    - The order appears in Shiprocket with our order id, Prepaid, the right weight and pickup.
@@ -158,7 +221,7 @@ npx wrangler d1 execute 1acrefarms-checkout --remote --command \
 
 | Field | Values |
 |---|---|
-| `status` | `new`, then `created` (gateway order made), then `verified` (Razorpay checkout signature OK), then `paid` (capture confirmed). Other values: `failed` (can still turn `paid`), `expired` (unpaid after 24 h; a late payment still counts), `gateway_error` (every gateway in `GATEWAY_ORDER` failed; the buyer saw "try again or order on WhatsApp"; it can never turn paid), `amount_mismatch` (needs a human; never shipped). |
+| `status` | `new`, then `created` (gateway order made), then `verified` (Razorpay checkout signature OK), then `paid` (capture confirmed). Other values: `failed` (can still turn `paid`), `expired` (unpaid after 24 h; a late payment still counts), `gateway_error` (every gateway in `GATEWAY_ORDER` failed; the buyer saw "try again in a minute, or order from our Amazon.in store"; it can never turn paid), `amount_mismatch` (needs a human; never shipped). |
 | `gateway` | `razorpay`, `cashfree` or `phonepe`: the gateway that took the order |
 | `gw_failover` | empty when the first gateway took it; else the ones that failed first, e.g. `razorpay:server_error:503,cashfree:timeout:0` |
 | `ship_status` | `skipped` (push off), `pending`, `pushing` (2-minute lease), `retry` (after 15 min, 30 min, 1 h ... up to 8 attempts), `pushed`, `failed` (e-mail: "book by hand") |
@@ -191,12 +254,25 @@ can never book twice.
   proven in test step 4. If webhooks are blocked, the 15-minute reconcile still marks the order paid.
 - The `stock` table is read at checkout (a row with qty 0 blocks a pack), but nothing fills it yet. The nightly sync
   from the Stock tab is not built.
-- English only. Every visible string is in `STRINGS.en` in `checkout-test/checkout.js`, ready for the 22 languages.
+- English only. Every visible string is in `STRINGS.en` in `checkout-test/checkout.js`, ready for the 22 languages
+  (the delivery / returns / privacy / grievance texts come from `src/seller.js` `TERMS`; the address labels are in
+  `src/seller.js` `ADDRESS_LABELS`). The order e-mail is English only.
+- Expected delivery dates skip Sundays but do not know public holidays (policies.html already says festival rush and
+  remote areas can add days). PIN 522xxx covers Guntur and Palnadu but also part of Bapatla district, so it gets the
+  wider 1–5 days, never a 1–3 promise. A state that contradicts the PIN gets the wider of the two areas.
+- GST break-up: CGST/SGST follows invoices 0001-0003; the IGST rounding (MRP/21 per unit, then x qty) has no invoice
+  yet and is to be confirmed by ChittaGupta before the first inter-state invoice.
+- The packing-unit address label ("Packing unit (as printed on the pack)") is provisional, to be settled after the
+  12-11 FSSAI filing: change `ADDRESS_LABELS` in `src/seller.js`.
+- The customer e-mail is tried twice (Resend 429/5xx/network) at the moment of payment; if it still fails, the owner
+  alert says "send the customer the order details by hand". There is no later retry.
+- Meta catalogue link: the products in the link replace the saved cart (only when at least one can be ordered).
 - PhonePe is a full-page redirect: after a failed or abandoned PhonePe payment the cart and PIN are still there,
   but name, phone and address must be typed again (the page never stores them on the device).
 - The PhonePe and Cashfree return URLs point at `/checkout-test/`. At go-live they must point at the real checkout
   page (one line each in `src/gateways/phonepe.js` and `cashfree.js`).
-- `policies.html` (origin/main) still names Razorpay with Cashfree as backup and still says free delivery from
-  Rs 990. Both need the policies session: PhonePe as a payment processor, and free delivery on every order.
-- No customer confirmation e-mail yet (Resend needs a verified sending domain at GoDaddy first). Owner alerts only.
+- `policies.html` on main (11-11) has free delivery on every order and names Razorpay, Cashfree and PhonePe, but its
+  "How to order" line still says "pay online through Razorpay", and it says direct orders are not open yet. Its
+  "delivery date we gave you" now has a date: the success page and the order e-mail give the expected window. The
+  worktree's own `policies.html` is stale (fee table); never copy it to main.
 - Data retention: customer rows stay in D1 until a retention job is added. GST needs 72 months of invoices, not addresses.

@@ -26,6 +26,7 @@
 
     <section class="co-card" aria-labelledby="packsH">
       <h2 id="packsH"><span class="co-step">1</span> <span data-t="packsTitle"></span></h2>
+      <p class="co-note co-linknote" id="linkNote" role="status" hidden></p>
       <ul class="co-packs" id="packList"></ul>
     </section>
 
@@ -72,18 +73,24 @@
           </div>
         </div>
       </form>
+      <p class="co-note" id="privacyNote"></p>
     </section>
 
     <section class="co-card" aria-labelledby="sumH">
       <h2 id="sumH"><span class="co-step">3</span> <span data-t="summaryTitle"></span></h2>
       <div class="co-sum" id="summary"></div>
       <p class="co-note" data-t="prepaidNote"></p>
+      <!-- Delivery, returns and the seller (legal name, both addresses, GSTIN, FSSAI, customer care and grievance
+           officer), before the Pay button. Filled by checkout.js from checkout-worker/src/seller.js. -->
+      <div class="co-terms" id="sellerTerms"></div>
       <p class="co-note" id="termsNote"></p>
       <button class="btn btn-green btn-block co-pay" id="payBtn" type="button" disabled></button>
       <div class="co-status" id="status" role="status" aria-live="polite" hidden></div>
     </section>
   </main>
-  <noscript><p class="co">This checkout needs JavaScript. Please order on WhatsApp: +91 78999 29779.</p></noscript>
+  <!-- Seller details again, as the page footer (same source as the block above). -->
+  <footer class="co co-foot" id="sellerFoot"></footer>
+  <noscript><p class="co">This checkout needs JavaScript. Please order from our Amazon.in store: <a href="https://www.amazon.in/stores/page/50DF04FC-8BF5-4F2F-97C2-371C2DEB0A29">amazon.in/stores/1acrefarms</a>. For help: WhatsApp or call +91 78999 29779, or e-mail 1acrefarmsindia@gmail.com. Seller details and policies: <a href="/policies.html">1acrefarms.co.in/policies.html</a>.</p></noscript>
   <script type="module" src="checkout.js"></script>
 </body>
 </html>

@@ -2,12 +2,20 @@
 //
 // LIVE MODE IS HARD-DISABLED BY DEFAULT.
 //   MODE unset or "test"  -> test mode: Razorpay test keys only (rzp_test_...), Cashfree sandbox, PhonePe UAT.
-//   MODE = "live"         -> refuses every new order unless the secret LIVE_ENABLED is exactly
-//                            "yes-owner-approved" (set by Bhargava after the licence/legal check), and
-//                            the Razorpay key is a live key.
+//   MODE = "live"         -> refuses every new order unless ALL of these hold:
+//                            - the secret LIVE_ENABLED is exactly "yes-owner-approved" (Bhargava's go);
+//                            - FSSAI_ECOM_LIC is the granted FSSAI Central licence number: exactly 14 digits
+//                              (and not our packing-unit Reg. No.);
+//                            - FSSAI_ECOM_KOB_ENDORSED is exactly "yes", set by hand only when that licence shows
+//                              the E-commerce kind of business (it can be granted first without it and gain it
+//                              later by a Form C modification, so a licence number alone is not enough);
+//                            - the Razorpay key is a live key.
+//                            Each missing piece has its own refusal code (see checkoutGuard).
 //   Any other MODE value  -> refuses every new order (fail closed).
 // Webhooks, /verify and the scheduled job keep working in every mode: they only record payments that
 // already happened, so a payment is never lost.
+
+import { isFssaiLicence } from "./seller.js";
 
 export const LIVE_APPROVAL = "yes-owner-approved";
 
@@ -49,6 +57,9 @@ export function loadConfig(env = {}) {
     mode,
     rawMode,
     liveApproved: env.LIVE_ENABLED === LIVE_APPROVAL,
+    // The FSSAI Central licence number: shown at checkout and in the e-mail ONLY when it is a real 14-digit number.
+    fssaiEcomLic: isFssaiLicence(env.FSSAI_ECOM_LIC) ? env.FSSAI_ECOM_LIC : null,
+    fssaiEcomKobEndorsed: env.FSSAI_ECOM_KOB_ENDORSED === "yes",
     allowedOrigins: Object.freeze([...ALLOWED_ORIGINS, ...devOrigins]),
 
     gatewayOrder: parseGatewayOrder(env.GATEWAY_ORDER),
@@ -82,6 +93,10 @@ export function loadConfig(env = {}) {
 
     alertTo: env.ALERT_TO || "1acrefarmsindia@gmail.com",
     alertFrom: env.ALERT_FROM || "1acrefarms checkout <onboarding@resend.dev>",
+    // Customer order confirmation (src/confirmation.js). Not sent until CUSTOMER_MAIL_FROM is set to an address on a
+    // domain verified in Resend (Resend's onboarding@resend.dev sender can only reach the account owner).
+    customerMailFrom: String(env.CUSTOMER_MAIL_FROM || "").trim() || null,
+    customerMailReplyTo: String(env.CUSTOMER_MAIL_REPLY_TO || "").trim() || "1acrefarmsindia@gmail.com",
 
     orderPrefix: live ? "1AF-W-" : "1AF-T-",
     reconcileAfterMs: int(env.RECONCILE_AFTER_MS, 10 * 60 * 1000),
@@ -96,6 +111,8 @@ export function checkoutGuard(cfg, env = {}) {
   if (!cfg.gatewayOrder.length) return { ok: false, code: "no_gateway" };
   if (cfg.mode === "live") {
     if (!cfg.liveApproved) return { ok: false, code: "live_not_approved" };
+    if (!cfg.fssaiEcomLic) return { ok: false, code: "no_fssai_ecom_licence" };
+    if (!cfg.fssaiEcomKobEndorsed) return { ok: false, code: "fssai_ecom_kob_not_endorsed" };
     if (key && !key.startsWith("rzp_live_")) return { ok: false, code: "test_key_in_live_mode" };
     return { ok: true };
   }

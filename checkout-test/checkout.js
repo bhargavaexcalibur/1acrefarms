@@ -1,15 +1,22 @@
 // 1acrefarms checkout (hidden TEST page). Clean rewrite; ideas from the old WhatsApp cart (app.js at e2d48352^):
-// localStorage cart, live delivery line, itemised WhatsApp message as the fallback.
+// localStorage cart and a live summary. When the checkout cannot take an order, buyers are pointed to our Amazon.in
+// store; WhatsApp is offered for help only (direct WhatsApp orders are not open, policies.html #order).
 //
-// Prices and form rules are imported from the Worker's own modules, so what the page shows is what the Worker
-// charges: the sum of the MRPs, nothing added (delivery is free across India). The Worker re-prices every order
-// anyway and is the only authority.
-import { CATALOGUE, LIMITS, PACK_GRAMS, quoteCart } from "../checkout-worker/src/pricing.js";
+// Prices, GST break-up, seller details, short terms, delivery dates and form rules are imported from the Worker's own
+// modules, so what the page shows is what the Worker charges and what the order e-mail says: the sum of the MRPs,
+// nothing added (delivery is free across India). The Worker re-prices every order anyway and is the only authority.
+import { CATALOGUE, LIMITS, PACK_GRAMS, quoteCart, unitPaisePerGram } from "../checkout-worker/src/pricing.js";
 import { INDIAN_STATES, validateCustomer } from "../checkout-worker/src/validate.js";
+import { gstBreakup } from "../checkout-worker/src/gst.js";
+import { SELLER, TERMS, isFssaiLicence } from "../checkout-worker/src/seller.js";
+import { parseProductsParam } from "../checkout-worker/src/cart-link.js";
+import { expectedDelivery } from "../checkout-worker/src/delivery.js";
 
 // ---------------------------------------------------------------------------------------------
 // Every visible string lives here. Translating = adding STRINGS.hi, STRINGS.te, ... with the same keys
-// (placeholders in {braces} stay as they are). Nothing else in this file or index.html holds text.
+// (placeholders in {braces} stay as they are). Nothing else in this file or index.html holds text, except the
+// <noscript> line. A few English values are taken from checkout-worker/src/seller.js (TERMS), so the page and the
+// order e-mail say the same thing; the seller's name, addresses and their labels are data in that file too.
 // ---------------------------------------------------------------------------------------------
 const STRINGS = {
   en: {
@@ -21,9 +28,13 @@ const STRINGS = {
     bannerOff: "Online payment is switched off right now.",
     bannerUnreachable: "The payment server cannot be reached right now.",
     packsTitle: "Your packs",
-    packMeta: "{grams} g · MRP {price} · incl. of all taxes",
+    packMeta: "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+    packDetails: "Pack details",
     less: "One less: {name}",
     more: "One more: {name}",
+    linkIgnored: "Not added from the link (not available to order here now): {items}.",
+    linkClampedLine: "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+    linkClampedTotal: "Up to {max} packs per order: some packs from the link were not added.",
     addressTitle: "Delivery address",
     fName: "Full name",
     fPhone: "Mobile number",
@@ -33,6 +44,8 @@ const STRINGS = {
     fState: "State",
     fStatePick: "Choose your state",
     fPin: "PIN code",
+    privacyNote: TERMS.privacy, // {link} = privacyLink
+    privacyLink: "privacy policy",
     errors: {
       "name:required": "Please enter your name.",
       "name:invalid": "Please enter your name in letters (up to 60).",
@@ -52,18 +65,34 @@ const STRINGS = {
       "pin:state_mismatch": "This PIN code is not in the state you chose. Please check both.",
       "items:empty_cart": "Please add at least one pack.",
       "items:qty_over_limit": "Up to {max} of the same pack per order.",
-      "items:too_many_packs": "Up to {max} packs per order. For more, message us on WhatsApp.",
+      "items:too_many_packs": "Up to {max} packs per order. For more, please place a second order.",
       "items:not_sellable": "A pack in your cart is not available now. Please remove it.",
       "items:unknown_item": "A pack in your cart is not available now. Please remove it.",
       "items:bad_qty": "Please check the quantities.",
     },
     summaryTitle: "Order summary",
     sumPacks: "Packs ({n})",
+    sumGstIntra: "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+    sumGstInter: "GST included in the MRP: {tax} (IGST {rate}%)",
+    sumGstNoState: "GST included in the MRP ({rate}%)",
+    sumDelivery: "Delivery",
+    sumDeliveryFree: "{amount} (free across India)",
     sumTotal: "Total to pay",
     sumEmpty: "Your cart is empty. Add a pack above.",
-    sumFreeDelivery: "Free delivery across India",
-    sumMrpOnly: "You pay the MRP only, incl. of all taxes. Nothing is added at checkout.",
+    sumMrpOnly: "You pay the MRP only. Nothing is added at checkout.",
     prepaidNote: "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by Razorpay (Cashfree and PhonePe as backups); we never see your card details or UPI PIN.",
+    deliveryTitle: "Delivery",
+    deliveryNote: TERMS.delivery,
+    returnsTitle: "Cancellation, returns and refunds",
+    returnsNote: TERMS.returns,
+    sellerTitle: "Sold by",
+    footTitle: "Seller details",
+    gstin: "GSTIN {gstin}",
+    fssaiReg: "FSSAI Reg. No. {no}",
+    fssaiLic: "FSSAI Lic. No. {no}",
+    careLine: "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+    grievanceNote: TERMS.grievance,
+    policiesLink: "Seller details, terms of sale, shipping, returns and privacy",
     terms: "By paying you agree to our {link}.",
     termsLink: "terms of sale, shipping and refund policies",
     pay: "Pay {amount}",
@@ -76,35 +105,40 @@ const STRINGS = {
     priceChangedBody: "The total for this order is {amount}. Please check it and press Pay again.",
     successTitle: "Thank you! Your payment is received.",
     successBody: "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+    successDelivery: "Expected delivery between {from} and {to}.",
     successKeep: "Please keep the order number for any question.",
     pendingTitle: "Your payment is being confirmed",
     pendingBody: "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
     failedTitle: "Payment did not go through",
-    failedBody: "No money was taken for this attempt. You can try again, or order on WhatsApp.",
+    failedBody: "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
     failedReason: "Reason given by the bank or app: {reason}",
     cancelledTitle: "Payment window closed",
     cancelledBody: "Nothing was charged. Your cart is saved: press Pay to try again.",
     errorTitle: "We could not start the payment",
-    errorBody: "Please try again in a minute, or order on WhatsApp.",
+    errorBody: "Please try again in a minute, or order from our Amazon.in store.",
     disabledTitle: "Online payment is off right now",
-    disabledBody: "Please order on WhatsApp, or from our Amazon.in store.",
+    disabledBody: "Please order from our Amazon.in store. For help, message us on WhatsApp.",
     outOfStock: "{name} has just sold out. Please lower the quantity or remove it.",
     fixForm: "Please check the highlighted fields.",
     tryAgain: "Try again",
-    whatsapp: "Order on WhatsApp",
+    amazon: "Our Amazon.in store",
+    help: "Help on WhatsApp",
+    waHelp: "Hi 1acrefarms, I need help with the checkout on your website.",
+    waHelpOrder: "Order number: {id}",
     rzpDescription: "{n} pack(s) · order {id}",
-    waIntro: "Hi 1acrefarms! I'd like to order:",
-    waLine: "{qty} × {name} {grams} g @ {price} [{sku}]",
-    waTotal: "Total: {amount} (free delivery)",
-    waPin: "PIN code: {pin}",
   },
 };
 
 const LANG = STRINGS[document.documentElement.lang] ? document.documentElement.lang : "en";
 const T = STRINGS[LANG];
 const fmt = (s, vars = {}) => String(s).replace(/\{(\w+)\}/g, (m, k) => (k in vars ? String(vars[k]) : m));
-const money = new Intl.NumberFormat(LANG === "en" ? "en-IN" : `${LANG}-IN`, { style: "currency", currency: "INR", maximumFractionDigits: 0 });
+const LOCALE = LANG === "en" ? "en-IN" : `${LANG}-IN`;
+const money = new Intl.NumberFormat(LOCALE, { style: "currency", currency: "INR", maximumFractionDigits: 0 });
 const inr = (paise) => money.format(paise / 100);
+const money2 = new Intl.NumberFormat(LOCALE, { style: "currency", currency: "INR", minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const inr2 = (paise) => money2.format(paise / 100); // tax lines and unit prices: always to the paisa
+const dayFmt = new Intl.DateTimeFormat(LOCALE, { weekday: "short", day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+const day = (iso) => dayFmt.format(new Date(`${iso}T12:00:00Z`)); // "2026-11-14" -> "Sat, 14 Nov 2026"
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
 // ---------------------------------------------------------------------------------------------
@@ -112,8 +146,7 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&
 // ---------------------------------------------------------------------------------------------
 const LOCAL = ["localhost", "127.0.0.1"].includes(location.hostname);
 const API = (LOCAL ? "http://127.0.0.1:8787" : document.querySelector('meta[name="checkout-api"]')?.content || "").replace(/\/$/, "");
-const WHATSAPP_NUMBER = "917899929779";
-const POLICIES_URL = "/policies.html";
+const POLICIES_URL = SELLER.policiesPath;
 const CART_KEY = "oneacre_checkout_test_v1";
 const IMAGES = {
   TURM: "turmeric-540g.jpg", KPAS: "hill-turmeric-540g.jpg", SANN: "sannam-540g.jpg", TEJA: "teja-540g.jpg",
@@ -141,6 +174,8 @@ const save = () => {
 let busy = false;
 let touched = new Set();
 let pending = null; // { key, data } of the last created order, reused while cart + address are unchanged
+let lastOrderId = null; // quoted in the WhatsApp help message
+let fssaiLic = null; // the FSSAI licence number, only when the Worker reports a real 14-digit one (/health)
 
 const $ = (id) => document.getElementById(id);
 const items = () => Object.entries(cart).map(([code, qty]) => ({ code, qty }));
@@ -151,13 +186,42 @@ const packCount = () => Object.values(cart).reduce((a, b) => a + b, 0);
 // ---------------------------------------------------------------------------------------------
 // Rendering
 // ---------------------------------------------------------------------------------------------
+const newTab = (href, text) => `<a href="${esc(href)}" target="_blank" rel="noopener">${esc(text)}</a>`;
+
 function renderStatic() {
   document.title = T.pageTitle;
   document.querySelectorAll("[data-t]").forEach((el) => { el.textContent = T[el.dataset.t]; });
-  $("termsNote").innerHTML = fmt(esc(T.terms), { link: `<a href="${POLICIES_URL}" target="_blank" rel="noopener">${esc(T.termsLink)}</a>` });
+  $("termsNote").innerHTML = fmt(esc(T.terms), { link: newTab(POLICIES_URL, T.termsLink) });
+  $("privacyNote").innerHTML = fmt(esc(T.privacyNote), { link: newTab(`${POLICIES_URL}#privacy`, T.privacyLink) });
   const sel = $("f-state");
   sel.innerHTML = `<option value="">${esc(T.fStatePick)}</option>` + INDIAN_STATES.map((s) => `<option>${esc(s)}</option>`).join("");
   $("f-pin").value = savedPin;
+  renderSeller();
+}
+
+// Seller identity, both addresses, GSTIN, FSSAI, customer care and grievance officer: from src/seller.js only.
+function sellerHtml() {
+  const c = SELLER.care;
+  const ids = [fmt(T.gstin, { gstin: SELLER.gstin }), fmt(T.fssaiReg, { no: SELLER.fssaiRegNo }), ...(fssaiLic ? [fmt(T.fssaiLic, { no: fssaiLic })] : [])];
+  const care = fmt(esc(T.careLine), {
+    name: esc(c.name), designation: esc(c.designation),
+    phone: `<a href="tel:+${esc(c.whatsapp)}">${esc(c.phone)}</a>`,
+    email: `<a href="mailto:${esc(c.email)}">${esc(c.email)}</a>`,
+  });
+  return `<p class="co-seller-name">${esc(SELLER.legalName)}</p>
+    <ul class="co-addr">${SELLER.addresses.map((a) => `<li><span class="co-addr-label">${esc(a.label)}:</span> ${esc(a.text)}</li>`).join("")}</ul>
+    <p>${ids.map(esc).join(" · ")}</p>
+    <p>${care}</p>
+    <p>${esc(T.grievanceNote)}</p>
+    <p>${newTab(`${POLICIES_URL}#seller`, T.policiesLink)}</p>`;
+}
+
+// Before the Pay button: delivery, returns and the seller; the same seller block again in the page footer.
+function renderSeller() {
+  $("sellerTerms").innerHTML = `<h3>${esc(T.deliveryTitle)}</h3><p>${esc(T.deliveryNote)}</p>
+    <h3>${esc(T.returnsTitle)}</h3><p>${esc(T.returnsNote)}</p>
+    <h3>${esc(T.sellerTitle)}</h3>${sellerHtml()}`;
+  $("sellerFoot").innerHTML = `<h2>${esc(T.footTitle)}</h2>${sellerHtml()}`;
 }
 
 function renderPacks() {
@@ -167,11 +231,15 @@ function renderPacks() {
     const q = cart[code] || 0;
     const atLine = q >= LIMITS.maxQtyPerLine;
     const atOrder = total >= LIMITS.maxPacksPerOrder;
+    const meta = fmt(esc(T.packMeta), {
+      grams: PACK_GRAMS, price: esc(inr(p.mrp * 100)), unit: esc(inr2(unitPaisePerGram(p.mrp, PACK_GRAMS))),
+      details: newTab(`/${p.slug}/`, T.packDetails),
+    });
     return `<li class="co-pack">
       <img src="../assets/packs/${IMAGES[code]}" alt="" width="56" height="56" loading="lazy" />
       <div class="co-pack-info">
         <div class="co-pack-name">${esc(p.name)}</div>
-        <div class="co-pack-meta">${esc(fmt(T.packMeta, { grams: PACK_GRAMS, price: inr(p.mrp * 100) }))}</div>
+        <div class="co-pack-meta">${meta}</div>
       </div>
       <div class="co-qty">
         <button type="button" data-code="${code}" data-d="-1" aria-label="${esc(fmt(T.less, { name: p.name }))}" ${q ? "" : "disabled"}>−</button>
@@ -192,9 +260,15 @@ function renderSummary() {
     btn.disabled = true;
     return;
   }
+  // GST shown inside the MRP (display only): CGST + SGST for Andhra Pradesh, IGST elsewhere, the rate until a state is chosen
+  const g = gstBreakup(q.lines, $("f-state").value);
+  const gst = g.kind === "intra" ? fmt(T.sumGstIntra, { tax: inr2(g.taxPaise), half: g.halfRatePct, cgst: inr2(g.cgstPaise), sgst: inr2(g.sgstPaise) })
+    : g.kind === "inter" ? fmt(T.sumGstInter, { tax: inr2(g.taxPaise), rate: g.ratePct })
+      : fmt(T.sumGstNoState, { rate: g.ratePct });
   box.innerHTML = `
     <div class="r"><span>${esc(fmt(T.sumPacks, { n: q.packs }))}</span><span>${esc(inr(q.subtotalPaise))}</span></div>
-    <p class="free">${esc(T.sumFreeDelivery)}</p>
+    <p class="gst">${esc(gst)}</p>
+    <div class="r"><span>${esc(T.sumDelivery)}</span><span class="free">${esc(fmt(T.sumDeliveryFree, { amount: inr(q.deliveryPaise) }))}</span></div>
     <div class="r total"><span>${esc(T.sumTotal)}</span><span>${esc(inr(q.totalPaise))}</span></div>
     <p class="co-note">${esc(T.sumMrpOnly)}</p>
     ${q.errors.length ? `<p class="co-err">${esc(itemError(q.errors[0]))}</p>` : ""}`;
@@ -217,27 +291,26 @@ function showFieldErrors(errors, { all = false } = {}) {
   }
 }
 
-// One status box for every state of the payment.
+// One status box for every state of the payment. body / extra are HTML (already escaped); extra may be a list.
 function status(kind, { title = "", body = "", extra = "", actions = [] } = {}) {
   const box = $("status");
   if (!kind) { box.hidden = true; box.innerHTML = ""; return; }
   box.hidden = false;
   box.className = `co-status ${kind}`;
-  const btns = actions.map((a) => a === "retry"
+  const btns = actions.map((a) => (a === "retry"
     ? `<button type="button" class="btn btn-green" data-act="retry">${esc(T.tryAgain)}</button>`
-    : `<a class="btn btn-wa" href="${esc(whatsappLink())}" target="_blank" rel="noopener">${esc(T.whatsapp)}</a>`).join("");
-  box.innerHTML = `${title ? `<h3>${esc(title)}</h3>` : ""}${body ? `<p>${body}</p>` : ""}${extra ? `<p>${extra}</p>` : ""}${btns ? `<div class="actions">${btns}</div>` : ""}`;
+    : a === "amazon"
+      ? `<a class="btn btn-wa" href="${esc(SELLER.amazonStoreUrl)}" target="_blank" rel="noopener">${esc(T.amazon)}</a>`
+      : `<a class="btn btn-wa" href="${esc(helpLink())}" target="_blank" rel="noopener">${esc(T.help)}</a>`)).join("");
+  const extras = (Array.isArray(extra) ? extra : [extra]).filter(Boolean).map((x) => `<p>${x}</p>`).join("");
+  box.innerHTML = `${title ? `<h3>${esc(title)}</h3>` : ""}${body ? `<p>${body}</p>` : ""}${extras}${btns ? `<div class="actions">${btns}</div>` : ""}`;
   box.scrollIntoView({ behavior: "smooth", block: "nearest" });
 }
 
-function whatsappLink() {
-  const q = quote();
-  const lines = [T.waIntro, ""];
-  for (const l of q.lines) lines.push(fmt(T.waLine, { qty: l.qty, name: l.name, grams: l.grams, price: inr(l.unitPaise), sku: l.sku }));
-  if (q.lines.length) lines.push("", fmt(T.waTotal, { amount: inr(q.totalPaise) }));
-  const pin = $("f-pin").value.trim();
-  if (pin) lines.push(fmt(T.waPin, { pin }));
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
+// WhatsApp is for help only (not for placing paid orders): a short message with the order number, if there is one.
+function helpLink() {
+  const lines = [T.waHelp, ...(lastOrderId ? [fmt(T.waHelpOrder, { id: lastOrderId })] : [])];
+  return `https://wa.me/${SELLER.care.whatsapp}?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
 function rerender() {
@@ -266,6 +339,9 @@ async function checkHealth() {
     if (data?.checkout !== "enabled") b.textContent = T.bannerOff;
     else b.textContent = data.mode === "live" ? T.bannerLive : T.bannerTest;
     b.classList.toggle("live", data?.mode === "live" && data?.checkout === "enabled");
+    // The licence line appears only when the Worker holds a real licence number (never a placeholder).
+    const lic = typeof data?.fssaiLic === "string" && isFssaiLicence(data.fssaiLic) ? data.fssaiLic : null;
+    if (lic !== fssaiLic) { fssaiLic = lic; renderSeller(); }
   } catch {
     b.textContent = T.bannerUnreachable;
   }
@@ -313,7 +389,7 @@ async function pay() {
       // Turnstile hook: when the Worker has TURNSTILE_REQUIRED=true, render the widget and pass its token here.
       const turnstileToken = window.turnstile?.getResponse?.() || null;
       const r = await api("/create-order", { items: items(), customer: v.value, turnstileToken });
-      if (r.status === 503 && r.data?.error === "checkout_disabled") return status("bad", { title: T.disabledTitle, body: esc(T.disabledBody), actions: ["wa"] });
+      if (r.status === 503 && r.data?.error === "checkout_disabled") return status("bad", { title: T.disabledTitle, body: esc(T.disabledBody), actions: ["amazon", "help"] });
       if (r.status === 400 && Array.isArray(r.data?.errors)) {
         showFieldErrors(r.data.errors, { all: true });
         const itemErr = r.data.errors.find((e) => e.field === "items");
@@ -322,9 +398,10 @@ async function pay() {
       if (r.status === 409 && r.data?.error === "out_of_stock") {
         return status("bad", { body: esc(fmt(T.outOfStock, { name: CATALOGUE[r.data.item]?.name || r.data.item })) });
       }
-      if (r.status !== 200 || !r.data?.ok) return status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "wa"] });
+      if (r.status !== 200 || !r.data?.ok) return status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "amazon", "help"] });
       data = r.data;
       pending = { key, data };
+      lastOrderId = data.orderId;
       if (data.totalPaise !== q.totalPaise) {
         return status("info", { title: T.priceChangedTitle, body: esc(fmt(T.priceChangedBody, { amount: inr(data.totalPaise) })) });
       }
@@ -333,9 +410,9 @@ async function pay() {
     if (data.gateway === "razorpay") await openRazorpay(data, v.value);
     else if (data.gateway === "cashfree") await openCashfree(data);
     else if (data.gateway === "phonepe") await openPhonePe(data);
-    else status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "wa"] });
+    else status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "amazon", "help"] });
   } catch {
-    status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "wa"] });
+    status("bad", { title: T.errorTitle, body: esc(T.errorBody), actions: ["retry", "amazon", "help"] });
   } finally {
     setBusy(false);
   }
@@ -363,7 +440,7 @@ function openRazorpay(data, customer) {
       modal: {
         ondismiss: () => {
           if (done) return;
-          if (failure) status("bad", { title: T.failedTitle, body: esc(T.failedBody), extra: failure ? esc(fmt(T.failedReason, { reason: failure })) : "", actions: ["retry", "wa"] });
+          if (failure) status("bad", { title: T.failedTitle, body: esc(T.failedBody), extra: failure ? esc(fmt(T.failedReason, { reason: failure })) : "", actions: ["retry", "amazon", "help"] });
           else status("info", { title: T.cancelledTitle, body: esc(T.cancelledBody) });
           resolve();
         },
@@ -411,25 +488,43 @@ async function openPhonePe(data) {
 }
 
 async function verify(body, { closedWithError = false } = {}) {
+  lastOrderId = body.orderId;
   status("info", { body: esc(T.verifying) });
   for (let i = 0; i < 4; i++) {
     let r;
     try { r = await api("/verify", body); } catch { r = { status: 0, data: null }; }
     const st = r.data?.status;
-    if (st === "paid" || st === "verified") return success(r.data.orderId);
-    if (r.status === 400 || st === "failed") return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "wa"] });
-    if (st === "pending" && closedWithError) return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "wa"] });
+    if (st === "paid" || st === "verified") return success(r.data.orderId, r.data.delivery);
+    if (r.status === 400 || st === "failed") return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "amazon", "help"] });
+    if (st === "pending" && closedWithError) return status("bad", { title: T.failedTitle, body: esc(T.failedBody), actions: ["retry", "amazon", "help"] });
     await new Promise((res) => setTimeout(res, 2000));
   }
-  status("info", { title: T.pendingTitle, body: esc(fmt(T.pendingBody, { id: body.orderId })) });
+  status("info", { title: T.pendingTitle, body: esc(fmt(T.pendingBody, { id: body.orderId })), actions: ["help"] });
 }
 
-function success(orderId) {
+const ISO_DAY = /^\d{4}-\d{2}-\d{2}$/;
+// The Worker sends the window (from the stored PIN, state and payment time). Fallback: the same function on the
+// form's own PIN and state, if they are still on the page (a PhonePe redirect clears them).
+function deliveryLine(delivery) {
+  let w = delivery && ISO_DAY.test(delivery.from) && ISO_DAY.test(delivery.to) ? delivery : null;
+  if (!w) {
+    const v = validateCustomer(formValues()).value;
+    w = expectedDelivery({ paidAt: Date.now(), pin: v.pin, state: v.state });
+  }
+  return w ? esc(fmt(T.successDelivery, { from: day(w.from), to: day(w.to) })) : "";
+}
+
+function success(orderId, delivery) {
+  const when = deliveryLine(delivery);
   cart = {};
   pending = null;
   save();
   rerender();
-  status("ok", { title: T.successTitle, body: fmt(esc(T.successBody), { id: `<code>${esc(orderId)}</code>` }), extra: esc(T.successKeep) });
+  status("ok", {
+    title: T.successTitle,
+    body: fmt(esc(T.successBody), { id: `<code>${esc(orderId)}</code>` }),
+    extra: [when && `<b>${when}</b>`, esc(T.successKeep)],
+  });
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -466,14 +561,41 @@ form.addEventListener("focusout", (e) => {
   touched.add(e.target.name);
   showFieldErrors(validateCustomer(formValues()).errors);
 });
+form.addEventListener("change", (e) => { if (e.target.name === "state") renderSummary(); }); // GST line follows the state
 form.addEventListener("submit", (e) => { e.preventDefault(); pay(); });
 $("payBtn").addEventListener("click", pay);
 $("status").addEventListener("click", (e) => { if (e.target.closest("[data-act=retry]")) pay(); });
+
+// Meta catalogue checkout link: /checkout-test/?products=1AF-TURM-0540%3A2,1AF-CBEL-0540%3A1
+// The link's packs REPLACE the saved cart (nothing is added that the buyer did not pick); unknown or unavailable
+// packs are left out with a visible note, and quantities are clamped to the usual limits. If nothing in the link
+// can be ordered, the saved cart stays. Any coupon or price in the link is ignored.
+function applyCartLink() {
+  const params = new URLSearchParams(location.search);
+  if (!params.has("products")) return;
+  const r = parseProductsParam(params.get("products"));
+  if (r.items.length) {
+    cart = Object.fromEntries(r.items.map((i) => [i.code, i.qty]));
+    pending = null;
+    save();
+  }
+  const notes = [];
+  if (r.ignored.length) notes.push(fmt(T.linkIgnored, { items: [...new Set(r.ignored.map((i) => i.sku))].join(", ") }));
+  if (r.clampedLine) notes.push(fmt(T.linkClampedLine, { max: LIMITS.maxQtyPerLine }));
+  if (r.clampedTotal) notes.push(fmt(T.linkClampedTotal, { max: LIMITS.maxPacksPerOrder }));
+  const box = $("linkNote");
+  box.textContent = notes.join(" ");
+  box.hidden = !notes.length;
+  params.delete("products"); // a reload must not reset the cart the buyer has since changed
+  const rest = params.toString();
+  history.replaceState(null, "", `${location.pathname}${rest ? `?${rest}` : ""}${location.hash}`);
+}
 
 // ---------------------------------------------------------------------------------------------
 // Start
 // ---------------------------------------------------------------------------------------------
 renderStatic();
+applyCartLink();
 rerender();
 checkHealth();
 // Back from PhonePe (always a redirect) or a Cashfree redirect (some banks leave the popup): ?order_id=1AF-...

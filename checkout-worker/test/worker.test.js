@@ -2,7 +2,7 @@
 import { test, describe } from "node:test";
 import assert from "node:assert/strict";
 import {
-  CUSTOMER, SECRET_VALUES, TEST_ENV, harness, razorpaySignature, razorpayOrderPaidEvent, razorpayPaymentEvent,
+  CUSTOMER, FAKE_TEST_LICENCE, LIVE_ENV, SECRET_VALUES, TEST_ENV, harness, razorpaySignature, razorpayOrderPaidEvent, razorpayPaymentEvent,
   postRazorpayWebhook, cashfreeEvent, postCashfreeWebhook, phonepeEvent, postPhonePeWebhook, phonepeWebhookAuth,
 } from "./helpers/harness.js";
 import { makeLogger, redact } from "../src/log.js";
@@ -53,8 +53,8 @@ describe("create-order", () => {
     const baskets = [
       [[{ code: "CBEL", qty: 1 }], { ...CUSTOMER, pin: "522601" }, 23400],
       [[{ code: "CBEL", qty: 1 }], { ...CUSTOMER, city: "New Delhi", state: "Delhi", pin: "110001" }, 23400],
-      [[{ code: "SANN", qty: 1 }], { ...CUSTOMER, city: "Bengaluru", state: "Karnataka", pin: "560001" }, 49500],
-      [[{ code: "SANN", qty: 1 }, { code: "TEJA", qty: 1 }], { ...CUSTOMER, city: "Hyderabad", state: "Telangana", pin: "500081" }, 99000],
+      [[{ code: "KPAS", qty: 1 }], { ...CUSTOMER, city: "Bengaluru", state: "Karnataka", pin: "560001" }, 49500],
+      [[{ code: "KPAS", qty: 1 }, { code: "TBEL", qty: 1 }], { ...CUSTOMER, city: "Hyderabad", state: "Telangana", pin: "500081" }, 99000],
       [[{ code: "TURM", qty: 1 }, { code: "CBEL", qty: 2 }], { ...CUSTOMER, city: "Agartala", state: "Tripura", pin: "799001" }, 86400],
       [[{ code: "TURM", qty: 6 }, { code: "TBEL", qty: 6 }], CUSTOMER, 534600],
     ];
@@ -106,6 +106,16 @@ describe("create-order", () => {
     assert.equal(junk.body.error, "bad_json");
   });
 
+  test("held packs (Sannam, Teja) and parked cashew are refused: not_sellable, no gateway call", async () => {
+    for (const code of ["SANN", "TEJA", "CASH"]) {
+      const h = harness();
+      const r = await h.createOrder([{ code, qty: 1 }]);
+      assert.equal(r.status, 400, code);
+      assert.deepEqual(r.body.errors.map((e) => `${e.field}:${e.code}`), ["items:not_sellable"], code);
+      assert.equal(gatewayCalls(h).length, 0);
+    }
+  });
+
   test("out of stock blocks the order (when stock is tracked)", async () => {
     const h = harness();
     await h.store.setStock("TURM", 1);
@@ -146,20 +156,21 @@ describe("live-mode guard", () => {
 
   test("MODE=live with a near-miss approval value still refuses", async () => {
     for (const v of ["yes", "YES-OWNER-APPROVED", "yes-owner-approved ", "true", ""]) {
-      const h = harness({ env: { MODE: "live", LIVE_ENABLED: v, RAZORPAY_KEY_ID: "rzp_live_MOCK" } });
+      const h = harness({ env: { ...LIVE_ENV, LIVE_ENABLED: v } });
       const r = await h.createOrder();
       assert.equal(r.status, 503, `LIVE_ENABLED=${JSON.stringify(v)}`);
+      assert.equal(r.body.reason, "live_not_approved");
       assert.equal(gatewayCalls(h).length, 0);
     }
   });
 
-  test("MODE=live + exact approval + live key: accepted (Cashfree switches to production host)", async () => {
-    const h = harness({ env: { MODE: "live", LIVE_ENABLED: "yes-owner-approved", RAZORPAY_KEY_ID: "rzp_live_MOCK" } });
+  test("MODE=live + exact approval + licence + e-commerce KoB + live key: accepted (Cashfree switches to production host)", async () => {
+    const h = harness({ env: LIVE_ENV });
     const r = await h.createOrder();
     assert.equal(r.status, 200);
     assert.equal(r.body.mode, "live");
     assert.match(r.body.orderId, /^1AF-W-/);
-    const h2 = harness({ env: { MODE: "live", LIVE_ENABLED: "yes-owner-approved", RAZORPAY_KEY_ID: "rzp_live_MOCK" } });
+    const h2 = harness({ env: LIVE_ENV });
     h2.mocks.state.razorpay.create = 503;
     const r2 = await h2.createOrder();
     assert.equal(r2.body.gateway, "cashfree");
@@ -168,13 +179,52 @@ describe("live-mode guard", () => {
   });
 
   test("MODE=live with a TEST key is refused; MODE=test with a LIVE key is refused", async () => {
-    const a = harness({ env: { MODE: "live", LIVE_ENABLED: "yes-owner-approved", RAZORPAY_KEY_ID: "rzp_test_MOCK" } });
+    const a = harness({ env: { ...LIVE_ENV, RAZORPAY_KEY_ID: "rzp_test_MOCK" } });
     assert.equal((await a.createOrder()).body.reason, "test_key_in_live_mode");
     const b = harness({ env: { MODE: "test", RAZORPAY_KEY_ID: "rzp_live_MOCK" } });
     const r = await b.createOrder();
     assert.equal(r.status, 503);
     assert.equal(r.body.reason, "live_key_in_test_mode");
     assert.equal(gatewayCalls(b).length, 0);
+  });
+
+  test("FSSAI licence gate: live mode needs a 14-digit licence AND the e-commerce KoB flag, each with its own code", async () => {
+    const cases = [
+      [{ FSSAI_ECOM_LIC: undefined }, "no_fssai_ecom_licence"],
+      [{ FSSAI_ECOM_LIC: "" }, "no_fssai_ecom_licence"],
+      [{ FSSAI_ECOM_LIC: "1234567890123" }, "no_fssai_ecom_licence"], // 13 digits
+      [{ FSSAI_ECOM_LIC: "123456789012345" }, "no_fssai_ecom_licence"], // 15 digits
+      [{ FSSAI_ECOM_LIC: ` ${FAKE_TEST_LICENCE}` }, "no_fssai_ecom_licence"],
+      [{ FSSAI_ECOM_LIC: "1001201100012A" }, "no_fssai_ecom_licence"],
+      [{ FSSAI_ECOM_LIC: "applied for" }, "no_fssai_ecom_licence"],
+      [{ FSSAI_ECOM_LIC: "20126161000590" }, "no_fssai_ecom_licence"], // our packing-unit Reg. No. is not the licence
+      [{ FSSAI_ECOM_KOB_ENDORSED: undefined }, "fssai_ecom_kob_not_endorsed"],
+      [{ FSSAI_ECOM_KOB_ENDORSED: "true" }, "fssai_ecom_kob_not_endorsed"],
+      [{ FSSAI_ECOM_KOB_ENDORSED: "YES" }, "fssai_ecom_kob_not_endorsed"],
+      [{ FSSAI_ECOM_KOB_ENDORSED: "yes " }, "fssai_ecom_kob_not_endorsed"],
+      [{ LIVE_ENABLED: undefined }, "live_not_approved"], // the owner's go is checked first
+    ];
+    for (const [over, code] of cases) {
+      const h = harness({ env: { ...LIVE_ENV, ...over } });
+      const r = await h.createOrder();
+      assert.equal(r.status, 503, JSON.stringify(over));
+      assert.equal(r.body.reason, code, JSON.stringify(over));
+      assert.equal(gatewayCalls(h).length, 0);
+      const health = await h.call("GET", "/health");
+      assert.deepEqual([health.body.checkout, health.body.reason], ["disabled", code]);
+    }
+    // test mode needs neither (TEST / SANDBOX / UAT only, no real money)
+    assert.equal((await harness().createOrder()).status, 200);
+  });
+
+  test("/health shows the licence number only when it is a real 14-digit number", async () => {
+    const live = harness({ env: LIVE_ENV });
+    assert.equal((await live.call("GET", "/health")).body.fssaiLic, FAKE_TEST_LICENCE);
+    for (const v of [undefined, "", "applied for", "1234", "20126161000590"]) {
+      const h = harness({ env: { FSSAI_ECOM_LIC: v } });
+      const body = (await h.call("GET", "/health")).body;
+      assert.equal("fssaiLic" in body, false, `FSSAI_ECOM_LIC=${JSON.stringify(v)}`);
+    }
   });
 
   test("unknown MODE fails closed", async () => {
@@ -523,7 +573,7 @@ describe("PhonePe (Standard Checkout v2, UAT in test mode)", () => {
   });
 
   test("live mode: PhonePe production hosts (identity-manager + pg); test mode never touches them", async () => {
-    const h = harness({ env: { MODE: "live", LIVE_ENABLED: "yes-owner-approved", RAZORPAY_KEY_ID: "rzp_live_MOCK" } });
+    const h = harness({ env: LIVE_ENV });
     const r = await phonepeOrder(h);
     assert.match(r.body.orderId, /^1AF-W-/);
     assert.equal(r.body.phonepe.mode, "production");

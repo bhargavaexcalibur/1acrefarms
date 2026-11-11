@@ -1,5 +1,5 @@
 /* Hidden test checkout. Builds on ../styles.css (site colours, Inter, .btn). */
-.co { max-width: 760px; margin: 0 auto; padding: 28px 16px 72px; }
+.co { max-width: 760px; margin: 0 auto; padding: 28px 16px 48px; }
 .co-back { display: inline-block; margin-bottom: 14px; color: var(--green); font-weight: 600; text-decoration: none; }
 .co-brand { margin: 0 0 14px; color: var(--green-deep); }
 .co h1 { font-size: 1.9rem; margin: 6px 0 18px; }
@@ -38,7 +38,23 @@
 
 .co-sum .r { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; font-size: .95rem; }
 .co-sum .r.total { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 10px; font-size: 1.1rem; font-weight: 700; }
-.co-sum .free { color: var(--green); font-weight: 600; font-size: .95rem; padding: 2px 0; }
+.co-sum .free { color: var(--green); font-weight: 600; }
+.co-sum .gst { color: var(--ink-soft); font-size: .84rem; padding: 2px 0 4px; }
+.co-pack-meta a { color: var(--green); white-space: nowrap; }
+.co-linknote { margin: 0 0 8px; padding: 8px 10px; border-radius: var(--radius); background: #fdf3da; border: 1px solid var(--gold-light); color: #5b4512; }
+
+/* Delivery, returns and seller block before the Pay button; the same seller block in the footer. */
+.co-terms { margin-top: 14px; padding: 12px 14px; border: 1px solid var(--hairline); border-radius: var(--radius); background: var(--bg); font-size: .82rem; color: var(--ink-soft); line-height: 1.5; }
+.co-terms h3 { font-size: .86rem; color: var(--ink); margin: 10px 0 2px; }
+.co-terms h3:first-child { margin-top: 0; }
+.co-terms p, .co-foot p { margin: 2px 0; overflow-wrap: anywhere; }
+.co-terms a, .co-foot a { color: var(--green); }
+.co-seller-name { font-weight: 600; color: var(--ink); }
+.co-addr { list-style: none; margin: 2px 0; padding: 0; }
+.co-addr li { margin: 2px 0; overflow-wrap: anywhere; }
+.co-addr-label { font-weight: 600; color: var(--ink); }
+.co-foot { padding-top: 0; padding-bottom: 40px; font-size: .8rem; color: var(--ink-soft); line-height: 1.5; border-top: 1px solid var(--line); }
+.co-foot h2 { font-size: .95rem; color: var(--ink); margin: 18px 0 6px; }
 .co-sum .muted { color: var(--ink-faint); }
 .co-note { font-size: .82rem; color: var(--ink-soft); margin-top: 10px; }
 .co-note a { color: var(--green); }

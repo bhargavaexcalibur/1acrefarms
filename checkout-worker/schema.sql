@@ -34,7 +34,7 @@ CREATE INDEX IF NOT EXISTS orders_status_created ON orders (status, created_at);
 CREATE INDEX IF NOT EXISTS orders_ship_due ON orders (ship_status, ship_next_at);
 
 -- Webhook dedupe: one row per delivered event (Razorpay x-razorpay-event-id; Cashfree type + payment id;
--- PhonePe event + merchantOrderId).
+-- PhonePe event + merchantOrderId). Also the once-only claim for the customer's order e-mail: mail:confirm:<order id>.
 CREATE TABLE IF NOT EXISTS webhook_events (
   event_key   TEXT PRIMARY KEY,
   received_at INTEGER NOT NULL

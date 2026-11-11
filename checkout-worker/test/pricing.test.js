@@ -1,8 +1,8 @@
 // Prices, no delivery fee (total = sum of MRPs), the AP/TS PIN check, limits, parcels, form validation, and drift vs app.js.
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { readFileSync } from "node:fs";
-import { CATALOGUE, DELIVERY_FEE_RUPEES, PIN_TABLE, parcelFor, pinInfo, pinStateMismatch, quoteCart, skuOf } from "../src/pricing.js";
+import { existsSync, readFileSync } from "node:fs";
+import { CATALOGUE, DELIVERY_FEE_RUPEES, GST_PCT, PIN_TABLE, parcelFor, pinInfo, pinStateMismatch, quoteCart, skuOf, unitPaisePerGram } from "../src/pricing.js";
 import { normalisePhone, validateCustomer } from "../src/validate.js";
 import { CUSTOMER } from "./helpers/harness.js";
 
@@ -11,6 +11,39 @@ test("server price table = the Amazon MRPs in the brief", () => {
   assert.deepEqual(mrp, { TURM: 396, KPAS: 495, SANN: 495, TEJA: 495, CBEL: 234, TBEL: 495, CASH: 891 });
   assert.equal(CATALOGUE.CASH.sellable, false, "cashew is parked");
   assert.equal(skuOf("TURM"), "1AF-TURM-0540");
+});
+
+test("what can be ordered: one flag per pack; Sannam and Teja held, cashew parked (G12)", () => {
+  const sellable = Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable);
+  assert.deepEqual(sellable, ["TURM", "KPAS", "CBEL", "TBEL"]);
+  for (const code of ["SANN", "TEJA", "CASH"]) {
+    assert.equal(CATALOGUE[code].sellable, false, code);
+    assert.deepEqual(quoteCart([{ code, qty: 1 }]).errors.map((e) => e.code), ["not_sellable"], code);
+  }
+  // HSN stays as on record: blank for the chillies and cashew (not sellable), never invented
+  assert.deepEqual(Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, v.hsn])),
+    { TURM: "09103030", KPAS: "09103030", SANN: "", TEJA: "", CBEL: "17011310", TBEL: "17029010", CASH: "" });
+  // switching a pack on is one line: the page and the Meta link both read CATALOGUE[code].sellable
+  const page = readFileSync(new URL("../../checkout-test/checkout.js", import.meta.url), "utf8");
+  assert.match(page, /Object\.entries\(CATALOGUE\)\.filter\(\(\[, p\]\) => p\.sellable\)/);
+  const link = readFileSync(new URL("../src/cart-link.js", import.meta.url), "utf8");
+  assert.match(link, /CATALOGUE\[code\]\.sellable/);
+});
+
+test("each pack links to its product page (slug), and that page exists in the site", () => {
+  const want = { TURM: "turmeric-powder", KPAS: "hill-turmeric-powder", SANN: "sannam-chilli-powder", TEJA: "teja-chilli-powder",
+    CBEL: "cane-jaggery", TBEL: "palm-jaggery", CASH: "cashew-kernels" };
+  assert.deepEqual(Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, v.slug])), want);
+  for (const slug of Object.values(want)) assert.ok(existsSync(new URL(`../../${slug}/index.html`, import.meta.url)), slug);
+});
+
+test("unit sale price per gram (2 decimals, half-up), as on the product pages", () => {
+  const per = Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, unitPaisePerGram(v.mrp)]));
+  assert.deepEqual(per, { TURM: 73, KPAS: 92, SANN: 92, TEJA: 92, CBEL: 43, TBEL: 92, CASH: 165 });
+  assert.equal(unitPaisePerGram(396, 540), 73);
+  assert.equal(unitPaisePerGram(1, 200), 1, "0.5 paise rounds up");
+  assert.throws(() => unitPaisePerGram(396, 0));
+  assert.equal(GST_PCT, 5);
 });
 
 test("server price table matches the 540 g MRPs in the site's app.js (drift guard)", () => {
@@ -50,7 +83,8 @@ test("any basket, any PIN: fee 0, total = sum of MRP x qty", () => {
       checked++;
     }
   }
-  assert.ok(checked > 300);
+  assert.equal(checked, baskets.length * pins.length);
+  assert.ok(checked > 150, "every sellable pack, every pair, the 12-pack maximum, 9 PINs");
   // the cheapest order (1 cane jaggery) is Rs 234 flat, to AP and to Delhi alike; two Rs 495 packs are Rs 990
   assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], "522601").totalPaise, 23400);
   assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], "110001").totalPaise, 23400);

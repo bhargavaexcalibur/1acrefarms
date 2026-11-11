@@ -6,10 +6,13 @@ import assert from "node:assert/strict";
 import { createD1Store } from "../src/storage/d1.js";
 import { createSqliteD1 } from "../test/helpers/d1-sqlite.js";
 import {
-  CUSTOMER, TEST_ENV, harness, razorpaySignature, razorpayOrderPaidEvent, postRazorpayWebhook, cashfreeEvent, postCashfreeWebhook,
+  CUSTOMER, LIVE_ENV, TEST_ENV, harness, razorpaySignature, razorpayOrderPaidEvent, postRazorpayWebhook, cashfreeEvent, postCashfreeWebhook,
   phonepeEvent, postPhonePeWebhook,
 } from "../test/helpers/harness.js";
-import { CATALOGUE } from "../src/pricing.js";
+import { CATALOGUE, quoteCart } from "../src/pricing.js";
+import { gstBreakup } from "../src/gst.js";
+import { gstLine } from "../src/confirmation.js";
+import { parseProductsParam } from "../src/cart-link.js";
 
 const inr = (p) => `Rs ${(p / 100).toLocaleString("en-IN")}`;
 let step = 0;
@@ -55,9 +58,17 @@ console.log("1acrefarms checkout smoke run (mocked gateways, SQLite D1, test mod
   assert.equal(adhoc(h).length, 1);
   const sr = adhoc(h)[0].body;
   ok(`Shiprocket adhoc order (once): order_id ${sr.order_id}, ${sr.payment_method}, pickup "${sr.pickup_location}", ${sr.weight} kg ${sr.length}x${sr.breadth}x${sr.height} cm, sub_total ${sr.sub_total}`);
-  const mails = h.mocks.state.resend.sent.map((m) => m.subject);
-  assert.ok(mails.some((s) => s.includes("New paid order")));
-  ok(`owner alert (Resend, mocked): "${mails.at(-1)}"`);
+  const owner = h.mocks.state.resend.sent.filter((m) => m.subject.includes("New paid order"));
+  assert.equal(owner.length, 1);
+  ok(`owner alert (Resend, mocked): "${owner[0].subject}"`);
+  const buyer = h.mocks.state.resend.sent.filter((m) => m.to[0] === CUSTOMER.email);
+  assert.equal(buyer.length, 1);
+  assert.ok(buyer[0].text.includes("GST included in the MRP: ₹48.86 (CGST 2.5% ₹24.43 + SGST 2.5% ₹24.43)"));
+  assert.ok(buyer[0].text.includes("Delivery: ₹0 (free across India)") && buyer[0].text.includes("Total paid: ₹1,026"));
+  const window = buyer[0].text.match(/Expected delivery between [^.]+\./)[0];
+  const v2 = await h.call("POST", "/verify", { body: { orderId: r.body.orderId } });
+  assert.equal(v2.body.status, "paid");
+  ok(`customer confirmation (once, Resend mocked): "${buyer[0].subject}"; ${window} /verify gives the page ${v2.body.delivery.from} .. ${v2.body.delivery.to}`);
 }
 
 // B. Failover to Cashfree -------------------------------------------------------------------------
@@ -127,14 +138,14 @@ console.log("1acrefarms checkout smoke run (mocked gateways, SQLite D1, test mod
   assert.equal(o.status, "gateway_error");
   assert.equal(adhoc(h).length, 0);
   assert.ok(h.mocks.state.resend.sent.some((m) => m.subject.includes("Checkout DOWN")));
-  ok(`all three down -> buyer gets 502 payment_unavailable (page: "try again or WhatsApp"); ${o.id} stays gateway_error, never paid, never shipped; owner alerted`);
+  ok(`all three down -> buyer gets 502 payment_unavailable (page: "try again, or our Amazon.in store"; WhatsApp for help only); ${o.id} stays gateway_error, never paid, never shipped; owner alerted`);
 }
 
 // C. Shiprocket busy, then the scheduled job --------------------------------------------------------
 {
   const h = newHarness();
   h.mocks.state.shiprocket.queue = [429, 503, 500];
-  const r = await h.createOrder([{ code: "SANN", qty: 1 }], { ...CUSTOMER, city: "Bengaluru", state: "Karnataka", pin: "560001" });
+  const r = await h.createOrder([{ code: "KPAS", qty: 1 }], { ...CUSTOMER, city: "Bengaluru", state: "Karnataka", pin: "560001" });
   const gw = r.body.razorpay.orderId;
   const pay = h.mocks.razorpayCapture(gw, r.body.totalPaise);
   await postRazorpayWebhook(h, razorpayOrderPaidEvent(gw, pay, r.body.totalPaise));
@@ -169,6 +180,28 @@ console.log("1acrefarms checkout smoke run (mocked gateways, SQLite D1, test mod
   const t = newHarness({ RAZORPAY_KEY_ID: "rzp_live_MOCK" });
   assert.equal((await t.createOrder()).body.reason, "live_key_in_test_mode");
   ok("MODE=test with a live Razorpay key -> refused (live_key_in_test_mode)");
+  const noLic = newHarness({ ...LIVE_ENV, FSSAI_ECOM_LIC: undefined });
+  assert.equal((await noLic.createOrder()).body.reason, "no_fssai_ecom_licence");
+  const noKob = newHarness({ ...LIVE_ENV, FSSAI_ECOM_KOB_ENDORSED: undefined });
+  assert.equal((await noKob.createOrder()).body.reason, "fssai_ecom_kob_not_endorsed");
+  assert.equal(noLic.mocks.calls.length + noKob.mocks.calls.length, 0);
+  const all = newHarness(LIVE_ENV);
+  assert.equal((await all.createOrder()).status, 200);
+  ok("MODE=live + approval but no 14-digit FSSAI licence -> no_fssai_ecom_licence; licence but no e-commerce KoB -> fssai_ecom_kob_not_endorsed; all gates open -> accepted");
+}
+
+// F. Catalogue, GST display, Meta catalogue link ------------------------------------------------------
+{
+  const h = newHarness();
+  const held = await h.createOrder([{ code: "SANN", qty: 1 }, { code: "TEJA", qty: 1 }]);
+  assert.equal(held.status, 400);
+  ok(`Sannam / Teja held (sellable:false) -> 400 ${held.body.errors.map((e) => e.code).join(", ")}; sellable now: ${Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable).join(", ")}`);
+  const q = quoteCart([{ code: "CBEL", qty: 4 }]);
+  assert.equal(gstBreakup(q.lines, "Andhra Pradesh").cgstPaise, 2228);
+  ok(`GST shown inside the MRP (total stays ${q.totalPaise / 100}): AP "${gstLine(gstBreakup(q.lines, "Andhra Pradesh"))}"; Delhi "${gstLine(gstBreakup(q.lines, "Delhi"))}"`);
+  const link = parseProductsParam(new URLSearchParams("products=1AF-TURM-0540%3A2%2C1AF-PALM-0540%3A1%2C1AF-SANN-0540%3A1").get("products"));
+  assert.deepEqual(link.items, [{ code: "TURM", qty: 2 }, { code: "TBEL", qty: 1 }]);
+  ok(`Meta link ?products=1AF-TURM-0540%3A2,1AF-PALM-0540%3A1,1AF-SANN-0540%3A1 -> cart ${link.items.map((i) => `${i.qty} x ${i.code}`).join(", ")}; left out: ${link.ignored.map((i) => `${i.sku} (${i.reason})`).join(", ")}`);
 }
 
 console.log(`\nsmoke: ${step} checks passed`);
