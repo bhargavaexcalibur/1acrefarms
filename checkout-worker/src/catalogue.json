@@ -3,8 +3,8 @@
  "packs": [
   {"code": "TURM", "sku": "1AF-TURM-0540", "slug": "turmeric-powder", "name": "Turmeric Powder", "grams": 540, "mrp": 396, "hsn": "09103030", "image": "turmeric-540g.jpg", "sellable": true, "note": ""},
   {"code": "KPAS", "sku": "1AF-KPAS-0540", "slug": "hill-turmeric-powder", "name": "Hill Turmeric Powder", "grams": 540, "mrp": 495, "hsn": "09103030", "image": "hill-turmeric-540g.jpg", "sellable": true, "note": ""},
-  {"code": "SANN", "sku": "1AF-SANN-0540", "slug": "sannam-chilli-powder", "name": "Sannam Chilli Powder", "grams": 540, "mrp": 495, "hsn": "", "image": "sannam-540g.jpg", "sellable": false, "note": "held until its stock is counted and real pack photos exist (G12, 11-11-2026)"},
-  {"code": "TEJA", "sku": "1AF-TEJA-0540", "slug": "teja-chilli-powder", "name": "Teja Chilli Powder", "grams": 540, "mrp": 495, "hsn": "", "image": "teja-540g.jpg", "sellable": false, "note": "held until its stock is counted and real pack photos exist (G12, 11-11-2026)"},
+  {"code": "SANN", "sku": "1AF-SANN-0540", "slug": "sannam-chilli-powder", "name": "Sannam Chilli Powder", "grams": 540, "mrp": 495, "hsn": "09042211", "image": "sannam-540g.jpg", "sellable": true, "note": ""},
+  {"code": "TEJA", "sku": "1AF-TEJA-0540", "slug": "teja-chilli-powder", "name": "Teja Chilli Powder", "grams": 540, "mrp": 495, "hsn": "09042211", "image": "teja-540g.jpg", "sellable": true, "note": ""},
   {"code": "CBEL", "sku": "1AF-CBEL-0540", "slug": "cane-jaggery", "name": "Cane Jaggery", "grams": 540, "mrp": 234, "hsn": "17011310", "image": "cane-jaggery-540g.jpg", "sellable": true, "note": ""},
   {"code": "TBEL", "sku": "1AF-TBEL-0540", "slug": "palm-jaggery", "name": "Palm Jaggery", "grams": 540, "mrp": 495, "hsn": "17029010", "image": "palm-jaggery-540g.jpg", "sellable": true, "note": ""},
   {"code": "CASH", "sku": "1AF-CASH-0540", "slug": "cashew-kernels", "name": "Cashew Kernels", "grams": 540, "mrp": 891, "hsn": "", "image": "cashew-540g.jpg", "sellable": false, "note": "parked: not packed yet"}

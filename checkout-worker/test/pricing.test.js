@@ -13,16 +13,18 @@ test("server price table = the Amazon MRPs in the brief", () => {
   assert.equal(skuOf("TURM"), "1AF-TURM-0540");
 });
 
-test("what can be ordered: one flag per pack; Sannam and Teja held, cashew parked (G12)", () => {
+test("what can be ordered: one flag per pack; Sannam and Teja on sale, cashew parked (G12)", () => {
   const sellable = Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable);
-  assert.deepEqual(sellable, ["TURM", "KPAS", "CBEL", "TBEL"]);
-  for (const code of ["SANN", "TEJA", "CASH"]) {
+  assert.deepEqual(sellable, ["TURM", "KPAS", "SANN", "TEJA", "CBEL", "TBEL"]);
+  for (const code of ["SANN", "TEJA"]) assert.deepEqual(quoteCart([{ code, qty: 1 }]).errors, [], code);
+  for (const code of ["CASH"]) {
     assert.equal(CATALOGUE[code].sellable, false, code);
     assert.deepEqual(quoteCart([{ code, qty: 1 }]).errors.map((e) => e.code), ["not_sellable"], code);
   }
-  // HSN stays as on record: blank for the chillies and cashew (not sellable), never invented
+  // HSN as on record in docs/invoices/sales/templates/make_invoice.py (chillies 0904 22 11, chilly powder);
+  // blank for cashew (not sellable), never invented
   assert.deepEqual(Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, v.hsn])),
-    { TURM: "09103030", KPAS: "09103030", SANN: "", TEJA: "", CBEL: "17011310", TBEL: "17029010", CASH: "" });
+    { TURM: "09103030", KPAS: "09103030", SANN: "09042211", TEJA: "09042211", CBEL: "17011310", TBEL: "17029010", CASH: "" });
   // switching a pack on is one line: the page and the Meta link both read CATALOGUE[code].sellable
   const page = readFileSync(new URL("../../checkout-test/checkout.js", import.meta.url), "utf8");
   assert.match(page, /Object\.entries\(CATALOGUE\)\.filter\(\(\[, p\]\) => p\.sellable\)/);

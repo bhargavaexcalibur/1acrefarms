@@ -193,15 +193,17 @@ console.log("1acrefarms checkout smoke run (mocked gateways, SQLite D1, test mod
 // F. Catalogue, GST display, Meta catalogue link ------------------------------------------------------
 {
   const h = newHarness();
-  const held = await h.createOrder([{ code: "SANN", qty: 1 }, { code: "TEJA", qty: 1 }]);
+  const held = await h.createOrder([{ code: "CASH", qty: 1 }]);
   assert.equal(held.status, 400);
-  ok(`Sannam / Teja held (sellable:false) -> 400 ${held.body.errors.map((e) => e.code).join(", ")}; sellable now: ${Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable).join(", ")}`);
+  const chilli = await newHarness().createOrder([{ code: "SANN", qty: 1 }, { code: "TEJA", qty: 1 }]);
+  assert.equal(chilli.status, 200);
+  ok(`Cashew parked (sellable:false) -> 400 ${held.body.errors.map((e) => e.code).join(", ")}; Sannam + Teja -> 200; sellable now: ${Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable).join(", ")}`);
   const q = quoteCart([{ code: "CBEL", qty: 4 }]);
   assert.equal(gstBreakup(q.lines, "Andhra Pradesh").cgstPaise, 2228);
   ok(`GST shown inside the MRP (total stays ${q.totalPaise / 100}): AP "${gstLine(gstBreakup(q.lines, "Andhra Pradesh"))}"; Delhi "${gstLine(gstBreakup(q.lines, "Delhi"))}"`);
-  const link = parseProductsParam(new URLSearchParams("products=1AF-TURM-0540%3A2%2C1AF-PALM-0540%3A1%2C1AF-SANN-0540%3A1").get("products"));
+  const link = parseProductsParam(new URLSearchParams("products=1AF-TURM-0540%3A2%2C1AF-PALM-0540%3A1%2C1AF-CASH-0540%3A1").get("products"));
   assert.deepEqual(link.items, [{ code: "TURM", qty: 2 }, { code: "TBEL", qty: 1 }]);
-  ok(`Meta link ?products=1AF-TURM-0540%3A2,1AF-PALM-0540%3A1,1AF-SANN-0540%3A1 -> cart ${link.items.map((i) => `${i.qty} x ${i.code}`).join(", ")}; left out: ${link.ignored.map((i) => `${i.sku} (${i.reason})`).join(", ")}`);
+  ok(`Meta link ?products=1AF-TURM-0540%3A2,1AF-PALM-0540%3A1,1AF-CASH-0540%3A1 -> cart ${link.items.map((i) => `${i.qty} x ${i.code}`).join(", ")}; left out: ${link.ignored.map((i) => `${i.sku} (${i.reason})`).join(", ")}`);
 }
 
 console.log(`\nsmoke: ${step} checks passed`);

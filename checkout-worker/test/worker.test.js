@@ -106,8 +106,12 @@ describe("create-order", () => {
     assert.equal(junk.body.error, "bad_json");
   });
 
-  test("held packs (Sannam, Teja) and parked cashew are refused: not_sellable, no gateway call", async () => {
-    for (const code of ["SANN", "TEJA", "CASH"]) {
+  test("Sannam and Teja can be ordered (on sale since the chilli go-live)", async () => {
+    for (const code of ["SANN", "TEJA"]) assert.equal((await harness().createOrder([{ code, qty: 1 }])).status, 200, code);
+  });
+
+  test("parked cashew is refused: not_sellable, no gateway call", async () => {
+    for (const code of ["CASH"]) {
       const h = harness();
       const r = await h.createOrder([{ code, qty: 1 }]);
       assert.equal(r.status, 400, code);

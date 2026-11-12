@@ -23,11 +23,9 @@ test("every sellable SKU is understood; PALM is palm jaggery (TBEL)", () => {
 });
 
 test("unknown, held/parked and bad-quantity items are left out and reported", () => {
-  const r = parseProductsParam("1AF-SANN-0540:1,1AF-TEJA-0540:2,1AF-CASH-0540:1,1AF-XXXX-0540:1,1AF-TURM-1000:1,1AF-TURM-0540:0,1AF-CBEL-0540:-1,1AF-KPAS-0540:two,1AF-TBEL-0540:1.5,1AF-TURM-0540:1");
+  const r = parseProductsParam("1AF-CASH-0540:1,1AF-XXXX-0540:1,1AF-TURM-1000:1,1AF-TURM-0540:0,1AF-CBEL-0540:-1,1AF-KPAS-0540:two,1AF-TBEL-0540:1.5,1AF-TURM-0540:1");
   assert.deepEqual(r.items, [{ code: "TURM", qty: 1 }]);
   assert.deepEqual(r.ignored, [
-    { sku: "1AF-SANN-0540", reason: "not_sellable" },
-    { sku: "1AF-TEJA-0540", reason: "not_sellable" },
     { sku: "1AF-CASH-0540", reason: "not_sellable" },
     { sku: "1AF-XXXX-0540", reason: "unknown" },
     { sku: "1AF-TURM-1000", reason: "unknown" },
@@ -66,13 +64,13 @@ test("stored cart: only sellable packs, whole quantities, per-pack and per-order
   assert.equal(CART_KEY, "oneacre_cart_v1");
   assert.deepEqual(clampCart({ TURM: 2, CBEL: 1 }), { items: [{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }], clamped: false });
   for (const bad of [null, undefined, "x", 3, [], [["TURM", 1]]]) assert.deepEqual(clampCart(bad), { items: [], clamped: false }, String(bad));
-  const r = clampCart({ SANN: 1, CASH: 2, XXXX: 1, TURM: 0, KPAS: -1, TBEL: 1.5, CBEL: "2", __proto__x: 1 });
+  const r = clampCart({ CASH: 2, XXXX: 1, TURM: 0, KPAS: -1, TBEL: 1.5, CBEL: "2", __proto__x: 1 });
   assert.deepEqual(r.items, [], "held, parked, unknown and bad quantities are dropped");
   assert.equal(r.clamped, true);
   assert.deepEqual(clampCart({ TURM: 50 }).items, [{ code: "TURM", qty: LIMITS.maxQtyPerLine }]);
   assert.deepEqual(clampCart({ TURM: 10, KPAS: 10 }).items, [{ code: "TURM", qty: 10 }, { code: "KPAS", qty: LIMITS.maxPacksPerOrder - 10 }]);
   assert.equal(clampCart({ TURM: 10, KPAS: 10, CBEL: 1 }).items.length, 2, "nothing past the order limit");
-  assert.equal(cartCount({ TURM: 2, CBEL: 1, SANN: 4 }), 3);
+  assert.equal(cartCount({ TURM: 2, CBEL: 1, CASH: 4 }), 3);
 });
 
 test("Add to cart / Buy now: one more, or at least one; never past the limits; held packs refused", () => {
@@ -82,6 +80,7 @@ test("Add to cart / Buy now: one more, or at least one; never past the limits; h
   assert.deepEqual(cartAdd({ CBEL: 1 }, "TURM", { atLeastOne: true }), { ok: true, cart: { CBEL: 1, TURM: 1 }, added: true });
   assert.deepEqual(cartAdd({ TURM: 10 }, "TURM"), { ok: true, cart: { TURM: 10 }, added: false }, "per-pack limit");
   assert.deepEqual(cartAdd({ TURM: 10, KPAS: 2 }, "CBEL"), { ok: true, cart: { TURM: 10, KPAS: 2 }, added: false }, "order limit");
-  for (const code of ["SANN", "TEJA", "CASH", "XXXX", "", null]) assert.deepEqual(cartAdd({ TURM: 1 }, code), { ok: false }, String(code));
-  assert.deepEqual(cartAdd({ SANN: 3, TURM: 1 }, "KPAS").cart, { TURM: 1, KPAS: 1 }, "a held pack left in storage is dropped");
+  for (const code of ["CASH", "XXXX", "", null]) assert.deepEqual(cartAdd({ TURM: 1 }, code), { ok: false }, String(code));
+  assert.deepEqual(cartAdd({ CASH: 3, TURM: 1 }, "KPAS").cart, { TURM: 1, KPAS: 1 }, "a held pack left in storage is dropped");
+  for (const code of ["SANN", "TEJA"]) assert.deepEqual(cartAdd({}, code), { ok: true, cart: { [code]: 1 }, added: true }, code);
 });
