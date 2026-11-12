@@ -55,22 +55,28 @@
    "video": "https://youtu.be/X1XO84ceTyo"
   },
   "pack-turmeric-powder-hi": {
-   "video": "https://youtu.be/JXhHkM-WgW0"
+   "video": "https://youtu.be/JXhHkM-WgW0",
+   "short": "https://youtube.com/shorts/1d5XQGtC4ew"
   },
   "pack-turmeric-powder-sa": {
-   "video": "https://youtu.be/yaH7MHLcJyA"
+   "video": "https://youtu.be/yaH7MHLcJyA",
+   "short": "https://youtube.com/shorts/C7hdhXsChw4"
   },
   "recipe-pasupu-paalu": {
-   "video": "https://youtu.be/5Q7-bC68p68"
+   "video": "https://youtu.be/5Q7-bC68p68",
+   "short": "https://youtube.com/shorts/K4AU98gf-2w"
   },
   "recipe-pasupu-paalu-te": {
-   "video": "https://youtu.be/CxmvFLx9yWk"
+   "video": "https://youtu.be/CxmvFLx9yWk",
+   "short": "https://youtube.com/shorts/l7I4krtiaEs"
   },
   "recipe-pasupu-paalu-hi": {
-   "video": "https://youtu.be/_tIxJGCq31E"
+   "video": "https://youtu.be/_tIxJGCq31E",
+   "short": "https://youtube.com/shorts/Kg3SWbb7mQs"
   },
   "recipe-pasupu-paalu-sa": {
-   "video": "https://youtu.be/7nuK5MPQPgY"
+   "video": "https://youtu.be/7nuK5MPQPgY",
+   "short": "https://youtube.com/shorts/kWtsjY8uPCI"
   },
   "recipe-nimmakaya-pulihora": {
    "video": "https://youtu.be/jYm9BwpE4Ow"
@@ -98,6 +104,18 @@
   },
   "recipe-paramannam-sa": {
    "video": "https://youtu.be/4D-UQcljmjk"
+  },
+  "recipe-chimmili-te": {
+   "video": "https://youtu.be/QF59K_R4Kok"
+  },
+  "recipe-paramannam-hi": {
+   "video": "https://youtu.be/jhqalaAzEks"
+  },
+  "recipe-chimmili-sa": {
+   "video": "https://youtu.be/QixkpbQdTh4"
+  },
+  "pack-turmeric-powder-ta": {
+   "video": "https://youtu.be/YPA5Var_OvQ"
   }
  }
 }
