@@ -46,11 +46,6 @@
    "t": "ஆர்டரில் சேர்க்கவும்",
    "back": "Add to order"
   },
-  "ui.wa": {
-   "src": "Order on WhatsApp",
-   "t": "WhatsApp-ல் ஆர்டர் செய்யுங்கள்",
-   "back": "Order on WhatsApp"
-  },
   "ui.f_from": {
    "src": "From",
    "t": "எங்கிருந்து",
@@ -66,20 +61,10 @@
    "t": "டெலிவரி",
    "back": "Delivery"
   },
-  "ui.f_delivery_v": {
-   "src": "Free on 2 or more packs · ₹81 for one pack",
-   "t": "2 அல்லது அதற்கு மேற்பட்ட பாக்கெட்டுகளுக்கு இலவசம் · ஒரு பாக்கெட்டுக்கு ₹81",
-   "back": "Free for 2 or more packets · ₹81 for one packet"
-  },
   "ui.f_pay": {
    "src": "Pay",
    "t": "பணம் செலுத்த",
    "back": "To pay money"
-  },
-  "ui.f_pay_v": {
-   "src": "UPI, or pay on delivery where available",
-   "t": "UPI, அல்லது வசதி உள்ள இடங்களில் டெலிவரியின் போது பணம் செலுத்தலாம்",
-   "back": "UPI, or in places where the facility exists, you can pay money at the time of delivery"
   },
   "ui.how_to_use": {
    "src": "How to use",
@@ -100,11 +85,6 @@
    "src": "Delivery, payment and returns",
    "t": "டெலிவரி, பணம் செலுத்துதல், திருப்பி அனுப்புதல்",
    "back": "Delivery, paying money, sending back"
-  },
-  "ui.ship_p": {
-   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
-   "t": "ஆர்டர் உறுதியான 2 வேலை நாட்களுக்குள் பேக் செய்து அனுப்புகிறோம்; அனுப்பிய பிறகு பொதுவாக 2 முதல் 7 நாட்களில் வந்து சேரும். இந்தியாவில் நாங்கள் டெலிவரி செய்யும் எந்த இடத்திற்கும், 2 அல்லது அதற்கு மேற்பட்ட பாக்கெட்டுகளுக்கு டெலிவரி இலவசம்; ஒரு பாக்கெட்டுக்கு ₹81. UPI மூலம் பணம் செலுத்தலாம்; அல்லது தென்னிந்தியாவில் ₹999 வரையிலான ஆர்டர்களுக்கும், மற்ற இடங்களில் ₹599 வரையிலான ஆர்டர்களுக்கும் டெலிவரியின் போது பணம் செலுத்தலாம். பாக்கெட் சேதமடைந்து வந்தாலோ, தரத்தில் ஏதேனும் பிரச்சினை இருந்தாலோ, மாற்றித் தருவோம் அல்லது முழுப் பணத்தையும் திருப்பித் தருவோம்.",
-   "back": "Within the 2 working days of the order being confirmed, we pack and dispatch; after dispatch it usually arrives in 2 to 7 days. To any place in India that we deliver to, delivery is free for 2 or more packets; ₹81 for one packet. You can pay money through UPI; or you can pay money at the time of delivery for orders up to ₹999 in South India and for orders up to ₹599 in other places. If the packet arrives damaged, or if there is any problem in the quality, we will replace it or give back the full money."
   },
   "ui.read_policies": {
    "src": "Read our policies (in English)",

@@ -46,11 +46,6 @@
    "t": "क्रयादेशे योजयतु",
    "back": "Add to the purchase order"
   },
-  "ui.wa": {
-   "src": "Order on WhatsApp",
-   "t": "WhatsApp द्वारा क्रयादेशं ददातु",
-   "back": "Give a purchase order through WhatsApp"
-  },
   "ui.f_from": {
    "src": "From",
    "t": "कुतः",
@@ -66,20 +61,10 @@
    "t": "वितरणम्",
    "back": "Delivery (distribution)"
   },
-  "ui.f_delivery_v": {
-   "src": "Free on 2 or more packs · ₹81 for one pack",
-   "t": "2 अथवा अधिकेषु पुटकेषु निःशुल्कम् · एकस्मै पुटकाय ₹81",
-   "back": "Free on 2 or more packets · ₹81 for one packet"
-  },
   "ui.f_pay": {
    "src": "Pay",
    "t": "मूल्यदानम्",
    "back": "Payment of the price"
-  },
-  "ui.f_pay_v": {
-   "src": "UPI, or pay on delivery where available",
-   "t": "UPI, अथवा यत्र सुविधा अस्ति तत्र वितरणसमये मूल्यदानम्",
-   "back": "UPI, or payment of the price at the time of delivery where the facility exists"
   },
   "ui.how_to_use": {
    "src": "How to use",
@@ -100,11 +85,6 @@
    "src": "Delivery, payment and returns",
    "t": "वितरणं, मूल्यदानं प्रत्यर्पणं च",
    "back": "Delivery, payment and return"
-  },
-  "ui.ship_p": {
-   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
-   "t": "क्रयादेशस्य पुष्टेः अनन्तरं 2 कार्यदिनेषु क्रयादेशाः पुटीक्रियन्ते प्रेष्यन्ते च, प्रेषणात् प्रायः 2 तः 7 दिनेषु प्राप्यन्ते च। भारते यत्र यत्र वयं वितरामः, तत्र सर्वत्र 2 अथवा अधिकेषु पुटकेषु वितरणं निःशुल्कम्, एकस्मै पुटकाय ₹81। UPI द्वारा मूल्यं ददातु, अथवा दक्षिणभारते ₹999 पर्यन्तम् अन्यत्र च ₹599 पर्यन्तं क्रयादेशेषु वितरणसमये मूल्यं ददातु। यदि किमपि पुटकं क्षतं प्राप्यते, अथवा तस्य गुणवत्तायां दोषः अस्ति, तर्हि वयं तत् परिवर्तयामः अथवा भवते सम्पूर्णं मूल्यं प्रत्यर्पयामः।",
-   "back": "After confirmation of the purchase order, purchase orders are packed and sent within 2 working days, and are usually received within 2 to 7 days from sending. Wherever in India we deliver, everywhere there delivery is free on 2 or more packets, ₹81 for one packet. Pay the price through UPI, or pay the price at the time of delivery on purchase orders up to ₹999 in South India and up to ₹599 elsewhere. If any packet is received damaged, or there is a defect in its quality, then we replace it or give back the full price to you."
   },
   "ui.read_policies": {
    "src": "Read our policies (in English)",

@@ -46,11 +46,6 @@
    "t": "ऑर्डरमध्ये जोडा",
    "back": "Add to order"
   },
-  "ui.wa": {
-   "src": "Order on WhatsApp",
-   "t": "WhatsApp वर ऑर्डर करा",
-   "back": "Order on WhatsApp"
-  },
   "ui.f_from": {
    "src": "From",
    "t": "कुठून",
@@ -66,20 +61,10 @@
    "t": "डिलिव्हरी",
    "back": "Delivery"
   },
-  "ui.f_delivery_v": {
-   "src": "Free on 2 or more packs · ₹81 for one pack",
-   "t": "2 किंवा जास्त पॅकवर मोफत · एका पॅकसाठी ₹81",
-   "back": "Free on 2 or more packs · ₹81 for one pack"
-  },
   "ui.f_pay": {
    "src": "Pay",
    "t": "पेमेंट",
    "back": "Payment"
-  },
-  "ui.f_pay_v": {
-   "src": "UPI, or pay on delivery where available",
-   "t": "UPI, किंवा जिथे सोय असेल तिथे डिलिव्हरीच्या वेळी पैसे द्या",
-   "back": "UPI, or pay at the time of delivery wherever the facility is available"
   },
   "ui.how_to_use": {
    "src": "How to use",
@@ -100,11 +85,6 @@
    "src": "Delivery, payment and returns",
    "t": "डिलिव्हरी, पेमेंट आणि परतावा",
    "back": "Delivery, payment and refund"
-  },
-  "ui.ship_p": {
-   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
-   "t": "ऑर्डर पक्की झाल्यापासून 2 कामाच्या दिवसांत पॅक करून पाठवल्या जातात आणि साधारणपणे पाठवल्यानंतर 2 ते 7 दिवसांत पोहोचतात. भारतात आम्ही जिथे जिथे डिलिव्हरी करतो तिथे 2 किंवा जास्त पॅकवर डिलिव्हरी मोफत आहे आणि एका पॅकसाठी ₹81 आहे. UPI ने पैसे द्या, किंवा दक्षिण भारतात ₹999 पर्यंतच्या आणि इतर ठिकाणी ₹599 पर्यंतच्या ऑर्डरसाठी डिलिव्हरीच्या वेळी पैसे द्या. पॅक खराब अवस्थेत पोहोचला किंवा त्याच्या दर्जात काही अडचण असेल, तर आम्ही तो बदलून देतो किंवा तुमचे पूर्ण पैसे परत करतो.",
-   "back": "Orders are packed and dispatched within 2 working days from when the order is confirmed, and usually arrive within 2 to 7 days after dispatch. Wherever we deliver in India, delivery is free on 2 or more packs and is ₹81 for one pack. Pay by UPI, or pay at the time of delivery for orders up to ₹999 in South India and up to ₹599 in other places. If a pack arrives in bad condition or there is some problem with its quality, we replace it or give your full money back."
   },
   "ui.read_policies": {
    "src": "Read our policies (in English)",

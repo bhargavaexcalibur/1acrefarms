@@ -46,11 +46,6 @@
    "t": "ಆರ್ಡರ್‌ಗೆ ಸೇರಿಸಿ",
    "back": "Add to order"
   },
-  "ui.wa": {
-   "src": "Order on WhatsApp",
-   "t": "WhatsApp ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಿ",
-   "back": "Order on WhatsApp"
-  },
   "ui.f_from": {
    "src": "From",
    "t": "ಎಲ್ಲಿಂದ",
@@ -66,20 +61,10 @@
    "t": "ಡೆಲಿವರಿ",
    "back": "Delivery"
   },
-  "ui.f_delivery_v": {
-   "src": "Free on 2 or more packs · ₹81 for one pack",
-   "t": "2 ಅಥವಾ ಹೆಚ್ಚು ಪ್ಯಾಕ್‌ಗಳಿಗೆ ಉಚಿತ · ಒಂದು ಪ್ಯಾಕ್‌ಗೆ ₹81",
-   "back": "Free for 2 or more packs · ₹81 for one pack"
-  },
   "ui.f_pay": {
    "src": "Pay",
    "t": "ಪಾವತಿ",
    "back": "Payment"
-  },
-  "ui.f_pay_v": {
-   "src": "UPI, or pay on delivery where available",
-   "t": "UPI, ಅಥವಾ ಸಾಧ್ಯವಿರುವ ಕಡೆ ಡೆಲಿವರಿ ವೇಳೆ ಪಾವತಿ",
-   "back": "UPI, or payment at the time of delivery where possible"
   },
   "ui.how_to_use": {
    "src": "How to use",
@@ -100,11 +85,6 @@
    "src": "Delivery, payment and returns",
    "t": "ಡೆಲಿವರಿ, ಪಾವತಿ ಮತ್ತು ವಾಪಸಾತಿ",
    "back": "Delivery, payment and returns"
-  },
-  "ui.ship_p": {
-   "src": "Orders are packed and dispatched within 2 working days of confirmation, and usually arrive 2 to 7 days after dispatch. Delivery is free on 2 or more packs and ₹81 for a single pack, anywhere we deliver in India. Pay by UPI, or pay on delivery for orders up to ₹999 in South India and ₹599 elsewhere. If a pack arrives damaged or has a quality problem, we replace it or refund you in full.",
-   "t": "ಆರ್ಡರ್ ಖಚಿತವಾದ ನಂತರ 2 ಕೆಲಸದ ದಿನಗಳ ಒಳಗೆ ಪ್ಯಾಕ್ ಮಾಡಿ ಕಳುಹಿಸುತ್ತೇವೆ. ಕಳುಹಿಸಿದ ನಂತರ ಸಾಮಾನ್ಯವಾಗಿ 2 ರಿಂದ 7 ದಿನಗಳಲ್ಲಿ ತಲುಪುತ್ತದೆ. ಭಾರತದಲ್ಲಿ ನಾವು ಡೆಲಿವರಿ ಮಾಡುವ ಯಾವುದೇ ಸ್ಥಳಕ್ಕೆ 2 ಅಥವಾ ಹೆಚ್ಚು ಪ್ಯಾಕ್‌ಗಳಿಗೆ ಡೆಲಿವರಿ ಉಚಿತ, ಒಂದೇ ಪ್ಯಾಕ್‌ಗೆ ₹81. UPI ಮೂಲಕ ಪಾವತಿಸಬಹುದು. ದಕ್ಷಿಣ ಭಾರತದಲ್ಲಿ ₹999 ವರೆಗಿನ ಮತ್ತು ಬೇರೆ ಕಡೆ ₹599 ವರೆಗಿನ ಆರ್ಡರ್‌ಗಳಿಗೆ ಡೆಲಿವರಿ ವೇಳೆಯೂ ಪಾವತಿಸಬಹುದು. ಪ್ಯಾಕ್ ಹಾಳಾಗಿ ಬಂದರೆ ಅಥವಾ ಗುಣಮಟ್ಟದಲ್ಲಿ ಸಮಸ್ಯೆ ಇದ್ದರೆ, ಬದಲಿಸಿ ಕೊಡುತ್ತೇವೆ ಅಥವಾ ಪೂರ್ತಿ ಹಣ ವಾಪಸ್ ಕೊಡುತ್ತೇವೆ.",
-   "back": "After the order is confirmed, we will pack and send it within 2 working days. After sending, it usually arrives in 2 to 7 days. To any place in India that we deliver to, delivery is free for 2 or more packs, ₹81 for a single pack. You can pay through UPI. For orders up to ₹999 in South India and up to ₹599 elsewhere, you can also pay at the time of delivery. If the pack arrives damaged or if there is a problem in quality, we will replace it or give back the full money."
   },
   "ui.read_policies": {
    "src": "Read our policies (in English)",
