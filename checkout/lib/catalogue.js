@@ -81,10 +81,10 @@ export default {
    "name": "Cashew Kernels",
    "grams": 540,
    "mrp": 891,
-   "hsn": "",
+   "hsn": "08013220",
    "image": "cashew-540g.jpg",
-   "sellable": false,
-   "note": "parked: not packed yet"
+   "sellable": true,
+   "note": ""
   }
  ]
 };
