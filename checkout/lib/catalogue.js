@@ -33,10 +33,10 @@ export default {
    "name": "Sannam Chilli Powder",
    "grams": 540,
    "mrp": 495,
-   "hsn": "",
+   "hsn": "09042211",
    "image": "sannam-540g.jpg",
-   "sellable": false,
-   "note": "held until its stock is counted and real pack photos exist (G12, 11-11-2026)"
+   "sellable": true,
+   "note": ""
   },
   {
    "code": "TEJA",
@@ -45,10 +45,10 @@ export default {
    "name": "Teja Chilli Powder",
    "grams": 540,
    "mrp": 495,
-   "hsn": "",
+   "hsn": "09042211",
    "image": "teja-540g.jpg",
-   "sellable": false,
-   "note": "held until its stock is counted and real pack photos exist (G12, 11-11-2026)"
+   "sellable": true,
+   "note": ""
   },
   {
    "code": "CBEL",

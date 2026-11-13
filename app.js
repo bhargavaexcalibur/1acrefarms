@@ -361,7 +361,7 @@ if (soonLive) Object.values(PRODUCTS).forEach((p) => { if (p.soon === "31 Oct") 
 const onAmazonNow = (p) => !PACK_PAGE[p.code] || Boolean(AMAZON[p.code]);
 // CHECKOUT:START(sellable) written by tools/build_pages.py while CHECKOUT_LIVE = True; with False the build puts
 // back the Amazon-only line. DIRECT = the packs sold on this website ("sellable" in checkout-worker/src/catalogue.json).
-const DIRECT = ["TURM", "KPAS", "CBEL", "TBEL"];
+const DIRECT = ["TURM", "KPAS", "SANN", "TEJA", "CBEL", "TBEL"];
 const sellable = (p) => p.live && !p.soon && (onAmazonNow(p) || DIRECT.includes(p.code));
 // CHECKOUT:END(sellable)
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
