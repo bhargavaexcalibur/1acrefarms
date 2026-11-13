@@ -9,22 +9,23 @@ import { CUSTOMER } from "./helpers/harness.js";
 test("server price table = the Amazon MRPs in the brief", () => {
   const mrp = Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, v.mrp]));
   assert.deepEqual(mrp, { TURM: 396, KPAS: 495, SANN: 495, TEJA: 495, CBEL: 234, TBEL: 495, CASH: 891 });
-  assert.equal(CATALOGUE.CASH.sellable, false, "cashew is parked");
+  assert.equal(CATALOGUE.CASH.sellable, true, "cashew on sale since 13-11-2026");
   assert.equal(skuOf("TURM"), "1AF-TURM-0540");
 });
 
-test("what can be ordered: one flag per pack; Sannam and Teja on sale, cashew parked (G12)", () => {
+test("what can be ordered: one flag per pack; all 7 packs on sale since 13-11-2026 (chilli + cashew go-live)", () => {
   const sellable = Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable);
-  assert.deepEqual(sellable, ["TURM", "KPAS", "SANN", "TEJA", "CBEL", "TBEL"]);
-  for (const code of ["SANN", "TEJA"]) assert.deepEqual(quoteCart([{ code, qty: 1 }]).errors, [], code);
-  for (const code of ["CASH"]) {
+  assert.deepEqual(sellable, ["TURM", "KPAS", "SANN", "TEJA", "CBEL", "TBEL", "CASH"]);
+  for (const code of ["SANN", "TEJA", "CASH"]) assert.deepEqual(quoteCart([{ code, qty: 1 }]).errors, [], code);
+  // a pack switched off again ("sellable": false) is refused: checked for every such pack (none right now)
+  for (const code of Object.keys(CATALOGUE).filter((c) => !CATALOGUE[c].sellable)) {
     assert.equal(CATALOGUE[code].sellable, false, code);
     assert.deepEqual(quoteCart([{ code, qty: 1 }]).errors.map((e) => e.code), ["not_sellable"], code);
   }
-  // HSN as on record in docs/invoices/sales/templates/make_invoice.py (chillies 0904 22 11, chilly powder);
-  // blank for cashew (not sellable), never invented
+  // HSN as on record in docs/invoices/sales/templates/make_invoice.py (chillies 0904 22 11 chilly powder;
+  // cashew 0801 32 20 cashew kernel, whole), never invented
   assert.deepEqual(Object.fromEntries(Object.entries(CATALOGUE).map(([k, v]) => [k, v.hsn])),
-    { TURM: "09103030", KPAS: "09103030", SANN: "09042211", TEJA: "09042211", CBEL: "17011310", TBEL: "17029010", CASH: "" });
+    { TURM: "09103030", KPAS: "09103030", SANN: "09042211", TEJA: "09042211", CBEL: "17011310", TBEL: "17029010", CASH: "08013220" });
   // switching a pack on is one line: the page and the Meta link both read CATALOGUE[code].sellable
   const page = readFileSync(new URL("../../checkout-test/checkout.js", import.meta.url), "utf8");
   assert.match(page, /Object\.entries\(CATALOGUE\)\.filter\(\(\[, p\]\) => p\.sellable\)/);
@@ -136,7 +137,6 @@ test("cart rules: client prices ignored, unknown/parked items, limits, merge", (
   assert.equal(q.lines.length, 1, "same code merged");
   assert.equal(q.lines[0].qty, 2);
   assert.equal(q.lines[0].unitPaise, 39600, "price from the server table only");
-  assert.deepEqual(quoteCart([{ code: "CASH", qty: 1 }], "522601").errors.map((e) => e.code), ["not_sellable"]);
   assert.deepEqual(quoteCart([{ code: "XXXX", qty: 1 }], "522601").errors.map((e) => e.code), ["unknown_item"]);
   assert.deepEqual(quoteCart([{ code: "TURM", qty: 0 }], "522601").errors.map((e) => e.code), ["bad_qty"]);
   assert.deepEqual(quoteCart([{ code: "TURM", qty: 1.5 }], "522601").errors.map((e) => e.code), ["bad_qty"]);

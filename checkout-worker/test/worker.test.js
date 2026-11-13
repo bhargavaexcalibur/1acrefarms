@@ -97,25 +97,25 @@ describe("create-order", () => {
 
   test("invalid input: 400 with field codes, nothing sent to a gateway", async () => {
     const h = harness();
-    const r = await h.createOrder([{ code: "CASH", qty: 1 }], { ...CUSTOMER, phone: "12345", pin: "522601", state: "Kerala" });
+    const r = await h.createOrder([{ code: "XXXX", qty: 1 }], { ...CUSTOMER, phone: "12345", pin: "522601", state: "Kerala" });
     assert.equal(r.status, 400);
-    assert.deepEqual(r.body.errors.map((e) => `${e.field}:${e.code}`), ["phone:invalid", "pin:state_mismatch", "items:not_sellable"]);
+    assert.deepEqual(r.body.errors.map((e) => `${e.field}:${e.code}`), ["phone:invalid", "pin:state_mismatch", "items:unknown_item"]);
     assert.equal(gatewayCalls(h).length, 0);
     const junk = await h.call("POST", "/create-order", { raw: "not json", headers: { "content-type": "application/json" } });
     assert.equal(junk.status, 400);
     assert.equal(junk.body.error, "bad_json");
   });
 
-  test("Sannam and Teja can be ordered (on sale since the chilli go-live)", async () => {
-    for (const code of ["SANN", "TEJA"]) assert.equal((await harness().createOrder([{ code, qty: 1 }])).status, 200, code);
+  test("Sannam, Teja and cashew can be ordered (on sale since the 13-11 go-live)", async () => {
+    for (const code of ["SANN", "TEJA", "CASH"]) assert.equal((await harness().createOrder([{ code, qty: 1 }])).status, 200, code);
   });
 
-  test("parked cashew is refused: not_sellable, no gateway call", async () => {
-    for (const code of ["CASH"]) {
+  test("an unknown pack is refused: unknown_item, no gateway call", async () => {
+    for (const code of ["XXXX"]) {
       const h = harness();
       const r = await h.createOrder([{ code, qty: 1 }]);
       assert.equal(r.status, 400, code);
-      assert.deepEqual(r.body.errors.map((e) => `${e.field}:${e.code}`), ["items:not_sellable"], code);
+      assert.deepEqual(r.body.errors.map((e) => `${e.field}:${e.code}`), ["items:unknown_item"], code);
       assert.equal(gatewayCalls(h).length, 0);
     }
   });

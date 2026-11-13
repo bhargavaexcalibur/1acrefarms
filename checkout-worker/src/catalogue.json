@@ -7,6 +7,6 @@
   {"code": "TEJA", "sku": "1AF-TEJA-0540", "slug": "teja-chilli-powder", "name": "Teja Chilli Powder", "grams": 540, "mrp": 495, "hsn": "09042211", "image": "teja-540g.jpg", "sellable": true, "note": ""},
   {"code": "CBEL", "sku": "1AF-CBEL-0540", "slug": "cane-jaggery", "name": "Cane Jaggery", "grams": 540, "mrp": 234, "hsn": "17011310", "image": "cane-jaggery-540g.jpg", "sellable": true, "note": ""},
   {"code": "TBEL", "sku": "1AF-TBEL-0540", "slug": "palm-jaggery", "name": "Palm Jaggery", "grams": 540, "mrp": 495, "hsn": "17029010", "image": "palm-jaggery-540g.jpg", "sellable": true, "note": ""},
-  {"code": "CASH", "sku": "1AF-CASH-0540", "slug": "cashew-kernels", "name": "Cashew Kernels", "grams": 540, "mrp": 891, "hsn": "", "image": "cashew-540g.jpg", "sellable": false, "note": "parked: not packed yet"}
+  {"code": "CASH", "sku": "1AF-CASH-0540", "slug": "cashew-kernels", "name": "Cashew Kernels", "grams": 540, "mrp": 891, "hsn": "08013220", "image": "cashew-540g.jpg", "sellable": true, "note": ""}
  ]
 }
