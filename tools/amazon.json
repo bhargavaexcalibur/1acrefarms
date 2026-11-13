@@ -40,8 +40,8 @@
   },
   "CASH": {
    "asin": "B0HPY39Q6V",
-   "buyable": false,
-   "checked": "2026-11-06",
+   "buyable": true,
+   "checked": "2026-11-13",
    "source": "browser"
   }
  }
