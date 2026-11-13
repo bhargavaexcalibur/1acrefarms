@@ -16,14 +16,14 @@
   },
   "SANN": {
    "asin": "B0HPY66QPX",
-   "buyable": false,
-   "checked": "2026-11-06",
+   "buyable": true,
+   "checked": "2026-11-13",
    "source": "browser"
   },
   "TEJA": {
    "asin": "B0HPXYLWDC",
-   "buyable": false,
-   "checked": "2026-11-06",
+   "buyable": true,
+   "checked": "2026-11-13",
    "source": "browser"
   },
   "CBEL": {

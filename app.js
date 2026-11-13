@@ -366,7 +366,7 @@ const sellable = (p) => p.live && !p.soon && (onAmazonNow(p) || DIRECT.includes(
 // CHECKOUT:END(sellable)
 // One crawlable page per pack, built by tools/build_pages.py (SEO). Add a code here only once its page exists.
 const AMAZON_STORE = "https://www.amazon.in/stores/page/50DF04FC-8BF5-4F2F-97C2-371C2DEB0A29";  // our Amazon.in store, for packs not buyable there yet
-const AMAZON = {"TURM": "B0HPX556NS", "KPAS": "B0HPWYG3KW", "CBEL": "B0HPXK9M5X", "TBEL": "B0HPX8DXT8"};  // buyable on Amazon.in; written by tools/build_pages.py
+const AMAZON = {"TURM": "B0HPX556NS", "KPAS": "B0HPWYG3KW", "SANN": "B0HPY66QPX", "TEJA": "B0HPXYLWDC", "CBEL": "B0HPXK9M5X", "TBEL": "B0HPX8DXT8"};  // buyable on Amazon.in; written by tools/build_pages.py
 const PACK_PAGE = { TURM: "/turmeric-powder/", KPAS: "/hill-turmeric-powder/", CBEL: "/cane-jaggery/", TBEL: "/palm-jaggery/", SANN: "/sannam-chilli-powder/", TEJA: "/teja-chilli-powder/", CASH: "/cashew-kernels/" };
 if (SELLING_ONLY) {
   PACK_SECTIONS.forEach((s) => s.products.forEach((p) => { p.skus = p.skus.filter((k) => k.live); }));
