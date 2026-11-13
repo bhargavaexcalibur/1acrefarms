@@ -9745,6 +9745,811 @@
    "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
    "t": "वयं प्रत्येकं परिवादं 48 होराभ्यन्तरे प्राप्तम् इति सूचयामः, तस्मै परिवादसङ्ख्यां (उदाहरणार्थं 1AF-C-0001) दद्मः, यां भवान् कदापि उद्धृत्य तस्य स्थितिं ज्ञातुं शक्नोति, एकमासाभ्यन्तरे च तं निवारयामः।",
    "back": "We notify within 48 hours that each complaint has been received, give it a complaint number (for example 1AF-C-0001), which you can quote at any time to know its status, and resolve it within one month."
+  },
+  "seg.775626e05173": {
+   "src": "Cashew grades explained",
+   "t": "काजूतकश्रेणीनां व्याख्या",
+   "back": "Explanation of cashew grades"
+  },
+  "seg.bd93e5099667": {
+   "src": "Guide · cashew",
+   "t": "मार्गदर्शिका · काजूतकम्",
+   "back": "Guide · Cashew"
+  },
+  "seg.7b06243b4b36": {
+   "src": "Cashew grades explained: W180, W240, W320 and more",
+   "t": "काजूतकश्रेणीनां व्याख्या: W180, W240, W320 अन्याः च",
+   "back": "Explanation of cashew grades: W180, W240, W320 and others"
+  },
+  "seg.10fa875ffb15": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Jeedipappu · Kaju",
+   "t": "⟦#1⟧ · ⟦#2⟧ · जीडिपप्पु · काजू",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Jeedipappu · Cashew"
+  },
+  "seg.e690d34b37c7": {
+   "src": "W180, W240, W320: these are cashew kernel grades, and each letter and number means something exact. In India the grades are set out in AGMARK's Cashew Kernels Grading and Marking Rules, and the Cashew Export Promotion Council of India (CEPCI) describes the grades India exports.",
+   "t": "W180, W240, W320: एताः काजूबीजानां श्रेण्यः, प्रत्येकस्य अक्षरस्य अङ्कस्य च निश्चितः अर्थः अस्ति। भारते एताः श्रेण्यः AGMARK-संस्थायाः काजूबीज-श्रेणीकरण-चिह्नीकरण-नियमेषु (Cashew Kernels Grading and Marking Rules) निर्दिष्टाः, भारतं याः श्रेणीः निर्यापयति ताः Cashew Export Promotion Council of India (CEPCI) वर्णयति।",
+   "back": "W180, W240, W320: these are grades of cashew seeds, each letter and number has a fixed meaning. In India these grades are specified in the AGMARK institution's cashew-seed grading-marking rules (Cashew Kernels Grading and Marking Rules), and the grades which India exports are described by the Cashew Export Promotion Council of India (CEPCI)."
+  },
+  "seg.c6b446b7a250": {
+   "src": "This guide explains each grade name, gives the kernels per pound and per kg for the whole grades, and says what a grade tells you and what it does not. It also covers which kind suits which dish, where Andhra's cashews grow and how to keep them. There is a Telugu section further down.",
+   "t": "एषा मार्गदर्शिका प्रत्येकस्य श्रेणीनाम्नः अर्थं वदति, अखण्डश्रेणीनां कृते प्रतिपौण्डं प्रतिकिलो च बीजसङ्ख्यां ददाति, श्रेणी किं सूचयति किं न सूचयति इति च वदति। कः प्रकारः कस्मै व्यञ्जनाय उचितः, आन्ध्रस्य काजूतकं कुत्र उत्पद्यते, तत् कथं रक्षणीयम् इत्यपि अत्र अस्ति। अधः तेलुगुविभागः अस्ति।",
+   "back": "This guide tells the meaning of each grade name, gives the seed count per pound and per kilo for the whole grades, and tells what a grade indicates and what it does not indicate. Which type is proper for which dish, where Andhra's cashew is produced, how it should be preserved, is also here. Below there is a Telugu section."
+  },
+  "seg.c1ca260b3117": {
+   "src": "Cashew Kernels⟦#1⟧⟦#2⟧",
+   "t": "काजूबीजानि⟦#1⟧⟦#2⟧",
+   "back": "Cashew seeds⟦#1⟧⟦#2⟧"
+  },
+  "seg.448909881b37": {
+   "src": "⟦1⟧Our cashew kernels⟦/1⟧Whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+   "t": "⟦1⟧अस्माकं काजूबीजानि⟦/1⟧चीराल-बापट्ल-वैजाग-तीरात् अखण्डानि, साधारणानि, अलवणानि काजूबीजानि, नरसरावपेटे पुटीकृतानि।",
+   "back": "⟦1⟧Our cashew seeds⟦/1⟧Whole, ordinary (plain), saltless cashew seeds from the Chirala-Bapatla-Vizag coast, packeted in Narasaraopet."
+  },
+  "seg.7f9a4ad2ac37": {
+   "src": "In a grade such as W320, W means white whole kernels and the number is how many kernels make a pound (454 g): W320 is 300 to 320 kernels a pound, or 660 to 705 a kg. A smaller number means bigger kernels, and W180 is the biggest grade listed. SW means scorched wholes, browner from longer roasting. S, B, LWP, SWP and BB are splits, butts and pieces. A grade describes size, colour and wholeness, not taste.",
+   "t": "W320 इव श्रेण्यां W इत्यस्य अर्थः श्वेतानि अखण्डबीजानि, अङ्कः च एकस्मिन् पौण्डे (454 g) कति बीजानि भवन्ति इति: W320 नाम प्रतिपौण्डं 300 तः 320 पर्यन्तं बीजानि, अथवा प्रतिकिलो 660 तः 705 पर्यन्तम्। अल्पः अङ्कः महत्तराणि बीजानि सूचयति, सूच्यां बृहत्तमा श्रेणी W180। SW नाम दग्धवर्णानि अखण्डबीजानि (scorched wholes), दीर्घकालं भर्जनात् किञ्चित् पिङ्गलानि। S, B, LWP, SWP, BB च दीर्घतया विभक्तानि बीजानि, तिर्यक् भग्नानि बीजानि, खण्डाः च। श्रेणी परिमाणं, वर्णम्, अखण्डतां च सूचयति, न तु स्वादम्।",
+   "back": "In a grade like W320, the meaning of W is white whole seeds, and the number is how many seeds are in one pound (454 g): W320 means 300 to 320 seeds per pound, or 660 to 705 per kilo. A smaller number indicates larger seeds, the largest grade in the list is W180. SW means burnt-coloured whole seeds (scorched wholes), somewhat tawny from long roasting. S, B, LWP, SWP and BB are seeds split lengthwise, seeds broken crosswise, and pieces. The grade indicates size, colour and wholeness, but not taste."
+  },
+  "seg.43de32a51933": {
+   "src": "What the grade names mean",
+   "t": "श्रेणीनाम्नाम् अर्थः",
+   "back": "Meaning of the grade names"
+  },
+  "seg.78faffc3f74e": {
+   "src": "W: white wholes (W180, W210, W240, W320, W450 and more)",
+   "t": "W: श्वेतानि अखण्डबीजानि (W180, W210, W240, W320, W450 अन्याः च)",
+   "back": "W: White whole seeds (W180, W210, W240, W320, W450 and others)"
+  },
+  "seg.9ff1e572e8c8": {
+   "src": "Whole kernels that are white, pale ivory or light ash in colour. The number is how many kernels make a pound (454 g), so a smaller number means bigger kernels.",
+   "t": "श्वेतवर्णानि, मन्द-गजदन्तवर्णानि, मन्द-भस्मवर्णानि वा अखण्डबीजानि। अङ्कः एकस्मिन् पौण्डे (454 g) कति बीजानि इति सूचयति, अतः अल्पः अङ्कः महत्तराणि बीजानि।",
+   "back": "White, light ivory or light ash coloured whole seeds. The number indicates how many seeds in one pound (454 g), so a smaller number means larger seeds."
+  },
+  "seg.90d077505d77": {
+   "src": "SW: scorched wholes",
+   "t": "SW: दग्धवर्णानि अखण्डबीजानि (scorched wholes)",
+   "back": "SW: Burnt-coloured whole seeds (scorched wholes)"
+  },
+  "seg.4bc3adfa3fc7": {
+   "src": "Whole kernels that are light brown, light ivory, light ash or deep ivory in colour from scorching, which AGMARK puts down to overheating and CEPCI to longer roasting. CEPCI notes they have all the other characteristics of white kernels.",
+   "t": "दहनात् मन्दपिङ्गल-मन्दगजदन्त-मन्दभस्म-गाढगजदन्त-वर्णानि अखण्डबीजानि। AGMARK अस्य कारणम् अतितापम् इति वदति, CEPCI दीर्घभर्जनम् इति। CEPCI अनुसारम् एषु श्वेतबीजानाम् अन्ये सर्वे गुणाः सन्ति।",
+   "back": "Whole seeds of light tawny, light ivory, light ash or deep ivory colour from burning. AGMARK says its cause is excess heat, CEPCI says long roasting. According to CEPCI these have all the other qualities of white seeds."
+  },
+  "seg.6eab996478d3": {
+   "src": "SWS and DW: scorched wholes seconds and dessert wholes",
+   "t": "SWS, DW च: द्वितीयस्तरीयाणि दग्धवर्णानि अखण्डबीजानि, मिष्टान्नार्थम् अखण्डबीजानि (dessert wholes)",
+   "back": "SWS and DW: Second-level burnt-coloured whole seeds, whole seeds for sweets (dessert wholes)"
+  },
+  "seg.5780c6428d2a": {
+   "src": "Whole kernels with more marks allowed, such as speckled, discoloured or shrivelled kernels.",
+   "t": "अधिकचिह्नानि अनुमतानि येषु तानि अखण्डबीजानि, यथा बिन्दुयुक्तानि, विवर्णानि, सङ्कुचितानि वा।",
+   "back": "Whole seeds in which more marks are allowed, such as spotted, discoloured or shrunken."
+  },
+  "seg.375ecf155c15": {
+   "src": "B: butts",
+   "t": "B: बट्स् (तिर्यक् भग्नानि)",
+   "back": "B: Butts (broken crosswise)"
+  },
+  "seg.902ec0b3896b": {
+   "src": "Kernels broken across (crosswise), but not split apart along their length.",
+   "t": "तिर्यक् भग्नानि बीजानि, किन्तु दीर्घतया न विभक्तानि।",
+   "back": "Seeds broken crosswise, but not divided lengthwise."
+  },
+  "seg.e2b0618c9f46": {
+   "src": "S: splits",
+   "t": "S: स्प्लिट्स् (विभक्तानि)",
+   "back": "S: Splits (divided)"
+  },
+  "seg.d4f870cd6a0a": {
+   "src": "Kernels split along their length.",
+   "t": "दीर्घतया विभक्तानि बीजानि।",
+   "back": "Seeds divided lengthwise."
+  },
+  "seg.76b3bfda28d2": {
+   "src": "LWP, SWP and BB: large white pieces, small white pieces and baby bits",
+   "t": "LWP, SWP, BB च: बृहत् श्वेतखण्डाः, लघु श्वेतखण्डाः, अतिलघु खण्डाः (baby bits) च",
+   "back": "LWP, SWP and BB: Large white pieces, small white pieces and very small pieces (baby bits)"
+  },
+  "seg.8dfe1b91dc8d": {
+   "src": "Broken kernels, sorted by sieve. LWP are kernels broken into more than two pieces. In the ISO standard, LWP stay on a 4.75 mm sieve, SWP on a 2.80 mm sieve and BB on a 1.70 mm sieve.",
+   "t": "चालन्या पृथक्कृतानि भग्नबीजानि। LWP नाम द्वाभ्याम् अधिकेषु खण्डेषु भग्नानि बीजानि। ISO मानके LWP 4.75 mm चालन्याम्, SWP 2.80 mm चालन्याम्, BB 1.70 mm चालन्यां तिष्ठन्ति।",
+   "back": "Broken seeds separated by a sieve. LWP means seeds broken into more than two pieces. In the ISO standard LWP stay on a 4.75 mm sieve, SWP on a 2.80 mm sieve, BB on a 1.70 mm sieve."
+  },
+  "seg.f360d4576667": {
+   "src": "SB, SS, SP and SSP",
+   "t": "SB, SS, SP, SSP च",
+   "back": "SB, SS, SP and SSP"
+  },
+  "seg.b928dd595b74": {
+   "src": "Scorched butts, scorched splits, scorched pieces and scorched small pieces: the same cuts in the browner scorched colours.",
+   "t": "दग्धवर्णाः बट्स्, स्प्लिट्स्, खण्डाः, लघुखण्डाः च: त एव प्रकाराः, दग्ध-पिङ्गलवर्णेषु।",
+   "back": "Burnt-coloured butts, splits, pieces and small pieces: the same types, in burnt-tawny colours."
+  },
+  "seg.a863333da28f": {
+   "src": "Kernels per pound and per kg",
+   "t": "प्रतिपौण्डं प्रतिकिलो च बीजसङ्ख्या",
+   "back": "Seed count per pound and per kilo"
+  },
+  "seg.aecc49c15355": {
+   "src": "Grade",
+   "t": "श्रेणी",
+   "back": "Grade"
+  },
+  "seg.e857c14c4482": {
+   "src": "Kernels per pound (454 g)",
+   "t": "प्रतिपौण्डं (454 g) बीजानि",
+   "back": "Seeds per pound (454 g)"
+  },
+  "seg.c5625c50fdf2": {
+   "src": "Kernels per kg",
+   "t": "प्रतिकिलो बीजानि",
+   "back": "Seeds per kilo"
+  },
+  "seg.0eddff5de93a": {
+   "src": "120 to 180",
+   "t": "120 तः 180 पर्यन्तम्",
+   "back": "120 to 180"
+  },
+  "seg.32208a4cbb16": {
+   "src": "265 to 395",
+   "t": "265 तः 395 पर्यन्तम्",
+   "back": "265 to 395"
+  },
+  "seg.2c6129383a78": {
+   "src": "200 to 210",
+   "t": "200 तः 210 पर्यन्तम्",
+   "back": "200 to 210"
+  },
+  "seg.85a51e80f732": {
+   "src": "440 to 465",
+   "t": "440 तः 465 पर्यन्तम्",
+   "back": "440 to 465"
+  },
+  "seg.3ff7e725bcec": {
+   "src": "220 to 240",
+   "t": "220 तः 240 पर्यन्तम्",
+   "back": "220 to 240"
+  },
+  "seg.8bba2d6c5659": {
+   "src": "485 to 530",
+   "t": "485 तः 530 पर्यन्तम्",
+   "back": "485 to 530"
+  },
+  "seg.a5ce92096d7d": {
+   "src": "260 to 280",
+   "t": "260 तः 280 पर्यन्तम्",
+   "back": "260 to 280"
+  },
+  "seg.7b16f9e1a717": {
+   "src": "575 to 620",
+   "t": "575 तः 620 पर्यन्तम्",
+   "back": "575 to 620"
+  },
+  "seg.495b35d2fd20": {
+   "src": "300 to 320",
+   "t": "300 तः 320 पर्यन्तम्",
+   "back": "300 to 320"
+  },
+  "seg.a072c4bc4441": {
+   "src": "660 to 705",
+   "t": "660 तः 705 पर्यन्तम्",
+   "back": "660 to 705"
+  },
+  "seg.bda6639ebea6": {
+   "src": "350 to 400",
+   "t": "350 तः 400 पर्यन्तम्",
+   "back": "350 to 400"
+  },
+  "seg.d8d91e2355d0": {
+   "src": "770 to 880",
+   "t": "770 तः 880 पर्यन्तम्",
+   "back": "770 to 880"
+  },
+  "seg.7a9034e3b7f4": {
+   "src": "400 to 450",
+   "t": "400 तः 450 पर्यन्तम्",
+   "back": "400 to 450"
+  },
+  "seg.1e81373e3b20": {
+   "src": "880 to 990",
+   "t": "880 तः 990 पर्यन्तम्",
+   "back": "880 to 990"
+  },
+  "seg.2668e033cc63": {
+   "src": "450 to 500",
+   "t": "450 तः 500 पर्यन्तम्",
+   "back": "450 to 500"
+  },
+  "seg.50cf501d0189": {
+   "src": "990 to 1,100",
+   "t": "990 तः 1,100 पर्यन्तम्",
+   "back": "990 to 1,100"
+  },
+  "seg.98601d72fd74": {
+   "src": "The W210 to W500 rows are from AGMARK's rules, whose table starts at W210. The W180 row is from ISO 6477, the international standard for cashew kernels, and CEPCI lists W180 among the grades India exports.",
+   "t": "W210 तः W500 पर्यन्तं पङ्क्तयः AGMARK-नियमेभ्यः, येषां सारणी W210 तः आरभते। W180 पङ्क्तिः ISO 6477 तः, यत् काजूबीजानाम् अन्ताराष्ट्रियमानकम्, CEPCI च भारतेन निर्यातितासु श्रेणीषु W180 गणयति।",
+   "back": "The rows from W210 to W500 are from the AGMARK rules, whose table begins from W210. The W180 row is from ISO 6477, which is the international standard of cashew seeds, and CEPCI counts W180 among the grades exported by India."
+  },
+  "seg.31416c82d50a": {
+   "src": "⟦1⟧Count it yourself.⟦/1⟧ ISO 6477's test for the white whole grades counts the kernels in 1 kg or 1 lb. For a rough check at home, count the whole kernels in 100 g on a kitchen scale, multiply by 10 and compare with the per kg column.",
+   "t": "⟦1⟧स्वयं गणयतु।⟦/1⟧ श्वेत-अखण्डश्रेणीनां कृते ISO 6477 परीक्षायां 1 kg अथवा 1 lb मध्ये बीजानि गण्यन्ते। गृहे स्थूलपरीक्षार्थं पाकशालातुलायां 100 g मध्ये अखण्डबीजानि गणयतु, 10 इत्यनेन गुणयतु, प्रतिकिलो-स्तम्भेन तुलयतु च।",
+   "back": "⟦1⟧Count it yourself.⟦/1⟧ For white whole grades, in the ISO 6477 test the seeds in 1 kg or 1 lb are counted. For a rough test at home, count the whole seeds in 100 g on a kitchen scale, multiply by 10, and compare with the per-kilo column."
+  },
+  "seg.38578496da57": {
+   "src": "AGMARK's whole grades allow up to 5% broken kernels at the time of packing.",
+   "t": "AGMARK-अखण्डश्रेणीषु पुटीकरणसमये 5% पर्यन्तं भग्नबीजानि अनुमतानि।",
+   "back": "In AGMARK whole grades, up to 5% broken seeds are allowed at the time of packeting."
+  },
+  "seg.a67f43711f4f": {
+   "src": "What a grade tells you, and what it does not",
+   "t": "श्रेणी किं सूचयति, किं च न सूचयति",
+   "back": "What a grade indicates, and what it does not indicate"
+  },
+  "seg.4e310614a4b5": {
+   "src": "⟦1⟧Size.⟦/1⟧ The number is a count, so W180 kernels are bigger than W320 kernels.",
+   "t": "⟦1⟧परिमाणम्।⟦/1⟧ अङ्कः गणना एव, अतः W180 बीजानि W320 बीजेभ्यः महत्तराणि।",
+   "back": "⟦1⟧Size.⟦/1⟧ The number is only a count, so W180 seeds are larger than W320 seeds."
+  },
+  "seg.3e51ad8b884e": {
+   "src": "⟦1⟧Colour.⟦/1⟧ White wholes are white, pale ivory or light ash. Scorched grades are browner from scorching.",
+   "t": "⟦1⟧वर्णः।⟦/1⟧ श्वेतानि अखण्डबीजानि श्वेतानि, मन्दगजदन्तवर्णानि, मन्दभस्मवर्णानि वा भवन्ति। दग्धश्रेण्यः दहनात् किञ्चित् पिङ्गलाः।",
+   "back": "⟦1⟧Colour.⟦/1⟧ White whole seeds are white, light ivory or light ash coloured. Burnt grades are somewhat tawny from burning."
+  },
+  "seg.ab50dc9032b9": {
+   "src": "⟦1⟧Whole or broken.⟦/1⟧ Wholes, butts, splits and pieces are separate grades.",
+   "t": "⟦1⟧अखण्डं वा भग्नं वा।⟦/1⟧ अखण्डबीजानि, बट्स्, स्प्लिट्स्, खण्डाः च पृथक् श्रेण्यः।",
+   "back": "⟦1⟧Whole or broken.⟦/1⟧ Whole seeds, butts, splits and pieces are separate grades."
+  },
+  "seg.3f8c367cba28": {
+   "src": "⟦1⟧Limits on defects.⟦/1⟧ AGMARK's white whole grades must be reasonably dry, free from insect damage, damaged kernels and black or brown spots, and completely free from testa, the kernel's skin. ISO 6477 caps moisture at 5%.",
+   "t": "⟦1⟧दोषाणां सीमाः।⟦/1⟧ AGMARK-श्वेताखण्डश्रेण्यः यथोचितं शुष्काः भवेयुः; कीटक्षतिः, क्षतबीजानि, कृष्णाः पिङ्गलाः वा बिन्दवः न भवेयुः; टेस्टा, अर्थात् बीजस्य त्वक्, सर्वथा न भवेत्। ISO 6477 आर्द्रतां 5% पर्यन्तं सीमयति।",
+   "back": "⟦1⟧Limits of defects.⟦/1⟧ AGMARK white whole grades should be suitably dry; there should not be insect damage, damaged seeds, or black or tawny spots; testa, that is the skin of the seed, should not be there at all. ISO 6477 limits moisture to 5%."
+  },
+  "seg.330a63d5bfcb": {
+   "src": "⟦1⟧What a grade does not tell you.⟦/1⟧ AGMARK's grade definitions are about count, colour, shape and defects, and none of them ranks flavour. So a W180 is a bigger kernel than a W320, not one graded as tastier. Scorched is a colour grade too: CEPCI notes scorched wholes have all the other characteristics of white kernels.",
+   "t": "⟦1⟧श्रेणी यत् न सूचयति।⟦/1⟧ AGMARK-श्रेणीपरिभाषाः गणना-वर्ण-आकार-दोषविषयकाः, तासु काचिदपि स्वादं न क्रमयति। अतः W180 नाम W320 तः महत्तरं बीजम्, न तु अधिकस्वादु इति श्रेणीकृतम्। दग्धश्रेणी अपि वर्णश्रेणी एव: CEPCI अनुसारं दग्धवर्णेषु अखण्डबीजेषु श्वेतबीजानाम् अन्ये सर्वे गुणाः सन्ति।",
+   "back": "⟦1⟧What a grade does not indicate.⟦/1⟧ AGMARK grade definitions are about count, colour, shape and defects; none of them ranks taste. So W180 means a larger seed than W320, not graded as tastier. The burnt grade is also only a colour grade: according to CEPCI burnt-coloured whole seeds have all the other qualities of white seeds."
+  },
+  "seg.ef0d669b3123": {
+   "src": "Which grade for which dish",
+   "t": "कस्मै व्यञ्जनाय का श्रेणी",
+   "back": "Which grade for which dish"
+  },
+  "seg.2da39bee2198": {
+   "src": "⟦1⟧To eat as they are, or toasted in a dry pan:⟦/1⟧ whole kernels, in whatever size you like.",
+   "t": "⟦1⟧यथावत् खादितुं, शुष्ककटाहे भृष्ट्वा वा:⟦/1⟧ अखण्डबीजानि, यत् परिमाणं रोचते तत्।",
+   "back": "⟦1⟧To eat as it is, or roasted in a dry pan:⟦/1⟧ whole seeds, whatever size you like."
+  },
+  "seg.4c97810ec555": {
+   "src": "⟦1⟧⟦2⟧Jeedipappu pakodi⟦/2⟧:⟦/1⟧ whole kernels, which stay crunchy inside the coating. Split any very large ones in half.",
+   "t": "⟦1⟧⟦2⟧जीडिपप्पु पकोडि⟦/2⟧:⟦/1⟧ अखण्डबीजानि, यानि आवरणस्य अन्तः कुरकुराणि तिष्ठन्ति। अतिबृहन्ति द्विधा विभजतु।",
+   "back": "⟦1⟧⟦2⟧Jeedipappu pakodi⟦/2⟧:⟦/1⟧ whole seeds, which stay crunchy inside the coating. Divide very large ones in two."
+  },
+  "seg.683759702c73": {
+   "src": "⟦1⟧⟦2⟧Jeedipappu upma⟦/2⟧:⟦/1⟧ wholes or halves, fried golden in ghee and stirred in at the end.",
+   "t": "⟦1⟧⟦2⟧जीडिपप्पु उप्मा⟦/2⟧:⟦/1⟧ अखण्डानि अर्धानि वा, घृते सुवर्णवर्णपर्यन्तं भृष्ट्वा अन्ते मिश्रितानि।",
+   "back": "⟦1⟧⟦2⟧Jeedipappu upma⟦/2⟧:⟦/1⟧ whole or halves, roasted in ghee till golden colour and mixed in at the end."
+  },
+  "seg.140df3da8491": {
+   "src": "⟦1⟧⟦2⟧Paramannam⟦/2⟧:⟦/1⟧ our recipe halves the cashews before frying them in ghee, so splits do the same job.",
+   "t": "⟦1⟧⟦2⟧परमान्नम्⟦/2⟧:⟦/1⟧ अस्माकं पाकविधौ काजूबीजानि घृते भर्जनात् पूर्वं द्विधा क्रियन्ते, अतः स्प्लिट्स् अपि तदेव कार्यं कुर्वन्ति।",
+   "back": "⟦1⟧⟦2⟧Paramannam⟦/2⟧:⟦/1⟧ in our recipe the cashew seeds are halved before roasting in ghee, so splits also do the same work."
+  },
+  "seg.0507a0ef99f7": {
+   "src": "⟦1⟧Cooking, sweets and savoury snacks:⟦/1⟧ butts, splits and pieces. CEPCI calls them ideal for these.",
+   "t": "⟦1⟧पाकः, मिष्टान्नानि, लवणयुक्तानि खाद्यानि च:⟦/1⟧ बट्स्, स्प्लिट्स्, खण्डाः च। CEPCI एतान् एतदर्थम् आदर्शान् वदति।",
+   "back": "⟦1⟧Cooking, sweets and salted foods:⟦/1⟧ butts, splits and pieces. CEPCI calls these ideal for this."
+  },
+  "seg.85825102ed6c": {
+   "src": "⟦1⟧The everyday grade:⟦/1⟧ CEPCI calls W320 the most popular grade and the most widely available worldwide.",
+   "t": "⟦1⟧दैनिकी श्रेणी:⟦/1⟧ CEPCI अनुसारं W320 सर्वाधिकं लोकप्रिया श्रेणी, विश्वे सर्वत्र सर्वाधिकं लभ्या च।",
+   "back": "⟦1⟧Daily grade:⟦/1⟧ according to CEPCI W320 is the most popular grade, and the most available everywhere in the world."
+  },
+  "seg.30e2c7470dfb": {
+   "src": "Our ⟦1⟧cashew kernels⟦/1⟧ are whole, plain and unsalted.",
+   "t": "अस्माकं ⟦1⟧काजूबीजानि⟦/1⟧ अखण्डानि, साधारणानि, अलवणानि च।",
+   "back": "Our ⟦1⟧cashew seeds⟦/1⟧ are whole, ordinary (plain) and saltless."
+  },
+  "seg.d9587ec3391e": {
+   "src": "Andhra's cashew belt",
+   "t": "आन्ध्रस्य काजूतकक्षेत्रम्",
+   "back": "Andhra's cashew region"
+  },
+  "seg.f16dee41b616": {
+   "src": "Andhra Pradesh is one of India's main cashew states. In 2017-18 it produced 14% of India's cashew nuts, second only to Maharashtra at 33%, going by CEPCI figures cited in a 2021 study.",
+   "t": "आन्ध्रप्रदेशः भारतस्य प्रमुखेषु काजूतकराज्येषु अन्यतमः। 2021 वर्षस्य एकस्मिन् अध्ययने उद्धृतानां CEPCI-अङ्कानाम् अनुसारं 2017-18 वर्षे भारतस्य काजूतकस्य 14% अनेन उत्पादितम्, 33% सह महाराष्ट्रम् एव अस्मात् अग्रे आसीत्।",
+   "back": "Andhra Pradesh is one among India's chief cashew states. According to CEPCI figures cited in a 2021 study, in 2017-18 it produced 14% of India's cashew, only Maharashtra with 33% was ahead of it."
+  },
+  "seg.f1989a0f6305": {
+   "src": "In Srikakulam district alone, cashew grows on about 24,000 hectares, across the plains, the tribal high-altitude areas and the sea coast. Cashew kernels are the district's One District One Product for 2024.",
+   "t": "श्रीकाकुलम्-मण्डले एव प्रायः 24,000 हेक्टेयर-भूमौ काजूतकं वर्धते, समभूमिषु, वनवासिनाम् उन्नतप्रदेशेषु, समुद्रतीरे च। 2024 वर्षाय काजूबीजानि अस्य मण्डलस्य \"एकं मण्डलम् एकम् उत्पादम्\" (One District One Product) इति।",
+   "back": "In Srikakulam district alone cashew grows on about 24,000 hectares of land, in plains, in highlands of forest-dwellers, and on the sea coast. For the year 2024 cashew seeds are this district's \"One District One Product\" (One District One Product)."
+  },
+  "seg.3fa84158dbfd": {
+   "src": "Our cashew kernels come from the Chirala, Bapatla and Vizag coast and are packed in Narasaraopet.",
+   "t": "अस्माकं काजूबीजानि चीराल-बापट्ल-वैजाग-तीरात् आगच्छन्ति, नरसरावपेटे पुटीक्रियन्ते च।",
+   "back": "Our cashew seeds come from the Chirala-Bapatla-Vizag coast, and are packeted in Narasaraopet."
+  },
+  "seg.fe2b7f5c75e9": {
+   "src": "Keeping cashews well",
+   "t": "काजूबीजानां सम्यक् रक्षणम्",
+   "back": "Proper preservation of cashew seeds"
+  },
+  "seg.c1475e1b0a12": {
+   "src": "Keep the zip shut after use, or move the kernels to a dry, airtight jar.",
+   "t": "उपयोगानन्तरं जिप् पिदधातु, अथवा बीजानि शुष्के वायुरुद्धे पात्रे स्थापयतु।",
+   "back": "After use, close the zip, or place the seeds in a dry airtight vessel."
+  },
+  "seg.ec878982b0c0": {
+   "src": "Keep them in a cool, dry place, out of direct sunlight.",
+   "t": "शीतले शुष्के स्थाने, साक्षात् आतपात् दूरे स्थापयतु।",
+   "back": "Place in a cool dry place, away from direct sunshine."
+  },
+  "seg.9ce38edb950b": {
+   "src": "A rancid taste is taken as the first sign that nuts are going off, since most nuts hold a lot of oil. Taste one before you cook with a batch that has been open a while.",
+   "t": "बहुषु शुष्कफलेषु तैलम् अधिकं भवति, अतः विकृत-तैलस्वादः तेषां विनाशस्य प्रथमं चिह्नम् इति मन्यते। किञ्चित्कालं यावत् उद्घाटितात् पुटकात् पाकात् पूर्वम् एकं बीजम् आस्वादयतु।",
+   "back": "In many dry fruits/nuts oil is high, so a spoiled-oil taste is considered the first sign of their spoiling. From a packet opened for some time, taste one seed before cooking."
+  },
+  "seg.aa353eb6552b": {
+   "src": "Use them within the best-before date on the pack.",
+   "t": "पुटके लिखितायाः best-before तिथेः अन्तः उपयुङ्क्ताम्।",
+   "back": "Use within the best-before date written on the packet."
+  },
+  "seg.8d88ab03538b": {
+   "src": "What does W320 mean in cashew?",
+   "t": "काजूतके W320 इत्यस्य कः अर्थः?",
+   "back": "What does W320 mean in cashews?"
+  },
+  "seg.62746a01005d": {
+   "src": "W320 means white whole cashew kernels at 300 to 320 kernels per pound, or 660 to 705 per kg, under AGMARK's rules. CEPCI calls it the most popular grade and the most widely available worldwide.",
+   "t": "AGMARK-नियमानुसारं W320 नाम श्वेतानि अखण्डकाजूबीजानि, प्रतिपौण्डं 300 तः 320 पर्यन्तम्, अथवा प्रतिकिलो 660 तः 705 पर्यन्तम्। CEPCI एतां सर्वाधिकं लोकप्रियां विश्वे सर्वाधिकं लभ्यां च श्रेणीं वदति।",
+   "back": "According to the AGMARK rules W320 means white whole cashew seeds, 300 to 320 per pound, or 660 to 705 per kilo. CEPCI calls it the most popular and most available grade in the world."
+  },
+  "seg.f01de46df4ac": {
+   "src": "What is the difference between W240 and W320 cashews?",
+   "t": "W240, W320 काजूतकयोः कः भेदः?",
+   "back": "What is the difference between W240 and W320 cashews?"
+  },
+  "seg.2ccd1dd49c14": {
+   "src": "Size. W240 has 220 to 240 kernels per pound (485 to 530 per kg) and W320 has 300 to 320 (660 to 705 per kg), so W240 kernels are bigger. Both are white whole grades under AGMARK's rules.",
+   "t": "परिमाणम्। W240 मध्ये प्रतिपौण्डं 220 तः 240 पर्यन्तं बीजानि (प्रतिकिलो 485 तः 530 पर्यन्तम्), W320 मध्ये 300 तः 320 पर्यन्तम् (प्रतिकिलो 660 तः 705 पर्यन्तम्), अतः W240 बीजानि महत्तराणि। AGMARK-नियमेषु उभे श्वेताखण्डश्रेण्यौ।",
+   "back": "Size. W240 has 220 to 240 seeds per pound (485 to 530 per kilo), W320 has 300 to 320 (660 to 705 per kilo), so W240 seeds are larger. In the AGMARK rules both are white whole grades."
+  },
+  "seg.153603960f5b": {
+   "src": "Which cashew grade is best?",
+   "t": "का काजूतकश्रेणी उत्तमा?",
+   "back": "Which cashew grade is excellent (best)?"
+  },
+  "seg.b1c846d9d907": {
+   "src": "No grade is best for everything. W180 and W210 are the biggest whole kernels, W320 is the most widely available, and CEPCI calls butts, splits and pieces ideal for cooking and sweets. A grade describes size, colour and wholeness, not taste.",
+   "t": "सर्वार्थम् एका श्रेणी उत्तमा न अस्ति। W180, W210 च बृहत्तमानि अखण्डबीजानि, W320 सर्वाधिकं लभ्या, CEPCI च बट्स्-स्प्लिट्स्-खण्डान् पाकाय मिष्टान्नेभ्यः च आदर्शान् वदति। श्रेणी परिमाणं, वर्णम्, अखण्डतां च सूचयति, न तु स्वादम्।",
+   "back": "There is no one grade excellent for all purposes. W180 and W210 are the largest whole seeds, W320 is the most available, and CEPCI calls butts, splits and pieces ideal for cooking and sweets. The grade indicates size, colour and wholeness, but not taste."
+  },
+  "seg.bc403e07fdb2": {
+   "src": "How many cashews are there in 1 kg?",
+   "t": "1 kg मध्ये कति काजूबीजानि?",
+   "back": "How many cashew seeds in 1 kg?"
+  },
+  "seg.9e65130f8cdd": {
+   "src": "It depends on the grade. Under AGMARK's rules, 1 kg of W240 holds 485 to 530 kernels, W320 holds 660 to 705 and W450 holds 880 to 990.",
+   "t": "श्रेण्याम् आधारितम्। AGMARK-नियमानुसारं 1 kg W240 मध्ये 485 तः 530 पर्यन्तं बीजानि, W320 मध्ये 660 तः 705 पर्यन्तं, W450 मध्ये 880 तः 990 पर्यन्तम्।",
+   "back": "Based on the grade. According to the AGMARK rules 1 kg W240 has 485 to 530 seeds, W320 660 to 705, W450 880 to 990."
+  },
+  "seg.40d1a6c0c8e5": {
+   "src": "What does SW mean on cashews?",
+   "t": "काजूतके SW इत्यस्य कः अर्थः?",
+   "back": "What does SW mean on cashews?"
+  },
+  "seg.d4802056a67a": {
+   "src": "SW means scorched wholes: whole kernels with a slight brown colour from longer roasting. CEPCI notes they have all the other characteristics of white kernels.",
+   "t": "SW नाम दग्धवर्णानि अखण्डबीजानि (scorched wholes): दीर्घभर्जनात् ईषत् पिङ्गलवर्णानि अखण्डबीजानि। CEPCI अनुसारम् एषु श्वेतबीजानाम् अन्ये सर्वे गुणाः सन्ति।",
+   "back": "SW means burnt-coloured whole seeds (scorched wholes): whole seeds slightly tawny from long roasting. According to CEPCI these have all the other qualities of white seeds."
+  },
+  "seg.7ac537e6827e": {
+   "src": "Our cashews",
+   "t": "अस्माकं काजूतकम्",
+   "back": "Our cashew"
+  },
+  "seg.d30c33822c6d": {
+   "src": "Our pack holds whole, plain, unsalted cashew kernels, packed in Narasaraopet.",
+   "t": "अस्माकं पुटके अखण्डानि, साधारणानि, अलवणानि काजूबीजानि सन्ति, नरसरावपेटे पुटीकृतानि।",
+   "back": "In our packet there are whole, ordinary (plain), saltless cashew seeds, packeted in Narasaraopet."
+  },
+  "seg.9d7d9aeff7e7": {
+   "src": "జీడిపప్పు గ్రేడ్లు · Cashew Grades W180, W240, W320 | 1acrefarms",
+   "t": "काजूतकश्रेण्यः W180, W240, W320 · जीडिपप्पु | 1acrefarms",
+   "back": "జీడిపప్పు గ్రేడ్లు · Cashew grades W180, W240, W320 | 1acrefarms"
+  },
+  "seg.77c97eebed00": {
+   "src": "జీడిపప్పు గ్రేడ్‌లు అంటే ఏమిటి? What cashew grades W180, W240, W320 and W450 mean, kernels per pound and per kg, SW, splits and pieces, and which grade to use.",
+   "t": "काजूतकश्रेण्यः काः? W180, W240, W320, W450 इत्येषाम् अर्थः, प्रतिपौण्डं प्रतिकिलो च बीजानि, SW, स्प्लिट्स्, खण्डाः, का श्रेणी उपयोक्तव्या च।",
+   "back": "What are cashew grades? The meaning of W180, W240, W320, W450, seeds per pound and per kilo, SW, splits, pieces, and which grade should be used."
+  },
+  "seg.aa6460d44b70": {
+   "src": "Cashew grades explained: W180, W240, W320 and more · 1acrefarms",
+   "t": "काजूतकश्रेणीनां व्याख्या: W180, W240, W320 अन्याः च · 1acrefarms",
+   "back": "Explanation of cashew grades: W180, W240, W320 and others · 1acrefarms"
+  },
+  "seg.d281a45dcf82": {
+   "src": "Guide · chilli",
+   "t": "मार्गदर्शिका · रक्तमरिचम्",
+   "back": "Guide · Red chilli"
+  },
+  "seg.27976b26ce53": {
+   "src": "Sannam or Teja chilli powder: which to use",
+   "t": "सन्नम् अथवा तेजा रक्तमरिचचूर्णम्: किम् उपयोक्तव्यम्",
+   "back": "Sannam or Teja red chilli powder: which should be used"
+  },
+  "seg.4144ea4b43b4": {
+   "src": "What S4 and S17 mean, how heat and colour are measured, and which to use where. With a Telugu section.",
+   "t": "S4, S17 इत्यनयोः अर्थः, तीक्ष्णता वर्णः च कथं मीयेते, किं कुत्र उपयोक्तव्यम्। तेलुगुविभागेन सह।",
+   "back": "The meaning of S4 and S17, how pungency and colour are measured, which to use where. With a Telugu section."
+  },
+  "seg.fd3f8f40b3f8": {
+   "src": "What W180, W240 and W320 mean, kernels per kg, and which grade suits which dish. With a Telugu section.",
+   "t": "W180, W240, W320 इत्येषाम् अर्थः, प्रतिकिलो बीजानि, कस्मै व्यञ्जनाय का श्रेणी। तेलुगुविभागेन सह।",
+   "back": "The meaning of W180, W240, W320, seeds per kilo, which grade for which dish. With a Telugu section."
+  },
+  "seg.fe79396e7c1d": {
+   "src": "Sannam or Teja chilli powder",
+   "t": "सन्नम् अथवा तेजा रक्तमरिचचूर्णम्",
+   "back": "Sannam or Teja red chilli powder"
+  },
+  "seg.c114bf13aa8e": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Sannam Kaaram · Teja Kaaram",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · सन्नम कारम · तेजा कारम",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Sannam karam · Teja karam"
+  },
+  "seg.f8eee14b7e5d": {
+   "src": "Sannam and Teja are two chilli types grown around Guntur and sold at the Guntur Mirchi Yard, Asia's largest dried red chilli market. Sannam is Telugu for thin, and the chilli is traded as the S4 type. Teja, also known as S17, is a hybrid.",
+   "t": "सन्नम्, तेजा च गुण्टूरस्य परितः उत्पद्यमानौ द्वौ रक्तमरिचप्रकारौ, गुण्टूर-मिर्ची-यार्ड इत्यत्र विक्रीयेते, यः एशियायाः बृहत्तमः शुष्क-रक्तमरिच-आपणः। तेलुगुभाषायां सन्नम् नाम कृशम्, अयं मरिचः S4 प्रकाररूपेण व्यवह्रियते। तेजा, यः S17 इत्यपि ज्ञायते, सङ्करप्रकारः (hybrid)।",
+   "back": "Sannam and Teja are two red chilli types produced around Guntur, sold at the Guntur Mirchi Yard, which is Asia's largest dry red chilli market. In the Telugu language Sannam means thin, this chilli is traded as the S4 type. Teja, which is also known as S17, is a cross-bred type (hybrid)."
+  },
+  "seg.8e04c18fe0c1": {
+   "src": "Both go into curries, chutneys, podis and pickles. Of our two packs, Teja is the one marked extra hot. Here is what each one is, how heat and colour are measured, which to use where, and how to keep the powder. There is a full Telugu section further down.",
+   "t": "उभौ व्यञ्जनेषु, चटनीषु, पोडि-चूर्णेषु, उपदंशेषु (अचार) च उपयुज्येते। अस्माकं पुटकद्वये तेजा-पुटके एव अतितीक्ष्णम् इति लिखितम्। अत्र प्रत्येकं किम्, तीक्ष्णता वर्णः च कथं मीयेते, किं कुत्र उपयोक्तव्यम्, चूर्णं कथं रक्षणीयम् इति अस्ति। अधः सम्पूर्णः तेलुगुविभागः अस्ति।",
+   "back": "Both are used in dishes, chutneys, podi powders and pickles (achar). Of our two packets, only on the Teja packet is 'extremely pungent' written. Here is what each is, how pungency and colour are measured, which to use where, how the powder should be preserved. Below is the complete Telugu section."
+  },
+  "seg.a0921c00bb2b": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder, from whole sun-dried Sannam chillies, packed as fine powder. Right: Teja chilli powder, extra hot, sun-dried and stone-ground. Both grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "⟦1⟧अस्माकं द्वे रक्तमरिचचूर्णे⟦/1⟧वामतः: सन्नम-रक्तमरिचचूर्णम्, आतपशोषितेभ्यः अखण्डेभ्यः सन्नम-मरिचेभ्यः, सूक्ष्मचूर्णरूपेण पुटीकृतम्। दक्षिणतः: तेजा-रक्तमरिचचूर्णम्, अतितीक्ष्णम्, आतपशोषितं शिलापिष्टं च। उभे पल्नाडु-गुण्टूरयोः उत्पन्ने, नरसरावपेटे पुटीकृते।",
+   "back": "⟦1⟧Our two red chilli powders⟦/1⟧From left: Sannam red chilli powder, from sun-dried whole Sannam chillies, packeted as fine powder. From right: Teja red chilli powder, extremely pungent, sun-dried and stone-ground. Both produced in Palnadu and Guntur, packeted in Narasaraopet."
+  },
+  "seg.a357c6165a65": {
+   "src": "Sannam is Telugu for thin, and the chilli is traded as the S4 type; Teja (S17) is a hybrid. Both are grown around Guntur and sold at its Mirchi Yard. Use Sannam chilli powder for everyday curries, pulusu, pappu and tomato pachadi. Use Teja when you want a dish extra hot, as in kodi vepudu or gongura pachadi; our Teja pack is marked extra hot, so start with less. Keep both airtight, dry and out of the light.",
+   "t": "तेलुगुभाषायां सन्नम् नाम कृशम्, अयं मरिचः S4 प्रकाररूपेण व्यवह्रियते; तेजा (S17) सङ्करप्रकारः। उभौ गुण्टूरस्य परितः उत्पद्येते, तत्रत्ये मिर्ची-यार्ड इत्यत्र विक्रीयेते च। दैनिकव्यञ्जनेभ्यः, पुलुसु, पप्पु, टमाटा पच्चडि इत्येभ्यः च सन्नम-रक्तमरिचचूर्णम् उपयुङ्क्ताम्। यदा व्यञ्जनम् अतितीक्ष्णम् इष्यते, यथा कोडि वेपुडु गोंगूर पच्चडि वा, तदा तेजा उपयुङ्क्ताम्; अस्माकं तेजा-पुटके अतितीक्ष्णम् इति लिखितम्, अतः अल्पेन आरभताम्। उभे वायुरुद्धे, शुष्के, प्रकाशात् दूरे च स्थापयतु।",
+   "back": "In the Telugu language Sannam means thin, this chilli is traded as the S4 type; Teja (S17) is a cross-bred type. Both are produced around Guntur and sold at the Mirchi Yard there. For daily dishes, pulusu, pappu and tomato pachadi use Sannam red chilli powder. When the dish is wanted extremely pungent, as kodi vepudu or gongura pachadi, then use Teja; on our Teja packet 'extremely pungent' is written, so begin with a little. Place both airtight, dry and away from light."
+  },
+  "seg.ab2db5bdceb7": {
+   "src": "Sannam chilli⟦#1⟧",
+   "t": "सन्नम-रक्तमरिचः⟦#1⟧",
+   "back": "Sannam red chilli⟦#1⟧"
+  },
+  "seg.f358a7731c35": {
+   "src": "Teja chilli⟦#1⟧",
+   "t": "तेजा-रक्तमरिचः⟦#1⟧",
+   "back": "Teja red chilli⟦#1⟧"
+  },
+  "seg.f8c94a3b4b1e": {
+   "src": "What it is",
+   "t": "किम् एतत्",
+   "back": "What is this"
+  },
+  "seg.e766be3d32e3": {
+   "src": "A chilli type; sannam is Telugu for thin",
+   "t": "एकः मरिचप्रकारः; तेलुगुभाषायां सन्नम् नाम कृशम्",
+   "back": "A chilli type; in the Telugu language Sannam means thin"
+  },
+  "seg.c5b9f867217f": {
+   "src": "A hybrid chilli",
+   "t": "सङ्करः मरिचः",
+   "back": "Cross-bred chilli"
+  },
+  "seg.5d87cc7066df": {
+   "src": "Trade name",
+   "t": "व्यापारनाम",
+   "back": "Trade name"
+  },
+  "seg.19c209ba8a51": {
+   "src": "S4. A variety called 334 is also listed as Sannam S4",
+   "t": "S4. 334 इति नामकः प्रकारः अपि सन्नम् S4 इति सूचीकृतः",
+   "back": "S4. A type named 334 is also listed as Sannam S4"
+  },
+  "seg.b2b8b4f95700": {
+   "src": "S17, also written S-17",
+   "t": "S17, S-17 इति अपि लिख्यते",
+   "back": "S17, also written as S-17"
+  },
+  "seg.5dece3cb9ef9": {
+   "src": "Grown in",
+   "t": "उत्पत्तिस्थानम्",
+   "back": "Place of origin"
+  },
+  "seg.d822cbebd199": {
+   "src": "Guntur, Warangal and Khammam districts, says Spices Board",
+   "t": "गुण्टूर-वरङ्गल-खम्मम-मण्डलानि, Spices Board अनुसारम्",
+   "back": "Guntur, Warangal and Khammam districts, according to Spices Board"
+  },
+  "seg.5ca57fb5cc42": {
+   "src": "Guntur district, among its hybrids",
+   "t": "गुण्टूर-मण्डलम्, तत्रत्येषु सङ्करप्रकारेषु",
+   "back": "Guntur district, among the cross-bred types there"
+  },
+  "seg.64c6caa5bd34": {
+   "src": "Heat",
+   "t": "तीक्ष्णता",
+   "back": "Pungency"
+  },
+  "seg.e11de4cddc22": {
+   "src": "Hot, says Spices Board; capsaicin 0.226%",
+   "t": "तीक्ष्णः, Spices Board अनुसारम्; कैप्सैसिन् 0.226%",
+   "back": "Pungent, according to the Spices Board; capsaicin 0.226%"
+  },
+  "seg.e0a7d43cff0d": {
+   "src": "Second hottest extract of 19 varieties in a 2020 lab study",
+   "t": "2020 वर्षस्य प्रयोगशाला-अध्ययने 19 प्रकारेषु द्वितीयः तीक्ष्णतमः सारः",
+   "back": "Second most pungent extract among 19 types in a 2020 laboratory study"
+  },
+  "seg.694de80babc9": {
+   "src": "Red; ASTA colour value 32.11, says Spices Board",
+   "t": "रक्तः; ASTA वर्णमूल्यम् 32.11, Spices Board अनुसारम्",
+   "back": "Red; ASTA colour value 32.11, according to the Spices Board"
+  },
+  "seg.c4962d4c7bbe": {
+   "src": "No figure in the Spices Board list",
+   "t": "Spices Board सूच्यां किमपि अङ्कं नास्ति",
+   "back": "No figure at all in the Spices Board list"
+  },
+  "seg.eb5520570c7c": {
+   "src": "Traded at",
+   "t": "विक्रयस्थानम्",
+   "back": "Place of sale"
+  },
+  "seg.1709dd5ba5d6": {
+   "src": "The Guntur Mirchi Yard",
+   "t": "गुण्टूर-मिर्ची-यार्ड",
+   "back": "Guntur Mirchi Yard"
+  },
+  "seg.d63c4cef10c1": {
+   "src": "Our pack",
+   "t": "अस्माकं पुटकम्",
+   "back": "Our packet"
+  },
+  "seg.6f340f159671": {
+   "src": "Whole sun-dried chillies, packed as fine powder",
+   "t": "आतपशोषिताः अखण्डमरिचाः, सूक्ष्मचूर्णरूपेण पुटीकृताः",
+   "back": "Sun-dried whole chillies, packeted as fine powder"
+  },
+  "seg.722cbbec4de5": {
+   "src": "Extra hot, sun-dried, stone-ground",
+   "t": "अतितीक्ष्णम्, आतपशोषितं, शिलापिष्टम्",
+   "back": "Extremely pungent, sun-dried, stone-ground"
+  },
+  "seg.6fbc685f86f3": {
+   "src": "Try it in",
+   "t": "एतेषु प्रयुङ्क्ताम्",
+   "back": "Use in these"
+  },
+  "seg.cb00e50674ed": {
+   "src": "Tomato pappu, tomato pachadi, gutti vankaya kura, pulusu",
+   "t": "टमाटा पप्पु, टमाटा पच्चडि, गुत्ति वंकाय कूरा, पुलुसु",
+   "back": "Tomato pappu, tomato pachadi, gutti vankaya kura, pulusu"
+  },
+  "seg.9e9cebb475c3": {
+   "src": "Kodi vepudu, gongura pachadi, vellulli kaaram",
+   "t": "कोडि वेपुडु, गोंगूर पच्चडि, वेल्लुल्लि कारम्",
+   "back": "Kodi vepudu, gongura pachadi, vellulli karam"
+  },
+  "seg.04512ef2a927": {
+   "src": "What Sannam and Teja are",
+   "t": "सन्नम्, तेजा च के",
+   "back": "What are Sannam and Teja"
+  },
+  "seg.de8faf38f32d": {
+   "src": "Sannam (S4)",
+   "t": "सन्नम् (S4)",
+   "back": "Sannam (S4)"
+  },
+  "seg.cb8647e572cd": {
+   "src": "Sannam is Telugu for thin, and Sannam chilli is traded as the S4 type. In a 2020 study of chillies from the Guntur Mirchi Yard, a variety called 334 is listed as Sannam S4. Spices Board's list of Indian chilli varieties has a Sannam S4 entry for chillies grown in Guntur, Warangal and Khammam districts, harvested from December to May.",
+   "t": "तेलुगुभाषायां सन्नम् नाम कृशम्, सन्नम-मरिचः S4 प्रकाररूपेण व्यवह्रियते। गुण्टूर-मिर्ची-यार्ड-मरिचानां विषये 2020 वर्षस्य एकस्मिन् अध्ययने 334 इति नामकः प्रकारः सन्नम् S4 इति सूचीकृतः। Spices Board-संस्थायाः भारतीय-मरिचप्रकाराणां सूच्यां गुण्टूर-वरङ्गल-खम्मम-मण्डलेषु उत्पन्नानां, दिसम्बरतः मे-पर्यन्तं चितानां मरिचानां कृते सन्नम् S4 इति प्रविष्टिः अस्ति।",
+   "back": "In the Telugu language Sannam means thin, Sannam chilli is traded as the S4 type. In a 2020 study about the chillies of the Guntur Mirchi Yard, a type named 334 is listed as Sannam S4. In the Spices Board institution's list of Indian chilli types, there is an entry Sannam S4 for chillies produced in Guntur-Warangal-Khammam districts, picked from December to May."
+  },
+  "seg.88ef34144dd3": {
+   "src": "Teja (S17)",
+   "t": "तेजा (S17)",
+   "back": "Teja (S17)"
+  },
+  "seg.17b278c38e33": {
+   "src": "A hybrid chilli, also known as S17. In Guntur district, hybrids such as Teja cover 60% of the chilli area, and open-pollinated varieties the other 40%, says the district's One District One Product page.",
+   "t": "सङ्करः मरिचः, S17 इत्यपि ज्ञायते। मण्डलस्य \"एकं मण्डलम् एकम् उत्पादम्\" (One District One Product) पृष्ठानुसारं गुण्टूर-मण्डले मरिचक्षेत्रस्य 60% भागे तेजा-सदृशाः सङ्करप्रकाराः, शेषे 40% भागे मुक्तपरागणप्रकाराः।",
+   "back": "Cross-bred chilli, also known as S17. According to the district's \"One District One Product\" (One District One Product) page, in Guntur district cross-bred types like Teja are on 60% of the chilli area, open-pollination types on the remaining 40%."
+  },
+  "seg.e2f1fe066494": {
+   "src": "Where they are traded",
+   "t": "विक्रयस्थानम्",
+   "back": "Place of sale"
+  },
+  "seg.29eee30f5264": {
+   "src": "The Guntur Mirchi Yard, about 5 km from the centre of Guntur, is known as Asia's biggest chilli market yard, and it influences chilli prices in India and abroad.",
+   "t": "गुण्टूर-नगरकेन्द्रात् प्रायः 5 km दूरे स्थितः गुण्टूर-मिर्ची-यार्ड एशियायाः बृहत्तमः मरिच-आपण-प्राङ्गणः इति प्रसिद्धः, भारते विदेशेषु च मरिचमूल्यानि प्रभावयति।",
+   "back": "The Guntur Mirchi Yard, situated about 5 km from the Guntur city centre, is famous as Asia's largest chilli market yard, and influences chilli prices in India and abroad."
+  },
+  "seg.4d075fb72bc3": {
+   "src": "Heat and colour: how they are measured",
+   "t": "तीक्ष्णता वर्णः च: कथं मीयेते",
+   "back": "Pungency and colour: how they are measured"
+  },
+  "seg.61fc1d411ee0": {
+   "src": "⟦1⟧Heat⟦/1⟧ comes mainly from capsaicin and related compounds called capsaicinoids, and is measured in Scoville heat units (SHU).",
+   "t": "⟦1⟧तीक्ष्णता⟦/1⟧ मुख्यतः कैप्सैसिन्-तः तत्सम्बद्धेभ्यः कैप्सैसिनॉइड्-नामकेभ्यः द्रव्येभ्यः च आगच्छति, स्कोविल-हीट-यूनिट् (SHU) इत्यस्मिन् मीयते च।",
+   "back": "⟦1⟧Pungency⟦/1⟧ comes mainly from capsaicin and from related substances named capsaicinoids, and is measured in Scoville Heat Units (SHU)."
+  },
+  "seg.c73a37a4be4e": {
+   "src": "⟦1⟧Colour⟦/1⟧ is measured in ASTA units, by a method of the American Spice Trade Association that measures the colour that can be extracted from the chilli. The higher the value, the brighter or richer the red. The red comes from pigments called carotenoids, such as capsanthin and capsorubin.",
+   "t": "⟦1⟧वर्णः⟦/1⟧ ASTA-एककेषु मीयते, American Spice Trade Association इत्यस्य एकया पद्धत्या, या मरिचात् निष्कर्षणीयं वर्णं मिनोति। मूल्यं यावत् अधिकं, रक्तवर्णः तावत् उज्ज्वलः गाढः वा। रक्तवर्णः कैरोटिनॉइड्-नामकेभ्यः रञ्जकेभ्यः आगच्छति, यथा कैप्सैन्थिन्, कैप्सोरुबिन् च।",
+   "back": "⟦1⟧Colour⟦/1⟧ is measured in ASTA units, by a method of the American Spice Trade Association, which measures the colour extractable from the chilli. The higher the value, the brighter or deeper the red colour. The red colour comes from colouring agents named carotenoids, such as capsanthin and capsorubin."
+  },
+  "seg.533a13571b10": {
+   "src": "⟦1⟧Sannam.⟦/1⟧ Spices Board's entry for the Sannam S4 type grown in Guntur, Warangal and Khammam describes it as thick-skinned, hot and red, with an ASTA colour value of 32.11 and capsaicin of 0.226%.",
+   "t": "⟦1⟧सन्नम्।⟦/1⟧ गुण्टूर-वरङ्गल-खम्ममेषु उत्पन्नस्य सन्नम् S4 प्रकारस्य Spices Board-प्रविष्टिः तं स्थूलत्वचं, तीक्ष्णं, रक्तं च वर्णयति, ASTA वर्णमूल्यं 32.11, कैप्सैसिन् 0.226% च।",
+   "back": "⟦1⟧Sannam.⟦/1⟧ The Spices Board entry of the Sannam S4 type produced in Guntur-Warangal-Khammam describes it as thick-skinned, pungent and red, with ASTA colour value 32.11 and capsaicin 0.226%."
+  },
+  "seg.140e3ffe36f9": {
+   "src": "⟦1⟧Teja.⟦/1⟧ Teja is not in that list. In a 2020 lab study of 19 chilli varieties collected at the Guntur Mirchi Yard, Teja (S-17) gave the second hottest concentrated extract of the 19, and a hotter one than 334 (Sannam S4).",
+   "t": "⟦1⟧तेजा।⟦/1⟧ तेजा तस्यां सूच्यां नास्ति। गुण्टूर-मिर्ची-यार्ड इत्यतः सङ्गृहीतानां 19 मरिचप्रकाराणां विषये 2020 वर्षस्य प्रयोगशाला-अध्ययने तेजा (S-17) इत्यस्य सान्द्रसारः तेषु 19 मध्ये द्वितीयः तीक्ष्णतमः, 334 (सन्नम् S4) तः अपि तीक्ष्णतरः अभवत्।",
+   "back": "⟦1⟧Teja.⟦/1⟧ Teja is not in that list. In a 2020 laboratory study about 19 chilli types collected from the Guntur Mirchi Yard, the concentrated extract of Teja (S-17) became the second most pungent among those 19, more pungent even than 334 (Sannam S4)."
+  },
+  "seg.8de521c9d37a": {
+   "src": "We give no Scoville number for either chilli: that study measured extracts made from the chillies, not chilli powder, and Spices Board gives capsaicin as a percentage. Colour also changes with how the powder is packed and stored.",
+   "t": "उभयोः कस्यापि मरिचस्य कृते वयं स्कोविल-अङ्कं न दद्मः: तत् अध्ययनं मरिचेभ्यः कृतान् सारान् अमिनोत्, न तु मरिचचूर्णम्, Spices Board च कैप्सैसिन् प्रतिशतरूपेण ददाति। चूर्णं कथं पुटीकृतं रक्षितं च इत्यनेन अपि वर्णः परिवर्तते।",
+   "back": "We do not give a Scoville number for either chilli: that study measured extracts made from the chillies, not chilli powder, and the Spices Board gives capsaicin as a percentage. Colour also changes by how the powder was packeted and preserved."
+  },
+  "seg.ae84d3779303": {
+   "src": "This is how our recipes use them:",
+   "t": "अस्माकं पाकविधिषु एतयोः उपयोगः एवम्:",
+   "back": "In our recipes these two are used like this:"
+  },
+  "seg.abc5c6e19770": {
+   "src": "Vegetable curries and pulusu: Sannam. Try ⟦1⟧gutti vankaya kura⟦/1⟧, ⟦2⟧kodi guddu pulusu⟦/2⟧ or ⟦3⟧chepala pulusu⟦/3⟧.",
+   "t": "शाकव्यञ्जनानि पुलुसु च: सन्नम्। ⟦1⟧गुत्ति वंकाय कूरा⟦/1⟧, ⟦2⟧कोडि गुड्डु पुलुसु⟦/2⟧ अथवा ⟦3⟧चेपल पुलुसु⟦/3⟧ पचतु।",
+   "back": "Vegetable dishes and pulusu: Sannam. Cook ⟦1⟧gutti vankaya kura⟦/1⟧, ⟦2⟧kodi guddu pulusu⟦/2⟧ or ⟦3⟧chepala pulusu⟦/3⟧."
+  },
+  "seg.9a9d17871273": {
+   "src": "Pappu and tomato pachadi: Sannam, as in ⟦1⟧tomato pappu⟦/1⟧ and ⟦2⟧tomato pachadi⟦/2⟧.",
+   "t": "पप्पु टमाटा पच्चडि च: सन्नम्, यथा ⟦1⟧टमाटा पप्पु⟦/1⟧, ⟦2⟧टमाटा पच्चडि⟦/2⟧ इत्यनयोः।",
+   "back": "Pappu and tomato pachadi: Sannam, as in ⟦1⟧tomato pappu⟦/1⟧ and ⟦2⟧tomato pachadi⟦/2⟧."
+  },
+  "seg.103a3a936c3b": {
+   "src": "Fry dishes: Teja, as in ⟦1⟧kodi vepudu⟦/1⟧.",
+   "t": "भृष्टव्यञ्जनानि: तेजा, यथा ⟦1⟧कोडि वेपुडु⟦/1⟧ इत्यस्मिन्।",
+   "back": "Roasted dishes: Teja, as in ⟦1⟧kodi vepudu⟦/1⟧."
+  },
+  "seg.aa10a32e507d": {
+   "src": "Chicken, mutton and prawn curries: Teja, as in ⟦1⟧Andhra kodi kura⟦/1⟧, ⟦2⟧gongura mamsam⟦/2⟧ and ⟦3⟧royyala iguru⟦/3⟧.",
+   "t": "कुक्कुट-अज-चिङ्गट-व्यञ्जनानि: तेजा, यथा ⟦1⟧आन्ध्र कोडि कूरा⟦/1⟧, ⟦2⟧गोंगूर मांसम्⟦/2⟧, ⟦3⟧रोय्यल इगुरु⟦/3⟧ इत्येषु।",
+   "back": "Chicken-goat-prawn dishes: Teja, as in ⟦1⟧Andhra kodi kura⟦/1⟧, ⟦2⟧gongura mamsam⟦/2⟧, ⟦3⟧royyala iguru⟦/3⟧."
+  },
+  "seg.fa6a2d59cae8": {
+   "src": "Gongura pachadi and podis: Teja, as in ⟦1⟧gongura pachadi⟦/1⟧ and ⟦2⟧vellulli kaaram⟦/2⟧.",
+   "t": "गोंगूर पच्चडि पोडि-चूर्णानि च: तेजा, यथा ⟦1⟧गोंगूर पच्चडि⟦/1⟧, ⟦2⟧वेल्लुल्लि कारम्⟦/2⟧ इत्यनयोः।",
+   "back": "Gongura pachadi and podi powders: Teja, as in ⟦1⟧gongura pachadi⟦/1⟧ and ⟦2⟧vellulli karam⟦/2⟧."
+  },
+  "seg.b13098b97e2a": {
+   "src": "Snacks: Sannam, as in ⟦1⟧jeedipappu pakodi⟦/1⟧.",
+   "t": "लघ्वाहाराः: सन्नम्, यथा ⟦1⟧जीडिपप्पु पकोडि⟦/1⟧ इत्यस्मिन्।",
+   "back": "Light snacks: Sannam, as in ⟦1⟧jeedipappu pakodi⟦/1⟧."
+  },
+  "seg.525b276ec4e6": {
+   "src": "Pickles: either. Both packs list pickles among their uses.",
+   "t": "उपदंशाः (अचार): अन्यतरत्। उभयोः पुटकयोः उपयोगेषु उपदंशाः लिखिताः।",
+   "back": "Pickles (achar): either one. On both packets pickles are written among the uses."
+  },
+  "seg.1393d3fbe202": {
+   "src": "Swapping and mixing",
+   "t": "परिवर्तनं मिश्रणं च",
+   "back": "Changing and mixing"
+  },
+  "seg.35baeca65df9": {
+   "src": "To use Teja where a recipe asks for Sannam, start with less, taste, and add more. Our Teja pack is marked extra hot. Going the other way, add Sannam a little at a time until the heat suits you.",
+   "t": "यत्र पाकविधौ सन्नम् उक्तं तत्र तेजा उपयोक्तुम् अल्पेन आरभताम्, आस्वादयतु, ततः अधिकं योजयतु। अस्माकं तेजा-पुटके अतितीक्ष्णम् इति लिखितम्। विपरीतं कर्तुं, यावत् तीक्ष्णता रोचते तावत् सन्नम् स्तोकं स्तोकं योजयतु।",
+   "back": "To use Teja where the recipe says Sannam, begin with a little, taste, then add more. On our Teja packet 'extremely pungent' is written. To do the reverse, add Sannam bit by bit until the pungency is to your liking."
+  },
+  "seg.0706a863aae6": {
+   "src": "To turn up the heat in a dish made with Sannam, mix in a little Teja.",
+   "t": "सन्नमेन कृते व्यञ्जने तीक्ष्णतां वर्धयितुं किञ्चित् तेजा मिश्रयतु।",
+   "back": "To increase pungency in a dish made with Sannam, mix in a little Teja."
+  },
+  "seg.fe7babe5755a": {
+   "src": "Add either powder to hot oil on a low flame, so it does not burn.",
+   "t": "अन्यतरत् चूर्णं मन्दाग्नौ उष्णतैले योजयतु, येन न दह्येत।",
+   "back": "Add either powder to hot oil on a low fire, so that it does not burn."
+  },
+  "seg.e8f0fd014bfc": {
+   "src": "Keep the pack zipped shut, or move the powder to a dry, airtight jar. Air slowly breaks down the red pigments, so the colour fades.",
+   "t": "पुटकस्य जिप् पिहितं रक्षतु, अथवा चूर्णं शुष्के वायुरुद्धे पात्रे स्थापयतु। वायुः रक्तरञ्जकान् शनैः शनैः विघटयति, अतः वर्णः क्षीयते।",
+   "back": "Keep the packet's zip closed, or place the powder in a dry airtight vessel. Air slowly breaks down the red colouring agents, so the colour wanes."
+  },
+  "seg.c44f66956473": {
+   "src": "Keep it out of the light, which speeds up that loss.",
+   "t": "प्रकाशात् दूरे स्थापयतु, प्रकाशः तं क्षयं त्वरयति।",
+   "back": "Place away from light; light hastens that decay."
+  },
+  "seg.85ffea685d06": {
+   "src": "Keep it away from the stove. Warmth speeds it up too.",
+   "t": "चुल्ल्याः दूरे स्थापयतु। उष्णता अपि तं त्वरयति।",
+   "back": "Place away from the stove. Heat also hastens it."
+  },
+  "seg.f8bf00fb1a72": {
+   "src": "Use a dry spoon. Damp powder can grow mould.",
+   "t": "शुष्कं चमसं उपयुङ्क्ताम्। आर्द्रे चूर्णे कवकः उत्पद्येत।",
+   "back": "Use a dry spoon. Fungus may arise in damp powder."
+  },
+  "seg.b22d5e784674": {
+   "src": "Which is hotter, Sannam or Teja chilli powder?",
+   "t": "सन्नम्-तेजा-रक्तमरिचचूर्णयोः किं तीक्ष्णतरम्?",
+   "back": "Of Sannam and Teja red chilli powders, which is more pungent?"
+  },
+  "seg.97c13339fef2": {
+   "src": "Of our two packs, Teja is the one marked extra hot. In a 2020 lab study of 19 chilli varieties from the Guntur Mirchi Yard, the extract from Teja (S-17) tested hotter than the one from 334 (Sannam S4). Start with a little and taste as you add.",
+   "t": "अस्माकं पुटकद्वये तेजा-पुटके एव अतितीक्ष्णम् इति लिखितम्। गुण्टूर-मिर्ची-यार्ड इत्यतः 19 मरिचप्रकाराणां विषये 2020 वर्षस्य प्रयोगशाला-अध्ययने तेजा (S-17) इत्यस्य सारः 334 (सन्नम् S4) इत्यस्य सारात् तीक्ष्णतरः अभवत्। अल्पेन आरभ्य योजयन् आस्वादयतु।",
+   "back": "Of our two packets, only on the Teja packet is 'extremely pungent' written. In a 2020 laboratory study about 19 chilli types from the Guntur Mirchi Yard, the extract of Teja (S-17) became more pungent than the extract of 334 (Sannam S4). Begin with a little and taste while adding."
+  },
+  "seg.3b9df79bc5fe": {
+   "src": "What are S4 and S17 chillies?",
+   "t": "S4, S17 मरिचौ कौ?",
+   "back": "What are the S4 and S17 chillies?"
+  },
+  "seg.1c153960fcbb": {
+   "src": "S4 is the type Sannam chilli is traded as, and a variety called 334 is also listed as Sannam S4. S17 is another name for Teja, a hybrid chilli grown in Guntur district.",
+   "t": "S4 सः प्रकारः येन नाम्ना सन्नम-मरिचः व्यवह्रियते, 334 इति नामकः प्रकारः अपि सन्नम् S4 इति सूचीकृतः। S17 तेजायाः अपरं नाम, यः गुण्टूर-मण्डले उत्पद्यमानः सङ्करः मरिचः।",
+   "back": "S4 is the type by whose name Sannam chilli is traded, and a type named 334 is also listed as Sannam S4. S17 is another name of Teja, which is a cross-bred chilli produced in Guntur district."
+  },
+  "seg.726ba8f768a3": {
+   "src": "What does Sannam mean?",
+   "t": "सन्नम् इत्यस्य कः अर्थः?",
+   "back": "What does Sannam mean?"
+  },
+  "seg.dc7e66b15b59": {
+   "src": "Sannam is Telugu for thin. Spices Board lists a Sannam S4 type grown in Guntur, Warangal and Khammam districts.",
+   "t": "तेलुगुभाषायां सन्नम् नाम कृशम्। Spices Board गुण्टूर-वरङ्गल-खम्मम-मण्डलेषु उत्पन्नं सन्नम् S4 प्रकारं सूचीकरोति।",
+   "back": "In the Telugu language Sannam means thin. The Spices Board lists the Sannam S4 type produced in Guntur-Warangal-Khammam districts."
+  },
+  "seg.ee47ce8974ea": {
+   "src": "Can I use Teja chilli powder instead of Sannam?",
+   "t": "सन्नम् स्थाने तेजा-रक्तमरिचचूर्णम् उपयोक्तुं शक्यते वा?",
+   "back": "Can Teja red chilli powder be used in place of Sannam?"
+  },
+  "seg.95fe0ae93dc3": {
+   "src": "Yes. Start with less Teja than the recipe asks for, taste, and add more. Going the other way, add Sannam a little at a time.",
+   "t": "आम्। पाकविधौ उक्तात् अल्पतरेण तेजा-चूर्णेन आरभताम्, आस्वादयतु, ततः अधिकं योजयतु। विपरीतं कर्तुं, सन्नम् स्तोकं स्तोकं योजयतु।",
+   "back": "Yes. Begin with less Teja powder than the recipe says, taste, then add more. To do the reverse, add Sannam bit by bit."
+  },
+  "seg.1484e61d473a": {
+   "src": "Why does chilli powder lose its colour?",
+   "t": "रक्तमरिचचूर्णस्य वर्णः किमर्थं क्षीयते?",
+   "back": "Why does the colour of red chilli powder wane?"
+  },
+  "seg.eed11c87d549": {
+   "src": "Air slowly breaks down its red pigments, and light and warmth speed this up. Keep the pack zipped shut, out of the light and away from the stove.",
+   "t": "वायुः तस्य रक्तरञ्जकान् शनैः शनैः विघटयति, प्रकाशः उष्णता च एतत् त्वरयतः। पुटकस्य जिप् पिहितं रक्षतु, प्रकाशात् चुल्ल्याः च दूरे स्थापयतु।",
+   "back": "Air slowly breaks down its red colouring agents, light and heat hasten this. Keep the packet's zip closed, place it away from light and from the stove."
+  },
+  "seg.1ca1108ab6c4": {
+   "src": "సన్నం కారం vs తేజ కారం · Sannam vs Teja Chilli | 1acrefarms",
+   "t": "सन्नम् विरुद्धं तेजा रक्तमरिचः · सन्नम कारम, तेजा कारम | 1acrefarms",
+   "back": "Sannam versus Teja red chilli · Sannam karam, Teja karam | 1acrefarms"
+  },
+  "seg.beaa945936e8": {
+   "src": "సన్నం కారం, తేజ కారం మధ్య తేడా. Sannam (S4) vs Teja (S17) chilli powder: what each is, heat and colour, the Guntur chilli yard, which to use, and storage.",
+   "t": "सन्नम कारम, तेजा कारम इत्यनयोः भेदः। सन्नम् (S4), तेजा (S17) रक्तमरिचचूर्णे: प्रत्येकं किम्, तीक्ष्णता वर्णः च, गुण्टूर-मिर्ची-यार्ड, किम् उपयोक्तव्यम्, रक्षणं च।",
+   "back": "The difference between Sannam karam and Teja karam. Sannam (S4) and Teja (S17) red chilli powders: what each is, pungency and colour, Guntur Mirchi Yard, which should be used, and preservation."
+  },
+  "seg.15d3cc0a28f8": {
+   "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
+   "t": "सन्नम् अथवा तेजा रक्तमरिचचूर्णम्: किम् उपयोक्तव्यम् · 1acrefarms",
+   "back": "Sannam or Teja red chilli powder: which should be used · 1acrefarms"
   }
  }
 }

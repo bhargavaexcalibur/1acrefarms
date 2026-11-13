@@ -9745,6 +9745,811 @@
    "src": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
    "t": "ഓരോ പരാതിയും 48 മണിക്കൂറിനകം ലഭിച്ചതായി അറിയിക്കും, അതിന് ഒരു പരാതി നമ്പർ (ഉദാഹരണം 1AF-C-0001) നൽകും; അതിന്റെ നില അറിയാൻ എപ്പോൾ വേണമെങ്കിലും ആ നമ്പർ പറയാം. ഒരു മാസത്തിനകം പരാതി പരിഹരിക്കും.",
    "back": "Will inform that each complaint was received within 48 hours, and give it a complaint number (example 1AF-C-0001); you can quote that number any time to know its status. Will resolve the complaint within one month."
+  },
+  "seg.775626e05173": {
+   "src": "Cashew grades explained",
+   "t": "കശുവണ്ടി ഗ്രേഡുകൾ: ഒരു വിശദീകരണം",
+   "back": "Cashew grades: an explanation"
+  },
+  "seg.bd93e5099667": {
+   "src": "Guide · cashew",
+   "t": "ഗൈഡ് · കശുവണ്ടി",
+   "back": "Guide · Cashew"
+  },
+  "seg.7b06243b4b36": {
+   "src": "Cashew grades explained: W180, W240, W320 and more",
+   "t": "കശുവണ്ടി ഗ്രേഡുകൾ വിശദമായി: W180, W240, W320 എന്നിവയും മറ്റും",
+   "back": "Cashew grades in detail: W180, W240, W320 and more"
+  },
+  "seg.10fa875ffb15": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · Jeedipappu · Kaju",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ജീഡിപപ്പു · കാജു",
+   "back": "⟦#1⟧ · ⟦#2⟧ · Jeedipappu · Kaju"
+  },
+  "seg.e690d34b37c7": {
+   "src": "W180, W240, W320: these are cashew kernel grades, and each letter and number means something exact. In India the grades are set out in AGMARK's Cashew Kernels Grading and Marking Rules, and the Cashew Export Promotion Council of India (CEPCI) describes the grades India exports.",
+   "t": "W180, W240, W320: ഇവ കശുവണ്ടിപ്പരിപ്പിന്റെ ഗ്രേഡുകളാണ്; ഓരോ അക്ഷരത്തിനും സംഖ്യയ്ക്കും കൃത്യമായ അർത്ഥമുണ്ട്. ഇന്ത്യയിൽ ഈ ഗ്രേഡുകൾ AGMARK-ന്റെ കശുവണ്ടിപ്പരിപ്പ് ഗ്രേഡിംഗ്, മാർക്കിംഗ് ചട്ടങ്ങളിൽ നിശ്ചയിച്ചിട്ടുണ്ട്; ഇന്ത്യ കയറ്റുമതി ചെയ്യുന്ന ഗ്രേഡുകൾ കാഷ്യൂ എക്സ്പോർട്ട് പ്രൊമോഷൻ കൗൺസിൽ ഓഫ് ഇന്ത്യ (CEPCI) വിവരിക്കുന്നു.",
+   "back": "W180, W240, W320: these are grades of cashew kernels; every letter and number has a precise meaning. In India these grades are defined in AGMARK's cashew kernel grading and marking rules; the Cashew Export Promotion Council of India (CEPCI) describes the grades that India exports."
+  },
+  "seg.c6b446b7a250": {
+   "src": "This guide explains each grade name, gives the kernels per pound and per kg for the whole grades, and says what a grade tells you and what it does not. It also covers which kind suits which dish, where Andhra's cashews grow and how to keep them. There is a Telugu section further down.",
+   "t": "ഈ ഗൈഡ് ഓരോ ഗ്രേഡ് പേരും വിശദീകരിക്കുന്നു, മുഴുവൻ പരിപ്പ് ഗ്രേഡുകൾക്ക് ഒരു പൗണ്ടിലും ഒരു കിലോയിലും എത്ര പരിപ്പ് എന്ന് നൽകുന്നു, ഒരു ഗ്രേഡ് എന്ത് പറയുന്നു, എന്ത് പറയുന്നില്ല എന്നും പറയുന്നു. ഏത് തരം ഏത് വിഭവത്തിന് ചേരും, ആന്ധ്രയിലെ കശുവണ്ടി എവിടെ വളരുന്നു, അത് എങ്ങനെ സൂക്ഷിക്കാം എന്നിവയും ഉണ്ട്. താഴെ ഒരു തെലുങ്ക് ഭാഗവും ഉണ്ട്.",
+   "back": "This guide explains each grade name, gives how many kernels in one pound and one kilo for whole kernel grades, and also says what a grade says and what it does not say. Which type suits which dish, where Andhra's cashew grows, how to store it, are also there. Below there is also a Telugu section."
+  },
+  "seg.c1ca260b3117": {
+   "src": "Cashew Kernels⟦#1⟧⟦#2⟧",
+   "t": "കശുവണ്ടിപ്പരിപ്പ്⟦#1⟧⟦#2⟧",
+   "back": "Cashew kernels⟦#1⟧⟦#2⟧"
+  },
+  "seg.448909881b37": {
+   "src": "⟦1⟧Our cashew kernels⟦/1⟧Whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+   "t": "⟦1⟧ഞങ്ങളുടെ കശുവണ്ടിപ്പരിപ്പ്⟦/1⟧ചീരാല, ബാപട്ല, വിശാഖപട്ടണം തീരങ്ങളിൽ നിന്നുള്ള മുഴുവൻ, പ്ലെയിൻ, ഉപ്പില്ലാത്ത കശുവണ്ടിപ്പരിപ്പ്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "⟦1⟧Our cashew kernels⟦/1⟧Whole, plain, unsalted cashew kernels from the Chirala, Bapatla, Visakhapatnam coasts, packed in Narasaraopet."
+  },
+  "seg.7f9a4ad2ac37": {
+   "src": "In a grade such as W320, W means white whole kernels and the number is how many kernels make a pound (454 g): W320 is 300 to 320 kernels a pound, or 660 to 705 a kg. A smaller number means bigger kernels, and W180 is the biggest grade listed. SW means scorched wholes, browner from longer roasting. S, B, LWP, SWP and BB are splits, butts and pieces. A grade describes size, colour and wholeness, not taste.",
+   "t": "W320 പോലുള്ള ഒരു ഗ്രേഡിൽ, W എന്നാൽ വെള്ള മുഴുവൻ പരിപ്പ്; സംഖ്യ എന്നാൽ ഒരു പൗണ്ടിൽ (454 g) എത്ര പരിപ്പ് ഉണ്ട് എന്നത്: W320 എന്നാൽ ഒരു പൗണ്ടിൽ 300 മുതൽ 320 വരെ പരിപ്പ്, അല്ലെങ്കിൽ ഒരു കിലോയിൽ 660 മുതൽ 705 വരെ. സംഖ്യ ചെറുതാകുന്തോറും പരിപ്പ് വലുതാണ്; പട്ടികയിലെ ഏറ്റവും വലിയ ഗ്രേഡ് W180 ആണ്. SW എന്നാൽ കരിഞ്ഞ മുഴുവൻ പരിപ്പ്, കൂടുതൽ നേരം വറുത്തതിനാൽ അല്പം തവിട്ടുനിറം. S, B, LWP, SWP, BB എന്നിവ പിളർന്നവ, ഒടിഞ്ഞവ, കഷണങ്ങൾ. ഒരു ഗ്രേഡ് വലിപ്പം, നിറം, മുഴുപ്പ് എന്നിവയാണ് പറയുന്നത്, രുചിയല്ല.",
+   "back": "In a grade like W320, W means white whole kernel; the number is how many kernels are in one pound (454 g): W320 means 300 to 320 kernels in one pound, or 660 to 705 in one kilo. The smaller the number, the bigger the kernel; the biggest grade in the list is W180. SW means burnt whole kernel, slightly brown colour because it was roasted for a long time. S, B, LWP, SWP, BB are split ones, broken ones, pieces. A grade tells size, colour, wholeness, not taste."
+  },
+  "seg.43de32a51933": {
+   "src": "What the grade names mean",
+   "t": "ഗ്രേഡ് പേരുകളുടെ അർത്ഥം",
+   "back": "Meaning of grade names"
+  },
+  "seg.78faffc3f74e": {
+   "src": "W: white wholes (W180, W210, W240, W320, W450 and more)",
+   "t": "W: വെള്ള മുഴുവൻ പരിപ്പ് (W180, W210, W240, W320, W450 എന്നിവയും മറ്റും)",
+   "back": "W: White whole kernel (W180, W210, W240, W320, W450 and more)"
+  },
+  "seg.9ff1e572e8c8": {
+   "src": "Whole kernels that are white, pale ivory or light ash in colour. The number is how many kernels make a pound (454 g), so a smaller number means bigger kernels.",
+   "t": "വെള്ള, ഇളം ആനക്കൊമ്പ് നിറം അല്ലെങ്കിൽ ഇളം ചാരനിറമുള്ള മുഴുവൻ പരിപ്പുകൾ. സംഖ്യ എന്നാൽ ഒരു പൗണ്ടിൽ (454 g) എത്ര പരിപ്പ് എന്നത്; അതിനാൽ സംഖ്യ ചെറുതാകുന്തോറും പരിപ്പ് വലുതാണ്.",
+   "back": "Whole kernels of white, light ivory colour or light grey colour. The number is how many kernels in one pound (454 g); so the smaller the number, the bigger the kernel."
+  },
+  "seg.90d077505d77": {
+   "src": "SW: scorched wholes",
+   "t": "SW: കരിഞ്ഞ മുഴുവൻ പരിപ്പ്",
+   "back": "SW: Burnt whole kernel"
+  },
+  "seg.4bc3adfa3fc7": {
+   "src": "Whole kernels that are light brown, light ivory, light ash or deep ivory in colour from scorching, which AGMARK puts down to overheating and CEPCI to longer roasting. CEPCI notes they have all the other characteristics of white kernels.",
+   "t": "കരിഞ്ഞതിനാൽ ഇളം തവിട്ട്, ഇളം ആനക്കൊമ്പ്, ഇളം ചാരം അല്ലെങ്കിൽ കടും ആനക്കൊമ്പ് നിറമുള്ള മുഴുവൻ പരിപ്പുകൾ; AGMARK ഇതിന് കാരണമായി പറയുന്നത് അമിത ചൂട്, CEPCI പറയുന്നത് കൂടുതൽ നേരം വറുക്കൽ. വെള്ള പരിപ്പിന്റെ മറ്റെല്ലാ ഗുണങ്ങളും ഇവയ്ക്കുണ്ടെന്ന് CEPCI പറയുന്നു.",
+   "back": "Whole kernels of light brown, light ivory, light grey or deep ivory colour because of burning; AGMARK calls excess heat the reason for this, CEPCI roasting for a long time. CEPCI says these have all the other qualities of white kernel."
+  },
+  "seg.6eab996478d3": {
+   "src": "SWS and DW: scorched wholes seconds and dessert wholes",
+   "t": "SWS, DW: കരിഞ്ഞ മുഴുവൻ പരിപ്പ് രണ്ടാം തരം, ഡെസേർട്ട് മുഴുവൻ പരിപ്പ്",
+   "back": "SWS and DW: Burnt whole kernel second grade and dessert whole kernel"
+  },
+  "seg.5780c6428d2a": {
+   "src": "Whole kernels with more marks allowed, such as speckled, discoloured or shrivelled kernels.",
+   "t": "പുള്ളികളുള്ളതോ, നിറം മാറിയതോ, ചുരുങ്ങിയതോ പോലെ കൂടുതൽ പാടുകൾ അനുവദിക്കുന്ന മുഴുവൻ പരിപ്പുകൾ.",
+   "back": "Whole kernels where more marks, like spotted, colour-changed or shrunken ones, are allowed."
+  },
+  "seg.375ecf155c15": {
+   "src": "B: butts",
+   "t": "B: ബട്ട്സ് (കുറുകെ ഒടിഞ്ഞവ)",
+   "back": "B: Butts (broken crosswise)"
+  },
+  "seg.902ec0b3896b": {
+   "src": "Kernels broken across (crosswise), but not split apart along their length.",
+   "t": "കുറുകെ ഒടിഞ്ഞ പരിപ്പുകൾ, എന്നാൽ നീളത്തിൽ പിളരാത്തവ.",
+   "back": "Kernels broken crosswise, but not split lengthwise."
+  },
+  "seg.e2b0618c9f46": {
+   "src": "S: splits",
+   "t": "S: സ്പ്ലിറ്റ്സ് (പിളർന്നവ)",
+   "back": "S: Splits (split ones)"
+  },
+  "seg.d4f870cd6a0a": {
+   "src": "Kernels split along their length.",
+   "t": "നീളത്തിൽ പിളർന്ന പരിപ്പുകൾ.",
+   "back": "Kernels split lengthwise."
+  },
+  "seg.76b3bfda28d2": {
+   "src": "LWP, SWP and BB: large white pieces, small white pieces and baby bits",
+   "t": "LWP, SWP, BB: വലിയ വെള്ള കഷണങ്ങൾ, ചെറിയ വെള്ള കഷണങ്ങൾ, വളരെ ചെറിയ തരികൾ",
+   "back": "LWP, SWP, BB: large white pieces, small white pieces, very small granules"
+  },
+  "seg.8dfe1b91dc8d": {
+   "src": "Broken kernels, sorted by sieve. LWP are kernels broken into more than two pieces. In the ISO standard, LWP stay on a 4.75 mm sieve, SWP on a 2.80 mm sieve and BB on a 1.70 mm sieve.",
+   "t": "അരിപ്പ കൊണ്ട് തരംതിരിച്ച ഒടിഞ്ഞ പരിപ്പുകൾ. LWP എന്നാൽ രണ്ടിലധികം കഷണങ്ങളായി ഒടിഞ്ഞ പരിപ്പുകൾ. ISO മാനദണ്ഡത്തിൽ, LWP 4.75 mm അരിപ്പയിലും, SWP 2.80 mm അരിപ്പയിലും, BB 1.70 mm അരിപ്പയിലും തങ്ങിനിൽക്കും.",
+   "back": "Broken kernels separated by sieve. LWP is kernels broken into more than two pieces. In the ISO standard, LWP stays on a 4.75 mm sieve, SWP on a 2.80 mm sieve, and BB on a 1.70 mm sieve."
+  },
+  "seg.f360d4576667": {
+   "src": "SB, SS, SP and SSP",
+   "t": "SB, SS, SP, SSP",
+   "back": "SB, SS, SP and SSP"
+  },
+  "seg.b928dd595b74": {
+   "src": "Scorched butts, scorched splits, scorched pieces and scorched small pieces: the same cuts in the browner scorched colours.",
+   "t": "കരിഞ്ഞ ബട്ട്സ്, കരിഞ്ഞ സ്പ്ലിറ്റ്സ്, കരിഞ്ഞ കഷണങ്ങൾ, കരിഞ്ഞ ചെറിയ കഷണങ്ങൾ: അതേ മുറിവുകൾ, കരിഞ്ഞതിന്റെ തവിട്ടുനിറങ്ങളിൽ.",
+   "back": "Burnt butts, burnt splits, burnt pieces, burnt small pieces: the same cuts, in the brown colours of burning."
+  },
+  "seg.a863333da28f": {
+   "src": "Kernels per pound and per kg",
+   "t": "ഒരു പൗണ്ടിലും ഒരു കിലോയിലും പരിപ്പുകൾ",
+   "back": "Kernels per pound and per kilo"
+  },
+  "seg.aecc49c15355": {
+   "src": "Grade",
+   "t": "ഗ്രേഡ്",
+   "back": "Grade"
+  },
+  "seg.e857c14c4482": {
+   "src": "Kernels per pound (454 g)",
+   "t": "ഒരു പൗണ്ടിൽ (454 g) പരിപ്പുകൾ",
+   "back": "Kernels in one pound (454 g)"
+  },
+  "seg.c5625c50fdf2": {
+   "src": "Kernels per kg",
+   "t": "ഒരു കിലോയിൽ പരിപ്പുകൾ",
+   "back": "Kernels in one kilo"
+  },
+  "seg.0eddff5de93a": {
+   "src": "120 to 180",
+   "t": "120 മുതൽ 180 വരെ",
+   "back": "120 to 180"
+  },
+  "seg.32208a4cbb16": {
+   "src": "265 to 395",
+   "t": "265 മുതൽ 395 വരെ",
+   "back": "265 to 395"
+  },
+  "seg.2c6129383a78": {
+   "src": "200 to 210",
+   "t": "200 മുതൽ 210 വരെ",
+   "back": "200 to 210"
+  },
+  "seg.85a51e80f732": {
+   "src": "440 to 465",
+   "t": "440 മുതൽ 465 വരെ",
+   "back": "440 to 465"
+  },
+  "seg.3ff7e725bcec": {
+   "src": "220 to 240",
+   "t": "220 മുതൽ 240 വരെ",
+   "back": "220 to 240"
+  },
+  "seg.8bba2d6c5659": {
+   "src": "485 to 530",
+   "t": "485 മുതൽ 530 വരെ",
+   "back": "485 to 530"
+  },
+  "seg.a5ce92096d7d": {
+   "src": "260 to 280",
+   "t": "260 മുതൽ 280 വരെ",
+   "back": "260 to 280"
+  },
+  "seg.7b16f9e1a717": {
+   "src": "575 to 620",
+   "t": "575 മുതൽ 620 വരെ",
+   "back": "575 to 620"
+  },
+  "seg.495b35d2fd20": {
+   "src": "300 to 320",
+   "t": "300 മുതൽ 320 വരെ",
+   "back": "300 to 320"
+  },
+  "seg.a072c4bc4441": {
+   "src": "660 to 705",
+   "t": "660 മുതൽ 705 വരെ",
+   "back": "660 to 705"
+  },
+  "seg.bda6639ebea6": {
+   "src": "350 to 400",
+   "t": "350 മുതൽ 400 വരെ",
+   "back": "350 to 400"
+  },
+  "seg.d8d91e2355d0": {
+   "src": "770 to 880",
+   "t": "770 മുതൽ 880 വരെ",
+   "back": "770 to 880"
+  },
+  "seg.7a9034e3b7f4": {
+   "src": "400 to 450",
+   "t": "400 മുതൽ 450 വരെ",
+   "back": "400 to 450"
+  },
+  "seg.1e81373e3b20": {
+   "src": "880 to 990",
+   "t": "880 മുതൽ 990 വരെ",
+   "back": "880 to 990"
+  },
+  "seg.2668e033cc63": {
+   "src": "450 to 500",
+   "t": "450 മുതൽ 500 വരെ",
+   "back": "450 to 500"
+  },
+  "seg.50cf501d0189": {
+   "src": "990 to 1,100",
+   "t": "990 മുതൽ 1,100 വരെ",
+   "back": "990 to 1,100"
+  },
+  "seg.98601d72fd74": {
+   "src": "The W210 to W500 rows are from AGMARK's rules, whose table starts at W210. The W180 row is from ISO 6477, the international standard for cashew kernels, and CEPCI lists W180 among the grades India exports.",
+   "t": "W210 മുതൽ W500 വരെയുള്ള വരികൾ AGMARK ചട്ടങ്ങളിൽ നിന്നാണ്; അതിന്റെ പട്ടിക W210-ൽ തുടങ്ങുന്നു. W180 വരി കശുവണ്ടിപ്പരിപ്പിനുള്ള അന്താരാഷ്ട്ര മാനദണ്ഡമായ ISO 6477-ൽ നിന്നാണ്; ഇന്ത്യ കയറ്റുമതി ചെയ്യുന്ന ഗ്രേഡുകളിൽ CEPCI W180-ഉം ഉൾപ്പെടുത്തുന്നു.",
+   "back": "The rows from W210 to W500 are taken from the AGMARK rules; its table starts at W210. The W180 row is taken from ISO 6477, the international standard for cashew kernels; CEPCI also lists W180 among the grades India exports."
+  },
+  "seg.31416c82d50a": {
+   "src": "⟦1⟧Count it yourself.⟦/1⟧ ISO 6477's test for the white whole grades counts the kernels in 1 kg or 1 lb. For a rough check at home, count the whole kernels in 100 g on a kitchen scale, multiply by 10 and compare with the per kg column.",
+   "t": "⟦1⟧സ്വയം എണ്ണിനോക്കൂ.⟦/1⟧ വെള്ള മുഴുവൻ ഗ്രേഡുകൾക്കുള്ള ISO 6477 പരിശോധന 1 kg അല്ലെങ്കിൽ 1 lb-ലെ പരിപ്പുകൾ എണ്ണുന്നു. വീട്ടിൽ ഏകദേശം പരിശോധിക്കാൻ, അടുക്കളത്രാസിൽ 100 g തൂക്കി അതിലെ മുഴുവൻ പരിപ്പുകൾ എണ്ണുക, 10 കൊണ്ട് ഗുണിക്കുക, കിലോ കോളവുമായി താരതമ്യം ചെയ്യുക.",
+   "back": "⟦1⟧Count and see yourself.⟦/1⟧ The ISO 6477 test for white whole grades counts the kernels in 1 kg or 1 lb. To check roughly at home, weigh 100 g on a kitchen scale, count the whole kernels in it, multiply by 10, and compare with the kg column."
+  },
+  "seg.38578496da57": {
+   "src": "AGMARK's whole grades allow up to 5% broken kernels at the time of packing.",
+   "t": "AGMARK-ന്റെ മുഴുവൻ ഗ്രേഡുകളിൽ പാക്ക് ചെയ്യുന്ന സമയത്ത് 5% വരെ ഒടിഞ്ഞ പരിപ്പുകൾ അനുവദിക്കുന്നു.",
+   "back": "In AGMARK whole grades, up to 5% broken kernels are allowed at the time of packing."
+  },
+  "seg.a67f43711f4f": {
+   "src": "What a grade tells you, and what it does not",
+   "t": "ഒരു ഗ്രേഡ് പറയുന്നതും പറയാത്തതും",
+   "back": "What a grade tells, what it does not tell"
+  },
+  "seg.4e310614a4b5": {
+   "src": "⟦1⟧Size.⟦/1⟧ The number is a count, so W180 kernels are bigger than W320 kernels.",
+   "t": "⟦1⟧വലിപ്പം.⟦/1⟧ സംഖ്യ ഒരു എണ്ണമാണ്, അതിനാൽ W180 പരിപ്പുകൾ W320 പരിപ്പുകളേക്കാൾ വലുതാണ്.",
+   "back": "⟦1⟧Size.⟦/1⟧ The number is a count; so W180 kernels are bigger than W320 kernels."
+  },
+  "seg.3e51ad8b884e": {
+   "src": "⟦1⟧Colour.⟦/1⟧ White wholes are white, pale ivory or light ash. Scorched grades are browner from scorching.",
+   "t": "⟦1⟧നിറം.⟦/1⟧ വെള്ള മുഴുവൻ പരിപ്പുകൾ വെള്ള, ഇളം ആനക്കൊമ്പ് അല്ലെങ്കിൽ ഇളം ചാരനിറം. കരിഞ്ഞ ഗ്രേഡുകൾ കരിഞ്ഞതിനാൽ അല്പം തവിട്ടുനിറം.",
+   "back": "⟦1⟧Colour.⟦/1⟧ White whole kernels are white, light ivory or light grey colour. Burnt grades are slightly brown colour because of burning."
+  },
+  "seg.ab50dc9032b9": {
+   "src": "⟦1⟧Whole or broken.⟦/1⟧ Wholes, butts, splits and pieces are separate grades.",
+   "t": "⟦1⟧മുഴുവനോ ഒടിഞ്ഞതോ.⟦/1⟧ മുഴുവൻ പരിപ്പ്, ബട്ട്സ്, സ്പ്ലിറ്റ്സ്, കഷണങ്ങൾ എന്നിവ വെവ്വേറെ ഗ്രേഡുകളാണ്.",
+   "back": "⟦1⟧Whole or broken.⟦/1⟧ Whole kernel, butts, splits, pieces are separate grades."
+  },
+  "seg.3f8c367cba28": {
+   "src": "⟦1⟧Limits on defects.⟦/1⟧ AGMARK's white whole grades must be reasonably dry, free from insect damage, damaged kernels and black or brown spots, and completely free from testa, the kernel's skin. ISO 6477 caps moisture at 5%.",
+   "t": "⟦1⟧കുറവുകൾക്കുള്ള പരിധികൾ.⟦/1⟧ AGMARK-ന്റെ വെള്ള മുഴുവൻ ഗ്രേഡുകൾ ആവശ്യത്തിന് ഉണങ്ങിയതും, കീടങ്ങൾ നശിപ്പിച്ചത്, കേടായ പരിപ്പുകൾ, കറുപ്പോ തവിട്ടോ പുള്ളികൾ എന്നിവ ഇല്ലാത്തതും, പരിപ്പിന്റെ തൊലിയായ ടെസ്റ്റ പൂർണ്ണമായും ഇല്ലാത്തതും ആയിരിക്കണം. ISO 6477 ഈർപ്പം 5%-ൽ പരിമിതപ്പെടുത്തുന്നു.",
+   "back": "⟦1⟧Limits for shortcomings.⟦/1⟧ AGMARK white whole grades must be sufficiently dried, without insect-damaged ones, spoiled kernels, black or brown spots, and the testa, the skin of the kernel, must be completely absent. ISO 6477 limits moisture to 5%."
+  },
+  "seg.330a63d5bfcb": {
+   "src": "⟦1⟧What a grade does not tell you.⟦/1⟧ AGMARK's grade definitions are about count, colour, shape and defects, and none of them ranks flavour. So a W180 is a bigger kernel than a W320, not one graded as tastier. Scorched is a colour grade too: CEPCI notes scorched wholes have all the other characteristics of white kernels.",
+   "t": "⟦1⟧ഒരു ഗ്രേഡ് പറയാത്തത്.⟦/1⟧ AGMARK-ന്റെ ഗ്രേഡ് നിർവചനങ്ങൾ എണ്ണം, നിറം, ആകൃതി, കുറവുകൾ എന്നിവയെക്കുറിച്ചാണ്; അവയിലൊന്നും രുചിക്ക് റാങ്ക് നൽകുന്നില്ല. അതിനാൽ W180 എന്നത് W320-നേക്കാൾ വലിയ പരിപ്പാണ്, കൂടുതൽ രുചിയുള്ളതായി ഗ്രേഡ് ചെയ്തതല്ല. കരിഞ്ഞത് എന്നതും ഒരു നിറ ഗ്രേഡാണ്: കരിഞ്ഞ മുഴുവൻ പരിപ്പുകൾക്ക് വെള്ള പരിപ്പിന്റെ മറ്റെല്ലാ ഗുണങ്ങളും ഉണ്ടെന്ന് CEPCI പറയുന്നു.",
+   "back": "⟦1⟧The thing a grade does not say.⟦/1⟧ AGMARK grade definitions are about count, colour, shape and defects; none of them gives a rank to taste. So W180 means a bigger kernel than W320, it is not graded as more tasty. Burnt is also a colour grade: CEPCI says burnt whole kernels have all the other qualities of white kernel."
+  },
+  "seg.ef0d669b3123": {
+   "src": "Which grade for which dish",
+   "t": "ഏത് വിഭവത്തിന് ഏത് ഗ്രേഡ്",
+   "back": "Which grade for which dish"
+  },
+  "seg.2da39bee2198": {
+   "src": "⟦1⟧To eat as they are, or toasted in a dry pan:⟦/1⟧ whole kernels, in whatever size you like.",
+   "t": "⟦1⟧അതേപടി കഴിക്കാൻ, അല്ലെങ്കിൽ എണ്ണയില്ലാത്ത ചട്ടിയിൽ വറുത്ത് കഴിക്കാൻ:⟦/1⟧ മുഴുവൻ പരിപ്പുകൾ, ഇഷ്ടമുള്ള ഏത് വലിപ്പത്തിലും.",
+   "back": "⟦1⟧To eat as it is, or to eat roasted in a pan without oil:⟦/1⟧ whole kernels, in any size you like."
+  },
+  "seg.4c97810ec555": {
+   "src": "⟦1⟧⟦2⟧Jeedipappu pakodi⟦/2⟧:⟦/1⟧ whole kernels, which stay crunchy inside the coating. Split any very large ones in half.",
+   "t": "⟦1⟧⟦2⟧ജീഡിപപ്പു പക്കോടി⟦/2⟧:⟦/1⟧ മുഴുവൻ പരിപ്പുകൾ, മാവിന്റെ ആവരണത്തിനുള്ളിൽ മൊരിഞ്ഞിരിക്കും. വളരെ വലിയവ രണ്ടായി പിളർക്കുക.",
+   "back": "⟦1⟧⟦2⟧Jeedipappu pakodi⟦/2⟧:⟦/1⟧ whole kernels, will be crisp inside the batter coating. Split the very big ones in two."
+  },
+  "seg.683759702c73": {
+   "src": "⟦1⟧⟦2⟧Jeedipappu upma⟦/2⟧:⟦/1⟧ wholes or halves, fried golden in ghee and stirred in at the end.",
+   "t": "⟦1⟧⟦2⟧ജീഡിപപ്പു ഉപ്മ⟦/2⟧:⟦/1⟧ മുഴുവനോ പകുതിയോ, നെയ്യിൽ സ്വർണ്ണനിറമാകുംവരെ വറുത്ത് അവസാനം ഇളക്കിച്ചേർക്കുക.",
+   "back": "⟦1⟧⟦2⟧Jeedipappu upma⟦/2⟧:⟦/1⟧ whole or half, fry in ghee till golden colour and stir in at the end."
+  },
+  "seg.140df3da8491": {
+   "src": "⟦1⟧⟦2⟧Paramannam⟦/2⟧:⟦/1⟧ our recipe halves the cashews before frying them in ghee, so splits do the same job.",
+   "t": "⟦1⟧⟦2⟧പരമാന്നം⟦/2⟧:⟦/1⟧ ഞങ്ങളുടെ പാചകക്കുറിപ്പിൽ കശുവണ്ടി നെയ്യിൽ വറുക്കുന്നതിന് മുമ്പ് പകുതിയാക്കുന്നു, അതിനാൽ സ്പ്ലിറ്റ്സും അതേ ജോലി ചെയ്യും.",
+   "back": "⟦1⟧⟦2⟧Paramannam⟦/2⟧:⟦/1⟧ in our recipe we halve the cashew before frying in ghee, so splits also do the same work."
+  },
+  "seg.0507a0ef99f7": {
+   "src": "⟦1⟧Cooking, sweets and savoury snacks:⟦/1⟧ butts, splits and pieces. CEPCI calls them ideal for these.",
+   "t": "⟦1⟧പാചകം, മധുരപലഹാരങ്ങൾ, എരിവുള്ള പലഹാരങ്ങൾ:⟦/1⟧ ബട്ട്സ്, സ്പ്ലിറ്റ്സ്, കഷണങ്ങൾ. ഇവയ്ക്ക് ഇവ ഏറ്റവും അനുയോജ്യമെന്ന് CEPCI പറയുന്നു.",
+   "back": "⟦1⟧Cooking, sweets, spicy snacks:⟦/1⟧ butts, splits, pieces. CEPCI says these are most suitable for these."
+  },
+  "seg.85825102ed6c": {
+   "src": "⟦1⟧The everyday grade:⟦/1⟧ CEPCI calls W320 the most popular grade and the most widely available worldwide.",
+   "t": "⟦1⟧ദിവസേനയുള്ള ഗ്രേഡ്:⟦/1⟧ W320 ആണ് ഏറ്റവും പ്രചാരമുള്ള ഗ്രേഡ് എന്നും ലോകമെങ്ങും ഏറ്റവും കൂടുതൽ ലഭ്യമായത് എന്നും CEPCI പറയുന്നു.",
+   "back": "⟦1⟧Daily grade:⟦/1⟧ CEPCI says W320 is the most popular grade and the one most available across the world."
+  },
+  "seg.30e2c7470dfb": {
+   "src": "Our ⟦1⟧cashew kernels⟦/1⟧ are whole, plain and unsalted.",
+   "t": "ഞങ്ങളുടെ ⟦1⟧കശുവണ്ടിപ്പരിപ്പ്⟦/1⟧ മുഴുവൻ, പ്ലെയിൻ, ഉപ്പില്ലാത്തതാണ്.",
+   "back": "Our ⟦1⟧cashew kernels⟦/1⟧ are whole, plain, unsalted."
+  },
+  "seg.d9587ec3391e": {
+   "src": "Andhra's cashew belt",
+   "t": "ആന്ധ്രയിലെ കശുവണ്ടി മേഖല",
+   "back": "Andhra's cashew region"
+  },
+  "seg.f16dee41b616": {
+   "src": "Andhra Pradesh is one of India's main cashew states. In 2017-18 it produced 14% of India's cashew nuts, second only to Maharashtra at 33%, going by CEPCI figures cited in a 2021 study.",
+   "t": "ഇന്ത്യയിലെ പ്രധാന കശുവണ്ടി സംസ്ഥാനങ്ങളിൽ ഒന്നാണ് ആന്ധ്രാപ്രദേശ്. 2021-ലെ ഒരു പഠനം ഉദ്ധരിച്ച CEPCI കണക്കുകൾ പ്രകാരം, 2017-18-ൽ ഇന്ത്യയുടെ കശുവണ്ടിയുടെ 14% ഇവിടെയാണ് ഉൽപാദിപ്പിച്ചത്; 33%-മായി മഹാരാഷ്ട്ര മാത്രമാണ് മുന്നിൽ.",
+   "back": "Andhra Pradesh is one of India's main cashew states. According to CEPCI figures quoted by a 2021 study, in 2017-18, 14% of India's cashew was produced here; only Maharashtra with 33% is ahead."
+  },
+  "seg.f1989a0f6305": {
+   "src": "In Srikakulam district alone, cashew grows on about 24,000 hectares, across the plains, the tribal high-altitude areas and the sea coast. Cashew kernels are the district's One District One Product for 2024.",
+   "t": "ശ്രീകാകുളം ജില്ലയിൽ മാത്രം ഏകദേശം 24,000 ഹെക്ടറിൽ കശുവണ്ടി വളരുന്നു: സമതലങ്ങളിലും, ഉയർന്ന ആദിവാസി പ്രദേശങ്ങളിലും, കടൽത്തീരത്തും. 2024-ലെ ആ ജില്ലയുടെ 'ഒരു ജില്ല ഒരു ഉൽപ്പന്നം' കശുവണ്ടിപ്പരിപ്പാണ്.",
+   "back": "In Srikakulam district alone cashew grows on about 24,000 hectares: in plains, in high tribal areas, and on the sea shore. That district's 'One District One Product' for 2024 is cashew kernel."
+  },
+  "seg.3fa84158dbfd": {
+   "src": "Our cashew kernels come from the Chirala, Bapatla and Vizag coast and are packed in Narasaraopet.",
+   "t": "ഞങ്ങളുടെ കശുവണ്ടിപ്പരിപ്പ് ചീരാല, ബാപട്ല, വിശാഖപട്ടണം തീരങ്ങളിൽ നിന്ന് വരുന്നു, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്യുന്നു.",
+   "back": "Our cashew kernels come from the Chirala, Bapatla, Visakhapatnam coasts and are packed in Narasaraopet."
+  },
+  "seg.fe2b7f5c75e9": {
+   "src": "Keeping cashews well",
+   "t": "കശുവണ്ടി നന്നായി സൂക്ഷിക്കാൻ",
+   "back": "To store cashew well"
+  },
+  "seg.c1475e1b0a12": {
+   "src": "Keep the zip shut after use, or move the kernels to a dry, airtight jar.",
+   "t": "ഉപയോഗശേഷം സിപ്പ് അടച്ചുവയ്ക്കൂ, അല്ലെങ്കിൽ പരിപ്പ് ഉണങ്ങിയ, വായു കടക്കാത്ത ഭരണിയിലേക്ക് മാറ്റൂ.",
+   "back": "After use keep the zip closed, or move the kernels to a dry, airtight jar."
+  },
+  "seg.ec878982b0c0": {
+   "src": "Keep them in a cool, dry place, out of direct sunlight.",
+   "t": "നേരിട്ട് വെയിൽ തട്ടാത്ത, തണുത്ത, ഉണങ്ങിയ സ്ഥലത്ത് സൂക്ഷിക്കൂ.",
+   "back": "Store in a cool, dry place where direct sunlight does not hit."
+  },
+  "seg.9ce38edb950b": {
+   "src": "A rancid taste is taken as the first sign that nuts are going off, since most nuts hold a lot of oil. Taste one before you cook with a batch that has been open a while.",
+   "t": "മിക്ക പരിപ്പുകളിലും ധാരാളം എണ്ണയുള്ളതിനാൽ, കനച്ച രുചിയാണ് അവ കേടാകാൻ തുടങ്ങുന്നതിന്റെ ആദ്യ ലക്ഷണമായി കണക്കാക്കുന്നത്. കുറച്ചുനാളായി തുറന്നിരിക്കുന്ന പാക്കറ്റിൽ നിന്ന് പാചകം ചെയ്യുന്നതിന് മുമ്പ് ഒന്ന് രുചിച്ചുനോക്കൂ.",
+   "back": "Since most nuts have plenty of oil, rancid taste is considered the first sign that they are starting to spoil. Before cooking from a packet that has been open for some days, taste one."
+  },
+  "seg.aa353eb6552b": {
+   "src": "Use them within the best-before date on the pack.",
+   "t": "പാക്കറ്റിലെ 'ബെസ്റ്റ് ബിഫോർ' തീയതിക്കുള്ളിൽ ഉപയോഗിക്കൂ.",
+   "back": "Use within the 'best before' date on the packet."
+  },
+  "seg.8d88ab03538b": {
+   "src": "What does W320 mean in cashew?",
+   "t": "കശുവണ്ടിയിൽ W320 എന്നാൽ എന്താണ്?",
+   "back": "What does W320 mean in cashew?"
+  },
+  "seg.62746a01005d": {
+   "src": "W320 means white whole cashew kernels at 300 to 320 kernels per pound, or 660 to 705 per kg, under AGMARK's rules. CEPCI calls it the most popular grade and the most widely available worldwide.",
+   "t": "AGMARK ചട്ടങ്ങൾ പ്രകാരം W320 എന്നാൽ ഒരു പൗണ്ടിൽ 300 മുതൽ 320 വരെ, അല്ലെങ്കിൽ ഒരു കിലോയിൽ 660 മുതൽ 705 വരെ പരിപ്പുള്ള വെള്ള മുഴുവൻ കശുവണ്ടിപ്പരിപ്പ്. ഇതാണ് ഏറ്റവും പ്രചാരമുള്ള ഗ്രേഡ് എന്നും ലോകമെങ്ങും ഏറ്റവും കൂടുതൽ ലഭ്യമായത് എന്നും CEPCI പറയുന്നു.",
+   "back": "According to AGMARK rules, W320 means white whole cashew with 300 to 320 kernels per pound, or 660 to 705 kernels per kg. CEPCI says this is the most popular grade and the one most available across the world."
+  },
+  "seg.f01de46df4ac": {
+   "src": "What is the difference between W240 and W320 cashews?",
+   "t": "W240, W320 കശുവണ്ടികൾ തമ്മിൽ എന്താണ് വ്യത്യാസം?",
+   "back": "What is the difference between W240 and W320 cashew?"
+  },
+  "seg.2ccd1dd49c14": {
+   "src": "Size. W240 has 220 to 240 kernels per pound (485 to 530 per kg) and W320 has 300 to 320 (660 to 705 per kg), so W240 kernels are bigger. Both are white whole grades under AGMARK's rules.",
+   "t": "വലിപ്പം. W240-ൽ ഒരു പൗണ്ടിൽ 220 മുതൽ 240 വരെ പരിപ്പ് (ഒരു കിലോയിൽ 485 മുതൽ 530 വരെ), W320-ൽ 300 മുതൽ 320 വരെ (ഒരു കിലോയിൽ 660 മുതൽ 705 വരെ); അതിനാൽ W240 പരിപ്പുകൾ വലുതാണ്. AGMARK ചട്ടങ്ങൾ പ്രകാരം രണ്ടും വെള്ള മുഴുവൻ ഗ്രേഡുകളാണ്.",
+   "back": "Size. W240 has 220 to 240 kernels per pound (485 to 530 per kilo), W320 has 300 to 320 (660 to 705 per kilo); so W240 kernels are bigger. According to AGMARK rules both are white whole kernel grades."
+  },
+  "seg.153603960f5b": {
+   "src": "Which cashew grade is best?",
+   "t": "ഏത് കശുവണ്ടി ഗ്രേഡാണ് മികച്ചത്?",
+   "back": "Which cashew grade is best?"
+  },
+  "seg.b1c846d9d907": {
+   "src": "No grade is best for everything. W180 and W210 are the biggest whole kernels, W320 is the most widely available, and CEPCI calls butts, splits and pieces ideal for cooking and sweets. A grade describes size, colour and wholeness, not taste.",
+   "t": "എല്ലാത്തിനും മികച്ച ഒരു ഗ്രേഡ് ഇല്ല. W180, W210 ഏറ്റവും വലിയ മുഴുവൻ പരിപ്പുകൾ, W320 ഏറ്റവും കൂടുതൽ ലഭ്യമായത്; ബട്ട്സ്, സ്പ്ലിറ്റ്സ്, കഷണങ്ങൾ പാചകത്തിനും മധുരപലഹാരങ്ങൾക്കും ഏറ്റവും അനുയോജ്യമെന്ന് CEPCI പറയുന്നു. ഒരു ഗ്രേഡ് വലിപ്പം, നിറം, മുഴുപ്പ് എന്നിവയാണ് പറയുന്നത്, രുചിയല്ല.",
+   "back": "There is no one grade that is best for everything. W180, W210 are the biggest whole kernels, W320 the most available; CEPCI says butts, splits, pieces are most suitable for cooking and sweets. A grade tells size, colour, wholeness, not taste."
+  },
+  "seg.bc403e07fdb2": {
+   "src": "How many cashews are there in 1 kg?",
+   "t": "1 kg-ൽ എത്ര കശുവണ്ടി ഉണ്ടാകും?",
+   "back": "How many cashews will be in 1 kg?"
+  },
+  "seg.9e65130f8cdd": {
+   "src": "It depends on the grade. Under AGMARK's rules, 1 kg of W240 holds 485 to 530 kernels, W320 holds 660 to 705 and W450 holds 880 to 990.",
+   "t": "അത് ഗ്രേഡിനെ ആശ്രയിച്ചിരിക്കും. AGMARK ചട്ടങ്ങൾ പ്രകാരം 1 kg W240-ൽ 485 മുതൽ 530 വരെ പരിപ്പ്, W320-ൽ 660 മുതൽ 705 വരെ, W450-ൽ 880 മുതൽ 990 വരെ.",
+   "back": "It depends on the grade. According to AGMARK rules, 1 kg of W240 will have 485 to 530 kernels, W320 660 to 705, W450 880 to 990."
+  },
+  "seg.40d1a6c0c8e5": {
+   "src": "What does SW mean on cashews?",
+   "t": "കശുവണ്ടിയിൽ SW എന്നാൽ എന്താണ്?",
+   "back": "What does SW mean in cashew?"
+  },
+  "seg.d4802056a67a": {
+   "src": "SW means scorched wholes: whole kernels with a slight brown colour from longer roasting. CEPCI notes they have all the other characteristics of white kernels.",
+   "t": "SW എന്നാൽ കരിഞ്ഞ മുഴുവൻ പരിപ്പ്: കൂടുതൽ നേരം വറുത്തതിനാൽ നേരിയ തവിട്ടുനിറമുള്ള മുഴുവൻ പരിപ്പുകൾ. വെള്ള പരിപ്പിന്റെ മറ്റെല്ലാ ഗുണങ്ങളും ഇവയ്ക്കുണ്ടെന്ന് CEPCI പറയുന്നു.",
+   "back": "SW means burnt whole kernel: whole kernels with slightly brown colour because of roasting for a long time. CEPCI says these have all the other qualities of white kernel."
+  },
+  "seg.7ac537e6827e": {
+   "src": "Our cashews",
+   "t": "ഞങ്ങളുടെ കശുവണ്ടി",
+   "back": "Our cashew"
+  },
+  "seg.d30c33822c6d": {
+   "src": "Our pack holds whole, plain, unsalted cashew kernels, packed in Narasaraopet.",
+   "t": "ഞങ്ങളുടെ പാക്കറ്റിൽ മുഴുവൻ, പ്ലെയിൻ, ഉപ്പില്ലാത്ത കശുവണ്ടിപ്പരിപ്പാണ്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "Our packet has whole, plain, unsalted cashew kernels, packed in Narasaraopet."
+  },
+  "seg.9d7d9aeff7e7": {
+   "src": "జీడిపప్పు గ్రేడ్లు · Cashew Grades W180, W240, W320 | 1acrefarms",
+   "t": "జీడిపప్పు గ్రేడ్లు · കശുവണ്ടി ഗ്രേഡുകൾ W180, W240, W320 | 1acrefarms",
+   "back": "[Telugu: Cashew grades] · Cashew grades W180, W240, W320 | 1acrefarms"
+  },
+  "seg.77c97eebed00": {
+   "src": "జీడిపప్పు గ్రేడ్‌లు అంటే ఏమిటి? What cashew grades W180, W240, W320 and W450 mean, kernels per pound and per kg, SW, splits and pieces, and which grade to use.",
+   "t": "జీడిపప్పు గ్రేడ్‌లు అంటే ఏమిటి? W180, W240, W320, W450 കശുവണ്ടി ഗ്രേഡുകളുടെ അർത്ഥം, ഒരു പൗണ്ടിലും ഒരു കിലോയിലും പരിപ്പുകൾ, SW, സ്പ്ലിറ്റ്സ്, കഷണങ്ങൾ, ഏത് ഗ്രേഡ് ഉപയോഗിക്കണം.",
+   "back": "[Telugu: What are cashew grades?] Meaning of W180, W240, W320, W450 cashew grades, kernels per pound and per kilo, SW, splits, pieces, which grade to use."
+  },
+  "seg.aa6460d44b70": {
+   "src": "Cashew grades explained: W180, W240, W320 and more · 1acrefarms",
+   "t": "കശുവണ്ടി ഗ്രേഡുകൾ വിശദമായി: W180, W240, W320 എന്നിവയും മറ്റും · 1acrefarms",
+   "back": "Cashew grades explained: W180, W240, W320 and more · 1acrefarms"
+  },
+  "seg.d281a45dcf82": {
+   "src": "Guide · chilli",
+   "t": "ഗൈഡ് · മുളക്",
+   "back": "Guide · Chilli"
+  },
+  "seg.27976b26ce53": {
+   "src": "Sannam or Teja chilli powder: which to use",
+   "t": "സന്നം അല്ലെങ്കിൽ തേജ മുളകുപൊടി: ഏത് ഉപയോഗിക്കണം",
+   "back": "Sannam or Teja chilli powder: which to use"
+  },
+  "seg.4144ea4b43b4": {
+   "src": "What S4 and S17 mean, how heat and colour are measured, and which to use where. With a Telugu section.",
+   "t": "S4, S17 എന്നാൽ എന്ത്, എരിവും നിറവും എങ്ങനെ അളക്കുന്നു, ഏത് എവിടെ ഉപയോഗിക്കണം. ഒരു തെലുങ്ക് ഭാഗത്തോടൊപ്പം.",
+   "back": "What S4, S17 mean, how heat and colour are measured, which to use where. With a Telugu section."
+  },
+  "seg.fd3f8f40b3f8": {
+   "src": "What W180, W240 and W320 mean, kernels per kg, and which grade suits which dish. With a Telugu section.",
+   "t": "W180, W240, W320 എന്നാൽ എന്ത്, ഒരു കിലോയിൽ എത്ര പരിപ്പ്, ഏത് ഗ്രേഡ് ഏത് വിഭവത്തിന് ചേരും. ഒരു തെലുങ്ക് ഭാഗത്തോടൊപ്പം.",
+   "back": "What W180, W240, W320 mean, how many kernels in a kilo, which grade suits which dish. With a Telugu section."
+  },
+  "seg.fe79396e7c1d": {
+   "src": "Sannam or Teja chilli powder",
+   "t": "സന്നം അല്ലെങ്കിൽ തേജ മുളകുപൊടി",
+   "back": "Sannam or Teja chilli powder"
+  },
+  "seg.c114bf13aa8e": {
+   "src": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Sannam Kaaram · Teja Kaaram",
+   "t": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · സന്നം കാരം · തേജ കാരം",
+   "back": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Sannam karam · Teja karam"
+  },
+  "seg.f8eee14b7e5d": {
+   "src": "Sannam and Teja are two chilli types grown around Guntur and sold at the Guntur Mirchi Yard, Asia's largest dried red chilli market. Sannam is Telugu for thin, and the chilli is traded as the S4 type. Teja, also known as S17, is a hybrid.",
+   "t": "സന്നവും തേജയും ഗുണ്ടൂരിന് ചുറ്റും വളരുന്ന രണ്ട് മുളക് ഇനങ്ങളാണ്; ഏഷ്യയിലെ ഏറ്റവും വലിയ ഉണക്കമുളക് ചന്തയായ ഗുണ്ടൂർ മിർച്ചി യാർഡിൽ വിൽക്കുന്നു. തെലുങ്കിൽ സന്നം എന്നാൽ നേർത്തത്; ഈ മുളക് S4 ഇനമായാണ് വ്യാപാരം ചെയ്യുന്നത്. S17 എന്നും അറിയപ്പെടുന്ന തേജ ഒരു ഹൈബ്രിഡ് ഇനമാണ്.",
+   "back": "Sannam and Teja are two chilli varieties grown around Guntur; they are sold at the Guntur Mirchi Yard, Asia's biggest dried chilli market. In Telugu Sannam means thin; this chilli is traded as the S4 type. Teja, also known as S17, is a hybrid variety."
+  },
+  "seg.8e04c18fe0c1": {
+   "src": "Both go into curries, chutneys, podis and pickles. Of our two packs, Teja is the one marked extra hot. Here is what each one is, how heat and colour are measured, which to use where, and how to keep the powder. There is a full Telugu section further down.",
+   "t": "രണ്ടും കറികളിലും ചട്ണികളിലും പൊടികളിലും അച്ചാറുകളിലും ചേരും. ഞങ്ങളുടെ രണ്ട് പാക്കറ്റുകളിൽ, കടുത്ത എരിവ് എന്ന് അടയാളപ്പെടുത്തിയത് തേജയാണ്. ഓരോന്നും എന്താണ്, എരിവും നിറവും എങ്ങനെ അളക്കുന്നു, ഏത് എവിടെ ഉപയോഗിക്കണം, പൊടി എങ്ങനെ സൂക്ഷിക്കണം എന്നിവ ഇവിടെ. താഴെ ഒരു മുഴുവൻ തെലുങ്ക് ഭാഗവും ഉണ്ട്.",
+   "back": "Both go into curries, chutneys, podis and pickles. Of our two packets, the one marked strong heat is Teja. What each one is, how heat and colour are measured, which to use where, how to store the powder, are here. Below there is also a full Telugu section."
+  },
+  "seg.a0921c00bb2b": {
+   "src": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder, from whole sun-dried Sannam chillies, packed as fine powder. Right: Teja chilli powder, extra hot, sun-dried and stone-ground. Both grown in Palnadu and Guntur and packed in Narasaraopet.",
+   "t": "⟦1⟧ഞങ്ങളുടെ രണ്ട് മുളകുപൊടികൾ⟦/1⟧ഇടത്: സന്നം മുളകുപൊടി, വെയിലത്ത് ഉണക്കിയ മുഴുവൻ സന്നം മുളകിൽ നിന്ന്, നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്. വലത്: തേജ മുളകുപൊടി, കടുത്ത എരിവ്, വെയിലത്ത് ഉണക്കി കല്ലിൽ പൊടിച്ചത്. രണ്ടും പൽനാട്ടിലും ഗുണ്ടൂരിലും വിളഞ്ഞ്, നരസറാവുപേട്ടയിൽ പാക്ക് ചെയ്തത്.",
+   "back": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder, from whole Sannam chilli dried in the sun, packed as fine powder. Right: Teja chilli powder, strong heat, dried in the sun and ground on stone. Both grown in Palnadu and Guntur, packed in Narasaraopet."
+  },
+  "seg.a357c6165a65": {
+   "src": "Sannam is Telugu for thin, and the chilli is traded as the S4 type; Teja (S17) is a hybrid. Both are grown around Guntur and sold at its Mirchi Yard. Use Sannam chilli powder for everyday curries, pulusu, pappu and tomato pachadi. Use Teja when you want a dish extra hot, as in kodi vepudu or gongura pachadi; our Teja pack is marked extra hot, so start with less. Keep both airtight, dry and out of the light.",
+   "t": "തെലുങ്കിൽ സന്നം എന്നാൽ നേർത്തത്; ഈ മുളക് S4 ഇനമായാണ് വ്യാപാരം ചെയ്യുന്നത്; തേജ (S17) ഒരു ഹൈബ്രിഡ് ആണ്. രണ്ടും ഗുണ്ടൂരിന് ചുറ്റും വളർന്ന് അവിടത്തെ മിർച്ചി യാർഡിൽ വിൽക്കുന്നു. ദിവസേനയുള്ള കറികൾക്കും പുലുസു, പപ്പു, ടൊമാറ്റോ പച്ചടി എന്നിവയ്ക്കും സന്നം മുളകുപൊടി ഉപയോഗിക്കൂ. കോടി വേപുടു അല്ലെങ്കിൽ ഗോംഗൂര പച്ചടി പോലെ ഒരു വിഭവം കടുത്ത എരിവിൽ വേണമെങ്കിൽ തേജ ഉപയോഗിക്കൂ; ഞങ്ങളുടെ തേജ പാക്കറ്റിൽ കടുത്ത എരിവ് എന്ന് അടയാളപ്പെടുത്തിയിട്ടുണ്ട്, അതിനാൽ കുറച്ചിൽ തുടങ്ങൂ. രണ്ടും വായു കടക്കാതെ, ഉണങ്ങിയ നിലയിൽ, വെളിച്ചം തട്ടാതെ സൂക്ഷിക്കൂ.",
+   "back": "In Telugu Sannam means thin; this chilli is traded as the S4 type; Teja (S17) is a hybrid. Both grow around Guntur and are sold at the Mirchi Yard there. Use Sannam chilli powder for daily curries and pulusu, pappu, tomato pachadi. If a dish is wanted with strong heat like kodi vepudu or gongura pachadi, use Teja; our Teja packet is marked strong heat, so start with a little. Store both airtight, in dry condition, where light does not hit."
+  },
+  "seg.ab2db5bdceb7": {
+   "src": "Sannam chilli⟦#1⟧",
+   "t": "സന്നം മുളക്⟦#1⟧",
+   "back": "Sannam chilli⟦#1⟧"
+  },
+  "seg.f358a7731c35": {
+   "src": "Teja chilli⟦#1⟧",
+   "t": "തേജ മുളക്⟦#1⟧",
+   "back": "Teja chilli⟦#1⟧"
+  },
+  "seg.f8c94a3b4b1e": {
+   "src": "What it is",
+   "t": "ഇത് എന്താണ്",
+   "back": "What it is"
+  },
+  "seg.e766be3d32e3": {
+   "src": "A chilli type; sannam is Telugu for thin",
+   "t": "ഒരു മുളക് ഇനം; തെലുങ്കിൽ സന്നം എന്നാൽ നേർത്തത്",
+   "back": "A chilli type; in Telugu Sannam means thin"
+  },
+  "seg.c5b9f867217f": {
+   "src": "A hybrid chilli",
+   "t": "ഒരു ഹൈബ്രിഡ് മുളക്",
+   "back": "A hybrid chilli"
+  },
+  "seg.5d87cc7066df": {
+   "src": "Trade name",
+   "t": "വ്യാപാരപ്പേര്",
+   "back": "Trade name"
+  },
+  "seg.19c209ba8a51": {
+   "src": "S4. A variety called 334 is also listed as Sannam S4",
+   "t": "S4. 334 എന്ന ഒരു ഇനവും സന്നം S4 എന്ന് പട്ടികയിലുണ്ട്",
+   "back": "S4. A variety called 334 is also listed as Sannam S4"
+  },
+  "seg.b2b8b4f95700": {
+   "src": "S17, also written S-17",
+   "t": "S17, S-17 എന്നും എഴുതുന്നു",
+   "back": "S17, also written S-17"
+  },
+  "seg.5dece3cb9ef9": {
+   "src": "Grown in",
+   "t": "വളരുന്ന സ്ഥലം",
+   "back": "Where it grows"
+  },
+  "seg.d822cbebd199": {
+   "src": "Guntur, Warangal and Khammam districts, says Spices Board",
+   "t": "ഗുണ്ടൂർ, വാറങ്കൽ, ഖമ്മം ജില്ലകൾ എന്ന് Spices Board പറയുന്നു",
+   "back": "Spices Board says Guntur, Warangal, Khammam districts"
+  },
+  "seg.5ca57fb5cc42": {
+   "src": "Guntur district, among its hybrids",
+   "t": "ഗുണ്ടൂർ ജില്ല, അവിടത്തെ ഹൈബ്രിഡുകളിൽ ഒന്ന്",
+   "back": "Guntur district, one of the hybrids there"
+  },
+  "seg.64c6caa5bd34": {
+   "src": "Heat",
+   "t": "എരിവ്",
+   "back": "Heat"
+  },
+  "seg.e11de4cddc22": {
+   "src": "Hot, says Spices Board; capsaicin 0.226%",
+   "t": "എരിവുള്ളത് എന്ന് Spices Board പറയുന്നു; കാപ്സൈസിൻ 0.226%",
+   "back": "Spices Board says it is hot; capsaicin 0.226%"
+  },
+  "seg.e0a7d43cff0d": {
+   "src": "Second hottest extract of 19 varieties in a 2020 lab study",
+   "t": "2020-ലെ ഒരു ലാബ് പഠനത്തിൽ 19 ഇനങ്ങളിൽ രണ്ടാമത്തെ ഏറ്റവും എരിവുള്ള സത്ത്",
+   "back": "In a 2020 lab study, the second most hot extract among 19 varieties"
+  },
+  "seg.694de80babc9": {
+   "src": "Red; ASTA colour value 32.11, says Spices Board",
+   "t": "ചുവപ്പ്; ASTA നിറ മൂല്യം 32.11 എന്ന് Spices Board പറയുന്നു",
+   "back": "Red; Spices Board says ASTA colour value 32.11"
+  },
+  "seg.c4962d4c7bbe": {
+   "src": "No figure in the Spices Board list",
+   "t": "Spices Board പട്ടികയിൽ കണക്കില്ല",
+   "back": "No figure in the Spices Board list"
+  },
+  "seg.eb5520570c7c": {
+   "src": "Traded at",
+   "t": "വ്യാപാരം നടക്കുന്നത്",
+   "back": "Where it is traded"
+  },
+  "seg.1709dd5ba5d6": {
+   "src": "The Guntur Mirchi Yard",
+   "t": "ഗുണ്ടൂർ മിർച്ചി യാർഡ്",
+   "back": "Guntur Mirchi Yard"
+  },
+  "seg.d63c4cef10c1": {
+   "src": "Our pack",
+   "t": "ഞങ്ങളുടെ പാക്കറ്റ്",
+   "back": "Our packet"
+  },
+  "seg.6f340f159671": {
+   "src": "Whole sun-dried chillies, packed as fine powder",
+   "t": "വെയിലത്ത് ഉണക്കിയ മുഴുവൻ മുളക്, നേർത്ത പൊടിയായി പാക്ക് ചെയ്തത്",
+   "back": "Sun-dried whole chilli, packed as fine powder"
+  },
+  "seg.722cbbec4de5": {
+   "src": "Extra hot, sun-dried, stone-ground",
+   "t": "കടുത്ത എരിവ്, വെയിലത്ത് ഉണക്കി, കല്ലിൽ പൊടിച്ചത്",
+   "back": "Strong heat, dried in the sun, ground on stone"
+  },
+  "seg.6fbc685f86f3": {
+   "src": "Try it in",
+   "t": "ഇതിൽ പരീക്ഷിക്കൂ",
+   "back": "Try in this"
+  },
+  "seg.cb00e50674ed": {
+   "src": "Tomato pappu, tomato pachadi, gutti vankaya kura, pulusu",
+   "t": "ടൊമാറ്റോ പപ്പു, ടൊമാറ്റോ പച്ചടി, ഗുത്തി വങ്കായ കൂര, പുലുസു",
+   "back": "Tomato pappu, tomato pachadi, gutti vankaya kura, pulusu"
+  },
+  "seg.9e9cebb475c3": {
+   "src": "Kodi vepudu, gongura pachadi, vellulli kaaram",
+   "t": "കോടി വേപുടു, ഗോംഗൂര പച്ചടി, വെല്ലുല്ലി കാരം",
+   "back": "Kodi vepudu, gongura pachadi, vellulli karam"
+  },
+  "seg.04512ef2a927": {
+   "src": "What Sannam and Teja are",
+   "t": "സന്നവും തേജയും എന്താണ്",
+   "back": "What Sannam, Teja mean"
+  },
+  "seg.de8faf38f32d": {
+   "src": "Sannam (S4)",
+   "t": "സന്നം (S4)",
+   "back": "Sannam (S4)"
+  },
+  "seg.cb8647e572cd": {
+   "src": "Sannam is Telugu for thin, and Sannam chilli is traded as the S4 type. In a 2020 study of chillies from the Guntur Mirchi Yard, a variety called 334 is listed as Sannam S4. Spices Board's list of Indian chilli varieties has a Sannam S4 entry for chillies grown in Guntur, Warangal and Khammam districts, harvested from December to May.",
+   "t": "തെലുങ്കിൽ സന്നം എന്നാൽ നേർത്തത്; സന്നം മുളക് S4 ഇനമായാണ് വ്യാപാരം ചെയ്യുന്നത്. ഗുണ്ടൂർ മിർച്ചി യാർഡിലെ മുളകുകളെക്കുറിച്ചുള്ള 2020-ലെ ഒരു പഠനത്തിൽ, 334 എന്ന ഇനം സന്നം S4 എന്ന് പട്ടികയിലുണ്ട്. ഇന്ത്യൻ മുളക് ഇനങ്ങളുടെ Spices Board പട്ടികയിൽ, ഗുണ്ടൂർ, വാറങ്കൽ, ഖമ്മം ജില്ലകളിൽ വളർന്ന് ഡിസംബർ മുതൽ മേയ് വരെ വിളവെടുക്കുന്ന മുളകിന് സന്നം S4 എന്ന ഒരു എൻട്രിയുണ്ട്.",
+   "back": "In Telugu Sannam means thin; Sannam chilli is traded as the S4 type. In a 2020 study on Guntur Mirchi Yard chillies, a variety called 334 is listed as Sannam S4. In the Spices Board list for Indian chilli varieties, there is an entry Sannam S4 for chilli grown in Guntur, Warangal, Khammam districts and harvested from December to May."
+  },
+  "seg.88ef34144dd3": {
+   "src": "Teja (S17)",
+   "t": "തേജ (S17)",
+   "back": "Teja (S17)"
+  },
+  "seg.17b278c38e33": {
+   "src": "A hybrid chilli, also known as S17. In Guntur district, hybrids such as Teja cover 60% of the chilli area, and open-pollinated varieties the other 40%, says the district's One District One Product page.",
+   "t": "S17 എന്നും അറിയപ്പെടുന്ന ഒരു ഹൈബ്രിഡ് മുളക്. ഗുണ്ടൂർ ജില്ലയിൽ, തേജ പോലുള്ള ഹൈബ്രിഡുകൾ മുളക് കൃഷിസ്ഥലത്തിന്റെ 60%-ഉം, തുറന്ന പരാഗണ ഇനങ്ങൾ ബാക്കി 40%-ഉം ആണെന്ന് ജില്ലയുടെ 'ഒരു ജില്ല ഒരു ഉൽപ്പന്നം' പേജ് പറയുന്നു.",
+   "back": "A hybrid chilli also called S17. The district's 'One District One Product' page says that in Guntur district hybrids like Teja cover 60% of the chilli area and open-pollinated varieties the remaining 40%."
+  },
+  "seg.e2f1fe066494": {
+   "src": "Where they are traded",
+   "t": "ഇവ എവിടെ വ്യാപാരം ചെയ്യുന്നു",
+   "back": "Where these are traded"
+  },
+  "seg.29eee30f5264": {
+   "src": "The Guntur Mirchi Yard, about 5 km from the centre of Guntur, is known as Asia's biggest chilli market yard, and it influences chilli prices in India and abroad.",
+   "t": "ഗുണ്ടൂർ നഗരകേന്ദ്രത്തിൽ നിന്ന് ഏകദേശം 5 km അകലെയുള്ള ഗുണ്ടൂർ മിർച്ചി യാർഡ് ഏഷ്യയിലെ ഏറ്റവും വലിയ മുളക് ചന്ത യാർഡ് എന്ന് അറിയപ്പെടുന്നു; ഇന്ത്യയിലും വിദേശത്തും മുളക് വിലയെ ഇത് സ്വാധീനിക്കുന്നു.",
+   "back": "The Guntur Mirchi Yard, about 5 km from Guntur city centre, is known as Asia's biggest chilli market yard; it has an influence on chilli prices in India and abroad."
+  },
+  "seg.4d075fb72bc3": {
+   "src": "Heat and colour: how they are measured",
+   "t": "എരിവും നിറവും: എങ്ങനെ അളക്കുന്നു",
+   "back": "Heat and colour: how they are measured"
+  },
+  "seg.61fc1d411ee0": {
+   "src": "⟦1⟧Heat⟦/1⟧ comes mainly from capsaicin and related compounds called capsaicinoids, and is measured in Scoville heat units (SHU).",
+   "t": "⟦1⟧എരിവ്⟦/1⟧ പ്രധാനമായും കാപ്സൈസിൻ, കാപ്സൈസിനോയിഡുകൾ എന്ന ബന്ധപ്പെട്ട സംയുക്തങ്ങൾ എന്നിവയിൽ നിന്നാണ് വരുന്നത്; സ്കോവിൽ ഹീറ്റ് യൂണിറ്റുകളിൽ (SHU) ആണ് അളക്കുന്നത്.",
+   "back": "⟦1⟧Heat⟦/1⟧ comes mainly from capsaicin and related compounds called capsaicinoids; it is measured in Scoville Heat Units (SHU)."
+  },
+  "seg.c73a37a4be4e": {
+   "src": "⟦1⟧Colour⟦/1⟧ is measured in ASTA units, by a method of the American Spice Trade Association that measures the colour that can be extracted from the chilli. The higher the value, the brighter or richer the red. The red comes from pigments called carotenoids, such as capsanthin and capsorubin.",
+   "t": "⟦1⟧നിറം⟦/1⟧ ASTA യൂണിറ്റുകളിലാണ് അളക്കുന്നത്; അമേരിക്കൻ സ്പൈസ് ട്രേഡ് അസോസിയേഷന്റെ ഒരു രീതിയാണിത്, മുളകിൽ നിന്ന് വേർതിരിക്കാവുന്ന നിറം അളക്കുന്നു. മൂല്യം കൂടുന്തോറും ചുവപ്പ് കൂടുതൽ തിളക്കമുള്ളതോ കടുപ്പമുള്ളതോ ആകും. ചുവപ്പ് നിറം കാപ്സാന്തിൻ, കാപ്സോറൂബിൻ പോലുള്ള കരോട്ടിനോയിഡുകൾ എന്ന വർണ്ണവസ്തുക്കളിൽ നിന്നാണ്.",
+   "back": "⟦1⟧Colour⟦/1⟧ is measured in ASTA units; this is a method of the American Spice Trade Association, it measures the colour that can be extracted from the chilli. If the value is higher, the red will be brighter or deeper. The red colour comes from pigments called carotenoids such as capsanthin, capsorubin."
+  },
+  "seg.533a13571b10": {
+   "src": "⟦1⟧Sannam.⟦/1⟧ Spices Board's entry for the Sannam S4 type grown in Guntur, Warangal and Khammam describes it as thick-skinned, hot and red, with an ASTA colour value of 32.11 and capsaicin of 0.226%.",
+   "t": "⟦1⟧സന്നം.⟦/1⟧ ഗുണ്ടൂർ, വാറങ്കൽ, ഖമ്മം എന്നിവിടങ്ങളിൽ വളരുന്ന സന്നം S4 ഇനത്തിനുള്ള Spices Board എൻട്രി അതിനെ കട്ടിയുള്ള തൊലിയുള്ള, എരിവുള്ള, ചുവന്ന മുളക് എന്ന് വിവരിക്കുന്നു; ASTA നിറ മൂല്യം 32.11, കാപ്സൈസിൻ 0.226%.",
+   "back": "⟦1⟧Sannam.⟦/1⟧ The Spices Board entry for the Sannam S4 type grown in Guntur, Warangal and Khammam describes it as a thick-skinned, hot, red chilli; ASTA colour value 32.11 and capsaicin 0.226%."
+  },
+  "seg.140e3ffe36f9": {
+   "src": "⟦1⟧Teja.⟦/1⟧ Teja is not in that list. In a 2020 lab study of 19 chilli varieties collected at the Guntur Mirchi Yard, Teja (S-17) gave the second hottest concentrated extract of the 19, and a hotter one than 334 (Sannam S4).",
+   "t": "⟦1⟧തേജ.⟦/1⟧ തേജ ആ പട്ടികയിൽ ഇല്ല. ഗുണ്ടൂർ മിർച്ചി യാർഡിൽ ശേഖരിച്ച 19 മുളക് ഇനങ്ങളെക്കുറിച്ചുള്ള 2020-ലെ ഒരു ലാബ് പഠനത്തിൽ, 19-ൽ രണ്ടാമത്തെ ഏറ്റവും എരിവുള്ള സാന്ദ്രീകൃത സത്ത് തേജ (S-17) നൽകി; 334 (സന്നം S4)-നേക്കാൾ എരിവുള്ളതും.",
+   "back": "⟦1⟧Teja.⟦/1⟧ Teja is not in that list. In a 2020 laboratory study of 19 chilli varieties collected at the Guntur Mirchi Yard, Teja (S-17) gave the second most hot concentrated extract out of 19, and more hot than 334 (Sannam S4)."
+  },
+  "seg.8de521c9d37a": {
+   "src": "We give no Scoville number for either chilli: that study measured extracts made from the chillies, not chilli powder, and Spices Board gives capsaicin as a percentage. Colour also changes with how the powder is packed and stored.",
+   "t": "രണ്ട് മുളകിനും ഞങ്ങൾ സ്കോവിൽ സംഖ്യ നൽകുന്നില്ല: ആ പഠനം അളന്നത് മുളകിൽ നിന്നുണ്ടാക്കിയ സത്താണ്, മുളകുപൊടിയല്ല; Spices Board കാപ്സൈസിൻ ശതമാനമായാണ് നൽകുന്നത്. പൊടി എങ്ങനെ പാക്ക് ചെയ്യുന്നു, സൂക്ഷിക്കുന്നു എന്നതനുസരിച്ചും നിറം മാറും.",
+   "back": "We do not give a Scoville number for either chilli: that study measured extract made from chilli, not chilli powder; and Spices Board gives capsaicin in percentage form. Colour also changes depending on how the powder is packed and kept."
+  },
+  "seg.ae84d3779303": {
+   "src": "This is how our recipes use them:",
+   "t": "ഞങ്ങളുടെ പാചകക്കുറിപ്പുകൾ ഇവ ഇങ്ങനെ ഉപയോഗിക്കുന്നു:",
+   "back": "Our recipes use these like this:"
+  },
+  "seg.abc5c6e19770": {
+   "src": "Vegetable curries and pulusu: Sannam. Try ⟦1⟧gutti vankaya kura⟦/1⟧, ⟦2⟧kodi guddu pulusu⟦/2⟧ or ⟦3⟧chepala pulusu⟦/3⟧.",
+   "t": "പച്ചക്കറിക്കറികളും പുലുസുവും: സന്നം. ⟦1⟧ഗുത്തി വങ്കായ കൂര⟦/1⟧, ⟦2⟧കോടി ഗുഡ്ഡു പുലുസു⟦/2⟧ അല്ലെങ്കിൽ ⟦3⟧ചേപല പുലുസു⟦/3⟧ ഉണ്ടാക്കിനോക്കൂ.",
+   "back": "Vegetable curries and pulusu: Sannam. Try making ⟦1⟧gutti vankaya kura⟦/1⟧, ⟦2⟧kodi guddu pulusu⟦/2⟧ or ⟦3⟧chepala pulusu⟦/3⟧."
+  },
+  "seg.9a9d17871273": {
+   "src": "Pappu and tomato pachadi: Sannam, as in ⟦1⟧tomato pappu⟦/1⟧ and ⟦2⟧tomato pachadi⟦/2⟧.",
+   "t": "പപ്പുവും ടൊമാറ്റോ പച്ചടിയും: സന്നം, ⟦1⟧ടൊമാറ്റോ പപ്പു⟦/1⟧, ⟦2⟧ടൊമാറ്റോ പച്ചടി⟦/2⟧ എന്നിവയിലെ പോലെ.",
+   "back": "Pappu and tomato pachadi: Sannam, as in ⟦1⟧tomato pappu⟦/1⟧, ⟦2⟧tomato pachadi⟦/2⟧."
+  },
+  "seg.103a3a936c3b": {
+   "src": "Fry dishes: Teja, as in ⟦1⟧kodi vepudu⟦/1⟧.",
+   "t": "വറുത്ത വിഭവങ്ങൾ: തേജ, ⟦1⟧കോടി വേപുടു⟦/1⟧ പോലെ.",
+   "back": "Fried dishes: Teja, like ⟦1⟧kodi vepudu⟦/1⟧."
+  },
+  "seg.aa10a32e507d": {
+   "src": "Chicken, mutton and prawn curries: Teja, as in ⟦1⟧Andhra kodi kura⟦/1⟧, ⟦2⟧gongura mamsam⟦/2⟧ and ⟦3⟧royyala iguru⟦/3⟧.",
+   "t": "ചിക്കൻ, മട്ടൺ, ചെമ്മീൻ കറികൾ: തേജ, ⟦1⟧ആന്ധ്ര കോടി കൂര⟦/1⟧, ⟦2⟧ഗോംഗൂര മാംസം⟦/2⟧, ⟦3⟧റൊയ്യല ഇഗുരു⟦/3⟧ എന്നിവയിലെ പോലെ.",
+   "back": "Chicken, mutton, prawn curries: Teja, as in ⟦1⟧Andhra kodi kura⟦/1⟧, ⟦2⟧gongura mamsam⟦/2⟧, ⟦3⟧royyala iguru⟦/3⟧."
+  },
+  "seg.fa6a2d59cae8": {
+   "src": "Gongura pachadi and podis: Teja, as in ⟦1⟧gongura pachadi⟦/1⟧ and ⟦2⟧vellulli kaaram⟦/2⟧.",
+   "t": "ഗോംഗൂര പച്ചടിയും പൊടികളും: തേജ, ⟦1⟧ഗോംഗൂര പച്ചടി⟦/1⟧, ⟦2⟧വെല്ലുല്ലി കാരം⟦/2⟧ എന്നിവയിലെ പോലെ.",
+   "back": "Gongura pachadi and podis: Teja, as in ⟦1⟧gongura pachadi⟦/1⟧, ⟦2⟧vellulli karam⟦/2⟧."
+  },
+  "seg.b13098b97e2a": {
+   "src": "Snacks: Sannam, as in ⟦1⟧jeedipappu pakodi⟦/1⟧.",
+   "t": "പലഹാരങ്ങൾ: സന്നം, ⟦1⟧ജീഡിപപ്പു പക്കോടി⟦/1⟧ പോലെ.",
+   "back": "Snacks: Sannam, like ⟦1⟧jeedipappu pakodi⟦/1⟧."
+  },
+  "seg.525b276ec4e6": {
+   "src": "Pickles: either. Both packs list pickles among their uses.",
+   "t": "അച്ചാറുകൾ: ഏതും. രണ്ട് പാക്കറ്റുകളുടെയും ഉപയോഗങ്ങളിൽ അച്ചാറുണ്ട്.",
+   "back": "Pickles: any. Pickle is in the uses of both packets."
+  },
+  "seg.1393d3fbe202": {
+   "src": "Swapping and mixing",
+   "t": "മാറ്റി ഉപയോഗിക്കലും ചേർക്കലും",
+   "back": "Swapping and adding"
+  },
+  "seg.35baeca65df9": {
+   "src": "To use Teja where a recipe asks for Sannam, start with less, taste, and add more. Our Teja pack is marked extra hot. Going the other way, add Sannam a little at a time until the heat suits you.",
+   "t": "ഒരു പാചകക്കുറിപ്പ് സന്നം ആവശ്യപ്പെടുന്നിടത്ത് തേജ ഉപയോഗിക്കാൻ, കുറച്ചിൽ തുടങ്ങി, രുചിച്ചുനോക്കി, കൂടുതൽ ചേർക്കൂ. ഞങ്ങളുടെ തേജ പാക്കറ്റിൽ കടുത്ത എരിവ് എന്ന് അടയാളപ്പെടുത്തിയിട്ടുണ്ട്. മറിച്ചാണെങ്കിൽ, എരിവ് നിങ്ങൾക്ക് ശരിയാകുംവരെ സന്നം കുറേശ്ശെ ചേർക്കൂ.",
+   "back": "To use Teja where a recipe asks for Sannam, start with a little, taste, add more. Our Teja packet is marked strong heat. If the other way round, add Sannam little by little until the heat is right for you."
+  },
+  "seg.0706a863aae6": {
+   "src": "To turn up the heat in a dish made with Sannam, mix in a little Teja.",
+   "t": "സന്നം കൊണ്ട് ഉണ്ടാക്കിയ വിഭവത്തിൽ എരിവ് കൂട്ടാൻ, അല്പം തേജ ചേർക്കൂ.",
+   "back": "To increase the heat in a dish made with Sannam, add a little Teja."
+  },
+  "seg.fe7babe5755a": {
+   "src": "Add either powder to hot oil on a low flame, so it does not burn.",
+   "t": "ഏത് പൊടിയും ചൂടായ എണ്ണയിൽ ചെറുതീയിൽ ചേർക്കൂ, അപ്പോൾ അത് കരിയില്ല.",
+   "back": "Add any powder to heated oil on a low flame, then it will not burn."
+  },
+  "seg.e8f0fd014bfc": {
+   "src": "Keep the pack zipped shut, or move the powder to a dry, airtight jar. Air slowly breaks down the red pigments, so the colour fades.",
+   "t": "പാക്കറ്റിന്റെ സിപ്പ് അടച്ചുവയ്ക്കൂ, അല്ലെങ്കിൽ പൊടി ഉണങ്ങിയ, വായു കടക്കാത്ത ഭരണിയിലേക്ക് മാറ്റൂ. വായു ചുവന്ന വർണ്ണവസ്തുക്കളെ പതുക്കെ നശിപ്പിക്കുന്നു, അതിനാൽ നിറം മങ്ങുന്നു.",
+   "back": "Keep the packet's zip closed, or move the powder to a dry, airtight jar. Air slowly destroys the red pigments, so the colour fades."
+  },
+  "seg.c44f66956473": {
+   "src": "Keep it out of the light, which speeds up that loss.",
+   "t": "വെളിച്ചം തട്ടാതെ സൂക്ഷിക്കൂ; വെളിച്ചം ആ നഷ്ടം വേഗത്തിലാക്കും.",
+   "back": "Store where light does not hit; light will speed up that loss."
+  },
+  "seg.85ffea685d06": {
+   "src": "Keep it away from the stove. Warmth speeds it up too.",
+   "t": "അടുപ്പിൽ നിന്ന് അകലെ സൂക്ഷിക്കൂ. ചൂടും അത് വേഗത്തിലാക്കും.",
+   "back": "Store away from the stove. Heat will also speed it up."
+  },
+  "seg.f8bf00fb1a72": {
+   "src": "Use a dry spoon. Damp powder can grow mould.",
+   "t": "ഉണങ്ങിയ സ്പൂൺ ഉപയോഗിക്കൂ. നനഞ്ഞ പൊടിയിൽ പൂപ്പൽ വളരാം.",
+   "back": "Use a dry spoon. Mould may grow in damp powder."
+  },
+  "seg.b22d5e784674": {
+   "src": "Which is hotter, Sannam or Teja chilli powder?",
+   "t": "സന്നമോ തേജയോ: ഏത് മുളകുപൊടിക്കാണ് കൂടുതൽ എരിവ്?",
+   "back": "Sannam or Teja: which chilli powder has more heat?"
+  },
+  "seg.97c13339fef2": {
+   "src": "Of our two packs, Teja is the one marked extra hot. In a 2020 lab study of 19 chilli varieties from the Guntur Mirchi Yard, the extract from Teja (S-17) tested hotter than the one from 334 (Sannam S4). Start with a little and taste as you add.",
+   "t": "ഞങ്ങളുടെ രണ്ട് പാക്കറ്റുകളിൽ, കടുത്ത എരിവ് എന്ന് അടയാളപ്പെടുത്തിയത് തേജയാണ്. ഗുണ്ടൂർ മിർച്ചി യാർഡിലെ 19 മുളക് ഇനങ്ങളെക്കുറിച്ചുള്ള 2020-ലെ ഒരു ലാബ് പഠനത്തിൽ, തേജ (S-17)-യുടെ സത്ത് 334 (സന്നം S4)-ന്റേതിനേക്കാൾ എരിവുള്ളതായി കണ്ടു. കുറച്ചിൽ തുടങ്ങി, ചേർക്കുമ്പോൾ രുചിച്ചുനോക്കൂ.",
+   "back": "Of our two packets, the one marked strong heat is Teja. In a 2020 lab study of 19 chilli varieties at the Guntur Mirchi Yard, the extract of Teja (S-17) was seen to be more hot than that of 334 (Sannam S4). Start with a little, taste while adding."
+  },
+  "seg.3b9df79bc5fe": {
+   "src": "What are S4 and S17 chillies?",
+   "t": "S4, S17 മുളകുകൾ എന്താണ്?",
+   "back": "What are S4, S17 chillies?"
+  },
+  "seg.1c153960fcbb": {
+   "src": "S4 is the type Sannam chilli is traded as, and a variety called 334 is also listed as Sannam S4. S17 is another name for Teja, a hybrid chilli grown in Guntur district.",
+   "t": "S4 എന്നത് സന്നം മുളക് വ്യാപാരം ചെയ്യുന്ന ഇനമാണ്; 334 എന്ന ഒരു ഇനവും സന്നം S4 എന്ന് പട്ടികയിലുണ്ട്. ഗുണ്ടൂർ ജില്ലയിൽ വളരുന്ന ഹൈബ്രിഡ് മുളകായ തേജയുടെ മറ്റൊരു പേരാണ് S17.",
+   "back": "S4 is the type under which Sannam chilli is traded; a variety called 334 is also listed as Sannam S4. S17 is another name for Teja, a hybrid chilli grown in Guntur district."
+  },
+  "seg.726ba8f768a3": {
+   "src": "What does Sannam mean?",
+   "t": "സന്നം എന്നാൽ എന്താണ്?",
+   "back": "What does Sannam mean?"
+  },
+  "seg.dc7e66b15b59": {
+   "src": "Sannam is Telugu for thin. Spices Board lists a Sannam S4 type grown in Guntur, Warangal and Khammam districts.",
+   "t": "തെലുങ്കിൽ സന്നം എന്നാൽ നേർത്തത്. ഗുണ്ടൂർ, വാറങ്കൽ, ഖമ്മം ജില്ലകളിൽ വളരുന്ന സന്നം S4 ഇനം Spices Board പട്ടികയിലുണ്ട്.",
+   "back": "In Telugu Sannam means thin. Spices Board lists the Sannam S4 type grown in Guntur, Warangal, Khammam districts."
+  },
+  "seg.ee47ce8974ea": {
+   "src": "Can I use Teja chilli powder instead of Sannam?",
+   "t": "സന്നത്തിന് പകരം തേജ മുളകുപൊടി ഉപയോഗിക്കാമോ?",
+   "back": "Can Teja chilli powder be used instead of Sannam?"
+  },
+  "seg.95fe0ae93dc3": {
+   "src": "Yes. Start with less Teja than the recipe asks for, taste, and add more. Going the other way, add Sannam a little at a time.",
+   "t": "ഉവ്വ്. പാചകക്കുറിപ്പിൽ പറയുന്നതിനേക്കാൾ കുറച്ച് തേജയിൽ തുടങ്ങി, രുചിച്ചുനോക്കി, കൂടുതൽ ചേർക്കൂ. മറിച്ചാണെങ്കിൽ, സന്നം കുറേശ്ശെ ചേർക്കൂ.",
+   "back": "Yes. Start with less Teja than the recipe says, taste, add more. If the other way round, add Sannam little by little."
+  },
+  "seg.1484e61d473a": {
+   "src": "Why does chilli powder lose its colour?",
+   "t": "മുളകുപൊടിയുടെ നിറം എന്തുകൊണ്ട് മങ്ങുന്നു?",
+   "back": "Why does chilli powder's colour fade?"
+  },
+  "seg.eed11c87d549": {
+   "src": "Air slowly breaks down its red pigments, and light and warmth speed this up. Keep the pack zipped shut, out of the light and away from the stove.",
+   "t": "വായു അതിലെ ചുവന്ന വർണ്ണവസ്തുക്കളെ പതുക്കെ നശിപ്പിക്കുന്നു; വെളിച്ചവും ചൂടും ഇത് വേഗത്തിലാക്കുന്നു. പാക്കറ്റിന്റെ സിപ്പ് അടച്ച്, വെളിച്ചം തട്ടാതെ, അടുപ്പിൽ നിന്ന് അകലെ സൂക്ഷിക്കൂ.",
+   "back": "Air slowly destroys the red pigments in it; light and heat speed this up. Close the packet's zip, store where light does not hit, away from the stove."
+  },
+  "seg.1ca1108ab6c4": {
+   "src": "సన్నం కారం vs తేజ కారం · Sannam vs Teja Chilli | 1acrefarms",
+   "t": "సన్నం కారం vs తేజ కారం · സന്നം vs തേജ മുളക് | 1acrefarms",
+   "back": "[Telugu: Sannam karam vs Teja karam] · Sannam vs Teja chilli | 1acrefarms"
+  },
+  "seg.beaa945936e8": {
+   "src": "సన్నం కారం, తేజ కారం మధ్య తేడా. Sannam (S4) vs Teja (S17) chilli powder: what each is, heat and colour, the Guntur chilli yard, which to use, and storage.",
+   "t": "సన్నం కారం, తేజ కారం మధ్య తేడా. സന്നം (S4) vs തേജ (S17) മുളകുപൊടി: ഓരോന്നും എന്താണ്, എരിവും നിറവും, ഗുണ്ടൂർ മുളക് യാർഡ്, ഏത് ഉപയോഗിക്കണം, സൂക്ഷിക്കൽ.",
+   "back": "[Telugu: Difference between Sannam karam and Teja karam.] Sannam (S4) vs Teja (S17) chilli powder: what each one is, heat and colour, Guntur chilli yard, which to use, storing."
+  },
+  "seg.15d3cc0a28f8": {
+   "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
+   "t": "സന്നം അല്ലെങ്കിൽ തേജ മുളകുപൊടി: ഏത് ഉപയോഗിക്കണം · 1acrefarms",
+   "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
   }
  }
 }
