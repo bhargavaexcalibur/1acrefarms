@@ -79,16 +79,20 @@
    "short": "https://youtube.com/shorts/kWtsjY8uPCI"
   },
   "recipe-nimmakaya-pulihora": {
-   "video": "https://youtu.be/jYm9BwpE4Ow"
+   "video": "https://youtu.be/jYm9BwpE4Ow",
+   "short": "https://youtube.com/shorts/yYtAjgN83ac"
   },
   "recipe-nimmakaya-pulihora-te": {
-   "video": "https://youtu.be/8Ua7Mag5TcI"
+   "video": "https://youtu.be/8Ua7Mag5TcI",
+   "short": "https://youtube.com/shorts/daOWlXRSWnI"
   },
   "recipe-nimmakaya-pulihora-hi": {
-   "video": "https://youtu.be/xuVDqmBUTpc"
+   "video": "https://youtu.be/xuVDqmBUTpc",
+   "short": "https://youtube.com/shorts/NeDiA1LMp3w"
   },
   "recipe-nimmakaya-pulihora-sa": {
-   "video": "https://youtu.be/V3NKUZVUfII"
+   "video": "https://youtu.be/V3NKUZVUfII",
+   "short": "https://youtube.com/shorts/xDGzFxw5KfA"
   },
   "pack-cane-jaggery-te": {
    "video": "https://youtu.be/8AQQTyQ8yuE"
@@ -125,6 +129,18 @@
   },
   "pack-cane-jaggery-ta": {
    "video": "https://youtu.be/Qp6elqB8L6g"
+  },
+  "pack-cane-jaggery-kn": {
+   "video": "https://youtu.be/U5Wqt6ks_K0"
+  },
+  "pack-cane-jaggery-ml": {
+   "video": "https://youtu.be/7xu6enuVfqI"
+  },
+  "recipe-paramannam-ta": {
+   "video": "https://youtu.be/PKflMsQs318"
+  },
+  "recipe-paramannam-kn": {
+   "video": "https://youtu.be/9BDgypqXy24"
   }
  }
 }
