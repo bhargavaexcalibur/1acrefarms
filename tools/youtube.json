@@ -95,10 +95,12 @@
    "short": "https://youtube.com/shorts/xDGzFxw5KfA"
   },
   "pack-cane-jaggery-te": {
-   "video": "https://youtu.be/8AQQTyQ8yuE"
+   "video": "https://youtu.be/8AQQTyQ8yuE",
+   "short": "https://youtube.com/shorts/qE1RgRO-L48"
   },
   "pack-cane-jaggery-hi": {
-   "video": "https://youtu.be/3zFP_Xf_q30"
+   "video": "https://youtu.be/3zFP_Xf_q30",
+   "short": "https://youtube.com/shorts/uxz0J0cr2Ig"
   },
   "pack-cane-jaggery-sa": {
    "video": "https://youtu.be/ozYvBXC2r-k"
@@ -141,6 +143,18 @@
   },
   "recipe-paramannam-kn": {
    "video": "https://youtu.be/9BDgypqXy24"
+  },
+  "recipe-paramannam-ml": {
+   "video": "https://youtu.be/DzDeXmfkxTk"
+  },
+  "recipe-chimmili-ta": {
+   "video": "https://youtu.be/vAy000pYMnw"
+  },
+  "recipe-chimmili-kn": {
+   "video": "https://youtu.be/MXchmZnMhoA"
+  },
+  "recipe-chimmili-ml": {
+   "video": "https://youtu.be/b1H0lHdSYz0"
   }
  }
 }
