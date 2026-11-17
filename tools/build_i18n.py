@@ -534,6 +534,117 @@ def order_btn(code, t, p):
     return bp.order_btn(p, e(UI[key][0]), e(UI[key][0]), ' lang="en" dir="ltr"')
 
 
+# ---------- own-language videos ----------
+# Bhargava 17-11-2026 ("do both, zero spend"): a language page whose video also exists in its own language on our
+# YouTube channel (tools/youtube.json name "<English video name>-<code>", e.g. recipe-chimmili-te) shows and declares
+# THAT video instead of the English one: a lazy, privacy-enhanced (youtube-nocookie.com) embed where the English page
+# has its <video>, the VideoObject of that YouTube video, and the "▶ YouTube" link to it. Driven by tools/youtube.json,
+# so a link the nightly YouTube routine adds is picked up by the next build. Pages with no own-language video, and
+# every English page, are left exactly as before. No aria-label on the embed (see bp.youtube_link); title= is fine.
+YT_ID = re.compile(r"(?:youtu\.be/|/shorts/|/embed/|[?&]v=)([A-Za-z0-9_-]{11})")
+YT_DATES = None
+
+
+def own_video(name, code):
+    """(YouTube id, is_short) of the `code` version of our video `name`: the long (16:9) video, else the Short."""
+    v = bp.YT.get(f"{name}-{code}", {})
+    for kind in ("video", "short"):
+        m = YT_ID.search(v.get(kind) or "")
+        if m:
+            return m.group(1), kind == "short"
+    return None
+
+
+def yt_date(vid):
+    """The day a YouTube id was first committed to tools/youtube.json. The YouTube routine links a video the night
+    it goes public, so this is its publish day (17-11-2026: equal to the upload dates in docs/marketing/video/
+    youtube_ledger.json for all 69 language videos). Read from git, not docs/ (not in git), so every checkout
+    builds the same pages; an id not committed yet is dated today."""
+    global YT_DATES
+    if YT_DATES is None:
+        import subprocess
+        YT_DATES = {}
+        try:
+            out = subprocess.run(["git", "log", "--reverse", "--format=::%ad", "--date=short", "-p", "--unified=0",
+                                  "--", "tools/youtube.json"], cwd=ROOT, capture_output=True, text=True, timeout=60).stdout
+        except (OSError, subprocess.SubprocessError):
+            out = ""
+        day = None
+        for line in out.splitlines():
+            if line.startswith("::"):
+                day = line[2:]
+            elif line.startswith("+") and not line.startswith("+++") and day:
+                for m in YT_ID.finditer(line):
+                    YT_DATES.setdefault(m.group(1), day)
+    return YT_DATES.get(vid, bp.TODAY.isoformat())
+
+
+def yt_embed(cls, vid, short):
+    """The embed that stands where the English page has <video class="cls">; a Short gets a 9:16 box (styles.css)."""
+    w, h = (540, 960) if short else (960, 540)
+    return (f'<iframe class="{cls} yt-embed{" yt-short" if short else ""}" src="https://www.youtube-nocookie.com/embed/{vid}" '
+            f'title="1acrefarms video" width="{w}" height="{h}" loading="lazy" '
+            f'allow="encrypted-media; picture-in-picture; web-share" allowfullscreen '
+            f'referrerpolicy="strict-origin-when-cross-origin"></iframe>')
+
+
+def own_video_ld(ld, vid, code):
+    """VideoObject ld (name and description already in this language) turned into our YouTube video vid: no mp4
+    contentUrl or duration of the English file; its own thumbnail, embed and watch URLs and upload date."""
+    out = {k: v for k, v in ld.items() if k not in ("contentUrl", "duration")}
+    out.update({"thumbnailUrl": [f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg"],
+                "uploadDate": yt_date(vid) + "T00:00:00+05:30",
+                "embedUrl": f"https://www.youtube.com/embed/{vid}",
+                "url": f"https://www.youtube.com/watch?v={vid}",
+                "inLanguage": code})
+    return out
+
+
+VIDEO_TAG = re.compile(r'<video class="([^"]+)" src="/assets/video/([a-z0-9-]+)\.mp4"[^>]*></video>'
+                       r'(?:\n<p class="yt-watch" translate="no">.*?</p>)?')
+
+
+def own_videos(page, code):
+    """A recipe or guide page with each English video that has a `code` version swapped for that version
+    (embed + ▶ YouTube link on the page, VideoObject in the structured data)."""
+    swapped = {}
+
+    def tag(m):
+        cls, name = m.group(1), m.group(2)
+        own = own_video(name, code)
+        if not own:
+            return m.group(0)
+        swapped[f"{SITE}/assets/video/{name}.mp4"] = own
+        return yt_embed(cls, *own) + bp.youtube_link(f"{name}-{code}")
+
+    page = VIDEO_TAG.sub(tag, page)
+    if not swapped:
+        return page
+    done = set()
+
+    def walk(o):
+        if isinstance(o, dict):
+            if o.get("@type") == "VideoObject" and o.get("contentUrl") in swapped:
+                done.add(o["contentUrl"])
+                return own_video_ld(o, swapped[o["contentUrl"]][0], code)
+            return {k: walk(v) for k, v in o.items()}
+        if isinstance(o, list):
+            return [walk(v) for v in o]
+        return o
+
+    def ld(m):
+        before = len(done)
+        doc = walk(json.loads(m.group(1)))
+        if len(done) == before:
+            return m.group(0)
+        return '<script type="application/ld+json">\n' + json.dumps(doc, ensure_ascii=False, indent=2) + "\n  </script>"
+
+    page = re.sub(r'<script type="application/ld\+json">(.*?)</script>', ld, page, flags=re.S)
+    for url in sorted(set(swapped) - done):
+        print(f"WARN {code}: video {url} swapped for its {code} version on the page, but no VideoObject declares it")
+    return page
+
+
 def pack_page(code, t, p, packs, facts):
     k = f"pack.{p['code']}"
     url = f"/{code}/{p['slug']}/"
@@ -544,6 +655,17 @@ def pack_page(code, t, p, packs, facts):
     crumbs["itemListElement"] = [
         {"@type": "ListItem", "position": 1, "name": t["ui.home"], "item": f"{SITE}/{code}/"},
         {"@type": "ListItem", "position": 2, "name": t[k + ".name"], "item": SITE + url}]
+    own = own_video(f"pack-{p['slug']}", code)
+    media = ""
+    if own:  # the pack video in this language, shown and declared in place of the English one (see own_video)
+        media = "\n        " + yt_embed("pack-video", *own)
+        mine = own_video_ld({"@type": "VideoObject", "name": prod["name"], "description": prod["description"]}, own[0], code)
+        vids = prod.get("subjectOf", [])
+        vids = vids if isinstance(vids, list) else [vids]
+        en = f"{SITE}/assets/video/pack-{p['slug']}.mp4"
+        at = next((i for i, v in enumerate(vids) if v.get("contentUrl") == en), None)
+        vids = vids[:at] + [mine] + vids[at + 1:] if at is not None else [mine] + vids
+        prod["subjectOf"] = vids[0] if len(vids) == 1 else vids
     uses = "\n".join(f"          <li>{x(code, t[f'{k}.use{i}'])}</li>" for i in range(len(p["uses"])))
     allergen = f"<dt>Allergen</dt><dd>{p['allergen']}</dd>" if p.get("allergen") else ""
     row = facts.get(p["code"], {})
@@ -568,7 +690,7 @@ def pack_page(code, t, p, packs, facts):
 
     <section class="pdp">
       <div class="pdp-media">
-        <div class="pack-media"><img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" /></div>{bp.youtube_link(f"pack-{p['slug']}-{code}")}
+        <div class="pack-media"><img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" /></div>{media}{bp.youtube_link(f"pack-{p['slug']}-{code}")}
       </div>
       <div class="pdp-info">
         <p class="eyebrow">{x(code, t[k + '.origin'])}</p>
@@ -701,6 +823,7 @@ def content_page(code, t, base, english):
         sys.exit(f"header not found in {base}")
     page = page.replace(bp.HEADER, header(t, code))
     page = page.replace('<body class="pdp-page rcp-page', '<body class="pdp-page i18n-page rcp-page', 1)
+    page = own_videos(page, code)
     return page.replace("  </main>", f"    {translated_note(t, code)}\n  </main>", 1)
 
 
