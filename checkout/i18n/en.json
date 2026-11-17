@@ -82,7 +82,7 @@
   "priceChangedTitle": "Total updated",
   "priceChangedBody": "The total for this order is {amount}. Please check it and press Pay again.",
   "successTitle": "Thank you! Your payment is received.",
-  "successBody": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
+  "successBody": "Order number: {id}. We ship the next working day (Saturday and Sunday orders ship on Monday) and send the courier name and tracking link on WhatsApp or email.",
   "successDelivery": "Expected delivery between {from} and {to}.",
   "successKeep": "Please keep the order number for any question.",
   "pendingTitle": "Your payment is being confirmed",
@@ -105,7 +105,7 @@
   "waHelpOrder": "Order number: {id}",
   "rzpDescription": "{n} pack(s) · order {id}",
   "privacyNote": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
-  "deliveryNote": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+  "deliveryNote": "We ship the next working day after payment (Saturday and Sunday orders ship on Monday; not on public holidays). Usual delivery time after dispatch: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, and up to 10 days in the North-East, J&K, Ladakh and the islands.",
   "returnsNote": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
   "grievanceNote": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month."
  },

@@ -3,10 +3,12 @@
 // customer's order e-mail. ONE place for all of it: checkout-test/checkout.js and src/confirmation.js both read
 // this file, so the page and the e-mail can never disagree.
 //
-// Figures must stay identical to policies.html (test/seller.test.js checks them): dispatch within 1–2 working days;
-// delivery 1–3 / 3–5 / 4–10 days by area; the same remedies (damaged, wrong, faulty or not as described: replacement
-// or refund; late: refuse or refund, policies.html #returns); refunds within 5–7 working days; complaints acknowledged within 48 hours
-// and resolved within one month, with a complaint number.
+// Figures must stay identical to policies.html (test/seller.test.js checks them): we ship the next working day after
+// payment (Saturday and Sunday orders ship on Monday); delivery 2–4 days in Andhra Pradesh and Telangana, 4–7 days in
+// the rest of India, up to 10 days in the North-East, J&K, Ladakh and the islands (src/delivery.js has the same areas
+// and days); the same remedies (damaged, wrong, faulty or not as described: replacement or refund; late: refuse or
+// refund, policies.html #returns); refunds within 5–7 working days; complaints acknowledged within 48 hours and resolved
+// within one month, with a complaint number.
 //
 // No secrets: GitHub Pages serves this file. NEVER put a licence number, a placeholder or a "pending" note here: the
 // FSSAI licence line is shown only when the Worker env FSSAI_ECOM_LIC holds the real 14-digit number (src/config.js).
@@ -54,7 +56,7 @@ export const SELLER = Object.freeze({
 // Short terms, in English. The page uses them as its STRINGS.en values (translations go in STRINGS.<lang>);
 // the e-mail uses them as they are. {link} is replaced by a link to the privacy policy.
 export const TERMS = Object.freeze({
-  delivery: "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
+  delivery: "We ship the next working day after payment (Saturday and Sunday orders ship on Monday; not on public holidays). Usual delivery time after dispatch: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, and up to 10 days in the North-East, J&K, Ladakh and the islands.",
   returns: "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
   privacy: "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
   grievance: "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",

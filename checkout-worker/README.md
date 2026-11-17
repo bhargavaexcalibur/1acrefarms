@@ -62,7 +62,7 @@ browser (/checkout-test/)            Worker (workers.dev)                       
 | `src/pricing.js` | Reads `catalogue.json` into `CATALOGUE` (a malformed row is never sellable), `quoteCart` (= sum of the MRPs; `DELIVERY_FEE_RUPEES = 0`), GST rate, unit price per g, PIN table, parcel sizes (also used by the page) |
 | `src/gst.js` | GST inside the MRP, for display: per unit CGST = SGST = MRP/42 (Andhra Pradesh) or IGST = MRP/21, then x qty (our invoice method) |
 | `src/seller.js` | Legal name, both addresses (labels in one place), GSTIN, FSSAI Reg. No., customer care / grievance officer, Amazon.in store link, short delivery / returns / privacy terms (page + e-mail) |
-| `src/delivery.js` | Expected delivery window: dispatch 1–2 working days + 1–3 / 3–5 / 4–10 days by area (Sundays not counted, IST) |
+| `src/delivery.js` | Expected delivery window: ships the next working day (Mon–Sat, IST; Saturday and Sunday orders ship Monday) + 2–4 days AP & Telangana / 4–7 rest of India / up to 10 North-East, J&K, Ladakh and islands (an earliest date on a Sunday shows as Monday) |
 | `src/confirmation.js` | The customer's order-confirmation e-mail (Resend), once per paid order |
 | `src/cart-link.js` | Meta catalogue link `?products=SKU%3Aqty,...` -> cart, and the site-wide cart helpers (`CART_KEY`, `clampCart`, `cartAdd`: sellable packs only, within `LIMITS`) used by the page and `/checkout/cart.js` |
 | `src/validate.js` | Address-form rules (also used by the page) |
@@ -289,9 +289,11 @@ can never book twice.
 - The page's strings are in `checkout-test/strings.en.json` (+ `src/seller.js` `TERMS`) and go through the site's
   translation flow (keys `co.<key>`); none is translated yet, so every language shows English (marked `lang="en"`).
   Seller name, addresses and their labels stay English (legal identity, as on the pack). The order e-mail is English only.
-- Expected delivery dates skip Sundays but do not know public holidays (policies.html already says festival rush and
-  remote areas can add days). PIN 522xxx covers Guntur and Palnadu but also part of Bapatla district, so it gets the
-  wider 1–5 days, never a 1–3 promise. A state that contradicts the PIN gets the wider of the two areas.
+- Expected delivery dates skip Sundays (no dispatch on a Sunday, and an earliest date that falls on a Sunday is shown
+  as the Monday after it; the latest date is exactly the policy's benchmark, never moved) but do not know public
+  holidays (policies.html already says weather, strikes and festival rush can add days). The area comes from the PIN (AP/TS band of the PIN table; remote = India Post
+  prefixes 18-19, 737, 744, 78-79, 682551-682559) and the state; a state that contradicts the PIN gets the wider of
+  the two areas.
 - GST break-up: CGST/SGST follows invoices 0001-0003; the IGST rounding (MRP/21 per unit, then x qty) has no invoice
   yet and is to be confirmed by ChittaGupta before the first inter-state invoice.
 - The packing-unit address label ("Packing unit (as printed on the pack)") is provisional, to be settled after the

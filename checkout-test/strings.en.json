@@ -79,7 +79,7 @@
   "priceChangedTitle": {"en": "Total updated", "note": "heading when our server's total differs from the page's"},
   "priceChangedBody": {"en": "The total for this order is {amount}. Please check it and press Pay again.", "note": "explains the line above"},
   "successTitle": {"en": "Thank you! Your payment is received.", "note": "heading after a successful payment"},
-  "successBody": {"en": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.", "note": "after payment; keep the numbers 1 and 2, keep WhatsApp"},
+  "successBody": {"en": "Order number: {id}. We ship the next working day (Saturday and Sunday orders ship on Monday) and send the courier name and tracking link on WhatsApp or email.", "note": "after payment; keep the day names Saturday, Sunday and Monday, keep WhatsApp"},
   "successDelivery": {"en": "Expected delivery between {from} and {to}.", "note": "{from} and {to} are dates"},
   "successKeep": {"en": "Please keep the order number for any question.", "note": "after payment"},
   "pendingTitle": {"en": "Your payment is being confirmed", "note": "heading while a payment is still being confirmed"},

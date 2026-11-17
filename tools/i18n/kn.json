@@ -9617,9 +9617,9 @@
    "back": "Thank you! Your payment has reached us."
   },
   "co.successBody": {
-   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
-   "t": "ಆರ್ಡರ್ ಸಂಖ್ಯೆ: {id}. ನಾವು 1–2 ಕೆಲಸದ ದಿನಗಳಲ್ಲಿ (ಭಾನುವಾರ ಮತ್ತು ಸಾರ್ವಜನಿಕ ರಜಾದಿನಗಳನ್ನು ಹೊರತುಪಡಿಸಿ) ಪ್ಯಾಕ್ ಮಾಡಿ ಕಳುಹಿಸುತ್ತೇವೆ, ಮತ್ತು ಕೊರಿಯರ್ ಹೆಸರು ಹಾಗೂ ಟ್ರ್ಯಾಕಿಂಗ್ ಲಿಂಕ್ ಅನ್ನು WhatsApp ಅಥವಾ ಇಮೇಲ್‌ನಲ್ಲಿ ಕಳುಹಿಸುತ್ತೇವೆ.",
-   "back": "Order number: {id}. We will pack and send it within 1–2 working days (excluding Sundays and public holidays), and we will send the courier name and tracking link on WhatsApp or by email."
+   "src": "Order number: {id}. We ship the next working day (Saturday and Sunday orders ship on Monday) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "ಆರ್ಡರ್ ಸಂಖ್ಯೆ: {id}. ನಾವು ಮುಂದಿನ ಕೆಲಸದ ದಿನ ಕಳುಹಿಸುತ್ತೇವೆ (ಶನಿವಾರ ಮತ್ತು ಭಾನುವಾರದ ಆರ್ಡರ್‌ಗಳನ್ನು ಸೋಮವಾರ ಕಳುಹಿಸುತ್ತೇವೆ), ಮತ್ತು ಕೊರಿಯರ್ ಹೆಸರು ಹಾಗೂ ಟ್ರ್ಯಾಕಿಂಗ್ ಲಿಂಕ್ ಅನ್ನು WhatsApp ಅಥವಾ ಇಮೇಲ್‌ನಲ್ಲಿ ಕಳುಹಿಸುತ್ತೇವೆ.",
+   "back": "Order number: {id}. We will send on the next working day (Saturday and Sunday orders we will send on Monday), and we will send the courier name and tracking link on WhatsApp or email."
   },
   "co.successDelivery": {
    "src": "Expected delivery between {from} and {to}.",
@@ -9732,9 +9732,9 @@
    "back": "We use these details to deliver your order, to send its GST invoice and to help you. To know with whom we share them, see our {link}."
   },
   "co.deliveryNote": {
-   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
-   "t": "ಪಾವತಿಯಾದ 1–2 ಕೆಲಸದ ದಿನಗಳಲ್ಲಿ ಕಳುಹಿಸುತ್ತೇವೆ (ಭಾನುವಾರ ಮತ್ತು ಸಾರ್ವಜನಿಕ ರಜಾದಿನಗಳನ್ನು ಹೊರತುಪಡಿಸಿ). ಕಳುಹಿಸಿದ ನಂತರ ಸಾಮಾನ್ಯ ಡೆಲಿವರಿ ಸಮಯ: ಪಲ್ನಾಡು ಮತ್ತು ಗುಂಟೂರಿನಲ್ಲಿ 1–3 ದಿನಗಳು, ಉಳಿದ ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ದಕ್ಷಿಣ ಭಾರತದಲ್ಲಿ 3–5 ದಿನಗಳು, ಭಾರತದ ಇತರ ಕಡೆ 4–10 ದಿನಗಳು.",
-   "back": "We send within 1–2 working days of payment (excluding Sundays and public holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India."
+   "src": "We ship the next working day after payment (Saturday and Sunday orders ship on Monday; not on public holidays). Usual delivery time after dispatch: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, and up to 10 days in the North-East, J&K, Ladakh and the islands.",
+   "t": "ಪಾವತಿಯಾದ ನಂತರ ಮುಂದಿನ ಕೆಲಸದ ದಿನ ಕಳುಹಿಸುತ್ತೇವೆ (ಶನಿವಾರ ಮತ್ತು ಭಾನುವಾರದ ಆರ್ಡರ್‌ಗಳನ್ನು ಸೋಮವಾರ ಕಳುಹಿಸುತ್ತೇವೆ; ಸಾರ್ವಜನಿಕ ರಜಾದಿನಗಳಲ್ಲಿ ಕಳುಹಿಸುವುದಿಲ್ಲ). ಕಳುಹಿಸಿದ ನಂತರ ಸಾಮಾನ್ಯ ಡೆಲಿವರಿ ಸಮಯ: ಆಂಧ್ರಪ್ರದೇಶ ಮತ್ತು ತೆಲಂಗಾಣದಲ್ಲಿ 2–4 ದಿನಗಳು, ಭಾರತದ ಉಳಿದ ಕಡೆ 4–7 ದಿನಗಳು, ಈಶಾನ್ಯ ರಾಜ್ಯಗಳು, ಜಮ್ಮು ಕಾಶ್ಮೀರ, ಲಡಾಖ್ ಮತ್ತು ದ್ವೀಪಗಳಲ್ಲಿ 10 ದಿನಗಳವರೆಗೆ.",
+   "back": "We will send on the next working day after payment is made (Saturday and Sunday orders we will send on Monday; we do not send on public holidays). Normal delivery time after sending: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, up to 10 days in North-Eastern states, Jammu Kashmir, Ladakh and islands."
   },
   "co.returnsNote": {
    "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",

@@ -9617,9 +9617,9 @@
    "back": "Thank you! Your payment has been received."
   },
   "co.successBody": {
-   "src": "Order number: {id}. We pack and dispatch within 1–2 working days (not on Sundays or public holidays) and send the courier name and tracking link on WhatsApp or email.",
-   "t": "অর্ডার নম্বর: {id}। আমরা 1–2 কাজের দিনের মধ্যে প্যাক করে পাঠাই (রবিবার ও সরকারি ছুটির দিন বাদে) এবং কুরিয়ারের নাম ও ট্র্যাকিং লিংক WhatsApp বা ইমেলে পাঠাই।",
-   "back": "Order number: {id}. We pack and send within 1–2 working days (excluding Sundays and government holidays) and send the courier name and tracking link on WhatsApp or email."
+   "src": "Order number: {id}. We ship the next working day (Saturday and Sunday orders ship on Monday) and send the courier name and tracking link on WhatsApp or email.",
+   "t": "অর্ডার নম্বর: {id}। আমরা পরের কাজের দিনে পাঠাই (শনিবার ও রবিবারের অর্ডার সোমবার পাঠানো হয়) এবং কুরিয়ারের নাম ও ট্র্যাকিং লিংক WhatsApp বা ইমেলে পাঠাই।",
+   "back": "Order number: {id}. We send on the next working day (Saturday and Sunday orders are sent on Monday) and send the courier name and tracking link on WhatsApp or email."
   },
   "co.successDelivery": {
    "src": "Expected delivery between {from} and {to}.",
@@ -9732,9 +9732,9 @@
    "back": "We use this information to deliver your order, send its GST invoice and help you. Who we share it with: see our {link}."
   },
   "co.deliveryNote": {
-   "src": "We dispatch within 1–2 working days of payment (not on Sundays or public holidays). Usual delivery time after dispatch: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India.",
-   "t": "পেমেন্টের পর 1–2 কাজের দিনের মধ্যে আমরা পাঠাই (রবিবার ও সরকারি ছুটির দিন বাদে)। পাঠানোর পর সাধারণ ডেলিভারি সময়: পালনাড়ু ও গুন্টুরে 1–3 দিন, অন্ধ্রপ্রদেশের বাকি অংশ ও দক্ষিণ ভারতে 3–5 দিন, ভারতের অন্যত্র 4–10 দিন।",
-   "back": "We send within 1–2 working days after payment (excluding Sundays and government holidays). Usual delivery time after sending: 1–3 days in Palnadu and Guntur, 3–5 days in the rest of Andhra Pradesh and South India, 4–10 days elsewhere in India."
+   "src": "We ship the next working day after payment (Saturday and Sunday orders ship on Monday; not on public holidays). Usual delivery time after dispatch: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, and up to 10 days in the North-East, J&K, Ladakh and the islands.",
+   "t": "পেমেন্টের পরের কাজের দিনে আমরা পাঠাই (শনিবার ও রবিবারের অর্ডার সোমবার পাঠানো হয়; সরকারি ছুটির দিনে পাঠানো হয় না)। পাঠানোর পর সাধারণ ডেলিভারি সময়: অন্ধ্রপ্রদেশ ও তেলেঙ্গানায় 2–4 দিন, ভারতের বাকি অংশে 4–7 দিন, আর উত্তর-পূর্বাঞ্চল, জম্মু-কাশ্মীর, লাদাখ ও দ্বীপগুলিতে 10 দিন পর্যন্ত।",
+   "back": "We send on the working day after payment (Saturday and Sunday orders are sent on Monday; nothing is sent on government holidays). Usual delivery time after sending: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, and up to 10 days in the North-Eastern region, Jammu-Kashmir, Ladakh and the islands."
   },
   "co.returnsNote": {
    "src": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",

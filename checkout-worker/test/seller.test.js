@@ -48,11 +48,27 @@ test("address labels: one place", () => {
 });
 
 test("short terms keep policies.html's figures", () => {
-  for (const fig of ["1–2 working days", "1–3 days", "3–5 days", "4–10 days", "5–7 working days", "48 hours", "one month", "1AF-C-0001"]) {
+  for (const fig of ["next working day", "Saturday and Sunday orders ship on Monday", "2–4 days", "4–7 days", "up to 10 days",
+    "5–7 working days", "48 hours", "one month", "1AF-C-0001"]) {
     assert.ok(POLICIES.includes(fig), `policies.html has ${fig}`);
     assert.ok(Object.values(TERMS).some((t) => t.includes(fig)), `TERMS has ${fig}`);
   }
-  for (const z of Object.values(DELIVERY_ZONES)) assert.ok(TERMS.delivery.includes(`${z.days[0]}–${z.days[1]} days`), z.area);
+  // each delivery area's days (src/delivery.js) as the short terms and policies.html say them
+  const SAID = { AP_TS: "2–4 days", REST: "4–7 days", REMOTE: "up to 10 days" };
+  assert.deepEqual(Object.keys(DELIVERY_ZONES).sort(), Object.keys(SAID).sort());
+  for (const [k, z] of Object.entries(DELIVERY_ZONES)) {
+    const said = SAID[k];
+    assert.ok(said === `${z.days[0]}–${z.days[1]} days` || (said === `up to ${z.days[1]} days` && z.days[0] === DELIVERY_ZONES.REST.days[0]), k);
+    assert.ok(TERMS.delivery.includes(said), z.area);
+  }
+  // the success page says the same dispatch promise
+  assert.ok(STRINGS.successBody.includes("next working day") && STRINGS.successBody.includes("Saturday and Sunday orders ship on Monday"));
+  // the old promise is gone from the terms, the page strings and policies.html
+  for (const old of ["1–2 working days", "1–3 days", "3–5 days", "4–10 days", "Palnadu and Guntur districts", "Rest of Andhra Pradesh and South India"]) {
+    assert.ok(!POLICIES.includes(old), `policies.html still says ${old}`);
+    assert.ok(!Object.values(TERMS).some((t) => t.includes(old)), `TERMS still says ${old}`);
+    assert.ok(!STRINGS_BLOCK.includes(old), `strings.en.json still says ${old}`);
+  }
   assert.match(TERMS.returns, /free of charge before dispatch/);
   assert.match(TERMS.returns, /never pay return shipping/);
   assert.match(TERMS.returns, /not-as-described/); // policies.html #returns "Quality problems"

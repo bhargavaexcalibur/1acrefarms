@@ -1,57 +1,72 @@
-// Expected delivery window for an order: dispatch (1–2 working days after payment) + the usual delivery time for
-// the area (policies.html "Usual delivery time after dispatch"). Shown on the success page and in the customer
-// e-mail, so the buyer has a date for the late-delivery promise in policies.html ("later than the usual delivery time
-// for your area").
+// Expected delivery window for an order: we ship on the next working day after payment, then the usual delivery time
+// for the area (policies.html "Usual delivery time after dispatch"): 2–4 days in Andhra Pradesh and Telangana, 4–7 days
+// in the rest of India, up to 10 days in the North-East, J&K, Ladakh and the islands. Shown on the success page and in
+// the customer e-mail, so the buyer has a date for the late-delivery promise in policies.html ("later than the usual
+// delivery time for your area").
 // Pure functions, no I/O; the hidden page imports this same file.
 //
-// Day counting, in India time (IST): the payment day is day 0. Dispatch counts working days (we do not dispatch on
-// Sundays, as policies.html says); transit counts plain calendar days, exactly as the policy's "usual delivery time
-// after dispatch" table reads, so the date shown is never LATER than the policy's own benchmark for a late order.
-// Public holidays are not known to this code; policies.html already says remote areas, weather, strikes and festival
-// rush can add a few days.
+// Day counting, in India time (IST): the payment day is day 0. Working days are Monday to Saturday, so dispatch is the
+// next day that is not a Sunday: a Monday-to-Friday payment ships the next day (Friday ships Saturday), a Saturday or
+// Sunday payment ships on Monday (policies.html: "Saturday and Sunday orders ship on Monday"). Transit counts plain
+// calendar days from the dispatch day, exactly as the policy's "usual delivery time after dispatch" table reads, so
+// the latest date shown ("to") is exactly the policy's own benchmark for a late order, never later. Couriers do not
+// deliver on Sundays, so an earliest date ("from") that falls on a Sunday is shown as the Monday after it; "to" is
+// never moved, and every area's range is at least 2 days wide, so "from" never passes "to".
+// Public holidays are not known to this code (we do not dispatch on them, as policies.html says); policies.html also
+// says weather, strikes and festival rush can add a few days.
 import { pinInfo } from "./pricing.js";
 
-export const DISPATCH_WORKING_DAYS = Object.freeze([1, 2]);
+// Dispatch on the next working day after payment: [earliest, latest] working days after day 0.
+export const DISPATCH_WORKING_DAYS = Object.freeze([1, 1]);
 
-// Areas and days, from policies.html.
+// Areas and days, from policies.html. REMOTE is "up to 10 days" there; it starts at the rest of India's 4.
 export const DELIVERY_ZONES = Object.freeze({
-  GNT_PLN: Object.freeze({ days: Object.freeze([1, 3]), area: "Palnadu and Guntur districts" }),
-  AP_SOUTH: Object.freeze({ days: Object.freeze([3, 5]), area: "Rest of Andhra Pradesh and South India (Telangana, Karnataka, Tamil Nadu, Kerala, Puducherry)" }),
-  REST: Object.freeze({ days: Object.freeze([4, 10]), area: "Rest of India" }),
+  AP_TS: Object.freeze({ days: Object.freeze([2, 4]), area: "Andhra Pradesh and Telangana" }),
+  REST: Object.freeze({ days: Object.freeze([4, 7]), area: "Rest of India" }),
+  REMOTE: Object.freeze({ days: Object.freeze([4, 10]), area: "North-East, J&K, Ladakh and islands" }),
 });
 
-// Which areas a PIN can be in. Ambiguous PINs list more than one area; the window then covers all of them.
-//  - 522xxx is the old Guntur district: today Guntur + Palnadu, but also part of Bapatla district (rest of AP),
-//    so it is ambiguous: 1–5 days (the wider range), never a promise of 1–3 to a Bapatla address.
-//  - The rest of the AP/TS band of the PIN table in pricing.js (50 Telangana, 51-53 Andhra Pradesh, 533464 Yanam):
-//    rest of AP or South India, 3–5 days.
-//  - Karnataka 56-59, Tamil Nadu and Puducherry 60-64, Kerala 67-69 (India Post first-two-digit allocation, the same
-//    source as the PIN table): South India, 3–5 days. Lakshadweep (682xxx) shares Kerala's range; its state is not
-//    South India in the policy, so the state check below makes it the wider 3–10.
-//  - Everything else: rest of India, 4–10 days.
-const SOUTH_PIN2 = new Set(["56", "57", "58", "59", "60", "61", "62", "63", "64", "67", "68", "69"]);
+// Which area a PIN is in.
+//  - The AP/TS band of the PIN table in pricing.js (50 Telangana, 51-53 Andhra Pradesh, 533464 Yanam): AP_TS.
+//  - REMOTE, by the India Post PIN allocation (first two digits = postal circle, first three = sorting district; the
+//    same source as the PIN table): 18 and 19 = Jammu & Kashmir circle, which includes Ladakh (Leh 194101,
+//    Kargil 194103); 737 = Sikkim (the West Bengal circle's 70-74 range, Gangtok 737101); 744 = Andaman & Nicobar
+//    Islands (also in the West Bengal circle's range, Port Blair 744101); 78 = Assam; 79 = the other North-East states
+//    (790-792 Arunachal Pradesh, 793-794 Meghalaya, 795 Manipur, 796 Mizoram, 797-798 Nagaland, 799 Tripura);
+//    682551-682559 = Lakshadweep (inside the Kerala circle's 67-69 range, Kavaratti 682555): exactly these nine PINs,
+//    not a prefix, so 682550 and 682560 stay rest of India.
+//  - Everything else: rest of India.
+const REMOTE_PIN_PREFIXES = Object.freeze(["18", "19", "737", "744", "78", "79"]);
+const LAKSHADWEEP_PIN = /^68255[1-9]$/;
 export function zonesForPin(pin) {
   const info = pinInfo(pin);
   if (!info) return null;
-  if (info.pin.startsWith("522")) return ["GNT_PLN", "AP_SOUTH"];
-  if (info.band === "AP_TS") return ["AP_SOUTH"];
-  if (SOUTH_PIN2.has(info.pin.slice(0, 2))) return ["AP_SOUTH"];
+  if (info.band === "AP_TS") return ["AP_TS"];
+  if (LAKSHADWEEP_PIN.test(info.pin) || REMOTE_PIN_PREFIXES.some((p) => info.pin.startsWith(p))) return ["REMOTE"];
   return ["REST"];
 }
 
-const SOUTH_STATES = new Set(["Telangana", "Karnataka", "Tamil Nadu", "Kerala", "Puducherry"]);
+// Which area a state is in (the state names of validate.js INDIAN_STATES, as the checkout form sends them).
+const AP_TS_STATES = new Set(["Andhra Pradesh", "Telangana"]);
+const REMOTE_STATES = new Set([
+  "Jammu and Kashmir", "Ladakh",
+  "Assam", "Arunachal Pradesh", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Tripura", "Sikkim",
+  "Andaman and Nicobar Islands", "Lakshadweep",
+]);
 export function zonesForState(state) {
   if (!state) return null;
-  if (state === "Andhra Pradesh") return ["GNT_PLN", "AP_SOUTH"]; // the district is not asked; the PIN decides
-  if (SOUTH_STATES.has(state)) return ["AP_SOUTH"];
+  if (AP_TS_STATES.has(state)) return ["AP_TS"];
+  if (REMOTE_STATES.has(state)) return ["REMOTE"];
   return ["REST"];
 }
 
-// PIN and state agree -> the areas both allow; they disagree (a typo the form did not catch) -> all areas either
-// allows, i.e. the wider window.
+// PIN and state agree -> the area both allow; they disagree (a typo the form did not catch) -> all areas either
+// allows, i.e. the wider window. A state that the PIN table itself gives for the PIN is agreement too: Yanam
+// (533464) is Puducherry, inside the Andhra Pradesh PIN band, so it keeps the PIN's area.
 export function deliveryZones(pin, state) {
   const byPin = zonesForPin(pin);
   if (!byPin) return null;
+  if (state && pinInfo(pin).state === state) return byPin;
   const byState = zonesForState(state);
   if (!byState) return byPin;
   const both = byPin.filter((z) => byState.includes(z));
@@ -66,6 +81,7 @@ const istDay = (ms) => {
   return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
 };
 const isSunday = (dayMs) => new Date(dayMs).getUTCDay() === 0;
+// n working days (Monday to Saturday) after dayMs: Sundays are skipped.
 export function addWorkingDays(dayMs, n) {
   let d = dayMs;
   for (let left = n; left > 0;) {
@@ -83,7 +99,8 @@ export function expectedDelivery({ paidAt, pin, state }) {
   const lo = Math.min(...zones.map((z) => DELIVERY_ZONES[z].days[0]));
   const hi = Math.max(...zones.map((z) => DELIVERY_ZONES[z].days[1]));
   const day0 = istDay(paidAt);
-  const from = addWorkingDays(day0, DISPATCH_WORKING_DAYS[0]) + lo * DAY_MS;
-  const to = addWorkingDays(day0, DISPATCH_WORKING_DAYS[1]) + hi * DAY_MS;
+  const earliest = addWorkingDays(day0, DISPATCH_WORKING_DAYS[0]) + lo * DAY_MS;
+  const from = isSunday(earliest) ? earliest + DAY_MS : earliest; // no Sunday deliveries: the Monday after
+  const to = addWorkingDays(day0, DISPATCH_WORKING_DAYS[1]) + hi * DAY_MS; // the policy benchmark, never moved
   return { from: isoDay(from), to: isoDay(to), days: [lo, hi], zones };
 }
