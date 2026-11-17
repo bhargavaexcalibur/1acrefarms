@@ -155,6 +155,206 @@
   },
   "recipe-chimmili-ml": {
    "video": "https://youtu.be/b1H0lHdSYz0"
+  },
+  "pack-cashew-kernels": {
+   "video": "https://youtu.be/vt4ctHNgYf4",
+   "short": "https://youtube.com/shorts/hzJve3kGPzI"
+  },
+  "recipe-kaju-upma": {
+   "video": "https://youtu.be/qbsYskTmWCA",
+   "short": "https://youtube.com/shorts/mv2Ah45pFU8"
+  },
+  "recipe-gongura-mamsam": {
+   "video": "https://youtu.be/IJqT3W16aQw",
+   "short": "https://youtube.com/shorts/ADVcxucaBr0"
+  },
+  "recipe-jeedipappu-pakodi": {
+   "video": "https://youtu.be/msZ_Bu9X1gg",
+   "short": "https://youtube.com/shorts/7fiD_fq5_KM"
+  },
+  "recipe-guddu-pulusu": {
+   "video": "https://youtu.be/q5XYZ_Hf8TI",
+   "short": "https://youtube.com/shorts/bVAitqajUfw"
+  },
+  "recipe-gutti-vankaya-kura": {
+   "video": "https://youtu.be/025fTRdFbUs",
+   "short": "https://youtube.com/shorts/ds9ODhg6qVM"
+  },
+  "recipe-vellulli-kaaram": {
+   "video": "https://youtu.be/FhDXa86pqW4",
+   "short": "https://youtube.com/shorts/nuGMy_nqkIo"
+  },
+  "recipe-tomato-pachadi": {
+   "video": "https://youtu.be/_tK5_CsGlaA",
+   "short": "https://youtube.com/shorts/NTZw6-SynKQ"
+  },
+  "recipe-gongura-pachadi": {
+   "video": "https://youtu.be/liPy8At149c",
+   "short": "https://youtube.com/shorts/2j_n4fASGMU"
+  },
+  "recipe-andhra-kodi-kura": {
+   "video": "https://youtu.be/yinkRazkyG4",
+   "short": "https://youtube.com/shorts/VN3Iv9g_CPw"
+  },
+  "recipe-kodi-vepudu": {
+   "video": "https://youtu.be/gR-o1Vwtf1A",
+   "short": "https://youtube.com/shorts/gqEwehvtMG8"
+  },
+  "pack-cashew-kernels-te": {
+   "short": "https://youtube.com/shorts/GFfMSp-ZCnE",
+   "video": "https://youtu.be/tzD0rkbeGcM"
+  },
+  "pack-cashew-kernels-sa": {
+   "short": "https://youtube.com/shorts/4sjsrB4LTbQ",
+   "video": "https://youtu.be/Z5M2XDEypZY"
+  },
+  "pack-cashew-kernels-hi": {
+   "short": "https://youtube.com/shorts/5UO1CjF8SSU",
+   "video": "https://youtu.be/_U9BNW4RMak"
+  },
+  "pack-teja-chilli-powder-te": {
+   "short": "https://youtube.com/shorts/xx33xY2pHjY",
+   "video": "https://youtu.be/LkdXRojQeCE"
+  },
+  "pack-teja-chilli-powder-sa": {
+   "short": "https://youtube.com/shorts/p4xHbYxrwn4",
+   "video": "https://youtu.be/YlhAsBTDuOs"
+  },
+  "pack-teja-chilli-powder-hi": {
+   "short": "https://youtube.com/shorts/qwv4f2LQVTs",
+   "video": "https://youtu.be/hhItBoQBIsU"
+  },
+  "pack-sannam-chilli-powder-te": {
+   "video": "https://youtu.be/FVMUoAb2yqg",
+   "short": "https://youtube.com/shorts/8h-z0ChbHGc"
+  },
+  "pack-sannam-chilli-powder-sa": {
+   "video": "https://youtu.be/vi9DsE_0ZIA",
+   "short": "https://youtube.com/shorts/5p9Mb0WlXdY"
+  },
+  "pack-sannam-chilli-powder-hi": {
+   "video": "https://youtu.be/IvlE4toc-L0",
+   "short": "https://youtube.com/shorts/yWwzVNX4QMs"
+  },
+  "recipe-kaju-upma-te": {
+   "video": "https://youtu.be/IRGRTIO_ABs",
+   "short": "https://youtube.com/shorts/p5ur-XITiPo"
+  },
+  "recipe-kaju-upma-sa": {
+   "video": "https://youtu.be/wWhwTNw9S-g",
+   "short": "https://youtube.com/shorts/qySEFx3Tv4c"
+  },
+  "recipe-kaju-upma-hi": {
+   "short": "https://youtube.com/shorts/MPQgS38__a0",
+   "video": "https://youtu.be/p5vBPAjmfNY"
+  },
+  "recipe-jeedipappu-pakodi-te": {
+   "video": "https://youtu.be/EzAai6kASSY",
+   "short": "https://youtube.com/shorts/-fDAC4w8zkk"
+  },
+  "recipe-jeedipappu-pakodi-sa": {
+   "video": "https://youtu.be/8ZnOKOYS4t4",
+   "short": "https://youtube.com/shorts/z7Ku1zYEoUU"
+  },
+  "recipe-jeedipappu-pakodi-hi": {
+   "short": "https://youtube.com/shorts/8pazh2p-tos",
+   "video": "https://youtu.be/xztJhDOVI9M"
+  },
+  "recipe-gongura-mamsam-te": {
+   "video": "https://youtu.be/FYpIyvACqlU",
+   "short": "https://youtube.com/shorts/ASUEgELzAv0"
+  },
+  "recipe-gongura-mamsam-sa": {
+   "video": "https://youtu.be/t3u1u-tOz_Q",
+   "short": "https://youtube.com/shorts/q4STZ6hXnNQ"
+  },
+  "recipe-gongura-mamsam-hi": {
+   "video": "https://youtu.be/pTl-wiDWaEY",
+   "short": "https://youtube.com/shorts/7Kwi1k_YCag"
+  },
+  "recipe-guddu-pulusu-te": {
+   "video": "https://youtu.be/2KKTlLrzkYk",
+   "short": "https://youtube.com/shorts/97kLv-Dk2Q0"
+  },
+  "recipe-guddu-pulusu-sa": {
+   "video": "https://youtu.be/9wtvZovJYXU",
+   "short": "https://youtube.com/shorts/Mxoh497qgcc"
+  },
+  "recipe-guddu-pulusu-hi": {
+   "short": "https://youtube.com/shorts/GDaeNvURD10",
+   "video": "https://youtu.be/toU_yH3qVsI"
+  },
+  "recipe-gutti-vankaya-kura-te": {
+   "video": "https://youtu.be/GakYDbiJ_AU",
+   "short": "https://youtube.com/shorts/P_jd-v_WQIc"
+  },
+  "recipe-gutti-vankaya-kura-sa": {
+   "video": "https://youtu.be/htrL-ibN57A",
+   "short": "https://youtube.com/shorts/GWE-dHh0BpM"
+  },
+  "recipe-gutti-vankaya-kura-hi": {
+   "short": "https://youtube.com/shorts/A1jf4VBUBqc",
+   "video": "https://youtu.be/do1cYbaJBFA"
+  },
+  "recipe-vellulli-kaaram-te": {
+   "video": "https://youtu.be/xdbPEt6H3To",
+   "short": "https://youtube.com/shorts/LXvO-ZbBaX8"
+  },
+  "recipe-vellulli-kaaram-sa": {
+   "video": "https://youtu.be/wE-W65dQMBw",
+   "short": "https://youtube.com/shorts/3qhycrkX8yE"
+  },
+  "recipe-vellulli-kaaram-hi": {
+   "short": "https://youtube.com/shorts/gkMs-nxp7qk",
+   "video": "https://youtu.be/rlxcQbTIOQI"
+  },
+  "recipe-tomato-pachadi-te": {
+   "video": "https://youtu.be/dvoijC7Ktoo",
+   "short": "https://youtube.com/shorts/H-Uz_FNDng4"
+  },
+  "recipe-tomato-pachadi-sa": {
+   "video": "https://youtu.be/3c7PP0j9jug",
+   "short": "https://youtube.com/shorts/_rufgYCH9Aw"
+  },
+  "recipe-tomato-pachadi-hi": {
+   "short": "https://youtube.com/shorts/A_ueALRhjic",
+   "video": "https://youtu.be/_PK2s_D5OTI"
+  },
+  "recipe-gongura-pachadi-te": {
+   "short": "https://youtube.com/shorts/uaC4dctN_wI",
+   "video": "https://youtu.be/b5C4LZ0bwT8"
+  },
+  "recipe-gongura-pachadi-sa": {
+   "short": "https://youtube.com/shorts/gFvCb_Cz3jw",
+   "video": "https://youtu.be/A0uDfydxwIs"
+  },
+  "recipe-gongura-pachadi-hi": {
+   "short": "https://youtube.com/shorts/DfhmXpOZ3sU",
+   "video": "https://youtu.be/WUh3ElNmVcc"
+  },
+  "recipe-andhra-kodi-kura-te": {
+   "short": "https://youtube.com/shorts/zukq5TfVmlM",
+   "video": "https://youtu.be/z_rhfNuK_Sk"
+  },
+  "recipe-andhra-kodi-kura-sa": {
+   "short": "https://youtube.com/shorts/QkKfQaNzT10",
+   "video": "https://youtu.be/AkZgjtT0_PE"
+  },
+  "recipe-andhra-kodi-kura-hi": {
+   "short": "https://youtube.com/shorts/lu-SQukP_Hg",
+   "video": "https://youtu.be/e4cUBT1yNuA"
+  },
+  "recipe-kodi-vepudu-te": {
+   "short": "https://youtube.com/shorts/X3XwIIg4-8o",
+   "video": "https://youtu.be/2Hj5a9xzFmM"
+  },
+  "recipe-kodi-vepudu-sa": {
+   "short": "https://youtube.com/shorts/VK7vyxFqM-0",
+   "video": "https://youtu.be/u0i1Q6hTXPY"
+  },
+  "recipe-kodi-vepudu-hi": {
+   "short": "https://youtube.com/shorts/yoyuf2Jbpw4",
+   "video": "https://youtu.be/2PCs0oBOSvQ"
   }
  }
 }
