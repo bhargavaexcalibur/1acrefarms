@@ -103,22 +103,28 @@
    "short": "https://youtube.com/shorts/uxz0J0cr2Ig"
   },
   "pack-cane-jaggery-sa": {
-   "video": "https://youtu.be/ozYvBXC2r-k"
+   "video": "https://youtu.be/ozYvBXC2r-k",
+   "short": "https://youtube.com/shorts/aWjIzVQx66E"
   },
   "recipe-paramannam-te": {
-   "video": "https://youtu.be/I8wPXsB1hbY"
+   "video": "https://youtu.be/I8wPXsB1hbY",
+   "short": "https://youtube.com/shorts/VdD39Jg3A8g"
   },
   "recipe-paramannam-sa": {
-   "video": "https://youtu.be/4D-UQcljmjk"
+   "video": "https://youtu.be/4D-UQcljmjk",
+   "short": "https://youtube.com/shorts/NtsrSUfFwaI"
   },
   "recipe-chimmili-te": {
-   "video": "https://youtu.be/QF59K_R4Kok"
+   "video": "https://youtu.be/QF59K_R4Kok",
+   "short": "https://youtube.com/shorts/-qiO59esDEA"
   },
   "recipe-paramannam-hi": {
-   "video": "https://youtu.be/jhqalaAzEks"
+   "video": "https://youtu.be/jhqalaAzEks",
+   "short": "https://youtube.com/shorts/wENxcvTaD_0"
   },
   "recipe-chimmili-sa": {
-   "video": "https://youtu.be/QixkpbQdTh4"
+   "video": "https://youtu.be/QixkpbQdTh4",
+   "short": "https://youtube.com/shorts/ncPxSkpc18I"
   },
   "pack-turmeric-powder-ta": {
    "video": "https://youtu.be/YPA5Var_OvQ"
@@ -355,6 +361,18 @@
   "recipe-kodi-vepudu-hi": {
    "short": "https://youtube.com/shorts/yoyuf2Jbpw4",
    "video": "https://youtu.be/2PCs0oBOSvQ"
+  },
+  "recipe-kobbari-undalu-ta": {
+   "video": "https://youtu.be/me_RNUsQs7A"
+  },
+  "recipe-kobbari-undalu-kn": {
+   "video": "https://youtu.be/HCHazGd40Yk"
+  },
+  "recipe-kobbari-undalu-ml": {
+   "video": "https://youtu.be/oC4CyiCjy8E"
+  },
+  "pack-turmeric-powder-kn": {
+   "video": "https://youtu.be/tmrGtBuUNcM"
   }
  }
 }
