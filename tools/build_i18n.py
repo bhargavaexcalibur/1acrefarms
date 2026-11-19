@@ -563,10 +563,11 @@ VOICE_JS = """(function () {
   document.getElementById("go").href = url;
   var gone = false;
   function go() { if (!gone) { gone = true; location.replace(url); } }
-  var ev = { src: src, lang: lang, pack: pack || "none", event_callback: go, event_timeout: 1200 };
+  window.__voGo = go;  // the tag script's onerror (blocked or offline) goes straight on
+  var ev = { src: src, lang: lang, pack: pack || "none", event_callback: go, event_timeout: 2000 };
   if (q.get("debug") === "1") ev.debug_mode = true;
   gtag("event", "voice_order_click", ev);
-  setTimeout(go, 1500);
+  setTimeout(go, 3500);  // a cold phone load must fetch gtm.js and then the GA tag before the event can leave
 })();"""
 
 
@@ -581,7 +582,7 @@ def voice_page(langs):
     js = VOICE_JS % {"wa": json.dumps(bp.WA), "src": json.dumps(list(bp.VOICE_SOURCES)),
                      "packs": json.dumps([p["code"] for p in bp.PACKS]),
                      "text": json.dumps(text, ensure_ascii=False).replace("</", "<\\/")}
-    ga = "\n  ".join(GA_TAG.splitlines()[:2])
+    ga = "\n  ".join(GA_TAG.splitlines()[:2]).replace('<script async src=', '<script async onerror="window.__voGo&&window.__voGo()" src=', 1)
     page = f"""<!doctype html>
 <html lang="en">
 <head>

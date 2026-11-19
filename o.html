@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow" />
   <title>WhatsApp | 1acrefarms</title>
   <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MB6JX532"></script>
+  <script async onerror="window.__voGo&&window.__voGo()" src="https://www.googletagmanager.com/gtm.js?id=GTM-MB6JX532"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>
   <style>
     body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f7f4ec;
@@ -42,10 +42,11 @@
   document.getElementById("go").href = url;
   var gone = false;
   function go() { if (!gone) { gone = true; location.replace(url); } }
-  var ev = { src: src, lang: lang, pack: pack || "none", event_callback: go, event_timeout: 1200 };
+  window.__voGo = go;  // the tag script's onerror (blocked or offline) goes straight on
+  var ev = { src: src, lang: lang, pack: pack || "none", event_callback: go, event_timeout: 2000 };
   if (q.get("debug") === "1") ev.debug_mode = true;
   gtag("event", "voice_order_click", ev);
-  setTimeout(go, 1500);
+  setTimeout(go, 3500);  // a cold phone load must fetch gtm.js and then the GA tag before the event can leave
 })();
   </script>
 </body>

@@ -1,6 +1,11 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "voice-site", "runtimeExecutable": "python3", "runtimeArgs": ["-m", "http.server", "8765", "--directory", "/Users/bhargava/1acrefarms-voice"], "port": 8765 }
+    {
+      "name": "1acrefarms",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4321"],
+      "port": 4321
+    }
   ]
 }

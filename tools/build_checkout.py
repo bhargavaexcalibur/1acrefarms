@@ -269,9 +269,17 @@ def styles_css(src, live):
 INDEX_CART_RE = re.compile(r"\n      <!--CART-->.*?<!--/CART-->", re.S)
 
 
+INDEX_VOICE_RE = re.compile(r"\n          <!--VOICE-->.*?<!--/VOICE-->", re.S)
+HERO_SHOP = '<a href="#spices" class="btn btn-primary">Shop our packs</a>'
+
+
 def index_html(src, live):
     src = INDEX_CART_RE.sub("", src)
+    src = INDEX_VOICE_RE.sub("", src)  # "Order by voice on WhatsApp" in the hero: only while direct orders are open
     if live:
+        if src.count(HERO_SHOP) != 1:
+            fail("index.html: the hero's 'Shop our packs' button not found exactly once")
+        src = src.replace(HERO_SHOP, HERO_SHOP + "\n          <!--VOICE-->" + bp.voice_btn(None).strip() + "<!--/VOICE-->", 1)
         if "<!--/LANG-->" not in src:
             fail("index.html: <!--/LANG--> (end of the language menu) not found")
         src = src.replace("<!--/LANG-->", f"<!--/LANG-->\n      <!--CART-->{bp.cart_link()}<!--/CART-->", 1)
