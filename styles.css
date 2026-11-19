@@ -679,6 +679,14 @@ html[lang="ur"] body, html[lang="ks"] body { line-height: 2.1; }
 span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { font-family: "Noto Sans Devanagari", sans-serif; }
 .pt-te[lang="sa"] { font-size: 0.85rem; }
 
+/* Voice ordering (19-11-2026): "Order by voice on WhatsApp", an extra option beside the checkout buttons */
+.btn-voice { background: transparent; border-color: var(--green); color: var(--green-deep); }
+.btn-voice:hover { background: var(--green-soft); }
+.btn-voice svg { width: 18px; height: 18px; flex: none; }
+.hero-actions .btn-voice { border-color: rgba(247,244,236,.5); color: var(--cream); }
+.hero-actions .btn-voice:hover { background: rgba(247,244,236,.12); }
+.i18n-voice { justify-content: center; margin: 18px 0 6px; }
+
 /* CHECKOUT:START written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False): direct orders */
 .nav-cart { text-decoration: none; font-size: 0.82rem; font-weight: 500; flex: none; }
 .cart-count[hidden] { display: none; }

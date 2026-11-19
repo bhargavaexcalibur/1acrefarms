@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "ꯁꯟꯅꯝ ꯅꯠꯔꯒꯥ ꯇꯦꯖꯥ ꯃꯣꯔꯣꯛ ꯄꯥꯎꯗꯔ: ꯀꯔꯝꯕ ꯁꯤꯖꯤꯟꯅꯒꯗꯒꯦ · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which one to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp ꯇꯥ ꯚꯣꯏꯁ ꯃꯦꯁꯦꯖꯅꯥ ꯑꯣꯔꯗꯔ ꯇꯧꯕꯤꯌꯨ",
+   "back": "Please order with a voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "ꯈꯨꯔꯨꯃꯖꯔꯤ, ꯑꯩꯅꯥ ꯑꯣꯔꯗꯔ ꯇꯧꯕ ꯄꯥꯝꯃꯤ꯫",
+   "back": "Khurumjari (greetings), I want to order."
   }
  }
 }

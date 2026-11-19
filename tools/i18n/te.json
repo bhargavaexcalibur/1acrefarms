@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "సన్నం కారమా, తేజ కారమా: ఏది వాడాలి · 1acrefarms",
    "back": "Sannam karam or Teja karam: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsAppలో వాయిస్ మెసేజ్‌తో ఆర్డర్ చేయండి",
+   "back": "Order with a voice message on WhatsApp."
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "నమస్కారం, నేను ఆర్డర్ చేయాలనుకుంటున్నాను.",
+   "back": "Hello (Namaskaram), I would like to place an order."
   }
  }
 }

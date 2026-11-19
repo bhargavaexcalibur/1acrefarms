@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "সান্নাম না তেজা লঙ্কা গুঁড়ো: কোনটা ব্যবহার করবেন · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp-এ ভয়েস মেসেজ দিয়ে অর্ডার করুন",
+   "back": "Order by giving a voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "নমস্কার, আমি অর্ডার করতে চাই।",
+   "back": "Namaskar (hello), I want to order."
   }
  }
 }

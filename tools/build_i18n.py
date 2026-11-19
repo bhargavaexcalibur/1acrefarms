@@ -153,6 +153,13 @@ UI = {
     "ui.cart_added": (bp.DIRECT_LABELS["cart_added"], "short confirmation shown on the button after it put a pack in the cart"),
     "ui.cart_full": (bp.DIRECT_LABELS["cart_full"], "shown on the button when the cart already holds the most packs one order can "
                      "take (nothing was added)"),
+    # Voice ordering step 1 (19-11-2026): English in build_pages VOICE_LABELS; both OPTIONAL.
+    "ui.voice_order": (bp.VOICE_LABELS["voice_order"], "button on the home page and each product page: it opens WhatsApp so the "
+                       "customer can order by sending us a recorded voice message instead of typing; write 'WhatsApp' in "
+                       "Latin letters exactly; short, plain, no urgency"),
+    "ui.voice_prefill": (bp.VOICE_LABELS["voice_prefill"], "the first WhatsApp message a customer sends us, already typed in for "
+                         "them, in the customer's own voice: the polite everyday greeting of this language (Namaste where "
+                         "that is what people say) and 'I want to order.' Short and plain"),
 }
 PACK_FIELDS = {
     "name": "the product name in this language (the H1 and in lists); keep it short",
@@ -276,7 +283,7 @@ def pack_keys(p):
 OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
             "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
             "ui.legal_name", "ui.add_to_cart", "ui.buy_now", "ui.free_delivery", "ui.cart", "ui.cart_added",
-            "ui.cart_full"}  # newer strings: English is shown until translated
+            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"}  # newer strings: English is shown until translated
 OPTIONAL |= set(bc.strings_en())  # every checkout page string (co.<key>)
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
@@ -526,6 +533,88 @@ def direct_btns(code, t, p):
     return bp.direct_btns(p, lab, attrs, lang=code)
 
 
+def voice_btn(code, t, p=None):
+    """"Order by voice on WhatsApp" (bp.voice_btn) with the translated label, or the English one marked as English."""
+    return bp.voice_btn(p, opt(code, t, "ui.voice_order"), lang=code)
+
+
+def voice_row(code, t):
+    """The language home page's voice button, under the intro (nothing while direct orders are off)."""
+    btn = voice_btn(code, t)
+    return f'\n      <div class="pdp-actions i18n-voice">{btn}\n      </div>' if btn else ""
+
+
+VOICE_JS = """(function () {
+  var WA = %(wa)s, SRC = %(src)s, PACKS = %(packs)s, TEXT = %(text)s;
+  var has = function (o, k) { return Object.prototype.hasOwnProperty.call(o, k); };
+  var q = new URLSearchParams(location.search);
+  var src = q.get("src"); if (SRC.indexOf(src) < 0) src = "other";
+  var pack = q.get("p"); if (PACKS.indexOf(pack) < 0) pack = "";
+  var lang = q.get("l");
+  if (!lang || !has(TEXT, lang)) {
+    lang = "en";
+    var nav = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < nav.length; i++) {
+      var c = String(nav[i]).toLowerCase().split("-")[0];
+      if (has(TEXT, c)) { lang = c; break; }
+    }
+  }
+  var url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(TEXT[lang] + " [" + src + (pack ? " " + pack : "") + "]");
+  document.getElementById("go").href = url;
+  var gone = false;
+  function go() { if (!gone) { gone = true; location.replace(url); } }
+  var ev = { src: src, lang: lang, pack: pack || "none", event_callback: go, event_timeout: 1200 };
+  if (q.get("debug") === "1") ev.debug_mode = true;
+  gtag("event", "voice_order_click", ev);
+  setTimeout(go, 1500);
+})();"""
+
+
+def voice_page(langs):
+    """o.html, served at /o: the one tracked door to our WhatsApp for voice orders (bp.VOICE_LABELS). It goes ONLY to
+    wa.me/<bp.WA>: src, l and p are matched against fixed lists (unknown src -> "other", unknown p -> none, unknown l ->
+    the browser's language or English), and only the typed-in line (ui.voice_prefill, back-checked, else English)
+    depends on them. GA4 gets voice_order_click {src, lang, pack}; ?debug=1 adds debug_mode for DebugView. noindex."""
+    text = {"en": bp.VOICE_LABELS["voice_prefill"]}
+    for code in LANG:
+        text[code] = langs.get(code, {}).get("t", {}).get("ui.voice_prefill") or bp.VOICE_LABELS["voice_prefill"]
+    js = VOICE_JS % {"wa": json.dumps(bp.WA), "src": json.dumps(list(bp.VOICE_SOURCES)),
+                     "packs": json.dumps([p["code"] for p in bp.PACKS]),
+                     "text": json.dumps(text, ensure_ascii=False).replace("</", "<\\/")}
+    ga = "\n  ".join(GA_TAG.splitlines()[:2])
+    page = f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>WhatsApp | 1acrefarms</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  {ga}
+  <style>
+    body {{ margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f7f4ec;
+      color: #1f2419; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }}
+    main {{ text-align: center; padding: 24px; }}
+    .wm {{ font-size: 1.6rem; font-weight: 600; margin: 0 0 22px; }} .wm b {{ color: #d9772f; }}
+    a {{ display: inline-block; padding: 13px 28px; border-radius: 999px; background: #2b3d25; color: #f7f4ec;
+      text-decoration: none; font-weight: 500; }}
+  </style>
+</head>
+<body>
+  <main>
+    <p class="wm"><b>1</b>acrefarms</p>
+    <a id="go" href="https://wa.me/{bp.WA}" rel="nofollow">WhatsApp &rarr;</a>
+  </main>
+  <script>
+{js}
+  </script>
+</body>
+</html>
+"""
+    (ROOT / "o.html").write_text(page, encoding="utf-8")
+    print("wrote o.html (voice orders: /o) with", sum(1 for c in LANG if text[c] != text["en"]), "translated lines")
+
+
 def order_btn(code, t, p):
     """Amazon.in only: the listing while the pack is buyable there, otherwise our Amazon store."""
     key = "ui.amazon" if bp.amazon_link(p) else "ui.store"
@@ -697,7 +786,7 @@ def pack_page(code, t, p, packs, facts):
         <h1>{x(code, t[k + '.name'])}</h1>
         <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
         <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}{status}
-        <div class="pdp-actions" id="order">{order_btn(code, t, p)}{direct_btns(code, t, p)}
+        <div class="pdp-actions" id="order">{order_btn(code, t, p)}{direct_btns(code, t, p)}{voice_btn(code, t, p)}
         </div>
         <ul class="pdp-facts">
           <li><span>{x(code, t['ui.f_from'])}</span>{x(code, t[k + '.origin'])}</li>
@@ -770,7 +859,7 @@ def home_page(code, t, packs, pages=()):
       <h1 class="eyebrow">{x(code, t['ui.l_title'])}</h1>
       <p class="i18n-wordmark"><span class="one">1</span>acrefarms<span class="tm">™</span></p>
       <p class="i18n-motto" lang="en">Let the soil breathe again.</p>
-      <p class="pdp-lede">{x(code, t['ui.l_lede'])}</p>
+      <p class="pdp-lede">{x(code, t['ui.l_lede'])}</p>{voice_row(code, t)}
     </section>
 
     <section class="pdp-others" id="packs">
@@ -928,6 +1017,7 @@ def build(live):
         same = alternates(url, versions.get(url, {}))
         menu = alternates(url, {**homes, **versions.get(url, {})})
         f.write_text(inject(f.read_text(encoding="utf-8"), "en", menu, cta, same), encoding="utf-8")
+    voice_page(langs)
     print(f"wrote {written} language pages in {len(langs)} languages")
     for code, why in pending.items():
         print(f"PENDING {code} ({LANG[code]['english']}): {'; '.join(why)[:160]}")

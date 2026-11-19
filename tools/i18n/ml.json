@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "സന്നം അല്ലെങ്കിൽ തേജ മുളകുപൊടി: ഏത് ഉപയോഗിക്കണം · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp-ൽ വോയ്‌സ് മെസേജ് അയച്ച് ഓർഡർ ചെയ്യൂ",
+   "back": "Order by sending a voice message on WhatsApp."
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "നമസ്കാരം, എനിക്ക് ഓർഡർ ചെയ്യണം.",
+   "back": "Hello (Namaskaram), I want to order."
   }
  }
 }

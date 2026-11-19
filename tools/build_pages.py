@@ -191,6 +191,35 @@ def direct_btns(p, lab=None, attrs=None, lang=None):
             f'\n          <a class="btn btn-wa" href="{checkout_href(lang, buy=code)}" rel="nofollow">{lab["buy_now"]}</a>')
 
 
+# Voice ordering, step 1 (Rahu's design, Bhargava's OK 19-11-2026, routed by Shiva): an EXTRA option beside the checkout,
+# never a replacement for it. The button opens VOICE_PATH (o.html, written by build_i18n.voice_page): it counts the click
+# in GA4 as voice_order_click {src, lang, pack} and opens our WhatsApp (WA, and only WA) with a short line typed in for
+# the customer in the page's language, so they can send a voice note. ?src= is one of VOICE_SOURCES (anything else
+# counts as "other"); the printed QRs (pouch, parcel, shop7, vcard, corp) use the same page. Plain words: no price,
+# offer, urgency or claim. build_i18n shows the label as OPTIONAL key ui.voice_order and the line as ui.voice_prefill.
+VOICE_LABELS = {"voice_order": "Order by voice on WhatsApp", "voice_prefill": "Namaste, I want to order."}
+VOICE_PATH = "/o"
+VOICE_SOURCES = ("web", "pouch", "parcel", "shop7", "vcard", "corp")
+MIC_ICON = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" '
+            'stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/>'
+            '<path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></svg>')
+
+
+def voice_href(lang="en", pack=None, src="web"):
+    """/o?src=web&l=<lang>[&p=<CODE>], already escaped for an attribute."""
+    q = [f"src={src}", f"l={lang or 'en'}"] + ([f"p={pack}"] if pack else [])
+    return VOICE_PATH + "?" + "&amp;".join(q)
+
+
+def voice_btn(p=None, label=None, lang="en", cls="btn btn-voice"):
+    """"Order by voice on WhatsApp": on a pack page (p) only while the pack is sold here; on a home page (p=None) always
+    while CHECKOUT_LIVE. label is HTML (English by default)."""
+    if (p is not None and not direct(p)) or not CHECKOUT_LIVE:
+        return ""
+    return (f'\n          <a class="{cls}" href="{voice_href(lang, p["code"] if p else None)}" target="_blank" '
+            f'rel="nofollow noopener">{MIC_ICON}<span>{label or VOICE_LABELS["voice_order"]}</span></a>')
+
+
 def free_line(p, label=None):
     """Under "Incl. of all taxes", for a pack sold here."""
     return f'\n        <p class="pdp-free">{label or DIRECT_LABELS["free_delivery"]}</p>' if direct(p) else ""
@@ -777,7 +806,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <h1>{p['name']} <span class="pdp-local">({p['local']})</span></h1>
         <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
         <p class="pdp-lede">{p['lede']}</p>{price_block}{status}
-        <div class="pdp-actions" id="order">{order_btn(p)}{direct_btns(p)}
+        <div class="pdp-actions" id="order">{order_btn(p)}{direct_btns(p)}{voice_btn(p)}
         </div>
         <ul class="pdp-facts">
           <li><span>From</span>{p['origin']}</li>
@@ -932,7 +961,7 @@ def main():
         sys.exit("CHECKOUT_LIVE = True needs the granted FSSAI Central licence in FSSAI_ECOM_LIC, or the owner's dated "
                  "PRE_GRANT_OWNER_GO decision (run tools/switch_on.py: it checks every gate)")
     for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values(),
-                  *DIRECT_LABELS.values(), SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
+                  *DIRECT_LABELS.values(), *VOICE_LABELS.values(), SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
                   *SHIP_HEADS.values(), *seller_terms().values()):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in the footer/order lines: {BANNED.search(text_of(chunk)).group(0)!r}")

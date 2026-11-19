@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "सन्नम् अथवा तेजा रक्तमरिचचूर्णम्: किम् उपयोक्तव्यम् · 1acrefarms",
    "back": "Sannam or Teja red chilli powder: which should be used · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp द्वारा ध्वनिसन्देशेन क्रयादेशं ददातु",
+   "back": "Please give a purchase order by voice (sound) message through WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "नमस्ते, अहं क्रयादेशं दातुम् इच्छामि।",
+   "back": "Hello (Namaste), I wish to give a purchase order."
   }
  }
 }

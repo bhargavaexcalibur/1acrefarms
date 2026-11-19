@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "सन्नम कि तेजा खुर्सानीको धुलो: कुन प्रयोग गर्ने · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp मा भ्वाइस म्यासेजबाट अर्डर गर्नुहोस्",
+   "back": "Please order by voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "नमस्ते, मलाई अर्डर गर्नु छ।",
+   "back": "Hello (Namaste), I want to place an order."
   }
  }
 }

@@ -10550,6 +10550,16 @@
    "src": "Mon-Sat 9 am-7 pm",
    "t": "सोम-शनि, भोर 9 सँ साँझ 7",
    "back": "Mon-Sat, 9 in the morning to 7 in the evening"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp पर वॉइस मैसेजसँ ऑर्डर करू",
+   "back": "Order by voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "प्रणाम, हमरा ऑर्डर करबाक अछि।",
+   "back": "Greetings (Pranam), I want to place an order."
   }
  }
 }

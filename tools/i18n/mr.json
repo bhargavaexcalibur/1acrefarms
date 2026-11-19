@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "सन्नम की तेजा मिरची पावडर: कोणती कधी वापरायची · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp वर व्हॉइस मेसेजने ऑर्डर करा",
+   "back": "Order by voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "नमस्कार, मला ऑर्डर करायची आहे.",
+   "back": "Hello (Namaskar), I want to place an order."
   }
  }
 }

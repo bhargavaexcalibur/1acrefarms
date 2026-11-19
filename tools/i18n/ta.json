@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "சன்னம் அல்லது தேஜா மிளகாய் தூள்: எதைப் பயன்படுத்துவது · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp-இல் குரல் செய்தி மூலம் ஆர்டர் செய்யுங்கள்",
+   "back": "Order through a voice message on WhatsApp."
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "வணக்கம், நான் ஆர்டர் செய்ய விரும்புகிறேன்.",
+   "back": "Hello (Vanakkam), I would like to place an order."
   }
  }
 }

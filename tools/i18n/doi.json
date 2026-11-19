@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "सन्नम जां तेजा मिर्च पाउडर: केह्ड़ा बरतना · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp पर वॉइस मैसेज कन्नै आर्डर करो",
+   "back": "Order with a voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "नमस्ते, मिगी आर्डर करना ऐ।",
+   "back": "Hello (Namaste), I want to place an order."
   }
  }
 }

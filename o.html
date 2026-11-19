@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>WhatsApp | 1acrefarms</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-MB6JX532"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date());</script>
+  <style>
+    body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f7f4ec;
+      color: #1f2419; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { text-align: center; padding: 24px; }
+    .wm { font-size: 1.6rem; font-weight: 600; margin: 0 0 22px; } .wm b { color: #d9772f; }
+    a { display: inline-block; padding: 13px 28px; border-radius: 999px; background: #2b3d25; color: #f7f4ec;
+      text-decoration: none; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="wm"><b>1</b>acrefarms</p>
+    <a id="go" href="https://wa.me/917899929779" rel="nofollow">WhatsApp &rarr;</a>
+  </main>
+  <script>
+(function () {
+  var WA = "917899929779", SRC = ["web", "pouch", "parcel", "shop7", "vcard", "corp"], PACKS = ["TURM", "KPAS", "SANN", "TEJA", "CBEL", "TBEL", "CASH"], TEXT = {"en": "Namaste, I want to order.", "as": "নমস্কাৰ, মই অৰ্ডাৰ কৰিব বিচাৰো।", "bn": "নমস্কার, আমি অর্ডার করতে চাই।", "brx": "खुलुमबाय, आं अर्डार खालामनो लुबैयो।", "doi": "नमस्ते, मिगी आर्डर करना ऐ।", "gu": "નમસ્તે, મારે ઑર્ડર કરવો છે.", "hi": "नमस्ते, मुझे ऑर्डर करना है।", "kn": "ನಮಸ್ಕಾರ, ನಾನು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ.", "ks": "آداب، مےٚ چھُ آرڈر کرُن۔", "kok": "नमस्कार, म्हाका ऑर्डर करूंक जाय.", "mai": "प्रणाम, हमरा ऑर्डर करबाक अछि।", "ml": "നമസ്കാരം, എനിക്ക് ഓർഡർ ചെയ്യണം.", "mni": "ꯈꯨꯔꯨꯃꯖꯔꯤ, ꯑꯩꯅꯥ ꯑꯣꯔꯗꯔ ꯇꯧꯕ ꯄꯥꯝꯃꯤ꯫", "mr": "नमस्कार, मला ऑर्डर करायची आहे.", "ne": "नमस्ते, मलाई अर्डर गर्नु छ।", "or": "ନମସ୍କାର, ମୁଁ ଅର୍ଡର କରିବାକୁ ଚାହୁଁଛି।", "pa": "ਨਮਸਤੇ, ਮੈਂ ਆਰਡਰ ਕਰਨਾ ਹੈ।", "sa": "नमस्ते, अहं क्रयादेशं दातुम् इच्छामि।", "sat": "ᱡᱚᱦᱟᱨ, ᱤᱧ ᱚᱨᱰᱟᱨ ᱥᱟᱱᱟᱝ ᱠᱟᱱᱟ᱾", "sd": "نمستي، مون کي آرڊر ڏيڻو آهي.", "ta": "வணக்கம், நான் ஆர்டர் செய்ய விரும்புகிறேன்.", "te": "నమస్కారం, నేను ఆర్డర్ చేయాలనుకుంటున్నాను.", "ur": "آداب، مجھے آرڈر دینا ہے۔"};
+  var has = function (o, k) { return Object.prototype.hasOwnProperty.call(o, k); };
+  var q = new URLSearchParams(location.search);
+  var src = q.get("src"); if (SRC.indexOf(src) < 0) src = "other";
+  var pack = q.get("p"); if (PACKS.indexOf(pack) < 0) pack = "";
+  var lang = q.get("l");
+  if (!lang || !has(TEXT, lang)) {
+    lang = "en";
+    var nav = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+    for (var i = 0; i < nav.length; i++) {
+      var c = String(nav[i]).toLowerCase().split("-")[0];
+      if (has(TEXT, c)) { lang = c; break; }
+    }
+  }
+  var url = "https://wa.me/" + WA + "?text=" + encodeURIComponent(TEXT[lang] + " [" + src + (pack ? " " + pack : "") + "]");
+  document.getElementById("go").href = url;
+  var gone = false;
+  function go() { if (!gone) { gone = true; location.replace(url); } }
+  var ev = { src: src, lang: lang, pack: pack || "none", event_callback: go, event_timeout: 1200 };
+  if (q.get("debug") === "1") ev.debug_mode = true;
+  gtag("event", "voice_order_click", ev);
+  setTimeout(go, 1500);
+})();
+  </script>
+</body>
+</html>

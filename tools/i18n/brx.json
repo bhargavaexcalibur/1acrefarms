@@ -10550,6 +10550,16 @@
    "src": "Registered office",
    "t": "रेजिस्टार खालामनाय अफिस",
    "back": "Registered office"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp आव भइस मेसेजजों अर्डार खालाम",
+   "back": "Place an order with a voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "खुलुमबाय, आं अर्डार खालामनो लुबैयो।",
+   "back": "Greetings (Khulumbai), I want to place an order."
   }
  }
 }

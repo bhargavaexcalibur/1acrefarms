@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "ছান্নাম নে তেজা জলকীয়া গুড়ি: কোনটো ব্যৱহাৰ কৰিব · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp-ত ভইচ মেছেজেৰে অৰ্ডাৰ কৰক",
+   "back": "Order with a voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "নমস্কাৰ, মই অৰ্ডাৰ কৰিব বিচাৰো।",
+   "back": "Namaskar (hello), I want to order."
   }
  }
 }

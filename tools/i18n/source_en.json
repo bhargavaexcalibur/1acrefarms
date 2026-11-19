@@ -99,6 +99,74 @@
   "en": "Bought our packs? Review us on Google",
   "note": "footer link to write a review of 1acrefarms on Google Maps; write 'Google' in Latin letters exactly; plain ask, no stars, no reward"
  },
+ "ui.addr_shop": {
+  "en": "Shop (walk in)",
+  "note": "footer label before our shop's street address (the address itself stays in English): our shop, where customers can come in person; not an online shop, not 'buy'"
+ },
+ "ui.addr_hours": {
+  "en": "Mon-Sat 9 am-7 pm",
+  "note": "the shop's opening days and hours, after its address: Monday to Saturday, 9 in the morning to 7 in the evening (closed on Sunday); keep 9 and 7 as Western digits"
+ },
+ "ui.addr_office": {
+  "en": "Registered office",
+  "note": "footer label before our registered office address (the address itself stays in English): the business's official registered address; not a government registration office"
+ },
+ "ui.not_online": {
+  "en": "Not available to order online yet.",
+  "note": "line above the button on a product page whose pack cannot be bought online yet (not on Amazon.in, and this website takes no orders yet); a plain fact: no urgency, no 'soon'"
+ },
+ "ui.grievance": {
+  "en": "Grievance officer",
+  "note": "footer link to our grievance officer's details: under Indian consumer law, the named person who receives and resolves customer complaints"
+ },
+ "ui.care_officer": {
+  "en": "Customer care and grievance officer",
+  "note": "footer label before the name, phone number and email of the one person who answers customer questions and handles complaints (name, number and email stay in English)"
+ },
+ "ui.proprietor": {
+  "en": "Proprietor",
+  "note": "job title after the owner's name: the owner of a one-person business (sole proprietorship)"
+ },
+ "ui.call_wa": {
+  "en": "call or WhatsApp",
+  "note": "in brackets after a phone number: you can phone this number or message it on WhatsApp; write 'WhatsApp' in Latin letters exactly"
+ },
+ "ui.legal_name": {
+  "en": "⟦#1⟧, sole proprietor, trading as ⟦#2⟧",
+  "note": "footer, the seller's legal identity: ⟦#1⟧ is the owner's name and ⟦#2⟧ our brand name; keep both markers exactly, in the word order that reads best in this language. Meaning: the owner runs the business alone (sole proprietor) and sells under the brand name ⟦#2⟧"
+ },
+ "ui.add_to_cart": {
+  "en": "Add to cart",
+  "note": "button on a product page: put one pack in the shopping cart on this website (the buyer stays on the page)"
+ },
+ "ui.buy_now": {
+  "en": "Buy now",
+  "note": "button on a product page: go straight to this website's checkout with this pack"
+ },
+ "ui.free_delivery": {
+  "en": "Free delivery on orders placed with us",
+  "note": "line under the price on a product page: we charge nothing for delivery when you order from this website"
+ },
+ "ui.cart": {
+  "en": "Cart",
+  "note": "header link to the shopping cart / checkout of this website"
+ },
+ "ui.cart_added": {
+  "en": "Added to your cart",
+  "note": "short confirmation shown on the button after it put a pack in the cart"
+ },
+ "ui.cart_full": {
+  "en": "Your cart already has the most we can send in one order",
+  "note": "shown on the button when the cart already holds the most packs one order can take (nothing was added)"
+ },
+ "ui.voice_order": {
+  "en": "Order by voice on WhatsApp",
+  "note": "button on the home page and each product page: it opens WhatsApp so the customer can order by sending us a recorded voice message instead of typing; write 'WhatsApp' in Latin letters exactly; short, plain, no urgency"
+ },
+ "ui.voice_prefill": {
+  "en": "Namaste, I want to order.",
+  "note": "the first WhatsApp message a customer sends us, already typed in for them, in the customer's own voice: the polite everyday greeting of this language (Namaste where that is what people say) and 'I want to order.' Short and plain"
+ },
  "pack.TURM.name": {
   "en": "Turmeric Powder (Pasupu)",
   "note": "the product name in this language (the H1 and in lists); keep it short; the bracket is the Telugu name, keep or adapt"
@@ -475,8 +543,12 @@
   "en": "⟦#1⟧ · Teja Kaaram",
   "note": "text on /recipes/andhra-kodi-kura/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
- "seg.2803dd9940a3": {
-  "en": "Our Amazon store",
+ "seg.f14decb68b96": {
+  "en": "MRP ₹495 · 540 g",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.5ff7431ccbb1": {
+  "en": "Buy on Amazon",
   "note": "text on /recipes/andhra-kodi-kura/"
  },
  "seg.cc83dde48fe2": {
@@ -495,13 +567,25 @@
   "en": "MRP ₹396 · 540 g",
   "note": "text on /recipes/andhra-kodi-kura/"
  },
- "seg.5ff7431ccbb1": {
-  "en": "Buy on Amazon",
-  "note": "text on /recipes/andhra-kodi-kura/"
- },
  "seg.cf5fbb1e5375": {
   "en": "Also good with ⟦1⟧Sannam Chilli Powder⟦/1⟧.",
   "note": "text on /recipes/andhra-kodi-kura/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.4dff3a175ddd": {
+  "en": "Guide · chilli powder",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.13ab70df1ad4": {
+  "en": "How to check chilli powder at home",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.d281a45dcf82": {
+  "en": "Guide · chilli",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.fe79396e7c1d": {
+  "en": "Sannam or Teja chilli powder",
+  "note": "text on /recipes/andhra-kodi-kura/"
  },
  "seg.6b4f74dc7f36": {
   "en": "Guide · turmeric",
@@ -509,6 +593,10 @@
  },
  "seg.d3855c7cad24": {
   "en": "How to check turmeric powder at home",
+  "note": "text on /recipes/andhra-kodi-kura/"
+ },
+ "seg.3a7ecf1759a7": {
+  "en": "Hill turmeric or turmeric",
   "note": "text on /recipes/andhra-kodi-kura/"
  },
  "seg.88306943fea7": {
@@ -1055,10 +1143,6 @@
   "en": "⟦#1⟧ · Thati Bellam",
   "note": "text on /recipes/bellam-atukulu/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
- "seg.f14decb68b96": {
-  "en": "MRP ₹495 · 540 g",
-  "note": "text on /recipes/bellam-atukulu/"
- },
  "seg.0a94735294ba": {
   "en": "Sweeten it with ⟦1⟧Cane Jaggery⟦/1⟧.",
   "note": "text on /recipes/bellam-atukulu/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
@@ -1319,9 +1403,21 @@
   "en": "⟦#1⟧ · Jeedipappu",
   "note": "text on /recipes/bellam-pongali/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
  },
+ "seg.155aa5ed5fa1": {
+  "en": "MRP ₹891 · 540 g",
+  "note": "text on /recipes/bellam-pongali/"
+ },
  "seg.b1655e025b6c": {
   "en": "Sweeten it with ⟦1⟧Palm Jaggery⟦/1⟧.",
   "note": "text on /recipes/bellam-pongali/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.bd93e5099667": {
+  "en": "Guide · cashew",
+  "note": "text on /recipes/bellam-pongali/"
+ },
+ "seg.775626e05173": {
+  "en": "Cashew grades explained",
+  "note": "text on /recipes/bellam-pongali/"
  },
  "seg.a6184e3e789c": {
   "en": "Roast the moong dal till light golden, then cook it with the rice till very soft and mushy. Start by dry-roasting the dal in a pressure cooker or heavy-bottomed pot on low heat, stirring, until it smells nutty and turns light golden, about 3–4 minutes.",
@@ -6235,13 +6331,337 @@
   "en": "Cane jaggery or palm jaggery: which to use · 1acrefarms",
   "note": "share preview text on /learn/cane-vs-palm-jaggery/"
  },
- "seg.13ab70df1ad4": {
-  "en": "How to check chilli powder at home",
-  "note": "text on /learn/chilli-powder-adulteration-test/"
+ "seg.7b06243b4b36": {
+  "en": "Cashew grades explained: W180, W240, W320 and more",
+  "note": "text on /learn/cashew-grades-explained/"
  },
- "seg.4dff3a175ddd": {
-  "en": "Guide · chilli powder",
-  "note": "text on /learn/chilli-powder-adulteration-test/"
+ "seg.10fa875ffb15": {
+  "en": "⟦#1⟧ · ⟦#2⟧ · Jeedipappu · Kaju",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.e690d34b37c7": {
+  "en": "W180, W240, W320: these are cashew kernel grades, and each letter and number means something exact. In India the grades are set out in AGMARK's Cashew Kernels Grading and Marking Rules, and the Cashew Export Promotion Council of India (CEPCI) describes the grades India exports.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.c6b446b7a250": {
+  "en": "This guide explains each grade name, gives the kernels per pound and per kg for the whole grades, and says what a grade tells you and what it does not. It also covers which kind suits which dish, where Andhra's cashews grow and how to keep them. There is a Telugu section further down.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.c1ca260b3117": {
+  "en": "Cashew Kernels⟦#1⟧⟦#2⟧",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.448909881b37": {
+  "en": "⟦1⟧Our cashew kernels⟦/1⟧Whole, plain, unsalted cashew kernels from the Chirala, Bapatla and Vizag coast, packed in Narasaraopet.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.7f9a4ad2ac37": {
+  "en": "In a grade such as W320, W means white whole kernels and the number is how many kernels make a pound (454 g): W320 is 300 to 320 kernels a pound, or 660 to 705 a kg. A smaller number means bigger kernels, and W180 is the biggest grade listed. SW means scorched wholes, browner from longer roasting. S, B, LWP, SWP and BB are splits, butts and pieces. A grade describes size, colour and wholeness, not taste.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.43de32a51933": {
+  "en": "What the grade names mean",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.78faffc3f74e": {
+  "en": "W: white wholes (W180, W210, W240, W320, W450 and more)",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.9ff1e572e8c8": {
+  "en": "Whole kernels that are white, pale ivory or light ash in colour. The number is how many kernels make a pound (454 g), so a smaller number means bigger kernels.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.90d077505d77": {
+  "en": "SW: scorched wholes",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.4bc3adfa3fc7": {
+  "en": "Whole kernels that are light brown, light ivory, light ash or deep ivory in colour from scorching, which AGMARK puts down to overheating and CEPCI to longer roasting. CEPCI notes they have all the other characteristics of white kernels.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.6eab996478d3": {
+  "en": "SWS and DW: scorched wholes seconds and dessert wholes",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.5780c6428d2a": {
+  "en": "Whole kernels with more marks allowed, such as speckled, discoloured or shrivelled kernels.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.375ecf155c15": {
+  "en": "B: butts",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.902ec0b3896b": {
+  "en": "Kernels broken across (crosswise), but not split apart along their length.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.e2b0618c9f46": {
+  "en": "S: splits",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.d4f870cd6a0a": {
+  "en": "Kernels split along their length.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.76b3bfda28d2": {
+  "en": "LWP, SWP and BB: large white pieces, small white pieces and baby bits",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.8dfe1b91dc8d": {
+  "en": "Broken kernels, sorted by sieve. LWP are kernels broken into more than two pieces. In the ISO standard, LWP stay on a 4.75 mm sieve, SWP on a 2.80 mm sieve and BB on a 1.70 mm sieve.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.f360d4576667": {
+  "en": "SB, SS, SP and SSP",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.b928dd595b74": {
+  "en": "Scorched butts, scorched splits, scorched pieces and scorched small pieces: the same cuts in the browner scorched colours.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.a863333da28f": {
+  "en": "Kernels per pound and per kg",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.aecc49c15355": {
+  "en": "Grade",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.e857c14c4482": {
+  "en": "Kernels per pound (454 g)",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.c5625c50fdf2": {
+  "en": "Kernels per kg",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.0eddff5de93a": {
+  "en": "120 to 180",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.32208a4cbb16": {
+  "en": "265 to 395",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.2c6129383a78": {
+  "en": "200 to 210",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.85a51e80f732": {
+  "en": "440 to 465",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.3ff7e725bcec": {
+  "en": "220 to 240",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.8bba2d6c5659": {
+  "en": "485 to 530",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.a5ce92096d7d": {
+  "en": "260 to 280",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.7b16f9e1a717": {
+  "en": "575 to 620",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.495b35d2fd20": {
+  "en": "300 to 320",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.a072c4bc4441": {
+  "en": "660 to 705",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.bda6639ebea6": {
+  "en": "350 to 400",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.d8d91e2355d0": {
+  "en": "770 to 880",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.7a9034e3b7f4": {
+  "en": "400 to 450",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.1e81373e3b20": {
+  "en": "880 to 990",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.2668e033cc63": {
+  "en": "450 to 500",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.50cf501d0189": {
+  "en": "990 to 1,100",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.98601d72fd74": {
+  "en": "The W210 to W500 rows are from AGMARK's rules, whose table starts at W210. The W180 row is from ISO 6477, the international standard for cashew kernels, and CEPCI lists W180 among the grades India exports.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.31416c82d50a": {
+  "en": "⟦1⟧Count it yourself.⟦/1⟧ ISO 6477's test for the white whole grades counts the kernels in 1 kg or 1 lb. For a rough check at home, count the whole kernels in 100 g on a kitchen scale, multiply by 10 and compare with the per kg column.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.38578496da57": {
+  "en": "AGMARK's whole grades allow up to 5% broken kernels at the time of packing.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.a67f43711f4f": {
+  "en": "What a grade tells you, and what it does not",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.4e310614a4b5": {
+  "en": "⟦1⟧Size.⟦/1⟧ The number is a count, so W180 kernels are bigger than W320 kernels.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.3e51ad8b884e": {
+  "en": "⟦1⟧Colour.⟦/1⟧ White wholes are white, pale ivory or light ash. Scorched grades are browner from scorching.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.ab50dc9032b9": {
+  "en": "⟦1⟧Whole or broken.⟦/1⟧ Wholes, butts, splits and pieces are separate grades.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.3f8c367cba28": {
+  "en": "⟦1⟧Limits on defects.⟦/1⟧ AGMARK's white whole grades must be reasonably dry, free from insect damage, damaged kernels and black or brown spots, and completely free from testa, the kernel's skin. ISO 6477 caps moisture at 5%.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.330a63d5bfcb": {
+  "en": "⟦1⟧What a grade does not tell you.⟦/1⟧ AGMARK's grade definitions are about count, colour, shape and defects, and none of them ranks flavour. So a W180 is a bigger kernel than a W320, not one graded as tastier. Scorched is a colour grade too: CEPCI notes scorched wholes have all the other characteristics of white kernels.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.ef0d669b3123": {
+  "en": "Which grade for which dish",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.2da39bee2198": {
+  "en": "⟦1⟧To eat as they are, or toasted in a dry pan:⟦/1⟧ whole kernels, in whatever size you like.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.4c97810ec555": {
+  "en": "⟦1⟧⟦2⟧Jeedipappu pakodi⟦/2⟧:⟦/1⟧ whole kernels, which stay crunchy inside the coating. Split any very large ones in half.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.683759702c73": {
+  "en": "⟦1⟧⟦2⟧Jeedipappu upma⟦/2⟧:⟦/1⟧ wholes or halves, fried golden in ghee and stirred in at the end.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.140df3da8491": {
+  "en": "⟦1⟧⟦2⟧Paramannam⟦/2⟧:⟦/1⟧ our recipe halves the cashews before frying them in ghee, so splits do the same job.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.0507a0ef99f7": {
+  "en": "⟦1⟧Cooking, sweets and savoury snacks:⟦/1⟧ butts, splits and pieces. CEPCI calls them ideal for these.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.85825102ed6c": {
+  "en": "⟦1⟧The everyday grade:⟦/1⟧ CEPCI calls W320 the most popular grade and the most widely available worldwide.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.30e2c7470dfb": {
+  "en": "Our ⟦1⟧cashew kernels⟦/1⟧ are whole, plain and unsalted.",
+  "note": "text on /learn/cashew-grades-explained/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.d9587ec3391e": {
+  "en": "Andhra's cashew belt",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.f16dee41b616": {
+  "en": "Andhra Pradesh is one of India's main cashew states. In 2017-18 it produced 14% of India's cashew nuts, second only to Maharashtra at 33%, going by CEPCI figures cited in a 2021 study.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.f1989a0f6305": {
+  "en": "In Srikakulam district alone, cashew grows on about 24,000 hectares, across the plains, the tribal high-altitude areas and the sea coast. Cashew kernels are the district's One District One Product for 2024.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.3fa84158dbfd": {
+  "en": "Our cashew kernels come from the Chirala, Bapatla and Vizag coast and are packed in Narasaraopet.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.fe2b7f5c75e9": {
+  "en": "Keeping cashews well",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.c1475e1b0a12": {
+  "en": "Keep the zip shut after use, or move the kernels to a dry, airtight jar.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.ec878982b0c0": {
+  "en": "Keep them in a cool, dry place, out of direct sunlight.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.9ce38edb950b": {
+  "en": "A rancid taste is taken as the first sign that nuts are going off, since most nuts hold a lot of oil. Taste one before you cook with a batch that has been open a while.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.aa353eb6552b": {
+  "en": "Use them within the best-before date on the pack.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.8d88ab03538b": {
+  "en": "What does W320 mean in cashew?",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.62746a01005d": {
+  "en": "W320 means white whole cashew kernels at 300 to 320 kernels per pound, or 660 to 705 per kg, under AGMARK's rules. CEPCI calls it the most popular grade and the most widely available worldwide.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.f01de46df4ac": {
+  "en": "What is the difference between W240 and W320 cashews?",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.2ccd1dd49c14": {
+  "en": "Size. W240 has 220 to 240 kernels per pound (485 to 530 per kg) and W320 has 300 to 320 (660 to 705 per kg), so W240 kernels are bigger. Both are white whole grades under AGMARK's rules.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.153603960f5b": {
+  "en": "Which cashew grade is best?",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.b1c846d9d907": {
+  "en": "No grade is best for everything. W180 and W210 are the biggest whole kernels, W320 is the most widely available, and CEPCI calls butts, splits and pieces ideal for cooking and sweets. A grade describes size, colour and wholeness, not taste.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.bc403e07fdb2": {
+  "en": "How many cashews are there in 1 kg?",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.9e65130f8cdd": {
+  "en": "It depends on the grade. Under AGMARK's rules, 1 kg of W240 holds 485 to 530 kernels, W320 holds 660 to 705 and W450 holds 880 to 990.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.40d1a6c0c8e5": {
+  "en": "What does SW mean on cashews?",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.d4802056a67a": {
+  "en": "SW means scorched wholes: whole kernels with a slight brown colour from longer roasting. CEPCI notes they have all the other characteristics of white kernels.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.7ac537e6827e": {
+  "en": "Our cashews",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.d30c33822c6d": {
+  "en": "Our pack holds whole, plain, unsalted cashew kernels, packed in Narasaraopet.",
+  "note": "text on /learn/cashew-grades-explained/"
+ },
+ "seg.9d7d9aeff7e7": {
+  "en": "జీడిపప్పు గ్రేడ్లు · Cashew Grades W180, W240, W320 | 1acrefarms",
+  "note": "browser tab / Google title; keep ' | 1acrefarms' at the end on /learn/cashew-grades-explained/"
+ },
+ "seg.77c97eebed00": {
+  "en": "జీడిపప్పు గ్రేడ్‌లు అంటే ఏమిటి? What cashew grades W180, W240, W320 and W450 mean, kernels per pound and per kg, SW, splits and pieces, and which grade to use.",
+  "note": "Google description on /learn/cashew-grades-explained/"
+ },
+ "seg.aa6460d44b70": {
+  "en": "Cashew grades explained: W180, W240, W320 and more · 1acrefarms",
+  "note": "share preview text on /learn/cashew-grades-explained/"
  },
  "seg.27f1af0437bd": {
   "en": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Kaaram · Lal mirch",
@@ -6570,10 +6990,6 @@
  "seg.cf3eac803a81": {
   "en": "How to check chilli powder at home · 1acrefarms",
   "note": "share preview text on /learn/chilli-powder-adulteration-test/"
- },
- "seg.3a7ecf1759a7": {
-  "en": "Hill turmeric or turmeric",
-  "note": "text on /learn/hill-turmeric-vs-turmeric/"
  },
  "seg.0e55b39feef1": {
   "en": "Hill turmeric (konda pasupu) or turmeric: the difference",
@@ -6915,6 +7331,18 @@
   "en": "The water glass, the rub test, the iodine test, and when you need a lab. With a Telugu section.",
   "note": "text on /learn/"
  },
+ "seg.27976b26ce53": {
+  "en": "Sannam or Teja chilli powder: which to use",
+  "note": "text on /learn/"
+ },
+ "seg.4144ea4b43b4": {
+  "en": "What S4 and S17 mean, how heat and colour are measured, and which to use where. With a Telugu section.",
+  "note": "text on /learn/"
+ },
+ "seg.fd3f8f40b3f8": {
+  "en": "What W180, W240 and W320 mean, kernels per kg, and which grade suits which dish. With a Telugu section.",
+  "note": "text on /learn/"
+ },
  "seg.336c642e2ba5": {
   "en": "Buyer Guides for Turmeric & Jaggery | 1acrefarms",
   "note": "browser tab / Google title; keep ' | 1acrefarms' at the end on /learn/"
@@ -6926,6 +7354,290 @@
  "seg.a593b0b6671e": {
   "en": "Guides · 1acrefarms",
   "note": "share preview text on /learn/"
+ },
+ "seg.c114bf13aa8e": {
+  "en": "⟦#1⟧ · ⟦#2⟧ · ⟦#3⟧ · ⟦#4⟧ · Sannam Kaaram · Teja Kaaram",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.f8eee14b7e5d": {
+  "en": "Sannam and Teja are two chilli types grown around Guntur and sold at the Guntur Mirchi Yard, Asia's largest dried red chilli market. Sannam is Telugu for thin, and the chilli is traded as the S4 type. Teja, also known as S17, is a hybrid.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.8e04c18fe0c1": {
+  "en": "Both go into curries, chutneys, podis and pickles. Of our two packs, Teja is the one marked extra hot. Here is what each one is, how heat and colour are measured, which to use where, and how to keep the powder. There is a full Telugu section further down.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.a0921c00bb2b": {
+  "en": "⟦1⟧Our two chilli powders⟦/1⟧Left: Sannam chilli powder, from whole sun-dried Sannam chillies, packed as fine powder. Right: Teja chilli powder, extra hot, sun-dried and stone-ground. Both grown in Palnadu and Guntur and packed in Narasaraopet.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.a357c6165a65": {
+  "en": "Sannam is Telugu for thin, and the chilli is traded as the S4 type; Teja (S17) is a hybrid. Both are grown around Guntur and sold at its Mirchi Yard. Use Sannam chilli powder for everyday curries, pulusu, pappu and tomato pachadi. Use Teja when you want a dish extra hot, as in kodi vepudu or gongura pachadi; our Teja pack is marked extra hot, so start with less. Keep both airtight, dry and out of the light.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.ab2db5bdceb7": {
+  "en": "Sannam chilli⟦#1⟧",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.f358a7731c35": {
+  "en": "Teja chilli⟦#1⟧",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.f8c94a3b4b1e": {
+  "en": "What it is",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.e766be3d32e3": {
+  "en": "A chilli type; sannam is Telugu for thin",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.c5b9f867217f": {
+  "en": "A hybrid chilli",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.5d87cc7066df": {
+  "en": "Trade name",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.19c209ba8a51": {
+  "en": "S4. A variety called 334 is also listed as Sannam S4",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.b2b8b4f95700": {
+  "en": "S17, also written S-17",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.5dece3cb9ef9": {
+  "en": "Grown in",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.d822cbebd199": {
+  "en": "Guntur, Warangal and Khammam districts, says Spices Board",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.5ca57fb5cc42": {
+  "en": "Guntur district, among its hybrids",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.64c6caa5bd34": {
+  "en": "Heat",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.e11de4cddc22": {
+  "en": "Hot, says Spices Board; capsaicin 0.226%",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.e0a7d43cff0d": {
+  "en": "Second hottest extract of 19 varieties in a 2020 lab study",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.694de80babc9": {
+  "en": "Red; ASTA colour value 32.11, says Spices Board",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.c4962d4c7bbe": {
+  "en": "No figure in the Spices Board list",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.eb5520570c7c": {
+  "en": "Traded at",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.1709dd5ba5d6": {
+  "en": "The Guntur Mirchi Yard",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.d63c4cef10c1": {
+  "en": "Our pack",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.6f340f159671": {
+  "en": "Whole sun-dried chillies, packed as fine powder",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.722cbbec4de5": {
+  "en": "Extra hot, sun-dried, stone-ground",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.6fbc685f86f3": {
+  "en": "Try it in",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.cb00e50674ed": {
+  "en": "Tomato pappu, tomato pachadi, gutti vankaya kura, pulusu",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.9e9cebb475c3": {
+  "en": "Kodi vepudu, gongura pachadi, vellulli kaaram",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.04512ef2a927": {
+  "en": "What Sannam and Teja are",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.de8faf38f32d": {
+  "en": "Sannam (S4)",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.cb8647e572cd": {
+  "en": "Sannam is Telugu for thin, and Sannam chilli is traded as the S4 type. In a 2020 study of chillies from the Guntur Mirchi Yard, a variety called 334 is listed as Sannam S4. Spices Board's list of Indian chilli varieties has a Sannam S4 entry for chillies grown in Guntur, Warangal and Khammam districts, harvested from December to May.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.88ef34144dd3": {
+  "en": "Teja (S17)",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.17b278c38e33": {
+  "en": "A hybrid chilli, also known as S17. In Guntur district, hybrids such as Teja cover 60% of the chilli area, and open-pollinated varieties the other 40%, says the district's One District One Product page.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.e2f1fe066494": {
+  "en": "Where they are traded",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.29eee30f5264": {
+  "en": "The Guntur Mirchi Yard, about 5 km from the centre of Guntur, is known as Asia's biggest chilli market yard, and it influences chilli prices in India and abroad.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.4d075fb72bc3": {
+  "en": "Heat and colour: how they are measured",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.61fc1d411ee0": {
+  "en": "⟦1⟧Heat⟦/1⟧ comes mainly from capsaicin and related compounds called capsaicinoids, and is measured in Scoville heat units (SHU).",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.c73a37a4be4e": {
+  "en": "⟦1⟧Colour⟦/1⟧ is measured in ASTA units, by a method of the American Spice Trade Association that measures the colour that can be extracted from the chilli. The higher the value, the brighter or richer the red. The red comes from pigments called carotenoids, such as capsanthin and capsorubin.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.533a13571b10": {
+  "en": "⟦1⟧Sannam.⟦/1⟧ Spices Board's entry for the Sannam S4 type grown in Guntur, Warangal and Khammam describes it as thick-skinned, hot and red, with an ASTA colour value of 32.11 and capsaicin of 0.226%.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.140e3ffe36f9": {
+  "en": "⟦1⟧Teja.⟦/1⟧ Teja is not in that list. In a 2020 lab study of 19 chilli varieties collected at the Guntur Mirchi Yard, Teja (S-17) gave the second hottest concentrated extract of the 19, and a hotter one than 334 (Sannam S4).",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.8de521c9d37a": {
+  "en": "We give no Scoville number for either chilli: that study measured extracts made from the chillies, not chilli powder, and Spices Board gives capsaicin as a percentage. Colour also changes with how the powder is packed and stored.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.ae84d3779303": {
+  "en": "This is how our recipes use them:",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.abc5c6e19770": {
+  "en": "Vegetable curries and pulusu: Sannam. Try ⟦1⟧gutti vankaya kura⟦/1⟧, ⟦2⟧kodi guddu pulusu⟦/2⟧ or ⟦3⟧chepala pulusu⟦/3⟧.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.9a9d17871273": {
+  "en": "Pappu and tomato pachadi: Sannam, as in ⟦1⟧tomato pappu⟦/1⟧ and ⟦2⟧tomato pachadi⟦/2⟧.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.103a3a936c3b": {
+  "en": "Fry dishes: Teja, as in ⟦1⟧kodi vepudu⟦/1⟧.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.aa10a32e507d": {
+  "en": "Chicken, mutton and prawn curries: Teja, as in ⟦1⟧Andhra kodi kura⟦/1⟧, ⟦2⟧gongura mamsam⟦/2⟧ and ⟦3⟧royyala iguru⟦/3⟧.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.fa6a2d59cae8": {
+  "en": "Gongura pachadi and podis: Teja, as in ⟦1⟧gongura pachadi⟦/1⟧ and ⟦2⟧vellulli kaaram⟦/2⟧.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.b13098b97e2a": {
+  "en": "Snacks: Sannam, as in ⟦1⟧jeedipappu pakodi⟦/1⟧.",
+  "note": "text on /learn/sannam-vs-teja-chilli/; keep every ⟦n⟧ ⟦/n⟧ ⟦#n⟧ marker, around the matching words"
+ },
+ "seg.525b276ec4e6": {
+  "en": "Pickles: either. Both packs list pickles among their uses.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.1393d3fbe202": {
+  "en": "Swapping and mixing",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.35baeca65df9": {
+  "en": "To use Teja where a recipe asks for Sannam, start with less, taste, and add more. Our Teja pack is marked extra hot. Going the other way, add Sannam a little at a time until the heat suits you.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.0706a863aae6": {
+  "en": "To turn up the heat in a dish made with Sannam, mix in a little Teja.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.fe7babe5755a": {
+  "en": "Add either powder to hot oil on a low flame, so it does not burn.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.e8f0fd014bfc": {
+  "en": "Keep the pack zipped shut, or move the powder to a dry, airtight jar. Air slowly breaks down the red pigments, so the colour fades.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.c44f66956473": {
+  "en": "Keep it out of the light, which speeds up that loss.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.85ffea685d06": {
+  "en": "Keep it away from the stove. Warmth speeds it up too.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.f8bf00fb1a72": {
+  "en": "Use a dry spoon. Damp powder can grow mould.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.b22d5e784674": {
+  "en": "Which is hotter, Sannam or Teja chilli powder?",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.97c13339fef2": {
+  "en": "Of our two packs, Teja is the one marked extra hot. In a 2020 lab study of 19 chilli varieties from the Guntur Mirchi Yard, the extract from Teja (S-17) tested hotter than the one from 334 (Sannam S4). Start with a little and taste as you add.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.3b9df79bc5fe": {
+  "en": "What are S4 and S17 chillies?",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.1c153960fcbb": {
+  "en": "S4 is the type Sannam chilli is traded as, and a variety called 334 is also listed as Sannam S4. S17 is another name for Teja, a hybrid chilli grown in Guntur district.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.726ba8f768a3": {
+  "en": "What does Sannam mean?",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.dc7e66b15b59": {
+  "en": "Sannam is Telugu for thin. Spices Board lists a Sannam S4 type grown in Guntur, Warangal and Khammam districts.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.ee47ce8974ea": {
+  "en": "Can I use Teja chilli powder instead of Sannam?",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.95fe0ae93dc3": {
+  "en": "Yes. Start with less Teja than the recipe asks for, taste, and add more. Going the other way, add Sannam a little at a time.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.1484e61d473a": {
+  "en": "Why does chilli powder lose its colour?",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.eed11c87d549": {
+  "en": "Air slowly breaks down its red pigments, and light and warmth speed this up. Keep the pack zipped shut, out of the light and away from the stove.",
+  "note": "text on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.1ca1108ab6c4": {
+  "en": "సన్నం కారం vs తేజ కారం · Sannam vs Teja Chilli | 1acrefarms",
+  "note": "browser tab / Google title; keep ' | 1acrefarms' at the end on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.beaa945936e8": {
+  "en": "సన్నం కారం, తేజ కారం మధ్య తేడా. Sannam (S4) vs Teja (S17) chilli powder: what each is, heat and colour, the Guntur chilli yard, which to use, and storage.",
+  "note": "Google description on /learn/sannam-vs-teja-chilli/"
+ },
+ "seg.15d3cc0a28f8": {
+  "en": "Sannam or Teja chilli powder: which to use · 1acrefarms",
+  "note": "share preview text on /learn/sannam-vs-teja-chilli/"
  },
  "seg.4bddab09b9f2": {
   "en": "⟦#1⟧ · ⟦#2⟧ · Pasupu · Haldi",
@@ -7138,5 +7850,421 @@
  "seg.d0950d598f8d": {
   "en": "How to check turmeric powder at home · 1acrefarms",
   "note": "share preview text on /learn/turmeric-adulteration-test/"
+ },
+ "co.pageTitle": {
+  "en": "Checkout · 1acrefarms",
+  "note": "checkout page: browser tab title of the checkout page; keep '1acrefarms' as written"
+ },
+ "co.back": {
+  "en": "← Back to the shop",
+  "note": "checkout page: link at the top of the checkout page, back to our website"
+ },
+ "co.title": {
+  "en": "Checkout",
+  "note": "checkout page: main heading of the page where the buyer reviews the order, types the address and pays"
+ },
+ "co.bannerTest": {
+  "en": "TEST MODE: no real money is taken. This page is hidden and only for testing.",
+  "note": "checkout page: notice shown only while payments are in test mode"
+ },
+ "co.bannerLive": {
+  "en": "Live payments are on.",
+  "note": "checkout page: notice on our internal test copy of the page: real payments are being taken"
+ },
+ "co.bannerOff": {
+  "en": "Online payment is switched off right now.",
+  "note": "checkout page: notice when the payment system is turned off"
+ },
+ "co.bannerUnreachable": {
+  "en": "The payment server cannot be reached right now.",
+  "note": "checkout page: notice when our payment server does not answer"
+ },
+ "co.packsTitle": {
+  "en": "Your packs",
+  "note": "checkout page: heading of step 1: the packs in the cart"
+ },
+ "co.packMeta": {
+  "en": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
+  "note": "checkout page: one line under each pack name: weight, price incl. all taxes, price per gram, then a link; keep MRP and every {placeholder}"
+ },
+ "co.packDetails": {
+  "en": "Pack details",
+  "note": "checkout page: link to the product page with the full details printed on the pack"
+ },
+ "co.less": {
+  "en": "One less: {name}",
+  "note": "checkout page: label read out for the minus button that lowers the quantity of a pack; {name} = the pack"
+ },
+ "co.more": {
+  "en": "One more: {name}",
+  "note": "checkout page: label read out for the plus button that raises the quantity of a pack; {name} = the pack"
+ },
+ "co.linkIgnored": {
+  "en": "Not added from the link (not available to order here now): {items}.",
+  "note": "checkout page: note when a shared shopping link named packs we cannot sell here; {items} = product codes"
+ },
+ "co.linkClampedLine": {
+  "en": "Up to {max} of the same pack per order: a quantity from the link was lowered.",
+  "note": "checkout page: note when a shared shopping link asked for more of one pack than one order can take"
+ },
+ "co.linkClampedTotal": {
+  "en": "Up to {max} packs per order: some packs from the link were not added.",
+  "note": "checkout page: note when a shared shopping link asked for more packs than one order can take"
+ },
+ "co.addressTitle": {
+  "en": "Delivery address",
+  "note": "checkout page: heading of step 2: where to deliver"
+ },
+ "co.fName": {
+  "en": "Full name",
+  "note": "checkout page: form label"
+ },
+ "co.fPhone": {
+  "en": "Mobile number",
+  "note": "checkout page: form label"
+ },
+ "co.fEmail": {
+  "en": "Email (for your order confirmation)",
+  "note": "checkout page: form label; we e-mail the order confirmation here"
+ },
+ "co.fAddress": {
+  "en": "Address (house no., street, area, landmark)",
+  "note": "checkout page: form label for the street address"
+ },
+ "co.fCity": {
+  "en": "City / town",
+  "note": "checkout page: form label"
+ },
+ "co.fState": {
+  "en": "State",
+  "note": "checkout page: form label (Indian state or union territory)"
+ },
+ "co.fStatePick": {
+  "en": "Choose your state",
+  "note": "checkout page: first, empty choice of the state list"
+ },
+ "co.fPin": {
+  "en": "PIN code",
+  "note": "checkout page: form label: the 6-digit Indian postal code"
+ },
+ "co.privacyLink": {
+  "en": "privacy policy",
+  "note": "checkout page: link text inside the privacy note under the address form"
+ },
+ "co.err.name.required": {
+  "en": "Please enter your name.",
+  "note": "checkout page: form error"
+ },
+ "co.err.name.invalid": {
+  "en": "Please enter your name in letters (up to 60).",
+  "note": "checkout page: form error"
+ },
+ "co.err.phone.required": {
+  "en": "Please enter your 10-digit mobile number.",
+  "note": "checkout page: form error"
+ },
+ "co.err.phone.invalid": {
+  "en": "Please enter a valid 10-digit Indian mobile number.",
+  "note": "checkout page: form error"
+ },
+ "co.err.email.required": {
+  "en": "Please enter your email address.",
+  "note": "checkout page: form error"
+ },
+ "co.err.email.invalid": {
+  "en": "Please check your email address.",
+  "note": "checkout page: form error"
+ },
+ "co.err.address.required": {
+  "en": "Please enter your address.",
+  "note": "checkout page: form error"
+ },
+ "co.err.address.too_short": {
+  "en": "Please add your house number, street and area.",
+  "note": "checkout page: form error"
+ },
+ "co.err.address.invalid": {
+  "en": "Please keep the address under 200 characters, without < or >.",
+  "note": "checkout page: form error; keep the characters < and > as they are"
+ },
+ "co.err.city.required": {
+  "en": "Please enter your city or town.",
+  "note": "checkout page: form error"
+ },
+ "co.err.city.invalid": {
+  "en": "Please enter the city name in letters (up to 30).",
+  "note": "checkout page: form error"
+ },
+ "co.err.state.required": {
+  "en": "Please choose your state.",
+  "note": "checkout page: form error"
+ },
+ "co.err.state.invalid": {
+  "en": "Please choose your state from the list.",
+  "note": "checkout page: form error"
+ },
+ "co.err.pin.required": {
+  "en": "Please enter your 6-digit PIN code.",
+  "note": "checkout page: form error"
+ },
+ "co.err.pin.invalid": {
+  "en": "Please enter a valid 6-digit PIN code.",
+  "note": "checkout page: form error"
+ },
+ "co.err.pin.state_mismatch": {
+  "en": "This PIN code is not in the state you chose. Please check both.",
+  "note": "checkout page: form error"
+ },
+ "co.err.items.empty_cart": {
+  "en": "Please add at least one pack.",
+  "note": "checkout page: error when the cart is empty"
+ },
+ "co.err.items.qty_over_limit": {
+  "en": "Up to {max} of the same pack per order.",
+  "note": "checkout page: error: too many of one pack"
+ },
+ "co.err.items.too_many_packs": {
+  "en": "Up to {max} packs per order. For more, please place a second order.",
+  "note": "checkout page: error: too many packs in one order"
+ },
+ "co.err.items.not_sellable": {
+  "en": "A pack in your cart is not available now. Please remove it.",
+  "note": "checkout page: error"
+ },
+ "co.err.items.unknown_item": {
+  "en": "A pack in your cart is not available now. Please remove it.",
+  "note": "checkout page: error"
+ },
+ "co.err.items.bad_qty": {
+  "en": "Please check the quantities.",
+  "note": "checkout page: error"
+ },
+ "co.summaryTitle": {
+  "en": "Order summary",
+  "note": "checkout page: heading of step 3: totals and pay"
+ },
+ "co.sumPacks": {
+  "en": "Packs ({n})",
+  "note": "checkout page: summary row: number of packs, then their price"
+ },
+ "co.sumGstIntra": {
+  "en": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+  "note": "checkout page: tax line for delivery inside Andhra Pradesh; the tax is already inside the price, nothing is added; keep GST, CGST, SGST, MRP"
+ },
+ "co.sumGstInter": {
+  "en": "GST included in the MRP: {tax} (IGST {rate}%)",
+  "note": "checkout page: tax line for delivery outside Andhra Pradesh; already inside the price; keep GST, IGST, MRP"
+ },
+ "co.sumGstNoState": {
+  "en": "GST included in the MRP ({rate}%)",
+  "note": "checkout page: tax line before a state is chosen; keep GST, MRP"
+ },
+ "co.sumDelivery": {
+  "en": "Delivery",
+  "note": "checkout page: summary row label: the delivery charge"
+ },
+ "co.sumDeliveryFree": {
+  "en": "{amount} (free across India)",
+  "note": "checkout page: the delivery charge, always ₹0: delivery is free anywhere in India"
+ },
+ "co.sumTotal": {
+  "en": "Total to pay",
+  "note": "checkout page: summary row label"
+ },
+ "co.sumEmpty": {
+  "en": "Your cart is empty. Add a pack above.",
+  "note": "checkout page: shown when the cart is empty"
+ },
+ "co.sumMrpOnly": {
+  "en": "You pay the MRP only. Nothing is added at checkout.",
+  "note": "checkout page: plain fact under the total: the price printed on the pack is all the buyer pays"
+ },
+ "co.prepaidNote": {
+  "en": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",
+  "note": "checkout page: payment methods; keep UPI and PIN in Latin letters; {gateways} is filled with gateway names such as Razorpay / Cashfree"
+ },
+ "co.deliveryTitle": {
+  "en": "Delivery",
+  "note": "checkout page: small heading before the delivery terms"
+ },
+ "co.returnsTitle": {
+  "en": "Cancellation, returns and refunds",
+  "note": "checkout page: small heading before the cancellation and refund terms"
+ },
+ "co.sellerTitle": {
+  "en": "Sold by",
+  "note": "checkout page: small heading before the seller's legal name and addresses"
+ },
+ "co.footTitle": {
+  "en": "Seller details",
+  "note": "checkout page: heading of the page footer with the seller's details"
+ },
+ "co.gstin": {
+  "en": "GSTIN {gstin}",
+  "note": "checkout page: the seller's GST number; keep GSTIN"
+ },
+ "co.fssaiReg": {
+  "en": "FSSAI Reg. No. {no}",
+  "note": "checkout page: food safety registration number; keep FSSAI"
+ },
+ "co.fssaiLic": {
+  "en": "FSSAI Lic. No. {no}",
+  "note": "checkout page: food safety licence number; keep FSSAI"
+ },
+ "co.careLine": {
+  "en": "Customer care and grievance officer: {name}, {designation} · {phone} (call or WhatsApp) · {email}",
+  "note": "checkout page: the one person who answers questions and handles complaints (Indian consumer law); keep WhatsApp in Latin letters"
+ },
+ "co.policiesLink": {
+  "en": "Seller details, terms of sale, shipping, returns and privacy",
+  "note": "checkout page: link to our policies page"
+ },
+ "co.terms": {
+  "en": "By paying you agree to our {link}.",
+  "note": "checkout page: line above the Pay button; {link} = the next string, as a link"
+ },
+ "co.termsLink": {
+  "en": "terms of sale, shipping and refund policies",
+  "note": "checkout page: link text inside the line above"
+ },
+ "co.pay": {
+  "en": "Pay {amount}",
+  "note": "checkout page: the pay button; {amount} = the total in rupees"
+ },
+ "co.payEmpty": {
+  "en": "Add a pack to pay",
+  "note": "checkout page: the pay button while the cart is empty"
+ },
+ "co.payBusy": {
+  "en": "Please wait…",
+  "note": "checkout page: the pay button while the payment starts"
+ },
+ "co.creating": {
+  "en": "Starting secure payment…",
+  "note": "checkout page: status while the payment window is being prepared"
+ },
+ "co.redirecting": {
+  "en": "Taking you to PhonePe to pay…",
+  "note": "checkout page: status before moving to PhonePe's payment page; keep PhonePe"
+ },
+ "co.verifying": {
+  "en": "Confirming your payment…",
+  "note": "checkout page: status while we check the payment"
+ },
+ "co.priceChangedTitle": {
+  "en": "Total updated",
+  "note": "checkout page: heading when our server's total differs from the page's"
+ },
+ "co.priceChangedBody": {
+  "en": "The total for this order is {amount}. Please check it and press Pay again.",
+  "note": "checkout page: explains the line above"
+ },
+ "co.successTitle": {
+  "en": "Thank you! Your payment is received.",
+  "note": "checkout page: heading after a successful payment"
+ },
+ "co.successBody": {
+  "en": "Order number: {id}. We ship the next working day (Saturday and Sunday orders ship on Monday) and send the courier name and tracking link on WhatsApp or email.",
+  "note": "checkout page: after payment; keep the day names Saturday, Sunday and Monday, keep WhatsApp"
+ },
+ "co.successDelivery": {
+  "en": "Expected delivery between {from} and {to}.",
+  "note": "checkout page: {from} and {to} are dates"
+ },
+ "co.successKeep": {
+  "en": "Please keep the order number for any question.",
+  "note": "checkout page: after payment"
+ },
+ "co.pendingTitle": {
+  "en": "Your payment is being confirmed",
+  "note": "checkout page: heading while a payment is still being confirmed"
+ },
+ "co.pendingBody": {
+  "en": "Order number: {id}. If money has left your account, there is no need to pay again: we confirm it within a few minutes, and a payment that does not complete is refunded automatically.",
+  "note": "checkout page: reassurance while the payment is confirmed"
+ },
+ "co.failedTitle": {
+  "en": "Payment did not go through",
+  "note": "checkout page: heading after a failed payment"
+ },
+ "co.failedBody": {
+  "en": "No money was taken for this attempt. You can try again, or order from our Amazon.in store.",
+  "note": "checkout page: after a failed payment; keep Amazon.in in Latin letters"
+ },
+ "co.failedReason": {
+  "en": "Reason given by the bank or app: {reason}",
+  "note": "checkout page: {reason} is the bank's own message, in English"
+ },
+ "co.cancelledTitle": {
+  "en": "Payment window closed",
+  "note": "checkout page: heading when the buyer closed the payment window"
+ },
+ "co.cancelledBody": {
+  "en": "Nothing was charged. Your cart is saved: press Pay to try again.",
+  "note": "checkout page: after the payment window was closed"
+ },
+ "co.errorTitle": {
+  "en": "We could not start the payment",
+  "note": "checkout page: heading when the payment could not start"
+ },
+ "co.errorBody": {
+  "en": "Please try again in a minute, or order from our Amazon.in store.",
+  "note": "checkout page: keep Amazon.in in Latin letters"
+ },
+ "co.disabledTitle": {
+  "en": "Online payment is off right now",
+  "note": "checkout page: heading when online payment is switched off"
+ },
+ "co.disabledBody": {
+  "en": "Please order from our Amazon.in store. For help, message us on WhatsApp.",
+  "note": "checkout page: keep Amazon.in and WhatsApp in Latin letters"
+ },
+ "co.outOfStock": {
+  "en": "{name} has just sold out. Please lower the quantity or remove it.",
+  "note": "checkout page: {name} = the pack"
+ },
+ "co.fixForm": {
+  "en": "Please check the highlighted fields.",
+  "note": "checkout page: error under the form"
+ },
+ "co.tryAgain": {
+  "en": "Try again",
+  "note": "checkout page: button"
+ },
+ "co.amazon": {
+  "en": "Our Amazon.in store",
+  "note": "checkout page: button to our store on Amazon.in; keep Amazon.in in Latin letters"
+ },
+ "co.help": {
+  "en": "Help on WhatsApp",
+  "note": "checkout page: button: ask us for help on WhatsApp (help only, not for placing orders); keep WhatsApp"
+ },
+ "co.waHelp": {
+  "en": "Hi 1acrefarms, I need help with the checkout on your website.",
+  "note": "checkout page: first line of the WhatsApp help message the buyer sends us; keep 1acrefarms"
+ },
+ "co.waHelpOrder": {
+  "en": "Order number: {id}",
+  "note": "checkout page: second line of that message"
+ },
+ "co.rzpDescription": {
+  "en": "{n} pack(s) · order {id}",
+  "note": "checkout page: short line shown in the payment window"
+ },
+ "co.privacyNote": {
+  "en": "We use these details to deliver your order, send its GST invoice and support you. Who we share them with: see our {link}.",
+  "note": "checkout page: note under the address form: why we ask for these details and who gets them; {link} = the words 'privacy policy' as a link"
+ },
+ "co.deliveryNote": {
+  "en": "We ship the next working day after payment (Saturday and Sunday orders ship on Monday; not on public holidays). Usual delivery time after dispatch: 2–4 days in Andhra Pradesh and Telangana, 4–7 days in the rest of India, and up to 10 days in the North-East, J&K, Ladakh and the islands.",
+  "note": "checkout page: delivery terms shown before the Pay button; keep every number"
+ },
+ "co.returnsNote": {
+  "en": "Cancel free of charge before dispatch. Damaged, wrong, faulty or not-as-described pack: a free replacement or a full refund, as you prefer; you never pay return shipping. Delivered later than the usual delivery time for your area (unless delayed by events beyond anyone's control, such as floods or strikes): you can refuse it or ask for a full refund. Refunds go to the original payment method within 5–7 working days of approval.",
+  "note": "checkout page: cancellation, returns and refunds terms shown before the Pay button; keep every number"
+ },
+ "co.grievanceNote": {
+  "en": "We acknowledge every complaint within 48 hours, give it a complaint number (for example 1AF-C-0001) that you can quote at any time to check its status, and resolve it within one month.",
+  "note": "checkout page: how we handle a complaint (Indian consumer law); keep 48, 1AF-C-0001 and every number"
  }
 }

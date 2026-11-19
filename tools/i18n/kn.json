@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "ಸನ್ನಂ ಅಥವಾ ತೇಜ ಮೆಣಸಿನ ಪುಡಿ: ಯಾವುದನ್ನು ಬಳಸುವುದು · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsAppನಲ್ಲಿ ವಾಯ್ಸ್ ಮೆಸೇಜ್ ಮೂಲಕ ಆರ್ಡರ್ ಮಾಡಿ",
+   "back": "Order via a voice message on WhatsApp."
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "ನಮಸ್ಕಾರ, ನಾನು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ.",
+   "back": "Hello (Namaskara), I wish to place an order."
   }
  }
 }

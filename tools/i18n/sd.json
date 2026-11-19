@@ -10550,6 +10550,16 @@
    "src": "Sannam or Teja chilli powder: which to use · 1acrefarms",
    "t": "سنّم يا تيجا مرچ پائوڊر: ڪهڙو استعمال ڪجي · 1acrefarms",
    "back": "Sannam or Teja chilli powder: which to use · 1acrefarms"
+  },
+  "ui.voice_order": {
+   "src": "Order by voice on WhatsApp",
+   "t": "WhatsApp تي وائس ميسيج سان آرڊر ڪريو",
+   "back": "Order with a voice message on WhatsApp"
+  },
+  "ui.voice_prefill": {
+   "src": "Namaste, I want to order.",
+   "t": "نمستي، مون کي آرڊر ڏيڻو آهي.",
+   "back": "Namaste, I have to give an order."
   }
  }
 }
