@@ -641,12 +641,10 @@ REVIEW_LINE = '    <p class="footer-review"><a href="https://g.page/r/CSwkMxt_n2
 STORE_LINK = f'        <a href="{AMAZON_STORE}" target="_blank" rel="noopener">Our Amazon store</a>'
 
 
-# Social icons for the shared footer (06-11-2026: site <-> YouTube/Instagram linked). translate="no" keeps the
+# Social icons for the shared footer (06-11-2026: site <-> YouTube linked; Instagram removed 19-11-2026: the
+# account was permanently disabled by Meta, Bhargava: "remove instagram links everywhere"; never add it back). translate="no" keeps the
 # icon links out of the 22-language segment translation, so no language page needs new strings.
 SOCIAL = """        <div class="footer-social" translate="no">
-          <a href="https://www.instagram.com/1acrefarms/" aria-label="1acrefarms on Instagram" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>
-          </a>
           <a href="https://www.youtube.com/@1acrefarms" aria-label="1acrefarms on YouTube" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
           </a>
