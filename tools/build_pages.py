@@ -87,6 +87,14 @@ if FSSAI_ECOM_LIC and not re.fullmatch(r"\d{14}", FSSAI_ECOM_LIC):
     sys.exit(f"FSSAI_ECOM_LIC must be empty or exactly 14 digits (the granted licence number), not {FSSAI_ECOM_LIC!r}")
 FSSAI_LOGO = '<img class="fssai-logo" src="/assets/fssai-logo.svg" alt="FSSAI logo" width="41" height="20" />'
 FSSAI_ROW = f"<dt>FSSAI</dt><dd>{FSSAI_LOGO} Reg. No. {FSSAI_REG}</dd>"
+# The veg mark printed top right on every pouch (FSS Labelling & Display reg 5(4)): green square outline with a filled
+# green circle. Shown in Pack details because FSS reg 4(2) wants the label's mandatory information in front of a buyer
+# BEFORE an e-commerce or direct sale (ChittaGupta, docs/compliance/2026-11-19_voice-order-QR-sticker_on-printed-pouches.md
+# item 8; Shiva 19-11). All 7 packs are plant foods; the language pages keep this block in English, as printed.
+VEG_MARK = ('<svg class="veg-mark" viewBox="0 0 20 20" width="18" height="18" role="img" aria-label="Vegetarian">'
+            '<title>Vegetarian</title><rect x="1" y="1" width="18" height="18" fill="#fff" stroke="#008000" stroke-width="2"/>'
+            '<circle cx="10" cy="10" r="5" fill="#008000"/></svg>')
+VEG_ROW = f"<dt>Veg mark</dt><dd>{VEG_MARK} Vegetarian</dd>"
 
 
 def ecom_lic_line():
@@ -828,6 +836,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <h2>Pack details</h2>
         <dl class="pdp-dl">
           <dt>Ingredients</dt><dd>{p['ingredients']}</dd>
+          {VEG_ROW}
           {allergen}
           <dt>Net quantity</dt><dd>{p['g']} g · SKU 1AF-{p['code']}-{p['g']:04d}</dd>
           <dt>Best before</dt><dd>{p['shelf']} months from packing</dd>

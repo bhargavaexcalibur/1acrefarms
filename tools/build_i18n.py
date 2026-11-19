@@ -807,6 +807,7 @@ def pack_page(code, t, p, packs, facts):
         <p class="i18n-legal-note">{x(code, t['ui.as_printed'])}</p>
         <dl class="pdp-dl">
           <dt>Ingredients</dt><dd>{p['ingredients']}</dd>
+          {bp.VEG_ROW}
           {allergen}
           <dt>Net quantity</dt><dd>{p['g']} g · SKU 1AF-{p['code']}-{p['g']:04d}</dd>
           <dt>Best before</dt><dd>{p['shelf']} months from packing</dd>

@@ -468,6 +468,7 @@ a.src-pt:hover { background: rgba(255,255,255,.06); }
 .pdp-dl dt { font-size: 0.6rem; text-transform: uppercase; letter-spacing: .1em; color: var(--ink-faint); margin-top: 8px; font-weight: 600; }
 .pdp-dl dd { line-height: 1.5; }
 img.fssai-logo { display: inline-block; vertical-align: middle; margin: -2px 4px 0 0; }
+svg.veg-mark { display: inline-block; vertical-align: middle; margin: -2px 4px 0 0; }
 .pdp-status { margin: 18px 0 -8px; font-size: 0.92rem; font-weight: 600; color: var(--ink-soft); }
 .pdp-lic { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--hairline); font-size: 0.85rem; color: var(--ink-soft); }
 .pdp-more .nutri table { font-size: 0.78rem; }
