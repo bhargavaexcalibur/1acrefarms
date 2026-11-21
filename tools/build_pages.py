@@ -609,15 +609,24 @@ def product_ld(p, facts):
                 "image": [f"{SITE}/assets/packs/{p['pack']}"] + [SITE + r["src"] for r in GALLERY.get(p["code"], [])],
                 **pack_videos_ld(p),
                 "sku": f"1AF-{p['code']}-{p['g']:04d}",
+                **({"gtin13": GTIN[p["code"]]} if p["code"] in GTIN else {}),
                 "brand": {"@type": "Brand", "name": "1acrefarms"},
                 "category": p["category"],
                 "countryOfOrigin": {"@type": "Country", "name": "India"},
                 "weight": {"@type": "QuantitativeValue", "value": p["g"], "unitCode": "GRM"},
-                # Product-snippet markup, not merchant-listing markup: the website itself does not sell
-                # (Amazon.in only since 06-11-2026), so no shipping or return policy here. The Offer is the
-                # Amazon.in one, shown only while the pack is buyable there; Amazon sells at the MRP (checked
-                # 05-11-2026: 495 / 234 / 495), which is the price this page shows.
+                # Product-snippet markup. Until 21-11-2026 the Offer was always the Amazon.in one (the site did not
+                # sell); a pack sold here now gets our own Offer (below), otherwise the Amazon.in one while buyable there.
+                # 21-11-2026: while the pack is sold on this website (direct(p)), the Offer is OUR offer on this page
+                # (same MRP, free delivery), matching /merchant-feed.xml for Google Merchant Center.
                 **({"offers": {
+                    "@type": "Offer",
+                    "url": url,
+                    "priceCurrency": "INR",
+                    "price": str(p["mrp"]),
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/NewCondition",
+                    "seller": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms"},
+                }} if direct(p) else {"offers": {
                     "@type": "Offer",
                     "url": amazon_link(p),
                     "priceCurrency": "INR",
@@ -732,6 +741,76 @@ def gallery(p, front_src, front_alt, name, labels=None):
                       f'width="{r["tw"]}" height="{r["th"]}" loading="lazy" decoding="async" /></a>')
     return (f'\n        <div class="pdp-gallery" role="group" aria-label="{esc(lab["more"])}">\n          '
             + "\n          ".join(thumbs) + "\n        </div>" + GALLERY_JS)
+
+
+# Google Merchant Center free listings (Shiva 19-11; Bhargava 21-11: "now do the merchant center feed"). One RSS 2.0
+# feed at /merchant-feed.xml, rebuilt with every build from the same PACKS / catalogue / gallery data, so the price,
+# stock and photos Google shows can never drift from the pages. Merchant Center fetches it on a schedule (account
+# setting). Shipping (free; handling + transit by region) and the return policy are ACCOUNT settings in Merchant Center,
+# not feed attributes, so the delivery promise there matches policies.html region by region.
+# GTINs: GS1 EANs printed on each pouch (barcode on the back), the same as the Amazon.in and Meta catalogue listings.
+GTIN = {"TURM": "8908032868006", "KPAS": "8908032868013", "SANN": "8908032868020", "TEJA": "8908032868037",
+        "CBEL": "8908032868044", "TBEL": "8908032868051", "CASH": "8908032868068"}
+# Google product taxonomy ids (checked against taxonomy-with-ids.en-US.txt, 21-11-2026):
+# 1529 Seasonings & Spices > Herbs & Spices; 503734 Cooking & Baking Ingredients > Sugar & Sweeteners; 433 Nuts & Seeds.
+GOOGLE_CATEGORY = {"TURM": 1529, "KPAS": 1529, "SANN": 1529, "TEJA": 1529, "CBEL": 503734, "TBEL": 503734, "CASH": 433}
+# Main feed image = the real studio photo of the pouch front (Veduka, 13-11), not the flat label art on the pages.
+POUCH_PHOTO = {"TURM": "turmeric", "KPAS": "hill-turmeric", "SANN": "sannam-chilli", "TEJA": "teja-chilli",
+               "CBEL": "cane-jaggery", "TBEL": "palm-jaggery", "CASH": "cashew"}
+MERCHANT_FEED = ROOT / "merchant-feed.xml"
+
+
+def gtin_ok(g):
+    """GS1 check digit (EAN-13)."""
+    if not re.fullmatch(r"\d{13}", g or ""):
+        return False
+    total = sum(int(d) * (3 if i % 2 else 1) for i, d in enumerate(g[:12]))
+    return (10 - total % 10) % 10 == int(g[12])
+
+
+def feed_item(p):
+    """One <item> for Merchant Center (plain facts; the claim filters run on it in merchant_feed())."""
+    code = p["code"]
+    x = lambda t: html.escape(str(t), quote=False)
+    title = f"1acrefarms {p['name']} ({p['local']}) {p['g']} g"
+    desc = f"{text_of(p['lede'])} Ingredients: {text_of(p['ingredients'])} Net quantity: {p['g']} g."
+    imgs = [f"{SITE}/assets/brand/br/1acrefarms-{POUCH_PHOTO[code]}-pouch.jpg"] + \
+           [SITE + r["src"] for r in GALLERY.get(code, [])]
+    # RSS 2.0 item: title, link and description are plain RSS elements (no g: prefix); everything else is g: (Google
+    # answer 160589). maximum_retail_price is India-only and shown in free listings; our price IS the MRP.
+    lines = [f"<g:id>1AF-{code}-{p['g']:04d}</g:id>", f"<title>{x(title)}</title>", f"<description>{x(desc)}</description>",
+             f"<link>{SITE}/{p['slug']}/</link>", f"<g:image_link>{imgs[0]}</g:image_link>"]
+    lines += [f"<g:additional_image_link>{u}</g:additional_image_link>" for u in imgs[1:11]]
+    lines += [f"<g:availability>{'in_stock' if direct(p) else 'out_of_stock'}</g:availability>",
+              f"<g:price>{p['mrp']}.00 INR</g:price>", f"<g:maximum_retail_price>{p['mrp']}.00 INR</g:maximum_retail_price>",
+              "<g:brand>1acrefarms</g:brand>", f"<g:gtin>{GTIN[code]}</g:gtin>",
+              "<g:condition>new</g:condition>", f"<g:google_product_category>{GOOGLE_CATEGORY[code]}</g:google_product_category>",
+              f"<g:product_type>{x(p['category'])}</g:product_type>",
+              f"<g:unit_pricing_measure>{p['g']} g</g:unit_pricing_measure>", "<g:unit_pricing_base_measure>1 kg</g:unit_pricing_base_measure>"]
+    return title, desc, "    <item>\n      " + "\n      ".join(lines) + "\n    </item>"
+
+
+def merchant_feed(live):
+    """Write /merchant-feed.xml: every live pack sold on this website (none while CHECKOUT_LIVE is off)."""
+    import build_recipes as br  # same claim filters as the language pages (build_i18n.problem)
+    import build_guides as bg
+    items = []
+    for p in live:
+        if p["code"] not in GTIN or not gtin_ok(GTIN[p["code"]]):
+            sys.exit(f"merchant feed: {p['code']} has no valid GTIN in build_pages.GTIN")
+        if not direct(p):
+            continue
+        title, desc, item = feed_item(p)
+        for rx in (BANNED, br.CLAIMS, bg.RISKY):
+            hit = rx.search(title + " " + desc)
+            if hit:
+                sys.exit(f"merchant feed: claim word {hit.group(0)!r} in {p['code']} title/description")
+        items.append(item)
+    MERCHANT_FEED.write_text('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">\n'
+                             f"  <channel>\n    <title>1acrefarms</title>\n    <link>{SITE}/</link>\n"
+                             "    <description>1acrefarms packs sold on 1acrefarms.co.in</description>\n"
+                             + "\n".join(items) + "\n  </channel>\n</rss>\n", encoding="utf-8")
+    print(f"wrote merchant-feed.xml with {len(items)} items")
 
 
 YT_JSON = ROOT / "tools" / "youtube.json"
@@ -1047,6 +1126,7 @@ def main():
     build_guides.build(live)
     build_i18n.build(live)  # adds the language menu + hreflang to every page above
     build_checkout.build(live)  # /checkout/: the page, its modules (lib/) and its strings (i18n/), hidden until live
+    merchant_feed(live)  # /merchant-feed.xml for Google Merchant Center (free listings)
     # sitemap last: each URL's lastmod comes from its finished page (see lastmod())
     extra = build_recipes.sitemap_rows() + build_guides.sitemap_rows() + build_i18n.sitemap_rows(live)
     (ROOT / "sitemap.xml").write_text(sitemap(live, extra), encoding="utf-8")
