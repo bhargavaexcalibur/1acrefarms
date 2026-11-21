@@ -159,6 +159,42 @@
   "en": "Your cart already has the most we can send in one order",
   "note": "shown on the button when the cart already holds the most packs one order can take (nothing was added)"
  },
+ "ui.g_more": {
+  "en": "More photos of this pack",
+  "note": "label (read by screen readers) for the row of small photos under the main pack photo"
+ },
+ "ui.g_back": {
+  "en": "back of the pack",
+  "note": "photo alt text after the pack name and a colon: the back of our pouch, where the label is printed"
+ },
+ "ui.g_closeup": {
+  "en": "front of the pack, close up",
+  "note": "photo alt text after the pack name and a colon: a close photo of the front of the pouch"
+ },
+ "ui.g_story": {
+  "en": "the story printed on the pack",
+  "note": "photo alt text after the pack name and a colon: the short paragraph on the pouch about where the food comes from"
+ },
+ "ui.g_nutrition": {
+  "en": "nutrition table on the pack",
+  "note": "photo alt text after the pack name and a colon: the nutrition table printed on the pouch"
+ },
+ "ui.g_care": {
+  "en": "maker and storage details on the pack",
+  "note": "photo alt text after the pack name and a colon: printed lines naming who packs it, the address and how to store it"
+ },
+ "ui.g_angle": {
+  "en": "the pack seen from the side",
+  "note": "photo alt text after the pack name and a colon: the pouch photographed at an angle, from the side"
+ },
+ "ui.g_shelf": {
+  "en": "the pack on our shop shelf",
+  "note": "photo alt text after the pack name and a colon: the pouch on a shelf in our own shop"
+ },
+ "ui.g_stocked": {
+  "en": "packs on the shelf in our shop",
+  "note": "photo alt text after the pack name and a colon: several pouches lined up on a shelf in our own shop"
+ },
  "ui.voice_order": {
   "en": "Order by voice on WhatsApp",
   "note": "button on the home page and each product page: it opens WhatsApp so the customer can order by sending us a recorded voice message instead of typing; write 'WhatsApp' in Latin letters exactly; short, plain, no urgency"

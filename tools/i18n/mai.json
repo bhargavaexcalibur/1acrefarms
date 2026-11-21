@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "प्रणाम, हमरा ऑर्डर करबाक अछि।",
    "back": "Greetings (Pranam), I want to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "एहि पैकेटक आओर फोटो",
+   "back": "More photos of this packet"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "पैकेटक पाछूक भाग",
+   "back": "Back part of the packet"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "पैकेटक आगूक भाग, लगसँ",
+   "back": "Front part of the packet, from near"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "पैकेट पर छपल कथा",
+   "back": "Story printed on the packet"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "पैकेट पर पोषण तालिका",
+   "back": "Nutrition table on the packet"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "पैकेट पर बनौनिहार आ रखबाक विवरण",
+   "back": "Details of the maker and of keeping, on the packet"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "कातसँ देखल पैकेट",
+   "back": "Packet seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "हमर दोकानक सेल्फ पर राखल पैकेट",
+   "back": "Packet kept on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "हमर दोकानमे सेल्फ पर राखल पैकेट सभ",
+   "back": "Packets kept on the shelf in our shop"
   }
  }
 }

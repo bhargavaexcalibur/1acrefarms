@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "آداب، مجھے آرڈر دینا ہے۔",
    "back": "Adaab (greetings), I want to give an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "اس پیک کی مزید تصویریں",
+   "back": "More pictures of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "پیک کا پچھلا حصہ",
+   "back": "The back part of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "پیک کا اگلا حصہ، قریب سے",
+   "back": "The front part of the pack, from close up"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "پیک پر چھپی کہانی",
+   "back": "The story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "پیک پر غذائیت کا جدول",
+   "back": "The nutrition table on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "پیک پر بنانے والے اور رکھنے کی تفصیل",
+   "back": "Details of the maker and of keeping on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "ایک طرف سے دیکھا گیا پیک",
+   "back": "The pack seen from one side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "ہماری دکان کی شیلف پر پیک",
+   "back": "The pack on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "ہماری دکان میں شیلف پر رکھے پیک",
+   "back": "Packs kept on the shelf in our shop"
   }
  }
 }

@@ -1,0 +1,475 @@
+{
+ "TURM": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/turmeric-powder/01-back.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/turmeric-powder/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/02-closeup-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/turmeric-powder/03-story.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/03-story-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/turmeric-powder/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/04-nutrition-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/turmeric-powder/05-care.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/05-care-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "angle",
+   "src": "/assets/packs/gallery/turmeric-powder/06-angle.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/06-angle-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "shelf",
+   "src": "/assets/packs/gallery/turmeric-powder/07-shelf.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/07-shelf-t.jpg",
+   "w": 900,
+   "h": 1200,
+   "tw": 180,
+   "th": 240
+  },
+  {
+   "kind": "stocked",
+   "src": "/assets/packs/gallery/turmeric-powder/08-stocked.jpg",
+   "thumb": "/assets/packs/gallery/turmeric-powder/08-stocked-t.jpg",
+   "w": 1200,
+   "h": 800,
+   "tw": 240,
+   "th": 160
+  }
+ ],
+ "KPAS": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/01-back.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/02-closeup-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/03-story.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/03-story-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/04-nutrition-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/05-care.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/05-care-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "angle",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/06-angle.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/06-angle-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "shelf",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/07-shelf.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/07-shelf-t.jpg",
+   "w": 900,
+   "h": 1200,
+   "tw": 180,
+   "th": 240
+  },
+  {
+   "kind": "stocked",
+   "src": "/assets/packs/gallery/hill-turmeric-powder/08-stocked.jpg",
+   "thumb": "/assets/packs/gallery/hill-turmeric-powder/08-stocked-t.jpg",
+   "w": 1200,
+   "h": 489,
+   "tw": 240,
+   "th": 98
+  }
+ ],
+ "SANN": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/01-back.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/02-closeup-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/03-story.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/03-story-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/04-nutrition-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/05-care.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/05-care-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "angle",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/06-angle.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/06-angle-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "shelf",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/07-shelf.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/07-shelf-t.jpg",
+   "w": 900,
+   "h": 1200,
+   "tw": 180,
+   "th": 240
+  },
+  {
+   "kind": "stocked",
+   "src": "/assets/packs/gallery/sannam-chilli-powder/08-stocked.jpg",
+   "thumb": "/assets/packs/gallery/sannam-chilli-powder/08-stocked-t.jpg",
+   "w": 1200,
+   "h": 600,
+   "tw": 240,
+   "th": 120
+  }
+ ],
+ "TEJA": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/teja-chilli-powder/01-back.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/teja-chilli-powder/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/02-closeup-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/teja-chilli-powder/03-story.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/03-story-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/teja-chilli-powder/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/04-nutrition-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/teja-chilli-powder/05-care.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/05-care-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "angle",
+   "src": "/assets/packs/gallery/teja-chilli-powder/06-angle.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/06-angle-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "shelf",
+   "src": "/assets/packs/gallery/teja-chilli-powder/07-shelf.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/07-shelf-t.jpg",
+   "w": 900,
+   "h": 1200,
+   "tw": 180,
+   "th": 240
+  },
+  {
+   "kind": "stocked",
+   "src": "/assets/packs/gallery/teja-chilli-powder/08-stocked.jpg",
+   "thumb": "/assets/packs/gallery/teja-chilli-powder/08-stocked-t.jpg",
+   "w": 1200,
+   "h": 757,
+   "tw": 240,
+   "th": 151
+  }
+ ],
+ "CASH": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/cashew-kernels/01-back.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/cashew-kernels/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/02-closeup-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/cashew-kernels/03-story.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/03-story-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/cashew-kernels/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/04-nutrition-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/cashew-kernels/05-care.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/05-care-t.jpg",
+   "w": 1000,
+   "h": 1000,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "angle",
+   "src": "/assets/packs/gallery/cashew-kernels/06-angle.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/06-angle-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "shelf",
+   "src": "/assets/packs/gallery/cashew-kernels/07-shelf.jpg",
+   "thumb": "/assets/packs/gallery/cashew-kernels/07-shelf-t.jpg",
+   "w": 900,
+   "h": 1200,
+   "tw": 180,
+   "th": 240
+  }
+ ],
+ "CBEL": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/cane-jaggery/01-back.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/cane-jaggery/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/02-closeup-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/cane-jaggery/03-story.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/03-story-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/cane-jaggery/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/04-nutrition-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/cane-jaggery/05-care.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/05-care-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "angle",
+   "src": "/assets/packs/gallery/cane-jaggery/06-angle.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/06-angle-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "shelf",
+   "src": "/assets/packs/gallery/cane-jaggery/07-shelf.jpg",
+   "thumb": "/assets/packs/gallery/cane-jaggery/07-shelf-t.jpg",
+   "w": 900,
+   "h": 1200,
+   "tw": 180,
+   "th": 240
+  }
+ ],
+ "TBEL": [
+  {
+   "kind": "back",
+   "src": "/assets/packs/gallery/palm-jaggery/01-back.jpg",
+   "thumb": "/assets/packs/gallery/palm-jaggery/01-back-t.jpg",
+   "w": 1200,
+   "h": 1200,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "closeup",
+   "src": "/assets/packs/gallery/palm-jaggery/02-closeup.jpg",
+   "thumb": "/assets/packs/gallery/palm-jaggery/02-closeup-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "story",
+   "src": "/assets/packs/gallery/palm-jaggery/03-story.jpg",
+   "thumb": "/assets/packs/gallery/palm-jaggery/03-story-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "nutrition",
+   "src": "/assets/packs/gallery/palm-jaggery/04-nutrition.jpg",
+   "thumb": "/assets/packs/gallery/palm-jaggery/04-nutrition-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  },
+  {
+   "kind": "care",
+   "src": "/assets/packs/gallery/palm-jaggery/05-care.jpg",
+   "thumb": "/assets/packs/gallery/palm-jaggery/05-care-t.jpg",
+   "w": 1100,
+   "h": 1100,
+   "tw": 240,
+   "th": 240
+  }
+ ]
+}

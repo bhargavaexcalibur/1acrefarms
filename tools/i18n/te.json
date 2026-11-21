@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "నమస్కారం, నేను ఆర్డర్ చేయాలనుకుంటున్నాను.",
    "back": "Hello (Namaskaram), I would like to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "ఈ ప్యాక్ మరిన్ని ఫోటోలు",
+   "back": "More photos of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "ప్యాక్ వెనుక భాగం",
+   "back": "Back part of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "ప్యాక్ ముందు భాగం, దగ్గరగా",
+   "back": "Front part of the pack, up close"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "ప్యాక్ మీద ముద్రించిన కథ",
+   "back": "Story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "ప్యాక్ మీద పోషకాల పట్టిక",
+   "back": "Table of nutrients on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "ప్యాక్ మీద తయారీదారు, నిల్వ వివరాలు",
+   "back": "Manufacturer, storage details on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "పక్క నుంచి చూసిన ప్యాక్",
+   "back": "Pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "మా షాపు అర మీద ప్యాక్",
+   "back": "Pack on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "మా షాపులో అర మీద ప్యాక్‌లు",
+   "back": "Packs on a shelf in our shop"
   }
  }
 }

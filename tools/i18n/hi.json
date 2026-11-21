@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "नमस्ते, मुझे ऑर्डर करना है।",
    "back": "Hello (Namaste), I want to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "इस पैक की और तस्वीरें",
+   "back": "More pictures of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "पैक का पिछला हिस्सा",
+   "back": "Back part of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "पैक का अगला हिस्सा, पास से",
+   "back": "Front part of the pack, from close"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "पैक पर छपी कहानी",
+   "back": "Story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "पैक पर पोषण तालिका",
+   "back": "Nutrition table on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "पैक पर बनाने वाले और रखने की जानकारी",
+   "back": "Information on the pack about the maker and about keeping"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "बगल से दिखता पैक",
+   "back": "Pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "हमारी दुकान की शेल्फ़ पर रखा पैक",
+   "back": "Pack placed on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "हमारी दुकान में शेल्फ़ पर रखे पैक",
+   "back": "Packs placed on the shelf in our shop"
   }
  }
 }

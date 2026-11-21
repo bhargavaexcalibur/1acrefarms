@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "നമസ്കാരം, എനിക്ക് ഓർഡർ ചെയ്യണം.",
    "back": "Hello (Namaskaram), I want to order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "ഈ പാക്കറ്റിന്റെ കൂടുതൽ ഫോട്ടോകൾ",
+   "back": "More photos of this packet"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "പാക്കറ്റിന്റെ പിൻവശം",
+   "back": "Back side of the packet"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "പാക്കറ്റിന്റെ മുൻവശം, അടുത്തുനിന്ന്",
+   "back": "Front side of the packet, from close by"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "പാക്കറ്റിൽ അച്ചടിച്ച കഥ",
+   "back": "Story printed on the packet"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "പാക്കറ്റിലെ പോഷക പട്ടിക",
+   "back": "Nutrient table on the packet"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "പാക്കറ്റിലെ നിർമ്മാതാവ്, സൂക്ഷിക്കൽ വിവരങ്ങൾ",
+   "back": "Manufacturer, keeping details on the packet"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "വശത്തുനിന്ന് കാണുന്ന പാക്കറ്റ്",
+   "back": "Packet being seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "ഞങ്ങളുടെ കടയിലെ ഷെൽഫിൽ പാക്കറ്റ്",
+   "back": "Packet on the shelf in our shop"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "ഞങ്ങളുടെ കടയിലെ ഷെൽഫിൽ പാക്കറ്റുകൾ",
+   "back": "Packets on the shelf in our shop"
   }
  }
 }

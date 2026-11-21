@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "নমস্কাৰ, মই অৰ্ডাৰ কৰিব বিচাৰো।",
    "back": "Namaskar (hello), I want to order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "এই পেকেটৰ আৰু ছবি",
+   "back": "More pictures of this packet"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "পেকেটৰ পিছফাল",
+   "back": "The back side of the packet"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "পেকেটৰ আগফাল, ওচৰৰ পৰা",
+   "back": "The front side of the packet, from close by"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "পেকেটত ছপা কৰা কাহিনী",
+   "back": "The story printed on the packet"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "পেকেটত থকা পুষ্টি তালিকা",
+   "back": "The nutrition list that is on the packet"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "পেকেটত থকা প্ৰস্তুতকাৰক আৰু সংৰক্ষণৰ বিৱৰণ",
+   "back": "The manufacturer and storage details that are on the packet"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "কাষৰ পৰা দেখা পেকেটটো",
+   "back": "The packet, seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "আমাৰ দোকানৰ তাকত পেকেটটো",
+   "back": "The packet on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "আমাৰ দোকানৰ তাকত পেকেটবোৰ",
+   "back": "The packets on our shop's shelf"
   }
  }
 }

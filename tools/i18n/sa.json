@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "नमस्ते, अहं क्रयादेशं दातुम् इच्छामि।",
    "back": "Hello (Namaste), I wish to give a purchase order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "अस्य पुटकस्य अधिकानि चित्राणि",
+   "back": "More pictures of this packet"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "पुटकस्य पृष्ठभागः",
+   "back": "Back part of the packet"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "पुटकस्य अग्रभागः, समीपतः",
+   "back": "Front part of the packet, from near"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "पुटके मुद्रिता कथा",
+   "back": "Story printed on the packet"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "पुटके पोषणसारणी",
+   "back": "Nutrition table on the packet"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "पुटके निर्मातुः संरक्षणस्य च विवरणम्",
+   "back": "Details of the maker and of preservation, on the packet"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "पार्श्वतः दृष्टं पुटकम्",
+   "back": "Packet seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "अस्माकम् आपणफलके स्थितं पुटकम्",
+   "back": "Packet placed on our shop-shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "अस्माकम् आपणे फलके स्थितानि पुटकानि",
+   "back": "Packets placed on a shelf in our shop"
   }
  }
 }

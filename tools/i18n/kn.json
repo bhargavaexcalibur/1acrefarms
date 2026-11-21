@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "ನಮಸ್ಕಾರ, ನಾನು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ.",
    "back": "Hello (Namaskara), I wish to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "ಈ ಪ್ಯಾಕ್‌ನ ಇನ್ನಷ್ಟು ಫೋಟೋಗಳು",
+   "back": "Some more photos of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "ಪ್ಯಾಕ್‌ನ ಹಿಂಭಾಗ",
+   "back": "Back side of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "ಪ್ಯಾಕ್‌ನ ಮುಂಭಾಗ, ಹತ್ತಿರದಿಂದ",
+   "back": "Front side of the pack, from close"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "ಪ್ಯಾಕ್ ಮೇಲೆ ಮುದ್ರಿಸಿರುವ ಕಥೆ",
+   "back": "Story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "ಪ್ಯಾಕ್ ಮೇಲಿನ ಪೋಷಕಾಂಶ ಕೋಷ್ಟಕ",
+   "back": "Nutrient table on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "ಪ್ಯಾಕ್ ಮೇಲಿನ ತಯಾರಕರ ಮತ್ತು ಶೇಖರಣೆಯ ವಿವರಗಳು",
+   "back": "Manufacturer's and storage details on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "ಪಕ್ಕದಿಂದ ಕಂಡ ಪ್ಯಾಕ್",
+   "back": "Pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "ನಮ್ಮ ಅಂಗಡಿಯ ಕಪಾಟಿನಲ್ಲಿ ಪ್ಯಾಕ್",
+   "back": "Pack in our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "ನಮ್ಮ ಅಂಗಡಿಯಲ್ಲಿ ಕಪಾಟಿನ ಮೇಲೆ ಪ್ಯಾಕ್‌ಗಳು",
+   "back": "Packs on top of the shelf in our shop"
   }
  }
 }

@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "آداب، مےٚ چھُ آرڈر کرُن۔",
    "back": "Adaab (greetings), I have to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "اَمہِ پیکٕچہٕ مزید تصویرٕ",
+   "back": "More pictures of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "پیکُک پَتِم حِصہٕ",
+   "back": "The back part of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "پیکُک بروٚنٛہِم حِصہٕ، نزدیک پٮ۪ٹھہٕ",
+   "back": "The front part of the pack, from near"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "پیکس پیٹھ چھاپنہٕ آمٕژ کَتھ",
+   "back": "The story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "پیکس پیٹھ غذائیتُک جدول",
+   "back": "The nutrition table on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "پیکس پیٹھ بناون وٲلۍ سُنٛد تہٕ تھاونُک تفصیل",
+   "back": "Details of the maker and of keeping on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "اَکہِ طرفہٕ ووٚچھنہٕ آمُت پیک",
+   "back": "The pack seen from one side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "سٲنہِ دُکانہِ ہٕنٛدِس شیلفس پیٹھ پیک",
+   "back": "The pack on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "سٲنہِ دُکانہِ منٛز شیلفس پیٹھ تھٲوِمٕتۍ پیک",
+   "back": "Packs kept on the shelf in our shop"
   }
  }
 }

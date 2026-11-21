@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "نمستي، مون کي آرڊر ڏيڻو آهي.",
    "back": "Namaste, I have to give an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "هن پيڪ جون وڌيڪ تصويرون",
+   "back": "More pictures of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "پيڪ جو پويون پاسو",
+   "back": "The back side of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "پيڪ جو اڳيون پاسو، ويجهي کان",
+   "back": "The front side of the pack, from close"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "پيڪ تي ڇپيل ڪهاڻي",
+   "back": "The story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "پيڪ تي غذائيت جو جدول",
+   "back": "The nutrition table on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "پيڪ تي ٺاهيندڙ ۽ رکڻ جا تفصيل",
+   "back": "Details of the maker and of keeping on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "پاسي کان ڏٺل پيڪ",
+   "back": "The pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "اسان جي دڪان جي شيلف تي پيڪ",
+   "back": "The pack on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "اسان جي دڪان ۾ شيلف تي رکيل پيڪ",
+   "back": "Pack kept on the shelf in our shop"
   }
  }
 }

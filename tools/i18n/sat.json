@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "ᱡᱚᱦᱟᱨ, ᱤᱧ ᱚᱨᱰᱟᱨ ᱥᱟᱱᱟᱝ ᱠᱟᱱᱟ᱾",
    "back": "Johar (greetings), I want to order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "ᱱᱚᱶᱟ ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱵᱟᱹᱲᱛᱤ ᱪᱤᱛᱟᱹᱨ ᱠᱚ",
+   "back": "More pictures of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱛᱟᱭᱚᱢ ᱥᱮᱫ",
+   "back": "The back side of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱢᱟᱲᱟᱝ ᱥᱮᱫ, ᱥᱩᱨ ᱠᱷᱚᱱ",
+   "back": "The front side of the pack, from near"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "ᱯᱮᱠ ᱨᱮ ᱪᱷᱟᱯᱟ ᱟᱠᱟᱱ ᱠᱟᱹᱦᱱᱤ",
+   "back": "The story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "ᱯᱮᱠ ᱨᱮ ᱢᱮᱱᱟᱜ ᱯᱩᱥᱴᱤ ᱛᱟᱹᱞᱤᱠᱟ",
+   "back": "The nutrition list that is on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "ᱯᱮᱠ ᱨᱮ ᱢᱮᱱᱟᱜ ᱵᱮᱱᱟᱣᱤᱡ ᱟᱨ ᱫᱚᱦᱚ ᱨᱮᱭᱟᱜ ᱵᱤᱵᱨᱚᱬ",
+   "back": "The details of the maker and of keeping, that are on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "ᱫᱷᱟᱨᱮ ᱠᱷᱚᱱ ᱧᱮᱞ ᱟᱠᱟᱱ ᱯᱮᱠ",
+   "back": "The pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱫᱚᱠᱟᱱ ᱨᱮᱭᱟᱜ ᱛᱟᱠ ᱨᱮ ᱯᱮᱠ",
+   "back": "The pack on the shelf of our shop"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "ᱟᱞᱮᱭᱟᱜ ᱫᱚᱠᱟᱱ ᱨᱮᱭᱟᱜ ᱛᱟᱠ ᱨᱮ ᱯᱮᱠ ᱠᱚ",
+   "back": "The packs on the shelf of our shop"
   }
  }
 }

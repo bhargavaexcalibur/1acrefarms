@@ -153,6 +153,17 @@ UI = {
     "ui.cart_added": (bp.DIRECT_LABELS["cart_added"], "short confirmation shown on the button after it put a pack in the cart"),
     "ui.cart_full": (bp.DIRECT_LABELS["cart_full"], "shown on the button when the cart already holds the most packs one order can "
                      "take (nothing was added)"),
+    # Pack-page photo gallery (21-11-2026): English in build_pages GALLERY_LABELS; all OPTIONAL. Used as image alt text
+    # "<pack name>: <label>" for photos of our pouch, read aloud by screen readers.
+    "ui.g_more": (bp.GALLERY_LABELS["more"], "label (read by screen readers) for the row of small photos under the main pack photo"),
+    "ui.g_back": (bp.GALLERY_LABELS["back"], "photo alt text after the pack name and a colon: the back of our pouch, where the label is printed"),
+    "ui.g_closeup": (bp.GALLERY_LABELS["closeup"], "photo alt text after the pack name and a colon: a close photo of the front of the pouch"),
+    "ui.g_story": (bp.GALLERY_LABELS["story"], "photo alt text after the pack name and a colon: the short paragraph on the pouch about where the food comes from"),
+    "ui.g_nutrition": (bp.GALLERY_LABELS["nutrition"], "photo alt text after the pack name and a colon: the nutrition table printed on the pouch"),
+    "ui.g_care": (bp.GALLERY_LABELS["care"], "photo alt text after the pack name and a colon: printed lines naming who packs it, the address and how to store it"),
+    "ui.g_angle": (bp.GALLERY_LABELS["angle"], "photo alt text after the pack name and a colon: the pouch photographed at an angle, from the side"),
+    "ui.g_shelf": (bp.GALLERY_LABELS["shelf"], "photo alt text after the pack name and a colon: the pouch on a shelf in our own shop"),
+    "ui.g_stocked": (bp.GALLERY_LABELS["stocked"], "photo alt text after the pack name and a colon: several pouches lined up on a shelf in our own shop"),
     # Voice ordering step 1 (19-11-2026): English in build_pages VOICE_LABELS; both OPTIONAL.
     "ui.voice_order": (bp.VOICE_LABELS["voice_order"], "button on the home page and each product page: it opens WhatsApp so the "
                        "customer can order by sending us a recorded voice message instead of typing; write 'WhatsApp' in "
@@ -248,6 +259,9 @@ def problem(key, src, row):
         for hit in rx.finditer(back):
             if hit.group(0).lower() == "cold" and re.search(r"\b(cool|chill|cold|temperature)", src, re.I):
                 continue  # "cool evening", "chilled": temperature, not the illness
+            if hit.group(0).lower() == "nutri" and re.search(r"\bnutrition table\b", src, re.I) \
+                    and re.search(r"\b(?:nutri(?:tion|tional|ents?)\s+(?:table|chart|facts|information|list)|(?:table|chart|list)\s+of\s+nutri(?:tion|ents?))\b", back, re.I):
+                continue  # the label's "nutrition table" (a mandatory panel) read back as such: a name, not a claim
             if hit.group(0).lower() == "fresh" and re.search(r"\bfreshly (roasted|ground|made)", back, re.I) \
                     and re.search(r"\bjust[- ](roasted|ground|made)", src, re.I):
                 continue  # "just-roasted masala" read back as "freshly roasted": timing, not a claim
@@ -283,7 +297,7 @@ def pack_keys(p):
 OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
             "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
             "ui.legal_name", "ui.add_to_cart", "ui.buy_now", "ui.free_delivery", "ui.cart", "ui.cart_added",
-            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"}  # newer strings: English is shown until translated
+            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS}  # newer strings: English is shown until translated
 OPTIONAL |= set(bc.strings_en())  # every checkout page string (co.<key>)
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
@@ -533,6 +547,13 @@ def direct_btns(code, t, p):
     return bp.direct_btns(p, lab, attrs, lang=code)
 
 
+def gallery(code, t, p):
+    """The pack's photo gallery (bp.gallery) with this language's back-checked labels, else the English ones."""
+    labels = {k: t[f"ui.g_{k}"] for k in bp.GALLERY_LABELS if f"ui.g_{k}" in t}
+    k = f"pack.{p['code']}"
+    return bp.gallery(p, f"/assets/packs/{p['pack']}", f"{t[k + '.name']}, {p['g']} g", t[k + ".name"], labels)
+
+
 def voice_btn(code, t, p=None):
     """"Order by voice on WhatsApp" (bp.voice_btn) with the translated label, or the English one marked as English."""
     return bp.voice_btn(p, opt(code, t, "ui.voice_order"), lang=code)
@@ -780,7 +801,7 @@ def pack_page(code, t, p, packs, facts):
 
     <section class="pdp">
       <div class="pdp-media">
-        <div class="pack-media"><img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" /></div>{media}{bp.youtube_link(f"pack-{p['slug']}-{code}")}
+        <div class="pack-media"><img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" /></div>{gallery(code, t, p)}{media}{bp.youtube_link(f"pack-{p['slug']}-{code}")}
       </div>
       <div class="pdp-info">
         <p class="eyebrow">{x(code, t[k + '.origin'])}</p>

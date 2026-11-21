@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "નમસ્તે, મારે ઑર્ડર કરવો છે.",
    "back": "Namaste (hello), I want to order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "આ પેકના વધુ ફોટા",
+   "back": "More photos of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "પેકની પાછળની બાજુ",
+   "back": "The back side of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "પેકની આગળની બાજુ, નજીકથી",
+   "back": "The front side of the pack, from close up"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "પેક પર છપાયેલી વાર્તા",
+   "back": "The story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "પેક પરનું પોષણ કોષ્ટક",
+   "back": "The nutrition table on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "પેક પરની ઉત્પાદક અને સંગ્રહની વિગતો",
+   "back": "The manufacturer and storage details on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "બાજુથી દેખાતું પેક",
+   "back": "The pack, seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "અમારી દુકાનની છાજલી પરનું પેક",
+   "back": "The pack on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "અમારી દુકાનમાં છાજલી પરના પેક",
+   "back": "The packs on the shelf in our shop"
   }
  }
 }

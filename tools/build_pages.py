@@ -606,7 +606,7 @@ def product_ld(p, facts):
                 "name": f"{p['name']} ({p['local']}) {p['g']} g",
                 "alternateName": [p["local"], p["te"], p["hi"], p["sa"], p["hi_tr"]],
                 "description": text_of(p["lede"]),
-                "image": [f"{SITE}/assets/packs/{p['pack']}"],
+                "image": [f"{SITE}/assets/packs/{p['pack']}"] + [SITE + r["src"] for r in GALLERY.get(p["code"], [])],
                 **pack_videos_ld(p),
                 "sku": f"1AF-{p['code']}-{p['g']:04d}",
                 "brand": {"@type": "Brand", "name": "1acrefarms"},
@@ -697,6 +697,43 @@ SOCIAL = """        <div class="footer-social" translate="no">
 # nightly YouTube routine. A page's video gets a small "▶ YouTube" link to the same video there.
 # No aria-label on it: i18n_pages extracts every alt/aria-label inside <main> as a segment (translate="no" or not),
 # which would make the language copies of that page stale. title= is not extracted.
+# Pack-page photo galleries (Shiva 21-11-2026; Bhargava: "add more pics to website too"). tools/gallery.json is written
+# by tools/gallery_prep.py from our REAL photos (studio back, crops of the printed pouch, shop photos; nothing drawn).
+# The front pack photo stays the first and largest image (the page's LCP); the gallery is a row of small lazy thumbnails
+# under it. Tapping one shows that photo in the same fixed-size box (no layout shift); without JS the link opens it.
+# Alt text = "<pack name>: <label>"; the language pages use the OPTIONAL keys ui.g_<kind> / ui.g_more (English until
+# translated and back-checked).
+GALLERY_JSON = ROOT / "tools" / "gallery.json"
+GALLERY = json.loads(GALLERY_JSON.read_text(encoding="utf-8")) if GALLERY_JSON.exists() else {}
+GALLERY_LABELS = {"more": "More photos of this pack", "back": "back of the pack", "closeup": "front of the pack, close up",
+                  "story": "the story printed on the pack", "nutrition": "nutrition table on the pack",
+                  "care": "maker and storage details on the pack", "angle": "the pack seen from the side",
+                  "shelf": "the pack on our shop shelf", "stocked": "packs on the shelf in our shop"}
+GALLERY_JS = ("<script>(function(){var g=document.querySelector('.pdp-gallery'),box=document.querySelector('.pdp-media .pack-media'),"
+              "main=box&&box.querySelector('img');if(!g||!main)return;var front=main.getAttribute('src');"
+              "g.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a.pg-thumb');if(!a)return;"
+              "e.preventDefault();var h=a.getAttribute('href');main.src=h;main.alt=a.querySelector('img').alt;"
+              "box.classList.toggle('is-photo',h!==front);g.querySelectorAll('.pg-thumb').forEach(function(x){"
+              "x.classList.toggle('is-on',x===a);x.removeAttribute('aria-current');});a.setAttribute('aria-current','true');});})();</script>")
+
+
+def gallery(p, front_src, front_alt, name, labels=None):
+    """The thumbnail row under the front pack photo. labels: plain-text {kind: label} (English by default); name: the
+    pack name as shown on this page (plain text). Returns "" for a pack with no gallery photos."""
+    rows = GALLERY.get(p["code"]) or []
+    if not rows:
+        return ""
+    lab = {**GALLERY_LABELS, **(labels or {})}
+    esc = lambda t: html.escape(t, quote=True)
+    thumbs = [f'<a class="pg-thumb is-on" href="{front_src}" aria-current="true"><img src="{front_src}" alt="{esc(front_alt)}" '
+              f'width="160" height="224" loading="lazy" decoding="async" /></a>']
+    for r in rows:
+        thumbs.append(f'<a class="pg-thumb" href="{r["src"]}"><img src="{r["thumb"]}" alt="{esc(name + ": " + lab[r["kind"]])}" '
+                      f'width="{r["tw"]}" height="{r["th"]}" loading="lazy" decoding="async" /></a>')
+    return (f'\n        <div class="pdp-gallery" role="group" aria-label="{esc(lab["more"])}">\n          '
+            + "\n          ".join(thumbs) + "\n        </div>" + GALLERY_JS)
+
+
 YT_JSON = ROOT / "tools" / "youtube.json"
 YT = json.loads(YT_JSON.read_text(encoding="utf-8")).get("videos", {}) if YT_JSON.exists() else {}
 
@@ -806,7 +843,7 @@ def page(p, live, facts, guides=(), recipes=()):
 
     <section class="pdp">
       <div class="pdp-media">
-        <div class="pack-media"><img src="{img}" alt="{p['name']} ({p['local']}) {p['g']} g pack, front" width="800" height="1122" /></div>
+        <div class="pack-media"><img src="{img}" alt="{p['name']} ({p['local']}) {p['g']} g pack, front" width="800" height="1122" /></div>{gallery(p, img, f"{p['name']} ({p['local']}) {p['g']} g pack, front", p['name'])}
         {pack_videos_html(p)}
       </div>
       <div class="pdp-info">

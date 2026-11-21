@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "नमस्कार, म्हाका ऑर्डर करूंक जाय.",
    "back": "Hello (Namaskar), I want to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "ह्या पॅकाचे आनीक फोटो",
+   "back": "More photos of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "पॅकाची फाटली बाजू",
+   "back": "Back side of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "पॅकाची मुखावयली बाजू, लागसल्यान",
+   "back": "Front side of the pack, from near"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "पॅकाचेर छापिल्ली काणी",
+   "back": "Story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "पॅकाचेर पोषणाचो तक्तो",
+   "back": "Nutrition chart on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "पॅकाचेर तयार करपी आनी सांठोवपाचो तपशील",
+   "back": "Maker and storage details on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "कुशीकडल्यान दिसपी पॅक",
+   "back": "Pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "आमच्या दुकानाच्या शेल्फाचेर दवरिल्लो पॅक",
+   "back": "Pack kept on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "आमच्या दुकानांतल्या शेल्फाचेर दवरिल्ले पॅक",
+   "back": "Packs kept on the shelf in our shop"
   }
  }
 }

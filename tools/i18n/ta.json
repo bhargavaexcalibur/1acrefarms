@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "வணக்கம், நான் ஆர்டர் செய்ய விரும்புகிறேன்.",
    "back": "Hello (Vanakkam), I would like to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "இந்த பாக்கெட்டின் மேலும் படங்கள்",
+   "back": "More pictures of this packet"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "பாக்கெட்டின் பின்பக்கம்",
+   "back": "Back side of the packet"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "பாக்கெட்டின் முன்பக்கம், அருகில் இருந்து",
+   "back": "Front side of the packet, from close by"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "பாக்கெட்டில் அச்சிடப்பட்ட கதை",
+   "back": "Story printed on the packet"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "பாக்கெட்டில் உள்ள ஊட்டச்சத்து அட்டவணை",
+   "back": "Nutrition table that is on the packet"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "பாக்கெட்டில் உள்ள தயாரிப்பாளர், சேமிப்பு விவரங்கள்",
+   "back": "Manufacturer, storage details that are on the packet"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "பக்கவாட்டில் இருந்து பார்த்த பாக்கெட்",
+   "back": "Packet seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "எங்கள் கடை அலமாரியில் பாக்கெட்",
+   "back": "Packet on our shop shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "எங்கள் கடையில் அலமாரியில் உள்ள பாக்கெட்டுகள்",
+   "back": "Packets that are on the shelf in our shop"
   }
  }
 }

@@ -688,6 +688,15 @@ span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { 
 .hero-actions .btn-voice:hover { background: rgba(247,244,236,.12); }
 .i18n-voice { justify-content: center; margin: 18px 0 6px; }
 
+/* Pack-page photo gallery (21-11-2026): small thumbnails under the front pack photo; the chosen photo shows in the same box */
+.pdp-gallery { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x proximity; max-width: 420px; margin: 12px auto 0; padding: 2px 2px 6px; -webkit-overflow-scrolling: touch; }
+.pg-thumb { flex: 0 0 64px; height: 64px; border-radius: 6px; overflow: hidden; border: 1px solid var(--line); background: #fff; scroll-snap-align: start; }
+.pg-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pg-thumb.is-on { border-color: var(--green-deep); box-shadow: 0 0 0 1px var(--green-deep); }
+.pack-media.is-photo { background: #fff; }
+.pack-media.is-photo img { object-fit: contain; }
+@media (max-width: 900px) { .pdp-gallery { max-width: 300px; } .pg-thumb { flex-basis: 56px; height: 56px; } }
+
 /* CHECKOUT:START written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False): direct orders */
 .nav-cart { text-decoration: none; font-size: 0.82rem; font-weight: 500; flex: none; }
 .cart-count[hidden] { display: none; }

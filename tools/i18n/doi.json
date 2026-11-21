@@ -10560,6 +10560,51 @@
    "src": "Namaste, I want to order.",
    "t": "नमस्ते, मिगी आर्डर करना ऐ।",
    "back": "Hello (Namaste), I want to place an order."
+  },
+  "ui.g_more": {
+   "src": "More photos of this pack",
+   "t": "इस पैक दियां होर तस्वीरां",
+   "back": "More pictures of this pack"
+  },
+  "ui.g_back": {
+   "src": "back of the pack",
+   "t": "पैक दा पिछला पास्सा",
+   "back": "Back side of the pack"
+  },
+  "ui.g_closeup": {
+   "src": "front of the pack, close up",
+   "t": "पैक दा अगला पास्सा, नेड़े थमां",
+   "back": "Front side of the pack, from near"
+  },
+  "ui.g_story": {
+   "src": "the story printed on the pack",
+   "t": "पैक उप्पर छपी दी कहानी",
+   "back": "Story printed on the pack"
+  },
+  "ui.g_nutrition": {
+   "src": "nutrition table on the pack",
+   "t": "पैक उप्पर पोषण दी तालिका",
+   "back": "Table of nutrition on the pack"
+  },
+  "ui.g_care": {
+   "src": "maker and storage details on the pack",
+   "t": "पैक उप्पर बनाने आह्ले ते रक्खने दा ब्यौरा",
+   "back": "Details of the maker and of keeping, on the pack"
+  },
+  "ui.g_angle": {
+   "src": "the pack seen from the side",
+   "t": "बक्खी थमां दिखदा पैक",
+   "back": "Pack seen from the side"
+  },
+  "ui.g_shelf": {
+   "src": "the pack on our shop shelf",
+   "t": "साढ़ी हट्टी दे शैल्फ उप्पर रक्खे दा पैक",
+   "back": "Pack kept on our shop's shelf"
+  },
+  "ui.g_stocked": {
+   "src": "packs on the shelf in our shop",
+   "t": "साढ़ी हट्टी च शैल्फ उप्पर रक्खे दे पैक",
+   "back": "Packs kept on the shelf in our shop"
   }
  }
 }
