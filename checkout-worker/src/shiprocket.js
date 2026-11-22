@@ -117,7 +117,12 @@ async function createOnce(deps, payload) {
     if (!res.ok) throw new ShiprocketError(res.status, isRetryableStatus(res.status) ? "busy" : "rejected", isRetryableStatus(res.status), retryAfterMs(res));
     const data = await safeJson(res);
     if (!data || data.order_id === undefined || data.order_id === null) throw new ShiprocketError(res.status, "no_order_id", false);
-    return { srOrderId: String(data.order_id), srShipmentId: data.shipment_id === undefined || data.shipment_id === null ? null : String(data.shipment_id) };
+    // awb_code / courier_name are filled only if the account auto-assigns a courier at create (the caller alerts)
+    const awb = data.awb_code === undefined || data.awb_code === null || String(data.awb_code).trim() === "" ? null : String(data.awb_code).trim().slice(0, 30);
+    return {
+      srOrderId: String(data.order_id), srShipmentId: data.shipment_id === undefined || data.shipment_id === null ? null : String(data.shipment_id),
+      awb, courier: awb ? String(data.courier_name ?? "").slice(0, 80) : null,
+    };
   }
   throw new ShiprocketError(401, "unauthorised", false);
 }

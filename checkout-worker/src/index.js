@@ -27,7 +27,7 @@ import { nextRetryDelayMs, pushToShiprocket } from "./shiprocket.js";
 import { orderSummary, sendOwnerAlert } from "./alerts.js";
 import { sendOrderConfirmation } from "./confirmation.js";
 import { expectedDelivery } from "./delivery.js";
-import { handleAdmin } from "./admin.js";
+import { classifyCourier, handleAdmin } from "./admin.js";
 
 const SHIP_LEASE_MS = 2 * 60 * 1000;
 const BASE32 = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"; // Crockford: no I, L, O, U
@@ -241,6 +241,17 @@ async function shipOrder(d, orderId, attempts) {
   if (r.ok) {
     await d.store.updateShipment(orderId, { shipStatus: "pushed", shipAttempts: total, shipNextAt: null, shipError: null, srOrderId: r.srOrderId, srShipmentId: r.srShipmentId }, d.now);
     d.log("shiprocket_pushed", { orderId, attempts: total });
+    if (r.awb) {
+      // the account auto-assigned a courier at create: an AWB (wallet money) with no "ship <ID>", maybe on Delhivery
+      const k = classifyCourier(r.courier);
+      d.log("shiprocket_auto_awb", { orderId, reason: k.allowed ? "allowed_courier" : k.reason });
+      await sendOwnerAlert(d, {
+        subject: `${k.allowed ? "CHECK" : "URGENT"}: Shiprocket auto-assigned AWB ${r.awb} at order create for ${orderId}`,
+        lines: [`Shiprocket order ${r.srOrderId}, shipment ${r.srShipmentId ?? "-"}: AWB ${r.awb} on ${r.courier || "(courier not named)"}, assigned when the order was pushed.`,
+          k.allowed ? "The courier is on the allow-list, but wallet money may have been spent without Bhargava's OK." : "That courier is NOT DTDC / Blue Dart / India Post: do not hand the parcel over; cancelling the AWB needs Bhargava's OK.",
+          "Turn off courier auto-assign in Shiprocket (Settings > Courier) so creating an order never books one (needs Bhargava's OK)."],
+      });
+    }
     return "pushed";
   }
   const why = `${r.reason}${r.http ? ` (http ${r.http})` : ""}`;

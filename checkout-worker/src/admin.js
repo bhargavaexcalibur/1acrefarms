@@ -20,7 +20,9 @@
 //     admin_not_configured while the secret is unset or short (fail closed); 401 otherwise. No CORS on any reply
 //     (index.js never runs these replies through its CORS helper; OPTIONS is answered 403 there).
 //   - couriers: DTDC, Blue Dart, India Post only. Any name containing "delhivery" is never booked and never shown in
-//     a quote (only counted). Shiprocket's recommended courier is ignored; a booking always names its courier_id.
+//     a quote (only counted). Shiprocket's recommended courier is ignored; a booking always names its courier_id, and
+//     what Shiprocket actually booked is checked again. Pickup and label refuse an AWB on any other courier. An AWB
+//     auto-assigned at order create is refused (409 awb_auto_assigned) and alerted.
 //   - prepaid only: every quote sends cod=0; every order is payment_method "Prepaid" with shipping_charges 0; a
 //     booking refuses an order that is not prepaid, not on our custom channel ("CS") or not at the pickup "home".
 //   - price: a booking re-quotes live and refuses above the caller's maxRupees or SR_BOOK_MAX_RUPEES (Rs 500), and
@@ -131,6 +133,7 @@ async function readShipment(d, ctx, shipmentId) {
 }
 
 async function readOrder(d, ctx, srOrderId) {
+  if (!SR_ID_RE.test(String(srOrderId ?? ""))) throw bad("srOrderId"); // never an empty or odd id in a Shiprocket path
   const r = await srCall(d, "GET", `/orders/show/${srOrderId}`);
   if (r.status === 400 || r.status === 404) throw new HttpError(404, "unknown_sr_order");
   if (r.status !== 200) throw srFail(r, ctx);
@@ -148,12 +151,38 @@ async function loadShipment(d, ctx, shipmentId) {
   return { shipment, order, srOrderId, awb: awbOf(shipment), ref: String(order.channel_order_id ?? "").slice(0, 40) };
 }
 
-// Why this Shiprocket order may not be booked by us (null = fine).
-function orderRefusal(o, cfg) {
+// Why this Shiprocket order may not be booked by us (null = fine). `pickup` = the order's pickup nickname.
+function orderRefusal(o, cfg, pickup) {
   if (String(o.payment_method ?? "").trim().toLowerCase() !== "prepaid" || Number(o.cod ?? 0) !== 0) return "not_prepaid";
   if (String(o.base_channel_code ?? "") !== "CS") return "not_custom_channel";
-  if (String(o.pickup_location ?? "") !== cfg.shiprocketPickup) return "wrong_pickup";
+  if (pickup !== cfg.shiprocketPickup) return "wrong_pickup";
   return null;
+}
+
+// The public docs' GET /orders/show example has "pickup_location": "" (only the GET /orders list rows carry the
+// nickname). So when orders/show leaves it empty, read it from this order's list row. Unreadable = "" = refused.
+async function refusalOf(d, ctx, s) {
+  let pickup = String(s.order.pickup_location ?? "").trim();
+  if (!pickup && s.ref) {
+    try {
+      const row = (await searchOrders(d, ctx, s.ref)).find((m) => m.srOrderId === s.srOrderId && m.channelOrderId === s.ref);
+      pickup = String(row?.pickupLocation ?? "").trim();
+    } catch { pickup = ""; }
+  }
+  return orderRefusal(s.order, d.cfg, pickup);
+}
+
+// Pickup and label are free, but a pickup on a Delhivery (or any off-list) AWB breaks the courier rule just the same:
+// an AWB can come from the web panel, an auto-assign or Shiprocket's fallback partner, not only from our booking.
+async function requireAllowedCourier(d, s, shipmentId) {
+  let courier = String(s.courier ?? s.courier_name ?? "").trim();
+  if (!courier) {
+    try { courier = String(JSON.parse(await d.store.kvGet(`srbooked:${shipmentId}`, d.now) || "{}").courier ?? "").trim(); } catch { courier = ""; }
+  }
+  if (!courier) throw new HttpError(403, "courier_not_allowed", { reason: "courier_unknown", hint: "use the Shiprocket panel for this one" });
+  const k = classifyCourier(courier);
+  if (!k.allowed) throw new HttpError(403, "courier_not_allowed", { reason: k.reason });
+  return courier;
 }
 
 const deliveryPinOf = (o) => {
@@ -263,7 +292,7 @@ async function quote(d, { body, ctx }) {
     const s = await loadShipment(d, ctx, shipmentId);
     const to = deliveryPinOf(s.order);
     q = await serviceability(d, ctx, { srOrderId: s.srOrderId, deliveryPin: to, declaredRupees: declared });
-    head = { shipmentId, srOrderId: s.srOrderId, ref: s.ref, awb: s.awb, refusal: orderRefusal(s.order, d.cfg), to: to ?? null, weightKg: money(s.shipment.weight), dims: null, parcelEstimated: false };
+    head = { shipmentId, srOrderId: s.srOrderId, ref: s.ref, awb: s.awb, refusal: await refusalOf(d, ctx, s), to: to ?? null, weightKg: money(s.shipment.weight), dims: null, parcelEstimated: false };
   } else if (body.orderId !== undefined) {
     const id = String(body.orderId).trim().slice(0, 40);
     if (!WEBSITE_ID_RE.test(id)) throw bad("orderId");
@@ -300,6 +329,10 @@ function marketplacePayload(d, body, orderId) {
   // Amazon self-ship buyers show no e-mail; Shiprocket requires one, so the brand inbox stands in.
   const v = validateCustomer({ ...raw, state: canonicalState(raw.state), email: raw.email ? raw.email : d.cfg.alertTo });
   const errors = [...v.errors];
+  // prepaid only: the marketplace order itself must have been paid (Seller Central's payment method). A
+  // Pay-on-Delivery order is refused, never quietly shipped as Prepaid (the courier would collect nothing).
+  const payment = typeof body.payment === "string" ? body.payment.trim().toLowerCase() : "";
+  if (payment !== "prepaid") errors.push({ field: "payment", code: payment ? "cod_not_supported" : "required" });
   const items = Array.isArray(body.items) ? body.items : [];
   if (!items.length || items.length > 10) errors.push({ field: "items", code: items.length ? "too_many_lines" : "required" });
   const lines = [];
@@ -384,6 +417,26 @@ async function create(d, { body, ctx }) {
   const srShipmentId = r.data?.shipment_id === undefined || r.data?.shipment_id === null ? null : String(r.data.shipment_id);
   if (website) {
     await d.store.updateShipment(orderId, { shipStatus: "pushed", shipNextAt: null, shipError: null, srOrderId: String(srOrderId), srShipmentId }, d.now);
+  }
+  // The create reply carries awb_code / courier_name (public docs example). With courier auto-assign on in the
+  // account, creating an order can assign an AWB (and charge the wallet) with no "ship <ID>", on any courier.
+  const autoAwb = awbOf({ awb: r.data?.awb_code });
+  if (autoAwb) {
+    const courier = String(r.data?.courier_name ?? "").slice(0, 80);
+    const k = classifyCourier(courier);
+    if (srShipmentId && SR_ID_RE.test(srShipmentId)) {
+      // book must refuse this shipment even if a later read misses the AWB
+      await d.store.recordEvent(`srbook:${srShipmentId}`, d.now);
+      await d.store.kvSet(`srbooked:${srShipmentId}`, JSON.stringify({ awb: autoAwb, courierId: intOrNull(r.data?.courier_company_id), courier, rate: null, at: d.now, auto: true }), null);
+    }
+    ctx.reason = "awb_auto_assigned";
+    d.defer(sendOwnerAlert(d, {
+      subject: `${k.allowed ? "CHECK" : "URGENT"}: Shiprocket auto-assigned AWB ${autoAwb} at order create for ${orderId}`,
+      lines: [`Creating ${orderId} in Shiprocket (order ${srOrderId}, shipment ${srShipmentId ?? "-"}) came back with AWB ${autoAwb} on ${courier || "(courier not named)"}, without a "ship <ID>".`,
+        k.allowed ? "The courier is on the allow-list, but wallet money may have been spent without Bhargava's OK." : "That courier is NOT DTDC / Blue Dart / India Post: do not hand the parcel over; cancelling the AWB needs Bhargava's OK.",
+        "Turn off courier auto-assign in Shiprocket (Settings > Courier) so creating an order never books one (needs Bhargava's OK)."],
+    }));
+    throw new HttpError(409, "awb_auto_assigned", { srOrderId: String(srOrderId), srShipmentId, awb: autoAwb, courierAllowed: k.allowed, courierReason: k.allowed ? undefined : k.reason });
   }
   return {
     orderId, srOrderId: String(srOrderId), srShipmentId, status: str(r.data?.status, 30), pickup: payload.pickup_location,
@@ -473,7 +526,7 @@ async function book(d, { body, ctx }) {
       keepLock = true;
       throw new HttpError(409, "already_booked", { awb: s.awb });
     }
-    const refusal = orderRefusal(s.order, d.cfg);
+    const refusal = await refusalOf(d, ctx, s);
     if (refusal) throw new HttpError(409, refusal);
 
     // e. live re-quote for this very order (its own weight and size), cod=0
@@ -492,70 +545,96 @@ async function book(d, { body, ctx }) {
     const balance = await readWallet(d, ctx);
     if (balance < rate) throw new HttpError(402, "wallet_short", { balanceRupees: balance, rate });
 
-    // g. THE ONE CALL THAT SPENDS MONEY: always with our courier_id; never status "reassign"; never auto-retried
-    let a;
-    try {
-      a = await srCall(d, "POST", "/courier/assign/awb", { body: { shipment_id: Number(shipmentId), courier_id: courierId } });
-    } catch (e) {
-      if (e instanceof ShiprocketError && (e.reason === "timeout" || e.reason === "network")) {
-        keepLock = true; // the request may have reached Shiprocket: never let a retry book twice
-        ctx.reason = e.reason;
-        throw new HttpError(504, "awb_unknown", { hint: `check with tools/sr.py track --shipment ${shipmentId} (or find ${s.ref}); only if it has no AWB after a few minutes: tools/sr.py unlock ${shipmentId}` });
+    // g onwards SPENDS MONEY. It runs as one promise that is ALSO handed to ctx.waitUntil: Cloudflare cancels a
+    // request's own work when the client disconnects (this Mac's Wi-Fi drops for 20-30 s), and waitUntil keeps the
+    // AWB record, pickup, label and owner alert going for up to 30 s more. The reply still waits for it.
+    const spend = (async () => {
+      // g. THE ONE CALL THAT SPENDS MONEY: always with our courier_id; never status "reassign"; never auto-retried
+      let a;
+      try {
+        a = await srCall(d, "POST", "/courier/assign/awb", { body: { shipment_id: Number(shipmentId), courier_id: courierId } });
+      } catch (e) {
+        if (e instanceof ShiprocketError && (e.reason === "timeout" || e.reason === "network")) {
+          keepLock = true; // the request may have reached Shiprocket: never let a retry book twice
+          ctx.reason = e.reason;
+          throw new HttpError(504, "awb_unknown", { hint: `check with tools/sr.py track --shipment ${shipmentId} (or find ${s.ref}); only if it has no AWB after a few minutes: tools/sr.py unlock ${shipmentId}` });
+        }
+        throw e; // login trouble: the assign request was never sent
       }
-      throw e; // login trouble: the assign request was never sent
-    }
-    const got = a.data?.response?.data;
-    const awb = awbOf(got);
-    if (a.status !== 200 || !(a.data?.awb_assign_status === 1) || !awb) {
-      ctx.http = a.status;
-      // a definite answer without an AWB; re-read the shipment before freeing the lock
-      let awbNow;
-      try { awbNow = awbOf(await readShipment(d, ctx, shipmentId)); } catch { keepLock = true; throw new HttpError(504, "awb_unknown", { http: a.status, srMessage: srMessage(a.data) }); }
-      if (awbNow) { keepLock = true; throw new HttpError(409, "already_booked", { awb: awbNow }); }
-      throw new HttpError(502, "awb_not_assigned", { http: a.status, srMessage: srMessage(a.data) });
-    }
-    keepLock = true;
-    const courier = String(got.courier_name ?? offered.courier_name ?? "").slice(0, 80);
-    const bookedId = intOrNull(got.courier_company_id) ?? courierId;
-    const ref = s.ref || shipmentId;
-    await d.store.kvSet(`srbooked:${shipmentId}`, JSON.stringify({ awb, courierId: bookedId, courier, rate, at: d.now }), null);
-    if (BANNED_COURIER.test(courier) || bookedId !== courierId) {
-      // impossible after step e, unless Shiprocket overrode the courier: stop here, no pickup, shout
-      d.log("admin_sr_wrong_courier", { route: "/admin/sr/book", reason: BANNED_COURIER.test(courier) ? "delhivery" : "courier_changed" });
+      const got = a.data?.response?.data;
+      const awb = awbOf(got);
+      if (a.status !== 200 || !(a.data?.awb_assign_status === 1) || !awb) {
+        ctx.http = a.status;
+        // a definite answer without an AWB; re-read the shipment before freeing the lock
+        let awbNow;
+        try { awbNow = awbOf(await readShipment(d, ctx, shipmentId)); } catch { keepLock = true; throw new HttpError(504, "awb_unknown", { http: a.status, srMessage: srMessage(a.data) }); }
+        if (awbNow) { keepLock = true; throw new HttpError(409, "already_booked", { awb: awbNow }); }
+        throw new HttpError(502, "awb_not_assigned", { http: a.status, srMessage: srMessage(a.data) });
+      }
+      keepLock = true;
+      const courier = String(got.courier_name || offered.courier_name || "").slice(0, 80);
+      const child = String(got.child_courier_name ?? "").slice(0, 80);
+      const bookedId = intOrNull(got.courier_company_id) ?? courierId;
+      const ref = s.ref || shipmentId;
+      // the record of what was bought must never hide the AWB from the reply
+      let recorded = true;
+      try {
+        await d.store.kvSet(`srbooked:${shipmentId}`, JSON.stringify({ awb, courierId: bookedId, courier, rate, at: d.now }), null);
+      } catch {
+        recorded = false;
+        ctx.reason = "srbooked_write_failed";
+      }
+      // the allow-list again, on what Shiprocket actually booked (its courier, a child courier, the courier id)
+      const kc = classifyCourier(courier);
+      const bannedChild = BANNED_COURIER.test(child);
+      if (!kc.allowed || bannedChild || bookedId !== courierId) {
+        // impossible after step e, unless Shiprocket overrode the courier: stop here, no pickup, shout
+        const banned = kc.reason === "delhivery_never" || bannedChild;
+        d.log("admin_sr_wrong_courier", { route: "/admin/sr/book", reason: banned ? "delhivery" : !kc.allowed ? "not_on_allow_list" : "courier_changed" });
+        d.defer(sendOwnerAlert(d, {
+          subject: `URGENT: ${ref} booked on ${courier}${child ? ` / ${child}` : ""} (asked for courier id ${courierId})`,
+          lines: [`Shiprocket assigned AWB ${awb} on ${courier}${child ? ` (child courier ${child})` : ""}, courier id ${bookedId}, for shipment ${shipmentId} although courier id ${courierId} was asked.`,
+            "No pickup was requested. Cancel this AWB in Shiprocket (needs Bhargava's OK) and book again on DTDC / Blue Dart / India Post."],
+        }));
+        throw new HttpError(502, banned ? "booked_banned_courier" : "booked_other_courier", { awb, courier, courierId: bookedId });
+      }
+
+      // h-i. pickup, label, manifest: free; a failure here never undoes the booking
+      const pickup = pickupReq.mode === "none" ? { requested: false } : { requested: true, ...(await requestPickup(d, ctx, shipmentId, pickupReq.date)) };
+      const label = await makeLabel(d, shipmentId);
+      const manifest = body.manifest === true && pickup.ok ? await makeManifest(d, shipmentId) : null;
+      let walletAfterRupees = null;
+      try { walletAfterRupees = await readWallet(d, ctx); } catch { /* shown as unknown */ }
+      const walletLow = walletAfterRupees !== null && walletAfterRupees < LOW_WALLET_RUPEES;
+      // j. what the wallet actually lost vs the quoted rate (unverified whether the rate includes GST): flag, never undo.
+      // Approximate: a recharge or another booking in between moves the wallet too.
+      const chargedRupees = walletAfterRupees === null ? null : Math.round((balance - walletAfterRupees) * 100) / 100;
+      const chargedOver = chargedRupees !== null && (chargedRupees > maxRupees || chargedRupees > d.cfg.srBookMaxRupees);
+      if (chargedOver) ctx.reason = ctx.reason || "charged_over_max";
+
+      // k. owner alert: no address, phone, buyer name or label link
       d.defer(sendOwnerAlert(d, {
-        subject: `URGENT: ${ref} booked on ${courier} (asked for courier id ${courierId})`,
-        lines: [`Shiprocket assigned AWB ${awb} on ${courier} for shipment ${shipmentId} although courier id ${courierId} was asked.`,
-          "No pickup was requested. Cancel this AWB in Shiprocket (needs Bhargava's OK) and book again on DTDC / Blue Dart / India Post."],
+        subject: `${chargedOver ? "CHECK " : ""}Booked ${ref}: ${courier} AWB ${awb} Rs ${rate}`,
+        lines: [
+          `Shipment ${shipmentId} (Shiprocket order ${s.srOrderId}), our ref ${ref}: ${courier}, AWB ${awb}, Rs ${rate}.`,
+          ...(chargedOver ? [`CHARGED Rs ${chargedRupees} > max Rs ${Math.min(maxRupees, d.cfg.srBookMaxRupees)} (wallet before Rs ${balance}, after Rs ${walletAfterRupees}): the quoted rate may exclude GST; adjust the cap.`] : []),
+          `Pickup: ${pickup.requested ? (pickup.ok ? `scheduled ${pickup.scheduledDate || "(date not given)"}` : `NOT scheduled (${pickup.reason})`) : "none requested (counter drop)"}.`,
+          `Label: ${label.ok ? "made (tools/sr.py label)" : `NOT made (${label.reason})`}.`,
+          `Wallet after: ${walletAfterRupees === null ? "unknown" : `Rs ${walletAfterRupees}`}${walletLow ? " (LOW: top up)" : ""}.`,
+          ...(recorded ? [] : ["The booking record (srbooked) could not be written to D1; the booking lock still holds."]),
+          `Said: "${said[0]}".`,
+        ],
       }));
-      throw new HttpError(502, BANNED_COURIER.test(courier) ? "booked_banned_courier" : "booked_other_courier", { awb, courier, courierId: bookedId });
-    }
-
-    // h-i. pickup, label, manifest: free; a failure here never undoes the booking
-    const pickup = pickupReq.mode === "none" ? { requested: false } : { requested: true, ...(await requestPickup(d, ctx, shipmentId, pickupReq.date)) };
-    const label = await makeLabel(d, shipmentId);
-    const manifest = body.manifest === true && pickup.ok ? await makeManifest(d, shipmentId) : null;
-    let walletAfterRupees = null;
-    try { walletAfterRupees = await readWallet(d, ctx); } catch { /* shown as unknown */ }
-    const walletLow = walletAfterRupees !== null && walletAfterRupees < LOW_WALLET_RUPEES;
-
-    // k. owner alert: no address, phone, buyer name or label link
-    d.defer(sendOwnerAlert(d, {
-      subject: `Booked ${ref}: ${courier} AWB ${awb} Rs ${rate}`,
-      lines: [
-        `Shipment ${shipmentId} (Shiprocket order ${s.srOrderId}), our ref ${ref}: ${courier}, AWB ${awb}, Rs ${rate}.`,
-        `Pickup: ${pickup.requested ? (pickup.ok ? `scheduled ${pickup.scheduledDate || "(date not given)"}` : `NOT scheduled (${pickup.reason})`) : "none requested (counter drop)"}.`,
-        `Label: ${label.ok ? "made (tools/sr.py label)" : `NOT made (${label.reason})`}.`,
-        `Wallet after: ${walletAfterRupees === null ? "unknown" : `Rs ${walletAfterRupees}`}${walletLow ? " (LOW: top up)" : ""}.`,
-        `Said: "${said[0]}".`,
-      ],
-    }));
-    ctx.count = 1;
-    return {
-      shipmentId, srOrderId: s.srOrderId, ref, awb, courier, courierId: bookedId, rate,
-      pickup, labelUrl: label.ok ? label.labelUrl : null, labelError: label.ok ? undefined : label.reason,
-      manifestUrl: manifest?.ok ? manifest.manifestUrl : undefined, manifestError: manifest && !manifest.ok ? manifest.reason : undefined,
-      walletAfterRupees, walletLow,
-    };
+      ctx.count = 1;
+      return {
+        shipmentId, srOrderId: s.srOrderId, ref, awb, courier, courierId: bookedId, rate,
+        pickup, labelUrl: label.ok ? label.labelUrl : null, labelError: label.ok ? undefined : label.reason,
+        manifestUrl: manifest?.ok ? manifest.manifestUrl : undefined, manifestError: manifest && !manifest.ok ? manifest.reason : undefined,
+        walletAfterRupees, walletLow, chargedRupees, chargedOverMax: chargedOver || undefined, recorded: recorded ? undefined : false,
+      };
+    })();
+    d.defer(spend.then(() => {}, () => {})); // errors are answered below, not logged twice
+    return await spend;
   } finally {
     if (!keepLock) await d.store.forgetEvent(lock);
   }
@@ -568,6 +647,7 @@ async function pickupRoute(d, { body, ctx }) {
   if (body.date !== undefined) date = parsePickup(body.date, d.now).date;
   const s = await readShipment(d, ctx, shipmentId);
   if (!awbOf(s)) throw new HttpError(409, "no_awb");
+  await requireAllowedCourier(d, s, shipmentId);
   const r = await requestPickup(d, ctx, shipmentId, date, body.retry === true);
   if (!r.ok) throw new HttpError(502, "pickup_not_scheduled", { reason: r.reason, http: r.http, srMessage: r.srMessage });
   return { shipmentId, scheduledDate: r.scheduledDate, token: r.token };
@@ -578,6 +658,7 @@ async function labelRoute(d, { body, ctx }) {
   const s = await readShipment(d, ctx, shipmentId);
   const awb = awbOf(s);
   if (!awb) throw new HttpError(409, "no_awb");
+  await requireAllowedCourier(d, s, shipmentId);
   const r = await makeLabel(d, shipmentId);
   if (!r.ok) throw new HttpError(502, "label_not_created", { reason: r.reason, http: r.http, srMessage: r.srMessage });
   return { shipmentId, awb, labelUrl: r.labelUrl };
@@ -608,12 +689,17 @@ async function cancel(d, { body, ctx }) {
   if (!srOrderId) {
     const m = (await searchOrders(d, ctx, given)).filter((x) => x.channelOrderId === given);
     if (m.length !== 1) throw new HttpError(m.length ? 409 : 404, m.length ? "ambiguous_ref" : "unknown_ref", { count: m.length });
+    if (!SR_ID_RE.test(m[0].srOrderId)) throw new HttpError(502, "search_without_order_id");
     srOrderId = m[0].srOrderId;
   }
   const o = await readOrder(d, ctx, srOrderId);
   // a channel-imported order (Amazon/Flipkart channel) could push "Cancelled" back to the marketplace
   if (String(o.base_channel_code ?? "") !== "CS") throw new HttpError(409, "not_custom_channel");
   if (/cancel/i.test(String(o.status ?? ""))) throw new HttpError(409, "already_cancelled");
+  // A second guard that does not depend on the AWB field names: only a NEW order (status_code 1) is cancelled here.
+  // Shiprocket moves an order past NEW once an AWB is assigned.
+  const st = String(o.status ?? "").trim().toUpperCase();
+  if (!(st ? st === "NEW" : Number(o.status_code) === 1)) throw new HttpError(409, "not_new", { status: str(o.status, 40) });
   const ships = shipmentsOf(o);
   if (!ships.length) throw new HttpError(409, "cannot_check_awb");
   for (const sh of ships) {
@@ -639,6 +725,7 @@ async function searchOrders(d, ctx, ref) {
     return {
       srOrderId: String(o?.id ?? ""), channelOrderId: String(o?.channel_order_id ?? "").slice(0, 40), channel: str(o?.channel_name, 40),
       status: str(o?.status, 40), shipmentId: sh?.id !== undefined && sh?.id !== null ? String(sh.id) : null, awb: awbOf(sh), courier: str(sh?.courier, 60),
+      pickupLocation: str(o?.pickup_location, 60),
     };
   });
 }
@@ -651,8 +738,14 @@ async function find(d, { query, ctx }) {
   return { ref, matches };
 }
 
-// picked up = the courier has the parcel (not "pickup scheduled" / "out for pickup")
-const PICKED_RE = /\b(picked\s*up|in\s*transit|shipped|out\s*for\s*delivery|delivered|reached|rto)\b/i;
+// picked up = the courier has the parcel (not "pickup scheduled" / "out for pickup"). Only structured fields count:
+// the pickup date, Shiprocket's numeric status, the status labels. Never the courier's free-text activity ("Shipment
+// not picked up - seller not available", "Pickup executive reached seller location" are NOT pickups).
+const PICKED_RE = /(?<!\bnot\s)(?<!\bnot\s+yet\s)(?<!\bwill\s+be\s)\b(picked\s*up|in\s*transit|shipped|out\s*for\s*delivery|delivered|reached\s+at\s+destination|rto)\b/i;
+// Shiprocket shipment status codes that only exist once the courier has the parcel: 6 shipped, 7 delivered,
+// 9 RTO initiated, 10 RTO delivered, 17 out for delivery, 18 in transit, 38 reached destination hub, 40 RTO NDR,
+// 41 RTO OFD, 42 picked up, 46 RTO in transit
+const PICKED_CODES = new Set([6, 7, 9, 10, 17, 18, 38, 40, 41, 42, 46]);
 
 async function track(d, { query, ctx }) {
   const awb = query.get("awb");
@@ -681,15 +774,19 @@ async function track(d, { query, ctx }) {
   if (!td || typeof td !== "object") return { noActivity: true };
   if (Number(td.track_status) !== 1) return { noActivity: true, message: noPhones(td.error) || undefined };
   const st = (Array.isArray(td.shipment_track) ? td.shipment_track[0] : null) || {};
-  const activities = (Array.isArray(td.shipment_track_activities) ? td.shipment_track_activities : []).slice(0, 15).map((a) => ({
+  const rawActs = (Array.isArray(td.shipment_track_activities) ? td.shipment_track_activities : []).slice(0, 15);
+  const activities = rawActs.map((a) => ({
     date: str(a?.date, 30), activity: noPhones(a?.activity), location: noPhones(a?.location, 80), label: str(a?.["sr-status-label"], 40),
   }));
   const pickupDate = str(st.pickup_date, 30) || null;
-  const pickedUp = Boolean(pickupDate) || PICKED_RE.test(String(st.current_status ?? "")) || activities.some((a) => PICKED_RE.test(a.label || "") || PICKED_RE.test(a.activity || ""));
+  const shipmentStatus = typeof td.shipment_status === "number" ? td.shipment_status : intOrNull(td.shipment_status);
+  const pickedUp = Boolean(pickupDate) || PICKED_CODES.has(shipmentStatus) || PICKED_RE.test(String(st.current_status ?? ""))
+    || rawActs.some((a) => PICKED_CODES.has(intOrNull(a?.["sr-status"])) || PICKED_RE.test(String(a?.["sr-status-label"] ?? "")));
+  const courierName = str(st.courier_name, 60);
   ctx.count = activities.length;
   return {
-    awb: str(st.awb_code, 30) || awb || null, courier: str(st.courier_name, 60), currentStatus: str(st.current_status, 60),
-    shipmentStatus: typeof td.shipment_status === "number" ? td.shipment_status : intOrNull(td.shipment_status),
+    awb: str(st.awb_code, 30) || awb || null, courier: courierName, courierAllowed: courierName ? classifyCourier(courierName).allowed : null,
+    currentStatus: str(st.current_status, 60), shipmentStatus,
     pickedUp, pickupDate, deliveredDate: str(st.delivered_date, 30) || null, edd: str(st.edd, 30) || null, etd: str(td.etd, 30) || null,
     trackUrl: str(td.track_url, 200), activities,
   };

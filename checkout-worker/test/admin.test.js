@@ -19,6 +19,7 @@ const bookBody = (shipmentId, extra = {}) => ({
 });
 const AMAZON_ORDER = Object.freeze({
   orderId: "171-5635376-6368363",
+  payment: "prepaid", // as Seller Central shows it: a Pay-on-Delivery order is refused
   customer: { name: "Ravi Kumar", phone: "+91 98480 12345", address: "H.No 4-56, Temple Street, Ramnagar", city: "Raipur", state: "CHHATTISGARH", pin: "490023" },
   items: [{ sku: "1AF-KPAS-0540", name: "Araku Hill Turmeric Powder 540g", qty: 1, price: 495 }, { sku: "1AF-CBEL-0540", qty: 2, price: 220 }],
 });
@@ -253,7 +254,61 @@ describe("POST /admin/sr/create (no AWB)", () => {
     }
     const noPhone = await h.admin("POST", "/admin/sr/create", bad[0]);
     assert.deepEqual(noPhone.body.errors, [{ field: "phone", code: "required" }]);
+    // prepaid only: a marketplace order must say it was prepaid; Pay-on-Delivery is refused, never shipped as Prepaid
+    const { payment, ...noPayment } = AMAZON_ORDER;
+    assert.equal(payment, "prepaid");
+    for (const [body, code] of [[noPayment, "required"], [{ ...AMAZON_ORDER, payment: "cod" }, "cod_not_supported"], [{ ...AMAZON_ORDER, payment: "Pay on Delivery" }, "cod_not_supported"]]) {
+      const r = await h.admin("POST", "/admin/sr/create", body);
+      assert.equal(r.status, 400, JSON.stringify(body.payment));
+      assert.deepEqual(r.body.errors, [{ field: "payment", code }]);
+    }
     assert.equal(srCalls(h).length, 0);
+  });
+
+  test("an AWB auto-assigned at create (account auto-assign on): 409, URGENT alert for Delhivery, book refuses that shipment", async () => {
+    const h = harness();
+    h.mocks.state.shiprocket.createExtra = { awb_code: "1490810000077", courier_company_id: 10, courier_name: "Delhivery Surface" };
+    const r = await h.admin("POST", "/admin/sr/create", AMAZON_ORDER);
+    assert.deepEqual([r.status, r.body.error, r.body.awb, r.body.courierAllowed, r.body.courierReason, r.body.srShipmentId], [409, "awb_auto_assigned", "1490810000077", false, "delhivery_never", "800001"]);
+    await h.drain();
+    const mail = h.mocks.state.resend.sent.find((m) => /auto-assigned/.test(m.subject));
+    assert.ok(mail && /(^|\] )URGENT:/.test(mail.subject), "URGENT owner alert");
+    assert.ok(!(mail.subject + mail.text).includes("98480") && !(mail.subject + mail.text).includes("Temple Street"));
+    h.mocks.state.shiprocket.createExtra = null;
+    const b = await h.admin("POST", "/admin/sr/book", { ...bookBody("800001"), said: `ship ${AMAZON_ORDER.orderId}` });
+    assert.deepEqual([b.status, b.body.error, b.body.booked?.awb], [409, "already_booking_or_booked", "1490810000077"]);
+    assert.equal(assignCalls(h).length, 0);
+    // an allowed courier auto-assigned is still flagged (no "ship <ID>"), as CHECK
+    const g = harness();
+    g.mocks.state.shiprocket.createExtra = { awb_code: "7D140000077", courier_company_id: 54, courier_name: "DTDC Surface" };
+    const r2 = await g.admin("POST", "/admin/sr/create", AMAZON_ORDER);
+    assert.deepEqual([r2.status, r2.body.error, r2.body.courierAllowed], [409, "awb_auto_assigned", true]);
+    await g.drain();
+    assert.ok(g.mocks.state.resend.sent.some((m) => /(^|\] )CHECK: Shiprocket auto-assigned/.test(m.subject)));
+    // an empty awb_code (the normal reply) is no AWB
+    const n = harness();
+    n.mocks.state.shiprocket.createExtra = { awb_code: "", courier_name: "" };
+    assert.equal((await n.admin("POST", "/admin/sr/create", AMAZON_ORDER)).status, 200);
+  });
+
+  test("the website order push also flags an AWB auto-assigned at create (URGENT on Delhivery); the order stays pushed", async () => {
+    const h = harness({ env: LIVE_ENV });
+    h.mocks.state.shiprocket.createExtra = { awb_code: "1490810000088", courier_company_id: 10, courier_name: "Delhivery Surface" };
+    const r = await h.createOrder();
+    const gw = r.body.razorpay.orderId;
+    const pay = h.mocks.razorpayCapture(gw, r.body.totalPaise);
+    await postRazorpayWebhook(h, razorpayOrderPaidEvent(gw, pay, r.body.totalPaise));
+    await h.drain();
+    assert.equal((await h.store.getOrder(r.body.orderId)).shipStatus, "pushed");
+    assert.ok(h.mocks.state.resend.sent.some((m) => m.subject.endsWith(`URGENT: Shiprocket auto-assigned AWB 1490810000088 at order create for ${r.body.orderId}`)));
+    assert.ok(h.logs.some((l) => l.includes("shiprocket_auto_awb") && l.includes("delhivery_never")));
+    // no AWB in the reply (the normal case): no such alert
+    const n = harness({ env: LIVE_ENV });
+    const r2 = await n.createOrder();
+    const pay2 = n.mocks.razorpayCapture(r2.body.razorpay.orderId, r2.body.totalPaise);
+    await postRazorpayWebhook(n, razorpayOrderPaidEvent(r2.body.razorpay.orderId, pay2, r2.body.totalPaise));
+    await n.drain();
+    assert.ok(!n.mocks.state.resend.sent.some((m) => /auto-assigned/.test(m.subject)));
   });
 
   test("a repeated order id -> 409 already_exists with the existing Shiprocket order", async () => {
@@ -375,6 +430,12 @@ describe("POST /admin/sr/book (spends wallet money)", () => {
     assert.ok(!JSON.stringify(del.body).includes("Delhivery"), "the refusal names the rule, not the courier");
     assert.equal((await h.admin("POST", "/admin/sr/book", bookBody(shipmentId, { courierId: 43 }))).body.reason, "not_on_allow_list");
     assert.equal((await h.admin("POST", "/admin/sr/book", bookBody(shipmentId, { maxRupees: 130 }))).body.rate, 134.82);
+    // an allowed courier that Shiprocket marks blocked in the live re-quote
+    const dtdc = h.mocks.state.shiprocket.couriers.find((c) => c.courier_company_id === 54);
+    dtdc.blocked = 1;
+    const blocked = await h.admin("POST", "/admin/sr/book", bookBody(shipmentId));
+    assert.deepEqual([blocked.status, blocked.body.error], [409, "courier_blocked"]);
+    dtdc.blocked = 0;
     assert.equal(assignCalls(h).length, 0, "the assign endpoint was never called");
     // every refusal released the lock: the right call still books
     assert.equal((await h.admin("POST", "/admin/sr/book", bookBody(shipmentId))).status, 200);
@@ -396,6 +457,25 @@ describe("POST /admin/sr/book (spends wallet money)", () => {
       assert.deepEqual([r.status, r.body.error], [status, error], JSON.stringify(opts));
     }
     assert.equal(assignCalls(h).length, 0);
+  });
+
+  test("orders/show with pickup_location \"\" (the public docs' shape): the pickup is read from the orders-list row", async () => {
+    const h = harness();
+    const a = seed(h);
+    Object.assign(h.mocks.state.shiprocket.orders.get(a.srOrderId), { pickup_location: "", pickup_location_id: "", pickup_address: [], _listPickup: "home" });
+    const q = await h.admin("POST", "/admin/sr/quote", { shipmentId: a.shipmentId });
+    assert.equal(q.body.refusal, null);
+    const r = await h.admin("POST", "/admin/sr/book", bookBody(a.shipmentId));
+    assert.equal(r.status, 200, JSON.stringify(r.body));
+    assert.ok(callsTo(h, "/orders").some((c) => c.query.search === AMAZON_ID), "looked the order up in the list");
+    // the list row says another pickup, or nothing: refused before the assign call
+    for (const listPickup of ["old-farm", ""]) {
+      const b = seed(h, { channelOrderId: `406-1111111-222222${listPickup ? 1 : 2}` });
+      Object.assign(h.mocks.state.shiprocket.orders.get(b.srOrderId), { pickup_location: "", _listPickup: listPickup });
+      const x = await h.admin("POST", "/admin/sr/book", bookBody(b.shipmentId, { said: `ship ${b.shipmentId}` }));
+      assert.deepEqual([x.status, x.body.error], [409, "wrong_pickup"], listPickup);
+    }
+    assert.equal(assignCalls(h).length, 1);
   });
 
   test("over the Rs 500 cap (SR_BOOK_MAX_RUPEES) and wallet short: refused before the assign call", async () => {
@@ -482,6 +562,100 @@ describe("POST /admin/sr/book (spends wallet money)", () => {
     assert.equal((await h.admin("POST", "/admin/sr/book", bookBody(shipmentId))).status, 409, "lock kept");
   });
 
+  test("Shiprocket books another allowed-looking courier id, a Delhivery child courier, or an off-list courier: 502, URGENT, no pickup or label, lock kept", async () => {
+    const cases = [
+      [{ awb_code: "7D1", courier_company_id: 55, courier_name: "DTDC Air 500gm" }, "booked_other_courier"],
+      [{ awb_code: "7D2", courier_company_id: 54, courier_name: "DTDC Surface", child_courier_name: "Delhivery Surface" }, "booked_banned_courier"],
+      [{ awb_code: "7D3", courier_company_id: 54, courier_name: "Xpressbees Surface" }, "booked_other_courier"],
+    ];
+    for (const [data, error] of cases) {
+      const h = harness();
+      const { shipmentId } = seed(h);
+      h.mocks.state.shiprocket.assign = [{ awb_assign_status: 1, response: { data: { ...data, shipment_id: Number(shipmentId) } } }];
+      const r = await h.admin("POST", "/admin/sr/book", bookBody(shipmentId));
+      assert.deepEqual([r.status, r.body.error, r.body.awb], [502, error, data.awb_code], JSON.stringify(data));
+      assert.equal(callsTo(h, "/courier/generate/pickup").length + callsTo(h, "/courier/generate/label").length, 0);
+      await h.drain();
+      assert.ok(h.mocks.state.resend.sent.some((m) => /(^|\] )URGENT:/.test(m.subject)), "URGENT alert");
+      assert.ok(!h.mocks.state.resend.sent.some((m) => /(^|\] )(CHECK )?Booked/.test(m.subject)), "no normal booked alert");
+      assert.equal((await h.admin("POST", "/admin/sr/book", bookBody(shipmentId))).body.error, "already_booking_or_booked", "lock kept");
+      assert.equal(assignCalls(h).length, 1);
+    }
+    // an empty courier_name in the reply falls back to the courier we asked for (not a false alarm)
+    const h = harness();
+    const { shipmentId } = seed(h);
+    h.mocks.state.shiprocket.assign = [{ awb_assign_status: 1, response: { data: { awb_code: "7D4", courier_company_id: 54, courier_name: "", shipment_id: Number(shipmentId) } } }];
+    const r = await h.admin("POST", "/admin/sr/book", bookBody(shipmentId));
+    assert.deepEqual([r.status, r.body.courier], [200, "DTDC Surface"]);
+  });
+
+  test("what the wallet lost above maxRupees / the cap is flagged (GST may not be in the quote); the booking stands", async () => {
+    const h = harness();
+    const { shipmentId } = seed(h);
+    // the wallet drops by Rs 159.09 (134.82 + 18 % GST) once the AWB is assigned
+    Object.defineProperty(h.mocks.state.shiprocket, "wallet", { get: () => (assignCalls(h).length ? "11062.36" : "11221.45") });
+    const r = await h.admin("POST", "/admin/sr/book", bookBody(shipmentId));
+    assert.equal(r.status, 200, JSON.stringify(r.body));
+    assert.deepEqual([r.body.rate, r.body.chargedRupees, r.body.chargedOverMax], [134.82, 159.09, true]);
+    await h.drain();
+    const mail = h.mocks.state.resend.sent.find((m) => m.subject.includes("Booked"));
+    assert.match(mail.subject, /(^|\] )CHECK Booked/);
+    assert.match(mail.text, /CHARGED Rs 159\.09 > max Rs 145/);
+    assert.ok(h.logs.some((l) => l.includes('"evt":"admin_sr"') && l.includes("charged_over_max")));
+    // charged within max: not flagged
+    const ok = harness();
+    const s2 = seed(ok);
+    Object.defineProperty(ok.mocks.state.shiprocket, "wallet", { get: () => (assignCalls(ok).length ? "11086.63" : "11221.45") });
+    const r2 = await ok.admin("POST", "/admin/sr/book", bookBody(s2.shipmentId));
+    assert.deepEqual([r2.body.chargedRupees, r2.body.chargedOverMax], [134.82, undefined]);
+  });
+
+  test("the srbooked record failing to write after the AWB never hides the AWB", async () => {
+    const h = harness();
+    const { shipmentId } = seed(h);
+    const kvSet = h.store.kvSet.bind(h.store);
+    h.store.kvSet = async (k, v, e) => { if (k.startsWith("srbooked:")) throw new Error("D1 down"); return kvSet(k, v, e); };
+    const r = await h.admin("POST", "/admin/sr/book", bookBody(shipmentId));
+    assert.equal(r.status, 200, JSON.stringify(r.body));
+    assert.match(r.body.awb, /^7D/);
+    assert.equal(r.body.recorded, false);
+    assert.equal(r.body.pickup.ok, true);
+    assert.ok(r.body.labelUrl);
+    await h.drain();
+    assert.ok(h.mocks.state.resend.sent.some((m) => m.subject.includes("Booked") && /could not be written/.test(m.text)));
+    assert.equal((await h.admin("POST", "/admin/sr/book", bookBody(shipmentId))).status, 409, "lock still holds");
+  });
+
+  test("the money part of a booking runs under ctx.waitUntil (a client disconnect cannot cut off pickup, label, alert)", async () => {
+    const h = harness();
+    const { shipmentId } = seed(h);
+    const before = h.ctx.pendingCount();
+    const r = await h.admin("POST", "/admin/sr/book", bookBody(shipmentId));
+    assert.equal(r.status, 200);
+    assert.ok(h.ctx.pendingCount() >= before + 2, "the spend promise and the alert were handed to waitUntil");
+    // a refusal before the AWB call registers nothing
+    const h2 = harness();
+    const s2 = seed(h2);
+    await h2.admin("POST", "/admin/sr/book", bookBody(s2.shipmentId, { maxRupees: 100 }));
+    assert.equal(h2.ctx.pendingCount(), 0);
+  });
+
+  test("pickup and label refuse an AWB on Delhivery, an off-list or an unknown courier (an AWB from the panel or a fallback)", async () => {
+    const h = harness();
+    for (const [courier, reason] of [["Delhivery Surface", "delhivery_never"], ["Ekart Logistics Surface", "not_on_allow_list"], [null, "courier_unknown"]]) {
+      const { shipmentId } = seed(h, { awb: `AWB${String(Math.random()).slice(2, 10)}`, courier });
+      for (const [path, body] of [["/admin/sr/pickup", { shipmentId }], ["/admin/sr/label", { shipmentId }]]) {
+        const r = await h.admin("POST", path, body);
+        assert.deepEqual([r.status, r.body.error, r.body.reason], [403, "courier_not_allowed", reason], `${path} ${courier}`);
+      }
+    }
+    assert.equal(callsTo(h, "/courier/generate/pickup").length + callsTo(h, "/courier/generate/label").length, 0);
+    // the shipment read leaves the courier out, but our own booking record has it: allowed
+    const { shipmentId } = seed(h, { awb: "7D199999999", courier: null });
+    await h.store.kvSet(`srbooked:${shipmentId}`, JSON.stringify({ awb: "7D199999999", courierId: 54, courier: "DTDC Surface" }), null);
+    assert.equal((await h.admin("POST", "/admin/sr/label", { shipmentId })).status, 200);
+  });
+
   test("pickup or label failing after the AWB never undoes the booking", async () => {
     const h = harness();
     const { shipmentId } = seed(h);
@@ -538,16 +712,35 @@ describe("cancel, track, pickups, find", () => {
     assert.equal(rr.status, 200, JSON.stringify(rr.body));
     assert.equal(rr.body.cancelled, byRef.srOrderId);
     assert.equal(h.mocks.state.shiprocket.cancelled.length, 2);
+    // a second guard that does not depend on the AWB field name: only a NEW order
+    const rts = seed(h, { channelOrderId: "407-1111111-2222222", status: "READY TO SHIP" });
+    const n = await h.admin("POST", "/admin/sr/cancel", { srOrderId: rts.srOrderId, confirm: `cancel ${rts.srOrderId}` });
+    assert.deepEqual([n.status, n.body.error, n.body.status], [409, "not_new", "READY TO SHIP"]);
+    // the AWB under a key we do not read: still refused, by the status
+    const hidden = seed(h, { channelOrderId: "408-1111111-2222222", status: "PICKUP SCHEDULED" });
+    assert.equal((await h.admin("POST", "/admin/sr/cancel", { srOrderId: hidden.srOrderId, confirm: `cancel ${hidden.srOrderId}` })).body.error, "not_new");
+    assert.equal(h.mocks.state.shiprocket.cancelled.length, 2);
+  });
+
+  test("cancel by ref: a search row without an order id is never cancelled (no ids: [0])", async () => {
+    const h = harness();
+    const { srOrderId } = seed(h, { channelOrderId: "409-1111111-2222222" });
+    h.mocks.state.shiprocket.orders.get(srOrderId).id = undefined; // the list row (and orders/show) come back without an id
+    const r = await h.admin("POST", "/admin/sr/cancel", { ref: "409-1111111-2222222", confirm: "cancel 409-1111111-2222222" });
+    assert.deepEqual([r.status, r.body.error], [502, "search_without_order_id"]);
+    assert.equal(srCalls(h).filter((c) => c.path.startsWith(`${SR}/orders/show/`)).length + callsTo(h, "/orders/cancel").length, 0);
   });
 
   test("track: picked up or not, courier-agent phones removed, by AWB / shipment / our ref", async () => {
     const h = harness();
     const { shipmentId } = seed(h, { awb: "7D141319206", courier: "DTDC Surface" });
     assert.deepEqual((await h.admin("GET", "/admin/sr/track?awb=7D141319206")).body, { ok: true, noActivity: true, message: "Aahh! There is no activities found in our DB. Please have some patience it will be updated soon." });
-    const td = (labels) => ({
-      track_status: 1, shipment_status: 42, track_url: "https://shiprocket.co/tracking/7D141319206", etd: "2026-11-15 18:00:00",
-      shipment_track: [{ awb_code: "7D141319206", courier_name: "DTDC Surface", current_status: labels[0], pickup_date: null, delivered_date: null, edd: null }],
-      shipment_track_activities: labels.map((l, i) => ({ date: `2026-11-1${3 - i} 10:00:00`, status: "X", activity: `${l} - agent 98480 12345 / +919848012345`, location: "NARASARAOPET", "sr-status": "6", "sr-status-label": l })),
+    // Shiprocket status codes: 19 out for pickup, 3 pickup scheduled (here), 42 picked up, 18 in transit, 15 pickup rescheduled, 20 pickup exception
+    const CODE = { "OUT FOR PICKUP": 19, "PICKUP SCHEDULED": 3, "PICKED UP": 42, "IN TRANSIT": 18, "PICKUP RESCHEDULED": 15, "PICKUP EXCEPTION": 20 };
+    const td = (labels, activities = labels.map((l) => `${l} - agent 98480 12345 / +919848012345`), courier = "DTDC Surface") => ({
+      track_status: 1, shipment_status: CODE[labels[0]], track_url: "https://shiprocket.co/tracking/7D141319206", etd: "2026-11-15 18:00:00",
+      shipment_track: [{ awb_code: "7D141319206", courier_name: courier, current_status: labels[0], pickup_date: null, delivered_date: null, edd: null }],
+      shipment_track_activities: labels.map((l, i) => ({ date: `2026-11-1${3 - i} 10:00:00`, status: "X", activity: activities[i], location: "NARASARAOPET", "sr-status": String(CODE[l]), "sr-status-label": l })),
     });
     h.mocks.state.shiprocket.tracking.set("7D141319206", td(["OUT FOR PICKUP", "PICKUP SCHEDULED"]));
     let t = await h.admin("GET", "/admin/sr/track?awb=7D141319206");
@@ -557,12 +750,22 @@ describe("cancel, track, pickups, find", () => {
     h.mocks.state.shiprocket.tracking.set("7D141319206", td(["IN TRANSIT", "PICKED UP", "OUT FOR PICKUP"]));
     t = await h.admin("GET", `/admin/sr/track?shipment=${shipmentId}`);
     assert.equal(t.body.pickedUp, true);
-    assert.deepEqual([t.body.awb, t.body.courier, t.body.currentStatus, t.body.shipmentStatus], ["7D141319206", "DTDC Surface", "IN TRANSIT", 42]);
+    assert.deepEqual([t.body.awb, t.body.courier, t.body.currentStatus, t.body.shipmentStatus], ["7D141319206", "DTDC Surface", "IN TRANSIT", 18]);
     const text = JSON.stringify(t.body);
     assert.ok(!text.includes("9848012345") && !text.includes("98480 12345"), "agent phones scrubbed");
     assert.match(t.body.activities[0].activity, /\[phone\]/);
+    assert.equal(t.body.courierAllowed, true);
     t = await h.admin("GET", `/admin/sr/track?ref=${AMAZON_ID}`);
     assert.equal(t.body.pickedUp, true);
+    // the courier's free text never counts as a pickup: these must stay "not picked up"
+    const missed = ["Shipment not picked up - seller not available", "Pickup Rescheduled: will be picked up tomorrow", "Pickup executive reached seller location, shipment not ready"];
+    h.mocks.state.shiprocket.tracking.set("7D141319206", td(["PICKUP EXCEPTION", "PICKUP RESCHEDULED", "OUT FOR PICKUP"], missed));
+    t = await h.admin("GET", "/admin/sr/track?awb=7D141319206");
+    assert.equal(t.body.pickedUp, false, "missed-pickup texts are not pickups");
+    // a fallback reassignment to Delhivery shows up
+    h.mocks.state.shiprocket.tracking.set("7D141319206", td(["IN TRANSIT"], undefined, "Delhivery Surface"));
+    t = await h.admin("GET", "/admin/sr/track?awb=7D141319206");
+    assert.deepEqual([t.body.pickedUp, t.body.courierAllowed], [true, false]);
     assert.equal((await h.admin("GET", "/admin/sr/track?awb=bad!")).status, 400);
     assert.equal((await h.admin("GET", "/admin/sr/track?awb=7D141319206&shipment=1")).status, 400);
     assert.equal((await h.admin("GET", "/admin/sr/track")).status, 400);

@@ -227,7 +227,7 @@ console.log("1acrefarms checkout smoke run (mocked gateways, SQLite D1, test mod
 
   const amazon = "402-9649273-4891501";
   const c = await h.admin("POST", "/admin/sr/create", {
-    orderId: amazon, items: [{ sku: "1AF-KPAS-0540", qty: 1, price: 495 }],
+    orderId: amazon, payment: "prepaid", items: [{ sku: "1AF-KPAS-0540", qty: 1, price: 495 }],
     customer: { name: "Ravi Kumar", phone: "9848012345", address: "H.No 4-56, Temple Street, Ramnagar", city: "Raipur", state: "Chhattisgarh", pin: "490023" },
   });
   assert.equal(c.status, 200);

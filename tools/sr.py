@@ -10,8 +10,8 @@ The Worker logs in as the Shiprocket API user and keeps its ~9-day token; this C
     python3 tools/sr.py quote --shipment 800001        # quote an order already in Shiprocket (its own weight)
     python3 tools/sr.py quote --order 1AF-W-261122-K7Q2XD
     python3 tools/sr.py create order.json              # adhoc order, NO AWB (free); prints the shipment id
-    python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship 402-9649273-4891501            # DRY RUN
-    python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship 402-9649273-4891501 --max-rupees 145 --go
+    python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship '<ID exactly as Bhargava typed it>'     # DRY RUN
+    python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship '<ID exactly as Bhargava typed it>' --max-rupees 145 --go
     python3 tools/sr.py track 7D141319206 | track --shipment 800001 | track --ref 402-9649273-4891501
     python3 tools/sr.py label 800001 [--out DIR]       python3 tools/sr.py pickup 800001 [--date 2026-11-23] [--retry]
     python3 tools/sr.py find 402-9649273-4891501       python3 tools/sr.py unlock 800001 --confirm "unlock 800001"
@@ -23,15 +23,19 @@ for that order, and pass that ID exactly as he typed it with --bhargava-said-shi
 is refused). --max-rupees = the price he saw + Rs 10; the Worker re-quotes live and refuses above it, above Rs 500,
 or when the wallet is short. Couriers: DTDC, Blue Dart, India Post only; Delhivery is never booked (or shown).
 
-create's JSON file (one order, typed from Seller Central; phone REQUIRED, e-mail optional):
-    {"id": "402-9649273-4891501", "name": "...", "phone": "98xxxxxxxx", "address": "...", "city": "...",
-     "state": "Andhra Pradesh", "pin": "522002", "items": [{"sku": "1AF-KPAS-0540", "name": "...", "qty": 1, "price": 495}],
+create's JSON file (one order, typed from Seller Central; phone REQUIRED, e-mail optional; "payment" REQUIRED and must
+be "prepaid" as Seller Central shows it: a Pay-on-Delivery order is refused, never shipped as Prepaid):
+    {"id": "402-9649273-4891501", "payment": "prepaid", "name": "...", "phone": "98xxxxxxxx", "address": "...",
+     "city": "...", "state": "Andhra Pradesh", "pin": "522002",
+     "items": [{"sku": "1AF-KPAS-0540", "name": "...", "qty": 1, "price": 495}],
      "weight": 0.6, "dims": "30x25x5"}            (weight/dims optional: default = the Worker's parcel table)
 
 What it never does: print, log or pass the admin token on the command line or in the environment; follow a redirect;
 send the token anywhere but --base; book without --go and --bhargava-said-ship; cancel after an AWB; set the Worker
 secret or deploy (init-token only PRINTS the `wrangler secret put` command, which needs Bhargava's OK).
-Exit codes: 0 ok, 2 usage, 3 refused by the Worker (4xx), 4 Worker / Shiprocket / network trouble.
+Exit codes: 0 ok; 2 usage or refused locally before any call (bad id, wrong --confirm, "ship all", no --max-rupees,
+token file missing / readable by others, plain-http --base); 3 refused by the Worker (4xx); 4 Worker / Shiprocket /
+network trouble. After `book --go`, exit 4 can mean the AWB WAS bought: the message says so; run `track` first.
 """
 import argparse
 import datetime as dt
@@ -60,6 +64,13 @@ AWB = re.compile(r"^[A-Za-z0-9]{6,25}$")
 REF = re.compile(r"^[A-Za-z0-9-]{4,40}$")
 
 
+def die(msg):
+    """A local refusal or usage error, before any call to the Worker (exit 2)."""
+    sys.stdout.flush()
+    print(msg, file=sys.stderr)
+    sys.exit(2)
+
+
 class Refused(Exception):
     """The Worker answered 4xx (exit 3)."""
 
@@ -81,14 +92,14 @@ def read_token(path):
     try:
         st = path.stat()
     except FileNotFoundError:
-        sys.exit(f"FAIL  no admin token file at {path}: run `python3 tools/sr.py init-token` (then the wrangler step it prints)")
+        die(f"FAIL  no admin token file at {path}: run `python3 tools/sr.py init-token` (then the wrangler step it prints)")
     if st.st_mode & 0o077:
-        sys.exit(f"FAIL  {path} is readable by others: chmod 600 {path}")
+        die(f"FAIL  {path} is readable by others: chmod 600 {path}")
     if hasattr(os, "getuid") and st.st_uid != os.getuid():
-        sys.exit(f"FAIL  {path} is not owned by you")
+        die(f"FAIL  {path} is not owned by you")
     tok = path.read_text(encoding="utf-8").strip()
     if len(tok) < 43:
-        sys.exit(f"FAIL  {path} does not hold a usable token (too short)")
+        die(f"FAIL  {path} does not hold a usable token (too short)")
     return tok
 
 
@@ -96,7 +107,7 @@ def check_base(base):
     u = urllib.parse.urlparse(base)
     local = u.hostname in ("127.0.0.1", "localhost", "::1")
     if u.scheme != "https" and not (u.scheme == "http" and local):
-        sys.exit("FAIL  --base must be https:// (plain http only for localhost)")
+        die("FAIL  --base must be https:// (plain http only for localhost)")
     return base.rstrip("/")
 
 
@@ -152,12 +163,19 @@ def ist_now():
 # ---------------------------------------------------------------------------------------------------------------------
 def cmd_init_token(args):
     path = args.token_file
-    path.parent.mkdir(parents=True, exist_ok=True)
-    os.chmod(path.parent, 0o700)
+    # tighten only a folder this command creates, or the default ~/.config/1acrefarms: never chmod ~ or a shared folder
+    created = not path.parent.exists()
     try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if created or path.parent == TOKEN_FILE.parent:
+            os.chmod(path.parent, 0o700)
+        elif path.parent.stat().st_mode & 0o022:
+            print(f"WARN  {path.parent} is writable by others; the token file itself is still created 0600", file=sys.stderr)
         fd = os.open(path, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
     except FileExistsError:
-        sys.exit(f"FAIL  {path} already exists; not overwritten (delete it by hand to rotate, then set the secret again)")
+        die(f"FAIL  {path} already exists; not overwritten (delete it by hand to rotate, then set the secret again)")
+    except OSError as e:
+        die(f"FAIL  cannot create {path}: {e.strerror or e}")
     with os.fdopen(fd, "w", encoding="utf-8") as f:
         f.write(secrets.token_urlsafe(48))
     print(f"PASS  token written to {path} (chmod 600, never printed)")
@@ -191,7 +209,7 @@ def cmd_wallet(args):
 def parse_dims(text):
     m = re.fullmatch(r"\s*(\d+(?:\.\d+)?)\s*[x*]\s*(\d+(?:\.\d+)?)\s*[x*]\s*(\d+(?:\.\d+)?)\s*", str(text))
     if not m:
-        raise SystemExit(f"--dims {text!r}: use LxBxH in cm, e.g. 26x18x5")
+        die(f"--dims {text!r}: use LxBxH in cm, e.g. 26x18x5")
     return [float(g) for g in m.groups()]
 
 
@@ -220,7 +238,12 @@ def print_quote(r, show_all):
     if r["delhivery"]["hidden"]:
         print(f"Hidden: Delhivery x{r['delhivery']['hidden']} (never booked)")
     if r["notAllowed"] and not show_all:
-        print("Not on allow-list: " + ", ".join(n["courier"] for n in r["notAllowed"]) + "   (--all lists them)")
+        off = [n for n in r["notAllowed"] if n["reason"] == "not_on_allow_list"]
+        unusable = [n for n in r["notAllowed"] if n["reason"] != "not_on_allow_list"]
+        if off:
+            print("Not on allow-list: " + ", ".join(n["courier"] for n in off) + "   (--all lists them)")
+        if unusable:
+            print("Allowed but unusable now: " + ", ".join(f"{n['courier']} ({n['reason']})" for n in unusable))
     if r.get("blocked"):
         print("Blocked by Shiprocket: " + ", ".join(f"{b['courier']} ({b['reason'] or '-'})" for b in r["blocked"]))
     c = r.get("cheapest")
@@ -230,14 +253,15 @@ def print_quote(r, show_all):
     print(f"Cheapest allowed: {c['courier']} Rs {rs(c['rate'])} ({c['days'] if c['days'] is not None else '?'} d)")
     if r.get("shipmentId") and not r.get("awb"):
         ref = r.get("ref") or r["shipmentId"]
-        print(f"After Bhargava types \"ship {ref}\":")
+        # a placeholder, never the ref: the flag must carry what Bhargava actually typed, not a copy of this line
+        print(f"Only after Bhargava himself types \"ship {ref}\" (or \"ship {r['shipmentId']}\"):")
         print(f"  python3 tools/sr.py book {r['shipmentId']} --courier {c['courierId']} --max-rupees {c['rate'] + 10:.0f} "
-              f"--bhargava-said-ship {ref} --go")
+              f"--bhargava-said-ship '<ID exactly as Bhargava typed it>' --go")
 
 
 def cmd_quote(args):
     if sum(x is not None for x in (args.pin, args.shipment, args.order)) != 1:
-        raise SystemExit("quote: give a PIN, or --shipment N, or --order 1AF-W-...")
+        die("quote: give a PIN, or --shipment N, or --order 1AF-W-...")
     body = {}
     if args.shipment is not None:
         body["shipmentId"] = args.shipment
@@ -259,12 +283,16 @@ def cmd_quote(args):
 def order_body(doc):
     """create's JSON file -> the Worker's /admin/sr/create body (flat file or the Worker's own nested shape)."""
     if not isinstance(doc, dict):
-        raise SystemExit("create: the file must hold one JSON object")
+        die("create: the file must hold one JSON object")
     oid = str(doc.get("orderId") or doc.get("id") or "").strip()
     cust = doc.get("customer") if isinstance(doc.get("customer"), dict) else {
         k: doc.get(k) for k in ("name", "phone", "email", "address", "city", "state", "pin") if doc.get(k) not in (None, "")}
     if not str(cust.get("phone") or "").strip():
-        raise SystemExit("create: no phone number. The runbook rule: no buyer phone shown on Amazon -> stop and ask Bhargava")
+        die("create: no phone number. The runbook rule: no buyer phone shown on Amazon -> stop and ask Bhargava")
+    payment = str(doc.get("payment") or "").strip().lower()
+    if payment != "prepaid":
+        die("create: \"payment\" must be \"prepaid\" (as Seller Central shows the order). Pay-on-Delivery is never shipped: "
+            "we ship prepaid only, so stop and ask Bhargava")
     items = []
     for it in doc.get("items") or []:
         row = {"qty": it.get("qty")}
@@ -276,7 +304,7 @@ def order_body(doc):
         if price is not None:
             row["price"] = price
         items.append(row)
-    body = {"orderId": oid, "customer": cust, "items": items}
+    body = {"orderId": oid, "payment": payment, "customer": cust, "items": items}
     parcel = dict(doc["parcel"]) if isinstance(doc.get("parcel"), dict) else {}
     if doc.get("weight") is not None:
         parcel["weightKg"] = float(doc["weight"])
@@ -297,8 +325,16 @@ def cmd_create(args):
     try:
         doc = json.loads(Path(args.file).read_text(encoding="utf-8"))
     except (OSError, ValueError) as e:
-        raise SystemExit(f"create: cannot read {args.file}: {e}")
-    r = api(args, "POST", "/admin/sr/create", order_body(doc))
+        die(f"create: cannot read {args.file}: {e}")
+    try:
+        r = api(args, "POST", "/admin/sr/create", order_body(doc))
+    except Refused as e:
+        err = e.args[0] if isinstance(e.args[0], dict) else {}
+        if err.get("error") == "awb_auto_assigned" and not args.json:
+            print(f"FAIL  Shiprocket AUTO-ASSIGNED AWB {err.get('awb')} when the order was created (shipment {err.get('srShipmentId')}), "
+                  "without a \"ship <ID>\"" + ("" if err.get("courierAllowed") else "; the courier is NOT DTDC / Blue Dart / India Post: "
+                  "do NOT hand the parcel over") + ". The owner alert went out; tell Bhargava (auto-assign must be off in Shiprocket).")
+        raise
     if args.json:
         return dump(r)
     print(f"PASS  Shiprocket order {r['srOrderId']}, shipment {r['srShipmentId']} for {r['orderId']} "
@@ -317,7 +353,7 @@ def pickup_value(text):
         return (now + dt.timedelta(days=1)).strftime("%Y-%m-%d")
     if re.fullmatch(r"\d{4}-\d{2}-\d{2}", text):
         return text
-    raise SystemExit("--pickup: auto | today | none | YYYY-MM-DD")
+    die("--pickup: auto | today | none | YYYY-MM-DD")
 
 
 def save_label(url, out_dir, awb):
@@ -348,18 +384,19 @@ def label_dir(args, ref):
 def cmd_book(args):
     sid = args.shipment_id
     if not SR_ID.match(sid):
-        raise SystemExit("book: the shipment id is digits only (from `create` or `find`)")
+        die("book: the shipment id is digits only (from `create` or `find`)")
     said = args.bhargava_said_ship.strip()
     if said.lower().startswith("ship "):
         said = said[5:].strip()
-    if not said or said.lower() == "all" or " " in said:
-        raise SystemExit("book: --bhargava-said-ship takes ONE id exactly as Bhargava typed it after 'ship' (no 'ship all')")
+    if not said or said.lower() == "all" or " " in said or "<" in said or ">" in said:
+        die("book: --bhargava-said-ship takes ONE id exactly as Bhargava typed it after 'ship' (no 'ship all', no placeholder)")
     pickup = pickup_value(args.pickup)
     # fresh quote for this shipment, so the plan shows today's price for that courier
     q = api(args, "POST", "/admin/sr/quote", {"shipmentId": sid})
     opt = next((o for o in q["options"] if o["courierId"] == args.courier), None)
     bad = next((n for n in q["notAllowed"] if n["courierId"] == args.courier), None)
-    print(f"Shipment {sid}  ref {q.get('ref') or '-'}  -> PIN {q.get('to') or '?'}  Bhargava said: \"ship {said}\"")
+    if not args.json:
+        print(f"Shipment {sid}  ref {q.get('ref') or '-'}  -> PIN {q.get('to') or '?'}  Bhargava said: \"ship {said}\"")
     if q.get("awb"):
         raise Refused({"_status": 409, "error": "already_booked", "awb": q["awb"]})
     if q.get("refusal"):
@@ -369,23 +406,56 @@ def cmd_book(args):
     if not opt:
         reason = bad["reason"] if bad else "not offered for this shipment (or a Delhivery id: never booked)"
         raise Refused({"_status": 409, "error": "courier_not_usable", "courierId": args.courier, "reason": reason})
-    print(f"Plan  {opt['courier']} (id {opt['courierId']}) Rs {rs(opt['rate'])}, {opt['days']} d, ETD {opt['etd'] or '-'}; "
-          f"pickup {pickup}{'; manifest' if args.manifest else ''}")
     cheaper = [o for o in q["options"] if o["rate"] < opt["rate"]]
-    if cheaper:
-        print(f"NOTE  cheaper allowed: {cheaper[0]['courier']} Rs {rs(cheaper[0]['rate'])} (id {cheaper[0]['courierId']})")
     if not args.go:
+        if args.json:
+            return dump({"ok": True, "dryRun": True, "shipmentId": sid, "ref": q.get("ref"), "to": q.get("to"), "said": f"ship {said}",
+                         "courierId": opt["courierId"], "courier": opt["courier"], "rate": opt["rate"], "days": opt["days"],
+                         "pickup": pickup, "manifest": bool(args.manifest), "suggestedMaxRupees": round(opt["rate"] + 10),
+                         "cheaper": cheaper[0] if cheaper else None})
+        print(f"Plan  {opt['courier']} (id {opt['courierId']}) Rs {rs(opt['rate'])}, {opt['days']} d, ETD {opt['etd'] or '-'}; "
+              f"pickup {pickup}{'; manifest' if args.manifest else ''}")
+        if cheaper:
+            print(f"NOTE  cheaper allowed: {cheaper[0]['courier']} Rs {rs(cheaper[0]['rate'])} (id {cheaper[0]['courierId']})")
         print("DRY RUN: nothing booked. To book (spends wallet money), add:"
               f" --max-rupees {opt['rate'] + 10:.0f} --go")
         return
     if args.max_rupees is None:
-        raise SystemExit("book --go: pass --max-rupees (the price Bhargava saw + Rs 10); the Worker refuses above it")
+        die("book --go: pass --max-rupees (the price Bhargava saw + Rs 10); the Worker refuses above it")
     body = {"shipmentId": sid, "courierId": args.courier, "maxRupees": args.max_rupees, "said": f"ship {said}",
             "confirm": f"ship {sid}", "pickup": pickup, "manifest": bool(args.manifest)}
-    r = api(args, "POST", "/admin/sr/book", body, timeout=150)
+    try:
+        r = api(args, "POST", "/admin/sr/book", body, timeout=150)
+    except Trouble as e:
+        err = e.args[0] if isinstance(e.args[0], dict) else {}
+        code = err.get("error")
+        sys.stdout.flush()
+        if code == "awb_not_assigned":
+            print("NOT BOOKED  Shiprocket gave no AWB (the Worker re-read the shipment: none); the lock is released. Nothing was spent.", file=sys.stderr)
+        elif code in ("booked_banned_courier", "booked_other_courier"):
+            print(f"BOOKED ON THE WRONG COURIER  AWB {err.get('awb')} on {err.get('courier')}: no pickup, no label. URGENT owner alert sent; "
+                  "tell Bhargava now (cancelling that AWB needs his OK). Do not hand the parcel over.", file=sys.stderr)
+        else:
+            # a timeout / dropped connection / 5xx AFTER the request left: the AWB may have been bought
+            print(f"BOOKING STATE UNKNOWN: wallet money may have been spent. Run `python3 tools/sr.py track --shipment {sid}` "
+                  f"(or `find {q.get('ref') or sid}`) before anything else; do NOT re-run book or report it as failed. "
+                  f"Unlock only if it shows no AWB after a few minutes: `python3 tools/sr.py unlock {sid} --confirm \"unlock {sid}\"`.",
+                  file=sys.stderr)
+        raise
+    # the label is saved in JSON mode too (an agent reading the AWB from --json still gets the PDF on disk)
+    path = err = None
+    if r.get("labelUrl"):
+        path, err = save_label(r["labelUrl"], label_dir(args, r["ref"]), r["awb"])
     if args.json:
+        r["labelPath"] = str(path) if path else None
+        if err:
+            r["labelSaveError"] = err
         return dump(r)
     print(f"PASS  BOOKED {r['ref']}: {r['courier']} AWB {r['awb']}  Rs {rs(r['rate'])}")
+    if r.get("chargedOverMax"):
+        print(f"CHECK the wallet lost Rs {rs(r.get('chargedRupees'))}, more than the cap / --max-rupees (GST not in the quote?): tell Bhargava")
+    if r.get("recorded") is False:
+        print("NOTE  the Worker could not write its booking record (D1); the booking lock still holds")
     p = r.get("pickup") or {}
     if not p.get("requested"):
         print("      pickup: none requested (counter drop)")
@@ -394,7 +464,6 @@ def cmd_book(args):
     else:
         print(f"FAIL  pickup NOT scheduled ({p.get('reason')}): python3 tools/sr.py pickup {sid} [--retry]")
     if r.get("labelUrl"):
-        path, err = save_label(r["labelUrl"], label_dir(args, r["ref"]), r["awb"])
         print(f"      label: {path}" if path else f"FAIL  {err}; try: python3 tools/sr.py label {sid}")
     else:
         print(f"FAIL  label not made ({r.get('labelError')}): python3 tools/sr.py label {sid}")
@@ -406,7 +475,7 @@ def cmd_book(args):
 
 def cmd_label(args):
     if not SR_ID.match(args.shipment_id):
-        raise SystemExit("label: shipment id is digits only")
+        die("label: shipment id is digits only")
     r = api(args, "POST", "/admin/sr/label", {"shipmentId": args.shipment_id})
     if args.json:
         return dump(r)
@@ -420,7 +489,7 @@ def cmd_label(args):
 
 def cmd_pickup(args):
     if not SR_ID.match(args.shipment_id):
-        raise SystemExit("pickup: shipment id is digits only")
+        die("pickup: shipment id is digits only")
     body = {"shipmentId": args.shipment_id, "retry": bool(args.retry)}
     if args.date:
         body["date"] = args.date
@@ -433,10 +502,10 @@ def cmd_pickup(args):
 def cmd_track(args):
     given = [(k, v) for k, v in (("awb", args.awb), ("shipment", args.shipment), ("ref", args.ref)) if v]
     if len(given) != 1:
-        raise SystemExit("track: give an AWB, or --shipment N, or --ref ID")
+        die("track: give an AWB, or --shipment N, or --ref ID")
     k, v = given[0]
     if (k == "awb" and not AWB.match(v)) or (k == "shipment" and not SR_ID.match(v)) or (k == "ref" and not REF.match(v)):
-        raise SystemExit(f"track: {v!r} is not a valid {k}")
+        die(f"track: {v!r} is not a valid {k}")
     r = api(args, "GET", "/admin/sr/track", query={k: v})
     if args.json:
         return dump(r)
@@ -445,6 +514,8 @@ def cmd_track(args):
         return
     print(f"AWB {r.get('awb') or '-'}  {r.get('courier') or '-'}  status {r.get('currentStatus') or '-'}  "
           f"picked up: {'YES' + (' ' + r['pickupDate'] if r.get('pickupDate') else '') if r.get('pickedUp') else 'no'}")
+    if r.get("courierAllowed") is False:
+        print(f"FAIL  courier {r.get('courier')} is not DTDC / Blue Dart / India Post (a fallback reassignment?): tell Bhargava")
     if r.get("deliveredDate"):
         print(f"delivered {r['deliveredDate']}")
     print(f"EDD {r.get('edd') or r.get('etd') or '-'}   {r.get('trackUrl') or ''}".rstrip())
@@ -454,7 +525,7 @@ def cmd_track(args):
 
 def cmd_find(args):
     if not REF.match(args.ref):
-        raise SystemExit("find: an order id (ours or Amazon's) or an AWB")
+        die("find: an order id (ours or Amazon's) or an AWB")
     r = api(args, "GET", "/admin/sr/find", query={"ref": args.ref})
     if args.json:
         return dump(r)
@@ -469,10 +540,10 @@ def cmd_cancel(args):
     oid = args.order_id.strip()
     expected = f"cancel {oid}"
     if args.confirm != expected:
-        raise SystemExit(f"cancel is irreversible: pass --confirm \"{expected}\" exactly (only for an order with NO AWB)")
+        die(f"cancel is irreversible: pass --confirm \"{expected}\" exactly (only for an order with NO AWB)")
     body = {"srOrderId": oid} if SR_ID.match(oid) else {"ref": oid}
     if "ref" in body and not REF.match(oid):
-        raise SystemExit("cancel: a Shiprocket order id (digits) or our / Amazon order id")
+        die("cancel: a Shiprocket order id (digits) or our / Amazon order id")
     body["confirm"] = expected
     r = api(args, "POST", "/admin/sr/cancel", body)
     if args.json:
@@ -484,7 +555,7 @@ def cmd_unlock(args):
     sid = args.shipment_id
     expected = f"unlock {sid}"
     if args.confirm != expected:
-        raise SystemExit(f"unlock: first check `python3 tools/sr.py track --shipment {sid}` shows NO AWB, then pass --confirm \"{expected}\"")
+        die(f"unlock: first check `python3 tools/sr.py track --shipment {sid}` shows NO AWB, then pass --confirm \"{expected}\"")
     r = api(args, "POST", "/admin/sr/unlock", {"shipmentId": sid, "confirm": expected})
     if args.json:
         return dump(r)

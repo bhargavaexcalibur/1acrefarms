@@ -105,6 +105,7 @@ browser (/checkout-test/)            Worker (workers.dev)                       
 cd checkout-worker
 node --test                  # all tests (Node 22+; uses node:test, node:sqlite, global webcrypto)
 node scripts/smoke.mjs       # end-to-end with mocked Razorpay / Cashfree / PhonePe / Shiprocket / Resend
+node scripts/sr_cli_e2e.mjs  # tools/sr.py (python3) against this Worker + mocked Shiprocket on 127.0.0.1, no network
 ```
 
 To click through the page with mocked gateways: `node scripts/dev-server.mjs` (API on 127.0.0.1:8787), then
@@ -269,8 +270,8 @@ can never book twice.
 The Shiprocket web login is a fixed 24 h session. Daily Shiprocket work goes through the Worker instead: it logs in
 as the Shiprocket **API user** (secrets `SHIPROCKET_API_EMAIL` / `SHIPROCKET_API_PASSWORD`), keeps the ~9-day token in
 D1 `kv` (the same token the paid-order push uses, re-login once on a 401), and answers `tools/sr.py` on `/admin/sr/*`.
-Code: `src/admin.js` (routes and every rule below), `srCall()` in `src/shiprocket.js`; tests `test/admin.test.js`
-and smoke section G. Shiprocket has no sandbox: every admin call is real, in any `MODE`.
+Code: `src/admin.js` (routes and every rule below), `srCall()` in `src/shiprocket.js`; tests `test/admin.test.js`,
+smoke section G, and `scripts/sr_cli_e2e.mjs` (the CLI's own guards and messages, end to end). Shiprocket has no sandbox: every admin call is real, in any `MODE`.
 
 **Auth.** Secret `ADMIN_TOKEN` (`tools/sr.py init-token` writes it to `~/.config/1acrefarms/sr_admin_token`, chmod 600,
 never printed). Every admin request needs `authorization: Bearer <ADMIN_TOKEN>` (compared in constant time on SHA-256
@@ -284,12 +285,12 @@ Setting it changes the live Worker (needs Bhargava's OK):
 | `GET /admin/sr/pickups` | pickup addresses without address/phone/e-mail; `home.ok` = nickname `home` with PIN 522601 | free |
 | `GET /admin/sr/wallet` | `balanceRupees`, `low` below Rs 300 | free |
 | `POST /admin/sr/quote` | `{pin, packs?, weightKg?, lengthCm?, breadthCm?, heightCm?, declaredRupees?}`, `{shipmentId}` or `{orderId: "1AF-W-..."}` -> allowed couriers cheapest first | free |
-| `POST /admin/sr/create` | adhoc order, NO AWB: an Amazon (`402-1234567-1234567`) or Flipkart (`OD...`) self-ship order `{orderId, customer, items, parcel?}`, or `{orderId: "1AF-W-..."}` to re-push a paid website order whose push `failed` | free |
+| `POST /admin/sr/create` | adhoc order, NO AWB: an Amazon (`402-1234567-1234567`) or Flipkart (`OD...`) self-ship order `{orderId, payment: "prepaid", customer, items, parcel?}`, or `{orderId: "1AF-W-..."}` to re-push a paid website order whose push `failed`. An AWB auto-assigned at create -> `409 awb_auto_assigned` + owner alert | free |
 | `POST /admin/sr/book` | `{shipmentId, courierId, maxRupees, said: "ship <ID>", confirm: "ship <shipmentId>", pickup: "today"\|"YYYY-MM-DD"\|"none", manifest?}` -> AWB, pickup, label link | **spends wallet** |
-| `POST /admin/sr/pickup` / `label` | `{shipmentId, date?, retry?}` / `{shipmentId}` for a booked shipment | free |
-| `POST /admin/sr/cancel` | `{srOrderId \| ref, confirm: "cancel <same>"}`: custom channel and NO AWB only | free, irreversible |
+| `POST /admin/sr/pickup` / `label` | `{shipmentId, date?, retry?}` / `{shipmentId}` for a booked shipment on an allowed courier (`403 courier_not_allowed` for Delhivery, off-list or unknown) | free |
+| `POST /admin/sr/cancel` | `{srOrderId \| ref, confirm: "cancel <same>"}`: custom channel, status NEW and NO AWB only | free, irreversible |
 | `POST /admin/sr/unlock` | `{shipmentId, confirm: "unlock <id>"}`: frees the booking lock after a timed-out booking, only while there is no AWB | free |
-| `GET /admin/sr/track` | `?awb=` / `?shipment=` / `?ref=<our or Amazon id>` -> status, `pickedUp`, last 15 activities (agent phones removed) | free |
+| `GET /admin/sr/track` | `?awb=` / `?shipment=` / `?ref=<our or Amazon id>` -> status, `pickedUp` (pickup date, status codes and labels only: never the courier's free text), `courierAllowed`, last 15 activities (agent phones removed) | free |
 | `GET /admin/sr/find` | `?ref=<order id or AWB>` -> Shiprocket order, shipment, AWB | free |
 
 **Rules the Worker enforces (not only the CLI):**
@@ -297,9 +298,11 @@ Setting it changes the live Worker (needs Bhargava's OK):
   booked (`403 courier_not_allowed`) and never shown in a quote (only counted: `delhivery.hidden`). Others (Ekart,
   Xpressbees, Shadowfax ...) are listed as `notAllowed` and refused for booking. Shiprocket's recommended courier is
   ignored; a booking always sends our `courier_id`, never `status: "reassign"`, never the one-call wrapper API.
-- Prepaid only: every quote sends `cod=0`; every order is `Prepaid` with `shipping_charges` 0; booking refuses an order
-  that is not prepaid (`not_prepaid`), not on our custom channel (`not_custom_channel`) or not at pickup `home`
-  (`wrong_pickup`). Pickup PIN `SHIPROCKET_PICKUP_PIN` (default 522601); parcel = `parcelFor` in `src/pricing.js`
+- Prepaid only: every quote sends `cod=0`; every order is `Prepaid` with `shipping_charges` 0; a marketplace order must
+  say `payment: "prepaid"` (as Seller Central shows it; Pay-on-Delivery -> `400 cod_not_supported`, never shipped as
+  Prepaid); booking refuses an order that is not prepaid (`not_prepaid`), not on our custom channel
+  (`not_custom_channel`) or not at pickup `home` (`wrong_pickup`; when orders/show leaves `pickup_location` empty, as
+  in the public docs' example, the nickname is read from the order's GET /orders list row). Pickup PIN `SHIPROCKET_PICKUP_PIN` (default 522601); parcel = `parcelFor` in `src/pricing.js`
   unless the request gives weight/size.
 - **The ship rule:** a booking needs `confirm` = `ship <shipmentId>` and `said` = the `ship <ID>` Bhargava typed (his
   ID must be that shipment's order id or the shipment id; `ship all` is refused: one shipment per call). The operator
@@ -308,28 +311,43 @@ Setting it changes the live Worker (needs Bhargava's OK):
   `SR_BOOK_MAX_RUPEES` (default Rs 500, `over_cap`) and when the wallet is short (`402 wallet_short`); all before the
   AWB call. One once-only lock per shipment (`srbook:<id>`, the D1 events table). A timeout on the AWB call answers
   `504 awb_unknown` and KEEPS the lock (it may have booked): check `track --shipment`, then `unlock` if no AWB.
-- After the AWB, pickup / label / manifest failures never undo the booking; the owner alert (`Booked <ref>: <courier>
-  AWB <awb> Rs <rate>`) has no address, phone or label link. Never logged or returned: tokens, passwords, buyer
+- After the AWB call is sent, the rest of the booking (the `srbooked` record, pickup, label, owner alert) also runs
+  under `ctx.waitUntil`, so a CLI that drops off (Wi-Fi) cannot cut it short. What Shiprocket actually booked is
+  checked against the allow-list again (courier name, child courier, courier id): anything else -> `502
+  booked_banned_courier` / `booked_other_courier`, URGENT alert, no pickup or label, lock kept. The wallet before vs
+  after is returned as `chargedRupees`; above `maxRupees` or the cap it is flagged (`CHECK Booked ...`,
+  `charged_over_max`: the quoted rate may exclude GST). Pickup / label / manifest failures never undo the booking; the
+  owner alert (`Booked <ref>: <courier> AWB <awb> Rs <rate>`) has no address, phone or label link.
+- Courier auto-assign: if Shiprocket ever answers an order create with an `awb_code` (auto-assign on in the account),
+  the admin create answers `409 awb_auto_assigned`, locks that shipment against `book`, and alerts the owner (URGENT
+  when the courier is off the list); the website order push logs `shiprocket_auto_awb` and alerts the same way. Never logged or returned: tokens, passwords, buyer
   phone/address/e-mail (one `admin_sr` log line per call: route, status, http, reason, count, ms).
 - Not in this API (each needs Bhargava's OK, by hand in Shiprocket): cancelling after an AWB, changing courier,
   widening the API user's modules, wallet top-up.
 
-**CLI** (`tools/sr.py`, python3 stdlib, default `--base` = the live Worker; exit 0 ok, 3 refused, 4 trouble):
+**CLI** (`tools/sr.py`, python3 stdlib, default `--base` = the live Worker; exit 0 ok, 2 usage / refused locally
+before any call, 3 refused by the Worker, 4 trouble. After `book --go`, exit 4 can mean the AWB WAS bought: the CLI
+prints `BOOKING STATE UNKNOWN ... run track first`; never re-run `book` on it):
 ```
 python3 tools/sr.py pickups                     python3 tools/sr.py wallet
 python3 tools/sr.py quote 490023 --qty 2        # or --kg 0.56 --dims 26.5x17x4, --all, --json
-python3 tools/sr.py create order.json           # {"id","name","phone","address","city","state","pin","items":[{"sku","qty","price"}],"weight"?,"dims"?}
-python3 tools/sr.py quote --shipment 800001     # prints the exact book command
-python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship 402-9649273-4891501                      # dry run
-python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship 402-9649273-4891501 --max-rupees 145 --go
+python3 tools/sr.py create order.json           # {"id","payment":"prepaid","name","phone","address","city","state","pin","items":[{"sku","qty","price"}],"weight"?,"dims"?}
+python3 tools/sr.py quote --shipment 800001     # prints the book command, with a placeholder for what Bhargava typed
+python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship '<ID he typed>'                          # dry run
+python3 tools/sr.py book 800001 --courier 54 --bhargava-said-ship '<ID he typed>' --max-rupees 145 --go
 python3 tools/sr.py track 7D141319206           # or --shipment 800001 / --ref 402-9649273-4891501
 python3 tools/sr.py label 800001                python3 tools/sr.py pickup 800001 --retry
 python3 tools/sr.py cancel 700001 --confirm "cancel 700001"
 ```
-`book --go` saves the label to `print/orders/<date>_<ref>/shiprocket_label_<awb>.pdf` (checked `%PDF-`). `--pickup auto`
+`book --go` saves the label to `print/orders/<date>_<ref>/shiprocket_label_<awb>.pdf` (checked `%PDF-`; with `--json`
+too, as `labelPath` / `labelSaveError`). `--pickup auto`
 (default) asks for today before 12:30 IST, else tomorrow; `--pickup none` for a counter drop.
 
-**First run after deploy (read-only):** `pickups`, `wallet`, `quote 490023`. A `shiprocket_forbidden` (403) means the
+**First run after deploy (read-only, free):** `pickups`, `wallet`, `quote 490023`, `quote 500001`; then
+`find <a recent Amazon order id already in Shiprocket>` and `quote --shipment <its shipment id>`: check that ref, AWB
+and `refusal` match the Shiprocket panel (`refusal` must be empty for a prepaid custom-channel order at `home`). Those
+two exercise GET /orders, /orders/show and /shipments, whose field names every booking check depends on: fix any
+mismatch before the first `ship <ID>`. Also confirm in the panel that courier auto-assign is OFF. A `shiprocket_forbidden` (403) means the
 API user lacks that module (Shiprocket Settings > API); `login_failed` means the API user's e-mail / password secrets are wrong.
 
 ## Prove once in UAT / sandbox (the docs leave these open; the code follows the documented sample)

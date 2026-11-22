@@ -23,7 +23,7 @@ export function createMockGateways() {
     },
     // queue of outcomes for successive adhoc creates: "ok" | "timeout" | <http status>; empty = "ok"
     shiprocket: {
-      queue: [], created: new Map(), logins: 0, n: 0, gate: null, loginStatus: 200,
+      queue: [], created: new Map(), logins: 0, n: 0, gate: null, loginStatus: 200, createExtra: null,
       // ---- admin API (src/admin.js) ----
       // couriers offered by serviceability; recommended deliberately points at Delhivery (never to be used)
       couriers: defaultCouriers(), blockedCouriers: [], recommended: 10,
@@ -174,7 +174,8 @@ export function createMockGateways() {
           srOrderId: 700000 + n, shipmentId: 800000 + n, channelOrderId: body.order_id, paymentMethod: String(body.payment_method).toLowerCase(),
           pickup: body.pickup_location, pin: body.billing_pincode, weight: body.weight,
         });
-        return reply(200, { order_id: 700000 + n, shipment_id: 800000 + n, status: "NEW", status_code: 1, awb_code: null });
+        // createExtra: fields merged into the reply, e.g. an auto-assigned awb_code / courier_name (account auto-assign on)
+        return reply(200, { order_id: 700000 + n, shipment_id: 800000 + n, status: "NEW", status_code: 1, awb_code: null, courier_company_id: null, courier_name: null, ...(sr.createExtra || {}) });
       }
       const admin = await shiprocketAdmin(sr, url, method, headers, body, init);
       if (admin) return admin;
@@ -371,7 +372,9 @@ async function shiprocketAdmin(sr, url, method, headers, body, init) {
   const show = path.match(/^\/v1\/external\/orders\/show\/([^/]+)$/);
   if (method === "GET" && show) {
     const o = orderOf(decodeURIComponent(show[1]));
-    return o ? reply(200, { data: structuredClone(o) }) : reply(400, { message: "Order ID not found" });
+    if (!o) return reply(400, { message: "Order ID not found" });
+    const { _listPickup, ...shown } = o;
+    return reply(200, { data: structuredClone(shown) });
   }
   const ship = path.match(/^\/v1\/external\/shipments\/([^/]+)$/);
   if (method === "GET" && ship) {
@@ -381,8 +384,9 @@ async function shiprocketAdmin(sr, url, method, headers, body, init) {
   if (method === "GET" && path === `${P}/orders`) {
     const term = q.get("search") || "";
     const rows = [...sr.orders.values()].filter((o) => term && (o.channel_order_id === term || o.shipments?.awb === term));
+    // list rows carry the pickup nickname (_listPickup: a test where orders/show leaves it "", as in the public docs)
     return reply(200, { data: rows.map((o) => ({ id: o.id, channel_order_id: o.channel_order_id, channel_name: o.channel_name, status: o.status, customer_name: o.customer_name,
-      customer_phone: o.customer_phone, shipments: [{ id: o.shipments.id, awb: o.shipments.awb, courier: o.shipments.courier }] })), meta: { pagination: { total: rows.length } } });
+      customer_phone: o.customer_phone, pickup_location: o._listPickup ?? o.pickup_location, shipments: [{ id: o.shipments.id, awb: o.shipments.awb, courier: o.shipments.courier }] })), meta: { pagination: { total: rows.length } } });
   }
   if (method === "POST" && path === `${P}/orders/cancel`) {
     if (!Array.isArray(body?.ids)) return reply(422, { message: "Oops! Invalid Data.", errors: { ids: ["The ids field is required."] } });
