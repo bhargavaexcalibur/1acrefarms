@@ -27,6 +27,7 @@ export const TEST_ENV = Object.freeze({
   SITE_URL: "https://1acrefarms.co.in",
   PUBLIC_URL: "https://1acrefarms-checkout.example.workers.dev",
   CUSTOMER_MAIL_FROM: "1acrefarms orders <orders@mail.example.test>",
+  ADMIN_TOKEN: `mock_admin_token_${"x".repeat(40)}`, // admin Shiprocket API (src/admin.js)
 });
 
 // Test fixture ONLY, built at runtime: fourteen zeros, the shape of an FSSAI licence number and obviously not one.
@@ -44,7 +45,7 @@ export const LIVE_ENV = Object.freeze({
 
 export const SECRET_VALUES = [
   "RAZORPAY_KEY_SECRET", "RAZORPAY_WEBHOOK_SECRET", "CASHFREE_SECRET_KEY", "PHONEPE_CLIENT_SECRET", "PHONEPE_WEBHOOK_PASSWORD",
-  "SHIPROCKET_API_PASSWORD", "RESEND_API_KEY",
+  "SHIPROCKET_API_PASSWORD", "RESEND_API_KEY", "ADMIN_TOKEN",
 ].map((k) => TEST_ENV[k]);
 
 export const CUSTOMER = Object.freeze({
@@ -107,8 +108,15 @@ export function harness({ env = {}, store = createMemoryStore(), now = T0 } = {}
     return { status: res.status, body: data, headers: res.headers };
   }
 
+  // Admin Shiprocket API call (server to server: no Origin unless given). token null = no authorization header.
+  function admin(method, path, body, { token = fullEnv.ADMIN_TOKEN, origin = null, headers = {} } = {}) {
+    const h = { ...headers };
+    if (token !== null && token !== undefined) h.authorization = `Bearer ${token}`;
+    return call(method, path, { body, origin, headers: h });
+  }
+
   return {
-    worker, store, mocks, env: fullEnv, ctx, logs, sleeps, call,
+    worker, store, mocks, env: fullEnv, ctx, logs, sleeps, call, admin,
     advance(ms) { clock += ms; },
     now: () => clock,
     drain: () => ctx.drain(),

@@ -8,6 +8,7 @@
 //   POST /cashfree-webhook  signed (timestamp + raw body HMAC, base64)
 //   POST /phonepe-webhook   Authorization = sha256(username:password); deduped; paid only after Order Status says so
 //   scheduled()             retries Shiprocket pushes, reconciles unpaid orders with the gateways
+//   GET|POST /admin/sr/*    admin Shiprocket API for tools/sr.py (src/admin.js): bearer ADMIN_TOKEN, no CORS
 //
 // Money only becomes "paid" through storage.markPaid(), which succeeds once per order; whoever wins
 // that transition hands the order to Shiprocket and e-mails the customer's order confirmation
@@ -26,6 +27,7 @@ import { nextRetryDelayMs, pushToShiprocket } from "./shiprocket.js";
 import { orderSummary, sendOwnerAlert } from "./alerts.js";
 import { sendOrderConfirmation } from "./confirmation.js";
 import { expectedDelivery } from "./delivery.js";
+import { handleAdmin } from "./admin.js";
 
 const SHIP_LEASE_MS = 2 * 60 * 1000;
 const BASE32 = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"; // Crockford: no I, L, O, U
@@ -512,6 +514,9 @@ export function createWorker(overrides = {}) {
           // fssaiLic: the FSSAI licence number, only when FSSAI_ECOM_LIC holds a real 14-digit number (the page shows it then)
           return reply(json({ ok: true, mode: d.cfg.rawMode, checkout: g.ok ? "enabled" : "disabled", reason: g.ok ? undefined : g.code, gateways: d.cfg.gatewayOrder, fssaiLic: d.cfg.fssaiEcomLic || undefined }));
         }
+        // Admin Shiprocket API (src/admin.js): server to server, bearer ADMIN_TOKEN. Its Response is returned as is,
+        // never through reply(), so it can never carry CORS headers (and OPTIONS on it is 403 above).
+        if (route === "/admin" || route.startsWith("/admin/")) return await handleAdmin(request, route, url, d);
         if (request.method !== "POST") return reply(json({ ok: false, error: "not_found" }, 404));
         if (route === "/create-order") return reply(await createOrder(request, d));
         if (route === "/verify") return reply(await verify(request, d));

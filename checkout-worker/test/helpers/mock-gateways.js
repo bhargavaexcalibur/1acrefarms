@@ -22,7 +22,25 @@ export function createMockGateways() {
       nowMs: () => Date.now(),
     },
     // queue of outcomes for successive adhoc creates: "ok" | "timeout" | <http status>; empty = "ok"
-    shiprocket: { queue: [], created: new Map(), logins: 0, n: 0, gate: null, loginStatus: 200 },
+    shiprocket: {
+      queue: [], created: new Map(), logins: 0, n: 0, gate: null, loginStatus: 200,
+      // ---- admin API (src/admin.js) ----
+      // couriers offered by serviceability; recommended deliberately points at Delhivery (never to be used)
+      couriers: defaultCouriers(), blockedCouriers: [], recommended: 10,
+      serviceability: "ok", // "ok" | "unserviceable" | "timeout" | <http status>
+      orders: new Map(), // Shiprocket order id (string) -> GET /orders/show/{id} data
+      shipments: new Map(), // shipment id (string) -> GET /shipments/{id} data
+      // successive POST /courier/assign/awb outcomes: "ok" | "timeout" | "timeout_booked" | "network" | <http status> | {raw 200 body}
+      assign: [], awbN: 0,
+      pickup: [], label: [], // "ok" | <http status> | "timeout"
+      labelBase: "https://kr-shipmultichannel-mum.s3.ap-south-1.amazonaws.com/mock",
+      wallet: "11221.45",
+      pickups: defaultPickups(),
+      tracking: new Map(), // awb -> tracking_data
+      cancelled: [],
+      // (method, path) => "timeout" | <http status> | null: forces an answer on any admin endpoint
+      override: null,
+    },
     // fail: optional (body) => <http status> | "network" | null, to make Resend refuse some mails; failed mails are not in `sent`
     resend: { sent: [], failed: [], fail: null },
     turnstile: { success: true },
@@ -34,7 +52,7 @@ export function createMockGateways() {
     const headers = new Headers(init.headers || {});
     const bodyText = typeof init.body === "string" ? init.body : init.body instanceof URLSearchParams ? init.body.toString() : "";
     const body = bodyText && headers.get("content-type")?.includes("json") ? JSON.parse(bodyText) : null;
-    calls.push({ host: url.host, path: url.pathname, method, body });
+    calls.push({ host: url.host, path: url.pathname, method, body, query: Object.fromEntries(url.searchParams) });
 
     // ---------------- Razorpay ----------------
     if (url.host === "api.razorpay.com") {
@@ -152,8 +170,14 @@ export function createMockGateways() {
         if (sr.created.has(body.order_id)) return reply(422, { message: "Order Id already exists", status_code: 422 });
         const n = ++sr.n;
         sr.created.set(body.order_id, body);
+        seedShiprocketOrder({
+          srOrderId: 700000 + n, shipmentId: 800000 + n, channelOrderId: body.order_id, paymentMethod: String(body.payment_method).toLowerCase(),
+          pickup: body.pickup_location, pin: body.billing_pincode, weight: body.weight,
+        });
         return reply(200, { order_id: 700000 + n, shipment_id: 800000 + n, status: "NEW", status_code: 1, awb_code: null });
       }
+      const admin = await shiprocketAdmin(sr, url, method, headers, body, init);
+      if (admin) return admin;
       return reply(404, { message: "not found" });
     }
 
@@ -204,5 +228,187 @@ export function createMockGateways() {
     return tx;
   }
 
-  return { fetch: fetchImpl, state, calls, razorpayCapture, cashfreePay, phonepeFinish };
+  // A Shiprocket order + shipment as GET /orders/show and GET /shipments would return them (custom channel "CS").
+  function seedShiprocketOrder({
+    srOrderId, shipmentId, channelOrderId, paymentMethod = "prepaid", cod = 0, baseChannel = "CS", pickup = "home", pin = "490023", weight = 0.6, awb = null,
+    courier = null, status = "NEW",
+  } = {}) {
+    const sr = state.shiprocket;
+    const oid = srOrderId ?? 900000 + sr.orders.size + 1;
+    const sid = shipmentId ?? 950000 + sr.shipments.size + 1;
+    sr.orders.set(String(oid), {
+      id: oid, channel_id: 12515972, channel_name: baseChannel === "CS" ? "CUSTOM" : "AMAZON", base_channel_code: baseChannel,
+      channel_order_id: channelOrderId ?? `402-0000000-${String(oid).padStart(7, "0")}`, customer_name: "Mock Buyer", customer_phone: "9123456780",
+      customer_address: "Flat 1, Mock Street, Mock Nagar", customer_pincode: pin, pickup_location: pickup, payment_method: paymentMethod, cod, total: 495,
+      status, status_code: 1, shipments: { id: sid, awb, courier },
+    });
+    sr.shipments.set(String(sid), { id: sid, order_id: oid, awb, courier, sr_courier_id: null, weight: String(weight), status: 1, shipping_address: { name: "Mock Buyer", phone: "9123456780" } });
+    return { srOrderId: String(oid), shipmentId: String(sid) };
+  }
+
+  return { fetch: fetchImpl, state, calls, razorpayCapture, cashfreePay, phonepeFinish, seedShiprocketOrder };
+}
+
+// ---------------- Shiprocket admin endpoints (shapes from apidocs.shiprocket.in, collection 8407119/SzYW1zB2) ----------------
+function defaultCouriers() {
+  const c = (id, name, rate, days, surface, extra = {}) => ({
+    courier_company_id: id, courier_name: name, rate, freight_charge: Math.round(rate * 84.75) / 100, cod_charges: 0, coverage_charges: 0, other_charges: 0,
+    estimated_delivery_days: String(days), etd: `Nov ${12 + days}, 2026`, etd_hours: days * 24, cutoff_time: "11:00", charge_weight: 0.6, min_weight: 0.5,
+    is_surface: surface, mode: surface ? 0 : 1, blocked: 0, cod: 1, rating: 4.1, ...extra,
+  });
+  return [
+    c(10, "Delhivery Surface", 96.5, 4, true),
+    c(43, "Ekart Logistics Surface", 104, 5, true),
+    c(54, "DTDC Surface", 134.82, 3, true),
+    c(55, "DTDC Air 500gm", 164.42, 2, false),
+    c(99, "Blue Dart Air", 185.76, 2, false),
+    c(19, "India Post-Business Parcel Surface Prepaid", 134.82, 6, true, { charge_weight: 2 }),
+    c(12, "Delhivery Air", 150.1, 2, false),
+    c(33, "Xpressbees Surface", 120, 4, true),
+  ];
+}
+
+function defaultPickups() {
+  return [
+    { id: 4411, pickup_location: "home", name: "Owner Name", email: "owner@example.test", phone: "9000000001", address: "Flat 202, Mock Apartments", address_2: "",
+      city: "Narasaraopet", state: "Andhra Pradesh", country: "India", pin_code: "522601", status: 2, phone_verified: 1, is_primary_location: 1 },
+    { id: 4412, pickup_location: "old-farm", name: "Owner Name", email: "owner@example.test", phone: "9000000001", address: "Mock Farm Road",
+      city: "Guntur", state: "Andhra Pradesh", country: "India", pin_code: "522002", status: 1, phone_verified: 0, is_primary_location: 0 },
+  ];
+}
+
+const NO_ACTIVITY = { track_status: 0, shipment_status: 0, shipment_track: [], shipment_track_activities: null, error: "Aahh! There is no activities found in our DB. Please have some patience it will be updated soon." };
+
+async function shiprocketAdmin(sr, url, method, headers, body, init) {
+  const P = "/v1/external";
+  const path = url.pathname;
+  const known = [
+    "/courier/serviceability/", "/courier/assign/awb", "/courier/generate/pickup", "/courier/generate/label", "/manifests/generate",
+    "/orders/cancel", "/settings/company/pickup", "/account/details/wallet-balance", "/orders", "/courier/track",
+  ].map((x) => P + x);
+  const isAdmin = known.includes(path) || /^\/v1\/external\/(orders\/show|shipments|courier\/track\/awb|courier\/track\/shipment)\/[^/]+$/.test(path);
+  if (!isAdmin) return null;
+  if (!headers.get("authorization")?.startsWith("Bearer mock-token-")) return reply(401, { message: "Token has expired" });
+  const forced = sr.override ? sr.override(method, path) : null;
+  if (forced === "timeout") return hang(init.signal);
+  if (typeof forced === "number") return reply(forced, { message: `mock ${forced}` });
+  const q = url.searchParams;
+  const orderOf = (id) => sr.orders.get(String(id));
+  const shipmentOf = (id) => sr.shipments.get(String(id));
+  const trackingFor = (awb) => (awb && sr.tracking.get(awb)) || NO_ACTIVITY;
+
+  if (method === "GET" && path === `${P}/courier/serviceability/`) {
+    if (sr.serviceability === "timeout") return hang(init.signal);
+    if (typeof sr.serviceability === "number") return reply(sr.serviceability, { message: "mock" });
+    if (!q.get("pickup_postcode") || !q.get("delivery_postcode") && !q.get("order_id")) return reply(422, { message: "Oops! Invalid Data.", errors: { delivery_postcode: ["required"] } });
+    if (q.get("order_id") && !orderOf(q.get("order_id"))) return reply(200, { status: 404, message: "Order does not exist!" });
+    if (!q.get("order_id") && (!q.get("weight") || q.get("cod") === null)) return reply(422, { message: "Oops! Invalid Data.", errors: { weight: ["required"], cod: ["required"] } });
+    if (sr.serviceability === "unserviceable") return reply(200, { status: 404, message: "Delivery postcode not serviceable" });
+    return reply(200, {
+      company_auto_shipment_insurance_setting: false, covid_zones: {}, currency: "INR", is_recommendation_enabled: 1, status: 200,
+      data: {
+        available_courier_companies: sr.couriers.map((c) => ({ ...c })), blocked_courier_companies: sr.blockedCouriers.map((c) => ({ ...c })),
+        recommended_courier_company_id: sr.recommended, shiprocket_recommended_courier_id: sr.recommended,
+        recommended_by: { id: 6, title: "Best in Class" },
+      },
+    });
+  }
+  if (method === "POST" && path === `${P}/courier/assign/awb`) {
+    const next = sr.assign.length ? sr.assign.shift() : "ok";
+    if (next === "timeout") return hang(init.signal);
+    if (next === "network") throw new TypeError("fetch failed");
+    if (typeof next === "number") return reply(next, { message: `mock ${next}` });
+    if (next && typeof next === "object") return reply(200, next);
+    const s = shipmentOf(body?.shipment_id);
+    if (!s) return reply(422, { message: "Oops! Invalid Data.", errors: { shipment_id: ["The selected shipment id is invalid."] } });
+    if (s.awb) return reply(400, { message: "Oops! Cannot reassign courier for this shipment." });
+    // without courier_id Shiprocket picks its own default: here the (banned) recommended one, to show why we always send it
+    const c = sr.couriers.find((x) => x.courier_company_id === Number(body.courier_id ?? sr.recommended));
+    if (!c) return reply(400, { message: "Selected courier is not serviceable" });
+    const awb = /blue\s*dart/i.test(c.courier_name) ? `9073${String(1000000 + ++sr.awbN)}` : `7D${String(140000000 + ++sr.awbN)}`;
+    Object.assign(s, { awb, courier: c.courier_name, sr_courier_id: c.courier_company_id, awb_assign_date: "2026-11-12 10:05:00" });
+    const o = orderOf(s.order_id);
+    if (o) o.shipments = { ...o.shipments, awb, courier: c.courier_name };
+    sr.tracking.set(awb, sr.tracking.get(awb) || NO_ACTIVITY);
+    const out = reply(200, {
+      awb_assign_status: 1, no_pickup_popup: 0, quick_pick: 0,
+      response: { data: { courier_company_id: c.courier_company_id, awb_code: awb, cod: 0, order_id: s.order_id, shipment_id: s.id, awb_code_status: 1,
+        assigned_date_time: { date: "2026-11-12 10:05:00.000000", timezone_type: 3, timezone: "Asia/Kolkata" }, applied_weight: 0.6, company_id: 1, courier_name: c.courier_name,
+        child_courier_name: null, pickup_scheduled_date: null, routing_code: "", rto_routing_code: "", invoice_no: "Retail0001", transporter_id: "", transporter_name: "",
+        shipped_by: { shipper_company_name: "1ACREFARMS", shipper_phone: "9000000001" } } },
+    });
+    if (next === "timeout_booked") return hang(init.signal); // Shiprocket booked it, but the answer never arrives
+    return out;
+  }
+  if (method === "POST" && path === `${P}/courier/generate/pickup`) {
+    const next = sr.pickup.length ? sr.pickup.shift() : "ok";
+    if (next === "timeout") return hang(init.signal);
+    if (typeof next === "number") return reply(next, { message: `mock ${next}` });
+    const s = Array.isArray(body?.shipment_id) ? shipmentOf(body.shipment_id[0]) : null;
+    if (!s) return reply(400, { message: "Invalid shipment id" });
+    if (!s.awb) return reply(400, { message: "Please assign AWB first" });
+    const date = Array.isArray(body.pickup_date) ? body.pickup_date[0] : "2026-11-12";
+    s.pickup_scheduled = date;
+    return reply(200, { pickup_status: 1, response: { pickup_scheduled_date: `${date} 14:00:00`, pickup_token_number: "Reference No: 194582194", status: 3,
+      others: "{}", pickup_generated_date: { date: "2026-11-12 10:06:00.000000", timezone_type: 3, timezone: "Asia/Kolkata" }, data: `Pickup is confirmed by DTDC For AWB :- ${s.awb}` } });
+  }
+  if (method === "POST" && path === `${P}/courier/generate/label`) {
+    const next = sr.label.length ? sr.label.shift() : "ok";
+    if (next === "timeout") return hang(init.signal);
+    if (typeof next === "number") return reply(next, { message: `mock ${next}` });
+    if (!Array.isArray(body?.shipment_id)) return reply(422, { message: "Oops! Invalid Data.", errors: { shipment_id: ["The shipment id must be an array."] } });
+    const s = shipmentOf(body.shipment_id[0]);
+    if (!s?.awb) return reply(200, { label_created: 0, response: "No valid shipment ids to print label", not_created: body.shipment_id });
+    return reply(200, { label_created: 1, label_url: `${sr.labelBase}/label_${s.id}.pdf`, response: "Label has been created and uploaded successfully!", not_created: [] });
+  }
+  if (method === "POST" && path === `${P}/manifests/generate`) {
+    const s = Array.isArray(body?.shipment_id) ? shipmentOf(body.shipment_id[0]) : null;
+    if (!s?.awb) return reply(400, { message: "Invalid shipment ids" });
+    if (s.manifested) return reply(400, { message: "Manifest already generated", already_manifested_shipment_ids: [s.id] });
+    s.manifested = true;
+    return reply(200, { status: 1, manifest_url: `https://s3-ap-southeast-1.amazonaws.com/kr-shipmultichannel/mock/manifest_${s.id}.pdf` });
+  }
+  const show = path.match(/^\/v1\/external\/orders\/show\/([^/]+)$/);
+  if (method === "GET" && show) {
+    const o = orderOf(decodeURIComponent(show[1]));
+    return o ? reply(200, { data: structuredClone(o) }) : reply(400, { message: "Order ID not found" });
+  }
+  const ship = path.match(/^\/v1\/external\/shipments\/([^/]+)$/);
+  if (method === "GET" && ship) {
+    const s = shipmentOf(decodeURIComponent(ship[1]));
+    return reply(200, s ? { data: structuredClone(s) } : {}); // unknown id: 200 with {}
+  }
+  if (method === "GET" && path === `${P}/orders`) {
+    const term = q.get("search") || "";
+    const rows = [...sr.orders.values()].filter((o) => term && (o.channel_order_id === term || o.shipments?.awb === term));
+    return reply(200, { data: rows.map((o) => ({ id: o.id, channel_order_id: o.channel_order_id, channel_name: o.channel_name, status: o.status, customer_name: o.customer_name,
+      customer_phone: o.customer_phone, shipments: [{ id: o.shipments.id, awb: o.shipments.awb, courier: o.shipments.courier }] })), meta: { pagination: { total: rows.length } } });
+  }
+  if (method === "POST" && path === `${P}/orders/cancel`) {
+    if (!Array.isArray(body?.ids)) return reply(422, { message: "Oops! Invalid Data.", errors: { ids: ["The ids field is required."] } });
+    const o = orderOf(body.ids[0]);
+    if (!o) return reply(500, { message: "Trying to get property of non-object" });
+    o.status = "CANCELED";
+    sr.cancelled.push(String(body.ids[0]));
+    return reply(204);
+  }
+  if (method === "GET" && path === `${P}/settings/company/pickup`) {
+    return reply(200, { data: { shipping_address: structuredClone(sr.pickups), allow_more: "1", is_blackbox_seller: false, company_name: "1ACREFARMS", recent_addresses: [] } });
+  }
+  if (method === "GET" && path === `${P}/account/details/wallet-balance`) {
+    return reply(200, { data: { balance_amount: sr.wallet } });
+  }
+  const tAwb = path.match(/^\/v1\/external\/courier\/track\/awb\/([^/]+)$/);
+  if (method === "GET" && tAwb) return reply(200, { tracking_data: structuredClone(trackingFor(decodeURIComponent(tAwb[1]))) });
+  const tShip = path.match(/^\/v1\/external\/courier\/track\/shipment\/([^/]+)$/);
+  if (method === "GET" && tShip) {
+    const s = shipmentOf(decodeURIComponent(tShip[1]));
+    return reply(200, { tracking_data: structuredClone(trackingFor(s?.awb)) });
+  }
+  if (method === "GET" && path === `${P}/courier/track`) {
+    const o = [...sr.orders.values()].find((x) => x.channel_order_id === q.get("order_id"));
+    if (!o) return reply(200, []);
+    return reply(200, [{ tracking_data: structuredClone(trackingFor(o.shipments?.awb)) }]);
+  }
+  return null;
 }

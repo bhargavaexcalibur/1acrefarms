@@ -90,6 +90,10 @@ export function loadConfig(env = {}) {
     // (for the one real test order, cancelled afterwards). In live mode it is on unless "off".
     shiprocketPush: live ? env.SHIPROCKET_PUSH !== "off" : env.SHIPROCKET_PUSH === "on",
     shiprocketPickup: env.SHIPROCKET_PICKUP_LOCATION || "home",
+    // Admin Shiprocket routes (src/admin.js) only: the PIN of the "home" pickup (Narasaraopet) sent with every quote,
+    // and the standing per-parcel cap a booking may never exceed (Bhargava 11-11: at most Rs 500 per parcel).
+    shiprocketPickupPin: /^\d{6}$/.test(String(env.SHIPROCKET_PICKUP_PIN ?? "")) ? env.SHIPROCKET_PICKUP_PIN : "522601",
+    srBookMaxRupees: Math.min(2000, int(env.SR_BOOK_MAX_RUPEES, 500)),
     shiprocketTimeoutMs: int(env.SHIPROCKET_TIMEOUT_MS, 8000),
     shiprocketInlineAttempts: Math.max(1, int(env.SHIPROCKET_INLINE_ATTEMPTS, 3)),
     shiprocketMaxAttempts: Math.max(1, int(env.SHIPROCKET_MAX_ATTEMPTS, 8)),

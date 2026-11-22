@@ -21,6 +21,10 @@ MODE = "test"
 # PRE_GRANT_OWNER_GO = ""
 # Exact nickname of the pickup address in Shiprocket > Settings > Pickup Addresses (today the 522601 "home" address, lower case: Shiprocket matches it exactly; checked via the API 11-11).
 SHIPROCKET_PICKUP_LOCATION = "home"
+# Admin Shiprocket API (src/admin.js, tools/sr.py; needs the secret ADMIN_TOKEN): the pickup PIN sent with every quote,
+# and the most one booking may cost (the standing rule: at most Rs 500 per parcel). Unset = these defaults.
+# SHIPROCKET_PICKUP_PIN = "522601"
+# SR_BOOK_MAX_RUPEES = "500"
 # Shiprocket has no sandbox. In test mode the push is OFF unless this is "on" (only for the one real test order,
 # cancelled in Shiprocket afterwards). In live mode the push is ON unless this is "off".
 SHIPROCKET_PUSH = "off"
