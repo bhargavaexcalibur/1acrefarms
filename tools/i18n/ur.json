@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "ہماری دکان میں شیلف پر رکھے پیک",
    "back": "Packs kept on the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "ان پر بھی:",
+   "back": "On these too:"
   }
  }
 }

@@ -153,6 +153,8 @@ UI = {
     "ui.cart_added": (bp.DIRECT_LABELS["cart_added"], "short confirmation shown on the button after it put a pack in the cart"),
     "ui.cart_full": (bp.DIRECT_LABELS["cart_full"], "shown on the button when the cart already holds the most packs one order can "
                      "take (nothing was added)"),
+    "ui.also_on": (bp.ALSO_ON_LABEL, "short label before links to our listings on other shopping websites (Amazon.in, Meesho, "
+                   "JioMart; those names stay in Latin letters and are not part of this string); keep the colon"),
     # Pack-page photo gallery (21-11-2026): English in build_pages GALLERY_LABELS; all OPTIONAL. Used as image alt text
     # "<pack name>: <label>" for photos of our pouch, read aloud by screen readers.
     "ui.g_more": (bp.GALLERY_LABELS["more"], "label (read by screen readers) for the row of small photos under the main pack photo"),
@@ -297,7 +299,7 @@ def pack_keys(p):
 OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
             "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
             "ui.legal_name", "ui.add_to_cart", "ui.buy_now", "ui.free_delivery", "ui.cart", "ui.cart_added",
-            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS}  # newer strings: English is shown until translated
+            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS} | {"ui.also_on"}  # newer strings: English is shown until translated
 OPTIONAL |= set(bc.strings_en())  # every checkout page string (co.<key>)
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
@@ -809,7 +811,7 @@ def pack_page(code, t, p, packs, facts):
         <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
         <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}{status}
         <div class="pdp-actions" id="order">{order_btn(code, t, p)}{direct_btns(code, t, p)}{voice_btn(code, t, p)}
-        </div>
+        </div>{bp.also_on(p, opt(code, t, 'ui.also_on'))}
         <ul class="pdp-facts">
           <li><span>{x(code, t['ui.f_from'])}</span>{x(code, t[k + '.origin'])}</li>
           <li><span>{x(code, t['ui.f_pack'])}</span>{x(code, t[k + '.note'])}</li>

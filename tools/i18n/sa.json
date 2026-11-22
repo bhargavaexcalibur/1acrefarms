@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "अस्माकम् आपणे फलके स्थितानि पुटकानि",
    "back": "Packets placed on a shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "एतेष्वपि:",
+   "back": "In these too:"
   }
  }
 }

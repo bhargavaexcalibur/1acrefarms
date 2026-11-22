@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "आमच्या दुकानांतल्या शेल्फाचेर दवरिल्ले पॅक",
    "back": "Packs kept on the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "हांगाय:",
+   "back": "Here too:"
   }
  }
 }

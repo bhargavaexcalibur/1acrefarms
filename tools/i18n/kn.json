@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "ನಮ್ಮ ಅಂಗಡಿಯಲ್ಲಿ ಕಪಾಟಿನ ಮೇಲೆ ಪ್ಯಾಕ್‌ಗಳು",
    "back": "Packs on top of the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "ಇವುಗಳಲ್ಲೂ:",
+   "back": "In these too:"
   }
  }
 }

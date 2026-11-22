@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "जोंनि दोकानाव सेल्फआव दोननाय पेकफोर",
    "back": "Packs kept on the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "बेफोरावबो:",
+   "back": "In these too:"
   }
  }
 }

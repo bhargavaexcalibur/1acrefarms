@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "हमर दोकानमे सेल्फ पर राखल पैकेट सभ",
    "back": "Packets kept on the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "एतय सेहो:",
+   "back": "Here too:"
   }
  }
 }

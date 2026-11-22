@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "ᱟᱞᱮᱭᱟᱜ ᱫᱚᱠᱟᱱ ᱨᱮᱭᱟᱜ ᱛᱟᱠ ᱨᱮ ᱯᱮᱠ ᱠᱚ",
    "back": "The packs on the shelf of our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "ᱱᱚᱴᱮ ᱦᱚᱸ:",
+   "back": "Here too:"
   }
  }
 }

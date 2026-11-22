@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "साढ़ी हट्टी च शैल्फ उप्पर रक्खे दे पैक",
    "back": "Packs kept on the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "इत्थें बी:",
+   "back": "Here too:"
   }
  }
 }

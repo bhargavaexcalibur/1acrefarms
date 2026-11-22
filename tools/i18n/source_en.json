@@ -159,6 +159,10 @@
   "en": "Your cart already has the most we can send in one order",
   "note": "shown on the button when the cart already holds the most packs one order can take (nothing was added)"
  },
+ "ui.also_on": {
+  "en": "Also on:",
+  "note": "short label before links to our listings on other shopping websites (Amazon.in, Meesho, JioMart; those names stay in Latin letters and are not part of this string); keep the colon"
+ },
  "ui.g_more": {
   "en": "More photos of this pack",
   "note": "label (read by screen readers) for the row of small photos under the main pack photo"

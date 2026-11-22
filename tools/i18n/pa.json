@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "ਸਾਡੀ ਦੁਕਾਨ ਵਿੱਚ ਸ਼ੈਲਫ਼ ਉੱਤੇ ਰੱਖੇ ਪੈਕ",
    "back": "The packs placed on the shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "ਇੱਥੇ ਵੀ:",
+   "back": "Here too:"
   }
  }
 }

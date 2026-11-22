@@ -697,6 +697,10 @@ span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { 
 .pack-media.is-photo img { object-fit: contain; }
 @media (max-width: 900px) { .pdp-gallery { max-width: 300px; } .pg-thumb { flex-basis: 56px; height: 56px; } }
 
+/* "Also on: Amazon.in · Meesho · JioMart" under the buy buttons (22-11-2026) */
+.pdp-also { margin: -14px 0 22px; font-size: 0.85rem; color: var(--ink-soft); }
+.pdp-also a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
+
 /* CHECKOUT:START written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False): direct orders */
 .nav-cart { text-decoration: none; font-size: 0.82rem; font-weight: 500; flex: none; }
 .cart-count[hidden] { display: none; }

@@ -10605,6 +10605,11 @@
    "src": "packs on the shelf in our shop",
    "t": "మా షాపులో అర మీద ప్యాక్‌లు",
    "back": "Packs on a shelf in our shop"
+  },
+  "ui.also_on": {
+   "src": "Also on:",
+   "t": "వీటిలో కూడా:",
+   "back": "In these too:"
   }
  }
 }

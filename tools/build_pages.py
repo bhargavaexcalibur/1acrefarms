@@ -813,6 +813,53 @@ def merchant_feed(live):
     print(f"wrote merchant-feed.xml with {len(items)} items")
 
 
+# "Also on" line under the buy buttons (Bhargava 22-11-2026: "Add JioMart and Meesho"): our listings on other
+# marketplaces, for buyers who prefer them (JioMart and Meesho offer cash on delivery; this site is prepaid). Our own
+# checkout stays first. Which packs are live where comes from Shiva's docs/marketing/channels_live.json (<m>_live +
+# <m>_urls); the build copies it to tools/marketplaces.json so a build without docs/ uses the last known list. A new
+# marketplace (Flipkart) appears the day Shiva lists it live there. Names stay in Latin letters on every page.
+CHANNELS_SRC = ROOT / "docs" / "marketing" / "channels_live.json"
+MARKETS_JSON = ROOT / "tools" / "marketplaces.json"
+MARKET_NAMES = {"meesho": "Meesho", "flipkart": "Flipkart", "jiomart": "JioMart"}
+ALSO_ON_LABEL = "Also on:"
+
+
+def load_markets():
+    if CHANNELS_SRC.exists():
+        src = json.loads(CHANNELS_SRC.read_text(encoding="utf-8"))
+        out = {}
+        for m in MARKET_NAMES:
+            urls = src.get(f"{m}_urls") or {}
+            live = {c: urls[c] for c in (src.get(f"{m}_live") or []) if re.fullmatch(r"https://[^\s\"<>]+", urls.get(c, ""))}
+            if live:
+                out[m] = dict(sorted(live.items()))
+        text = json.dumps(out, indent=1) + "\n"
+        if not MARKETS_JSON.exists() or MARKETS_JSON.read_text(encoding="utf-8") != text:
+            MARKETS_JSON.write_text(text, encoding="utf-8")
+        return out
+    return json.loads(MARKETS_JSON.read_text(encoding="utf-8")) if MARKETS_JSON.exists() else {}
+
+
+MARKETS = load_markets()
+
+
+def also_on(p, label=None):
+    """'Also on: Amazon.in · Meesho · JioMart' (only where the pack is live); label is HTML (English by default)."""
+    links = []
+    if amazon_link(p):
+        links.append(("Amazon.in", amazon_link(p), "amazon"))
+    for m, name in MARKET_NAMES.items():
+        u = MARKETS.get(m, {}).get(p["code"])
+        if u:
+            links.append((name, u, m))
+    if not links:
+        return ""
+    a = " · ".join(f'<a href="{html.escape(u, quote=True)}" target="_blank" rel="noopener" lang="en" dir="ltr" '
+                   f'onclick="window.gtag&amp;&amp;gtag(\'event\',\'marketplace_click\',{{market:\'{m}\',pack:\'{p["code"]}\'}})">{n}</a>'
+                   for n, u, m in links)
+    return f'\n        <p class="pdp-also">{label or ALSO_ON_LABEL} {a}</p>'
+
+
 YT_JSON = ROOT / "tools" / "youtube.json"
 YT = json.loads(YT_JSON.read_text(encoding="utf-8")).get("videos", {}) if YT_JSON.exists() else {}
 
@@ -931,7 +978,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
         <p class="pdp-lede">{p['lede']}</p>{price_block}{status}
         <div class="pdp-actions" id="order">{order_btn(p)}{direct_btns(p)}{voice_btn(p)}
-        </div>
+        </div>{also_on(p)}
         <ul class="pdp-facts">
           <li><span>From</span>{p['origin']}</li>
           <li><span>Pack</span>{p['note']}</li>
@@ -1086,7 +1133,7 @@ def main():
         sys.exit("CHECKOUT_LIVE = True needs the granted FSSAI Central licence in FSSAI_ECOM_LIC, or the owner's dated "
                  "PRE_GRANT_OWNER_GO decision (run tools/switch_on.py: it checks every gate)")
     for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values(),
-                  *DIRECT_LABELS.values(), *VOICE_LABELS.values(), SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
+                  *DIRECT_LABELS.values(), *VOICE_LABELS.values(), ALSO_ON_LABEL, SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
                   *SHIP_HEADS.values(), *seller_terms().values()):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in the footer/order lines: {BANNED.search(text_of(chunk)).group(0)!r}")
