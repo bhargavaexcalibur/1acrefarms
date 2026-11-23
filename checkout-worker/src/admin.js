@@ -827,7 +827,7 @@ export async function handleAdmin(request, route, url, d) {
     } else if (e instanceof ShiprocketError) {
       const notConfigured = e.reason === "not_configured";
       const status = notConfigured ? 503 : /timeout/.test(e.reason) ? 504 : 502;
-      res = json({ ok: false, error: notConfigured ? "shiprocket_not_configured" : "shiprocket_unavailable", reason: e.reason, http: e.http || undefined }, status);
+      res = json({ ok: false, error: notConfigured ? "shiprocket_not_configured" : "shiprocket_unavailable", reason: e.reason, http: e.http || undefined, detail: e.detail || undefined }, status);
       ctx.reason = e.reason;
       ctx.http = e.http || ctx.http;
     } else {

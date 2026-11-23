@@ -38,7 +38,12 @@ async function login({ cfg, env, fetchImpl, store, now }) {
   } catch (e) {
     throw new ShiprocketError(0, e?.name === "TimeoutError" ? "login_timeout" : "login_network", true);
   }
-  if (!res.ok) throw new ShiprocketError(res.status, "login_failed", isRetryableStatus(res.status), retryAfterMs(res));
+  if (!res.ok) {
+    const err = new ShiprocketError(res.status, "login_failed", isRetryableStatus(res.status), retryAfterMs(res));
+    // Shiprocket's own short message (e.g. "Invalid email and password combination"); no secrets, admin replies only.
+    try { const m = (await safeJson(res))?.message; if (typeof m === "string") err.detail = m.slice(0, 120); } catch { /* ignore */ }
+    throw err;
+  }
   const data = await safeJson(res);
   if (!data || typeof data.token !== "string") throw new ShiprocketError(res.status, "login_bad_response", true);
   await store.kvSet(TOKEN_KEY, data.token, now + cfg.shiprocketTokenTtlMs);
