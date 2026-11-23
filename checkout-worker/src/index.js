@@ -8,6 +8,7 @@
 //   POST /cashfree-webhook  signed (timestamp + raw body HMAC, base64)
 //   POST /phonepe-webhook   Authorization = sha256(username:password); deduped; paid only after Order Status says so
 //   scheduled()             retries Shiprocket pushes, reconciles unpaid orders with the gateways
+//   GET|POST /admin/sr/*    admin Shiprocket API for tools/sr.py (src/admin.js): bearer ADMIN_TOKEN, no CORS
 //
 // Money only becomes "paid" through storage.markPaid(), which succeeds once per order; whoever wins
 // that transition hands the order to Shiprocket and e-mails the customer's order confirmation
@@ -26,6 +27,7 @@ import { nextRetryDelayMs, pushToShiprocket } from "./shiprocket.js";
 import { orderSummary, sendOwnerAlert } from "./alerts.js";
 import { sendOrderConfirmation } from "./confirmation.js";
 import { expectedDelivery } from "./delivery.js";
+import { classifyCourier, handleAdmin } from "./admin.js";
 
 const SHIP_LEASE_MS = 2 * 60 * 1000;
 const BASE32 = "0123456789ABCDEFGHJKMNPQRSTVWXYZ"; // Crockford: no I, L, O, U
@@ -239,6 +241,17 @@ async function shipOrder(d, orderId, attempts) {
   if (r.ok) {
     await d.store.updateShipment(orderId, { shipStatus: "pushed", shipAttempts: total, shipNextAt: null, shipError: null, srOrderId: r.srOrderId, srShipmentId: r.srShipmentId }, d.now);
     d.log("shiprocket_pushed", { orderId, attempts: total });
+    if (r.awb) {
+      // the account auto-assigned a courier at create: an AWB (wallet money) with no "ship <ID>", maybe on Delhivery
+      const k = classifyCourier(r.courier);
+      d.log("shiprocket_auto_awb", { orderId, reason: k.allowed ? "allowed_courier" : k.reason });
+      await sendOwnerAlert(d, {
+        subject: `${k.allowed ? "CHECK" : "URGENT"}: Shiprocket auto-assigned AWB ${r.awb} at order create for ${orderId}`,
+        lines: [`Shiprocket order ${r.srOrderId}, shipment ${r.srShipmentId ?? "-"}: AWB ${r.awb} on ${r.courier || "(courier not named)"}, assigned when the order was pushed.`,
+          k.allowed ? "The courier is on the allow-list, but wallet money may have been spent without Bhargava's OK." : "That courier is NOT DTDC / Blue Dart / India Post: do not hand the parcel over; cancelling the AWB needs Bhargava's OK.",
+          "Turn off courier auto-assign in Shiprocket (Settings > Courier) so creating an order never books one (needs Bhargava's OK)."],
+      });
+    }
     return "pushed";
   }
   const why = `${r.reason}${r.http ? ` (http ${r.http})` : ""}`;
@@ -512,6 +525,9 @@ export function createWorker(overrides = {}) {
           // fssaiLic: the FSSAI licence number, only when FSSAI_ECOM_LIC holds a real 14-digit number (the page shows it then)
           return reply(json({ ok: true, mode: d.cfg.rawMode, checkout: g.ok ? "enabled" : "disabled", reason: g.ok ? undefined : g.code, gateways: d.cfg.gatewayOrder, fssaiLic: d.cfg.fssaiEcomLic || undefined }));
         }
+        // Admin Shiprocket API (src/admin.js): server to server, bearer ADMIN_TOKEN. Its Response is returned as is,
+        // never through reply(), so it can never carry CORS headers (and OPTIONS on it is 403 above).
+        if (route === "/admin" || route.startsWith("/admin/")) return await handleAdmin(request, route, url, d);
         if (request.method !== "POST") return reply(json({ ok: false, error: "not_found" }, 404));
         if (route === "/create-order") return reply(await createOrder(request, d));
         if (route === "/verify") return reply(await verify(request, d));

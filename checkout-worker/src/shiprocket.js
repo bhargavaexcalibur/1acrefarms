@@ -38,7 +38,12 @@ async function login({ cfg, env, fetchImpl, store, now }) {
   } catch (e) {
     throw new ShiprocketError(0, e?.name === "TimeoutError" ? "login_timeout" : "login_network", true);
   }
-  if (!res.ok) throw new ShiprocketError(res.status, "login_failed", isRetryableStatus(res.status), retryAfterMs(res));
+  if (!res.ok) {
+    const err = new ShiprocketError(res.status, "login_failed", isRetryableStatus(res.status), retryAfterMs(res));
+    // Shiprocket's own short message (e.g. "Invalid email and password combination"); no secrets, admin replies only.
+    try { const m = (await safeJson(res))?.message; if (typeof m === "string") err.detail = m.slice(0, 120); } catch { /* ignore */ }
+    throw err;
+  }
   const data = await safeJson(res);
   if (!data || typeof data.token !== "string") throw new ShiprocketError(res.status, "login_bad_response", true);
   await store.kvSet(TOKEN_KEY, data.token, now + cfg.shiprocketTokenTtlMs);
@@ -53,8 +58,8 @@ async function token(deps, { fresh = false } = {}) {
   return login(deps);
 }
 
-// order_date in IST, "yyyy-mm-dd hh:mm"
-function istDate(ms) {
+// order_date in IST, "yyyy-mm-dd hh:mm" (also used by src/admin.js)
+export function istDate(ms) {
   const d = new Date(ms + 5.5 * 3600 * 1000);
   const p = (n) => String(n).padStart(2, "0");
   return `${d.getUTCFullYear()}-${p(d.getUTCMonth() + 1)}-${p(d.getUTCDate())} ${p(d.getUTCHours())}:${p(d.getUTCMinutes())}`;
@@ -117,7 +122,44 @@ async function createOnce(deps, payload) {
     if (!res.ok) throw new ShiprocketError(res.status, isRetryableStatus(res.status) ? "busy" : "rejected", isRetryableStatus(res.status), retryAfterMs(res));
     const data = await safeJson(res);
     if (!data || data.order_id === undefined || data.order_id === null) throw new ShiprocketError(res.status, "no_order_id", false);
-    return { srOrderId: String(data.order_id), srShipmentId: data.shipment_id === undefined || data.shipment_id === null ? null : String(data.shipment_id) };
+    // awb_code / courier_name are filled only if the account auto-assigns a courier at create (the caller alerts)
+    const awb = data.awb_code === undefined || data.awb_code === null || String(data.awb_code).trim() === "" ? null : String(data.awb_code).trim().slice(0, 30);
+    return {
+      srOrderId: String(data.order_id), srShipmentId: data.shipment_id === undefined || data.shipment_id === null ? null : String(data.shipment_id),
+      awb, courier: awb ? String(data.courier_name ?? "").slice(0, 80) : null,
+    };
+  }
+  throw new ShiprocketError(401, "unauthorised", false);
+}
+
+// Any other Shiprocket API call, for the admin routes (src/admin.js): the same cached token and the same
+// re-login-once-on-401 as createOnce above (and the same kv key, so both share one login).
+// Returns { status, data } for EVERY HTTP answer (the caller decides what a 4xx/5xx means; data is null for a
+// 204 or a non-JSON body). Throws ShiprocketError only for transport trouble (timeout / network), a login that
+// fails, or a 401 that survives a fresh login. Never retries anything else: a booking must never be sent twice.
+export async function srCall(deps, method, path, { query, body } = {}) {
+  const { cfg, fetchImpl } = deps;
+  const params = new URLSearchParams();
+  for (const [k, v] of Object.entries(query || {})) if (v !== undefined && v !== null && v !== "") params.set(k, String(v));
+  const qs = params.toString();
+  const url = `${cfg.shiprocketApi}${path}${qs ? `?${qs}` : ""}`;
+  for (let relogin = 0; relogin < 2; relogin++) {
+    const tok = await token(deps, { fresh: relogin > 0 });
+    const headers = { accept: "application/json", authorization: `Bearer ${tok}` };
+    if (body !== undefined) headers["content-type"] = "application/json";
+    let res;
+    try {
+      res = await fetchWithTimeout(fetchImpl, url, { method, headers, ...(body !== undefined ? { body: JSON.stringify(body) } : {}) }, cfg.shiprocketTimeoutMs);
+    } catch (e) {
+      throw new ShiprocketError(0, e?.name === "TimeoutError" ? "timeout" : "network", true);
+    }
+    if (res.status === 401 && relogin === 0) {
+      await deps.store.kvDelete(TOKEN_KEY);
+      continue;
+    }
+    if (res.status === 401) throw new ShiprocketError(401, "unauthorised", false);
+    const data = res.status === 204 ? null : await safeJson(res);
+    return { status: res.status, data };
   }
   throw new ShiprocketError(401, "unauthorised", false);
 }

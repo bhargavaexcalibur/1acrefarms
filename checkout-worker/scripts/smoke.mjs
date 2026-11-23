@@ -206,4 +206,61 @@ console.log("1acrefarms checkout smoke run (mocked gateways, SQLite D1, test mod
   ok(`Meta link ?products=1AF-TURM-0540%3A2,1AF-PALM-0540%3A1,1AF-XXXX-0540%3A1 -> cart ${link.items.map((i) => `${i.qty} x ${i.code}`).join(", ")}; left out: ${link.ignored.map((i) => `${i.sku} (${i.reason})`).join(", ")}`);
 }
 
+// G. Admin Shiprocket API (tools/sr.py's worker side) on the SQLite D1 store --------------------------------
+{
+  const h = newHarness();
+  const srPath = (p) => h.mocks.calls.filter((c) => c.path === `/v1/external${p}`);
+  assert.equal((await h.admin("GET", "/admin/sr/wallet", undefined, { token: "wrong" })).status, 401);
+  const noTok = newHarness({ ADMIN_TOKEN: undefined });
+  assert.equal((await noTok.admin("GET", "/admin/sr/wallet")).status, 503);
+  const w = await h.admin("GET", "/admin/sr/wallet", undefined, { origin: "https://1acrefarms.co.in" });
+  assert.equal(w.headers.get("access-control-allow-origin"), null);
+  const pk = await h.admin("GET", "/admin/sr/pickups");
+  assert.equal(pk.body.home.ok, true);
+  ok(`admin auth: wrong token 401, no ADMIN_TOKEN 503 (fail closed), no CORS; wallet Rs ${w.body.balanceRupees}; pickup "${pk.body.home.nickname}" ${pk.body.home.pin}`);
+
+  const q = await h.admin("POST", "/admin/sr/quote", { pin: "490023", packs: 1 });
+  const sq = srPath("/courier/serviceability/")[0].query;
+  assert.deepEqual([sq.cod, sq.pickup_postcode, sq.weight], ["0", "522601", "0.6"]);
+  assert.ok(q.body.options.every((o) => !/delhivery/i.test(o.courier)));
+  ok(`quote 522601 -> 490023, 0.6 kg, cod=0: ${q.body.options.map((o) => `${o.courier} Rs ${o.rate}`).join(", ")}; Delhivery hidden x${q.body.delhivery.hidden}; not allowed: ${q.body.notAllowed.map((n) => n.courier).join(", ")}`);
+
+  const amazon = "402-9649273-4891501";
+  const c = await h.admin("POST", "/admin/sr/create", {
+    orderId: amazon, payment: "prepaid", items: [{ sku: "1AF-KPAS-0540", qty: 1, price: 495 }],
+    customer: { name: "Ravi Kumar", phone: "9848012345", address: "H.No 4-56, Temple Street, Ramnagar", city: "Raipur", state: "Chhattisgarh", pin: "490023" },
+  });
+  assert.equal(c.status, 200);
+  const adhocBody = adhoc(h)[0].body;
+  assert.deepEqual([adhocBody.payment_method, adhocBody.shipping_charges, adhocBody.pickup_location], ["Prepaid", 0, "home"]);
+  ok(`create Amazon ${amazon} (no AWB, free): Shiprocket order ${c.body.srOrderId}, shipment ${c.body.srShipmentId}, Prepaid, pickup home`);
+
+  const sid = c.body.srShipmentId;
+  const base = { shipmentId: sid, courierId: 54, maxRupees: 145, said: `ship ${amazon}`, confirm: `ship ${sid}`, pickup: "today" };
+  const refusals = [
+    await h.admin("POST", "/admin/sr/book", { ...base, confirm: undefined }),
+    await h.admin("POST", "/admin/sr/book", { ...base, courierId: 10 }),
+    await h.admin("POST", "/admin/sr/book", { ...base, said: "ship 402-0000000-0000000" }),
+    await h.admin("POST", "/admin/sr/book", { ...base, maxRupees: 120 }),
+  ];
+  assert.deepEqual(refusals.map((r) => r.body.error), ["confirm_required", "courier_not_allowed", "said_mismatch", "price_changed"]);
+  assert.equal(srPath("/courier/assign/awb").length, 0);
+  ok(`book refused with no money moved: ${refusals.map((r) => `${r.status} ${r.body.error}`).join(", ")}`);
+
+  const b = await h.admin("POST", "/admin/sr/book", base);
+  assert.equal(b.status, 200);
+  const twice = await h.admin("POST", "/admin/sr/book", base);
+  assert.equal(twice.status, 409);
+  assert.equal(srPath("/courier/assign/awb").length, 1);
+  await h.drain();
+  const alert = h.mocks.state.resend.sent.find((m) => m.subject.includes("Booked"));
+  assert.ok(alert && !alert.text.includes("9848012345") && !alert.text.includes("Temple Street"));
+  ok(`book "ship ${amazon}": ${b.body.courier} AWB ${b.body.awb} Rs ${b.body.rate}, pickup ${b.body.pickup.scheduledDate}, label ${b.body.labelUrl ? "made" : "missing"}; again -> 409 (one AWB, D1 lock); owner alert without phone/address`);
+
+  const t = await h.admin("GET", `/admin/sr/track?awb=${b.body.awb}`);
+  const cx = await h.admin("POST", "/admin/sr/cancel", { srOrderId: c.body.srOrderId, confirm: `cancel ${c.body.srOrderId}` });
+  assert.deepEqual([t.status, cx.status, cx.body.error], [200, 409, "awb_assigned"]);
+  ok(`track ${b.body.awb}: ${t.body.noActivity ? "no activity yet" : t.body.currentStatus}; cancel after the AWB -> 409 awb_assigned (needs Bhargava's OK, not done by the API)`);
+}
+
 console.log(`\nsmoke: ${step} checks passed`);
