@@ -820,7 +820,7 @@ def merchant_feed(live):
 # marketplace (Flipkart) appears the day Shiva lists it live there. Names stay in Latin letters on every page.
 CHANNELS_SRC = ROOT / "docs" / "marketing" / "channels_live.json"
 MARKETS_JSON = ROOT / "tools" / "marketplaces.json"
-MARKET_NAMES = {"meesho": "Meesho", "flipkart": "Flipkart", "jiomart": "JioMart"}
+MARKET_NAMES = {"flipkart": "Flipkart", "meesho": "Meesho", "jiomart": "JioMart"}  # same order as cta.py
 ALSO_ON_LABEL = "Also on:"
 
 

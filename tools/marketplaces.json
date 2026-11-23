@@ -1,4 +1,13 @@
 {
+ "flipkart": {
+  "CASH": "https://www.flipkart.com/product/p/itme?pid=NDFHTAZGCQCNYDK8",
+  "CBEL": "https://www.flipkart.com/product/p/itme?pid=JGRHTBYFGVDFCNH9",
+  "KPAS": "https://www.flipkart.com/product/p/itme?pid=SCMHTAZT4JV3MY3W",
+  "SANN": "https://www.flipkart.com/product/p/itme?pid=SCMHTAZY65H9MCDV",
+  "TBEL": "https://www.flipkart.com/product/p/itme?pid=JGRHTBYAHRQU6QZZ",
+  "TEJA": "https://www.flipkart.com/product/p/itme?pid=SCMHTBYFAHWPPYPG",
+  "TURM": "https://www.flipkart.com/product/p/itme?pid=SCMHTAZZ8AH5S6TT"
+ },
  "meesho": {
   "CASH": "https://www.meesho.com/1acrefarms-cashew-nuts-kaju-jeedipappu-540g-whole-kernels-unsalted/p/j70kyi",
   "CBEL": "https://www.meesho.com/1acrefarms-cane-jaggery-pack-of-2-x-540-g-cheruku-bellam-pieces-anakapalli-chittoor/p/itcmm6",
