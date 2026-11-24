@@ -127,40 +127,52 @@
    "short": "https://youtube.com/shorts/ncPxSkpc18I"
   },
   "pack-turmeric-powder-ta": {
-   "video": "https://youtu.be/YPA5Var_OvQ"
+   "video": "https://youtu.be/YPA5Var_OvQ",
+   "short": "https://youtube.com/shorts/BTU12RgQCRo"
   },
   "pack-sannam-chilli-powder": {
-   "video": "https://youtu.be/RuP2uv6eO9g"
+   "video": "https://youtu.be/RuP2uv6eO9g",
+   "short": "https://youtube.com/shorts/Jzg8HYbSEqw"
   },
   "pack-teja-chilli-powder": {
-   "video": "https://youtu.be/eZYB03eW8gw"
+   "video": "https://youtu.be/eZYB03eW8gw",
+   "short": "https://youtube.com/shorts/I8ZYaeoXA-g"
   },
   "pack-cane-jaggery-ta": {
-   "video": "https://youtu.be/Qp6elqB8L6g"
+   "video": "https://youtu.be/Qp6elqB8L6g",
+   "short": "https://youtube.com/shorts/qdq5Ss04Gdc"
   },
   "pack-cane-jaggery-kn": {
-   "video": "https://youtu.be/U5Wqt6ks_K0"
+   "video": "https://youtu.be/U5Wqt6ks_K0",
+   "short": "https://youtube.com/shorts/fC0JtOtlo4g"
   },
   "pack-cane-jaggery-ml": {
-   "video": "https://youtu.be/7xu6enuVfqI"
+   "video": "https://youtu.be/7xu6enuVfqI",
+   "short": "https://youtube.com/shorts/fkgf5uxmk_k"
   },
   "recipe-paramannam-ta": {
-   "video": "https://youtu.be/PKflMsQs318"
+   "video": "https://youtu.be/PKflMsQs318",
+   "short": "https://youtube.com/shorts/rzqAgyZqWu8"
   },
   "recipe-paramannam-kn": {
-   "video": "https://youtu.be/9BDgypqXy24"
+   "video": "https://youtu.be/9BDgypqXy24",
+   "short": "https://youtube.com/shorts/viRkdgMdydA"
   },
   "recipe-paramannam-ml": {
-   "video": "https://youtu.be/DzDeXmfkxTk"
+   "video": "https://youtu.be/DzDeXmfkxTk",
+   "short": "https://youtube.com/shorts/PlFrsfYEyc4"
   },
   "recipe-chimmili-ta": {
-   "video": "https://youtu.be/vAy000pYMnw"
+   "video": "https://youtu.be/vAy000pYMnw",
+   "short": "https://youtube.com/shorts/IKZjmvlurXc"
   },
   "recipe-chimmili-kn": {
-   "video": "https://youtu.be/MXchmZnMhoA"
+   "video": "https://youtu.be/MXchmZnMhoA",
+   "short": "https://youtube.com/shorts/DM7cxvFhbeQ"
   },
   "recipe-chimmili-ml": {
-   "video": "https://youtu.be/b1H0lHdSYz0"
+   "video": "https://youtu.be/b1H0lHdSYz0",
+   "short": "https://youtube.com/shorts/Y-uWnDMswuQ"
   },
   "pack-cashew-kernels": {
    "video": "https://youtu.be/vt4ctHNgYf4",
@@ -382,6 +394,12 @@
   },
   "pack-hill-turmeric-powder-hi": {
    "video": "https://youtu.be/ryqYT4gdqKY"
+  },
+  "recipe-tomato-pappu-te": {
+   "short": "https://youtube.com/shorts/0T45loUADSQ"
+  },
+  "recipe-bellam-pongali-te": {
+   "short": "https://youtube.com/shorts/x0F2UuBPoGQ"
   }
  }
 }
