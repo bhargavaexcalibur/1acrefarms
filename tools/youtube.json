@@ -375,10 +375,12 @@
    "video": "https://youtu.be/2PCs0oBOSvQ"
   },
   "recipe-kobbari-undalu-ta": {
-   "video": "https://youtu.be/me_RNUsQs7A"
+   "video": "https://youtu.be/me_RNUsQs7A",
+   "short": "https://youtube.com/shorts/6tQIh7JKbjo"
   },
   "recipe-kobbari-undalu-kn": {
-   "video": "https://youtu.be/HCHazGd40Yk"
+   "video": "https://youtu.be/HCHazGd40Yk",
+   "short": "https://youtube.com/shorts/geVe735sZ54"
   },
   "recipe-kobbari-undalu-ml": {
    "video": "https://youtu.be/oC4CyiCjy8E"
@@ -400,6 +402,12 @@
   },
   "recipe-bellam-pongali-te": {
    "short": "https://youtube.com/shorts/x0F2UuBPoGQ"
+  },
+  "recipe-royyala-iguru": {
+   "short": "https://youtube.com/shorts/CgqMaS61xi4"
+  },
+  "recipe-pasupu-annam-te": {
+   "short": "https://youtube.com/shorts/nlSmK03krdg"
   }
  }
 }
