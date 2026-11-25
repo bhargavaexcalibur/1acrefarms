@@ -10625,6 +10625,21 @@
    "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
    "t": "तुमी वेबसायट ऑफर मोल दितात, जें MRP परस उणें आसा. चेकआउटाक कांयच वाडयना.",
    "back": "You give the website offer price, which is less than MRP. At checkout nothing at all is increased."
+  },
+  "co.sumGstIntraOffer": {
+   "src": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "वेबसायट ऑफर मोलाभितर आशिल्लो GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST that is inside the website offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInterOffer": {
+   "src": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "t": "वेबसायट ऑफर मोलाभितर आशिल्लो GST: {tax} (IGST {rate}%)",
+   "back": "GST that is inside the website offer price: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoStateOffer": {
+   "src": "GST included in the offer price ({rate}%)",
+   "t": "वेबसायट ऑफर मोलाभितर आशिल्लो GST ({rate}%)",
+   "back": "GST that is inside the website offer price ({rate}%)"
   }
  }
 }

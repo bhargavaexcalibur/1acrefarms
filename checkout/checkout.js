@@ -245,9 +245,10 @@ function renderSummary() {
   }
   // GST shown inside the MRP (display only): CGST + SGST for Andhra Pradesh, IGST elsewhere, the rate until a state is chosen
   const g = gstBreakup(q.lines, $("f-state").value);
-  const gst = g.kind === "intra" ? h("sumGstIntra", { tax: esc(inr2(g.taxPaise)), half: g.halfRatePct, cgst: esc(inr2(g.cgstPaise)), sgst: esc(inr2(g.sgstPaise)) })
-    : g.kind === "inter" ? h("sumGstInter", { tax: esc(inr2(g.taxPaise)), rate: g.ratePct })
-      : h("sumGstNoState", { rate: g.ratePct });
+  const o = q.savedPaise > 0 ? "Offer" : ""; // during a website offer the tax is inside the offer price, not the MRP
+  const gst = g.kind === "intra" ? h(`sumGstIntra${o}`, { tax: esc(inr2(g.taxPaise)), half: g.halfRatePct, cgst: esc(inr2(g.cgstPaise)), sgst: esc(inr2(g.sgstPaise)) })
+    : g.kind === "inter" ? h(`sumGstInter${o}`, { tax: esc(inr2(g.taxPaise)), rate: g.ratePct })
+      : h(`sumGstNoState${o}`, { rate: g.ratePct });
   box.innerHTML = `
     <div class="r"><span>${h("sumPacks", { n: q.packs })}</span><span>${esc(inr(q.subtotalPaise))}</span></div>
     <p class="gst">${gst}</p>

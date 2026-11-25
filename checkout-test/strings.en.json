@@ -205,13 +205,25 @@
    "en": "GST included in the MRP: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
    "note": "tax line for delivery inside Andhra Pradesh; the tax is already inside the price, nothing is added; keep GST, CGST, SGST, MRP"
   },
+  "sumGstIntraOffer": {
+   "en": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "note": "same tax line as sumGstIntra while a website offer runs: the tax is already inside the (lower) offer price, nothing is added; keep GST, CGST, SGST and every {placeholder}"
+  },
   "sumGstInter": {
    "en": "GST included in the MRP: {tax} (IGST {rate}%)",
    "note": "tax line for delivery outside Andhra Pradesh; already inside the price; keep GST, IGST, MRP"
   },
+  "sumGstInterOffer": {
+   "en": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "note": "same tax line as sumGstInter while a website offer runs: already inside the offer price; keep GST, IGST and every {placeholder}"
+  },
   "sumGstNoState": {
    "en": "GST included in the MRP ({rate}%)",
    "note": "tax line before a state is chosen; keep GST, MRP"
+  },
+  "sumGstNoStateOffer": {
+   "en": "GST included in the offer price ({rate}%)",
+   "note": "same tax line as sumGstNoState while a website offer runs, before a state is chosen; keep GST and {rate}"
   },
   "sumDelivery": {
    "en": "Delivery",

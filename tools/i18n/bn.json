@@ -10625,6 +10625,21 @@
    "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
    "t": "আপনি ওয়েবসাইট অফার দাম দেবেন, যা MRP থেকে কম। চেকআউটে কিছুই যোগ হয় না।",
    "back": "You will pay the website offer price, which is less than MRP. Nothing is added at checkout."
+  },
+  "co.sumGstIntraOffer": {
+   "src": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "ওয়েবসাইট অফার দামে GST ধরা আছে: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST is counted in the website offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInterOffer": {
+   "src": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "t": "ওয়েবসাইট অফার দামে GST ধরা আছে: {tax} (IGST {rate}%)",
+   "back": "GST is counted in the website offer price: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoStateOffer": {
+   "src": "GST included in the offer price ({rate}%)",
+   "t": "ওয়েবসাইট অফার দামে GST ধরা আছে ({rate}%)",
+   "back": "GST is counted in the website offer price ({rate}%)"
   }
  }
 }

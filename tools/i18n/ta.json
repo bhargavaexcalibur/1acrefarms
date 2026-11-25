@@ -10625,6 +10625,21 @@
    "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
    "t": "நீங்கள் இணையதளச் சலுகை விலையைச் செலுத்துகிறீர்கள், இது MRP-ஐ விடக் குறைவு. செக்அவுட்டில் கூடுதலாக எதுவும் சேர்க்கப்படாது.",
    "back": "You pay the website concession price, this is less than the MRP. Nothing extra will be added at checkout."
+  },
+  "co.sumGstIntraOffer": {
+   "src": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "இணையதளச் சலுகை விலையில் சேர்ந்துள்ள GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in the website offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInterOffer": {
+   "src": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "t": "இணையதளச் சலுகை விலையில் சேர்ந்துள்ள GST: {tax} (IGST {rate}%)",
+   "back": "GST included in the website offer price: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoStateOffer": {
+   "src": "GST included in the offer price ({rate}%)",
+   "t": "இணையதளச் சலுகை விலையில் சேர்ந்துள்ள GST ({rate}%)",
+   "back": "GST included in the website offer price ({rate}%)"
   }
  }
 }

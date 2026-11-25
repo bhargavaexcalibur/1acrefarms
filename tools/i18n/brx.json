@@ -10625,6 +10625,21 @@
    "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
    "t": "नों वेबसाइट अफार बेसेन होयो, बेयो MRP निफ्राय खम. चेकआउटआव जेबो दाजाबजाया.",
    "back": "You give the website offer price, which is less than MRP. Nothing is added at checkout."
+  },
+  "co.sumGstIntraOffer": {
+   "src": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "वेबसाइट अफार बेसेनआव लाफानाय GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST added in the website offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInterOffer": {
+   "src": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "t": "वेबसाइट अफार बेसेनआव लाफानाय GST: {tax} (IGST {rate}%)",
+   "back": "GST added in the website offer price: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoStateOffer": {
+   "src": "GST included in the offer price ({rate}%)",
+   "t": "वेबसाइट अफार बेसेनआव लाफानाय GST ({rate}%)",
+   "back": "GST added in the website offer price ({rate}%)"
   }
  }
 }

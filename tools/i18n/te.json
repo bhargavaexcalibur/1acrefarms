@@ -10625,6 +10625,21 @@
    "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
    "t": "మీరు వెబ్‌సైట్ ఆఫర్ ధర చెల్లిస్తారు, ఇది MRP కంటే తక్కువ. చెక్‌అవుట్‌లో అదనంగా ఏమీ కలపం.",
    "back": "You will pay the website offer price, this is less than MRP. At checkout we do not add anything extra."
+  },
+  "co.sumGstIntraOffer": {
+   "src": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "వెబ్‌సైట్ ఆఫర్ ధరలోనే కలిసి ఉన్న GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in the website offer price itself: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInterOffer": {
+   "src": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "t": "వెబ్‌సైట్ ఆఫర్ ధరలోనే కలిసి ఉన్న GST: {tax} (IGST {rate}%)",
+   "back": "GST included in the website offer price itself: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoStateOffer": {
+   "src": "GST included in the offer price ({rate}%)",
+   "t": "వెబ్‌సైట్ ఆఫర్ ధరలోనే కలిసి ఉన్న GST ({rate}%)",
+   "back": "GST included in the website offer price itself ({rate}%)"
   }
  }
 }

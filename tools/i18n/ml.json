@@ -10625,6 +10625,21 @@
    "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
    "t": "നിങ്ങൾ വെബ്സൈറ്റ് ഓഫർ വിലയാണ് അടയ്ക്കുന്നത്, ഇത് MRP-യെക്കാൾ കുറവാണ്. ചെക്ക്ഔട്ടിൽ ഒന്നും കൂട്ടിച്ചേർക്കുന്നില്ല.",
    "back": "It is the website offer price that you pay, this is less than MRP. Nothing is added at checkout."
+  },
+  "co.sumGstIntraOffer": {
+   "src": "GST included in the offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "t": "വെബ്സൈറ്റ് ഓഫർ വിലയിൽ ഉൾപ്പെട്ട GST: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})",
+   "back": "GST included in website offer price: {tax} (CGST {half}% {cgst} + SGST {half}% {sgst})"
+  },
+  "co.sumGstInterOffer": {
+   "src": "GST included in the offer price: {tax} (IGST {rate}%)",
+   "t": "വെബ്സൈറ്റ് ഓഫർ വിലയിൽ ഉൾപ്പെട്ട GST: {tax} (IGST {rate}%)",
+   "back": "GST included in website offer price: {tax} (IGST {rate}%)"
+  },
+  "co.sumGstNoStateOffer": {
+   "src": "GST included in the offer price ({rate}%)",
+   "t": "വെബ്സൈറ്റ് ഓഫർ വിലയിൽ ഉൾപ്പെട്ട GST ({rate}%)",
+   "back": "GST included in website offer price ({rate}%)"
   }
  }
 }
