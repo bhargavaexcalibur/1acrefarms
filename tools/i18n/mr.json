@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "यांवरही:",
    "back": "On these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "वेबसाइट ऑफर",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · वेबसाइट ऑफर किंमत {price} (सर्व करांसह) · प्रति g {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (including all taxes) · per g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "तुम्ही वेबसाइट ऑफर किंमत भरता, जी MRP पेक्षा कमी आहे. चेकआउटला काहीही वाढवले जात नाही.",
+   "back": "You pay the website offer price, which is less than MRP. At checkout nothing is increased."
   }
  }
 }

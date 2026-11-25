@@ -159,6 +159,10 @@
   "en": "Your cart already has the most we can send in one order",
   "note": "shown on the button when the cart already holds the most packs one order can take (nothing was added)"
  },
+ "ui.offer": {
+  "en": "Website offer",
+  "note": "short label next to the offer dates on a product page: a lower price on this website for a limited time (the dates follow in digits); plain, no urgency, no 'sale' hype"
+ },
  "ui.also_on": {
   "en": "Also on:",
   "note": "short label before links to our listings on other shopping websites (Amazon.in, Meesho, JioMart; those names stay in Latin letters and are not part of this string); keep the colon"
@@ -7927,6 +7931,10 @@
   "en": "{grams} g · MRP {price} (incl. of all taxes) · {unit} per g · {details}",
   "note": "checkout page: one line under each pack name: weight, price incl. all taxes, price per gram, then a link; keep MRP and every {placeholder}"
  },
+ "co.packMetaOffer": {
+  "en": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+  "note": "checkout page: same line as packMeta while a website offer runs: weight, the MRP printed on the pack, then the lower offer price this website charges (incl. all taxes), price per gram at the offer price, then a link; keep MRP and every {placeholder}; plain facts, no urgency"
+ },
  "co.packDetails": {
   "en": "Pack details",
   "note": "checkout page: link to the product page with the full details printed on the pack"
@@ -8118,6 +8126,10 @@
  "co.sumMrpOnly": {
   "en": "You pay the MRP only. Nothing is added at checkout.",
   "note": "checkout page: plain fact under the total: the price printed on the pack is all the buyer pays"
+ },
+ "co.sumOfferNote": {
+  "en": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+  "note": "checkout page: plain fact under the total while a website offer runs: the buyer pays the offer price, which is lower than the MRP printed on the pack; nothing else is added"
  },
  "co.prepaidNote": {
   "en": "Prepaid only: UPI, debit or credit card, net banking or wallet. No cash on delivery. Payments are handled by our payment gateway ({gateways}) on its own secure page; we never see your card details or UPI PIN.",

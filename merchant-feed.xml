@@ -21,6 +21,8 @@
       <g:availability>in_stock</g:availability>
       <g:price>396.00 INR</g:price>
       <g:maximum_retail_price>396.00 INR</g:maximum_retail_price>
+      <g:sale_price>360.00 INR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-25T00:00+0530/2026-12-25T00:00+0530</g:sale_price_effective_date>
       <g:brand>1acrefarms</g:brand>
       <g:gtin>8908032868006</g:gtin>
       <g:condition>new</g:condition>
@@ -46,6 +48,8 @@
       <g:availability>in_stock</g:availability>
       <g:price>495.00 INR</g:price>
       <g:maximum_retail_price>495.00 INR</g:maximum_retail_price>
+      <g:sale_price>450.00 INR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-25T00:00+0530/2026-12-25T00:00+0530</g:sale_price_effective_date>
       <g:brand>1acrefarms</g:brand>
       <g:gtin>8908032868013</g:gtin>
       <g:condition>new</g:condition>
@@ -71,6 +75,8 @@
       <g:availability>in_stock</g:availability>
       <g:price>495.00 INR</g:price>
       <g:maximum_retail_price>495.00 INR</g:maximum_retail_price>
+      <g:sale_price>450.00 INR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-25T00:00+0530/2026-12-25T00:00+0530</g:sale_price_effective_date>
       <g:brand>1acrefarms</g:brand>
       <g:gtin>8908032868020</g:gtin>
       <g:condition>new</g:condition>
@@ -96,6 +102,8 @@
       <g:availability>in_stock</g:availability>
       <g:price>495.00 INR</g:price>
       <g:maximum_retail_price>495.00 INR</g:maximum_retail_price>
+      <g:sale_price>450.00 INR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-25T00:00+0530/2026-12-25T00:00+0530</g:sale_price_effective_date>
       <g:brand>1acrefarms</g:brand>
       <g:gtin>8908032868037</g:gtin>
       <g:condition>new</g:condition>
@@ -142,6 +150,8 @@
       <g:availability>in_stock</g:availability>
       <g:price>495.00 INR</g:price>
       <g:maximum_retail_price>495.00 INR</g:maximum_retail_price>
+      <g:sale_price>450.00 INR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-25T00:00+0530/2026-12-25T00:00+0530</g:sale_price_effective_date>
       <g:brand>1acrefarms</g:brand>
       <g:gtin>8908032868051</g:gtin>
       <g:condition>new</g:condition>
@@ -166,6 +176,8 @@
       <g:availability>in_stock</g:availability>
       <g:price>891.00 INR</g:price>
       <g:maximum_retail_price>891.00 INR</g:maximum_retail_price>
+      <g:sale_price>810.00 INR</g:sale_price>
+      <g:sale_price_effective_date>2026-11-25T00:00+0530/2026-12-25T00:00+0530</g:sale_price_effective_date>
       <g:brand>1acrefarms</g:brand>
       <g:gtin>8908032868068</g:gtin>
       <g:condition>new</g:condition>

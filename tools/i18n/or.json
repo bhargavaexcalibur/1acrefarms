@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "ଏଗୁଡ଼ିକରେ ମଧ୍ୟ:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "ୱେବସାଇଟ ଅଫର",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · ୱେବସାଇଟ ଅଫର ଦାମ {price} (ସମସ୍ତ ଟିକସ ସହିତ) · ପ୍ରତି g {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (including all taxes) · per g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "ଆପଣ ୱେବସାଇଟ ଅଫର ଦାମ ଦେବେ, ଯାହା MRP ଠାରୁ କମ୍। ଚେକଆଉଟରେ କିଛି ଯୋଡ଼ାଯାଏ ନାହିଁ।",
+   "back": "You will give the website offer price, which is less than MRP. Nothing is added at checkout."
   }
  }
 }

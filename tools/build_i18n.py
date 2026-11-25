@@ -153,6 +153,8 @@ UI = {
     "ui.cart_added": (bp.DIRECT_LABELS["cart_added"], "short confirmation shown on the button after it put a pack in the cart"),
     "ui.cart_full": (bp.DIRECT_LABELS["cart_full"], "shown on the button when the cart already holds the most packs one order can "
                      "take (nothing was added)"),
+    "ui.offer": (bp.OFFER_LABEL, "short label next to the offer dates on a product page: a lower price on this website for a "
+                 "limited time (the dates follow in digits); plain, no urgency, no 'sale' hype"),
     "ui.also_on": (bp.ALSO_ON_LABEL, "short label before links to our listings on other shopping websites (Amazon.in, Meesho, "
                    "JioMart; those names stay in Latin letters and are not part of this string); keep the colon"),
     # Pack-page photo gallery (21-11-2026): English in build_pages GALLERY_LABELS; all OPTIONAL. Used as image alt text
@@ -299,7 +301,7 @@ def pack_keys(p):
 OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
             "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
             "ui.legal_name", "ui.add_to_cart", "ui.buy_now", "ui.free_delivery", "ui.cart", "ui.cart_added",
-            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS} | {"ui.also_on"}  # newer strings: English is shown until translated
+            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS} | {"ui.also_on", "ui.offer"}  # newer strings: English is shown until translated
 OPTIONAL |= set(bc.strings_en())  # every checkout page string (co.<key>)
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
@@ -527,7 +529,14 @@ def translated_note(t, code):
 def pack_card(code, t, p):
     k = f"pack.{p['code']}"
     # 08-11-2026: no price on the site until the pack is buyable on Amazon.in (bp.shows_price)
-    po_price = f"\n          <span class=\"po-price\">MRP ₹{p['mrp']} · {p['g']} g</span>" if bp.shows_price(p) else ""
+    offer = bp.offer_price(p)
+    if not bp.shows_price(p):
+        po_price = ""
+    elif offer:  # MRP struck + offer price; the MRP-only version comes back by itself after the end date (bp.offer_js)
+        po_price = (f"\n          <span class=\"po-price offer-only\">MRP <s>₹{p['mrp']}</s> <b>₹{offer}</b> · {p['g']} g</span>"
+                    f"\n          <span class=\"po-price mrp-only\" hidden>MRP ₹{p['mrp']} · {p['g']} g</span>")
+    else:
+        po_price = f"\n          <span class=\"po-price\">MRP ₹{p['mrp']} · {p['g']} g</span>"
     return f"""        <a class="pdp-other" href="/{code}/{p['slug']}/">
           <img src="/assets/packs/{p['pack']}" alt="{e(t[k + '.name'])}, {p['g']} g" width="800" height="1122" loading="lazy" />
           <span class="po-name">{x(code, t[k + '.name'])}</span>
@@ -786,12 +795,16 @@ def pack_page(code, t, p, packs, facts):
     others = "\n".join(pack_card(code, t, q) for q in packs if q is not p)
     # Built from strings that are already translated (the lede and the MRP), so no ordering talk is needed here.
     desc = f"{t[k + '.lede']} {p['g']} g" + (f" · MRP ₹{p['mrp']}" if bp.shows_price(p) else "")
-    price = f"""
+    mrp_row = f"""
         <div class="price-row">
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
           <span class="upp">{x(code, f"{p['g']} g")} · {x(code, f"₹{p['mrp'] / p['g']:.2f}")} {x(code, t['ui.per_g'])}</span>
-        </div>
-        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>{bp.free_line(p, opt(code, t, 'ui.free_delivery'))}""" if bp.shows_price(p) else ""
+        </div>"""
+    offer = bp.offer_price(p)
+    grams = p["g"]
+    upp_offer = f"{x(code, f'{grams} g')} · {x(code, f'₹{offer / grams:.2f}')} {x(code, t['ui.per_g'])}" if offer else ""
+    price = ((bp.offer_price_block(p, offer, mrp_row, opt(code, t, 'ui.offer'), upp_offer) if offer else mrp_row) + f"""
+        <p class="tax">{opt(code, t, 'ui.incl_tax')}</p>{bp.free_line(p, opt(code, t, 'ui.free_delivery'))}""") if bp.shows_price(p) else ""
     status = "" if bp.amazon_link(p) or bp.direct(p) else f'\n        <p class="pdp-status">{opt(code, t, "ui.not_online")}</p>'
     return head(code, t[k + ".title"], desc, url, "product", f"{SITE}/assets/packs/{p['pack']}",
                 json.dumps(ld, ensure_ascii=False, indent=2)) + f"""
@@ -891,7 +904,7 @@ def home_page(code, t, packs, pages=()):
       <h2>{x(code, t['ui.l_packs'])}</h2>
       <div class="pdp-other-grid">
 {cards}
-      </div>
+      </div>{bp.offer_js() if any(bp.offer_price(q) for q in packs) else ""}
     </section>{more_links(code, t, pages)}
     {translated_note(t, code)}
   </main>

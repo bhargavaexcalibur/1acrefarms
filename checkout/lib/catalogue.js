@@ -86,5 +86,19 @@ export default {
    "sellable": true,
    "note": ""
   }
- ]
+ ],
+ "offer": {
+  "_note": "Website offer, Bhargava 25-11-2026 (via Shiva): 'go 9%, except the cane jaggery', then 'okay yes please go ahead'. 30 days: 25-11-2026 00:00 IST to the end of 24-12-2026 (end is exclusive). MRP stays printed and shown struck through; free delivery unchanged; CBEL never discounted. Same prices on Amazon.in and JioMart. Remove this block (or let it expire) to go back to MRP.",
+  "label": "Website offer",
+  "start": "2026-11-25T00:00:00+05:30",
+  "end": "2026-12-25T00:00:00+05:30",
+  "prices": {
+   "TURM": 360,
+   "KPAS": 450,
+   "SANN": 450,
+   "TEJA": 450,
+   "TBEL": 450,
+   "CASH": 810
+  }
+ }
 };

@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "ᱱᱚᱴᱮ ᱦᱚᱸ:",
    "back": "Here too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "ᱣᱮᱵᱥᱟᱭᱤᱴ ᱚᱯᱷᱚᱨ",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · ᱣᱮᱵᱥᱟᱭᱤᱴ ᱚᱯᱷᱚᱨ ᱜᱚᱱᱚᱝ {price} (ᱡᱚᱛᱚ ᱴᱮᱠᱥ ᱥᱮᱞᱮᱫ) · ᱯᱨᱚᱛᱤ g {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (with all tax) · per g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "ᱟᱢ ᱣᱮᱵᱥᱟᱭᱤᱴ ᱚᱯᱷᱚᱨ ᱜᱚᱱᱚᱝ ᱮᱢᱟᱢ, ᱚᱱᱟ MRP ᱠᱷᱚᱱ ᱠᱚᱢ᱾ ᱪᱮᱠᱟᱣᱴ ᱨᱮ ᱪᱮᱫ ᱦᱚᱸ ᱵᱟᱝ ᱥᱮᱞᱮᱫᱚᱜᱼᱟ᱾",
+   "back": "You will give the website offer price, that is less than MRP. At checkout nothing at all is added."
   }
  }
 }

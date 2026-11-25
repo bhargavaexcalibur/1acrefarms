@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "இவற்றிலும்:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "இணையதளச் சலுகை",
+   "back": "Website concession"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · இணையதளச் சலுகை விலை {price} (அனைத்து வரிகளும் உட்பட) · ஒரு g-க்கு {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website concession price {price} (all taxes included) · for one g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "நீங்கள் இணையதளச் சலுகை விலையைச் செலுத்துகிறீர்கள், இது MRP-ஐ விடக் குறைவு. செக்அவுட்டில் கூடுதலாக எதுவும் சேர்க்கப்படாது.",
+   "back": "You pay the website concession price, this is less than the MRP. Nothing extra will be added at checkout."
   }
  }
 }

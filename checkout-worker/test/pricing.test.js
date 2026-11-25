@@ -66,7 +66,8 @@ test("no delivery fee: the fee machinery is gone, one constant is left and it is
   for (const gone of ["DELIVERY", "deliveryFeeRupees"]) assert.equal(gone in mod, false, `${gone} no longer exists`);
 });
 
-test("any basket, any PIN: fee 0, total = sum of MRP x qty", () => {
+test("any basket, any PIN: fee 0, total = sum of MRP x qty (outside a website offer)", () => {
+  const AT_MRP = Date.parse("2026-11-12T10:00:00+05:30"); // before the 25-11 offer
   const codes = Object.keys(CATALOGUE).filter((c) => CATALOGUE[c].sellable);
   const pins = ["522601", "500081", "507111", "533464", "110001", "560001", "799001", "", "999999"];
   // every single pack at qty 1..3, every pair of packs, and the 12-pack maximum
@@ -78,7 +79,7 @@ test("any basket, any PIN: fee 0, total = sum of MRP x qty", () => {
   for (const items of baskets) {
     const want = items.reduce((sum, i) => sum + CATALOGUE[i.code].mrp * i.qty, 0) * 100;
     for (const pin of pins) {
-      const q = quoteCart(items, pin);
+      const q = quoteCart(items, AT_MRP); // the PIN never changes the price
       assert.equal(q.ok, true);
       assert.equal(q.deliveryPaise, 0, `fee for ${JSON.stringify(items)} to ${pin}`);
       assert.equal(q.subtotalPaise, want);
@@ -89,12 +90,14 @@ test("any basket, any PIN: fee 0, total = sum of MRP x qty", () => {
   assert.equal(checked, baskets.length * pins.length);
   assert.ok(checked > 150, "every sellable pack, every pair, the 12-pack maximum, 9 PINs");
   // the cheapest order (1 cane jaggery) is Rs 234 flat, to AP and to Delhi alike; two Rs 495 packs are Rs 990
-  assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], "522601").totalPaise, 23400);
-  assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], "110001").totalPaise, 23400);
-  assert.equal(quoteCart([{ code: "KPAS", qty: 1 }, { code: "TBEL", qty: 1 }], "500081").totalPaise, 99000);
-  assert.equal(quoteCart([{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }]).totalPaise, 102600, "no PIN needed to know the total");
-  assert.deepEqual(Object.keys(quoteCart([{ code: "TURM", qty: 1 }], "522601")).sort(),
-    ["deliveryPaise", "errors", "lines", "ok", "packs", "subtotalPaise", "totalPaise"], "no band / shortfall fields left");
+  assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], AT_MRP).totalPaise, 23400);
+  assert.equal(quoteCart([{ code: "CBEL", qty: 1 }], AT_MRP).totalPaise, 23400);
+  assert.equal(quoteCart([{ code: "KPAS", qty: 1 }, { code: "TBEL", qty: 1 }], AT_MRP).totalPaise, 99000);
+  assert.equal(quoteCart([{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }], AT_MRP).totalPaise, 102600, "no PIN needed to know the total");
+  assert.deepEqual(Object.keys(quoteCart([{ code: "TURM", qty: 1 }], AT_MRP)).sort(),
+    ["deliveryPaise", "errors", "lines", "mrpTotalPaise", "offer", "ok", "packs", "savedPaise", "subtotalPaise", "totalPaise"],
+    "no band / shortfall fields left");
+  assert.equal(quoteCart([{ code: "TURM", qty: 1 }], AT_MRP).savedPaise, 0);
 });
 
 test("PIN table: AP/TS prefixes, rest of India, Army Postal 9xxxxx refused (address check only, no price)", () => {
@@ -132,19 +135,20 @@ test("PIN vs state consistency", () => {
 });
 
 test("cart rules: client prices ignored, unknown/parked items, limits, merge", () => {
-  const q = quoteCart([{ code: "turm", qty: 1, price: 1, unitPaise: 100 }, { code: "TURM", qty: 1 }], "522601");
+  const AT_MRP = Date.parse("2026-11-12T10:00:00+05:30"); // before the 25-11 website offer
+  const q = quoteCart([{ code: "turm", qty: 1, price: 1, unitPaise: 100 }, { code: "TURM", qty: 1 }], AT_MRP);
   assert.equal(q.ok, true);
   assert.equal(q.lines.length, 1, "same code merged");
   assert.equal(q.lines[0].qty, 2);
   assert.equal(q.lines[0].unitPaise, 39600, "price from the server table only");
-  assert.deepEqual(quoteCart([{ code: "XXXX", qty: 1 }], "522601").errors.map((e) => e.code), ["unknown_item"]);
-  assert.deepEqual(quoteCart([{ code: "TURM", qty: 0 }], "522601").errors.map((e) => e.code), ["bad_qty"]);
-  assert.deepEqual(quoteCart([{ code: "TURM", qty: 1.5 }], "522601").errors.map((e) => e.code), ["bad_qty"]);
-  assert.deepEqual(quoteCart([{ code: "TURM", qty: "2" }], "522601").errors.map((e) => e.code), ["bad_qty"]);
-  assert.deepEqual(quoteCart([{ code: "TURM", qty: 11 }], "522601").errors.map((e) => e.code), ["qty_over_limit"]);
-  assert.deepEqual(quoteCart([{ code: "TURM", qty: 7 }, { code: "CBEL", qty: 6 }], "522601").errors.map((e) => e.code), ["too_many_packs"]);
-  assert.deepEqual(quoteCart([], "522601").errors.map((e) => e.code), ["empty_cart"]);
-  assert.deepEqual(quoteCart({ TURM: 1, CBEL: 2 }, "522601").lines.map((l) => [l.code, l.qty]), [["TURM", 1], ["CBEL", 2]]);
+  assert.deepEqual(quoteCart([{ code: "XXXX", qty: 1 }], AT_MRP).errors.map((e) => e.code), ["unknown_item"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 0 }], AT_MRP).errors.map((e) => e.code), ["bad_qty"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 1.5 }], AT_MRP).errors.map((e) => e.code), ["bad_qty"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: "2" }], AT_MRP).errors.map((e) => e.code), ["bad_qty"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 11 }], AT_MRP).errors.map((e) => e.code), ["qty_over_limit"]);
+  assert.deepEqual(quoteCart([{ code: "TURM", qty: 7 }, { code: "CBEL", qty: 6 }], AT_MRP).errors.map((e) => e.code), ["too_many_packs"]);
+  assert.deepEqual(quoteCart([], AT_MRP).errors.map((e) => e.code), ["empty_cart"]);
+  assert.deepEqual(quoteCart({ TURM: 1, CBEL: 2 }, AT_MRP).lines.map((l) => [l.code, l.qty]), [["TURM", 1], ["CBEL", 2]]);
 });
 
 test("parcel weights and sizes", () => {
@@ -173,4 +177,50 @@ test("address form validation", () => {
   assert.deepEqual(mismatch.errors.map((e) => `${e.field}:${e.code}`), ["pin:state_mismatch"]);
   assert.equal(validateCustomer({ ...CUSTOMER, address: "<script>alert(1)</script> road" }).ok, false);
   assert.equal(validateCustomer(null).ok, false);
+});
+
+// Website offer 25-11-2026 -> end of 24-12-2026 (catalogue.json "offer"; Bhargava via Shiva 25-11: "go 9%, except the cane jaggery").
+test("website offer: offer price only inside its window, never cane jaggery, never above MRP", async () => {
+  const { OFFER, offerActive, offerProblems, unitRupees, NO_DISCOUNT } = await import("../src/pricing.js");
+  assert.ok(OFFER, "the offer block is valid (no problems)");
+  assert.deepEqual(offerProblems(await import("../src/catalogue.json", { with: { type: "json" } }).then((m) => m.default)), []);
+  const before = Date.parse("2026-11-24T23:59:59+05:30");
+  const first = Date.parse("2026-11-25T00:00:00+05:30");
+  const last = Date.parse("2026-12-24T23:59:59+05:30");
+  const after = Date.parse("2026-12-25T00:00:00+05:30");
+  assert.equal(offerActive(before), false);
+  assert.equal(offerActive(first), true);
+  assert.equal(offerActive(last), true);
+  assert.equal(offerActive(after), false, "ends at the end of 24-12 (IST)");
+  const want = { TURM: 360, KPAS: 450, SANN: 450, TEJA: 450, TBEL: 450, CASH: 810, CBEL: 234 };
+  for (const [code, price] of Object.entries(want)) {
+    assert.equal(unitRupees(code, first), price, `${code} on offer`);
+    assert.equal(unitRupees(code, before), CATALOGUE[code].mrp, `${code} at MRP before`);
+    assert.equal(unitRupees(code, after), CATALOGUE[code].mrp, `${code} at MRP after`);
+    assert.ok(unitRupees(code, first) <= CATALOGUE[code].mrp, `${code} never above MRP`);
+  }
+  assert.ok(NO_DISCOUNT.includes("CBEL"));
+  // one hill turmeric during the offer = Rs 450, MRP 495 kept on the line; mixed cart with cane jaggery
+  const q1 = quoteCart([{ code: "KPAS", qty: 1 }], first);
+  assert.equal(q1.totalPaise, 45000);
+  assert.equal(q1.lines[0].mrpPaise, 49500);
+  assert.equal(q1.savedPaise, 4500);
+  assert.equal(q1.offer, "Website offer");
+  const q2 = quoteCart([{ code: "TURM", qty: 2 }, { code: "CBEL", qty: 1 }], first);
+  assert.equal(q2.totalPaise, 2 * 36000 + 23400);
+  assert.equal(q2.mrpTotalPaise, 102600);
+  assert.equal(quoteCart([{ code: "CBEL", qty: 2 }], first).savedPaise, 0, "cane jaggery alone: no offer");
+  assert.equal(quoteCart([{ code: "CBEL", qty: 2 }], first).offer, null);
+});
+
+test("website offer: a broken offer block is refused (fail closed to MRP)", async () => {
+  const { offerProblems } = await import("../src/pricing.js");
+  const packs = [{ code: "TURM", mrp: 396 }, { code: "CBEL", mrp: 234 }];
+  const base = { label: "x", start: "2026-11-25T00:00:00+05:30", end: "2026-12-25T00:00:00+05:30" };
+  assert.deepEqual(offerProblems({ packs, offer: { ...base, prices: { TURM: 360 } } }), []);
+  assert.match(offerProblems({ packs, offer: { ...base, prices: { CBEL: 225 } } })[0], /never discounted/);
+  assert.match(offerProblems({ packs, offer: { ...base, prices: { TURM: 396 } } })[0], /below its MRP/);
+  assert.match(offerProblems({ packs, offer: { ...base, prices: { TURM: 361 } } })[0], /Rule of Nine/);
+  assert.match(offerProblems({ packs, offer: { ...base, prices: { XXXX: 9 } } })[0], /not in the catalogue/);
+  assert.match(offerProblems({ packs, offer: { ...base, end: base.start, prices: { TURM: 360 } } })[0], /start before end/);
 });

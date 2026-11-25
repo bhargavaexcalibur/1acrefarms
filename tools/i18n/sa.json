@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "एतेष्वपि:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "जालस्थल-प्रस्तावः",
+   "back": "Website-offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · जालस्थल-प्रस्ताव-मूल्यम् {price} (सर्वकरसहितम्) · प्रति g {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website-offer-price {price} (with all taxes) · per g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "भवान् जालस्थल-प्रस्ताव-मूल्यं ददाति, यत् MRP इत्यस्मात् न्यूनम् अस्ति। क्रयपूर्तौ किमपि अधिकं न योज्यते।",
+   "back": "You (honorific) give the website-offer-price, which is less than MRP. At purchase-completion nothing more is added."
   }
  }
 }

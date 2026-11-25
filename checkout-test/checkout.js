@@ -7,7 +7,7 @@
 // Prices, GST break-up, seller details, short terms, delivery dates and form rules are imported from the Worker's own
 // modules, so what the page shows is what the Worker charges and what the order e-mail says: the sum of the MRPs,
 // nothing added (delivery is free across India). The Worker re-prices every order anyway and is the only authority.
-import { CATALOGUE, LIMITS, PACK_GRAMS, quoteCart, unitPaisePerGram } from "../checkout-worker/src/pricing.js";
+import { CATALOGUE, LIMITS, PACK_GRAMS, quoteCart, unitPaisePerGram, unitRupees } from "../checkout-worker/src/pricing.js";
 import { INDIAN_STATES, validateCustomer } from "../checkout-worker/src/validate.js";
 import { gstBreakup } from "../checkout-worker/src/gst.js";
 import { SELLER, TERMS, isFssaiLicence } from "../checkout-worker/src/seller.js";
@@ -211,10 +211,12 @@ function renderPacks() {
     const q = cart[code] || 0;
     const atLine = q >= LIMITS.maxQtyPerLine;
     const atOrder = total >= LIMITS.maxPacksPerOrder;
-    const meta = h("packMeta", {
-      grams: PACK_GRAMS, price: esc(inr(p.mrp * 100)), unit: esc(inr2(unitPaisePerGram(p.mrp, PACK_GRAMS))),
-      details: newTab(`${PACK_PAGES.has(code) ? `/${LANG}` : ""}/${p.slug}/`, h("packDetails")),
-    });
+    const sell = unitRupees(code); // the offer price while a website offer runs, else the MRP (same rule as the Worker)
+    const details = newTab(`${PACK_PAGES.has(code) ? `/${LANG}` : ""}/${p.slug}/`, h("packDetails"));
+    const meta = sell < p.mrp
+      ? h("packMetaOffer", { grams: PACK_GRAMS, mrp: `<s>${esc(inr(p.mrp * 100))}</s>`, price: esc(inr(sell * 100)),
+        unit: esc(inr2(unitPaisePerGram(sell, PACK_GRAMS))), details })
+      : h("packMeta", { grams: PACK_GRAMS, price: esc(inr(p.mrp * 100)), unit: esc(inr2(unitPaisePerGram(p.mrp, PACK_GRAMS))), details });
     return `<li class="co-pack">
       <img src="../assets/packs/${esc(p.image)}" alt="" width="56" height="56" loading="lazy" />
       <div class="co-pack-info">
@@ -250,7 +252,7 @@ function renderSummary() {
     <p class="gst">${gst}</p>
     <div class="r"><span>${h("sumDelivery")}</span><span class="free">${h("sumDeliveryFree", { amount: esc(inr(q.deliveryPaise)) })}</span></div>
     <div class="r total"><span>${h("sumTotal")}</span><span>${esc(inr(q.totalPaise))}</span></div>
-    <p class="co-note">${h("sumMrpOnly")}</p>
+    <p class="co-note">${h(q.savedPaise > 0 ? "sumOfferNote" : "sumMrpOnly")}</p>
     ${q.errors.length ? `<p class="co-err">${itemError(q.errors[0])}</p>` : ""}`;
   btn.disabled = busy || !q.ok;
   if (busy) setText(btn, "payBusy");

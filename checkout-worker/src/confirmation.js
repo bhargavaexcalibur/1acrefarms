@@ -38,10 +38,11 @@ const istDayText = (ms) => formatDay(new Date(ms + 5.5 * 3600 * 1000).toISOStrin
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 
 // The GST line, shared wording with the checkout summary.
-export function gstLine(g) {
-  if (g.kind === "intra") return `GST included in the MRP: ${formatInr(g.taxPaise, 2)} (CGST ${g.halfRatePct}% ${formatInr(g.cgstPaise, 2)} + SGST ${g.halfRatePct}% ${formatInr(g.sgstPaise, 2)})`;
-  if (g.kind === "inter") return `GST included in the MRP: ${formatInr(g.taxPaise, 2)} (IGST ${g.ratePct}%)`;
-  return `GST included in the MRP (${g.ratePct}%)`;
+// what = "MRP" (an order at MRP) or "price" (an order at a website offer price, which is below the MRP).
+export function gstLine(g, what = "MRP") {
+  if (g.kind === "intra") return `GST included in the ${what}: ${formatInr(g.taxPaise, 2)} (CGST ${g.halfRatePct}% ${formatInr(g.cgstPaise, 2)} + SGST ${g.halfRatePct}% ${formatInr(g.sgstPaise, 2)})`;
+  if (g.kind === "inter") return `GST included in the ${what}: ${formatInr(g.taxPaise, 2)} (IGST ${g.ratePct}%)`;
+  return `GST included in the ${what} (${g.ratePct}%)`;
 }
 
 // Pure: the e-mail for a paid order. fssaiLic: the licence number when the Worker has a valid one, else null.
@@ -55,7 +56,14 @@ export function buildConfirmationEmail(order, { fssaiLic = null, siteUrl = SELLE
   const care = SELLER.care;
 
   const subject = `${test ? "[TEST] " : ""}Your 1acrefarms order ${order.id}: payment received`;
-  const packLine = (l) => `${l.qty} x ${l.name} ${l.grams} g · MRP ${formatInr(l.unitPaise)} each (incl. of all taxes) · ${formatInr(l.totalPaise)}`;
+  // An order placed during a website offer stores the MRP next to the offer price (mrpPaise); older orders sold at MRP.
+  const onOffer = (l) => Number.isInteger(l.mrpPaise) && l.mrpPaise > l.unitPaise;
+  const packLine = (l) => onOffer(l)
+    ? `${l.qty} x ${l.name} ${l.grams} g · offer price ${formatInr(l.unitPaise)} each (MRP ${formatInr(l.mrpPaise)}, incl. of all taxes) · ${formatInr(l.totalPaise)}`
+    : `${l.qty} x ${l.name} ${l.grams} g · MRP ${formatInr(l.unitPaise)} each (incl. of all taxes) · ${formatInr(l.totalPaise)}`;
+  const paidLine = order.items.some(onOffer)
+    ? "You paid the website offer price, below the MRP. Nothing was added at checkout."
+    : "You paid the MRP only. Nothing was added at checkout.";
   const winText = win ? `Expected delivery between ${formatDay(win.from)} and ${formatDay(win.to)}.` : null;
   const shipTo = [c.name, c.address, c.city, `${c.state || ""} ${c.pin || ""}`.trim()].filter(Boolean).join(", ");
   const sellerLines = [
@@ -74,10 +82,10 @@ export function buildConfirmationEmail(order, { fssaiLic = null, siteUrl = SELLE
     "",
     "YOUR ORDER",
     ...order.items.map(packLine),
-    gstLine(g),
+    gstLine(g, order.items.some(onOffer) ? "price" : "MRP"),
     "Delivery: ₹0 (free across India)",
     `Total paid: ${formatInr(order.totalPaise)}`,
-    "You paid the MRP only. Nothing was added at checkout.",
+    paidLine,
     "",
     "DELIVERY",
     ...(winText ? [winText] : []),
@@ -114,10 +122,10 @@ export function buildConfirmationEmail(order, { fssaiLic = null, siteUrl = SELLE
     p(`Thank you. We have received your payment for order ${order.id} on ${istDayText(paidAt)}.`),
     h2("Your order"),
     `<ul style="margin:6px 0;padding-left:20px">${order.items.map((l) => `<li>${esc(packLine(l))}</li>`).join("")}</ul>`,
-    p(gstLine(g)),
+    p(gstLine(g, order.items.some(onOffer) ? "price" : "MRP")),
     p("Delivery: ₹0 (free across India)"),
     `<p style="margin:6px 0;font-weight:bold">Total paid: ${esc(formatInr(order.totalPaise))}</p>`,
-    p("You paid the MRP only. Nothing was added at checkout."),
+    p(paidLine),
     h2("Delivery"),
     ...(winText ? [`<p style="margin:6px 0;font-weight:bold">${esc(winText)}</p>`] : []),
     p(TERMS.delivery),

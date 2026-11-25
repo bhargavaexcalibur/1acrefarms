@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "ಇವುಗಳಲ್ಲೂ:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "ವೆಬ್‌ಸೈಟ್ ಆಫರ್",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · ವೆಬ್‌ಸೈಟ್ ಆಫರ್ ಬೆಲೆ {price} (ಎಲ್ಲಾ ತೆರಿಗೆ ಸೇರಿ) · ಪ್ರತಿ ಗ್ರಾಂಗೆ {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (all tax included) · per gram {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "ನೀವು ವೆಬ್‌ಸೈಟ್ ಆಫರ್ ಬೆಲೆ ಪಾವತಿಸುತ್ತೀರಿ, ಇದು MRP ಗಿಂತ ಕಡಿಮೆ. ಚೆಕ್‌ಔಟ್‌ನಲ್ಲಿ ಏನನ್ನೂ ಹೆಚ್ಚುವರಿಯಾಗಿ ಸೇರಿಸುವುದಿಲ್ಲ.",
+   "back": "You pay the website offer price, this is less than MRP. Nothing is added extra at checkout."
   }
  }
 }

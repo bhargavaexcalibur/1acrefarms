@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "बेफोरावबो:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "वेबसाइट अफार",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · वेबसाइट अफार बेसेन {price} (गासिबो मासुल लाफानानै) · g फ्रामबो {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (including all taxes) · each g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "नों वेबसाइट अफार बेसेन होयो, बेयो MRP निफ्राय खम. चेकआउटआव जेबो दाजाबजाया.",
+   "back": "You give the website offer price, which is less than MRP. Nothing is added at checkout."
   }
  }
 }

@@ -701,6 +701,10 @@ span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { 
 .pdp-also { margin: -14px 0 22px; font-size: 0.85rem; color: var(--ink-soft); }
 .pdp-also a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; }
 
+/* Website offer on pack pages and language home cards (25-11-2026): MRP struck through, offer price beside it */
+.price-row .mrp s, .po-price s { font-weight: 500; color: var(--ink-faint); margin-right: 4px; }
+.offer-price, .po-price b { color: var(--orange); font-weight: 700; }
+
 /* CHECKOUT:START written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False): direct orders */
 .nav-cart { text-decoration: none; font-size: 0.82rem; font-weight: 500; flex: none; }
 .cart-count[hidden] { display: none; }

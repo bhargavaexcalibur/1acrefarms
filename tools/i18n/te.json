@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "వీటిలో కూడా:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "వెబ్‌సైట్ ఆఫర్",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · వెబ్‌సైట్ ఆఫర్ ధర {price} (అన్ని పన్నులతో కలిపి) · గ్రాముకు {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (including all taxes) · per gram {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "మీరు వెబ్‌సైట్ ఆఫర్ ధర చెల్లిస్తారు, ఇది MRP కంటే తక్కువ. చెక్‌అవుట్‌లో అదనంగా ఏమీ కలపం.",
+   "back": "You will pay the website offer price, this is less than MRP. At checkout we do not add anything extra."
   }
  }
 }

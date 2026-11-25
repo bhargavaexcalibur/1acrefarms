@@ -37,7 +37,46 @@ export function catalogueProblems(doc) {
     if (!/^[a-z0-9-]+\.jpg$/.test(p.image ?? "")) out.push(`${at}: image`);
     if (typeof p.sellable !== "boolean") out.push(`${at}: sellable must be true or false`);
   });
+  return out.concat(offerProblems(doc));
+}
+
+// WEBSITE OFFER (Bhargava 25-11-2026, via Shiva: "go 9%, except the cane jaggery"; MRP stays printed and shown struck
+// through; free delivery unchanged). catalogue.json "offer" = { label, start, end (ISO, IST), prices: {CODE: rupees} }.
+// The Worker charges the offer price only inside [start, end); outside it, or with any problem below, it charges the MRP
+// (fail closed). Rules checked here and by the tests: below the MRP, a whole number of rupees, the Rule of Nine (digits sum
+// to 9), never a pack in NO_DISCOUNT (cane jaggery: Bhargava's rule, Rs 234 is its floor), only packs in the catalogue.
+export const NO_DISCOUNT = Object.freeze(["CBEL"]);
+export function offerProblems(doc) {
+  const o = doc?.offer;
+  if (o === undefined || o === null) return [];
+  const out = [];
+  const start = Date.parse(o.start ?? "");
+  const end = Date.parse(o.end ?? "");
+  if (!Number.isFinite(start) || !Number.isFinite(end) || !(start < end)) out.push("offer: start/end must be ISO dates, start before end");
+  if (typeof o.label !== "string" || !o.label.trim()) out.push("offer: label");
+  const mrps = Object.fromEntries((Array.isArray(doc.packs) ? doc.packs : []).map((p) => [p?.code, p?.mrp]));
+  const prices = o.prices && typeof o.prices === "object" ? o.prices : null;
+  if (!prices || !Object.keys(prices).length) out.push("offer: prices missing");
+  for (const [code, price] of Object.entries(prices || {})) {
+    if (!(code in mrps)) out.push(`offer: ${code} is not in the catalogue`);
+    else if (NO_DISCOUNT.includes(code)) out.push(`offer: ${code} is never discounted`);
+    else if (!Number.isInteger(price) || price < 1 || price >= mrps[code]) out.push(`offer: ${code} must be a whole number of rupees below its MRP`);
+    else if (price % 9 !== 0) out.push(`offer: ${code} price ${price} breaks the Rule of Nine`);
+  }
   return out;
+}
+export const OFFER = (() => {
+  const o = CATALOGUE_DATA.offer;
+  if (!o || offerProblems(CATALOGUE_DATA).length) return null;
+  return Object.freeze({ label: o.label, start: Date.parse(o.start), end: Date.parse(o.end), startIso: o.start, endIso: o.end,
+    prices: Object.freeze({ ...o.prices }) });
+})();
+export const offerActive = (now = Date.now()) => !!OFFER && now >= OFFER.start && now < OFFER.end;
+// The price one pack sells for at `now` (rupees, incl. GST): the offer price while the offer runs, otherwise the MRP.
+export function unitRupees(code, now = Date.now()) {
+  const p = CATALOGUE[code];
+  if (!p) return null;
+  return (offerActive(now) && OFFER.prices[code]) || p.mrp;
 }
 
 // { CODE: { name, mrp, hsn, slug, image, sku, grams, sellable } } in catalogue order. A malformed row is never
@@ -103,8 +142,10 @@ export function pinStateMismatch(pin, state) {
 }
 
 // Prices a cart from CATALOGUE. items = [{code, qty}] or {CODE: qty}. Amounts in paise (integers).
-// total = the sum of MRP x qty, whatever the PIN (the PIN is checked by validate.js, not priced).
-export function quoteCart(items) {
+// total = the sum of the selling price x qty (the MRP, or the offer price while a website offer runs at `now`), whatever
+// the PIN (the PIN is checked by validate.js, not priced). Never above the MRP.
+export function quoteCart(items, now = Date.now()) {
+  if (!Number.isFinite(now)) now = Date.now(); // a time in ms; anything else (an old caller's PIN) = now
   const list = Array.isArray(items)
     ? items
     : Object.entries(items || {}).map(([code, qty]) => ({ code, qty }));
@@ -122,12 +163,16 @@ export function quoteCart(items) {
   const lines = [];
   let packs = 0;
   let subtotalRupees = 0;
+  let mrpRupees = 0;
   for (const [code, qty] of merged) {
     if (qty > LIMITS.maxQtyPerLine) errors.push({ field: "items", code: "qty_over_limit", item: code });
     const { name, mrp, hsn } = CATALOGUE[code];
-    lines.push({ code, sku: skuOf(code), name, grams: PACK_GRAMS, qty, unitPaise: mrp * 100, totalPaise: mrp * qty * 100, hsn });
+    const unit = unitRupees(code, now);
+    lines.push({ code, sku: skuOf(code), name, grams: PACK_GRAMS, qty, unitPaise: unit * 100, mrpPaise: mrp * 100,
+      totalPaise: unit * qty * 100, hsn });
     packs += qty;
-    subtotalRupees += mrp * qty;
+    subtotalRupees += unit * qty;
+    mrpRupees += mrp * qty;
   }
   if (!lines.length && !errors.length) errors.push({ field: "items", code: "empty_cart" });
   if (packs > LIMITS.maxPacksPerOrder) errors.push({ field: "items", code: "too_many_packs" });
@@ -138,7 +183,10 @@ export function quoteCart(items) {
     packs,
     subtotalPaise: subtotalRupees * 100,
     deliveryPaise: DELIVERY_FEE_RUPEES * 100, // always 0: stored on the order and sent to Shiprocket as shipping_charges
-    totalPaise: (subtotalRupees + DELIVERY_FEE_RUPEES) * 100, // = sum of MRP x qty
+    totalPaise: (subtotalRupees + DELIVERY_FEE_RUPEES) * 100, // = sum of selling price x qty (MRP outside an offer)
+    mrpTotalPaise: mrpRupees * 100,
+    savedPaise: (mrpRupees - subtotalRupees) * 100, // 0 outside an offer
+    offer: subtotalRupees < mrpRupees ? OFFER.label : null,
   };
 }
 

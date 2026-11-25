@@ -11,17 +11,18 @@
 
 const WHATSAPP_NUMBER = "917899929779"; // 91 (India) + 7899929779 — WhatsApp Business number
 
-// Vijayadashami offer (approved by Bhargav 11-10-2026): WhatsApp + website only, 20–26 Oct 2026 (IST).
-// Prices follow the Rule of Nine and keep ≥18 % profit (see memory: discount guardrails). MRP never changes.
+// Website offer (Bhargava 25-11-2026, via Shiva: "go 9%, except the cane jaggery"): this website, 25-11 to 24-12-2026 (IST).
+// The SAME prices as checkout-worker/src/catalogue.json "offer", which the Worker charges; tools/build_pages.py stops the build
+// if they differ. MRP never changes and stays shown, struck through. Cane jaggery is never in an offer (Bhargava's rule).
 // It switches itself on and off by date; ?offerpreview=1 shows it early for checking.
+// (Earlier: the Vijayadashami offer 20-26 Oct 2026, TURM 324 / KPAS 405 / TBEL 405.)
 const OFFER = {
-  start: Date.parse("2026-10-20T00:00:00+05:30"),
-  end: Date.parse("2026-10-27T00:00:00+05:30"),
-  label: "Vijayadashami offer · 20–26 Oct",
-  // Cheruku is NOT in the offer: Bhargav's 09-10 rule, ₹234 is its floor (discount only inside bundles).
-  prices: { "TURM@540": 324, "KPAS@540": 405, "TBEL@540": 405 },
+  start: Date.parse("2026-11-25T00:00:00+05:30"),
+  end: Date.parse("2026-12-25T00:00:00+05:30"),
+  label: "Website offer · 25 Nov – 24 Dec",
+  prices: { "TURM@540": 360, "KPAS@540": 450, "SANN@540": 450, "TEJA@540": 450, "TBEL@540": 450, "CASH@540": 810 },
 };
-const offerOn = () => false;  // website offers are off: Amazon.in only since 06-11-2026
+const offerOn = () => (Date.now() >= OFFER.start && Date.now() < OFFER.end) || /[?&]offerpreview=1\b/.test(location.search);
 const offerPrice = (p, sku) => (offerOn() && OFFER.prices[`${p.code}@${sku.g}`]) || null;
 const sellPrice = (p, sku) => offerPrice(p, sku) || sku.mrp;
 

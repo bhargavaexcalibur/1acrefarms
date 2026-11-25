@@ -296,7 +296,7 @@ POLICIES_OFF = ("<li><b>Directly from us (opening soon):</b> direct orders on th
                 "terms on this page are for direct orders.</li>")
 POLICIES_ON = ("<li><b>Directly from us, on this website:</b> add packs to your cart and pay on our checkout page "
                "(<a href=\"/checkout/\">1acrefarms.co.in/checkout/</a>), online through our payment gateways (Razorpay, with "
-               "Cashfree or PhonePe as backup), by UPI, debit or credit card, net banking or wallet. You pay only the MRP "
+               "Cashfree or PhonePe as backup), by UPI, debit or credit card, net banking or wallet. You never pay more than the MRP "
                "printed on the pack, and delivery is free. Direct orders are prepaid: no cash on delivery for now. You can "
                "also order on WhatsApp, by text or voice note: we reply with your order total at MRP, with free delivery, "
                "and a link to pay on our checkout page. The same terms apply. For help "

@@ -152,6 +152,73 @@ def direct(p):
     return CHECKOUT_LIVE and CATALOGUE.get(p["code"], {}).get("sellable") is True
 
 
+# WEBSITE OFFER (catalogue.json "offer"; Bhargava 25-11-2026 via Shiva: "go 9%, except the cane jaggery"). The Worker charges
+# it (src/pricing.js, same file); the pages show the MRP struck through + the offer price while it runs. A page built during
+# the offer also carries the MRP version (hidden) and OFFER_JS, which swaps back by itself after the end date, so nothing
+# stale shows even before the next build; a build after the end drops the offer markup altogether.
+OFFER_DOC = json.loads(CATALOGUE_JSON.read_text(encoding="utf-8")).get("offer") or None
+BUILD_NOW = dt.datetime.now(dt.timezone.utc)
+
+
+def check_offer_app_js():
+    """app.js's home-page OFFER prices must equal catalogue.json's offer (what the Worker charges)."""
+    if not OFFER_DOC:
+        return
+    src = (ROOT / "app.js").read_text(encoding="utf-8")
+    m = re.search(r"const OFFER = \{.*?prices: \{(.*?)\}", src, re.S)
+    got = {k: int(v) for k, v in re.findall(r'"([A-Z]{4})@540": (\d+)', m.group(1))} if m else {}
+    if got != OFFER_DOC.get("prices"):
+        sys.exit(f"app.js OFFER prices {got} differ from catalogue.json offer {OFFER_DOC.get('prices')}")
+    for key in ("start", "end"):
+        if f'Date.parse("{OFFER_DOC[key]}")' not in src:
+            sys.exit(f"app.js OFFER {key} differs from catalogue.json offer {key} {OFFER_DOC[key]}")
+
+
+def offer_window():
+    """(start, end) as aware datetimes, or None."""
+    if not OFFER_DOC:
+        return None
+    return dt.datetime.fromisoformat(OFFER_DOC["start"]), dt.datetime.fromisoformat(OFFER_DOC["end"])
+
+
+def offer_price(p):
+    """The offer price (rupees) if a website offer runs at build time and covers this pack (sold here), else None."""
+    w = offer_window()
+    if not w or not direct(p) or not (w[0] <= BUILD_NOW < w[1]):
+        return None
+    price = (OFFER_DOC.get("prices") or {}).get(p["code"])
+    if price is None:  # not in the offer (cane jaggery never is)
+        return None
+    if not isinstance(price, int) or not 0 < price < p["mrp"] or p["code"] == "CBEL" or price % 9:
+        sys.exit(f"catalogue.json offer price for {p['code']} breaks the rules (below MRP, Rule of Nine, never CBEL)")
+    return price
+
+
+def offer_dates():
+    """'25-11-2026 – 24-12-2026' (the last day shown = the day before the exclusive end)."""
+    s, e = offer_window()
+    last = (e - dt.timedelta(seconds=1)).astimezone(e.tzinfo)
+    return f"{s.strftime('%d-%m-%Y')} – {last.strftime('%d-%m-%Y')}"
+
+
+OFFER_LABEL = "Website offer"
+
+
+def offer_js():
+    end = OFFER_DOC["end"]
+    return ("<script>(function(){if(Date.now()<Date.parse(" + json.dumps(end) + "))return;"
+            "document.querySelectorAll('.offer-only').forEach(function(n){n.hidden=true;});"
+            "document.querySelectorAll('.mrp-only').forEach(function(n){n.hidden=false;});})();</script>")
+
+
+def offer_price_block(p, offer, mrp_html, label=None, upp_offer=None):
+    """The price block during an offer: offer version shown, MRP version (mrp_html) hidden for after the end date."""
+    return (f'\n        <div class="price-row offer-only">\n          <span class="mrp"><small>MRP</small> <s>₹{p["mrp"]}</s> '
+            f'<b class="offer-price">₹{offer}</b></span>\n          <span class="upp">{upp_offer}</span>\n        </div>'
+            f'\n        <p class="offer-tag offer-only">{label or OFFER_LABEL} · <span lang="en" dir="ltr">{offer_dates()}</span></p>'
+            f'\n        <div class="mrp-only" hidden>{mrp_html}\n        </div>{offer_js()}')
+
+
 # The short delivery and returns terms, shared with the checkout page and the order e-mail: TERMS in
 # checkout-worker/src/seller.js (one 'key: "text",' per line). Its figures = policies.html (checked by the Worker tests,
 # and by main() while CHECKOUT_LIVE).
@@ -622,7 +689,8 @@ def product_ld(p, facts):
                     "@type": "Offer",
                     "url": url,
                     "priceCurrency": "INR",
-                    "price": str(p["mrp"]),
+                    "price": str(offer_price(p) or p["mrp"]),
+                    **({"priceValidUntil": (offer_window()[1] - dt.timedelta(seconds=1)).date().isoformat()} if offer_price(p) else {}),
                     "availability": "https://schema.org/InStock",
                     "itemCondition": "https://schema.org/NewCondition",
                     "seller": {"@type": "Organization", "@id": f"{SITE}/#business", "name": "1acrefarms"},
@@ -768,6 +836,16 @@ def gtin_ok(g):
     return (10 - total % 10) % 10 == int(g[12])
 
 
+def feed_sale(p):
+    """sale_price + sale_price_effective_date for a pack in a website offer that has not ended (Google applies the dates)."""
+    w = offer_window()
+    price = (OFFER_DOC or {}).get("prices", {}).get(p["code"])
+    if not w or BUILD_NOW >= w[1] or not direct(p) or not isinstance(price, int) or not 0 < price < p["mrp"] or p["code"] == "CBEL":
+        return []
+    iso = lambda d: d.strftime("%Y-%m-%dT%H:%M%z")
+    return [f"<g:sale_price>{price}.00 INR</g:sale_price>", f"<g:sale_price_effective_date>{iso(w[0])}/{iso(w[1])}</g:sale_price_effective_date>"]
+
+
 def feed_item(p):
     """One <item> for Merchant Center (plain facts; the claim filters run on it in merchant_feed())."""
     code = p["code"]
@@ -783,6 +861,7 @@ def feed_item(p):
     lines += [f"<g:additional_image_link>{u}</g:additional_image_link>" for u in imgs[1:11]]
     lines += [f"<g:availability>{'in_stock' if direct(p) else 'out_of_stock'}</g:availability>",
               f"<g:price>{p['mrp']}.00 INR</g:price>", f"<g:maximum_retail_price>{p['mrp']}.00 INR</g:maximum_retail_price>",
+              *feed_sale(p),
               "<g:brand>1acrefarms</g:brand>", f"<g:gtin>{GTIN[code]}</g:gtin>",
               "<g:condition>new</g:condition>", f"<g:google_product_category>{GOOGLE_CATEGORY[code]}</g:google_product_category>",
               f"<g:product_type>{x(p['category'])}</g:product_type>",
@@ -933,12 +1012,15 @@ def page(p, live, facts, guides=(), recipes=()):
     facts_row = facts.get(p["code"], {})
     storage = f"<dt>Storage</dt><dd>{facts_row['storage']}</dd>" if facts_row.get("storage") else ""
     per_g = f"₹{p['mrp'] / p['g']:.2f} per g"
-    price_block = f"""
+    mrp_row = f"""
         <div class="price-row">
           <span class="mrp"><small>MRP</small> ₹{p['mrp']}</span>
           <span class="upp">{p['g']} g · {per_g}</span>
-        </div>
-        <p class="tax">Incl. of all taxes</p>{free_line(p)}""" if shows_price(p) else ""
+        </div>"""
+    offer = offer_price(p)
+    price_block = ((offer_price_block(p, offer, mrp_row, upp_offer=f"{p['g']} g · ₹{offer / p['g']:.2f} per g") if offer else mrp_row)
+                   + f"""
+        <p class="tax">Incl. of all taxes</p>{free_line(p)}""") if shows_price(p) else ""
     status = "" if amazon_link(p) or direct(p) else f'\n        <p class="pdp-status">{NOT_ONLINE}</p>'
     body = f"""<!DOCTYPE html>
 <html lang="en-IN">
@@ -1129,11 +1211,12 @@ def main():
     live = [p for p in PACKS if is_live(p)]
     check_mrps(live)
     check_catalogue()
+    check_offer_app_js()
     if CHECKOUT_LIVE and not (FSSAI_ECOM_LIC or PRE_GRANT_OWNER_GO):
         sys.exit("CHECKOUT_LIVE = True needs the granted FSSAI Central licence in FSSAI_ECOM_LIC, or the owner's dated "
                  "PRE_GRANT_OWNER_GO decision (run tools/switch_on.py: it checks every gate)")
     for chunk in (NOT_ONLINE, SHIP_AMAZON, SHIP_NOT_ONLINE, FOOTER_CARE, footer_base(), *LEGAL_LABELS.values(),
-                  *DIRECT_LABELS.values(), *VOICE_LABELS.values(), ALSO_ON_LABEL, SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
+                  *DIRECT_LABELS.values(), *VOICE_LABELS.values(), ALSO_ON_LABEL, OFFER_LABEL, SHIP_HERE_INTRO, SHIP_AMAZON_TOO, SHIP_AMAZON_ONLY, SHIP_NOT_ONLINE_LIVE,
                   *SHIP_HEADS.values(), *seller_terms().values()):
         if BANNED.search(text_of(chunk)):
             sys.exit(f"Banned claim word in the footer/order lines: {BANNED.search(text_of(chunk)).group(0)!r}")

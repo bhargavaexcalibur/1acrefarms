@@ -40,7 +40,7 @@ function newOrderId(d) {
   return `${d.cfg.orderPrefix}${ymd}-${rnd}`;
 }
 
-const publicLine = (l) => ({ code: l.code, sku: l.sku, name: l.name, grams: l.grams, qty: l.qty, unitPaise: l.unitPaise, totalPaise: l.totalPaise });
+const publicLine = (l) => ({ code: l.code, sku: l.sku, name: l.name, grams: l.grams, qty: l.qty, unitPaise: l.unitPaise, mrpPaise: l.mrpPaise ?? l.unitPaise, totalPaise: l.totalPaise });
 
 // ---------- gateways with failover (order from GATEWAY_ORDER, see config.js) ----------
 const CREATORS = { razorpay: createRazorpayOrder, cashfree: createCashfreeOrder, phonepe: createPhonePeOrder };
@@ -99,7 +99,7 @@ async function createOrder(request, d) {
   }
   const body = await readJson(request, 8192);
   const v = validateCustomer(body.customer);
-  const quote = quoteCart(body.items); // sum of MRP x qty; delivery is free everywhere
+  const quote = quoteCart(body.items, d.now); // sum of selling price x qty (MRP, or the offer price while a website offer runs); delivery is free
   const errors = [...v.errors, ...quote.errors];
   if (errors.length) throw new HttpError(400, "invalid", { errors });
   if (d.cfg.turnstileRequired && !(await turnstileOk(d, body.turnstileToken, request.headers.get("cf-connecting-ip")))) {

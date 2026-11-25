@@ -10610,6 +10610,21 @@
    "src": "Also on:",
    "t": "ഇവയിലും:",
    "back": "In these too:"
+  },
+  "ui.offer": {
+   "src": "Website offer",
+   "t": "വെബ്സൈറ്റ് ഓഫർ",
+   "back": "Website offer"
+  },
+  "co.packMetaOffer": {
+   "src": "{grams} g · MRP {mrp} · website offer price {price} (incl. of all taxes) · {unit} per g · {details}",
+   "t": "{grams} g · MRP {mrp} · വെബ്സൈറ്റ് ഓഫർ വില {price} (എല്ലാ നികുതികളും ഉൾപ്പെടെ) · ഒരു g-ക്ക് {unit} · {details}",
+   "back": "{grams} g · MRP {mrp} · Website offer price {price} (including all taxes) · for one g {unit} · {details}"
+  },
+  "co.sumOfferNote": {
+   "src": "You pay the website offer price, which is below the MRP. Nothing is added at checkout.",
+   "t": "നിങ്ങൾ വെബ്സൈറ്റ് ഓഫർ വിലയാണ് അടയ്ക്കുന്നത്, ഇത് MRP-യെക്കാൾ കുറവാണ്. ചെക്ക്ഔട്ടിൽ ഒന്നും കൂട്ടിച്ചേർക്കുന്നില്ല.",
+   "back": "It is the website offer price that you pay, this is less than MRP. Nothing is added at checkout."
   }
  }
 }
