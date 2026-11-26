@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "वेबसाइट अफार बेसेनआव लाफानाय GST ({rate}%)",
    "back": "GST added in the website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "पेकनि गासैबो लेबेल",
+   "back": "Pack's whole (all) label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "पेकनि सिगां बाहागो",
+   "back": "Pack's front part"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "लेबेलनि गासैबो लिरनाय सिगां आरो उनथिं पेनेलआव छापा खालामनाय जादों। MRP, युनिट फाननाय बेसेन, बेच नम्बर, आरो पेक खालामनाय तारिख, गासैनिख्रुइ मोजां बाहायनायनि जोबनाय तारिख आरो बाहायनायनि जोबनाय तारिख पेक खालामनाय समाव मोनफ्रोम पाउचआव छापा खालामनाय जायो।",
+   "back": "All the label's writing has been printed on the front and back panels. MRP, unit selling price, batch number, and packing date, best-of-all good-use ending date and use ending date are printed on each pouch at packing time."
   }
  }
 }

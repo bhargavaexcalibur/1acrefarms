@@ -10640,6 +10640,16 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "ৱেবছাইট অফাৰ দামত GST অন্তৰ্ভুক্ত ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "পেকৰ সম্পূৰ্ণ লেবেল",
+   "back": "Pack's complete label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "পেকৰ সন্মুখৰ অংশ",
+   "back": "Pack's front part"
   }
  }
 }

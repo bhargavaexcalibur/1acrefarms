@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "వెబ్‌సైట్ ఆఫర్ ధరలోనే కలిసి ఉన్న GST ({rate}%)",
    "back": "GST included in the website offer price itself ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "ప్యాక్ పూర్తి లేబుల్",
+   "back": "Pack full label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "ప్యాక్ ముందు భాగం",
+   "back": "Pack front part"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "లేబుల్‌పై ఉన్న రాత అంతా ముందు, వెనుక ప్యానెళ్లపై ముద్రించి ఉంది. MRP, యూనిట్ అమ్మకపు ధర, బ్యాచ్ నంబర్, ప్యాక్ చేసిన తేదీ, ఉత్తమ వినియోగానికి చివరి తేదీ, వినియోగానికి చివరి తేదీ ప్యాకింగ్ సమయంలో ప్రతి పౌచ్‌పై ముద్రిస్తారు.",
+   "back": "All the writing on the label is printed on the front and back panels. MRP, unit selling price, batch number, packed date, last date for best use, last date for use are printed on each pouch at packing time."
   }
  }
 }

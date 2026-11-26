@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "ᱣᱮᱵᱥᱟᱭᱤᱴ ᱚᱯᱷᱚᱨ ᱜᱚᱱᱚᱝ ᱨᱮ GST ᱥᱮᱞᱮᱫ ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱯᱩᱨᱟᱹ ᱞᱮᱵᱮᱞ",
+   "back": "Pack's full label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "ᱯᱮᱠ ᱨᱮᱭᱟᱜ ᱢᱟᱲᱟᱝ ᱥᱮᱫ",
+   "back": "Pack's front side"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "ᱞᱮᱵᱮᱞ ᱨᱮᱭᱟᱜ ᱡᱚᱛᱚ ᱚᱞ ᱢᱟᱲᱟᱝ ᱟᱨ ᱛᱟᱭᱚᱢ ᱯᱮᱱᱮᱞ ᱨᱮ ᱪᱷᱟᱯᱟ ᱟᱠᱟᱱᱟ ᱾ MRP, ᱭᱩᱱᱤᱴ ᱟᱠᱷᱨᱤᱧ ᱜᱚᱱᱚᱝ, ᱵᱮᱪ ᱱᱟᱢᱵᱟᱨ, ᱟᱨ ᱯᱮᱠ ᱛᱟᱨᱤᱠ, ᱡᱚᱛᱚ ᱠᱷᱚᱱ ᱵᱮᱥ ᱵᱮᱵᱷᱟᱨ ᱨᱮᱭᱟᱜ ᱢᱩᱪᱟᱹᱫ ᱛᱟᱨᱤᱠ ᱟᱨ ᱵᱮᱵᱷᱟᱨ ᱨᱮᱭᱟᱜ ᱢᱩᱪᱟᱹᱫ ᱛᱟᱨᱤᱠ ᱯᱮᱠ ᱚᱠᱛᱚ ᱨᱮ ᱡᱚᱛᱚ ᱯᱟᱣᱪ ᱨᱮ ᱪᱷᱟᱯᱟ ᱦᱩᱭᱩᱜ ᱠᱟᱱᱟ ᱾",
+   "back": "All the label's writing has been printed on the front and back panel. MRP, unit selling price, batch number, and pack date, best (better-than-all) use end date and use end date are printed on all pouches at packing time."
   }
  }
 }

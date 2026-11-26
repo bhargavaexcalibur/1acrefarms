@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "वेबसाइट ऑफर कीमत च शामल GST ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "पैक दा पूरा लेबल",
+   "back": "Pack's full label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "पैक दा अगला पास्सा",
+   "back": "Pack's front side"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "लेबल दी सारी लिखत अगले ते पिछले पैनलें पर छपी दी ऐ। MRP, इकाई बिक्री मुल्ल, बैच नंबर, ते पैकिंग दी तरीक, उत्तम बरतने दी आखरी तरीक ते बरतने दी आखरी तरीक हर पाउच पर पैकिंग बेल्लै छापियां जंदियां न।",
+   "back": "All the label's writing is printed on the front and back panels. MRP, unit sale price, batch number, and packing date, best-use last date and use last date are printed on every pouch at packing time."
   }
  }
 }

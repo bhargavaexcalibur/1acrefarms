@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "ୱେବସାଇଟ ଅଫର ଦାମରେ GST ସାମିଲ ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "ପ୍ୟାକର ପୂରା ଲେବଲ",
+   "back": "Pack's full label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "ପ୍ୟାକର ଆଗ ପଟ",
+   "back": "Pack's front side"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "ଲେବଲର ସମସ୍ତ ଲେଖା ଆଗ ଓ ପଛ ପ୍ୟାନେଲରେ ଛପା ହୋଇଛି। MRP, ଏକକ ବିକ୍ରୟ ମୂଲ୍ୟ, ବ୍ୟାଚ ନମ୍ବର, ଏବଂ ପ୍ୟାକିଂ ତାରିଖ, ଉତ୍ତମ ବ୍ୟବହାରର ଶେଷ ତାରିଖ ଓ ବ୍ୟବହାରର ଶେଷ ତାରିଖ ପ୍ୟାକିଂ ସମୟରେ ପ୍ରତ୍ୟେକ ପାଉଚରେ ଛପାଯାଏ।",
+   "back": "All the label's writing has been printed on the front and back panel. MRP, unit sale price, batch number, and packing date, best-use end date and use end date are printed on each pouch at packing time."
   }
  }
 }

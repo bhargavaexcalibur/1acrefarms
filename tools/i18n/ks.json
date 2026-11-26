@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "ویب سائٹ آفر قیمتہِ منٛز شامل GST ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "پیکُک مکمل لیبل",
+   "back": "Pack's complete label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "پیکُک برونٛہِم حصہٕ",
+   "back": "Pack's front part"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "لیبلٕچ ساری تحریر چھےٚ برونٛہِمِس تہٕ پتِمِس پینلس پیٹھ چھاپنہٕ آمٕژ۔ MRP، اکائی فروخت قیمت، بیچ نمبر، تہٕ پیکنگٕچ تٲریخ، بہترین استعمالٕچ آخری تٲریخ تہٕ استعمالٕچ آخری تٲریخ چھِ پیکنگ کرنہٕ وِزِ پرٛتھ پاوچس پیٹھ چھاپنہٕ یِوان۔",
+   "back": "All the label's writing has been printed on the front and back panels. MRP, unit sale price, batch number, and packing date, best-use last date and use last date are printed on each pouch at the time of packing."
   }
  }
 }

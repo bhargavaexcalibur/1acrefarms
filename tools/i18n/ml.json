@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "വെബ്സൈറ്റ് ഓഫർ വിലയിൽ ഉൾപ്പെട്ട GST ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "പാക്കിന്റെ മുഴുവൻ ലേബൽ",
+   "back": "Pack's whole label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "പാക്കിന്റെ മുൻഭാഗം",
+   "back": "Pack's front part"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "ലേബലിലെ എല്ലാ എഴുത്തും മുൻ, പിൻ പാനലുകളിൽ അച്ചടിച്ചിട്ടുണ്ട്. MRP, യൂണിറ്റ് വിൽപ്പന വില, ബാച്ച് നമ്പർ, പാക്ക് ചെയ്ത തീയതി, മികച്ച ഉപയോഗത്തിനുള്ള അവസാന തീയതി, ഉപയോഗത്തിനുള്ള അവസാന തീയതി എന്നിവ പാക്ക് ചെയ്യുമ്പോൾ ഓരോ പൗച്ചിലും അച്ചടിക്കുന്നു.",
+   "back": "All the writing on the label is printed on the front and back panels. MRP, unit sale price, batch number, packed date, last date for best use, last date for use: these are printed on each pouch when packing."
   }
  }
 }

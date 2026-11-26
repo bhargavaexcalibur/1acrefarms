@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "இணையதளச் சலுகை விலையில் சேர்ந்துள்ள GST ({rate}%)",
    "back": "GST included in the website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "பாக்கெட்டின் முழு லேபிள்",
+   "back": "Packet's full label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "பாக்கெட்டின் முன்பக்கம்",
+   "back": "Packet's front side"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "லேபிளில் உள்ள எல்லா எழுத்துகளும் முன் மற்றும் பின் பக்கங்களில் அச்சிடப்பட்டுள்ளன. MRP, அலகு விற்பனை விலை, பேட்ச் எண், பேக் செய்த தேதி, சிறப்பாகப் பயன்படுத்த கடைசி தேதி, பயன்படுத்த கடைசி தேதி ஆகியவை பேக் செய்யும்போது ஒவ்வொரு பவுச்சிலும் அச்சிடப்படுகின்றன.",
+   "back": "All the writing on the label is printed on the front and back sides. MRP, unit sale price, batch number, packed date, last date to use at its best, last date to use: these are printed on each pouch while packing."
   }
  }
 }

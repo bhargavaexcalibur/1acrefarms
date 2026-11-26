@@ -10640,6 +10640,21 @@
    "src": "GST included in the offer price ({rate}%)",
    "t": "વેબસાઇટ ઑફર કિંમતમાં સમાવિષ્ટ GST ({rate}%)",
    "back": "GST included in website offer price ({rate}%)"
+  },
+  "ui.label_title": {
+   "src": "Full pack label",
+   "t": "પેકનું પૂરું લેબલ",
+   "back": "Pack's full label"
+  },
+  "ui.g_front": {
+   "src": "front of the pack",
+   "t": "પેકનો આગળનો ભાગ",
+   "back": "Pack's front part"
+  },
+  "ui.label_note": {
+   "src": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+   "t": "લેબલનું બધું લખાણ આગળ અને પાછળની પેનલ પર છપાયેલું છે. MRP, એકમ વેચાણ કિંમત, બેચ નંબર, અને પેકિંગ તારીખ, શ્રેષ્ઠ ઉપયોગની છેલ્લી તારીખ અને ઉપયોગની છેલ્લી તારીખ પેકિંગ વખતે દરેક પાઉચ પર છાપવામાં આવે છે.",
+   "back": "All the label's text is printed on the front and back panel. MRP, unit sale price, batch number, and packing date, best-use last date and use last date are printed on each pouch at packing time."
   }
  }
 }
