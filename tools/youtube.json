@@ -383,10 +383,12 @@
    "short": "https://youtube.com/shorts/geVe735sZ54"
   },
   "recipe-kobbari-undalu-ml": {
-   "video": "https://youtu.be/oC4CyiCjy8E"
+   "video": "https://youtu.be/oC4CyiCjy8E",
+   "short": "https://youtube.com/shorts/yo7aCmNb4VE"
   },
   "pack-turmeric-powder-kn": {
-   "video": "https://youtu.be/tmrGtBuUNcM"
+   "video": "https://youtu.be/tmrGtBuUNcM",
+   "short": "https://youtube.com/shorts/s75pZ7peMR8"
   },
   "recipe-palm-jaggery-coffee-te": {
    "video": "https://youtu.be/2N0xjZr_bBs"
@@ -408,6 +410,12 @@
   },
   "recipe-pasupu-annam-te": {
    "short": "https://youtube.com/shorts/nlSmK03krdg"
+  },
+  "recipe-chepala-pulusu": {
+   "short": "https://youtube.com/shorts/CG7mSiNCQo8"
+  },
+  "recipe-bellam-pongali": {
+   "short": "https://youtube.com/shorts/EWC6x3eGpDw"
   }
  }
 }
