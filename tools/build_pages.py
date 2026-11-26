@@ -366,7 +366,7 @@ SHIP_NOT_ONLINE = ("This pack is not available to order online yet. Some of our 
 # While CHECKOUT_LIVE, the "Orders, delivery and returns" section of a pack page says, per pack, "Order here", "Order on
 # Amazon.in" or both (from direct() and amazon_link()). The direct terms are seller.js TERMS (the checkout page and the
 # order e-mail say the same), so their figures are policies.html's; main() checks that too.
-SHIP_HERE_INTRO = ("You pay only the MRP printed on the pack, which includes GST; delivery is free anywhere in India. "
+SHIP_HERE_INTRO = ("You never pay more than the MRP printed on the pack, which includes GST; delivery is free anywhere in India. "
                    "Prepaid only: UPI, debit or credit card, net banking or wallet; no cash on delivery.")
 SHIP_HERE_LINKS = ('Full terms: <a href="/policies.html#shipping">shipping and delivery</a>, '
                    '<a href="/policies.html#returns">cancellation, returns and refunds</a>.')
@@ -843,9 +843,11 @@ def full_label(p, name, title=None, note=None, labels=None):
         if not r:
             continue
         cap = lab[kind][:1].upper() + lab[kind][1:]
+        # a language page still showing the English caption marks it as English
+        eng = ' lang="en" dir="ltr"' if labels is not None and kind not in labels else ""
         figs.append(f'<figure class="pl-{kind}"><a href="{r["src"]}" target="_blank" rel="noopener"><img src="{r["mid"]}" '
                     f'alt="{esc(name + ": " + lab[kind])}" width="{r["mw"]}" height="{r["mh"]}" decoding="async" /></a>'
-                    f'<figcaption>{esc(cap)}</figcaption></figure>')
+                    f'<figcaption{eng}>{esc(cap)}</figcaption></figure>')
     return (f'\n\n    <section class="pdp-label" id="full-label">\n      <h2>{title or LABEL_TEXT["title"]}</h2>\n'
             f'      <p class="pl-note">{note or LABEL_TEXT["note"]}</p>\n      <div class="pl-grid">\n        '
             + "\n        ".join(figs) + "\n      </div>\n    </section>")
