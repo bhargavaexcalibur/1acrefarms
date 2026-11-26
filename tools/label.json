@@ -1,0 +1,176 @@
+{
+ "TURM": {
+  "front": {
+   "src": "/assets/packs/gallery/turmeric-powder/00-front.jpg",
+   "w": 1552,
+   "h": 1552,
+   "mid": "/assets/packs/gallery/turmeric-powder/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/turmeric-powder/01-back.jpg",
+   "w": 1600,
+   "h": 1600,
+   "mid": "/assets/packs/gallery/turmeric-powder/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "angle": {
+   "src": "/assets/packs/gallery/turmeric-powder/06-angle.jpg",
+   "w": 1200,
+   "h": 1200,
+   "mid": "/assets/packs/gallery/turmeric-powder/06-angle-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ },
+ "KPAS": {
+  "front": {
+   "src": "/assets/packs/gallery/hill-turmeric-powder/00-front.jpg",
+   "w": 1537,
+   "h": 1537,
+   "mid": "/assets/packs/gallery/hill-turmeric-powder/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/hill-turmeric-powder/01-back.jpg",
+   "w": 1600,
+   "h": 1600,
+   "mid": "/assets/packs/gallery/hill-turmeric-powder/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "angle": {
+   "src": "/assets/packs/gallery/hill-turmeric-powder/06-angle.jpg",
+   "w": 1200,
+   "h": 1200,
+   "mid": "/assets/packs/gallery/hill-turmeric-powder/06-angle-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ },
+ "SANN": {
+  "front": {
+   "src": "/assets/packs/gallery/sannam-chilli-powder/00-front.jpg",
+   "w": 1561,
+   "h": 1561,
+   "mid": "/assets/packs/gallery/sannam-chilli-powder/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/sannam-chilli-powder/01-back.jpg",
+   "w": 1516,
+   "h": 1516,
+   "mid": "/assets/packs/gallery/sannam-chilli-powder/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "angle": {
+   "src": "/assets/packs/gallery/sannam-chilli-powder/06-angle.jpg",
+   "w": 1200,
+   "h": 1200,
+   "mid": "/assets/packs/gallery/sannam-chilli-powder/06-angle-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ },
+ "TEJA": {
+  "front": {
+   "src": "/assets/packs/gallery/teja-chilli-powder/00-front.jpg",
+   "w": 1565,
+   "h": 1565,
+   "mid": "/assets/packs/gallery/teja-chilli-powder/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/teja-chilli-powder/01-back.jpg",
+   "w": 1593,
+   "h": 1593,
+   "mid": "/assets/packs/gallery/teja-chilli-powder/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "angle": {
+   "src": "/assets/packs/gallery/teja-chilli-powder/06-angle.jpg",
+   "w": 1200,
+   "h": 1200,
+   "mid": "/assets/packs/gallery/teja-chilli-powder/06-angle-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ },
+ "CASH": {
+  "front": {
+   "src": "/assets/packs/gallery/cashew-kernels/00-front.jpg",
+   "w": 1538,
+   "h": 1538,
+   "mid": "/assets/packs/gallery/cashew-kernels/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/cashew-kernels/01-back.jpg",
+   "w": 1562,
+   "h": 1562,
+   "mid": "/assets/packs/gallery/cashew-kernels/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "angle": {
+   "src": "/assets/packs/gallery/cashew-kernels/06-angle.jpg",
+   "w": 1200,
+   "h": 1200,
+   "mid": "/assets/packs/gallery/cashew-kernels/06-angle-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ },
+ "CBEL": {
+  "front": {
+   "src": "/assets/packs/gallery/cane-jaggery/00-front.jpg",
+   "w": 1600,
+   "h": 1600,
+   "mid": "/assets/packs/gallery/cane-jaggery/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/cane-jaggery/01-back.jpg",
+   "w": 1577,
+   "h": 1577,
+   "mid": "/assets/packs/gallery/cane-jaggery/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "angle": {
+   "src": "/assets/packs/gallery/cane-jaggery/06-angle.jpg",
+   "w": 1200,
+   "h": 1200,
+   "mid": "/assets/packs/gallery/cane-jaggery/06-angle-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ },
+ "TBEL": {
+  "front": {
+   "src": "/assets/packs/gallery/palm-jaggery/00-front.jpg",
+   "w": 1586,
+   "h": 1586,
+   "mid": "/assets/packs/gallery/palm-jaggery/00-front-m.jpg",
+   "mw": 900,
+   "mh": 900
+  },
+  "back": {
+   "src": "/assets/packs/gallery/palm-jaggery/01-back.jpg",
+   "w": 1600,
+   "h": 1600,
+   "mid": "/assets/packs/gallery/palm-jaggery/01-back-m.jpg",
+   "mw": 900,
+   "mh": 900
+  }
+ }
+}

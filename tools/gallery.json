@@ -4,8 +4,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/turmeric-powder/01-back.jpg",
    "thumb": "/assets/packs/gallery/turmeric-powder/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1600,
+   "h": 1600,
    "tw": 240,
    "th": 240
   },
@@ -31,15 +31,6 @@
    "kind": "nutrition",
    "src": "/assets/packs/gallery/turmeric-powder/04-nutrition.jpg",
    "thumb": "/assets/packs/gallery/turmeric-powder/04-nutrition-t.jpg",
-   "w": 1000,
-   "h": 1000,
-   "tw": 240,
-   "th": 240
-  },
-  {
-   "kind": "care",
-   "src": "/assets/packs/gallery/turmeric-powder/05-care.jpg",
-   "thumb": "/assets/packs/gallery/turmeric-powder/05-care-t.jpg",
    "w": 1000,
    "h": 1000,
    "tw": 240,
@@ -78,8 +69,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/hill-turmeric-powder/01-back.jpg",
    "thumb": "/assets/packs/gallery/hill-turmeric-powder/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1600,
+   "h": 1600,
    "tw": 240,
    "th": 240
   },
@@ -105,15 +96,6 @@
    "kind": "nutrition",
    "src": "/assets/packs/gallery/hill-turmeric-powder/04-nutrition.jpg",
    "thumb": "/assets/packs/gallery/hill-turmeric-powder/04-nutrition-t.jpg",
-   "w": 1000,
-   "h": 1000,
-   "tw": 240,
-   "th": 240
-  },
-  {
-   "kind": "care",
-   "src": "/assets/packs/gallery/hill-turmeric-powder/05-care.jpg",
-   "thumb": "/assets/packs/gallery/hill-turmeric-powder/05-care-t.jpg",
    "w": 1000,
    "h": 1000,
    "tw": 240,
@@ -152,8 +134,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/sannam-chilli-powder/01-back.jpg",
    "thumb": "/assets/packs/gallery/sannam-chilli-powder/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1516,
+   "h": 1516,
    "tw": 240,
    "th": 240
   },
@@ -179,15 +161,6 @@
    "kind": "nutrition",
    "src": "/assets/packs/gallery/sannam-chilli-powder/04-nutrition.jpg",
    "thumb": "/assets/packs/gallery/sannam-chilli-powder/04-nutrition-t.jpg",
-   "w": 1000,
-   "h": 1000,
-   "tw": 240,
-   "th": 240
-  },
-  {
-   "kind": "care",
-   "src": "/assets/packs/gallery/sannam-chilli-powder/05-care.jpg",
-   "thumb": "/assets/packs/gallery/sannam-chilli-powder/05-care-t.jpg",
    "w": 1000,
    "h": 1000,
    "tw": 240,
@@ -226,8 +199,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/teja-chilli-powder/01-back.jpg",
    "thumb": "/assets/packs/gallery/teja-chilli-powder/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1593,
+   "h": 1593,
    "tw": 240,
    "th": 240
   },
@@ -253,15 +226,6 @@
    "kind": "nutrition",
    "src": "/assets/packs/gallery/teja-chilli-powder/04-nutrition.jpg",
    "thumb": "/assets/packs/gallery/teja-chilli-powder/04-nutrition-t.jpg",
-   "w": 1000,
-   "h": 1000,
-   "tw": 240,
-   "th": 240
-  },
-  {
-   "kind": "care",
-   "src": "/assets/packs/gallery/teja-chilli-powder/05-care.jpg",
-   "thumb": "/assets/packs/gallery/teja-chilli-powder/05-care-t.jpg",
    "w": 1000,
    "h": 1000,
    "tw": 240,
@@ -300,8 +264,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/cashew-kernels/01-back.jpg",
    "thumb": "/assets/packs/gallery/cashew-kernels/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1562,
+   "h": 1562,
    "tw": 240,
    "th": 240
   },
@@ -333,15 +297,6 @@
    "th": 240
   },
   {
-   "kind": "care",
-   "src": "/assets/packs/gallery/cashew-kernels/05-care.jpg",
-   "thumb": "/assets/packs/gallery/cashew-kernels/05-care-t.jpg",
-   "w": 1000,
-   "h": 1000,
-   "tw": 240,
-   "th": 240
-  },
-  {
    "kind": "angle",
    "src": "/assets/packs/gallery/cashew-kernels/06-angle.jpg",
    "thumb": "/assets/packs/gallery/cashew-kernels/06-angle-t.jpg",
@@ -365,8 +320,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/cane-jaggery/01-back.jpg",
    "thumb": "/assets/packs/gallery/cane-jaggery/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1577,
+   "h": 1577,
    "tw": 240,
    "th": 240
   },
@@ -430,8 +385,8 @@
    "kind": "back",
    "src": "/assets/packs/gallery/palm-jaggery/01-back.jpg",
    "thumb": "/assets/packs/gallery/palm-jaggery/01-back-t.jpg",
-   "w": 1200,
-   "h": 1200,
+   "w": 1600,
+   "h": 1600,
    "tw": 240,
    "th": 240
   },

@@ -705,6 +705,22 @@ span[lang="hi"], span[lang="sa"], .card-te span[lang="sa"], .pt-te[lang="sa"] { 
 .price-row .mrp s, .po-price s { font-weight: 500; color: var(--ink-faint); margin-right: 4px; }
 .offer-price, .po-price b { color: var(--orange); font-weight: 700; }
 
+/* Full pack label (FSSAI query 4, 26-11-2026): square studio front + printed back side by side, a smaller side photo
+   below; each opens full size */
+.pdp-label { padding: 6px 0 44px; }
+.pdp-label h2 { font-size: 1.15rem; margin-bottom: 6px; }
+.pl-note { font-size: 0.92rem; color: var(--ink-soft); max-width: 48em; margin-bottom: 18px; }
+.pl-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px; align-items: start; }
+.pl-grid .pl-angle { max-width: 340px; }
+.pl-grid figure { margin: 0; }
+.pl-grid a { display: block; cursor: zoom-in; }
+.pl-grid img { display: block; width: 100%; height: auto; background: #fff; border: 1px solid var(--hairline); border-radius: 10px; }
+.pl-grid figcaption { font-size: 0.82rem; color: var(--ink-soft); margin-top: 6px; }
+.pdp-label-link { margin: -14px 0 22px; font-size: 0.85rem; }
+.pdp-also + .pdp-label-link { margin-top: -16px; }
+.pdp-label-link a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 2px; font-weight: 600; }
+@media (max-width: 560px) { .pl-grid { grid-template-columns: 1fr; } }
+
 /* CHECKOUT:START written by tools/build_pages.py while CHECKOUT_LIVE = True (removed when False): direct orders */
 .nav-cart { text-decoration: none; font-size: 0.82rem; font-weight: 500; flex: none; }
 .cart-count[hidden] { display: none; }

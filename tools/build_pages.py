@@ -811,6 +811,46 @@ def gallery(p, front_src, front_alt, name, labels=None):
             + "\n          ".join(thumbs) + "\n        </div>" + GALLERY_JS)
 
 
+# Full pack label (FSSAI Central licence query 4, 26-11-2026: the officer saw only the front). A section under the buy box
+# shows the studio front photo, the PRINTED back (customer-care panel included, as on the pouch) and a side photo, each
+# a display copy linking to the full-size file; a link in the buy box jumps to it. Photos: tools/label.json, written by
+# tools/gallery_prep.py. English here; the language pages pass ui.label_title / ui.label_note / ui.g_front.
+LABEL_JSON = ROOT / "tools" / "label.json"
+LABEL_PHOTOS = json.loads(LABEL_JSON.read_text(encoding="utf-8")) if LABEL_JSON.exists() else {}
+LABEL_TEXT = {"title": "Full pack label", "front": "front of the pack",
+              "note": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the "
+                      "packed-on, best-before and use-by dates are printed on each pouch at packing."}
+
+
+def label_link(p, title=None):
+    """'Full pack label ↓' in the buy box (title is HTML; English by default)."""
+    if not LABEL_PHOTOS.get(p["code"]):
+        return ""
+    return f'\n        <p class="pdp-label-link"><a href="#full-label">{title or LABEL_TEXT["title"]} <span aria-hidden="true">↓</span></a></p>'
+
+
+def full_label(p, name, title=None, note=None, labels=None):
+    """The Full pack label section. title/note: HTML (English by default); labels: plain-text {front, back, angle};
+    name: the pack name as shown on this page (plain text). Returns "" for a pack with no label photos."""
+    ph = LABEL_PHOTOS.get(p["code"]) or {}
+    if not ph.get("front") or not ph.get("back"):
+        return ""
+    lab = {**GALLERY_LABELS, "front": LABEL_TEXT["front"], **(labels or {})}
+    esc = lambda t: html.escape(t, quote=True)
+    figs = []
+    for kind in ("front", "back", "angle"):
+        r = ph.get(kind)
+        if not r:
+            continue
+        cap = lab[kind][:1].upper() + lab[kind][1:]
+        figs.append(f'<figure class="pl-{kind}"><a href="{r["src"]}" target="_blank" rel="noopener"><img src="{r["mid"]}" '
+                    f'alt="{esc(name + ": " + lab[kind])}" width="{r["mw"]}" height="{r["mh"]}" decoding="async" /></a>'
+                    f'<figcaption>{esc(cap)}</figcaption></figure>')
+    return (f'\n\n    <section class="pdp-label" id="full-label">\n      <h2>{title or LABEL_TEXT["title"]}</h2>\n'
+            f'      <p class="pl-note">{note or LABEL_TEXT["note"]}</p>\n      <div class="pl-grid">\n        '
+            + "\n        ".join(figs) + "\n      </div>\n    </section>")
+
+
 # Google Merchant Center free listings (Shiva 19-11; Bhargava 21-11: "now do the merchant center feed"). One RSS 2.0
 # feed at /merchant-feed.xml, rebuilt with every build from the same PACKS / catalogue / gallery data, so the price,
 # stock and photos Google shows can never drift from the pages. Merchant Center fetches it on a schedule (account
@@ -1060,7 +1100,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <p class="pdp-names"><span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span> · {p['local']} · {p['hi_tr']}</p>
         <p class="pdp-lede">{p['lede']}</p>{price_block}{status}
         <div class="pdp-actions" id="order">{order_btn(p)}{direct_btns(p)}{voice_btn(p)}
-        </div>{also_on(p)}
+        </div>{also_on(p)}{label_link(p)}
         <ul class="pdp-facts">
           <li><span>From</span>{p['origin']}</li>
           <li><span>Pack</span>{p['note']}</li>
@@ -1068,7 +1108,7 @@ def page(p, live, facts, guides=(), recipes=()):
         <p class="pdp-lang" lang="te">{p['te_line']}</p>
         <p class="pdp-lang" lang="hi">{p['hi_line']}</p>
       </div>
-    </section>
+    </section>{full_label(p, p['name'])}
 
     <section class="pdp-more">
       <div>
@@ -1090,7 +1130,7 @@ def page(p, live, facts, guides=(), recipes=()):
           <dt>{MAKER[p['by']]}</dt><dd>{ADDRESS}</dd>
           {FSSAI_ROW}
           <dt>Country of origin</dt><dd>India</dd>
-          <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com</dd>
+          <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com · www.1acrefarms.co.in</dd>
         </dl>{ecom_lic_line()}
       </div>
       <div>

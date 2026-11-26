@@ -168,6 +168,12 @@ UI = {
     "ui.g_angle": (bp.GALLERY_LABELS["angle"], "photo alt text after the pack name and a colon: the pouch photographed at an angle, from the side"),
     "ui.g_shelf": (bp.GALLERY_LABELS["shelf"], "photo alt text after the pack name and a colon: the pouch on a shelf in our own shop"),
     "ui.g_stocked": (bp.GALLERY_LABELS["stocked"], "photo alt text after the pack name and a colon: several pouches lined up on a shelf in our own shop"),
+    # Full pack label section on product pages (FSSAI query 4, 26-11-2026): English in build_pages LABEL_TEXT; OPTIONAL.
+    "ui.label_title": (bp.LABEL_TEXT["title"], "heading above photos of the complete printed label on our pouch (front, back "
+                       "and side); also a short link to that section"),
+    "ui.label_note": (bp.LABEL_TEXT["note"], "plain fact under those photos: where the label text is and which details are "
+                      "printed on each pouch when it is packed; keep 'MRP' in Latin letters"),
+    "ui.g_front": (bp.LABEL_TEXT["front"], "photo caption and alt text after the pack name and a colon: the front of our pouch"),
     # Voice ordering step 1 (19-11-2026): English in build_pages VOICE_LABELS; both OPTIONAL.
     "ui.voice_order": (bp.VOICE_LABELS["voice_order"], "button on the home page and each product page: it opens WhatsApp so the "
                        "customer can order by sending us a recorded voice message instead of typing; write 'WhatsApp' in "
@@ -301,7 +307,7 @@ def pack_keys(p):
 OPTIONAL = {"ui.amazon", "ui.incl_tax", "ui.store", "ui.review", "ui.addr_shop", "ui.addr_hours", "ui.addr_office",
             "ui.not_online", "ui.grievance", "ui.care_officer", "ui.proprietor", "ui.call_wa",
             "ui.legal_name", "ui.add_to_cart", "ui.buy_now", "ui.free_delivery", "ui.cart", "ui.cart_added",
-            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS} | {"ui.also_on", "ui.offer"}  # newer strings: English is shown until translated
+            "ui.cart_full", "ui.voice_order", "ui.voice_prefill"} | {f"ui.g_{k}" for k in bp.GALLERY_LABELS} | {"ui.also_on", "ui.offer", "ui.label_title", "ui.label_note", "ui.g_front"}  # newer strings: English is shown until translated
 OPTIONAL |= set(bc.strings_en())  # every checkout page string (co.<key>)
 PAGE_UI = [k for k in UI if not k.startswith("ui.l_") and k not in OPTIONAL] + ["ui.see_pack"]
 HOME_UI = [k for k in UI if k not in OPTIONAL]
@@ -565,6 +571,12 @@ def gallery(code, t, p):
     return bp.gallery(p, f"/assets/packs/{p['pack']}", f"{t[k + '.name']}, {p['g']} g", t[k + ".name"], labels)
 
 
+def full_label(code, t, p):
+    """The Full pack label section (bp.full_label) with this language's back-checked strings, else the English ones."""
+    labels = {k: t[f"ui.g_{k}"] for k in ("front", "back", "angle") if f"ui.g_{k}" in t}
+    return bp.full_label(p, t[f"pack.{p['code']}.name"], opt(code, t, "ui.label_title"), opt(code, t, "ui.label_note"), labels)
+
+
 def voice_btn(code, t, p=None):
     """"Order by voice on WhatsApp" (bp.voice_btn) with the translated label, or the English one marked as English."""
     return bp.voice_btn(p, opt(code, t, "ui.voice_order"), lang=code)
@@ -824,13 +836,13 @@ def pack_page(code, t, p, packs, facts):
         <p class="pdp-names" lang="en">{p['name']} ({p['local']}) · <span lang="te">{p['te']}</span> · <span lang="hi">{p['hi']}</span> · <span lang="sa">{p['sa']}</span></p>
         <p class="pdp-lede">{x(code, t[k + '.lede'])}</p>{price}{status}
         <div class="pdp-actions" id="order">{order_btn(code, t, p)}{direct_btns(code, t, p)}{voice_btn(code, t, p)}
-        </div>{bp.also_on(p, opt(code, t, 'ui.also_on'))}
+        </div>{bp.also_on(p, opt(code, t, 'ui.also_on'))}{bp.label_link(p, opt(code, t, 'ui.label_title'))}
         <ul class="pdp-facts">
           <li><span>{x(code, t['ui.f_from'])}</span>{x(code, t[k + '.origin'])}</li>
           <li><span>{x(code, t['ui.f_pack'])}</span>{x(code, t[k + '.note'])}</li>
         </ul>
       </div>
-    </section>
+    </section>{full_label(code, t, p)}
 
     <section class="pdp-more">
       <div>
@@ -853,7 +865,7 @@ def pack_page(code, t, p, packs, facts):
           <dt>{bp.MAKER[p['by']]}</dt><dd>{bp.ADDRESS}</dd>
           {bp.FSSAI_ROW}
           <dt>Country of origin</dt><dd>India</dd>
-          <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com</dd>
+          <dt>Customer care</dt><dd>WhatsApp +91 78999 29779 · 1acrefarmsindia@gmail.com · www.1acrefarms.co.in</dd>
         </dl>{bp.ecom_lic_line()}
       </div>
       <div lang="en" dir="ltr">

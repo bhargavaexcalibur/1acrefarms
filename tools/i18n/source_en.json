@@ -203,6 +203,18 @@
   "en": "packs on the shelf in our shop",
   "note": "photo alt text after the pack name and a colon: several pouches lined up on a shelf in our own shop"
  },
+ "ui.label_title": {
+  "en": "Full pack label",
+  "note": "heading above photos of the complete printed label on our pouch (front, back and side); also a short link to that section"
+ },
+ "ui.label_note": {
+  "en": "All label text is printed on the front and back panels. MRP, unit sale price, batch number and the packed-on, best-before and use-by dates are printed on each pouch at packing.",
+  "note": "plain fact under those photos: where the label text is and which details are printed on each pouch when it is packed; keep 'MRP' in Latin letters"
+ },
+ "ui.g_front": {
+  "en": "front of the pack",
+  "note": "photo caption and alt text after the pack name and a colon: the front of our pouch"
+ },
  "ui.voice_order": {
   "en": "Order by voice on WhatsApp",
   "note": "button on the home page and each product page: it opens WhatsApp so the customer can order by sending us a recorded voice message instead of typing; write 'WhatsApp' in Latin letters exactly; short, plain, no urgency"

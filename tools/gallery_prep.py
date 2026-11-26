@@ -21,6 +21,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DOCS = ROOT / "docs" / "marketing"
 OUT = ROOT / "assets" / "packs" / "gallery"
 MANIFEST = ROOT / "tools" / "gallery.json"
+# Full pack label block (FSSAI query 4): front studio photo + printed back + side photo, each a display copy linking to
+# the full-size file. tools/label.json = {CODE: {front|back|angle: {src, w, h, mid, mw, mh}}}.
+LABEL = ROOT / "tools" / "label.json"
 SLUG = {"TURM": "turmeric-powder", "KPAS": "hill-turmeric-powder", "SANN": "sannam-chilli-powder",
         "TEJA": "teja-chilli-powder", "CASH": "cashew-kernels", "CBEL": "cane-jaggery", "TBEL": "palm-jaggery"}
 # kind = the ui.g_<kind> alt-text label. Order = order on the page (the front pack photo stays first, outside this list).
@@ -29,7 +32,9 @@ KINDS = ("back", "closeup", "story", "nutrition", "care", "angle", "shelf", "sto
 
 def sources(code):
     """[(kind, source path)] for one pack; a missing optional shop photo is simply left out."""
-    v3 = DOCS / "amazon" / "v3_veduka_2026-11-13" / f"1AF-{code}-0540_BACK.jpg"
+    # The PRINTED back exactly as on the pouch, customer-care panel included (FSSAI query 4, 26-11-2026: the officer must
+    # see the whole label). The Amazon copy one folder up has that panel masked for Amazon's rules; never use it here.
+    v3 = DOCS / "amazon" / "v3_veduka_2026-11-13" / "_backs_unredacted" / f"1AF-{code}-0540_BACK.jpg"
     more = DOCS / "images_more_21-11"
     jio = DOCS / "jiomart" / "images"
     if code == "CBEL":
@@ -39,8 +44,9 @@ def sources(code):
         crops = [("closeup", jio / "1AF-TBEL-0540_6-front-closeup.jpg"), ("story", jio / "1AF-TBEL-0540_7-story-panel.jpg"),
                  ("nutrition", jio / "1AF-TBEL-0540_8-nutrition-table.jpg"), ("care", jio / "1AF-TBEL-0540_9-storage-care.jpg")]
     else:
+        # No maker/storage crop here: it was cut from the masked Amazon back. The full printed back above shows that panel.
         crops = [(k, more / f"1AF-{code}-0540_{n}.jpg") for k, n in
-                 (("closeup", "11-front-closeup"), ("story", "12-story"), ("nutrition", "13-nutrition"), ("care", "14-maker-storage"))]
+                 (("closeup", "11-front-closeup"), ("story", "12-story"), ("nutrition", "13-nutrition"))]
     shop = DOCS / "photography" / "shop_2026-11-20" / "channels" / "website" / code
     extra = []
     for kind, stem in (("angle", "_angle"), ("shelf", "_on-our-shop-shelf"), ("stocked", "_stocked-in-our-shop")):
@@ -64,23 +70,41 @@ def save(im, path, longest, quality):
 
 
 def main():
-    manifest = {}
+    manifest, labels = {}, {}
+    for old in OUT.glob("*/*.jpg"):  # a dropped photo must not linger on the site
+        old.unlink()
     for code, slug in SLUG.items():
         d = OUT / slug
         d.mkdir(parents=True, exist_ok=True)
         rows = []
-        for i, (kind, src) in enumerate(sources(code), 1):
+        label = {}
+        # studio MAIN photo of the pouch front (white background, Veduka 13-11); cane jaggery from the sharper 4000 px file
+        front = (DOCS.resolve().parent.parent / "print" / "photos-veduka" / "2026-11-11" / "CBEL_MAIN_DSC09384_v17B_4000px.jpg"
+                 if code == "CBEL" else DOCS / "amazon" / "v3_veduka_2026-11-13" / f"1AF-{code}-0540_MAIN.jpg")
+        with Image.open(front) as im:
+            fw, fh = save(im, d / "00-front.jpg", 1600, 85)
+            mw, mh = save(im, d / "00-front-m.jpg", 900, 82)
+        label["front"] = {"src": f"/assets/packs/gallery/{slug}/00-front.jpg", "w": fw, "h": fh,
+                          "mid": f"/assets/packs/gallery/{slug}/00-front-m.jpg", "mw": mw, "mh": mh}
+        for kind, src in sources(code):
             assert kind in KINDS, kind
-            name = f"{i:02d}-{kind}"
+            name = f"{KINDS.index(kind) + 1:02d}-{kind}"  # fixed number per kind: file names never shift when one is dropped
             with Image.open(src) as im:
-                w, h = save(im, d / f"{name}.jpg", 1200, 80)
+                # the back at its native size (about 1600 px) and higher quality, so every printed line stays readable
+                w, h = save(im, d / f"{name}.jpg", *((max(im.size), 88) if kind == "back" else (1200, 80)))
+                if kind in ("back", "angle"):  # display copy for the Full pack label block
+                    mw, mh = save(im, d / f"{name}-m.jpg", 900, 82)
+                    label[kind] = {"src": f"/assets/packs/gallery/{slug}/{name}.jpg", "w": w, "h": h,
+                                   "mid": f"/assets/packs/gallery/{slug}/{name}-m.jpg", "mw": mw, "mh": mh}
                 tw, th = save(im, d / f"{name}-t.jpg", 240, 72)
             rows.append({"kind": kind, "src": f"/assets/packs/gallery/{slug}/{name}.jpg",
                          "thumb": f"/assets/packs/gallery/{slug}/{name}-t.jpg", "w": w, "h": h, "tw": tw, "th": th})
         manifest[code] = rows
+        labels[code] = label
         print(code, len(rows), "photos:", ", ".join(r["kind"] for r in rows))
     MANIFEST.write_text(json.dumps(manifest, indent=1) + "\n", encoding="utf-8")
-    print("wrote", MANIFEST.relative_to(ROOT))
+    LABEL.write_text(json.dumps(labels, indent=1) + "\n", encoding="utf-8")
+    print("wrote", MANIFEST.relative_to(ROOT), "and", LABEL.relative_to(ROOT))
 
 
 if __name__ == "__main__":
