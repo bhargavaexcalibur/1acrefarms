@@ -46,7 +46,8 @@
    "short": "https://youtube.com/shorts/JAr5y3fKWrU"
   },
   "recipe-palm-jaggery-coffee-sa": {
-   "video": "https://youtu.be/ZfcYKQaOaEM"
+   "video": "https://youtu.be/ZfcYKQaOaEM",
+   "short": "https://youtube.com/shorts/56Gy7tNZPPg"
   },
   "recipe-ragi-java": {
    "video": "https://youtu.be/RGWy6P6fdgI"
@@ -391,7 +392,8 @@
    "short": "https://youtube.com/shorts/s75pZ7peMR8"
   },
   "recipe-palm-jaggery-coffee-te": {
-   "video": "https://youtu.be/2N0xjZr_bBs"
+   "video": "https://youtu.be/2N0xjZr_bBs",
+   "short": "https://youtube.com/shorts/C2DWN7rLwXo"
   },
   "pack-turmeric-powder-ml": {
    "video": "https://youtu.be/AmebpatRFDQ"
@@ -416,6 +418,12 @@
   },
   "recipe-bellam-pongali": {
    "short": "https://youtube.com/shorts/EWC6x3eGpDw"
+  },
+  "recipe-tomato-pappu": {
+   "short": "https://youtube.com/shorts/R4U2om2Jc_8"
+  },
+  "recipe-pasupu-annam": {
+   "short": "https://youtube.com/shorts/M7eXUDR9b6Q"
   }
  }
 }
